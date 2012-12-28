@@ -292,12 +292,12 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 
 int main (string[] args)
 {
-    Gtk.init (ref args);
+	Gtk.init (ref args);
 
-    var plug = new KeyboardPlug ();
-    plug.register ("Keyboard");
+	var plug = new KeyboardPlug ();
+	plug.register ("Keyboard");
 	plug.show_all();
 
-    Gtk.main ();
-    return 0;
+	Gtk.main ();
+	return 0;
 }
