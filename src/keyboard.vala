@@ -12,9 +12,9 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 	{
 		var notebook = new Granite.Widgets.StaticNotebook ();
 		
-		notebook.append_page (page_behaviour (), new Gtk.Label ("Behaviour"));
-		notebook.append_page (page_shortcuts (), new Gtk.Label ("Shortcuts"));
-		notebook.append_page (page_layout    (), new Gtk.Label ("Layout"));
+		notebook.append_page (page_behaviour (), new Gtk.Label (_("Behaviour")));
+		notebook.append_page (page_shortcuts (), new Gtk.Label (_("Shortcuts")));
+		notebook.append_page (page_layout    (), new Gtk.Label (_("Layout")));
 		
 		this.add( notebook );
 	}
@@ -152,9 +152,9 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 		/** Repeat Keys **/
 		
 		// create widgets
-		var label_repeat       = new Gtk.Label ("<b>Repeat Keys</b>");
-		var label_repeat_delay = new Gtk.Label ("Delay in milliseconds:");
-		var label_repeat_speed = new Gtk.Label ("Interval in milliseconds:");
+		var label_repeat       = new Gtk.Label (_("<b>Repeat Keys</b>"));
+		var label_repeat_delay = new Gtk.Label (_("Delay in milliseconds:"));
+		var label_repeat_speed = new Gtk.Label (_("Interval in milliseconds:"));
 		var switch_repeat      = new Gtk.Switch ();
 		var scale_repeat_delay = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 1000, 1);
 		var scale_repeat_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 100,  1);
@@ -253,9 +253,9 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 		/** Cursor Blinking **/
 		
 		// setup gui
-		var label_blink       = new Gtk.Label ("<b>Cursor Blinking</b>");
-		var label_blink_speed = new Gtk.Label ("Interval in milliseconds:");
-		var label_blink_time  = new Gtk.Label ("Timeout after seconds:");
+		var label_blink       = new Gtk.Label (_("<b>Cursor Blinking</b>"));
+		var label_blink_speed = new Gtk.Label (_("Interval in milliseconds:"));
+		var label_blink_time  = new Gtk.Label (_("Timeout after seconds:"));
 		var switch_blink      = new Gtk.Switch ();
 		var scale_blink_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 100, 2500, 10);
 		var scale_blink_time  = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1, 100, 1);
@@ -354,7 +354,7 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 
 		/** Test Settings **/
 		
-		var entry_test = new Granite.Widgets.HintedEntry ("Type to test your settings...");
+		var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your settings..."));
 		
 		entry_test.hexpand = true;
 		entry_test.set_icon_from_stock (Gtk.EntryIconPosition.SECONDARY, Gtk.Stock.CLEAR);
