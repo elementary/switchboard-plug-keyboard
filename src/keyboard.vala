@@ -18,11 +18,92 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 		
 		this.add( notebook );
 	}
+	/*
+	private Gtk.ListStore language_list_store()
+	{
+			// Create & fill a ListStore:
+		Gtk.ListStore list_store = new Gtk.ListStore (1, typeof (string));
+		Gtk.TreeIter iter;
+
+		list_store.append (out iter);
+		list_store.set (iter, 0, "German");
+		list_store.append (out iter);
+		list_store.set (iter, 0, "English");
+
+		return list_store;
+	}
+	
+	private Gtk.ListStore layout_list_store()
+	{
+			// Create & fill a ListStore:
+		Gtk.ListStore list_store = new Gtk.ListStore (1, typeof (string));
+		Gtk.TreeIter iter;
+
+		list_store.append (out iter);
+		list_store.set (iter, 0, "German");
+		list_store.append (out iter);
+		list_store.set (iter, 0, "German (Switzerland)");
+
+		return list_store;
+	}*/
 	
 	private Gtk.Grid page_layout () 
 	{
-		// TODO
-		return new Gtk.Grid (); 
+		var grid = new Gtk.Grid ();
+		/*
+		grid.row_spacing    = 12;
+		grid.column_spacing = 12;
+		grid.margin         = 20;
+		grid.expand         = true;
+		
+		// Labels
+		var label_language = new Gtk.Label ("Language:");
+		var label_layout   = new Gtk.Label ("Layout:");
+		
+		label_language.valign = Gtk.Align.CENTER;
+		label_language.halign = Gtk.Align.END;
+		label_layout.valign   = Gtk.Align.CENTER;
+		label_layout.halign   = Gtk.Align.END;
+		
+		grid.attach (label_language, 0, 0, 1, 1);
+		grid.attach (label_layout,   0, 1, 1, 1);
+		
+		// Comco boxes
+		var box_language = new Gtk.TreeView.with_model (language_list_store ());
+		var box_layout   = new Gtk.ComboBox.with_model (layout_list_store ());
+		
+		var renderer_language = new Gtk.CellRendererText ();
+		var renderer_layout   = new Gtk.CellRendererText ();
+		
+	//	box_language.pack_start    (renderer_language, true);
+		box_layout.pack_start      (renderer_layout,   true);
+	//	box_language.add_attribute (renderer_language, "text", 0);
+		box_layout.add_attribute   (renderer_layout,   "text", 0);
+	//	box_language.active = 0;
+		box_language.insert_column_with_attributes (-1, "Language", renderer_language, "text", 0);
+		box_layout.active   = 0;
+
+		grid.attach (box_language, 1, 0, 1, 1);
+		grid.attach (box_layout,   1, 1, 1, 1);
+
+		// Test entry
+		var entry_test = new Granite.Widgets.HintedEntry ("Type to test your layout...");
+		
+		entry_test.hexpand = true;
+		
+		entry_test.set_icon_from_stock (Gtk.EntryIconPosition.SECONDARY, Gtk.Stock.CLEAR);
+		
+		entry_test.icon_press.connect ((pos, event) => 
+		{
+			if (pos == Gtk.EntryIconPosition.SECONDARY) 
+			{
+				entry_test.set_text ("");
+			}
+		});
+		
+		grid.attach (entry_test, 1, 3, 1, 1);
+		*/
+		return grid;
 	}
 	
 	private Gtk.Grid page_shortcuts ()
@@ -224,9 +305,9 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 		scale_blink_speed.sensitive = switch_blink.active;
 		label_blink_speed.sensitive = switch_blink.active;
 		spin_blink_speed.sensitive  = switch_blink.active;
-		scale_blink_time.sensitive = switch_blink.active;
-		label_blink_time.sensitive = switch_blink.active;
-		spin_blink_time.sensitive  = switch_blink.active;
+		scale_blink_time.sensitive  = switch_blink.active;
+		label_blink_time.sensitive  = switch_blink.active;
+		spin_blink_time.sensitive   = switch_blink.active;
 		
 		// connect signals
 		scale_blink_speed.value_changed.connect (() =>
@@ -273,17 +354,19 @@ class KeyboardPlug : Pantheon.Switchboard.Plug
 
 		/** Test Settings **/
 		
-		var label_test = new Gtk.Label ("<b>Test Settings</b>");
-		
-		label_test.use_markup = true;
-		label_test.halign     = Gtk.Align.END;
-		label_test.valign     = Gtk.Align.CENTER;
-		
-		var entry_test = new Gtk.Entry ();
+		var entry_test = new Granite.Widgets.HintedEntry ("Type to test your settings...");
 		
 		entry_test.hexpand = true;
+		entry_test.set_icon_from_stock (Gtk.EntryIconPosition.SECONDARY, Gtk.Stock.CLEAR);
 		
-		grid.attach (label_test, 0, 6, 1, 1);
+		entry_test.icon_press.connect ((pos, event) => 
+		{
+			if (pos == Gtk.EntryIconPosition.SECONDARY) 
+			{
+				entry_test.set_text ("");
+			}
+		});
+		
 		grid.attach (entry_test, 1, 6, 1, 1);
 		
 		return grid;
