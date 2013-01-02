@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-12-30 14:24+0100\n"
+"POT-Creation-Date: 2013-01-01 18:54+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,39 +17,77 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:15
+#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:12
 msgid "Behaviour"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:16
+#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:13
 msgid "Shortcuts"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:17
+#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:14
 msgid "Layout"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:155
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:18
+msgid "Language:"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:19
+msgid "Layout:"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:43
+msgid "Add"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:58
+msgid "Allow different layouts for individual windows:"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:59
+msgid "New windows use:"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:74
+msgid "the default layout"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Layout.vala:75
+msgid "the previous window's layout"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:13
 msgid "<b>Repeat Keys</b>"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:156
-msgid "Delay in milliseconds:"
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:14
+msgid "Delay:"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:157
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:257
-msgid "Interval in milliseconds:"
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:15
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:121
+msgid "Interval:"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:256
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:16
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:17
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:123
+msgid "milliseconds"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:120
 msgid "<b>Cursor Blinking</b>"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:258
-msgid "Timeout after seconds:"
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:122
+msgid "Duration:"
 msgstr ""
 
-#: /home/emanuel/keyboard-plug/trunk/po/../src//keyboard.vala:357
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:124
+msgid "seconds"
+msgstr ""
+
+#: /home/emanuel/keyboard-plug/trunk/po/../src/Pages/Behaviour.vala:228
 msgid "Type to test your settings..."
 msgstr ""

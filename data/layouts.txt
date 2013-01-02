@@ -1,0 +1,482 @@
+|Afghani|
+Pashto
+Pashto (Afghanistan, OLPC)
+Persian (Afghanistan, Dari OLPC)
+Uzbek (Afghanistan)
+Uzbek (Afghanistan, OLPC)
+|Albanian|
+|Amharic|
+|Arabic|
+Arabic (Buckwalter)
+Arabic (azerty)
+Arabic (azerty/digits)
+Arabic (digits)
+Arabic (qwerty)
+Arabic (qwerty/digits)
+|Arabic (Morocco)|
+Berber (Morocco, Tifinagh alternative phonetic)
+Berber (Morocco, Tifinagh alternative)
+Berber (Morocco, Tifinagh extended phonetic)
+Berber (Morocco, Tifinagh extended)
+Berber (Morocco, Tifinagh phonetic)
+Berber (Morocco, Tifinagh)
+French (Morocco)
+|Arabic (Syria)|
+Kurdish (Syria, F)
+Kurdish (Syria, Latin Alt-Q)
+Kurdish (Syria, Latin Q)
+Syriac
+Syriac (phonetic)
+|Armenian|
+Armenian (alternative eastern)
+Armenian (alternative phonetic)
+Armenian (eastern)
+Armenian (phonetic)
+Armenian (western)
+|Azerbaijani|
+Azerbaijani (Cyrillic)
+|Bambara|
+English (Mali, US Macintosh)
+English (Mali, US international)
+French (Mali, alternative)
+|Belarusian|
+Belarusian (Latin)
+Belarusian (legacy)
+|Belgian|
+Belgian (ISO alternate)
+Belgian (Sun dead keys)
+Belgian (Wang model 724 azerty)
+Belgian (alternative)
+Belgian (alternative, Sun dead keys)
+Belgian (alternative, latin-9 only)
+Belgian (eliminate dead keys)
+|Bengali|
+Bengali (Probhat)
+|Bosnian|
+Bosnian (US keyboard with Bosnian digraphs)
+Bosnian (US keyboard with Bosnian letters)
+Bosnian (use Bosnian digraphs)
+Bosnian (use guillemets for quotes)
+|Braille|
+Braille (left hand)
+Braille (right hand)
+|Bulgarian|
+Bulgarian (new phonetic)
+Bulgarian (traditional phonetic)
+|Burmese|
+|Catalan|
+|Chinese|
+Tibetan
+Tibetan (with ASCII numerals)
+Uyghur
+|Croatian|
+Croatian (US keyboard with Croatian digraphs)
+Croatian (US keyboard with Croatian letters)
+Croatian (use Croatian digraphs)
+Croatian (use guillemets for quotes)
+|Czech|
+Czech (UCW layout, accented letters only)
+Czech (US Dvorak with CZ UCW support)
+Czech (qwerty)
+Czech (qwerty, extended Backslash)
+Czech (with <\|> key)
+|Danish|
+Danish (Dvorak)
+Danish (Macintosh)
+Danish (Macintosh, eliminate dead keys)
+Danish (eliminate dead keys)
+|Dhivehi|
+|Dutch|
+Dutch (Macintosh)
+Dutch (Sun dead keys)
+Dutch (standard)
+|Dzongkha|
+|English (Cameroon)|
+Cameroon Multilingual (Dvorak)
+Cameroon Multilingual (azerty)
+Cameroon Multilingual (qwerty)
+French (Cameroon)
+|English (Ghana)|
+Akan
+Avatime
+English (Ghana, GILLBT)
+English (Ghana, multilingual)
+Ewe
+Fula
+Ga
+Hausa
+|English (Nigeria)|
+Hausa
+Igbo
+Yoruba
+|English (South Africa)|
+|English (UK)|
+English (UK, Colemak)
+English (UK, Dvorak with UK punctuation)
+English (UK, Dvorak)
+English (UK, Macintosh international)
+English (UK, Macintosh)
+English (UK, extended WinKeys)
+English (UK, international with dead keys)
+|English (US)|
+Cherokee
+English (Colemak)
+English (Dvorak alternative international no dead keys)
+English (Dvorak international with dead keys)
+English (Dvorak)
+English (Macintosh)
+English (US, alternative international)
+English (US, international with dead keys)
+English (US, with euro on 5)
+English (classic Dvorak)
+English (international AltGr dead keys)
+English (layout toggle on multiply/divide key)
+English (left handed Dvorak)
+English (programmer Dvorak)
+English (right handed Dvorak)
+Russian (US, phonetic)
+Serbo-Croatian (US)
+|Esperanto|
+Esperanto (displaced semicolon and quote, obsolete)
+|Estonian|
+Estonian (Dvorak)
+Estonian (US keyboard with Estonian letters)
+Estonian (eliminate dead keys)
+|Faroese|
+Faroese (eliminate dead keys)
+|Filipino|
+Filipino (Capewell-Dvorak Baybayin)
+Filipino (Capewell-Dvorak Latin)
+Filipino (Capewell-QWERF 2006 Baybayin)
+Filipino (Capewell-QWERF 2006 Latin)
+Filipino (Colemak Baybayin)
+Filipino (Colemak Latin)
+Filipino (Dvorak Baybayin)
+Filipino (Dvorak Latin)
+Filipino (QWERTY Baybayin)
+|Finnish|
+Finnish (Macintosh)
+Finnish (classic)
+Finnish (classic, eliminate dead keys)
+Northern Saami (Finland)
+|French|
+French (Bepo, ergonomic, Dvorak way)
+French (Bepo, ergonomic, Dvorak way, latin-9 only)
+French (Breton)
+French (Dvorak)
+French (Macintosh)
+French (Sun dead keys)
+French (alternative)
+French (alternative, Sun dead keys)
+French (alternative, eliminate dead keys)
+French (alternative, latin-9 only)
+French (eliminate dead keys)
+French (legacy, alternative)
+French (legacy, alternative, Sun dead keys)
+French (legacy, alternative, eliminate dead keys)
+Georgian (France, AZERTY Tskapo)
+Occitan
+|French (Canada)|
+Canadian Multilingual
+Canadian Multilingual (first part)
+Canadian Multilingual (second part)
+English (Canada)
+French (Canada, Dvorak)
+French (Canada, legacy)
+Inuktitut
+|French (Democratic Republic of the Congo)|
+|French (Guinea)|
+|Georgian|
+Georgian (MESS)
+Georgian (ergonomic)
+Ossetian (Georgia)
+Russian (Georgia)
+|German|
+German (Dvorak)
+German (Macintosh)
+German (Macintosh, eliminate dead keys)
+German (Neo 2)
+German (Sun dead keys)
+German (dead acute)
+German (dead grave acute)
+German (eliminate dead keys)
+Lower Sorbian
+Lower Sorbian (qwertz)
+Romanian (Germany)
+Romanian (Germany, eliminate dead keys)
+Russian (Germany, phonetic)
+|German (Austria)|
+German (Austria, Macintosh)
+German (Austria, Sun dead keys)
+German (Austria, eliminate dead keys)
+|German (Switzerland)|
+French (Switzerland)
+French (Switzerland, Macintosh)
+French (Switzerland, Sun dead keys)
+French (Switzerland, eliminate dead keys)
+German (Switzerland, Macintosh)
+German (Switzerland, Sun dead keys)
+German (Switzerland, eliminate dead keys)
+German (Switzerland, legacy)
+|Greek|
+Greek (eliminate dead keys)
+Greek (extended)
+Greek (polytonic)
+Greek (simple)
+|Hebrew|
+Hebrew (Biblical, Tiro)
+Hebrew (lyx)
+Hebrew (phonetic)
+|Hungarian|
+Hungarian (101/qwerty/comma/dead keys)
+Hungarian (101/qwerty/comma/eliminate dead keys)
+Hungarian (101/qwerty/dot/dead keys)
+Hungarian (101/qwerty/dot/eliminate dead keys)
+Hungarian (101/qwertz/comma/dead keys)
+Hungarian (101/qwertz/comma/eliminate dead keys)
+Hungarian (101/qwertz/dot/dead keys)
+Hungarian (101/qwertz/dot/eliminate dead keys)
+Hungarian (102/qwerty/comma/dead keys)
+Hungarian (102/qwerty/comma/eliminate dead keys)
+Hungarian (102/qwerty/dot/dead keys)
+Hungarian (102/qwerty/dot/eliminate dead keys)
+Hungarian (102/qwertz/comma/dead keys)
+Hungarian (102/qwertz/comma/eliminate dead keys)
+Hungarian (102/qwertz/dot/dead keys)
+Hungarian (102/qwertz/dot/eliminate dead keys)
+Hungarian (eliminate dead keys)
+Hungarian (qwerty)
+Hungarian (standard)
+|Icelandic|
+Icelandic (Dvorak)
+Icelandic (Macintosh)
+Icelandic (Sun dead keys)
+Icelandic (eliminate dead keys)
+|Indian|
+Bengali (India)
+Bengali (India, Baishakhi Inscript)
+Bengali (India, Baishakhi)
+Bengali (India, Bornona)
+Bengali (India, Probhat)
+Bengali (India, Uni Gitanjali)
+English (India, with RupeeSign)
+Gujarati
+Hindi (Bolnagri)
+Hindi (Wx)
+Kannada
+Malayalam
+Malayalam (Lalitha)
+Malayalam (enhanced Inscript with Rupee Sign)
+Oriya
+Punjabi (Gurmukhi Jhelum)
+Punjabi (Gurmukhi)
+Tamil
+Tamil (TAB typewriter)
+Tamil (TSCII typewriter)
+Tamil (Unicode)
+Tamil (keyboard with numerals)
+Telugu
+Urdu (WinKeys)
+Urdu (alternative phonetic)
+Urdu (phonetic)
+|Iraqi|
+Kurdish (Iraq, Arabic-Latin)
+Kurdish (Iraq, F)
+Kurdish (Iraq, Latin Alt-Q)
+Kurdish (Iraq, Latin Q)
+|Irish|
+CloGaelach
+Irish (UnicodeExpert)
+Ogham
+Ogham (IS434)
+|Italian|
+Georgian (Italy)
+Italian (Macintosh)
+Italian (US keyboard with Italian letters)
+Italian (eliminate dead keys)
+|Japanese|
+Japanese (Kana 86)
+Japanese (Kana)
+Japanese (Macintosh)
+Japanese (OADG 109A)
+|Japanese (PC-98xx Series)|
+|Kazakh|
+Kazakh (with Russian)
+Russian (Kazakhstan, with Kazakh)
+|Khmer (Cambodia)|
+|Korean|
+Korean (101/104 key compatible)
+|Kyrgyz|
+Kyrgyz (phonetic)
+|Lao|
+Lao (STEA proposed standard layout)
+|Latvian|
+Latvian (F variant)
+Latvian (adapted)
+Latvian (apostrophe variant)
+Latvian (ergonomic, ŪGJRMV)
+Latvian (modern)
+Latvian (tilde variant)
+|Lithuanian|
+Lithuanian (IBM LST 1205-92)
+Lithuanian (LEKP)
+Lithuanian (LEKPa)
+Lithuanian (US keyboard with Lithuanian letters)
+Lithuanian (standard)
+|Macedonian|
+Macedonian (eliminate dead keys)
+|Maltese|
+Maltese (with US layout)
+|Maori|
+|Mongolian|
+|Montenegrin|
+Montenegrin (Cyrillic with guillemets)
+Montenegrin (Cyrillic)
+Montenegrin (Cyrillic, Z and ZHE swapped)
+Montenegrin (Latin Unicode qwerty)
+Montenegrin (Latin Unicode)
+Montenegrin (Latin qwerty)
+Montenegrin (Latin with guillemets)
+|Nepali|
+|Norwegian|
+Northern Saami (Norway)
+Northern Saami (Norway, eliminate dead keys)
+Norwegian (Dvorak)
+Norwegian (Macintosh)
+Norwegian (Macintosh, eliminate dead keys)
+Norwegian (eliminate dead keys)
+|Persian|
+Kurdish (Iran, Arabic-Latin)
+Kurdish (Iran, F)
+Kurdish (Iran, Latin Alt-Q)
+Kurdish (Iran, Latin Q)
+Persian (with Persian Keypad)
+|Polish|
+Kashubian
+Polish (Dvorak)
+Polish (Dvorak, Polish quotes on key 1)
+Polish (Dvorak, Polish quotes on quotemark key)
+Polish (programmer Dvorak)
+Polish (qwertz)
+Russian (Poland, phonetic Dvorak)
+|Portuguese|
+Esperanto (Portugal, Nativo)
+Portuguese (Macintosh)
+Portuguese (Macintosh, Sun dead keys)
+Portuguese (Macintosh, eliminate dead keys)
+Portuguese (Nativo for USA keyboards)
+Portuguese (Nativo)
+Portuguese (Sun dead keys)
+Portuguese (eliminate dead keys)
+|Portuguese (Brazil)|
+Portuguese (Brazil, Dvorak)
+Portuguese (Brazil, eliminate dead keys)
+Portuguese (Brazil, nativo for Esperanto)
+Portuguese (Brazil, nativo for USA keyboards)
+Portuguese (Brazil, nativo)
+|Romanian|
+Romanian (WinKeys)
+Romanian (cedilla)
+Romanian (standard cedilla)
+Romanian (standard)
+|Russian|
+Bashkirian
+Chuvash
+Chuvash (Latin)
+Kalmyk
+Komi
+Mari
+Ossetian (WinKeys)
+Ossetian (legacy)
+Russian (DOS)
+Russian (legacy)
+Russian (phonetic WinKeys)
+Russian (phonetic)
+Russian (typewriter)
+Russian (typewriter, legacy)
+Serbian (Russia)
+Tatar
+Udmurt
+Yakut
+|Serbian (Cyrillic)|
+Pannonian Rusyn (homophonic)
+Serbian (Cyrillic with guillemets)
+Serbian (Cyrillic, Z and ZHE swapped)
+Serbian (Latin Unicode qwerty)
+Serbian (Latin Unicode)
+Serbian (Latin qwerty)
+Serbian (Latin with guillemets)
+Serbian (Latin)
+|Sinhala (phonetic)|
+Tamil (Sri Lanka, TAB Typewriter)
+Tamil (Sri Lanka, Unicode)
+|Slovak|
+Slovak (extended Backslash)
+Slovak (qwerty)
+Slovak (qwerty, extended Backslash)
+|Slovenian|
+Slovenian (US keyboard with Slovenian letters)
+Slovenian (use guillemets for quotes)
+|Spanish|
+Asturian (Spain, with bottom-dot H and bottom-dot L)
+Catalan (Spain, with middle-dot L)
+Spanish (Dvorak)
+Spanish (Macintosh)
+Spanish (Sun dead keys)
+Spanish (eliminate dead keys)
+Spanish (include dead tilde)
+|Spanish (Latin American)|
+Spanish (Latin American, Sun dead keys)
+Spanish (Latin American, eliminate dead keys)
+Spanish (Latin American, include dead tilde)
+|Swahili (Kenya)|
+Kikuyu
+|Swahili (Tanzania)|
+|Swedish|
+Northern Saami (Sweden)
+Russian (Sweden, phonetic)
+Russian (Sweden, phonetic, eliminate dead keys)
+Swedish (Dvorak)
+Swedish (Macintosh)
+Swedish (Svdvorak)
+Swedish (eliminate dead keys)
+Swedish Sign Language
+|Taiwanese|
+Saisiyat (Taiwan)
+Taiwanese (indigenous)
+|Tajik|
+Tajik (legacy)
+|Thai|
+Thai (Pattachote)
+Thai (TIS-820.2538)
+|Tswana|
+|Turkish|
+Crimean Tatar (Turkish Alt-Q)
+Crimean Tatar (Turkish F)
+Crimean Tatar (Turkish Q)
+Kurdish (Turkey, F)
+Kurdish (Turkey, Latin Alt-Q)
+Kurdish (Turkey, Latin Q)
+Turkish (Alt-Q)
+Turkish (F)
+Turkish (Sun dead keys)
+Turkish (international with dead keys)
+|Turkmen|
+Turkmen (Alt-Q)
+|Ukrainian|
+Russian (Ukraine, standard RSTU)
+Ukrainian (WinKeys)
+Ukrainian (homophonic)
+Ukrainian (legacy)
+Ukrainian (phonetic)
+Ukrainian (standard RSTU)
+Ukrainian (typewriter)
+|Urdu (Pakistan)|
+Arabic (Pakistan)
+Sindhi
+Urdu (Pakistan, CRULP)
+Urdu (Pakistan, NLA)
+|Uzbek|
+Uzbek (Latin)
+|Vietnamese|
+|Wolof|

@@ -15,6 +15,9 @@ include (ValaPrecompile)
 # Add all your vala files and required packages to the List below to include them in the build
 vala_precompile (VALA_C
     keyboard.vala
+    Pages/Behaviour.vala
+    Pages/Shortcuts.vala
+    Pages/Layout.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0
