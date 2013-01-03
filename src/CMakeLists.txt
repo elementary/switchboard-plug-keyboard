@@ -18,6 +18,10 @@ vala_precompile (VALA_C
     Pages/Behaviour.vala
     Pages/Shortcuts.vala
     Pages/Layout.vala
+    Pages/Layout/ListDisplay.vala
+    Pages/Layout/AddLayout.vala
+	Pages/Layout/LayoutHandler.vala
+	Pages/Layout/Settings.vala
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0
