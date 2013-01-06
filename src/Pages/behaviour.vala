@@ -1,10 +1,30 @@
-namespace Keyboard.Page
+namespace Keyboard.Behaviour
 {
-	class Behaviour : Gtk.Grid
+	class SettingsRepeat : Granite.Services.Settings
 	{
-		// TODO: monitor external changes of settings (e.g. dconf-editor)
+		public uint delay            { get; set; }
+		public uint repeat_interval  { get; set; }
+		public bool repeat           { get; set; }
 		
-		public Behaviour ()
+		public SettingsRepeat () { 
+			base ("org.gnome.settings-daemon.peripherals.keyboard");
+		}
+	}
+	
+	class SettingsBlink : Granite.Services.Settings
+	{
+		public int  cursor_blink_time    { get; set; }
+		public int  cursor_blink_timeout { get; set; }
+		public bool cursor_blink         { get; set; }
+		
+		public SettingsBlink () { 
+			base ("org.gnome.desktop.interface");
+		}
+	}
+	
+	class Page : Gtk.Grid
+	{
+		public Page ()
 		{
 			this.row_spacing    = 12;
 			this.column_spacing = 12;
@@ -51,17 +71,17 @@ namespace Keyboard.Page
 			this.attach (label_repeat_ms2,   3, 2, 1, 1);
 			
 			// set values from settigns
-			var settings_repeat = new GLib.Settings ("org.gnome.settings-daemon.peripherals.keyboard");
+			var settings_repeat = new Behaviour.SettingsRepeat ();
 		
-			var double_delay = (double) settings_repeat.get_uint("delay");
-			var double_speed = (double) settings_repeat.get_uint("repeat-interval");
+			var double_delay = (double) settings_repeat.delay;
+			var double_speed = (double) settings_repeat.repeat_interval;
 
 			scale_repeat_delay.set_value (double_delay);
 			scale_repeat_speed.set_value (double_speed);
 			spin_repeat_delay.set_value  (double_delay);
 			spin_repeat_speed.set_value  (double_speed);
 		
-			switch_repeat.active = settings_repeat.get_boolean("repeat");
+			switch_repeat.active = settings_repeat.repeat;
 
 			scale_repeat_delay.sensitive = switch_repeat.active;
 			label_repeat_delay.sensitive = switch_repeat.active;
@@ -71,32 +91,28 @@ namespace Keyboard.Page
 			spin_repeat_speed.sensitive  = switch_repeat.active;
 		
 			// connect signals
-			scale_repeat_delay.value_changed.connect (() =>
-			{
-				var val = scale_repeat_delay.get_value();
-				settings_repeat.set_uint ("delay", (uint) val );
-				spin_repeat_delay.set_value (val);
+			scale_repeat_delay.value_changed.connect (() => {
+				settings_repeat.delay = (uint) (spin_repeat_delay.adjustment.value = scale_repeat_delay.adjustment.value);
 			} );
 		
-			scale_repeat_speed.value_changed.connect (() =>
-			{
-				var val = scale_repeat_speed.get_value();
-				settings_repeat.set_uint ("repeat-interval", (uint) val);
-				spin_repeat_speed.set_value (val);
+			scale_repeat_speed.value_changed.connect (() => {
+				settings_repeat.repeat_interval = (uint) (spin_repeat_speed.adjustment.value = scale_repeat_speed.adjustment.value);
 			} );
 		
-			spin_repeat_delay.value_changed.connect (() =>
-			{
-				var val = spin_repeat_delay.get_value();
-				settings_repeat.set_uint ("delay", (uint) val );
-				scale_repeat_delay.set_value (val);
+			spin_repeat_delay.value_changed.connect (() => {
+				settings_repeat.delay = (uint) (scale_repeat_delay.adjustment.value = spin_repeat_delay.adjustment.value);
 			} );
 		
-			spin_repeat_speed.value_changed.connect (() =>
-			{
-				var val = spin_repeat_speed.get_value();
-				settings_repeat.set_uint ("repeat-interval", (uint) val);
-				scale_repeat_speed.set_value (val);
+			spin_repeat_speed.value_changed.connect (() => {
+				settings_repeat.repeat_interval = (uint) (scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value);
+			} );
+			
+			settings_repeat.changed["delay"].connect (() => {
+				scale_repeat_delay.adjustment.value = spin_repeat_delay.adjustment.value = (double) settings_repeat.delay;
+			} );
+			
+			settings_repeat.changed["repeat-interval"].connect (() => {
+				scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value = (double) settings_repeat.repeat_interval;
 			} );
 		
 			switch_repeat.notify["active"].connect (() => 
@@ -109,9 +125,23 @@ namespace Keyboard.Page
 				scale_repeat_speed.sensitive = active;
 				label_repeat_speed.sensitive = active;
 				spin_repeat_speed.sensitive  = active;
-			
-				settings_repeat.set_boolean ("repeat", active);
+				settings_repeat.repeat       = active;
 			} );
+			
+			settings_repeat.changed["repeat"].connect (() => 
+			{
+				var active = settings_repeat.repeat;
+
+				scale_repeat_delay.sensitive = active;
+				label_repeat_delay.sensitive = active;
+				spin_repeat_delay.sensitive  = active;
+				scale_repeat_speed.sensitive = active;
+				label_repeat_speed.sensitive = active;
+				spin_repeat_speed.sensitive  = active;
+				switch_repeat.active         = active;
+			} );
+			
+			
 		
 			/** Cursor Blinking **/
 		
@@ -156,17 +186,17 @@ namespace Keyboard.Page
 			this.attach (label_blink_s,     3, 5, 1, 1);
 		
 			// set values from settings
-			var settings_blink = new GLib.Settings ("org.gnome.desktop.interface");
+			var settings_blink = new Behaviour.SettingsBlink ();
 		
-			var double_blink_speed = (double) settings_blink.get_int ("cursor-blink-time");
-			var double_blink_time  = (double) settings_blink.get_int ("cursor-blink-timeout");
+			var double_blink_speed = (double) settings_blink.cursor_blink_time;
+			var double_blink_time  = (double) settings_blink.cursor_blink_timeout;
 		
 			scale_blink_speed.set_value (double_blink_speed);
 			scale_blink_time.set_value  (double_blink_time);
 			spin_blink_speed.set_value  (double_blink_speed);
 			spin_blink_time.set_value   (double_blink_time);
 
-			switch_blink.active = settings_blink.get_boolean("cursor-blink");
+			switch_blink.active = settings_blink.cursor_blink;
 
 			scale_blink_speed.sensitive = switch_blink.active;
 			label_blink_speed.sensitive = switch_blink.active;
@@ -176,46 +206,54 @@ namespace Keyboard.Page
 			spin_blink_time.sensitive   = switch_blink.active;
 		
 			// connect signals
-			scale_blink_speed.value_changed.connect (() =>
-			{
-				var val = scale_blink_speed.get_value ();
-				settings_blink.set_int ("cursor-blink-time", (int) val);
-				spin_blink_speed.set_value (val);
+			scale_blink_speed.value_changed.connect (() => {
+				settings_blink.cursor_blink_time = (int) (spin_blink_speed.adjustment.value = scale_blink_speed.adjustment.value);
+			} );
+
+			scale_blink_time.value_changed.connect (() => {
+				settings_blink.cursor_blink_timeout = (int) (spin_blink_time.adjustment.value = scale_blink_time.adjustment.value);
 			} );
 		
-			scale_blink_time.value_changed.connect (() =>
-			{
-				var val = scale_blink_time.get_value ();
-				settings_blink.set_int ("cursor-blink-timeout", (int) val);
-				spin_blink_time.set_value (val);
+			spin_blink_speed.value_changed.connect (() => {
+				settings_blink.cursor_blink_time = (int) (scale_blink_speed.adjustment.value = spin_blink_speed.adjustment.value);
 			} );
 		
-			spin_blink_speed.value_changed.connect (() =>
-			{
-				var val = spin_blink_speed.get_value ();
-				settings_blink.set_int ("cursor-blink-time", (int) val);
-				scale_blink_speed.set_value (val);
+			spin_blink_time.value_changed.connect (() => {
+				settings_blink.cursor_blink_timeout = (int) (scale_blink_time.adjustment.value = spin_blink_time.adjustment.value);
 			} );
-		
-			spin_blink_time.value_changed.connect (() =>
-			{
-				var val = spin_blink_time.get_value ();
-				settings_blink.set_int ("cursor-blink-timeout", (int) val);
-				scale_blink_time.set_value (val);
+			
+			settings_blink.changed["cursor-blink-time"].connect (() => {
+				scale_blink_speed.adjustment.value = spin_blink_speed.adjustment.value = (double) settings_blink.cursor_blink_time;
+			} );
+			
+			settings_blink.changed["cursor-blink-timeout"].connect (() => {
+				scale_blink_time.adjustment.value = spin_blink_time.adjustment.value = (double) settings_blink.cursor_blink_timeout;
 			} );
 		
 			switch_blink.notify["active"].connect (() => 
 			{
 				var active = switch_blink.active;
-			
+
 				scale_blink_speed.sensitive = active;
 				label_blink_speed.sensitive = active;
 				spin_blink_speed.sensitive  = active;
 				scale_blink_time.sensitive  = active;
 				label_blink_time.sensitive  = active;
 				spin_blink_time.sensitive   = active;
+				settings_blink.cursor_blink = active;
+			} );
 			
-				settings_blink.set_boolean ("cursor-blink", active);
+			settings_blink.changed["cursor-blink"].connect (() => 
+			{
+				var active = settings_blink.cursor_blink;
+
+				scale_blink_speed.sensitive = active;
+				label_blink_speed.sensitive = active;
+				spin_blink_speed.sensitive  = active;
+				scale_blink_time.sensitive  = active;
+				label_blink_time.sensitive  = active;
+				spin_blink_time.sensitive   = active;
+				switch_blink.active         = active;
 			} );
 
 			/** Test Settings **/

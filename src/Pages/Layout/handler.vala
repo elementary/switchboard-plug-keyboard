@@ -1,8 +1,8 @@
-namespace Keyboard.Page
+namespace Keyboard.Layout
 {
 	// class that parses the layout file, provides lists of languages and
 	// variants, and converts between layout names and their gsettings codes
-	class LayoutHandler : GLib.Object
+	class Handler : GLib.Object
 	{
 		Layout[]  _layouts;
 	
@@ -12,7 +12,7 @@ namespace Keyboard.Page
 		public string[] language_names { get {return _language_names;} }
 		public string[] language_codes { get {return _language_codes;} }
 	
-		public LayoutHandler ()
+		public Handler ()
 		{
 			foreach (var l in parse_languages ())
 			{

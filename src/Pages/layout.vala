@@ -1,11 +1,11 @@
-namespace Keyboard.Page
+namespace Keyboard.Layout
 {
 	// global handlers
-	LayoutHandler handler;
+	Layout.Handler handler;
 	
-	class Layout : Gtk.Grid
+	class Page : Gtk.Grid
 	{
-		public Layout ()
+		public Page ()
 		{
 			this.row_spacing    = 12;
 			this.column_spacing = 12;
@@ -13,7 +13,7 @@ namespace Keyboard.Page
 			this.column_homogeneous = false;
 			this.row_homogeneous    = false;
 			
-			handler  = new LayoutHandler ();
+			handler  = new Layout.Handler ();
 			
 			// first some labels
 			var label_1   = new Gtk.Label (_("Allow different layouts for individual windows:"));
@@ -40,17 +40,27 @@ namespace Keyboard.Page
 			this.attach (button1, 2, 1, 1, 1);
 			this.attach (button2, 2, 2, 1, 1);
 			
-			var settings = new Page.SettingsGroups();
+			var settings = new Layout.SettingsGroups();
 			
+			// connect switch signals
 			switch_main.active = settings.group_per_window;
 			
+			button1.sensitive = button2.sensitive = switch_main.active;
+			label_2.sensitive = switch_main.active;
+				
 			switch_main.notify["active"].connect( () => {
 				settings.group_per_window = switch_main.active;
-				
 				button1.sensitive = button2.sensitive = switch_main.active;
 				label_2.sensitive = switch_main.active;
 			} );
 			
+			settings.changed["group-per-window"].connect (() => {
+				switch_main.active = settings.group_per_window;
+				button1.sensitive = button2.sensitive = switch_main.active;
+				label_2.sensitive = switch_main.active;
+			} );
+			
+			// connect radio button signals
 			if( settings.default_group >= 0 )
 				button1.active = true;
 			else
@@ -59,9 +69,16 @@ namespace Keyboard.Page
 			button1.toggled.connect (() => { settings.default_group =  0; } );
 			button2.toggled.connect (() => { settings.default_group = -1; } );	
 			
-			// tree view to display the current layouts
-			var display = new ListDisplay ();
+			settings.changed["default-group"].connect (() => {
+				if( settings.default_group >= 0 )
+					button1.active = true;
+				else
+					button2.active = true;
+			} );
 			
+			// tree view to display the current layouts
+			var display = new Layout.Display ();
+		
 			this.attach (display, 0, 0, 1, 4);
 			
 			// Test entry

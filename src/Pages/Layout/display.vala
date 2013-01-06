@@ -1,10 +1,10 @@
-namespace Keyboard.Page
+namespace Keyboard.Layout
 {
 	// widget to display/add/remove/move keyboard layouts
 	// interacts with class SettingsLayout
-	class ListDisplay : Gtk.Grid
+	class Display : Gtk.Grid
 	{
-		public ListDisplay ()
+		public Display ()
 		{
 			var settings = new SettingsLayouts ();
 			var list = create_list_store (settings.layouts, true);

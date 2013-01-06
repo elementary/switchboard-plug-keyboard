@@ -1,4 +1,4 @@
-namespace Keyboard.Page
+namespace Keyboard.Layout
 {
 	// class to interact with gsettings and add/remove keyboard layouts
 	class SettingsLayouts : Granite.Services.Settings
