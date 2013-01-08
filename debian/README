@@ -11,7 +11,7 @@ However, you'll still have to fill in some fields manually to use it.
 
     ### MAKING THIS THING WORK ###
 First of all, replace the template plug name with the name of your plug:
-  $ cd debian; sed -i s/switchboard-plug-template/switchboard-plug-<your-plug-name-here>/g *
+  $ cd debian; sed -i s/switchboard-plug-keyboard/switchboard-plug-<your-plug-name-here>/g *
 Without the <brackets>, of course. It will replace the name in all files.
 If it complains about source not being a usual file, it's OK.
 

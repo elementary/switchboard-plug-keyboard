@@ -21,7 +21,7 @@ namespace Keyboard.Shortcuts
 			scroll.get_style_context().set_junction_sides(Gtk.JunctionSides.BOTTOM);
 			tbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 			tbar.get_style_context().set_junction_sides(Gtk.JunctionSides.TOP);
-
+/*
 			var add_button    = new Gtk.ToolButton (null, _("Add"));
 			var remove_button = new Gtk.ToolButton (null, _("Remove"));
 		
@@ -33,9 +33,9 @@ namespace Keyboard.Shortcuts
 		
 			tbar.insert (add_button,    -1);
 			tbar.insert (remove_button, -1);
-		
+		*/
 			this.attach (scroll, 0, 0, 1, 1);
-			this.attach (tbar,   0, 1, 1, 1);	
+			//this.attach (tbar,   0, 1, 1, 1);	
 		}
 	}
 }

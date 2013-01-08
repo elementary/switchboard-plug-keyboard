@@ -55,33 +55,28 @@ namespace Keyboard.Layout
 		}
 
 		// returns a string with the name
-		public string name_from_code (string settings_code, string sep = " - ")
+		public bool name_from_code (string settings_code, out string name, out string vname)
 		{
-			string name, vname, code, vcode;
+			string code, vcode;
 			
 			code  = settings_code.split("\t")[0];
 			vcode = settings_code.split("\t")[1];
+			
+			if (code==null)
+				return false;
+			if (vcode==null)
+				vcode = "";
 			
 			for (int i = 0; i < _language_codes.length; i++)
 			{
 				if (_language_codes[i] == code)
 				{
 					name  = _language_names[i];
-				
-					if (vcode != null)
-					{
-						if ((vname = _layouts[i].name_from_code (vcode)) == (string) null)
-						{
-							return name + sep + _("Default");
-						}
-
-						return name + sep + vname;
-					}
-				
-					return name + sep + _("Default");
+					vname = _layouts[i].name_from_code (vcode);
+					return true;
 				}
 			}
-			return (string) null;
+			return false;
 		}
 	
 		// returns a list of variants of a given language

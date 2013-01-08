@@ -7,7 +7,7 @@ namespace Keyboard.Shortcuts
 		{
 			this.row_spacing    = 12;
 			this.column_spacing = 12;
-			this.margin         = 30;
+			this.margin         = 20;
 			this.expand         = true;
 		
 			var notebook = new Granite.Widgets.StaticNotebook ();

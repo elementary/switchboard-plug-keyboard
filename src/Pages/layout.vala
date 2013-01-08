@@ -107,15 +107,20 @@ namespace Keyboard.Layout
 		Gtk.ListStore list_store = new Gtk.ListStore (1, typeof (string));
 		Gtk.TreeIter iter;
 
+		string item, name = "", vname = "";	
+	
 		foreach (string str in strv)
-		{
-			string item;
-			
+		{	
 			if(convert)
-				item = handler.name_from_code (str);
+			{
+				handler.name_from_code (str, out name, out vname);
+				item = name + " - " + vname;
+			}
 			else
+			{
 				item = str;
-
+			}
+			
 			list_store.append (out iter);
 			list_store.set (iter, 0, item);	
 		}

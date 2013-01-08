@@ -1,25 +1,23 @@
-Source: switchboard-plug-template
+Source: switchboard-plug-keyboard
 Section: x11
 Priority: optional
 Maintainer: Sergey "Shnatsel" Davidoff <shnatsel@gmail.com>
-Build-Depends: debhelper (>= 7.0.50~), cmake, libpantheon-dev
+Build-Depends: debhelper (>= 7.0.50~), cmake, libpantheon-dev, libgranite-dev, libgtk-3-dev
 Standards-Version: 3.9.2
 Homepage: https://launchpad.net/pantheon-plugs
 
-Package: switchboard-plug-template
+Package: switchboard-plug-keyboard
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Enhances: switchboard
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Switchboard plug for keyboard settings
+ This plug can be used to change several keyboard settings, for example the delay and speed of the key repetition, or the cursor blinking speed. You can change your keyboard layout, and use multiple layouts at the same time. Keyboard shortcuts are also part of this plug.
 
-Package: switchboard-plug-template-dbg
+Package: switchboard-plug-keyboard-dbg
 Architecture: any
 Section: debug
 Priority: extra
-Depends: switchboard-plug-template (= ${binary:Version}), ${misc:Depends}
-Enhances: switchboard-plug-template
-Description: <insert up to 60 chars description> (debugging symbols)
- <insert long description, indented with spaces>
- .
- This package contains debugging symbols for switchboard-plug-template.
+Depends: switchboard-plug-keyboard (= ${binary:Version}), ${misc:Depends}
+Enhances: switchboard-plug-keyboard
+Description: Switchboard plug for keyboard settings (debugging symbols)
+ This package contains debugging symbols for switchboard-plug-keyboard.

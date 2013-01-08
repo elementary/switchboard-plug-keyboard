@@ -29,6 +29,24 @@ namespace Keyboard.Layout
 			layouts = val;
 		}
 		
+		public void layout_up (int i)
+		{
+			var l = layouts;
+			var tmp = l[i];
+			l[i] = l[i-1];
+			l[i-1] = tmp;
+			layouts = l;
+		}
+		
+		public void layout_down (int i)
+		{
+			var l = layouts;
+			var tmp = l[i];
+			l[i] = l[i+1];
+			l[i+1] = tmp;
+			layouts = l;
+		}
+		
 		public SettingsLayouts()
 		{
 			base ("org.gnome.libgnomekbd.keyboard");

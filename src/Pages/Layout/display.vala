@@ -55,76 +55,121 @@ namespace Keyboard.Layout
 			this.attach (scroll, 0, 0, 1, 1);
 			this.attach (tbar,   0, 1, 1, 1);	
 			
-			// add a new layout, also 3 nested lambdas should be avoided...
 			var pop = new AddLayout ();
 
-			add_button.clicked.connect( () =>
-			{
+			add_button.clicked.connect( () => {
 				pop.move_to_widget (add_button);
-					
-				pop.layout_added.connect ((lang, layout) =>
-				{
-					Gtk.TreeIter iter;
-					list.append (out iter);
-					
-					var item = lang;
-					
-					if(layout != null)
-						item += " - " + layout;
-					
-					var add = true;
-					
-					Gtk.TreeModelForeachFunc print_row = (model, path, iter) => 
-					{
-						Value cell1;
-						list.get_value (iter, 0, out cell1);
-						if ((string)cell1 == item)
-						{
-							add = false;
-							return true;
-						}
-						return false;
-					};
-					
-					list.foreach (print_row);
-					
-					if (add)
-					{
-						list.set (iter, 0, item);
-						settings.add_layout (handler.code_from_name (lang, layout));
-					}
-				} );
+				add_item (settings, tree, pop);
 			} );
 
-			// remove the selected layouts
-			remove_button.clicked.connect( () =>
+			remove_button.clicked.connect( () => {
+				remove_item (settings, tree);
+			} );
+			
+			up_button.clicked.connect (() => {
+				move_item (settings, tree, 0);
+			} );
+			
+			down_button.clicked.connect (() => {
+				move_item (settings, tree, 1);
+			} );
+		}
+		
+		void add_item (Layout.SettingsLayouts settings, Gtk.TreeView tree, Layout.AddLayout pop)
+		{		
+			pop.layout_added.connect ((lang, layout) =>
 			{
-				var sel = tree.get_selection();
-				weak Gtk.TreeModel model;
-				List<Gtk.TreePath> paths = sel.get_selected_rows (out model);
-				List<Gtk.TreeIter?> iters = null;
-					
-				foreach (Gtk.TreePath path in paths)
+				Gtk.TreeIter iter;
+				
+				var item = lang;
+				
+				if(layout != null)
+					item += " - " + layout;
+				
+				var add = true;
+				
+				var list = tree.model as Gtk.ListStore;
+				
+				Gtk.TreeModelForeachFunc print_row = (model, path, iter) => 
 				{
-					Gtk.TreeIter iter;
-					if (model.get_iter(out iter, path))
+					Value cell1;
+					list.get_value (iter, 0, out cell1);
+					if ((string)cell1 == item)
 					{
-						iters.prepend(iter);
+						add = false;
+						return true;
 					}
-				}
-
-				foreach (Gtk.TreeIter iter in iters)
+					return false;
+				};
+				
+				list.foreach (print_row);
+				
+				if (add)
 				{
-					Value val;
-					model.get_value (iter, 0, out val);
-					
-					var layout = ((string) val).split(" - ");
-	
-					settings.remove_layout (handler.code_from_name(layout[0], layout[1]));	
-
-					(model as Gtk.ListStore).remove(iter);
-				}
+					list.append (out iter);
+					stdout.printf ("Adding: '%s', '%s'\n", item, handler.code_from_name (lang, layout));
+					list.set (iter, 0, item);
+					settings.add_layout (handler.code_from_name (lang, layout));
+				} 
 			} );
+		}
+		
+		void remove_item (Layout.SettingsLayouts settings, Gtk.TreeView tree)
+		{
+			Gtk.TreeModel model;
+			Gtk.TreeIter  iter;
+			
+			var select = tree.get_selection();
+			select.get_selected (out model, out iter);
+			
+			GLib.Value val;
+			model.get_value (iter, 0, out val);
+				
+			var layout = ((string) val).split(" - ");
+
+			settings.remove_layout (handler.code_from_name(layout[0], layout[1]));	
+
+			(model as Gtk.ListStore).remove(iter);
+		}
+		
+		void move_item (Layout.SettingsLayouts settings, Gtk.TreeView tree, int dir)
+		{
+			Gtk.TreeModel model;
+			Gtk.TreeIter  iter_current, iter_new;
+			GLib.Value    val_current,  val_new;
+			Gtk.TreePath  path_current;
+			
+			var select = tree.get_selection();
+			select.get_selected (out model, out iter_current);
+			path_current = model.get_path (iter_current);
+			
+			iter_new = iter_current;
+			
+			switch (dir) 
+			{
+				case 1: if (model.iter_next (ref iter_new) == false)
+							return;
+						break;
+				case 0: if (model.iter_previous (ref iter_new) == false)
+							return;
+						break;
+			}
+			
+			tree.set_cursor (model.get_path (iter_new), null, false);
+			
+			model.get_value (iter_current, 0, out val_current);
+			model.get_value (iter_new,     0, out val_new);
+			
+			(model as Gtk.ListStore).set (iter_current, 0, (string)val_new);
+			(model as Gtk.ListStore).set (iter_new,     0, (string)val_current);
+			
+			switch (dir) 
+			{
+				case 1: settings.layout_down ((path_current.get_indices()) [0]);
+						break;
+				case 0: settings.layout_up   ((path_current.get_indices()) [0]);
+						break;
+			}
 		}
 	}
 }
