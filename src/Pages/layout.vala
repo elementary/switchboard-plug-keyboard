@@ -24,8 +24,8 @@ namespace Keyboard.Layout
 			label_2.valign = Gtk.Align.CENTER;
 			label_2.halign = Gtk.Align.END;
 			
-			this.attach (label_1, 1, 0, 1, 1);
-			this.attach (label_2, 1, 1, 1, 1);
+			this.attach (label_1, 4, 0, 1, 1);
+			this.attach (label_2, 4, 1, 1, 1);
 			
 			// widgets to change settings
 			var switch_main = new Gtk.Switch();
@@ -36,9 +36,9 @@ namespace Keyboard.Layout
 			var button1 = new Gtk.RadioButton.with_label(null, _("the default layout"));
 			var button2 = new Gtk.RadioButton.with_label_from_widget (button1, _("the previous window's layout"));
 			
-			this.attach (switch_main, 2, 0, 1, 1);
-			this.attach (button1, 2, 1, 1, 1);
-			this.attach (button2, 2, 2, 1, 1);
+			this.attach (switch_main, 5, 0, 1, 1);
+			this.attach (button1,     5, 1, 1, 1);
+			this.attach (button2,     5, 2, 1, 1);
 			
 			var settings = new Layout.SettingsGroups();
 			
@@ -79,7 +79,7 @@ namespace Keyboard.Layout
 			// tree view to display the current layouts
 			var display = new Layout.Display ();
 		
-			this.attach (display, 0, 0, 1, 4);
+			this.attach (display, 0, 0, 4, 4);
 			
 			// Test entry
 			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your layout..."));
@@ -96,7 +96,7 @@ namespace Keyboard.Layout
 				}
 			});
 			
-			this.attach (entry_test, 1, 3, 3, 1);
+			this.attach (entry_test, 4, 3, 3, 1);
 		} 
 	}
 	

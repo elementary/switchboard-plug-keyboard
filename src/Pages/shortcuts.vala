@@ -1,5 +1,25 @@
 namespace Keyboard.Shortcuts
 {
+	string? from_dconf (string? s)
+	{
+		var str = s.replace ("<Super>", "⌘ + ")
+		           .replace ("<Shift>", "⇧ + ")
+		           .replace ("<Alt>", "⎇ + ")
+		           .replace ("<Ctrl>", "Control + ");
+		           
+		return str;
+	}
+	
+	string? to_dconf (string? s)
+	{
+		var str = s.replace ("⌘ + ", "<Super>")
+		           .replace ("⇧ + ", "<Shift>")
+		           .replace ("⎇ + ", "<Alt>")
+		           .replace ("Control + ", "<Ctrl>");
+		           
+		return str;
+	}
+		
 	// main class
 	class Page : Gtk.Grid
 	{

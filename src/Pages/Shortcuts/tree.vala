@@ -6,8 +6,8 @@ namespace Keyboard.Shortcuts
 		{
 			var store = new Gtk.ListStore (4, typeof (string),
 			                                  typeof (string), 
-			                                  typeof (Shortcuts.Settings.Schema), //hidden
-			                                  typeof (string));                   //hidde
+			                                  typeof (Shortcuts.Settings.Schema),
+			                                  typeof (string));
 			Gtk.TreeIter iter;
 
 			var settings = new Shortcuts.Settings ();
@@ -26,8 +26,7 @@ namespace Keyboard.Shortcuts
 			
 			var cell_desc = new Gtk.CellRendererText ();
 			var cell_edit = new Gtk.CellRendererText ();
-			cell_edit.editable = true;
-			
+
 			this.set_model (store);
 
 			this.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
@@ -35,18 +34,48 @@ namespace Keyboard.Shortcuts
 			
 			this.headers_visible = false;
 			this.expand = true;
-			
-			cell_edit.edited.connect ((path, text) =>
+
+			this.key_press_event.connect ((event) =>
 			{
-				Gtk.TreeIter iter2;
-				GLib.Value schema, key;
+				Gtk.TreeModel model;
+				Gtk.TreeIter  iter1;
+			
+				var select = this.get_selection ();
+				select.get_selected (out model, out iter1);
+			
+				GLib.Value val, schema, key;
+				model.get_value (iter1, 0, out val);
+				store.get_value (iter1, 2, out schema);
+				store.get_value (iter1, 3, out key);
 				
-				store.get_iter (out iter2, new Gtk.TreePath.from_string (path));
-				store.get_value (iter2, 2, out schema);
-				store.get_value (iter2, 3, out key);
-				store.set (iter2, 1, text);
+				string str = "";
+
+				if ( 0 != event.is_modifier) return true;
 				
-				settings.set_val((Shortcuts.Settings.Schema)schema, (string)key, text);
+				if ((event.state & Gdk.ModifierType.MOD1_MASK)    > 0) str += "<Alt>";
+				if ((event.state & Gdk.ModifierType.CONTROL_MASK) > 0) str += "<Ctrl>";
+				if ((event.state & Gdk.ModifierType.SHIFT_MASK)   > 0) str += "<Shift>";
+				if ((event.state & Gdk.ModifierType.MOD5_MASK)    > 0) str += "<Meta>";	
+				if ((event.state & (Gdk.ModifierType) 201326656)  > 0) str += "<Super>";
+				
+				var km = Gdk.Keymap.get_default ();
+				
+				var kmk = Gdk.KeymapKey() {
+					keycode = (uint)(event.hardware_keycode), 
+					group   = 0,
+					level   = 0
+				};
+				
+				str += Gdk.keyval_name (km.lookup_key(kmk)).up ();
+				
+				if (event.keyval == Gdk.Key.BackSpace)
+					str = "";
+					
+				store.set (iter1, 1, from_dconf (str));
+				
+				settings.set_val((Shortcuts.Settings.Schema)schema, (string)key, str);
+				
+				return true;
 			} );
 		}
 	}

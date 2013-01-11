@@ -19,17 +19,17 @@ namespace Keyboard.Shortcuts
 		public string get_val (Schema schema, string key)
 		{
 			if (schema == Schema.MEDIA)
-				return schemas[schema].get_string (key);
+				return Shortcuts.from_dconf (schemas[schema].get_string (key));
 			else
-				return (schemas[schema].get_strv (key)) [0];
+				return Shortcuts.from_dconf ((schemas[schema].get_strv (key)) [0]);
 		}
 		
 		public bool set_val  (Schema schema, string key, string value)
 		{
 			if (schema == Schema.MEDIA)
-				schemas[schema].set_string (key, value);
+				schemas[schema].set_string ( key, to_dconf (value));
 			else
-				schemas[schema].set_strv (key, {value});
+				schemas[schema].set_strv (key, {to_dconf(value)});
 			return true;
 		}
 	}

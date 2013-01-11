@@ -15,6 +15,7 @@ namespace Keyboard.Layout
 			tree.headers_visible = false;
 			tree.expand = true;
 			
+			
 			var scroll = new Gtk.ScrolledWindow(null, null);
 			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			scroll.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
