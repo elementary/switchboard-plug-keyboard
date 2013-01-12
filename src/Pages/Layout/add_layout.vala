@@ -47,7 +47,8 @@ namespace Keyboard.Layout
 			grid.attach (language_box, 1, 0, 1, 1);
 			grid.attach (layout_box,   1, 1, 1, 1);
 			
-			language_box.changed.connect( () => {
+			language_box.changed.connect( () =>
+			{
 				Value val;
 				Gtk.TreeIter iter;
 				

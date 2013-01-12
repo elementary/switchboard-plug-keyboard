@@ -11,10 +11,11 @@ namespace Keyboard.Layout
 			var tree = new Gtk.TreeView.with_model (list);
 			var cell = new Gtk.CellRendererText ();
 		
+			int count = settings.layouts.length - 1;
+		
 			tree.insert_column_with_attributes (-1, null, cell, "text", 0);
 			tree.headers_visible = false;
 			tree.expand = true;
-			
 			
 			var scroll = new Gtk.ScrolledWindow(null, null);
 			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
@@ -48,6 +49,10 @@ namespace Keyboard.Layout
 			up_button.set_icon_name     ("go-up-symbolic");
 			down_button.set_icon_name   ("go-down-symbolic");
 			
+			remove_button.sensitive = false;
+			up_button.sensitive     = false;
+			down_button.sensitive   = false;
+			
 			tbar.insert (add_button,    -1);
 			tbar.insert (remove_button, -1);			
 			tbar.insert (up_button,     -1);
@@ -60,10 +65,12 @@ namespace Keyboard.Layout
 
 			add_button.clicked.connect( () => {
 				pop.move_to_widget (add_button);
+				count++;
 				add_item (settings, tree, pop);
 			} );
 
 			remove_button.clicked.connect( () => {
+				count--;
 				remove_item (settings, tree);
 			} );
 			
@@ -73,6 +80,23 @@ namespace Keyboard.Layout
 			
 			down_button.clicked.connect (() => {
 				move_item (settings, tree, 1);
+			} );
+			
+			tree.cursor_changed.connect (() =>
+			{
+				Gtk.TreePath path;
+				
+				tree.get_cursor (out path, null);
+				
+				int index = (path.get_indices ())[0];
+				
+				up_button.sensitive     = (index == 0)     ? false : true;
+				down_button.sensitive   = (index == count) ? false : true;
+				remove_button.sensitive = (count <= 0)     ? false : true;
+			} );
+			
+			this.notify["count"].connect (() => {
+				remove_button.sensitive = (count <= 0)     ? false : true;
 			} );
 		}
 		
@@ -91,7 +115,7 @@ namespace Keyboard.Layout
 				
 				var list = tree.model as Gtk.ListStore;
 				
-				Gtk.TreeModelForeachFunc print_row = (model, path, iter) => 
+				Gtk.TreeModelForeachFunc check = (model, path, iter) => 
 				{
 					Value cell1;
 					list.get_value (iter, 0, out cell1);
@@ -103,14 +127,14 @@ namespace Keyboard.Layout
 					return false;
 				};
 				
-				list.foreach (print_row);
+				list.foreach (check);
 				
 				if (add)
 				{
 					list.append (out iter);
-					stdout.printf ("Adding: '%s', '%s'\n", item, handler.code_from_name (lang, layout));
 					list.set (iter, 0, item);
 					settings.add_layout (handler.code_from_name (lang, layout));
+					tree.set_cursor (list.get_path(iter), null, false);
 				} 
 			} );
 		}

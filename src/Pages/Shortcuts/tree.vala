@@ -1,17 +1,21 @@
 namespace Keyboard.Shortcuts
 {
+	// contains the shortcuts and handels all changes in gsettings
 	private class Tree : Gtk.TreeView
 	{
+		private Shortcuts.Settings settings;
+		
 		public Tree ( string[] actions, Shortcuts.Settings.Schema[] schemas, string[] keys )
 		{
 			var store = new Gtk.ListStore (4, typeof (string),
 			                                  typeof (string), 
 			                                  typeof (Shortcuts.Settings.Schema),
 			                                  typeof (string));
+
+			settings = new Shortcuts.Settings ();
+
 			Gtk.TreeIter iter;
-
-			var settings = new Shortcuts.Settings ();
-
+			
 			// create list store
 			for (int i = 0; i < actions.length; i++)
 			{
@@ -19,64 +23,53 @@ namespace Keyboard.Shortcuts
 			
 				store.append (out iter);
 				store.set (iter, 0, actions[i], 
-				                 1, shortcut,
+				                 1, shortcut.to_readable(),
 				                 2, schemas[i],    // hidden
 				                 3, keys[i], -1);  // hidden
 			}
 			
 			var cell_desc = new Gtk.CellRendererText ();
-			var cell_edit = new Gtk.CellRendererText ();
-
+			var cell_edit = new Gtk.CellRendererAccel ();
+			
+			cell_edit.editable   = true;
+			cell_edit.accel_mode = Gtk.CellRendererAccelMode.OTHER;
+			
 			this.set_model (store);
 
 			this.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
 			this.insert_column_with_attributes (-1, null, cell_edit, "text", 1);
 			
 			this.headers_visible = false;
-			this.expand = true;
-
-			this.key_press_event.connect ((event) =>
+			this.expand          = true;
+			
+			cell_edit.accel_edited.connect ((path, key, mods) => 
 			{
-				Gtk.TreeModel model;
-				Gtk.TreeIter  iter1;
-			
-				var select = this.get_selection ();
-				select.get_selected (out model, out iter1);
-			
-				GLib.Value val, schema, key;
-				model.get_value (iter1, 0, out val);
-				store.get_value (iter1, 2, out schema);
-				store.get_value (iter1, 3, out key);
-				
-				string str = "";
-
-				if ( 0 != event.is_modifier) return true;
-				
-				if ((event.state & Gdk.ModifierType.MOD1_MASK)    > 0) str += "<Alt>";
-				if ((event.state & Gdk.ModifierType.CONTROL_MASK) > 0) str += "<Ctrl>";
-				if ((event.state & Gdk.ModifierType.SHIFT_MASK)   > 0) str += "<Shift>";
-				if ((event.state & Gdk.ModifierType.MOD5_MASK)    > 0) str += "<Meta>";	
-				if ((event.state & (Gdk.ModifierType) 201326656)  > 0) str += "<Super>";
-				
-				var km = Gdk.Keymap.get_default ();
-				
-				var kmk = Gdk.KeymapKey() {
-					keycode = (uint)(event.hardware_keycode), 
-					group   = 0,
-					level   = 0
-				};
-				
-				str += Gdk.keyval_name (km.lookup_key(kmk)).up ();
-				
-				if (event.keyval == Gdk.Key.BackSpace)
-					str = "";
-					
-				store.set (iter1, 1, from_dconf (str));
-				
-				settings.set_val((Shortcuts.Settings.Schema)schema, (string)key, str);
-				
-				return true;
+				var shortcut = new Shortcut (key, mods);
+				change_shortcut (path, shortcut);
 			} );
+			
+			cell_edit.accel_cleared.connect ((path) => 
+			{
+				var shortcut = new Shortcut (0, (Gdk.ModifierType) 0);
+				change_shortcut (path, shortcut);
+			} );
+		}
+		
+		private bool change_shortcut (string path, Shortcut shortcut)
+		{
+			Gtk.TreeIter  iter;
+			GLib.Value    val, schema;
+			
+			model.get_iter (out iter, new Gtk.TreePath.from_string (path));
+				
+			model.get_value (iter, 3, out val);
+			model.get_value (iter, 2, out schema);
+
+			(model as Gtk.ListStore).set (iter, 1, shortcut.to_readable ());
+				
+			settings.set_val((Shortcuts.Settings.Schema)schema, (string)val, shortcut);
+			
+			return true;
 		}
 	}
 }

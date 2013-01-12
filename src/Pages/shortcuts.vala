@@ -1,25 +1,5 @@
 namespace Keyboard.Shortcuts
-{
-	string? from_dconf (string? s)
-	{
-		var str = s.replace ("<Super>", "⌘ + ")
-		           .replace ("<Shift>", "⇧ + ")
-		           .replace ("<Alt>", "⎇ + ")
-		           .replace ("<Ctrl>", "Control + ");
-		           
-		return str;
-	}
-	
-	string? to_dconf (string? s)
-	{
-		var str = s.replace ("⌘ + ", "<Super>")
-		           .replace ("⇧ + ", "<Shift>")
-		           .replace ("⎇ + ", "<Alt>")
-		           .replace ("Control + ", "<Ctrl>");
-		           
-		return str;
-	}
-		
+{		
 	// main class
 	class Page : Gtk.Grid
 	{
@@ -32,15 +12,17 @@ namespace Keyboard.Shortcuts
 		
 			var notebook = new Granite.Widgets.StaticNotebook ();
 		
-			notebook.append_page (new Display (windows ()),     new Gtk.Label (_("Windows")));
-			notebook.append_page (new Display (workspaces ()),  new Gtk.Label (_("Workspaces")));
+			notebook.append_page (new Display (windows     ()), new Gtk.Label (_("Windows")));
+			notebook.append_page (new Display (workspaces  ()), new Gtk.Label (_("Workspaces")));
 			notebook.append_page (new Display (screenshots ()), new Gtk.Label (_("Screenshots")));
-			notebook.append_page (new Display (media ()),       new Gtk.Label (_("Media")));
-			notebook.append_page (new Display (a11y ()),        new Gtk.Label (_("Accessibility")));
-
+			notebook.append_page (new Display (media       ()), new Gtk.Label (_("Media")));
+			notebook.append_page (new Display (launchers   ()), new Gtk.Label (_("Launchers")));
+			notebook.append_page (new Display (a11y        ()), new Gtk.Label (_("Accessibility")));
+ 
 			this.attach (notebook, 0, 0, 1, 1);
 		}
 
+		// the following methods create all the tree views
 		private Gtk.TreeView windows ()
 		{
 			string[] actions = {
@@ -56,6 +38,8 @@ namespace Keyboard.Shortcuts
 				_("Toggle Shaded"),
 				_("Toggle on all Workspaces"),
 				_("Toggle always on Top"),
+				_("Switch Windows"),
+				_("Switch Windows backwards"),
 				_("Expose Windows"),
 				_("Expose all Windows")
 			};
@@ -70,6 +54,8 @@ namespace Keyboard.Shortcuts
 				Settings.Schema.WM,
 				Settings.Schema.MUTTER,
 				Settings.Schema.MUTTER,
+				Settings.Schema.WM,
+				Settings.Schema.WM,
 				Settings.Schema.WM,
 				Settings.Schema.WM,
 				Settings.Schema.WM,
@@ -90,6 +76,8 @@ namespace Keyboard.Shortcuts
 				"toggle-shaded",
 				"toggle-on-all-workspaces",
 				"toggle-above",
+				"switch-windows",
+				"switch-windows-backward",
 				"expose-windows",
 				"expose-all-windows"
 			};
@@ -214,6 +202,38 @@ namespace Keyboard.Shortcuts
 				"area-screenshot-clip"
 			};
 		
+		return new Shortcuts.Tree( actions, schemas, keys );
+		}
+		
+		private Gtk.TreeView launchers ()
+		{
+			string[] actions = {
+				_("Calculator"),
+				_("Email"),
+				_("Help"),
+				_("Home Folder"),
+				_("File Search"),
+				_("Internet Browser")
+			};
+
+			Settings.Schema[] schemas = {
+				Settings.Schema.MEDIA,
+				Settings.Schema.MEDIA,
+				Settings.Schema.MEDIA,
+				Settings.Schema.MEDIA,
+				Settings.Schema.MEDIA,
+				Settings.Schema.MEDIA
+			};
+		
+			string[] keys = {
+				"calculator",
+				"email",
+				"help",
+				"home",
+				"search",
+				"www"
+			};
+		
 			return new Shortcuts.Tree( actions, schemas, keys );
 		}
 		
@@ -272,7 +292,6 @@ namespace Keyboard.Shortcuts
 				_("Toggle On Screen Keyboard"),
 				_("Toggle Screenreader"),
 				_("Toggle High Contrast")
-				
 			};
 
 			Settings.Schema[] schemas = {

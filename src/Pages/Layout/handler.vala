@@ -25,6 +25,29 @@ namespace Keyboard.Layout
 			}
 		}
 	
+		public bool valid_code (string settings_code)
+		{
+			string code, vcode;
+
+			code  = settings_code.split("\t")[0];
+			vcode = settings_code.split("\t")[1];
+			
+			if (code == null)
+				return false;
+			
+			for (int i = 0; i < _language_codes.length; i++)
+			{
+				if (_language_codes[i] == code)
+				{
+					if (vcode == null)
+						return true;
+					if (_layouts[i].name_from_code (vcode) != null)
+						return true;
+				}
+			}
+			return false;
+		}
+		
 		// returns gsettings code
 		public string code_from_name (string name, string? vname = null, string sep = "\t")
 		{
@@ -58,6 +81,8 @@ namespace Keyboard.Layout
 		public bool name_from_code (string settings_code, out string name, out string vname)
 		{
 			string code, vcode;
+			
+			vname = name = "";
 			
 			code  = settings_code.split("\t")[0];
 			vcode = settings_code.split("\t")[1];

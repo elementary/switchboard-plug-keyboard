@@ -5,6 +5,17 @@ namespace Keyboard.Layout
 	{
 		public string[] layouts { get; set; }
 		
+		public void validate ()
+		{
+			string[] copy = {};
+			foreach (string str in layouts)
+			{
+				if (handler.valid_code(str))
+					copy += str;
+			}
+			layouts = copy;
+		}
+		
 		public void add_layout (string layout)
 		{
 			foreach (string str in layouts)
@@ -50,6 +61,7 @@ namespace Keyboard.Layout
 		public SettingsLayouts()
 		{
 			base ("org.gnome.libgnomekbd.keyboard");
+			validate ();
 		}
 	}
 	

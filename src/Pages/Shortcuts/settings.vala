@@ -4,7 +4,7 @@ namespace Keyboard.Shortcuts
 	// note that media key are stored as strings, all others as string vectors
 	class Settings : GLib.Object
 	{
-		public enum Schema { WM, MUTTER, GALA, MEDIA }
+		public enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
 		
 		private GLib.Settings schemas[4];
 		
@@ -16,20 +16,22 @@ namespace Keyboard.Shortcuts
 			schemas[Schema.MEDIA]  = new GLib.Settings ("org.gnome.settings-daemon.plugins.media-keys");
 		}
 		
-		public string get_val (Schema schema, string key)
+		// get/set methods for shortcuts in gsettings
+		// require and return class Shortcut objects
+		public Shortcut get_val (Schema schema, string key)
 		{
 			if (schema == Schema.MEDIA)
-				return Shortcuts.from_dconf (schemas[schema].get_string (key));
+				return new Shortcut.parse (schemas[schema].get_string (key));
 			else
-				return Shortcuts.from_dconf ((schemas[schema].get_strv (key)) [0]);
+				return new Shortcut.parse ((schemas[schema].get_strv (key)) [0]);
 		}
 		
-		public bool set_val  (Schema schema, string key, string value)
+		public bool set_val  (Schema schema, string key, Shortcut sc)
 		{
 			if (schema == Schema.MEDIA)
-				schemas[schema].set_string ( key, to_dconf (value));
+				schemas[schema].set_string (key, sc.to_gsettings ());
 			else
-				schemas[schema].set_strv (key, {to_dconf(value)});
+				schemas[schema].set_strv (key, {sc.to_gsettings ()});
 			return true;
 		}
 	}
