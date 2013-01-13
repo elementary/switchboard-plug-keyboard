@@ -1,11 +1,11 @@
 namespace Keyboard.Shortcuts
 {
+	private enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
+	
 	// helper class for gsettings
 	// note that media key are stored as strings, all others as string vectors
 	class Settings : GLib.Object
 	{
-		public enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
-		
 		private GLib.Settings schemas[4];
 		
 		public Settings ()

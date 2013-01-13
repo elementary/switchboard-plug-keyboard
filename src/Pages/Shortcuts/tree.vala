@@ -3,20 +3,22 @@ namespace Keyboard.Shortcuts
 	// contains the shortcuts and handels all changes in gsettings
 	private class Tree : Gtk.TreeView
 	{
-		private Shortcuts.Settings settings;
+		string[] actions;
+		Schema[] schemas;
+		string[] keys;
 		
-		public Tree ( string[] actions, Shortcuts.Settings.Schema[] schemas, string[] keys )
+		public Tree (Groups group)
 		{
+			list.get_group (group, out actions, out schemas, out keys);
+			
+			// create list store
 			var store = new Gtk.ListStore (4, typeof (string),
 			                                  typeof (string), 
-			                                  typeof (Shortcuts.Settings.Schema),
+			                                  typeof (Schema),
 			                                  typeof (string));
-
-			settings = new Shortcuts.Settings ();
 
 			Gtk.TreeIter iter;
 			
-			// create list store
 			for (int i = 0; i < actions.length; i++)
 			{
 				var shortcut = settings.get_val(schemas[i], keys[i]);
@@ -28,6 +30,7 @@ namespace Keyboard.Shortcuts
 				                 3, keys[i], -1);  // hidden
 			}
 			
+			// create tree view
 			var cell_desc = new Gtk.CellRendererText ();
 			var cell_edit = new Gtk.CellRendererAccel ();
 			
@@ -42,6 +45,7 @@ namespace Keyboard.Shortcuts
 			this.headers_visible = false;
 			this.expand          = true;
 			
+			// signals
 			cell_edit.accel_edited.connect ((path, key, mods) => 
 			{
 				var shortcut = new Shortcut (key, mods);
@@ -55,11 +59,15 @@ namespace Keyboard.Shortcuts
 			} );
 		}
 		
+		// change a shortcut in the list store and gsettings
 		private bool change_shortcut (string path, Shortcut shortcut)
 		{
 			Gtk.TreeIter  iter;
 			GLib.Value    val, schema;
-			
+
+			if (!shortcut.valid () || list.conflicts (shortcut))
+				return false;
+				
 			model.get_iter (out iter, new Gtk.TreePath.from_string (path));
 				
 			model.get_value (iter, 3, out val);
@@ -67,7 +75,7 @@ namespace Keyboard.Shortcuts
 
 			(model as Gtk.ListStore).set (iter, 1, shortcut.to_readable ());
 				
-			settings.set_val((Shortcuts.Settings.Schema)schema, (string)val, shortcut);
+			settings.set_val((Schema)schema, (string)val, shortcut);
 			
 			return true;
 		}

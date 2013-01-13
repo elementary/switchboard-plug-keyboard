@@ -4,8 +4,8 @@ namespace Keyboard.Shortcuts
 	// and checks for validity
 	class Shortcut : GLib.Object
 	{
-		private Gdk.ModifierType  modifiers;
-		private uint              accel_key;
+		public Gdk.ModifierType  modifiers;
+		public uint              accel_key;
 		
 		// constructors
 		public Shortcut ( uint key, Gdk.ModifierType mod )
@@ -43,6 +43,14 @@ namespace Keyboard.Shortcuts
 			           replace ("Alt", "⎇").
 			           replace ("Shift", "⇧").
 			           replace ("+", " + ");
+		}
+		
+		public bool is_equal (Shortcut shortcut)
+		{
+			if (shortcut.modifiers == modifiers)
+				if (shortcut.accel_key == accel_key)
+					return true;
+			return false;
 		}
 		
 		// validator
