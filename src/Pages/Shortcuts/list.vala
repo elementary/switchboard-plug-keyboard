@@ -23,14 +23,14 @@ namespace Keyboard.Shortcuts
 		
 		public bool conflicts (Shortcut s)
 		{
+			if (s.accel_key == Gdk.Key.BackSpace)
+				return false;
+			
 			foreach (var group in groups)
-			{
 				for (int i=0; i<group.actions.length; i++)
-				{
 					if (s.is_equal (settings.get_val(group.schemas[i], group.keys[i])))
 						return true;
-				}
-			}
+						
 			return false;
 		}
 		

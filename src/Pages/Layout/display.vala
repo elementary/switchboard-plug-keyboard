@@ -12,7 +12,7 @@ namespace Keyboard.Layout
 			var cell = new Gtk.CellRendererText ();
 		
 			int count = settings.layouts.length - 1;
-		
+			
 			tree.insert_column_with_attributes (-1, null, cell, "text", 0);
 			tree.headers_visible = false;
 			tree.expand = true;
@@ -87,6 +87,9 @@ namespace Keyboard.Layout
 				Gtk.TreePath path;
 				
 				tree.get_cursor (out path, null);
+				
+				if (path == null)
+					return;
 				
 				int index = (path.get_indices ())[0];
 				

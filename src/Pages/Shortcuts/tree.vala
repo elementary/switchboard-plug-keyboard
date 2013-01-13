@@ -54,25 +54,31 @@ namespace Keyboard.Shortcuts
 			
 			cell_edit.accel_cleared.connect ((path) => 
 			{
-				var shortcut = new Shortcut (0, (Gdk.ModifierType) 0);
-				change_shortcut (path, shortcut);
+				change_shortcut (path, (Shortcut) null);
 			} );
 		}
 		
 		// change a shortcut in the list store and gsettings
-		private bool change_shortcut (string path, Shortcut shortcut)
+		private bool change_shortcut (string path, Shortcut? shortcut)
 		{
 			Gtk.TreeIter  iter;
 			GLib.Value    val, schema;
-
-			if (!shortcut.valid () || list.conflicts (shortcut))
+			
+			if (shortcut != null && (list.conflicts (shortcut) || !shortcut.valid ()))
 				return false;
-				
+			
 			model.get_iter (out iter, new Gtk.TreePath.from_string (path));
 				
 			model.get_value (iter, 3, out val);
 			model.get_value (iter, 2, out schema);
 
+			if (shortcut == null)
+			{
+				(model as Gtk.ListStore).set (iter, 1, _("Disabled"));
+				settings.set_val((Schema)schema, (string)val, new Shortcut(0, (Gdk.ModifierType)0));
+				return true;
+			}
+			
 			(model as Gtk.ListStore).set (iter, 1, shortcut.to_readable ());
 				
 			settings.set_val((Schema)schema, (string)val, shortcut);
