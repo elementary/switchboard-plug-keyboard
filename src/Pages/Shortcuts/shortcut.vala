@@ -40,7 +40,7 @@ namespace Keyboard.Shortcuts
 				
 			var tmp = Gtk.accelerator_get_label (accel_key, modifiers);
 			return tmp.replace ("Super", "⌘").
-			           replace ("Alt", "⎇").
+			           //replace ("Alt", "⎇").
 			           replace ("Shift", "⇧").
 			           replace ("+", " + ");
 		}

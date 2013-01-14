@@ -3,9 +3,26 @@ namespace Keyboard.Shortcuts
 	// contains the shortcuts and handels all changes in gsettings
 	private class Tree : Gtk.TreeView
 	{
-		string[] actions;
-		Schema[] schemas;
-		string[] keys;
+		private string[] actions;
+		private Schema[] schemas;
+		private string[] keys;
+		
+		// quick access to one item in the tree view
+		public bool get_item (uint i, out string action, out Schema schema, out string key)
+		{
+			action = null;
+			schema = (Schema) null;
+			key    = null;
+			
+			if (i < actions.length)
+			{
+				action = actions[i];
+				schema = schemas[i];
+				key    = keys[i];
+				return true;
+			}
+			return false;
+		}
 		
 		public Tree (Groups group)
 		{
@@ -62,26 +79,75 @@ namespace Keyboard.Shortcuts
 		private bool change_shortcut (string path, Shortcut? shortcut)
 		{
 			Gtk.TreeIter  iter;
-			GLib.Value    val, schema;
-			
-			if (shortcut != null && (list.conflicts (shortcut) || !shortcut.valid ()))
-				return false;
+			GLib.Value    key, schema, name;
 			
 			model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-				
-			model.get_value (iter, 3, out val);
+			
+			model.get_value (iter, 0, out name);
 			model.get_value (iter, 2, out schema);
+			model.get_value (iter, 3, out key);
+			
 
+			if (shortcut != null)
+			{
+				// new shortcut is old shortcut?
+				if (shortcut.is_equal (settings.get_val ((Schema)schema, (string)key)))
+					return true;
+				
+				string conflict_accel;
+				int    conflict_group;
+				int    conflict_path;
+				
+				// check if shortcut is already used
+				if (list.conflicts (shortcut, out conflict_accel, out conflict_group, out conflict_path))
+				{
+					string conflict_action;
+					Schema conflict_schema;
+					string conflict_key;
+					
+					// get some info about the conflicting item
+					trees[conflict_group].get_item (conflict_path, out conflict_action, out conflict_schema, out conflict_key);
+					
+					// ask user what to do
+					var msg = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL,
+						                                   Gtk.MessageType.WARNING, 
+						                                   Gtk.ButtonsType.NONE, 
+						                                   "\"%s\" is already used for \"%s\"!", shortcut.to_readable (), conflict_action);
+						                                   
+					msg.secondary_text = _("If you reassign the shortcut to \"%s\", \"%s\" will be disabled").printf ((string)name, conflict_action);
+					msg.add_button (_("Cancel"),   0);
+					msg.add_button (_("Reassign"), 1);
+				
+					msg.response.connect ((response_id) =>
+					{
+						if (response_id == 1)
+						{
+							trees[conflict_group].change_shortcut (conflict_path.to_string (), (Shortcut) null);
+							change_shortcut (path, shortcut);
+						}
+
+						msg.destroy();
+					});
+					msg.show ();
+					
+					return false;
+				}
+				
+				if (!shortcut.valid ())
+					return false;
+			}
+			
+			// unset/disable shortcut
 			if (shortcut == null)
 			{
 				(model as Gtk.ListStore).set (iter, 1, _("Disabled"));
-				settings.set_val((Schema)schema, (string)val, new Shortcut(0, (Gdk.ModifierType)0));
+				settings.set_val((Schema)schema, (string)key, new Shortcut(0, (Gdk.ModifierType)0));
 				return true;
 			}
 			
 			(model as Gtk.ListStore).set (iter, 1, shortcut.to_readable ());
 				
-			settings.set_val((Schema)schema, (string)val, shortcut);
+			settings.set_val((Schema)schema, (string)key, shortcut);
 			
 			return true;
 		}

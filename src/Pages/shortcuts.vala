@@ -5,6 +5,8 @@ namespace Keyboard.Shortcuts
 	
 	private Shortcuts.Settings settings;
 	
+	private Tree[] trees;
+	
 	// main class
 	class Page : Gtk.Grid
 	{
@@ -20,12 +22,19 @@ namespace Keyboard.Shortcuts
 		
 			var notebook = new Granite.Widgets.StaticNotebook ();
 			
-			notebook.append_page (new Display (new Tree (Groups.WINDOWS)),     new Gtk.Label (_("Windows")));
-			notebook.append_page (new Display (new Tree (Groups.WORKSPACES)),  new Gtk.Label (_("Workspaces")));
-			notebook.append_page (new Display (new Tree (Groups.SCREENSHOTS)), new Gtk.Label (_("Screenshots")));
-			notebook.append_page (new Display (new Tree (Groups.MEDIA)),       new Gtk.Label (_("Media")));
-			notebook.append_page (new Display (new Tree (Groups.LAUNCHERS)),   new Gtk.Label (_("Launchers")));
-			notebook.append_page (new Display (new Tree (Groups.A11Y)),        new Gtk.Label (_("Accessibility")));
+			trees += new Tree (Groups.WINDOWS);
+			trees += new Tree (Groups.WORKSPACES);
+			trees += new Tree (Groups.SCREENSHOTS);
+			trees += new Tree (Groups.LAUNCHERS);
+			trees += new Tree (Groups.MEDIA);
+			trees += new Tree (Groups.A11Y);
+			
+			notebook.append_page (new Display (trees[Groups.WINDOWS]),     new Gtk.Label (_("Windows")));
+			notebook.append_page (new Display (trees[Groups.WORKSPACES]),  new Gtk.Label (_("Workspaces")));
+			notebook.append_page (new Display (trees[Groups.SCREENSHOTS]), new Gtk.Label (_("Screenshots")));
+			notebook.append_page (new Display (trees[Groups.LAUNCHERS]),   new Gtk.Label (_("Launchers")));
+			notebook.append_page (new Display (trees[Groups.MEDIA]),       new Gtk.Label (_("Media")));
+			notebook.append_page (new Display (trees[Groups.A11Y]),        new Gtk.Label (_("Accessibility")));
  
 			this.attach (notebook, 0, 0, 1, 1);
 		}

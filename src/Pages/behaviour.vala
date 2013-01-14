@@ -258,7 +258,7 @@ namespace Keyboard.Behaviour
 
 			/** Test Settings **/
 		
-			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your settings..."));
+			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your settings…"));
 		
 			entry_test.hexpand = true;
 			entry_test.set_icon_from_stock (Gtk.EntryIconPosition.SECONDARY, Gtk.Stock.CLEAR);

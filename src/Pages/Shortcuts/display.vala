@@ -3,7 +3,7 @@ namespace Keyboard.Shortcuts
 	// creates a grid containing a tree view and an inline toolbar
 	class Display : Gtk.Grid
 	{
-		public Display (Gtk.TreeView tree)
+		public Display (Tree tree)
 		{
 			var scroll = new Gtk.ScrolledWindow(null, null);
 			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;

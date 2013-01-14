@@ -21,16 +21,28 @@ namespace Keyboard.Shortcuts
 			return;
 		}
 		
-		public bool conflicts (Shortcut s)
+		public bool conflicts (Shortcut s, out string key, out int group, out int path)
 		{
+			key    = (string) null;
+			group  = (Groups) 0;
+			path   = -1;
+			
 			if (s.accel_key == Gdk.Key.BackSpace)
 				return false;
 			
-			foreach (var group in groups)
-				for (int i=0; i<group.actions.length; i++)
-					if (s.is_equal (settings.get_val(group.schemas[i], group.keys[i])))
+			for (int g = 0; g < groups.length; g++)
+			{
+				for (int i = 0; i < groups[g].actions.length; i++)
+				{
+					if (s.is_equal (settings.get_val(groups[g].schemas[i], groups[g].keys[i])))
+					{
+						key    = groups[g].keys[i];
+						group  = g;
+						path   = i;
 						return true;
-						
+					}
+				}
+			}
 			return false;
 		}
 		
