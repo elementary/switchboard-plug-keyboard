@@ -62,6 +62,29 @@ namespace Keyboard.Shortcuts
 			this.headers_visible = false;
 			this.expand          = true;
 			
+			this.get_column (0).expand = true;
+			
+			this.button_press_event.connect ((event) =>
+			{
+				if (event.window != this.get_bin_window ())
+   	 				return false;
+    
+				Gtk.TreePath path;
+				
+				if (this.get_path_at_pos (
+                                     (int) event.x,
+                                     (int) event.y,
+                                     out path, null,
+                                     null, null))
+				{
+					Gtk.TreeViewColumn col = this.get_column (1);
+					this.grab_focus ();
+					this.set_cursor (path, col, true);
+				}
+				
+				return true;
+			} );
+			
 			// signals
 			cell_edit.accel_edited.connect ((path, key, mods) => 
 			{

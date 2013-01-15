@@ -35,7 +35,7 @@ namespace Keyboard.Shortcuts
 			tbar.insert (remove_button, -1);
 
 			this.attach (scroll, 0, 0, 1, 1);
-			this.attach (tbar,   0, 1, 1, 1);	
+			//this.attach (tbar,   0, 1, 1, 1);	
 		}
 	}
 }

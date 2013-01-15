@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-01-14 20:17+0100\n"
+"POT-Creation-Date: 2013-01-15 17:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -398,20 +398,20 @@ msgstr ""
 msgid "Remove"
 msgstr ""
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:117
+#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:140
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:118
+#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:141
 msgid "Cancel"
 msgstr ""
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:119
-msgid "Reassing"
+#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:142
+msgid "Reassign"
 msgstr ""
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:143
+#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:166
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/shortcut.vala:39
 msgid "Disabled"
 msgstr ""
