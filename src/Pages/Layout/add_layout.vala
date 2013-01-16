@@ -59,20 +59,30 @@ namespace Keyboard.Layout
 				layout_box.active = 0;
 			} );
 			
-			// add 'apply' and 'close' buttons
-			this.add_button (Gtk.Stock.CLOSE, Gtk.ResponseType.CLOSE);
-			this.add_button (Gtk.Stock.APPLY, Gtk.ResponseType.APPLY);
+			// add buttons
+			var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+			button_box.layout_style = Gtk.ButtonBoxStyle.END;
+			button_box.spacing      = 5;
+			button_box.margin       = 1;
 			
-			this.response.connect( (source, response_id) =>
+			var button_add    = new Gtk.Button.with_label ("Add Layout");
+			var button_cancel = new Gtk.Button.with_label ("Cancel");
+			
+			button_box.add (button_cancel); 
+			button_box.add (button_add);
+			
+			grid.attach (button_box, 0, 2, 2, 1);
+			
+			button_cancel.clicked.connect (() => {
+				this.hide ();
+			} );
+			
+			button_add.clicked.connect (() =>
 			{
 				Value val1, val2;
 				Gtk.TreeIter iter;
 				
 				this.hide ();
-				
-				if (response_id != Gtk.ResponseType.APPLY) {
-					return;
-				}
 				
 				language_box.get_active_iter (out iter);
 				language_box.model.get_value (iter, 0, out val1);
