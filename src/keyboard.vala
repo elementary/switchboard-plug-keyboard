@@ -6,7 +6,7 @@ namespace Keyboard
 	{
 		public KeyboardPlug ()
 		{
-			var notebook = new Granite.Widgets.StaticNotebook ();
+			var notebook = new Granite.Widgets.StaticNotebook (false);
 		
 			// every page is a seperate class
 			notebook.append_page (new Keyboard.Behaviour.Page (), new Gtk.Label (_("Behaviour")));
