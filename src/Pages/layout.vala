@@ -86,7 +86,7 @@ namespace Keyboard.Layout
 			
 			entry_test.hexpand = entry_test.vexpand = true;
 			entry_test.valign  = Gtk.Align.END;
-			entry_test.set_icon_from_stock (Gtk.EntryIconPosition.SECONDARY, Gtk.Stock.CLEAR);
+			entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
 			
 			entry_test.icon_press.connect ((pos, event) => 
 			{
