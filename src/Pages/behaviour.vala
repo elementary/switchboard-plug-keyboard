@@ -261,7 +261,6 @@ namespace Keyboard.Behaviour
 			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your settings…"));
 		
 			entry_test.hexpand = true;
-			entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
 		
 			entry_test.icon_press.connect ((pos, event) => 
 			{
@@ -270,6 +269,13 @@ namespace Keyboard.Behaviour
 					entry_test.set_text ("");
 				}
 			});
+			
+			entry_test.changed.connect (() => {
+				if (entry_test.text == "")
+					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "");
+				else
+					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
+			} );
 
 			this.attach (entry_test, 1, 6, 1, 1);
 		}

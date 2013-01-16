@@ -86,17 +86,22 @@ namespace Keyboard.Layout
 			
 			entry_test.hexpand = entry_test.vexpand = true;
 			entry_test.valign  = Gtk.Align.END;
-			entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-			
+		
 			entry_test.icon_press.connect ((pos, event) => 
 			{
 				if (pos == Gtk.EntryIconPosition.SECONDARY) 
 				{
 					entry_test.set_text ("");
 				}
+			});
+			
+			entry_test.changed.connect (() => {
+				if (entry_test.text == "")
+					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "");
+				else
+					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
 			} );
-			
-			
+
 			
 			this.attach (entry_test, 4, 3, 3, 1);
 		} 
