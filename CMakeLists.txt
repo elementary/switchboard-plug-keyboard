@@ -14,7 +14,7 @@ set (PLUGCATEGORY "hardware")
 # Set the Title to use for the Plug in the Overview and in the Titlebar
 set (PLUGTITLE "Keyboard")
 # The symbolic name of the Icon to use for the plug
-set (PLUGICON "keyboard")
+set (PLUGICON "preferences-desktop-keyboard")
 
 project (${PLUGNAME})
 
