@@ -1,14 +1,14 @@
 namespace Keyboard.Shortcuts
 {
 	// creates a grid containing a tree view and an inline toolbar
-	class Display : Gtk.Grid
+	class ShortcutDisplay : Gtk.Grid
 	{
 		int selected;
 		
 		Gtk.ScrolledWindow scroll;
 		Tree[] trees;
 		
-		public Display (Tree[] t)
+		public ShortcutDisplay (Tree[] t)
 		{
 			selected = 0;
 			
@@ -47,6 +47,7 @@ namespace Keyboard.Shortcuts
 			//this.attach (tbar,   0, 1, 1, 1);
 		}
 		
+		// replace old tree view with new one
 		public bool change_selection (int new_selection)
 		{
 			scroll.remove (trees[selected]);

@@ -1,5 +1,8 @@
 namespace Keyboard.Shortcuts
 {
+	// simple tree view containing a list of sections
+	// changing the section changes the tree view
+	// displayed on the right
 	class SectionSwitcher : Gtk.ScrolledWindow
 	{
 		public SectionSwitcher ()
@@ -8,12 +11,12 @@ namespace Keyboard.Shortcuts
 			var store = new Gtk.ListStore (1, typeof(string));
 			
 			Gtk.TreeIter iter;
-		
 			
-			for (int group = 0; group < SectionID.COUNT; group++)
+			// add the sections
+			for (int id = 0; id < SectionID.COUNT; id++)
 			{
 				store.append (out iter);
-				store.set (iter, 0, section_names[group]);
+				store.set (iter, 0, section_names[id]);
 			}
 		
 			var cell_desc = new Gtk.CellRendererText ();
@@ -28,6 +31,8 @@ namespace Keyboard.Shortcuts
 			this.add(tree);
 			this.expand = true;
 			
+			// when cursor changes, emit signal "changed" with
+			// correct index
 			tree.cursor_changed.connect (() => {
 				Gtk.TreePath path;
 				tree.get_cursor (out path, null);

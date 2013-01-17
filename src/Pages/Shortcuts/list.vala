@@ -6,6 +6,8 @@ namespace Keyboard.Shortcuts
 		public string[] keys;
 	}
 	
+	// this class provides an interface to the structure containing
+	// all the shortcuts (description, dconf schema and key)
 	class List : GLib.Object
 	{
 		public Group[] groups;
@@ -337,6 +339,6 @@ namespace Keyboard.Shortcuts
 			};
 			
 			return;
-		}
+		} // constructor
 	}
 }

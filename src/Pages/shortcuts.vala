@@ -7,7 +7,7 @@ namespace Keyboard.Shortcuts
 	// array of tree views, one for each section
 	private Tree[] trees;
 	
-	private enum SectionID { WINDOWS, WORKSPACES, SCREENSHOTS, LAUNCHERS, MEDIA, A11Y, COUNT }
+	private enum SectionID { WINDOWS, WORKSPACES, SCREENSHOTS, APPS, MEDIA, A11Y, COUNT }
 	
 	private string[] section_names;
 	
@@ -21,11 +21,12 @@ namespace Keyboard.Shortcuts
 			this.margin         = 20;
 			this.expand         = true;
 		
+			// init public elements
 			section_names = {
 				_("Windows"),
 				_("Workspaces"),
 				_("Screenshots"),
-				_("Launchers"),
+				_("Applications"),
 				_("Media"),
 				_("Accessibility")
 			};
@@ -37,7 +38,8 @@ namespace Keyboard.Shortcuts
 				trees += new Tree ((SectionID) id);
 			}
 			
-			var shortcut_display = new Display (trees);
+			// private elements
+			var shortcut_display = new ShortcutDisplay (trees);
 			var section_switcher = new SectionSwitcher ();
 			
 			this.attach (section_switcher, 0, 0, 1, 1);

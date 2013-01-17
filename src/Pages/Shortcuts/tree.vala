@@ -67,7 +67,7 @@ namespace Keyboard.Shortcuts
 			this.button_press_event.connect ((event) =>
 			{
 				if (event.window != this.get_bin_window ())
-   	 				return false;
+					return false;
     
 				Gtk.TreePath path;
 				
@@ -169,9 +169,7 @@ namespace Keyboard.Shortcuts
 			}
 			
 			(model as Gtk.ListStore).set (iter, 1, shortcut.to_readable ());
-				
 			settings.set_val((Schema)schema, (string)key, shortcut);
-			
 			return true;
 		}
 	}
