@@ -2,14 +2,18 @@ namespace Keyboard.Shortcuts
 {	
 	// list of all shortcuts in gsettings, global object
 	private List list;
-	
+	// class to interact with gsettings
 	private Shortcuts.Settings settings;
-	
+	// array of tree views, one for each section
 	private Tree[] trees;
+	
+	private enum SectionID { WINDOWS, WORKSPACES, SCREENSHOTS, LAUNCHERS, MEDIA, A11Y, COUNT }
+	
+	private string[] section_names;
 	
 	// main class
 	class Page : Gtk.Grid
-	{
+	{	
 		public Page ()
 		{
 			this.row_spacing    = 12;
@@ -17,26 +21,31 @@ namespace Keyboard.Shortcuts
 			this.margin         = 20;
 			this.expand         = true;
 		
+			section_names = {
+				_("Windows"),
+				_("Workspaces"),
+				_("Screenshots"),
+				_("Launchers"),
+				_("Media"),
+				_("Accessibility")
+			};
+			
 			list     = new List ();
 			settings = new Shortcuts.Settings ();
+			
+			for (int id = 0; id < SectionID.COUNT; id++) {
+				trees += new Tree ((SectionID) id);
+			}
+			
+			var shortcut_display = new Display (trees);
+			var section_switcher = new SectionSwitcher ();
+			
+			this.attach (section_switcher, 0, 0, 1, 1);
+			this.attach (shortcut_display, 1, 0, 3, 1);
 		
-			var notebook = new Granite.Widgets.StaticNotebook ();
-			
-			trees += new Tree (Groups.WINDOWS);
-			trees += new Tree (Groups.WORKSPACES);
-			trees += new Tree (Groups.SCREENSHOTS);
-			trees += new Tree (Groups.LAUNCHERS);
-			trees += new Tree (Groups.MEDIA);
-			trees += new Tree (Groups.A11Y);
-			
-			notebook.append_page (new Display (trees[Groups.WINDOWS]),     new Gtk.Label (_("Windows")));
-			notebook.append_page (new Display (trees[Groups.WORKSPACES]),  new Gtk.Label (_("Workspaces")));
-			notebook.append_page (new Display (trees[Groups.SCREENSHOTS]), new Gtk.Label (_("Screenshots")));
-			notebook.append_page (new Display (trees[Groups.LAUNCHERS]),   new Gtk.Label (_("Launchers")));
-			notebook.append_page (new Display (trees[Groups.MEDIA]),       new Gtk.Label (_("Media")));
-			notebook.append_page (new Display (trees[Groups.A11Y]),        new Gtk.Label (_("Accessibility")));
- 
-			this.attach (notebook, 0, 0, 1, 1);
+			section_switcher.changed.connect ((i) => {
+				shortcut_display.change_selection (i);
+			} );
 		}
 	}
 }

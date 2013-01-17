@@ -3,14 +3,23 @@ namespace Keyboard.Shortcuts
 	// creates a grid containing a tree view and an inline toolbar
 	class Display : Gtk.Grid
 	{
-		public Display (Tree tree)
+		int selected;
+		
+		Gtk.ScrolledWindow scroll;
+		Tree[] trees;
+		
+		public Display (Tree[] t)
 		{
-			var scroll = new Gtk.ScrolledWindow(null, null);
+			selected = 0;
+			
+			trees = t;
+			
+			scroll = new Gtk.ScrolledWindow(null, null);
 			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			scroll.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			scroll.shadow_type = Gtk.ShadowType.IN;
-			scroll.add(tree);
 			scroll.expand = true;
+			scroll.add (trees[selected]);
 	
 			var tbar = new Gtk.Toolbar();
 			tbar.set_style(Gtk.ToolbarStyle.ICONS);
@@ -35,7 +44,18 @@ namespace Keyboard.Shortcuts
 			tbar.insert (remove_button, -1);
 
 			this.attach (scroll, 0, 0, 1, 1);
-			//this.attach (tbar,   0, 1, 1, 1);	
+			//this.attach (tbar,   0, 1, 1, 1);
+		}
+		
+		public bool change_selection (int new_selection)
+		{
+			scroll.remove (trees[selected]);
+			scroll.add    (trees[new_selection]);
+			
+			selected = new_selection;
+			scroll.show_all ();
+			
+			return true;
 		}
 	}
 }

@@ -26,6 +26,8 @@ vala_precompile (VALA_C
     Pages/Shortcuts/display.vala
     Pages/Shortcuts/shortcut.vala
     Pages/Shortcuts/list.vala
+    Pages/Shortcuts/section_switcher.vala
+    
     
     Pages/layout.vala
     

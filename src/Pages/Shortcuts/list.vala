@@ -6,13 +6,11 @@ namespace Keyboard.Shortcuts
 		public string[] keys;
 	}
 	
-	enum Groups { WINDOWS, WORKSPACES, SCREENSHOTS, LAUNCHERS, MEDIA, A11Y }
-	
 	class List : GLib.Object
 	{
 		public Group[] groups;
 		
-		public void get_group (Groups group, out string[] a, out Schema[] s, out string[] k)
+		public void get_group (SectionID group, out string[] a, out Schema[] s, out string[] k)
 		{
 			a = groups[group].actions;
 			s = groups[group].schemas;
@@ -24,7 +22,7 @@ namespace Keyboard.Shortcuts
 		public bool conflicts (Shortcut s, out string key, out int group, out int path)
 		{
 			key    = (string) null;
-			group  = (Groups) 0;
+			group  = (SectionID) 0;
 			path   = -1;
 			
 			if (s.accel_key == Gdk.Key.BackSpace)

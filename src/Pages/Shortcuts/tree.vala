@@ -24,7 +24,7 @@ namespace Keyboard.Shortcuts
 			return false;
 		}
 		
-		public Tree (Groups group)
+		public Tree (SectionID group)
 		{
 			list.get_group (group, out actions, out schemas, out keys);
 			
