@@ -18,7 +18,7 @@ namespace Keyboard.Shortcuts
 		{
 			this.row_spacing    = 12;
 			this.column_spacing = 12;
-			this.margin         = 20;
+			this.margin_top = margin_bottom = 12;
 			this.expand         = true;
 		
 			// init public elements
@@ -43,7 +43,7 @@ namespace Keyboard.Shortcuts
 			var section_switcher = new SectionSwitcher ();
 			
 			this.attach (section_switcher, 0, 0, 1, 1);
-			this.attach (shortcut_display, 1, 0, 3, 1);
+			this.attach (shortcut_display, 1, 0, 2, 1);
 		
 			section_switcher.changed.connect ((i) => {
 				shortcut_display.change_selection (i);

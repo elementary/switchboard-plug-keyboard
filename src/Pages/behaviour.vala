@@ -28,7 +28,7 @@ namespace Keyboard.Behaviour
 		{
 			this.row_spacing    = 12;
 			this.column_spacing = 12;
-			this.margin         = 20;
+			this.margin_top = margin_bottom = 12;
 			this.expand         = true;
 		
 			// create widgets

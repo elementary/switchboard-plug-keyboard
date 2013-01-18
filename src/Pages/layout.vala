@@ -1,6 +1,6 @@
 namespace Keyboard.Layout
 {
-	// global handlers
+	// global handler
 	Layout.Handler handler;
 	
 	class Page : Gtk.Grid
@@ -9,7 +9,7 @@ namespace Keyboard.Layout
 		{
 			this.row_spacing    = 12;
 			this.column_spacing = 12;
-			this.margin         = 20;
+			this.margin_top = margin_bottom = 12;
 			this.column_homogeneous = false;
 			this.row_homogeneous    = false;
 			
@@ -69,7 +69,8 @@ namespace Keyboard.Layout
 			button1.toggled.connect (() => { settings.default_group =  0; } );
 			button2.toggled.connect (() => { settings.default_group = -1; } );	
 			
-			settings.changed["default-group"].connect (() => {
+			settings.changed["default-group"].connect (() => 
+			{
 				if( settings.default_group >= 0 )
 					button1.active = true;
 				else
