@@ -4,14 +4,17 @@ namespace Keyboard.Layout
 	// interacts with class SettingsLayout
 	class Display : Gtk.Grid
 	{
+		private signal void update_buttons ();
+		
+		private SettingsLayouts settings;
+		
 		public Display ()
 		{
-			var settings = new SettingsLayouts ();
+			settings = new SettingsLayouts ();
+			
 			var list = create_list_store (settings.layouts, true);
 			var tree = new Gtk.TreeView.with_model (list);
 			var cell = new Gtk.CellRendererText ();
-		
-			int count = settings.layouts.length - 1;
 			
 			tree.insert_column_with_attributes (-1, null, cell, "text", 0);
 			tree.headers_visible = false;
@@ -65,24 +68,29 @@ namespace Keyboard.Layout
 
 			add_button.clicked.connect( () => {
 				pop.move_to_widget (add_button);
-				count++;
-				add_item (settings, tree, pop);
+				add_item (tree, pop);
 			} );
 
 			remove_button.clicked.connect( () => {
-				count--;
-				remove_item (settings, tree);
+				remove_item (tree);
+				update_buttons ();
 			} );
 			
 			up_button.clicked.connect (() => {
 				move_item (settings, tree, 0);
+				update_buttons ();
 			} );
 			
 			down_button.clicked.connect (() => {
 				move_item (settings, tree, 1);
+				update_buttons ();
 			} );
 			
-			tree.cursor_changed.connect (() =>
+			tree.cursor_changed.connect (() => {
+				update_buttons ();
+			} );
+			
+			this.update_buttons.connect (() => 
 			{
 				Gtk.TreePath path;
 				
@@ -90,20 +98,17 @@ namespace Keyboard.Layout
 				
 				if (path == null)
 					return;
-				
+					
 				int index = (path.get_indices ())[0];
+				int count = settings.layouts.length - 1;
 				
-				up_button.sensitive     = (index == 0)     ? false : true;
-				down_button.sensitive   = (index == count) ? false : true;
-				remove_button.sensitive = (count <= 0)     ? false : true;
-			} );
-			
-			this.notify["count"].connect (() => {
-				remove_button.sensitive = (count <= 0)     ? false : true;
+				up_button.sensitive     = (index != 0);
+				down_button.sensitive   = (index != count);
+				remove_button.sensitive = (count > 0);
 			} );
 		}
 		
-		void add_item (Layout.SettingsLayouts settings, Gtk.TreeView tree, Layout.AddLayout pop)
+		void add_item (Gtk.TreeView tree, Layout.AddLayout pop)
 		{		
 			pop.layout_added.connect ((lang, layout) =>
 			{
@@ -138,11 +143,12 @@ namespace Keyboard.Layout
 					list.set (iter, 0, item);
 					settings.add_layout (handler.code_from_name (lang, layout));
 					tree.set_cursor (list.get_path(iter), null, false);
+					update_buttons ();
 				} 
 			} );
 		}
 		
-		void remove_item (Layout.SettingsLayouts settings, Gtk.TreeView tree)
+		void remove_item (Gtk.TreeView tree)
 		{
 			Gtk.TreeModel model;
 			Gtk.TreeIter  iter;
@@ -155,8 +161,8 @@ namespace Keyboard.Layout
 				
 			var layout = ((string) val).split(" - ");
 
-			settings.remove_layout (handler.code_from_name(layout[0], layout[1]));	
-
+			settings.remove_layout (handler.code_from_name(layout[0], layout[1]));
+			
 			(model as Gtk.ListStore).remove(iter);
 		}
 		
