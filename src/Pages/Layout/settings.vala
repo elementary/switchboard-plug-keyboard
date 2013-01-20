@@ -58,9 +58,70 @@ namespace Keyboard.Layout
 			layouts = l;
 		}
 		
+		public string[]? parse_default ()
+		{
+			string[] return_val = null;
+	
+			var file = File.new_for_path ("/etc/default/keyboard");
+
+			if (!file.query_exists ())
+			{
+				warning ("File '%s' doesn't exist.\n", file.get_path ());
+				return null;
+			}
+
+			string xkb_layout  = "";
+			string xkb_variant = "";
+
+			try
+			{
+				var dis = new DataInputStream (file.read ());
+	
+				string line;
+	
+				while ((line = dis.read_line (null)) != null)
+				{
+					if (line.contains ("XKBLAYOUT="))
+					{
+						xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
+						
+						while ((line = dis.read_line (null)) != null) {
+							if (line.contains ("XKBVARIANT=")) {
+								xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
+							}
+						}
+						
+						break;
+					}
+				}
+			}
+
+			catch (Error e)
+			{
+				error ("%s", e.message);
+			}
+			
+			var variants = xkb_variant.split (",");
+			var layouts  = xkb_layout.split (",");
+			
+			for (int i = 0; i < layouts.length; i++)
+			{
+				if (variants[i] != null && variants[i] != "")
+					return_val += layouts[i] + "\t" + variants[i];
+				else
+					return_val += layouts[i];
+			}
+			
+			return return_val;
+		}
+		
 		public SettingsLayouts()
 		{
 			base ("org.gnome.libgnomekbd.keyboard");
+			
+			if (layouts == null || layouts.length == 0)
+				layouts = parse_default ();
+			
 			validate ();
 		}
 	}

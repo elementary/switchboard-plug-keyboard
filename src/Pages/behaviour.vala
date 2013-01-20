@@ -1,29 +1,18 @@
 namespace Keyboard.Behaviour
 {
-	class SettingsRepeat : Granite.Services.Settings
-	{
-		public uint delay            { get; set; }
-		public uint repeat_interval  { get; set; }
-		public bool repeat           { get; set; }
-		
-		public SettingsRepeat () { 
-			base ("org.gnome.settings-daemon.peripherals.keyboard");
-		}
-	}
+	Behaviour.SettingsRepeat settings_repeat;
+	Behaviour.SettingsBlink  settings_blink;
 	
-	class SettingsBlink : Granite.Services.Settings
+	class Page : AbstractPage
 	{
-		public int  cursor_blink_time    { get; set; }
-		public int  cursor_blink_timeout { get; set; }
-		public bool cursor_blink         { get; set; }
-		
-		public SettingsBlink () { 
-			base ("org.gnome.desktop.interface");
+		public override void reset ()
+		{
+			settings_repeat.reset_all ();
+			settings_blink.reset_all ();
+			
+			return;
 		}
-	}
-	
-	class Page : Gtk.Grid
-	{
+		
 		public Page ()
 		{
 			this.row_spacing    = 12;
@@ -31,6 +20,9 @@ namespace Keyboard.Behaviour
 			this.margin_top = margin_bottom = 12;
 			this.expand         = true;
 		
+			settings_repeat = new Behaviour.SettingsRepeat ();
+			settings_blink  = new Behaviour.SettingsBlink  ();
+			
 			// create widgets
 			var label_repeat       = new Gtk.Label (_("<b>Repeat Keys</b>"));
 			var label_repeat_delay = new Gtk.Label (_("Delay:"));
@@ -71,8 +63,6 @@ namespace Keyboard.Behaviour
 			this.attach (label_repeat_ms2,   3, 2, 1, 1);
 			
 			// set values from settigns
-			var settings_repeat = new Behaviour.SettingsRepeat ();
-		
 			var double_delay = (double) settings_repeat.delay;
 			var double_speed = (double) settings_repeat.repeat_interval;
 
@@ -186,8 +176,6 @@ namespace Keyboard.Behaviour
 			this.attach (label_blink_s,     3, 5, 1, 1);
 		
 			// set values from settings
-			var settings_blink = new Behaviour.SettingsBlink ();
-		
 			var double_blink_speed = (double) settings_blink.cursor_blink_time;
 			var double_blink_time  = (double) settings_blink.cursor_blink_timeout;
 		
@@ -258,24 +246,9 @@ namespace Keyboard.Behaviour
 
 			/** Test Settings **/
 		
-			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your settings…"));
+			var entry_test = new Keyboard.Widgets.TryEntry (_("Type to test your settings…"));
 		
 			entry_test.hexpand = true;
-		
-			entry_test.icon_press.connect ((pos, event) => 
-			{
-				if (pos == Gtk.EntryIconPosition.SECONDARY) 
-				{
-					entry_test.set_text ("");
-				}
-			});
-			
-			entry_test.changed.connect (() => {
-				if (entry_test.text == "")
-					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "");
-				else
-					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-			} );
 
 			this.attach (entry_test, 1, 6, 1, 1);
 		}

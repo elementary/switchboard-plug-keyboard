@@ -12,15 +12,17 @@ namespace Keyboard.Shortcuts
 	private string[] section_names;
 	
 	// main class
-	class Page : Gtk.Grid
-	{	
+	class Page : AbstractPage
+	{
+		public override void reset ()
+		{
+			// TODO
+			stdout.printf ("scs\n");
+			return;
+		}
+		
 		public Page ()
 		{
-			this.row_spacing    = 12;
-			this.column_spacing = 12;
-			this.margin_top = margin_bottom = 12;
-			this.expand         = true;
-		
 			// init public elements
 			section_names = {
 				_("Windows"),
@@ -28,7 +30,7 @@ namespace Keyboard.Shortcuts
 				_("Screenshots"),
 				_("Applications"),
 				_("Media"),
-				_("Accessibility")
+				_("Universal Access")
 			};
 			
 			list     = new List ();

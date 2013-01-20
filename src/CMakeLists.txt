@@ -13,34 +13,36 @@ ensure_vala_version ("0.12.0" MINIMUM)
 
 include (ValaPrecompile)
 # Add all your vala files and required packages to the List below to include them in the build
-vala_precompile (VALA_C
+vala_precompile (
 
+VALA_C
     keyboard.vala
+    page.vala
     
     Pages/behaviour.vala
-    
-    Pages/shortcuts.vala
-    
+    Pages/Behaviour/settings.vala
+    Pages/shortcuts.vala 
     Pages/Shortcuts/settings.vala
     Pages/Shortcuts/tree.vala
     Pages/Shortcuts/display.vala
     Pages/Shortcuts/shortcut.vala
     Pages/Shortcuts/list.vala
     Pages/Shortcuts/section_switcher.vala
-    
-    
-    Pages/layout.vala
-    
+    Pages/layout.vala   
     Pages/Layout/display.vala
     Pages/Layout/add_layout.vala
 	Pages/Layout/handler.vala
 	Pages/Layout/settings.vala
 	
+	Widgets/try_entry.vala
+	
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
+    
 PACKAGES
     gtk+-3.0
     pantheon
     granite
+    
 OPTIONS
     --thread
 )

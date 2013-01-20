@@ -3,16 +3,17 @@ namespace Keyboard.Layout
 	// global handler
 	Layout.Handler handler;
 	
-	class Page : Gtk.Grid
+	class Page : AbstractPage
 	{
+		public override void reset ()
+		{
+			// TODO
+			stdout.printf ("lay\n");
+			return;
+		}
+		
 		public Page ()
 		{
-			this.row_spacing    = 12;
-			this.column_spacing = 12;
-			this.margin_top = margin_bottom = 12;
-			this.column_homogeneous = false;
-			this.row_homogeneous    = false;
-			
 			handler  = new Layout.Handler ();
 			
 			// first some labels
@@ -83,27 +84,11 @@ namespace Keyboard.Layout
 			this.attach (display, 0, 0, 4, 4);
 			
 			// Test entry
-			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your layout…"));
+			var entry_test = new Keyboard.Widgets.TryEntry (_("Type to test your layout…"));
 			
 			entry_test.hexpand = entry_test.vexpand = true;
 			entry_test.valign  = Gtk.Align.END;
 		
-			entry_test.icon_press.connect ((pos, event) => 
-			{
-				if (pos == Gtk.EntryIconPosition.SECONDARY) 
-				{
-					entry_test.set_text ("");
-				}
-			});
-			
-			entry_test.changed.connect (() => {
-				if (entry_test.text == "")
-					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "");
-				else
-					entry_test.set_icon_from_icon_name (Gtk.EntryIconPosition.SECONDARY, "edit-clear-symbolic");
-			} );
-
-			
 			this.attach (entry_test, 4, 3, 3, 1);
 		} 
 	}
