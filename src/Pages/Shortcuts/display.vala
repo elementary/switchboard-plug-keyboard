@@ -14,6 +14,10 @@ namespace Keyboard.Shortcuts
 			
 			trees = t;
 			
+			foreach (var tree in trees) {
+				tree.set_rules_hint (true);
+			}
+			
 			scroll = new Gtk.ScrolledWindow(null, null);
 			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			scroll.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
