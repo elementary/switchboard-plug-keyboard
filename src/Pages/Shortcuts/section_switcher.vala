@@ -20,11 +20,14 @@ namespace Keyboard.Shortcuts
 			}
 		
 			var cell_desc = new Gtk.CellRendererText ();
-	
+			
 			tree.set_model (store);
 			tree.headers_visible = false;
 			tree.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
-		
+		    tree.set_cursor (new Gtk.TreePath.first (), null, false);
+		    
+		    
+		    
 			this.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			this.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			this.shadow_type = Gtk.ShadowType.IN;
