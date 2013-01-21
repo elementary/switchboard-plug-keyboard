@@ -1,7 +1,7 @@
 namespace Keyboard.Layout
 {
 	// pop over widget to add a new keyboard layout
-	class AddLayout : Granite.Widgets.PopOver
+	class AddLayout : Gtk.Dialog//Granite.Widgets.PopOver
 	{
 		public signal void layout_added (string language, string? layout = null);
 		

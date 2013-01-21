@@ -67,7 +67,10 @@ namespace Keyboard.Layout
 			var pop = new AddLayout ();
 
 			add_button.clicked.connect( () => {
-				pop.move_to_widget (add_button);
+				// uncomment when reverting to popover
+				//pop.move_to_widget (add_button);
+				// and remove this line
+				pop.show_all ();
 				add_item (tree, pop);
 			} );
 
