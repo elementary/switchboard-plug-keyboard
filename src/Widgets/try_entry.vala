@@ -6,7 +6,7 @@ namespace Keyboard.Widgets
 		{
 			base ((text == null) ? "" : text);
 			
-			this.icon_press.connect ((pos, event) => 
+			this.icon_release.connect ((pos, event) => 
 			{
 				if (pos == Gtk.EntryIconPosition.SECONDARY) 
 				{

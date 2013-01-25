@@ -23,6 +23,12 @@ namespace Keyboard.Layout
 			this.layout  = layout;
 			this.variant = variant;
 		}
+		
+		public string to_code ()
+		{}
+		
+		public bool to_name (out string layout, out string variant)
+		{}
 	}
 */
 	// class that parses the layout file, provides lists of languages and
