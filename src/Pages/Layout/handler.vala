@@ -1,7 +1,32 @@
 namespace Keyboard.Layout
 {
+	/*
+	class ???
+	{
+		public uint layout  {get; set;}
+		public uint variant {get; set;}
+		
+		public Layout.from_indices (uint layout, uint variant)
+		{
+			this.layout  = layout;
+			this.variant = variant;
+		}
+		
+		public Layout.from_name (string layout, string variant)
+		{
+			this.layout  = layout;
+			this.variant = variant;
+		}
+		
+		public Layout.from_code (string layout, string variant)
+		{
+			this.layout  = layout;
+			this.variant = variant;
+		}
+	}
+*/
 	// class that parses the layout file, provides lists of languages and
-	// variants, and converts between layout names and their gsettings codes
+	// variants, and converts between layout names and their gsettings codes	
 	class Handler : GLib.Object
 	{
 		Layout[]  _layouts;
@@ -24,6 +49,27 @@ namespace Keyboard.Layout
 				_layouts += new Layout (parse_layouts (l));
 			}
 		}
+		/*
+		public void index_from_code (string settings_code, out uint layout, out uint variant)
+		{
+			string code, vcode;
+			
+			layout = variant = 0;
+			
+			code  = settings_code.split("\t")[0];
+			vcode = settings_code.split("\t")[1];
+			
+			if (code  == null) return false;
+			if (vcode == null) vcode = "";
+			
+			for (int i = 0; i < _language_codes.length; i++)
+			{
+				if (_language_codes[i] == code)
+				{
+					layout = 0;
+				}
+			}
+		}*/
 	
 		public bool valid_code (string settings_code)
 		{

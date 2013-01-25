@@ -40,6 +40,9 @@ namespace Keyboard.Shortcuts
 			{
 				var shortcut = settings.get_val(schemas[i], keys[i]);
 			
+				if (shortcut == null)
+					continue;
+
 				store.append (out iter);
 				store.set (iter, 0, actions[i], 
 				                 1, shortcut.to_readable(),
@@ -71,11 +74,10 @@ namespace Keyboard.Shortcuts
     
 				Gtk.TreePath path;
 				
-				if (this.get_path_at_pos (
-                                     (int) event.x,
-                                     (int) event.y,
-                                     out path, null,
-                                     null, null))
+				if (this.get_path_at_pos ((int) event.x,
+                                          (int) event.y,
+                                          out path, null,
+                                          null, null))
 				{
 					Gtk.TreeViewColumn col = this.get_column (1);
 					this.grab_focus ();

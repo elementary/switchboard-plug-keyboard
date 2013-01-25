@@ -135,8 +135,8 @@ namespace Keyboard.Shortcuts
 						_("Move to workspace 8"),
 						_("Move to workspace 9"),
 						_("Move to left"),
-						_("Move to right")//,
-						//_("Show Workspace Switcher")
+						_("Move to right"),
+						_("Show Workspace Switcher")
 					},
 			
 					schemas = {
@@ -162,8 +162,8 @@ namespace Keyboard.Shortcuts
 						Schema.WM,
 						Schema.WM,
 						Schema.WM,
-						Schema.WM//,
-						//Schema.WM
+						Schema.WM,
+						Schema.WM
 					},
 		
 					keys = {
@@ -190,8 +190,8 @@ namespace Keyboard.Shortcuts
 						"move-to-workspace-8",
 						"move-to-workspace-9",
 						"move-to-workspace-left",
-						"move-to-workspace-right"//,
-						//"show-desktop"
+						"move-to-workspace-right",
+						"show-desktop"
 					}
 				},
 				

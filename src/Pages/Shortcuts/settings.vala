@@ -20,6 +20,9 @@ namespace Keyboard.Shortcuts
 		// require and return class Shortcut objects
 		public Shortcut get_val (Schema schema, string key)
 		{
+			if (schema < 0 || schema >= Schema.COUNT)
+				return (Shortcut) null;
+				
 			if (schema == Schema.MEDIA)
 				return new Shortcut.parse (schemas[schema].get_string (key));
 			else
@@ -28,6 +31,9 @@ namespace Keyboard.Shortcuts
 		
 		public bool set_val  (Schema schema, string key, Shortcut sc)
 		{
+			if (schema < 0 || schema >= Schema.COUNT)
+				return false;
+				
 			if (schema == Schema.MEDIA)
 				schemas[schema].set_string (key, sc.to_gsettings ());
 			else
