@@ -3,6 +3,8 @@ namespace Keyboard
 	// a common class for all pages
 	public abstract class AbstractPage : Gtk.Grid
 	{
+		public abstract string title {get; protected set;}
+		
 		public AbstractPage ()
 		{
 			this.row_spacing    = 12;

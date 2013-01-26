@@ -14,15 +14,26 @@ namespace Keyboard.Shortcuts
 	// main class
 	class Page : AbstractPage
 	{
+		public override string title { get; private set; }
+		
 		public override void reset ()
 		{
-			// TODO
-			stdout.printf ("scs\n");
+			for (int i = 0; i < SectionID.COUNT; i++) {
+				var g = list.groups[i];
+				
+				for (int k = 0; k < g.actions.length; k++)
+				{
+					settings.reset (g.schemas[k], g.keys[k]);
+					stdout.printf ("%d: %s\n", g.schemas[k], g.keys[k]);
+				}
+			}
 			return;
 		}
 		
-		public Page ()
+		public Page (string title)
 		{
+			this.title = title;
+			
 			// init public elements
 			section_names = {
 				_("Windows"),

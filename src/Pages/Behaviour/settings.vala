@@ -7,9 +7,9 @@ namespace Keyboard.Behaviour
 		public bool repeat           { get; set; }
 		
 		public void reset_all () {
-			/*(this as GLib.Settings).reset ("delay");
-			reset ("repeat-interval");
-			reset ("repeat");*/
+			schema.reset ("delay");
+			schema.reset ("repeat-interval");
+			schema.reset ("repeat");
 		}
 		
 		public SettingsRepeat () { 
@@ -23,10 +23,10 @@ namespace Keyboard.Behaviour
 		public int  cursor_blink_timeout { get; set; }
 		public bool cursor_blink         { get; set; }
 		
-		public void reset_all () {/*
-			(this as GLib.Settings).reset ("cursor-blink-time");
-			(this as GLib.Settings).reset ("cursor-blink-timeout");
-			(this as GLib.Settings).reset ("cursor-blink");*/
+		public void reset_all () {
+			schema.reset ("cursor-blink-time");
+			schema.reset ("cursor-blink-timeout");
+			schema.reset ("cursor-blink");
 		}
 		
 		public SettingsBlink () { 

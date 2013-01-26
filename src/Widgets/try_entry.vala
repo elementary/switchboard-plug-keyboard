@@ -1,5 +1,6 @@
 namespace Keyboard.Widgets
 {
+	// wrapper class for Granite.Widgets.HintedEntry until "clear-icon" bug is fixed
 	class TryEntry : Granite.Widgets.HintedEntry
 	{
 		public TryEntry (string? text)

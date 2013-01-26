@@ -40,5 +40,12 @@ namespace Keyboard.Shortcuts
 				schemas[schema].set_strv (key, {sc.to_gsettings ()});
 			return true;
 		}
+		
+		public void reset (Schema schema, string key)
+		{
+			if (! schemas[schema].is_writable (key))
+				return;
+			schemas[schema].reset (key);
+		}
 	}
 }

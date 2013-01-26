@@ -112,6 +112,7 @@ namespace Keyboard.Shortcuts
 				Group () 
 				{
 					actions = {
+						_("Show Workspace Switcher"),
 						_("Switch to first"),
 						_("Switch to new"),
 						_("Switch to workspace 1"),
@@ -135,11 +136,11 @@ namespace Keyboard.Shortcuts
 						_("Move to workspace 8"),
 						_("Move to workspace 9"),
 						_("Move to left"),
-						_("Move to right"),
-						_("Show Workspace Switcher")
+						_("Move to right")
 					},
 			
 					schemas = {
+						Schema.WM,
 						Schema.GALA,
 						Schema.GALA,
 						Schema.WM,
@@ -167,6 +168,7 @@ namespace Keyboard.Shortcuts
 					},
 		
 					keys = {
+						"show-desktop",
 						"move-to-workspace-first",
 						"move-to-workspace-last",
 						"switch-to-workspace-1",
@@ -190,8 +192,7 @@ namespace Keyboard.Shortcuts
 						"move-to-workspace-8",
 						"move-to-workspace-9",
 						"move-to-workspace-left",
-						"move-to-workspace-right",
-						"show-desktop"
+						"move-to-workspace-right"
 					}
 				},
 				

@@ -1,6 +1,7 @@
 namespace Keyboard.Layout
 {
 	/*
+	// class that fficiently stores a 
 	class ???
 	{
 		public uint layout  {get; set;}
@@ -29,8 +30,11 @@ namespace Keyboard.Layout
 		
 		public bool to_name (out string layout, out string variant)
 		{}
+		
+		
 	}
-*/
+	*/
+	
 	// class that parses the layout file, provides lists of languages and
 	// variants, and converts between layout names and their gsettings codes	
 	class Handler : GLib.Object

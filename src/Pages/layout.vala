@@ -5,15 +5,22 @@ namespace Keyboard.Layout
 	
 	class Page : AbstractPage
 	{
+		public override string title { get; private set; }
+		
+		private Layout.Display display;
+		private SettingsGroups settings;
+		
 		public override void reset ()
 		{
-			// TODO
-			stdout.printf ("lay\n");
+			settings.reset_all ();
+			display.reset_all ();
 			return;
 		}
 		
-		public Page ()
+		public Page (string title)
 		{
+			this.title = title;
+			
 			handler  = new Layout.Handler ();
 			
 			// first some labels
@@ -41,7 +48,7 @@ namespace Keyboard.Layout
 			this.attach (button1,     5, 1, 1, 1);
 			this.attach (button2,     5, 2, 1, 1);
 			
-			var settings = new Layout.SettingsGroups();
+			settings = new Layout.SettingsGroups();
 			
 			// connect switch signals
 			switch_main.active = settings.group_per_window;
@@ -79,7 +86,7 @@ namespace Keyboard.Layout
 			} );
 			
 			// tree view to display the current layouts
-			var display = new Layout.Display ();
+			display = new Layout.Display ();
 		
 			this.attach (display, 0, 0, 4, 4);
 			
@@ -90,7 +97,7 @@ namespace Keyboard.Layout
 			entry_test.valign  = Gtk.Align.END;
 		
 			this.attach (entry_test, 4, 3, 3, 1);
-		} 
+		}
 	}
 	
 	// creates a list store from a string vector, optionally converts the layout code

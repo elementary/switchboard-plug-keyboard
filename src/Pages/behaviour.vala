@@ -5,21 +5,19 @@ namespace Keyboard.Behaviour
 	
 	class Page : AbstractPage
 	{
+		public override string title { get; private set; }
+		
 		public override void reset ()
 		{
 			settings_repeat.reset_all ();
 			settings_blink.reset_all ();
-			
 			return;
 		}
 		
-		public Page ()
+		public Page (string title)
 		{
-			this.row_spacing    = 12;
-			this.column_spacing = 12;
-			this.margin_top = margin_bottom = 12;
-			this.expand         = true;
-		
+			this.title = title;
+			
 			settings_repeat = new Behaviour.SettingsRepeat ();
 			settings_blink  = new Behaviour.SettingsBlink  ();
 			

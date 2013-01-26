@@ -7,13 +7,13 @@ namespace Keyboard.Layout
 		private signal void update_buttons ();
 		
 		private SettingsLayouts settings;
+		private Gtk.TreeView tree;
 		
 		public Display ()
 		{
 			settings = new SettingsLayouts ();
-			
 			var list = create_list_store (settings.layouts, true);
-			var tree = new Gtk.TreeView.with_model (list);
+			tree     = new Gtk.TreeView.with_model (list);			
 			var cell = new Gtk.CellRendererText ();
 			
 			tree.insert_column_with_attributes (-1, null, cell, "text", 0);
@@ -100,8 +100,13 @@ namespace Keyboard.Layout
 				tree.get_cursor (out path, null);
 				
 				if (path == null)
+				{
+					up_button.sensitive     = false;
+					down_button.sensitive   = false;
+					remove_button.sensitive = false;
 					return;
-					
+				}
+				
 				int index = (path.get_indices ())[0];
 				int count = settings.layouts.length - 1;
 				
@@ -109,6 +114,13 @@ namespace Keyboard.Layout
 				down_button.sensitive   = (index != count);
 				remove_button.sensitive = (count > 0);
 			} );
+		}
+		
+		public void reset_all ()
+		{
+			settings.reset_all ();
+			tree.model = create_list_store (settings.layouts, true);
+			update_buttons ();			
 		}
 		
 		void add_item (Gtk.TreeView tree, Layout.AddLayout pop)

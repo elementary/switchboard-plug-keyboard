@@ -115,6 +115,15 @@ namespace Keyboard.Layout
 			return return_val;
 		}
 		
+		public void reset_all ()
+		{
+			layouts = parse_default ();
+			validate ();
+			reverted ();
+		}
+		
+		public signal void reverted ();
+		
 		public SettingsLayouts()
 		{
 			base ("org.gnome.libgnomekbd.keyboard");
@@ -131,6 +140,12 @@ namespace Keyboard.Layout
 	{
 		public int  default_group    { get; set; }
 		public bool group_per_window { get; set; }
+		
+		public void reset_all ()
+		{
+			schema.reset ("default-group");
+			schema.reset ("group-per-window");	
+		}
 		
 		public SettingsGroups()
 		{

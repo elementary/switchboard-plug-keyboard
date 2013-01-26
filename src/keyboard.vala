@@ -12,19 +12,18 @@ namespace Keyboard
 			
 			var notebook = new Granite.Widgets.StaticNotebook (false);
 			
-			AbstractPage[] pages =
-			{
-				(AbstractPage) new Keyboard.Shortcuts.Page (),
-				(AbstractPage) new Keyboard.Behaviour.Page (),
-				(AbstractPage) new Keyboard.Layout.Page    ()
+			AbstractPage[] pages = {
+				(AbstractPage) new Keyboard.Shortcuts.Page (_("Shortcuts")),
+				(AbstractPage) new Keyboard.Behaviour.Page (_("Behaviour")),
+				(AbstractPage) new Keyboard.Layout.Page    (_("Layout"))
 			};
 			
 			// every page is a seperate class
-			notebook.append_page (pages[0], new Gtk.Label (_("Shortcuts")));
-			notebook.append_page (pages[1], new Gtk.Label (_("Behaviour")));
-			notebook.append_page (pages[2], new Gtk.Label (_("Layout")));
+			foreach (var page in pages) {
+				notebook.append_page (page, new Gtk.Label (page.title));
+			}
 
-			var button = new Gtk.Button.with_label (_("Reset to Default"));
+			var button = new Gtk.Button.with_label (_("Reset to defaults"));
 			
 			button.expand = false;
 			button.halign = Gtk.Align.END;
