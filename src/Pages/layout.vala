@@ -1,7 +1,7 @@
 namespace Keyboard.Layout
 {
 	// global handler
-	Layout.Handler handler;
+	LayoutHandler handler;
 	
 	class Page : AbstractPage
 	{
@@ -21,7 +21,7 @@ namespace Keyboard.Layout
 		{
 			this.title = title;
 			
-			handler  = new Layout.Handler ();
+			handler  = new LayoutHandler ();
 			
 			// first some labels
 			var label_1   = new Gtk.Label (_("Allow different layouts for individual windows:"));
@@ -100,27 +100,13 @@ namespace Keyboard.Layout
 		}
 	}
 	
-	// creates a list store from a string vector, optionally converts the layout code
-	// to a readable name
-	Gtk.ListStore create_list_store (string[] strv, bool convert = false)
+	// creates a list store from a string vector
+	Gtk.ListStore create_list_store (string[] strv)
 	{
 		Gtk.ListStore list_store = new Gtk.ListStore (1, typeof (string));
 		Gtk.TreeIter iter;
-
-		string item, name = "", vname = "";	
 	
-		foreach (string str in strv)
-		{	
-			if(convert)
-			{
-				handler.name_from_code (str, out name, out vname);
-				item = name + " - " + vname;
-			}
-			else
-			{
-				item = str;
-			}
-			
+		foreach (string item in strv) {	
 			list_store.append (out iter);
 			list_store.set (iter, 0, item);	
 		}

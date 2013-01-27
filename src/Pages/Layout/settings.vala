@@ -10,22 +10,23 @@ namespace Keyboard.Layout
 			string[] copy = {};
 			foreach (string str in layouts)
 			{
-				if (handler.valid_code(str))
+				//if (handler.valid_code(str))
 					copy += str;
 			}
 			layouts = copy;
 		}
 		
-		public void add_layout (string layout)
+		public bool add_layout (string layout)
 		{
 			foreach (string str in layouts)
 			{
 				if (str == layout)
-					return;
+					return false;
 			}
 			string[] val = layouts;
 			val += layout;
 			layouts = val;
+			return true;
 		}
 		
 		public void remove_layout (string layout)

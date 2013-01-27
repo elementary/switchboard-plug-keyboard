@@ -12,7 +12,7 @@ namespace Keyboard.Layout
 		public Display ()
 		{
 			settings = new SettingsLayouts ();
-			var list = create_list_store (settings.layouts, true);
+			var list = make_list_store ();
 			tree     = new Gtk.TreeView.with_model (list);			
 			var cell = new Gtk.CellRendererText ();
 			
@@ -80,12 +80,12 @@ namespace Keyboard.Layout
 			} );
 			
 			up_button.clicked.connect (() => {
-				move_item (settings, tree, 0);
+				move_item (tree, 0);
 				update_buttons ();
 			} );
 			
 			down_button.clicked.connect (() => {
-				move_item (settings, tree, 1);
+				move_item (tree, 1);
 				update_buttons ();
 			} );
 			
@@ -116,50 +116,54 @@ namespace Keyboard.Layout
 			} );
 		}
 		
+		private Gtk.ListStore make_list_store ()
+		{
+			Gtk.ListStore list_store = new Gtk.ListStore (3, typeof (string), typeof(uint), typeof(uint));
+			Gtk.TreeIter iter;
+	
+			uint layout = 0, variant = 0;
+	
+			foreach (string item in settings.layouts)
+			{
+				handler.from_code (item, out layout, out variant);
+				item = handler.get_name (layout, variant);
+				
+				list_store.append (out iter);
+				list_store.set (iter, 0, item);
+				list_store.set (iter, 1, layout);
+				list_store.set (iter, 2, variant);	
+			}
+		
+			return list_store;
+		}
+		
 		public void reset_all ()
 		{
 			settings.reset_all ();
-			tree.model = create_list_store (settings.layouts, true);
+			tree.model = make_list_store ();
 			update_buttons ();			
 		}
 		
 		void add_item (Gtk.TreeView tree, Layout.AddLayout pop)
 		{		
-			pop.layout_added.connect ((lang, layout) =>
+			pop.layout_added.connect ((layout, variant) =>
 			{
 				Gtk.TreeIter iter;
 				
-				var item = lang;
-				
-				if(layout != null)
-					item += " - " + layout;
-				
-				var add = true;
-				
+				var name = handler.get_name (layout, variant);
+				var code = handler.get_code (layout, variant);
 				var list = tree.model as Gtk.ListStore;
 				
-				Gtk.TreeModelForeachFunc check = (model, path, iter) => 
-				{
-					Value cell1;
-					list.get_value (iter, 0, out cell1);
-					if ((string)cell1 == item)
-					{
-						add = false;
-						return true;
-					}
-					return false;
-				};
-				
-				list.foreach (check);
-				
-				if (add)
+				if (settings.add_layout (code))
 				{
 					list.append (out iter);
-					list.set (iter, 0, item);
-					settings.add_layout (handler.code_from_name (lang, layout));
+					list.set (iter, 0, name);
+					list.set (iter, 1, layout);
+					list.set (iter, 2, variant);
+					
 					tree.set_cursor (list.get_path(iter), null, false);
 					update_buttons ();
-				} 
+				}
 			} );
 		}
 		
@@ -171,21 +175,19 @@ namespace Keyboard.Layout
 			var select = tree.get_selection();
 			select.get_selected (out model, out iter);
 			
-			GLib.Value val;
-			model.get_value (iter, 0, out val);
-				
-			var layout = ((string) val).split(" - ");
-
-			settings.remove_layout (handler.code_from_name(layout[0], layout[1]));
+			GLib.Value layout, variant;
+			model.get_value (iter, 1, out layout);
+			model.get_value (iter, 2, out variant);
 			
+			settings.remove_layout (handler.get_code ((uint)layout, (uint)variant));
+			stdout.printf ("%s\n", handler.get_code ((uint)layout, (uint)variant));
 			(model as Gtk.ListStore).remove(iter);
 		}
 		
-		void move_item (Layout.SettingsLayouts settings, Gtk.TreeView tree, int dir)
+		void move_item (Gtk.TreeView tree, int dir)
 		{
 			Gtk.TreeModel model;
 			Gtk.TreeIter  iter_current, iter_new;
-			GLib.Value    val_current,  val_new;
 			Gtk.TreePath  path_current;
 			
 			var select = tree.get_selection();
@@ -193,6 +195,8 @@ namespace Keyboard.Layout
 			path_current = model.get_path (iter_current);
 			
 			iter_new = iter_current;
+			
+			var store = model as Gtk.ListStore;
 			
 			switch (dir) 
 			{
@@ -204,19 +208,17 @@ namespace Keyboard.Layout
 						break;
 			}
 			
-			tree.set_cursor (model.get_path (iter_new), null, false);
+			store.swap (iter_current, iter_new);
 			
-			model.get_value (iter_current, 0, out val_current);
-			model.get_value (iter_new,     0, out val_new);
-			
-			(model as Gtk.ListStore).set (iter_current, 0, (string)val_new);
-			(model as Gtk.ListStore).set (iter_new,     0, (string)val_current);
-			
+			tree.set_cursor (model.get_path (iter_current), null, false);
+
 			switch (dir) 
 			{
-				case 1: settings.layout_down ((path_current.get_indices()) [0]);
+				case 1: 
+						settings.layout_down ((path_current.get_indices()) [0]);
 						break;
-				case 0: settings.layout_up   ((path_current.get_indices()) [0]);
+				case 0: 
+						settings.layout_up   ((path_current.get_indices()) [0]);
 						break;
 			}
 		}

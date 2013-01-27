@@ -3,7 +3,7 @@ namespace Keyboard.Layout
 	// pop over widget to add a new keyboard layout
 	class AddLayout : Gtk.Dialog//Granite.Widgets.PopOver
 	{
-		public signal void layout_added (string language, string? layout = null);
+		public signal void layout_added (int language, int layout = 0);
 		
 		public AddLayout()
 		{
@@ -27,8 +27,8 @@ namespace Keyboard.Layout
 			grid.attach (label_layout,   0, 1, 1, 1);
 			
 			// list stores
-			var lang_list   = create_list_store (handler.language_names);
-			var layout_list = create_list_store (handler.variants (handler.language_names[0]));
+			var lang_list   = create_list_store (handler.get_layouts ());
+			var layout_list = create_list_store (handler.get_variants (0));
 			
 			// combo boxes to select language and layout
 			var language_box = new Gtk.ComboBox.with_model (lang_list);
@@ -49,13 +49,8 @@ namespace Keyboard.Layout
 			
 			language_box.changed.connect( () =>
 			{
-				Value val;
-				Gtk.TreeIter iter;
-				
-				language_box.get_active_iter (out iter);
-				lang_list.get_value (iter, 0, out val);
-				
-				layout_box.model = create_list_store (handler.variants((string) val));
+				var active = language_box.active;
+				layout_box.model = create_list_store (handler.get_variants (active));
 				layout_box.active = 0;
 			} );
 			
@@ -79,20 +74,8 @@ namespace Keyboard.Layout
 			
 			button_add.clicked.connect (() =>
 			{
-				Value val1, val2;
-				Gtk.TreeIter iter;
-				
 				this.hide ();
-				
-				language_box.get_active_iter (out iter);
-				language_box.model.get_value (iter, 0, out val1);
-				layout_box.get_active_iter   (out iter);
-				layout_box.model.get_value   (iter, 0, out val2);
-
-				if ((string)val2 == _("(Default)"))
-					layout_added ((string) val1);
-				else
-					layout_added ((string) val1, (string) val2);		
+				layout_added (language_box.active, layout_box.active);
 			} );
 		}
 	}
