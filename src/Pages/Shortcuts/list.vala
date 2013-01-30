@@ -169,8 +169,8 @@ namespace Keyboard.Shortcuts
 		
 					keys = {
 						"show-desktop",
-						"move-to-workspace-first",
-						"move-to-workspace-last",
+						"switch-to-workspace-first",
+						"switch-to-workspace-last",
 						"switch-to-workspace-1",
 						"switch-to-workspace-2",
 						"switch-to-workspace-3",
