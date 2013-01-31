@@ -30,12 +30,12 @@ namespace Keyboard
 			
 			button.clicked.connect (() => {
 				pages[notebook.page].reset ();
-			} );
+			});
 			
 			grid.attach (notebook, 0, 0, 1, 1);
 			//grid.attach (button,   0, 1, 1, 1);
 
-			this.add( grid );
+			this.add (grid);
 		}
 	}
 }

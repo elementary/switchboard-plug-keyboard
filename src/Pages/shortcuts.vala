@@ -22,10 +22,7 @@ namespace Keyboard.Shortcuts
 				var g = list.groups[i];
 				
 				for (int k = 0; k < g.actions.length; k++)
-				{
 					settings.reset (g.schemas[k], g.keys[k]);
-					stdout.printf ("%d: %s\n", g.schemas[k], g.keys[k]);
-				}
 			}
 			return;
 		}

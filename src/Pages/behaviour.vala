@@ -244,10 +244,11 @@ namespace Keyboard.Behaviour
 
 			/** Test Settings **/
 		
-			var entry_test = new Keyboard.Widgets.TryEntry (_("Type to test your settings…"));
+			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your settings…"));
 		
 			entry_test.hexpand = true;
-
+			entry_test.has_clear_icon = true;
+			
 			this.attach (entry_test, 1, 6, 1, 1);
 		}
 	}

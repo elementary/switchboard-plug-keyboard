@@ -34,8 +34,6 @@ VALA_C
 	Pages/Layout/handler.vala
 	Pages/Layout/settings.vala
 	
-	Widgets/try_entry.vala
-	
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
     
 PACKAGES

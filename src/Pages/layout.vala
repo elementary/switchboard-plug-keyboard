@@ -91,8 +91,9 @@ namespace Keyboard.Layout
 			this.attach (display, 0, 0, 4, 4);
 			
 			// Test entry
-			var entry_test = new Keyboard.Widgets.TryEntry (_("Type to test your layout…"));
+			var entry_test = new Granite.Widgets.HintedEntry (_("Type to test your layout…"));
 			
+			entry_test.has_clear_icon = true;
 			entry_test.hexpand = entry_test.vexpand = true;
 			entry_test.valign  = Gtk.Align.END;
 		

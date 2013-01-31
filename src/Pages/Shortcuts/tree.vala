@@ -39,7 +39,8 @@ namespace Keyboard.Shortcuts
 			for (int i = 0; i < actions.length; i++)
 			{
 				var shortcut = settings.get_val(schemas[i], keys[i]);
-			
+				
+				// simply ignore missing keys/schemas
 				if (shortcut == null)
 					continue;
 
@@ -61,6 +62,9 @@ namespace Keyboard.Shortcuts
 
 			this.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
 			this.insert_column_with_attributes (-1, null, cell_edit, "text", 1);
+			// debug
+			//this.insert_column_with_attributes (-1, null, cell_desc, "text", 2);
+			//this.insert_column_with_attributes (-1, null, cell_edit, "text", 3);
 			
 			this.headers_visible = false;
 			this.expand          = true;
