@@ -14,7 +14,7 @@ namespace Keyboard.Shortcuts
 			schema_names = {
 				"org.gnome.desktop.wm.keybindings", 
 				"org.gnome.mutter.keybindings",
-				"org.pantheon.desktop.gala.behavior",
+				"org.pantheon.desktop.gala.keybindings",
 				"org.gnome.settings-daemon.plugins.media-keys"
 			};
 			
