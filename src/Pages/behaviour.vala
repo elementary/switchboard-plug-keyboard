@@ -5,8 +5,6 @@ namespace Keyboard.Behaviour
 	
 	class Page : AbstractPage
 	{
-		public override string title { get; private set; }
-		
 		public override void reset ()
 		{
 			settings_repeat.reset_all ();
@@ -16,7 +14,7 @@ namespace Keyboard.Behaviour
 		
 		public Page (string title)
 		{
-			this.title = title;
+			base (title);
 			
 			settings_repeat = new Behaviour.SettingsRepeat ();
 			settings_blink  = new Behaviour.SettingsBlink  ();

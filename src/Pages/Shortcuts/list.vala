@@ -2,7 +2,7 @@ namespace Keyboard.Shortcuts
 {
 	struct Group { 
 		public string[] actions;
-		public Schema[] schemas;
+		public Schema[]  schemas;
 		public string[] keys;
 	}
 	

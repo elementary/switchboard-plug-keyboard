@@ -12,17 +12,19 @@ namespace Keyboard
 			
 			var notebook = new Granite.Widgets.StaticNotebook (false);
 			
+			// every page is a seperate class
 			AbstractPage[] pages = {
 				(AbstractPage) new Keyboard.Shortcuts.Page (_("Shortcuts")),
 				(AbstractPage) new Keyboard.Behaviour.Page (_("Behaviour")),
-				(AbstractPage) new Keyboard.Layout.Page    (_("Layout"))
+				(AbstractPage) new Keyboard.Layout.Page    (_("Layout")),
+				(AbstractPage) new Keyboard.Options.Page   (_("Options"))
 			};
 			
-			// every page is a seperate class
 			foreach (var page in pages) {
 				notebook.append_page (page, new Gtk.Label (page.title));
 			}
 
+			// button to reset the current page
 			var button = new Gtk.Button.with_label (_("Reset to defaults"));
 			
 			button.expand = false;
@@ -33,14 +35,14 @@ namespace Keyboard
 			});
 			
 			grid.attach (notebook, 0, 0, 1, 1);
-			//grid.attach (button,   0, 1, 1, 1);
+			//grid.attach (button,   0, 1, 1, 1); uncomment when done
 
 			this.add (grid);
 		}
 	}
 }
 
-static int main (string[] args)
+int main (string[] args)
 {
 	Gtk.init (ref args);
 

@@ -14,8 +14,6 @@ namespace Keyboard.Shortcuts
 	// main class
 	class Page : AbstractPage
 	{
-		public override string title { get; private set; }
-		
 		public override void reset ()
 		{
 			for (int i = 0; i < SectionID.COUNT; i++) {
@@ -29,7 +27,7 @@ namespace Keyboard.Shortcuts
 		
 		public Page (string title)
 		{
-			this.title = title;
+			base (title);
 			
 			// init public elements
 			section_names = {
@@ -57,7 +55,7 @@ namespace Keyboard.Shortcuts
 		
 			section_switcher.changed.connect ((i) => {
 				shortcut_display.change_selection (i);
-			} );
+			});
 		}
 	}
 }

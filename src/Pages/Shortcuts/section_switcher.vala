@@ -13,8 +13,7 @@ namespace Keyboard.Shortcuts
 			Gtk.TreeIter iter;
 			
 			// add the sections
-			for (int id = 0; id < SectionID.COUNT; id++)
-			{
+			for (int id = 0; id < SectionID.COUNT; id++) {
 				store.append (out iter);
 				store.set (iter, 0, section_names[id]);
 			}
@@ -32,13 +31,12 @@ namespace Keyboard.Shortcuts
 			this.add(tree);
 			this.expand = true;
 			
-			// when cursor changes, emit signal "changed" with
-			// correct index
+			// when cursor changes, emit signal "changed" with correct index
 			tree.cursor_changed.connect (() => {
 				Gtk.TreePath path;
 				tree.get_cursor (out path, null);
 				changed (path.get_indices ()[0]);
-			} );
+			});
 		}
 		
 		public signal void changed (int i);

@@ -5,8 +5,6 @@ namespace Keyboard.Layout
 	
 	class Page : AbstractPage
 	{
-		public override string title { get; private set; }
-		
 		private Layout.Display display;
 		private SettingsGroups settings;
 		
@@ -19,7 +17,7 @@ namespace Keyboard.Layout
 		
 		public Page (string title)
 		{
-			this.title = title;
+			base (title);
 			
 			handler  = new LayoutHandler ();
 			
