@@ -295,8 +295,8 @@ namespace Keyboard.Shortcuts
 						"play",
 						"pause",
 						"stop",
-						"next",
 						"previous",
+						"next",
 						"eject"
 					}
 				},

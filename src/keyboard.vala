@@ -1,5 +1,3 @@
-// main class for keyboard plug
-
 namespace Keyboard
 {
 	class KeyboardPlug : Pantheon.Switchboard.Plug

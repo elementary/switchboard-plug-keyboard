@@ -17,8 +17,7 @@ namespace Keyboard.Options
 			this.add (trees[0]);
 		}
 		
-		public void set_option (uint group, uint option, bool status)
-		{
+		public void set_option (uint group, uint option, bool status) {
 			trees[group].set_option (option, status);
 		}
 		
