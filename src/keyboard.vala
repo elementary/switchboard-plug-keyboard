@@ -51,3 +51,7 @@ int main (string[] args)
 	Gtk.main ();
 	return 0;
 }
+
+internal void desktop_translations () {
+    var name = _("Keyboard");
+}
