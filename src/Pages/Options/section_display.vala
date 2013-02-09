@@ -2,13 +2,24 @@ namespace Keyboard.Options
 {
 	class SectionDisplay : Gtk.ScrolledWindow
 	{
-		OptionTree[] trees;
+		private OptionTree[] trees;
+		
+		public signal void changed (bool state, uint group, uint option);
+		public signal void apply_changes ();
 		
 		public SectionDisplay ()
 		{
-			for (int i = 0; i < option_handler.length; i++)
+			for (int i = 0; i < option_handler.length; i++) 
+			{
 				trees += new OptionTree (i);
-				
+				trees[i].changed.connect ((s,g,o) => {
+					changed (s,g,o);
+				});
+				trees[i].apply_changes.connect (() => {
+					apply_changes ();
+				});
+			}
+			
 			this.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			this.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			this.shadow_type = Gtk.ShadowType.IN;
@@ -21,6 +32,11 @@ namespace Keyboard.Options
 			trees[group].set_option (option, status);
 		}
 		
+		public void reset () {
+			foreach (var tree in trees)
+				tree.reset ();
+		}
+		
 		public uint selected
 		{
 			get {
@@ -30,7 +46,6 @@ namespace Keyboard.Options
 			set {
 				this.remove (trees[selected]);
 				this.add    (trees[value]);
-
 				this.show_all ();
 			}
 		}

@@ -20,6 +20,12 @@ namespace Keyboard.Options
 			{
 				var parts = l.split(":", 3);
 			
+				if (parts[0] == null || parts[1] == null || parts[2] == null)
+				{
+					warning ("Line \"%s\" has wrong format. Will be ignored.", l);
+					continue;
+				}
+			
 				names += parts[0];
 				codes += parts[1];
 				
@@ -42,7 +48,7 @@ namespace Keyboard.Options
 			return multiple_selection[index];
 		}
 		
-		public string get_code (uint l, uint v) {
+		public string? get_code (uint l, uint v) {
 			return codes[l] + "\t" + groups[l].codes[v];
 		}
 		

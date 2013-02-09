@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-02-05 16:53+0100\n"
-"PO-Revision-Date: 2013-02-05 11:33+0000\n"
-"Last-Translator: Michal Narecki <kylie-fan@o2.pl>\n"
+"POT-Creation-Date: 2013-02-05 16:59+0100\n"
+"PO-Revision-Date: 2013-02-07 20:11+0000\n"
+"Last-Translator: Adrian Widerski <Unknown>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-02-06 05:46+0000\n"
-"X-Generator: Launchpad (build 16468)\n"
+"X-Launchpad-Export-Date: 2013-02-08 05:24+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:17
 msgid "Shortcuts"
@@ -31,11 +31,11 @@ msgstr "Układ"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:20
 msgid "Options"
-msgstr ""
+msgstr "Opcje"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:28
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Przywróć ustawienia domyślne"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
@@ -182,7 +182,7 @@ msgstr "Prezentuj wszystkie okna"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Pokaż podgląd obszarów roboczych"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:116
 msgid "Switch to first"

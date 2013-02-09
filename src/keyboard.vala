@@ -33,7 +33,7 @@ namespace Keyboard
 			});
 			
 			grid.attach (notebook, 0, 0, 1, 1);
-			//grid.attach (button,   0, 1, 1, 1); uncomment when done
+			//grid.attach (button,   0, 1, 1, 1);
 
 			this.add (grid);
 		}

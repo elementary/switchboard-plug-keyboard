@@ -5,6 +5,9 @@ namespace Keyboard.Options
 	// displayed on the right
 	class SectionSwitcher : Gtk.ScrolledWindow
 	{
+		// section has been changed to i
+		public signal void changed (int i);
+		
 		public SectionSwitcher ()
 		{
 			var tree  = new Gtk.TreeView ();
@@ -40,7 +43,5 @@ namespace Keyboard.Options
 				changed (path.get_indices ()[0]);
 			});
 		}
-		
-		public signal void changed (int i);
 	}
 }

@@ -4,13 +4,25 @@ namespace Keyboard.Options
 	{
 		public uint option_group { get; construct; }
 		
+		public signal void changed (bool state, uint group, uint option);
+		public signal void apply_changes ();
+		
+		Gtk.TreeModelForeachFunc _reset;
+			
 		public OptionTree (uint option_group)
 		{
 			Object (option_group: option_group);
+			
 			var store  = new Gtk.ListStore (2, typeof (bool), typeof (string));
 			var toggle = new Gtk.CellRendererToggle ();
 			var option_names = option_handler.get_options (option_group);
 			
+			_reset = ((model, path, iter) => {
+				changed (false, option_group, (path.get_indices ())[0]);
+				store.set (iter, 0, false);
+				return false;
+			});
+		
 			Gtk.TreeIter iter;
 			model = store;			
 			
@@ -37,6 +49,12 @@ namespace Keyboard.Options
 		    this.append_column (column);
 		}
 		
+		public void reset ()
+		{
+			var store = model as Gtk.ListStore;
+			store.foreach (_reset);
+		}
+		
 		public void set_option (uint option, bool status)
 		{
 			var store = model as Gtk.ListStore;
@@ -51,37 +69,19 @@ namespace Keyboard.Options
 			var tree_path = new Gtk.TreePath.from_string (path);
 			var store = model as Gtk.ListStore;
 			
-			// if it's a radio button, it'll always be true
-			var on = !toggle.active || toggle.radio;
+			// if it's a radio button, it'll always be active
+			var state = !toggle.active || toggle.radio;
+			
+			if (toggle.radio)
+				reset ();
 			
 			Gtk.TreeIter iter;
 			store.get_iter (out iter, tree_path);
-			store.set (iter, 0, on);
+			store.set (iter, 0, state);
 			
-			if (toggle.radio)
-			{
-				Gtk.TreeModelForeachFunc reset = ((model, path, iter) => {
-					option_settings.remove (option_group, (path.get_indices ())[0]);
-					store.set (iter, 0, false);
-					return false;
-				});
-				
-				store.foreach (reset);
-				store.set (iter, 0, true);
-				
-				if (int.parse (path) > 0)
-					option_settings.add (option_group, int.parse (path));
-				
-				option_settings.apply ();
-				return;
-			}
-			
-			if (on)
-				option_settings.add (option_group, int.parse (path));
-			else
-				option_settings.remove (option_group, int.parse (path));
-				
-			option_settings.apply ();
+			if (!(toggle.radio && int.parse (path) == 0))
+				changed (state, option_group, int.parse (path));
+			apply_changes ();
 		}
 	}
 }

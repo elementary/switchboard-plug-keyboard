@@ -1,77 +1,126 @@
 namespace Keyboard.Options
 {
-	class OptionSettings : Granite.Services.Settings
+	class OptionSettings : GLib.Object
 	{
-		public string[] options { get; set; }
+		public uint[] groups;
+		public uint[] options;
 		
-		public uint[] u_groups;
-		public uint[] u_options;
+		public uint length { 
+			get { return groups.length; } 
+		}
+		
+		private GLib.Settings settings;
 		
 		public OptionSettings()
 		{
-			base ("org.gnome.libgnomekbd.keyboard");
+			var schema_name   = "org.gnome.libgnomekbd.keyboard";
+			var schema_source = GLib.SettingsSchemaSource.get_default ();
+				
+			// check if schema exists
+			var schema = schema_source.lookup (schema_name, true);
+				
+			if (schema == null) {
+				warning ("Schema \"%s\" is not installed on you system.", schema_name);
+				settings = null;
+			} else {
+				settings = new GLib.Settings.full (schema, null, null);
+				parse ();
+				apply ();
+			}
+			
+			settings.changed["options"].connect (() => {
+				uint[] old_groups  = groups;
+				uint[] old_options = options;
+				
+				parse ();
+				
+				if (old_groups.length  != groups.length || old_options.length != old_options.length) {
+					external_change ();
+					return;
+				}
+				
+				for (int i = 0; i < length; i++) {
+					if (old_groups[i] != groups[i] || old_options[i] != options[i])
+						external_change ();
+				}
+			});
+		}
+		
+		// emittedwhen the options are changed from an external program
+		public signal void external_change ();
+		
+		// parse the "options" key and store the values in options[] and groups[]
+		public bool parse ()
+		{
+			groups  = {};
+			options = {};
 			
 			uint group, option;
 			
-			foreach (var code in options)
-				stdout.printf ("%s\n", code);
-				
-			foreach (var code in options)
+			foreach (var code in settings.get_strv ("options"))
 			{
 				var add = true;
 				
 				if(!option_handler.from_code (code, out group, out option)) {
-					warning ("The option \"%s\" in \"%s.options\" is invalid and will be removed.", code, schema.schema);
+					warning ("The option \"%s\" in \"%s.options\" is invalid and will be removed.", code, settings.schema);
 					add = false;
 				}
 				
-				for (int i = 0; i < u_groups.length; i++) {
-					if (group == u_groups[i] && option == u_options[i]) {
-						warning ("Duplicate of \"%s\" in \"%s.options\" will be removed.", code, schema.schema);
+				for (int i = 0; i < groups.length; i++) {
+					if (group == groups[i] && option == options[i]) {
+						warning ("Duplicate of \"%s\" in \"%s.options\" will be removed.", code, settings.schema);
 						add = false;
 					}
 				}
 				
 				if (add) {
-					u_groups  += group;
-					u_options += option;
+					groups  += group;
+					options += option;
 				}
 			}
 			
-			apply ();
+			return true;
 		}
 		
+		public void reset ()
+		{
+			groups  = {};
+			options = {};
+			settings.set_strv ("options", null);
+		}
+		
+		
+		
+		// apply settings to gsettings
 		public void apply ()
 		{
-			string [] tmp = {};
+			string[] tmp = {};
 			
-			for (int i = 0; i < u_groups.length; i++)
-				tmp += option_handler.get_code (u_groups[i], u_options[i]);
+			for (int i = 0; i < groups.length; i++)
+				tmp += option_handler.get_code (groups[i], options[i]);
 			
-			options = tmp;
+			settings.set_strv ("options", tmp);
 		}
 		
 		public void add (uint group, uint option) {
-			u_groups  += group;
-			u_options += option;
-			//apply ();
+			groups  += group;
+			options += option;
 		}
 		
 		public void remove (uint group, uint option)
 		{
-			uint[] u_groups_new  = {};
-			uint[] u_options_new = {};
+			uint[] groups_new  = {};
+			uint[] options_new = {};
 			 
-			for (int i = 0; i < u_groups.length; i++) {
-				if (group != u_groups[i] || option != u_options[i]) {
-					u_groups_new  += u_groups[i];
-					u_options_new += u_options[i];
+			for (int i = 0; i < groups.length; i++) {
+				if (group != groups[i] || option != options[i]) {
+					groups_new  += groups[i];
+					options_new += options[i];
 				}
 			}
 			
-			u_groups = u_groups_new;
-			u_options = u_options_new;
-			//apply ();
+			groups = groups_new;
+			options = options_new;
 		}
 	}
 }
