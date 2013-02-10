@@ -7,423 +7,427 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2013-02-05 16:59+0100\n"
+"POT-Creation-Date: 2013-02-08 13:28+0100\n"
 "PO-Revision-Date: 2013-01-29 09:30+0000\n"
 "Last-Translator: Alexander Wilms <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-02-07 05:42+0000\n"
-"X-Generator: Launchpad (build 16477)\n"
+"X-Launchpad-Export-Date: 2013-02-10 05:24+0000\n"
+"X-Generator: Launchpad (build 16482)\n"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:17
+#: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:15
 msgid "Shortcuts"
 msgstr "Tastenkürzel"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:18
+#: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:16
 msgid "Behaviour"
 msgstr "Verhalten"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:19
+#: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:17
 msgid "Layout"
 msgstr "Layout"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:20
+#: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:18
 msgid "Options"
 msgstr ""
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:28
+#: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
 msgstr ""
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:34
+#: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:56
+msgid "Keyboard"
+msgstr ""
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
 msgstr "Fenster"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:35
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:35
 msgid "Workspaces"
 msgstr "Arbeitsflächen"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:36
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:36
 msgid "Screenshots"
 msgstr "Bildschirmfotos"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:37
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:37
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:38
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:38
 msgid "Media"
 msgstr "Medien"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:39
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:39
 msgid "Universal Access"
 msgstr "Barrierefreiheit"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:23
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys</b>"
 msgstr "<b>Tastenwiederholung</b>"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:24
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
 msgstr "Verzögerung:"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:25
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:136
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:25
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:136
 msgid "Interval:"
 msgstr "Intervall:"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:26
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:27
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:138
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:26
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:27
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:138
 msgid "milliseconds"
 msgstr "Millisekunden"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:135
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:135
 msgid "<b>Cursor Blinking</b>"
 msgstr "<b>Blinkender Cursor</b>"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:137
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:137
 msgid "Duration:"
 msgstr "Dauer:"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:139
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:139
 msgid "seconds"
 msgstr "Sekunden"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:245
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
 msgstr "Tippen Sie hier, um die Einstellungen zu überprüfen..."
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/layout.vala:25
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
 msgstr "Erlaube verschiedene Layouts für einzelne Fenster:"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/layout.vala:26
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
 msgstr "Neue Fenster benutzen:"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/layout.vala:42
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/layout.vala:42
 msgid "the default layout"
 msgstr "Das Standardlayout"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/layout.vala:43
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/layout.vala:43
 msgid "the previous window's layout"
 msgstr "das Layout des vorherigen Fensters"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/layout.vala:92
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
 msgstr "Tippen Sie hier, um das Layout zu überprüfen..."
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:56
-msgid "Close"
-msgstr "Beenden"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:57
-msgid "Lower"
-msgstr "Senken"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:58
-msgid "Maximize"
-msgstr "Maximieren"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:59
-msgid "Unmaximize"
-msgstr "Maxmimierung aufheben"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:60
-msgid "Toggle Maximized"
-msgstr "Maximierung umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:61
-msgid "Minimize"
-msgstr "Minimieren"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:62
-msgid "Toggle Fullscreen"
-msgstr "Vollbildmodus umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:63
-msgid "Tile Left"
-msgstr "Links einschnappen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:64
-msgid "Tile Right"
-msgstr "Rechts einschnappen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:65
-msgid "Toggle Shaded"
-msgstr "Abdunkelung umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:66
-msgid "Toggle on all Workspaces"
-msgstr "Auf allen Arbeitsflächen umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:67
-msgid "Toggle always on Top"
-msgstr "'Immer sichtbar' umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:68
-msgid "Switch Windows"
-msgstr "Fenster wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:69
-msgid "Switch Windows backwards"
-msgstr "Fenster invertiert wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "Fenster-Exposé"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "Alle Fenster darstellen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:115
-msgid "Show Workspace Switcher"
-msgstr ""
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:116
-msgid "Switch to first"
-msgstr "Zu erstem wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:117
-msgid "Switch to new"
-msgstr "Zu neuem wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:118
-msgid "Switch to workspace 1"
-msgstr "Zur Arbeitsfläche 1 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:119
-msgid "Switch to workspace 2"
-msgstr "Zur Arbeitsfläche 2 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:120
-msgid "Switch to workspace 3"
-msgstr "Zur Arbeitsfläche 3 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:121
-msgid "Switch to workspace 4"
-msgstr "Zur Arbeitsfläche 4 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:122
-msgid "Switch to workspace 5"
-msgstr "Zur Arbeitsfläche 5 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:123
-msgid "Switch to workspace 6"
-msgstr "Zur Arbeitsfläche 6 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:124
-msgid "Switch to workspace 7"
-msgstr "Zur Arbeitsfläche 7 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:125
-msgid "Switch to workspace 8"
-msgstr "Zur Arbeitsfläche 8 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:126
-msgid "Switch to workspace 9"
-msgstr "Zur Arbeitsfläche 9 wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:127
-msgid "Switch to left"
-msgstr "Nach links wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:128
-msgid "Switch to right"
-msgstr "Nach rechts wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:129
-msgid "Move to workspace 1"
-msgstr "Auf Arbeitsfläche 1 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:130
-msgid "Move to workspace 2"
-msgstr "Auf Arbeitsfläche 2 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:131
-msgid "Move to workspace 3"
-msgstr "Auf Arbeitsfläche 3 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:132
-msgid "Move to workspace 4"
-msgstr "Auf Arbeitsfläche 4 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:133
-msgid "Move to workspace 5"
-msgstr "Auf Arbeitsfläche 5 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:134
-msgid "Move to workspace 6"
-msgstr "Auf Arbeitsfläche 6 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:135
-msgid "Move to workspace 7"
-msgstr "Auf Arbeitsfläche 7 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:136
-msgid "Move to workspace 8"
-msgstr "Auf Arbeitsfläche 8 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:137
-msgid "Move to workspace 9"
-msgstr "Auf Arbeitsfläche 9 bewegen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:138
-msgid "Move to left"
-msgstr "Nach links wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:139
-msgid "Move to right"
-msgstr "Nach rechts wechseln"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:203
-msgid "Take a Screenshot"
-msgstr "Bildschirmfoto aufnehmen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:204
-msgid "Save Screenshot to Clipboard"
-msgstr "Bildschirmfoto in Zwischenablage speichern"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:205
-msgid "Take a Screenshot of a Window"
-msgstr "Bildschirmfoto eines Fensters aufnehmen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:206
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Bildschirmfoto des Fensters in Zwischenablage speichern"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:207
-msgid "Take a Screenshot of an Area"
-msgstr "Ein Bildschirmfoto eines Bereiches aufnehmen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:208
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Bildschirmausschnitt in Zwischenablage speichern"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:234
-msgid "Calculator"
-msgstr "Taschenrechner"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:235
-msgid "Email"
-msgstr "E-Mail"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:236
-msgid "Help"
-msgstr "Hilfe"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:237
-msgid "Home Folder"
-msgstr "Persönlicher Ordner"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:238
-msgid "File Search"
-msgstr "Dateisuche"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:239
-msgid "Internet Browser"
-msgstr "Internet Browser"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:265
-msgid "Volume Up"
-msgstr "Lauter"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:266
-msgid "Volume Down"
-msgstr "Leiser"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:267
-msgid "Mute"
-msgstr "Stummschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:268
-msgid "Launch Media Player"
-msgstr "Medienspieler starten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:269
-msgid "Play"
-msgstr "Wiedergabe starten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:270
-msgid "Pause"
-msgstr "Pause"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:271
-msgid "Stop"
-msgstr "Stop"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:272
-msgid "Previous Track"
-msgstr "Vorheriges Stück"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:273
-msgid "Next Track"
-msgstr "Nächstes Stück"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:274
-msgid "Eject"
-msgstr "Auswerfen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:308
-msgid "Decrease Text Size"
-msgstr "Schrift verkleinern"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:309
-msgid "Increase Text Size"
-msgstr "Schrift vergrößern"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:310
-msgid "Toggle Magnifier"
-msgstr "Lupe umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:311
-msgid "Magnifier Zoom in"
-msgstr "Bildschirmlupe hereinzoomen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:312
-msgid "Magnifier Zoom out"
-msgstr "Bildschirmlupe herauszoomen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:313
-msgid "Toggle On Screen Keyboard"
-msgstr "Bildschirmtastatur umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:314
-msgid "Toggle Screenreader"
-msgstr "Bildschirmleser umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:315
-msgid "Toggle High Contrast"
-msgstr "Hohen Kontrast umschalten"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:38
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:41
-msgid "Add"
-msgstr "Hinzufügen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:39
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:42
-msgid "Remove"
-msgstr "Entfernen"
-
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:146
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:146
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr "Wenn Sie das Tastenkürzel \"%s\" zuweisen, wird \"%s\" deaktiviert"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:147
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:147
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:148
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
 msgstr "Neu zuweisen"
 
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:172
-#: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/shortcut.vala:39
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/tree.vala:172
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/shortcut.vala:39
 msgid "Disabled"
 msgstr "Deaktiviert"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:38
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:41
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:39
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/display.vala:42
+msgid "Remove"
+msgstr "Entfernen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:56
+msgid "Close"
+msgstr "Beenden"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:57
+msgid "Lower"
+msgstr "Senken"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:58
+msgid "Maximize"
+msgstr "Maximieren"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:59
+msgid "Unmaximize"
+msgstr "Maxmimierung aufheben"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:60
+msgid "Toggle Maximized"
+msgstr "Maximierung umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:61
+msgid "Minimize"
+msgstr "Minimieren"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:62
+msgid "Toggle Fullscreen"
+msgstr "Vollbildmodus umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:63
+msgid "Tile Left"
+msgstr "Links einschnappen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:64
+msgid "Tile Right"
+msgstr "Rechts einschnappen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:65
+msgid "Toggle Shaded"
+msgstr "Abdunkelung umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:66
+msgid "Toggle on all Workspaces"
+msgstr "Auf allen Arbeitsflächen umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:67
+msgid "Toggle always on Top"
+msgstr "'Immer sichtbar' umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:68
+msgid "Switch Windows"
+msgstr "Fenster wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:69
+msgid "Switch Windows backwards"
+msgstr "Fenster invertiert wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:70
+msgid "Expose Windows"
+msgstr "Fenster-Exposé"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:71
+msgid "Expose all Windows"
+msgstr "Alle Fenster darstellen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:115
+msgid "Show Workspace Switcher"
+msgstr ""
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:116
+msgid "Switch to first"
+msgstr "Zu erstem wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:117
+msgid "Switch to new"
+msgstr "Zu neuem wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:118
+msgid "Switch to workspace 1"
+msgstr "Zur Arbeitsfläche 1 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:119
+msgid "Switch to workspace 2"
+msgstr "Zur Arbeitsfläche 2 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:120
+msgid "Switch to workspace 3"
+msgstr "Zur Arbeitsfläche 3 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:121
+msgid "Switch to workspace 4"
+msgstr "Zur Arbeitsfläche 4 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:122
+msgid "Switch to workspace 5"
+msgstr "Zur Arbeitsfläche 5 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:123
+msgid "Switch to workspace 6"
+msgstr "Zur Arbeitsfläche 6 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:124
+msgid "Switch to workspace 7"
+msgstr "Zur Arbeitsfläche 7 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:125
+msgid "Switch to workspace 8"
+msgstr "Zur Arbeitsfläche 8 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:126
+msgid "Switch to workspace 9"
+msgstr "Zur Arbeitsfläche 9 wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:127
+msgid "Switch to left"
+msgstr "Nach links wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:128
+msgid "Switch to right"
+msgstr "Nach rechts wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:129
+msgid "Move to workspace 1"
+msgstr "Auf Arbeitsfläche 1 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:130
+msgid "Move to workspace 2"
+msgstr "Auf Arbeitsfläche 2 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:131
+msgid "Move to workspace 3"
+msgstr "Auf Arbeitsfläche 3 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:132
+msgid "Move to workspace 4"
+msgstr "Auf Arbeitsfläche 4 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:133
+msgid "Move to workspace 5"
+msgstr "Auf Arbeitsfläche 5 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:134
+msgid "Move to workspace 6"
+msgstr "Auf Arbeitsfläche 6 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:135
+msgid "Move to workspace 7"
+msgstr "Auf Arbeitsfläche 7 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:136
+msgid "Move to workspace 8"
+msgstr "Auf Arbeitsfläche 8 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:137
+msgid "Move to workspace 9"
+msgstr "Auf Arbeitsfläche 9 bewegen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:138
+msgid "Move to left"
+msgstr "Nach links wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:139
+msgid "Move to right"
+msgstr "Nach rechts wechseln"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:203
+msgid "Take a Screenshot"
+msgstr "Bildschirmfoto aufnehmen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:204
+msgid "Save Screenshot to Clipboard"
+msgstr "Bildschirmfoto in Zwischenablage speichern"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:205
+msgid "Take a Screenshot of a Window"
+msgstr "Bildschirmfoto eines Fensters aufnehmen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:206
+msgid "Save Window-Screenshot to Clipboard"
+msgstr "Bildschirmfoto des Fensters in Zwischenablage speichern"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:207
+msgid "Take a Screenshot of an Area"
+msgstr "Ein Bildschirmfoto eines Bereiches aufnehmen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:208
+msgid "Save Area-Screenshot to Clipboard"
+msgstr "Bildschirmausschnitt in Zwischenablage speichern"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:234
+msgid "Calculator"
+msgstr "Taschenrechner"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:235
+msgid "Email"
+msgstr "E-Mail"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:236
+msgid "Help"
+msgstr "Hilfe"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:237
+msgid "Home Folder"
+msgstr "Persönlicher Ordner"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:238
+msgid "File Search"
+msgstr "Dateisuche"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:239
+msgid "Internet Browser"
+msgstr "Internet Browser"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:265
+msgid "Volume Up"
+msgstr "Lauter"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:266
+msgid "Volume Down"
+msgstr "Leiser"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:267
+msgid "Mute"
+msgstr "Stummschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:268
+msgid "Launch Media Player"
+msgstr "Medienspieler starten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:269
+msgid "Play"
+msgstr "Wiedergabe starten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:270
+msgid "Pause"
+msgstr "Pause"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:271
+msgid "Stop"
+msgstr "Stop"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:272
+msgid "Previous Track"
+msgstr "Vorheriges Stück"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:273
+msgid "Next Track"
+msgstr "Nächstes Stück"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:274
+msgid "Eject"
+msgstr "Auswerfen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:308
+msgid "Decrease Text Size"
+msgstr "Schrift verkleinern"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:309
+msgid "Increase Text Size"
+msgstr "Schrift vergrößern"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:310
+msgid "Toggle Magnifier"
+msgstr "Lupe umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:311
+msgid "Magnifier Zoom in"
+msgstr "Bildschirmlupe hereinzoomen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:312
+msgid "Magnifier Zoom out"
+msgstr "Bildschirmlupe herauszoomen"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:313
+msgid "Toggle On Screen Keyboard"
+msgstr "Bildschirmtastatur umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:314
+msgid "Toggle Screenreader"
+msgstr "Bildschirmleser umschalten"
+
+#: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:315
+msgid "Toggle High Contrast"
+msgstr "Hohen Kontrast umschalten"
