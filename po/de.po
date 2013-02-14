@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-02-08 13:28+0100\n"
-"PO-Revision-Date: 2013-01-29 09:30+0000\n"
-"Last-Translator: Alexander Wilms <Unknown>\n"
+"PO-Revision-Date: 2013-02-14 03:58+0000\n"
+"Last-Translator: Andreas <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-02-10 05:24+0000\n"
-"X-Generator: Launchpad (build 16482)\n"
+"X-Launchpad-Export-Date: 2013-02-14 05:36+0000\n"
+"X-Generator: Launchpad (build 16491)\n"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -31,15 +31,15 @@ msgstr "Layout"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:18
 msgid "Options"
-msgstr ""
+msgstr "Extras"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Auf Standardwerte zurücksetzen"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:56
 msgid "Keyboard"
-msgstr ""
+msgstr "Tastatur"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
