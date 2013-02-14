@@ -7,6 +7,8 @@ namespace Keyboard.Shortcuts
 		public Gdk.ModifierType  modifiers;
 		public uint              accel_key;
 		
+		string SEPARATOR = " · ";
+		
 		// constructors
 		public Shortcut ( uint key, Gdk.ModifierType mod )
 		{
@@ -38,13 +40,27 @@ namespace Keyboard.Shortcuts
 			if (!valid())
 				return _("Disabled");
 				
-			var tmp = Gtk.accelerator_get_label (accel_key, modifiers);
-			return tmp.replace ("Super", "⌘").
-			           replace ("Alt", "⎇").
-			           replace ("Shift", "⇧").
-			          // replace ("Ctrl", "^").
-			           replace ("+", " + ");
-		}
+			string tmp = "";
+			
+			if ((modifiers & Gdk.ModifierType.SHIFT_MASK) > 0)
+			    tmp += "⇧" + SEPARATOR;
+			if ((modifiers & Gdk.ModifierType.SUPER_MASK) > 0)
+			    tmp += "⌘" + SEPARATOR;
+			if ((modifiers & Gdk.ModifierType.CONTROL_MASK) > 0)
+			    tmp += "Ctrl" + SEPARATOR;
+			if ((modifiers & Gdk.ModifierType.MOD1_MASK) > 0)
+			    tmp += "⎇" + SEPARATOR;
+			if ((modifiers & Gdk.ModifierType.MOD2_MASK) > 0)
+			    tmp += "Mod2" + SEPARATOR;
+			if ((modifiers & Gdk.ModifierType.MOD3_MASK) > 0)
+			    tmp += "Mod3" + SEPARATOR;
+			if ((modifiers & Gdk.ModifierType.MOD4_MASK) > 0)
+			    tmp += "Mod4" + SEPARATOR;
+
+            tmp += Gtk.accelerator_get_label (accel_key, 0);
+
+			return tmp;
+	    }
 		
 		public bool is_equal (Shortcut shortcut)
 		{
