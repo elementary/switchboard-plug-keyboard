@@ -57,8 +57,18 @@ namespace Keyboard.Shortcuts
 			if ((modifiers & Gdk.ModifierType.MOD4_MASK) > 0)
 			    tmp += "Mod4" + SEPARATOR;
 
-            tmp += Gtk.accelerator_get_label (accel_key, 0);
-
+            switch (accel_key) {
+            
+                case Gdk.Key.Tab:   tmp += "↹"; break;
+                case Gdk.Key.Up:    tmp += "↑"; break;
+                case Gdk.Key.Down:  tmp += "↓"; break;
+                case Gdk.Key.Left:  tmp += "←"; break;
+                case Gdk.Key.Right: tmp += "→"; break;
+                default:
+                    tmp += Gtk.accelerator_get_label (accel_key, 0);
+                    break;
+            }
+            
 			return tmp;
 	    }
 		
