@@ -1,0 +1,99 @@
+<shortcuts>
+    
+    <schemas>
+        <schema name="org.gnome.desktop.wm.keybindings" abbr="WM"/>
+        <schema name="org.gnome.mutter.keybindings" abbr="MUTTER"/>
+        <schema name="org.pantheon.desktop.gala.keybindings" abbr="GALA"/>
+        <schema name="org.gnome.settings-daemon.plugins.media-keys" abbr="MEDIA"/>
+    </schemas>
+
+    <section name="Windows">
+        <shortcut schema="WM" key="close" action="Close"/>
+        <shortcut schema="WM" key="lower" action="Lower"/>
+        <shortcut schema="WM" key="toggle-maximized" action="Toggle Maximized"/>
+        <shortcut schema="WM" key="minimize" action="Minimize"/>
+        <shortcut schema="WM" key="maximize" action="Maximize"/>
+        <shortcut schema="WM" key="unmaximize" action="Unmaximize"/>
+        <shortcut schema="MUTTER" key="toggle-tiled-left" action="Tile Left"/>
+        <shortcut schema="MUTTER" key="toggle-tiled-right" action="Tile Right"/>
+        <shortcut schema="WM" key="toggle-fullscreen" action="Toggle Fullscreen"/>
+        <shortcut schema="WM" key="toggle-shaded" action="Toggle Shaded"/>
+        <shortcut schema="WM" key="toggle-on-all-workspaces" action="Toggle on all Workspaces"/>
+        <shortcut schema="WM" key="toggle-above" action="Toggle always on Top"/>
+        <shortcut schema="WM" key="switch-windows" action="Switch Windows"/>
+        <shortcut schema="WM" key="switch-windows-backward" action="Switch Windows backwards"/>
+        <shortcut schema="GALA" key="expose-windows" action="Expose Windows"/>
+        <shortcut schema="GALA" key="expose-all-windows" action="Expose all Windows"/>
+    </section>
+    
+    <section name="Workspaces">
+        <shortcut schema="WM" key="show-desktop" action="Show Workspace Switcher"/>
+        <shortcut schema="GALA" key="switch-to-workspace-first" action="Switch to first"/>
+        <shortcut schema="GALA" key="switch-to-workspace-last" action="Switch to new"/>
+        <shortcut schema="WM" key="switch-to-workspace-1" action="Switch to workspace 1"/>
+        <shortcut schema="WM" key="switch-to-workspace-2" action="Switch to workspace 2"/>
+        <shortcut schema="WM" key="switch-to-workspace-3" action="Switch to workspace 3"/>
+        <shortcut schema="WM" key="switch-to-workspace-4" action="Switch to workspace 4"/>
+        <shortcut schema="WM" key="switch-to-workspace-5" action="Switch to workspace 5"/>
+        <shortcut schema="WM" key="switch-to-workspace-6" action="Switch to workspace 6"/>
+        <shortcut schema="WM" key="switch-to-workspace-7" action="Switch to workspace 7"/>
+        <shortcut schema="WM" key="switch-to-workspace-8" action="Switch to workspace 8"/>
+        <shortcut schema="WM" key="switch-to-workspace-9" action="Switch to workspace 9"/>
+        <shortcut schema="WM" key="switch-to-workspace-left" action="Switch to left"/>
+        <shortcut schema="WM" key="switch-to-workspace-right" action="Switch to right"/>
+        <shortcut schema="WM" key="move-to-workspace-1" action="Move to workspace 1"/>
+        <shortcut schema="WM" key="move-to-workspace-2" action="Move to workspace 2"/>
+        <shortcut schema="WM" key="move-to-workspace-3" action="Move to workspace 3"/>
+        <shortcut schema="WM" key="move-to-workspace-4" action="Move to workspace 4"/>
+        <shortcut schema="WM" key="move-to-workspace-5" action="Move to workspace 5"/>
+        <shortcut schema="WM" key="move-to-workspace-6" action="Move to workspace 6"/>
+        <shortcut schema="WM" key="move-to-workspace-7" action="Move to workspace 7"/>
+        <shortcut schema="WM" key="move-to-workspace-8" action="Move to workspace 8"/>
+        <shortcut schema="WM" key="move-to-workspace-9" action="Move to workspace 9"/>
+        <shortcut schema="WM" key="move-to-workspace-left" action="Move to left"/>
+        <shortcut schema="WM" key="move-to-workspace-right" action="Move to right"/>
+    </section>
+    
+    <section name="Screenshots">
+        <shortcut schema="MEDIA" key="screenshot" action="Take a Screenshot"/>
+        <shortcut schema="MEDIA" key="screenshot-clip" action="Save Screenshot to Clipboard"/>
+        <shortcut schema="MEDIA" key="window-screenshot" action="Take a Screenshot of a Window"/>
+        <shortcut schema="MEDIA" key="window-screenshot-clip" action="Save Window-Screenshot to Clipboard"/>
+        <shortcut schema="MEDIA" key="area-screenshot" action="Take a Screenshot of an Area"/>
+        <shortcut schema="MEDIA" key="area-screenshot-clip" action="Save Area-Screenshot to Clipboard"/>
+    </section>
+    
+    <section name="Applications">
+        <shortcut schema="MEDIA" key="calculator" action="Calculator"/>
+        <shortcut schema="MEDIA" key="email" action="Email"/>
+        <shortcut schema="MEDIA" key="help" action="Help"/>
+        <shortcut schema="MEDIA" key="home" action="Home Folder"/>
+        <shortcut schema="MEDIA" key="search" action="File Search"/>
+        <shortcut schema="MEDIA" key="www" action="Internet Browser"/>
+    </section>
+    
+    <section name="Media">
+        <shortcut schema="MEDIA" key="volume-up" action="Volume Up"/>
+        <shortcut schema="MEDIA" key="volume-down" action="Volume Down"/>
+        <shortcut schema="MEDIA" key="volume-mute" action="Mute"/>
+        <shortcut schema="MEDIA" key="media" action="Launch Media Player"/>
+        <shortcut schema="MEDIA" key="play" action="Play"/>
+        <shortcut schema="MEDIA" key="pause" action="Pause"/>
+        <shortcut schema="MEDIA" key="stop" action="Stop"/>
+        <shortcut schema="MEDIA" key="previous" action="Previous Track"/>
+        <shortcut schema="MEDIA" key="next" action="Next Track"/>
+        <shortcut schema="MEDIA" key="eject" action="Eject"/>
+    </section>
+    
+    <section name="Universal Access">
+        <shortcut schema="MEDIA" key="decrease-text-size" action="Decrease Text Size"/>
+        <shortcut schema="MEDIA" key="increase-text-size" action="Increase Text Size"/>
+        <shortcut schema="MEDIA" key="magnifier" action="Toggle Magnifier"/>
+        <shortcut schema="MEDIA" key="magnifier-zoom-in" action="Magnifier Zoom in"/>
+        <shortcut schema="MEDIA" key="magnifier-zoom-out" action="Magnifier Zoom out"/>
+        <shortcut schema="MEDIA" key="on-screen-keyboard" action="Toggle On Screen Keyboard"/>
+        <shortcut schema="MEDIA" key="screenreader" action="Toggle Screenreader"/>
+        <shortcut schema="MEDIA" key="toggle-contrast" action="Toggle High Contrast"/>
+    </section>
+
+</shortcuts>
