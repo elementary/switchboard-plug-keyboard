@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-03-27 18:28+0100\n"
-"PO-Revision-Date: 2013-02-15 22:30+0000\n"
+"PO-Revision-Date: 2013-03-31 17:47+0000\n"
 "Last-Translator: Eduard Gotwig <eduardgotwig@gmail.com>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-03-29 05:11+0000\n"
+"X-Launchpad-Export-Date: 2013-04-01 05:32+0000\n"
 "X-Generator: Launchpad (build 16546)\n"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src//keyboard.vala:15
@@ -178,11 +178,11 @@ msgstr "Fenster invertiert wechseln"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:70
 msgid "Expose Windows"
-msgstr "Fenster-Exposé"
+msgstr "Fensterübersicht der Arbeitsfläche"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:71
 msgid "Expose all Windows"
-msgstr "Alle Fenster darstellen"
+msgstr "Gesamte Fensterübersicht"
 
 #: /home/emanuel/switchboard-plug-keyboard/po/../src/Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
