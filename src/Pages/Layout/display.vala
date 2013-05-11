@@ -37,12 +37,12 @@ namespace Keyboard.Layout
 			tbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 			tbar.get_style_context().set_junction_sides(Gtk.JunctionSides.TOP);
 
-			var add_button    = new Gtk.ToolButton (null, _("Add..."));
+			var add_button    = new Gtk.ToolButton (null, _("Add…"));
 			var remove_button = new Gtk.ToolButton (null, _("Remove"));
 			var up_button     = new Gtk.ToolButton (null, _("Move up"));
 			var down_button   = new Gtk.ToolButton (null, _("Move down"));
 
-			add_button.set_tooltip_text    (_("Add..."));
+			add_button.set_tooltip_text    (_("Add…"));
 			remove_button.set_tooltip_text (_("Remove"));
 			up_button.set_tooltip_text     (_("Move up"));
 			down_button.set_tooltip_text   (_("Move down"));
