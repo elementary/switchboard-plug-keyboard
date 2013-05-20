@@ -69,6 +69,7 @@
         <shortcut schema="MEDIA" key="help" action="Help"/>
         <shortcut schema="MEDIA" key="home" action="Home Folder"/>
         <shortcut schema="MEDIA" key="search" action="File Search"/>
+        <shortcut schema="MEDIA" key="terminal" action="Terminal"/>
         <shortcut schema="MEDIA" key="www" action="Internet Browser"/>
     </section>
     
