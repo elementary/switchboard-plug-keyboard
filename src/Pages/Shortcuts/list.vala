@@ -236,10 +236,12 @@ namespace Keyboard.Shortcuts
 						_("Help"),
 						_("Home Folder"),
 						_("File Search"),
+						_("Terminal"),
 						_("Internet Browser")
 					},
 
 					schemas = {
+						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
@@ -254,6 +256,7 @@ namespace Keyboard.Shortcuts
 						"help",
 						"home",
 						"search",
+						"terminal",
 						"www"
 					}
 				},
