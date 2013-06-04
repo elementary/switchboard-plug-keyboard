@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-01-27 01:43+0000\n"
+"PO-Revision-Date: 2013-06-03 22:58+0000\n"
 "Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-05-12 06:27+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2013-06-04 06:27+0000\n"
+"X-Generator: Launchpad (build 16660)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -27,23 +27,23 @@ msgstr "Comportamento"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:17
 msgid "Layout"
-msgstr "Esquema"
+msgstr "Disposição"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:18
 msgid "Options"
-msgstr ""
+msgstr "Opções"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Restaurar pré-definições"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:56
 msgid "Keyboard"
-msgstr ""
+msgstr "Teclado"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr "Esquemas diferentes em diferentes janelas:"
+msgstr "Permitir disposições diferentes por janela:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
@@ -51,15 +51,15 @@ msgstr "As novas janelas usam:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr ""
+msgstr "Disposição pré-definida"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Disposição da janela anterior"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
-msgstr "Escreva para testar o seu esquema..."
+msgstr "Escreva para testar a sua disposição..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
@@ -87,7 +87,7 @@ msgstr "Acessibilidade"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Repetir Teclas:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
@@ -105,11 +105,11 @@ msgstr "milissegundos"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:135
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Intermitência do cursor:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:136
 msgid "Speed:"
-msgstr ""
+msgstr "Velocidade:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:137
 msgid "Duration:"
@@ -125,19 +125,19 @@ msgstr "Escreva aqui para testar as suas configurações..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Pré-definido"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Idioma:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Disposição:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Adicionar Disposição"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:64
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:147
@@ -147,7 +147,7 @@ msgstr "Cancelar"
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:40
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Adicionar…"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:46
@@ -450,7 +450,7 @@ msgstr "Aproximar Lupa"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:312
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Afastar Lupa"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:313
 msgid "Toggle On Screen Keyboard"
@@ -458,7 +458,7 @@ msgstr "Abrir Teclado no Ecrã"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:314
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Abrir Leitor de Ecrã"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:315
 msgid "Toggle High Contrast"

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-06-03 06:51+0000\n"
+"PO-Revision-Date: 2013-06-03 06:52+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-03 06:52+0000\n"
+"X-Launchpad-Export-Date: 2013-06-04 06:27+0000\n"
 "X-Generator: Launchpad (build 16660)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
@@ -446,11 +446,11 @@ msgstr "Suurennuslasi päälle/pois"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:311
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Suurennuslasin lähennys"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:312
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Suurennuslasin loitonnus"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:313
 msgid "Toggle On Screen Keyboard"
