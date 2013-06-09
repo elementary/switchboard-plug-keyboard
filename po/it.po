@@ -1,4 +1,4 @@
-# Portuguese translation for switchboard-plug-keyboard
+# Italian translation for switchboard-plug-keyboard
 # Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
 # This file is distributed under the same license as the switchboard-plug-keyboard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-06-08 22:06+0000\n"
-"Last-Translator: Jesion <jesion@ymail.com>\n"
-"Language-Team: Portuguese <pt@li.org>\n"
+"PO-Revision-Date: 2013-06-08 09:31+0000\n"
+"Last-Translator: Fabio Gaudenzi <bafio.fruges@gmail.com>\n"
+"Language-Team: Italian <it@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
-msgstr "Atalhos"
+msgstr "Scorciatoie"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:16
 msgid "Behaviour"
@@ -31,190 +31,190 @@ msgstr "Layout"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:18
 msgid "Options"
-msgstr "Opções"
+msgstr "Preferenze"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
-msgstr "Restaurar pré-definições"
+msgstr "Riporta ai valori predefiniti"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:56
 msgid "Keyboard"
-msgstr "Teclado"
+msgstr "Tastiera"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr "Permitir layouts diferentes para janelas individuais"
+msgstr "Permetti layout differenti per finestre singole:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
-msgstr "As novas janelas usam:"
+msgstr "Le nuove finestre usano:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr "Disposição pré-definida"
+msgstr "Layout predefinito"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr "layout da janela anterior"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
-msgstr "Escreva para testar a sua disposição..."
+msgstr "Digita per provare il tuo layout..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
-msgstr "Janelas"
+msgstr "Finestre"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:35
 msgid "Workspaces"
-msgstr "Áreas de Trabalho"
+msgstr "Spazi di lavoro"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:36
 msgid "Screenshots"
-msgstr "Capturas de Ecrã"
+msgstr "Schermate"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:37
 msgid "Applications"
-msgstr "Aplicações"
+msgstr "Applicazioni"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:38
 msgid "Media"
-msgstr "Multimédia"
+msgstr "Media"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:39
 msgid "Universal Access"
-msgstr "Acessibilidade"
+msgstr "Accesso universale"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Repetir Teclas:</b>"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
-msgstr "Atraso:"
+msgstr "Ritardo:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:25
 msgid "Interval:"
-msgstr "Intervalo:"
+msgstr "Intervallo:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:26
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:27
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:138
 msgid "milliseconds"
-msgstr "milissegundos"
+msgstr "millisecondi"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:135
 msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>Intermitência do cursor:</b>"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:136
 msgid "Speed:"
-msgstr "Velocidade:"
+msgstr "Velocità:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:137
 msgid "Duration:"
-msgstr "Duração:"
+msgstr "Durata:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:139
 msgid "seconds"
-msgstr "segundos"
+msgstr "secondi"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "Escreva aqui para testar as suas configurações..."
+msgstr "Digita per verificare le tue opzioni:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr "Pré-definido"
+msgstr "Predefinita"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr "Idioma:"
+msgstr "Lingua:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr "Disposição:"
+msgstr "Layout:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr "Adicionar Disposição"
+msgstr "Aggiungi Layout"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:64
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:147
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "Annulla"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:40
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr "Adicionar…"
+msgstr "Aggiungi..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:46
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/display.vala:39
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/display.vala:42
 msgid "Remove"
-msgstr "Remover"
+msgstr "Rimuovi"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:42
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Sposta su"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:43
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Sposta giù"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/shortcut.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:172
 msgid "Disabled"
-msgstr "Não Definido"
+msgstr "Disattivato"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:146
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr "Se atribuir este atalho para \"%s\", \"%s\" será desactivado"
+msgstr "Se riassegni la scorciatoia a \"%s\", \"%s\" verrà disabilitato"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr "Reatribuir"
+msgstr "Riassegna"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr "Fechar"
+msgstr "Chiudi"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr "Tirar de foco"
+msgstr "Arrotola"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr "Maximizar"
+msgstr "Massimizza"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr "Restaurar"
+msgstr "Ripristina"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
-msgstr "Maximizar / Restaurar"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr "Minimizar"
+msgstr "Minimizza"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
-msgstr "Ecrã Completo / Janela"
+msgstr "Commuta schermo intero"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr "Enquadrar à Esquerda"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr "Enquadrar à Direita"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
@@ -222,27 +222,27 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
-msgstr "Mostrar em todas as Áreas de Trabalho"
+msgstr "Attiva su tutti gli spazi di lavoro"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr "Mostrar sobre todas as Janelas"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr "Trocar de Janela"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
-msgstr "Trocar de Janela (sentido inverso)"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:70
 msgid "Expose Windows"
-msgstr "Mostrar Janelas (Área de Trabalho)"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:71
 msgid "Expose all Windows"
-msgstr "Mostrar Janelas (Todas)"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -250,221 +250,221 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr "Mudar para a Primeira"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr "Mudar para a Última"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr "Mudar para a área de trabalho 1"
+msgstr "Passa allo spazio di lavoro 1"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr "Mudar para a área de trabalho 2"
+msgstr "Passa allo spazio di lavoro 2"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr "Mudar para a área de trabalho 3"
+msgstr "Passa allo spazio di lavoro 3"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr "Mudar para a área de trabalho 4"
+msgstr "Passa allo spazio di lavoro 4"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr "Mudar para a área de trabalho 5"
+msgstr "Passa allo spazio di lavoro 5"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr "Mudar para a área de trabalho 6"
+msgstr "Passa allo spazio di lavoro 6"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr "Mudar para a área de trabalho 7"
+msgstr "Passa allo spazio di lavoro 7"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr "Mudar para a área de trabalho 8"
+msgstr "Passa allo spazio di lavoro 8"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr "Mudar para a área de trabalho 9"
+msgstr "Passa allo spazio di lavoro 9"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr "Mudar para a da esquerda"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr "Mudar para a da direita"
+msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr "Mover para a área de trabalho 1"
+msgstr "Sposta nello spazio di lavoro 1"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr "Mover para a área de trabalho 2"
+msgstr "Sposta nello spazio di lavoro 2"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr "Mover para a área de trabalho 3"
+msgstr "Sposta nello spazio di lavoro 3"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr "Mover para a área de trabalho 4"
+msgstr "Sposta nello spazio di lavoro 4"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr "Mover para a área de trabalho 5"
+msgstr "Sposta nello spazio di lavoro 5"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr "Mover para a área de trabalho 6"
+msgstr "Sposta nello spazio di lavoro 6"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr "Mover para a área de trabalho  7"
+msgstr "Sposta nello spazio di lavoro 7"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr "Mover para a área de trabalho 8"
+msgstr "Sposta nello spazio di lavoro 8"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr "Mover para a área de trabalho 9"
+msgstr "Sposta nello spazio di lavoro 9"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr "Mover para a da esquerda"
+msgstr "Sposta a sinistra"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr "Mover para a direita"
+msgstr "Sposta a destra"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr "Capturar Ecrã"
+msgstr "Cattura la Schermata"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr "Capturar Ecrã e guardar na Área de Transferências"
+msgstr "Salva la Schermata nella Clipboard"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr "Capturar Janela"
+msgstr "Cattura la Schermata di una Finestra"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr "Capturar Janela e guardar na Área de Transferências"
+msgstr "Salva la Schermata della Finestra nella Clipboard"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr "Capturar Área Definida"
+msgstr "Cattura la Schermata di un' Area"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr "Capturar Área Definida e guardar na Área de Transferências"
+msgstr "Salva la Schermata dell' Area nella Clipboard"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr "Calculadora"
+msgstr "Calcolatrice"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr "Correio Electrónico"
+msgstr "E-mail"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr "Ajuda"
+msgstr "Guida"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr "Pasta Pessoal"
+msgstr "Cartella Home"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr "Procura de Ficheiros"
+msgstr "Ricerca File"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:239
 msgid "Internet Browser"
-msgstr "Navegador de Internet"
+msgstr "Browser Internet"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:265
 msgid "Volume Up"
-msgstr "Aumentar o Volume"
+msgstr "Alza il Volume"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:266
 msgid "Volume Down"
-msgstr "Diminuir o Volume"
+msgstr "Abbassa il Volume"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:267
 msgid "Mute"
-msgstr "Silenciar"
+msgstr "Escludi audio"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:268
 msgid "Launch Media Player"
-msgstr "Abrir Reprodutor de Música"
+msgstr "Esegui il Riproduttore Multimediale"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:269
 msgid "Play"
-msgstr "Reproduzir"
+msgstr "Riproduci"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:270
 msgid "Pause"
-msgstr "Pausa"
+msgstr "Metti in pausa"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:271
 msgid "Stop"
-msgstr "Parar"
+msgstr "Stop"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:272
 msgid "Previous Track"
-msgstr "Faixa Anterior"
+msgstr "Traccia Precedente"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:273
 msgid "Next Track"
-msgstr "Faixa Seguinte"
+msgstr "Traccia Successiva"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:274
 msgid "Eject"
-msgstr "Ejectar"
+msgstr "Espelli"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:308
 msgid "Decrease Text Size"
-msgstr "Diminuir o Tamanho do Texto"
+msgstr "Riduci Dimensione del Testo"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:309
 msgid "Increase Text Size"
-msgstr "Aumentar o Tamanho do Texto"
+msgstr "Aumenta Dimensione del Testo"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:310
 msgid "Toggle Magnifier"
-msgstr "Modo Lupa"
+msgstr "Attiva/Disattiva Lente di Ingrandimento"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:311
 msgid "Magnifier Zoom in"
-msgstr "Aproximar Lupa"
+msgstr "Zoom in"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:312
 msgid "Magnifier Zoom out"
-msgstr "Afastar Lupa"
+msgstr "Zoom out"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:313
 msgid "Toggle On Screen Keyboard"
-msgstr "Abrir Teclado no Ecrã"
+msgstr "Attiva/Disattiva Tastiera su Schermo"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:314
 msgid "Toggle Screenreader"
-msgstr "Abrir Leitor de Ecrã"
+msgstr "Attiva/Disattiva Lettore Schermo"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:315
 msgid "Toggle High Contrast"
-msgstr "Mudar para Alto Contraste"
+msgstr "Attiva/Disattiva Contrasto elevato"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/display.vala:38
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr "Adicionar"
+msgstr "Aggiungi"
