@@ -1,3 +1,9 @@
+switchboard-plug-keyboard (0.1.1) precise; urgency=low
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementaryos.org>  Sun, 09 Jun 2013 19:42:55 -0500
+
 switchboard-plug-keyboard (0.1) unstable; urgency=low
 
   * Initial Release.
