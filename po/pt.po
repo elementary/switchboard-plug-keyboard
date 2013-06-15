@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-06-08 22:06+0000\n"
-"Last-Translator: Jesion <jesion@ymail.com>\n"
+"PO-Revision-Date: 2013-06-14 21:28+0000\n"
+"Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-09 06:17+0000\n"
+"X-Launchpad-Export-Date: 2013-06-15 06:21+0000\n"
 "X-Generator: Launchpad (build 16667)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
@@ -27,7 +27,7 @@ msgstr "Comportamento"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:17
 msgid "Layout"
-msgstr "Layout"
+msgstr "Esquema"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:18
 msgid "Options"
@@ -43,7 +43,7 @@ msgstr "Teclado"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr "Permitir layouts diferentes para janelas individuais"
+msgstr "Permitir esquemas diferentes para janelas individuais"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
@@ -51,15 +51,15 @@ msgstr "As novas janelas usam:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr "Disposição pré-definida"
+msgstr "Esquema pré-definido"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr "layout da janela anterior"
+msgstr "esquema da janela anterior"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
-msgstr "Escreva para testar a sua disposição..."
+msgstr "Escreva para testar o seu esquema..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
@@ -133,11 +133,11 @@ msgstr "Idioma:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr "Disposição:"
+msgstr "Esquema:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr "Adicionar Disposição"
+msgstr "Adicionar Esquema"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:64
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:147
@@ -159,12 +159,12 @@ msgstr "Remover"
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:42
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Mover para cima"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:43
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Mover para baixo"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/shortcut.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:172
@@ -218,7 +218,7 @@ msgstr "Enquadrar à Direita"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
-msgstr ""
+msgstr "Mostrar/Esconder Conteúdo"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
@@ -246,7 +246,7 @@ msgstr "Mostrar Janelas (Todas)"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Mostrar Áreas de Trabalho"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:116
 msgid "Switch to first"

@@ -8,42 +8,42 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-06-10 13:00+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-06-14 22:27+0000\n"
+"Last-Translator: Leonardo Lemos <leonardolemos@live.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-11 06:32+0000\n"
+"X-Launchpad-Export-Date: 2013-06-15 06:21+0000\n"
 "X-Generator: Launchpad (build 16667)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
-msgstr ""
+msgstr "Atalhos"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:16
 msgid "Behaviour"
-msgstr ""
+msgstr "Comportamente"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:17
 msgid "Layout"
-msgstr ""
+msgstr "Layout"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:18
 msgid "Options"
-msgstr ""
+msgstr "Opções"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Restaurar valores padrão"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:56
 msgid "Keyboard"
-msgstr ""
+msgstr "Teclado"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Permitir layouts diferentes para janelas individuais:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
@@ -51,11 +51,11 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr ""
+msgstr "Layout padrão"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Layout da janela anterior"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
