@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-02-10 09:10+0000\n"
+"PO-Revision-Date: 2013-06-19 11:08+0000\n"
 "Last-Translator: Adrian Widerski <Unknown>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-05-12 06:27+0000\n"
-"X-Generator: Launchpad (build 16598)\n"
+"X-Launchpad-Export-Date: 2013-06-20 06:35+0000\n"
+"X-Generator: Launchpad (build 16673)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -51,11 +51,11 @@ msgstr "Nowe okna używają:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr ""
+msgstr "Domyślny układ"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Poprzedni układ okna"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
@@ -87,7 +87,7 @@ msgstr "Ułatwienia dostępu"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Powtórz klawisze:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
@@ -105,11 +105,11 @@ msgstr "milisekund"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:135
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Miganie kursora:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:136
 msgid "Speed:"
-msgstr ""
+msgstr "Szybkość:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:137
 msgid "Duration:"
@@ -125,19 +125,19 @@ msgstr "Pisz tutaj w celu sprawdzenia ustawień..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Domyślny"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Język:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Układ:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Dodaj układ"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:64
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:147
@@ -147,7 +147,7 @@ msgstr "Anuluj"
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:40
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Dodaj…"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:46
@@ -159,12 +159,12 @@ msgstr "Usuń"
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:42
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Przesuń w górę"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:43
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Przesuń w dół"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/shortcut.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:172
