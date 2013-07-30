@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-06-04 19:45+0000\n"
-"Last-Translator: Nikos <Unknown>\n"
+"PO-Revision-Date: 2013-07-29 20:26+0000\n"
+"Last-Translator: miyoyo <smartandroidtv95@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-05 06:33+0000\n"
-"X-Generator: Launchpad (build 16660)\n"
+"X-Launchpad-Export-Date: 2013-07-30 04:58+0000\n"
+"X-Generator: Launchpad (build 16700)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -55,7 +55,7 @@ msgstr "L'agencement par défaut"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Agencement de la fenêtre précédente"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
@@ -109,7 +109,7 @@ msgstr "Clignotement du curseur"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:136
 msgid "Speed:"
-msgstr ""
+msgstr "Vitesse:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:137
 msgid "Duration:"
@@ -125,19 +125,19 @@ msgstr "Écrivez pour essayer votre configuration…"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Défaut"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Langage:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Agencement:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Ajouter un agencement"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:64
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:147
@@ -147,7 +147,7 @@ msgstr "Annuler"
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:40
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Ajouter..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:46
@@ -159,12 +159,12 @@ msgstr "Supprimer"
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:42
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Monter d'un niveau"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:43
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Déplacer vers le bas"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/shortcut.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:172
