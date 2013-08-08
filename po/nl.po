@@ -8,185 +8,187 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-08-06 10:55+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-08-07 20:00+0000\n"
+"Last-Translator: Vistaus <vistausss@gmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-08-07 05:03+0000\n"
-"X-Generator: Launchpad (build 16721)\n"
+"X-Launchpad-Export-Date: 2013-08-08 04:59+0000\n"
+"X-Generator: Launchpad (build 16723)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
-msgstr ""
+msgstr "Sneltoetsen"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:16
 msgid "Behaviour"
-msgstr ""
+msgstr "Gedrag"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:17
 msgid "Layout"
-msgstr ""
+msgstr "Indeling"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:18
 msgid "Options"
-msgstr ""
+msgstr "Instellingen"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
-msgstr ""
+msgstr "Herstel naar standaardwaarden"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:56
 msgid "Keyboard"
-msgstr ""
+msgstr "Toetsenbord"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Sta andere indelingen toe voor individuele vensters:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
-msgstr ""
+msgstr "Nieuwe vensters gebruiken:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr ""
+msgstr "Standaardindeling:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Indeling van vorige venster"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Typ om uw indeling te testen..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
-msgstr ""
+msgstr "Vensters"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:35
 msgid "Workspaces"
-msgstr ""
+msgstr "Werkbladen"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:36
 msgid "Screenshots"
-msgstr ""
+msgstr "Schermafdrukken"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:37
 msgid "Applications"
-msgstr ""
+msgstr "Toepassingen"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:38
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:39
 msgid "Universal Access"
-msgstr ""
+msgstr "Toegankelijkheid"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Herhaaltoetsen:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
-msgstr ""
+msgstr "Vertraging:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:25
 msgid "Interval:"
-msgstr ""
+msgstr "Tussenpoos:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:26
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:27
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:138
 msgid "milliseconds"
-msgstr ""
+msgstr "milliseconden"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:135
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Knipperen van cursor:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:136
 msgid "Speed:"
-msgstr ""
+msgstr "Snelheid:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:137
 msgid "Duration:"
-msgstr ""
+msgstr "Duur:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:139
 msgid "seconds"
-msgstr ""
+msgstr "seconden"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Typ om uw instellingen te testen..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Taal:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Indeling:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Indeling toevoegen"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/add_layout.vala:64
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:147
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:40
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Toevoegen…"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:46
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/display.vala:39
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/display.vala:42
 msgid "Remove"
-msgstr ""
+msgstr "Verwijder"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:42
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Verplaats omhoog"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:43
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Verplaats omlaag"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/shortcut.vala:41
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:172
 msgid "Disabled"
-msgstr ""
+msgstr "Uitgeschakeld"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:146
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
+"Indien u de sneltoets naar \"%s\" opnieuw toewijst zal \"%s\" worden "
+"uitgeschakeld"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Opnieuw toewijzen"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "Sluiten"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Verlagen"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:58
 msgid "Maximize"
