@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-06-19 00:19+0000\n"
-"Last-Translator: Joachim Johansson <joachim.j@gmail.com>\n"
+"PO-Revision-Date: 2013-08-18 10:31+0000\n"
+"Last-Translator: Joachim Johansson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-06-20 06:35+0000\n"
-"X-Generator: Launchpad (build 16673)\n"
+"X-Launchpad-Export-Date: 2013-08-19 04:57+0000\n"
+"X-Generator: Launchpad (build 16723)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -43,23 +43,23 @@ msgstr "Tangentbord"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Tillåt olika tangentbords-layouter för olika fönster"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
-msgstr ""
+msgstr "Nya fönster använder:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr ""
+msgstr "Standard-layout"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Föregående fönsters tangentbords-layout"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Skriv något för att kontrollera din tangentbords-layout..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
@@ -87,7 +87,7 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Återupprepa tangenttryckningar:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
@@ -105,7 +105,7 @@ msgstr "millisekunder"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:135
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Markörblinkning:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:136
 msgid "Speed:"
@@ -121,7 +121,7 @@ msgstr "sekunder"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Skriv något för att kontrollera dina inställningar..."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
@@ -175,10 +175,11 @@ msgstr "Avaktiverad"
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
+"Om du ändrar snabbkommandot till \"%s\", så kommer \"%s\" att avaktiveras."
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Ändra"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -198,7 +199,7 @@ msgstr "Avmaximera"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "Växla maximeringsläge"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:61
 msgid "Minimize"
@@ -238,11 +239,11 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:70
 msgid "Expose Windows"
-msgstr ""
+msgstr "Visa fönster"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:71
 msgid "Expose all Windows"
-msgstr ""
+msgstr "Visa alla fönster"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -250,11 +251,11 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "Växla till det första"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "Växla till det nyaste"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
@@ -294,11 +295,11 @@ msgstr "Växla till arbetsyta 9"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr "Växla till vänster"
+msgstr "Växla åt vänster"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr "Växla till höger"
+msgstr "Växla åt höger"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
@@ -386,7 +387,7 @@ msgstr "Hemmapp"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Filsökning"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:239
 msgid "Internet Browser"
@@ -406,7 +407,7 @@ msgstr "Tyst"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:268
 msgid "Launch Media Player"
-msgstr ""
+msgstr "Starta mediaspelaren"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:269
 msgid "Play"
@@ -442,19 +443,19 @@ msgstr "Öka textstorlek"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:310
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Växla skärmförstoraren"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:311
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Zooma in skärmförstoraren"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:312
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Zooma ut skärmförstoraren"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:313
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Växla skärmtangentbordet"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:314
 msgid "Toggle Screenreader"
