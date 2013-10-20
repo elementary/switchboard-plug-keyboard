@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-08-31 03:51+0000\n"
+"PO-Revision-Date: 2013-10-19 20:12+0000\n"
 "Last-Translator: Israel Perez <isra1998isra@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-09-01 04:52+0000\n"
-"X-Generator: Launchpad (build 16750)\n"
+"X-Launchpad-Export-Date: 2013-10-20 05:05+0000\n"
+"X-Generator: Launchpad (build 16807)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -59,7 +59,7 @@ msgstr "Disposición de la ventana anterior"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Escriba para probar su disposición…"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
@@ -87,7 +87,7 @@ msgstr "Acceso universal"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Repetir teclas:</b>"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
@@ -121,7 +121,7 @@ msgstr "segundos"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Escriba para probar su configuración…"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Layout/handler.vala:76
 msgid "Default"
@@ -174,7 +174,7 @@ msgstr "Desactivado"
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:146
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr ""
+msgstr "Si cambia el atajo a «%s», «%s» será desactivado"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
@@ -230,7 +230,7 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr ""
+msgstr "Cambiar ventanas"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
