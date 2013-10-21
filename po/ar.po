@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2013-05-12 00:43+0300\n"
-"PO-Revision-Date: 2013-08-23 07:11+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2013-10-20 17:29+0000\n"
+"Last-Translator: Fathallah Wael <fathallahwael80@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2013-08-24 05:35+0000\n"
-"X-Generator: Launchpad (build 16738)\n"
+"X-Launchpad-Export-Date: 2013-10-21 04:57+0000\n"
+"X-Generator: Launchpad (build 16807)\n"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:15
 msgid "Shortcuts"
@@ -23,39 +23,39 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:16
 msgid "Behaviour"
-msgstr ""
+msgstr "السّلوك"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:17
 msgid "Layout"
-msgstr ""
+msgstr "التخطيط"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:18
 msgid "Options"
-msgstr ""
+msgstr "إعدادات"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:26
 msgid "Reset to defaults"
-msgstr ""
+msgstr "استعادة الافتراضيات"
 
 #: /home/kristjan/translations-fix/po/../src//keyboard.vala:56
 msgid "Keyboard"
-msgstr ""
+msgstr "لوحة المفاتيح"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:25
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "السماح لوضع تخطيط لكل نافذة لوحدها"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:26
 msgid "New windows use:"
-msgstr ""
+msgstr "إستخدم نافذة الجديدة"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:42
 msgid "Default layout"
-msgstr ""
+msgstr "التخطيط الإفتراضي"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:43
 msgid "Previous window's layout"
-msgstr ""
+msgstr "تخطيط النافذة السابقة"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/layout.vala:92
 msgid "Type to test your layout…"
@@ -63,27 +63,27 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:34
 msgid "Windows"
-msgstr ""
+msgstr "النوافذ"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:35
 msgid "Workspaces"
-msgstr ""
+msgstr "بيئة العمل"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:36
 msgid "Screenshots"
-msgstr ""
+msgstr "لقط الشاشة"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:37
 msgid "Applications"
-msgstr ""
+msgstr "التطبيقات"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:38
 msgid "Media"
-msgstr ""
+msgstr "الوسائط"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/shortcuts.vala:39
 msgid "Universal Access"
-msgstr ""
+msgstr "الإتاحة"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:23
 msgid "<b>Repeat Keys:</b>"
@@ -91,11 +91,11 @@ msgstr ""
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:24
 msgid "Delay:"
-msgstr ""
+msgstr "التأخير:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:25
 msgid "Interval:"
-msgstr ""
+msgstr "الفترة:"
 
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:26
 #: /home/kristjan/translations-fix/po/../src/Pages/behaviour.vala:27
