@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {
 	// simple tree view containing a list of sections
 	// changing the section changes the tree view

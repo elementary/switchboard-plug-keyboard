@@ -1,4 +1,4 @@
-namespace Keyboard.Options
+namespace Pantheon.Keyboard.Options
 {
 	// simple tree view containing a list of sections
 	// changing the section changes the tree view

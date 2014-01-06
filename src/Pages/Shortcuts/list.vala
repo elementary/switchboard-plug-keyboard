@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {
 	struct Group { 
 		public string[] actions;

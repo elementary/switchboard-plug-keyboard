@@ -1,4 +1,4 @@
-namespace Keyboard.Options
+namespace Pantheon.Keyboard.Options
 {
 	class SectionDisplay : Gtk.ScrolledWindow
 	{

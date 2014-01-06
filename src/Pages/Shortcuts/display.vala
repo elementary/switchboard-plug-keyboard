@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {
 	// creates a grid containing a tree view and an inline toolbar
 	class ShortcutDisplay : Gtk.Grid

@@ -22,20 +22,22 @@ project (${PLUGNAME})
 # Only alter stuff below if you know what you are doing #
 #########################################################
 
-set (DATADIR "${CMAKE_INSTALL_PREFIX}/lib/plugs")
-set (PKGDATADIR "${DATADIR}/pantheon/${PLUGNAME}")
-set (GETTEXT_PACKAGE "${PLUGNAME}")
+include (GNUInstallDirs)
+set (DATADIR "${CMAKE_INSTALL_FULL_LIBDIR}/switchboard")
+set (PKGDATADIR "${DATADIR}/hardware/pantheon-${PLUGNAME}")
+set (GETTEXT_PACKAGE "${PLUGNAME}-plug")
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
 # Configure file
-configure_file (plug.plug ${CMAKE_BINARY_DIR}/${PLUGNAME}.plug)
-install (FILES ${CMAKE_BINARY_DIR}/${PLUGNAME}.plug DESTINATION ${PKGDATADIR})
 configure_file (${CMAKE_SOURCE_DIR}/config.vala.cmake ${CMAKE_BINARY_DIR}/src/config.vala)
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 
 # Files
 file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
+
+# Comment this out to enable C compiler warnings
+add_definitions (-w)
 
 # Traslation stuff
 add_subdirectory (po)

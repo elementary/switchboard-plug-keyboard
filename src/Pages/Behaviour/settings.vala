@@ -1,4 +1,4 @@
-namespace Keyboard.Behaviour
+namespace Pantheon.Keyboard.Behaviour
 {
 	class SettingsRepeat : Granite.Services.Settings
 	{

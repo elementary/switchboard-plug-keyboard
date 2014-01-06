@@ -1,4 +1,4 @@
-namespace Keyboard.Layout
+namespace Pantheon.Keyboard.Layout
 {
 	// class to interact with gsettings and add/remove keyboard layouts
 	class SettingsLayouts : Granite.Services.Settings

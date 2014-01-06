@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {
 	private enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
 	

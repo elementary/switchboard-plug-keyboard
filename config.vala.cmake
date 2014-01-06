@@ -1,4 +1,4 @@
-namespace Constants {
+namespace Build {
 public const string PLUGNAME = "@PLUGNAME@";
 public const string DATADIR = "@DATADIR@";
 public const string PKGDATADIR = "@PKGDATADIR@";

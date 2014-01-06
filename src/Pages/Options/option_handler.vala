@@ -1,4 +1,4 @@
-namespace Keyboard.Options
+namespace Pantheon.Keyboard.Options
 {
 	// class that parses the layout file, provides lists of languages and
 	// options, and converts between layout names and their gsettings codes	
@@ -103,7 +103,7 @@ namespace Keyboard.Options
 		{
 			string[] return_val = null;
 	
-			var file = File.new_for_path ("options.txt");
+			var file = File.new_for_path (Build.PKGDATADIR + "/options.txt");
 
 			if (!file.query_exists ()) {
 				warning ("File '%s' doesn't exist.\n", file.get_path ());
@@ -130,7 +130,7 @@ namespace Keyboard.Options
 		{
 			string[] return_val = null;
 	
-			var file = File.new_for_path ("options.txt");
+			var file = File.new_for_path (Build.PKGDATADIR + "/options.txt");
 
 			if (!file.query_exists ()) {
 				warning ("File '%s' doesn't exist.\n", file.get_path ());

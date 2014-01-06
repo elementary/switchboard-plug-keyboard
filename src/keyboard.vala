@@ -1,57 +1,65 @@
-namespace Keyboard
-{
-	class KeyboardPlug : Pantheon.Switchboard.Plug
-	{
-		public KeyboardPlug ()
-		{
-			var grid = new Gtk.Grid ();
-			
-			grid.margin = 12;
-			
-			var notebook = new Granite.Widgets.StaticNotebook (false);
-			
-			// every page is a seperate class
-			AbstractPage[] pages = {
-				(AbstractPage) new Keyboard.Shortcuts.Page (_("Shortcuts")),
-				(AbstractPage) new Keyboard.Behaviour.Page (_("Behaviour")),
-				(AbstractPage) new Keyboard.Layout.Page    (_("Layout")),
-				(AbstractPage) new Keyboard.Options.Page   (_("Options"))
-			};
-			
-			foreach (var page in pages) {
-				notebook.append_page (page, new Gtk.Label (page.title));
-			}
+public class Pantheon.Keyboard.Plug : Switchboard.Plug {
+    Gtk.Grid grid;
 
-			// button to reset the current page
-			var button = new Gtk.Button.with_label (_("Reset to defaults"));
-			
-			button.expand = false;
-			button.halign = Gtk.Align.END;
-			
-			button.clicked.connect (() => {
-				pages[notebook.page].reset ();
-			});
-			
-			grid.attach (notebook, 0, 0, 1, 1);
-			//grid.attach (button,   0, 1, 1, 1);
+    public Plug () {
+        Object (category: Category.HARDWARE,
+                code_name: "hardware-pantheon-keyboard",
+                display_name: _("Keyboard"),
+                description: _("Configure your keyboard"),
+                icon: "preferences-desktop-keyboard");
+    }
 
-			this.add (grid);
-		}
-	}
+    public override Gtk.Widget get_widget () {
+        if (grid == null) {
+            grid = new Gtk.Grid ();
+            grid.margin = 12;
+            var stack = new Gtk.Stack ();
+            var stack_switcher = new Gtk.StackSwitcher ();
+            stack_switcher.set_stack (stack);
+            stack_switcher.halign = Gtk.Align.CENTER;
+            
+            stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
+            stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behaviour"));
+            stack.add_titled (new Keyboard.Layout.Page (), "layout", _("Layout"));
+            stack.add_titled (new Keyboard.Options.Page (), "options", _("Options"));
+
+            // button to reset the current page
+            /*var button = new Gtk.Button.with_label (_("Reset to defaults"));
+
+            button.expand = false;
+            button.halign = Gtk.Align.END;
+
+            button.clicked.connect (() => {
+                pages[notebook.page].reset ();
+            });*/
+
+            grid.attach (stack_switcher, 0, 0, 1, 1);
+            grid.attach (stack, 0, 1, 1, 1);
+        }
+        grid.show_all ();
+        return grid;
+    }
+    
+    public override void shown () {
+        
+    }
+    
+    public override void hidden () {
+        
+    }
+    
+    public override void search_callback (string location) {
+    
+    }
+    
+    // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
+    public override async Gee.TreeMap<string, string> search (string search) {
+        return new Gee.TreeMap<string, string> (null, null);
+    }
 }
 
-int main (string[] args)
-{
-	Gtk.init (ref args);
-
-	var plug = new Keyboard.KeyboardPlug ();
-	plug.register ("Keyboard");
-	plug.show_all();
-
-	Gtk.main ();
-	return 0;
-}
-
-internal void desktop_translations () {
-    var name = _("Keyboard");
+public Switchboard.Plug get_plug (Module module) {
+    debug ("Activating Keyboard plug");
+    var plug = new Pantheon.Keyboard.Plug ();
+    return plug;
 }
