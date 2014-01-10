@@ -1,4 +1,4 @@
-namespace Keyboard.Layout
+namespace Pantheon.Keyboard.Layout
 {
 	// class that parses the layout file, provides lists of languages and
 	// variants, and converts between layout names and their gsettings codes	
@@ -91,7 +91,7 @@ namespace Keyboard.Layout
 		{
 			string[] return_val = null;
 	
-			var file = File.new_for_path ("layouts.txt");
+			var file = File.new_for_path (Build.PKGDATADIR + "/layouts.txt");
 
 			if (!file.query_exists ()) {
 				warning ("File '%s' doesn't exist.\n", file.get_path ());
@@ -117,7 +117,7 @@ namespace Keyboard.Layout
 		{
 			string[] return_val = null;
 	
-			var file = File.new_for_path ("layouts.txt");
+			var file = File.new_for_path (Build.PKGDATADIR + "/layouts.txt");
 
 			if (!file.query_exists ()) {
 				warning ("File '%s' doesn't exist.\n", file.get_path ());

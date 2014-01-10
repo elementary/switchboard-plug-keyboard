@@ -1,11 +1,11 @@
-namespace Keyboard.Options
+namespace Pantheon.Keyboard.Options
 {
 	// global handler
 	private OptionHandler option_handler;
 	// global settings object
 	private OptionSettings option_settings;
 	
-	class Page : AbstractPage
+	class Page : Pantheon.Keyboard.AbstractPage
 	{
 		SectionSwitcher section_switcher;
 		SectionDisplay  section_display;
@@ -24,10 +24,8 @@ namespace Keyboard.Options
 				section_display.set_option (option_settings.groups[i], option_settings.options[i], true);
 		}
 		
-		public Page (string title)
+		public Page ()
 		{
-			base (title);
-			
 			option_handler  = new OptionHandler ();
 			option_settings = new OptionSettings ();
 			

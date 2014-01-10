@@ -1,9 +1,9 @@
-namespace Keyboard.Layout
+namespace Pantheon.Keyboard.Layout
 {
 	// global handler
 	LayoutHandler handler;
 
-	class Page : AbstractPage
+	class Page : Pantheon.Keyboard.AbstractPage
 	{
 		private Layout.Display display;
 		private SettingsGroups settings;
@@ -15,10 +15,8 @@ namespace Keyboard.Layout
 			return;
 		}
 
-		public Page (string title)
+		public Page ()
 		{
-			base (title);
-
 			handler  = new LayoutHandler ();
 
 			// first some labels

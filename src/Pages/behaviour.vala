@@ -1,9 +1,9 @@
-namespace Keyboard.Behaviour
+namespace Pantheon.Keyboard.Behaviour
 {
 	Behaviour.SettingsRepeat settings_repeat;
 	Behaviour.SettingsBlink  settings_blink;
 
-	class Page : AbstractPage
+	class Page : Pantheon.Keyboard.AbstractPage
 	{
 		public override void reset ()
 		{
@@ -12,10 +12,8 @@ namespace Keyboard.Behaviour
 			return;
 		}
 
-		public Page (string title)
+		public Page ()
 		{
-			base (title);
-
 			settings_repeat = new Behaviour.SettingsRepeat ();
 			settings_blink  = new Behaviour.SettingsBlink  ();
 

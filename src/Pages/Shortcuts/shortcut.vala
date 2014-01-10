@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {
 	// stores a shortcut, converts to gsettings format and readable format
 	// and checks for validity

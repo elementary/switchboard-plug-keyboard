@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {	
 	// list of all shortcuts in gsettings, global object
 	private List list;
@@ -12,7 +12,7 @@ namespace Keyboard.Shortcuts
 	private string[] section_names;
 	
 	// main class
-	class Page : AbstractPage
+	class Page : Pantheon.Keyboard.AbstractPage
 	{
 		public override void reset ()
 		{
@@ -25,10 +25,8 @@ namespace Keyboard.Shortcuts
 			return;
 		}
 		
-		public Page (string title)
+		public Page ()
 		{
-			base (title);
-			
 			// init public elements
 			section_names = {
 				_("Windows"),

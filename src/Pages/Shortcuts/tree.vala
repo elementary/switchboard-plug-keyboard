@@ -1,4 +1,4 @@
-namespace Keyboard.Shortcuts
+namespace Pantheon.Keyboard.Shortcuts
 {
 	// contains the shortcuts and handels all changes in gsettings
 	private class Tree : Gtk.TreeView

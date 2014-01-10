@@ -1,4 +1,4 @@
-namespace Keyboard.Layout
+namespace Pantheon.Keyboard.Layout
 {
 	// widget to display/add/remove/move keyboard layouts
 	// interacts with class SettingsLayout
