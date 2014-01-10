@@ -33,15 +33,15 @@ VALA_C
     Pages/layout.vala   
     Pages/Layout/display.vala
     Pages/Layout/add_layout.vala
-	Pages/Layout/handler.vala
-	Pages/Layout/settings.vala
-	
-	Pages/options.vala
-	Pages/Options/section_switcher.vala
-	Pages/Options/option_handler.vala
-	Pages/Options/section_display.vala
-	Pages/Options/option_tree.vala
-	Pages/Options/option_settings.vala
+    Pages/Layout/handler.vala
+    Pages/Layout/settings.vala
+
+    Pages/options.vala
+    Pages/Options/section_switcher.vala
+    Pages/Options/option_handler.vala
+    Pages/Options/section_display.vala
+    Pages/Options/option_tree.vala
+    Pages/Options/option_settings.vala
 	
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
     
