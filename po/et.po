@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-01-06 18:10+0100\n"
-"PO-Revision-Date: 2013-05-12 22:01+0000\n"
+"PO-Revision-Date: 2014-01-17 17:48+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-01-11 06:26+0000\n"
-"X-Generator: Launchpad (build 16890)\n"
+"X-Launchpad-Export-Date: 2014-01-18 07:05+0000\n"
+"X-Generator: Launchpad (build 16901)\n"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:7
 msgid "Keyboard"
@@ -23,7 +23,7 @@ msgstr "Klaviatuur"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr ""
+msgstr "Klaviatuuri seadistamine"
 
 #: /home/noelco/switchboard-plug-keyboard/po/../src//keyboard.vala:21
 msgid "Shortcuts"
