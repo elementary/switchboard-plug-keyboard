@@ -237,7 +237,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Home Folder"),
 						_("File Search"),
 						_("Terminal"),
-						_("Internet Browser")
+						_("Internet Browser"),
+						_("Launcher")
 					},
 
 					schemas = {
@@ -247,7 +248,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.MEDIA
+						Schema.MEDIA,
+						Schema.WM
 					},
 		
 					keys = {
@@ -257,7 +259,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						"home",
 						"search",
 						"terminal",
-						"www"
+						"www",
+						"panel-main-menu"
 					}
 				},
 				
