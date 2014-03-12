@@ -238,7 +238,7 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("File Search"),
 						_("Terminal"),
 						_("Internet Browser"),
-						_("Launcher")
+						_("Applications Launcher")
 					},
 
 					schemas = {
