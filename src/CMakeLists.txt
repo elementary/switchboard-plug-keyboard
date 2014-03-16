@@ -29,6 +29,8 @@ VALA_C
     Pages/Shortcuts/shortcut.vala
     Pages/Shortcuts/list.vala
     Pages/Shortcuts/section_switcher.vala
+    Pages/Shortcuts/custom_tree.vala
+    Pages/Shortcuts/custom_shortcut_settings.vala
     
     Pages/layout.vala   
     Pages/Layout/display.vala

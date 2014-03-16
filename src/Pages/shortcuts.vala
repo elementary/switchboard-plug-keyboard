@@ -5,9 +5,18 @@ namespace Pantheon.Keyboard.Shortcuts
 	// class to interact with gsettings
 	private Shortcuts.Settings settings;
 	// array of tree views, one for each section
-	private Tree[] trees;
+	private Gtk.TreeView[] trees;
 	
-	private enum SectionID { WINDOWS, WORKSPACES, SCREENSHOTS, APPS, MEDIA, A11Y, COUNT }
+	private enum SectionID {
+	    WINDOWS,
+	    WORKSPACES,
+	    SCREENSHOTS,
+	    APPS,
+	    MEDIA,
+	    A11Y,
+	    CUSTOM,
+	    COUNT
+	}
 	
 	private string[] section_names;
 	
@@ -27,6 +36,8 @@ namespace Pantheon.Keyboard.Shortcuts
 		
 		public Page ()
 		{
+			CustomShortcutSettings.init ();
+			
 			// init public elements
 			section_names = {
 				_("Windows"),
@@ -34,15 +45,18 @@ namespace Pantheon.Keyboard.Shortcuts
 				_("Screenshots"),
 				_("Applications"),
 				_("Media"),
-				_("Universal Access")
+				_("Universal Access"),
+				_("Custom")
 			};
 			
 			list     = new List ();
 			settings = new Shortcuts.Settings ();
 			
-			for (int id = 0; id < SectionID.COUNT; id++) {
+			for (int id = 0; id < SectionID.CUSTOM; id++) {
 				trees += new Tree ((SectionID) id);
 			}
+			
+			trees += new CustomTree ();
 			
 			// private elements
 			var shortcut_display = new ShortcutDisplay (trees);
@@ -51,9 +65,7 @@ namespace Pantheon.Keyboard.Shortcuts
 			this.attach (section_switcher, 0, 0, 1, 1);
 			this.attach (shortcut_display, 1, 0, 2, 1);
 		
-			section_switcher.changed.connect ((i) => {
-				shortcut_display.change_selection (i);
-			});
+			section_switcher.changed.connect (shortcut_display.change_selection);
 		}
 	}
 }

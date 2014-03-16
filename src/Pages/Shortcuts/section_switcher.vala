@@ -39,6 +39,6 @@ namespace Pantheon.Keyboard.Shortcuts
 			});
 		}
 		
-		public signal void changed (int i);
+		public signal bool changed (int i);
 	}
 }

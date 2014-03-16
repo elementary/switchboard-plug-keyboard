@@ -135,7 +135,7 @@ namespace Pantheon.Keyboard.Shortcuts
 					string conflict_key;
 					
 					// get some info about the conflicting item
-					trees[conflict_group].get_item (conflict_path, out conflict_action, out conflict_schema, out conflict_key);
+					(trees[conflict_group] as Tree).get_item (conflict_path, out conflict_action, out conflict_schema, out conflict_key);
 					
 					// ask user what to do
 					var msg = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL,
@@ -151,7 +151,7 @@ namespace Pantheon.Keyboard.Shortcuts
 					{
 						if (response_id == 1)
 						{
-							trees[conflict_group].change_shortcut (conflict_path.to_string (), (Shortcut) null);
+							(trees[conflict_group] as Tree).change_shortcut (conflict_path.to_string (), (Shortcut) null);
 							change_shortcut (path, shortcut);
 						}
 
