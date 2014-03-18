@@ -56,7 +56,8 @@ namespace Pantheon.Keyboard.Shortcuts
 				trees += new Tree ((SectionID) id);
 			}
 			
-			trees += new CustomTree ();
+			if (CustomShortcutSettings.available)
+				trees += new CustomTree ();
 			
 			// private elements
 			var shortcut_display = new ShortcutDisplay (trees);
