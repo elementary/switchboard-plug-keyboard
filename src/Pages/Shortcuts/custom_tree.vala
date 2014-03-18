@@ -15,7 +15,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
         load_and_display_custom_shortcuts ();
         connect_signals ();
     }
-    
+
     void setup_gui () {
         var store = new Gtk.ListStore (Column.COUNT , typeof (string),
                                                       typeof (string),
@@ -36,23 +36,23 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
         this.expand = true;
         this.get_column (0).expand = true;
     }
-    
+
     void load_and_display_custom_shortcuts () {
         Gtk.TreeIter iter;
         var store = model as Gtk.ListStore;
-        
+
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
             var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
 
             store.append (out iter);
-            store.set (iter, 
+            store.set (iter,
                 Column.COMMAND, command_to_display (custom_shortcut.command),
                 Column.SHORTCUT, shortcut.to_readable (),
                 Column.SCHEMA, custom_shortcut.relocatable_schema
             );
         }
     }
-    
+
     void connect_signals () {
         this.button_press_event.connect ((event) => {
             if (event.window != this.get_bin_window ())
@@ -83,26 +83,23 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
 
         cell_desc.edited.connect (change_command);
     }
-    
+
     string command_to_display (string? command) {
         if (command == null || command.strip () == "")
             return "<i>" +_("Enter Command") + "</i>";
         return GLib.Markup.escape_text (command);
     }
-    
+
     public void on_add_clicked () {
         var store = model as Gtk.ListStore;
         Gtk.TreeIter iter;
-        
+
         var relocatable_schema = CustomShortcutSettings.create_shortcut ();
-        
+
         store.append (out iter);
         store.set (iter, Column.COMMAND, command_to_display (null));
         store.set (iter, Column.SHORTCUT, (new Shortcut.parse ("")).to_readable ());
         store.set (iter, Column.SCHEMA, relocatable_schema);
-        
-        CustomShortcutSettings.edit_command (relocatable_schema, "");
-        CustomShortcutSettings.edit_custom_shortcut (relocatable_schema, "");
     }
 
     public void on_remove_clicked () {
@@ -122,7 +119,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
         Gtk.TreeIter iter;
         GLib.Value key, relocatable_schema;
         var display_new_text = command_to_display (new_text);
-        
+
         model.get_iter (out iter, new Gtk.TreePath.from_string (path));
         model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
@@ -138,17 +135,10 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
         model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
         var not_null_shortcut = shortcut ?? new Shortcut.parse ("");
-            
-        CustomShortcutSettings.edit_custom_shortcut 
+
+        CustomShortcutSettings.edit_shortcut
             ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
         (model as Gtk.ListStore).set (iter, Column.SHORTCUT, not_null_shortcut.to_readable ());
         return true;
     }
 }
-
-
-
-
-
-
-
