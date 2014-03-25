@@ -105,7 +105,7 @@ namespace Pantheon.Keyboard.Shortcuts
 		}
 		
 		// change a shortcut in the list store and gsettings
-		private bool change_shortcut (string path, Shortcut? shortcut)
+		public bool change_shortcut (string path, Shortcut? shortcut)
 		{
 			Gtk.TreeIter  iter;
 			GLib.Value    key, schema, name;
@@ -127,6 +127,8 @@ namespace Pantheon.Keyboard.Shortcuts
 				int    conflict_group;
 				int    conflict_path;
 				
+				string conflict_command, conflict_relocatable_schema;
+				
 				// check if shortcut is already used
 				if (list.conflicts (shortcut, out conflict_accel, out conflict_group, out conflict_path))
 				{
@@ -137,31 +139,25 @@ namespace Pantheon.Keyboard.Shortcuts
 					// get some info about the conflicting item
 					(trees[conflict_group] as Tree).get_item (conflict_path, out conflict_action, out conflict_schema, out conflict_key);
 					
-					// ask user what to do
-					var msg = new Gtk.MessageDialog (null, Gtk.DialogFlags.MODAL,
-						                                   Gtk.MessageType.WARNING, 
-						                                   Gtk.ButtonsType.NONE, 
-						                                   "\"%s\" is already used for \"%s\"!", shortcut.to_readable (), conflict_action);
-						                                   
-					msg.secondary_text = _("If you reassign the shortcut to \"%s\", \"%s\" will be disabled").printf ((string)name, conflict_action);
-					msg.add_button (_("Cancel"),   0);
-					msg.add_button (_("Reassign"), 1);
-				
-					msg.response.connect ((response_id) =>
-					{
-						if (response_id == 1)
-						{
-							(trees[conflict_group] as Tree).change_shortcut (conflict_path.to_string (), (Shortcut) null);
-							change_shortcut (path, shortcut);
-						}
-
-						msg.destroy();
+					var msg = new ConflictDialog (shortcut.to_readable (), conflict_action, (string) name);
+					msg.reassign.connect (() => {
+						(trees[conflict_group] as Tree).change_shortcut (conflict_path.to_string (), (Shortcut) null);
+						change_shortcut (path, shortcut);
 					});
 					msg.show ();
 					
 					return false;
-				}
-				
+				} else if (CustomShortcutSettings.shortcut_conflicts (shortcut, out conflict_command, out conflict_relocatable_schema)) {
+                    var msg = new ConflictDialog (shortcut.to_readable (), conflict_command, (string) name);
+		            msg.reassign.connect (() => {
+		                CustomShortcutSettings.edit_shortcut (conflict_relocatable_schema, (new Shortcut ()).to_readable ());
+	                    (trees [SectionID.CUSTOM] as CustomTree).load_and_display_custom_shortcuts ();
+	                    change_shortcut (path, shortcut);
+		            });
+		            msg.show ();
+		            return false;
+                }
+                
 				if (!shortcut.valid ())
 					return false;
 			}

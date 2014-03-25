@@ -31,6 +31,7 @@ VALA_C
     Pages/Shortcuts/section_switcher.vala
     Pages/Shortcuts/custom_tree.vala
     Pages/Shortcuts/custom_shortcut_settings.vala
+    Pages/Shortcuts/conflict_dialog.vala
     
     Pages/layout.vala   
     Pages/Layout/display.vala

@@ -1,11 +1,11 @@
-public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
+class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
     const string SCHEMA = "org.gnome.settings-daemon.plugins.media-keys";
     const string KEY = "custom-keybinding";
 
     const string RELOCATABLE_SCHEMA_PATH_TEMLPATE = "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom%d/";
 
-    const int MAX_SHORCUTS = 100;
+    const int MAX_SHORTCUTS = 100;
 
     static GLib.Settings settings;
 
@@ -51,7 +51,7 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     }
 
     public static string? create_shortcut () requires (available) {
-        for (int i = 0; i < MAX_SHORCUTS; i++) {
+        for (int i = 0; i < MAX_SHORTCUTS; i++) {
             var new_relocatable_schema = get_relocatable_schema_path (i);
 
             if (relocatable_schema_is_used (new_relocatable_schema) == false) {
@@ -140,5 +140,21 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
             relocatable_settings.get_string ("command"),
             relocatable_schema
         };
+    }
+    
+    public static bool shortcut_conflicts (Shortcut new_shortcut, out string command, 
+                                           out string relocatable_schema) {
+        var custom_shortcuts = list_custom_shortcuts ();
+        
+        foreach (var custom_shortcut in custom_shortcuts) {
+            var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
+            if (shortcut.is_equal (new_shortcut)) {
+                command = custom_shortcut.command;
+                relocatable_schema = custom_shortcut.relocatable_schema;
+                return true;
+            }
+        }
+        
+        return false;
     }
 }

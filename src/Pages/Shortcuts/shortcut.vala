@@ -10,7 +10,7 @@ namespace Pantheon.Keyboard.Shortcuts
 		string SEPARATOR = " · ";
 		
 		// constructors
-		public Shortcut ( uint key, Gdk.ModifierType mod )
+		public Shortcut (uint key = 0, Gdk.ModifierType mod = (Gdk.ModifierType) 0)
 		{
 			accel_key = key;
 			modifiers = mod;
