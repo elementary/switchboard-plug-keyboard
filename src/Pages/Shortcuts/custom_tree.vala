@@ -111,7 +111,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
     public void on_remove_clicked () {
         Gtk.TreeIter iter;
         Gtk.TreePath path;
-        GLib.Value key, relocatable_schema;
+        GLib.Value relocatable_schema;
 
         get_cursor (out path, null);
         model.get_iter (out iter, path);
@@ -123,8 +123,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
 
     void change_command (string path, string new_text) {
         Gtk.TreeIter iter;
-        GLib.Value key, relocatable_schema;
-        var display_new_text = command_to_display (new_text);
+        GLib.Value relocatable_schema;
 
         model.get_iter (out iter, new Gtk.TreePath.from_string (path));
         model.get_value (iter, Column.SCHEMA, out relocatable_schema);
@@ -146,7 +145,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
 
     bool change_shortcut (string path, Shortcut? shortcut) {
         Gtk.TreeIter iter;
-        GLib.Value key, command, relocatable_schema;
+        GLib.Value command, relocatable_schema;
         
         model.get_iter (out iter, new Gtk.TreePath.from_string (path));
         model.get_value (iter, Column.SCHEMA, out relocatable_schema);

@@ -8,22 +8,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 		private Schema[] schemas;
 		private string[] keys;
 		
-		public bool get_item (uint i, out string action, out Schema schema, out string key) {
-			action = null;
-			schema = (Schema) null;
-			key    = null;
-			
-			if (i >= actions.length)
-				return false;
-			
-			action = actions[i];
-			schema = schemas[i];
-			key    = keys[i];
-			return true;
-		}
-		
-		public Tree (SectionID group)
-		{
+		public Tree (SectionID group) {
 		    Object (group: group);
 			
 			load_and_display_shortcuts ();

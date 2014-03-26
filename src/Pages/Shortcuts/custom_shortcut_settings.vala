@@ -12,7 +12,6 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     public static bool available = false;
 
     public struct CustomShortcut {
-        string name;
         string shortcut;
         string command;
         string relocatable_schema;
@@ -41,13 +40,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     }
 
     static GLib.Settings? get_relocatable_schema_settings (string relocatable_schema) {
-        try {
-            return new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
-        } catch (Error e) {
-            warning (e.message);
-        }
-
-        return (GLib.Settings) null;
+        return new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
     }
 
     public static string? create_shortcut () requires (available) {
@@ -120,14 +113,8 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         requires (available) {
     
         var list = new GLib.List <CustomShortcut?> ();
-
-        try {
-            foreach (var relocatable_schema in get_relocatable_schemas ())
-                list.append (create_custom_shortcut_object (relocatable_schema));
-        } catch (Error e) {
-            warning (e.message);
-        }
-
+        foreach (var relocatable_schema in get_relocatable_schemas ())
+            list.append (create_custom_shortcut_object (relocatable_schema));
         return list;
     }
 
@@ -135,7 +122,6 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
 
         return {
-            relocatable_settings.get_string ("name"),
             relocatable_settings.get_string ("binding"),
             relocatable_settings.get_string ("command"),
             relocatable_schema
