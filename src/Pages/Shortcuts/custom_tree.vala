@@ -1,4 +1,4 @@
-private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
+private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree {
 
     Gtk.CellRendererText cell_desc;
     Gtk.CellRendererAccel cell_edit;
@@ -132,50 +132,48 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView {
         CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
         load_and_display_custom_shortcuts ();
     }
+    
+    public bool shortcut_conflicts (Shortcut shortcut, out string name) {
+        return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
+    }
+    
+    public void reset_shortcut (Shortcut shortcut) {
+        string relocatable_schema;
+        CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
+        CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
+        load_and_display_custom_shortcuts ();
+    }
 
     bool change_shortcut (string path, Shortcut? shortcut) {
         Gtk.TreeIter iter;
-        GLib.Value key, relocatable_schema, command;
-
+        GLib.Value key, command, relocatable_schema;
+        
         model.get_iter (out iter, new Gtk.TreePath.from_string (path));
         model.get_value (iter, Column.SCHEMA, out relocatable_schema);
         model.get_value (iter, Column.COMMAND, out command);
 
         var not_null_shortcut = shortcut ?? new Shortcut ();
-
-        string conflict_command, conflict_relocatable_schema;
-        string conflict_accel;
-		int    conflict_group;
-		int    conflict_path;
-		
-        if (list.conflicts (shortcut, out conflict_accel, out conflict_group, out conflict_path)) {
-            string conflict_action;
-			Schema conflict_schema;
-			string conflict_key;
-			
-			(trees[conflict_group] as Tree).get_item (conflict_path, out conflict_action, out conflict_schema, out conflict_key);
-					
-		    var msg = new ConflictDialog (shortcut.to_readable (), conflict_action, (string) command);
-		    msg.reassign.connect (() => {
-			    (trees[conflict_group] as Tree).change_shortcut (conflict_path.to_string (), (Shortcut) null);
-		        CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-                load_and_display_custom_shortcuts ();
-		    });
-		    msg.show ();
-        } else if (CustomShortcutSettings.shortcut_conflicts (shortcut, out conflict_command, out conflict_relocatable_schema)) {
-            var msg = new ConflictDialog (shortcut.to_readable (), conflict_command, (string) command);
-		    msg.reassign.connect (() => {
-		        CustomShortcutSettings.edit_shortcut (conflict_relocatable_schema, (new Shortcut ()).to_readable ());
-	            CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-                load_and_display_custom_shortcuts ();
-		    });
-		    msg.show ();
-        } else {
-            CustomShortcutSettings.edit_shortcut
-                ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-            load_and_display_custom_shortcuts ();
-        }
         
+        string conflict_name;
+        
+        foreach (var _tree in trees) {
+            var tree = _tree as DisplayTree;
+            
+            if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
+                continue;
+                
+            var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
+	        dialog.reassign.connect (() => {
+	            tree.reset_shortcut (shortcut);
+	            CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
+	            load_and_display_custom_shortcuts ();
+	        });
+	        dialog.show ();
+	        return false;
+        }
+
+        CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
+        load_and_display_custom_shortcuts ();
         return true;
-    }				
+    }
 }
