@@ -136,9 +136,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 			
             string conflict_name;
             
-            foreach (var _tree in trees) {
-                var tree = _tree as DisplayTree;
-                
+            foreach (var tree in trees) {
                 if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
                     continue;
                     

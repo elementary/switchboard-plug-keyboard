@@ -7,11 +7,11 @@ namespace Pantheon.Keyboard.Shortcuts
 		int selected;
 		
 		Gtk.ScrolledWindow scroll;
-		Gtk.TreeView[] trees;
+		DisplayTree[] trees;
 		
 		Gtk.Toolbar tbar;
 		
-		public ShortcutDisplay (Gtk.TreeView[] t)
+		public ShortcutDisplay (DisplayTree[] t)
 		{
 			selected = 0;
 			

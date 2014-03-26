@@ -5,7 +5,7 @@ namespace Pantheon.Keyboard.Shortcuts
 	// class to interact with gsettings
 	private Shortcuts.Settings settings;
 	// array of tree views, one for each section
-	private Gtk.TreeView[] trees;
+	private DisplayTree[] trees;
 	
 	private enum SectionID {
 	    WINDOWS,
@@ -52,9 +52,8 @@ namespace Pantheon.Keyboard.Shortcuts
 			list     = new List ();
 			settings = new Shortcuts.Settings ();
 			
-			for (int id = 0; id < SectionID.CUSTOM; id++) {
+			for (int id = 0; id < SectionID.CUSTOM; id++)
 				trees += new Tree ((SectionID) id);
-			}
 			
 			if (CustomShortcutSettings.available)
 				trees += new CustomTree ();
