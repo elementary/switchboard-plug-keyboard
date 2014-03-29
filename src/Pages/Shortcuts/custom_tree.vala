@@ -155,20 +155,22 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         
         string conflict_name;
         
-        foreach (var tree in trees) {
-            if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
-                continue;
-                
-            var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
-	        dialog.reassign.connect (() => {
-	            tree.reset_shortcut (shortcut);
-	            CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-	            load_and_display_custom_shortcuts ();
-	        });
-	        dialog.show ();
-	        return false;
+        if (shortcut != null) {
+            foreach (var tree in trees) {
+                if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
+                    continue;
+                    
+                var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
+	            dialog.reassign.connect (() => {
+	                tree.reset_shortcut (shortcut);
+	                CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
+	                load_and_display_custom_shortcuts ();
+	            });
+	            dialog.show ();
+	            return false;
+            }
         }
-
+        
         CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
         load_and_display_custom_shortcuts ();
         return true;

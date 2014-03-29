@@ -121,21 +121,23 @@ namespace Pantheon.Keyboard.Shortcuts {
 			
             string conflict_name;
             
-            foreach (var tree in trees) {
-                if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
-                    continue;
-                    
-                var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) name);
-	            dialog.reassign.connect (() => {
-	                tree.reset_shortcut (shortcut);
-	                settings.set_val ((Schema) schema, (string) key, shortcut);
-	                load_and_display_shortcuts ();
-	            });
-	            dialog.show ();
-	            return false;
+            if (shortcut != null) {
+                foreach (var tree in trees) {
+                    if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
+                        continue;
+                        
+                    var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) name);
+	                dialog.reassign.connect (() => {
+	                    tree.reset_shortcut (shortcut);
+	                    settings.set_val ((Schema) schema, (string) key, shortcut);
+	                    load_and_display_shortcuts ();
+	                });
+	                dialog.show ();
+	                return false;
+                }
             }
-
-			settings.set_val ((Schema) schema, (string) key, shortcut);
+            
+			settings.set_val ((Schema) schema, (string) key, shortcut ?? new Shortcut ());
             load_and_display_shortcuts ();
             return true;
 		}
