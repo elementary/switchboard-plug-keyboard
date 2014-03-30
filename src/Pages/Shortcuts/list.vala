@@ -45,7 +45,7 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Expose Windows"),
 						_("Expose all Windows")
 					},
-				    schemas = {
+					schemas = {
 						Schema.WM,
 						Schema.WM,
 						Schema.WM,

@@ -32,8 +32,8 @@ namespace Pantheon.Keyboard.Shortcuts
 			tbar.set_icon_size(Gtk.IconSize.SMALL_TOOLBAR);
 			tbar.set_show_arrow(false);
 			tbar.hexpand = true;
-		    tbar.no_show_all = true;
-		    
+			tbar.no_show_all = true;
+			
 			scroll.get_style_context().set_junction_sides(Gtk.JunctionSides.BOTTOM);
 			tbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 			tbar.get_style_context().set_junction_sides(Gtk.JunctionSides.TOP);
