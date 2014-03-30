@@ -26,7 +26,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
             warning ("Schema \"%s\" is not installed on your system.", SCHEMA);
             return;
         }
-        
+
         settings = new GLib.Settings.full (schema, null, null);
         available = true;
     }
@@ -82,7 +82,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
     public static void remove_shortcut (string relocatable_schema)
         requires (available) {
-        
+
         string []relocatable_schemas = {};
 
         foreach (var schema in get_relocatable_schemas ())
@@ -95,15 +95,15 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
     public static bool edit_shortcut (string relocatable_schema, string shortcut)
         requires (available) {
-        
+
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
         relocatable_settings.set_string ("binding", shortcut);
         return true;
     }
 
-    public static bool edit_command (string relocatable_schema, string command) 
+    public static bool edit_command (string relocatable_schema, string command)
         requires (available) {
-        
+
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
         relocatable_settings.set_string ("command", command);
         return true;
@@ -111,7 +111,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
     public static GLib.List <CustomShortcut?> list_custom_shortcuts ()
         requires (available) {
-    
+
         var list = new GLib.List <CustomShortcut?> ();
         foreach (var relocatable_schema in get_relocatable_schemas ())
             list.append (create_custom_shortcut_object (relocatable_schema));
@@ -127,11 +127,11 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
             relocatable_schema
         };
     }
-    
-    public static bool shortcut_conflicts (Shortcut new_shortcut, out string command, 
+
+    public static bool shortcut_conflicts (Shortcut new_shortcut, out string command,
                                            out string relocatable_schema) {
         var custom_shortcuts = list_custom_shortcuts ();
-        
+
         foreach (var custom_shortcut in custom_shortcuts) {
             var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
             if (shortcut.is_equal (new_shortcut)) {
@@ -140,7 +140,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
                 return true;
             }
         }
-        
+
         return false;
     }
 }

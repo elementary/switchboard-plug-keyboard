@@ -15,7 +15,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         load_and_display_custom_shortcuts ();
         connect_signals ();
     }
-    
+
     Gtk.ListStore list_store {
         get { return model as Gtk.ListStore; }
     }
@@ -57,7 +57,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
                 Column.SCHEMA, custom_shortcut.relocatable_schema
             );
         }
-        
+
         model = store;
     }
 
@@ -131,11 +131,11 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
         load_and_display_custom_shortcuts ();
     }
-    
+
     public bool shortcut_conflicts (Shortcut shortcut, out string name) {
         return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
     }
-    
+
     public void reset_shortcut (Shortcut shortcut) {
         string relocatable_schema;
         CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
@@ -146,31 +146,31 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
     bool change_shortcut (string path, Shortcut? shortcut) {
         Gtk.TreeIter iter;
         GLib.Value command, relocatable_schema;
-        
+
         model.get_iter (out iter, new Gtk.TreePath.from_string (path));
         model.get_value (iter, Column.SCHEMA, out relocatable_schema);
         model.get_value (iter, Column.COMMAND, out command);
 
         var not_null_shortcut = shortcut ?? new Shortcut ();
-        
+
         string conflict_name;
-        
+
         if (shortcut != null) {
             foreach (var tree in trees) {
                 if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
                     continue;
-                    
+
                 var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
-	            dialog.reassign.connect (() => {
-	                tree.reset_shortcut (shortcut);
-	                CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-	                load_and_display_custom_shortcuts ();
-	            });
-	            dialog.show ();
-	            return false;
+                dialog.reassign.connect (() => {
+                    tree.reset_shortcut (shortcut);
+                    CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
+                    load_and_display_custom_shortcuts ();
+                });
+                dialog.show ();
+                return false;
             }
         }
-        
+
         CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
         load_and_display_custom_shortcuts ();
         return true;
