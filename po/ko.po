@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-01-03 04:02+0000\n"
-"Last-Translator: MinSik CHO <Unknown>\n"
+"PO-Revision-Date: 2014-04-08 08:06+0000\n"
+"Last-Translator: Chang Geon Kang <kangha02@naver.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
+"X-Launchpad-Export-Date: 2014-04-09 07:06+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
@@ -23,7 +23,7 @@ msgstr "키보드"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr ""
+msgstr "키보드 설정"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:21
 msgid "Shortcuts"
