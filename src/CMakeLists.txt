@@ -4,7 +4,6 @@ find_package (PkgConfig)
 pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0>=3.10 switchboard-2.0 granite)
 
 add_definitions (${DEPS_CFLAGS})
-link_libraries (${DEPS_LIBRARIES})
 link_directories (${DEPS_LIBRARY_DIRS})
 
 find_package (Vala REQUIRED)
@@ -16,6 +15,7 @@ include (ValaPrecompile)
 vala_precompile (
 
 VALA_C
+    ${PLUGNAME}
     keyboard.vala
     page.vala
     
@@ -52,7 +52,9 @@ PACKAGES
 OPTIONS
     --thread
 )
+
 add_library (${PLUGNAME} MODULE ${VALA_C})
+target_link_libraries(${PLUGNAME} ${DEPS_LIBRARIES}) 
 
 # Installation
 install (TARGETS ${PLUGNAME} DESTINATION ${PKGDATADIR})
