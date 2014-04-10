@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-01-21 08:35+0000\n"
+"PO-Revision-Date: 2014-04-09 17:26+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
+"X-Launchpad-Export-Date: 2014-04-10 06:46+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
@@ -43,108 +43,109 @@ msgstr "Valinnat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr ""
+msgstr "Ikkunat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "Työtilat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr ""
+msgstr "Kuvakaappaukset"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "Sovellukset"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "Esteettömyys"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Salli erilaiset asettelut yksittäisille ikkunoille:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
 msgid "New windows use:"
-msgstr ""
+msgstr "Käytössä uusissa ikkunoissa:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
 msgid "Default layout"
-msgstr ""
+msgstr "Oletusasettelu"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Aiemman ikkunan asettelu"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:90
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Kirjoita testataksesi asettelua…"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Toistonäppäimet:</b>"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Viive:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "Päivitysväli:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "millisekuntia"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Kohdistimen vilkunta:</b>"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "Nopeus:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr ""
+msgstr "Kesto:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "sekuntia"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Kirjoita testataksesi asetuksia…"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:146
 #, c-format
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
+"Jos asetat uudelleen pikavalinnaksi \"%s\", \"%s\" poistetaan käytöstä"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
-msgstr ""
+msgstr "Peru"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Aseta uudelleen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "Ei käytössä"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "Sulje"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
@@ -152,11 +153,11 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Suurenna"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "Palauta koko"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
@@ -164,11 +165,11 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "Pienennä"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Koko näyttö päällä/pois"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
@@ -188,295 +189,295 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Aina päällimmäisenä päällä/pois"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr ""
+msgstr "Vaihda ikkunoiden välillä"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "Vaihda ikkunoiden välillä päinvastaisesti"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:70
 msgid "Expose Windows"
-msgstr ""
+msgstr "Näytä ikkunat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:71
 msgid "Expose all Windows"
-msgstr ""
+msgstr "Näytä kaikki ikkunat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Näytä työtilan vaihtaja"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "Vaihda ensimmäiseen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "Vaihda uuteen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Vaihda työtilaan 1"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Vaihda työtilaan 2"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Vaihda työtilaan 3"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Vaihda työtilaan 4"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Vaihda työtilaan 5"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Vaihda työtilaan 6"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Vaihda työtilaan 7"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Vaihda työtilaan 8"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Vaihda työtilaan 9"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "Vaihda vasemmalle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "Vaihda oikealle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Siirrä työtilaan 1"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Siirrä työtilaan 2"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Siirrä työtilaan 3"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Siirrä työtilaan 4"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Siirrä työtilaan 5"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Siirrä työtilaan 6"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Siirrä työtilaan 7"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Siirrä työtilaan 8"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Siirrä työtilaan 9"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr ""
+msgstr "Siirrä vasemmalle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr ""
+msgstr "Siirrä oikealle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Ota kuvakaappaus"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Tallenna kuvakaappaus leikepöydälle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Ota kuvakaappaus ikkunasta"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Tallenna ikkunan kuvakaappaus leikepöydälle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Ota kuvakaappaus alueesta"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "Tallenna alueen kuvakaappaus leikepöydälle"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "Laskin"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "Sähköposti"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "Ohje"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "Kotikansio"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Tiedostohaku"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "Pääte"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "Internetselain"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Sovelluskäynnistin"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Lisää äänenvoimakkuutta"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Vähennä äänenvoimakkuutta"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "Vaimenna"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
-msgstr ""
+msgstr "Käynnistä mediasoitin"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "Toista"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "Keskeytä"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "Pysäytä"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "Edellinen kappale"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "Seuraava kappale"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Irrota"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Pienennä tekstin kokoa"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Kasvata tekstin kokoa"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Suurennus päällä/pois"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Lähennä suurennuslasilla"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Loitonna suurennuslasilla"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Näyttönäppäimistö päällä/pois"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Näytönlukija päällä/pois"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Suuri kontrasti päällä/pois"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Lisää"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
 msgid "Remove"
-msgstr ""
+msgstr "Poista"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Ei mitään"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Oletus"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Lisää…"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Siirrä ylös"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:43
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Siirrä alas"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Kieli:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Asettelu:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Lisää asettelu"
