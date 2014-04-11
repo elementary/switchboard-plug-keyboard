@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-04-07 18:45+0000\n"
-"Last-Translator: Phillip Sz <Unknown>\n"
+"PO-Revision-Date: 2014-04-11 02:16+0000\n"
+"Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
+"X-Launchpad-Export-Date: 2014-04-11 05:59+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
@@ -35,7 +35,7 @@ msgstr "Verhalten"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:23
 msgid "Layout"
-msgstr "Anordnung"
+msgstr "Tastenbelegung"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:24
 msgid "Options"
@@ -47,7 +47,7 @@ msgstr "Fenster"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "Arbeitsflächen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
@@ -67,15 +67,15 @@ msgstr "Zugangshilfen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Verschiedene Tastenbelegungen für einzelne Fenster erlauben:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
 msgid "New windows use:"
-msgstr ""
+msgstr "Neue Fenster benutzen:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
 msgid "Default layout"
-msgstr ""
+msgstr "Vorgegebene Tastenbelegung"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
 msgid "Previous window's layout"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Verzögerung:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
 msgid "Interval:"
@@ -475,8 +475,8 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Tastenbelegung:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Tastenbelegung hinzufügen"

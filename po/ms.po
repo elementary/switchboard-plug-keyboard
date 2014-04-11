@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-01-16 07:34+0000\n"
+"PO-Revision-Date: 2014-04-10 11:44+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
+"X-Launchpad-Export-Date: 2014-04-11 05:59+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
@@ -43,85 +43,85 @@ msgstr "Pilihan"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr ""
+msgstr "Tetingkap"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "Ruang Kerja"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr ""
+msgstr "Cekupan Skrin"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "Aplikasi"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr ""
+msgstr "Media"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "Capaian Universal"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Benarkan bentangan berlainan untuk tetingkap secara individu:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
 msgid "New windows use:"
-msgstr ""
+msgstr "Kegunaan tetingkap baharu:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
 msgid "Default layout"
-msgstr ""
+msgstr "Bentangan lalai"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Bentangan tetingkap terdahulu"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:90
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Taip untuk uji bentangan anda..."
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Kekunci Ulang:</b>"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Lengah:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "Sela:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "milisaat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Kerlipan Kursor:</b>"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "Kelajuan:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr ""
+msgstr "Tempoh:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "saat"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Taip untuk uji tetapan anda..."
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:146
 #, c-format
