@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-04-11 20:31+0000\n"
-"Last-Translator: Tobias Bannert <Unknown>\n"
+"PO-Revision-Date: 2014-04-12 15:43+0000\n"
+"Last-Translator: Phillip Sz <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-12 09:42+0000\n"
+"X-Launchpad-Export-Date: 2014-04-13 06:20+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
@@ -87,7 +87,7 @@ msgstr "Zum testen der Tastenbelegung bitte etwas eingeben."
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Wiederholungstasten:</b>"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
@@ -135,7 +135,7 @@ msgstr "Abbrechen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Neu zuordnen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
@@ -148,7 +148,7 @@ msgstr "Schließen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Niedriger"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
@@ -168,7 +168,7 @@ msgstr "Verkleinern"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Vollbild umschalten"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
@@ -208,7 +208,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Arbeitsplatzwechsler anzeigen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
@@ -364,15 +364,15 @@ msgstr "Anwendungsstarter"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Lautstärke erhöhen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Lautstärke verringern"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "Stummschalten"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
@@ -380,7 +380,7 @@ msgstr "Medienwiedergabe starten"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "Wiedergeben"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
@@ -400,15 +400,15 @@ msgstr "Nächster Titel"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Auswerfen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Schriftgröße verkleinern"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Schriftgröße erhöhen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
@@ -437,41 +437,41 @@ msgstr ""
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Hinzufügen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
 msgid "Remove"
-msgstr ""
+msgstr "Entfernen"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Keines"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Vorgabe"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Hinzufügen …"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Nach oben verschieben"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:43
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Nach unten verschieben"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Sprache:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"

@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-03-26 15:21+0000\n"
+"PO-Revision-Date: 2014-04-12 22:46+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
+"X-Launchpad-Export-Date: 2014-04-13 06:20+0000\n"
 "X-Generator: Launchpad (build 16976)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
@@ -43,11 +43,11 @@ msgstr "ምርጫዎች"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr ""
+msgstr "መስኮቶች"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "የስራ ቦታዎች"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
@@ -55,15 +55,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "መተግበሪያዎች"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr ""
+msgstr "መገናኛ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "አለም አቀፍ መድረሻ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
@@ -91,17 +91,17 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "ማዘግያ:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "እረፍት:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "ሚሊ ሰከንድስ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
@@ -109,7 +109,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "ፍጥነት:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
 msgid "Duration:"
@@ -117,7 +117,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "ሰከንዶች"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
@@ -131,32 +131,32 @@ msgstr ""
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
-msgstr ""
+msgstr "መሰረዣ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "እንደገና መመደቢያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "ተሰናክሏል"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "መዝጊያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "ዝቅተኛ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "ማሳደጊያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "አታሳድግ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "ማሳነሻ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
@@ -220,47 +220,47 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 1"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 2"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 3"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 4"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 5"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 6"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 7"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 8"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "መቀየሪያ ወደ ስራ ቦታ 9"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "ወደ ግራ መቀየሪያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "ወደ ቀኝ መቀየሪያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
@@ -332,31 +332,31 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "መደመሪያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "ኢሜይል"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "እርዳታ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "የፎልደር ቤት"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "ፋይል መፈለጊያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "ተርሚናል"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "ኢንተርኔት መቃኛ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
@@ -364,15 +364,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "መጠን መጨመሪያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "መጠን መቀነሻ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "መቀነሻ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
@@ -380,15 +380,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "ማጫወቻ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "ማስቆሚያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "ማቆሚያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
@@ -400,15 +400,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "ማውጫ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "የ ጽሁፍ መጠን መቀነሻ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "የ ጽሁፍ መጠን መጨመሪያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
@@ -437,27 +437,27 @@ msgstr ""
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "መጨመሪያ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
 msgid "Remove"
-msgstr ""
+msgstr "ማስወገጃ"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "ምንም"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "ነባር"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "መጨመሪያ…"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
@@ -471,12 +471,12 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "ቋንቋ:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "እቅድ:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "እቅድ መጨመሪያ"
