@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2013-12-22 00:12+0000\n"
-"Last-Translator: Ksenia Dylova <ksjenka@gmail.com>\n"
+"PO-Revision-Date: 2014-05-02 09:27+0000\n"
+"Last-Translator: Max_ym <kontact.cat@gmail.com>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-05-03 06:48+0000\n"
+"X-Generator: Launchpad (build 16985)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
 msgid "Keyboard"
@@ -23,7 +23,7 @@ msgstr "Клавіатура"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr ""
+msgstr "Налаштуйте вашу клавіатуру"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:21
 msgid "Shortcuts"
@@ -43,23 +43,23 @@ msgstr "Опції"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr ""
+msgstr "Вікна"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "Робочі простори"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr ""
+msgstr "Знімки екрану"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "Програми"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr ""
+msgstr "Медіа"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
@@ -67,7 +67,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Дозволити різні розкладки для окремих вікон:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
 msgid "New windows use:"
@@ -75,7 +75,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
 msgid "Default layout"
-msgstr ""
+msgstr "Типова розкладка"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
 msgid "Previous window's layout"
@@ -91,17 +91,17 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Затримка:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "Інтервал:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "мілісекунди"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
@@ -109,15 +109,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "Швидкість:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr ""
+msgstr "Тривалість:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "секунди"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
@@ -131,28 +131,28 @@ msgstr ""
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
-msgstr ""
+msgstr "Скасувати"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Перепризначити"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "Вимкнено"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Нижній"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Максимізувати"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "Згорнути"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
@@ -212,11 +212,11 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "Перейти до першого"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "Перейти до нового"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
