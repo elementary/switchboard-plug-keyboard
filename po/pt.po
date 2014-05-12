@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-04-09 23:50+0000\n"
-"Last-Translator: Sérgio Marques <Unknown>\n"
+"PO-Revision-Date: 2014-05-11 16:17+0000\n"
+"Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-10 06:46+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-05-12 06:38+0000\n"
+"X-Generator: Launchpad (build 16996)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
 msgid "Keyboard"
@@ -152,7 +152,7 @@ msgstr "Baixar"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Maximizar"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
@@ -224,7 +224,7 @@ msgstr "Trocar para a área de trabalho 1"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Trocar para a área de trabalho 2"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
@@ -424,59 +424,59 @@ msgstr "Reduzir"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Alternar Teclado no Ecrã"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Alternar Leitor de Ecrã"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Alternar Alto Contraste"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Nenhum"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Predefinido"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Adicionar…"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Mover para cima"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:43
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Mover para baixo"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Idioma:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Esquema:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Adicionar Esquema"
