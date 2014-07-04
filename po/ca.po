@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-04-07 17:27+0200\n"
-"PO-Revision-Date: 2014-01-16 10:52+0000\n"
-"Last-Translator: Alfredo Hernández <Unknown>\n"
+"PO-Revision-Date: 2014-07-03 09:24+0000\n"
+"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-08 07:08+0000\n"
-"X-Generator: Launchpad (build 16976)\n"
+"X-Launchpad-Export-Date: 2014-07-04 06:26+0000\n"
+"X-Generator: Launchpad (build 17086)\n"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
 msgid "Keyboard"
@@ -43,7 +43,7 @@ msgstr "Opcions"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr ""
+msgstr "Finestres"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
@@ -51,11 +51,11 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr ""
+msgstr "Captures de pantalla"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "Programari"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
 msgid "Media"
@@ -63,7 +63,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "Accés universal"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
@@ -71,15 +71,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
 msgid "New windows use:"
-msgstr ""
+msgstr "Les finestres noves utilitzen:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
 msgid "Default layout"
-msgstr ""
+msgstr "Disposició predeterminada"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Disposició de la finestra anterior"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:90
 msgid "Type to test your layout…"
@@ -91,17 +91,17 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Retard:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "Interval:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "mil·lisegons"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
@@ -109,15 +109,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "Velocitat:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr ""
+msgstr "Durada:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "segons"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
@@ -131,7 +131,7 @@ msgstr ""
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
-msgstr ""
+msgstr "Cancel·la"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
@@ -144,19 +144,19 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "Tanca"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Abaixa"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Maximitza"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "Desmaximitza"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
@@ -300,15 +300,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr ""
+msgstr "Desplaça a l’esquerra"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr ""
+msgstr "Desplaça a la dreta"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Fes una captura de pantalla"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
@@ -332,15 +332,15 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "Calculadora"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "Correu electrònic"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
@@ -348,7 +348,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Cerca de fitxers"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
@@ -360,7 +360,7 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Llançador d'aplicacions"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
@@ -437,7 +437,7 @@ msgstr ""
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Afegeix"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
@@ -448,16 +448,16 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Cap"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Per defecte"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Afegeix…"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
@@ -471,12 +471,12 @@ msgstr ""
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Idioma:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Disposició:"
 
 #: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Afegeix una disposició"
