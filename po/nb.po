@@ -7,477 +7,471 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-04-07 17:27+0200\n"
+"POT-Creation-Date: 2014-08-01 14:43-0500\n"
 "PO-Revision-Date: 2014-04-28 02:52+0000\n"
 "Last-Translator: kingu <comradekingu@gmail.com>\n"
 "Language-Team: Norwegian Bokmal <nb@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-04-29 06:41+0000\n"
-"X-Generator: Launchpad (build 16985)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:35+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
+#: ../src//keyboard.vala:7
 msgid "Keyboard"
 msgstr "Tastatur"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:8
+#: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
 msgstr "Sett opp tastaturet ditt"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:21
+#: ../src//keyboard.vala:21
 msgid "Shortcuts"
 msgstr "Snarveier"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:22
+#: ../src//keyboard.vala:22
 msgid "Behaviour"
 msgstr "Oppførsel"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:23
+#: ../src//keyboard.vala:23
 msgid "Layout"
 msgstr "Tastaturoppsett"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:24
+#: ../src//keyboard.vala:24
 msgid "Options"
 msgstr "Alternativer"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr "Vinduer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr "Arbeidsområder"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr "Skjermbilder"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr "Programmer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr "Medium"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr "Tilgjengelighet"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
-msgstr "Tillat forksjellige tastauroppsett for forskjellige vinduer."
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr "Nye vinduer bruker:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr "Forvalgt oppsett"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr "Forrige vindus oppsett"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr "Skriv for å prøve tastaturoppsettet..."
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:21
+#: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
 msgstr "<b>Gjenta tastetrykk:</b>"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
+#: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
 msgstr "Forsinkelse:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
+#: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
 msgstr "Intervall:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
+#: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
+#: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
 msgstr "millisekund"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
+#: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
 msgstr "<b>Blinkende peker:</b>"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
+#: ../src//Pages/behaviour.vala:134
 msgid "Speed:"
 msgstr "Hastighet:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
+#: ../src//Pages/behaviour.vala:135
 msgid "Duration:"
 msgstr "Varighet:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
+#: ../src//Pages/behaviour.vala:137
 msgid "seconds"
 msgstr "sekund"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
+#: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
 msgstr "Skriv for å prøve ditt oppsett..."
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:146
-#, c-format
+#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
+msgid "Add…"
+msgstr "Legg til …"
+
+#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+msgid "Remove"
+msgstr "Fjern"
+
+#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
+msgid "Move up"
+msgstr "Flytt oppover"
+
+#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
+msgid "Move down"
+msgstr "Flytt nedover"
+
+#: ../src//Pages/Layout/add_layout.vala:20
+msgid "Language:"
+msgstr "Språk:"
+
+#: ../src//Pages/Layout/add_layout.vala:21
+msgid "Layout:"
+msgstr "Oppsett:"
+
+#: ../src//Pages/Layout/add_layout.vala:63
+msgid "Add Layout"
+msgstr "Legg til oppsett"
+
+#: ../src//Pages/Layout/add_layout.vala:64
+#: ../src//Pages/Shortcuts/tree.vala:147
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../src//Pages/Layout/handler.vala:76
+msgid "Default"
+msgstr "Forvalg"
+
+#: ../src//Pages/layout.vala:23
+msgid "Allow different layouts for individual windows:"
+msgstr "Tillat forksjellige tastauroppsett for forskjellige vinduer."
+
+#: ../src//Pages/layout.vala:24
+msgid "New windows use:"
+msgstr "Nye vinduer bruker:"
+
+#: ../src//Pages/layout.vala:40
+msgid "Default layout"
+msgstr "Forvalgt oppsett"
+
+#: ../src//Pages/layout.vala:41
+msgid "Previous window's layout"
+msgstr "Forrige vindus oppsett"
+
+#: ../src//Pages/layout.vala:90
+msgid "Type to test your layout…"
+msgstr "Skriv for å prøve tastaturoppsettet..."
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr "Vinduer"
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr "Arbeidsområder"
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr "Skjermbilder"
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr "Programmer"
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr "Medium"
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
+msgstr "Tilgjengelighet"
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
+msgstr "Ingen"
+
+#: ../src//Pages/Shortcuts/list.vala:56
+msgid "Close"
+msgstr "Lukk"
+
+#: ../src//Pages/Shortcuts/list.vala:57
+msgid "Lower"
+msgstr "Senk"
+
+#: ../src//Pages/Shortcuts/list.vala:58
+msgid "Maximize"
+msgstr "Maksimer"
+
+#: ../src//Pages/Shortcuts/list.vala:59
+msgid "Unmaximize"
+msgstr "Gjenopprett"
+
+#: ../src//Pages/Shortcuts/list.vala:60
+msgid "Toggle Maximized"
+msgstr "Veksle maksimering"
+
+#: ../src//Pages/Shortcuts/list.vala:61
+msgid "Minimize"
+msgstr "Minimer"
+
+#: ../src//Pages/Shortcuts/list.vala:62
+msgid "Toggle Fullscreen"
+msgstr "Slå av/på fullskjerm"
+
+#: ../src//Pages/Shortcuts/list.vala:63
+msgid "Tile Left"
+msgstr "Flislegg til venstre"
+
+#: ../src//Pages/Shortcuts/list.vala:64
+msgid "Tile Right"
+msgstr "Flislegg til høyre"
+
+#: ../src//Pages/Shortcuts/list.vala:65
+msgid "Toggle Shaded"
+msgstr "Veksle skyggelegging"
+
+#: ../src//Pages/Shortcuts/list.vala:66
+msgid "Toggle on all Workspaces"
+msgstr "Veksle på alle arbeidsflater"
+
+#: ../src//Pages/Shortcuts/list.vala:67
+msgid "Toggle always on Top"
+msgstr "Veksle alltid til topp"
+
+#: ../src//Pages/Shortcuts/list.vala:68
+msgid "Switch Windows"
+msgstr "Bytt vinduer"
+
+#: ../src//Pages/Shortcuts/list.vala:69
+msgid "Switch Windows backwards"
+msgstr "Bytt vinduer bakover"
+
+#: ../src//Pages/Shortcuts/list.vala:70
+msgid "Expose Windows"
+msgstr "Vis vinduer"
+
+#: ../src//Pages/Shortcuts/list.vala:71
+msgid "Expose all Windows"
+msgstr "Vis alle vinduer"
+
+#: ../src//Pages/Shortcuts/list.vala:115
+msgid "Show Workspace Switcher"
+msgstr "Vis arbeidsflate-veksler"
+
+#: ../src//Pages/Shortcuts/list.vala:116
+msgid "Switch to first"
+msgstr "Bytt til første"
+
+#: ../src//Pages/Shortcuts/list.vala:117
+msgid "Switch to new"
+msgstr "Bytt til nye"
+
+#: ../src//Pages/Shortcuts/list.vala:118
+msgid "Switch to workspace 1"
+msgstr "Bytt til arbeidflate 1"
+
+#: ../src//Pages/Shortcuts/list.vala:119
+msgid "Switch to workspace 2"
+msgstr "Bytt til arbeidsflate 2"
+
+#: ../src//Pages/Shortcuts/list.vala:120
+msgid "Switch to workspace 3"
+msgstr "Bytt til arbeidsflate 3"
+
+#: ../src//Pages/Shortcuts/list.vala:121
+msgid "Switch to workspace 4"
+msgstr "Bytt til arbeidsflate 4"
+
+#: ../src//Pages/Shortcuts/list.vala:122
+msgid "Switch to workspace 5"
+msgstr "Bytt til arbeidsflate 5"
+
+#: ../src//Pages/Shortcuts/list.vala:123
+msgid "Switch to workspace 6"
+msgstr "Bytt til arbeidsflate 6"
+
+#: ../src//Pages/Shortcuts/list.vala:124
+msgid "Switch to workspace 7"
+msgstr "Bytt til arbeidsflate 7"
+
+#: ../src//Pages/Shortcuts/list.vala:125
+msgid "Switch to workspace 8"
+msgstr "Bytt til arbeidsflate 8"
+
+#: ../src//Pages/Shortcuts/list.vala:126
+msgid "Switch to workspace 9"
+msgstr "Bytt til arbeidsflate 9"
+
+#: ../src//Pages/Shortcuts/list.vala:127
+msgid "Switch to left"
+msgstr "Bytt til venstre"
+
+#: ../src//Pages/Shortcuts/list.vala:128
+msgid "Switch to right"
+msgstr "Bytt til høyre"
+
+#: ../src//Pages/Shortcuts/list.vala:129
+msgid "Move to workspace 1"
+msgstr "Flytt til arbeidsflate 1"
+
+#: ../src//Pages/Shortcuts/list.vala:130
+msgid "Move to workspace 2"
+msgstr "Flytt til arbeidsflate 2"
+
+#: ../src//Pages/Shortcuts/list.vala:131
+msgid "Move to workspace 3"
+msgstr "Flytt til arbeidsflate 3"
+
+#: ../src//Pages/Shortcuts/list.vala:132
+msgid "Move to workspace 4"
+msgstr "Flytt til arbeidsflate 4"
+
+#: ../src//Pages/Shortcuts/list.vala:133
+msgid "Move to workspace 5"
+msgstr "Flytt til arbeidsflate 5"
+
+#: ../src//Pages/Shortcuts/list.vala:134
+msgid "Move to workspace 6"
+msgstr "Flytt til arbeidsflate 6"
+
+#: ../src//Pages/Shortcuts/list.vala:135
+msgid "Move to workspace 7"
+msgstr "Flytt til arbeidsflate 7"
+
+#: ../src//Pages/Shortcuts/list.vala:136
+msgid "Move to workspace 8"
+msgstr "Flytt til arbeidsflate 8"
+
+#: ../src//Pages/Shortcuts/list.vala:137
+msgid "Move to workspace 9"
+msgstr "Flytt til arbeidsflate 9"
+
+#: ../src//Pages/Shortcuts/list.vala:138
+msgid "Move to left"
+msgstr "Flytt til venstre"
+
+#: ../src//Pages/Shortcuts/list.vala:139
+msgid "Move to right"
+msgstr "Flytt til høyre"
+
+#: ../src//Pages/Shortcuts/list.vala:203
+msgid "Take a Screenshot"
+msgstr "Ta skjermbilde"
+
+#: ../src//Pages/Shortcuts/list.vala:204
+msgid "Save Screenshot to Clipboard"
+msgstr "Lagre skjermbilde til utklippstavle"
+
+#: ../src//Pages/Shortcuts/list.vala:205
+msgid "Take a Screenshot of a Window"
+msgstr "Ta skjermbilde av et vindu"
+
+#: ../src//Pages/Shortcuts/list.vala:206
+msgid "Save Window-Screenshot to Clipboard"
+msgstr "Lagre vindusskjermbilde til utklippstavle"
+
+#: ../src//Pages/Shortcuts/list.vala:207
+msgid "Take a Screenshot of an Area"
+msgstr "Ta et skjermbilde av et område"
+
+#: ../src//Pages/Shortcuts/list.vala:208
+msgid "Save Area-Screenshot to Clipboard"
+msgstr "Lagre område-skjermbilde til utklippstavle"
+
+#: ../src//Pages/Shortcuts/list.vala:234
+msgid "Calculator"
+msgstr "Kalkulator"
+
+#: ../src//Pages/Shortcuts/list.vala:235
+msgid "Email"
+msgstr "E-post"
+
+#: ../src//Pages/Shortcuts/list.vala:236
+msgid "Help"
+msgstr "Hjelp"
+
+#: ../src//Pages/Shortcuts/list.vala:237
+msgid "Home Folder"
+msgstr "Hjemmemappe"
+
+#: ../src//Pages/Shortcuts/list.vala:238
+msgid "File Search"
+msgstr "Filsøk"
+
+#: ../src//Pages/Shortcuts/list.vala:239
+msgid "Terminal"
+msgstr "Terminal"
+
+#: ../src//Pages/Shortcuts/list.vala:240
+msgid "Internet Browser"
+msgstr "Nettleser"
+
+#: ../src//Pages/Shortcuts/list.vala:241
+msgid "Applications Launcher"
+msgstr "Applikasjonsoppstarter"
+
+#: ../src//Pages/Shortcuts/list.vala:271
+msgid "Volume Up"
+msgstr "Øk lydstyrke"
+
+#: ../src//Pages/Shortcuts/list.vala:272
+msgid "Volume Down"
+msgstr "Senk lydstyrke"
+
+#: ../src//Pages/Shortcuts/list.vala:273
+msgid "Mute"
+msgstr "Lyddemping"
+
+#: ../src//Pages/Shortcuts/list.vala:274
+msgid "Launch Media Player"
+msgstr "Kjør mediaavspiller"
+
+#: ../src//Pages/Shortcuts/list.vala:275
+msgid "Play"
+msgstr "Spill av"
+
+#: ../src//Pages/Shortcuts/list.vala:276
+msgid "Pause"
+msgstr "Stans midlertidig"
+
+#: ../src//Pages/Shortcuts/list.vala:277
+msgid "Stop"
+msgstr "Stopp"
+
+#: ../src//Pages/Shortcuts/list.vala:278
+msgid "Previous Track"
+msgstr "Forrige spor"
+
+#: ../src//Pages/Shortcuts/list.vala:279
+msgid "Next Track"
+msgstr "Neste spor"
+
+#: ../src//Pages/Shortcuts/list.vala:280
+msgid "Eject"
+msgstr "Utløs"
+
+#: ../src//Pages/Shortcuts/list.vala:314
+msgid "Decrease Text Size"
+msgstr "Mink tekststørrelse"
+
+#: ../src//Pages/Shortcuts/list.vala:315
+msgid "Increase Text Size"
+msgstr "Øk tekststørrelse"
+
+#: ../src//Pages/Shortcuts/list.vala:316
+msgid "Toggle Magnifier"
+msgstr "Veksle forstørring"
+
+#: ../src//Pages/Shortcuts/list.vala:317
+msgid "Magnifier Zoom in"
+msgstr "Førstørrelssesglass økning"
+
+#: ../src//Pages/Shortcuts/list.vala:318
+msgid "Magnifier Zoom out"
+msgstr "Førstørrelssesglass minkning"
+
+#: ../src//Pages/Shortcuts/list.vala:319
+msgid "Toggle On Screen Keyboard"
+msgstr "Veksle skjermtastatur"
+
+#: ../src//Pages/Shortcuts/list.vala:320
+msgid "Toggle Screenreader"
+msgstr "Veksle skjermleser"
+
+#: ../src//Pages/Shortcuts/list.vala:321
+msgid "Toggle High Contrast"
+msgstr "Veksle høykontrast"
+
+#: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
 "Hvis du omdelegerer hurtigtastene til \"%s\", vil \"%s\" slutte å fungere."
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
+#: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
 msgstr "Tildel på nytt"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/tree.vala:172
+#: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
 msgstr "Slått av"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
-msgid "Close"
-msgstr "Lukk"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
-msgid "Lower"
-msgstr "Senk"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
-msgid "Maximize"
-msgstr "Maksimer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
-msgid "Unmaximize"
-msgstr "Gjenopprett"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:60
-msgid "Toggle Maximized"
-msgstr "Veksle maksimering"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:61
-msgid "Minimize"
-msgstr "Minimer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
-msgid "Toggle Fullscreen"
-msgstr "Slå av/på fullskjerm"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:63
-msgid "Tile Left"
-msgstr "Flislegg til venstre"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:64
-msgid "Tile Right"
-msgstr "Flislegg til høyre"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:65
-msgid "Toggle Shaded"
-msgstr "Veksle skyggelegging"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:66
-msgid "Toggle on all Workspaces"
-msgstr "Veksle på alle arbeidsflater"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:67
-msgid "Toggle always on Top"
-msgstr "Veksle alltid til topp"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:68
-msgid "Switch Windows"
-msgstr "Bytt vinduer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:69
-msgid "Switch Windows backwards"
-msgstr "Bytt vinduer bakover"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "Vis vinduer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "Vis alle vinduer"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:115
-msgid "Show Workspace Switcher"
-msgstr "Vis arbeidsflate-veksler"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:116
-msgid "Switch to first"
-msgstr "Bytt til første"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:117
-msgid "Switch to new"
-msgstr "Bytt til nye"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:118
-msgid "Switch to workspace 1"
-msgstr "Bytt til arbeidflate 1"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:119
-msgid "Switch to workspace 2"
-msgstr "Bytt til arbeidsflate 2"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:120
-msgid "Switch to workspace 3"
-msgstr "Bytt til arbeidsflate 3"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:121
-msgid "Switch to workspace 4"
-msgstr "Bytt til arbeidsflate 4"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:122
-msgid "Switch to workspace 5"
-msgstr "Bytt til arbeidsflate 5"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:123
-msgid "Switch to workspace 6"
-msgstr "Bytt til arbeidsflate 6"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:124
-msgid "Switch to workspace 7"
-msgstr "Bytt til arbeidsflate 7"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:125
-msgid "Switch to workspace 8"
-msgstr "Bytt til arbeidsflate 8"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:126
-msgid "Switch to workspace 9"
-msgstr "Bytt til arbeidsflate 9"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:127
-msgid "Switch to left"
-msgstr "Bytt til venstre"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:128
-msgid "Switch to right"
-msgstr "Bytt til høyre"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:129
-msgid "Move to workspace 1"
-msgstr "Flytt til arbeidsflate 1"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:130
-msgid "Move to workspace 2"
-msgstr "Flytt til arbeidsflate 2"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:131
-msgid "Move to workspace 3"
-msgstr "Flytt til arbeidsflate 3"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:132
-msgid "Move to workspace 4"
-msgstr "Flytt til arbeidsflate 4"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:133
-msgid "Move to workspace 5"
-msgstr "Flytt til arbeidsflate 5"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:134
-msgid "Move to workspace 6"
-msgstr "Flytt til arbeidsflate 6"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:135
-msgid "Move to workspace 7"
-msgstr "Flytt til arbeidsflate 7"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:136
-msgid "Move to workspace 8"
-msgstr "Flytt til arbeidsflate 8"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:137
-msgid "Move to workspace 9"
-msgstr "Flytt til arbeidsflate 9"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:138
-msgid "Move to left"
-msgstr "Flytt til venstre"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:139
-msgid "Move to right"
-msgstr "Flytt til høyre"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:203
-msgid "Take a Screenshot"
-msgstr "Ta skjermbilde"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:204
-msgid "Save Screenshot to Clipboard"
-msgstr "Lagre skjermbilde til utklippstavle"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:205
-msgid "Take a Screenshot of a Window"
-msgstr "Ta skjermbilde av et vindu"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:206
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Lagre vindusskjermbilde til utklippstavle"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:207
-msgid "Take a Screenshot of an Area"
-msgstr "Ta et skjermbilde av et område"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:208
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Lagre område-skjermbilde til utklippstavle"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:234
-msgid "Calculator"
-msgstr "Kalkulator"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:235
-msgid "Email"
-msgstr "E-post"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:236
-msgid "Help"
-msgstr "Hjelp"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:237
-msgid "Home Folder"
-msgstr "Hjemmemappe"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:238
-msgid "File Search"
-msgstr "Filsøk"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:239
-msgid "Terminal"
-msgstr "Terminal"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:240
-msgid "Internet Browser"
-msgstr "Nettleser"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:241
-msgid "Applications Launcher"
-msgstr "Applikasjonsoppstarter"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
-msgid "Volume Up"
-msgstr "Øk lydstyrke"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:272
-msgid "Volume Down"
-msgstr "Senk lydstyrke"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:273
-msgid "Mute"
-msgstr "Lyddemping"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:274
-msgid "Launch Media Player"
-msgstr "Kjør mediaavspiller"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:275
-msgid "Play"
-msgstr "Spill av"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:276
-msgid "Pause"
-msgstr "Stans midlertidig"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:277
-msgid "Stop"
-msgstr "Stopp"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:278
-msgid "Previous Track"
-msgstr "Forrige spor"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:279
-msgid "Next Track"
-msgstr "Neste spor"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:280
-msgid "Eject"
-msgstr "Utløs"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:314
-msgid "Decrease Text Size"
-msgstr "Mink tekststørrelse"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:315
-msgid "Increase Text Size"
-msgstr "Øk tekststørrelse"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:316
-msgid "Toggle Magnifier"
-msgstr "Veksle forstørring"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:317
-msgid "Magnifier Zoom in"
-msgstr "Førstørrelssesglass økning"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:318
-msgid "Magnifier Zoom out"
-msgstr "Førstørrelssesglass minkning"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:319
-msgid "Toggle On Screen Keyboard"
-msgstr "Veksle skjermtastatur"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:320
-msgid "Toggle Screenreader"
-msgstr "Veksle skjermleser"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:321
-msgid "Toggle High Contrast"
-msgstr "Veksle høykontrast"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
 msgstr "Legg til"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
-msgid "Remove"
-msgstr "Fjern"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
-msgid "None"
-msgstr "Ingen"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
-msgid "Default"
-msgstr "Forvalg"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
-msgid "Add…"
-msgstr "Legg til …"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
-msgid "Move up"
-msgstr "Flytt oppover"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:43
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:48
-msgid "Move down"
-msgstr "Flytt nedover"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr "Språk:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr "Oppsett:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr "Legg til oppsett"

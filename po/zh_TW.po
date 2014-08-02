@@ -7,476 +7,470 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-04-07 17:27+0200\n"
+"POT-Creation-Date: 2014-08-01 14:43-0500\n"
 "PO-Revision-Date: 2014-06-23 01:16+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-06-24 06:29+0000\n"
-"X-Generator: Launchpad (build 17065)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:35+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
+#: ../src//keyboard.vala:7
 msgid "Keyboard"
 msgstr "鍵盤"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:8
+#: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
 msgstr "設定您的鍵盤"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:21
+#: ../src//keyboard.vala:21
 msgid "Shortcuts"
 msgstr "快捷鍵"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:22
+#: ../src//keyboard.vala:22
 msgid "Behaviour"
 msgstr "行為"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:23
+#: ../src//keyboard.vala:23
 msgid "Layout"
 msgstr "鍵盤配置"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:24
+#: ../src//keyboard.vala:24
 msgid "Options"
 msgstr "選項"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr "視窗"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr "工作區"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr "螢幕擷圖"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr "應用程式"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr "媒體"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr "無障礙環境"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
-msgstr "允許各個視窗使用不同鍵盤配置："
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr "新視窗使用："
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr "預設配置"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr "上個視窗的配置"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr "請輸入以測試您的鍵盤配置…"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:21
+#: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
 msgstr "<b>重複鍵：</b>"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
+#: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
 msgstr "延遲："
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
+#: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
 msgstr "間隔："
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
+#: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
+#: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
 msgstr "毫秒"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
+#: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
 msgstr "<b>游標閃爍：</b>"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
+#: ../src//Pages/behaviour.vala:134
 msgid "Speed:"
 msgstr "速度："
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
+#: ../src//Pages/behaviour.vala:135
 msgid "Duration:"
 msgstr "時間長度："
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
+#: ../src//Pages/behaviour.vala:137
 msgid "seconds"
 msgstr "秒"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
+#: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
 msgstr "請輸入以測試您的設定..."
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:146
-#, c-format
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr "如果您重新指派捷徑鍵為「%s」，「%s」的捷徑鍵則會停用"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
-msgid "Cancel"
-msgstr "取消"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
-msgstr "重新指派"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "已停用"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
-msgid "Close"
-msgstr "關閉"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
-msgid "Lower"
-msgstr "降低"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
-msgid "Maximize"
-msgstr "最大化"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
-msgid "Unmaximize"
-msgstr "取消最大化"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:60
-msgid "Toggle Maximized"
-msgstr "開關最大化狀態"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:61
-msgid "Minimize"
-msgstr "最小化"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
-msgid "Toggle Fullscreen"
-msgstr "開關全螢幕"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:63
-msgid "Tile Left"
-msgstr "向左鋪排"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:64
-msgid "Tile Right"
-msgstr "向右鋪排"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:65
-msgid "Toggle Shaded"
-msgstr "開關投影"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:66
-msgid "Toggle on all Workspaces"
-msgstr "開關顯示在所有工作區上"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:67
-msgid "Toggle always on Top"
-msgstr "開關總是在最上層"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:68
-msgid "Switch Windows"
-msgstr "切換視窗"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:69
-msgid "Switch Windows backwards"
-msgstr "往後切換視窗"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "展開視窗"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "展開所有視窗"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:115
-msgid "Show Workspace Switcher"
-msgstr "顯示工作區切換器"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:116
-msgid "Switch to first"
-msgstr "切換到第一個"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:117
-msgid "Switch to new"
-msgstr "切換到新的"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:118
-msgid "Switch to workspace 1"
-msgstr "切換到工作區 1"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:119
-msgid "Switch to workspace 2"
-msgstr "切換到工作區 2"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:120
-msgid "Switch to workspace 3"
-msgstr "切換到工作區 3"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:121
-msgid "Switch to workspace 4"
-msgstr "切換到工作區 4"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:122
-msgid "Switch to workspace 5"
-msgstr "切換到工作區 5"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:123
-msgid "Switch to workspace 6"
-msgstr "切換到工作區 6"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:124
-msgid "Switch to workspace 7"
-msgstr "切換到工作區 7"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:125
-msgid "Switch to workspace 8"
-msgstr "切換到工作區 8"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:126
-msgid "Switch to workspace 9"
-msgstr "切換到工作區 9"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:127
-msgid "Switch to left"
-msgstr "切換至左側"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:128
-msgid "Switch to right"
-msgstr "切換至右側"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:129
-msgid "Move to workspace 1"
-msgstr "移動到工作區 1"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:130
-msgid "Move to workspace 2"
-msgstr "移動到工作區 2"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:131
-msgid "Move to workspace 3"
-msgstr "移動到工作區 3"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:132
-msgid "Move to workspace 4"
-msgstr "移動到工作區 4"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:133
-msgid "Move to workspace 5"
-msgstr "移動到工作區 5"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:134
-msgid "Move to workspace 6"
-msgstr "移動到工作區 6"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:135
-msgid "Move to workspace 7"
-msgstr "移動到工作區 7"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:136
-msgid "Move to workspace 8"
-msgstr "移動到工作區 8"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:137
-msgid "Move to workspace 9"
-msgstr "移動到工作區 9"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:138
-msgid "Move to left"
-msgstr "向左移動"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:139
-msgid "Move to right"
-msgstr "向右移動"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:203
-msgid "Take a Screenshot"
-msgstr "拍攝畫面快照"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:204
-msgid "Save Screenshot to Clipboard"
-msgstr "將螢幕截圖複製到剪貼簿"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:205
-msgid "Take a Screenshot of a Window"
-msgstr "拍攝視窗螢幕擷圖"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:206
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "將視窗螢幕截圖複製到剪貼簿"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:207
-msgid "Take a Screenshot of an Area"
-msgstr "拍攝某區域的螢幕擷圖"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:208
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "將區域螢幕截圖複製到剪貼簿"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:234
-msgid "Calculator"
-msgstr "計算機"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:235
-msgid "Email"
-msgstr "電子郵件"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:236
-msgid "Help"
-msgstr "幫助"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:237
-msgid "Home Folder"
-msgstr "家屋資料夾"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:238
-msgid "File Search"
-msgstr "檔案搜尋"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:239
-msgid "Terminal"
-msgstr "終端機"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:240
-msgid "Internet Browser"
-msgstr "網際網路瀏覽器"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:241
-msgid "Applications Launcher"
-msgstr "應用程式啟動器"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
-msgid "Volume Up"
-msgstr "調高音量"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:272
-msgid "Volume Down"
-msgstr "調低音量"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:273
-msgid "Mute"
-msgstr "靜音"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:274
-msgid "Launch Media Player"
-msgstr "啟動媒體播放器"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:275
-msgid "Play"
-msgstr "播放"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:276
-msgid "Pause"
-msgstr "暫停"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:277
-msgid "Stop"
-msgstr "停止"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:278
-msgid "Previous Track"
-msgstr "上一首曲目"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:279
-msgid "Next Track"
-msgstr "下一首曲目"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:280
-msgid "Eject"
-msgstr "退出"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:314
-msgid "Decrease Text Size"
-msgstr "縮小文字"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:315
-msgid "Increase Text Size"
-msgstr "放大文字"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:316
-msgid "Toggle Magnifier"
-msgstr "開關放大鏡"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:317
-msgid "Magnifier Zoom in"
-msgstr "放大鏡拉近"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:318
-msgid "Magnifier Zoom out"
-msgstr "放大鏡拉遠"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:319
-msgid "Toggle On Screen Keyboard"
-msgstr "開關螢幕鍵盤"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:320
-msgid "Toggle Screenreader"
-msgstr "開關螢幕閱讀器"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:321
-msgid "Toggle High Contrast"
-msgstr "開關高對比外觀"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
-msgid "Add"
-msgstr "加入"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
-msgid "Remove"
-msgstr "移除"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
-msgid "None"
-msgstr "無"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
-msgid "Default"
-msgstr "預設"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
+#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
 msgid "Add…"
 msgstr "加入…"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
+#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+msgid "Remove"
+msgstr "移除"
+
+#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
 msgid "Move up"
 msgstr "上移"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:43
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:48
+#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
 msgid "Move down"
 msgstr "下移"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
+#: ../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
 msgstr "語言："
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
+#: ../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
 msgstr "鍵盤配置："
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
+#: ../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
 msgstr "加入鍵盤配置"
+
+#: ../src//Pages/Layout/add_layout.vala:64
+#: ../src//Pages/Shortcuts/tree.vala:147
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src//Pages/Layout/handler.vala:76
+msgid "Default"
+msgstr "預設"
+
+#: ../src//Pages/layout.vala:23
+msgid "Allow different layouts for individual windows:"
+msgstr "允許各個視窗使用不同鍵盤配置："
+
+#: ../src//Pages/layout.vala:24
+msgid "New windows use:"
+msgstr "新視窗使用："
+
+#: ../src//Pages/layout.vala:40
+msgid "Default layout"
+msgstr "預設配置"
+
+#: ../src//Pages/layout.vala:41
+msgid "Previous window's layout"
+msgstr "上個視窗的配置"
+
+#: ../src//Pages/layout.vala:90
+msgid "Type to test your layout…"
+msgstr "請輸入以測試您的鍵盤配置…"
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr "視窗"
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr "工作區"
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr "螢幕擷圖"
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr "應用程式"
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr "媒體"
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
+msgstr "無障礙環境"
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
+msgstr "無"
+
+#: ../src//Pages/Shortcuts/list.vala:56
+msgid "Close"
+msgstr "關閉"
+
+#: ../src//Pages/Shortcuts/list.vala:57
+msgid "Lower"
+msgstr "降低"
+
+#: ../src//Pages/Shortcuts/list.vala:58
+msgid "Maximize"
+msgstr "最大化"
+
+#: ../src//Pages/Shortcuts/list.vala:59
+msgid "Unmaximize"
+msgstr "取消最大化"
+
+#: ../src//Pages/Shortcuts/list.vala:60
+msgid "Toggle Maximized"
+msgstr "開關最大化狀態"
+
+#: ../src//Pages/Shortcuts/list.vala:61
+msgid "Minimize"
+msgstr "最小化"
+
+#: ../src//Pages/Shortcuts/list.vala:62
+msgid "Toggle Fullscreen"
+msgstr "開關全螢幕"
+
+#: ../src//Pages/Shortcuts/list.vala:63
+msgid "Tile Left"
+msgstr "向左鋪排"
+
+#: ../src//Pages/Shortcuts/list.vala:64
+msgid "Tile Right"
+msgstr "向右鋪排"
+
+#: ../src//Pages/Shortcuts/list.vala:65
+msgid "Toggle Shaded"
+msgstr "開關投影"
+
+#: ../src//Pages/Shortcuts/list.vala:66
+msgid "Toggle on all Workspaces"
+msgstr "開關顯示在所有工作區上"
+
+#: ../src//Pages/Shortcuts/list.vala:67
+msgid "Toggle always on Top"
+msgstr "開關總是在最上層"
+
+#: ../src//Pages/Shortcuts/list.vala:68
+msgid "Switch Windows"
+msgstr "切換視窗"
+
+#: ../src//Pages/Shortcuts/list.vala:69
+msgid "Switch Windows backwards"
+msgstr "往後切換視窗"
+
+#: ../src//Pages/Shortcuts/list.vala:70
+msgid "Expose Windows"
+msgstr "展開視窗"
+
+#: ../src//Pages/Shortcuts/list.vala:71
+msgid "Expose all Windows"
+msgstr "展開所有視窗"
+
+#: ../src//Pages/Shortcuts/list.vala:115
+msgid "Show Workspace Switcher"
+msgstr "顯示工作區切換器"
+
+#: ../src//Pages/Shortcuts/list.vala:116
+msgid "Switch to first"
+msgstr "切換到第一個"
+
+#: ../src//Pages/Shortcuts/list.vala:117
+msgid "Switch to new"
+msgstr "切換到新的"
+
+#: ../src//Pages/Shortcuts/list.vala:118
+msgid "Switch to workspace 1"
+msgstr "切換到工作區 1"
+
+#: ../src//Pages/Shortcuts/list.vala:119
+msgid "Switch to workspace 2"
+msgstr "切換到工作區 2"
+
+#: ../src//Pages/Shortcuts/list.vala:120
+msgid "Switch to workspace 3"
+msgstr "切換到工作區 3"
+
+#: ../src//Pages/Shortcuts/list.vala:121
+msgid "Switch to workspace 4"
+msgstr "切換到工作區 4"
+
+#: ../src//Pages/Shortcuts/list.vala:122
+msgid "Switch to workspace 5"
+msgstr "切換到工作區 5"
+
+#: ../src//Pages/Shortcuts/list.vala:123
+msgid "Switch to workspace 6"
+msgstr "切換到工作區 6"
+
+#: ../src//Pages/Shortcuts/list.vala:124
+msgid "Switch to workspace 7"
+msgstr "切換到工作區 7"
+
+#: ../src//Pages/Shortcuts/list.vala:125
+msgid "Switch to workspace 8"
+msgstr "切換到工作區 8"
+
+#: ../src//Pages/Shortcuts/list.vala:126
+msgid "Switch to workspace 9"
+msgstr "切換到工作區 9"
+
+#: ../src//Pages/Shortcuts/list.vala:127
+msgid "Switch to left"
+msgstr "切換至左側"
+
+#: ../src//Pages/Shortcuts/list.vala:128
+msgid "Switch to right"
+msgstr "切換至右側"
+
+#: ../src//Pages/Shortcuts/list.vala:129
+msgid "Move to workspace 1"
+msgstr "移動到工作區 1"
+
+#: ../src//Pages/Shortcuts/list.vala:130
+msgid "Move to workspace 2"
+msgstr "移動到工作區 2"
+
+#: ../src//Pages/Shortcuts/list.vala:131
+msgid "Move to workspace 3"
+msgstr "移動到工作區 3"
+
+#: ../src//Pages/Shortcuts/list.vala:132
+msgid "Move to workspace 4"
+msgstr "移動到工作區 4"
+
+#: ../src//Pages/Shortcuts/list.vala:133
+msgid "Move to workspace 5"
+msgstr "移動到工作區 5"
+
+#: ../src//Pages/Shortcuts/list.vala:134
+msgid "Move to workspace 6"
+msgstr "移動到工作區 6"
+
+#: ../src//Pages/Shortcuts/list.vala:135
+msgid "Move to workspace 7"
+msgstr "移動到工作區 7"
+
+#: ../src//Pages/Shortcuts/list.vala:136
+msgid "Move to workspace 8"
+msgstr "移動到工作區 8"
+
+#: ../src//Pages/Shortcuts/list.vala:137
+msgid "Move to workspace 9"
+msgstr "移動到工作區 9"
+
+#: ../src//Pages/Shortcuts/list.vala:138
+msgid "Move to left"
+msgstr "向左移動"
+
+#: ../src//Pages/Shortcuts/list.vala:139
+msgid "Move to right"
+msgstr "向右移動"
+
+#: ../src//Pages/Shortcuts/list.vala:203
+msgid "Take a Screenshot"
+msgstr "拍攝畫面快照"
+
+#: ../src//Pages/Shortcuts/list.vala:204
+msgid "Save Screenshot to Clipboard"
+msgstr "將螢幕截圖複製到剪貼簿"
+
+#: ../src//Pages/Shortcuts/list.vala:205
+msgid "Take a Screenshot of a Window"
+msgstr "拍攝視窗螢幕擷圖"
+
+#: ../src//Pages/Shortcuts/list.vala:206
+msgid "Save Window-Screenshot to Clipboard"
+msgstr "將視窗螢幕截圖複製到剪貼簿"
+
+#: ../src//Pages/Shortcuts/list.vala:207
+msgid "Take a Screenshot of an Area"
+msgstr "拍攝某區域的螢幕擷圖"
+
+#: ../src//Pages/Shortcuts/list.vala:208
+msgid "Save Area-Screenshot to Clipboard"
+msgstr "將區域螢幕截圖複製到剪貼簿"
+
+#: ../src//Pages/Shortcuts/list.vala:234
+msgid "Calculator"
+msgstr "計算機"
+
+#: ../src//Pages/Shortcuts/list.vala:235
+msgid "Email"
+msgstr "電子郵件"
+
+#: ../src//Pages/Shortcuts/list.vala:236
+msgid "Help"
+msgstr "幫助"
+
+#: ../src//Pages/Shortcuts/list.vala:237
+msgid "Home Folder"
+msgstr "家屋資料夾"
+
+#: ../src//Pages/Shortcuts/list.vala:238
+msgid "File Search"
+msgstr "檔案搜尋"
+
+#: ../src//Pages/Shortcuts/list.vala:239
+msgid "Terminal"
+msgstr "終端機"
+
+#: ../src//Pages/Shortcuts/list.vala:240
+msgid "Internet Browser"
+msgstr "網際網路瀏覽器"
+
+#: ../src//Pages/Shortcuts/list.vala:241
+msgid "Applications Launcher"
+msgstr "應用程式啟動器"
+
+#: ../src//Pages/Shortcuts/list.vala:271
+msgid "Volume Up"
+msgstr "調高音量"
+
+#: ../src//Pages/Shortcuts/list.vala:272
+msgid "Volume Down"
+msgstr "調低音量"
+
+#: ../src//Pages/Shortcuts/list.vala:273
+msgid "Mute"
+msgstr "靜音"
+
+#: ../src//Pages/Shortcuts/list.vala:274
+msgid "Launch Media Player"
+msgstr "啟動媒體播放器"
+
+#: ../src//Pages/Shortcuts/list.vala:275
+msgid "Play"
+msgstr "播放"
+
+#: ../src//Pages/Shortcuts/list.vala:276
+msgid "Pause"
+msgstr "暫停"
+
+#: ../src//Pages/Shortcuts/list.vala:277
+msgid "Stop"
+msgstr "停止"
+
+#: ../src//Pages/Shortcuts/list.vala:278
+msgid "Previous Track"
+msgstr "上一首曲目"
+
+#: ../src//Pages/Shortcuts/list.vala:279
+msgid "Next Track"
+msgstr "下一首曲目"
+
+#: ../src//Pages/Shortcuts/list.vala:280
+msgid "Eject"
+msgstr "退出"
+
+#: ../src//Pages/Shortcuts/list.vala:314
+msgid "Decrease Text Size"
+msgstr "縮小文字"
+
+#: ../src//Pages/Shortcuts/list.vala:315
+msgid "Increase Text Size"
+msgstr "放大文字"
+
+#: ../src//Pages/Shortcuts/list.vala:316
+msgid "Toggle Magnifier"
+msgstr "開關放大鏡"
+
+#: ../src//Pages/Shortcuts/list.vala:317
+msgid "Magnifier Zoom in"
+msgstr "放大鏡拉近"
+
+#: ../src//Pages/Shortcuts/list.vala:318
+msgid "Magnifier Zoom out"
+msgstr "放大鏡拉遠"
+
+#: ../src//Pages/Shortcuts/list.vala:319
+msgid "Toggle On Screen Keyboard"
+msgstr "開關螢幕鍵盤"
+
+#: ../src//Pages/Shortcuts/list.vala:320
+msgid "Toggle Screenreader"
+msgstr "開關螢幕閱讀器"
+
+#: ../src//Pages/Shortcuts/list.vala:321
+msgid "Toggle High Contrast"
+msgstr "開關高對比外觀"
+
+#: ../src//Pages/Shortcuts/tree.vala:146
+msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
+msgstr "如果您重新指派捷徑鍵為「%s」，「%s」的捷徑鍵則會停用"
+
+#: ../src//Pages/Shortcuts/tree.vala:148
+msgid "Reassign"
+msgstr "重新指派"
+
+#: ../src//Pages/Shortcuts/tree.vala:172
+#: ../src//Pages/Shortcuts/shortcut.vala:41
+msgid "Disabled"
+msgstr "已停用"
+
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
+msgid "Add"
+msgstr "加入"

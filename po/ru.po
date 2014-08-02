@@ -7,477 +7,471 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-04-07 17:27+0200\n"
+"POT-Creation-Date: 2014-08-01 14:43-0500\n"
 "PO-Revision-Date: 2014-05-17 09:22+0000\n"
 "Last-Translator: alex <budaevav@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-05-18 05:53+0000\n"
-"X-Generator: Launchpad (build 17007)\n"
+"X-Launchpad-Export-Date: 2014-08-02 06:35+0000\n"
+"X-Generator: Launchpad (build 17147)\n"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:7
+#: ../src//keyboard.vala:7
 msgid "Keyboard"
 msgstr "Клавиатура"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:8
+#: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
 msgstr "Настроить клавиатуру"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:21
+#: ../src//keyboard.vala:21
 msgid "Shortcuts"
 msgstr "Сочетания клавиш"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:22
+#: ../src//keyboard.vala:22
 msgid "Behaviour"
 msgstr "Поведение"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:23
+#: ../src//keyboard.vala:23
 msgid "Layout"
 msgstr "Раскладка"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//keyboard.vala:24
+#: ../src//keyboard.vala:24
 msgid "Options"
 msgstr "Дополнительно"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr "Окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr "Рабочие столы"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr "Снимки экрана"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr "Приложения"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr "Мультимедиа"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr "Универсальный доступ"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
-msgstr "Разрешить разные раскладки для окон:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr "Новое окно использует:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr "Раскладку по умолчанию"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr "Раскладку предыдущего окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr "Начните печатать, чтобы проверить раскладку"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:21
+#: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
 msgstr "<b>Повтор клавиш:</b>"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:22
+#: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
 msgstr "Задержка:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:23
+#: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
 msgstr "Интервал:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:24
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:25
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:136
+#: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
+#: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
 msgstr "миллисекунды"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:133
+#: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
 msgstr "<b>Мигание курсора:</b>"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:134
+#: ../src//Pages/behaviour.vala:134
 msgid "Speed:"
 msgstr "Скорость:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:135
+#: ../src//Pages/behaviour.vala:135
 msgid "Duration:"
 msgstr "Длительность:"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:137
+#: ../src//Pages/behaviour.vala:137
 msgid "seconds"
 msgstr "секунды"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/behaviour.vala:243
+#: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
 msgstr "Начните печатать, чтобы проверить настройки"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:146
-#, c-format
+#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
+msgid "Add…"
+msgstr "Добавить..."
+
+#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+msgid "Remove"
+msgstr "Удалить"
+
+#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
+msgid "Move up"
+msgstr "Переместить вверх"
+
+#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
+msgid "Move down"
+msgstr "Переместить вниз"
+
+#: ../src//Pages/Layout/add_layout.vala:20
+msgid "Language:"
+msgstr "Язык:"
+
+#: ../src//Pages/Layout/add_layout.vala:21
+msgid "Layout:"
+msgstr "Раскладка:"
+
+#: ../src//Pages/Layout/add_layout.vala:63
+msgid "Add Layout"
+msgstr "Добавить раскладку"
+
+#: ../src//Pages/Layout/add_layout.vala:64
+#: ../src//Pages/Shortcuts/tree.vala:147
+msgid "Cancel"
+msgstr "Отмена"
+
+#: ../src//Pages/Layout/handler.vala:76
+msgid "Default"
+msgstr "По умолчанию"
+
+#: ../src//Pages/layout.vala:23
+msgid "Allow different layouts for individual windows:"
+msgstr "Разрешить разные раскладки для окон:"
+
+#: ../src//Pages/layout.vala:24
+msgid "New windows use:"
+msgstr "Новое окно использует:"
+
+#: ../src//Pages/layout.vala:40
+msgid "Default layout"
+msgstr "Раскладку по умолчанию"
+
+#: ../src//Pages/layout.vala:41
+msgid "Previous window's layout"
+msgstr "Раскладку предыдущего окна"
+
+#: ../src//Pages/layout.vala:90
+msgid "Type to test your layout…"
+msgstr "Начните печатать, чтобы проверить раскладку"
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr "Окна"
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr "Рабочие столы"
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr "Снимки экрана"
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr "Приложения"
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr "Мультимедиа"
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
+msgstr "Универсальный доступ"
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
+msgstr "Ничего"
+
+#: ../src//Pages/Shortcuts/list.vala:56
+msgid "Close"
+msgstr "Закрыть"
+
+#: ../src//Pages/Shortcuts/list.vala:57
+msgid "Lower"
+msgstr "Убрать окно из фокуса"
+
+#: ../src//Pages/Shortcuts/list.vala:58
+msgid "Maximize"
+msgstr "Развернуть"
+
+#: ../src//Pages/Shortcuts/list.vala:59
+msgid "Unmaximize"
+msgstr "Восстановить размер"
+
+#: ../src//Pages/Shortcuts/list.vala:60
+msgid "Toggle Maximized"
+msgstr "Сделать развернутым"
+
+#: ../src//Pages/Shortcuts/list.vala:61
+msgid "Minimize"
+msgstr "Свернуть"
+
+#: ../src//Pages/Shortcuts/list.vala:62
+msgid "Toggle Fullscreen"
+msgstr "Во весь экран"
+
+#: ../src//Pages/Shortcuts/list.vala:63
+msgid "Tile Left"
+msgstr "Прикрепить слева"
+
+#: ../src//Pages/Shortcuts/list.vala:64
+msgid "Tile Right"
+msgstr "Прикрепить справа"
+
+#: ../src//Pages/Shortcuts/list.vala:65
+msgid "Toggle Shaded"
+msgstr "Свернуть активную часть окна"
+
+#: ../src//Pages/Shortcuts/list.vala:66
+msgid "Toggle on all Workspaces"
+msgstr "Показать на всех рабочих столах"
+
+#: ../src//Pages/Shortcuts/list.vala:67
+msgid "Toggle always on Top"
+msgstr "Поверх остальных окон"
+
+#: ../src//Pages/Shortcuts/list.vala:68
+msgid "Switch Windows"
+msgstr "Переключить окна"
+
+#: ../src//Pages/Shortcuts/list.vala:69
+msgid "Switch Windows backwards"
+msgstr "Переключить окна в обратном порядке"
+
+#: ../src//Pages/Shortcuts/list.vala:70
+msgid "Expose Windows"
+msgstr "Показать окна"
+
+#: ../src//Pages/Shortcuts/list.vala:71
+msgid "Expose all Windows"
+msgstr "Показать все окна"
+
+#: ../src//Pages/Shortcuts/list.vala:115
+msgid "Show Workspace Switcher"
+msgstr "Показать переключатель рабочих столов"
+
+#: ../src//Pages/Shortcuts/list.vala:116
+msgid "Switch to first"
+msgstr "Переключиться на первый"
+
+#: ../src//Pages/Shortcuts/list.vala:117
+msgid "Switch to new"
+msgstr "Переключиться на новый"
+
+#: ../src//Pages/Shortcuts/list.vala:118
+msgid "Switch to workspace 1"
+msgstr "Переключиться на рабочий стол 1"
+
+#: ../src//Pages/Shortcuts/list.vala:119
+msgid "Switch to workspace 2"
+msgstr "Переключиться на рабочий стол 2"
+
+#: ../src//Pages/Shortcuts/list.vala:120
+msgid "Switch to workspace 3"
+msgstr "Переключиться на рабочий стол 3"
+
+#: ../src//Pages/Shortcuts/list.vala:121
+msgid "Switch to workspace 4"
+msgstr "Переключиться на рабочий стол 4"
+
+#: ../src//Pages/Shortcuts/list.vala:122
+msgid "Switch to workspace 5"
+msgstr "Переключиться на рабочий стол 5"
+
+#: ../src//Pages/Shortcuts/list.vala:123
+msgid "Switch to workspace 6"
+msgstr "Переключиться на рабочий стол 6"
+
+#: ../src//Pages/Shortcuts/list.vala:124
+msgid "Switch to workspace 7"
+msgstr "Переключиться на рабочий стол 7"
+
+#: ../src//Pages/Shortcuts/list.vala:125
+msgid "Switch to workspace 8"
+msgstr "Переключиться на рабочий стол 8"
+
+#: ../src//Pages/Shortcuts/list.vala:126
+msgid "Switch to workspace 9"
+msgstr "Переключиться на рабочий стол 9"
+
+#: ../src//Pages/Shortcuts/list.vala:127
+msgid "Switch to left"
+msgstr "Переключиться влево"
+
+#: ../src//Pages/Shortcuts/list.vala:128
+msgid "Switch to right"
+msgstr "Переключиться в право"
+
+#: ../src//Pages/Shortcuts/list.vala:129
+msgid "Move to workspace 1"
+msgstr "Переместить на рабочий стол 1"
+
+#: ../src//Pages/Shortcuts/list.vala:130
+msgid "Move to workspace 2"
+msgstr "Переместить на рабочий стол 2"
+
+#: ../src//Pages/Shortcuts/list.vala:131
+msgid "Move to workspace 3"
+msgstr "Переместить на рабочий стол 3"
+
+#: ../src//Pages/Shortcuts/list.vala:132
+msgid "Move to workspace 4"
+msgstr "Переместить на рабочий стол 4"
+
+#: ../src//Pages/Shortcuts/list.vala:133
+msgid "Move to workspace 5"
+msgstr "Переместить на рабочий стол 5"
+
+#: ../src//Pages/Shortcuts/list.vala:134
+msgid "Move to workspace 6"
+msgstr "Переместить на рабочий стол 6"
+
+#: ../src//Pages/Shortcuts/list.vala:135
+msgid "Move to workspace 7"
+msgstr "Переместить на рабочий стол 7"
+
+#: ../src//Pages/Shortcuts/list.vala:136
+msgid "Move to workspace 8"
+msgstr "Переместить на рабочий стол 8"
+
+#: ../src//Pages/Shortcuts/list.vala:137
+msgid "Move to workspace 9"
+msgstr "Переместить на рабочий стол 9"
+
+#: ../src//Pages/Shortcuts/list.vala:138
+msgid "Move to left"
+msgstr "Переместить влево"
+
+#: ../src//Pages/Shortcuts/list.vala:139
+msgid "Move to right"
+msgstr "Переместить вправо"
+
+#: ../src//Pages/Shortcuts/list.vala:203
+msgid "Take a Screenshot"
+msgstr "Сделать снимок экрана"
+
+#: ../src//Pages/Shortcuts/list.vala:204
+msgid "Save Screenshot to Clipboard"
+msgstr "Сохранить снимок в буфер обмена"
+
+#: ../src//Pages/Shortcuts/list.vala:205
+msgid "Take a Screenshot of a Window"
+msgstr "Сделать снимок окна"
+
+#: ../src//Pages/Shortcuts/list.vala:206
+msgid "Save Window-Screenshot to Clipboard"
+msgstr "Сохранить снимок окна в буфер обмена"
+
+#: ../src//Pages/Shortcuts/list.vala:207
+msgid "Take a Screenshot of an Area"
+msgstr "Сделать снимок области экрана"
+
+#: ../src//Pages/Shortcuts/list.vala:208
+msgid "Save Area-Screenshot to Clipboard"
+msgstr "Сохранить снимок области в буфер обмена"
+
+#: ../src//Pages/Shortcuts/list.vala:234
+msgid "Calculator"
+msgstr "Калькулятор"
+
+#: ../src//Pages/Shortcuts/list.vala:235
+msgid "Email"
+msgstr "Электронная почта"
+
+#: ../src//Pages/Shortcuts/list.vala:236
+msgid "Help"
+msgstr "Справка"
+
+#: ../src//Pages/Shortcuts/list.vala:237
+msgid "Home Folder"
+msgstr "Домашняя папка"
+
+#: ../src//Pages/Shortcuts/list.vala:238
+msgid "File Search"
+msgstr "Поиск файлов"
+
+#: ../src//Pages/Shortcuts/list.vala:239
+msgid "Terminal"
+msgstr "Терминал"
+
+#: ../src//Pages/Shortcuts/list.vala:240
+msgid "Internet Browser"
+msgstr "Интернет браузер"
+
+#: ../src//Pages/Shortcuts/list.vala:241
+msgid "Applications Launcher"
+msgstr "Запуск приложений"
+
+#: ../src//Pages/Shortcuts/list.vala:271
+msgid "Volume Up"
+msgstr "Увеличить громкость"
+
+#: ../src//Pages/Shortcuts/list.vala:272
+msgid "Volume Down"
+msgstr "Уменьшить громкость"
+
+#: ../src//Pages/Shortcuts/list.vala:273
+msgid "Mute"
+msgstr "Выключить звук"
+
+#: ../src//Pages/Shortcuts/list.vala:274
+msgid "Launch Media Player"
+msgstr "Запустить медиа-проигрыватель"
+
+#: ../src//Pages/Shortcuts/list.vala:275
+msgid "Play"
+msgstr "Воспроизвести"
+
+#: ../src//Pages/Shortcuts/list.vala:276
+msgid "Pause"
+msgstr "Пауза"
+
+#: ../src//Pages/Shortcuts/list.vala:277
+msgid "Stop"
+msgstr "Стоп"
+
+#: ../src//Pages/Shortcuts/list.vala:278
+msgid "Previous Track"
+msgstr "Предыдущий трек"
+
+#: ../src//Pages/Shortcuts/list.vala:279
+msgid "Next Track"
+msgstr "Следующий трек"
+
+#: ../src//Pages/Shortcuts/list.vala:280
+msgid "Eject"
+msgstr "Извлечь"
+
+#: ../src//Pages/Shortcuts/list.vala:314
+msgid "Decrease Text Size"
+msgstr "Уменьшить размер шрифта"
+
+#: ../src//Pages/Shortcuts/list.vala:315
+msgid "Increase Text Size"
+msgstr "Увеличить размер шрифта"
+
+#: ../src//Pages/Shortcuts/list.vala:316
+msgid "Toggle Magnifier"
+msgstr "Включить экранную лупу"
+
+#: ../src//Pages/Shortcuts/list.vala:317
+msgid "Magnifier Zoom in"
+msgstr "Приблизить"
+
+#: ../src//Pages/Shortcuts/list.vala:318
+msgid "Magnifier Zoom out"
+msgstr "Уменьшить"
+
+#: ../src//Pages/Shortcuts/list.vala:319
+msgid "Toggle On Screen Keyboard"
+msgstr "Включить экранную клавиатуру"
+
+#: ../src//Pages/Shortcuts/list.vala:320
+msgid "Toggle Screenreader"
+msgstr "Включить чтение с экрана"
+
+#: ../src//Pages/Shortcuts/list.vala:321
+msgid "Toggle High Contrast"
+msgstr "Включить высокую контрастность"
+
+#: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
 "Если вы переназначите горячие клавиши для \"%s\", \"%s\" будет отключено"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:147
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:64
-msgid "Cancel"
-msgstr "Отмена"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:148
+#: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
 msgstr "Переназначить"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/tree.vala:172
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/tree.vala:172
+#: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
 msgstr "Отключено"
 
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:56
-msgid "Close"
-msgstr "Закрыть"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:57
-msgid "Lower"
-msgstr "Убрать окно из фокуса"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:58
-msgid "Maximize"
-msgstr "Развернуть"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:59
-msgid "Unmaximize"
-msgstr "Восстановить размер"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:60
-msgid "Toggle Maximized"
-msgstr "Сделать развернутым"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:61
-msgid "Minimize"
-msgstr "Свернуть"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:62
-msgid "Toggle Fullscreen"
-msgstr "Во весь экран"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:63
-msgid "Tile Left"
-msgstr "Прикрепить слева"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:64
-msgid "Tile Right"
-msgstr "Прикрепить справа"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:65
-msgid "Toggle Shaded"
-msgstr "Свернуть активную часть окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:66
-msgid "Toggle on all Workspaces"
-msgstr "Показать на всех рабочих столах"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:67
-msgid "Toggle always on Top"
-msgstr "Поверх остальных окон"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:68
-msgid "Switch Windows"
-msgstr "Переключить окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:69
-msgid "Switch Windows backwards"
-msgstr "Переключить окна в обратном порядке"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "Показать окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "Показать все окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:115
-msgid "Show Workspace Switcher"
-msgstr "Показать переключатель рабочих столов"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:116
-msgid "Switch to first"
-msgstr "Переключиться на первый"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:117
-msgid "Switch to new"
-msgstr "Переключиться на новый"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:118
-msgid "Switch to workspace 1"
-msgstr "Переключиться на рабочий стол 1"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:119
-msgid "Switch to workspace 2"
-msgstr "Переключиться на рабочий стол 2"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:120
-msgid "Switch to workspace 3"
-msgstr "Переключиться на рабочий стол 3"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:121
-msgid "Switch to workspace 4"
-msgstr "Переключиться на рабочий стол 4"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:122
-msgid "Switch to workspace 5"
-msgstr "Переключиться на рабочий стол 5"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:123
-msgid "Switch to workspace 6"
-msgstr "Переключиться на рабочий стол 6"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:124
-msgid "Switch to workspace 7"
-msgstr "Переключиться на рабочий стол 7"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:125
-msgid "Switch to workspace 8"
-msgstr "Переключиться на рабочий стол 8"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:126
-msgid "Switch to workspace 9"
-msgstr "Переключиться на рабочий стол 9"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:127
-msgid "Switch to left"
-msgstr "Переключиться влево"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:128
-msgid "Switch to right"
-msgstr "Переключиться в право"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:129
-msgid "Move to workspace 1"
-msgstr "Переместить на рабочий стол 1"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:130
-msgid "Move to workspace 2"
-msgstr "Переместить на рабочий стол 2"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:131
-msgid "Move to workspace 3"
-msgstr "Переместить на рабочий стол 3"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:132
-msgid "Move to workspace 4"
-msgstr "Переместить на рабочий стол 4"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:133
-msgid "Move to workspace 5"
-msgstr "Переместить на рабочий стол 5"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:134
-msgid "Move to workspace 6"
-msgstr "Переместить на рабочий стол 6"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:135
-msgid "Move to workspace 7"
-msgstr "Переместить на рабочий стол 7"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:136
-msgid "Move to workspace 8"
-msgstr "Переместить на рабочий стол 8"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:137
-msgid "Move to workspace 9"
-msgstr "Переместить на рабочий стол 9"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:138
-msgid "Move to left"
-msgstr "Переместить влево"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:139
-msgid "Move to right"
-msgstr "Переместить вправо"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:203
-msgid "Take a Screenshot"
-msgstr "Сделать снимок экрана"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:204
-msgid "Save Screenshot to Clipboard"
-msgstr "Сохранить снимок в буфер обмена"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:205
-msgid "Take a Screenshot of a Window"
-msgstr "Сделать снимок окна"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:206
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Сохранить снимок окна в буфер обмена"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:207
-msgid "Take a Screenshot of an Area"
-msgstr "Сделать снимок области экрана"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:208
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Сохранить снимок области в буфер обмена"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:234
-msgid "Calculator"
-msgstr "Калькулятор"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:235
-msgid "Email"
-msgstr "Электронная почта"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:236
-msgid "Help"
-msgstr "Справка"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:237
-msgid "Home Folder"
-msgstr "Домашняя папка"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:238
-msgid "File Search"
-msgstr "Поиск файлов"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:239
-msgid "Terminal"
-msgstr "Терминал"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:240
-msgid "Internet Browser"
-msgstr "Интернет браузер"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:241
-msgid "Applications Launcher"
-msgstr "Запуск приложений"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:271
-msgid "Volume Up"
-msgstr "Увеличить громкость"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:272
-msgid "Volume Down"
-msgstr "Уменьшить громкость"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:273
-msgid "Mute"
-msgstr "Выключить звук"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:274
-msgid "Launch Media Player"
-msgstr "Запустить медиа-проигрыватель"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:275
-msgid "Play"
-msgstr "Воспроизвести"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:276
-msgid "Pause"
-msgstr "Пауза"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:277
-msgid "Stop"
-msgstr "Стоп"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:278
-msgid "Previous Track"
-msgstr "Предыдущий трек"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:279
-msgid "Next Track"
-msgstr "Следующий трек"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:280
-msgid "Eject"
-msgstr "Извлечь"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:314
-msgid "Decrease Text Size"
-msgstr "Уменьшить размер шрифта"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:315
-msgid "Increase Text Size"
-msgstr "Увеличить размер шрифта"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:316
-msgid "Toggle Magnifier"
-msgstr "Включить экранную лупу"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:317
-msgid "Magnifier Zoom in"
-msgstr "Приблизить"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:318
-msgid "Magnifier Zoom out"
-msgstr "Уменьшить"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:319
-msgid "Toggle On Screen Keyboard"
-msgstr "Включить экранную клавиатуру"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:320
-msgid "Toggle Screenreader"
-msgstr "Включить чтение с экрана"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/list.vala:321
-msgid "Toggle High Contrast"
-msgstr "Включить высокую контрастность"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:38
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:41
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
 msgstr "Добавить"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:39
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Shortcuts/display.vala:42
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:41
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:46
-msgid "Remove"
-msgstr "Удалить"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Options/option_handler.vala:89
-msgid "None"
-msgstr "Ничего"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/handler.vala:76
-msgid "Default"
-msgstr "По умолчанию"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:40
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:45
-msgid "Add…"
-msgstr "Добавить..."
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:42
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:47
-msgid "Move up"
-msgstr "Переместить вверх"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:43
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/display.vala:48
-msgid "Move down"
-msgstr "Переместить вниз"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr "Язык:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr "Раскладка:"
-
-#: /tmp/switchboard-plug-keyboard/po/../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr "Добавить раскладку"
