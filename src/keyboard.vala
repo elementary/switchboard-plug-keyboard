@@ -19,7 +19,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
             stack_switcher.halign = Gtk.Align.CENTER;
             
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
-            stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behaviour"));
+            stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
             stack.add_titled (new Keyboard.Layout.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.Options.Page (), "options", _("Options"));
 
