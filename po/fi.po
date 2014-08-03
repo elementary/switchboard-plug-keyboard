@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-01 14:43-0500\n"
+"POT-Creation-Date: 2014-08-02 20:17-0500\n"
 "PO-Revision-Date: 2014-04-09 17:26+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-02 06:34+0000\n"
+"X-Launchpad-Export-Date: 2014-08-03 06:08+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 
 #: ../src//keyboard.vala:7
@@ -30,8 +30,8 @@ msgid "Shortcuts"
 msgstr "Pikanäppäimet"
 
 #: ../src//keyboard.vala:22
-msgid "Behaviour"
-msgstr "Toiminta"
+msgid "Behavior"
+msgstr ""
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -475,3 +475,6 @@ msgstr "Ei käytössä"
 #: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
 msgstr "Lisää"
+
+#~ msgid "Behaviour"
+#~ msgstr "Toiminta"
