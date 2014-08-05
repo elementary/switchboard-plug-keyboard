@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-05-29 18:08+0000\n"
-"Last-Translator: Damian Dygulski <dygulski13@gmail.com>\n"
+"PO-Revision-Date: 2014-08-04 09:50+0000\n"
+"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-04 06:27+0000\n"
+"X-Launchpad-Export-Date: 2014-08-05 06:39+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 
 #: ../src//keyboard.vala:7
@@ -31,7 +31,7 @@ msgstr "Skróty"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Zachowanie"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -80,33 +80,33 @@ msgstr "Zacznij pisać, aby przetestować ustawienia..."
 
 #: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Dodaj…"
 
 #: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
 #: ../src//Pages/Shortcuts/display.vala:39
 #: ../src//Pages/Shortcuts/display.vala:42
 msgid "Remove"
-msgstr ""
+msgstr "Usuń"
 
 #: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Przesuń w górę"
 
 #: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Przesuń w dół"
 
 #: ../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Język:"
 
 #: ../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Układ:"
 
 #: ../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Dodaj układ:"
 
 #: ../src//Pages/Layout/add_layout.vala:64
 #: ../src//Pages/Shortcuts/tree.vala:147
@@ -115,7 +115,7 @@ msgstr "Anuluj"
 
 #: ../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Domyślny"
 
 #: ../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
@@ -163,7 +163,7 @@ msgstr "Dostęp uniwersalny"
 
 #: ../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Brak"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -171,47 +171,47 @@ msgstr "Zamknij"
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Niżej"
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Zmaksymalizuj"
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "Cofnij maksymalizację"
 
 #: ../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "Przełącz maksymalizację"
 
 #: ../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "Zminimalizuj"
 
 #: ../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Przełącz tryb pełnoekranowy"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr ""
+msgstr "Krawędziuj po lewej"
 
 #: ../src//Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr ""
+msgstr "Krawędziuj po prawej"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
-msgstr ""
+msgstr "Przełącz cieniowanie"
 
 #: ../src//Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "Przełącz na wszystkich obszarach roboczych"
 
 #: ../src//Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Zawsze na wierzchu"
 
 #: ../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
@@ -219,7 +219,7 @@ msgstr "Przełącz okna"
 
 #: ../src//Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "Przełącz okna wstecz"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Expose Windows"
@@ -231,235 +231,236 @@ msgstr "Przywróć wszystkie okna"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Pokaż ekran zmiany obszaru roboczego"
 
 #: ../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "Przełącz na pierwszy"
 
 #: ../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "Przełącz na nowy"
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Przełącz na pierwszy obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Przełącz na drugi obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Przełącz na trzeci obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Przełącz na czwarty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Przełącz na piąty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Przełącz na szósty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Przełącz na siódmy obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Przełącz na ósmy obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Przełącz na dziewiąty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "Przełącz w lewo"
 
 #: ../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "Przełącz w prawo"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Przemieść na pierwszy obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Przemieść na drugi obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Przemieść na trzeci obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Przemieść na czwarty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Przemieść na piąty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Przemieść na szósty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Przemieść na siódmy obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Przemieść na ósmy obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Przemieść na dziewiąty obszar roboczy"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr ""
+msgstr "Przemieść w lewo"
 
 #: ../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr ""
+msgstr "Przemieść w prawo"
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Zrób zrzut ekranu"
 
 #: ../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Zapisz zrzut ekranu do schowka"
 
 #: ../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Zrób zrzut ekranu okna"
 
 #: ../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Zapisz zrzut ekranu okna do schowka"
 
 #: ../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Zrób zrzut ekranu danego obszaru"
 
 #: ../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "Zapisz zrzut obrazu obszaru do schowka"
 
 #: ../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "Kalkulator"
 
 #: ../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "Poczta e-mail"
 
 #: ../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "Pomoc"
 
 #: ../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "Katalog domowy"
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Wyszukiwanie plików"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "Przeglądarka internetowa"
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Wyzwalacz programów"
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Głośniej"
 
 #: ../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Ciszej"
 
 #: ../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "Wycisz"
 
 #: ../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
-msgstr ""
+msgstr "Uruchom odtwarzacz mediów"
 
 #: ../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "Odtwórz"
 
 #: ../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "Wstrzymaj"
 
 #: ../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "Zatrzymaj"
 
 #: ../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "Poprzedni utwór"
 
 #: ../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "Następny utwór"
 
 #: ../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Wysuń"
 
 #: ../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Zmniejsz wielkość tekstu"
 
 #: ../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Zwiększ wielkość tekstu"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Włącz/Wyłącz lupę"
 
 #: ../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Powiększenie lupy"
 
 #: ../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Pomniejszenie lupy"
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Włącz/Wyłącz klawiaturę ekranową"
 
 #: ../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Włącz/Wyłącz czytnik ekranowy"
 
 #: ../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Włącz/Wyłącz tryb wysokiego kontrastu"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
+"Jeżeli przypiszesz ponownie skrót do \"%s\", \"%s\" zostanie dezaktywowane"
 
 #: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
@@ -473,4 +474,4 @@ msgstr "Wyłączone"
 #: ../src//Pages/Shortcuts/display.vala:38
 #: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Dodaj"
