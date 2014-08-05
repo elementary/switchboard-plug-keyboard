@@ -67,8 +67,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Toggle always on Top"),
 						_("Switch Windows"),
 						_("Switch Windows backwards"),
-						_("Expose Windows"),
-						_("Expose all Windows")
+						_("Window Overview"),
+						_("Show All Windows")
 					},
 				    schemas = {
 						Schema.WM,
