@@ -10,8 +10,7 @@ namespace Pantheon.Keyboard.Layout
 			string[] copy = {};
 			foreach (string str in layouts)
 			{
-				//if (handler.valid_code(str))
-					copy += str;
+				copy += str;
 			}
 			layouts = copy;
 		}
