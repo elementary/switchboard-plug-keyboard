@@ -1,4 +1,4 @@
-namespace Pantheon.Keyboard.Layout
+namespace Pantheon.Keyboard.LayoutPage
 {
 	// pop over widget to add a new keyboard layout
 	class AddLayout : Gtk.Dialog

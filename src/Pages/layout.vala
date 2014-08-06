@@ -1,12 +1,12 @@
-namespace Pantheon.Keyboard.Layout
+namespace Pantheon.Keyboard.LayoutPage
 {
 	// global handler
 	LayoutHandler handler;
 
 	class Page : Pantheon.Keyboard.AbstractPage
 	{
-		private Layout.Display display;
-		private SettingsGroups settings;
+		private LayoutPage.Display display;
+		private LayoutSettings settings;
 
 		public override void reset ()
 		{
@@ -44,45 +44,16 @@ namespace Pantheon.Keyboard.Layout
 			this.attach (button1,     5, 1, 1, 1);
 			this.attach (button2,     5, 2, 1, 1);
 
-			settings = new Layout.SettingsGroups();
-
-			// connect switch signals
-			switch_main.active = settings.group_per_window;
+			settings = LayoutSettings.get_instance ();
 
 			button1.sensitive = button2.sensitive = switch_main.active;
 			label_2.sensitive = switch_main.active;
 
 			switch_main.notify["active"].connect( () => {
-				settings.group_per_window = switch_main.active;
-				button1.sensitive = button2.sensitive = switch_main.active;
-				label_2.sensitive = switch_main.active;
+                //TODO
 			} );
-
-			settings.changed["group-per-window"].connect (() => {
-				switch_main.active = settings.group_per_window;
-				button1.sensitive = button2.sensitive = switch_main.active;
-				label_2.sensitive = switch_main.active;
-			} );
-
-			// connect radio button signals
-			if( settings.default_group >= 0 )
-				button1.active = true;
-			else
-				button2.active = true;
-
-			button1.toggled.connect (() => { settings.default_group =  0; } );
-			button2.toggled.connect (() => { settings.default_group = -1; } );
-
-			settings.changed["default-group"].connect (() =>
-			{
-				if( settings.default_group >= 0 )
-					button1.active = true;
-				else
-					button2.active = true;
-			} );
-
 			// tree view to display the current layouts
-			display = new Layout.Display ();
+			display = new LayoutPage.Display ();
 
 			this.attach (display, 0, 0, 4, 4);
 

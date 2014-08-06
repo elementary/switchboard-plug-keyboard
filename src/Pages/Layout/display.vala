@@ -1,4 +1,4 @@
-namespace Pantheon.Keyboard.Layout
+namespace Pantheon.Keyboard.LayoutPage
 {
 	// widget to display/add/remove/move keyboard layouts
 	// interacts with class SettingsLayout
@@ -6,12 +6,13 @@ namespace Pantheon.Keyboard.Layout
 	{
 		private signal void update_buttons ();
 
-		private SettingsLayouts settings;
+		private LayoutSettings settings;
 		private Gtk.TreeView tree;
 
 		public Display ()
 		{
-			settings = new SettingsLayouts ();
+			settings = LayoutSettings.get_instance ();
+
 			var list = make_list_store ();
 			tree     = new Gtk.TreeView.with_model (list);
 			var cell = new Gtk.CellRendererText ();
@@ -108,7 +109,7 @@ namespace Pantheon.Keyboard.Layout
 				}
 
 				int index = (path.get_indices ())[0];
-				int count = settings.layouts.length - 1;
+				int count = (int) settings.layouts.length - 1;
 
 				up_button.sensitive     = (index != 0);
 				down_button.sensitive   = (index != count);
@@ -123,8 +124,8 @@ namespace Pantheon.Keyboard.Layout
 
 			uint layout = 0, variant = 0;
 
-			foreach (string item in settings.layouts)
-			{
+            for (uint i = 0; i < settings.layouts.length; i++) {
+			    string item = settings.layouts.get_layout (i).name;
 				handler.from_code (item, out layout, out variant);
 				item = handler.get_name (layout, variant);
 
@@ -144,7 +145,7 @@ namespace Pantheon.Keyboard.Layout
 			update_buttons ();
 		}
 
-		void add_item (Gtk.TreeView tree, Layout.AddLayout pop)
+		void add_item (Gtk.TreeView tree, LayoutPage.AddLayout pop)
 		{
 			pop.layout_added.connect ((layout, variant) =>
 			{
@@ -154,7 +155,7 @@ namespace Pantheon.Keyboard.Layout
 				var code = handler.get_code (layout, variant);
 				var list = tree.model as Gtk.ListStore;
 
-				if (settings.add_layout (code))
+				if (settings.layouts.add_layout (new Layout (LayoutType.XKB, code)))
 				{
 					list.append (out iter);
 					list.set (iter, 0, name);
@@ -179,7 +180,7 @@ namespace Pantheon.Keyboard.Layout
 			model.get_value (iter, 1, out layout);
 			model.get_value (iter, 2, out variant);
 
-			settings.remove_layout (handler.get_code ((uint)layout, (uint)variant));
+			settings.layouts.remove_layout (new Layout (LayoutType.XKB, handler.get_code ((uint)layout, (uint)variant)));
 			stdout.printf ("%s\n", handler.get_code ((uint)layout, (uint)variant));
 			(model as Gtk.ListStore).remove(iter);
 		}
@@ -212,13 +213,14 @@ namespace Pantheon.Keyboard.Layout
 
 			tree.set_cursor (model.get_path (iter_current), null, false);
 
+            var layout_to_move = settings.layouts.get_layout ((path_current.get_indices()) [0]);
 			switch (dir)
 			{
 				case 1:
-						settings.layout_down ((path_current.get_indices()) [0]);
+						settings.layouts.move_layout_down (layout_to_move);
 						break;
 				case 0:
-						settings.layout_up   ((path_current.get_indices()) [0]);
+						settings.layouts.move_layout_up   (layout_to_move);
 						break;
 			}
 		}
