@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-05-09 19:29+0000\n"
+"PO-Revision-Date: 2014-08-06 17:45+0000\n"
 "Last-Translator: Phillip Sz <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-04 06:26+0000\n"
+"X-Launchpad-Export-Date: 2014-08-07 06:23+0000\n"
 "X-Generator: Launchpad (build 17147)\n"
 
 #: ../src//keyboard.vala:7
@@ -31,7 +31,7 @@ msgstr "Tastenkürzel"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Verhalten"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -135,7 +135,7 @@ msgstr "Vorherige Fenstertastenbelegung"
 
 #: ../src//Pages/layout.vala:90
 msgid "Type to test your layout…"
-msgstr "Zum testen der Tastenbelegung bitte etwas eingeben."
+msgstr "Zum Testen der Tastenbelegung bitte etwas eingeben."
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
