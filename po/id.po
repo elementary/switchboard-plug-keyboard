@@ -8,22 +8,22 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-01-28 02:19+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-08-09 01:39+0000\n"
+"Last-Translator: Viko Adi Rahmawan <Unknown>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-04 06:27+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-08-09 05:40+0000\n"
+"X-Generator: Launchpad (build 17156)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
-msgstr ""
+msgstr "Papan Ketik"
 
 #: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr ""
+msgstr "Konfigurasi papan ketik anda"
 
 #: ../src//keyboard.vala:21
 msgid "Shortcuts"
@@ -35,7 +35,7 @@ msgstr ""
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
-msgstr ""
+msgstr "Susunan"
 
 #: ../src//keyboard.vala:24
 msgid "Options"
