@@ -114,7 +114,6 @@ namespace Pantheon.Keyboard.LayoutPage
                 if (_active >= length)
                     _active = length - 1;
                 active_changed ();
-
             }
 
         }
@@ -149,7 +148,8 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
         public void move_active_layout_up () {
-            if (length == 0) return;
+            if (length == 0)
+                return;
 
             // check that the active item is not the first one
             if (active > 0) {
@@ -158,7 +158,8 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
         public void move_active_layout_down () {
-            if (length == 0) return;
+            if (length == 0)
+                return;
 
             // check that the active item is not the last one
             if (active < length - 1) {
@@ -176,8 +177,6 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
         public void remove_active_layout () {
-            if (length == 0) return;
-
             layouts.remove (get_layout (active));
 
             if (active >= length)
@@ -194,7 +193,10 @@ namespace Pantheon.Keyboard.LayoutPage
          * This method does not need call layouts_changed in any situation
          * as a Layout-Object is immutable.
          */
-        public Layout get_layout (uint index) {
+        public Layout? get_layout (uint index) {
+            if (index >= length)
+                return null;
+
             return layouts.nth_data (index);
         }
 

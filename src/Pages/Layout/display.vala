@@ -99,8 +99,12 @@ namespace Pantheon.Keyboard.LayoutPage
 
             tree.cursor_changed.connect (() => {
                 cursor_changing = true;
-                settings.layouts.active = get_cursor_index ();
+                int new_index = get_cursor_index ();
+                if (new_index != -1) {
+                    settings.layouts.active = new_index;
+                }
                 update_buttons ();
+
                 cursor_changing = false;
             });
 
@@ -196,8 +200,8 @@ namespace Pantheon.Keyboard.LayoutPage
 
                 // TODO variant
                 settings.layouts.add_layout (new Layout.XKB (code, ""));
+                rebuild_list ();
             });
-            rebuild_list ();
         }
     }
 }
