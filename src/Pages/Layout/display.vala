@@ -4,10 +4,13 @@ namespace Pantheon.Keyboard.LayoutPage
 	// interacts with class SettingsLayout
 	class Display : Gtk.Grid
 	{
-		private signal void update_buttons ();
 
-		private LayoutSettings settings;
-		private Gtk.TreeView tree;
+		LayoutSettings settings;
+		Gtk.TreeView tree;
+        Gtk.ToolButton up_button;
+        Gtk.ToolButton down_button;
+        Gtk.ToolButton add_button;
+        Gtk.ToolButton remove_button;
 
 		public Display ()
 		{
@@ -38,10 +41,10 @@ namespace Pantheon.Keyboard.LayoutPage
 			tbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 			tbar.get_style_context().set_junction_sides(Gtk.JunctionSides.TOP);
 
-			var add_button    = new Gtk.ToolButton (null, _("Add…"));
-			var remove_button = new Gtk.ToolButton (null, _("Remove"));
-			var up_button     = new Gtk.ToolButton (null, _("Move up"));
-			var down_button   = new Gtk.ToolButton (null, _("Move down"));
+			add_button    = new Gtk.ToolButton (null, _("Add…"));
+			remove_button = new Gtk.ToolButton (null, _("Remove"));
+			up_button     = new Gtk.ToolButton (null, _("Move up"));
+			down_button   = new Gtk.ToolButton (null, _("Move down"));
 
 			add_button.set_tooltip_text    (_("Add…"));
 			remove_button.set_tooltip_text (_("Remove"));
@@ -73,52 +76,71 @@ namespace Pantheon.Keyboard.LayoutPage
 				// and remove this line
 				pop.show_all ();
 				add_item (tree, pop);
-			} );
+				update_buttons ();
+			});
 
 			remove_button.clicked.connect( () => {
 				remove_item (tree);
 				update_buttons ();
-			} );
+			});
 
 			up_button.clicked.connect (() => {
-				move_item (tree, 0);
+				move_item (tree, true);
 				update_buttons ();
-			} );
+			});
 
 			down_button.clicked.connect (() => {
-				move_item (tree, 1);
+				move_item (tree, false);
 				update_buttons ();
-			} );
+			});
 
 			tree.cursor_changed.connect (() => {
 				update_buttons ();
-			} );
+				settings.layouts.active = get_cursor_index ();
+			});
+		}
 
-			this.update_buttons.connect (() =>
-			{
-				Gtk.TreePath path;
+        public void reset_all ()
+		{
+			settings.reset_all ();
+			tree.model = make_list_store ();
+			update_buttons ();
+		}
+
+        /**
+         * Returns the index of the selected layout in the UI.
+         * In case the list contains no layouts, it returns -1.
+         */
+        int get_cursor_index () {
+                Gtk.TreePath path;
 
 				tree.get_cursor (out path, null);
 
 				if (path == null)
 				{
+					return -1;
+				}
+
+				return (path.get_indices ())[0];
+        }
+
+        void update_buttons () {
+                int index = get_cursor_index ();
+
+                // if empty list
+				if (index == -1)
+				{
 					up_button.sensitive     = false;
 					down_button.sensitive   = false;
 					remove_button.sensitive = false;
-					return;
+				} else {
+				    up_button.sensitive     = (index != 0);
+				    down_button.sensitive   = (index != settings.layouts.length - 1);
+				    remove_button.sensitive = (settings.layouts.length > 0);
 				}
+        }
 
-				int index = (path.get_indices ())[0];
-				int count = (int) settings.layouts.length - 1;
-
-				up_button.sensitive     = (index != 0);
-				down_button.sensitive   = (index != count);
-				remove_button.sensitive = (count > 0);
-			} );
-		}
-
-		private Gtk.ListStore make_list_store ()
-		{
+		Gtk.ListStore make_list_store () {
 			Gtk.ListStore list_store = new Gtk.ListStore (3, typeof (string), typeof(uint), typeof(uint));
 			Gtk.TreeIter iter;
 
@@ -138,13 +160,6 @@ namespace Pantheon.Keyboard.LayoutPage
 			return list_store;
 		}
 
-		public void reset_all ()
-		{
-			settings.reset_all ();
-			tree.model = make_list_store ();
-			update_buttons ();
-		}
-
 		void add_item (Gtk.TreeView tree, LayoutPage.AddLayout pop)
 		{
 			pop.layout_added.connect ((layout, variant) =>
@@ -155,15 +170,15 @@ namespace Pantheon.Keyboard.LayoutPage
 				var code = handler.get_code (layout, variant);
 				var list = tree.model as Gtk.ListStore;
 
-				if (settings.layouts.add_layout (new Layout (LayoutType.XKB, code)))
+                // TODO variant
+				if (settings.layouts.add_layout (new Layout.XKB (code, "")))
 				{
 					list.append (out iter);
 					list.set (iter, 0, name);
 					list.set (iter, 1, layout);
 					list.set (iter, 2, variant);
 
-					tree.set_cursor (list.get_path(iter), null, false);
-					update_buttons ();
+					tree.set_cursor (list.get_path (iter), null, false);
 				}
 			} );
 		}
@@ -180,12 +195,11 @@ namespace Pantheon.Keyboard.LayoutPage
 			model.get_value (iter, 1, out layout);
 			model.get_value (iter, 2, out variant);
 
-			settings.layouts.remove_layout (new Layout (LayoutType.XKB, handler.get_code ((uint)layout, (uint)variant)));
-			stdout.printf ("%s\n", handler.get_code ((uint)layout, (uint)variant));
+			settings.layouts.remove_active_layout ();
 			(model as Gtk.ListStore).remove(iter);
 		}
 
-		void move_item (Gtk.TreeView tree, int dir)
+		void move_item (Gtk.TreeView tree, bool move_up)
 		{
 			Gtk.TreeModel model;
 			Gtk.TreeIter  iter_current, iter_new;
@@ -199,30 +213,23 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			var store = model as Gtk.ListStore;
 
-			switch (dir)
-			{
-				case 1: if (model.iter_next (ref iter_new) == false)
-							return;
-						break;
-				case 0: if (model.iter_previous (ref iter_new) == false)
-							return;
-						break;
+			if (move_up) {
+			    if (model.iter_previous (ref iter_new) == false)
+				    return;
+			} else {
+			    if (model.iter_next (ref iter_new) == false)
+				    return;
 			}
 
 			store.swap (iter_current, iter_new);
 
-			tree.set_cursor (model.get_path (iter_current), null, false);
-
-            var layout_to_move = settings.layouts.get_layout ((path_current.get_indices()) [0]);
-			switch (dir)
-			{
-				case 1:
-						settings.layouts.move_layout_down (layout_to_move);
-						break;
-				case 0:
-						settings.layouts.move_layout_up   (layout_to_move);
-						break;
+			if (move_up) {
+				settings.layouts.move_active_layout_up ();
+			} else {
+			    settings.layouts.move_active_layout_down ();
 			}
+
+			tree.set_cursor (model.get_path (iter_current), null, false);
 		}
 	}
 }

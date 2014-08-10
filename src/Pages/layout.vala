@@ -18,18 +18,14 @@ namespace Pantheon.Keyboard.LayoutPage
 		public Page ()
 		{
 			handler  = new LayoutHandler ();
+			settings = LayoutSettings.get_instance ();
 
 			// first some labels
 			var label_1   = new Gtk.Label (_("Allow different layouts for individual windows:"));
-			var label_2   = new Gtk.Label (_("New windows use:"));
 
 			label_1.valign = Gtk.Align.CENTER;
 			label_1.halign = Gtk.Align.END;
-			label_2.valign = Gtk.Align.CENTER;
-			label_2.halign = Gtk.Align.END;
-
 			this.attach (label_1, 4, 0, 1, 1);
-			this.attach (label_2, 4, 1, 1, 1);
 
 			// widgets to change settings
 			var switch_main = new Gtk.Switch();
@@ -37,21 +33,18 @@ namespace Pantheon.Keyboard.LayoutPage
 			switch_main.halign = Gtk.Align.START;
 			switch_main.valign = Gtk.Align.CENTER;
 
-			var button1 = new Gtk.RadioButton.with_label(null, _("Default layout"));
-			var button2 = new Gtk.RadioButton.with_label_from_widget (button1, _("Previous window's layout"));
-
 			this.attach (switch_main, 5, 0, 1, 1);
-			this.attach (button1,     5, 1, 1, 1);
-			this.attach (button2,     5, 2, 1, 1);
 
-			settings = LayoutSettings.get_instance ();
+            switch_main.active = settings.per_window;
 
-			button1.sensitive = button2.sensitive = switch_main.active;
-			label_2.sensitive = switch_main.active;
+			switch_main.notify["active"].connect(() => {
+                settings.per_window = switch_main.active;
+			});
+            settings.per_window_changed.connect (() => {
+                switch_main.active = settings.per_window;
+            });
 
-			switch_main.notify["active"].connect( () => {
-                //TODO
-			} );
+
 			// tree view to display the current layouts
 			display = new LayoutPage.Display ();
 
