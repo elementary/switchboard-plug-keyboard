@@ -32,23 +32,23 @@ namespace Pantheon.Keyboard.LayoutPage
 
         public Layout.from_variant (GLib.Variant variant) {
             if (variant.is_of_type (new VariantType ("(ss)"))) {
-			    unowned string type;
-			    unowned string name;
+                unowned string type;
+                unowned string name;
 
-			    variant.get ("(&s&s)", out type, out name);
+                variant.get ("(&s&s)", out type, out name);
 
-			    if (type == "xkb") {
-				    layout_type = LayoutType.XKB;
-			    } else if (type == "ibus") {
-				    layout_type = LayoutType.IBUS;
-			    } else {
-			        warning ("Unkown type %s", type);
-			    }
-			    this.name = name;
+                if (type == "xkb") {
+                    layout_type = LayoutType.XKB;
+                } else if (type == "ibus") {
+                    layout_type = LayoutType.IBUS;
+                } else {
+                    warning ("Unkown type %s", type);
+                }
+                this.name = name;
 
-		    } else {
+            } else {
                 warning ("Variant has invalid type");
-		    }
+            }
         }
 
         public bool equal (Layout other) {
@@ -104,25 +104,48 @@ namespace Pantheon.Keyboard.LayoutPage
                 return _active;
             }
             set {
-                if (length == 0) return;
+                if (length == 0)
+                    return;
 
-                // Don't trigger a signal when the value doesn't change
-                if (active == value) return;
+                if (_active == value)
+                    return;
 
                 _active = value;
                 if (_active >= length)
                     _active = length - 1;
                 active_changed ();
+
             }
 
         }
 
         public bool contains_layout (Layout given_layout) {
+            return get_layout_index (given_layout) != -1;
+        }
+
+        public int get_layout_index (Layout given_layout) {
+            int i = 0;
             foreach (Layout l in layouts) {
                 if (l.equal (given_layout))
-                    return true;
+                    return i;
+                i++;
             }
-            return false;
+            return -1;
+        }
+
+        private void switch_items (uint pos1, uint pos2) {
+            unowned List<Layout> container1 = layouts.nth (pos1);
+            unowned List<Layout> container2 = layouts.nth (pos2);
+            Layout tmp = container1.data;
+            container1.data = container2.data;
+            container2.data = tmp;
+
+            if (active == pos1)
+                active = pos2;
+            else if (active == pos2)
+                active = pos1;
+
+            layouts_changed ();
         }
 
         public void move_active_layout_up () {
@@ -130,12 +153,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
             // check that the active item is not the first one
             if (active > 0) {
-                Layout backup = get_layout (active);
-                remove_active_layout ();
-                // We have to cast as GLib.List uses uint AND int for positions
-                layouts.insert (backup, (int) (--active));
-
-                layouts_changed ();
+                switch_items (active, active - 1);
             }
         }
 
@@ -144,12 +162,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
             // check that the active item is not the last one
             if (active < length - 1) {
-                Layout backup = get_layout (active);
-                remove_active_layout ();
-                // We have to cast as GLib.List uses uint AND int for positions
-                layouts.insert (backup, (int) (++active));
-
-                layouts_changed ();
+                switch_items (active, active + 1);
             }
         }
 
@@ -167,7 +180,8 @@ namespace Pantheon.Keyboard.LayoutPage
 
             layouts.remove (get_layout (active));
 
-            if (active >= length) active = length - 1;
+            if (active >= length)
+                active = length - 1;
             layouts_changed ();
         }
 
@@ -186,8 +200,8 @@ namespace Pantheon.Keyboard.LayoutPage
 
     }
 
-	class LayoutSettings
-	{
+    class LayoutSettings
+    {
 
         public LayoutList layouts { get; private set; }
 
@@ -199,7 +213,7 @@ namespace Pantheon.Keyboard.LayoutPage
          */
         bool currently_writing;
 
-		void write_list_to_gsettings () {
+        void write_list_to_gsettings () {
             currently_writing = true;
             try {
                 Variant[] elements = {};
@@ -211,18 +225,18 @@ namespace Pantheon.Keyboard.LayoutPage
             } finally {
                 currently_writing = false;
             }
-		}
+        }
 
-		void write_active_to_gsettings () {
-		    uint active = layouts.active;
-		    settings.set_uint ("current", active);
-		}
+        void write_active_to_gsettings () {
+            uint active = layouts.active;
+            settings.set_uint ("current", active);
+        }
 
-		void update_list_from_gsettings () {
-		    // We currently write to gsettings, so we caused this signal
-		    // and therefore don't need to read the list again from dconf
-		    if (currently_writing)
-		        return;
+        void update_list_from_gsettings () {
+            // We currently write to gsettings, so we caused this signal
+            // and therefore don't need to read the list again from dconf
+            if (currently_writing)
+                return;
 
             GLib.Variant sources = settings.get_value ("sources");
             if (sources.is_of_type (VariantType.ARRAY)) {
@@ -233,11 +247,11 @@ namespace Pantheon.Keyboard.LayoutPage
             } else {
                 warning ("Unkown type");
             }
-		}
+        }
 
-		void update_active_from_gsettings () {
+        void update_active_from_gsettings () {
             layouts.active = settings.get_uint ("current");
-		}
+        }
 
         bool _per_window;
         public bool per_window {
@@ -254,64 +268,59 @@ namespace Pantheon.Keyboard.LayoutPage
         // signal when the variable per_window is changed by gsettings
         public signal void per_window_changed ();
 
-		public void parse_default ()
-		{
-			var file = File.new_for_path ("/etc/default/keyboard");
+        public void parse_default () {
+            var file = File.new_for_path ("/etc/default/keyboard");
 
-			if (!file.query_exists ())
-			{
-				warning ("File '%s' doesn't exist.\n", file.get_path ());
-				return;
-			}
+            if (!file.query_exists ()) {
+                warning ("File '%s' doesn't exist.\n", file.get_path ());
+                return;
+            }
 
-			string xkb_layout  = "";
-			string xkb_variant = "";
+            string xkb_layout  = "";
+            string xkb_variant = "";
 
-			try
-			{
-				var dis = new DataInputStream (file.read ());
+            try {
+                var dis = new DataInputStream (file.read ());
 
-				string line;
+                string line;
 
-				while ((line = dis.read_line (null)) != null)
-				{
-					if (line.contains ("XKBLAYOUT="))
-					{
-						xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
+                while ((line = dis.read_line (null)) != null)
+                {
+                    if (line.contains ("XKBLAYOUT="))
+                    {
+                        xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
 
-						while ((line = dis.read_line (null)) != null) {
-							if (line.contains ("XKBVARIANT=")) {
-								xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
-							}
-						}
+                        while ((line = dis.read_line (null)) != null) {
+                            if (line.contains ("XKBVARIANT=")) {
+                                xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
+                            }
+                        }
 
-						break;
-					}
-				}
-			}
-			catch (Error e)
-			{
-				warning ("%s", e.message);
-				return;
-			}
+                        break;
+                    }
+                }
+            }
+            catch (Error e) {
+                warning ("%s", e.message);
+                return;
+            }
 
-			var variants = xkb_variant.split (",");
-			var xkb_layouts  = xkb_layout.split (",");
+            var variants = xkb_variant.split (",");
+            var xkb_layouts  = xkb_layout.split (",");
 
-			for (int i = 0; i < layouts.length; i++)
-			{
-				if (variants[i] != null && variants[i] != "")
-					layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
-				else
-					layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i]));
-			}
-		}
+            for (int i = 0; i < layouts.length; i++) {
+                if (variants[i] != null && variants[i] != "")
+                    layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+                else
+                    layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i]));
+            }
+        }
 
-		public void reset_all ()
-		{
-		    layouts.remove_all ();
-			parse_default ();
-		}
+        public void reset_all ()
+        {
+            layouts.remove_all ();
+            parse_default ();
+        }
 
         // singleton pattern
         static LayoutSettings? instance;
@@ -322,8 +331,8 @@ namespace Pantheon.Keyboard.LayoutPage
             return instance;
         }
 
-		private LayoutSettings ()
-		{
+        private LayoutSettings ()
+        {
             settings = new Settings ("org.gnome.desktop.input-sources");
             layouts = new LayoutList ();
 
@@ -334,6 +343,7 @@ namespace Pantheon.Keyboard.LayoutPage
             });
 
             update_list_from_gsettings ();
+            update_active_from_gsettings ();
 
             layouts.layouts_changed.connect (() => {
                 write_list_to_gsettings ();
@@ -347,14 +357,14 @@ namespace Pantheon.Keyboard.LayoutPage
                 update_list_from_gsettings ();
             });
 
-            settings.changed["active"].connect (() => {
+            settings.changed["current"].connect (() => {
                 update_active_from_gsettings ();
             });
 
-			if (layouts.length == 0)
-				parse_default ();
+            if (layouts.length == 0)
+                parse_default ();
 
-		}
-	}
+        }
+    }
 
 }
