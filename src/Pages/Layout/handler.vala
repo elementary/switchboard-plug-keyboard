@@ -33,7 +33,7 @@ namespace Pantheon.Keyboard.LayoutPage
 		public string get_code (uint l, uint v)
 		{
 			if (v != 0)
-				return codes[l] + "\t" + layouts[l].codes[v];
+				return codes[l] + "+" + layouts[l].codes[v];
 			return codes[l];
 		}
 
@@ -46,7 +46,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
 		public bool from_code (string code, out uint l, out uint v)
 		{
-			var parts = code.split("\t", 2);
+			var parts = code.split("+", 2);
 
 			l = v = 0;
 
@@ -66,12 +66,11 @@ namespace Pantheon.Keyboard.LayoutPage
 		}
 
 		// private class that contains the variants of one language
-		private class InternalLayout : GLib.Object
-		{
+		private class InternalLayout : GLib.Object {
 			public string[] names;
 			public string[] codes;
 
-			public InternalLayout( string[] variants )
+			public InternalLayout (string[] variants )
 			{
 				names += _("Default");
 				codes += "";
@@ -130,7 +129,7 @@ namespace Pantheon.Keyboard.LayoutPage
 				string line;
 
 				while ((line = dis.read_line (null)) != null) {
-					if (line == "#"+language) {
+					if (line == "#" + language) {
 						while ((line = dis.read_line (null)) != null) {
 							if( "#" in line ) break;
 							return_val += line;
