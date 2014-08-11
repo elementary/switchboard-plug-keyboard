@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-06-13 17:26+0000\n"
+"PO-Revision-Date: 2014-08-10 20:13+0000\n"
 "Last-Translator: Leonardo Lemos <leonardolemos@live.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-04 06:27+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-08-11 06:26+0000\n"
+"X-Generator: Launchpad (build 17156)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -31,7 +31,7 @@ msgstr "Atalhos"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Comportamento"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -80,33 +80,33 @@ msgstr "Digite para testar suas configurações..."
 
 #: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
 msgid "Add…"
-msgstr ""
+msgstr "Adicionar..."
 
 #: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
 #: ../src//Pages/Shortcuts/display.vala:39
 #: ../src//Pages/Shortcuts/display.vala:42
 msgid "Remove"
-msgstr ""
+msgstr "Remover"
 
 #: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
 msgid "Move up"
-msgstr ""
+msgstr "Para cima"
 
 #: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
 msgid "Move down"
-msgstr ""
+msgstr "Para baixo"
 
 #: ../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Idioma:"
 
 #: ../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Esquema:"
 
 #: ../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Adicionar esquema"
 
 #: ../src//Pages/Layout/add_layout.vala:64
 #: ../src//Pages/Shortcuts/tree.vala:147
@@ -115,7 +115,7 @@ msgstr "Cancelar"
 
 #: ../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr ""
+msgstr "Padrão"
 
 #: ../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
@@ -163,7 +163,7 @@ msgstr "Acessibilidade"
 
 #: ../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Nenhum"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -195,267 +195,267 @@ msgstr "Alternar para tela cheia"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr ""
+msgstr "Bloco esquerdo"
 
 #: ../src//Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr ""
+msgstr "Bloco direito"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
-msgstr ""
+msgstr "Alternar sombreado"
 
 #: ../src//Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "Alternar em todas as áreas de trabalho"
 
 #: ../src//Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Alternar sempre no topo"
 
 #: ../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr ""
+msgstr "Alternar janelas"
 
 #: ../src//Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "Alternar janelas para trás"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Expose Windows"
-msgstr ""
+msgstr "Expor janelas"
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Expose all Windows"
-msgstr ""
+msgstr "Expor todas as janelas"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Mostrar alternador de áreas de trabalho"
 
 #: ../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "Alternar para o primeiro"
 
 #: ../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "Alternar para um novo"
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Alternar para a área de trabalho 1"
 
 #: ../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Alternar para a área de trabalho 2"
 
 #: ../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Alternar para a área de trabalho 3"
 
 #: ../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Alternar para a área de trabalho 4"
 
 #: ../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Alternar para a área de trabalho 5"
 
 #: ../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Alternar para a área de trabalho 6"
 
 #: ../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Alternar para a área de trabalho 7"
 
 #: ../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Alternar para a área de trabalho 8"
 
 #: ../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Alternar para a área de trabalho 9"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "Alternar para a esquerda"
 
 #: ../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "Alternar para a direita"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Mover para a área de trabalho 1"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Mover para a área de trabalho 2"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Mover para a área de trabalho 3"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Mover para a área de trabalho 4"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Mover para a área de trabalho 5"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Mover para a área de trabalho 6"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Mover para a área de trabalho 7"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Mover para a área de trabalho 8"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Mover para a área de trabalho 9"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr ""
+msgstr "Mover para a esquerda"
 
 #: ../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr ""
+msgstr "Mover para a direita"
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Fazer uma captura de tela"
 
 #: ../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Salvar captura de tela na área de transferência"
 
 #: ../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Fazer uma captura de tela de uma janela"
 
 #: ../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Salvar captura de tela da janela na área de transferência"
 
 #: ../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Fazer uma captura de tela de uma área"
 
 #: ../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "Salvar captura de tela de uma área na área de transferência"
 
 #: ../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "Calculadora"
 
 #: ../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: ../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "Ajuda"
 
 #: ../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "Pasta pessoal"
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Busca de arquivo"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "Navegador de internet"
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Lançador de aplicações:"
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Aumentar volume"
 
 #: ../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Diminuir volume"
 
 #: ../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "Mudo"
 
 #: ../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
-msgstr ""
+msgstr "Abrir reprodutor de mídia"
 
 #: ../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "Reproduzir"
 
 #: ../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "Pausar"
 
 #: ../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "Parar"
 
 #: ../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "Faixa anterior"
 
 #: ../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "Próxima faixa"
 
 #: ../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Ejetar"
 
 #: ../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Diminuir tamanho do texto"
 
 #: ../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Aumentar tamanho do texto"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Alternar para lupa"
 
 #: ../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Aumentar ampliação da lupa"
 
 #: ../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Diminuir ampliação da lupa"
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Alternar para teclado virtual"
 
 #: ../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Alternar para leitor de tela"
 
 #: ../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Alternar para alto contraste"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
@@ -473,4 +473,4 @@ msgstr "Desabilitado"
 #: ../src//Pages/Shortcuts/display.vala:38
 #: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Adicionar"
