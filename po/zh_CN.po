@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-06-05 03:27+0000\n"
+"PO-Revision-Date: 2014-08-11 10:04+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-04 06:27+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-08-12 06:33+0000\n"
+"X-Generator: Launchpad (build 17156)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -31,7 +31,7 @@ msgstr "快捷键"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "行为"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -115,11 +115,11 @@ msgstr "取消"
 
 #: ../src//Pages/Layout/handler.vala:76
 msgid "Default"
-msgstr "默认"
+msgstr "默认值"
 
 #: ../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
-msgstr "允许各个窗口使用不同布局"
+msgstr "允许单个窗口使用不同布局"
 
 #: ../src//Pages/layout.vala:24
 msgid "New windows use:"
