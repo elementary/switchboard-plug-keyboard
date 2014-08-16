@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-08-12 13:57+0000\n"
-"Last-Translator: Chang Geon Kang <kangha02@naver.com>\n"
+"PO-Revision-Date: 2014-08-16 00:28+0000\n"
+"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-13 06:49+0000\n"
+"X-Launchpad-Export-Date: 2014-08-16 06:48+0000\n"
 "X-Generator: Launchpad (build 17156)\n"
 
 #: ../src//keyboard.vala:7
@@ -31,7 +31,7 @@ msgstr "바로가기"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "작동 방식"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -43,7 +43,7 @@ msgstr "옵션"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>키 반복:</b>"
 
 #: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
@@ -51,7 +51,7 @@ msgstr "지연 시간:"
 
 #: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "간격:"
 
 #: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
 #: ../src//Pages/behaviour.vala:136
