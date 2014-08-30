@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-08-25 21:37+0000\n"
+"PO-Revision-Date: 2014-08-29 21:27+0000\n"
 "Last-Translator: Иван Благојевић <ivan_blagojevic@mail.com>\n"
 "Language-Team: Serbian <sr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-26 07:42+0000\n"
-"X-Generator: Launchpad (build 17163)\n"
+"X-Launchpad-Export-Date: 2014-08-30 07:32+0000\n"
+"X-Generator: Launchpad (build 17176)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -43,7 +43,7 @@ msgstr "Опције"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Понововљени тастери:</b>"
+msgstr "<b>Поновљени тастери:</b>"
 
 #: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
@@ -143,43 +143,43 @@ msgstr "Прозори"
 
 #: ../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "Радне површи"
 
 #: ../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr ""
+msgstr "Снимци екрана"
 
 #: ../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "Апликације"
 
 #: ../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr ""
+msgstr "Медиј"
 
 #: ../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "Универзални приступ"
 
 #: ../src//Pages/Options/option_handler.vala:89
 msgid "None"
-msgstr ""
+msgstr "Ниједан"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "Затвори"
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Ниже"
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Увећај"
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "Поништи увећање"
 
 #: ../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
