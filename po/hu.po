@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-08-02 20:17-0500\n"
-"PO-Revision-Date: 2014-08-02 19:57+0000\n"
-"Last-Translator: Mark Lutring <marcus@elitemail.hu>\n"
+"PO-Revision-Date: 2014-08-31 10:51+0000\n"
+"Last-Translator: Kisbenedek Márton <kmarton815@gmail.com>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-04 06:27+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-09-01 07:29+0000\n"
+"X-Generator: Launchpad (build 17176)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -31,7 +31,7 @@ msgstr "Gyorsbillentyűk"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Viselkedés"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -76,7 +76,7 @@ msgstr "másodperc"
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Gépeljen valamit a beállítások teszteléséhez..."
 
 #: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
 msgid "Add…"
@@ -119,7 +119,7 @@ msgstr "Alapértelmezett"
 
 #: ../src//Pages/layout.vala:23
 msgid "Allow different layouts for individual windows:"
-msgstr ""
+msgstr "Különböző billentyűzetkiosztás engedélyezése egyes ablakokhoz:"
 
 #: ../src//Pages/layout.vala:24
 msgid "New windows use:"
@@ -127,15 +127,15 @@ msgstr ""
 
 #: ../src//Pages/layout.vala:40
 msgid "Default layout"
-msgstr ""
+msgstr "Alapértelmezett billentyűzetkiosztás"
 
 #: ../src//Pages/layout.vala:41
 msgid "Previous window's layout"
-msgstr ""
+msgstr "Az előző ablak kiosztása"
 
 #: ../src//Pages/layout.vala:90
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Gépeljen a billentyűzetkiosztása teszteléséhez..."
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
@@ -175,7 +175,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Maximalizálás"
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
@@ -187,7 +187,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "Minimalizálás"
 
 #: ../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
@@ -215,7 +215,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr ""
+msgstr "Ablakváltás"
 
 #: ../src//Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
@@ -243,39 +243,39 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Átváltás az 1. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Átváltás a 2. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Átváltás a 3. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Átváltás a 4. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Átváltás az 5. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Átváltás a 6. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Átváltás a 7. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Átváltás a 8. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Átváltás a 9. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
@@ -287,39 +287,39 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Átmozgatás az 1. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Átmozgatás a 2. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Átmozgatás a 3. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Átmozgatás a 4. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Átmozgatás az 5. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Átmozgatás a 6. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Átmozgatás a 7. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Átmozgatás a 8. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Átmozgatás a 9. munkaterületre"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
@@ -331,107 +331,107 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Képernyőkép készítése"
 
 #: ../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Képernyőkép mentése a vágólapra"
 
 #: ../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Képernyőkép készítése egy ablakról"
 
 #: ../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Ablakról készített képernyőkép mentése a vágólapra"
 
 #: ../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Képernyőkép készítése egy területről"
 
 #: ../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "Egy területről készített képernyőkép mentése a vágólapra"
 
 #: ../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "Számológép"
 
 #: ../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "E-mail"
 
 #: ../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "Súgó"
 
 #: ../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "Saját mappa"
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Fájl keresése"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "Terminál"
 
 #: ../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "Internetböngésző"
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Alkalmazásindító"
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Hangosítás"
 
 #: ../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Halkítás"
 
 #: ../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "Némítás"
 
 #: ../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
-msgstr ""
+msgstr "Médialejátszó indítása"
 
 #: ../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "Lejátszás"
 
 #: ../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "Szünet"
 
 #: ../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "Leállítás"
 
 #: ../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "Előző szám"
 
 #: ../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "Következő szám"
 
 #: ../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Kiadás"
 
 #: ../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Betűméret csökkentése"
 
 #: ../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Betűméret növelése"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
@@ -439,11 +439,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Nagyító közelítés"
 
 #: ../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Nagyító távolítás"
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
