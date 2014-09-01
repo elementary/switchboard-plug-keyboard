@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-08-02 20:17-0500\n"
+"POT-Creation-Date: 2014-09-01 13:42-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,6 +39,10 @@ msgstr ""
 
 #: ../src//keyboard.vala:24
 msgid "Options"
+msgstr ""
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
 msgstr ""
 
 #: ../src//Pages/behaviour.vala:21
@@ -78,91 +82,33 @@ msgstr ""
 msgid "Type to test your settings…"
 msgstr ""
 
-#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
-msgid "Add…"
+#: ../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/tree.vala:172
+msgid "Disabled"
 msgstr ""
 
-#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
-#: ../src//Pages/Shortcuts/display.vala:39
-#: ../src//Pages/Shortcuts/display.vala:42
-msgid "Remove"
+#: ../src//Pages/Shortcuts/tree.vala:146
+msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
 msgstr ""
 
-#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
-msgid "Move up"
-msgstr ""
-
-#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
-msgid "Move down"
-msgstr ""
-
-#: ../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr ""
-
-#: ../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr ""
-
-#: ../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr ""
-
-#: ../src//Pages/Layout/add_layout.vala:64
 #: ../src//Pages/Shortcuts/tree.vala:147
+#: ../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
 msgstr ""
 
-#: ../src//Pages/Layout/handler.vala:76
-msgid "Default"
+#: ../src//Pages/Shortcuts/tree.vala:148
+msgid "Reassign"
 msgstr ""
 
-#: ../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
+msgid "Add"
 msgstr ""
 
-#: ../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr ""
-
-#: ../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr ""
-
-#: ../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr ""
-
-#: ../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr ""
-
-#: ../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr ""
-
-#: ../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr ""
-
-#: ../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr ""
-
-#: ../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr ""
-
-#: ../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr ""
-
-#: ../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr ""
-
-#: ../src//Pages/Options/option_handler.vala:89
-msgid "None"
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
+msgid "Remove"
 msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:56
@@ -222,11 +168,11 @@ msgid "Switch Windows backwards"
 msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
+msgid "Window Overview"
 msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
+msgid "Show All Windows"
 msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:115
@@ -457,20 +403,62 @@ msgstr ""
 msgid "Toggle High Contrast"
 msgstr ""
 
-#: ../src//Pages/Shortcuts/tree.vala:146
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
+#: ../src//Pages/Layout/handler.vala:75
+msgid "Default"
 msgstr ""
 
-#: ../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
+#: ../src//Pages/Layout/add_layout.vala:20
+msgid "Language:"
 msgstr ""
 
-#: ../src//Pages/Shortcuts/tree.vala:172
-#: ../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
+#: ../src//Pages/Layout/add_layout.vala:21
+msgid "Layout:"
 msgstr ""
 
-#: ../src//Pages/Shortcuts/display.vala:38
-#: ../src//Pages/Shortcuts/display.vala:41
-msgid "Add"
+#: ../src//Pages/Layout/add_layout.vala:63
+msgid "Add Layout"
+msgstr ""
+
+#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
+msgid "Add…"
+msgstr ""
+
+#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
+msgid "Move up"
+msgstr ""
+
+#: ../src//Pages/Layout/display.vala:52 ../src//Pages/Layout/display.vala:57
+msgid "Move down"
+msgstr ""
+
+#: ../src//Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr ""
+
+#: ../src//Pages/layout.vala:54
+msgid "Type to test your layout…"
+msgstr ""
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr ""
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr ""
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr ""
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr ""
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr ""
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
 msgstr ""
