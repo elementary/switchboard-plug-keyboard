@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-02 20:17-0500\n"
+"POT-Creation-Date: 2014-09-01 13:42-0500\n"
 "PO-Revision-Date: 2014-08-06 09:36+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-07 06:23+0000\n"
-"X-Generator: Launchpad (build 17147)\n"
+"X-Launchpad-Export-Date: 2014-09-02 07:12+0000\n"
+"X-Generator: Launchpad (build 17192)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -40,6 +40,10 @@ msgstr "Asettelu"
 #: ../src//keyboard.vala:24
 msgid "Options"
 msgstr "Valinnat"
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
+msgstr "Ei mitään"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -78,92 +82,35 @@ msgstr "sekuntia"
 msgid "Type to test your settings…"
 msgstr "Kirjoita testataksesi asetuksia…"
 
-#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
-msgid "Add…"
-msgstr "Lisää…"
+#: ../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/tree.vala:172
+msgid "Disabled"
+msgstr "Ei käytössä"
 
-#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
-#: ../src//Pages/Shortcuts/display.vala:39
-#: ../src//Pages/Shortcuts/display.vala:42
-msgid "Remove"
-msgstr "Poista"
+#: ../src//Pages/Shortcuts/tree.vala:146
+msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
+msgstr ""
+"Jos asetat uudelleen pikavalinnaksi \"%s\", \"%s\" poistetaan käytöstä"
 
-#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
-msgid "Move up"
-msgstr "Siirrä ylös"
-
-#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
-msgid "Move down"
-msgstr "Siirrä alas"
-
-#: ../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr "Kieli:"
-
-#: ../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr "Asettelu:"
-
-#: ../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr "Lisää asettelu"
-
-#: ../src//Pages/Layout/add_layout.vala:64
 #: ../src//Pages/Shortcuts/tree.vala:147
+#: ../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
 msgstr "Peru"
 
-#: ../src//Pages/Layout/handler.vala:76
-msgid "Default"
-msgstr "Oletus"
+#: ../src//Pages/Shortcuts/tree.vala:148
+msgid "Reassign"
+msgstr "Aseta uudelleen"
 
-#: ../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
-msgstr "Salli erilaiset asettelut yksittäisille ikkunoille:"
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
+msgid "Add"
+msgstr "Lisää"
 
-#: ../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr "Käytössä uusissa ikkunoissa:"
-
-#: ../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr "Oletusasettelu"
-
-#: ../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr "Aiemman ikkunan asettelu"
-
-#: ../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr "Kirjoita testataksesi asettelua…"
-
-#: ../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr "Ikkunat"
-
-#: ../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr "Työtilat"
-
-#: ../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr "Kuvakaappaukset"
-
-#: ../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr "Sovellukset"
-
-#: ../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr "Media"
-
-#: ../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr "Esteettömyys"
-
-#: ../src//Pages/Options/option_handler.vala:89
-msgid "None"
-msgstr "Ei mitään"
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
+msgid "Remove"
+msgstr "Poista"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -222,12 +169,12 @@ msgid "Switch Windows backwards"
 msgstr "Vaihda ikkunoiden välillä päinvastaisesti"
 
 #: ../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "Näytä ikkunat"
+msgid "Window Overview"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "Näytä kaikki ikkunat"
+msgid "Show All Windows"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -457,21 +404,62 @@ msgstr "Näytönlukija päällä/pois"
 msgid "Toggle High Contrast"
 msgstr "Suuri kontrasti päällä/pois"
 
-#: ../src//Pages/Shortcuts/tree.vala:146
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr ""
-"Jos asetat uudelleen pikavalinnaksi \"%s\", \"%s\" poistetaan käytöstä"
+#: ../src//Pages/Layout/handler.vala:75
+msgid "Default"
+msgstr "Oletus"
 
-#: ../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
-msgstr "Aseta uudelleen"
+#: ../src//Pages/Layout/add_layout.vala:20
+msgid "Language:"
+msgstr "Kieli:"
 
-#: ../src//Pages/Shortcuts/tree.vala:172
-#: ../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "Ei käytössä"
+#: ../src//Pages/Layout/add_layout.vala:21
+msgid "Layout:"
+msgstr "Asettelu:"
 
-#: ../src//Pages/Shortcuts/display.vala:38
-#: ../src//Pages/Shortcuts/display.vala:41
-msgid "Add"
-msgstr "Lisää"
+#: ../src//Pages/Layout/add_layout.vala:63
+msgid "Add Layout"
+msgstr "Lisää asettelu"
+
+#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
+msgid "Add…"
+msgstr "Lisää…"
+
+#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
+msgid "Move up"
+msgstr "Siirrä ylös"
+
+#: ../src//Pages/Layout/display.vala:52 ../src//Pages/Layout/display.vala:57
+msgid "Move down"
+msgstr "Siirrä alas"
+
+#: ../src//Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr "Salli erilaiset asettelut yksittäisille ikkunoille:"
+
+#: ../src//Pages/layout.vala:54
+msgid "Type to test your layout…"
+msgstr "Kirjoita testataksesi asettelua…"
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr "Ikkunat"
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr "Työtilat"
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr "Kuvakaappaukset"
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr "Sovellukset"
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr "Media"
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
+msgstr "Esteettömyys"

@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-02 20:17-0500\n"
+"POT-Creation-Date: 2014-09-01 13:42-0500\n"
 "PO-Revision-Date: 2014-08-28 10:19+0000\n"
 "Last-Translator: Jim Spentzos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-30 07:32+0000\n"
-"X-Generator: Launchpad (build 17176)\n"
+"X-Launchpad-Export-Date: 2014-09-02 07:12+0000\n"
+"X-Generator: Launchpad (build 17192)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -40,6 +40,10 @@ msgstr "Διάταξη"
 #: ../src//keyboard.vala:24
 msgid "Options"
 msgstr "Επιλογές"
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
+msgstr "Κανένα"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -78,92 +82,35 @@ msgstr "δευτερόλεπτα"
 msgid "Type to test your settings…"
 msgstr "Πληκτρολογήστε για να δοκιμάσετε τις ρυθμίσεις σας..."
 
-#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
-msgid "Add…"
-msgstr "Προσθήκη…"
+#: ../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/tree.vala:172
+msgid "Disabled"
+msgstr "Απενεργοποιημένο"
 
-#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
-#: ../src//Pages/Shortcuts/display.vala:39
-#: ../src//Pages/Shortcuts/display.vala:42
-msgid "Remove"
-msgstr "Αφαίρεση"
+#: ../src//Pages/Shortcuts/tree.vala:146
+msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
+msgstr ""
+"Αν παραχωρήσετε ξανά τη συντόμευση στο \"%s\", το \"%s\" θα απενεργοποιηθεί"
 
-#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
-msgid "Move up"
-msgstr "Μετακίνηση πάνω"
-
-#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
-msgid "Move down"
-msgstr "Μετακίνηση κάτω"
-
-#: ../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr "Γλώσσα:"
-
-#: ../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr "Διάταξη:"
-
-#: ../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr "Προσθήκη Διάταξης"
-
-#: ../src//Pages/Layout/add_layout.vala:64
 #: ../src//Pages/Shortcuts/tree.vala:147
+#: ../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
 msgstr "Ακύρωση"
 
-#: ../src//Pages/Layout/handler.vala:76
-msgid "Default"
-msgstr "Προεπιλογή"
+#: ../src//Pages/Shortcuts/tree.vala:148
+msgid "Reassign"
+msgstr "Επανεκχώρηση"
 
-#: ../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
-msgstr "Να επιτρέπονται διαφορετικές διατάξεις για κάθε παράθυρο:"
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
+msgid "Add"
+msgstr "Προσθήκη"
 
-#: ../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr "Τα νέα παράθυρα χρησιμοποιούν:"
-
-#: ../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr "Προεπιλεγμένη διάταξη"
-
-#: ../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr "Διάταξη προηγούμενου παραθύρου"
-
-#: ../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr "Πληκτρολογήστε για να δοκιμάσετε τη διάταξή σας…"
-
-#: ../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr "Παράθυρα"
-
-#: ../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr "Χώροι Εργασίας"
-
-#: ../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr "Στιγμιότυπα οθόνης"
-
-#: ../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr "Εφαρμογές"
-
-#: ../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr "Πολυμέσα"
-
-#: ../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr "Γενική Πρόσβαση"
-
-#: ../src//Pages/Options/option_handler.vala:89
-msgid "None"
-msgstr "Κανένα"
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
+msgid "Remove"
+msgstr "Αφαίρεση"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -222,12 +169,12 @@ msgid "Switch Windows backwards"
 msgstr "Εναλλαγή Παραθύρων προς τα πίσω"
 
 #: ../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "Έκθεση Παραθύρων"
+msgid "Window Overview"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "Έκθεση όλων των Παραθύρων"
+msgid "Show All Windows"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -457,21 +404,62 @@ msgstr "Εναλλαγή Αναγνώστη Οθόνης"
 msgid "Toggle High Contrast"
 msgstr "Εναλλαγή Υψηλής Αντίθεσης"
 
-#: ../src//Pages/Shortcuts/tree.vala:146
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr ""
-"Αν παραχωρήσετε ξανά τη συντόμευση στο \"%s\", το \"%s\" θα απενεργοποιηθεί"
+#: ../src//Pages/Layout/handler.vala:75
+msgid "Default"
+msgstr "Προεπιλογή"
 
-#: ../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
-msgstr "Επανεκχώρηση"
+#: ../src//Pages/Layout/add_layout.vala:20
+msgid "Language:"
+msgstr "Γλώσσα:"
 
-#: ../src//Pages/Shortcuts/tree.vala:172
-#: ../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "Απενεργοποιημένο"
+#: ../src//Pages/Layout/add_layout.vala:21
+msgid "Layout:"
+msgstr "Διάταξη:"
 
-#: ../src//Pages/Shortcuts/display.vala:38
-#: ../src//Pages/Shortcuts/display.vala:41
-msgid "Add"
-msgstr "Προσθήκη"
+#: ../src//Pages/Layout/add_layout.vala:63
+msgid "Add Layout"
+msgstr "Προσθήκη Διάταξης"
+
+#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
+msgid "Add…"
+msgstr "Προσθήκη…"
+
+#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
+msgid "Move up"
+msgstr "Μετακίνηση πάνω"
+
+#: ../src//Pages/Layout/display.vala:52 ../src//Pages/Layout/display.vala:57
+msgid "Move down"
+msgstr "Μετακίνηση κάτω"
+
+#: ../src//Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr "Να επιτρέπονται διαφορετικές διατάξεις για κάθε παράθυρο:"
+
+#: ../src//Pages/layout.vala:54
+msgid "Type to test your layout…"
+msgstr "Πληκτρολογήστε για να δοκιμάσετε τη διάταξή σας…"
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr "Παράθυρα"
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr "Χώροι Εργασίας"
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr "Στιγμιότυπα οθόνης"
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr "Εφαρμογές"
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr "Πολυμέσα"
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
+msgstr "Γενική Πρόσβαση"

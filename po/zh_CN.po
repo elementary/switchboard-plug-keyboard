@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-08-02 20:17-0500\n"
+"POT-Creation-Date: 2014-09-01 13:42-0500\n"
 "PO-Revision-Date: 2014-08-11 10:04+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-08-12 06:33+0000\n"
-"X-Generator: Launchpad (build 17156)\n"
+"X-Launchpad-Export-Date: 2014-09-02 07:12+0000\n"
+"X-Generator: Launchpad (build 17192)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -40,6 +40,10 @@ msgstr "布局"
 #: ../src//keyboard.vala:24
 msgid "Options"
 msgstr "选项"
+
+#: ../src//Pages/Options/option_handler.vala:89
+msgid "None"
+msgstr "无"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -78,92 +82,34 @@ msgstr "秒"
 msgid "Type to test your settings…"
 msgstr "键入以测试您的设置..."
 
-#: ../src//Pages/Layout/display.vala:40 ../src//Pages/Layout/display.vala:45
-msgid "Add…"
-msgstr "添加..."
+#: ../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/tree.vala:172
+msgid "Disabled"
+msgstr "已禁用"
 
-#: ../src//Pages/Layout/display.vala:41 ../src//Pages/Layout/display.vala:46
-#: ../src//Pages/Shortcuts/display.vala:39
-#: ../src//Pages/Shortcuts/display.vala:42
-msgid "Remove"
-msgstr "删除"
+#: ../src//Pages/Shortcuts/tree.vala:146
+msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
+msgstr "如果您将快捷键分配给 \"%s\", \"%s\" 将会被禁用。"
 
-#: ../src//Pages/Layout/display.vala:42 ../src//Pages/Layout/display.vala:47
-msgid "Move up"
-msgstr "向上移动"
-
-#: ../src//Pages/Layout/display.vala:43 ../src//Pages/Layout/display.vala:48
-msgid "Move down"
-msgstr "向下移动"
-
-#: ../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr "语言："
-
-#: ../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr "布局："
-
-#: ../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr "添加布局"
-
-#: ../src//Pages/Layout/add_layout.vala:64
 #: ../src//Pages/Shortcuts/tree.vala:147
+#: ../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
 msgstr "取消"
 
-#: ../src//Pages/Layout/handler.vala:76
-msgid "Default"
-msgstr "默认值"
+#: ../src//Pages/Shortcuts/tree.vala:148
+msgid "Reassign"
+msgstr "重新分配"
 
-#: ../src//Pages/layout.vala:23
-msgid "Allow different layouts for individual windows:"
-msgstr "允许单个窗口使用不同布局"
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
+msgid "Add"
+msgstr "添加"
 
-#: ../src//Pages/layout.vala:24
-msgid "New windows use:"
-msgstr "新窗口使用："
-
-#: ../src//Pages/layout.vala:40
-msgid "Default layout"
-msgstr "默认布局"
-
-#: ../src//Pages/layout.vala:41
-msgid "Previous window's layout"
-msgstr "上一窗口的布局"
-
-#: ../src//Pages/layout.vala:90
-msgid "Type to test your layout…"
-msgstr "键入以测试您的布局..."
-
-#: ../src//Pages/shortcuts.vala:32
-msgid "Windows"
-msgstr "窗口"
-
-#: ../src//Pages/shortcuts.vala:33
-msgid "Workspaces"
-msgstr "工作区"
-
-#: ../src//Pages/shortcuts.vala:34
-msgid "Screenshots"
-msgstr "屏幕截图"
-
-#: ../src//Pages/shortcuts.vala:35
-msgid "Applications"
-msgstr "应用程序"
-
-#: ../src//Pages/shortcuts.vala:36
-msgid "Media"
-msgstr "媒体"
-
-#: ../src//Pages/shortcuts.vala:37
-msgid "Universal Access"
-msgstr "通用辅助功能"
-
-#: ../src//Pages/Options/option_handler.vala:89
-msgid "None"
-msgstr "无"
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
+msgid "Remove"
+msgstr "删除"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -222,12 +168,12 @@ msgid "Switch Windows backwards"
 msgstr "往回切换窗口"
 
 #: ../src//Pages/Shortcuts/list.vala:70
-msgid "Expose Windows"
-msgstr "显示多个窗口"
+msgid "Window Overview"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:71
-msgid "Expose all Windows"
-msgstr "显示全部窗口"
+msgid "Show All Windows"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -457,20 +403,62 @@ msgstr "启用屏幕阅读器"
 msgid "Toggle High Contrast"
 msgstr "启用高对比度"
 
-#: ../src//Pages/Shortcuts/tree.vala:146
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr "如果您将快捷键分配给 \"%s\", \"%s\" 将会被禁用。"
+#: ../src//Pages/Layout/handler.vala:75
+msgid "Default"
+msgstr "默认值"
 
-#: ../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
-msgstr "重新分配"
+#: ../src//Pages/Layout/add_layout.vala:20
+msgid "Language:"
+msgstr "语言："
 
-#: ../src//Pages/Shortcuts/tree.vala:172
-#: ../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "已禁用"
+#: ../src//Pages/Layout/add_layout.vala:21
+msgid "Layout:"
+msgstr "布局："
 
-#: ../src//Pages/Shortcuts/display.vala:38
-#: ../src//Pages/Shortcuts/display.vala:41
-msgid "Add"
-msgstr "添加"
+#: ../src//Pages/Layout/add_layout.vala:63
+msgid "Add Layout"
+msgstr "添加布局"
+
+#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
+msgid "Add…"
+msgstr "添加..."
+
+#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
+msgid "Move up"
+msgstr "向上移动"
+
+#: ../src//Pages/Layout/display.vala:52 ../src//Pages/Layout/display.vala:57
+msgid "Move down"
+msgstr "向下移动"
+
+#: ../src//Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr "允许单个窗口使用不同布局"
+
+#: ../src//Pages/layout.vala:54
+msgid "Type to test your layout…"
+msgstr "键入以测试您的布局..."
+
+#: ../src//Pages/shortcuts.vala:32
+msgid "Windows"
+msgstr "窗口"
+
+#: ../src//Pages/shortcuts.vala:33
+msgid "Workspaces"
+msgstr "工作区"
+
+#: ../src//Pages/shortcuts.vala:34
+msgid "Screenshots"
+msgstr "屏幕截图"
+
+#: ../src//Pages/shortcuts.vala:35
+msgid "Applications"
+msgstr "应用程序"
+
+#: ../src//Pages/shortcuts.vala:36
+msgid "Media"
+msgstr "媒体"
+
+#: ../src//Pages/shortcuts.vala:37
+msgid "Universal Access"
+msgstr "通用辅助功能"
