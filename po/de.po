@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-09-01 13:42-0500\n"
-"PO-Revision-Date: 2014-09-14 17:28+0000\n"
+"PO-Revision-Date: 2014-09-15 11:42+0000\n"
 "Last-Translator: UweS <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-15 07:03+0000\n"
+"X-Launchpad-Export-Date: 2014-09-16 08:25+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 
 #: ../src//keyboard.vala:7
@@ -184,11 +184,11 @@ msgstr "Übersicht der Arbeitsflächen anzeigen"
 
 #: ../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr "Zum Ersten wechseln"
+msgstr "Zur ersten Arbeitsfläche wechseln"
 
 #: ../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr "Zum Neuen wechseln"
+msgstr "Zur neuen Arbeitsfläche wechseln"
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
@@ -228,55 +228,55 @@ msgstr "Zur Arbeitsfläche 9 wechseln"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr "Nach links wechseln"
+msgstr "Zur links anschließenden Arbeitsfläche wechseln"
 
 #: ../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr "Nach rechts wechseln"
+msgstr "Zur rechts anschließenden Arbeitsfläche wechseln"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr "Zur Arbeitsfläche 1 bewegen"
+msgstr "Fenster zur Arbeitsfläche 1 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr "Zur Arbeitsfläche 2 bewegen"
+msgstr "Fenster zur Arbeitsfläche 2 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr "Zur Arbeitsfläche 3 bewegen"
+msgstr "Fenster zur Arbeitsfläche 3 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr "Zur Arbeitsfläche 4 bewegen"
+msgstr "Fenster zur Arbeitsfläche 4 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr "Zur Arbeitsfläche 5 bewegen"
+msgstr "Fenster zur Arbeitsfläche 5 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr "Zur Arbeitsfläche 6 bewegen"
+msgstr "Fenster zur Arbeitsfläche 6 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr "Zur Arbeitsfläche 7 bewegen"
+msgstr "Fenster zur Arbeitsfläche 7 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr "Zur Arbeitsfläche 8 bewegen"
+msgstr "Fenster zur Arbeitsfläche 8 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr "Zur Arbeitsfläche 9 bewegen"
+msgstr "Fenster zur Arbeitsfläche 9 bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr "Nach links bewegen"
+msgstr "Fenster auf die links anschließende Arbeitsfläche bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr "Nach rechts bewegen"
+msgstr "Fenster auf die rechts anschließende Arbeitsfläche bewegen"
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
@@ -461,7 +461,7 @@ msgstr "Anwendungen"
 
 #: ../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr "Medien"
+msgstr "Unterhaltungsmedien"
 
 #: ../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
