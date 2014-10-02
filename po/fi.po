@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-09-01 13:42-0500\n"
-"PO-Revision-Date: 2014-09-02 11:53+0000\n"
+"PO-Revision-Date: 2014-10-01 12:51+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-09-03 06:59+0000\n"
+"X-Launchpad-Export-Date: 2014-10-02 06:32+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 
 #: ../src//keyboard.vala:7
@@ -118,7 +118,7 @@ msgstr "Sulje"
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Siirrä taakse"
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
@@ -130,7 +130,7 @@ msgstr "Palauta koko"
 
 #: ../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "Suurenna / palauta koko"
 
 #: ../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
@@ -142,11 +142,11 @@ msgstr "Koko näyttö päällä/pois"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr ""
+msgstr "Tasaa vasemmalle"
 
 #: ../src//Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr ""
+msgstr "Tasaa oikealle"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
