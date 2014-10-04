@@ -27,7 +27,6 @@ namespace Pantheon.Keyboard.LayoutPage
             tree.insert_column_with_attributes (-1, null, cell, "text", 0);
             tree.headers_visible = false;
             tree.expand = true;
-            rebuild_list ();
 
             var scroll = new Gtk.ScrolledWindow(null, null);
             scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
@@ -113,6 +112,8 @@ namespace Pantheon.Keyboard.LayoutPage
                     return;
                 update_cursor ();
             });
+
+            rebuild_list ();
             update_cursor ();
         }
 
