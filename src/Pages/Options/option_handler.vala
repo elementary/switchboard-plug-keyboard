@@ -157,6 +157,7 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Right Ctrl as Right Alt"), "ctrl:rctrl_ralt");
 			item.set (_("Menu as Right Ctrl"), "ctrl:menu_rctrl");
 			item.set (_("Right Alt as Right Ctrl"), "ctrl:ctrl_ralt");
+			items.append (item);
 
 			item = new Item (_("Use keyboard LED to show alternative layout"), "grp_led", true);
 			item.set (_("Num Lock"), "grp_led:num");
