@@ -47,7 +47,7 @@ namespace Pantheon.Keyboard.Shortcuts
 			if ((modifiers & Gdk.ModifierType.SUPER_MASK) > 0)
 			    tmp += "⌘" + SEPARATOR;
 			if ((modifiers & Gdk.ModifierType.CONTROL_MASK) > 0)
-			    tmp += "Ctrl" + SEPARATOR;
+			    tmp += _("Ctrl") + SEPARATOR;
 			if ((modifiers & Gdk.ModifierType.MOD1_MASK) > 0)
 			    tmp += "⎇" + SEPARATOR;
 			if ((modifiers & Gdk.ModifierType.MOD2_MASK) > 0)
