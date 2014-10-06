@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-08-07 10:58+0000\n"
-"Last-Translator: qperroit <quentin.perroit@gmail.com>\n"
+"PO-Revision-Date: 2014-10-05 10:12+0000\n"
+"Last-Translator: Thomas Moraine <th.moraine@gmail.com>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-05 06:32+0000\n"
+"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 
 #: ../src//keyboard.vala:7
@@ -47,66 +47,70 @@ msgstr "Aucun(e)"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
-msgstr ""
+msgstr "Touche(s) modifiant la disposition du clavier"
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
-msgstr ""
+msgstr "Alt de droite (lorsque pressée)"
 
 #: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Alt (while pressed)"
-msgstr ""
+msgstr "Alt de gauche (lorsque pressée)"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Left Win (while pressed)"
-msgstr ""
+msgstr "Touche logo de gauche (lorsque pressée)"
 
 #: ../src//Pages/Options/option_handler.vala:98
 msgid "Right Win (while pressed)"
-msgstr ""
+msgstr "Touche logo de droite  (lorsque pressée)"
 
 #: ../src//Pages/Options/option_handler.vala:99
 msgid "Any Win key (while pressed)"
-msgstr ""
+msgstr "N'importe quelle touche Logo (lorsque pressées)"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
 msgstr ""
+"Verr. maj. (si enfoncé), Alt+Verr. maj. joue le rôle original de Verr. maj."
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Right Ctrl (while pressed)"
-msgstr ""
+msgstr "Ctrl de droite (lorsque pressée)"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:139
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Right Alt"
-msgstr ""
+msgstr "Alt. droite"
 
 #: ../src//Pages/Options/option_handler.vala:103
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Left Alt"
-msgstr ""
+msgstr "Alt de gauche"
 
 #: ../src//Pages/Options/option_handler.vala:104
 #: ../src//Pages/Options/option_handler.vala:143
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr ""
+msgstr "Verr. maj."
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr ""
+msgstr "Maj.+Verr. maj."
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
 msgstr ""
+"Verr. maj. (première disposition), Maj.+Verr. maj. (dernière disposition)"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
 msgstr ""
+"Touche Logo de gauche (première disposition), touche Logo de droite "
+"(dernière disposition)"
 
 #: ../src//Pages/Options/option_handler.vala:108
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
@@ -130,7 +134,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:113
 msgid "Ctrl+Shift"
-msgstr ""
+msgstr "Ctrl+Maj."
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
@@ -824,11 +828,11 @@ msgstr "Basculer en Plein Écran"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr ""
+msgstr "Colonne de gauche"
 
 #: ../src//Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr ""
+msgstr "Colonne de droite"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
@@ -852,15 +856,15 @@ msgstr "Faire défiler les fenêtres à l'envers"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Window Overview"
-msgstr ""
+msgstr "Aperçu de la fenêtre"
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Show All Windows"
-msgstr ""
+msgstr "Afficher toutes les fenêtres"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Afficher le sélecteur d'espace de travail"
 
 #: ../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
@@ -908,11 +912,11 @@ msgstr "Basculer vers l'espace de travail 9"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "Basculer à gauche"
 
 #: ../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "Basculer à droite"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
@@ -1060,27 +1064,27 @@ msgstr "Augmenter la taille du texte"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Activer la loupe"
 
 #: ../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Zoomer"
 
 #: ../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Dézoomer"
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Activer le clavier virtuel"
 
 #: ../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Activer le lecteur d'écran"
 
 #: ../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Activer le mode Contraste Élevé"
 
 #: ../src//Pages/Layout/handler.vala:75
 msgid "Default"
