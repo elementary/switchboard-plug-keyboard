@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-10-06 06:55+0000\n"
+"PO-Revision-Date: 2014-10-06 07:46+0000\n"
 "Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
+"X-Launchpad-Export-Date: 2014-10-07 06:54+0000\n"
 "X-Generator: Launchpad (build 17196)\n"
 
 #: ../src//keyboard.vala:7
@@ -263,7 +263,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:151
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Ctrl-näppäimen sijainti"
 
 #: ../src//Pages/Options/option_handler.vala:152
 msgid "Caps Lock as Ctrl"
@@ -275,7 +275,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Vaihda Ctrl ja Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At left of 'A'"
@@ -283,11 +283,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "At bottom left"
-msgstr ""
+msgstr "Alhaalla vasemmalla"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Oikea Ctrl kuten oikea Alt"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Menu as Right Ctrl"
@@ -299,15 +299,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Käytä näppäimistön ledivaloa vaihtoehtoisen asettelun näyttämiseksi"
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Numerosormion asettelun valinta"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Legacy"
@@ -315,7 +315,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Unicode-lisäosat (nuolet ja matematiikkatoiminnot)"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid ""
@@ -325,7 +325,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Perinteinen Wang 724"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
@@ -347,7 +347,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Numerosormion Del-näppäimen toiminta"
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with dot"
@@ -355,19 +355,19 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:181
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Perinteinen näppäin pilkulla"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Neljännen tason näppäin pisteellä"
 
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Neljännen tason näppäin pisteellä, latin-9-rajoituksella"
 
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Neljännen tason näppäin pilkulla"
 
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with momayyez"
@@ -383,7 +383,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Caps Lock -näppäimen toiminta"
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
@@ -436,7 +436,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "Caps Lock ei käytössä"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
@@ -444,7 +444,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Alt- ja Win-näppäinten toiminta"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Add the standard behavior to Menu key"
@@ -484,7 +484,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:219
 msgid "Compose key position"
-msgstr ""
+msgstr "Compose-näppäimen sijainti"
 
 #: ../src//Pages/Options/option_handler.vala:228
 #: ../src//Pages/Shortcuts/list.vala:276
@@ -497,7 +497,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Muut yhteensopivuusasetukset"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid "Default numeric keypad keys"
@@ -556,7 +556,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Valuuttamerkkien lisäys tiettyihin näppäimiin"
 
 #: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on E"
@@ -580,7 +580,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:257
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "Viidennen tason valintanäppäin"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid ""
@@ -608,7 +608,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:264
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "Sitovan välilyöntimerkin syöttäminen"
 
 #: ../src//Pages/Options/option_handler.vala:265
 msgid "Usual space at any level"
@@ -650,25 +650,30 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:273
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "Leveydetön ei-yhdistävä merkki 2. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:274
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 2. tasolla, leveydetön yhdistävä merkki 3. "
+"tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:275
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 2. tasolla, leveydetön yhdistävä merkki 3. "
+"tasolla, sitova välilyöntimerkki 4. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:276
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 2. tasolla, sitova välilyöntimerkki 3. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:277
 msgid ""
@@ -696,7 +701,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:283
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Japanilaisen näppäimistön valinnat"
 
 #: ../src//Pages/Options/option_handler.vala:284
 msgid "Kana Lock key is locking"
@@ -712,7 +717,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:289
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Esperanton tarkkeiden lisäys (supersigno)"
 
 #: ../src//Pages/Options/option_handler.vala:290
 msgid "To the corresponding key in a Qwerty keyboard"
@@ -724,11 +729,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Näppäinyhdistelmä X-palvelimen tappamiseksi"
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control + Alt + Backspace"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -774,7 +779,7 @@ msgstr "Ei käytössä"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
