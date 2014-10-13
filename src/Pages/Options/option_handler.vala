@@ -59,7 +59,7 @@ namespace Pantheon.Keyboard.Options {
 
 		public string? get_code (uint index, uint v) {
 			var item = items.nth (index).data;
-			return item.option + "\t" + item.table.get_values ().nth_data (v);
+			return item.table.get_values ().nth_data (v);
 		}
 
 		public string get_name (uint index, uint v) {
@@ -67,7 +67,7 @@ namespace Pantheon.Keyboard.Options {
 		}
 
 		public bool from_code (string code, out uint l, out uint v) {
-			var parts = code.split ("\t", 2);
+			var parts = code.split (":", 2);
 			l = v = 0;
 			if (parts[0] == null || parts[1] == null)
 				return false;
@@ -76,7 +76,7 @@ namespace Pantheon.Keyboard.Options {
 				v = 0;
 				if (item.option == parts[0]) {
 					foreach (var val in item.table.get_values ()) {
-						if (val == parts[1]) {
+						if (val == code) {
 							return true;
 						}
 
