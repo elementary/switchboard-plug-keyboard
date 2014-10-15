@@ -13,7 +13,7 @@ namespace Pantheon.Keyboard.Options
 		
 		public OptionSettings()
 		{
-			var schema_name   = "org.gnome.desktop.input-sources";
+			var schema_name   = "org.gnome.libgnomekbd.keyboard";
 			var schema_source = GLib.SettingsSchemaSource.get_default ();
 				
 			// check if schema exists
@@ -28,7 +28,7 @@ namespace Pantheon.Keyboard.Options
 				apply ();
 			}
 			
-			settings.changed["xkb-options"].connect (() => {
+			settings.changed["options"].connect (() => {
 				uint[] old_groups  = groups;
 				uint[] old_options = options;
 				
@@ -49,7 +49,7 @@ namespace Pantheon.Keyboard.Options
 		// emittedwhen the options are changed from an external program
 		public signal void external_change ();
 		
-		// parse the "xkb-options" key and store the values in options[] and groups[]
+		// parse the "options" key and store the values in options[] and groups[]
 		public bool parse ()
 		{
 			groups  = {};
@@ -57,7 +57,7 @@ namespace Pantheon.Keyboard.Options
 			
 			uint group, option;
 			
-			foreach (var code in settings.get_strv ("xkb-options"))
+			foreach (var code in settings.get_strv ("options"))
 			{
 				var add = true;
 				
@@ -86,7 +86,7 @@ namespace Pantheon.Keyboard.Options
 		{
 			groups  = {};
 			options = {};
-			settings.set_strv ("xkb-options", null);
+			settings.set_strv ("options", null);
 		}
 		
 		
@@ -99,7 +99,7 @@ namespace Pantheon.Keyboard.Options
 			for (int i = 0; i < groups.length; i++)
 				tmp += option_handler.get_code (groups[i], options[i]);
 			
-			settings.set_strv ("xkb-options", tmp);
+			settings.set_strv ("options", tmp);
 		}
 		
 		public void add (uint group, uint option) {
