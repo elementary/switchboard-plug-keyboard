@@ -72,17 +72,18 @@ namespace Pantheon.Keyboard.Options {
 			if (parts[0] == null || parts[1] == null)
 				return false;
 
-                        foreach (var item in items) {
-                            v = 0;
-                            foreach (var val in item.table.get_values ()) {
-                                if (val == code) {
-                                    return true;
-                                }
+			foreach (var item in items) {
+				v = 0;
 
-                                v++;
-                            }
-                            l++;
-                        }
+				foreach (var val in item.table.get_values ()) {
+					if (val == code)
+						return true;
+
+					v++;
+				}
+
+				l++;
+			}
 
 			return false;
 		}
@@ -210,10 +211,10 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Meta is mapped to Win keys"), "altwin:meta_win");
 			item.set (_("Meta is mapped to Left Win"), "altwin:left_meta_win");
 			item.set (_("Hyper is mapped to Win-keys"), "altwin:hyper_win");
-                        item.set (_("Alt is mapped to Right Win, Super to Menu"), "altwin:alt_super_win");
-                        item.set (_("Alt is mapped to Win keys (and the usual Alt keys)"), "altwin:alt_win");
-                        item.set (_("Alt is swapped with Win"), "altwin:swap_alt_win");
-                        item.set (_("Left Alt is swapped with Left Win"), "compose:swap_lalt_lwin");
+			item.set (_("Alt is mapped to Right Win, Super to Menu"), "altwin:alt_super_win");
+			item.set (_("Alt is mapped to Win keys (and the usual Alt keys)"), "altwin:alt_win");
+			item.set (_("Alt is swapped with Win"), "altwin:swap_alt_win");
+			item.set (_("Left Alt is swapped with Left Win"), "compose:swap_lalt_lwin");
 			items.append (item);
 
 			item = new Item (_("Compose key position"), "Compose key", true);
@@ -255,7 +256,7 @@ namespace Pantheon.Keyboard.Options {
 			items.append (item);
 
 			item = new Item (_("Key to choose 5th level"), "lv5", true);
-                        item.set (_("<Less/Greater> chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lsgt_switch_lock");
+			item.set (_("<Less/Greater> chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lsgt_switch_lock");
 			item.set (_("Right Alt chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:ralt_switch_lock");
 			item.set (_("Left Win chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lwin_switch_lock");
 			item.set (_("Right Win chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:rwin_switch_lock");
@@ -288,8 +289,8 @@ namespace Pantheon.Keyboard.Options {
 
 			item = new Item (_("Adding Esperanto circumflexes (supersigno)"), "esperanto", false);
 			item.set (_("To the corresponding key in a Qwerty keyboard"), "esperanto:qwerty");
-                        item.set (_("To the corresponding key in a Dvorak keyboard"), "esperanto:dvorak");
-                        item.set (_("To the corresponding key in a Colemak layout"), "esperanto:colemak");
+			item.set (_("To the corresponding key in a Dvorak keyboard"), "esperanto:dvorak");
+			item.set (_("To the corresponding key in a Colemak layout"), "esperanto:colemak");
 			items.append (item);
 
 			item = new Item (_("Key sequence to kill the X server"), "terminate", true);
