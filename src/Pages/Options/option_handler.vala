@@ -199,7 +199,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Make Caps Lock an additional Super"), "caps:super");
 			item.set (_("Make Caps Lock an additional Hyper"), "caps:hyper");
 			item.set (_("Caps Lock toggles Shift so all keys are affected"), "caps:shiftlock");
-			item.set (_("Caps Lock is disabled"), "caps:none");
 			item.set (_("Make Caps Lock an additional Control but keep the Caps_Lock keysym"), "caps:ctrl_modifier");
 			items.append (item);
 
@@ -214,7 +213,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Alt is mapped to Right Win, Super to Menu"), "altwin:alt_super_win");
 			item.set (_("Alt is mapped to Win keys (and the usual Alt keys)"), "altwin:alt_win");
 			item.set (_("Alt is swapped with Win"), "altwin:swap_alt_win");
-			item.set (_("Left Alt is swapped with Left Win"), "compose:swap_lalt_lwin");
 			items.append (item);
 
 			item = new Item (_("Compose key position"), "Compose key", true);
