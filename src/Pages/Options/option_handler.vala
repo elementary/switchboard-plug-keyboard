@@ -12,7 +12,7 @@ namespace Pantheon.Keyboard.Options {
 			this.multiple_selection = multiple_selection;
 
 			if (multiple_selection == false) {
-				table.@set (_("None"), "");
+				table.@set (_("None"), option+":");
 			}
 		}
 
