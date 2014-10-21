@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-10-05 10:12+0000\n"
-"Last-Translator: Thomas Moraine <th.moraine@gmail.com>\n"
+"PO-Revision-Date: 2014-10-20 19:39+0000\n"
+"Last-Translator: RM <l4rt1st-1nc0nnu@laposte.net>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-10-21 07:23+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -118,19 +118,19 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Verr. maj."
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Les deux touches Maj. ensemble"
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid "Both Alt keys together"
-msgstr ""
+msgstr "Les deux touches Alt ensemble"
 
 #: ../src//Pages/Options/option_handler.vala:112
 msgid "Both Ctrl keys together"
-msgstr ""
+msgstr "Les deux touches Ctrl ensemble"
 
 #: ../src//Pages/Options/option_handler.vala:113
 msgid "Ctrl+Shift"
@@ -138,23 +138,23 @@ msgstr "Ctrl+Maj."
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
-msgstr ""
+msgstr "Ctrl gauche+Maj. gauche"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Right Ctrl+Right Shift"
-msgstr ""
+msgstr "Ctrl  droit + Maj. droit"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Ctrl"
-msgstr ""
+msgstr "Alt+Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Maj."
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "Left Alt+Left Shift"
-msgstr ""
+msgstr "Alt gauche+Maj. gauche"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "Alt+Space"
