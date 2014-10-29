@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-08-17 05:53+0000\n"
-"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
+"PO-Revision-Date: 2014-10-29 06:16+0000\n"
+"Last-Translator: 강창건(Chang-geon Kang) <kangha02@naver.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-10-29 07:24+0000\n"
+"X-Generator: Launchpad (build 17203)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -43,7 +43,7 @@ msgstr "옵션"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
-msgstr ""
+msgstr "없음"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
@@ -759,7 +759,7 @@ msgstr "초"
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "설정을 시험하려면 입력하세요"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 #: ../src//Pages/Shortcuts/tree.vala:172
@@ -796,7 +796,7 @@ msgstr "제거"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "닫기"
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
@@ -804,7 +804,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "최대화"
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
@@ -816,7 +816,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "최소화"
 
 #: ../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
@@ -872,35 +872,35 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "작업 공간 1로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "작업 공간 2로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "작업 공간 3으로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "작업 공간 4로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "작업 공간 5로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "작업 공간 6으로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "작업 공간 7로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "작업 공간 8로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
@@ -908,11 +908,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "왼쪽으로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "오른쪽으로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
