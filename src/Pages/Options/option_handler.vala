@@ -12,7 +12,7 @@ namespace Pantheon.Keyboard.Options {
 			this.multiple_selection = multiple_selection;
 
 			if (multiple_selection == false) {
-				table.@set (_("None"), "");
+				table.@set (_("None"), option+":");
 			}
 		}
 
@@ -59,7 +59,7 @@ namespace Pantheon.Keyboard.Options {
 
 		public string? get_code (uint index, uint v) {
 			var item = items.nth (index).data;
-			return item.option + "\t" + item.table.get_values ().nth_data (v);
+			return item.table.get_values ().nth_data (v);
 		}
 
 		public string get_name (uint index, uint v) {
@@ -67,22 +67,21 @@ namespace Pantheon.Keyboard.Options {
 		}
 
 		public bool from_code (string code, out uint l, out uint v) {
-			var parts = code.split ("\t", 2);
+			var parts = code.split (":", 2);
 			l = v = 0;
 			if (parts[0] == null || parts[1] == null)
 				return false;
 
 			foreach (var item in items) {
 				v = 0;
-				if (item.option == parts[0]) {
-					foreach (var val in item.table.get_values ()) {
-						if (val == parts[1]) {
-							return true;
-						}
 
-						v++;
-					}
+				foreach (var val in item.table.get_values ()) {
+					if (val == code)
+						return true;
+
+					v++;
 				}
+
 				l++;
 			}
 
@@ -200,31 +199,31 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Make Caps Lock an additional Super"), "caps:super");
 			item.set (_("Make Caps Lock an additional Hyper"), "caps:hyper");
 			item.set (_("Caps Lock toggles Shift so all keys are affected"), "caps:shiftlock");
-			item.set (_("Caps Lock is disabled"), "caps:none");
 			item.set (_("Make Caps Lock an additional Control but keep the Caps_Lock keysym"), "caps:ctrl_modifier");
 			items.append (item);
 
 			item = new Item (_("Alt/Win key behavior"), "altwin", false);
-			item.set (_("Add the standard behavior to Menu key"), "compose:menu");
-			item.set (_("Alt and Meta are on Alt keys"), "compose:meta_alt");
-			item.set (_("Control is mapped to Win keys (and the usual Ctrl keys)"), "compose:ctrl_win");
-			item.set (_("Control is mapped to Alt keys, Alt is mapped to Win keys"), "compose:ctrl_alt_win");
-			item.set (_("Meta is mapped to Win keys"), "compose:meta_win");
-			item.set (_("Meta is mapped to Left Win"), "compose:left_meta_win");
-			item.set (_("Hyper is mapped to Win-keys"), "compose:hyper_win");
-			item.set (_("Alt is mapped to Right Win, Super to Menu"), "compose:alt_super_win");
-			item.set (_("Left Alt is swapped with Left Win"), "compose:swap_lalt_lwin");
+			item.set (_("Add the standard behavior to Menu key"), "altwin:menu");
+			item.set (_("Alt and Meta are on Alt keys"), "altwin:meta_alt");
+			item.set (_("Control is mapped to Win keys (and the usual Ctrl keys)"), "altwin:ctrl_win");
+			item.set (_("Control is mapped to Alt keys, Alt is mapped to Win keys"), "altwin:ctrl_alt_win");
+			item.set (_("Meta is mapped to Win keys"), "altwin:meta_win");
+			item.set (_("Meta is mapped to Left Win"), "altwin:left_meta_win");
+			item.set (_("Hyper is mapped to Win-keys"), "altwin:hyper_win");
+			item.set (_("Alt is mapped to Right Win, Super to Menu"), "altwin:alt_super_win");
+			item.set (_("Alt is mapped to Win keys (and the usual Alt keys)"), "altwin:alt_win");
+			item.set (_("Alt is swapped with Win"), "altwin:swap_alt_win");
 			items.append (item);
 
 			item = new Item (_("Compose key position"), "Compose key", true);
 			item.set (_("Right Alt"), "compose:ralt");
-			item.set (_("Left Win"), "compose:lwin");
-			item.set (_("Right Win"), "compose:rwin");
-			item.set (_("Menu"), "compose:menu");
-			item.set (_("Left Ctrl"), "compose:lctrl");
-			item.set (_("Right Ctrl"), "compose:rctrl");
-			item.set (_("Caps Lock"), "compose:caps");
-			item.set (_("<Less/Greater>"), "compose:102");
+			item.set (_("Left Win"), "compose:lwin-altgr");
+			item.set (_("Right Win"), "compose:rwin-altgr");
+			item.set (_("Menu"), "compose:menu-altgr");
+			item.set (_("Left Ctrl"), "compose:lctrl-altgr");
+			item.set (_("Right Ctrl"), "compose:rctrl-altgr");
+			item.set (_("Caps Lock"), "compose:caps-altgr");
+			item.set (_("<Less/Greater>"), "compose:102-altgr");
 			item.set (_("Pause"), "compose:paus");
 			item.set (_("PrtSc"), "compose:prsc");
 			item.set (_("Scroll Lock"), "compose:sclk");
@@ -255,7 +254,7 @@ namespace Pantheon.Keyboard.Options {
 			items.append (item);
 
 			item = new Item (_("Key to choose 5th level"), "lv5", true);
-			item.set (_("<Less/Greater> chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lalt_switch_lock");
+			item.set (_("<Less/Greater> chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lsgt_switch_lock");
 			item.set (_("Right Alt chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:ralt_switch_lock");
 			item.set (_("Left Win chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lwin_switch_lock");
 			item.set (_("Right Win chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:rwin_switch_lock");
@@ -272,7 +271,7 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Non-breakable space character at fourth level, thin non-breakable space character at sixth level (via Ctrl+Shift)"), "nbsp:level4nl");
 			item.set (_("Zero-width non-joiner character at second level"), "nbsp:zwnj2");
 			item.set (_("Zero-width non-joiner character at second level, zero-width joiner character at third level"), "nbsp:zwnj2zwj3");
-			item.set (_("Zero-width non-joiner character at second level, zero-width joiner character at third level, non-breakable space character at fourth level"), "zwnj2zwj3nb4");
+			item.set (_("Zero-width non-joiner character at second level, zero-width joiner character at third level, non-breakable space character at fourth level"), "nbsp:zwnj2zwj3nb4");
 			item.set (_("Zero-width non-joiner character at second level, non-breakable space character at third level"), "nbsp:zwnj2nb3");
 			item.set (_("Zero-width non-joiner character at second level, non-breakable space character at third level, nothing at fourth level"), "nbsp:zwnj2nb3s");
 			item.set (_("Zero-width non-joiner character at second level, non-breakable space character at third level, zero-width joiner at fourth level"), "nbsp:zwnj2nb3zwj4");
@@ -289,6 +288,7 @@ namespace Pantheon.Keyboard.Options {
 			item = new Item (_("Adding Esperanto circumflexes (supersigno)"), "esperanto", false);
 			item.set (_("To the corresponding key in a Qwerty keyboard"), "esperanto:qwerty");
 			item.set (_("To the corresponding key in a Dvorak keyboard"), "esperanto:dvorak");
+			item.set (_("To the corresponding key in a Colemak layout"), "esperanto:colemak");
 			items.append (item);
 
 			item = new Item (_("Key sequence to kill the X server"), "terminate", true);
