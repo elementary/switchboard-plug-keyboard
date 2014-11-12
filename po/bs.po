@@ -1,4 +1,4 @@
-# Croatian translation for switchboard-plug-keyboard
+# Bosnian translation for switchboard-plug-keyboard
 # Copyright (c) 2014 Rosetta Contributors and Canonical Ltd 2014
 # This file is distributed under the same license as the switchboard-plug-keyboard package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2014.
@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-11-11 17:55+0000\n"
-"Last-Translator: Ivan Vrljić <vrlja92@gmail.com>\n"
-"Language-Team: Croatian <hr@li.org>\n"
+"PO-Revision-Date: 2014-11-11 11:03+0000\n"
+"Last-Translator: Coa_brate <aleksandar.todorovic@mail.ru>\n"
+"Language-Team: Bosnian <bs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,15 +19,15 @@ msgstr ""
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
-msgstr "Tipkovnica"
+msgstr "Tastatura"
 
 #: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr "Prilagodite svoju tipkovnicu"
+msgstr "Konfigurišite vašu tastaturu"
 
 #: ../src//keyboard.vala:21
 msgid "Shortcuts"
-msgstr "Prečaci"
+msgstr "Prečice"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
@@ -39,23 +39,23 @@ msgstr "Raspored"
 
 #: ../src//keyboard.vala:24
 msgid "Options"
-msgstr "Mogućnosti"
+msgstr "Podešavanja"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
-msgstr "Nijedna"
+msgstr "Ništa"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
-msgstr "Tipke za promjenu rasporeda"
+msgstr "Taster(i) za promjenu rasporeda"
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
-msgstr ""
+msgstr "Desni Alt (kada je pritisnut)"
 
 #: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Alt (while pressed)"
-msgstr ""
+msgstr "Lijevi Alt (kada je pritisnut)"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Left Win (while pressed)"
@@ -82,23 +82,23 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:139
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Right Alt"
-msgstr "Desni Alt"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:103
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Left Alt"
-msgstr "Lijevi Alt"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:104
 #: ../src//Pages/Options/option_handler.vala:143
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr "Caps Lock"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr "Shift+Caps Lock"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
@@ -118,86 +118,86 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Shift keys together"
-msgstr "Obje tipke Shift zajedno"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid "Both Alt keys together"
-msgstr "Obje tipke Alt zajedno"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:112
 msgid "Both Ctrl keys together"
-msgstr "Obje tipke Ctrl zajedno"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:113
 msgid "Ctrl+Shift"
-msgstr "Ctrl+Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
-msgstr "Lijevi Ctrl+Lijevi Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Right Ctrl+Right Shift"
-msgstr "Desni Ctrl+Desni Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Ctrl"
-msgstr "Alt+Ctrl"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Alt+Shift"
-msgstr "Alt + Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "Left Alt+Left Shift"
-msgstr "Lijevi Alt+Lijevi Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "Alt+Space"
-msgstr "Alt+Razmaknica"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:120
 #: ../src//Pages/Options/option_handler.vala:133
 #: ../src//Pages/Options/option_handler.vala:223
 msgid "Menu"
-msgstr "Izbornik"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:121
 #: ../src//Pages/Options/option_handler.vala:135
 #: ../src//Pages/Options/option_handler.vala:221
 msgid "Left Win"
-msgstr "Lijevi Win"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:122
 #: ../src//Pages/Options/option_handler.vala:136
 #: ../src//Pages/Options/option_handler.vala:222
 msgid "Right Win"
-msgstr "Desni Win"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:123
 msgid "Left Shift"
-msgstr "Lijevi Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:124
 msgid "Right Shift"
-msgstr "Desni Shift"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:125
 #: ../src//Pages/Options/option_handler.vala:224
 msgid "Left Ctrl"
-msgstr "Lijevi Ctrl"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:126
 #: ../src//Pages/Options/option_handler.vala:132
 #: ../src//Pages/Options/option_handler.vala:225
 msgid "Right Ctrl"
-msgstr "Desni Ctrl"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:127
 #: ../src//Pages/Options/option_handler.vala:165
 #: ../src//Pages/Options/option_handler.vala:230
 msgid "Scroll Lock"
-msgstr "Scroll Lock"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:128
 msgid ""
@@ -206,15 +206,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Key to choose 3rd level"
-msgstr "Tipka za odabir 3. razine"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:134
 msgid "Any Win key"
-msgstr "Bilo koji Win"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid "Any Alt key"
-msgstr "Bilo koji Alt"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
@@ -269,11 +269,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
-msgstr "Zamijeni Ctrl i Caps Lock"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At left of 'A'"
-msgstr "Lijevo od „A”"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "At bottom left"
@@ -281,7 +281,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Right Ctrl as Right Alt"
-msgstr "Desni Ctrl kao Desni Alt"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Menu as Right Ctrl"
@@ -289,7 +289,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Right Alt as Right Ctrl"
-msgstr "Desni Alt kao Desni Ctrl"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Use keyboard LED to show alternative layout"
@@ -297,7 +297,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Num Lock"
-msgstr "Num Lock"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
@@ -726,45 +726,45 @@ msgstr ""
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Tipke ponavljanja:</b>"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr "Kašnjenje:"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr "Interval:"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
 #: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr "milisekundi"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>Blinkanje pokazivača:</b>"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr "Brzina:"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr "Trajanje:"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr "sekundi"
+msgstr ""
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr "Tipkajte za testiranje vaših postavki..."
+msgstr ""
 
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 #: ../src//Pages/Shortcuts/tree.vala:172
 msgid "Disabled"
-msgstr "Onemogućeno"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
@@ -772,16 +772,16 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr "Ako promijenite prečac u \"%s\", \"%s\" će biti onemogućen"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/tree.vala:147
 #: ../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
-msgstr "Otkaži"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr "Promijeni"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/display.vala:38
 #: ../src//Pages/Shortcuts/display.vala:41
@@ -796,15 +796,15 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr "Zatvori"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr "Niže"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr "Uvećaj"
+msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
@@ -1112,32 +1112,32 @@ msgstr ""
 
 #: ../src//Pages/layout.vala:24
 msgid "Allow different layouts for individual windows:"
-msgstr "Dopusti drugačije rasporede za pojedine prozore:"
+msgstr ""
 
 #: ../src//Pages/layout.vala:54
 msgid "Type to test your layout…"
-msgstr "Tipkajte za testiranje vašeg rasporeda..."
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr "Prozori"
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr "Radni prostori"
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr "Snimke zaslona"
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr "Aplikacije"
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr "Mediji"
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr "Univerzalni pristup"
+msgstr ""
