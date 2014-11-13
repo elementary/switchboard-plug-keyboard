@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-10-29 17:23+0000\n"
+"PO-Revision-Date: 2014-11-12 18:07+0000\n"
 "Last-Translator: Andi Chandler <Unknown>\n"
 "Language-Team: English (United Kingdom) <en_GB@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-30 06:33+0000\n"
-"X-Generator: Launchpad (build 17203)\n"
+"X-Launchpad-Export-Date: 2014-11-13 06:31+0000\n"
+"X-Generator: Launchpad (build 17241)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -407,35 +407,35 @@ msgstr "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
-msgstr ""
+msgstr "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Caps Lock toggles normal capitalisation of alphabetical characters"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Make Caps Lock an additional Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "Swap ESC and Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Make Caps Lock an additional ESC"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Make Caps Lock an additional Backspace"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Make Caps Lock an additional Super"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Make Caps Lock an additional Hyper"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Caps Lock toggles Shift so all keys are affected"
@@ -443,115 +443,118 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "Caps Lock is disabled"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
-msgstr ""
+msgstr "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Alt/Win key behaviour"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Add the standard behaviour to Menu key"
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt and Meta are on Alt keys"
 
 #: ../src//Pages/Options/option_handler.vala:210
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control is mapped to Win keys (and the usual Ctrl keys)"
 
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Control is mapped to Alt keys, Alt is mapped to Win keys"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta is mapped to Win keys"
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta is mapped to Left Win"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Hyper is mapped to Win-keys"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Alt is mapped to Right Win, Super to Menu"
 
 #: ../src//Pages/Options/option_handler.vala:216
 msgid "Left Alt is swapped with Left Win"
-msgstr ""
+msgstr "Left Alt is swapped with Left Win"
 
 #: ../src//Pages/Options/option_handler.vala:219
 msgid "Compose key position"
-msgstr ""
+msgstr "Compose key position"
 
 #: ../src//Pages/Options/option_handler.vala:228
 #: ../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../src//Pages/Options/option_handler.vala:229
 msgid "PrtSc"
-msgstr ""
+msgstr "PrtSc"
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Miscellaneous compatibility options"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Default numeric keypad keys"
 
 #: ../src//Pages/Options/option_handler.vala:235
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "Numeric keypad keys always enter digits (as in Mac OS)"
 
 #: ../src//Pages/Options/option_handler.vala:236
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Shift with numeric keypad keys works as in MS Windows"
 
 #: ../src//Pages/Options/option_handler.vala:237
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift does not cancel Num Lock, chooses 3rd level instead"
 
 #: ../src//Pages/Options/option_handler.vala:238
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "Special keys (Ctrl+Alt+<key>) handled in a server"
 
 #: ../src//Pages/Options/option_handler.vala:239
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
+"Lock)"
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift cancels Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Enable extra typographic characters"
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Both Shift-Keys together toggle Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "Both Shift-Keys together toggle ShiftLock"
 
 #: ../src//Pages/Options/option_handler.vala:245
 msgid "Toggle PointerKeys with Shift + NumLock"
@@ -559,15 +562,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:246
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-msgstr ""
+msgstr "Allow breaking grabs with keyboard actions (warning: security risk)"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Adding currency signs to certain keys"
 
 #: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on E"
-msgstr ""
+msgstr "Euro on E"
 
 #: ../src//Pages/Options/option_handler.vala:251
 msgid "Euro on 2"
