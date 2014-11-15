@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-11-13 07:50+0000\n"
+"PO-Revision-Date: 2014-11-14 12:18+0000\n"
 "Last-Translator: Coa_brate <aleksandar.todorovic@mail.ru>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-14 06:30+0000\n"
+"X-Launchpad-Export-Date: 2014-11-15 06:53+0000\n"
 "X-Generator: Launchpad (build 17241)\n"
 
 #: ../src//keyboard.vala:7
@@ -570,6 +570,8 @@ msgstr "Zamijeni PointerKeys sa Shift + NumLock"
 #: ../src//Pages/Options/option_handler.vala:246
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
+"Dozvoli prekidajuće grabljenje sa tastaturnimm akcijama (upozorenje: "
+"sigurnosni rizik)"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Adding currency signs to certain keys"
@@ -620,132 +622,157 @@ msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Lijevi Win bira peti nivo, zaključava se kada je pritisnuto zajedno sa još "
+"jednim izbornikom petog nivoa"
 
 #: ../src//Pages/Options/option_handler.vala:261
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Desni Win izabira 5. nivo, zaključava kada se pritisne zajedno s drugim "
+"izbornikom 5. nivoa"
 
 #: ../src//Pages/Options/option_handler.vala:264
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "Upotreba tastera za razmak za unos neprekidajućih razmaka"
 
 #: ../src//Pages/Options/option_handler.vala:265
 msgid "Usual space at any level"
-msgstr ""
+msgstr "Obični razmak na svakom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:266
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Neprekinuti razmak na drugom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:267
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Neprekinuti razmak na trećem nivou"
 
 #: ../src//Pages/Options/option_handler.vala:268
 msgid "Non-breakable space character at third level, nothing at fourth leve"
 msgstr ""
+"Neprekidni karakter za razmak na trećem nivou, ništa na četvrtom nivoa"
 
 #: ../src//Pages/Options/option_handler.vala:269
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
+"Neprekinuti razmak na trećem nivou, tanki neprekinuti razmak na četvrtom "
+"nivou"
 
 #: ../src//Pages/Options/option_handler.vala:270
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "Neprekinuti razmak na četvrtom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:271
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
 msgstr ""
+"Neprekinuti razmak na četvrtom nivou, tanki neprekinuti razmak na šestom "
+"nivou"
 
 #: ../src//Pages/Options/option_handler.vala:272
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
+"Neprekinuti razmak na četvrtom nivou, tanki neprekinuti razmak na šestom "
+"nivou (preko Ctrl+Shift)"
 
 #: ../src//Pages/Options/option_handler.vala:273
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "Nespajajući znak na drugom nivou nulte širine"
 
 #: ../src//Pages/Options/option_handler.vala:274
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
+"Nespajajući znak na drugom nivou nulte širine, spojnica nulte širine na "
+"trećem nivou"
 
 #: ../src//Pages/Options/option_handler.vala:275
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Nespajajući znak na drugom nivou nulte širine,  spojnica nulte širine na "
+"trećem nivou, neprekinuti razmak na četvrtom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:276
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
+"Nespajajući znak na drugom nivou nulte širine, neprekinuti razmak na trećem "
+"nivou"
 
 #: ../src//Pages/Options/option_handler.vala:277
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Nespajajući znak na drugom nivou nulte širine, neprekinuti razmak na trećem "
+"nivou, ništa na četvrtom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:278
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
+"Nespajajući znak na drugom nivou nulte širine, neprekinuti razmak na trećem "
+"nivou, spojnica nulte širine na četvrtom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:279
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
+"Nespajajući znak na drugom nivou nulte širine, neprekinuti razmak na trećem "
+"nivou, tanki neprekinuti razmak na četvrtom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:280
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
+"Nespajajući znak na zrećemm nivou nulte širine, spojnica nulte širine na "
+"četvrtom nivou"
 
 #: ../src//Pages/Options/option_handler.vala:283
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Japanske opcije tastature"
 
 #: ../src//Pages/Options/option_handler.vala:284
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "Kana Lock taster zaključava"
 
 #: ../src//Pages/Options/option_handler.vala:285
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "NICOLA-F stil tastera za brisanje"
 
 #: ../src//Pages/Options/option_handler.vala:286
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Napravi Zenkaku Hankaku kao dodatni ESC"
 
 #: ../src//Pages/Options/option_handler.vala:289
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Dodavanje Esperanto kvačica (supersigno)"
 
 #: ../src//Pages/Options/option_handler.vala:290
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "Na odgovarajući taster u Qwerty tastaturi"
 
 #: ../src//Pages/Options/option_handler.vala:291
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "Na odgovarajući taster u Dvorak tastaturi"
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Sekvenca tastera za ubijanje X servera"
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
@@ -859,7 +886,7 @@ msgstr "Pomjeri udesno"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
-msgstr ""
+msgstr "Uključi/isključi zatamnjenost"
 
 #: ../src//Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
