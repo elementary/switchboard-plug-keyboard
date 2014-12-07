@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-08-28 10:19+0000\n"
-"Last-Translator: Jim Spentzos <Unknown>\n"
+"PO-Revision-Date: 2014-12-06 18:37+0000\n"
+"Last-Translator: George Chalkitis <chalkitisge@gmail.com>\n"
 "Language-Team: Greek <el@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-12-07 06:09+0000\n"
+"X-Generator: Launchpad (build 17274)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -51,11 +51,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
-msgstr ""
+msgstr "Δεξί Alt (όταν πιέζεται)"
 
 #: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Alt (while pressed)"
-msgstr ""
+msgstr "Αριστερό Alt (όταν πιέζεται)"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Left Win (while pressed)"
