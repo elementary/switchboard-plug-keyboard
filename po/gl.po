@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-04-29 08:44+0000\n"
+"PO-Revision-Date: 2014-12-11 12:27+0000\n"
 "Last-Translator: Miguel Anxo Bouzada <mbouzada@gmail.com>\n"
 "Language-Team: Galician <gl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-12-12 06:33+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -31,7 +31,7 @@ msgstr "Atallos de teclado"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Comportamento"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -47,157 +47,164 @@ msgstr "Ningún"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
-msgstr ""
+msgstr "Tecla(s) para cambiar a distribución"
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
-msgstr ""
+msgstr "Alt dereito (mentres está premido)"
 
 #: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Alt (while pressed)"
-msgstr ""
+msgstr "Alt esquerda (mentres está premida)"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Left Win (while pressed)"
-msgstr ""
+msgstr "Windows esquerda (mentres se preme)"
 
 #: ../src//Pages/Options/option_handler.vala:98
 msgid "Right Win (while pressed)"
-msgstr ""
+msgstr "Windows dereita (mentres se preme)"
 
 #: ../src//Pages/Options/option_handler.vala:99
 msgid "Any Win key (while pressed)"
-msgstr ""
+msgstr "Calquera tecla Windows (mentres se preme)"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
 msgstr ""
+"Bloqueo de maiúsculas  (ao premela), Alt+Bloq Maiús realiza a acción "
+"orixinal de bloqueo de maiúsculas"
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Right Ctrl (while pressed)"
-msgstr ""
+msgstr "Ctrl dereita (mentres está premida)"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:139
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Right Alt"
-msgstr ""
+msgstr "Alt dereita"
 
 #: ../src//Pages/Options/option_handler.vala:103
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Left Alt"
-msgstr ""
+msgstr "Alt esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:104
 #: ../src//Pages/Options/option_handler.vala:143
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr ""
+msgstr "Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr ""
+msgstr "Maiús+BloqMaiús"
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
 msgstr ""
+"Bloqueo de maiúsculas (á primeira disposición), Maiús+Bloq Maiús (á última "
+"disposición)"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
 msgstr ""
+"Win esquerda (á primeira disposición), Win/Menu dereita (á última "
+"disposición)"
 
 #: ../src//Pages/Options/option_handler.vala:108
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
 msgstr ""
+"Ctrl esquerda (á primeira disposición), Ctrl dereita (á última disposición)"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "As dúas teclas de maiúsculas de vez"
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid "Both Alt keys together"
-msgstr ""
+msgstr "As dúas teclas Alt de vez"
 
 #: ../src//Pages/Options/option_handler.vala:112
 msgid "Both Ctrl keys together"
-msgstr ""
+msgstr "Ambalas teclas Ctrl de vez"
 
 #: ../src//Pages/Options/option_handler.vala:113
 msgid "Ctrl+Shift"
-msgstr ""
+msgstr "Ctrl+Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
-msgstr ""
+msgstr "Ctrl esquerda + Maiús esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Right Ctrl+Right Shift"
-msgstr ""
+msgstr "Ctrl dereita + Maiús dereita"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Ctrl"
-msgstr ""
+msgstr "Alt+Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "Left Alt+Left Shift"
-msgstr ""
+msgstr "Alt esquerda + Maiús. esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "Alt+Space"
-msgstr ""
+msgstr "Alt+Espazo"
 
 #: ../src//Pages/Options/option_handler.vala:120
 #: ../src//Pages/Options/option_handler.vala:133
 #: ../src//Pages/Options/option_handler.vala:223
 msgid "Menu"
-msgstr ""
+msgstr "Menú"
 
 #: ../src//Pages/Options/option_handler.vala:121
 #: ../src//Pages/Options/option_handler.vala:135
 #: ../src//Pages/Options/option_handler.vala:221
 msgid "Left Win"
-msgstr ""
+msgstr "Win esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:122
 #: ../src//Pages/Options/option_handler.vala:136
 #: ../src//Pages/Options/option_handler.vala:222
 msgid "Right Win"
-msgstr ""
+msgstr "Win dereita"
 
 #: ../src//Pages/Options/option_handler.vala:123
 msgid "Left Shift"
-msgstr ""
+msgstr "Maiús esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:124
 msgid "Right Shift"
-msgstr ""
+msgstr "Maiús dereita"
 
 #: ../src//Pages/Options/option_handler.vala:125
 #: ../src//Pages/Options/option_handler.vala:224
 msgid "Left Ctrl"
-msgstr ""
+msgstr "Ctrl esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:126
 #: ../src//Pages/Options/option_handler.vala:132
 #: ../src//Pages/Options/option_handler.vala:225
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Ctrl dereita"
 
 #: ../src//Pages/Options/option_handler.vala:127
 #: ../src//Pages/Options/option_handler.vala:165
 #: ../src//Pages/Options/option_handler.vala:230
 msgid "Scroll Lock"
-msgstr ""
+msgstr "Bloq Despl"
 
 #: ../src//Pages/Options/option_handler.vala:128
 msgid ""
@@ -206,31 +213,31 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Key to choose 3rd level"
-msgstr ""
+msgstr "Tecla para escoller o 3º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:134
 msgid "Any Win key"
-msgstr ""
+msgstr "Calquera tecla Win"
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid "Any Alt key"
-msgstr ""
+msgstr "Calquera tecla Alt"
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "A tecla Alt dereita, Maiús+Alt dereita é tecla Multi"
 
 #: ../src//Pages/Options/option_handler.vala:141
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "A tecla Alt dereita nunca escolle o 3º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Intro no teclado numérico"
 
 #: ../src//Pages/Options/option_handler.vala:144
 msgid "Backslash"
-msgstr ""
+msgstr "Barra invertida"
 
 #: ../src//Pages/Options/option_handler.vala:145
 #: ../src//Pages/Options/option_handler.vala:227
@@ -242,12 +249,16 @@ msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Bloq Maiús escolle o 3º nivel, actúa como un bloqueo dunha vez ao premela "
+"xunto con outro selector de 3º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"A barra invertida selecciona o 3º nivel, bloquea ao premerla xunto con outro "
+"selector de 3º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:148
 msgid ""
@@ -257,228 +268,238 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:151
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Posición da tecla Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:152
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Bloq Maiús como Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Ctrl esquerdo como Meta"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Intercambiar Ctrl e Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At left of 'A'"
-msgstr ""
+msgstr "Á esquerda do «A»"
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "At bottom left"
-msgstr ""
+msgstr "Abaixo á esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Ctrl dereita como Alt dereita"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Menú como Ctrl dereita"
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Alt dereita como Ctrl dereita"
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Usar o LED do teclado para amosar a disposición alternativa"
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Num Lock"
-msgstr ""
+msgstr "Bloq Num"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Selección de distribución de teclado numérico"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Legacy"
-msgstr ""
+msgstr "Legado"
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Adicións unicode (frechas e operadores matemáticos)"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Adicións unicode (frechas e operadores matemáticos); operadores matemáticos "
+"no nivel predeterminado"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Wang 724 legado"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
+"Teclado numérico Wang 724 con adicións Unicode (frechas e operadores "
+"matemáticos)"
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Teclado numérico Wang 724 con adicións Unicode (frechas e operadores "
+"matemáticos); operadores matemáticos no nivel predeterminado"
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadecimal"
 
 #: ../src//Pages/Options/option_handler.vala:176
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "Caixeiro automático/estilo teléfono"
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Comportamento da tecla Supr do teclado numérico"
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "Tecla legada con punto"
 
 #: ../src//Pages/Options/option_handler.vala:181
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Tecla legada con coma"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Tecla de cuarto nivel con punto"
 
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Tecla de cuarto nivel con punto, restrición latin-9"
 
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Tecla de cuarto nivel con coma"
 
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "Tecla de cuarto nivel con momayyez"
 
 #: ../src//Pages/Options/option_handler.vala:186
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Tecla de cuarto nivel con separadores abstractos"
 
 #: ../src//Pages/Options/option_handler.vala:187
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Punto e coma en terceiro nivel"
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Comportamento da tecla Bloq. Maiús."
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Bloq Maiús usa a capitalización interna; Maiús «pausa» o Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:192
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Bloq Maiús usa a capitalización interna; Maiús non afecta a Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Bloq Maiús actúa como Maiús con bloqueo; Maiús «pausa» Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
+"Bloq Maiús actúa como Maiús con bloqueo; Maiús non afecta a Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Bloq Maiús cambia a capitalización normal dos caracteres alfabéticos"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Facer de Bloq Maiús un Bloq Num adicional"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "Intercambiar ESC e Bloq Maiús"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Facer de Bloq Maiús un Esc adicional"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Facer de Bloq Maiús un Retroceso adicional"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Facer de Bloq Maiús un Super adicional"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Facer de Bloq Maiús un Hyper adicional"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Caps Lock toggles Shift so all keys are affected"
-msgstr ""
+msgstr "Bloq Maiús cambia Maiús de forma que todas as teclas están afectadas"
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "Bloq Maiús está desactivado"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr ""
+"Facer de Bloq Maiús un Control adicional mais manter o símbolo de tecla "
+"Caps_Lock"
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Comportamento da tecla Alt/Windows"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Engadir o comportamiento estándar á tecla Menú."
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt e Meta están nas teclas Alt"
 
 #: ../src//Pages/Options/option_handler.vala:210
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control está asignada ás teclas Win (e as teclas Ctrl usuais)"
 
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Control está asignada ás teclas Alt; Alt está asignada ás teclas Win"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta está asignada ás teclas Win"
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta está asignada á tecla Win esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Hyper está asignada ás teclas Win"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Alt está asignada á tecla Win dereita e Super a tecla Menú"
 
 #: ../src//Pages/Options/option_handler.vala:216
 msgid "Left Alt is swapped with Left Win"
-msgstr ""
+msgstr "Alt esquerda está cambiada con Win esquerda"
 
 #: ../src//Pages/Options/option_handler.vala:219
 msgid "Compose key position"
-msgstr ""
+msgstr "Posición da tecla Compoñer"
 
 #: ../src//Pages/Options/option_handler.vala:228
 #: ../src//Pages/Shortcuts/list.vala:276
@@ -487,27 +508,28 @@ msgstr "Deter"
 
 #: ../src//Pages/Options/option_handler.vala:229
 msgid "PrtSc"
-msgstr ""
+msgstr "PrtSc"
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Opcións varias de compatiblidade"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Teclas do teclado numérico predeterminado"
 
 #: ../src//Pages/Options/option_handler.vala:235
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
 msgstr ""
+"As teclas do teclado numérico sempre escriben díxitos (como en Mac OS)"
 
 #: ../src//Pages/Options/option_handler.vala:236
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Maiús coas teclas do teclado numérico funcionan como en MS Windows"
 
 #: ../src//Pages/Options/option_handler.vala:237
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Maiús non cancela Bloq Num, no seu lugar elixe o 3er nivel"
 
 #: ../src//Pages/Options/option_handler.vala:238
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
@@ -518,27 +540,30 @@ msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Teclado de aluminio de Apple: emular teclas PC (Imprimir, Bloq Despl, Pausa, "
+"Bloq Núm)"
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Maiús cancela BloqMaiús"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Activar caracteres tipográficos adicionais"
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Ámbalas teclas «Maiús» xuntas cambian o Bloqueo de maiúsculas"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Ambas teclas Maiús xuntas conmutan Bloq Maiús, unha tecla Maiús desactivao"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "Ambalas teclas Maiús xuntas conmutan Bloq Despl"
 
 #: ../src//Pages/Options/option_handler.vala:245
 msgid "Toggle PointerKeys with Shift + NumLock"
@@ -547,34 +572,36 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:246
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
+"Permitir que accións do teclado liberen as capturas (aviso: risco de "
+"seguranza)"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Engadir o símbolo de divisa a certas teclas"
 
 #: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on E"
-msgstr ""
+msgstr "Euro no E"
 
 #: ../src//Pages/Options/option_handler.vala:251
 msgid "Euro on 2"
-msgstr ""
+msgstr "Euro no 2"
 
 #: ../src//Pages/Options/option_handler.vala:252
 msgid "Euro on 4"
-msgstr ""
+msgstr "Euro no 4"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "Euro on 5"
-msgstr ""
+msgstr "Euro no 5"
 
 #: ../src//Pages/Options/option_handler.vala:254
 msgid "Rupee on 4"
-msgstr ""
+msgstr "Rupia no 4"
 
 #: ../src//Pages/Options/option_handler.vala:257
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "Tecla para seleccionar o 5º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid ""
@@ -587,34 +614,41 @@ msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Alt dereita escolle o 5º nivel, bloquea ao premela xunto con outro selector "
+"de 5º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:260
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Win esquerda escolle o 5º nivel, bloquea ao premela xunto con outro selector "
+"de 5º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:261
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Win dereita escolle o 5º nivel, bloquea ao premela xunto con outro selector "
+"de 5º nivel"
 
 #: ../src//Pages/Options/option_handler.vala:264
 msgid "Using space key to input non-breakable space character"
 msgstr ""
+"Usando a tecla espazo para introducir un carácter de espazo non separábel"
 
 #: ../src//Pages/Options/option_handler.vala:265
 msgid "Usual space at any level"
-msgstr ""
+msgstr "Espazo usual en calquera nivel"
 
 #: ../src//Pages/Options/option_handler.vala:266
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Carácter de espazo non separábel no segundo nivel"
 
 #: ../src//Pages/Options/option_handler.vala:267
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Carácter de espazo non separábel no terceiro nivel"
 
 #: ../src//Pages/Options/option_handler.vala:268
 msgid "Non-breakable space character at third level, nothing at fourth leve"
@@ -625,6 +659,8 @@ msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
+"Carácter de espazo non separábel no terceiro nivel, carácter de espazo "
+"estreito non separábel no cuarto nivel"
 
 #: ../src//Pages/Options/option_handler.vala:270
 msgid "Non-breakable space character at fourth level"
@@ -657,18 +693,25 @@ msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Carácter de espazo irrompíbel de largura cero («ZWNJ») no segundo nivel, "
+"carácter de espazo de largura cero rompíbel («ZWJ») no terceiro nivel, "
+"carácter de espazo non separábel no cuarto nivel"
 
 #: ../src//Pages/Options/option_handler.vala:276
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
+"Carácter de espazo irrompíbel de largura cero («ZWNJ») no segundo nivel, "
+"carácter de espazo non separábel no terceiro nivel"
 
 #: ../src//Pages/Options/option_handler.vala:277
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Carácter de espazo irrompíbel de largura cero («ZWNJ») no segundo nivel, "
+"carácter de espazo non separábel no terceiro nivel, nada no cuarto nivel"
 
 #: ../src//Pages/Options/option_handler.vala:278
 msgid ""
@@ -690,23 +733,23 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:283
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Opcións de teclado xaponés"
 
 #: ../src//Pages/Options/option_handler.vala:284
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "A tecla Bloq Kana está bloqueando"
 
 #: ../src//Pages/Options/option_handler.vala:285
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "Retroceso estilo NICOLA-F"
 
 #: ../src//Pages/Options/option_handler.vala:286
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Facer de Zenkaku Hankaku un ESC adicional"
 
 #: ../src//Pages/Options/option_handler.vala:289
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Engadir os tiles circunflexos do esperanto (supersigno)"
 
 #: ../src//Pages/Options/option_handler.vala:290
 msgid "To the corresponding key in a Qwerty keyboard"
@@ -718,11 +761,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Secuencia de teclas para matar o servidor X"
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control + Alt + Retroceso"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -768,7 +811,7 @@ msgstr "Desactivado"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
@@ -852,7 +895,7 @@ msgstr "Cambiar para a xanela anterior"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Window Overview"
-msgstr ""
+msgstr "Vista xeral da xanela"
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Show All Windows"
