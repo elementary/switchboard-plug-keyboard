@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-12-11 09:46+0000\n"
+"PO-Revision-Date: 2014-12-13 19:58+0000\n"
 "Last-Translator: René <Unknown>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-12 06:33+0000\n"
+"X-Launchpad-Export-Date: 2014-12-14 06:11+0000\n"
 "X-Generator: Launchpad (build 17286)\n"
 
 #: ../src//keyboard.vala:7
@@ -47,7 +47,7 @@ msgstr "Geen"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
-msgstr "De toets(en) om de indeling the veranderen"
+msgstr "De toets(en) om de indeling te veranderen"
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
@@ -96,19 +96,22 @@ msgstr "Linker Alt-toets"
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr ""
+msgstr "Shift+Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
 msgstr ""
+"Caps Lock (naar eerste indeling), Shift+Caps Lock (naar laatste indeling)"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
 msgstr ""
+"Linker Windows-toets (naar eerste indeling), rechter Windows/Menu-toets "
+"(naar laatste indeling)"
 
 #: ../src//Pages/Options/option_handler.vala:108
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
