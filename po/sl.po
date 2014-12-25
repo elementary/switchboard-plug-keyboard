@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-08-29 19:20+0000\n"
-"Last-Translator: Blaž Mežnaršič <blazingeek@gmail.com>\n"
+"PO-Revision-Date: 2014-12-24 13:15+0000\n"
+"Last-Translator: Jernej Virag <Unknown>\n"
 "Language-Team: Slovenian <sl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-06 06:57+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-12-25 06:12+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -47,438 +47,466 @@ msgstr "Brez"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
-msgstr ""
+msgstr "Tipke za spreminjanje razporeditve"
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
-msgstr ""
+msgstr "Desni Alt (ko je pritisnjen)"
 
 #: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Alt (while pressed)"
-msgstr ""
+msgstr "Levi Alt (ko je pritisnjen)"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Left Win (while pressed)"
-msgstr ""
+msgstr "Leva tipka Win (ko je pritisnjena)"
 
 #: ../src//Pages/Options/option_handler.vala:98
 msgid "Right Win (while pressed)"
-msgstr ""
+msgstr "Desna tipka Win (ko je pritisnjena)"
 
 #: ../src//Pages/Options/option_handler.vala:99
 msgid "Any Win key (while pressed)"
-msgstr ""
+msgstr "Poljubna tipka Win (ob pritisku)"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
 msgstr ""
+"Caps Lock (ko je pritisnjen), Alt+Caps Lock opravi izvorno dejanje zaklepa "
+"velikih črk."
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Right Ctrl (while pressed)"
-msgstr ""
+msgstr "Desni Ctrl (ko je pritisnjen)"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:139
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Right Alt"
-msgstr ""
+msgstr "Desni Alt"
 
 #: ../src//Pages/Options/option_handler.vala:103
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Left Alt"
-msgstr ""
+msgstr "Levi Alt"
 
 #: ../src//Pages/Options/option_handler.vala:104
 #: ../src//Pages/Options/option_handler.vala:143
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr ""
+msgstr "Shift+Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
 msgstr ""
+"Caps Lock (na prvo razporeditev), Shift+Caps Lock (na zadnjo razporeditev)"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
 msgstr ""
+"Leva tipka Win (na prvo razporeditev), desna tipka Win/Menu (na drugo "
+"razporeditev)"
 
 #: ../src//Pages/Options/option_handler.vala:108
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
 msgstr ""
+"Levi Ctrl (na prvo razporeditev), desni Ctrl (na zadnjo razporeditev)"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Obe tipki Shift hkrati"
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid "Both Alt keys together"
-msgstr ""
+msgstr "Obe tipki Alt hkrati"
 
 #: ../src//Pages/Options/option_handler.vala:112
 msgid "Both Ctrl keys together"
-msgstr ""
+msgstr "Obe tipki Ctrl hkrati"
 
 #: ../src//Pages/Options/option_handler.vala:113
 msgid "Ctrl+Shift"
-msgstr ""
+msgstr "Ctrl+Shift"
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
-msgstr ""
+msgstr "Levi Ctrl+levi Shift"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Right Ctrl+Right Shift"
-msgstr ""
+msgstr "Desni Ctrl+desni Shift"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Ctrl"
-msgstr ""
+msgstr "Alt+Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Shift"
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "Left Alt+Left Shift"
-msgstr ""
+msgstr "Leva izmenjalka (Alt)+leva dvigalka (Shift)"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "Alt+Space"
-msgstr ""
+msgstr "Alt+preslednica"
 
 #: ../src//Pages/Options/option_handler.vala:120
 #: ../src//Pages/Options/option_handler.vala:133
 #: ../src//Pages/Options/option_handler.vala:223
 msgid "Menu"
-msgstr ""
+msgstr "Meni"
 
 #: ../src//Pages/Options/option_handler.vala:121
 #: ../src//Pages/Options/option_handler.vala:135
 #: ../src//Pages/Options/option_handler.vala:221
 msgid "Left Win"
-msgstr ""
+msgstr "Leva tipka Win"
 
 #: ../src//Pages/Options/option_handler.vala:122
 #: ../src//Pages/Options/option_handler.vala:136
 #: ../src//Pages/Options/option_handler.vala:222
 msgid "Right Win"
-msgstr ""
+msgstr "Desna tipka Win"
 
 #: ../src//Pages/Options/option_handler.vala:123
 msgid "Left Shift"
-msgstr ""
+msgstr "Levi Shift"
 
 #: ../src//Pages/Options/option_handler.vala:124
 msgid "Right Shift"
-msgstr ""
+msgstr "Desni Shift"
 
 #: ../src//Pages/Options/option_handler.vala:125
 #: ../src//Pages/Options/option_handler.vala:224
 msgid "Left Ctrl"
-msgstr ""
+msgstr "Levi Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:126
 #: ../src//Pages/Options/option_handler.vala:132
 #: ../src//Pages/Options/option_handler.vala:225
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Desni Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:127
 #: ../src//Pages/Options/option_handler.vala:165
 #: ../src//Pages/Options/option_handler.vala:230
 msgid "Scroll Lock"
-msgstr ""
+msgstr "Scroll Lock"
 
 #: ../src//Pages/Options/option_handler.vala:128
 msgid ""
 "Left Ctrl+Left Win (to first layout), Right Ctrl+Menu (to second layout)"
 msgstr ""
+"Levi Ctrl+Levi Win (na prvo razporeditev), Desni Ctrl+meni (na drugo "
+"razporeditev)"
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Key to choose 3rd level"
-msgstr ""
+msgstr "Tipka za izbor tretje ravni"
 
 #: ../src//Pages/Options/option_handler.vala:134
 msgid "Any Win key"
-msgstr ""
+msgstr "Poljubna tipka Win"
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid "Any Alt key"
-msgstr ""
+msgstr "Poljubna tipka Alt"
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Desni Alt, Shift+desna tipka Alt je večtipkovna kombinacija"
 
 #: ../src//Pages/Options/option_handler.vala:141
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "Desni Alt nikoli ne izbere tretje ravni"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Tipka Enter na številčnici"
 
 #: ../src//Pages/Options/option_handler.vala:144
 msgid "Backslash"
-msgstr ""
+msgstr "Leva poševnica"
 
 #: ../src//Pages/Options/option_handler.vala:145
 #: ../src//Pages/Options/option_handler.vala:227
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Manjše/Večje>"
 
 #: ../src//Pages/Options/option_handler.vala:146
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Caps Lock izbere 3. raven in se obnaša kot enkraten zaklep ob pritisku "
+"skupaj z izbirnikom tretje ravni"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Leva poševnica izbere 3. raven in se obnaša kot enkraten zaklep ob pritisku "
+"skupaj z izbirnikom tretje ravni"
 
 #: ../src//Pages/Options/option_handler.vala:148
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
+"<Manjše/Večje> izbere 3. raven in se obnaša kot enkraten zaklep ob pritisku "
+"skupaj z izbirnikom tretje ravni"
 
 #: ../src//Pages/Options/option_handler.vala:151
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Položaj tipke Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:152
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Caps Lock kot Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Levi Ctrl kot tipka Meta"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Zamenjaj Ctrl in CapsLock"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At left of 'A'"
-msgstr ""
+msgstr "Levo od tipke 'A'"
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "At bottom left"
-msgstr ""
+msgstr "Levo spodaj"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Desni Ctrl kot desni Alt."
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Tipka meni kot desni Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Desni Alt kot desni Ctrl."
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Uporabi lučke LED tipkovnice za prikaz nadomestne razporeditve"
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Izbor razporeditve na numerični tipkovnici"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Legacy"
-msgstr ""
+msgstr "Opuščena tipkovnica"
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Dodatki Unicode (puščice in matematični opratorji)"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Dodatki Unicode (puščice in matematični opratorji). Matematični operatorji "
+"so na prvi ravni"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Opuščena Wang 724"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Wang 724 z unicode dodatki (puščice in matematični operatorji)"
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Wang 724 z dodatki unicode (puščice in matematični operatorji). Matematični "
+"operatorji na privzeti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "Hexadecimal"
-msgstr ""
+msgstr "šestnajstiška"
 
 #: ../src//Pages/Options/option_handler.vala:176
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "Kot bankomat/telefon"
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Vedenje tipke za brisanje na numerični tipkovnici"
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "Opuščena tipka s piko"
 
 #: ../src//Pages/Options/option_handler.vala:181
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Opuščena tipka z vejico"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Tipka četrte ravni s piko"
 
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Tipka četrte ravni s piko, omejitev latin-9"
 
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Tipka četrte ravni z vejico"
 
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "Tipka četrte ravni z arabskim decimalnim ločilnikom"
 
 #: ../src//Pages/Options/option_handler.vala:186
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Tipka četrte ravni z abstraktnimi ločilniki"
 
 #: ../src//Pages/Options/option_handler.vala:187
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Podpičje na tretji ravni"
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Vedenje tipke Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock uporablja notranje spreminjanje začetnic v velike črke. Shift "
+"\"začasno ustavi\" tipko Caps Lock."
 
 #: ../src//Pages/Options/option_handler.vala:192
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock uporablja notranje spreminjanje začetnic v velike črke. Shift ne "
+"vpliva na Caps Lock."
 
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock velja kot Shift z zaklepanjem. Shift \"začasno ustavi\" tipko Caps "
+"Lock."
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock velja kot Shift z zaklepanjem. Shift ne vpliva na tipko Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
 msgstr ""
+"Caps Lock preklaplja navadno kapitalizacijo črk abecede (velike in male "
+"črke)."
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Caps Lock naj bo dodatna tipka Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "Zamenjaj Esc in Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Caps Lock naj bo dodatna tipka Esc"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Caps Lock naj bo dodatna vračalka"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Caps Lock naj bo dodatna tipka Super"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Caps Lock naj bo dodatna tipka Hyper"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Caps Lock toggles Shift so all keys are affected"
-msgstr ""
+msgstr "Caps Lock preklaplja tipko Shift, tako da vpliva na vse tipke"
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "Caps Lock je onemogočena"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
-msgstr ""
+msgstr "Caps Lock naj bo dodatni Ctrl, vendar ohrani simbol tipke Caps_Lock"
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Vedenje tipk Alt/Win"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Dodaj standardni odziv tipki Menu"
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt in Meta sta na tipkah Alt."
 
 #: ../src//Pages/Options/option_handler.vala:210
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control je preslikan na tipki Win (in običajne tipke Ctrl)"
 
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr ""
+"Tipka Control je preslikana na tipki Alt, Alt je preslikana na tipki Win"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta je preslikana na tipki Win"
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta je preslikana na levo tipko Win"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Tipka Hiper je preslikana na tipki Win"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Tipka Alt je preslikana na desno tipko Win, Super na tipko Menu."
 
 #: ../src//Pages/Options/option_handler.vala:216
 msgid "Left Alt is swapped with Left Win"
-msgstr ""
+msgstr "Levi Alt se zamenja z levo tipko Win"
 
 #: ../src//Pages/Options/option_handler.vala:219
 msgid "Compose key position"
-msgstr ""
+msgstr "Položaj tipke Compose"
 
 #: ../src//Pages/Options/option_handler.vala:228
 #: ../src//Pages/Shortcuts/list.vala:276
@@ -487,242 +515,275 @@ msgstr "Premor"
 
 #: ../src//Pages/Options/option_handler.vala:229
 msgid "PrtSc"
-msgstr ""
+msgstr "Tiskalka (PrtSc)"
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Razne možnosti združljivosti"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Privzete tipke številčnice"
 
 #: ../src//Pages/Options/option_handler.vala:235
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "Številčnica vedno vnaša števke (deluje kot v Mac OS X)"
 
 #: ../src//Pages/Options/option_handler.vala:236
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Shift in številska tipkovnica delujeta kot v sistemu MS Windows"
 
 #: ../src//Pages/Options/option_handler.vala:237
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift ne prekliče tipke Num Lock, namesto tega izbere tretjo raven"
 
 #: ../src//Pages/Options/option_handler.vala:238
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "Posebne tipke (Ctrl+Alt+<tipka>) so upoštevane v strežniku"
 
 #: ../src//Pages/Options/option_handler.vala:239
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Apple - aluminijasta tipkovnica: emuliraj tipke PC (Print, Scroll Lock, "
+"Pause, NumLock)"
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift prekliče Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Omogoči dodatne tipografske znake"
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Obe tipki Shift hkrati preklopita Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Obe tipki Shift hkrati omogoči Caps Lock, ena tipka Shift jo onemogoči"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "Obe tipki Shift hkrati preklopita ShiftLock"
 
 #: ../src//Pages/Options/option_handler.vala:245
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "Preklopi PointerKeys s Shift + NumLock"
 
 #: ../src//Pages/Options/option_handler.vala:246
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
+"Dovoli prekinitev prijemov z dejanji tipkovnice (opozorilo: varnostno "
+"tveganje)"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Dodajanje valutnih simbolov določenim tipkam"
 
 #: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on E"
-msgstr ""
+msgstr "Z evro-znakom na tipki E"
 
 #: ../src//Pages/Options/option_handler.vala:251
 msgid "Euro on 2"
-msgstr ""
+msgstr "Z evro-znakom na tipki 2"
 
 #: ../src//Pages/Options/option_handler.vala:252
 msgid "Euro on 4"
-msgstr ""
+msgstr "Z evro-znakom na tipki 4"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "Euro on 5"
-msgstr ""
+msgstr "Z evro-znakom na tipki 5"
 
 #: ../src//Pages/Options/option_handler.vala:254
 msgid "Rupee on 4"
-msgstr ""
+msgstr "Z znakom za rupijo na tipki 4"
 
 #: ../src//Pages/Options/option_handler.vala:257
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "Tipka za izbor pete ravni"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
+"<Manjše/Večje> izbere peto raven, zaklene raven, če je pritisnjen hkrati z "
+"drugim izbirnikom pete ravni"
 
 #: ../src//Pages/Options/option_handler.vala:259
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Desni Alt izbere peto raven, zaklene raven, če je pritisnjen hkrati z drugim "
+"izbirnikom pete ravni"
 
 #: ../src//Pages/Options/option_handler.vala:260
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Leva tipka Win izbere peto raven, zaklene raven, če je pritisnjen hkrati z "
+"drugim izbirnikom pete ravni"
 
 #: ../src//Pages/Options/option_handler.vala:261
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Desna tipka Win izbere peto raven, zaklene raven, če je pritisnjen hkrati z "
+"drugim izbirnikom pete ravni"
 
 #: ../src//Pages/Options/option_handler.vala:264
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "Uporaba preslednice za vnos neprelomnega presledka"
 
 #: ../src//Pages/Options/option_handler.vala:265
 msgid "Usual space at any level"
-msgstr ""
+msgstr "Običajni presledek na vseh ravneh"
 
 #: ../src//Pages/Options/option_handler.vala:266
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Neprelomni presledek na drugi ravni"
 
 #: ../src//Pages/Options/option_handler.vala:267
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Neprelomni presledek na tretji ravni"
 
 #: ../src//Pages/Options/option_handler.vala:268
 msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr ""
+msgstr "Neprelomni presledek na tretji ravin, nič na četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:269
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
+"Neprelomni presledek na tretji ravni, tanek neprelomni presledek na četrti "
+"ravni"
 
 #: ../src//Pages/Options/option_handler.vala:270
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "Neprelomni presledek na četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:271
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
 msgstr ""
+"Neprelomni presledek na četrti ravni, tanek neprelomni presledek na šesti "
+"ravni"
 
 #: ../src//Pages/Options/option_handler.vala:272
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
+"Neprelomni presledek na četrti ravni, tanek neprelomni presledek na šesti "
+"ravni (s Ctrl+Shift)"
 
 #: ../src//Pages/Options/option_handler.vala:273
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "Prelomni znak ničte širine na drugi ravni"
 
 #: ../src//Pages/Options/option_handler.vala:274
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
+"Prelomni znak ničte širine na drugi ravni, spojni znak ničte širine na "
+"tretji ravni"
 
 #: ../src//Pages/Options/option_handler.vala:275
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Prelomni znak ničte širine na drugi ravni, spojni znak ničte širine na "
+"tretji ravni, neprelomni presledek na četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:276
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
+"Prelomni znak ničte širine na drugi ravni, neprelomni presledek na tretji "
+"ravni"
 
 #: ../src//Pages/Options/option_handler.vala:277
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Prelomni znak ničte širine na drugi ravni, neprelomni presledek na tretji "
+"ravni, nič na četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:278
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
+"Prelomni znak ničte širine na drugi ravni, neprelomni presledek na tretji "
+"ravni, neprelomni znak ničelne širine na četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:279
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
+"Prelomni znak ničte širine na drugi ravni, neprelomni presledek na tretji "
+"ravni, tanek neprelomni presledek na četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:280
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
+"Prelomni znak ničte širine na tretji ravni, spojni znak ničte širine na "
+"četrti ravni"
 
 #: ../src//Pages/Options/option_handler.vala:283
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Japonske možnosti tipkovnice"
 
 #: ../src//Pages/Options/option_handler.vala:284
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "Tipka za zaklep Kana lahko zaklepa"
 
 #: ../src//Pages/Options/option_handler.vala:285
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "Vračalka v slogu NICOLA-F"
 
 #: ../src//Pages/Options/option_handler.vala:286
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Zenkaku Hankaku naj bo dodatna ubežnica (Esc)"
 
 #: ../src//Pages/Options/option_handler.vala:289
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Dodajanje cirkumfleksov za Esperanto (supersigno)"
 
 #: ../src//Pages/Options/option_handler.vala:290
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "Na primerno tipko v Qwerty tipkovnici"
 
 #: ../src//Pages/Options/option_handler.vala:291
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "Na primerno tipko v Dvorak tipkovnici"
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Zaporedje tipk, ki ubijejo strežnik X"
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control + Alt + Backspace"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -768,7 +829,7 @@ msgstr "Onemogočeno"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
@@ -852,11 +913,11 @@ msgstr "Preklopi okna vzvratno"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Window Overview"
-msgstr ""
+msgstr "Pregled oken"
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Show All Windows"
-msgstr ""
+msgstr "Pokaži vsa okna"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
