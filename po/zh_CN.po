@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-10-19 05:28+0000\n"
+"PO-Revision-Date: 2014-12-28 12:24+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-10-20 07:00+0000\n"
-"X-Generator: Launchpad (build 17196)\n"
+"X-Launchpad-Export-Date: 2014-12-29 06:19+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -72,7 +72,7 @@ msgstr "任意 Win 键(按下时)"
 #: ../src//Pages/Options/option_handler.vala:100
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
-msgstr ""
+msgstr "大写锁定键（按下时），Alt+大写锁定键 起原始大写锁定功能"
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Right Ctrl (while pressed)"
@@ -94,11 +94,11 @@ msgstr "左 Alt"
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr "Caps Lock"
+msgstr "大写锁定"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr "Shift + Caps Lock"
+msgstr "Shift+大写锁定键"
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid "Alt+Caps Lock"
-msgstr "Alt + Caps Lock"
+msgstr "Alt+大写锁定键"
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Shift keys together"
@@ -222,7 +222,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:141
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "右 Alt 键永不用于三级功能选择"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Enter on keypad"
@@ -241,13 +241,13 @@ msgstr ""
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
-msgstr ""
+msgstr "大写锁定键选择三级功能，当与另一个三级功能键一起按下时，一次锁定"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
-msgstr ""
+msgstr "反斜杠键选择三级功能，当与另一个三级功能键一起按下时，一次锁定"
 
 #: ../src//Pages/Options/option_handler.vala:148
 msgid ""
@@ -269,7 +269,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
-msgstr "交换 Ctrl 和 Caps Lock"
+msgstr "交换 Ctrl 和 大写锁定键"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At left of 'A'"
@@ -319,7 +319,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "传统王安 724"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
@@ -333,7 +333,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "Hexadecimal"
-msgstr ""
+msgstr "十六进制"
 
 #: ../src//Pages/Options/option_handler.vala:176
 msgid "ATM/phone-style"
@@ -341,7 +341,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "数字小键盘上删除键的行为"
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with dot"
@@ -377,7 +377,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "大写锁定键行为"
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
@@ -402,35 +402,35 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "将 Caps Lock 作为额外的 Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "交换 ESC 和 Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "将 Caps Lock 作为额外的 ESC"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "将 Caps Lock 作为额外的 Backspace"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "将 Caps Lock 作为额外的 Super"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "将 Caps Lock 作为额外的 Hyper"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Caps Lock toggles Shift so all keys are affected"
-msgstr ""
+msgstr "Caps Lock 切换 Shift 且影响所有按键"
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "大写锁定被禁用"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
@@ -521,7 +521,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift 取消大写锁定"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Enable extra typographic characters"
@@ -529,12 +529,12 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "同时按两个 Shift 键切换大写锁定"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-msgstr ""
+msgstr "同时按两个 Shift 键激活大写锁定，只按一个 Shift 键解锁"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Both Shift-Keys together toggle ShiftLock"
