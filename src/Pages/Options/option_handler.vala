@@ -217,13 +217,13 @@ namespace Pantheon.Keyboard.Options {
 
 			item = new Item (_("Compose key position"), "Compose key", true);
 			item.set (_("Right Alt"), "compose:ralt");
-			item.set (_("Left Win"), "compose:lwin-altgr");
-			item.set (_("Right Win"), "compose:rwin-altgr");
-			item.set (_("Menu"), "compose:menu-altgr");
-			item.set (_("Left Ctrl"), "compose:lctrl-altgr");
-			item.set (_("Right Ctrl"), "compose:rctrl-altgr");
-			item.set (_("Caps Lock"), "compose:caps-altgr");
-			item.set (_("<Less/Greater>"), "compose:102-altgr");
+			item.set (_("Left Win"), "compose:lwin");
+			item.set (_("Right Win"), "compose:rwin");
+			item.set (_("Menu"), "compose:menu");
+			item.set (_("Left Ctrl"), "compose:lctrl");
+			item.set (_("Right Ctrl"), "compose:rctrl");
+			item.set (_("Caps Lock"), "compose:caps");
+			item.set (_("<Less/Greater>"), "compose:102");
 			item.set (_("Pause"), "compose:paus");
 			item.set (_("PrtSc"), "compose:prsc");
 			item.set (_("Scroll Lock"), "compose:sclk");
