@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-11-08 13:48+0000\n"
-"Last-Translator: Damian Dygulski <dygulski13@gmail.com>\n"
+"PO-Revision-Date: 2015-01-03 16:57+0000\n"
+"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-11-09 06:50+0000\n"
-"X-Generator: Launchpad (build 17231)\n"
+"X-Launchpad-Export-Date: 2015-01-04 06:30+0000\n"
+"X-Generator: Launchpad (build 17286)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -222,7 +222,7 @@ msgstr "Dowolny klawisz Alt"
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Klawisz Prawy Alt, Shift+prawy Alt jako Multi_Key"
 
 #: ../src//Pages/Options/option_handler.vala:141
 msgid "Right Alt key never chooses 3rd level"
@@ -857,11 +857,11 @@ msgstr "Przełącz okna wstecz"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Window Overview"
-msgstr ""
+msgstr "Okno podglądu"
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Show All Windows"
-msgstr ""
+msgstr "Pokaż wszystkie okna"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
