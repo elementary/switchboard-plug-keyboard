@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-12-28 13:19+0000\n"
-"Last-Translator: ☠Jay ZDLin☠ <Unknown>\n"
+"PO-Revision-Date: 2015-01-07 23:48+0000\n"
+"Last-Translator: Artem Anufrij <Unknown>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2014-12-29 06:19+0000\n"
-"X-Generator: Launchpad (build 17286)\n"
+"X-Launchpad-Export-Date: 2015-01-08 07:07+0000\n"
+"X-Generator: Launchpad (build 17298)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -96,7 +96,7 @@ msgstr "Левый Alt"
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr "клавиша Caps Lock"
+msgstr "Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
@@ -137,11 +137,11 @@ msgstr "Ctrl+Shift"
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
-msgstr ""
+msgstr "Левая Ctrl+Левая Shift"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Right Ctrl+Right Shift"
-msgstr ""
+msgstr "Правая Ctrl+Правая Shift"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Ctrl"
@@ -218,7 +218,7 @@ msgstr "Клавиша Win"
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid "Any Alt key"
-msgstr "Клавиша Alt"
+msgstr "Любая клавиша Alt"
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
@@ -230,7 +230,7 @@ msgstr "Правая Alt не выбирает 3-ий уровень"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Enter на цифровой клавиатуре"
 
 #: ../src//Pages/Options/option_handler.vala:144
 msgid "Backslash"
@@ -239,7 +239,7 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:145
 #: ../src//Pages/Options/option_handler.vala:227
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Меньше/Больше>"
 
 #: ../src//Pages/Options/option_handler.vala:146
 msgid ""
@@ -305,7 +305,7 @@ msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Выбор раскладки цифровой клавиатуры"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Legacy"
@@ -349,11 +349,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "Совместимость с точкой"
 
 #: ../src//Pages/Options/option_handler.vala:181
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Совместимость с запятой"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot"
@@ -381,32 +381,38 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Поведение клавиши Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock включает внутреннюю капитализацию. Shift приостанавливает действие "
+"Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:192
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock включает внутреннюю капитализацию. Shift не влияет на Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock действует как Shift с блокировкой. Shift приостанавливает действие "
+"Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock действует как Shift с блокировкой. Shift не влияет на Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Caps Lock переключает обычную капитализацию символов алфавита"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Использовать Caps Lock как дополнительную клавишу Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Swap ESC and Caps Lock"
@@ -414,11 +420,11 @@ msgstr "Поменять местами клавиши Esc и Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional ESC"
-msgstr "Использовать Caps Lock как дополнительную Esc"
+msgstr "Использовать Caps Lock как дополнительную клавишу Esc"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Использовать Caps Lock как дополнительную клавишу Backspace"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Super"
@@ -426,15 +432,17 @@ msgstr "Использовать Caps Lock как дополнительную �
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Использовать Caps Lock как дополнительную клавишу Hyper"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Caps Lock toggles Shift so all keys are affected"
 msgstr ""
+"Caps Lock переключает Shift, таким образом что, он действует сразу на все "
+"клавиши"
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "Caps Lock отключён"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
@@ -442,7 +450,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Поведение клавиши Alt/Win"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Add the standard behavior to Menu key"
@@ -450,7 +458,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt и Meta на клавишах Alt"
 
 #: ../src//Pages/Options/option_handler.vala:210
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
@@ -459,6 +467,8 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr ""
+"Control используется в качестве клавиш Alt, Alt используется в качестве "
+"клавиш Win"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Meta is mapped to Win keys"
@@ -478,7 +488,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:216
 msgid "Left Alt is swapped with Left Win"
-msgstr ""
+msgstr "Левая клавиша Alt поменяна местами с левой клавишей Win"
 
 #: ../src//Pages/Options/option_handler.vala:219
 msgid "Compose key position"
@@ -525,7 +535,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift отменяет Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Enable extra typographic characters"
@@ -533,12 +543,14 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Обе клавиши Shift, нажатые вместе, переключают Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Обе клавиши Shift, нажатые вместе, включают Caps Lock, одна клавиша Shift "
+"выключает"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Both Shift-Keys together toggle ShiftLock"
@@ -726,7 +738,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control + Alt + Backspace"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
