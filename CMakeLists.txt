@@ -6,8 +6,6 @@ cmake_policy (VERSION 2.6)
 
 # Set the Properties of your Plug
 
-# Set the Name of the plug, should be an executable command, lowercase, no spaces 
-set (PLUGNAME "keyboard")
 # Set the Category of the Plug, one of:
 # personal, hardware, network, system
 set (PLUGCATEGORY "hardware")
@@ -16,7 +14,7 @@ set (PLUGTITLE "Keyboard")
 # The symbolic name of the Icon to use for the plug
 set (PLUGICON "preferences-desktop-keyboard")
 
-project (${PLUGNAME})
+project (pantheon-keyboard)
 
 #########################################################
 # Only alter stuff below if you know what you are doing #
@@ -24,8 +22,8 @@ project (${PLUGNAME})
 
 include (GNUInstallDirs)
 set (DATADIR "${CMAKE_INSTALL_FULL_LIBDIR}/switchboard")
-set (PKGDATADIR "${DATADIR}/hardware/pantheon-${PLUGNAME}")
-set (GETTEXT_PACKAGE "${PLUGNAME}-plug")
+set (PKGDATADIR "${DATADIR}/hardware/${CMAKE_PROJECT_NAME}")
+set (GETTEXT_PACKAGE "${CMAKE_PROJECT_NAME}-plug")
 
 list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 
