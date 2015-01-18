@@ -7,9 +7,12 @@ namespace Pantheon.Keyboard.LayoutPage
 
 		public AddLayout()
 		{
+            deletable = false;
+
 			var grid = new Gtk.Grid();
 
-			grid.margin         = 12;
+			grid.margin_start   = 12;
+			grid.margin_end     = 12;
 			grid.column_spacing = 12;
 			grid.row_spacing    = 12;
 
@@ -57,8 +60,7 @@ namespace Pantheon.Keyboard.LayoutPage
 			// add buttons
 			var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
 			button_box.layout_style = Gtk.ButtonBoxStyle.END;
-			button_box.spacing      = 5;
-			button_box.margin       = 1;
+			button_box.spacing      = 6;
 
 			var button_add    = new Gtk.Button.with_label (_("Add Layout"));
 			var button_cancel = new Gtk.Button.with_label (_("Cancel"));
