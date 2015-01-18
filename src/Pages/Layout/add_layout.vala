@@ -7,7 +7,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
 		public AddLayout()
 		{
-            deletable = false;
+			deletable = false;
 
 			var grid = new Gtk.Grid();
 
