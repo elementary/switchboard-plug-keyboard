@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-11-28 08:49+0000\n"
-"Last-Translator: Zahirovic Mensur <Unknown>\n"
+"PO-Revision-Date: 2015-02-05 15:21+0000\n"
+"Last-Translator: Mikael Nyberg <mikanybe@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-21 06:40+0000\n"
-"X-Generator: Launchpad (build 17306)\n"
+"X-Launchpad-Export-Date: 2015-02-07 07:28+0000\n"
+"X-Generator: Launchpad (build 17331)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -238,13 +238,15 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:145
 #: ../src//Pages/Options/option_handler.vala:227
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Mindre/Större>"
 
 #: ../src//Pages/Options/option_handler.vala:146
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Caps Lock väljer tredje nivån, fungerar som engångslås när den trycks ned "
+"tillsammans med en annan tredjenivåväljare"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid ""
@@ -257,18 +259,20 @@ msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
+"<Mindre/Större> väljer tredje nivån, fungerar som engångslås när den trycks "
+"ned tillsammans med en annan tredjenivåväljare"
 
 #: ../src//Pages/Options/option_handler.vala:151
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Ctrl-tangentens position"
 
 #: ../src//Pages/Options/option_handler.vala:152
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Caps Lock som Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Vänster Ctrl som Meta"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
@@ -280,7 +284,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "At bottom left"
-msgstr ""
+msgstr "Längst ned till vänster"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Right Ctrl as Right Alt"
@@ -288,7 +292,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Meny som Höger Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Right Alt as Right Ctrl"
@@ -300,7 +304,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
@@ -312,13 +316,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Unicode-tillägg (pilar och matematikoperatorer)"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Unicode-tillägg (pilar och matematikoperatorer). Matematikoperatorer på "
+"standardnivå"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Legacy Wang 724"
@@ -364,7 +370,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Fjärdenivåstangent med komma"
 
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with momayyez"
@@ -372,11 +378,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:186
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Fjärdenivåstangent med abstrakta avgränsare"
 
 #: ../src//Pages/Options/option_handler.vala:187
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Semikolon på tredje nivå"
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
