@@ -8,196 +8,203 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2014-04-07 08:30+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2015-02-10 18:29+0000\n"
+"Last-Translator: Mantas Kriaučiūnas <mantas@akl.lt>\n"
 "Language-Team: Lithuanian <lt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-21 06:39+0000\n"
-"X-Generator: Launchpad (build 17306)\n"
+"X-Launchpad-Export-Date: 2015-02-11 06:23+0000\n"
+"X-Generator: Launchpad (build 17336)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
-msgstr ""
+msgstr "Klaviatūra"
 
 #: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr ""
+msgstr "Keisti klaviatūros nustatymus"
 
 #: ../src//keyboard.vala:21
 msgid "Shortcuts"
-msgstr ""
+msgstr "Susiejimai"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Elgsena"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
-msgstr ""
+msgstr "Išdėstymas"
 
 #: ../src//keyboard.vala:24
 msgid "Options"
-msgstr ""
+msgstr "Parinktys"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
-msgstr ""
+msgstr "Nėra"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key(s) to change layout"
-msgstr ""
+msgstr "Klavišai išdėstymui pakeisti"
 
 #: ../src//Pages/Options/option_handler.vala:95
 msgid "Right Alt (while pressed)"
-msgstr ""
+msgstr "Dešinysis Alt (kol nuspaustas)"
 
 #: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Alt (while pressed)"
-msgstr ""
+msgstr "Kairysis Alt (kol nuspaustas)"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Left Win (while pressed)"
-msgstr ""
+msgstr "Kairysis Win (kol nuspaustas)"
 
 #: ../src//Pages/Options/option_handler.vala:98
 msgid "Right Win (while pressed)"
-msgstr ""
+msgstr "Dešinysis Win (kol nuspaustas)"
 
 #: ../src//Pages/Options/option_handler.vala:99
 msgid "Any Win key (while pressed)"
-msgstr ""
+msgstr "Bet kuris Win klavišas (kol paspaustas)"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
 msgstr ""
+"Didž. (CapsLock) (kol nuspaustas); Alt+Didž atlieka pirminę Caps Lock "
+"klavišo funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Right Ctrl (while pressed)"
-msgstr ""
+msgstr "Dešinysis Vald (kol nuspaustas)"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:139
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Right Alt"
-msgstr ""
+msgstr "Dešinysis Alt"
 
 #: ../src//Pages/Options/option_handler.vala:103
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Left Alt"
-msgstr ""
+msgstr "Kairysis Alt"
 
 #: ../src//Pages/Options/option_handler.vala:104
 #: ../src//Pages/Options/option_handler.vala:143
 #: ../src//Pages/Options/option_handler.vala:164
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "Caps Lock"
-msgstr ""
+msgstr "Didžiosios (Caps Lock)"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Shift+Caps Lock"
-msgstr ""
+msgstr "Lyg2+Didžiosios"
 
 #: ../src//Pages/Options/option_handler.vala:106
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
 msgstr ""
+"Didžiosios (CapsLock) (į pirmąjį išdėstymą), Lyg2+Didž. (į paskutinį "
+"išdėstymą)"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
 msgstr ""
+"Kairysis Win (į pirmąjį išdėstymą), dešinysis Win/Meniu (į paskutinį "
+"išdėstymą)"
 
 #: ../src//Pages/Options/option_handler.vala:108
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
 msgstr ""
+"Kairysis Vald (į pirmąjį išdėstymą), dešinysis Vald (į paskutinį išdėstymą)"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid "Alt+Caps Lock"
-msgstr ""
+msgstr "Alt+Didžiosios (CapsLock)"
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Abu Lyg2 (Shift) mygtukai kartu"
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid "Both Alt keys together"
-msgstr ""
+msgstr "Abu Alt mygtukai kartu"
 
 #: ../src//Pages/Options/option_handler.vala:112
 msgid "Both Ctrl keys together"
-msgstr ""
+msgstr "Vienu metu nuspausti abu Vald klavišai"
 
 #: ../src//Pages/Options/option_handler.vala:113
 msgid "Ctrl+Shift"
-msgstr ""
+msgstr "Vald+Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Left Ctrl+Left Shift"
-msgstr ""
+msgstr "Kairysis Vald+kairysis Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Right Ctrl+Right Shift"
-msgstr ""
+msgstr "Dešinysis Vald+dešinysis Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Ctrl"
-msgstr ""
+msgstr "Alt+Vald"
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Alt+Shift"
-msgstr ""
+msgstr "Alt+Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "Left Alt+Left Shift"
-msgstr ""
+msgstr "Kairysis Alt+kairysis Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "Alt+Space"
-msgstr ""
+msgstr "Alt+Tarpas"
 
 #: ../src//Pages/Options/option_handler.vala:120
 #: ../src//Pages/Options/option_handler.vala:133
 #: ../src//Pages/Options/option_handler.vala:223
 msgid "Menu"
-msgstr ""
+msgstr "Meniu"
 
 #: ../src//Pages/Options/option_handler.vala:121
 #: ../src//Pages/Options/option_handler.vala:135
 #: ../src//Pages/Options/option_handler.vala:221
 msgid "Left Win"
-msgstr ""
+msgstr "Kairysis Win"
 
 #: ../src//Pages/Options/option_handler.vala:122
 #: ../src//Pages/Options/option_handler.vala:136
 #: ../src//Pages/Options/option_handler.vala:222
 msgid "Right Win"
-msgstr ""
+msgstr "Dešinysis Win"
 
 #: ../src//Pages/Options/option_handler.vala:123
 msgid "Left Shift"
-msgstr ""
+msgstr "Kairysis Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:124
 msgid "Right Shift"
-msgstr ""
+msgstr "Dešinysis Lyg2"
 
 #: ../src//Pages/Options/option_handler.vala:125
 #: ../src//Pages/Options/option_handler.vala:224
 msgid "Left Ctrl"
-msgstr ""
+msgstr "Kairysis Vald"
 
 #: ../src//Pages/Options/option_handler.vala:126
 #: ../src//Pages/Options/option_handler.vala:132
 #: ../src//Pages/Options/option_handler.vala:225
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Dešinysis Vald"
 
 #: ../src//Pages/Options/option_handler.vala:127
 #: ../src//Pages/Options/option_handler.vala:165
 #: ../src//Pages/Options/option_handler.vala:230
 msgid "Scroll Lock"
-msgstr ""
+msgstr "Slinkties užrakinimas (Scroll Lock)"
 
 #: ../src//Pages/Options/option_handler.vala:128
 msgid ""
@@ -206,31 +213,32 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Key to choose 3rd level"
-msgstr ""
+msgstr "Klavišai trečiajam lygiui pasirinkti"
 
 #: ../src//Pages/Options/option_handler.vala:134
 msgid "Any Win key"
-msgstr ""
+msgstr "Bet kuris Win klavišas"
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid "Any Alt key"
-msgstr ""
+msgstr "Bet kuris Alt klavišas"
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
 msgstr ""
+"Dešinysis Alt, Lyg2+dešinysis Alt atlieka Multi_Key (Compose) funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:141
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "Dešinysis Alt niekada nejungia trečiojo lygio"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Įvesties (Enter) klavišas skaitmenų srityje"
 
 #: ../src//Pages/Options/option_handler.vala:144
 msgid "Backslash"
-msgstr ""
+msgstr "Kairinis brūkšnys"
 
 #: ../src//Pages/Options/option_handler.vala:145
 #: ../src//Pages/Options/option_handler.vala:227
@@ -257,19 +265,19 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:151
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Vald (Ctrl) klavišo padėtis"
 
 #: ../src//Pages/Options/option_handler.vala:152
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Didž. klavišui priskirti Vald funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Kairiajam Vald klavišui priskirti Meta funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Sukeisti Vald ir Didž klavišus"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At left of 'A'"
@@ -277,31 +285,31 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "At bottom left"
-msgstr ""
+msgstr "Apačioje kairėje"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Dešiniajam Vald klavišui priskirti dešiniojo Alt funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Meniu klavišas veikia kaip dešinysis Vald"
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Dešinysis Alt veikia kaip dešinysis Vald"
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Klaviatūros lemputėm indikuoti nepagrindinius išdėstymus"
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Num Lock"
-msgstr ""
+msgstr "Skaičių klaviatūra (NumLock)"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Skaitmenų srities išdėstymo parinkimas"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Legacy"
@@ -309,13 +317,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Unikodiniai priedai (rodyklės ir matematiniai operatoriai)"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Unikodiniai priedai (rodyklės ir matematiniai operatoriai). Matematiniai "
+"operatoriai numatytame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Legacy Wang 724"
@@ -333,7 +343,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Šešioliktainė"
 
 #: ../src//Pages/Options/option_handler.vala:176
 msgid "ATM/phone-style"
@@ -341,7 +351,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Skaitmenų srities Šalinimo (del) klavišo veiksena"
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with dot"
@@ -373,32 +383,38 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:187
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Kabliataškis trečiajame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Didžiųjų raidžių klavišo veiksena"
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Didž įjungia įtaisytąjį raidžių vertimą didžiosiomis. Lyg2 pristabdo Didž "
+"klavišo veikimą"
 
 #: ../src//Pages/Options/option_handler.vala:192
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Didž įjungia įtaisytąjį raidžių vertimą didžiosiomis. Lyg2 neįtakoja Didž "
+"klavišo veikimo"
 
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Didž klavišas veikia kaip užfiksuotas Lyg2; Lyg2 pristabdo Didž veikimą"
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
+"Didž klavišas veikia kaip užfiksuotas Lyg2; Lyg2 neįtakoja Didž veikimo"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Didž klavišas įjungia įprastą raidžių vertimą didžiosiomis"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Make Caps Lock an additional Num Lock"
@@ -406,11 +422,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "Sukeisti Esc ir Didž (CapsLock) klavišus"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Didž klavišą paversti papildomu Esc klavišu"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Backspace"
@@ -418,19 +434,20 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Didž klavišą paversti papildomu Super klavišu"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Didž klavišą paversti papildomu Hyper klavišu"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Caps Lock toggles Shift so all keys are affected"
 msgstr ""
+"Didž klavišas veikia kaip nuolat nuspaustas Lyg2 (įtakoja visus klavišus)"
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Caps Lock is disabled"
-msgstr ""
+msgstr "Didž. (CapsLock) klavišas išjungtas"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
@@ -438,11 +455,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Alt ir Win klavišų elgsena"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Meniu klavišui priskirti standartinę veikseną"
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Alt and Meta are on Alt keys"
@@ -455,26 +472,29 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr ""
+"Vald funkciją priskirti Alt klavišams, o Alt funkciją – Win klavišams"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Win klavišams priskirti Meta funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Kairiajam Win klavišui priskirti Meta funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Win klavišams priskirti Hyper funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is mapped to Right Win, Super to Menu"
 msgstr ""
+"Dešiniajam Win klavišui priskirti Alt funkciją, o Meniu klavišui – Super "
+"funkciją"
 
 #: ../src//Pages/Options/option_handler.vala:216
 msgid "Left Alt is swapped with Left Win"
-msgstr ""
+msgstr "Kairysis Alt sukeistas su kairiuoju Win"
 
 #: ../src//Pages/Options/option_handler.vala:219
 msgid "Compose key position"
@@ -491,7 +511,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Įvairios suderinamumo parinktys"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid "Default numeric keypad keys"
@@ -521,7 +541,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Lyg2 nutraukia Didž (CapsLock) veikimą"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Enable extra typographic characters"
@@ -530,15 +550,19 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:242
 msgid "Both Shift-Keys together toggle Caps Lock"
 msgstr ""
+"Vienu metu nuspausti abu Lyg2 klavišai įjungia / išjungia didžiąsias raides"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Vienu metu nuspausti abu Lyg2 klavišai įjungia didžiąsias raides, nuspaustas "
+"vienas Lyg2 jas išjungia"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Both Shift-Keys together toggle ShiftLock"
 msgstr ""
+"Vienu metu nuspausti abu Lyg2 klavišai įjungia / išjungia antrąjį lygį"
 
 #: ../src//Pages/Options/option_handler.vala:245
 msgid "Toggle PointerKeys with Shift + NumLock"
@@ -550,31 +574,31 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Valiutų simbolių įvedimas pasirinktais klavišais"
 
 #: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on E"
-msgstr ""
+msgstr "Euro ženklas klavišo E trečiajame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:251
 msgid "Euro on 2"
-msgstr ""
+msgstr "Euro ženklas klavišo 2 trečiajame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:252
 msgid "Euro on 4"
-msgstr ""
+msgstr "Euro ženklas klavišo 4 trečiajame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "Euro on 5"
-msgstr ""
+msgstr "Euro ženklas klavišo 5 trečiajame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:254
 msgid "Rupee on 4"
-msgstr ""
+msgstr "Rupijos ženklas klavišo 4 trečiajame lygyje"
 
 #: ../src//Pages/Options/option_handler.vala:257
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "Klavišai penktajam lygiui pasirinkti"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid ""
@@ -690,7 +714,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:283
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Japonų hieroglifų klaviatūros nustatymai"
 
 #: ../src//Pages/Options/option_handler.vala:284
 msgid "Kana Lock key is locking"
@@ -718,11 +742,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Klavišų kombinacija X serverio (grafinės aplinkos) darbui nutraukti"
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Vald + Alt + Trynimas iš kairės (Backspace)"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -730,16 +754,16 @@ msgstr ""
 
 #: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Delsa:"
 
 #: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "Intervalas:"
 
 #: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
 #: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "milisek."
 
 #: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
@@ -747,28 +771,28 @@ msgstr ""
 
 #: ../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "Sparta:"
 
 #: ../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr ""
+msgstr "Trukmė:"
 
 #: ../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "sek."
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Rašykite, kad išbandytumėte nustatymus…"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 #: ../src//Pages/Shortcuts/tree.vala:172
 msgid "Disabled"
-msgstr ""
+msgstr "Išjungta"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Vald(Ctrl)"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
@@ -777,38 +801,38 @@ msgstr ""
 #: ../src//Pages/Shortcuts/tree.vala:147
 #: ../src//Pages/Layout/add_layout.vala:64
 msgid "Cancel"
-msgstr ""
+msgstr "Atsisakyti"
 
 #: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Priskirti iš naujo"
 
 #: ../src//Pages/Shortcuts/display.vala:38
 #: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "Pridėti"
 
 #: ../src//Pages/Shortcuts/display.vala:39
 #: ../src//Pages/Shortcuts/display.vala:42
 #: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
 msgid "Remove"
-msgstr ""
+msgstr "Pašalinti"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
-msgstr ""
+msgstr "Užverti"
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "Nuleisti"
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
-msgstr ""
+msgstr "Išdidinti"
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "Atkurti dydį"
 
 #: ../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
@@ -816,11 +840,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
-msgstr ""
+msgstr "Sumažinti"
 
 #: ../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Perjungti viso ekrano veikseną"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
@@ -840,7 +864,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Perjungti „Visada viršuje“"
 
 #: ../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
@@ -856,7 +880,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Show All Windows"
-msgstr ""
+msgstr "Rodyti visus langus"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -872,39 +896,39 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Perjungti į 1-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:119
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Perjungti į 2-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:120
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Perjungti į 3-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:121
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Perjungti į 4-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:122
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Perjungti į 5-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:123
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Perjungti į 6-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:124
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Perjungti į 7-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:125
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Perjungti į 8-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Perjungti į 9-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
@@ -916,39 +940,39 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Perkeltį į 1-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Perkeltį į 2-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Perkeltį į 3-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Perkeltį į 4-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Perkeltį į 5-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Perkeltį į 6-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Perkeltį į 7-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Perkeltį į 8-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Perkeltį į 9-ą darbalaukį"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
@@ -960,7 +984,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Padaryti ekrano nuotrauką"
 
 #: ../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
@@ -968,7 +992,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Padaryti aktyvaus lango nuotrauką"
 
 #: ../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
@@ -976,7 +1000,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Padaryti ekrano dalies nuotrauką"
 
 #: ../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
@@ -984,31 +1008,31 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "Skaičiuotuvas"
 
 #: ../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "El. paštas"
 
 #: ../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "Pagalba"
 
 #: ../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "Asmeninis aplankas"
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Failų paieška"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "Komandų terminalas"
 
 #: ../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "Interneto naršyklė"
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
@@ -1016,15 +1040,15 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Pagarsinti"
 
 #: ../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Patylinti"
 
 #: ../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "Nutildyti"
 
 #: ../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
@@ -1032,31 +1056,31 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "Groti"
 
 #: ../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "Stabdyti"
 
 #: ../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "Ankstesnis kūrinys"
 
 #: ../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "Kitas kūrinys"
 
 #: ../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Išimti"
 
 #: ../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Sumažinti teksto dydį"
 
 #: ../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Padidinti teksto dydį"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
@@ -1088,27 +1112,27 @@ msgstr ""
 
 #: ../src//Pages/Layout/add_layout.vala:20
 msgid "Language:"
-msgstr ""
+msgstr "Kalba:"
 
 #: ../src//Pages/Layout/add_layout.vala:21
 msgid "Layout:"
-msgstr ""
+msgstr "Išdėstymas:"
 
 #: ../src//Pages/Layout/add_layout.vala:63
 msgid "Add Layout"
-msgstr ""
+msgstr "Pridėti klaviatūros išdėstymą"
 
 #: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr ""
+msgstr "Pridėti…"
 
 #: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr ""
+msgstr "Pakelti aukštyn"
 
 #: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr ""
+msgstr "Nuleisti žemyn"
 
 #: ../src//Pages/layout.vala:24
 msgid "Allow different layouts for individual windows:"
@@ -1120,19 +1144,19 @@ msgstr ""
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
-msgstr ""
+msgstr "Langai"
 
 #: ../src//Pages/shortcuts.vala:33
 msgid "Workspaces"
-msgstr ""
+msgstr "Darbalaukiai"
 
 #: ../src//Pages/shortcuts.vala:34
 msgid "Screenshots"
-msgstr ""
+msgstr "Ekrano nuotraukos"
 
 #: ../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "Programos"
 
 #: ../src//Pages/shortcuts.vala:36
 msgid "Media"
@@ -1140,4 +1164,4 @@ msgstr ""
 
 #: ../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "Universalioji prieiga"
