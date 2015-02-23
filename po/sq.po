@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2014-10-04 23:21-0500\n"
-"PO-Revision-Date: 2015-02-21 15:54+0000\n"
+"PO-Revision-Date: 2015-02-22 09:50+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-02-22 05:32+0000\n"
+"X-Launchpad-Export-Date: 2015-02-23 05:32+0000\n"
 "X-Generator: Launchpad (build 17355)\n"
 
 #: ../src//keyboard.vala:7
@@ -23,7 +23,7 @@ msgstr "Tastiera"
 
 #: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr ""
+msgstr "Konfiguro tastierën tënde"
 
 #: ../src//keyboard.vala:21
 msgid "Shortcuts"
