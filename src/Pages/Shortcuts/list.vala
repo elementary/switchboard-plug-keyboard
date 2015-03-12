@@ -318,7 +318,9 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Magnifier Zoom out"),
 						_("Toggle On Screen Keyboard"),
 						_("Toggle Screenreader"),
-						_("Toggle High Contrast")
+						_("Toggle High Contrast"),
+						_("Next Keyboard Layout"),
+						_("Previous Keyboard Layout")
 					},
 
 					schemas = {
@@ -329,7 +331,9 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.MEDIA
+						Schema.MEDIA,
+						Schema.GALA,
+						Schema.GALA
 					},
 		
 					keys = {
@@ -340,7 +344,9 @@ namespace Pantheon.Keyboard.Shortcuts
 						"magnifier-zoom-out",
 						"on-screen-keyboard",
 						"screenreader",
-						"toggle-contrast"
+						"toggle-contrast",
+						"cycle-keyboard-layout-next",
+						"cycle-keyboard-layout-prev"
 					}
 				}
 			};
