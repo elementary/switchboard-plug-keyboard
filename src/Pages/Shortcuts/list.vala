@@ -345,8 +345,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						"on-screen-keyboard",
 						"screenreader",
 						"toggle-contrast",
-						"cycle-keyboard-layout-next",
-						"cycle-keyboard-layout-prev"
+						"switch-input-source",
+						"switch-input-source-backward"
 					}
 				}
 			};
