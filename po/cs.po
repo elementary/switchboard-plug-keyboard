@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2014-10-04 23:21-0500\n"
+"POT-Creation-Date: 2015-03-16 16:13-0500\n"
 "PO-Revision-Date: 2014-12-30 16:18+0000\n"
 "Last-Translator: Marek Doležel <marekdolezel@gmail.com>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-01-21 06:39+0000\n"
-"X-Generator: Launchpad (build 17306)\n"
+"X-Launchpad-Export-Date: 2015-03-17 05:39+0000\n"
+"X-Generator: Launchpad (build 17389)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -41,211 +41,258 @@ msgstr "Rozložení"
 msgid "Options"
 msgstr "Možnosti"
 
+#: ../src//Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr "Povolit různé rozložení pro jednotlivá okna:"
+
+#: ../src//Pages/layout.vala:54
+msgid "Type to test your layout…"
+msgstr "Pro vyzkoušení rozložení klávesnice pište zde..."
+
+#: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr "Přidat…"
+
+#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
+#: ../src//Pages/Shortcuts/display.vala:39
+#: ../src//Pages/Shortcuts/display.vala:42
+msgid "Remove"
+msgstr "Odebrat"
+
+#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "Posunout nahoru"
+
+#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "Posunout dolů"
+
+#: ../src//Pages/Layout/add_layout.vala:23
+msgid "Language:"
+msgstr "Jazyk:"
+
+#: ../src//Pages/Layout/add_layout.vala:24
+msgid "Layout:"
+msgstr "Rozložení:"
+
+#: ../src//Pages/Layout/add_layout.vala:65
+msgid "Add Layout"
+msgstr "Přidat rozložení"
+
+#: ../src//Pages/Layout/add_layout.vala:66
+#: ../src//Pages/Shortcuts/tree.vala:147
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: ../src//Pages/Layout/handler.vala:75
+msgid "Default"
+msgstr "Výchozí"
+
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
 msgstr "Žádné"
 
-#: ../src//Pages/Options/option_handler.vala:94
+#: ../src//Pages/Options/option_handler.vala:93
 msgid "Key(s) to change layout"
 msgstr "Klávesy měnící rozložení"
 
-#: ../src//Pages/Options/option_handler.vala:95
+#: ../src//Pages/Options/option_handler.vala:94
 msgid "Right Alt (while pressed)"
 msgstr "Pravý Alt (při stisknutí)"
 
-#: ../src//Pages/Options/option_handler.vala:96
+#: ../src//Pages/Options/option_handler.vala:95
 msgid "Left Alt (while pressed)"
 msgstr "Levý Alt (při stisknutí)"
 
-#: ../src//Pages/Options/option_handler.vala:97
+#: ../src//Pages/Options/option_handler.vala:96
 msgid "Left Win (while pressed)"
 msgstr "Levá klávesa Win (při stisknutí)"
 
-#: ../src//Pages/Options/option_handler.vala:98
+#: ../src//Pages/Options/option_handler.vala:97
 msgid "Right Win (while pressed)"
 msgstr "Pravá klávesa Win (při stisknutí)"
 
-#: ../src//Pages/Options/option_handler.vala:99
+#: ../src//Pages/Options/option_handler.vala:98
 msgid "Any Win key (while pressed)"
 msgstr "Libovolná klávesa Win (při stisknutí)"
 
-#: ../src//Pages/Options/option_handler.vala:100
+#: ../src//Pages/Options/option_handler.vala:99
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
 msgstr ""
 "Caps Lock (při stisknutí), Alt+Caps Lock provádí původní akci Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:101
+#: ../src//Pages/Options/option_handler.vala:100
 msgid "Right Ctrl (while pressed)"
 msgstr "Pravá klávesa Ctrl (při stisknutí)"
 
-#: ../src//Pages/Options/option_handler.vala:102
-#: ../src//Pages/Options/option_handler.vala:139
-#: ../src//Pages/Options/option_handler.vala:220
+#: ../src//Pages/Options/option_handler.vala:101
+#: ../src//Pages/Options/option_handler.vala:138
+#: ../src//Pages/Options/option_handler.vala:219
 msgid "Right Alt"
 msgstr "Pravá klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:103
-#: ../src//Pages/Options/option_handler.vala:138
+#: ../src//Pages/Options/option_handler.vala:102
+#: ../src//Pages/Options/option_handler.vala:137
 msgid "Left Alt"
 msgstr "Levá klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:104
-#: ../src//Pages/Options/option_handler.vala:143
-#: ../src//Pages/Options/option_handler.vala:164
-#: ../src//Pages/Options/option_handler.vala:226
+#: ../src//Pages/Options/option_handler.vala:103
+#: ../src//Pages/Options/option_handler.vala:142
+#: ../src//Pages/Options/option_handler.vala:163
+#: ../src//Pages/Options/option_handler.vala:225
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:105
+#: ../src//Pages/Options/option_handler.vala:104
 msgid "Shift+Caps Lock"
 msgstr "Shift+Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:106
+#: ../src//Pages/Options/option_handler.vala:105
 msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
 msgstr ""
 "Caps Lock (na první rozložení), Shift+Caps Lock (na poslední rozložení)"
 
-#: ../src//Pages/Options/option_handler.vala:107
+#: ../src//Pages/Options/option_handler.vala:106
 msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
 msgstr ""
 "Levá klávesa Win (na první rozložení), pravá klávesa Win/Menu (na poslední "
 "rozložení)"
 
-#: ../src//Pages/Options/option_handler.vala:108
+#: ../src//Pages/Options/option_handler.vala:107
 msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
 msgstr ""
 "Levá klávesa Ctrl (na první rozložení), pravá klávesa Ctrl (na poslední "
 "rozložení)"
 
-#: ../src//Pages/Options/option_handler.vala:109
+#: ../src//Pages/Options/option_handler.vala:108
 msgid "Alt+Caps Lock"
 msgstr "Alt+Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:110
+#: ../src//Pages/Options/option_handler.vala:109
 msgid "Both Shift keys together"
 msgstr "Obě klávesy Shift současně"
 
-#: ../src//Pages/Options/option_handler.vala:111
+#: ../src//Pages/Options/option_handler.vala:110
 msgid "Both Alt keys together"
 msgstr "Obě klávesy Alt současně"
 
-#: ../src//Pages/Options/option_handler.vala:112
+#: ../src//Pages/Options/option_handler.vala:111
 msgid "Both Ctrl keys together"
 msgstr "Obě klávesy Ctrl současně"
 
-#: ../src//Pages/Options/option_handler.vala:113
+#: ../src//Pages/Options/option_handler.vala:112
 msgid "Ctrl+Shift"
 msgstr "Ctrl+Shift"
 
-#: ../src//Pages/Options/option_handler.vala:114
+#: ../src//Pages/Options/option_handler.vala:113
 msgid "Left Ctrl+Left Shift"
 msgstr "Levá klávesa Ctrl + levá klávesa Shift"
 
-#: ../src//Pages/Options/option_handler.vala:115
+#: ../src//Pages/Options/option_handler.vala:114
 msgid "Right Ctrl+Right Shift"
 msgstr "Pravá klávesa Ctrl + pravá klávesa Shift"
 
-#: ../src//Pages/Options/option_handler.vala:116
+#: ../src//Pages/Options/option_handler.vala:115
 msgid "Alt+Ctrl"
 msgstr "Alt+Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:117
+#: ../src//Pages/Options/option_handler.vala:116
 msgid "Alt+Shift"
 msgstr "Alt+Shift"
 
-#: ../src//Pages/Options/option_handler.vala:118
+#: ../src//Pages/Options/option_handler.vala:117
 msgid "Left Alt+Left Shift"
 msgstr "Levý Alt + levý Shift"
 
-#: ../src//Pages/Options/option_handler.vala:119
+#: ../src//Pages/Options/option_handler.vala:118
 msgid "Alt+Space"
 msgstr "Alt+Mezerník"
 
-#: ../src//Pages/Options/option_handler.vala:120
-#: ../src//Pages/Options/option_handler.vala:133
-#: ../src//Pages/Options/option_handler.vala:223
+#: ../src//Pages/Options/option_handler.vala:119
+#: ../src//Pages/Options/option_handler.vala:132
+#: ../src//Pages/Options/option_handler.vala:222
 msgid "Menu"
 msgstr "Menu"
+
+#: ../src//Pages/Options/option_handler.vala:120
+#: ../src//Pages/Options/option_handler.vala:134
+#: ../src//Pages/Options/option_handler.vala:220
+msgid "Left Win"
+msgstr "Levá klávesa Win"
 
 #: ../src//Pages/Options/option_handler.vala:121
 #: ../src//Pages/Options/option_handler.vala:135
 #: ../src//Pages/Options/option_handler.vala:221
-msgid "Left Win"
-msgstr "Levá klávesa Win"
-
-#: ../src//Pages/Options/option_handler.vala:122
-#: ../src//Pages/Options/option_handler.vala:136
-#: ../src//Pages/Options/option_handler.vala:222
 msgid "Right Win"
 msgstr "Pravá klávesa Win"
 
-#: ../src//Pages/Options/option_handler.vala:123
+#: ../src//Pages/Options/option_handler.vala:122
 msgid "Left Shift"
 msgstr "Levá klávesa Shift"
 
-#: ../src//Pages/Options/option_handler.vala:124
+#: ../src//Pages/Options/option_handler.vala:123
 msgid "Right Shift"
 msgstr "Pravá klávesa Shift"
 
-#: ../src//Pages/Options/option_handler.vala:125
-#: ../src//Pages/Options/option_handler.vala:224
+#: ../src//Pages/Options/option_handler.vala:124
+#: ../src//Pages/Options/option_handler.vala:223
 msgid "Left Ctrl"
 msgstr "Levá klávesa Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:126
-#: ../src//Pages/Options/option_handler.vala:132
-#: ../src//Pages/Options/option_handler.vala:225
+#: ../src//Pages/Options/option_handler.vala:125
+#: ../src//Pages/Options/option_handler.vala:131
+#: ../src//Pages/Options/option_handler.vala:224
 msgid "Right Ctrl"
 msgstr "Pravá klávesa Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:127
-#: ../src//Pages/Options/option_handler.vala:165
-#: ../src//Pages/Options/option_handler.vala:230
+#: ../src//Pages/Options/option_handler.vala:126
+#: ../src//Pages/Options/option_handler.vala:164
+#: ../src//Pages/Options/option_handler.vala:229
 msgid "Scroll Lock"
 msgstr "Scroll Lock"
 
-#: ../src//Pages/Options/option_handler.vala:128
+#: ../src//Pages/Options/option_handler.vala:127
 msgid ""
 "Left Ctrl+Left Win (to first layout), Right Ctrl+Menu (to second layout)"
 msgstr ""
 "Levá klávesa Ctrl+Levá klávesa Win (pro první rozložení), Pravá klávesa "
 "Ctrl+Nabídka (pro druhé rozložení)"
 
-#: ../src//Pages/Options/option_handler.vala:131
+#: ../src//Pages/Options/option_handler.vala:130
 msgid "Key to choose 3rd level"
 msgstr "Klávesa umožňující výběr 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:134
+#: ../src//Pages/Options/option_handler.vala:133
 msgid "Any Win key"
 msgstr "Libovolná klávesa Win"
 
-#: ../src//Pages/Options/option_handler.vala:137
+#: ../src//Pages/Options/option_handler.vala:136
 msgid "Any Alt key"
 msgstr "Libovolná klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:140
+#: ../src//Pages/Options/option_handler.vala:139
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
 msgstr "Pravá klávesa Alt, Shift a pravá klávesa Alt je Multi_Key"
 
-#: ../src//Pages/Options/option_handler.vala:141
+#: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt key never chooses 3rd level"
 msgstr "Pravá klávesa Alt nikdy neumožní výběr 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:142
+#: ../src//Pages/Options/option_handler.vala:141
 msgid "Enter on keypad"
 msgstr "Enter na numerické klávesnici"
 
-#: ../src//Pages/Options/option_handler.vala:144
+#: ../src//Pages/Options/option_handler.vala:143
 msgid "Backslash"
 msgstr "Zpětné lomítko"
 
-#: ../src//Pages/Options/option_handler.vala:145
-#: ../src//Pages/Options/option_handler.vala:227
+#: ../src//Pages/Options/option_handler.vala:144
+#: ../src//Pages/Options/option_handler.vala:226
 msgid "<Less/Greater>"
 msgstr "<Méně/Více>"
 
-#: ../src//Pages/Options/option_handler.vala:146
+#: ../src//Pages/Options/option_handler.vala:145
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
@@ -253,7 +300,7 @@ msgstr ""
 "Caps Lock vybírá 3. úroveň, jednorázově uzamyká při stisknutí společně s "
 "jinou výběrovou klávesou 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:147
+#: ../src//Pages/Options/option_handler.vala:146
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
@@ -261,69 +308,69 @@ msgstr ""
 "Zpětné lomítko vybírá 3. úroveň, jednorázově uzamyká při stisknutí společně "
 "s jinou výběrovou klávesou 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:148
+#: ../src//Pages/Options/option_handler.vala:147
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:151
+#: ../src//Pages/Options/option_handler.vala:150
 msgid "Ctrl key position"
 msgstr "Umístění klávesy Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:152
+#: ../src//Pages/Options/option_handler.vala:151
 msgid "Caps Lock as Ctrl"
 msgstr "Caps Lock jako Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:153
+#: ../src//Pages/Options/option_handler.vala:152
 msgid "Left Ctrl as Meta"
 msgstr "Levý Ctrl jako Meta"
 
-#: ../src//Pages/Options/option_handler.vala:154
+#: ../src//Pages/Options/option_handler.vala:153
 msgid "Swap Ctrl and Caps Lock"
 msgstr "Zaměnit Ctrl a Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:155
+#: ../src//Pages/Options/option_handler.vala:154
 msgid "At left of 'A'"
 msgstr "Nalevo od „A“"
 
-#: ../src//Pages/Options/option_handler.vala:156
+#: ../src//Pages/Options/option_handler.vala:155
 msgid "At bottom left"
 msgstr "Vlevo dole"
 
-#: ../src//Pages/Options/option_handler.vala:157
+#: ../src//Pages/Options/option_handler.vala:156
 msgid "Right Ctrl as Right Alt"
 msgstr "Pravá klávesa Ctrl funguje jako pravá klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:158
+#: ../src//Pages/Options/option_handler.vala:157
 msgid "Menu as Right Ctrl"
 msgstr "Menu jako pravý Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:159
+#: ../src//Pages/Options/option_handler.vala:158
 msgid "Right Alt as Right Ctrl"
 msgstr "Pravý Alt jako pravý Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:162
+#: ../src//Pages/Options/option_handler.vala:161
 msgid "Use keyboard LED to show alternative layout"
 msgstr "Použít LED klávesnice k zobrazení alternativního rozložení"
 
-#: ../src//Pages/Options/option_handler.vala:163
+#: ../src//Pages/Options/option_handler.vala:162
 msgid "Num Lock"
 msgstr "Num Lock"
 
-#: ../src//Pages/Options/option_handler.vala:168
+#: ../src//Pages/Options/option_handler.vala:167
 msgid "Numeric keypad layout selection"
 msgstr "Výběr rozložení numerické klávesnice"
 
-#: ../src//Pages/Options/option_handler.vala:169
+#: ../src//Pages/Options/option_handler.vala:168
 msgid "Legacy"
 msgstr "Zděděné"
 
-#: ../src//Pages/Options/option_handler.vala:170
+#: ../src//Pages/Options/option_handler.vala:169
 msgid "Unicode additions (arrows and math operators)"
 msgstr "Doplňky Unicode (šipky a matematické operátory)"
 
-#: ../src//Pages/Options/option_handler.vala:171
+#: ../src//Pages/Options/option_handler.vala:170
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
@@ -331,208 +378,208 @@ msgstr ""
 "Doplňky Unicode (šipky a matematické operátory). Matematické operátory na "
 "výchozí úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:172
+#: ../src//Pages/Options/option_handler.vala:171
 msgid "Legacy Wang 724"
 msgstr "Zděděná Wang 724"
 
-#: ../src//Pages/Options/option_handler.vala:173
+#: ../src//Pages/Options/option_handler.vala:172
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
 "Numerická klávesnice Wang 724 s doplňky Unicode (šipky a matematické "
 "operátory)"
 
-#: ../src//Pages/Options/option_handler.vala:174
+#: ../src//Pages/Options/option_handler.vala:173
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:175
+#: ../src//Pages/Options/option_handler.vala:174
 msgid "Hexadecimal"
 msgstr "Hexadecimální"
 
-#: ../src//Pages/Options/option_handler.vala:176
+#: ../src//Pages/Options/option_handler.vala:175
 msgid "ATM/phone-style"
 msgstr "ATM/telefonní typ"
 
-#: ../src//Pages/Options/option_handler.vala:179
+#: ../src//Pages/Options/option_handler.vala:178
 msgid "Numeric keypad delete key behaviour"
 msgstr "Chování klávesy Delete na numerické klávesnici"
 
-#: ../src//Pages/Options/option_handler.vala:180
+#: ../src//Pages/Options/option_handler.vala:179
 msgid "Legacy key with dot"
 msgstr "Zděděná klávesa s tečkou"
 
-#: ../src//Pages/Options/option_handler.vala:181
+#: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with comma"
 msgstr "Zděděná klávesa s čárkou"
 
-#: ../src//Pages/Options/option_handler.vala:182
+#: ../src//Pages/Options/option_handler.vala:181
 msgid "Four-level key with dot"
 msgstr "Klávesa čtvrté úrovně s tečkou"
 
-#: ../src//Pages/Options/option_handler.vala:183
+#: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot, latin-9 restriction"
 msgstr "Klávesa čtvrté úrovně s tečkou, omezení Latin-9"
 
-#: ../src//Pages/Options/option_handler.vala:184
+#: ../src//Pages/Options/option_handler.vala:183
 msgid "Four-level key with comma"
 msgstr "Klávesa čtvrté úrovně s čárkou"
 
-#: ../src//Pages/Options/option_handler.vala:185
+#: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with momayyez"
 msgstr "Klávesa čtvrté úrovně se znakem momajjez"
 
-#: ../src//Pages/Options/option_handler.vala:186
+#: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with abstract separators"
 msgstr "Klávesa čtvrté úrovně s abstraktními oddělovači"
 
-#: ../src//Pages/Options/option_handler.vala:187
+#: ../src//Pages/Options/option_handler.vala:186
 msgid "Semi-colon on third level"
 msgstr "Středník na třetí úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:190
+#: ../src//Pages/Options/option_handler.vala:189
 msgid "Caps Lock key behavior"
 msgstr "Chování klávesy Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:191
+#: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
 "Caps Lock používá vnitřní převod na verzálky. Shift přerušuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:192
+#: ../src//Pages/Options/option_handler.vala:191
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock používá vnitřní převod na verzálky. Shift neovlivňuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:193
+#: ../src//Pages/Options/option_handler.vala:192
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr "Caps Lock funguje jako Shift s uzamčením. Shift přerušuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:194
+#: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock funguje jako Shift s uzamčením. Shift neovlivňuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:195
+#: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
 msgstr "Caps Lock přepne běžný převod abecedních znaků na verzálky"
 
-#: ../src//Pages/Options/option_handler.vala:196
+#: ../src//Pages/Options/option_handler.vala:195
 msgid "Make Caps Lock an additional Num Lock"
 msgstr "Vytvořit z klávesy Caps Lock další Num Lock"
 
-#: ../src//Pages/Options/option_handler.vala:197
+#: ../src//Pages/Options/option_handler.vala:196
 msgid "Swap ESC and Caps Lock"
 msgstr "Zaměnit Esc a Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:198
+#: ../src//Pages/Options/option_handler.vala:197
 msgid "Make Caps Lock an additional ESC"
 msgstr "Vytvořit z klávesy Caps Lock další Esc"
 
-#: ../src//Pages/Options/option_handler.vala:199
+#: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional Backspace"
 msgstr "Vytvořit z klávesy Caps Lock další Backspace"
 
-#: ../src//Pages/Options/option_handler.vala:200
+#: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Super"
 msgstr "Vytvořit z klávesy Caps Lock další Super"
 
-#: ../src//Pages/Options/option_handler.vala:201
+#: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Hyper"
 msgstr "Vytvořit z klávesy Caps Lock další Hyper"
 
-#: ../src//Pages/Options/option_handler.vala:202
+#: ../src//Pages/Options/option_handler.vala:201
 msgid "Caps Lock toggles Shift so all keys are affected"
 msgstr "Caps Lock přepne Shift, takže budou dotčeny všechny klávesy"
 
-#: ../src//Pages/Options/option_handler.vala:203
-msgid "Caps Lock is disabled"
-msgstr "Klávesa Caps Lock je vypnuta"
-
-#: ../src//Pages/Options/option_handler.vala:204
+#: ../src//Pages/Options/option_handler.vala:202
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr "Nastavit Caps Lock jako další Control ale zachovat Caps_Lock keysym"
 
-#: ../src//Pages/Options/option_handler.vala:207
+#: ../src//Pages/Options/option_handler.vala:205
 msgid "Alt/Win key behavior"
 msgstr "Chování klávesy Alt/Win"
 
-#: ../src//Pages/Options/option_handler.vala:208
+#: ../src//Pages/Options/option_handler.vala:206
 msgid "Add the standard behavior to Menu key"
 msgstr "Přidá standardní chování ke klávese Menu"
 
-#: ../src//Pages/Options/option_handler.vala:209
+#: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt and Meta are on Alt keys"
 msgstr "Alt a Meta na klávesách Alt"
 
-#: ../src//Pages/Options/option_handler.vala:210
+#: ../src//Pages/Options/option_handler.vala:208
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
 msgstr "Ctrl je přiřazena ke klávesám Win (a obvyklým klávesám Ctrl)"
 
-#: ../src//Pages/Options/option_handler.vala:211
+#: ../src//Pages/Options/option_handler.vala:209
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr "Ctrl je přiřazena ke klávesám Alt, Alt je přiřazena ke klávesám Win"
 
-#: ../src//Pages/Options/option_handler.vala:212
+#: ../src//Pages/Options/option_handler.vala:210
 msgid "Meta is mapped to Win keys"
 msgstr "Meta je přiřazena ke klávesám Win"
 
-#: ../src//Pages/Options/option_handler.vala:213
+#: ../src//Pages/Options/option_handler.vala:211
 msgid "Meta is mapped to Left Win"
 msgstr "Meta je přiřazena k levé klávese Win"
 
-#: ../src//Pages/Options/option_handler.vala:214
+#: ../src//Pages/Options/option_handler.vala:212
 msgid "Hyper is mapped to Win-keys"
 msgstr "Hyper je přiřazena ke klávesám Win"
 
-#: ../src//Pages/Options/option_handler.vala:215
+#: ../src//Pages/Options/option_handler.vala:213
 msgid "Alt is mapped to Right Win, Super to Menu"
 msgstr "Alt je přiřazena k pravé klávese Win a Super k Menu"
 
-#: ../src//Pages/Options/option_handler.vala:216
-msgid "Left Alt is swapped with Left Win"
-msgstr "Levá klávesa Alt je prohozena s levou klávesou Win"
+#: ../src//Pages/Options/option_handler.vala:214
+msgid "Alt is mapped to Win keys (and the usual Alt keys)"
+msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:219
+#: ../src//Pages/Options/option_handler.vala:215
+msgid "Alt is swapped with Win"
+msgstr ""
+
+#: ../src//Pages/Options/option_handler.vala:218
 msgid "Compose key position"
 msgstr "Umístění klávesy Compose"
 
-#: ../src//Pages/Options/option_handler.vala:228
+#: ../src//Pages/Options/option_handler.vala:227
 #: ../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
 msgstr "Pozastavit"
 
-#: ../src//Pages/Options/option_handler.vala:229
+#: ../src//Pages/Options/option_handler.vala:228
 msgid "PrtSc"
 msgstr "PrtSc"
 
-#: ../src//Pages/Options/option_handler.vala:233
+#: ../src//Pages/Options/option_handler.vala:232
 msgid "Miscellaneous compatibility options"
 msgstr "Dodatečné volby kompatibility"
 
-#: ../src//Pages/Options/option_handler.vala:234
+#: ../src//Pages/Options/option_handler.vala:233
 msgid "Default numeric keypad keys"
 msgstr "Výchozí numerická klávesnice"
 
-#: ../src//Pages/Options/option_handler.vala:235
+#: ../src//Pages/Options/option_handler.vala:234
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
 msgstr "Klávesy numerické klávesnice vždy vrací číslice (jako u OS X)"
 
-#: ../src//Pages/Options/option_handler.vala:236
+#: ../src//Pages/Options/option_handler.vala:235
 msgid "Shift with numeric keypad keys works as in MS Windows"
 msgstr "Shift s numerickými klávesami funguje jako v MS Windows"
 
-#: ../src//Pages/Options/option_handler.vala:237
+#: ../src//Pages/Options/option_handler.vala:236
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
 msgstr "Shift neruší Num Lock, namísto toho vybírá 3. úroveň"
 
-#: ../src//Pages/Options/option_handler.vala:238
+#: ../src//Pages/Options/option_handler.vala:237
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
 msgstr "Speciální klávesy (Ctrl+Alt+<klávesa>) přijímané serverem"
 
-#: ../src//Pages/Options/option_handler.vala:239
+#: ../src//Pages/Options/option_handler.vala:238
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
@@ -540,74 +587,74 @@ msgstr ""
 "Apple Aluminium Keyboard: emulovat klávesy PC (Print, Scroll Lock, Pause, "
 "Num Lock)"
 
-#: ../src//Pages/Options/option_handler.vala:240
+#: ../src//Pages/Options/option_handler.vala:239
 msgid "Shift cancels Caps Lock"
 msgstr "Shift ruší Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:241
+#: ../src//Pages/Options/option_handler.vala:240
 msgid "Enable extra typographic characters"
 msgstr "Povolit přídavné znaky hladké sazby"
 
-#: ../src//Pages/Options/option_handler.vala:242
+#: ../src//Pages/Options/option_handler.vala:241
 msgid "Both Shift-Keys together toggle Caps Lock"
 msgstr "Obě klávesy Shift současně přepnou Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:243
+#: ../src//Pages/Options/option_handler.vala:242
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
 "Stisknutím obou kláves Shift současně se aktivuje Caps Lock, stisknutím "
 "jedné Shift klávesy jej deaktivujete"
 
-#: ../src//Pages/Options/option_handler.vala:244
+#: ../src//Pages/Options/option_handler.vala:243
 msgid "Both Shift-Keys together toggle ShiftLock"
 msgstr "Stisknutím obou kláves Shift současně se přepne ShiftLock"
 
-#: ../src//Pages/Options/option_handler.vala:245
+#: ../src//Pages/Options/option_handler.vala:244
 msgid "Toggle PointerKeys with Shift + NumLock"
 msgstr "Přepnout PointerKeys stisknutím Shift + NumLock"
 
-#: ../src//Pages/Options/option_handler.vala:246
+#: ../src//Pages/Options/option_handler.vala:245
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
 "Umožní porušit uzamčení vstupů pomocí akcí klávesnice (pozor: bezpečnostní "
 "riziko)"
 
-#: ../src//Pages/Options/option_handler.vala:249
+#: ../src//Pages/Options/option_handler.vala:248
 msgid "Adding currency signs to certain keys"
 msgstr "Přidává znaky měny k určitým klávesám"
 
-#: ../src//Pages/Options/option_handler.vala:250
+#: ../src//Pages/Options/option_handler.vala:249
 msgid "Euro on E"
 msgstr "Euro na klávese E"
 
-#: ../src//Pages/Options/option_handler.vala:251
+#: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on 2"
 msgstr "Euro na klávese 2"
 
-#: ../src//Pages/Options/option_handler.vala:252
+#: ../src//Pages/Options/option_handler.vala:251
 msgid "Euro on 4"
 msgstr "Euro na klávese 4"
 
-#: ../src//Pages/Options/option_handler.vala:253
+#: ../src//Pages/Options/option_handler.vala:252
 msgid "Euro on 5"
 msgstr "Euro na klávese 5"
 
-#: ../src//Pages/Options/option_handler.vala:254
+#: ../src//Pages/Options/option_handler.vala:253
 msgid "Rupee on 4"
 msgstr "Rupie na klávese 4"
 
-#: ../src//Pages/Options/option_handler.vala:257
+#: ../src//Pages/Options/option_handler.vala:256
 msgid "Key to choose 5th level"
 msgstr "Klávesa umožňující výběr 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:258
+#: ../src//Pages/Options/option_handler.vala:257
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:259
+#: ../src//Pages/Options/option_handler.vala:258
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
@@ -615,7 +662,7 @@ msgstr ""
 "Pravá klávesa Alt vybírá 5. úroveň, uzamyká při stisknutí společně s jinou "
 "výběrovou klávesou 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:260
+#: ../src//Pages/Options/option_handler.vala:259
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
@@ -623,7 +670,7 @@ msgstr ""
 "Levá klávesa Win vybírá 5. úroveň, uzamyká při stisknutí společně s jinou "
 "výběrovou klávesou 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:261
+#: ../src//Pages/Options/option_handler.vala:260
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
@@ -631,28 +678,28 @@ msgstr ""
 "Pravá klávesa Win vybírá 5. úroveň, uzamyká při stisknutí společně s jinou "
 "výběrovou klávesou 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:264
+#: ../src//Pages/Options/option_handler.vala:263
 msgid "Using space key to input non-breakable space character"
 msgstr "Používání mezerníku k zadávání znaku nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:265
+#: ../src//Pages/Options/option_handler.vala:264
 msgid "Usual space at any level"
 msgstr "Na jakékoliv úrovni znak běžné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:266
+#: ../src//Pages/Options/option_handler.vala:265
 msgid "Non-breakable space character at second level"
 msgstr "Na druhé úrovni znak nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:267
+#: ../src//Pages/Options/option_handler.vala:266
 msgid "Non-breakable space character at third level"
 msgstr "Na třetí úrovni znak nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:268
+#: ../src//Pages/Options/option_handler.vala:267
 msgid "Non-breakable space character at third level, nothing at fourth leve"
 msgstr ""
 "Na třetí úrovni znak nedělitelné mezery, na páte úrovni žádná funkce."
 
-#: ../src//Pages/Options/option_handler.vala:269
+#: ../src//Pages/Options/option_handler.vala:268
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
@@ -660,11 +707,11 @@ msgstr ""
 "Na třetí úrovni znak nedělitelné mezery, tenká nedělitelná mezera na čtvrté "
 "úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:270
+#: ../src//Pages/Options/option_handler.vala:269
 msgid "Non-breakable space character at fourth level"
 msgstr "Na čtvrté úrovni znak nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:271
+#: ../src//Pages/Options/option_handler.vala:270
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
@@ -672,7 +719,7 @@ msgstr ""
 "Na čtvrté úrovni znak nedělitelné mezery, tenká nedělitelná mezera na šesté "
 "úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:272
+#: ../src//Pages/Options/option_handler.vala:271
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
@@ -680,11 +727,11 @@ msgstr ""
 "Na čtvrté úrovni znak nedělitelné mezery, tenká nedělitelná mezera na šesté "
 "úrovni (přes Ctrl+Shift)"
 
-#: ../src//Pages/Options/option_handler.vala:273
+#: ../src//Pages/Options/option_handler.vala:272
 msgid "Zero-width non-joiner character at second level"
 msgstr "Na druhé úrovni znak nespojovače nulové šířky"
 
-#: ../src//Pages/Options/option_handler.vala:274
+#: ../src//Pages/Options/option_handler.vala:273
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
@@ -692,7 +739,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
 "na třetí úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:275
+#: ../src//Pages/Options/option_handler.vala:274
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
@@ -700,7 +747,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
 "na třetí úrovni, nedělitelná mezera na čtvrté úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:276
+#: ../src//Pages/Options/option_handler.vala:275
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
@@ -708,7 +755,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
 "úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:277
+#: ../src//Pages/Options/option_handler.vala:276
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
@@ -716,7 +763,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, na třetí úrovni nedělitelná "
 "mezera, nic na úrovni čtvrté"
 
-#: ../src//Pages/Options/option_handler.vala:278
+#: ../src//Pages/Options/option_handler.vala:277
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
@@ -724,7 +771,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
 "úrovni, spojovač nulové šířky na úrovni čtvrté"
 
-#: ../src//Pages/Options/option_handler.vala:279
+#: ../src//Pages/Options/option_handler.vala:278
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
@@ -732,7 +779,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
 "úrovni, tenká nedělitelná mezera na čtvrté úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:280
+#: ../src//Pages/Options/option_handler.vala:279
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
@@ -740,32 +787,36 @@ msgstr ""
 "Na třetí úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
 "na úrovni čtvrté"
 
-#: ../src//Pages/Options/option_handler.vala:283
+#: ../src//Pages/Options/option_handler.vala:282
 msgid "Japanese keyboard options"
 msgstr "Volby japonské klávesnice"
 
-#: ../src//Pages/Options/option_handler.vala:284
+#: ../src//Pages/Options/option_handler.vala:283
 msgid "Kana Lock key is locking"
 msgstr "Klávesa Kana Lock uzamyká"
 
-#: ../src//Pages/Options/option_handler.vala:285
+#: ../src//Pages/Options/option_handler.vala:284
 msgid "NICOLA-F style Backspace"
 msgstr "Backspace typu NICOLA-F"
 
-#: ../src//Pages/Options/option_handler.vala:286
+#: ../src//Pages/Options/option_handler.vala:285
 msgid "Make Zenkaku Hankaku an additional ESC"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:289
+#: ../src//Pages/Options/option_handler.vala:288
 msgid "Adding Esperanto circumflexes (supersigno)"
 msgstr "Přidává diakritiku jazyka esperanto (supersigno)"
 
-#: ../src//Pages/Options/option_handler.vala:290
+#: ../src//Pages/Options/option_handler.vala:289
 msgid "To the corresponding key in a Qwerty keyboard"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:291
+#: ../src//Pages/Options/option_handler.vala:290
 msgid "To the corresponding key in a Dvorak keyboard"
+msgstr ""
+
+#: ../src//Pages/Options/option_handler.vala:291
+msgid "To the corresponding key in a Colemak layout"
 msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:294
@@ -813,38 +864,27 @@ msgstr "sekundy"
 msgid "Type to test your settings…"
 msgstr "Pro vyzkoušení nastavení pište zde..."
 
-#: ../src//Pages/Shortcuts/shortcut.vala:41
+#: ../src//Pages/Shortcuts/display.vala:38
+#: ../src//Pages/Shortcuts/display.vala:41
+msgid "Add"
+msgstr "Přidat"
+
+#: ../src//Pages/Shortcuts/tree.vala:146
+msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
+msgstr "Pokud přiřadíte zkratku k \"%s\", \"%s\" bude odstraněna"
+
+#: ../src//Pages/Shortcuts/tree.vala:148
+msgid "Reassign"
+msgstr "Změnit přiřazení"
+
 #: ../src//Pages/Shortcuts/tree.vala:172
+#: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
 msgstr "Zakázáno"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
 msgstr "Ctrl"
-
-#: ../src//Pages/Shortcuts/tree.vala:146
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr "Pokud přiřadíte zkratku k \"%s\", \"%s\" bude odstraněna"
-
-#: ../src//Pages/Shortcuts/tree.vala:147
-#: ../src//Pages/Layout/add_layout.vala:64
-msgid "Cancel"
-msgstr "Zrušit"
-
-#: ../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
-msgstr "Změnit přiřazení"
-
-#: ../src//Pages/Shortcuts/display.vala:38
-#: ../src//Pages/Shortcuts/display.vala:41
-msgid "Add"
-msgstr "Přidat"
-
-#: ../src//Pages/Shortcuts/display.vala:39
-#: ../src//Pages/Shortcuts/display.vala:42
-#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
-msgid "Remove"
-msgstr "Odebrat"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -1134,41 +1174,13 @@ msgstr "Zobrazit odečítač obrazovky"
 msgid "Toggle High Contrast"
 msgstr "Vysoký kontrast"
 
-#: ../src//Pages/Layout/handler.vala:75
-msgid "Default"
-msgstr "Výchozí"
+#: ../src//Pages/Shortcuts/list.vala:322
+msgid "Next Keyboard Layout"
+msgstr ""
 
-#: ../src//Pages/Layout/add_layout.vala:20
-msgid "Language:"
-msgstr "Jazyk:"
-
-#: ../src//Pages/Layout/add_layout.vala:21
-msgid "Layout:"
-msgstr "Rozložení:"
-
-#: ../src//Pages/Layout/add_layout.vala:63
-msgid "Add Layout"
-msgstr "Přidat rozložení"
-
-#: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr "Přidat…"
-
-#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "Posunout nahoru"
-
-#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "Posunout dolů"
-
-#: ../src//Pages/layout.vala:24
-msgid "Allow different layouts for individual windows:"
-msgstr "Povolit různé rozložení pro jednotlivá okna:"
-
-#: ../src//Pages/layout.vala:54
-msgid "Type to test your layout…"
-msgstr "Pro vyzkoušení rozložení klávesnice pište zde..."
+#: ../src//Pages/Shortcuts/list.vala:323
+msgid "Previous Keyboard Layout"
+msgstr ""
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
