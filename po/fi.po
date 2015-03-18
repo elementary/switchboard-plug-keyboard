@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2014-10-06 07:46+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
+"PO-Revision-Date: 2015-03-17 08:44+0000\n"
+"Last-Translator: Henull <henull89@gmail.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17389)\n"
+"X-Launchpad-Export-Date: 2015-03-18 06:07+0000\n"
+"X-Generator: Launchpad (build 17403)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -369,6 +369,8 @@ msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Unicode-lisäosat (nuolet ja matematiikkatoiminnot). Matematiikkatoiminnot "
+"oletustasolla"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid "Legacy Wang 724"
@@ -386,7 +388,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Heksadesimaali"
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "ATM/phone-style"
@@ -459,7 +461,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "Vaihda Esc ja Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Make Caps Lock an additional ESC"
@@ -471,11 +473,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Tee Caps Lockista ylimääräinen Super"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Tee Caps Lockista ylimääräinen Hyper"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Caps Lock toggles Shift so all keys are affected"
@@ -495,7 +497,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt ja Meta ovat Alt-näppäimissä"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
@@ -511,7 +513,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta tulee vasemmasta Win-näppäimestä"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Hyper is mapped to Win-keys"
@@ -519,7 +521,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Alt tulee oikeasta Win-näppäimestä, Super valikkonäppäimestä"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
@@ -540,7 +542,7 @@ msgstr "Keskeytä"
 
 #: ../src//Pages/Options/option_handler.vala:228
 msgid "PrtSc"
-msgstr ""
+msgstr "PrtSc"
 
 #: ../src//Pages/Options/option_handler.vala:232
 msgid "Miscellaneous compatibility options"
@@ -1136,11 +1138,11 @@ msgstr "Suuri kontrasti päällä/pois"
 
 #: ../src//Pages/Shortcuts/list.vala:322
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Seuraava näppäimistöasettelu"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Edellinen näppäimistöasettelu"
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
