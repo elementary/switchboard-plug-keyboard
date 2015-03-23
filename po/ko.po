@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-03-21 01:29+0000\n"
-"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
+"PO-Revision-Date: 2015-03-22 16:25+0000\n"
+"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-22 05:27+0000\n"
+"X-Launchpad-Export-Date: 2015-03-23 05:27+0000\n"
 "X-Generator: Launchpad (build 17405)\n"
 
 #: ../src//keyboard.vala:7
@@ -288,13 +288,13 @@ msgstr ""
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
-msgstr ""
+msgstr "Caps Lock으로 3번째 단계 선택, 다른 3번째 단계 선택 키와 같이 누르면 고정"
 
 #: ../src//Pages/Options/option_handler.vala:146
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
-msgstr ""
+msgstr "백슬래시로 3번째 단계 선택, 다른 3번째 단계 선택 키와 같이 누르면 고정"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid ""
@@ -304,152 +304,152 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:150
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Ctrl 키 위치"
 
 #: ../src//Pages/Options/option_handler.vala:151
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Caps Lock 키를 Ctrl 키로"
 
 #: ../src//Pages/Options/option_handler.vala:152
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "왼쪽 Ctrl 키를 Meta 키로"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Ctrl과 Caps Lock 뒤바꾸기"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "At left of 'A'"
-msgstr ""
+msgstr "'A' 왼쪽에"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At bottom left"
-msgstr ""
+msgstr "왼쪽 아래에"
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "오른쪽 Ctrl 키를 오른쪽 Alt 키로"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Menu 키를 오른쪽 Ctrl 키로"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "오른쪽 Alt 키를 오른쪽 Ctrl 키로"
 
 #: ../src//Pages/Options/option_handler.vala:161
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "키보드 LED에서 다른 키보드 배치 사용 표시"
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:167
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "숫자 키패드 배치 선택"
 
 #: ../src//Pages/Options/option_handler.vala:168
 msgid "Legacy"
-msgstr ""
+msgstr "레거시"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "유니코드 추가 (화살표 및 수학 기호)"
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
-msgstr ""
+msgstr "유니코드 추가 (화살표 및 수학 기호). 수학 기호를 기본 단계에"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "레거시 Wang 724"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Wang 724 키패드, 유니코드 추가 (화살표 및 수학 기호)"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
-msgstr ""
+msgstr "Wang 724 키패드 유니코드 추가 (화살표 및 수학 기호). 수학 기호를 기본 단계에"
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid "Hexadecimal"
-msgstr ""
+msgstr "16진수"
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "ATM/전화기 형태"
 
 #: ../src//Pages/Options/option_handler.vala:178
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "숫자 키패드의 Delete 키 동작"
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "점 있는 레거시 키"
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "콤마 있는 레거시 키"
 
 #: ../src//Pages/Options/option_handler.vala:181
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "점 있는 사 단계 키"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "점 있는 사 단계 키, 라틴-9 사용 제한"
 
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "콤마 있는 사 단계 키"
 
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "아랍식 쉼표(momayyez) 있는 사 단계 키"
 
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "가상 구분 문자를 사용하는 사 단계 키"
 
 #: ../src//Pages/Options/option_handler.vala:186
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "세 번째 단계에서 세미콜론"
 
 #: ../src//Pages/Options/option_handler.vala:189
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Caps Lock 키 동작"
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Caps Lock은 내부 대문자 기능을 사용합니다. Shift가 Caps Lock을 \"일시 중지\""
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
-msgstr ""
+msgstr "Caps Lock은 내부 대문자 기능을 사용합니다. Shift는 Caps Lock 상태에 영향을 주지 않음"
 
 #: ../src//Pages/Options/option_handler.vala:192
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Caps Lock은 잠금 기능의 Shift처럼 작동합니다. Shift가 Caps Lock을 \"일시 중지\""
 
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
-msgstr ""
+msgstr "Caps Lock은 잠금 기능의 Shift처럼 작동합니다. Shift가 Caps Lock 상태에 영향을 주지 않음"
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Caps Lock은 정상적인 알파벳 대문자를 토글합니다"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Caps Lock을 추가 Num Lock으로 사용하기"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Swap ESC and Caps Lock"
@@ -848,11 +848,11 @@ msgstr "최대화"
 
 #: ../src//Pages/Shortcuts/list.vala:59
 msgid "Unmaximize"
-msgstr ""
+msgstr "최대화에서 복원"
 
 #: ../src//Pages/Shortcuts/list.vala:60
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "최대화 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:61
 msgid "Minimize"
@@ -860,7 +860,7 @@ msgstr "최소화"
 
 #: ../src//Pages/Shortcuts/list.vala:62
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "전체화면 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
@@ -900,15 +900,15 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "작업 공간 변환기 보이기"
 
 #: ../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "맨 앞 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "새 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
@@ -944,7 +944,7 @@ msgstr "작업 공간 8로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:126
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "작업 공간 9로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
@@ -1144,12 +1144,12 @@ msgstr "스크린샷"
 
 #: ../src//Pages/shortcuts.vala:35
 msgid "Applications"
-msgstr ""
+msgstr "프로그램"
 
 #: ../src//Pages/shortcuts.vala:36
 msgid "Media"
-msgstr ""
+msgstr "미디어"
 
 #: ../src//Pages/shortcuts.vala:37
 msgid "Universal Access"
-msgstr ""
+msgstr "접근성"
