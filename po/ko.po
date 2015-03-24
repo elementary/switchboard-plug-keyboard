@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-03-22 16:25+0000\n"
-"Last-Translator: Youngbin Han <sukso96100@gmail.com>\n"
+"PO-Revision-Date: 2015-03-23 18:44+0000\n"
+"Last-Translator: 박정규(Jung-Kyu Park) <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-23 05:27+0000\n"
-"X-Generator: Launchpad (build 17405)\n"
+"X-Launchpad-Export-Date: 2015-03-24 06:08+0000\n"
+"X-Generator: Launchpad (build 17413)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -282,7 +282,7 @@ msgstr "백슬래시"
 #: ../src//Pages/Options/option_handler.vala:144
 #: ../src//Pages/Options/option_handler.vala:226
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<작게/크게>"
 
 #: ../src//Pages/Options/option_handler.vala:145
 msgid ""
@@ -300,7 +300,7 @@ msgstr "백슬래시로 3번째 단계 선택, 다른 3번째 단계 선택 키�
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
-msgstr ""
+msgstr "<작게/크게>는 3단계 레벨 선택, 다른 3단계-레벨 키 와 함께 눌리면 일시 잠금과 같은 역할을 함"
 
 #: ../src//Pages/Options/option_handler.vala:150
 msgid "Ctrl key position"
@@ -453,327 +453,327 @@ msgstr "Caps Lock을 추가 Num Lock으로 사용하기"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "ESC와 Caps Lock 바꾸기"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Caps Lock을 추가 ESC로 사용"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Caps Lock을 추가 백스페이스로 사용"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Caps Lock을 추가 슈퍼 키로 사용"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Make Caps Lock an additional Hyper"
-msgstr ""
+msgstr "Caps Lock을 추가 하이퍼 키로 사용"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Caps Lock toggles Shift so all keys are affected"
-msgstr ""
+msgstr "Caps Lock이 Shift 상태를 토글, 즉 모든 키가 영향을 받음"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
-msgstr ""
+msgstr "Caps Lock을 추가 Ctrl로 사용, 하지만 Caps_Lock 키심볼 유지"
 
 #: ../src//Pages/Options/option_handler.vala:205
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Alt/윈도 키 동작"
 
 #: ../src//Pages/Options/option_handler.vala:206
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "메뉴 키에 기본 동작 추가"
 
 #: ../src//Pages/Options/option_handler.vala:207
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt와 Meta를 Alt 키에"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Ctrl 키를 윈도 키로 매핑(그리고 일반 Ctrl 키로도 동작)"
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Ctrl 키를 윈도 키로 매핑, Alt 키를 윈도 키로 매핑"
 
 #: ../src//Pages/Options/option_handler.vala:210
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "메타 키를 윈도 키로 매핑"
 
 #: ../src//Pages/Options/option_handler.vala:211
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "메타 키를 왼쪽 윈도 키로 매핑"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "하이퍼 키를 윈도 키로 매핑"
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Alt 키를 오른쪽 윈도 키로 매핑, 슈퍼 키를 메뉴 키로 매핑"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt 키를 윈도 키로 매핑(일반 Alt 키로도 동작)"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt 키와 윈도 키 뒤바뀜"
 
 #: ../src//Pages/Options/option_handler.vala:218
 msgid "Compose key position"
-msgstr ""
+msgstr "조합 키 위치"
 
 #: ../src//Pages/Options/option_handler.vala:227
 #: ../src//Pages/Shortcuts/list.vala:276
 msgid "Pause"
-msgstr ""
+msgstr "일시 정지"
 
 #: ../src//Pages/Options/option_handler.vala:228
 msgid "PrtSc"
-msgstr ""
+msgstr "프린트 스크린(PrtSc)"
 
 #: ../src//Pages/Options/option_handler.vala:232
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "기타 호환성 옵션"
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "기본 숫자 키패드 키"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "숫자 키패드 키는 항상 숫자를 입력(맥 OS처럼)"
 
 #: ../src//Pages/Options/option_handler.vala:235
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Shift와 동시에 숫자 키패드 키를 누르면 MS 윈도즈 처럼 동작"
 
 #: ../src//Pages/Options/option_handler.vala:236
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift를 누르면 Num Lock을 끄지 않고, 3번째 단계를 선택"
 
 #: ../src//Pages/Options/option_handler.vala:237
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "특수 키 (Ctrl + Alt + <키>)는 서버에서 처리"
 
 #: ../src//Pages/Options/option_handler.vala:238
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
-msgstr ""
+msgstr "애플 알루미늄 키보드: PC 키 에뮬레이션 (프린트, 스크롤 록, 멈춤, 숫자 키)"
 
 #: ../src//Pages/Options/option_handler.vala:239
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift를 누르면 Caps Lock 끄기"
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "추가 타이포그라피 문자 사용"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "양쪽 Shift 키로 Caps Lock 토글"
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-msgstr ""
+msgstr "양쪽 Shift 키로 Caps Lock 켜기, 한 쪽 Shift 키 해제"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "양쪽 Shift 키로 ShiftLock 토글"
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "Shift + 숫자 키로 포인터 키 토글"
 
 #: ../src//Pages/Options/option_handler.vala:245
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-msgstr ""
+msgstr "키보드 동작으로 키 잡기 해제 허용(경고: 보안 위험)"
 
 #: ../src//Pages/Options/option_handler.vala:248
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "화폐 기호를 특정 키에 추가"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Euro on E"
-msgstr ""
+msgstr "유로를 E 키에"
 
 #: ../src//Pages/Options/option_handler.vala:250
 msgid "Euro on 2"
-msgstr ""
+msgstr "유로를 2 키에"
 
 #: ../src//Pages/Options/option_handler.vala:251
 msgid "Euro on 4"
-msgstr ""
+msgstr "유로를 4 키에"
 
 #: ../src//Pages/Options/option_handler.vala:252
 msgid "Euro on 5"
-msgstr ""
+msgstr "유로를 5 키에"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "Rupee on 4"
-msgstr ""
+msgstr "루피를 4 키에"
 
 #: ../src//Pages/Options/option_handler.vala:256
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "5번째 단계를 선택하는 키"
 
 #: ../src//Pages/Options/option_handler.vala:257
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
-msgstr ""
+msgstr "<작게/크게> 키로 5단계 키 선택, 다른 5단계 키와 함께 눌리면 잠김"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
-msgstr ""
+msgstr "오른쪽 Alt로 5번째 단계 선택, 다른 5번째 단계 선택 키와 함께 눌리면 잠김"
 
 #: ../src//Pages/Options/option_handler.vala:259
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
-msgstr ""
+msgstr "왼쪽 윈도 키로 5번째 단계 선택, 다른 5번째 단계 선택 키와 힘께 눌리면 잠김"
 
 #: ../src//Pages/Options/option_handler.vala:260
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
-msgstr ""
+msgstr "오른쪽 윈도 키로 5번째 단계 선택, 다른 5번째 단계 선택 키와 함께 눌리면 고정"
 
 #: ../src//Pages/Options/option_handler.vala:263
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "여백 강제 출력에 스페이스 키 사용"
 
 #: ../src//Pages/Options/option_handler.vala:264
 msgid "Usual space at any level"
-msgstr ""
+msgstr "모든 단계에서 일반적인 여백 키로"
 
 #: ../src//Pages/Options/option_handler.vala:265
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "2번째 단계에서 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:266
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "3번째 단계에서 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:267
 msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr ""
+msgstr "3번째 단계에서 강제 여백 문자, 4번째 단계에서 지정 안 함"
 
 #: ../src//Pages/Options/option_handler.vala:268
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
-msgstr ""
+msgstr "3번째 단계에서 강제 여백 문자, 4번째에서는 얇은 강제 여백 문자."
 
 #: ../src//Pages/Options/option_handler.vala:269
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "4번째 단계에서 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:270
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
-msgstr ""
+msgstr "4번째 단계에서 강제 여백 문자, 6번째 단계에서 얇은 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:271
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
-msgstr ""
+msgstr "4번째 단계에서 강제 여백 문자, 6번째 단계에서 얇은 강제 여백 문자 (Ctrl+Shift 사용)"
 
 #: ../src//Pages/Options/option_handler.vala:272
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자"
 
 #: ../src//Pages/Options/option_handler.vala:273
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자, 3번째에서는 폭 없는 연결 문자"
 
 #: ../src//Pages/Options/option_handler.vala:274
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자, 3번째에서는 폭 없는 연결 문자, 4번째에서는 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:275
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자, 3번째에서는 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:276
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자, 3번째에서는 강제 여백 문자, 4번째에서는 없음"
 
 #: ../src//Pages/Options/option_handler.vala:277
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자, 3번째에서는 강제 여백 문자, 4번째에서는 폭 없는 연결 문자"
 
 #: ../src//Pages/Options/option_handler.vala:278
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
-msgstr ""
+msgstr "2번째 단계에서 폭 없는 연결 금지 문자, 3번째에서는 강제 여백 문자, 4번째에서는 얇은 강제 여백 문자"
 
 #: ../src//Pages/Options/option_handler.vala:279
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
-msgstr ""
+msgstr "3번째 단계에서 폭 없는 연결 금지 문자, 4번째에서는 폭 없는 연결 문자"
 
 #: ../src//Pages/Options/option_handler.vala:282
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "일본어 키보드 옵션"
 
 #: ../src//Pages/Options/option_handler.vala:283
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "Kana Lock 키 상태 고정"
 
 #: ../src//Pages/Options/option_handler.vala:284
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "NICOLA-F 방식 백스페이스"
 
 #: ../src//Pages/Options/option_handler.vala:285
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Zenkaku Hankaku를 추가 ESC로 사용"
 
 #: ../src//Pages/Options/option_handler.vala:288
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "에스페란토 곡절 액센트 (curcimflex) 추가"
 
 #: ../src//Pages/Options/option_handler.vala:289
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "쿼티 키보드에서 해당 키에"
 
 #: ../src//Pages/Options/option_handler.vala:290
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "드보락 키보드에서 해당 키에"
 
 #: ../src//Pages/Options/option_handler.vala:291
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "콜맥 레이아웃에서 해당 키에"
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "X 서버를 멈추는 키 조합"
 
 #: ../src//Pages/Options/option_handler.vala:295
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Ctrl + Alt + 백스페이스"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -815,24 +815,24 @@ msgstr "설정을 시험하려면 입력하세요"
 #: ../src//Pages/Shortcuts/display.vala:38
 #: ../src//Pages/Shortcuts/display.vala:41
 msgid "Add"
-msgstr ""
+msgstr "추가하기"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr ""
+msgstr "바로 가기를 다음으로 재 할당하면 \"% s\", \"% s\"은 (는) 사용할 수 없습니다"
 
 #: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "재할당"
 
 #: ../src//Pages/Shortcuts/tree.vala:172
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "사용 안 함"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/list.vala:56
 msgid "Close"
@@ -840,7 +840,7 @@ msgstr "닫기"
 
 #: ../src//Pages/Shortcuts/list.vala:57
 msgid "Lower"
-msgstr ""
+msgstr "창을 아래로 보내기"
 
 #: ../src//Pages/Shortcuts/list.vala:58
 msgid "Maximize"
@@ -864,39 +864,39 @@ msgstr "전체화면 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr ""
+msgstr "왼쪽에 붙임"
 
 #: ../src//Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr ""
+msgstr "오른쪽에 붙임"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
-msgstr ""
+msgstr "그림자 처리 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "모든 작업 공간에 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "항상 위에 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr ""
+msgstr "창 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "뒤로 창 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Window Overview"
-msgstr ""
+msgstr "창 개요"
 
 #: ../src//Pages/Shortcuts/list.vala:71
 msgid "Show All Windows"
-msgstr ""
+msgstr "모든 창 보이기"
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
@@ -956,179 +956,179 @@ msgstr "오른쪽으로 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "1번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "2번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "3번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "4번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "5번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "6번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "7번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "8번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "9번 작업 공간으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr ""
+msgstr "왼쪽 으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr ""
+msgstr "오른쪽으로 이동"
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "스크린샷 찍기"
 
 #: ../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "스크린샷을 클립보드에 저장하기"
 
 #: ../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "지정한 창의 스크린샷 찍기"
 
 #: ../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "지정한  창의 스크린샷을 클립보드에 저장하기"
 
 #: ../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "지정한 영역의 스크린샷 찍기"
 
 #: ../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "지정한 영역의 스크린샷을 클립보드에 저장하기"
 
 #: ../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
-msgstr ""
+msgstr "계산기"
 
 #: ../src//Pages/Shortcuts/list.vala:235
 msgid "Email"
-msgstr ""
+msgstr "이메일"
 
 #: ../src//Pages/Shortcuts/list.vala:236
 msgid "Help"
-msgstr ""
+msgstr "도움말"
 
 #: ../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "홈 폴더"
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "파일 찾기"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "터미널"
 
 #: ../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "인터넷 브라우저"
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "어플리케이션 론처"
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "볼륨 올림"
 
 #: ../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "볼륨 낮춤"
 
 #: ../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "무음"
 
 #: ../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
-msgstr ""
+msgstr "음악 플레이어 실행"
 
 #: ../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
-msgstr ""
+msgstr "재생"
 
 #: ../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "정지"
 
 #: ../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "이전 트랙"
 
 #: ../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "다음 트랙"
 
 #: ../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "꺼내기"
 
 #: ../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "텍스트 크기 줄이기"
 
 #: ../src//Pages/Shortcuts/list.vala:315
 msgid "Increase Text Size"
-msgstr ""
+msgstr "텍스트 크기 키우기"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "돋보기 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "돋보기 줌 인"
 
 #: ../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "돋보기 줌 아웃"
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "스크린 키보드에 토글"
 
 #: ../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "스크린리더 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "고 대비 전환"
 
 #: ../src//Pages/Shortcuts/list.vala:322
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "다음 키보드 배치"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "이전 키보드 배치"
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
