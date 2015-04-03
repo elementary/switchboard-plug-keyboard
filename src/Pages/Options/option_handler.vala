@@ -90,44 +90,8 @@ namespace Pantheon.Keyboard.Options {
 
 		private void generate_items () {
 			items = new List<Item> ();
-			var item = new Item (_("Key(s) to change layout"), "grp", true);
-			item.set (_("Right Alt (while pressed)"), "grp:switch");
-			item.set (_("Left Alt (while pressed)"), "grp:lswitch");
-			item.set (_("Left Win (while pressed)"), "grp:lwin_switch");
-			item.set (_("Right Win (while pressed)"), "grp:rwin_switch");
-			item.set (_("Any Win key (while pressed)"), "grp:win_switch");
-			item.set (_("Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"), "grp:caps_switch");
-			item.set (_("Right Ctrl (while pressed)"), "grp:rctrl_switch");
-			item.set (_("Right Alt"), "grp:toggle");
-			item.set (_("Left Alt"), "grp:lalt_toggle");
-			item.set (_("Caps Lock"), "grp:caps_toggle");
-			item.set (_("Shift+Caps Lock"), "grp:shift_caps_toggle");
-			item.set (_("Caps Lock (to first layout), Shift+Caps Lock (to last layout)"), "grp:shift_caps_switch");
-			item.set (_("Left Win (to first layout), Right Win/Menu (to last layout)"), "grp:win_menu_switch");
-			item.set (_("Left Ctrl (to first layout), Right Ctrl (to last layout)"), "grp:lctrl_rctrl_switch");
-			item.set (_("Alt+Caps Lock"), "grp:alt_caps_toggle");
-			item.set (_("Both Shift keys together"), "grp:shifts_toggle");
-			item.set (_("Both Alt keys together"), "grp:alts_toggle");
-			item.set (_("Both Ctrl keys together"), "grp:ctrls_toggle");
-			item.set (_("Ctrl+Shift"), "grp:ctrl_shift_toggle");
-			item.set (_("Left Ctrl+Left Shift"), "grp:lctrl_lshift_toggle");
-			item.set (_("Right Ctrl+Right Shift"), "grp:rctrl_rshift_toggle");
-			item.set (_("Alt+Ctrl"), "grp:ctrl_alt_toggle");
-			item.set (_("Alt+Shift"), "grp:alt_shift_toggle");
-			item.set (_("Left Alt+Left Shift"), "grp:lalt_lshift_toggle");
-			item.set (_("Alt+Space"), "grp:alt_space_toggle");
-			item.set (_("Menu"), "grp:menu_toggle");
-			item.set (_("Left Win"), "grp:lwin_toggle");
-			item.set (_("Right Win"), "grp:rwin_toggle");
-			item.set (_("Left Shift"), "grp:lshift_toggle");
-			item.set (_("Right Shift"), "grp:rshift_toggle");
-			item.set (_("Left Ctrl"), "grp:lctrl_toggle");
-			item.set (_("Right Ctrl"), "grp:rctrl_toggle");
-			item.set (_("Scroll Lock"), "grp:sclk_toggle");
-			item.set (_("Left Ctrl+Left Win (to first layout), Right Ctrl+Menu (to second layout)"), "grp:lctrl_lwin_rctrl_menu");
-			items.append (item);
 
-			item = new Item (_("Key to choose 3rd level"), "lv3", true);
+			var item = new Item (_("Key to choose 3rd level"), "lv3", true);
 			item.set (_("Right Ctrl"), "lv3:switch");
 			item.set (_("Menu"), "lv3:menu_switch");
 			item.set (_("Any Win key"), "lv3:win_switch");
