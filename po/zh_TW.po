@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2014-11-13 12:45+0000\n"
+"PO-Revision-Date: 2015-04-12 02:04+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17389)\n"
+"X-Launchpad-Export-Date: 2015-04-12 05:52+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -517,11 +517,11 @@ msgstr "Alt 映射到右側 Win 鍵，Super 鍵映射到選單鍵"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt 鍵映射到 Win 鍵 (以及常見的 Alt 鍵)"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt 鍵與 Win 鍵交換"
 
 #: ../src//Pages/Options/option_handler.vala:218
 msgid "Compose key position"
@@ -765,7 +765,7 @@ msgstr "到 Dvorak 鍵盤中的對應鍵"
 
 #: ../src//Pages/Options/option_handler.vala:291
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "到 Colemak 配置的對應鍵"
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
@@ -1124,11 +1124,11 @@ msgstr "開關高對比外觀"
 
 #: ../src//Pages/Shortcuts/list.vala:322
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "下個鍵盤配置"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "上個鍵盤配置"
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"

@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-01-24 14:39+0000\n"
-"Last-Translator: Adolfo Jayme <fitoschido@gmail.com>\n"
+"PO-Revision-Date: 2015-04-11 18:25+0000\n"
+"Last-Translator: daniel villalobos <elcodigo12@hotmail.es>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17389)\n"
+"X-Launchpad-Export-Date: 2015-04-12 05:52+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -51,21 +51,21 @@ msgstr "Escriba para probar su disposición..."
 
 #: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr ""
+msgstr "Añadir…"
 
 #: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
 #: ../src//Pages/Shortcuts/display.vala:39
 #: ../src//Pages/Shortcuts/display.vala:42
 msgid "Remove"
-msgstr ""
+msgstr "Quitar"
 
 #: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr ""
+msgstr "Subir"
 
 #: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr ""
+msgstr "Bajar"
 
 #: ../src//Pages/Layout/add_layout.vala:23
 msgid "Language:"
@@ -73,11 +73,11 @@ msgstr "Idioma:"
 
 #: ../src//Pages/Layout/add_layout.vala:24
 msgid "Layout:"
-msgstr ""
+msgstr "Disposición:"
 
 #: ../src//Pages/Layout/add_layout.vala:65
 msgid "Add Layout"
-msgstr ""
+msgstr "Añadir disposición"
 
 #: ../src//Pages/Layout/add_layout.vala:66
 #: ../src//Pages/Shortcuts/tree.vala:147
@@ -86,7 +86,7 @@ msgstr "Cancelar"
 
 #: ../src//Pages/Layout/handler.vala:75
 msgid "Default"
-msgstr ""
+msgstr "Predeterminado"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
@@ -1036,39 +1036,39 @@ msgstr "Ayuda"
 
 #: ../src//Pages/Shortcuts/list.vala:237
 msgid "Home Folder"
-msgstr ""
+msgstr "Carpeta personal"
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Búsqueda de archivos"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: ../src//Pages/Shortcuts/list.vala:240
 msgid "Internet Browser"
-msgstr ""
+msgstr "Navegador web"
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Lanzador de aplicaciones"
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
-msgstr ""
+msgstr "Subir volumen"
 
 #: ../src//Pages/Shortcuts/list.vala:272
 msgid "Volume Down"
-msgstr ""
+msgstr "Bajar volumen"
 
 #: ../src//Pages/Shortcuts/list.vala:273
 msgid "Mute"
-msgstr ""
+msgstr "SIlenciar"
 
 #: ../src//Pages/Shortcuts/list.vala:274
 msgid "Launch Media Player"
-msgstr ""
+msgstr "Iniciar reproductor multimedia"
 
 #: ../src//Pages/Shortcuts/list.vala:275
 msgid "Play"
@@ -1076,19 +1076,19 @@ msgstr "Reproducir"
 
 #: ../src//Pages/Shortcuts/list.vala:277
 msgid "Stop"
-msgstr ""
+msgstr "Detener"
 
 #: ../src//Pages/Shortcuts/list.vala:278
 msgid "Previous Track"
-msgstr ""
+msgstr "Pista anterior"
 
 #: ../src//Pages/Shortcuts/list.vala:279
 msgid "Next Track"
-msgstr ""
+msgstr "Pista siguiente"
 
 #: ../src//Pages/Shortcuts/list.vala:280
 msgid "Eject"
-msgstr ""
+msgstr "Expulsar"
 
 #: ../src//Pages/Shortcuts/list.vala:314
 msgid "Decrease Text Size"
@@ -1100,35 +1100,35 @@ msgstr "Aumentar el tamaño de la letra"
 
 #: ../src//Pages/Shortcuts/list.vala:316
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Activar o desactivar lupa"
 
 #: ../src//Pages/Shortcuts/list.vala:317
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Acercar"
 
 #: ../src//Pages/Shortcuts/list.vala:318
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Alejar"
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Activar o desactivar teclado en pantalla"
 
 #: ../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Activar o desactivar lector de pantalla"
 
 #: ../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Activar o desactivar contraste alto"
 
 #: ../src//Pages/Shortcuts/list.vala:322
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Disposición de teclado siguiente"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Disposición de teclado anterior"
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"

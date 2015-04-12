@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-03-02 14:33+0000\n"
-"Last-Translator: Joachim Johansson <Unknown>\n"
+"PO-Revision-Date: 2015-04-11 23:27+0000\n"
+"Last-Translator: Larsson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17389)\n"
+"X-Launchpad-Export-Date: 2015-04-12 05:52+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -51,7 +51,7 @@ msgstr "Skriv för att testa din layout..."
 
 #: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr ""
+msgstr "Lägg till…"
 
 #: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
 #: ../src//Pages/Shortcuts/display.vala:39
@@ -61,23 +61,23 @@ msgstr "Ta bort"
 
 #: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr ""
+msgstr "Flytta upp"
 
 #: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr ""
+msgstr "Flytta ner"
 
 #: ../src//Pages/Layout/add_layout.vala:23
 msgid "Language:"
-msgstr ""
+msgstr "Språk:"
 
 #: ../src//Pages/Layout/add_layout.vala:24
 msgid "Layout:"
-msgstr ""
+msgstr "Layout:"
 
 #: ../src//Pages/Layout/add_layout.vala:65
 msgid "Add Layout"
-msgstr ""
+msgstr "Lägg till layout"
 
 #: ../src//Pages/Layout/add_layout.vala:66
 #: ../src//Pages/Shortcuts/tree.vala:147
@@ -86,7 +86,7 @@ msgstr "Avbryt"
 
 #: ../src//Pages/Layout/handler.vala:75
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
@@ -120,6 +120,8 @@ msgstr "Valfri Win-tangent (medan nedtryckt)"
 msgid ""
 "Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
 msgstr ""
+"Caps Lock (medans nedtryckt), Alt+Caps Lock gör den ursprunglig capslock-"
+"åtgärden"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid "Right Ctrl (while pressed)"
@@ -253,6 +255,8 @@ msgstr "Scroll Lock"
 msgid ""
 "Left Ctrl+Left Win (to first layout), Right Ctrl+Menu (to second layout)"
 msgstr ""
+"Vänster Ctrl+Vänster Win (till första layouten), Höger Ctrl+Meny (till andra "
+"layouten)"
 
 #: ../src//Pages/Options/option_handler.vala:130
 msgid "Key to choose 3rd level"
@@ -272,15 +276,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "Höger Alt-tangenten väljer aldrig tredje nivån"
 
 #: ../src//Pages/Options/option_handler.vala:141
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Enter på numeriskt tangentbord"
 
 #: ../src//Pages/Options/option_handler.vala:143
 msgid "Backslash"
-msgstr ""
+msgstr "Bakvänt snedstreck"
 
 #: ../src//Pages/Options/option_handler.vala:144
 #: ../src//Pages/Options/option_handler.vala:226
@@ -300,6 +304,8 @@ msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Bakvänt snedstreck väljer tredje nivån, fungerar som engångslås när den "
+"trycks ned tillsammans med en annan tredjenivåväljare"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid ""
@@ -323,7 +329,7 @@ msgstr "Vänster Ctrl som Meta"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Byt Ctrl och Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "At left of 'A'"
@@ -335,7 +341,7 @@ msgstr "Längst ned till vänster"
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Höger Ctrl fungerar som Höger Alt"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Menu as Right Ctrl"
@@ -343,11 +349,11 @@ msgstr "Meny som Höger Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Höger Alt som Höger Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:161
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Använd tangentbordets LED  för att visa alternativ layout"
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Num Lock"
@@ -389,7 +395,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadecimal"
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "ATM/phone-style"
@@ -397,7 +403,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:178
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Beteende för Delete-tangent på numeriskt tangentbord"
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Legacy key with dot"
@@ -637,6 +643,8 @@ msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
+"<Mindre/Större> väljer femte nivån, låses när den trycks ned tillsammans med "
+"en annan femtenivåväljare"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid ""
@@ -786,7 +794,7 @@ msgstr ""
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Upprepa tangenter:</b>"
 
 #: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
@@ -828,11 +836,11 @@ msgstr "Lägg till"
 
 #: ../src//Pages/Shortcuts/tree.vala:146
 msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr ""
+msgstr "Om du ändrar genvägen till \"%s\", kommer \"%s\" att avaktiveras"
 
 #: ../src//Pages/Shortcuts/tree.vala:148
 msgid "Reassign"
-msgstr ""
+msgstr "Ändra tilldelning"
 
 #: ../src//Pages/Shortcuts/tree.vala:172
 #: ../src//Pages/Shortcuts/shortcut.vala:41
@@ -873,31 +881,31 @@ msgstr "Växla till helskärmsläge"
 
 #: ../src//Pages/Shortcuts/list.vala:63
 msgid "Tile Left"
-msgstr ""
+msgstr "Stapla åt vänster"
 
 #: ../src//Pages/Shortcuts/list.vala:64
 msgid "Tile Right"
-msgstr ""
+msgstr "Stapla åt höger"
 
 #: ../src//Pages/Shortcuts/list.vala:65
 msgid "Toggle Shaded"
-msgstr ""
+msgstr "Växla skuggning"
 
 #: ../src//Pages/Shortcuts/list.vala:66
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "Växla på alla arbetsytor"
 
 #: ../src//Pages/Shortcuts/list.vala:67
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Växla alltid överst"
 
 #: ../src//Pages/Shortcuts/list.vala:68
 msgid "Switch Windows"
-msgstr ""
+msgstr "Växla Fönster"
 
 #: ../src//Pages/Shortcuts/list.vala:69
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "Växla Fönster bakåt"
 
 #: ../src//Pages/Shortcuts/list.vala:70
 msgid "Window Overview"
@@ -909,15 +917,15 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:115
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Visa växlare för arbetsyta"
 
 #: ../src//Pages/Shortcuts/list.vala:116
 msgid "Switch to first"
-msgstr ""
+msgstr "Växla till första"
 
 #: ../src//Pages/Shortcuts/list.vala:117
 msgid "Switch to new"
-msgstr ""
+msgstr "Växla till ny"
 
 #: ../src//Pages/Shortcuts/list.vala:118
 msgid "Switch to workspace 1"
@@ -957,11 +965,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:127
 msgid "Switch to left"
-msgstr ""
+msgstr "Växla till vänster"
 
 #: ../src//Pages/Shortcuts/list.vala:128
 msgid "Switch to right"
-msgstr ""
+msgstr "Växla till höger"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
@@ -969,67 +977,67 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Flytta till arbetsyta 2"
 
 #: ../src//Pages/Shortcuts/list.vala:131
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Flytta till arbetsyta 3"
 
 #: ../src//Pages/Shortcuts/list.vala:132
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Flytta till arbetsyta 4"
 
 #: ../src//Pages/Shortcuts/list.vala:133
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Flytta till arbetsyta 5"
 
 #: ../src//Pages/Shortcuts/list.vala:134
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Flytta till arbetsyta 6"
 
 #: ../src//Pages/Shortcuts/list.vala:135
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Flytta till arbetsyta 7"
 
 #: ../src//Pages/Shortcuts/list.vala:136
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Flytta till arbetsyta 8"
 
 #: ../src//Pages/Shortcuts/list.vala:137
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Flytta till arbetsyta 9"
 
 #: ../src//Pages/Shortcuts/list.vala:138
 msgid "Move to left"
-msgstr ""
+msgstr "Flytta till vänster"
 
 #: ../src//Pages/Shortcuts/list.vala:139
 msgid "Move to right"
-msgstr ""
+msgstr "Flytta till höger"
 
 #: ../src//Pages/Shortcuts/list.vala:203
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Ta en skärmbild"
 
 #: ../src//Pages/Shortcuts/list.vala:204
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Kopiera Skärmbild till Urklipp"
 
 #: ../src//Pages/Shortcuts/list.vala:205
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Ta en Skärmbild av ett Fönster"
 
 #: ../src//Pages/Shortcuts/list.vala:206
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Spara Fönsterskärmbild till Urklipp"
 
 #: ../src//Pages/Shortcuts/list.vala:207
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Ta en Skärmbild av en Yta"
 
 #: ../src//Pages/Shortcuts/list.vala:208
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "Spara Ytskärmbild till Urklipp"
 
 #: ../src//Pages/Shortcuts/list.vala:234
 msgid "Calculator"
@@ -1049,7 +1057,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:238
 msgid "File Search"
-msgstr ""
+msgstr "Filsökning"
 
 #: ../src//Pages/Shortcuts/list.vala:239
 msgid "Terminal"
@@ -1061,7 +1069,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:241
 msgid "Applications Launcher"
-msgstr ""
+msgstr "Applikationsstartare"
 
 #: ../src//Pages/Shortcuts/list.vala:271
 msgid "Volume Up"
@@ -1121,7 +1129,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:319
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Växla Skrivbord på Skärmen"
 
 #: ../src//Pages/Shortcuts/list.vala:320
 msgid "Toggle Screenreader"
@@ -1129,11 +1137,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:321
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Växla Hög Kontrast"
 
 #: ../src//Pages/Shortcuts/list.vala:322
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Nästa Tangentbordslayout"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
