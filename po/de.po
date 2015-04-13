@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2014-11-09 16:55+0000\n"
-"Last-Translator: mporten <Unknown>\n"
+"PO-Revision-Date: 2015-04-12 11:55+0000\n"
+"Last-Translator: Felix <reditec@outlook.com>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17389)\n"
+"X-Launchpad-Export-Date: 2015-04-13 05:38+0000\n"
+"X-Generator: Launchpad (build 17423)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -557,11 +557,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt ist den Windows-Tasten zugeordnet (und den üblichen Alt-Tasten)"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt-Taste ist gegen die Windows-Taste vertauscht"
 
 #: ../src//Pages/Options/option_handler.vala:218
 msgid "Compose key position"
@@ -847,7 +847,7 @@ msgstr "Zur entsprechenden Taste einer Dvorak-Tastatur"
 
 #: ../src//Pages/Options/option_handler.vala:291
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "Zur entsprechenden Taste einer »Colemak«-Belegung."
 
 #: ../src//Pages/Options/option_handler.vala:294
 msgid "Key sequence to kill the X server"
@@ -1209,11 +1209,11 @@ msgstr "Hoher-Kontrast-Modus umschalten"
 
 #: ../src//Pages/Shortcuts/list.vala:322
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Nächstes Tastaturlayout"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Vorheriges Tastaturlayout"
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"

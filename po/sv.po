@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-04-11 23:27+0000\n"
+"PO-Revision-Date: 2015-04-12 10:30+0000\n"
 "Last-Translator: Larsson <Unknown>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-04-12 05:52+0000\n"
+"X-Launchpad-Export-Date: 2015-04-13 05:38+0000\n"
 "X-Generator: Launchpad (build 17423)\n"
 
 #: ../src//keyboard.vala:7
@@ -411,15 +411,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:180
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Äldre tangent med komma"
 
 #: ../src//Pages/Options/option_handler.vala:181
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Fjärdenivåstangent med punkt"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Fjärdenivåstangent med punkt, latin-9-begränsning"
 
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Four-level key with comma"
@@ -427,7 +427,7 @@ msgstr "Fjärdenivåstangent med komma"
 
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "Fjärdenivåstangent med momayyez"
 
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Four-level key with abstract separators"
@@ -439,32 +439,35 @@ msgstr "Semikolon på tredje nivå"
 
 #: ../src//Pages/Options/option_handler.vala:189
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Beteende för Caps Lock-tangenten"
 
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock använder intern skiftlägesstyrning. Skift \"pausar\" Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:191
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock använder intern skiftlägesstyrning. Skift påverkar inte Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:192
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Caps Lock fungerar som Skift med låsning. Skift \"pausar\" Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock fungerar som Skift med låsning. Skift påverkar inte Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:194
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Caps Lock växlar normalt skiftläge på alfabetiska tecken"
 
 #: ../src//Pages/Options/option_handler.vala:195
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Gör Caps Lock till ytterligare en Num Lock-tangent"
 
 #: ../src//Pages/Options/option_handler.vala:196
 msgid "Swap ESC and Caps Lock"
