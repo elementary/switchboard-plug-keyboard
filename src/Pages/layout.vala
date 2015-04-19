@@ -214,12 +214,16 @@ namespace Pantheon.Keyboard.LayoutPage
 												"se", "sk",
 												"tr",
 												"vn",
-												"za"};
+												"za",
+												"us+euro", "us+inlt", "us+alt-intl", "us+dvorak-intl",
+												"us+dvorak-alt-intl", "us+rus", "us+mac", "us+colemak",
+												"us+altgr-intl", "us+olpc", "us+olpcm", "us+hbs", "us+workman",
+												"us+workman-intl", "us+norman", "us+cz_sk_de", "us+intl_unicode",
+												"us+ats", "us+crd"};
 
 			var panel = new AdvancedSettingsPanel ( "third_level_layouts", valid_input_sources );
 
 			add_label ( panel, _("Key to choose third level:"), 0);
-
 
 			var third_level = new Gtk.ComboBoxText ();
 			third_level.append ("lv3:ralt_switch", _("Right Alt (Alt Gr)"));
