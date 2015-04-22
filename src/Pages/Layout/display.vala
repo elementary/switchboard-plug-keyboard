@@ -201,6 +201,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
                 // TODO variant
                 settings.layouts.add_layout (new Layout.XKB (code, ""));
+				settings.layouts.active = settings.layouts.length - 1;
                 rebuild_list ();
             });
         }
