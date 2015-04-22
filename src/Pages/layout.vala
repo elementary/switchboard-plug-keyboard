@@ -120,16 +120,16 @@ namespace Pantheon.Keyboard.LayoutPage
 			modifier.append_xkb_option ("compose:lctrl", _("Left Control"));
 			modifier.append_xkb_option ("compose:lwin", _("Left Super"));
 			modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
-			modifier.append_xkb_option ("compose:pause", _("Pause"));
+			modifier.append_xkb_option ("compose:paus", _("Pause"));
 			modifier.append_xkb_option ("compose:menu", _("Menu"));
 			modifier.default_command = "";
 			settings.add_xkb_modifier (modifier);
 
-			new_combo_box (this, modifier, 1, 2);
+			var compose_combo_box = new_combo_box (this, modifier, 1, 2);
 			
 
 			// Caps Lock key functionality
-			new_label (this, _("Caps Lock function:"), 2, 1);
+			var caps_label = new_label (this, _("Caps Lock function:"), 2, 1);
 			
 			modifier = new Xkb_modifier ();
 			modifier.append_xkb_option ("caps:capslock", _("Caps Lock"));
@@ -145,7 +145,18 @@ namespace Pantheon.Keyboard.LayoutPage
 			modifier.default_command = "caps:capslock";
 			settings.add_xkb_modifier (modifier);
 
-			new_combo_box (this, modifier, 2, 2);
+			var caps_combo_box = new_combo_box (this, modifier, 2, 2);
+
+			compose_combo_box.changed.connect (() => {
+				if (compose_combo_box.active_id == "compose:caps") {
+					caps_label.set_sensitive (false);
+					caps_combo_box.set_sensitive (false);
+				}
+				else {
+					caps_label.set_sensitive (true);
+					caps_combo_box.set_sensitive (true);
+				}
+			});
 
 			// tree view to display the current layouts
 			display = new LayoutPage.Display ();
