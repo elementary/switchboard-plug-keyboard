@@ -30,7 +30,6 @@ namespace Pantheon.Keyboard.LayoutPage
 		private HashTable <string, string> panel_for_layout;
 
 		public AdvancedSettings ( AdvancedSettingsPanel [] panels, LayoutSettings settings) {
-
 			sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
 			panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
 			this.attach (sep, 0, 0, 1, 1);
@@ -57,14 +56,14 @@ namespace Pantheon.Keyboard.LayoutPage
 			string panel_name = panel_for_layout.lookup (layout_name) ;
 
 			if (panel_name == null ) {
-				// if panel_name was not found we look for the layout without variant
+				// if layout_name was not found we look for the layout without variant
 				if ("+" in layout_name) {
 					var splited_name = layout_name.split ("+");
 					layout_name = splited_name[0];
 					panel_name = panel_for_layout.lookup (layout_name) ;
 				}
 				if (panel_name == null ) {
-					// this.hide() cannot be used because it messes the alignment`
+					// this.hide() cannot be used because it messes the alignment
 					this.stack.set_visible_child_name ("none");
 					this.sep.hide();
 					return;
@@ -95,10 +94,11 @@ namespace Pantheon.Keyboard.LayoutPage
 		{
 			handler  = new LayoutHandler ();
 			settings = LayoutSettings.get_instance ();
-			size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL), new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
+			size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
+							new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
 
 			// Different layouts per window
-			new_label ( this, _("Allow different layouts for individual windows:"), 0, 1);
+			new_label (this, _("Allow different layouts for individual windows:"), 0, 1);
 
 			var layouts_per_window_sw = new_switch (this, 0, 2);
 
@@ -111,8 +111,7 @@ namespace Pantheon.Keyboard.LayoutPage
             });
 
 			// Compose key position menu
-
-			new_label ( this, _("Compose key:"), 1, 1);
+			new_label (this, _("Compose key:"), 1, 1);
 			Xkb_modifier modifier = new Xkb_modifier ();
 			modifier.append_xkb_option ("", _("Disabled"));
 			modifier.append_xkb_option ("compose:ralt", _("Right Alt (Alt Gr)"));
@@ -150,13 +149,13 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			// tree view to display the current layouts
 			display = new LayoutPage.Display ();
-			this.attach (display, 0, 0, 1, 4);
+			this.attach (display, 0, 0, 1, 5);
 
 			// Advanced settings panel
-			AdvancedSettingsPanel [] panels = { third_level_layouts_panel (),
+			AdvancedSettingsPanel [] panels = {third_level_layouts_panel (),
 												fifth_level_layouts_panel (),
 												japanese_layouts_panel () };
-			this.advanced_settings = new AdvancedSettings ( panels, settings );
+			this.advanced_settings = new AdvancedSettings (panels, settings);
 
 			advanced_settings.hexpand = advanced_settings.vexpand = true;
 			advanced_settings.valign = Gtk.Align.START;
@@ -177,9 +176,9 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			entry_test.has_clear_icon = true;
 			entry_test.hexpand = entry_test.vexpand = true;
-			entry_test.valign  = Gtk.Align.START;
+			entry_test.valign  = Gtk.Align.END;
 
-			//this.attach (entry_test, 4, 3, 3, 1);
+			this.attach (entry_test, 1, 4, 2, 1);
 		}
 		
 		private AdvancedSettingsPanel third_level_layouts_panel () {
@@ -209,7 +208,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			var panel = new AdvancedSettingsPanel ( "third_level_layouts", valid_input_sources );
 
-			new_label ( panel, _("Key to choose third level:"), 0);
+			new_label (panel, _("Key to choose third level:"), 0);
 
 			Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
 			modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt (Alt Gr)"));
@@ -227,7 +226,7 @@ namespace Pantheon.Keyboard.LayoutPage
 			modifier.default_command = "lv3:ralt_switch";
 			settings.add_xkb_modifier (modifier);
 
-			new_combo_box ( panel, modifier, 0);
+			new_combo_box (panel, modifier, 0);
 
 			panel.show_all ();
 
@@ -235,13 +234,13 @@ namespace Pantheon.Keyboard.LayoutPage
 		}
 
 		private AdvancedSettingsPanel fifth_level_layouts_panel () {
-			var panel = new AdvancedSettingsPanel ( "fifth_level_layouts", {"ca+multix"});
+			var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
 
-			new_label ( panel, _("Key to choose third level:"), 0);
+			new_label (panel, _("Key to choose third level:"), 0);
 			Xkb_modifier modifier = settings.get_xkb_modifier_by_name ("third_level_key");
-			new_combo_box ( panel, modifier, 0);
+			new_combo_box (panel, modifier, 0);
 
-			new_label ( panel, _("Key to choose fifth level:"), 1);
+			new_label (panel, _("Key to choose fifth level:"), 1);
 
 			modifier = new Xkb_modifier ();
 			modifier.append_xkb_option ("", _("Right Control"));
@@ -253,7 +252,7 @@ namespace Pantheon.Keyboard.LayoutPage
 			modifier.default_command = "";
 			settings.add_xkb_modifier (modifier);
 
-			new_combo_box ( panel, modifier, 1 );
+			new_combo_box (panel, modifier, 1);
 
 			panel.show_all ();
 
@@ -282,8 +281,9 @@ namespace Pantheon.Keyboard.LayoutPage
 		}
 
 
+		// Function that adds a new switch to panel, and sets it up visually
+		// and aligning it
 		private Gtk.Switch new_switch (Gtk.Grid panel, int v_position, int h_position = 1) {
-
 			var new_switch = new Gtk.Switch ();
 			new_switch.halign = Gtk.Align.START;
 			new_switch.valign = Gtk.Align.CENTER;
@@ -298,7 +298,10 @@ namespace Pantheon.Keyboard.LayoutPage
 			return new_switch;
 		}
 
-		private Gtk.Switch new_xkb_option_switch (Gtk.Grid panel, string xkb_command, int v_position, int h_position = 1) {
+		// Function that adds a new switch but also cofigures its functionality
+		// to enable/disable an xkb-option
+		private Gtk.Switch new_xkb_option_switch
+			(Gtk.Grid panel, string xkb_command, int v_position, int h_position = 1) {
 			var new_switch = new_switch (panel, v_position, h_position);
 			Xkb_modifier modifier = new Xkb_modifier ();
 			modifier.append_xkb_option ("", "option off");
@@ -306,16 +309,14 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			if (modifier.active_command == "") {
 				new_switch.active = true;
-			}
-			else {
+			} else {
 				new_switch.active = false;
 			}
 
 			new_switch.notify["active"].connect(() => {
 				if (new_switch.active) {
 					modifier.active_command = xkb_command;
-				}
-				else {
+				} else {
 					modifier.active_command = "";
 				}
 			});
@@ -323,8 +324,7 @@ namespace Pantheon.Keyboard.LayoutPage
             settings.per_window_changed.connect (() => {
 				if (modifier.active_command == "") {
 					new_switch.active = true;
-				}
-				else {
+				} else {
 					new_switch.active = false;
 				}
             });
@@ -334,11 +334,12 @@ namespace Pantheon.Keyboard.LayoutPage
 			return new_switch;
 		}
 
-		private Gtk.ComboBoxText new_combo_box (Gtk.Grid panel, Xkb_modifier modifier, int v_position, int h_position = 1) {
+		private Gtk.ComboBoxText new_combo_box
+			(Gtk.Grid panel, Xkb_modifier modifier, int v_position, int h_position = 1) {
 			var new_combo_box = new Gtk.ComboBoxText ();
 
-			for (int i = 0; i < modifier.xkb_option_commands.length; i++ ) {
-				new_combo_box.append ( modifier.xkb_option_commands[i], modifier.option_descriptions[i] );
+			for (int i = 0; i < modifier.xkb_option_commands.length; i++) {
+				new_combo_box.append (modifier.xkb_option_commands[i], modifier.option_descriptions[i]);
 			}
 
 			new_combo_box.set_active_id (modifier.active_command);

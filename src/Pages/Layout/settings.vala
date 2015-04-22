@@ -233,8 +233,7 @@ namespace Pantheon.Keyboard.LayoutPage
 			set {
 				if ( value in xkb_option_commands ) {
 					_default_command = value;
-				}
-				else {
+				} else {
 					return;
 				}
 			}
@@ -375,8 +374,11 @@ namespace Pantheon.Keyboard.LayoutPage
 					new_xkb_options += xkb_command;
 				}
 			}
+			// Writing to GSettiongs will send a signal telling it changed but we
+			// don't want to trigger the update of all modifiers.
 			currently_writing = true;
 			settings.set_strv ("xkb-options", new_xkb_options);
+			currently_writing = false;
 		}
 
         public void parse_default () {
@@ -428,7 +430,6 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
 		public void add_xkb_modifier ( Xkb_modifier modifier ){
-			warning ( "Adding modifier named" + modifier.name );
 			xkb_options_modifiers += modifier;
 			modifier.active_command_changed.connect (() => {
 				if (changing_active_modifier) {
@@ -480,8 +481,6 @@ namespace Pantheon.Keyboard.LayoutPage
             update_active_from_gsettings ();
 			update_modifiers_from_gsettings ();
 
-			warning ( "HOOOOLEA" );
-
             layouts.layouts_changed.connect (() => {
                 write_list_to_gsettings ();
             });
@@ -500,7 +499,6 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			settings.changed["xkb-options"].connect (() => {
 				if (currently_writing) {
-					currently_writing = false;
 					return;
 				}
 				else {
