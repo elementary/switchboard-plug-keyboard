@@ -98,42 +98,52 @@ namespace Pantheon.Keyboard.LayoutPage
 			size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL), new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
 
 			// Different layouts per window
-			add_label ( this, _("Allow different layouts for individual windows:"), 0, 1);
+			new_label ( this, _("Allow different layouts for individual windows:"), 0, 1);
 
-			var switch_main = new Gtk.Switch();
-			switch_main.expand = false;
-			switch_main.halign = Gtk.Align.START;
-			switch_main.valign = Gtk.Align.CENTER;
-			var box = new Gtk.Box ( Gtk.Orientation.HORIZONTAL, 0 );
-			box.pack_start (switch_main, false, false, 0);
-			this.attach (box, 2, 0, 1, 1);
-			size_group[1].add_widget (box);
+			var layouts_per_window_sw = new_switch (this, 0, 2);
 
-            switch_main.active = settings.per_window;
-
-			switch_main.notify["active"].connect(() => {
-                settings.per_window = switch_main.active;
+            layouts_per_window_sw.active = settings.per_window;
+			layouts_per_window_sw.notify["active"].connect(() => {
+                settings.per_window = layouts_per_window_sw.active;
 			});
             settings.per_window_changed.connect (() => {
-                switch_main.active = settings.per_window;
+                layouts_per_window_sw.active = settings.per_window;
             });
 
 			// Compose key position menu
 
-			add_label ( this, _("Compose key:"), 1, 1);
+			new_label ( this, _("Compose key:"), 1, 1);
+			Xkb_modifier modifier = new Xkb_modifier ();
+			modifier.append_xkb_option ("", _("Disabled"));
+			modifier.append_xkb_option ("compose:ralt", _("Right Alt (Alt Gr)"));
+			modifier.append_xkb_option ("compose:rwin", _("Right Super"));
+			modifier.append_xkb_option ("compose:rctrl", _("Right Control"));
+			modifier.append_xkb_option ("compose:lctrl", _("Left Control"));
+			modifier.append_xkb_option ("compose:lwin", _("Left Super"));
+			modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
+			modifier.append_xkb_option ("compose:pause", _("Pause"));
+			modifier.append_xkb_option ("compose:menu", _("Menu"));
+			modifier.default_command = "";
+
+			settings.add_xkb_modifier (modifier);
 			
 			var compose_key = new Gtk.ComboBoxText ();
-			compose_key.append ("", _("Disabled"));
-			compose_key.append ("compose:ralt", _("Right Alt (Alt Gr)"));
-			compose_key.append ("compose:rwin", _("Right Super"));
-			compose_key.append ("compose:rctrl", _("Right Control"));
-			compose_key.append ("compose:lctrl", _("Left Control"));
-			compose_key.append ("compose:lwin", _("Left Super"));
-			compose_key.append ("compose:caps", _("Caps Lock"));
-			compose_key.append ("compose:pause", _("Pause"));
-			compose_key.append ("compose:menu", _("Menu"));
 
-			compose_key.set_active_id ("");
+			for (int i = 0; i < modifier.xkb_option_commands.length; i++ ) {
+				compose_key.append ( modifier.xkb_option_commands[i], modifier.option_descriptions[i] );
+			}
+
+			warning ( modifier.active_command );
+			compose_key.set_active_id (modifier.active_command);
+
+			compose_key.changed.connect (() => {
+				modifier.active_command = compose_key.active_id;
+			});
+
+			modifier.active_command_changed.connect (() => {
+				compose_key.set_active_id (modifier.active_command);
+			});
+
 
 			compose_key.halign = Gtk.Align.START;
 			compose_key.valign = Gtk.Align.CENTER;
@@ -141,7 +151,7 @@ namespace Pantheon.Keyboard.LayoutPage
 			size_group[1].add_widget (compose_key);
 
 			// Caps Lock key functionality
-			add_label (this, _("Caps Lock function:"), 2, 1);
+			new_label (this, _("Caps Lock function:"), 2, 1);
 			
 			var caps_lock = new Gtk.ComboBoxText ();
 			caps_lock.append ("caps:capslock", _("Caps Lock"));
@@ -223,7 +233,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
 			var panel = new AdvancedSettingsPanel ( "third_level_layouts", valid_input_sources );
 
-			add_label ( panel, _("Key to choose third level:"), 0);
+			new_label ( panel, _("Key to choose third level:"), 0);
 
 			var third_level = new Gtk.ComboBoxText ();
 			third_level.append ("lv3:ralt_switch", _("Right Alt (Alt Gr)"));
@@ -255,7 +265,7 @@ namespace Pantheon.Keyboard.LayoutPage
 			panel.input_sources = {"ca+multix"};
 			panel.name = "fifth_level_layouts";
 
-			add_label ( panel, _("Key to choose fifth level:"), 1);
+			new_label ( panel, _("Key to choose fifth level:"), 1);
 
 			var fifth_level = new Gtk.ComboBoxText ();
 			fifth_level.append ("", _("Right Control"));
@@ -280,14 +290,14 @@ namespace Pantheon.Keyboard.LayoutPage
 			string [] valid_input_sources = {"jp", "jp+kana86", "jp+OADG109A", "jp+mac", "jp+kana", "nec_vndr/jp"};
 			var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
 
-			add_label (panel, _("Nicola F Backspace:"), 0);
-			add_switch (panel, 0);
+			new_label (panel, _("Nicola F Backspace:"), 0);
+			new_switch (panel, 0);
 
-			add_label (panel, _("Kana Lock:"), 1);
-			add_switch (panel, 1);
+			new_label (panel, _("Kana Lock:"), 1);
+			new_switch (panel, 1);
 
-			add_label (panel, _("Zenkaku Hankaku as Escape:"), 2);
-			add_switch (panel, 2);
+			new_label (panel, _("Zenkaku Hankaku as Escape:"), 2);
+			new_switch (panel, 2);
 
 			panel.show_all ();
 
@@ -295,7 +305,7 @@ namespace Pantheon.Keyboard.LayoutPage
 		}
 
 
-		private void add_switch (Gtk.Grid panel, int v_position) {
+		private Gtk.Switch new_switch (Gtk.Grid panel, int v_position, int h_position = 1) {
 
 			var new_switch = new Gtk.Switch ();
 			new_switch.halign = Gtk.Align.START;
@@ -305,11 +315,13 @@ namespace Pantheon.Keyboard.LayoutPage
 			// is a workaround for that.
 			var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
 			box.pack_start (new_switch, false, false, 0);
-			panel.attach (box, 1, v_position, 1, 1);
+			panel.attach (box, h_position, v_position, 1, 1);
 			size_group[1].add_widget (box);
+
+			return new_switch;
 		}
 
-		private void add_label (Gtk.Grid panel, string text, int v_position, int h_position = 0) {
+		private Gtk.Label new_label (Gtk.Grid panel, string text, int v_position, int h_position = 0) {
 			// v_position is relative to the panel provided
 			var new_label   = new Gtk.Label (text);
 			new_label.valign = Gtk.Align.CENTER;
@@ -319,6 +331,8 @@ namespace Pantheon.Keyboard.LayoutPage
 			new_label.set_alignment (1, 0.5f);
 			panel.attach (new_label, h_position, v_position, 1, 1);
 			size_group[0].add_widget (new_label);
+
+			return new_label;
 		}
 
 		private void show_panel_for_active_layout () {
