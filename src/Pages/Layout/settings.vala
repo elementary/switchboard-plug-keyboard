@@ -204,6 +204,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
 	class Xkb_modifier
 	{
+		public string name;
 		public string _active_command;
 		public string active_command {
 			get {
@@ -242,7 +243,8 @@ namespace Pantheon.Keyboard.LayoutPage
 		public string [] xkb_option_commands;
 		public string [] option_descriptions;
 
-		public Xkb_modifier () {
+		public Xkb_modifier (string name = "") {
+			this.name = name;
 		}
 
 		public void append_xkb_option ( string xkb_command, string description ){
@@ -329,7 +331,6 @@ namespace Pantheon.Keyboard.LayoutPage
 			foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
 				bool modifier_is_default = true;
 				foreach ( string xkb_command in xkb_options ){
-					warning ("updating modifiers for option: " + xkb_command );
 					if ( xkb_command in modifier.xkb_option_commands ) {
 						changing_active_modifier = true;
 						modifier.active_command = xkb_command;
@@ -354,7 +355,8 @@ namespace Pantheon.Keyboard.LayoutPage
 			string [] old_xkb_options = settings.get_strv ("xkb-options");
 			// adds all options that come from modifiers
 			foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
-				new_xkb_options += modifier.active_command;
+				if (modifier.active_command != "")
+					new_xkb_options += modifier.active_command;
 			}
 
 			// adds all options that are on gsettings but can't be modified
@@ -375,7 +377,6 @@ namespace Pantheon.Keyboard.LayoutPage
 			}
 			currently_writing = true;
 			settings.set_strv ("xkb-options", new_xkb_options);
-			//xkb_options = new_xkb_options;
 		}
 
         public void parse_default () {
@@ -427,6 +428,7 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
 		public void add_xkb_modifier ( Xkb_modifier modifier ){
+			warning ( "Adding modifier named" + modifier.name );
 			xkb_options_modifiers += modifier;
 			modifier.active_command_changed.connect (() => {
 				if (changing_active_modifier) {
@@ -437,6 +439,15 @@ namespace Pantheon.Keyboard.LayoutPage
 				}
 			});
 			update_modifiers_from_gsettings ();
+		}
+
+		public Xkb_modifier get_xkb_modifier_by_name (string name) {
+			foreach ( Xkb_modifier modifier in xkb_options_modifiers ){
+				if ( modifier.name == name ) 
+					return modifier;
+			}
+
+			return null;
 		}
 
         public void reset_all ()
