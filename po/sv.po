@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-04-12 10:30+0000\n"
-"Last-Translator: Larsson <Unknown>\n"
+"PO-Revision-Date: 2015-04-29 09:52+0000\n"
+"Last-Translator: Jonas Mindemark <fonclbrisch@gmail.com>\n"
 "Language-Team: Swedish <sv@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-04-13 05:38+0000\n"
-"X-Generator: Launchpad (build 17423)\n"
+"X-Launchpad-Export-Date: 2015-04-30 05:28+0000\n"
+"X-Generator: Launchpad (build 17453)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -272,7 +272,7 @@ msgstr "Valfri Alt-tangent"
 
 #: ../src//Pages/Options/option_handler.vala:139
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Höger Alt-tangent, Skift+Höger Alt-tangent är Multi_Key"
 
 #: ../src//Pages/Options/option_handler.vala:140
 msgid "Right Alt key never chooses 3rd level"
@@ -333,7 +333,7 @@ msgstr "Byt Ctrl och Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "At left of 'A'"
-msgstr ""
+msgstr "Till vänster om \"A\""
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid "At bottom left"
@@ -607,7 +607,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:244
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "Växla PointerKeys med Skift + NumLock"
 
 #: ../src//Pages/Options/option_handler.vala:245
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
@@ -976,7 +976,7 @@ msgstr "Växla till höger"
 
 #: ../src//Pages/Shortcuts/list.vala:129
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Flytta till arbetsyta 1"
 
 #: ../src//Pages/Shortcuts/list.vala:130
 msgid "Move to workspace 2"
@@ -1148,7 +1148,7 @@ msgstr "Nästa Tangentbordslayout"
 
 #: ../src//Pages/Shortcuts/list.vala:323
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Föregående Tangentbordslayout"
 
 #: ../src//Pages/shortcuts.vala:32
 msgid "Windows"
