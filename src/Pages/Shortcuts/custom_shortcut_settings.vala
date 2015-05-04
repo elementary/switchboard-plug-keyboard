@@ -48,8 +48,8 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
             var new_relocatable_schema = get_relocatable_schema_path (i);
 
             if (relocatable_schema_is_used (new_relocatable_schema) == false) {
-                add_relocatable_schema (new_relocatable_schema);
                 reset_relocatable_schema (new_relocatable_schema);
+                add_relocatable_schema (new_relocatable_schema);
                 return new_relocatable_schema;
             }
         }
@@ -71,6 +71,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         var relocatable_schemas = get_relocatable_schemas ();
         relocatable_schemas += new_relocatable_schema;
         settings.set_strv (KEY + "s", relocatable_schemas);
+        apply_settings (settings);
     }
 
     static void reset_relocatable_schema (string relocatable_schema) {
@@ -78,6 +79,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         relocatable_settings.reset ("name");
         relocatable_settings.reset ("command");
         relocatable_settings.reset ("binding");
+        apply_settings (relocatable_settings);
     }
 
     public static void remove_shortcut (string relocatable_schema)
@@ -91,6 +93,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
         reset_relocatable_schema (relocatable_schema);
         settings.set_strv (KEY + "s", relocatable_schemas);
+        apply_settings (settings);
     }
 
     public static bool edit_shortcut (string relocatable_schema, string shortcut)
@@ -98,6 +101,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
         relocatable_settings.set_string ("binding", shortcut);
+        apply_settings (relocatable_settings);
         return true;
     }
 
@@ -106,6 +110,8 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
         relocatable_settings.set_string ("command", command);
+        relocatable_settings.set_string ("name", command);
+        apply_settings (relocatable_settings);
         return true;
     }
 
@@ -142,5 +148,10 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         }
 
         return false;
+    }
+
+    private static void apply_settings (GLib.Settings asettings) {
+        asettings.apply ();
+        GLib.Settings.sync ();
     }
 }

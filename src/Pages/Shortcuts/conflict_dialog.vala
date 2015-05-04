@@ -11,8 +11,9 @@ class ConflictDialog : Gtk.MessageDialog {
         add_button (_("Reassign"), 1);
 
         response.connect ((response_id) => {
-            if (response_id == 1)
+            if (response_id == 1) {
                 reassign ();
+            }
             destroy();
         });
     }

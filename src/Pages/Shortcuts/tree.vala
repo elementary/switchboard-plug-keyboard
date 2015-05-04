@@ -21,8 +21,6 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             this.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
             this.insert_column_with_attributes (-1, null, cell_edit, "text", 1);
-            //this.insert_column_with_attributes (-1, null, cell_desc, "text", 2);
-            //this.insert_column_with_attributes (-1, null, cell_edit, "text", 3);
 
             this.headers_visible = false;
             this.expand          = true;

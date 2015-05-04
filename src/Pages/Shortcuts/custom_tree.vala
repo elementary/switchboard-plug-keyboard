@@ -10,6 +10,9 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         COUNT
     }
 
+	public signal void row_selected ();
+	public signal void row_unselected ();
+
     public CustomTree () {
         setup_gui ();
         load_and_display_custom_shortcuts ();
@@ -76,6 +79,15 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
             }
 
             return true;
+        });
+
+        var selection = this.get_selection ();
+        selection.changed.connect (() => {
+            if (selection.count_selected_rows () > 0) {
+                row_selected ();
+            } else {
+                row_unselected ();
+            }
         });
 
         cell_edit.accel_edited.connect ((path, key, mods) => {
