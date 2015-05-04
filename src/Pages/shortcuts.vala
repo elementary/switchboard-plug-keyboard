@@ -23,8 +23,6 @@ namespace Pantheon.Keyboard.Shortcuts
 	// main class
 	class Page : Pantheon.Keyboard.AbstractPage
 	{
-		public Gtk.InfoBar infobar;
-
 		public override void reset ()
 		{
 			for (int i = 0; i < SectionID.COUNT; i++) {
@@ -39,11 +37,6 @@ namespace Pantheon.Keyboard.Shortcuts
 		public Page ()
 		{
 			CustomShortcutSettings.init ();
-
-			infobar = new Gtk.InfoBar ();
-			infobar.no_show_all = true;
-			infobar.set_show_close_button (true);
-			infobar.response.connect ((id) => { infobar.hide (); });
 
 			// init public elements
 			section_names = {
@@ -63,15 +56,14 @@ namespace Pantheon.Keyboard.Shortcuts
 				trees += new Tree ((SectionID) id);
 
 			if (CustomShortcutSettings.available)
-				trees += new CustomTree (infobar);
+				trees += new CustomTree ();
 
 			// private elements
 			var shortcut_display = new ShortcutDisplay (trees);
 			var section_switcher = new SectionSwitcher ();
 
-			this.attach (infobar, 1, 0, 1, 1);
-			this.attach (section_switcher, 0, 1, 1, 1);
-			this.attach (shortcut_display, 1, 1, 2, 1);
+			this.attach (section_switcher, 0, 0, 1, 1);
+			this.attach (shortcut_display, 1, 0, 2, 1);
 
 			section_switcher.changed.connect (shortcut_display.change_selection);
 		}

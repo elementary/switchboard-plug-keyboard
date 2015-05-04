@@ -18,7 +18,6 @@ namespace Pantheon.Keyboard.Shortcuts
 			selected = 0;
 			
 			foreach (var tree in t) {
-				tree.set_rules_hint (true);
 				trees += tree;
 			}
 			

@@ -1,8 +1,10 @@
-private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree {
+private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.Grid, DisplayTree {
 
     Gtk.CellRendererText cell_desc;
     Gtk.CellRendererAccel cell_edit;
-	Gtk.InfoBar infobar;
+    Gtk.InfoBar infobar;
+    Gtk.TreeView tv;
+
     enum Column {
         COMMAND,
         SHORTCUT,
@@ -10,29 +12,30 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         COUNT
     }
 
-	public signal void row_selected ();
-	public signal void row_unselected ();
+    public signal void row_selected ();
+    public signal void row_unselected ();
 
-    public CustomTree (Gtk.InfoBar infobar) {
-		this.infobar = infobar;
+    public CustomTree () {
         setup_gui ();
         load_and_display_custom_shortcuts ();
         connect_signals ();
     }
 
     Gtk.ListStore list_store {
-        get { return model as Gtk.ListStore; }
+        get { return tv.model as Gtk.ListStore; }
     }
 
     void setup_gui () {
-		infobar.message_type = Gtk.MessageType.INFO;
-		var info_container = infobar.get_content_area () as Gtk.Container;
-		var info_label = new Gtk.Label (_("You need to logout and login for the changes to take effect"));
-		info_container.add (info_label);
-		info_label.show ();
-		infobar.show ();
+        infobar = new Gtk.InfoBar ();
+        infobar.message_type = Gtk.MessageType.INFO;
+        infobar.set_show_close_button (true);
+        var info_container = infobar.get_content_area () as Gtk.Container;
+        var info_label = new Gtk.Label (_("You need to logout and login for the changes to take effect"));
+        info_container.add (info_label);
 
-		var store = new Gtk.ListStore (Column.COUNT , typeof (string),
+        tv = new Gtk.TreeView ();
+
+        var store = new Gtk.ListStore (Column.COUNT , typeof (string),
                                                       typeof (string),
                                                       typeof (string));
 
@@ -43,13 +46,16 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         cell_edit.editable = true;
         cell_edit.accel_mode = Gtk.CellRendererAccelMode.OTHER;
 
-        this.set_model (store);
+        tv.set_model (store);
 
-        this.insert_column_with_attributes (-1, _("Command"), cell_desc, "markup", Column.COMMAND);
-        this.insert_column_with_attributes (-1, _("Shortcut"), cell_edit, "text", Column.SHORTCUT);
+        tv.insert_column_with_attributes (-1, _("Command"), cell_desc, "markup", Column.COMMAND);
+        tv.insert_column_with_attributes (-1, _("Shortcut"), cell_edit, "text", Column.SHORTCUT);
 
-        this.expand = true;
-        this.get_column (0).expand = true;
+        tv.expand = true;
+        tv.get_column (0).expand = true;
+
+        this.attach (infobar, 0, 0, 1, 1);
+        this.attach (tv, 0, 1, 1, 1);
     }
 
     public void load_and_display_custom_shortcuts () {
@@ -69,27 +75,29 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
             );
         }
 
-        model = store;
+        tv.model = store;
     }
 
     void connect_signals () {
-        this.button_press_event.connect ((event) => {
-            if (event.window != this.get_bin_window ())
+        infobar.response.connect ((id) => { infobar.hide (); });
+
+        tv.button_press_event.connect ((event) => {
+            if (event.window != tv.get_bin_window ())
                 return false;
 
             Gtk.TreePath path;
             Gtk.TreeViewColumn col;
 
-            if (this.get_path_at_pos ((int) event.x, (int) event.y,
-                                      out path, out col, null, null)) {
-                this.grab_focus ();
-                this.set_cursor (path, col, true);
+            if (tv.get_path_at_pos ((int) event.x, (int) event.y,
+                                    out path, out col, null, null)) {
+                tv.grab_focus ();
+                tv.set_cursor (path, col, true);
             }
 
             return true;
         });
 
-        var selection = this.get_selection ();
+        var selection = tv.get_selection ();
         selection.changed.connect (() => {
             if (selection.count_selected_rows () > 0) {
                 row_selected ();
@@ -117,7 +125,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
     }
 
     public void on_add_clicked () {
-        var store = model as Gtk.ListStore;
+        var store = tv.model as Gtk.ListStore;
         Gtk.TreeIter iter;
 
         var relocatable_schema = CustomShortcutSettings.create_shortcut ();
@@ -133,9 +141,9 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         Gtk.TreePath path;
         GLib.Value relocatable_schema;
 
-        get_cursor (out path, null);
-        model.get_iter (out iter, path);
-        model.get_value (iter, Column.SCHEMA, out relocatable_schema);
+        tv.get_cursor (out path, null);
+        tv.model.get_iter (out iter, path);
+        tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
         CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
         list_store.remove (iter);
@@ -145,8 +153,8 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         Gtk.TreeIter iter;
         GLib.Value relocatable_schema;
 
-        model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-        model.get_value (iter, Column.SCHEMA, out relocatable_schema);
+        tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
+        tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
         CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
         load_and_display_custom_shortcuts ();
@@ -167,9 +175,9 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
         Gtk.TreeIter iter;
         GLib.Value command, relocatable_schema;
 
-        model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-        model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-        model.get_value (iter, Column.COMMAND, out command);
+        tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
+        tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
+        tv.model.get_value (iter, Column.COMMAND, out command);
 
         var not_null_shortcut = shortcut ?? new Shortcut ();
 

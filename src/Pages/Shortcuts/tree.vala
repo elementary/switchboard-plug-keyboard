@@ -13,6 +13,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             load_and_display_shortcuts ();
 
+			set_rules_hint (true);
             var cell_desc = new Gtk.CellRendererText ();
             var cell_edit = new Gtk.CellRendererAccel ();
 
