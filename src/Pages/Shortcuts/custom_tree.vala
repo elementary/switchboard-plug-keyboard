@@ -2,7 +2,7 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
 
     Gtk.CellRendererText cell_desc;
     Gtk.CellRendererAccel cell_edit;
-
+	Gtk.InfoBar infobar;
     enum Column {
         COMMAND,
         SHORTCUT,
@@ -13,7 +13,8 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
 	public signal void row_selected ();
 	public signal void row_unselected ();
 
-    public CustomTree () {
+    public CustomTree (Gtk.InfoBar infobar) {
+		this.infobar = infobar;
         setup_gui ();
         load_and_display_custom_shortcuts ();
         connect_signals ();
@@ -24,7 +25,14 @@ private class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.TreeView, DisplayTree
     }
 
     void setup_gui () {
-        var store = new Gtk.ListStore (Column.COUNT , typeof (string),
+		infobar.message_type = Gtk.MessageType.INFO;
+		var info_container = infobar.get_content_area () as Gtk.Container;
+		var info_label = new Gtk.Label (_("You need to logout and login for the changes to take effect"));
+		info_container.add (info_label);
+		info_label.show ();
+		infobar.show ();
+
+		var store = new Gtk.ListStore (Column.COUNT , typeof (string),
                                                       typeof (string),
                                                       typeof (string));
 
