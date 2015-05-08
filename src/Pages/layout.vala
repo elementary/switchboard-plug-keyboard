@@ -1,12 +1,12 @@
-namespace Pantheon.Keyboard.Layout
+namespace Pantheon.Keyboard.LayoutPage
 {
 	// global handler
 	LayoutHandler handler;
 
 	class Page : Pantheon.Keyboard.AbstractPage
 	{
-		private Layout.Display display;
-		private SettingsGroups settings;
+		private LayoutPage.Display display;
+		private LayoutSettings settings;
 
 		public override void reset ()
 		{
@@ -18,18 +18,14 @@ namespace Pantheon.Keyboard.Layout
 		public Page ()
 		{
 			handler  = new LayoutHandler ();
+			settings = LayoutSettings.get_instance ();
 
 			// first some labels
 			var label_1   = new Gtk.Label (_("Allow different layouts for individual windows:"));
-			var label_2   = new Gtk.Label (_("New windows use:"));
 
 			label_1.valign = Gtk.Align.CENTER;
 			label_1.halign = Gtk.Align.END;
-			label_2.valign = Gtk.Align.CENTER;
-			label_2.halign = Gtk.Align.END;
-
 			this.attach (label_1, 4, 0, 1, 1);
-			this.attach (label_2, 4, 1, 1, 1);
 
 			// widgets to change settings
 			var switch_main = new Gtk.Switch();
@@ -37,52 +33,20 @@ namespace Pantheon.Keyboard.Layout
 			switch_main.halign = Gtk.Align.START;
 			switch_main.valign = Gtk.Align.CENTER;
 
-			var button1 = new Gtk.RadioButton.with_label(null, _("Default layout"));
-			var button2 = new Gtk.RadioButton.with_label_from_widget (button1, _("Previous window's layout"));
-
 			this.attach (switch_main, 5, 0, 1, 1);
-			this.attach (button1,     5, 1, 1, 1);
-			this.attach (button2,     5, 2, 1, 1);
 
-			settings = new Layout.SettingsGroups();
+            switch_main.active = settings.per_window;
 
-			// connect switch signals
-			switch_main.active = settings.group_per_window;
+			switch_main.notify["active"].connect(() => {
+                settings.per_window = switch_main.active;
+			});
+            settings.per_window_changed.connect (() => {
+                switch_main.active = settings.per_window;
+            });
 
-			button1.sensitive = button2.sensitive = switch_main.active;
-			label_2.sensitive = switch_main.active;
-
-			switch_main.notify["active"].connect( () => {
-				settings.group_per_window = switch_main.active;
-				button1.sensitive = button2.sensitive = switch_main.active;
-				label_2.sensitive = switch_main.active;
-			} );
-
-			settings.changed["group-per-window"].connect (() => {
-				switch_main.active = settings.group_per_window;
-				button1.sensitive = button2.sensitive = switch_main.active;
-				label_2.sensitive = switch_main.active;
-			} );
-
-			// connect radio button signals
-			if( settings.default_group >= 0 )
-				button1.active = true;
-			else
-				button2.active = true;
-
-			button1.toggled.connect (() => { settings.default_group =  0; } );
-			button2.toggled.connect (() => { settings.default_group = -1; } );
-
-			settings.changed["default-group"].connect (() =>
-			{
-				if( settings.default_group >= 0 )
-					button1.active = true;
-				else
-					button2.active = true;
-			} );
 
 			// tree view to display the current layouts
-			display = new Layout.Display ();
+			display = new LayoutPage.Display ();
 
 			this.attach (display, 0, 0, 4, 4);
 

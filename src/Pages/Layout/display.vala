@@ -1,226 +1,208 @@
-namespace Pantheon.Keyboard.Layout
+namespace Pantheon.Keyboard.LayoutPage
 {
-	// widget to display/add/remove/move keyboard layouts
-	// interacts with class SettingsLayout
-	class Display : Gtk.Grid
-	{
-		private signal void update_buttons ();
+    // widget to display/add/remove/move keyboard layouts
+    class Display : Gtk.Grid
+    {
 
-		private SettingsLayouts settings;
-		private Gtk.TreeView tree;
+        LayoutSettings settings;
+        Gtk.TreeView tree;
+        Gtk.ToolButton up_button;
+        Gtk.ToolButton down_button;
+        Gtk.ToolButton add_button;
+        Gtk.ToolButton remove_button;
 
-		public Display ()
-		{
-			settings = new SettingsLayouts ();
-			var list = make_list_store ();
-			tree     = new Gtk.TreeView.with_model (list);
-			var cell = new Gtk.CellRendererText ();
+        /*
+         * Set to true when the user has just clicked on the list to prevent
+         * that settings.layouts.active_changed triggers update_cursor
+         */
+        bool cursor_changing = false;
 
-			tree.insert_column_with_attributes (-1, null, cell, "text", 0);
-			tree.headers_visible = false;
-			tree.expand = true;
+        public Display ()
+        {
+            settings = LayoutSettings.get_instance ();
 
-			var scroll = new Gtk.ScrolledWindow(null, null);
-			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
-			scroll.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
-			scroll.shadow_type = Gtk.ShadowType.IN;
-			scroll.add(tree);
-			scroll.expand = true;
+            tree     = new Gtk.TreeView ();
+            var cell = new Gtk.CellRendererText ();
 
-			var tbar = new Gtk.Toolbar();
-			tbar.set_style(Gtk.ToolbarStyle.ICONS);
-			tbar.set_icon_size(Gtk.IconSize.SMALL_TOOLBAR);
-			tbar.set_show_arrow(false);
-			tbar.hexpand = true;
+            tree.insert_column_with_attributes (-1, null, cell, "text", 0);
+            tree.headers_visible = false;
+            tree.expand = true;
 
-			scroll.get_style_context().set_junction_sides(Gtk.JunctionSides.BOTTOM);
-			tbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-			tbar.get_style_context().set_junction_sides(Gtk.JunctionSides.TOP);
+            var scroll = new Gtk.ScrolledWindow(null, null);
+            scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
+            scroll.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
+            scroll.shadow_type = Gtk.ShadowType.IN;
+            scroll.add (tree);
+            scroll.expand = true;
 
-			var add_button    = new Gtk.ToolButton (null, _("Add…"));
-			var remove_button = new Gtk.ToolButton (null, _("Remove"));
-			var up_button     = new Gtk.ToolButton (null, _("Move up"));
-			var down_button   = new Gtk.ToolButton (null, _("Move down"));
+            var tbar = new Gtk.Toolbar();
+            tbar.set_style(Gtk.ToolbarStyle.ICONS);
+            tbar.set_icon_size(Gtk.IconSize.SMALL_TOOLBAR);
+            tbar.set_show_arrow(false);
+            tbar.hexpand = true;
 
-			add_button.set_tooltip_text    (_("Add…"));
-			remove_button.set_tooltip_text (_("Remove"));
-			up_button.set_tooltip_text     (_("Move up"));
-			down_button.set_tooltip_text   (_("Move down"));
+            scroll.get_style_context().set_junction_sides(Gtk.JunctionSides.BOTTOM);
+            tbar.get_style_context().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+            tbar.get_style_context().set_junction_sides(Gtk.JunctionSides.TOP);
 
-			add_button.set_icon_name    ("list-add-symbolic");
-			remove_button.set_icon_name ("list-remove-symbolic");
-			up_button.set_icon_name     ("go-up-symbolic");
-			down_button.set_icon_name   ("go-down-symbolic");
+            add_button    = new Gtk.ToolButton (null, _("Add…"));
+            remove_button = new Gtk.ToolButton (null, _("Remove"));
+            up_button     = new Gtk.ToolButton (null, _("Move up"));
+            down_button   = new Gtk.ToolButton (null, _("Move down"));
 
-			remove_button.sensitive = false;
-			up_button.sensitive     = false;
-			down_button.sensitive   = false;
+            add_button.set_tooltip_text    (_("Add…"));
+            remove_button.set_tooltip_text (_("Remove"));
+            up_button.set_tooltip_text     (_("Move up"));
+            down_button.set_tooltip_text   (_("Move down"));
 
-			tbar.insert (add_button,    -1);
-			tbar.insert (remove_button, -1);
-			tbar.insert (up_button,     -1);
-			tbar.insert (down_button,   -1);
+            add_button.set_icon_name    ("list-add-symbolic");
+            remove_button.set_icon_name ("list-remove-symbolic");
+            up_button.set_icon_name     ("go-up-symbolic");
+            down_button.set_icon_name   ("go-down-symbolic");
 
-			this.attach (scroll, 0, 0, 1, 1);
-			this.attach (tbar,   0, 1, 1, 1);
+            remove_button.sensitive = false;
+            up_button.sensitive     = false;
+            down_button.sensitive   = false;
 
-			var pop = new AddLayout ();
+            tbar.insert (add_button,    -1);
+            tbar.insert (remove_button, -1);
+            tbar.insert (up_button,     -1);
+            tbar.insert (down_button,   -1);
 
-			add_button.clicked.connect( () => {
-				// uncomment when reverting to popover
-				//pop.move_to_widget (add_button);
-				// and remove this line
-				pop.show_all ();
-				add_item (tree, pop);
-			} );
+            this.attach (scroll, 0, 0, 1, 1);
+            this.attach (tbar,   0, 1, 1, 1);
 
-			remove_button.clicked.connect( () => {
-				remove_item (tree);
-				update_buttons ();
-			} );
+            var pop = new AddLayout ();
 
-			up_button.clicked.connect (() => {
-				move_item (tree, 0);
-				update_buttons ();
-			} );
+            add_button.clicked.connect( () => {
+                // uncomment when reverting to popover
+                //pop.move_to_widget (add_button);
+                // and remove this line
+                pop.show_all ();
+                add_item (pop);
+            });
 
-			down_button.clicked.connect (() => {
-				move_item (tree, 1);
-				update_buttons ();
-			} );
+            remove_button.clicked.connect( () => {
+                remove_item ();
+            });
 
-			tree.cursor_changed.connect (() => {
-				update_buttons ();
-			} );
+            up_button.clicked.connect (() => {
+                settings.layouts.move_active_layout_up ();
+                rebuild_list ();
+            });
 
-			this.update_buttons.connect (() =>
-			{
-				Gtk.TreePath path;
+            down_button.clicked.connect (() => {
+                settings.layouts.move_active_layout_down ();
+                rebuild_list ();
+            });
 
-				tree.get_cursor (out path, null);
+            tree.cursor_changed.connect (() => {
+                cursor_changing = true;
+                int new_index = get_cursor_index ();
+                if (new_index != -1) {
+                    settings.layouts.active = new_index;
+                }
+                update_buttons ();
 
-				if (path == null)
-				{
-					up_button.sensitive     = false;
-					down_button.sensitive   = false;
-					remove_button.sensitive = false;
-					return;
-				}
+                cursor_changing = false;
+            });
 
-				int index = (path.get_indices ())[0];
-				int count = settings.layouts.length - 1;
+            settings.layouts.active_changed.connect (() => {
+                if (cursor_changing)
+                    return;
+                update_cursor ();
+            });
 
-				up_button.sensitive     = (index != 0);
-				down_button.sensitive   = (index != count);
-				remove_button.sensitive = (count > 0);
-			} );
-		}
+            rebuild_list ();
+            update_cursor ();
+        }
 
-		private Gtk.ListStore make_list_store ()
-		{
-			Gtk.ListStore list_store = new Gtk.ListStore (3, typeof (string), typeof(uint), typeof(uint));
-			Gtk.TreeIter iter;
+        public void reset_all ()
+        {
+            settings.reset_all ();
+            rebuild_list ();
+        }
 
-			uint layout = 0, variant = 0;
+        void update_buttons () {
+                int index = get_cursor_index ();
 
-			foreach (string item in settings.layouts)
-			{
-				handler.from_code (item, out layout, out variant);
-				item = handler.get_name (layout, variant);
+                // if empty list
+                if (index == -1)
+                {
+                    up_button.sensitive     = false;
+                    down_button.sensitive   = false;
+                    remove_button.sensitive = false;
+                } else {
+                    up_button.sensitive     = (index != 0);
+                    down_button.sensitive   = (index != settings.layouts.length - 1);
+                    remove_button.sensitive = (settings.layouts.length > 0);
+                }
+        }
 
-				list_store.append (out iter);
-				list_store.set (iter, 0, item);
-				list_store.set (iter, 1, layout);
-				list_store.set (iter, 2, variant);
-			}
+        /**
+         * Returns the index of the selected layout in the UI.
+         * In case the list contains no layouts, it returns -1.
+         */
+        int get_cursor_index () {
+                Gtk.TreePath path;
 
-			return list_store;
-		}
+                tree.get_cursor (out path, null);
 
-		public void reset_all ()
-		{
-			settings.reset_all ();
-			tree.model = make_list_store ();
-			update_buttons ();
-		}
+                if (path == null)
+                {
+                    return -1;
+                }
 
-		void add_item (Gtk.TreeView tree, Layout.AddLayout pop)
-		{
-			pop.layout_added.connect ((layout, variant) =>
-			{
-				Gtk.TreeIter iter;
+                return (path.get_indices ())[0];
+        }
 
-				var name = handler.get_name (layout, variant);
-				var code = handler.get_code (layout, variant);
-				var list = tree.model as Gtk.ListStore;
+        void update_cursor () {
+            Gtk.TreePath path = new Gtk.TreePath.from_indices (settings.layouts.active);
+            tree.set_cursor (path, null, false);
+        }
 
-				if (settings.add_layout (code))
-				{
-					list.append (out iter);
-					list.set (iter, 0, name);
-					list.set (iter, 1, layout);
-					list.set (iter, 2, variant);
+        Gtk.ListStore build_store () {
+            Gtk.ListStore list_store = new Gtk.ListStore (3, typeof (string), typeof(uint), typeof(uint));
+            Gtk.TreeIter iter;
 
-					tree.set_cursor (list.get_path(iter), null, false);
-					update_buttons ();
-				}
-			} );
-		}
+            uint layout = 0, variant = 0;
 
-		void remove_item (Gtk.TreeView tree)
-		{
-			Gtk.TreeModel model;
-			Gtk.TreeIter  iter;
+            for (uint i = 0; i < settings.layouts.length; i++) {
+                string item = settings.layouts.get_layout (i).name;
+                handler.from_code (item, out layout, out variant);
+                item = handler.get_name (layout, variant);
 
-			var select = tree.get_selection();
-			select.get_selected (out model, out iter);
+                list_store.append (out iter);
+                list_store.set (iter, 0, item);
+                list_store.set (iter, 1, layout);
+                list_store.set (iter, 2, variant);
+            }
+            return list_store;
+        }
 
-			GLib.Value layout, variant;
-			model.get_value (iter, 1, out layout);
-			model.get_value (iter, 2, out variant);
+        void rebuild_list () {
+            tree.model = build_store ();
+            update_cursor ();
+            update_buttons ();
+        }
 
-			settings.remove_layout (handler.get_code ((uint)layout, (uint)variant));
-			stdout.printf ("%s\n", handler.get_code ((uint)layout, (uint)variant));
-			(model as Gtk.ListStore).remove(iter);
-		}
+        void remove_item ()
+        {
+            settings.layouts.remove_active_layout ();
+            rebuild_list ();
+        }
 
-		void move_item (Gtk.TreeView tree, int dir)
-		{
-			Gtk.TreeModel model;
-			Gtk.TreeIter  iter_current, iter_new;
-			Gtk.TreePath  path_current;
+        void add_item (LayoutPage.AddLayout pop)
+        {
+            pop.layout_added.connect ((layout, variant) => {
 
-			var select = tree.get_selection();
-			select.get_selected (out model, out iter_current);
-			path_current = model.get_path (iter_current);
+                var name = handler.get_name (layout, variant);
+                var code = handler.get_code (layout, variant);
 
-			iter_new = iter_current;
-
-			var store = model as Gtk.ListStore;
-
-			switch (dir)
-			{
-				case 1: if (model.iter_next (ref iter_new) == false)
-							return;
-						break;
-				case 0: if (model.iter_previous (ref iter_new) == false)
-							return;
-						break;
-			}
-
-			store.swap (iter_current, iter_new);
-
-			tree.set_cursor (model.get_path (iter_current), null, false);
-
-			switch (dir)
-			{
-				case 1:
-						settings.layout_down ((path_current.get_indices()) [0]);
-						break;
-				case 0:
-						settings.layout_up   ((path_current.get_indices()) [0]);
-						break;
-			}
-		}
-	}
+                // TODO variant
+                settings.layouts.add_layout (new Layout.XKB (code, ""));
+                rebuild_list ();
+            });
+        }
+    }
 }

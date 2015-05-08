@@ -42,8 +42,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Toggle always on Top"),
 						_("Switch Windows"),
 						_("Switch Windows backwards"),
-						_("Expose Windows"),
-						_("Expose all Windows")
+						_("Window Overview"),
+						_("Show All Windows")
 					},
 					schemas = {
 						Schema.WM,
@@ -212,7 +212,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Home Folder"),
 						_("File Search"),
 						_("Terminal"),
-						_("Internet Browser")
+						_("Internet Browser"),
+						_("Applications Launcher")
 					},
 
 					schemas = {
@@ -222,7 +223,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.MEDIA
+						Schema.MEDIA,
+						Schema.WM
 					},
 		
 					keys = {
@@ -232,7 +234,8 @@ namespace Pantheon.Keyboard.Shortcuts
 						"home",
 						"search",
 						"terminal",
-						"www"
+						"www",
+						"panel-main-menu"
 					}
 				},
 				
@@ -290,7 +293,9 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Magnifier Zoom out"),
 						_("Toggle On Screen Keyboard"),
 						_("Toggle Screenreader"),
-						_("Toggle High Contrast")
+						_("Toggle High Contrast"),
+						_("Next Keyboard Layout"),
+						_("Previous Keyboard Layout")
 					},
 
 					schemas = {
@@ -301,7 +306,9 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.MEDIA
+						Schema.MEDIA,
+						Schema.GALA,
+						Schema.GALA
 					},
 		
 					keys = {
@@ -312,7 +319,9 @@ namespace Pantheon.Keyboard.Shortcuts
 						"magnifier-zoom-out",
 						"on-screen-keyboard",
 						"screenreader",
-						"toggle-contrast"
+						"toggle-contrast",
+						"switch-input-source",
+						"switch-input-source-backward"
 					}
 				}
 			};
