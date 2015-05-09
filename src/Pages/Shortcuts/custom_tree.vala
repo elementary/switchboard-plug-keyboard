@@ -1,12 +1,12 @@
 namespace Pantheon.Keyboard.Shortcuts {
 
-    private class CustomTree : Gtk.Grid, DisplayTree {
-
+    private class CustomTree : Gtk.Viewport, DisplayTree {
+        Gtk.Grid container;
         Gtk.CellRendererText cell_desc;
         Gtk.CellRendererAccel cell_edit;
         Gtk.InfoBar infobar;
         Gtk.TreeView tv;
-		bool change_made = false;
+        bool change_made = false;
 
         enum Column {
             COMMAND,
@@ -29,8 +29,10 @@ namespace Pantheon.Keyboard.Shortcuts {
         }
 
         void setup_gui () {
+            container = new Gtk.Grid ();
+
             infobar = new Gtk.InfoBar ();
-			infobar.no_show_all = true;
+            infobar.no_show_all = true;
             infobar.message_type = Gtk.MessageType.INFO;
             infobar.set_show_close_button (true);
 
@@ -59,8 +61,10 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.expand = true;
             tv.get_column (0).expand = true;
 
-            this.attach (infobar, 0, 0, 1, 1);
-            this.attach (tv, 0, 1, 1, 1);
+            container.attach (infobar, 0, 0, 1, 1);
+            container.attach (tv, 0, 1, 1, 1);
+
+            add (container);
         }
 
         public void load_and_display_custom_shortcuts () {
@@ -138,7 +142,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             store.set (iter, Column.COMMAND, command_to_display (null));
             store.set (iter, Column.SHORTCUT, (new Shortcut.parse ("")).to_readable ());
             store.set (iter, Column.SCHEMA, relocatable_schema);
-			on_change_made ();
+            on_change_made ();
         }
 
         public void on_remove_clicked () {
@@ -152,7 +156,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
             list_store.remove (iter);
-			on_change_made ();
+            on_change_made ();
         }
 
         void change_command (string path, string new_text) {
@@ -164,7 +168,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
             load_and_display_custom_shortcuts ();
-			on_change_made ();
+            on_change_made ();
         }
 
         public bool shortcut_conflicts (Shortcut shortcut, out string name) {
@@ -176,7 +180,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
             CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
             load_and_display_custom_shortcuts ();
-			on_change_made ();
+            on_change_made ();
         }
 
         bool change_shortcut (string path, Shortcut? shortcut) {
@@ -209,17 +213,17 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
             load_and_display_custom_shortcuts ();
-			on_change_made ();
+            on_change_made ();
             return true;
         }
 
-		
-		void on_change_made () {
-			if (!change_made) {
-				change_made = true;
-				infobar.get_content_area ().show_all ();
-				infobar.show_now ();
-			}
-		}
+        
+        void on_change_made () {
+            if (!change_made) {
+                change_made = true;
+                infobar.get_content_area ().show_all ();
+                infobar.show_now ();
+            }
+        }
     }
 }
