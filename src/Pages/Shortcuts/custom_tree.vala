@@ -143,9 +143,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             store.set (iter, Column.SHORTCUT, (new Shortcut.parse ("")).to_readable ());
             store.set (iter, Column.SCHEMA, relocatable_schema);
 
-			var path = tv.model.get_path (iter);
-			var col = tv.get_column (Column.COMMAND);
-			tv.set_cursor (path, col, true);
+            var path = tv.model.get_path (iter);
+            var col = tv.get_column (Column.COMMAND);
+            tv.set_cursor (path, col, true);
             on_change_made ();
         }
 
