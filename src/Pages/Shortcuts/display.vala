@@ -72,12 +72,19 @@ namespace Pantheon.Keyboard.Shortcuts
 				var custom_tree = trees[new_selection] as CustomTree;
 				custom_tree.row_selected.connect (row_selected);
 				custom_tree.row_unselected.connect (row_unselected);
+
+				custom_tree.command_editing_started.connect (disable_add);
+				custom_tree.command_editing_ended.connect (enable_add);
 			}
 
 			if (selected == SectionID.CUSTOM) {
 				var custom_tree = trees[selected] as CustomTree;
 				custom_tree.row_selected.disconnect (row_selected);
 				custom_tree.row_unselected.disconnect (row_unselected);
+
+				custom_tree.command_editing_started.disconnect (disable_add);
+				custom_tree.command_editing_ended.disconnect (enable_add);
+
 			}
 
 			selected = new_selection;
@@ -100,5 +107,15 @@ namespace Pantheon.Keyboard.Shortcuts
 			remove_button.sensitive = false;
 		}
 
+		private void disable_add ()
+		{
+			add_button.sensitive = false;
+		}
+
+		private void enable_add ()
+		{
+			add_button.sensitive = true;
+		}
+		
 	}
 }

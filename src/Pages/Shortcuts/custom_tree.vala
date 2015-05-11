@@ -24,6 +24,9 @@ namespace Pantheon.Keyboard.Shortcuts {
         public signal void row_selected ();
         public signal void row_unselected ();
 
+        public signal void command_editing_started ();
+        public signal void command_editing_ended ();
+
         public CustomTree () {
             setup_gui ();
             load_and_display_custom_shortcuts ();
@@ -87,8 +90,6 @@ namespace Pantheon.Keyboard.Shortcuts {
                            Column.SCHEMA, custom_shortcut.relocatable_schema
                     );
             }
-
-            tv.model = store;
         }
 
         void connect_signals () {
@@ -128,7 +129,13 @@ namespace Pantheon.Keyboard.Shortcuts {
             });
 
             cell_desc.edited.connect (change_command);
-            cell_desc.editing_canceled.connect (command_editing_canceled);
+            cell_desc.editing_canceled.connect (() => {
+				command_editing_ended ();
+				command_editing_canceled ();
+            });
+
+            cell_desc.editing_started.connect (() => { command_editing_started (); });
+                    
         }
 
         string command_to_display (string? command) {
@@ -173,14 +180,17 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
 
             if (new_text == ENTER_COMMAND) {
+				debug (new_text);
                 // no changes were made, remove row
                 remove_shorcut_for_iter (iter);
-                return;
-            }
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
-            CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
-            load_and_display_custom_shortcuts ();
+            } else {
+                tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
+                CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
+                load_and_display_custom_shortcuts ();
+            }
+
+			command_editing_ended ();
             on_change_made ();
         }
 
@@ -191,7 +201,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             if (selection.get_selected (out model, out iter)) {
                 GLib.Value command;
-                model.get_value (iter, Column.COMMAND, out command);
+                list_store.get_value (iter, Column.COMMAND, out command);
 
                 // if command is same as the default text, remove it
                 if ((command as string)  == command_to_display (null)) {
