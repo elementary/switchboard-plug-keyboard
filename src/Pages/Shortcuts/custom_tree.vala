@@ -60,6 +60,8 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.insert_column_with_attributes (-1, _("Command"), cell_desc, "markup", Column.COMMAND);
             tv.insert_column_with_attributes (-1, _("Shortcut"), cell_edit, "text", Column.SHORTCUT);
 
+			tv.set_rules_hint (true);
+			tv.headers_visible = false;
             tv.expand = true;
             tv.get_column (0).expand = true;
 
