@@ -60,8 +60,8 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.insert_column_with_attributes (-1, _("Command"), cell_desc, "markup", Column.COMMAND);
             tv.insert_column_with_attributes (-1, _("Shortcut"), cell_edit, "text", Column.SHORTCUT);
 
-			tv.set_rules_hint (true);
-			tv.headers_visible = false;
+            tv.set_rules_hint (true);
+            tv.headers_visible = false;
             tv.expand = true;
             tv.get_column (0).expand = true;
 
@@ -73,9 +73,9 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         public void load_and_display_custom_shortcuts () {
             Gtk.TreeIter iter;
-            var store = new Gtk.ListStore (Column.COUNT , typeof (string),
-                                           typeof (string),
-                                           typeof (string));
+            var store = list_store;
+
+            store.clear ();
 
             foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
                 var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
@@ -128,6 +128,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             });
 
             cell_desc.edited.connect (change_command);
+            cell_desc.editing_canceled.connect (command_editing_canceled);
         }
 
         string command_to_display (string? command) {
@@ -160,10 +161,8 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             tv.get_cursor (out path, null);
             tv.model.get_iter (out iter, path);
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-
-            CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
-            list_store.remove (iter);
+            remove_shorcut_for_iter (iter);
+            
             on_change_made ();
         }
 
@@ -175,15 +174,30 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             if (new_text == ENTER_COMMAND) {
                 // no changes were made, remove row
-                list_store.remove (iter);
+                remove_shorcut_for_iter (iter);
                 return;
             }
-
             tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
             CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
             load_and_display_custom_shortcuts ();
             on_change_made ();
+        }
+
+        void command_editing_canceled () {
+            var selection = tv.get_selection ();
+            Gtk.TreeModel model;
+            Gtk.TreeIter iter;
+
+            if (selection.get_selected (out model, out iter)) {
+                GLib.Value command;
+                model.get_value (iter, Column.COMMAND, out command);
+
+                // if command is same as the default text, remove it
+                if ((command as string)  == command_to_display (null)) {
+                    remove_shorcut_for_iter (iter);
+                }
+            }
         }
 
         public bool shortcut_conflicts (Shortcut shortcut, out string name) {
@@ -232,6 +246,13 @@ namespace Pantheon.Keyboard.Shortcuts {
             return true;
         }
 
+        void remove_shorcut_for_iter (Gtk.TreeIter iter) {
+            GLib.Value relocatable_schema;
+            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
+
+            CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
+            list_store.remove (iter);
+        }
         
         void on_change_made () {
             if (!change_made) {
