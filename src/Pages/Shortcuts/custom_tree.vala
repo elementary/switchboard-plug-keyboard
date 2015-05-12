@@ -128,10 +128,13 @@ namespace Pantheon.Keyboard.Shortcuts {
                 change_shortcut (path, (Shortcut) null);
             });
 
-            cell_desc.edited.connect (change_command);
+            cell_desc.edited.connect ((path, new_text) => {
+                change_command (path, new_text);
+                command_editing_ended ();
+            });
             cell_desc.editing_canceled.connect (() => {
-				command_editing_ended ();
-				command_editing_canceled ();
+                command_editing_ended ();
+                command_editing_canceled ();
             });
 
             cell_desc.editing_started.connect (() => { command_editing_started (); });
@@ -180,7 +183,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
 
             if (new_text == ENTER_COMMAND) {
-				debug (new_text);
+                debug (new_text);
                 // no changes were made, remove row
                 remove_shorcut_for_iter (iter);
 
@@ -190,7 +193,6 @@ namespace Pantheon.Keyboard.Shortcuts {
                 load_and_display_custom_shortcuts ();
             }
 
-			command_editing_ended ();
             on_change_made ();
         }
 
