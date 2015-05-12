@@ -138,7 +138,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             });
 
             cell_desc.editing_started.connect (() => { command_editing_started (); });
-                    
         }
 
         string command_to_display (string? command) {
@@ -167,7 +166,6 @@ namespace Pantheon.Keyboard.Shortcuts {
         public void on_remove_clicked () {
             Gtk.TreeIter iter;
             Gtk.TreePath path;
-            GLib.Value relocatable_schema;
 
             tv.get_cursor (out path, null);
             tv.model.get_iter (out iter, path);
