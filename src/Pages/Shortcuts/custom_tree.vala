@@ -10,6 +10,8 @@ namespace Pantheon.Keyboard.Shortcuts {
         Gtk.TreeView tv;
         bool change_made = false;
 
+        Gtk.CellEditable command_editable;
+
         enum Column {
             COMMAND,
             SHORTCUT,
@@ -119,6 +121,8 @@ namespace Pantheon.Keyboard.Shortcuts {
                 }
             });
 
+            tv.key_press_event.connect (tree_key_press);
+
             cell_edit.accel_edited.connect ((path, key, mods) => {
                 var shortcut = new Shortcut (key, mods);
                 change_shortcut (path, shortcut);
@@ -137,7 +141,11 @@ namespace Pantheon.Keyboard.Shortcuts {
                 command_editing_canceled ();
             });
 
-            cell_desc.editing_started.connect (() => { command_editing_started (); });
+            cell_desc.editing_started.connect ((cell_editable, path) => {
+                // store a referene to retreve text later
+                command_editable = cell_editable;
+                command_editing_started ();
+            });
         }
 
         string command_to_display (string? command) {
@@ -198,14 +206,18 @@ namespace Pantheon.Keyboard.Shortcuts {
             var selection = tv.get_selection ();
             Gtk.TreeModel model;
             Gtk.TreeIter iter;
+            Gtk.Entry entry = command_editable as Gtk.Entry;
 
             if (selection.get_selected (out model, out iter)) {
-                GLib.Value command;
-                list_store.get_value (iter, Column.COMMAND, out command);
 
                 // if command is same as the default text, remove it
-                if ((command as string)  == command_to_display (null)) {
+                if (entry.text  == ENTER_COMMAND) {
                     remove_shorcut_for_iter (iter);
+                } else {
+                Gtk.TreePath path;
+                tv.get_cursor (out path, null);
+
+                cell_desc.edited (path.to_string (), entry.text);   
                 }
             }
         }
@@ -270,6 +282,25 @@ namespace Pantheon.Keyboard.Shortcuts {
                 infobar.get_content_area ().show_all ();
                 infobar.show_now ();
             }
+        }
+
+        bool tree_key_press (Gdk.EventKey ev) {
+            bool handled = false;
+            Gtk.Entry entry = command_editable as Gtk.Entry;
+
+            if (ev.keyval == Gdk.Key.Tab) {
+                Gtk.TreePath path;
+                tv.get_cursor (out path, null);
+
+                cell_desc.edited (path.to_string (), entry.text);   
+
+                var col = tv.get_column (Column.SHORTCUT);
+                tv.set_cursor (path, col, true);
+                
+                handled = true;
+            }
+            
+        return handled;
         }
     }
 }
