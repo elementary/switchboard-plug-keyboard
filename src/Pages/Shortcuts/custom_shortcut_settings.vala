@@ -137,6 +137,8 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     public static bool shortcut_conflicts (Shortcut new_shortcut, out string command,
                                            out string relocatable_schema) {
         var custom_shortcuts = list_custom_shortcuts ();
+        command = "";
+        relocatable_schema = "";
 
         foreach (var custom_shortcut in custom_shortcuts) {
             var shortcut = new Shortcut.parse (custom_shortcut.shortcut);

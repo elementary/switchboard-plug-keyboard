@@ -13,7 +13,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             load_and_display_shortcuts ();
 
-			set_rules_hint (true);
+            set_rules_hint (true);
             var cell_desc = new Gtk.CellRendererText ();
             var cell_edit = new Gtk.CellRendererAccel ();
 
@@ -81,6 +81,8 @@ namespace Pantheon.Keyboard.Shortcuts {
         public bool shortcut_conflicts (Shortcut shortcut, out string name) {
             string[] actions, keys;
             Schema[] schemas;
+
+            name = "";
 
             list.get_group (group, out actions, out schemas, out keys);
 
