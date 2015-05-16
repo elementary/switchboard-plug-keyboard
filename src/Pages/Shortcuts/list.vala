@@ -21,31 +21,6 @@ namespace Pantheon.Keyboard.Shortcuts
 			return;
 		}
 		
-		public bool conflicts (Shortcut s, out string key, out int group, out int path)
-		{
-			key    = (string) null;
-			group  = (SectionID) 0;
-			path   = -1;
-			
-			if (s.accel_key == Gdk.Key.BackSpace)
-				return false;
-			
-			for (int g = 0; g < groups.length; g++)
-			{
-				for (int i = 0; i < groups[g].actions.length; i++)
-				{
-					if (s.is_equal (settings.get_val(groups[g].schemas[i], groups[g].keys[i])))
-					{
-						key    = groups[g].keys[i];
-						group  = g;
-						path   = i;
-						return true;
-					}
-				}
-			}
-			return false;
-		}
-		
 		public List ()
 		{
 			groups =
@@ -70,7 +45,7 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Window Overview"),
 						_("Show All Windows")
 					},
-				    schemas = {
+					schemas = {
 						Schema.WM,
 						Schema.WM,
 						Schema.WM,

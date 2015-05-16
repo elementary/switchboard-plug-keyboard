@@ -26,7 +26,7 @@ namespace Pantheon.Keyboard.Shortcuts
 				var schema = schema_source.lookup (name, true);
 				
 				if (schema == null) {
-					warning ("Schema \"%s\" is not installed on you system.", name);
+					warning ("Schema \"%s\" is not installed on your system.", name);
 					schemas += (GLib.Settings) null;
 				} else {
 					schemas += new GLib.Settings.full (schema, null, null);

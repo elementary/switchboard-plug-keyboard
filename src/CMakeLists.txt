@@ -19,6 +19,12 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Pages/behaviour.vala
     Pages/Behaviour/settings.vala
 
+    Pages/layout.vala   
+    Pages/Layout/display.vala
+    Pages/Layout/add_layout.vala
+    Pages/Layout/handler.vala
+    Pages/Layout/settings.vala
+    
     Pages/shortcuts.vala 
     Pages/Shortcuts/settings.vala
     Pages/Shortcuts/tree.vala
@@ -26,13 +32,11 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Pages/Shortcuts/shortcut.vala
     Pages/Shortcuts/list.vala
     Pages/Shortcuts/section_switcher.vala
-
-    Pages/layout.vala
-    Pages/Layout/display.vala
-    Pages/Layout/add_layout.vala
-    Pages/Layout/handler.vala
-    Pages/Layout/settings.vala
-
+    Pages/Shortcuts/custom_tree.vala
+    Pages/Shortcuts/custom_shortcut_settings.vala
+    Pages/Shortcuts/conflict_dialog.vala
+    Pages/Shortcuts/display_tree.vala
+    
     Pages/options.vala
     Pages/Options/section_switcher.vala
     Pages/Options/option_handler.vala
@@ -51,6 +55,7 @@ OPTIONS
 
 add_library (${CMAKE_PROJECT_NAME} MODULE ${VALA_C})
 target_link_libraries(${CMAKE_PROJECT_NAME} ${DEPS_LIBRARIES}) 
+
 
 # Installation
 install (TARGETS ${CMAKE_PROJECT_NAME} DESTINATION ${PKGDATADIR})

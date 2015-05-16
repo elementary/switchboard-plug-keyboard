@@ -12,8 +12,11 @@ namespace Pantheon.Keyboard.Shortcuts
 			
 			Gtk.TreeIter iter;
 			
-			// add the sections
-			for (int id = 0; id < SectionID.COUNT; id++) {
+			var max_section_id = CustomShortcutSettings.available 
+			                     ? SectionID.COUNT
+			                     : SectionID.CUSTOM;
+			
+			for (int id = 0; id < max_section_id; id++) {
 				store.append (out iter);
 				store.set (iter, 0, section_names[id]);
 			}
@@ -39,6 +42,6 @@ namespace Pantheon.Keyboard.Shortcuts
 			});
 		}
 		
-		public signal void changed (int i);
+		public signal bool changed (int i);
 	}
 }
