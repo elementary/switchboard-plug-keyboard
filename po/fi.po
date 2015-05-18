@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-03-23 12:38+0000\n"
-"Last-Translator: Henull <henull89@gmail.com>\n"
+"PO-Revision-Date: 2015-05-17 10:40+0000\n"
+"Last-Translator: Jiri Grönroos <Unknown>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-17 05:21+0000\n"
+"X-Launchpad-Export-Date: 2015-05-18 05:23+0000\n"
 "X-Generator: Launchpad (build 17493)\n"
 
 #: ../src//keyboard.vala:7
@@ -649,15 +649,15 @@ msgstr "Esperanton tarkkeiden lisäys (supersigno)"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "Vastaavaan näppäimeen Qwerty-näppäimistöllä"
 
 #: ../src//Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "Vastaavaan näppäimeen Dvorak-näppäimistöllä"
 
 #: ../src//Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "Vastaavaan näppäimeen Colemak-näppäimistöllä"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
@@ -719,19 +719,19 @@ msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Kirjoita komento"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:47
 msgid "You need to logout and login for the changes to take effect"
-msgstr ""
+msgstr "Kirjaudu ulos ja takaisin sisään, jotta muutokset tulevat voimaan"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:65
 msgid "Command"
-msgstr ""
+msgstr "Komento"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:66
 msgid "Shortcut"
-msgstr ""
+msgstr "Pikanäppäin"
 
 #: ../src//Pages/Shortcuts/list.vala:31
 msgid "Close"
