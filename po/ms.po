@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-03-20 12:22+0000\n"
+"PO-Revision-Date: 2015-06-09 01:15+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-17 05:21+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-06-09 05:33+0000\n"
+"X-Generator: Launchpad (build 17549)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -772,19 +772,20 @@ msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Masukan Perintah"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:47
 msgid "You need to logout and login for the changes to take effect"
 msgstr ""
+"Anda perlu daftar keluar dan daftar masuk semula supaya perubahan berkesan"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:65
 msgid "Command"
-msgstr ""
+msgstr "Perintah"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:66
 msgid "Shortcut"
-msgstr ""
+msgstr "Pintasan"
 
 #: ../src//Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -1084,7 +1085,7 @@ msgstr "Bentangan Papan Kekunci Terdahulu"
 
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to \\"
-msgstr ""
+msgstr "Jika anda umpuk semula pintasan ke \\"
 
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:11
 msgid "Reassign"
@@ -1116,4 +1117,4 @@ msgstr "Capaian Universal"
 
 #: ../src//Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Suai"
