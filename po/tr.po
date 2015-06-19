@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-05-19 04:30+0000\n"
-"Last-Translator: Salih <hernandomtoto@gmail.com>\n"
+"PO-Revision-Date: 2015-06-18 23:03+0000\n"
+"Last-Translator: Furkan Ege Öztürk <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-20 05:26+0000\n"
-"X-Generator: Launchpad (build 17508)\n"
+"X-Launchpad-Export-Date: 2015-06-19 04:58+0000\n"
+"X-Generator: Launchpad (build 17570)\n"
 "Language: tr\n"
 
 #: ../src//keyboard.vala:7
@@ -282,15 +282,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:145
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Nokta ile dört seviyeli tuş"
 
 #: ../src//Pages/Options/option_handler.vala:146
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Nokta ile dört seviyeli tuş, latin-9 kısıtlaması"
 
 #: ../src//Pages/Options/option_handler.vala:147
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Virgül ile dört seviyeli tuş"
 
 #: ../src//Pages/Options/option_handler.vala:148
 msgid "Four-level key with momayyez"
@@ -298,32 +298,39 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:149
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Soyut ayırıcılar ile dört seviyeli tuş"
 
 #: ../src//Pages/Options/option_handler.vala:150
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Üçüncü seviyede noktalı virgül"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Caps Lock key behavior"
-msgstr ""
+msgstr "Caps Lock tuşu davranışı"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock dahili büyük harf kullanır. Shift, Caps Lock'un işlevini duraklatır"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock dahili büyük harf kullanır. Shift, Caps Lock'un işlevini "
+"duraklatmaz"
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr ""
+"Caps Lock, Shift kilitli gibi davranır. Shift, Caps Lock'un işlevini "
+"duraklatır"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock, Shift kilitli gibi davranır. Shift, Caps Lock'un işlevini "
+"duraklatmaz"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
@@ -331,23 +338,23 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Caps Lock'u ek Num Lock yap"
 
 #: ../src//Pages/Options/option_handler.vala:160
 msgid "Swap ESC and Caps Lock"
-msgstr ""
+msgstr "ESC ve Caps Lock'u değiştir"
 
 #: ../src//Pages/Options/option_handler.vala:161
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Caps Lock'u ek ESC yap"
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Caps Lock'u ek Backspace (Geri Tuşu) yap"
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Make Caps Lock an additional Super"
-msgstr ""
+msgstr "Caps Lock'u ek Super (command yada windows logo tuşu) yap"
 
 #: ../src//Pages/Options/option_handler.vala:164
 msgid "Make Caps Lock an additional Hyper"
