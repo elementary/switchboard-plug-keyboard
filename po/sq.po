@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-02-24 13:48+0000\n"
+"PO-Revision-Date: 2015-06-26 10:17+0000\n"
 "Last-Translator: Indrit Bashkimi <indrit.bashkimi@gmail.com>\n"
 "Language-Team: Albanian <sq@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-17 05:21+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-06-27 05:34+0000\n"
+"X-Generator: Launchpad (build 17578)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: ../src//keyboard.vala:24
 msgid "Options"
-msgstr ""
+msgstr "Opsionet"
 
 #: ../src//Pages/layout.vala:24
 msgid "Allow different layouts for individual windows:"
@@ -51,25 +51,25 @@ msgstr ""
 
 #: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr ""
+msgstr "Shto..."
 
 #: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
 #: ../src//Pages/Shortcuts/display.vala:43
 #: ../src//Pages/Shortcuts/display.vala:46
 msgid "Remove"
-msgstr ""
+msgstr "Hiq"
 
 #: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr ""
+msgstr "Lëviz lart"
 
 #: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr ""
+msgstr "Lëviz poshtë"
 
 #: ../src//Pages/Layout/add_layout.vala:23
 msgid "Language:"
-msgstr ""
+msgstr "Gjuha:"
 
 #: ../src//Pages/Layout/add_layout.vala:24
 msgid "Layout:"
@@ -82,11 +82,11 @@ msgstr ""
 #: ../src//Pages/Layout/add_layout.vala:66
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:10
 msgid "Cancel"
-msgstr ""
+msgstr "Anulo"
 
 #: ../src//Pages/Layout/handler.vala:75
 msgid "Default"
-msgstr ""
+msgstr "Parazgjedhje"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
@@ -99,7 +99,7 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:95
 #: ../src//Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Ctrl djathtas"
 
 #: ../src//Pages/Options/option_handler.vala:96
 #: ../src//Pages/Options/option_handler.vala:186
@@ -122,16 +122,16 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
-msgstr ""
+msgstr "Çdo buton Alt"
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Left Alt"
-msgstr ""
+msgstr "Alt Majtas"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Right Alt"
-msgstr ""
+msgstr "Alt Djathtas"
 
 #: ../src//Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
@@ -180,7 +180,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Pozicioni i butonit Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Caps Lock as Ctrl"
@@ -362,7 +362,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Sjellja e butonit Alt/Win"
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Add the standard behavior to Menu key"
@@ -410,7 +410,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:187
 msgid "Left Ctrl"
-msgstr ""
+msgstr "Ctrl majtas"
 
 #: ../src//Pages/Options/option_handler.vala:191
 #: ../src//Pages/Shortcuts/list.vala:251
@@ -666,16 +666,16 @@ msgstr ""
 
 #: ../src//Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr ""
+msgstr "Vonesa:"
 
 #: ../src//Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr ""
+msgstr "Intervali:"
 
 #: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
 #: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr ""
+msgstr "milisekonda"
 
 #: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
@@ -683,15 +683,15 @@ msgstr ""
 
 #: ../src//Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr ""
+msgstr "Shpejtësia:"
 
 #: ../src//Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr ""
+msgstr "Kohëzgjatja:"
 
 #: ../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr ""
+msgstr "sekonda"
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
@@ -700,7 +700,7 @@ msgstr ""
 #: ../src//Pages/Shortcuts/display.vala:42
 #: ../src//Pages/Shortcuts/display.vala:45
 msgid "Add"
-msgstr ""
+msgstr "Shto"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
@@ -708,7 +708,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
@@ -720,7 +720,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:65
 msgid "Command"
-msgstr ""
+msgstr "Komanda"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:66
 msgid "Shortcut"
@@ -728,7 +728,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:31
 msgid "Close"
-msgstr ""
+msgstr "Mbyll"
 
 #: ../src//Pages/Shortcuts/list.vala:32
 msgid "Lower"
@@ -736,7 +736,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:33
 msgid "Maximize"
-msgstr ""
+msgstr "Maksimizo"
 
 #: ../src//Pages/Shortcuts/list.vala:34
 msgid "Unmaximize"
@@ -748,7 +748,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:36
 msgid "Minimize"
-msgstr ""
+msgstr "Minimizo"
 
 #: ../src//Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
@@ -788,7 +788,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:46
 msgid "Show All Windows"
-msgstr ""
+msgstr "Shfaqi të gjitha dritaret"
 
 #: ../src//Pages/Shortcuts/list.vala:90
 msgid "Show Workspace Switcher"
@@ -804,39 +804,39 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:93
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 1"
 
 #: ../src//Pages/Shortcuts/list.vala:94
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 2"
 
 #: ../src//Pages/Shortcuts/list.vala:95
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 3"
 
 #: ../src//Pages/Shortcuts/list.vala:96
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 4"
 
 #: ../src//Pages/Shortcuts/list.vala:97
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 5"
 
 #: ../src//Pages/Shortcuts/list.vala:98
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 6"
 
 #: ../src//Pages/Shortcuts/list.vala:99
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 7"
 
 #: ../src//Pages/Shortcuts/list.vala:100
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 8"
 
 #: ../src//Pages/Shortcuts/list.vala:101
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Kalo tek hapësira e punës 9"
 
 #: ../src//Pages/Shortcuts/list.vala:102
 msgid "Switch to left"
@@ -848,39 +848,39 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:104
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Shko tek hapësira e punës 1"
 
 #: ../src//Pages/Shortcuts/list.vala:105
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Shko tek hapësira e punës 2"
 
 #: ../src//Pages/Shortcuts/list.vala:106
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Shko tek hapësira e punës 3"
 
 #: ../src//Pages/Shortcuts/list.vala:107
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Shko tek hapësira e punës 4"
 
 #: ../src//Pages/Shortcuts/list.vala:108
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Shko tek hapësira e punës 5"
 
 #: ../src//Pages/Shortcuts/list.vala:109
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Shko tek hapësira e punës 6"
 
 #: ../src//Pages/Shortcuts/list.vala:110
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Shko tek hapësira e punës 7"
 
 #: ../src//Pages/Shortcuts/list.vala:111
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Shko tek hapësira e punës 8"
 
 #: ../src//Pages/Shortcuts/list.vala:112
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Shko tek hapësira e punës 9"
 
 #: ../src//Pages/Shortcuts/list.vala:113
 msgid "Move to left"
@@ -924,7 +924,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:211
 msgid "Help"
-msgstr ""
+msgstr "Ndihmë"
 
 #: ../src//Pages/Shortcuts/list.vala:212
 msgid "Home Folder"
@@ -936,11 +936,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:214
 msgid "Terminal"
-msgstr ""
+msgstr "Terminali"
 
 #: ../src//Pages/Shortcuts/list.vala:215
 msgid "Internet Browser"
-msgstr ""
+msgstr "Shfletues interneti"
 
 #: ../src//Pages/Shortcuts/list.vala:216
 msgid "Applications Launcher"
@@ -968,7 +968,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:252
 msgid "Stop"
-msgstr ""
+msgstr "Ndalo"
 
 #: ../src//Pages/Shortcuts/list.vala:253
 msgid "Previous Track"
@@ -984,11 +984,11 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:289
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Ul madhësinë e tekstit"
 
 #: ../src//Pages/Shortcuts/list.vala:290
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Rrit madhësinë e tekstit"
 
 #: ../src//Pages/Shortcuts/list.vala:291
 msgid "Toggle Magnifier"
@@ -1032,11 +1032,11 @@ msgstr ""
 
 #: ../src//Pages/shortcuts.vala:43
 msgid "Windows"
-msgstr ""
+msgstr "Dritaret"
 
 #: ../src//Pages/shortcuts.vala:44
 msgid "Workspaces"
-msgstr ""
+msgstr "Hapësirat e punës"
 
 #: ../src//Pages/shortcuts.vala:45
 msgid "Screenshots"
@@ -1044,7 +1044,7 @@ msgstr ""
 
 #: ../src//Pages/shortcuts.vala:46
 msgid "Applications"
-msgstr ""
+msgstr "Programet"
 
 #: ../src//Pages/shortcuts.vala:47
 msgid "Media"
