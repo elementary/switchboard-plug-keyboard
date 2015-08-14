@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-02-10 22:40+0000\n"
-"Last-Translator: needhelp007 <iempie3@hotmail.com>\n"
+"PO-Revision-Date: 2015-08-13 21:36+0000\n"
+"Last-Translator: Delon <kikker96@hotmail.com>\n"
 "Language-Team: Dutch <nl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-17 05:21+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-08-14 06:03+0000\n"
+"X-Generator: Launchpad (build 17686)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -678,23 +678,23 @@ msgstr "Kana Lock-toets is vergrendelend"
 
 #: ../src//Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "NICOLA-F-stijl backspace"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Van de Zenkaku Hankaku-toets een extra Esc-toets maken"
 
 #: ../src//Pages/Options/option_handler.vala:252
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Esperanto circonflexes toevoegen (supersigno)"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "Aan de overeenkomende toets op een Qwerty toetsenbord"
 
 #: ../src//Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "Bij de bijbehorende toets in een Dvorak toetsenbord"
 
 #: ../src//Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
@@ -702,11 +702,11 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Toetscombinatie om de X-server af te breken"
 
 #: ../src//Pages/Options/option_handler.vala:259
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Ctrl + Alt + Backspace"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -752,11 +752,11 @@ msgstr "Voeg toe"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr "Uitgezet"
+msgstr "Uitgeschakeld"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
@@ -832,11 +832,11 @@ msgstr "Wissel vensters achterstevoren"
 
 #: ../src//Pages/Shortcuts/list.vala:45
 msgid "Window Overview"
-msgstr ""
+msgstr "Venster overzicht"
 
 #: ../src//Pages/Shortcuts/list.vala:46
 msgid "Show All Windows"
-msgstr ""
+msgstr "Toon alle vensters"
 
 #: ../src//Pages/Shortcuts/list.vala:90
 msgid "Show Workspace Switcher"
