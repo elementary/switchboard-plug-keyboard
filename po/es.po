@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-06-23 07:54+0000\n"
-"Last-Translator: Jose Luis Tirado <Unknown>\n"
+"PO-Revision-Date: 2015-08-16 16:50+0000\n"
+"Last-Translator: Jaime <bart_james_10@hotmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-06-24 05:30+0000\n"
-"X-Generator: Launchpad (build 17572)\n"
+"X-Launchpad-Export-Date: 2015-08-17 06:07+0000\n"
+"X-Generator: Launchpad (build 17686)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -135,11 +135,11 @@ msgstr "Alt derecha"
 
 #: ../src//Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Alt derecha, Mayús + Alt derecha es Multi_Key"
 
 #: ../src//Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "La tecla Alt derecha nunca elige el tercer nivel"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
@@ -158,7 +158,7 @@ msgstr "Contrabarra"
 #: ../src//Pages/Options/option_handler.vala:108
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Menor/Mayor>"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid ""
@@ -216,7 +216,7 @@ msgstr "Alt derecha como Ctrl derecha"
 
 #: ../src//Pages/Options/option_handler.vala:125
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Usar el LED del teclado para mostrar la distribución alternativa"
 
 #: ../src//Pages/Options/option_handler.vala:126
 msgid "Num Lock"
@@ -229,7 +229,7 @@ msgstr "Bloq Despl"
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Selección de distribución del teclado numérico."
 
 #: ../src//Pages/Options/option_handler.vala:132
 msgid "Legacy"
@@ -237,13 +237,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:133
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Adiciones Unicode (flechas y operadores matemáticos)"
 
 #: ../src//Pages/Options/option_handler.vala:134
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Adiciones Unicode (flechas y operadores matemáticos). Operadores matemáticos "
+"en el nivel predeterminado"
 
 #: ../src//Pages/Options/option_handler.vala:135
 msgid "Legacy Wang 724"
@@ -252,12 +254,16 @@ msgstr "Wang 724 heredado"
 #: ../src//Pages/Options/option_handler.vala:136
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
+"Teclado numérico Wang 724 con adiciones Unicode (flechas y operadores "
+"matemáticos)"
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Teclado numérico Wang 724 con adiciones Unicode (flechas y operadores "
+"matemáticos). Operadores matemáticos en el nivel predeterminado"
 
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Hexadecimal"
