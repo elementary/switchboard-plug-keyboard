@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2014-09-24 06:38+0000\n"
-"Last-Translator: Laszlo Espadas <kw@kardiweb.org>\n"
+"PO-Revision-Date: 2015-08-20 11:53+0000\n"
+"Last-Translator: Papp Ferenc <Unknown>\n"
 "Language-Team: Hungarian <hu@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-05-17 05:21+0000\n"
-"X-Generator: Launchpad (build 17493)\n"
+"X-Launchpad-Export-Date: 2015-08-21 05:38+0000\n"
+"X-Generator: Launchpad (build 17690)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -99,57 +99,57 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:95
 #: ../src//Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Jobb Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:96
 #: ../src//Pages/Options/option_handler.vala:186
 msgid "Menu"
-msgstr ""
+msgstr "Menü"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Any Win key"
-msgstr ""
+msgstr "Bármely Win billentyű"
 
 #: ../src//Pages/Options/option_handler.vala:98
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Left Win"
-msgstr ""
+msgstr "Bal Win"
 
 #: ../src//Pages/Options/option_handler.vala:99
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Right Win"
-msgstr ""
+msgstr "Jobb Win"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
-msgstr ""
+msgstr "Bármely Alt billentyű"
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Left Alt"
-msgstr ""
+msgstr "Bal Alt"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Right Alt"
-msgstr ""
+msgstr "Jobb Alt"
 
 #: ../src//Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Jobb Alt, a Shift+jobb Alt kombináció a Multi_Key"
 
 #: ../src//Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "A jobb Alt billentyű sohasem választja a harmadik szintet"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Enter a billentyűzeten"
 
 #: ../src//Pages/Options/option_handler.vala:106
 #: ../src//Pages/Options/option_handler.vala:127
 #: ../src//Pages/Options/option_handler.vala:189
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Backslash"
@@ -158,74 +158,81 @@ msgstr ""
 #: ../src//Pages/Options/option_handler.vala:108
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Kisebb/Nagyobb>"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Caps Lock választja a 3. szintet, egyszeri zárként viselkedik másik 3. "
+"szintet választóval együtt lenyomva"
 
 #: ../src//Pages/Options/option_handler.vala:110
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Fordított törtvonal választja a 3. szintet, egyszeri zárként viselkedik "
+"másik 3. szintet választóval együtt lenyomva"
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
+"<Kisebb/Nagyobb> választja a 3. szintet, egyszeri zárként viselkedik másik "
+"3. szintet választóval együtt lenyomva"
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Ctrl billentyű helye"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Caps Lock mint Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Bal Ctrl mint Meta"
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Ctrl és Caps Lock felcserélése"
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "At left of 'A'"
-msgstr ""
+msgstr "Az „A”-tól balra"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "At bottom left"
-msgstr ""
+msgstr "Bal oldalt, alul"
 
 #: ../src//Pages/Options/option_handler.vala:120
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Jobb Ctrl használata jobb Alt-ként"
 
 #: ../src//Pages/Options/option_handler.vala:121
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Menü mint jobb Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:122
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Jobb Alt jobb Ctrl-ként"
 
 #: ../src//Pages/Options/option_handler.vala:125
 msgid "Use keyboard LED to show alternative layout"
 msgstr ""
+"Az alternatív kiosztás megjelenítése a billentyűzet LED-ek használatával"
 
 #: ../src//Pages/Options/option_handler.vala:126
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:128
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Scroll Lock"
-msgstr ""
+msgstr "Scroll Lock"
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Numeric keypad layout selection"
@@ -237,39 +244,45 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:133
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Unicode kiegészítések (nyilak és műveleti jelek)"
 
 #: ../src//Pages/Options/option_handler.vala:134
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Unicode kiegészítések (nyilak és műveleti jelek). A műveleti jelek az "
+"alapértelmezett szinten"
 
 #: ../src//Pages/Options/option_handler.vala:135
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Hagyományos Wang 724"
 
 #: ../src//Pages/Options/option_handler.vala:136
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
+"Wang 724 numerikus billentyűzet Unicode bővítésekkel (nyilak és műveleti "
+"jelek)"
 
 #: ../src//Pages/Options/option_handler.vala:137
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Wang 724 numerikus billentyűzet Unicode bővítésekkel (nyilak és műveleti "
+"jelek). A műveleti jelek az alapértelmezett szinten"
 
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadecimális"
 
 #: ../src//Pages/Options/option_handler.vala:139
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "ATM/telefon stílusú"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Számbillentyűzet Delete billentyűjének viselkedése"
 
 #: ../src//Pages/Options/option_handler.vala:143
 msgid "Legacy key with dot"
