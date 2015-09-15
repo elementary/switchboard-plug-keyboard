@@ -13,7 +13,7 @@ namespace Pantheon.Keyboard.Behaviour
 		}
 		
 		public SettingsRepeat () { 
-			base ("org.gnome.settings-daemon.peripherals.keyboard");
+			base ("org.gnome.desktop.peripherals.keyboard");
 		}
 	}
 	
