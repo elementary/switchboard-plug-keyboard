@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2014-05-02 09:27+0000\n"
-"Last-Translator: Max_ym <b.maxym.naumtchyk@gmail.com>\n"
+"PO-Revision-Date: 2015-10-04 09:55+0000\n"
+"Last-Translator: Bogdan Lisnenko <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-24 05:52+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-10-05 05:39+0000\n"
+"X-Generator: Launchpad (build 17783)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -31,7 +31,7 @@ msgstr "Поєднання клавіш"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "Поведінка"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -47,37 +47,37 @@ msgstr "Дозволити різні розкладки для окремих �
 
 #: ../src//Pages/layout.vala:54
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Друкуйте для перевірки вашої рокладки"
 
 #: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr ""
+msgstr "Додати…"
 
 #: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
 #: ../src//Pages/Shortcuts/display.vala:43
 #: ../src//Pages/Shortcuts/display.vala:46
 msgid "Remove"
-msgstr ""
+msgstr "Вилучити"
 
 #: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr ""
+msgstr "Перемістити вгору"
 
 #: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr ""
+msgstr "Перемістити вниз"
 
 #: ../src//Pages/Layout/add_layout.vala:23
 msgid "Language:"
-msgstr ""
+msgstr "Мова:"
 
 #: ../src//Pages/Layout/add_layout.vala:24
 msgid "Layout:"
-msgstr ""
+msgstr "Розкладка:"
 
 #: ../src//Pages/Layout/add_layout.vala:65
 msgid "Add Layout"
-msgstr ""
+msgstr "Додати розкладку"
 
 #: ../src//Pages/Layout/add_layout.vala:66
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:10
@@ -86,52 +86,52 @@ msgstr "Скасувати"
 
 #: ../src//Pages/Layout/handler.vala:75
 msgid "Default"
-msgstr ""
+msgstr "Типово"
 
 #: ../src//Pages/Options/option_handler.vala:15
 msgid "None"
-msgstr ""
+msgstr "Немає"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key to choose 3rd level"
-msgstr ""
+msgstr "Клавіша для вибору 3-го ряду"
 
 #: ../src//Pages/Options/option_handler.vala:95
 #: ../src//Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Правий Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:96
 #: ../src//Pages/Options/option_handler.vala:186
 msgid "Menu"
-msgstr ""
+msgstr "Меню"
 
 #: ../src//Pages/Options/option_handler.vala:97
 msgid "Any Win key"
-msgstr ""
+msgstr "Будь-яка клавіша Win"
 
 #: ../src//Pages/Options/option_handler.vala:98
 #: ../src//Pages/Options/option_handler.vala:184
 msgid "Left Win"
-msgstr ""
+msgstr "Ліва клавіша Win"
 
 #: ../src//Pages/Options/option_handler.vala:99
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Right Win"
-msgstr ""
+msgstr "Права клавіша Win"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
-msgstr ""
+msgstr "Будь-яка клавіша Alt"
 
 #: ../src//Pages/Options/option_handler.vala:101
 msgid "Left Alt"
-msgstr ""
+msgstr "Лівий Alt"
 
 #: ../src//Pages/Options/option_handler.vala:102
 #: ../src//Pages/Options/option_handler.vala:183
 msgid "Right Alt"
-msgstr ""
+msgstr "Правий Alt"
 
 #: ../src//Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
@@ -139,26 +139,26 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "Права клавіша Alt ніколи не обирає 3-й рівень"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
-msgstr ""
+msgstr "Enter на цифровій клавіатурі"
 
 #: ../src//Pages/Options/option_handler.vala:106
 #: ../src//Pages/Options/option_handler.vala:127
 #: ../src//Pages/Options/option_handler.vala:189
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:107
 msgid "Backslash"
-msgstr ""
+msgstr "Зворотна риска"
 
 #: ../src//Pages/Options/option_handler.vala:108
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Менше/Більше>"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid ""
@@ -180,15 +180,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Розташування клавіші Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:115
 msgid "Caps Lock as Ctrl"
-msgstr ""
+msgstr "Caps Lock працює як Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:116
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Ліва клавіша Ctrl як Meta"
 
 #: ../src//Pages/Options/option_handler.vala:117
 msgid "Swap Ctrl and Caps Lock"
@@ -220,7 +220,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:126
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:128
 #: ../src//Pages/Options/option_handler.vala:193
