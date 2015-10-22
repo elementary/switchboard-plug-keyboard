@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-03-16 16:13-0500\n"
-"PO-Revision-Date: 2015-01-07 23:48+0000\n"
-"Last-Translator: Artem Anufrij <Unknown>\n"
+"POT-Creation-Date: 2015-05-16 05:45-0500\n"
+"PO-Revision-Date: 2015-10-20 15:27+0000\n"
+"Last-Translator: koshi <koshi.dono@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-03-17 05:40+0000\n"
-"X-Generator: Launchpad (build 17389)\n"
+"X-Launchpad-Export-Date: 2015-10-21 06:14+0000\n"
+"X-Generator: Launchpad (build 17812)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -23,7 +23,7 @@ msgstr "Клавиатура"
 
 #: ../src//keyboard.vala:8
 msgid "Configure your keyboard"
-msgstr "Настроить клавиатуру"
+msgstr "Настройка клавиатуры"
 
 #: ../src//keyboard.vala:21
 msgid "Shortcuts"
@@ -31,7 +31,7 @@ msgstr "Сочетания клавиш"
 
 #: ../src//keyboard.vala:22
 msgid "Behavior"
-msgstr "Режим"
+msgstr "Поведение"
 
 #: ../src//keyboard.vala:23
 msgid "Layout"
@@ -47,15 +47,15 @@ msgstr "Разрешить разные раскладки для окон:"
 
 #: ../src//Pages/layout.vala:54
 msgid "Type to test your layout…"
-msgstr "Начните печатать, чтобы проверить раскладку"
+msgstr "Начните печатать, чтобы проверить раскладку…"
 
 #: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
 msgid "Add…"
 msgstr "Добавить..."
 
 #: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
-#: ../src//Pages/Shortcuts/display.vala:39
-#: ../src//Pages/Shortcuts/display.vala:42
+#: ../src//Pages/Shortcuts/display.vala:43
+#: ../src//Pages/Shortcuts/display.vala:46
 msgid "Remove"
 msgstr "Удалить"
 
@@ -80,7 +80,7 @@ msgid "Add Layout"
 msgstr "Добавить раскладку"
 
 #: ../src//Pages/Layout/add_layout.vala:66
-#: ../src//Pages/Shortcuts/tree.vala:147
+#: ../src//Pages/Shortcuts/conflict_dialog.vala:10
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -92,702 +92,631 @@ msgstr "По умолчанию"
 msgid "None"
 msgstr "Ничего"
 
-#: ../src//Pages/Options/option_handler.vala:93
-msgid "Key(s) to change layout"
-msgstr "Клавиша(и) для смены раскладки"
-
 #: ../src//Pages/Options/option_handler.vala:94
-msgid "Right Alt (while pressed)"
-msgstr "Правый Alt (при нажатии)"
+msgid "Key to choose 3rd level"
+msgstr "Клавиша для выбора 3-го уровня"
 
 #: ../src//Pages/Options/option_handler.vala:95
-msgid "Left Alt (while pressed)"
-msgstr "Левый Alt (при нажатии)"
+#: ../src//Pages/Options/option_handler.vala:188
+msgid "Right Ctrl"
+msgstr "Правый Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:96
-msgid "Left Win (while pressed)"
-msgstr "Левый Win (при нажатии)"
-
-#: ../src//Pages/Options/option_handler.vala:97
-msgid "Right Win (while pressed)"
-msgstr "Правый Win (при нажатии)"
-
-#: ../src//Pages/Options/option_handler.vala:98
-msgid "Any Win key (while pressed)"
-msgstr "Любая Win-клавиша (при нажатии)"
-
-#: ../src//Pages/Options/option_handler.vala:99
-msgid ""
-"Caps Lock (while pressed), Alt+Caps Lock does the original capslock action"
-msgstr ""
-"Caps Lock (пока нажата), Alt+Caps Lock выполняет первоначальную функцию "
-"capslock"
-
-#: ../src//Pages/Options/option_handler.vala:100
-msgid "Right Ctrl (while pressed)"
-msgstr "Правый Ctrl (при нажатии)"
-
-#: ../src//Pages/Options/option_handler.vala:101
-#: ../src//Pages/Options/option_handler.vala:138
-#: ../src//Pages/Options/option_handler.vala:219
-msgid "Right Alt"
-msgstr "Правый Alt"
-
-#: ../src//Pages/Options/option_handler.vala:102
-#: ../src//Pages/Options/option_handler.vala:137
-msgid "Left Alt"
-msgstr "Левый Alt"
-
-#: ../src//Pages/Options/option_handler.vala:103
-#: ../src//Pages/Options/option_handler.vala:142
-#: ../src//Pages/Options/option_handler.vala:163
-#: ../src//Pages/Options/option_handler.vala:225
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: ../src//Pages/Options/option_handler.vala:104
-msgid "Shift+Caps Lock"
-msgstr "Shift+Caps Lock"
-
-#: ../src//Pages/Options/option_handler.vala:105
-msgid "Caps Lock (to first layout), Shift+Caps Lock (to last layout)"
-msgstr ""
-"Caps Lock (на первую раскладку), Shift+Caps Lock (на последнюю раскладку)"
-
-#: ../src//Pages/Options/option_handler.vala:106
-msgid "Left Win (to first layout), Right Win/Menu (to last layout)"
-msgstr "Левая Win (первая раскладка), правая Win/Menu (последняя раскладка)"
-
-#: ../src//Pages/Options/option_handler.vala:107
-msgid "Left Ctrl (to first layout), Right Ctrl (to last layout)"
-msgstr "Левая Ctrl (первая раскладка), Правая Ctrl (последняя раскладка)"
-
-#: ../src//Pages/Options/option_handler.vala:108
-msgid "Alt+Caps Lock"
-msgstr "Alt+Caps Lock"
-
-#: ../src//Pages/Options/option_handler.vala:109
-msgid "Both Shift keys together"
-msgstr "Обе клавиши Shift одновременно"
-
-#: ../src//Pages/Options/option_handler.vala:110
-msgid "Both Alt keys together"
-msgstr "Обе клавиши Alt одновременно"
-
-#: ../src//Pages/Options/option_handler.vala:111
-msgid "Both Ctrl keys together"
-msgstr "Обе клавиши Ctrl одновременно"
-
-#: ../src//Pages/Options/option_handler.vala:112
-msgid "Ctrl+Shift"
-msgstr "Ctrl+Shift"
-
-#: ../src//Pages/Options/option_handler.vala:113
-msgid "Left Ctrl+Left Shift"
-msgstr "Левая Ctrl+Левая Shift"
-
-#: ../src//Pages/Options/option_handler.vala:114
-msgid "Right Ctrl+Right Shift"
-msgstr "Правая Ctrl+Правая Shift"
-
-#: ../src//Pages/Options/option_handler.vala:115
-msgid "Alt+Ctrl"
-msgstr "Alt+Ctrl"
-
-#: ../src//Pages/Options/option_handler.vala:116
-msgid "Alt+Shift"
-msgstr "Alt+Shift"
-
-#: ../src//Pages/Options/option_handler.vala:117
-msgid "Left Alt+Left Shift"
-msgstr "Левая Alt+Левая Shift"
-
-#: ../src//Pages/Options/option_handler.vala:118
-msgid "Alt+Space"
-msgstr "Alt+Пробел"
-
-#: ../src//Pages/Options/option_handler.vala:119
-#: ../src//Pages/Options/option_handler.vala:132
-#: ../src//Pages/Options/option_handler.vala:222
+#: ../src//Pages/Options/option_handler.vala:186
 msgid "Menu"
 msgstr "Меню"
 
-#: ../src//Pages/Options/option_handler.vala:120
-#: ../src//Pages/Options/option_handler.vala:134
-#: ../src//Pages/Options/option_handler.vala:220
-msgid "Left Win"
-msgstr "Левая Win"
-
-#: ../src//Pages/Options/option_handler.vala:121
-#: ../src//Pages/Options/option_handler.vala:135
-#: ../src//Pages/Options/option_handler.vala:221
-msgid "Right Win"
-msgstr "Правая Win"
-
-#: ../src//Pages/Options/option_handler.vala:122
-msgid "Left Shift"
-msgstr "Левая Shift"
-
-#: ../src//Pages/Options/option_handler.vala:123
-msgid "Right Shift"
-msgstr "Правая Shift"
-
-#: ../src//Pages/Options/option_handler.vala:124
-#: ../src//Pages/Options/option_handler.vala:223
-msgid "Left Ctrl"
-msgstr "Левая Ctrl"
-
-#: ../src//Pages/Options/option_handler.vala:125
-#: ../src//Pages/Options/option_handler.vala:131
-#: ../src//Pages/Options/option_handler.vala:224
-msgid "Right Ctrl"
-msgstr "Правая Ctrl"
-
-#: ../src//Pages/Options/option_handler.vala:126
-#: ../src//Pages/Options/option_handler.vala:164
-#: ../src//Pages/Options/option_handler.vala:229
-msgid "Scroll Lock"
-msgstr "Scroll Lock"
-
-#: ../src//Pages/Options/option_handler.vala:127
-msgid ""
-"Left Ctrl+Left Win (to first layout), Right Ctrl+Menu (to second layout)"
-msgstr ""
-"Левая Ctrl+Левая Win (первая раскладка), Правая Ctrl+Menu (вторая раскладка)"
-
-#: ../src//Pages/Options/option_handler.vala:130
-msgid "Key to choose 3rd level"
-msgstr "Клавиша выбора 3-го уровня"
-
-#: ../src//Pages/Options/option_handler.vala:133
+#: ../src//Pages/Options/option_handler.vala:97
 msgid "Any Win key"
-msgstr "Клавиша Win"
+msgstr "Любая клавиша Win"
 
-#: ../src//Pages/Options/option_handler.vala:136
+#: ../src//Pages/Options/option_handler.vala:98
+#: ../src//Pages/Options/option_handler.vala:184
+msgid "Left Win"
+msgstr "Левый Win"
+
+#: ../src//Pages/Options/option_handler.vala:99
+#: ../src//Pages/Options/option_handler.vala:185
+msgid "Right Win"
+msgstr "Правый Win"
+
+#: ../src//Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
 msgstr "Любая клавиша Alt"
 
-#: ../src//Pages/Options/option_handler.vala:139
+#: ../src//Pages/Options/option_handler.vala:101
+msgid "Left Alt"
+msgstr "Левый Alt"
+
+#: ../src//Pages/Options/option_handler.vala:102
+#: ../src//Pages/Options/option_handler.vala:183
+msgid "Right Alt"
+msgstr "Правый Alt"
+
+#: ../src//Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Правая клавиша Alt, Shift и правый Alt вместе работают как Multi_Key"
 
-#: ../src//Pages/Options/option_handler.vala:140
+#: ../src//Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
-msgstr "Правая Alt не выбирает 3-ий уровень"
+msgstr "По правой клавише Alt никогда не выбирается 3-й уровень"
 
-#: ../src//Pages/Options/option_handler.vala:141
+#: ../src//Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
 msgstr "Enter на цифровой клавиатуре"
 
-#: ../src//Pages/Options/option_handler.vala:143
-msgid "Backslash"
-msgstr ""
+#: ../src//Pages/Options/option_handler.vala:106
+#: ../src//Pages/Options/option_handler.vala:127
+#: ../src//Pages/Options/option_handler.vala:189
+msgid "Caps Lock"
+msgstr "Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:144
-#: ../src//Pages/Options/option_handler.vala:226
+#: ../src//Pages/Options/option_handler.vala:107
+msgid "Backslash"
+msgstr "Обратный слеш"
+
+#: ../src//Pages/Options/option_handler.vala:108
+#: ../src//Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
 msgstr "<Меньше/Больше>"
 
-#: ../src//Pages/Options/option_handler.vala:145
+#: ../src//Pages/Options/option_handler.vala:109
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Caps Lock выбирает 3-й уровень, разовая блокировка при нажатии вместе с "
+"другой клавишей-выбора-3-го уровня"
 
-#: ../src//Pages/Options/option_handler.vala:146
+#: ../src//Pages/Options/option_handler.vala:110
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Обратный слэш выбирает 3-й уровень, разовая блокировка при нажатии вместе с "
+"другой клавишей-выбора-3-го-уровня"
 
-#: ../src//Pages/Options/option_handler.vala:147
+#: ../src//Pages/Options/option_handler.vala:111
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
+"<Меньше/Больше> выбирает 3-й уровень, разовая блокировка при нажатии вместе "
+"с другой клавишей-выбора-3-го уровня"
 
-#: ../src//Pages/Options/option_handler.vala:150
+#: ../src//Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
-msgstr ""
+msgstr "Расположение клавиши Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:151
+#: ../src//Pages/Options/option_handler.vala:115
 msgid "Caps Lock as Ctrl"
 msgstr "Caps Lock как Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:152
+#: ../src//Pages/Options/option_handler.vala:116
 msgid "Left Ctrl as Meta"
-msgstr "Левая Ctrl как Meta"
+msgstr "Левый Ctrl как Meta"
 
-#: ../src//Pages/Options/option_handler.vala:153
+#: ../src//Pages/Options/option_handler.vala:117
 msgid "Swap Ctrl and Caps Lock"
 msgstr "Поменять местами Ctrl и Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:154
+#: ../src//Pages/Options/option_handler.vala:118
 msgid "At left of 'A'"
 msgstr "Слева от 'A'"
 
-#: ../src//Pages/Options/option_handler.vala:155
+#: ../src//Pages/Options/option_handler.vala:119
 msgid "At bottom left"
 msgstr "Снизу слева"
 
-#: ../src//Pages/Options/option_handler.vala:156
+#: ../src//Pages/Options/option_handler.vala:120
 msgid "Right Ctrl as Right Alt"
-msgstr "Правая Ctrl как правая Alt"
+msgstr "Правый Ctrl как правый Alt"
 
-#: ../src//Pages/Options/option_handler.vala:157
+#: ../src//Pages/Options/option_handler.vala:121
 msgid "Menu as Right Ctrl"
-msgstr "Menu как правая Ctrl"
+msgstr "Menu как правый Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:158
+#: ../src//Pages/Options/option_handler.vala:122
 msgid "Right Alt as Right Ctrl"
-msgstr "Правая Alt как правая Ctrl"
+msgstr "Правый Alt как правый Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:161
+#: ../src//Pages/Options/option_handler.vala:125
 msgid "Use keyboard LED to show alternative layout"
-msgstr ""
+msgstr "Использовать светодиоды для отображения дополнительных раскладок"
 
-#: ../src//Pages/Options/option_handler.vala:162
+#: ../src//Pages/Options/option_handler.vala:126
 msgid "Num Lock"
 msgstr "Num Lock"
 
-#: ../src//Pages/Options/option_handler.vala:167
+#: ../src//Pages/Options/option_handler.vala:128
+#: ../src//Pages/Options/option_handler.vala:193
+msgid "Scroll Lock"
+msgstr "Scroll Lock"
+
+#: ../src//Pages/Options/option_handler.vala:131
 msgid "Numeric keypad layout selection"
 msgstr "Выбор раскладки цифровой клавиатуры"
 
-#: ../src//Pages/Options/option_handler.vala:168
+#: ../src//Pages/Options/option_handler.vala:132
 msgid "Legacy"
-msgstr ""
+msgstr "Устаревшая"
 
-#: ../src//Pages/Options/option_handler.vala:169
+#: ../src//Pages/Options/option_handler.vala:133
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Дополнения юникода (стрелки и математические операторы)"
 
-#: ../src//Pages/Options/option_handler.vala:170
+#: ../src//Pages/Options/option_handler.vala:134
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Дополнения юникода (стрелки и математические операторы). Математические "
+"операторы на первом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:171
+#: ../src//Pages/Options/option_handler.vala:135
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Устаревшая Wang 724"
 
-#: ../src//Pages/Options/option_handler.vala:172
+#: ../src//Pages/Options/option_handler.vala:136
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
+"Цифровая клавиатура Wang 724 с дополнениями юникода (стрелки и "
+"математические операторы)"
 
-#: ../src//Pages/Options/option_handler.vala:173
+#: ../src//Pages/Options/option_handler.vala:137
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Цифровая клавиатура Wang 724 с дополнениями юникода (стрелки и "
+"математические операторы). Математические операторы на первом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:174
+#: ../src//Pages/Options/option_handler.vala:138
 msgid "Hexadecimal"
-msgstr "Шестнадцатеричный"
+msgstr "Шестнадцатеричная"
 
-#: ../src//Pages/Options/option_handler.vala:175
+#: ../src//Pages/Options/option_handler.vala:139
 msgid "ATM/phone-style"
-msgstr "В стиле банкомата/телефона"
+msgstr "В стиле банкоматной/телефонной"
 
-#: ../src//Pages/Options/option_handler.vala:178
+#: ../src//Pages/Options/option_handler.vala:142
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Функция клавиши Delete на цифровой клавиатуре"
 
-#: ../src//Pages/Options/option_handler.vala:179
+#: ../src//Pages/Options/option_handler.vala:143
 msgid "Legacy key with dot"
-msgstr "Совместимость с точкой"
+msgstr "Клавиша Legacy с точкой"
 
-#: ../src//Pages/Options/option_handler.vala:180
+#: ../src//Pages/Options/option_handler.vala:144
 msgid "Legacy key with comma"
-msgstr "Совместимость с запятой"
+msgstr "Клавиша Legacy с запятой"
 
-#: ../src//Pages/Options/option_handler.vala:181
+#: ../src//Pages/Options/option_handler.vala:145
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Клавиша четвёртого уровня с точкой"
 
-#: ../src//Pages/Options/option_handler.vala:182
+#: ../src//Pages/Options/option_handler.vala:146
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Клавиша четвёртого уровня с точкой, ограничена latin-9"
 
-#: ../src//Pages/Options/option_handler.vala:183
+#: ../src//Pages/Options/option_handler.vala:147
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Клавиша четвёртого уровня с запятой"
 
-#: ../src//Pages/Options/option_handler.vala:184
+#: ../src//Pages/Options/option_handler.vala:148
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "Клавиша четвёртого уровня с momayyez"
 
-#: ../src//Pages/Options/option_handler.vala:185
+#: ../src//Pages/Options/option_handler.vala:149
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Клавиша четвёртого уровня с абстрактными разделителями"
 
-#: ../src//Pages/Options/option_handler.vala:186
+#: ../src//Pages/Options/option_handler.vala:150
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Точка с запятой на третьем уровне"
 
-#: ../src//Pages/Options/option_handler.vala:189
+#: ../src//Pages/Options/option_handler.vala:153
 msgid "Caps Lock key behavior"
 msgstr "Поведение клавиши Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:190
+#: ../src//Pages/Options/option_handler.vala:154
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
 "Caps Lock включает внутреннюю капитализацию. Shift приостанавливает действие "
 "Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:191
+#: ../src//Pages/Options/option_handler.vala:155
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock включает внутреннюю капитализацию. Shift не влияет на Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:192
+#: ../src//Pages/Options/option_handler.vala:156
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr ""
 "Caps Lock действует как Shift с блокировкой. Shift приостанавливает действие "
 "Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:193
+#: ../src//Pages/Options/option_handler.vala:157
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock действует как Shift с блокировкой. Shift не влияет на Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:194
+#: ../src//Pages/Options/option_handler.vala:158
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
 msgstr "Caps Lock переключает обычную капитализацию символов алфавита"
 
-#: ../src//Pages/Options/option_handler.vala:195
+#: ../src//Pages/Options/option_handler.vala:159
 msgid "Make Caps Lock an additional Num Lock"
 msgstr "Использовать Caps Lock как дополнительную клавишу Num Lock"
 
-#: ../src//Pages/Options/option_handler.vala:196
+#: ../src//Pages/Options/option_handler.vala:160
 msgid "Swap ESC and Caps Lock"
-msgstr "Поменять местами клавиши Esc и Caps Lock"
+msgstr "Поменять местами Esc и Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:197
+#: ../src//Pages/Options/option_handler.vala:161
 msgid "Make Caps Lock an additional ESC"
 msgstr "Использовать Caps Lock как дополнительную клавишу Esc"
 
-#: ../src//Pages/Options/option_handler.vala:198
+#: ../src//Pages/Options/option_handler.vala:162
 msgid "Make Caps Lock an additional Backspace"
 msgstr "Использовать Caps Lock как дополнительную клавишу Backspace"
 
-#: ../src//Pages/Options/option_handler.vala:199
+#: ../src//Pages/Options/option_handler.vala:163
 msgid "Make Caps Lock an additional Super"
 msgstr "Использовать Caps Lock как дополнительную клавишу Super"
 
-#: ../src//Pages/Options/option_handler.vala:200
+#: ../src//Pages/Options/option_handler.vala:164
 msgid "Make Caps Lock an additional Hyper"
 msgstr "Использовать Caps Lock как дополнительную клавишу Hyper"
 
-#: ../src//Pages/Options/option_handler.vala:201
+#: ../src//Pages/Options/option_handler.vala:165
 msgid "Caps Lock toggles Shift so all keys are affected"
 msgstr ""
-"Caps Lock переключает Shift, таким образом что, он действует сразу на все "
-"клавиши"
+"Caps Lock включает Shift таким образом что, он действует сразу на все клавиши"
 
-#: ../src//Pages/Options/option_handler.vala:202
+#: ../src//Pages/Options/option_handler.vala:166
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr ""
+"Использовать Caps Lock как дополнительную клавишу Control, но сохранить "
+"символ клавиши Caps_Lock"
 
-#: ../src//Pages/Options/option_handler.vala:205
+#: ../src//Pages/Options/option_handler.vala:169
 msgid "Alt/Win key behavior"
 msgstr "Поведение клавиши Alt/Win"
 
-#: ../src//Pages/Options/option_handler.vala:206
+#: ../src//Pages/Options/option_handler.vala:170
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Добавить обыкновенное поведение на клавишу Menu"
 
-#: ../src//Pages/Options/option_handler.vala:207
+#: ../src//Pages/Options/option_handler.vala:171
 msgid "Alt and Meta are on Alt keys"
 msgstr "Alt и Meta на клавишах Alt"
 
-#: ../src//Pages/Options/option_handler.vala:208
+#: ../src//Pages/Options/option_handler.vala:172
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control используется в качестве клавиш Win (и как обычный Control)"
 
-#: ../src//Pages/Options/option_handler.vala:209
+#: ../src//Pages/Options/option_handler.vala:173
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr ""
 "Control используется в качестве клавиш Alt, Alt используется в качестве "
 "клавиш Win"
 
-#: ../src//Pages/Options/option_handler.vala:210
+#: ../src//Pages/Options/option_handler.vala:174
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta соответствует клавишам Win"
 
-#: ../src//Pages/Options/option_handler.vala:211
+#: ../src//Pages/Options/option_handler.vala:175
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta соответствует левой клавише Win"
 
-#: ../src//Pages/Options/option_handler.vala:212
+#: ../src//Pages/Options/option_handler.vala:176
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Hyper соответствует клавишам Win"
 
-#: ../src//Pages/Options/option_handler.vala:213
+#: ../src//Pages/Options/option_handler.vala:177
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Alt соответствует правой клавише Win, а Super — Menu"
 
-#: ../src//Pages/Options/option_handler.vala:214
+#: ../src//Pages/Options/option_handler.vala:178
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt используется в качестве клавиш Win (а также, как обычный Alt)"
 
-#: ../src//Pages/Options/option_handler.vala:215
+#: ../src//Pages/Options/option_handler.vala:179
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Клавиша Alt поменяна местами с клавишей Win"
 
-#: ../src//Pages/Options/option_handler.vala:218
+#: ../src//Pages/Options/option_handler.vala:182
 msgid "Compose key position"
-msgstr ""
+msgstr "Положение клавиши Compose"
 
-#: ../src//Pages/Options/option_handler.vala:227
-#: ../src//Pages/Shortcuts/list.vala:276
+#: ../src//Pages/Options/option_handler.vala:187
+msgid "Left Ctrl"
+msgstr "Левый Ctrl"
+
+#: ../src//Pages/Options/option_handler.vala:191
+#: ../src//Pages/Shortcuts/list.vala:251
 msgid "Pause"
 msgstr "Пауза"
 
-#: ../src//Pages/Options/option_handler.vala:228
+#: ../src//Pages/Options/option_handler.vala:192
 msgid "PrtSc"
 msgstr "PrtSc"
 
-#: ../src//Pages/Options/option_handler.vala:232
+#: ../src//Pages/Options/option_handler.vala:196
 msgid "Miscellaneous compatibility options"
-msgstr "Прочие параметры совместимости"
+msgstr "Разные параметры совместимости"
 
-#: ../src//Pages/Options/option_handler.vala:233
+#: ../src//Pages/Options/option_handler.vala:197
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Клавиши цифровой клавиатуры по умолчанию"
 
-#: ../src//Pages/Options/option_handler.vala:234
+#: ../src//Pages/Options/option_handler.vala:198
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "С клавиш цифровой клавиатуры всегда вводятся цифры (как в Mac OS)"
 
-#: ../src//Pages/Options/option_handler.vala:235
+#: ../src//Pages/Options/option_handler.vala:199
 msgid "Shift with numeric keypad keys works as in MS Windows"
 msgstr ""
+"Клавиша Shift с клавишами цифровой клавиатуры работают также как в MS Windows"
 
-#: ../src//Pages/Options/option_handler.vala:236
+#: ../src//Pages/Options/option_handler.vala:200
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift не отменяет Num Lock, а выбирает 3-й уровень"
 
-#: ../src//Pages/Options/option_handler.vala:237
+#: ../src//Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "Специальные клавиши (Ctrl+Alt+<key>) обрабатываются сервером"
 
-#: ../src//Pages/Options/option_handler.vala:238
+#: ../src//Pages/Options/option_handler.vala:202
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Apple Aluminium Keyboard: эмуляция клавиш ПК (Print, Scroll Lock, Pause, Num "
+"Lock)"
 
-#: ../src//Pages/Options/option_handler.vala:239
+#: ../src//Pages/Options/option_handler.vala:203
 msgid "Shift cancels Caps Lock"
 msgstr "Shift отменяет Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:240
+#: ../src//Pages/Options/option_handler.vala:204
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Включить дополнительные типографские символы"
 
-#: ../src//Pages/Options/option_handler.vala:241
+#: ../src//Pages/Options/option_handler.vala:205
 msgid "Both Shift-Keys together toggle Caps Lock"
 msgstr "Обе клавиши Shift, нажатые вместе, переключают Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:242
+#: ../src//Pages/Options/option_handler.vala:206
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
 "Обе клавиши Shift, нажатые вместе, включают Caps Lock, одна клавиша Shift "
 "выключает"
 
-#: ../src//Pages/Options/option_handler.vala:243
+#: ../src//Pages/Options/option_handler.vala:207
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "Обе клавиши Shift, нажатые вместе, переключают ShiftLock"
 
-#: ../src//Pages/Options/option_handler.vala:244
+#: ../src//Pages/Options/option_handler.vala:208
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "Переключение клавиш управления курсором с Shift + NumLock"
 
-#: ../src//Pages/Options/option_handler.vala:245
+#: ../src//Pages/Options/option_handler.vala:209
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
+"Позволить прерывать захват с помощью клавиатуры (предупреждение: угроза "
+"безопасности)"
 
-#: ../src//Pages/Options/option_handler.vala:248
+#: ../src//Pages/Options/option_handler.vala:212
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Добавление знаков валют к некоторым клавишам"
 
-#: ../src//Pages/Options/option_handler.vala:249
+#: ../src//Pages/Options/option_handler.vala:213
 msgid "Euro on E"
-msgstr ""
+msgstr "Символ евро на клавише E"
 
-#: ../src//Pages/Options/option_handler.vala:250
+#: ../src//Pages/Options/option_handler.vala:214
 msgid "Euro on 2"
-msgstr ""
+msgstr "Символ евро на клавише 2"
 
-#: ../src//Pages/Options/option_handler.vala:251
+#: ../src//Pages/Options/option_handler.vala:215
 msgid "Euro on 4"
-msgstr ""
+msgstr "Символ евро на клавише 4"
 
-#: ../src//Pages/Options/option_handler.vala:252
+#: ../src//Pages/Options/option_handler.vala:216
 msgid "Euro on 5"
-msgstr ""
+msgstr "Символ евро на клавише 5"
 
-#: ../src//Pages/Options/option_handler.vala:253
+#: ../src//Pages/Options/option_handler.vala:217
 msgid "Rupee on 4"
-msgstr ""
+msgstr "Символ рупии на клавише 4"
 
-#: ../src//Pages/Options/option_handler.vala:256
+#: ../src//Pages/Options/option_handler.vala:220
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "Клавиша для выбора 5-го уровня"
 
-#: ../src//Pages/Options/option_handler.vala:257
+#: ../src//Pages/Options/option_handler.vala:221
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
+"По клавише <Меньше/Больше> выбирается 5-й уровень, блокируется при нажатии "
+"вместе с другим переключателем 5-го-уровня"
 
-#: ../src//Pages/Options/option_handler.vala:258
+#: ../src//Pages/Options/option_handler.vala:222
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"По правой клавише Alt выбирается 5-й уровень, блокируется при нажатии вместе "
+"с другим переключателем 5-го-уровня"
 
-#: ../src//Pages/Options/option_handler.vala:259
+#: ../src//Pages/Options/option_handler.vala:223
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"По левой клавише Win выбирается 5-й уровень, блокируется при нажатии вместе "
+"с другим переключателем 5-го-уровня"
 
-#: ../src//Pages/Options/option_handler.vala:260
+#: ../src//Pages/Options/option_handler.vala:224
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"По правой клавише Win выбирается 5-й уровень, блокируется при нажатии вместе "
+"с другим переключателем 5-го-уровня"
 
-#: ../src//Pages/Options/option_handler.vala:263
+#: ../src//Pages/Options/option_handler.vala:227
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "Клавиша пробела используется для ввода символа неразрывного пробела"
 
-#: ../src//Pages/Options/option_handler.vala:264
+#: ../src//Pages/Options/option_handler.vala:228
 msgid "Usual space at any level"
-msgstr ""
+msgstr "Обычный пробел на любом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:265
+#: ../src//Pages/Options/option_handler.vala:229
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Символ неразрывного пробела на втором уровне"
 
-#: ../src//Pages/Options/option_handler.vala:266
+#: ../src//Pages/Options/option_handler.vala:230
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Символ неразрывного пробела на третьем уровне"
 
-#: ../src//Pages/Options/option_handler.vala:267
+#: ../src//Pages/Options/option_handler.vala:231
 msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr ""
+msgstr "Символ неразрывного пробела на третьем уровне, ничего на четвёртом"
 
-#: ../src//Pages/Options/option_handler.vala:268
+#: ../src//Pages/Options/option_handler.vala:232
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
+"Символ неразрывного пробела на третьем уровне, символ тонкого неразрывного "
+"пробела на четвёртом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:269
+#: ../src//Pages/Options/option_handler.vala:233
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "Символ неразрывного пробела на четвёртом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:270
+#: ../src//Pages/Options/option_handler.vala:234
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
 msgstr ""
+"Символ неразрывного пробела на четвёртом уровне, символ тонкого неразрывного "
+"пробела на шестом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:271
+#: ../src//Pages/Options/option_handler.vala:235
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
+"Символ неразрывного пробела на четвёртом уровне, символ тонкого неразрывного "
+"пробела на шестом уровне (с помощью Ctrl+Shift)"
 
-#: ../src//Pages/Options/option_handler.vala:272
+#: ../src//Pages/Options/option_handler.vala:236
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "Несвязывающий символ нулевой ширины на втором уровне"
 
-#: ../src//Pages/Options/option_handler.vala:273
+#: ../src//Pages/Options/option_handler.vala:237
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
+"Несвязывающий символ нулевой ширины на втором уровне, связывающий символ "
+"нулевой ширины на третьем уровне"
 
-#: ../src//Pages/Options/option_handler.vala:274
+#: ../src//Pages/Options/option_handler.vala:238
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Несвязывающий символ нулевой ширины на втором уровне, связывающий символ "
+"нулевой ширины на третьем уровне, символ неразрывного пробела на четвёртом "
+"уровне"
 
-#: ../src//Pages/Options/option_handler.vala:275
+#: ../src//Pages/Options/option_handler.vala:239
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
+"Несвязывающий символ нулевой ширины на втором уровне, символ неразрывного "
+"пробела на третьем уровне"
 
-#: ../src//Pages/Options/option_handler.vala:276
+#: ../src//Pages/Options/option_handler.vala:240
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Несвязывающий символ нулевой ширины на втором уровне, символ неразрывного "
+"пробела на третьем уровне, ничего на четвёртом"
 
-#: ../src//Pages/Options/option_handler.vala:277
+#: ../src//Pages/Options/option_handler.vala:241
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
+"Несвязывающий символ нулевой ширины навтором уровне, символ неразрывного "
+"пробела на третьем уровне, связывающий символ нулевой ширины на четвёртом "
+"уровне"
 
-#: ../src//Pages/Options/option_handler.vala:278
+#: ../src//Pages/Options/option_handler.vala:242
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
+"Несвязывающий символ нулевой ширины на втором уровне, символ неразрывного "
+"пробела на третьем уровне, тонкий неразрывный пробел на четвёртом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:279
+#: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
+"Несвязывающий символ нулевой ширины на третьем уровне, связывающий символ "
+"нулевой ширины на четвёртом уровне"
 
-#: ../src//Pages/Options/option_handler.vala:282
+#: ../src//Pages/Options/option_handler.vala:246
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Настройки японской клавиатуры"
 
-#: ../src//Pages/Options/option_handler.vala:283
+#: ../src//Pages/Options/option_handler.vala:247
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "Кана блокируется клавишей Lock"
 
-#: ../src//Pages/Options/option_handler.vala:284
+#: ../src//Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "Backspace в стиле NICOLA-F"
 
-#: ../src//Pages/Options/option_handler.vala:285
+#: ../src//Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Использовать Zenkaku Hankaku как дополнительную клавишу ESC"
 
-#: ../src//Pages/Options/option_handler.vala:288
+#: ../src//Pages/Options/option_handler.vala:252
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Добавление диакритических знаков эсперанто"
 
-#: ../src//Pages/Options/option_handler.vala:289
+#: ../src//Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "На соответствующую клавишу на клавиатуре Qwerty"
 
-#: ../src//Pages/Options/option_handler.vala:290
+#: ../src//Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "На соответствующую клавишу на клавиатуре Дворак"
 
-#: ../src//Pages/Options/option_handler.vala:291
+#: ../src//Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "На соответствующую клавишу в раскладке Коулмак"
 
-#: ../src//Pages/Options/option_handler.vala:294
+#: ../src//Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Комбинация клавиш для прерывания работы X-сервера"
 
-#: ../src//Pages/Options/option_handler.vala:295
+#: ../src//Pages/Options/option_handler.vala:259
 msgid "Control + Alt + Backspace"
 msgstr "Control + Alt + Backspace"
 
@@ -826,347 +755,365 @@ msgstr "секунды"
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
-msgstr "Начните печатать, чтобы проверить настройки"
+msgstr "Начните печатать, чтобы проверить настройки…"
 
-#: ../src//Pages/Shortcuts/display.vala:38
-#: ../src//Pages/Shortcuts/display.vala:41
+#: ../src//Pages/Shortcuts/display.vala:42
+#: ../src//Pages/Shortcuts/display.vala:45
 msgid "Add"
 msgstr "Добавить"
 
-#: ../src//Pages/Shortcuts/tree.vala:146
-msgid "If you reassign the shortcut to \"%s\", \"%s\" will be disabled"
-msgstr ""
-"Если вы переназначите горячие клавиши для \"%s\", \"%s\" будет отключено"
-
-#: ../src//Pages/Shortcuts/tree.vala:148
-msgid "Reassign"
-msgstr "Переназначить"
-
-#: ../src//Pages/Shortcuts/tree.vala:172
 #: ../src//Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
 msgstr "Отключено"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
-#: ../src//Pages/Shortcuts/list.vala:56
+#: ../src//Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr "Введите команду"
+
+#: ../src//Pages/Shortcuts/custom_tree.vala:47
+msgid "You need to logout and login for the changes to take effect"
+msgstr "Для применения настроек нужно выйти из системы и снова зайти"
+
+#: ../src//Pages/Shortcuts/custom_tree.vala:65
+msgid "Command"
+msgstr "Команда"
+
+#: ../src//Pages/Shortcuts/custom_tree.vala:66
+msgid "Shortcut"
+msgstr "Сочетание клавиш"
+
+#: ../src//Pages/Shortcuts/list.vala:31
 msgid "Close"
 msgstr "Закрыть"
 
-#: ../src//Pages/Shortcuts/list.vala:57
+#: ../src//Pages/Shortcuts/list.vala:32
 msgid "Lower"
 msgstr "Убрать окно из фокуса"
 
-#: ../src//Pages/Shortcuts/list.vala:58
+#: ../src//Pages/Shortcuts/list.vala:33
 msgid "Maximize"
 msgstr "Развернуть"
 
-#: ../src//Pages/Shortcuts/list.vala:59
+#: ../src//Pages/Shortcuts/list.vala:34
 msgid "Unmaximize"
 msgstr "Восстановить размер"
 
-#: ../src//Pages/Shortcuts/list.vala:60
+#: ../src//Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr "Сделать развернутым"
+msgstr "Развернуть/восстановить"
 
-#: ../src//Pages/Shortcuts/list.vala:61
+#: ../src//Pages/Shortcuts/list.vala:36
 msgid "Minimize"
 msgstr "Свернуть"
 
-#: ../src//Pages/Shortcuts/list.vala:62
+#: ../src//Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr "Во весь экран"
+msgstr "Переключать полноэкранный режим"
 
-#: ../src//Pages/Shortcuts/list.vala:63
+#: ../src//Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
-msgstr "Прикрепить слева"
+msgstr "Закрепить слева"
 
-#: ../src//Pages/Shortcuts/list.vala:64
+#: ../src//Pages/Shortcuts/list.vala:39
 msgid "Tile Right"
-msgstr "Прикрепить справа"
+msgstr "Закрепить справа"
 
-#: ../src//Pages/Shortcuts/list.vala:65
+#: ../src//Pages/Shortcuts/list.vala:40
 msgid "Toggle Shaded"
 msgstr "Свернуть активную часть окна"
 
-#: ../src//Pages/Shortcuts/list.vala:66
+#: ../src//Pages/Shortcuts/list.vala:41
 msgid "Toggle on all Workspaces"
 msgstr "Показать на всех рабочих столах"
 
-#: ../src//Pages/Shortcuts/list.vala:67
+#: ../src//Pages/Shortcuts/list.vala:42
 msgid "Toggle always on Top"
-msgstr "Поверх остальных окон"
+msgstr "Поверх всех окон"
 
-#: ../src//Pages/Shortcuts/list.vala:68
+#: ../src//Pages/Shortcuts/list.vala:43
 msgid "Switch Windows"
-msgstr "Переключить окна"
+msgstr "Переключить открытые окна"
 
-#: ../src//Pages/Shortcuts/list.vala:69
+#: ../src//Pages/Shortcuts/list.vala:44
 msgid "Switch Windows backwards"
-msgstr "Переключить окна в обратном порядке"
+msgstr "Переключить открытые окна в обратном порядке"
 
-#: ../src//Pages/Shortcuts/list.vala:70
+#: ../src//Pages/Shortcuts/list.vala:45
 msgid "Window Overview"
 msgstr "Показать открытые окна"
 
-#: ../src//Pages/Shortcuts/list.vala:71
+#: ../src//Pages/Shortcuts/list.vala:46
 msgid "Show All Windows"
-msgstr "Показать все окна"
+msgstr "Показать все открытые окна"
 
-#: ../src//Pages/Shortcuts/list.vala:115
+#: ../src//Pages/Shortcuts/list.vala:90
 msgid "Show Workspace Switcher"
 msgstr "Показать переключатель рабочих столов"
 
-#: ../src//Pages/Shortcuts/list.vala:116
+#: ../src//Pages/Shortcuts/list.vala:91
 msgid "Switch to first"
-msgstr "Переключиться на первый"
+msgstr "Переключиться на первый рабочий стол"
 
-#: ../src//Pages/Shortcuts/list.vala:117
+#: ../src//Pages/Shortcuts/list.vala:92
 msgid "Switch to new"
-msgstr "Переключиться на новый"
+msgstr "Переключиться на новый рабочий стол"
 
-#: ../src//Pages/Shortcuts/list.vala:118
+#: ../src//Pages/Shortcuts/list.vala:93
 msgid "Switch to workspace 1"
 msgstr "Переключиться на рабочий стол 1"
 
-#: ../src//Pages/Shortcuts/list.vala:119
+#: ../src//Pages/Shortcuts/list.vala:94
 msgid "Switch to workspace 2"
 msgstr "Переключиться на рабочий стол 2"
 
-#: ../src//Pages/Shortcuts/list.vala:120
+#: ../src//Pages/Shortcuts/list.vala:95
 msgid "Switch to workspace 3"
 msgstr "Переключиться на рабочий стол 3"
 
-#: ../src//Pages/Shortcuts/list.vala:121
+#: ../src//Pages/Shortcuts/list.vala:96
 msgid "Switch to workspace 4"
 msgstr "Переключиться на рабочий стол 4"
 
-#: ../src//Pages/Shortcuts/list.vala:122
+#: ../src//Pages/Shortcuts/list.vala:97
 msgid "Switch to workspace 5"
 msgstr "Переключиться на рабочий стол 5"
 
-#: ../src//Pages/Shortcuts/list.vala:123
+#: ../src//Pages/Shortcuts/list.vala:98
 msgid "Switch to workspace 6"
 msgstr "Переключиться на рабочий стол 6"
 
-#: ../src//Pages/Shortcuts/list.vala:124
+#: ../src//Pages/Shortcuts/list.vala:99
 msgid "Switch to workspace 7"
 msgstr "Переключиться на рабочий стол 7"
 
-#: ../src//Pages/Shortcuts/list.vala:125
+#: ../src//Pages/Shortcuts/list.vala:100
 msgid "Switch to workspace 8"
 msgstr "Переключиться на рабочий стол 8"
 
-#: ../src//Pages/Shortcuts/list.vala:126
+#: ../src//Pages/Shortcuts/list.vala:101
 msgid "Switch to workspace 9"
 msgstr "Переключиться на рабочий стол 9"
 
-#: ../src//Pages/Shortcuts/list.vala:127
+#: ../src//Pages/Shortcuts/list.vala:102
 msgid "Switch to left"
 msgstr "Переключиться влево"
 
-#: ../src//Pages/Shortcuts/list.vala:128
+#: ../src//Pages/Shortcuts/list.vala:103
 msgid "Switch to right"
 msgstr "Переключиться в право"
 
-#: ../src//Pages/Shortcuts/list.vala:129
+#: ../src//Pages/Shortcuts/list.vala:104
 msgid "Move to workspace 1"
 msgstr "Переместить на рабочий стол 1"
 
-#: ../src//Pages/Shortcuts/list.vala:130
+#: ../src//Pages/Shortcuts/list.vala:105
 msgid "Move to workspace 2"
 msgstr "Переместить на рабочий стол 2"
 
-#: ../src//Pages/Shortcuts/list.vala:131
+#: ../src//Pages/Shortcuts/list.vala:106
 msgid "Move to workspace 3"
 msgstr "Переместить на рабочий стол 3"
 
-#: ../src//Pages/Shortcuts/list.vala:132
+#: ../src//Pages/Shortcuts/list.vala:107
 msgid "Move to workspace 4"
 msgstr "Переместить на рабочий стол 4"
 
-#: ../src//Pages/Shortcuts/list.vala:133
+#: ../src//Pages/Shortcuts/list.vala:108
 msgid "Move to workspace 5"
 msgstr "Переместить на рабочий стол 5"
 
-#: ../src//Pages/Shortcuts/list.vala:134
+#: ../src//Pages/Shortcuts/list.vala:109
 msgid "Move to workspace 6"
 msgstr "Переместить на рабочий стол 6"
 
-#: ../src//Pages/Shortcuts/list.vala:135
+#: ../src//Pages/Shortcuts/list.vala:110
 msgid "Move to workspace 7"
 msgstr "Переместить на рабочий стол 7"
 
-#: ../src//Pages/Shortcuts/list.vala:136
+#: ../src//Pages/Shortcuts/list.vala:111
 msgid "Move to workspace 8"
 msgstr "Переместить на рабочий стол 8"
 
-#: ../src//Pages/Shortcuts/list.vala:137
+#: ../src//Pages/Shortcuts/list.vala:112
 msgid "Move to workspace 9"
 msgstr "Переместить на рабочий стол 9"
 
-#: ../src//Pages/Shortcuts/list.vala:138
+#: ../src//Pages/Shortcuts/list.vala:113
 msgid "Move to left"
 msgstr "Переместить влево"
 
-#: ../src//Pages/Shortcuts/list.vala:139
+#: ../src//Pages/Shortcuts/list.vala:114
 msgid "Move to right"
 msgstr "Переместить вправо"
 
-#: ../src//Pages/Shortcuts/list.vala:203
+#: ../src//Pages/Shortcuts/list.vala:178
 msgid "Take a Screenshot"
 msgstr "Сделать снимок экрана"
 
-#: ../src//Pages/Shortcuts/list.vala:204
+#: ../src//Pages/Shortcuts/list.vala:179
 msgid "Save Screenshot to Clipboard"
 msgstr "Сохранить снимок в буфер обмена"
 
-#: ../src//Pages/Shortcuts/list.vala:205
+#: ../src//Pages/Shortcuts/list.vala:180
 msgid "Take a Screenshot of a Window"
 msgstr "Сделать снимок окна"
 
-#: ../src//Pages/Shortcuts/list.vala:206
+#: ../src//Pages/Shortcuts/list.vala:181
 msgid "Save Window-Screenshot to Clipboard"
 msgstr "Сохранить снимок окна в буфер обмена"
 
-#: ../src//Pages/Shortcuts/list.vala:207
+#: ../src//Pages/Shortcuts/list.vala:182
 msgid "Take a Screenshot of an Area"
 msgstr "Сделать снимок области экрана"
 
-#: ../src//Pages/Shortcuts/list.vala:208
+#: ../src//Pages/Shortcuts/list.vala:183
 msgid "Save Area-Screenshot to Clipboard"
 msgstr "Сохранить снимок области в буфер обмена"
 
-#: ../src//Pages/Shortcuts/list.vala:234
+#: ../src//Pages/Shortcuts/list.vala:209
 msgid "Calculator"
 msgstr "Калькулятор"
 
-#: ../src//Pages/Shortcuts/list.vala:235
+#: ../src//Pages/Shortcuts/list.vala:210
 msgid "Email"
 msgstr "Электронная почта"
 
-#: ../src//Pages/Shortcuts/list.vala:236
+#: ../src//Pages/Shortcuts/list.vala:211
 msgid "Help"
 msgstr "Справка"
 
-#: ../src//Pages/Shortcuts/list.vala:237
+#: ../src//Pages/Shortcuts/list.vala:212
 msgid "Home Folder"
 msgstr "Домашняя папка"
 
-#: ../src//Pages/Shortcuts/list.vala:238
+#: ../src//Pages/Shortcuts/list.vala:213
 msgid "File Search"
 msgstr "Поиск файлов"
 
-#: ../src//Pages/Shortcuts/list.vala:239
+#: ../src//Pages/Shortcuts/list.vala:214
 msgid "Terminal"
 msgstr "Терминал"
 
-#: ../src//Pages/Shortcuts/list.vala:240
+#: ../src//Pages/Shortcuts/list.vala:215
 msgid "Internet Browser"
-msgstr "Интернет браузер"
+msgstr "Веб-браузер"
 
-#: ../src//Pages/Shortcuts/list.vala:241
+#: ../src//Pages/Shortcuts/list.vala:216
 msgid "Applications Launcher"
 msgstr "Запуск приложений"
 
-#: ../src//Pages/Shortcuts/list.vala:271
+#: ../src//Pages/Shortcuts/list.vala:246
 msgid "Volume Up"
 msgstr "Увеличить громкость"
 
-#: ../src//Pages/Shortcuts/list.vala:272
+#: ../src//Pages/Shortcuts/list.vala:247
 msgid "Volume Down"
 msgstr "Уменьшить громкость"
 
-#: ../src//Pages/Shortcuts/list.vala:273
+#: ../src//Pages/Shortcuts/list.vala:248
 msgid "Mute"
 msgstr "Выключить звук"
 
-#: ../src//Pages/Shortcuts/list.vala:274
+#: ../src//Pages/Shortcuts/list.vala:249
 msgid "Launch Media Player"
 msgstr "Запустить медиа-проигрыватель"
 
-#: ../src//Pages/Shortcuts/list.vala:275
+#: ../src//Pages/Shortcuts/list.vala:250
 msgid "Play"
 msgstr "Воспроизвести"
 
-#: ../src//Pages/Shortcuts/list.vala:277
+#: ../src//Pages/Shortcuts/list.vala:252
 msgid "Stop"
-msgstr "Стоп"
+msgstr "Остановить"
 
-#: ../src//Pages/Shortcuts/list.vala:278
+#: ../src//Pages/Shortcuts/list.vala:253
 msgid "Previous Track"
-msgstr "Предыдущий трек"
+msgstr "Предыдущая композиция"
 
-#: ../src//Pages/Shortcuts/list.vala:279
+#: ../src//Pages/Shortcuts/list.vala:254
 msgid "Next Track"
-msgstr "Следующий трек"
+msgstr "Следующая композиция"
 
-#: ../src//Pages/Shortcuts/list.vala:280
+#: ../src//Pages/Shortcuts/list.vala:255
 msgid "Eject"
 msgstr "Извлечь"
 
-#: ../src//Pages/Shortcuts/list.vala:314
+#: ../src//Pages/Shortcuts/list.vala:289
 msgid "Decrease Text Size"
-msgstr "Уменьшить размер шрифта"
+msgstr "Уменьшить размер текста"
 
-#: ../src//Pages/Shortcuts/list.vala:315
+#: ../src//Pages/Shortcuts/list.vala:290
 msgid "Increase Text Size"
-msgstr "Увеличить размер шрифта"
+msgstr "Увеличить размер текста"
 
-#: ../src//Pages/Shortcuts/list.vala:316
+#: ../src//Pages/Shortcuts/list.vala:291
 msgid "Toggle Magnifier"
 msgstr "Включить экранную лупу"
 
-#: ../src//Pages/Shortcuts/list.vala:317
+#: ../src//Pages/Shortcuts/list.vala:292
 msgid "Magnifier Zoom in"
 msgstr "Приблизить"
 
-#: ../src//Pages/Shortcuts/list.vala:318
+#: ../src//Pages/Shortcuts/list.vala:293
 msgid "Magnifier Zoom out"
-msgstr "Уменьшить"
+msgstr "Отдалить"
 
-#: ../src//Pages/Shortcuts/list.vala:319
+#: ../src//Pages/Shortcuts/list.vala:294
 msgid "Toggle On Screen Keyboard"
 msgstr "Включить экранную клавиатуру"
 
-#: ../src//Pages/Shortcuts/list.vala:320
+#: ../src//Pages/Shortcuts/list.vala:295
 msgid "Toggle Screenreader"
 msgstr "Включить чтение с экрана"
 
-#: ../src//Pages/Shortcuts/list.vala:321
+#: ../src//Pages/Shortcuts/list.vala:296
 msgid "Toggle High Contrast"
 msgstr "Включить высокую контрастность"
 
-#: ../src//Pages/Shortcuts/list.vala:322
+#: ../src//Pages/Shortcuts/list.vala:297
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Следующая раскладка клавиатуры"
 
-#: ../src//Pages/Shortcuts/list.vala:323
+#: ../src//Pages/Shortcuts/list.vala:298
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Предыдущая раскладка клавиатуры"
 
-#: ../src//Pages/shortcuts.vala:32
+#: ../src//Pages/Shortcuts/conflict_dialog.vala:9
+msgid "If you reassign the shortcut to \\"
+msgstr "При переназначении на \\"
+
+#: ../src//Pages/Shortcuts/conflict_dialog.vala:11
+msgid "Reassign"
+msgstr "Переназначить"
+
+#: ../src//Pages/shortcuts.vala:43
 msgid "Windows"
 msgstr "Окна"
 
-#: ../src//Pages/shortcuts.vala:33
+#: ../src//Pages/shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Рабочие столы"
 
-#: ../src//Pages/shortcuts.vala:34
+#: ../src//Pages/shortcuts.vala:45
 msgid "Screenshots"
 msgstr "Снимки экрана"
 
-#: ../src//Pages/shortcuts.vala:35
+#: ../src//Pages/shortcuts.vala:46
 msgid "Applications"
 msgstr "Приложения"
 
-#: ../src//Pages/shortcuts.vala:36
+#: ../src//Pages/shortcuts.vala:47
 msgid "Media"
 msgstr "Мультимедиа"
 
-#: ../src//Pages/shortcuts.vala:37
+#: ../src//Pages/shortcuts.vala:48
 msgid "Universal Access"
 msgstr "Универсальный доступ"
+
+#: ../src//Pages/shortcuts.vala:49
+msgid "Custom"
+msgstr "Пользовательские"
