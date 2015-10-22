@@ -369,7 +369,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
         private Gtk.Label new_label (Gtk.Grid panel, string text, int v_position, int h_position = 0) {
             // v_position and h_position is relative to the panel provided
-            var new_label   = new Gtk.Label (text);
+            var new_label = new Gtk.Label (text);
             new_label.valign = Gtk.Align.CENTER;
             ((Gtk.Misc) new_label).xalign = 1;
             panel.attach (new_label, h_position, v_position, 1, 1);
