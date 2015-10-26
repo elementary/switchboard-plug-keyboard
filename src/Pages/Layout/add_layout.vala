@@ -9,8 +9,7 @@ namespace Pantheon.Keyboard.LayoutPage
 		{
 			var grid = new Gtk.Grid();
 
-			grid.margin_start   = 12;
-			grid.margin_end     = 12;
+			grid.margin         = 12;
 			grid.column_spacing = 12;
 			grid.row_spacing    = 12;
 
