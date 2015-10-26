@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-10-22 21:10+0000\n"
-"Last-Translator: Maxim Taranov <png2378@protonmail.ch>\n"
+"PO-Revision-Date: 2015-10-25 12:30+0000\n"
+"Last-Translator: zEvilz <zevilz13@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-10-23 05:44+0000\n"
+"X-Launchpad-Export-Date: 2015-10-26 05:22+0000\n"
 "X-Generator: Launchpad (build 17812)\n"
 
 #: ../src//keyboard.vala:7
@@ -61,11 +61,11 @@ msgstr "Удалить"
 
 #: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr "Переместить вверх"
+msgstr "Переместить выше"
 
 #: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr "Переместить вниз"
+msgstr "Переместить ниже"
 
 #: ../src//Pages/Layout/add_layout.vala:23
 msgid "Language:"
@@ -735,7 +735,7 @@ msgstr "Интервал:"
 #: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
 #: ../src//Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr "миллисекунды"
+msgstr "мс"
 
 #: ../src//Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
@@ -751,7 +751,7 @@ msgstr "Длительность:"
 
 #: ../src//Pages/behaviour.vala:137
 msgid "seconds"
-msgstr "секунды"
+msgstr "сек."
 
 #: ../src//Pages/behaviour.vala:243
 msgid "Type to test your settings…"
