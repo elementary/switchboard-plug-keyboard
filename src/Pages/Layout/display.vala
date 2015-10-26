@@ -75,11 +75,8 @@ namespace Pantheon.Keyboard.LayoutPage
             var pop = new AddLayout ();
 
             add_button.clicked.connect( () => {
-                // uncomment when reverting to popover
-                //pop.move_to_widget (add_button);
-                // and remove this line
+                pop.set_relative_to (add_button);
                 pop.show_all ();
-                add_item (pop);
             });
 
             remove_button.clicked.connect( () => {
