@@ -1,23 +1,19 @@
 namespace Pantheon.Keyboard.LayoutPage
 {
 	// pop over widget to add a new keyboard layout
-	class AddLayout : Gtk.Dialog
+	class AddLayout : Gtk.Popover
 	{
 		public signal void layout_added (int language, int layout = 0);
 
 		public AddLayout()
 		{
-			deletable = false;
-
 			var grid = new Gtk.Grid();
 
-			grid.margin_start   = 12;
-			grid.margin_end     = 12;
+			grid.margin         = 12;
 			grid.column_spacing = 12;
 			grid.row_spacing    = 12;
 
-			Gtk.Box content = this.get_content_area ();
-			content.pack_start (grid, false, true, 0);
+			this.add_with_properties (grid);
 
 			// add some labels
 			var label_language = new Gtk.Label (_("Language:"));
