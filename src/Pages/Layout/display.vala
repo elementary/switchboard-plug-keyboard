@@ -77,6 +77,7 @@ namespace Pantheon.Keyboard.LayoutPage
             add_button.clicked.connect( () => {
                 pop.set_relative_to (add_button);
                 pop.show_all ();
+                add_item (pop);
             });
 
             remove_button.clicked.connect( () => {
