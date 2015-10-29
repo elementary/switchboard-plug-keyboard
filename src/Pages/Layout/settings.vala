@@ -202,57 +202,6 @@ namespace Pantheon.Keyboard.LayoutPage
 
     }
 
-    class Xkb_modifier {
-        public string name;
-        public string _active_command;
-        public string active_command {
-            get {
-                if ( _active_command == null ) {
-                    return default_command;
-                } else {
-                    return _active_command;
-                }
-            }
-            set {
-                if ( value == _active_command ) {
-                    return;
-                }
-                if ( value in xkb_option_commands ) {
-                    _active_command = value;
-                    active_command_changed ();
-                }
-            }
-        }
-
-        public signal void active_command_changed ();
-
-        public string _default_command;
-        public string default_command {
-            get {
-                return _default_command;
-            }
-            set {
-                if ( value in xkb_option_commands ) {
-                    _default_command = value;
-                } else {
-                    return;
-                }
-            }
-        }
-
-        public string [] xkb_option_commands;
-        public string [] option_descriptions;
-
-        public Xkb_modifier (string name = "") {
-            this.name = name;
-        }
-
-        public void append_xkb_option ( string xkb_command, string description ){
-            xkb_option_commands += xkb_command;
-            option_descriptions += description;
-        }
-    }
-
     class LayoutSettings
     {
 
@@ -324,7 +273,6 @@ namespace Pantheon.Keyboard.LayoutPage
         // An array of all view switches that modify in any way xkb_options
         // the value of xkb_options is computed as an array of all active_command properties
         private Xkb_modifier [] xkb_options_modifiers;
-        private bool changing_active_modifier;
 
         void update_modifiers_from_gsettings () {
             string [] xkb_options = settings.get_strv ("xkb-options");
@@ -332,9 +280,7 @@ namespace Pantheon.Keyboard.LayoutPage
                 bool modifier_is_default = true;
                 foreach ( string xkb_command in xkb_options ){
                     if ( xkb_command in modifier.xkb_option_commands ) {
-                        changing_active_modifier = true;
-                        modifier.active_command = xkb_command;
-                        changing_active_modifier = false;
+                        modifier.set_active_command ( xkb_command );
                         modifier_is_default = false;
                         break;
                     } else {
@@ -342,9 +288,7 @@ namespace Pantheon.Keyboard.LayoutPage
                     }
                 }
                 if ( modifier_is_default ) {
-                    changing_active_modifier = true;
-                    modifier.active_command = modifier.default_command;
-                    changing_active_modifier = false;
+                    modifier.set_active_command ( modifier.default_command );
                 }
             }
         }
@@ -354,8 +298,8 @@ namespace Pantheon.Keyboard.LayoutPage
             string [] old_xkb_options = settings.get_strv ("xkb-options");
             // adds all options that come from modifiers
             foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
-                if (modifier.active_command != "")
-                    new_xkb_options += modifier.active_command;
+                if ( "" != modifier.get_active_command () )
+                    new_xkb_options += modifier.get_active_command ();
             }
 
             // adds all options that are on gsettings but can't be modified
@@ -431,12 +375,8 @@ namespace Pantheon.Keyboard.LayoutPage
 
         public void add_xkb_modifier (Xkb_modifier modifier) {
             xkb_options_modifiers += modifier;
-            modifier.active_command_changed.connect (() => {
-                if (changing_active_modifier) {
-                    return;
-                } else {
-                    update_gsettings_from_modifiers ();
-                }
+            modifier.active_command_updated.connect (() => {
+                update_gsettings_from_modifiers ();
             });
             update_modifiers_from_gsettings ();
         }

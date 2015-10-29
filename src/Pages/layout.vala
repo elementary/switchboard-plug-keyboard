@@ -312,7 +312,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("", "option off");
             modifier.append_xkb_option (xkb_command, "option on");
 
-            if (modifier.active_command == "") {
+            if (modifier.get_active_command () == "") {
                 new_switch.active = true;
             } else {
                 new_switch.active = false;
@@ -320,14 +320,14 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             new_switch.notify["active"].connect(() => {
                 if (new_switch.active) {
-                    modifier.active_command = xkb_command;
+                    modifier.update_active_command ( xkb_command );
                 } else {
-                    modifier.active_command = "";
+                    modifier.update_active_command ( "" );
                 }
             });
 
             settings.per_window_changed.connect (() => {
-                if (modifier.active_command == "") {
+                if (modifier.get_active_command () == "") {
                     new_switch.active = true;
                 } else {
                     new_switch.active = false;
@@ -347,14 +347,14 @@ namespace Pantheon.Keyboard.LayoutPage {
                 new_combo_box.append (modifier.xkb_option_commands[i], modifier.option_descriptions[i]);
             }
 
-            new_combo_box.set_active_id (modifier.active_command);
+            new_combo_box.set_active_id (modifier.get_active_command () );
 
             new_combo_box.changed.connect (() => {
-                modifier.active_command = new_combo_box.active_id;
+                modifier.update_active_command ( new_combo_box.active_id );
             });
 
-            modifier.active_command_changed.connect (() => {
-                new_combo_box.set_active_id (modifier.active_command);
+            modifier.active_command_updated.connect (() => {
+                new_combo_box.set_active_id (modifier.get_active_command () );
             });
 
 
