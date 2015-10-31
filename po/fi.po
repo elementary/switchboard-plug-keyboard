@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-05-22 22:48+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
+"PO-Revision-Date: 2015-10-30 18:56+0000\n"
+"Last-Translator: Henull <henull89@gmail.com>\n"
 "Language-Team: Finnish <fi@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-24 05:52+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-10-31 05:31+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -158,7 +158,7 @@ msgstr "Kenoviiva"
 #: ../src//Pages/Options/option_handler.vala:108
 #: ../src//Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
-msgstr ""
+msgstr "<Pienempi/Suurempi>"
 
 #: ../src//Pages/Options/option_handler.vala:109
 msgid ""
@@ -171,12 +171,16 @@ msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
+"Kenoviiva valitsee 3. tason, toimii kertakäyttöisenä lukitsimena "
+"painettaessa yhtäaikaa toisen 3. tason valitsimen kanssa."
 
 #: ../src//Pages/Options/option_handler.vala:111
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
+"<Pienempi/Suurempi> valitsee 3. tason, toimii kertakäyttöisenä lukitsimena "
+"painettaessa yhtäaikaa toisen 3. tason valitsimen kanssa."
 
 #: ../src//Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
@@ -196,7 +200,7 @@ msgstr "Vaihda Ctrl ja Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "At left of 'A'"
-msgstr ""
+msgstr "”A”-näppäimestä vasemmalla"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "At bottom left"
@@ -233,7 +237,7 @@ msgstr "Numerosormion asettelun valinta"
 
 #: ../src//Pages/Options/option_handler.vala:132
 msgid "Legacy"
-msgstr ""
+msgstr "Perinteinen"
 
 #: ../src//Pages/Options/option_handler.vala:133
 msgid "Unicode additions (arrows and math operators)"
@@ -267,7 +271,7 @@ msgstr "Heksadesimaali"
 
 #: ../src//Pages/Options/option_handler.vala:139
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "ATM/puhelintyyppi"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Numeric keypad delete key behaviour"
@@ -275,7 +279,7 @@ msgstr "Numerosormion Del-näppäimen toiminta"
 
 #: ../src//Pages/Options/option_handler.vala:143
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "Perinteinen näppäin pisteellä"
 
 #: ../src//Pages/Options/option_handler.vala:144
 msgid "Legacy key with comma"
@@ -296,14 +300,15 @@ msgstr "Neljännen tason näppäin pilkulla"
 #: ../src//Pages/Options/option_handler.vala:148
 msgid "Four-level key with momayyez"
 msgstr ""
+"Neljännen tason näppäin persialaisella desimaalierottimella (momayyez)"
 
 #: ../src//Pages/Options/option_handler.vala:149
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Neljännen tason näppäin abstrakteilla erottimilla"
 
 #: ../src//Pages/Options/option_handler.vala:150
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Puolipilkku kolmannella tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:153
 msgid "Caps Lock key behavior"
@@ -311,28 +316,29 @@ msgstr "Caps Lock -näppäimen toiminta"
 
 #: ../src//Pages/Options/option_handler.vala:154
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Caps Lock käyttää sisäistä suuraakkostusta. Shift kumoaa Caps Lockin"
 
 #: ../src//Pages/Options/option_handler.vala:155
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
+"Caps Lock käyttää sisäistä suuraakkostusta. Shift ei kumoa Caps Lockia"
 
 #: ../src//Pages/Options/option_handler.vala:156
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
-msgstr ""
+msgstr "Caps Lock toimii lukitsevana Shiftinä. Shift kumoaa Caps Lockin"
 
 #: ../src//Pages/Options/option_handler.vala:157
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
-msgstr ""
+msgstr "Caps Lock toimii lukitsevana Shiftinä. Shift ei kumoa Caps Lockia"
 
 #: ../src//Pages/Options/option_handler.vala:158
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
+msgstr "Caps Lock vaihtaa normaalin suuraakkostuksen aakkosille"
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
+msgstr "Tee Caps Lockista ylimääräinen Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:160
 msgid "Swap ESC and Caps Lock"
@@ -340,11 +346,11 @@ msgstr "Vaihda Esc ja Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:161
 msgid "Make Caps Lock an additional ESC"
-msgstr ""
+msgstr "Tee Caps Lockista ylimääräinen Esc"
 
 #: ../src//Pages/Options/option_handler.vala:162
 msgid "Make Caps Lock an additional Backspace"
-msgstr ""
+msgstr "Tee Caps Lockista ylimääräinen askelpalautin"
 
 #: ../src//Pages/Options/option_handler.vala:163
 msgid "Make Caps Lock an additional Super"
@@ -356,11 +362,12 @@ msgstr "Tee Caps Lockista ylimääräinen Hyper"
 
 #: ../src//Pages/Options/option_handler.vala:165
 msgid "Caps Lock toggles Shift so all keys are affected"
-msgstr ""
+msgstr "Caps Lock vaihtaa Shiftiä vaikuttaen kaikkiin näppäimiin"
 
 #: ../src//Pages/Options/option_handler.vala:166
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr ""
+"Tee Caps Lockista ylimääräinen Control mutta pidä Caps_Lockin näppäinsymboli"
 
 #: ../src//Pages/Options/option_handler.vala:169
 msgid "Alt/Win key behavior"
@@ -368,7 +375,7 @@ msgstr "Alt- ja Win-näppäinten toiminta"
 
 #: ../src//Pages/Options/option_handler.vala:170
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Lisää standardi toiminta valikkonäppäimeen"
 
 #: ../src//Pages/Options/option_handler.vala:171
 msgid "Alt and Meta are on Alt keys"
@@ -376,15 +383,15 @@ msgstr "Alt ja Meta ovat Alt-näppäimissä"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control on liitetty Win-näppäimiin (ja tavalliset Ctrl-näppämet)"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Control on liitetty Alt-näppäimiin ja Alt Win-näppäimiin"
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta tulee Win-näppäimistä"
 
 #: ../src//Pages/Options/option_handler.vala:175
 msgid "Meta is mapped to Left Win"
@@ -392,7 +399,7 @@ msgstr "Meta tulee vasemmasta Win-näppäimestä"
 
 #: ../src//Pages/Options/option_handler.vala:176
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Hyper tulee Win-näppäimistä"
 
 #: ../src//Pages/Options/option_handler.vala:177
 msgid "Alt is mapped to Right Win, Super to Menu"
@@ -429,41 +436,43 @@ msgstr "Muut yhteensopivuusasetukset"
 
 #: ../src//Pages/Options/option_handler.vala:197
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Oletussormionäppäimet"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "Sormionäppäimet syöttävät aina numeroita (kuten Mac OS:ssä)"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Shift ja sormionäppäimet toimivat kuten MS Windowsissa"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift ei kumoa Num Lockia, valitsee 3. tason sen sijaan"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "Erikoisnäppäimet (Ctrl+Alt+<Näppäin>) käsitellään serverillä."
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Apple Aluminium -näppäimistö: emuloi PC-näppäimiä (Print, Scroll Lock, "
+"Pause, Num Lock)"
 
 #: ../src//Pages/Options/option_handler.vala:203
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift kumoaa Caps Lockin"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Ota käyttöön ylimääräiset typografiset merkit"
 
 #: ../src//Pages/Options/option_handler.vala:205
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Molemmat Shift-näppäimet yhdessä vaihtavat Caps Lockin."
 
 #: ../src//Pages/Options/option_handler.vala:206
 msgid ""
@@ -488,23 +497,23 @@ msgstr "Valuuttamerkkien lisäys tiettyihin näppäimiin"
 
 #: ../src//Pages/Options/option_handler.vala:213
 msgid "Euro on E"
-msgstr ""
+msgstr "Euro E:ssä"
 
 #: ../src//Pages/Options/option_handler.vala:214
 msgid "Euro on 2"
-msgstr ""
+msgstr "Euro 2:ssa"
 
 #: ../src//Pages/Options/option_handler.vala:215
 msgid "Euro on 4"
-msgstr ""
+msgstr "Euro 4:ssä"
 
 #: ../src//Pages/Options/option_handler.vala:216
 msgid "Euro on 5"
-msgstr ""
+msgstr "Euro 5:ssä"
 
 #: ../src//Pages/Options/option_handler.vala:217
 msgid "Rupee on 4"
-msgstr ""
+msgstr "Rupia 4:ssä"
 
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Key to choose 5th level"
@@ -515,24 +524,32 @@ msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
+"<Pienempi/Suurempi> valitsee 5. tason, lukitsee kun painetaan yhdessä toisen "
+"5. tason valitsimen kanssa"
 
 #: ../src//Pages/Options/option_handler.vala:222
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Oikea Alt valitsee 5. tason, lukitsee kun painetaan yhdessä toisen 5. tason "
+"valitsimen kanssa"
 
 #: ../src//Pages/Options/option_handler.vala:223
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Vasen Win valitsee 5. tason, lukitsee kun painetaan yhdessä toisen 5. tason "
+"valitsimen kanssa"
 
 #: ../src//Pages/Options/option_handler.vala:224
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
+"Oikea Win valitsee 5. tason, lukitsee kun painetaan yhdessä toisen 5. tason "
+"valitsimen kanssa"
 
 #: ../src//Pages/Options/option_handler.vala:227
 msgid "Using space key to input non-breakable space character"
@@ -540,41 +557,46 @@ msgstr "Sitovan välilyöntimerkin syöttäminen"
 
 #: ../src//Pages/Options/option_handler.vala:228
 msgid "Usual space at any level"
-msgstr ""
+msgstr "Normaali välilyönti kaikilla tasoilla"
 
 #: ../src//Pages/Options/option_handler.vala:229
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Sitova välilyöntimerkki 2. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:230
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Sitova välilyöntimerkki 3. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:231
 msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr ""
+msgstr "Sitova välilyöntimerkki 3. tasolla, ei mitään 4. tasolla."
 
 #: ../src//Pages/Options/option_handler.vala:232
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
+"Sitova välilyöntimerkki 3. tasolla, kapea sitova välilyöntimerkki 4. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:233
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "Sitova välilyöntimerkki 4. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:234
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
 msgstr ""
+"Sitova välilyöntimerkki 4. tasolla ja kapea sitova välilyöntimerkki 6. "
+"tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:235
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
+"Sitova välilyöntimerkki 4. tasolla, kapea sitova välilyöntimerkki 6. tasolla "
+"(Ctrl+Shift)"
 
 #: ../src//Pages/Options/option_handler.vala:236
 msgid "Zero-width non-joiner character at second level"
@@ -608,24 +630,32 @@ msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 2. tasolla, sitova välilyöntimerkki 3. "
+"tasolla eikä mitään 4. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 2. tasolla, sitova välilyöntimerkki 3. "
+"tasolla ja leveydetön yhdistävä merkki 4. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 2. tsaolla, sitova välilyöntimerkki 3. "
+"tasolla, kapea sitova välilyöntimerkki 4. tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
+"Leveydetön ei-yhdistävä merkki 3. tasolla ja leveydetön yhdistävä merkki 4. "
+"tasolla"
 
 #: ../src//Pages/Options/option_handler.vala:246
 msgid "Japanese keyboard options"
@@ -633,11 +663,11 @@ msgstr "Japanilaisen näppäimistön valinnat"
 
 #: ../src//Pages/Options/option_handler.vala:247
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "Kana, lukitusnäppäin lukitseva"
 
 #: ../src//Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "NICOLA-F-tyylin askelpalautin"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
@@ -775,7 +805,7 @@ msgstr ""
 
 #: ../src//Pages/Shortcuts/list.vala:41
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "Vaihda kaikissa työtiloissa"
 
 #: ../src//Pages/Shortcuts/list.vala:42
 msgid "Toggle always on Top"
