@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-06-24 18:50+0000\n"
-"Last-Translator: Cleiton Floss <cleitonfloss@gmail.com>\n"
+"PO-Revision-Date: 2015-11-04 13:13+0000\n"
+"Last-Translator: Glauco Pires <gr_pires@hotmail.com>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-24 05:52+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2015-11-05 05:43+0000\n"
+"X-Generator: Launchpad (build 17838)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -77,7 +77,7 @@ msgstr "Esquema:"
 
 #: ../src//Pages/Layout/add_layout.vala:65
 msgid "Add Layout"
-msgstr "Adicionar esquema"
+msgstr "Adicionar layout"
 
 #: ../src//Pages/Layout/add_layout.vala:66
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:10
@@ -99,7 +99,7 @@ msgstr "Tecla para escolher terceiro nível"
 #: ../src//Pages/Options/option_handler.vala:95
 #: ../src//Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
-msgstr "Ctrl Direito"
+msgstr "Ctrl direito"
 
 #: ../src//Pages/Options/option_handler.vala:96
 #: ../src//Pages/Options/option_handler.vala:186
@@ -118,7 +118,7 @@ msgstr "Win Esquerdo"
 #: ../src//Pages/Options/option_handler.vala:99
 #: ../src//Pages/Options/option_handler.vala:185
 msgid "Right Win"
-msgstr "Win Direito"
+msgstr "Win direito"
 
 #: ../src//Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
@@ -210,7 +210,7 @@ msgstr "No canto inferior esquerdo"
 
 #: ../src//Pages/Options/option_handler.vala:120
 msgid "Right Ctrl as Right Alt"
-msgstr "Ctrl Direito como Alt Direito"
+msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:121
 msgid "Menu as Right Ctrl"
