@@ -118,7 +118,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:paus", _("Pause"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
-            modifier.default_command = "";
+            modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
             var compose_combo_box = new_combo_box (this, modifier, 1, 2);
@@ -137,7 +137,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("ctrl:nocaps", _("Control"));
             modifier.append_xkb_option ("ctrl:swapcaps", _("Swap With Control"));
             modifier.append_xkb_option ("caps:swapescape", _("Swap With Escape"));
-            modifier.default_command = "caps:capslock";
+            modifier.set_default_command ( "caps:capslock" );
             settings.add_xkb_modifier (modifier);
 
             var caps_combo_box = new_combo_box (this, modifier, 2, 2);
@@ -228,7 +228,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv3:ralt_alt", _("Disabled"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:bksl_switch", _("Backslash"));
-            modifier.default_command = "lv3:ralt_switch";
+            modifier.set_default_command ( "lv3:ralt_switch" );
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (panel, modifier, 0);
@@ -254,7 +254,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv5:lwin_switch_lock", _("Left Super"));
             modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super"));
             modifier.append_xkb_option ("lv5:lsgt_switch_lock" , _("Less/Grater"));
-            modifier.default_command = "";
+            modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (panel, modifier, 1);

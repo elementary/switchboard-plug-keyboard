@@ -288,7 +288,7 @@ namespace Pantheon.Keyboard.LayoutPage
                     }
                 }
                 if ( modifier_is_default ) {
-                    modifier.set_active_command ( modifier.default_command );
+                    modifier.set_active_command ( modifier.get_default_command () );
                 }
             }
         }
