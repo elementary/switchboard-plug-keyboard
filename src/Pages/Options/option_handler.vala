@@ -91,27 +91,7 @@ namespace Pantheon.Keyboard.Options {
 		private void generate_items () {
 			items = new List<Item> ();
 
-			var item = new Item (_("Key to choose 3rd level"), "lv3", true);
-			item.set (_("Right Ctrl"), "lv3:switch");
-			item.set (_("Menu"), "lv3:menu_switch");
-			item.set (_("Any Win key"), "lv3:win_switch");
-			item.set (_("Left Win"), "lv3:lwin_switch");
-			item.set (_("Right Win"), "lv3:rwin_switch");
-			item.set (_("Any Alt key"), "lv3:alt_switch");
-			item.set (_("Left Alt"), "lv3:lalt_switch");
-			item.set (_("Right Alt"), "lv3:ralt_switch");
-			item.set (_("Right Alt, Shift+Right Alt key is Multi_Key"), "lv3:ralt_switch_multikey");
-			item.set (_("Right Alt key never chooses 3rd level"), "lv3:ralt_alt");
-			item.set (_("Enter on keypad"), "lv3:enter_switch");
-			item.set (_("Caps Lock"), "lv3:caps_switch");
-			item.set (_("Backslash"), "lv3:bksl_switch");
-			item.set (_("<Less/Greater>"), "lv3:lsgt_switch");
-			item.set (_("Caps Lock chooses 3rd level, acts as onetime lock when pressed together with another 3rd-level-chooser"), "lv3:caps_switch_latch");
-			item.set (_("Backslash chooses 3rd level, acts as onetime lock when pressed together with another 3rd-level-chooser"), "lv3:bksl_switch_latch");
-			item.set (_("<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together with another 3rd-level-chooser"), "lv3:lsgt_switch_latch");
-			items.append (item);
-
-			item = new Item (_("Ctrl key position"), "ctrl", true);
+			var item = new Item (_("Ctrl key position"), "ctrl", true);
 			item.set (_("Caps Lock as Ctrl"), "ctrl:nocaps");
 			item.set (_("Left Ctrl as Meta"), "ctrl:lctrl_meta");
 			item.set (_("Swap Ctrl and Caps Lock"), "ctrl:swapcaps");
@@ -120,12 +100,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Right Ctrl as Right Alt"), "ctrl:rctrl_ralt");
 			item.set (_("Menu as Right Ctrl"), "ctrl:menu_rctrl");
 			item.set (_("Right Alt as Right Ctrl"), "ctrl:ctrl_ralt");
-			items.append (item);
-
-			item = new Item (_("Use keyboard LED to show alternative layout"), "grp_led", true);
-			item.set (_("Num Lock"), "grp_led:num");
-			item.set (_("Caps Lock"), "grp_led:caps");
-			item.set (_("Scroll Lock"), "grp_led:scroll");
 			items.append (item);
 
 			item = new Item (_("Numeric keypad layout selection"), "keypad", false);
@@ -150,22 +124,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Semi-colon on third level"), "kpdl:semi");
 			items.append (item);
 
-			item = new Item (_("Caps Lock key behavior"), "caps", false);
-			item.set (_("Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"), "caps:internal");
-			item.set (_("Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"), "caps:internal_nocancel");
-			item.set (_("Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"), "caps:shift");
-			item.set (_("Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"), "caps:shift_nocancel");
-			item.set (_("Caps Lock toggles normal capitalization of alphabetic characters"), "caps:capslock");
-			item.set (_("Make Caps Lock an additional Num Lock"), "caps:numlock");
-			item.set (_("Swap ESC and Caps Lock"), "caps:swapescape");
-			item.set (_("Make Caps Lock an additional ESC"), "caps:escape");
-			item.set (_("Make Caps Lock an additional Backspace"), "caps:backspace");
-			item.set (_("Make Caps Lock an additional Super"), "caps:super");
-			item.set (_("Make Caps Lock an additional Hyper"), "caps:hyper");
-			item.set (_("Caps Lock toggles Shift so all keys are affected"), "caps:shiftlock");
-			item.set (_("Make Caps Lock an additional Control but keep the Caps_Lock keysym"), "caps:ctrl_modifier");
-			items.append (item);
-
 			item = new Item (_("Alt/Win key behavior"), "altwin", false);
 			item.set (_("Add the standard behavior to Menu key"), "altwin:menu");
 			item.set (_("Alt and Meta are on Alt keys"), "altwin:meta_alt");
@@ -177,20 +135,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Alt is mapped to Right Win, Super to Menu"), "altwin:alt_super_win");
 			item.set (_("Alt is mapped to Win keys (and the usual Alt keys)"), "altwin:alt_win");
 			item.set (_("Alt is swapped with Win"), "altwin:swap_alt_win");
-			items.append (item);
-
-			item = new Item (_("Compose key position"), "Compose key", true);
-			item.set (_("Right Alt"), "compose:ralt");
-			item.set (_("Left Win"), "compose:lwin");
-			item.set (_("Right Win"), "compose:rwin");
-			item.set (_("Menu"), "compose:menu");
-			item.set (_("Left Ctrl"), "compose:lctrl");
-			item.set (_("Right Ctrl"), "compose:rctrl");
-			item.set (_("Caps Lock"), "compose:caps");
-			item.set (_("<Less/Greater>"), "compose:102");
-			item.set (_("Pause"), "compose:paus");
-			item.set (_("PrtSc"), "compose:prsc");
-			item.set (_("Scroll Lock"), "compose:sclk");
 			items.append (item);
 
 			item = new Item (_("Miscellaneous compatibility options"), "compat", true);
@@ -217,13 +161,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Rupee on 4"), "rupeesign:4");
 			items.append (item);
 
-			item = new Item (_("Key to choose 5th level"), "lv5", true);
-			item.set (_("<Less/Greater> chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lsgt_switch_lock");
-			item.set (_("Right Alt chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:ralt_switch_lock");
-			item.set (_("Left Win chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:lwin_switch_lock");
-			item.set (_("Right Win chooses 5th level, locks when pressed together with another 5th-level-chooser"), "lv5:rwin_switch_lock");
-			items.append (item);
-
 			item = new Item (_("Using space key to input non-breakable space character"), "nbsp", false);
 			item.set (_("Usual space at any level"), "nbsp:none");
 			item.set (_("Non-breakable space character at second level"), "nbsp:level2");
@@ -241,12 +178,6 @@ namespace Pantheon.Keyboard.Options {
 			item.set (_("Zero-width non-joiner character at second level, non-breakable space character at third level, zero-width joiner at fourth level"), "nbsp:zwnj2nb3zwj4");
 			item.set (_("Zero-width non-joiner character at second level, non-breakable space character at third level, thin non-breakable space at fourth level"), "nbsp:zwnj2nb3nnb4");
 			item.set (_("Zero-width non-joiner character at third level, zero-width joiner at fourth level"), "nbsp:zwnj3zwj4");
-			items.append (item);
-
-			item = new Item (_("Japanese keyboard options"), "japan", true);
-			item.set (_("Kana Lock key is locking"), "japan:kana_lock");
-			item.set (_("NICOLA-F style Backspace"), "japan:nicola_f_bs");
-			item.set (_("Make Zenkaku Hankaku an additional ESC"), "japan:hztg_escape");
 			items.append (item);
 
 			item = new Item (_("Adding Esperanto circumflexes (supersigno)"), "esperanto", false);
