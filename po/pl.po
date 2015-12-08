@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-01-05 17:23+0000\n"
-"Last-Translator: Piotr Strębski <strebski@o2.pl>\n"
+"PO-Revision-Date: 2015-12-07 13:26+0000\n"
+"Last-Translator: WuPe <wojtek2s@wp.pl>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-26 05:33+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2015-12-08 05:44+0000\n"
+"X-Generator: Launchpad (build 17862)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -412,15 +412,15 @@ msgstr "Alt pod prawym Win, Super pod Menu"
 
 #: ../src//Pages/Options/option_handler.vala:178
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt jest przypisany do klawiszy Win (oraz zwykłych klawiszy Alt)"
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt jest zamieniony z klawiszami Win"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Compose key position"
-msgstr "Położenie klawisza Compose"
+msgstr "Ułóż pozycje klawiszy"
 
 #: ../src//Pages/Options/option_handler.vala:187
 msgid "Left Ctrl"
@@ -457,7 +457,7 @@ msgstr "Shift nie anuluje Num Locka, wybiera poziom 3."
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "Klawisze specjalne (Ctrl+Alt+<klawisz>) obsługiwane przez serwer"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid ""
@@ -490,7 +490,7 @@ msgstr "Oba klawisze Shift naraz przełączają Shift Lock"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "Przełączaj klawisze strzałek za pomocą Shift + NumLock"
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
@@ -575,6 +575,7 @@ msgstr "Znak niełamliwej spacji na poziomie 3."
 #: ../src//Pages/Options/option_handler.vala:231
 msgid "Non-breakable space character at third level, nothing at fourth leve"
 msgstr ""
+"Znak niełamliwej spacji na trzecim poziomie, nic na czwartym poziomie"
 
 #: ../src//Pages/Options/option_handler.vala:232
 msgid ""
@@ -756,19 +757,20 @@ msgstr "Ctrl"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Wprowadź polecenie"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:47
 msgid "You need to logout and login for the changes to take effect"
 msgstr ""
+"Musisz się wylogować i zalogować ponownie, aby zmiany przyniosły efekt."
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:65
 msgid "Command"
-msgstr ""
+msgstr "Polecenie"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:66
 msgid "Shortcut"
-msgstr ""
+msgstr "Skrót klawiszowy"
 
 #: ../src//Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -1060,15 +1062,15 @@ msgstr "Włącz/Wyłącz tryb wysokiego kontrastu"
 
 #: ../src//Pages/Shortcuts/list.vala:297
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Następny układ klawiatury"
 
 #: ../src//Pages/Shortcuts/list.vala:298
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Poprzedni układ klawiatury"
 
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to \\"
-msgstr ""
+msgstr "Jeśli ponownie przypisujesz skrót do \\"
 
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:11
 msgid "Reassign"
@@ -1100,4 +1102,4 @@ msgstr "Dostęp uniwersalny"
 
 #: ../src//Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Własny"
