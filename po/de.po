@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-07-28 18:54+0000\n"
-"Last-Translator: Phillip Sz <Unknown>\n"
+"PO-Revision-Date: 2015-12-14 14:52+0000\n"
+"Last-Translator: Tobias Bannert <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-11-26 05:33+0000\n"
-"X-Generator: Launchpad (build 17850)\n"
+"X-Launchpad-Export-Date: 2015-12-15 05:34+0000\n"
+"X-Generator: Launchpad (build 17865)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -351,7 +351,7 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:159
 msgid "Make Caps Lock an additional Num Lock"
-msgstr "Feststelltaste als zusätzliche NumLock-Taste verwenden"
+msgstr "Feststelltaste als zusätzliche Num-Taste verwenden"
 
 #: ../src//Pages/Options/option_handler.vala:160
 msgid "Swap ESC and Caps Lock"
