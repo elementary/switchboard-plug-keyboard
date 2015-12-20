@@ -5,7 +5,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         Object (category: Category.HARDWARE,
                 code_name: "hardware-pantheon-keyboard",
                 display_name: _("Keyboard"),
-                description: _("Configure your keyboard"),
+                description: _("Configure keyboard behavior, layouts, and shortcuts"),
                 icon: "preferences-desktop-keyboard");
     }
 
