@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2016-01-09 19:44+0000\n"
+"PO-Revision-Date: 2016-01-11 06:23+0000\n"
 "Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-10 05:26+0000\n"
+"X-Launchpad-Export-Date: 2016-01-12 05:36+0000\n"
 "X-Generator: Launchpad (build 17881)\n"
 
 #: ../src//keyboard.vala:7
@@ -94,12 +94,12 @@ msgstr "Žiadne"
 
 #: ../src//Pages/Options/option_handler.vala:94
 msgid "Key to choose 3rd level"
-msgstr ""
+msgstr "Tlačidlo pre vybranie 3. úrovne"
 
 #: ../src//Pages/Options/option_handler.vala:95
 #: ../src//Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Pravý Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:96
 #: ../src//Pages/Options/option_handler.vala:186
@@ -135,11 +135,11 @@ msgstr "Pravý Alt"
 
 #: ../src//Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
+msgstr "Pravý Alt, Shift + pravý Alt je Multi_key"
 
 #: ../src//Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
-msgstr ""
+msgstr "Pravý Alt nikdy nevyberá 3. úroveň"
 
 #: ../src//Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
