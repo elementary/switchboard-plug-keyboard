@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2016-01-11 06:23+0000\n"
+"PO-Revision-Date: 2016-01-15 07:01+0000\n"
 "Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
 "Language-Team: Slovak <sk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-12 05:36+0000\n"
-"X-Generator: Launchpad (build 17881)\n"
+"X-Launchpad-Export-Date: 2016-01-16 05:36+0000\n"
+"X-Generator: Launchpad (build 17886)\n"
 
 #: ../src//keyboard.vala:7
 msgid "Keyboard"
@@ -196,7 +196,7 @@ msgstr "Vymeniť Ctrl a Caps Lock"
 
 #: ../src//Pages/Options/option_handler.vala:118
 msgid "At left of 'A'"
-msgstr ""
+msgstr "Naľavo od 'A'"
 
 #: ../src//Pages/Options/option_handler.vala:119
 msgid "At bottom left"
@@ -212,7 +212,7 @@ msgstr "Menu ako pravé Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:122
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Pravý Alt ako Pravý Ctrl"
 
 #: ../src//Pages/Options/option_handler.vala:125
 msgid "Use keyboard LED to show alternative layout"
@@ -220,12 +220,12 @@ msgstr "Použi LED klávesnice na zobrazenie alternatívneho rozloženia"
 
 #: ../src//Pages/Options/option_handler.vala:126
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src//Pages/Options/option_handler.vala:128
 #: ../src//Pages/Options/option_handler.vala:193
 msgid "Scroll Lock"
-msgstr ""
+msgstr "Scroll Lock"
 
 #: ../src//Pages/Options/option_handler.vala:131
 msgid "Numeric keypad layout selection"
@@ -261,15 +261,15 @@ msgstr ""
 
 #: ../src//Pages/Options/option_handler.vala:138
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Hexadecimálny"
 
 #: ../src//Pages/Options/option_handler.vala:139
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "Bankomat/Telefón"
 
 #: ../src//Pages/Options/option_handler.vala:142
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Správanie sa delete klávesy na numerickej klávesnici"
 
 #: ../src//Pages/Options/option_handler.vala:143
 msgid "Legacy key with dot"
