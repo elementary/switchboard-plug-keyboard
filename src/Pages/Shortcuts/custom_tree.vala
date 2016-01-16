@@ -6,9 +6,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         Gtk.Grid container;
         Gtk.CellRendererText cell_desc;
         Gtk.CellRendererAccel cell_edit;
-        Gtk.InfoBar infobar;
         Gtk.TreeView tv;
-        bool change_made = false;
 
         Gtk.CellEditable command_editable;
 
@@ -38,15 +36,6 @@ namespace Pantheon.Keyboard.Shortcuts {
         void setup_gui () {
             container = new Gtk.Grid ();
 
-            infobar = new Gtk.InfoBar ();
-            infobar.no_show_all = true;
-            infobar.message_type = Gtk.MessageType.INFO;
-            infobar.set_show_close_button (true);
-
-            var info_container = infobar.get_content_area () as Gtk.Container;
-            var info_label = new Gtk.Label (_("You need to logout and login for the changes to take effect"));
-            info_container.add (info_label);
-
             tv = new Gtk.TreeView ();
 
             var store = new Gtk.ListStore (Column.COUNT , typeof (string),
@@ -70,7 +59,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.expand = true;
             tv.get_column (0).expand = true;
 
-            container.attach (infobar, 0, 0, 1, 1);
             container.attach (tv, 0, 1, 1, 1);
 
             add (container);
@@ -95,8 +83,6 @@ namespace Pantheon.Keyboard.Shortcuts {
         }
 
         void connect_signals () {
-            infobar.response.connect ((id) => { infobar.hide (); });
-
             tv.button_press_event.connect ((event) => {
                 if (event.window != tv.get_bin_window ())
                     return false;
@@ -168,7 +154,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             var path = tv.model.get_path (iter);
             var col = tv.get_column (Column.COMMAND);
             tv.set_cursor (path, col, true);
-            on_change_made ();
         }
 
         public void on_remove_clicked () {
@@ -178,8 +163,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.get_cursor (out path, null);
             tv.model.get_iter (out iter, path);
             remove_shorcut_for_iter (iter);
-            
-            on_change_made ();
         }
 
         void change_command (string path, string new_text) {
@@ -198,8 +181,6 @@ namespace Pantheon.Keyboard.Shortcuts {
                 CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
                 load_and_display_custom_shortcuts ();
             }
-
-            on_change_made ();
         }
 
         void command_editing_canceled () {
@@ -217,7 +198,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 Gtk.TreePath path;
                 tv.get_cursor (out path, null);
 
-                cell_desc.edited (path.to_string (), entry.text);   
+                cell_desc.edited (path.to_string (), entry.text);
                 }
             }
         }
@@ -231,7 +212,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
             CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
             load_and_display_custom_shortcuts ();
-            on_change_made ();
         }
 
         bool change_shortcut (string path, Shortcut? shortcut) {
@@ -264,7 +244,6 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
             load_and_display_custom_shortcuts ();
-            on_change_made ();
             return true;
         }
 
@@ -275,14 +254,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
             list_store.remove (iter);
         }
-        
-        void on_change_made () {
-            if (!change_made) {
-                change_made = true;
-                infobar.get_content_area ().show_all ();
-                infobar.show_now ();
-            }
-        }
 
         bool tree_key_press (Gdk.EventKey ev) {
             bool handled = false;
@@ -292,14 +263,14 @@ namespace Pantheon.Keyboard.Shortcuts {
                 Gtk.TreePath path;
                 tv.get_cursor (out path, null);
 
-                cell_desc.edited (path.to_string (), entry.text);   
+                cell_desc.edited (path.to_string (), entry.text);
 
                 var col = tv.get_column (Column.SHORTCUT);
                 tv.set_cursor (path, col, true);
-                
+
                 handled = true;
             }
-            
+
         return handled;
         }
     }
