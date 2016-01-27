@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2015-05-16 05:45-0500\n"
-"PO-Revision-Date: 2015-12-11 11:27+0000\n"
+"PO-Revision-Date: 2016-01-26 12:51+0000\n"
 "Last-Translator: colindemian <dengmengpc@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <zh_CN@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-24 05:29+0000\n"
+"X-Launchpad-Export-Date: 2016-01-27 05:29+0000\n"
 "X-Generator: Launchpad (build 17902)\n"
 
 #: ../src//keyboard.vala:7
@@ -374,11 +374,11 @@ msgstr "Alt 和 Meta 都是 Alt 键"
 
 #: ../src//Pages/Options/option_handler.vala:172
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Ctrl 键映射到 Win 键（通常是 Ctrl 键）"
 
 #: ../src//Pages/Options/option_handler.vala:173
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Ctrl 映射到 ALT 键，ALT 键映射到 Win 键"
 
 #: ../src//Pages/Options/option_handler.vala:174
 msgid "Meta is mapped to Win keys"
@@ -398,11 +398,11 @@ msgstr "Alt 键映射到右 Win，Super 映射到菜单键"
 
 #: ../src//Pages/Options/option_handler.vala:178
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt 键映射到 Win 键（通常是 Alt 键）"
 
 #: ../src//Pages/Options/option_handler.vala:179
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt 键和 Win 键交换"
 
 #: ../src//Pages/Options/option_handler.vala:182
 msgid "Compose key position"
@@ -431,19 +431,19 @@ msgstr "默认数字小键盘"
 
 #: ../src//Pages/Options/option_handler.vala:198
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "数字键盘键总是输入数字（如同 Mac OS）"
 
 #: ../src//Pages/Options/option_handler.vala:199
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Shift 加数字键盘按键作用与 MS Windows 相同"
 
 #: ../src//Pages/Options/option_handler.vala:200
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift 不取消数字锁定，而是选择第三等级"
 
 #: ../src//Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "在服务器中处理的特殊按键（Ctrl + Alt + <key>）"
 
 #: ../src//Pages/Options/option_handler.vala:202
 msgid ""
@@ -457,7 +457,7 @@ msgstr "Shift 取消大写锁定"
 
 #: ../src//Pages/Options/option_handler.vala:204
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "启用额外的排版印刷字符"
 
 #: ../src//Pages/Options/option_handler.vala:205
 msgid "Both Shift-Keys together toggle Caps Lock"
@@ -474,11 +474,11 @@ msgstr "同时按两个 Shift 键激活 Shift 锁"
 
 #: ../src//Pages/Options/option_handler.vala:208
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "使用 Shift + 数字键 切换 PointerKeys"
 
 #: ../src//Pages/Options/option_handler.vala:209
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-msgstr ""
+msgstr "允许以键盘动作中断抓取（警告：有安全风险）"
 
 #: ../src//Pages/Options/option_handler.vala:212
 msgid "Adding currency signs to certain keys"
@@ -506,31 +506,31 @@ msgstr "卢比符号在 4 键上"
 
 #: ../src//Pages/Options/option_handler.vala:220
 msgid "Key to choose 5th level"
-msgstr ""
+msgstr "选择第五等级的按键"
 
 #: ../src//Pages/Options/option_handler.vala:221
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
-msgstr ""
+msgstr "<大于键/小于键> 会选择第五等级，当与其他第五等级选择键一起按下时则锁定"
 
 #: ../src//Pages/Options/option_handler.vala:222
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
-msgstr ""
+msgstr "右侧 Alt 选择第五等级，当与其他第五等级选择键一起按时则锁定"
 
 #: ../src//Pages/Options/option_handler.vala:223
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
-msgstr ""
+msgstr "左侧 Win 键选择第五等级，当与其他第五等级选择键一起按时则锁定"
 
 #: ../src//Pages/Options/option_handler.vala:224
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
-msgstr ""
+msgstr "右侧 Win 键选择第五等级，当与其他第五等级选择键一起按时则锁定"
 
 #: ../src//Pages/Options/option_handler.vala:227
 msgid "Using space key to input non-breakable space character"
@@ -538,7 +538,7 @@ msgstr "使用空格键输入不可打断空格字符"
 
 #: ../src//Pages/Options/option_handler.vala:228
 msgid "Usual space at any level"
-msgstr ""
+msgstr "一般空白键在任何等级"
 
 #: ../src//Pages/Options/option_handler.vala:229
 msgid "Non-breakable space character at second level"
@@ -576,49 +576,49 @@ msgstr "第四级有不可打断空格字符，第六层有细不可打断空格
 
 #: ../src//Pages/Options/option_handler.vala:236
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级"
 
 #: ../src//Pages/Options/option_handler.vala:237
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级，零宽度的连接字符在第三等级"
 
 #: ../src//Pages/Options/option_handler.vala:238
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级，零宽度的连接字符在第三等级，不可断开的空白字符在第四等级"
 
 #: ../src//Pages/Options/option_handler.vala:239
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级，不可断开的空白字符在第三等级"
 
 #: ../src//Pages/Options/option_handler.vala:240
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级，不可断开的空白字符在第三等级，第四等级没有内容"
 
 #: ../src//Pages/Options/option_handler.vala:241
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级，不可断开的空白字符在第三等级，零宽度的连接字符在第四等级"
 
 #: ../src//Pages/Options/option_handler.vala:242
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
-msgstr ""
+msgstr "零宽度的非连接字符在第二等级，不可断开的空白字符在第三等级，短窄不可断开的空白字符在第四等级"
 
 #: ../src//Pages/Options/option_handler.vala:243
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
-msgstr ""
+msgstr "零宽度的非连接字符在第三等级，零宽度的连接字符在第四等级"
 
 #: ../src//Pages/Options/option_handler.vala:246
 msgid "Japanese keyboard options"
@@ -626,39 +626,39 @@ msgstr "日语键盘选项"
 
 #: ../src//Pages/Options/option_handler.vala:247
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "假名锁定键正在锁定"
 
 #: ../src//Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "NICOLA-F 样式的退格"
 
 #: ../src//Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "将全角半角键作为额外的 ESC"
 
 #: ../src//Pages/Options/option_handler.vala:252
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "加入世界语抑扬符号（supersigno）"
 
 #: ../src//Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "到 Qwerty 键盘中对应键"
 
 #: ../src//Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "到 Dvorak 键盘中的对应键"
 
 #: ../src//Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "到 Colemak 配置的对应键"
 
 #: ../src//Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "杀死 X 服务器的按键序列"
 
 #: ../src//Pages/Options/option_handler.vala:259
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control 键 + Alt 键 + Backspace 键"
 
 #: ../src//Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -708,23 +708,23 @@ msgstr "已禁用"
 
 #: ../src//Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl 键"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "输入指令"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:47
 msgid "You need to logout and login for the changes to take effect"
-msgstr ""
+msgstr "您需要重新登入让改变生效"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:65
 msgid "Command"
-msgstr ""
+msgstr "Command 键"
 
 #: ../src//Pages/Shortcuts/custom_tree.vala:66
 msgid "Shortcut"
-msgstr ""
+msgstr "快捷键"
 
 #: ../src//Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -1016,15 +1016,15 @@ msgstr "启用高对比度"
 
 #: ../src//Pages/Shortcuts/list.vala:297
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "下一个键盘配置"
 
 #: ../src//Pages/Shortcuts/list.vala:298
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "上一个键盘配置"
 
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to \\"
-msgstr ""
+msgstr "如果您将快捷键重新指派给 \\"
 
 #: ../src//Pages/Shortcuts/conflict_dialog.vala:11
 msgid "Reassign"
@@ -1056,4 +1056,4 @@ msgstr "通用辅助功能"
 
 #: ../src//Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "自定义"
