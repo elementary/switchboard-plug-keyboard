@@ -31,15 +31,10 @@ list (APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
 configure_file (${CMAKE_SOURCE_DIR}/config.vala.cmake ${CMAKE_BINARY_DIR}/src/config.vala)
 add_definitions (-DGETTEXT_PACKAGE=\"${GETTEXT_PACKAGE}\")
 
-# Files
-file (GLOB resources "${CMAKE_CURRENT_SOURCE_DIR}/data/*")
-
 # Comment this out to enable C compiler warnings
 add_definitions (-w)
 
 # Traslation stuff
 add_subdirectory (po)
-# Info-plug
-install (FILES ${resources} DESTINATION ${PKGDATADIR})
 
 add_subdirectory(src)

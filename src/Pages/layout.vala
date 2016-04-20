@@ -60,18 +60,4 @@ namespace Pantheon.Keyboard.LayoutPage
 			this.attach (entry_test, 4, 3, 3, 1);
 		}
 	}
-
-	// creates a list store from a string vector
-	Gtk.ListStore create_list_store (string[] strv)
-	{
-		Gtk.ListStore list_store = new Gtk.ListStore (1, typeof (string));
-		Gtk.TreeIter iter;
-
-		foreach (string item in strv) {
-			list_store.append (out iter);
-			list_store.set (iter, 0, item);
-		}
-
-		return list_store;
-	}
 }
