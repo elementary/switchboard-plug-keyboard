@@ -160,21 +160,15 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
         Gtk.ListStore build_store () {
-            Gtk.ListStore list_store = new Gtk.ListStore (3, typeof (string), typeof(uint), typeof(uint));
+            Gtk.ListStore list_store = new Gtk.ListStore (2, typeof (string), typeof(string));
             Gtk.TreeIter iter;
-
-            uint layout = 0, variant = 0;
-
             for (uint i = 0; i < settings.layouts.length; i++) {
                 string item = settings.layouts.get_layout (i).name;
-                handler.from_code (item, out layout, out variant);
-                item = handler.get_name (layout, variant);
-
                 list_store.append (out iter);
-                list_store.set (iter, 0, item);
-                list_store.set (iter, 1, layout);
-                list_store.set (iter, 2, variant);
+                list_store.set (iter, 0, handler.get_display_name (item));
+                list_store.set (iter, 1, item);
             }
+
             return list_store;
         }
 
@@ -193,12 +187,7 @@ namespace Pantheon.Keyboard.LayoutPage
         void add_item (LayoutPage.AddLayout pop)
         {
             pop.layout_added.connect ((layout, variant) => {
-
-                var name = handler.get_name (layout, variant);
-                var code = handler.get_code (layout, variant);
-
-                // TODO variant
-                settings.layouts.add_layout (new Layout.XKB (code, ""));
+                settings.layouts.add_layout (new Layout.XKB (layout, variant));
                 rebuild_list ();
             });
         }

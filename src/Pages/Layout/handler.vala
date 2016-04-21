@@ -1,147 +1,89 @@
-namespace Pantheon.Keyboard.LayoutPage
-{
-	// class that parses the layout file, provides lists of languages and
-	// variants, and converts between layout names and their gsettings codes
-	class LayoutHandler : GLib.Object
-	{
-		InternalLayout[]  layouts;
+public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
+    public HashTable<string, string> languages { public get; private set; }
 
-		private string[] names;
-		private string[] codes;
+    public LayoutHandler () {
+        parse_layouts ();
+    }
 
-		public LayoutHandler ()
-		{
-			foreach (var l in parse_layouts ())
-			{
-				var parts = l.split(":", 2);
+    construct {
+        languages = new HashTable<string, string> (str_hash, str_equal);
+    }
 
-				names += parts[0];
-				codes += parts[1];
+    private void parse_layouts () {
+        var file = File.new_for_path ("/usr/share/X11/xkb/rules/evdev.lst");
 
-				layouts += new InternalLayout (parse_variants (l));
-			}
-		}
+        if (!file.query_exists ()) {
+            critical ("File '%s' doesn't exist.", file.get_path ());
+            return;
+        }
 
-		public string[] get_layouts () {
-			return names;
-		}
+        try {
+            var dis = new DataInputStream (file.read ());
+            string line;
+            bool layout_found = false;
+            while ((line = dis.read_line (null)) != null) {
+                if (layout_found) {
+                    if ("!" in line || line == "") {
+                        break;
+                    }
+                    
+                    var parts = line.chug ().split (" ", 2);
+                    languages.set (parts[0], dgettext ("xkeyboard-config", parts[1].chug ()));
+                } else {
+                    if ("!" in line && "layout" in line) {
+                        layout_found = true;
+                    }
+                }
+            }
+        } catch (Error e) {
+            error (e.message);
+        }
+    }
 
-		public string[] get_variants (uint index) {
-			return layouts[index].names;
-		}
+    public HashTable<string, string> get_variants_for_language (string language) {
+        var returned_table = new HashTable<string, string> (str_hash, str_equal);
+        returned_table.set ("", _("Default"));
+        var file = File.new_for_path ("/usr/share/X11/xkb/rules/evdev.lst");
 
-		public string get_code (uint l, uint v)
-		{
-			if (v != 0)
-				return codes[l] + "+" + layouts[l].codes[v];
-			return codes[l];
-		}
+        if (!file.query_exists ()) {
+            critical ("File '%s' doesn't exist.", file.get_path ());
+            return returned_table;
+        }
 
-		public string get_name (uint l, uint v)
-		{
-			if (v != 0)
-				return layouts[l].names[v];
-			return names[l];
-		}
+        try {
+            var dis = new DataInputStream (file.read ());
+            string line;
+            bool variant_found = false;
+            while ((line = dis.read_line (null)) != null) {
+                if (variant_found) {
+                    if ("!" in line || line == "") {
+                        break;
+                    }
+                    
+                    var parts = line.chug ().split (" ", 2);
+                    var subparts = parts[1].chug ().split (":", 2);
+                    if (subparts[0] == language) {
+                        returned_table.set (parts[0], dgettext ("xkeyboard-config", subparts[1].chug ()));
+                    }
+                } else {
+                    if ("!" in line && "variant" in line) {
+                        variant_found = true;
+                    }
+                }
+            }
+        } catch (Error e) {
+            error (e.message);
+        }
 
-		public bool from_code (string code, out uint l, out uint v)
-		{
-			var parts = code.split("+", 2);
+        return returned_table;
+    }
 
-			l = v = 0;
-
-			if (parts[0] == null) return false;
-
-			while (codes[l] != parts[0])
-				if (l++ > codes.length)
-					return false;
-
-			if (parts[1] == null) return true;
-
-			while (layouts[l].codes[v] != parts[1])
-				if (v++ > layouts[l].codes.length)
-					return false;
-
-			return true;
-		}
-
-		// private class that contains the variants of one language
-		private class InternalLayout : GLib.Object {
-			public string[] names;
-			public string[] codes;
-
-			public InternalLayout (string[] variants )
-			{
-				names += _("Default");
-				codes += "";
-
-				foreach (var v in variants)
-				{
-					var parts = v.split(":", 2);
-
-					names += parts[0];
-					codes += parts[1];
-				}
-			}
-		}
-
-		// private functions to parse the files
-		private string[]? parse_layouts ()
-		{
-			string[] return_val = null;
-
-			var file = File.new_for_path (Build.PKGDATADIR + "/layouts.txt");
-
-			if (!file.query_exists ()) {
-				warning ("File '%s' doesn't exist.\n", file.get_path ());
-				return return_val;
-			}
-
-			try {
-				var dis = new DataInputStream (file.read ());
-
-				string line;
-
-				while ((line = dis.read_line (null)) != null)
-					if( "#" in line )
-						return_val += line.replace ("#", "");
-			} catch (Error e) {
-				error ("%s", e.message);
-			}
-
-			return return_val;
-		}
-
-		private string[]? parse_variants (string language)
-		{
-			string[] return_val = null;
-
-			var file = File.new_for_path (Build.PKGDATADIR + "/layouts.txt");
-
-			if (!file.query_exists ()) {
-				warning ("File '%s' doesn't exist.\n", file.get_path ());
-				return null;
-			}
-
-			try {
-				var dis = new DataInputStream (file.read ());
-
-				string line;
-
-				while ((line = dis.read_line (null)) != null) {
-					if (line == "#" + language) {
-						while ((line = dis.read_line (null)) != null) {
-							if( "#" in line ) break;
-							return_val += line;
-						}
-						break;
-					}
-				}
-			} catch (Error e) {
-				error ("%s", e.message);
-			}
-
-			return return_val;
-		}
-	}
+    public string get_display_name (string variant) {
+        if ("+" in variant) {
+            var parts = variant.split ("+", 2);
+            return get_variants_for_language (parts[0]).get (parts[1]);
+        } else {
+            return languages.get (variant);
+        }
+    }
 }
