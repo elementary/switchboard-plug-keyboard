@@ -7,1061 +7,1053 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-05-16 05:45-0500\n"
+"POT-Creation-Date: 2016-04-21 08:32-0300\n"
 "PO-Revision-Date: 2015-06-18 23:03+0000\n"
 "Last-Translator: Furkan Ege Öztürk <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-01-24 05:29+0000\n"
-"X-Generator: Launchpad (build 17902)\n"
+"X-Launchpad-Export-Date: 2016-04-22 05:37+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 "Language: tr\n"
 
-#: ../src//keyboard.vala:7
+#: ../src/keyboard.vala:7
 msgid "Keyboard"
 msgstr "Klavye"
 
-#: ../src//keyboard.vala:8
-msgid "Configure your keyboard"
-msgstr "Klavyenizi yapılandırın"
+#: ../src/keyboard.vala:8
+msgid "Configure keyboard behavior, layouts, and shortcuts"
+msgstr ""
 
-#: ../src//keyboard.vala:21
+#: ../src/keyboard.vala:21
 msgid "Shortcuts"
 msgstr "Kısayollar"
 
-#: ../src//keyboard.vala:22
+#: ../src/keyboard.vala:22
 msgid "Behavior"
 msgstr "Davranış"
 
-#: ../src//keyboard.vala:23
+#: ../src/keyboard.vala:23
 msgid "Layout"
 msgstr "Düzen"
 
-#: ../src//keyboard.vala:24
+#: ../src/keyboard.vala:24
 msgid "Options"
 msgstr "Seçenekler"
 
-#: ../src//Pages/layout.vala:24
-msgid "Allow different layouts for individual windows:"
-msgstr "Birbirinden ayrı pencereler için farklı düzenlere izin ver:"
-
-#: ../src//Pages/layout.vala:54
-msgid "Type to test your layout…"
-msgstr "Düzeninizi sınamak için yazın..."
-
-#: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr "Ekle..."
-
-#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
-#: ../src//Pages/Shortcuts/display.vala:43
-#: ../src//Pages/Shortcuts/display.vala:46
-msgid "Remove"
-msgstr "Kaldır"
-
-#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "Yukarı Taşı"
-
-#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "Aşağı Taşı"
-
-#: ../src//Pages/Layout/add_layout.vala:23
+#: ../src/Pages/Layout/add_layout.vala:19
 msgid "Language:"
 msgstr "Dil:"
 
-#: ../src//Pages/Layout/add_layout.vala:24
+#: ../src/Pages/Layout/add_layout.vala:20
 msgid "Layout:"
 msgstr "Düzen:"
 
-#: ../src//Pages/Layout/add_layout.vala:65
+#: ../src/Pages/Layout/add_layout.vala:61
 msgid "Add Layout"
 msgstr "Düzen Ekle"
 
-#: ../src//Pages/Layout/add_layout.vala:66
-#: ../src//Pages/Shortcuts/conflict_dialog.vala:10
+#: ../src/Pages/Layout/add_layout.vala:62
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:10
 msgid "Cancel"
 msgstr "İptal"
 
-#: ../src//Pages/Layout/handler.vala:75
+#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr "Ekle..."
+
+#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46
+msgid "Remove"
+msgstr "Kaldır"
+
+#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "Yukarı Taşı"
+
+#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "Aşağı Taşı"
+
+#: ../src/Pages/Layout/handler.vala:75
 msgid "Default"
 msgstr "Varsayılan"
 
-#: ../src//Pages/Options/option_handler.vala:15
+#: ../src/Pages/Options/option_handler.vala:15
 msgid "None"
 msgstr "Hiçbiri"
 
-#: ../src//Pages/Options/option_handler.vala:94
+#: ../src/Pages/Options/option_handler.vala:94
 msgid "Key to choose 3rd level"
 msgstr "3. seviyeyi seçmek için tuş"
 
-#: ../src//Pages/Options/option_handler.vala:95
-#: ../src//Pages/Options/option_handler.vala:188
+#: ../src/Pages/Options/option_handler.vala:95
+#: ../src/Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
 msgstr "Sağ Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:96
-#: ../src//Pages/Options/option_handler.vala:186
+#: ../src/Pages/Options/option_handler.vala:96
+#: ../src/Pages/Options/option_handler.vala:186
 msgid "Menu"
 msgstr "Menü"
 
-#: ../src//Pages/Options/option_handler.vala:97
+#: ../src/Pages/Options/option_handler.vala:97
 msgid "Any Win key"
 msgstr "Herhangi bir Win tuşu"
 
-#: ../src//Pages/Options/option_handler.vala:98
-#: ../src//Pages/Options/option_handler.vala:184
+#: ../src/Pages/Options/option_handler.vala:98
+#: ../src/Pages/Options/option_handler.vala:184
 msgid "Left Win"
 msgstr "Sol Win"
 
-#: ../src//Pages/Options/option_handler.vala:99
-#: ../src//Pages/Options/option_handler.vala:185
+#: ../src/Pages/Options/option_handler.vala:99
+#: ../src/Pages/Options/option_handler.vala:185
 msgid "Right Win"
 msgstr "Sağ Win"
 
-#: ../src//Pages/Options/option_handler.vala:100
+#: ../src/Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
 msgstr "Herhangi bir Alt tuşu"
 
-#: ../src//Pages/Options/option_handler.vala:101
+#: ../src/Pages/Options/option_handler.vala:101
 msgid "Left Alt"
 msgstr "Sol Alt"
 
-#: ../src//Pages/Options/option_handler.vala:102
-#: ../src//Pages/Options/option_handler.vala:183
+#: ../src/Pages/Options/option_handler.vala:102
+#: ../src/Pages/Options/option_handler.vala:183
 msgid "Right Alt"
 msgstr "Sağ Alt"
 
-#: ../src//Pages/Options/option_handler.vala:103
+#: ../src/Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
 msgstr "Sağ Alt, Shift+Sağ Alt tuşu Çoklu_Tuş olur"
 
-#: ../src//Pages/Options/option_handler.vala:104
+#: ../src/Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
 msgstr "Sağ Alt tuşu hiçbir zaman 3. seviyeyi seçmez"
 
-#: ../src//Pages/Options/option_handler.vala:105
+#: ../src/Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
 msgstr "Giriş tuş takımında"
 
-#: ../src//Pages/Options/option_handler.vala:106
-#: ../src//Pages/Options/option_handler.vala:127
-#: ../src//Pages/Options/option_handler.vala:189
+#: ../src/Pages/Options/option_handler.vala:106
+#: ../src/Pages/Options/option_handler.vala:127
+#: ../src/Pages/Options/option_handler.vala:189
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:107
+#: ../src/Pages/Options/option_handler.vala:107
 msgid "Backslash"
 msgstr "Ters Slash"
 
-#: ../src//Pages/Options/option_handler.vala:108
-#: ../src//Pages/Options/option_handler.vala:190
+#: ../src/Pages/Options/option_handler.vala:108
+#: ../src/Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
 msgstr "<Düşük/Yüksek>"
 
-#: ../src//Pages/Options/option_handler.vala:109
+#: ../src/Pages/Options/option_handler.vala:109
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:110
+#: ../src/Pages/Options/option_handler.vala:110
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:111
+#: ../src/Pages/Options/option_handler.vala:111
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:114
+#: ../src/Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
 msgstr "Ctrl tuşu pozisyonu"
 
-#: ../src//Pages/Options/option_handler.vala:115
+#: ../src/Pages/Options/option_handler.vala:115
 msgid "Caps Lock as Ctrl"
 msgstr "Caps Lock  Ctrl olur"
 
-#: ../src//Pages/Options/option_handler.vala:116
+#: ../src/Pages/Options/option_handler.vala:116
 msgid "Left Ctrl as Meta"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:117
+#: ../src/Pages/Options/option_handler.vala:117
 msgid "Swap Ctrl and Caps Lock"
 msgstr "Ctrl ve Caps Lock yer değiştirir"
 
-#: ../src//Pages/Options/option_handler.vala:118
+#: ../src/Pages/Options/option_handler.vala:118
 msgid "At left of 'A'"
 msgstr "'A' 'nın soluna"
 
-#: ../src//Pages/Options/option_handler.vala:119
+#: ../src/Pages/Options/option_handler.vala:119
 msgid "At bottom left"
 msgstr "Sol altta"
 
-#: ../src//Pages/Options/option_handler.vala:120
+#: ../src/Pages/Options/option_handler.vala:120
 msgid "Right Ctrl as Right Alt"
 msgstr "Sağ Alt Sağ Ctrl olur"
 
-#: ../src//Pages/Options/option_handler.vala:121
+#: ../src/Pages/Options/option_handler.vala:121
 msgid "Menu as Right Ctrl"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:122
+#: ../src/Pages/Options/option_handler.vala:122
 msgid "Right Alt as Right Ctrl"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:125
+#: ../src/Pages/Options/option_handler.vala:125
 msgid "Use keyboard LED to show alternative layout"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:126
+#: ../src/Pages/Options/option_handler.vala:126
 msgid "Num Lock"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:128
-#: ../src//Pages/Options/option_handler.vala:193
+#: ../src/Pages/Options/option_handler.vala:128
+#: ../src/Pages/Options/option_handler.vala:193
 msgid "Scroll Lock"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:131
+#: ../src/Pages/Options/option_handler.vala:131
 msgid "Numeric keypad layout selection"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:132
+#: ../src/Pages/Options/option_handler.vala:132
 msgid "Legacy"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:133
+#: ../src/Pages/Options/option_handler.vala:133
 msgid "Unicode additions (arrows and math operators)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:134
+#: ../src/Pages/Options/option_handler.vala:134
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:135
+#: ../src/Pages/Options/option_handler.vala:135
 msgid "Legacy Wang 724"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:136
+#: ../src/Pages/Options/option_handler.vala:136
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:137
+#: ../src/Pages/Options/option_handler.vala:137
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:138
+#: ../src/Pages/Options/option_handler.vala:138
 msgid "Hexadecimal"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:139
+#: ../src/Pages/Options/option_handler.vala:139
 msgid "ATM/phone-style"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:142
+#: ../src/Pages/Options/option_handler.vala:142
 msgid "Numeric keypad delete key behaviour"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:143
+#: ../src/Pages/Options/option_handler.vala:143
 msgid "Legacy key with dot"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:144
+#: ../src/Pages/Options/option_handler.vala:144
 msgid "Legacy key with comma"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:145
+#: ../src/Pages/Options/option_handler.vala:145
 msgid "Four-level key with dot"
 msgstr "Nokta ile dört seviyeli tuş"
 
-#: ../src//Pages/Options/option_handler.vala:146
+#: ../src/Pages/Options/option_handler.vala:146
 msgid "Four-level key with dot, latin-9 restriction"
 msgstr "Nokta ile dört seviyeli tuş, latin-9 kısıtlaması"
 
-#: ../src//Pages/Options/option_handler.vala:147
+#: ../src/Pages/Options/option_handler.vala:147
 msgid "Four-level key with comma"
 msgstr "Virgül ile dört seviyeli tuş"
 
-#: ../src//Pages/Options/option_handler.vala:148
+#: ../src/Pages/Options/option_handler.vala:148
 msgid "Four-level key with momayyez"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:149
+#: ../src/Pages/Options/option_handler.vala:149
 msgid "Four-level key with abstract separators"
 msgstr "Soyut ayırıcılar ile dört seviyeli tuş"
 
-#: ../src//Pages/Options/option_handler.vala:150
+#: ../src/Pages/Options/option_handler.vala:150
 msgid "Semi-colon on third level"
 msgstr "Üçüncü seviyede noktalı virgül"
 
-#: ../src//Pages/Options/option_handler.vala:153
+#: ../src/Pages/Options/option_handler.vala:153
 msgid "Caps Lock key behavior"
 msgstr "Caps Lock tuşu davranışı"
 
-#: ../src//Pages/Options/option_handler.vala:154
+#: ../src/Pages/Options/option_handler.vala:154
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
 "Caps Lock dahili büyük harf kullanır. Shift, Caps Lock'un işlevini duraklatır"
 
-#: ../src//Pages/Options/option_handler.vala:155
+#: ../src/Pages/Options/option_handler.vala:155
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock dahili büyük harf kullanır. Shift, Caps Lock'un işlevini "
 "duraklatmaz"
 
-#: ../src//Pages/Options/option_handler.vala:156
+#: ../src/Pages/Options/option_handler.vala:156
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr ""
 "Caps Lock, Shift kilitli gibi davranır. Shift, Caps Lock'un işlevini "
 "duraklatır"
 
-#: ../src//Pages/Options/option_handler.vala:157
+#: ../src/Pages/Options/option_handler.vala:157
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock, Shift kilitli gibi davranır. Shift, Caps Lock'un işlevini "
 "duraklatmaz"
 
-#: ../src//Pages/Options/option_handler.vala:158
+#: ../src/Pages/Options/option_handler.vala:158
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:159
+#: ../src/Pages/Options/option_handler.vala:159
 msgid "Make Caps Lock an additional Num Lock"
 msgstr "Caps Lock'u ek Num Lock yap"
 
-#: ../src//Pages/Options/option_handler.vala:160
+#: ../src/Pages/Options/option_handler.vala:160
 msgid "Swap ESC and Caps Lock"
 msgstr "ESC ve Caps Lock'u değiştir"
 
-#: ../src//Pages/Options/option_handler.vala:161
+#: ../src/Pages/Options/option_handler.vala:161
 msgid "Make Caps Lock an additional ESC"
 msgstr "Caps Lock'u ek ESC yap"
 
-#: ../src//Pages/Options/option_handler.vala:162
+#: ../src/Pages/Options/option_handler.vala:162
 msgid "Make Caps Lock an additional Backspace"
 msgstr "Caps Lock'u ek Backspace (Geri Tuşu) yap"
 
-#: ../src//Pages/Options/option_handler.vala:163
+#: ../src/Pages/Options/option_handler.vala:163
 msgid "Make Caps Lock an additional Super"
 msgstr "Caps Lock'u ek Super (command yada windows logo tuşu) yap"
 
-#: ../src//Pages/Options/option_handler.vala:164
+#: ../src/Pages/Options/option_handler.vala:164
 msgid "Make Caps Lock an additional Hyper"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:165
+#: ../src/Pages/Options/option_handler.vala:165
 msgid "Caps Lock toggles Shift so all keys are affected"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:166
+#: ../src/Pages/Options/option_handler.vala:166
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:169
+#: ../src/Pages/Options/option_handler.vala:169
 msgid "Alt/Win key behavior"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:170
+#: ../src/Pages/Options/option_handler.vala:170
 msgid "Add the standard behavior to Menu key"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:171
+#: ../src/Pages/Options/option_handler.vala:171
 msgid "Alt and Meta are on Alt keys"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:172
+#: ../src/Pages/Options/option_handler.vala:172
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:173
+#: ../src/Pages/Options/option_handler.vala:173
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:174
+#: ../src/Pages/Options/option_handler.vala:174
 msgid "Meta is mapped to Win keys"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:175
+#: ../src/Pages/Options/option_handler.vala:175
 msgid "Meta is mapped to Left Win"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:176
+#: ../src/Pages/Options/option_handler.vala:176
 msgid "Hyper is mapped to Win-keys"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:177
+#: ../src/Pages/Options/option_handler.vala:177
 msgid "Alt is mapped to Right Win, Super to Menu"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:178
+#: ../src/Pages/Options/option_handler.vala:178
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:179
+#: ../src/Pages/Options/option_handler.vala:179
 msgid "Alt is swapped with Win"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:182
+#: ../src/Pages/Options/option_handler.vala:182
 msgid "Compose key position"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:187
+#: ../src/Pages/Options/option_handler.vala:187
 msgid "Left Ctrl"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:191
-#: ../src//Pages/Shortcuts/list.vala:251
+#: ../src/Pages/Options/option_handler.vala:191
+#: ../src/Pages/Shortcuts/list.vala:248
 msgid "Pause"
 msgstr "Duraklat"
 
-#: ../src//Pages/Options/option_handler.vala:192
+#: ../src/Pages/Options/option_handler.vala:192
 msgid "PrtSc"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:196
+#: ../src/Pages/Options/option_handler.vala:196
 msgid "Miscellaneous compatibility options"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:197
+#: ../src/Pages/Options/option_handler.vala:197
 msgid "Default numeric keypad keys"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:198
+#: ../src/Pages/Options/option_handler.vala:198
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:199
+#: ../src/Pages/Options/option_handler.vala:199
 msgid "Shift with numeric keypad keys works as in MS Windows"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:200
+#: ../src/Pages/Options/option_handler.vala:200
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:201
+#: ../src/Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:202
+#: ../src/Pages/Options/option_handler.vala:202
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:203
+#: ../src/Pages/Options/option_handler.vala:203
 msgid "Shift cancels Caps Lock"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:204
+#: ../src/Pages/Options/option_handler.vala:204
 msgid "Enable extra typographic characters"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:205
+#: ../src/Pages/Options/option_handler.vala:205
 msgid "Both Shift-Keys together toggle Caps Lock"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:206
+#: ../src/Pages/Options/option_handler.vala:206
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:207
+#: ../src/Pages/Options/option_handler.vala:207
 msgid "Both Shift-Keys together toggle ShiftLock"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:208
+#: ../src/Pages/Options/option_handler.vala:208
 msgid "Toggle PointerKeys with Shift + NumLock"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:209
+#: ../src/Pages/Options/option_handler.vala:209
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:212
+#: ../src/Pages/Options/option_handler.vala:212
 msgid "Adding currency signs to certain keys"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:213
+#: ../src/Pages/Options/option_handler.vala:213
 msgid "Euro on E"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:214
+#: ../src/Pages/Options/option_handler.vala:214
 msgid "Euro on 2"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:215
+#: ../src/Pages/Options/option_handler.vala:215
 msgid "Euro on 4"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:216
+#: ../src/Pages/Options/option_handler.vala:216
 msgid "Euro on 5"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:217
+#: ../src/Pages/Options/option_handler.vala:217
 msgid "Rupee on 4"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:220
+#: ../src/Pages/Options/option_handler.vala:220
 msgid "Key to choose 5th level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:221
+#: ../src/Pages/Options/option_handler.vala:221
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:222
+#: ../src/Pages/Options/option_handler.vala:222
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:223
+#: ../src/Pages/Options/option_handler.vala:223
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:224
+#: ../src/Pages/Options/option_handler.vala:224
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:227
+#: ../src/Pages/Options/option_handler.vala:227
 msgid "Using space key to input non-breakable space character"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:228
+#: ../src/Pages/Options/option_handler.vala:228
 msgid "Usual space at any level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:229
+#: ../src/Pages/Options/option_handler.vala:229
 msgid "Non-breakable space character at second level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:230
+#: ../src/Pages/Options/option_handler.vala:230
 msgid "Non-breakable space character at third level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:231
+#: ../src/Pages/Options/option_handler.vala:231
 msgid "Non-breakable space character at third level, nothing at fourth leve"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:232
+#: ../src/Pages/Options/option_handler.vala:232
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:233
+#: ../src/Pages/Options/option_handler.vala:233
 msgid "Non-breakable space character at fourth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:234
+#: ../src/Pages/Options/option_handler.vala:234
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:235
+#: ../src/Pages/Options/option_handler.vala:235
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:236
+#: ../src/Pages/Options/option_handler.vala:236
 msgid "Zero-width non-joiner character at second level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:237
+#: ../src/Pages/Options/option_handler.vala:237
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:238
+#: ../src/Pages/Options/option_handler.vala:238
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:239
+#: ../src/Pages/Options/option_handler.vala:239
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:240
+#: ../src/Pages/Options/option_handler.vala:240
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:241
+#: ../src/Pages/Options/option_handler.vala:241
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:242
+#: ../src/Pages/Options/option_handler.vala:242
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:243
+#: ../src/Pages/Options/option_handler.vala:243
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:246
+#: ../src/Pages/Options/option_handler.vala:246
 msgid "Japanese keyboard options"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:247
+#: ../src/Pages/Options/option_handler.vala:247
 msgid "Kana Lock key is locking"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:248
+#: ../src/Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:249
+#: ../src/Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:252
+#: ../src/Pages/Options/option_handler.vala:252
 msgid "Adding Esperanto circumflexes (supersigno)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:253
+#: ../src/Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:254
+#: ../src/Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:255
+#: ../src/Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:258
+#: ../src/Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:259
+#: ../src/Pages/Options/option_handler.vala:259
 msgid "Control + Alt + Backspace"
 msgstr ""
 
-#: ../src//Pages/behaviour.vala:21
-msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Tekrar Tuşları:</b>"
-
-#: ../src//Pages/behaviour.vala:22
-msgid "Delay:"
-msgstr "Gecikme:"
-
-#: ../src//Pages/behaviour.vala:23
-msgid "Interval:"
-msgstr "Aralık:"
-
-#: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
-#: ../src//Pages/behaviour.vala:136
-msgid "milliseconds"
-msgstr "milisaniye"
-
-#: ../src//Pages/behaviour.vala:133
-msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>İmleç Yanıp Sönmesi:</b>"
-
-#: ../src//Pages/behaviour.vala:134
-msgid "Speed:"
-msgstr "Hız:"
-
-#: ../src//Pages/behaviour.vala:135
-msgid "Duration:"
-msgstr "Süre:"
-
-#: ../src//Pages/behaviour.vala:137
-msgid "seconds"
-msgstr "saniye"
-
-#: ../src//Pages/behaviour.vala:243
-msgid "Type to test your settings…"
-msgstr "Ayarlarınızı sınamak için yazın..."
-
-#: ../src//Pages/Shortcuts/display.vala:42
-#: ../src//Pages/Shortcuts/display.vala:45
-msgid "Add"
-msgstr "Ekle"
-
-#: ../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "Devre dışı"
-
-#: ../src//Pages/Shortcuts/shortcut.vala:50
-msgid "Ctrl"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:4
-msgid "Enter Command"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:47
-msgid "You need to logout and login for the changes to take effect"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:65
-msgid "Command"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:66
-msgid "Shortcut"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:31
-msgid "Close"
-msgstr "Kapat"
-
-#: ../src//Pages/Shortcuts/list.vala:32
-msgid "Lower"
-msgstr "Alçalt"
-
-#: ../src//Pages/Shortcuts/list.vala:33
-msgid "Maximize"
-msgstr "Ekranı Kapla"
-
-#: ../src//Pages/Shortcuts/list.vala:34
-msgid "Unmaximize"
-msgstr "Tam Ekrandan Çık"
-
-#: ../src//Pages/Shortcuts/list.vala:35
-msgid "Toggle Maximized"
-msgstr "Ekranı Kaplamaya Geç"
-
-#: ../src//Pages/Shortcuts/list.vala:36
-msgid "Minimize"
-msgstr "Küçült"
-
-#: ../src//Pages/Shortcuts/list.vala:37
-msgid "Toggle Fullscreen"
-msgstr "Tam Ekrana Geç"
-
-#: ../src//Pages/Shortcuts/list.vala:38
-msgid "Tile Left"
-msgstr "Sola Döşe"
-
-#: ../src//Pages/Shortcuts/list.vala:39
-msgid "Tile Right"
-msgstr "Sağa Döşe"
-
-#: ../src//Pages/Shortcuts/list.vala:40
-msgid "Toggle Shaded"
-msgstr "Gölgeli hale Geç"
-
-#: ../src//Pages/Shortcuts/list.vala:41
-msgid "Toggle on all Workspaces"
-msgstr "Tüm Çalışma Alanlarında aç"
-
-#: ../src//Pages/Shortcuts/list.vala:42
-msgid "Toggle always on Top"
-msgstr "Her zaman üstte olsun."
-
-#: ../src//Pages/Shortcuts/list.vala:43
-msgid "Switch Windows"
-msgstr "Pencereleri Çevir"
-
-#: ../src//Pages/Shortcuts/list.vala:44
-msgid "Switch Windows backwards"
-msgstr "Pencereleri tersine çevir"
-
-#: ../src//Pages/Shortcuts/list.vala:45
-msgid "Window Overview"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:46
-msgid "Show All Windows"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:90
-msgid "Show Workspace Switcher"
-msgstr "Çalışma Alanı Çeviriciyi Göster"
-
-#: ../src//Pages/Shortcuts/list.vala:91
-msgid "Switch to first"
-msgstr "Birinciye geç"
-
-#: ../src//Pages/Shortcuts/list.vala:92
-msgid "Switch to new"
-msgstr "Yeniye geç"
-
-#: ../src//Pages/Shortcuts/list.vala:93
-msgid "Switch to workspace 1"
-msgstr "Çalışma Alanı 1'e geç"
-
-#: ../src//Pages/Shortcuts/list.vala:94
-msgid "Switch to workspace 2"
-msgstr "Çalışma Alanı 2'ye geç"
-
-#: ../src//Pages/Shortcuts/list.vala:95
-msgid "Switch to workspace 3"
-msgstr "Çalışma Alanı 3'e geç"
-
-#: ../src//Pages/Shortcuts/list.vala:96
-msgid "Switch to workspace 4"
-msgstr "Çalışma Alanı 4'e geç"
-
-#: ../src//Pages/Shortcuts/list.vala:97
-msgid "Switch to workspace 5"
-msgstr "Çalışma Alanı 5'e geç"
-
-#: ../src//Pages/Shortcuts/list.vala:98
-msgid "Switch to workspace 6"
-msgstr "Çalışma Alanı 6'ya geç"
-
-#: ../src//Pages/Shortcuts/list.vala:99
-msgid "Switch to workspace 7"
-msgstr "Çalışma Alanı 7'ye geç"
-
-#: ../src//Pages/Shortcuts/list.vala:100
-msgid "Switch to workspace 8"
-msgstr "Çalışma Alanı 8'e geç"
-
-#: ../src//Pages/Shortcuts/list.vala:101
-msgid "Switch to workspace 9"
-msgstr "Çalışma Alanı 9'a geç"
-
-#: ../src//Pages/Shortcuts/list.vala:102
-msgid "Switch to left"
-msgstr "Sola çevir"
-
-#: ../src//Pages/Shortcuts/list.vala:103
-msgid "Switch to right"
-msgstr "Sağa çevir"
-
-#: ../src//Pages/Shortcuts/list.vala:104
-msgid "Move to workspace 1"
-msgstr "Çalışma Alanı 1'e taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:105
-msgid "Move to workspace 2"
-msgstr "Çalışma Alanı 2'ye taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:106
-msgid "Move to workspace 3"
-msgstr "Çalışma Alanı 3'e taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:107
-msgid "Move to workspace 4"
-msgstr "Çalışma Alanı 4'e taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:108
-msgid "Move to workspace 5"
-msgstr "Çalışma Alanı 5'e taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:109
-msgid "Move to workspace 6"
-msgstr "Çalışma Alanı 6'ya taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:110
-msgid "Move to workspace 7"
-msgstr "Çalışma Alanı 7'ye taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:111
-msgid "Move to workspace 8"
-msgstr "Çalışma Alanı 8'e taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:112
-msgid "Move to workspace 9"
-msgstr "Çalışma Alanı 9'a taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:113
-msgid "Move to left"
-msgstr "Sola taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:114
-msgid "Move to right"
-msgstr "Sağa taşı"
-
-#: ../src//Pages/Shortcuts/list.vala:178
-msgid "Take a Screenshot"
-msgstr "Bir Ekran Görüntüsü yakala"
-
-#: ../src//Pages/Shortcuts/list.vala:179
-msgid "Save Screenshot to Clipboard"
-msgstr "Ekran Görüntüsünü Panoya Kaydet"
-
-#: ../src//Pages/Shortcuts/list.vala:180
-msgid "Take a Screenshot of a Window"
-msgstr "Pencerenin Ekran Görüntüsünü yakala"
-
-#: ../src//Pages/Shortcuts/list.vala:181
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Pencere-Ekran Görüntüsünü Panoya Kaydet"
-
-#: ../src//Pages/Shortcuts/list.vala:182
-msgid "Take a Screenshot of an Area"
-msgstr "Bir Alanın Ekran Görüntüsünü Yakala"
-
-#: ../src//Pages/Shortcuts/list.vala:183
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Alan-Ekran Görüntüsünü Panoya Kaydet"
-
-#: ../src//Pages/Shortcuts/list.vala:209
-msgid "Calculator"
-msgstr "Hesap Makinesi"
-
-#: ../src//Pages/Shortcuts/list.vala:210
-msgid "Email"
-msgstr "E-Posta"
-
-#: ../src//Pages/Shortcuts/list.vala:211
-msgid "Help"
-msgstr "Yardım"
-
-#: ../src//Pages/Shortcuts/list.vala:212
-msgid "Home Folder"
-msgstr "Ev Klasörü"
-
-#: ../src//Pages/Shortcuts/list.vala:213
-msgid "File Search"
-msgstr "Dosya Arama"
-
-#: ../src//Pages/Shortcuts/list.vala:214
-msgid "Terminal"
-msgstr "Uçbirim"
-
-#: ../src//Pages/Shortcuts/list.vala:215
-msgid "Internet Browser"
-msgstr "İnternet Tarayıcı"
-
-#: ../src//Pages/Shortcuts/list.vala:216
-msgid "Applications Launcher"
-msgstr "Uygulama Başlatıcı"
-
-#: ../src//Pages/Shortcuts/list.vala:246
-msgid "Volume Up"
-msgstr "Sesi Arttır"
-
-#: ../src//Pages/Shortcuts/list.vala:247
-msgid "Volume Down"
-msgstr "Sesi Azalt"
-
-#: ../src//Pages/Shortcuts/list.vala:248
-msgid "Mute"
-msgstr "Sesi Kapat"
-
-#: ../src//Pages/Shortcuts/list.vala:249
-msgid "Launch Media Player"
-msgstr "Ortam Oynatıcıyı Çalıştır"
-
-#: ../src//Pages/Shortcuts/list.vala:250
-msgid "Play"
-msgstr "Oynat"
-
-#: ../src//Pages/Shortcuts/list.vala:252
-msgid "Stop"
-msgstr "Durdur"
-
-#: ../src//Pages/Shortcuts/list.vala:253
-msgid "Previous Track"
-msgstr "Önceki Parça"
-
-#: ../src//Pages/Shortcuts/list.vala:254
-msgid "Next Track"
-msgstr "Sonraki Parça"
-
-#: ../src//Pages/Shortcuts/list.vala:255
-msgid "Eject"
-msgstr "Çıkart"
-
-#: ../src//Pages/Shortcuts/list.vala:289
-msgid "Decrease Text Size"
-msgstr "Metin Boyutunu Küçült"
-
-#: ../src//Pages/Shortcuts/list.vala:290
-msgid "Increase Text Size"
-msgstr "Metin Boyutunu Büyüt"
-
-#: ../src//Pages/Shortcuts/list.vala:291
-msgid "Toggle Magnifier"
-msgstr "Büyüteci çalıştır"
-
-#: ../src//Pages/Shortcuts/list.vala:292
-msgid "Magnifier Zoom in"
-msgstr "Büyüteçle Yaklaştır"
-
-#: ../src//Pages/Shortcuts/list.vala:293
-msgid "Magnifier Zoom out"
-msgstr "Büyüteçle Uzaklaştır"
-
-#: ../src//Pages/Shortcuts/list.vala:294
-msgid "Toggle On Screen Keyboard"
-msgstr "Ekran Klavyesini aç"
-
-#: ../src//Pages/Shortcuts/list.vala:295
-msgid "Toggle Screenreader"
-msgstr "Ekran Okuyucuyu aç"
-
-#: ../src//Pages/Shortcuts/list.vala:296
-msgid "Toggle High Contrast"
-msgstr "Yüksek Karşıtlığı aç"
-
-#: ../src//Pages/Shortcuts/list.vala:297
-msgid "Next Keyboard Layout"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:298
-msgid "Previous Keyboard Layout"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/conflict_dialog.vala:9
-msgid "If you reassign the shortcut to \\"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/conflict_dialog.vala:11
-msgid "Reassign"
-msgstr "Yeniden ata"
-
-#: ../src//Pages/shortcuts.vala:43
+#: ../src/Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr "Birbirinden ayrı pencereler için farklı düzenlere izin ver:"
+
+#: ../src/Pages/layout.vala:55
+msgid "Type to test your layout…"
+msgstr "Düzeninizi sınamak için yazın..."
+
+#: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
 msgstr "Pencereler"
 
-#: ../src//Pages/shortcuts.vala:44
+#: ../src/Pages/shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Çalışma Alanları"
 
-#: ../src//Pages/shortcuts.vala:45
+#: ../src/Pages/shortcuts.vala:45
 msgid "Screenshots"
 msgstr "Ekran Görüntüleri"
 
-#: ../src//Pages/shortcuts.vala:46
+#: ../src/Pages/shortcuts.vala:46
 msgid "Applications"
 msgstr "Uygulamalar"
 
-#: ../src//Pages/shortcuts.vala:47
+#: ../src/Pages/shortcuts.vala:47
 msgid "Media"
 msgstr "Ortam"
 
-#: ../src//Pages/shortcuts.vala:48
+#: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
 msgstr "Evrensel Erişim"
 
-#: ../src//Pages/shortcuts.vala:49
+#: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
 msgstr ""
+
+#: ../src/Pages/behaviour.vala:21
+msgid "<b>Repeat Keys:</b>"
+msgstr "<b>Tekrar Tuşları:</b>"
+
+#: ../src/Pages/behaviour.vala:22
+msgid "Delay:"
+msgstr "Gecikme:"
+
+#: ../src/Pages/behaviour.vala:23
+msgid "Interval:"
+msgstr "Aralık:"
+
+#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
+#: ../src/Pages/behaviour.vala:136
+msgid "milliseconds"
+msgstr "milisaniye"
+
+#: ../src/Pages/behaviour.vala:133
+msgid "<b>Cursor Blinking:</b>"
+msgstr "<b>İmleç Yanıp Sönmesi:</b>"
+
+#: ../src/Pages/behaviour.vala:134
+msgid "Speed:"
+msgstr "Hız:"
+
+#: ../src/Pages/behaviour.vala:135
+msgid "Duration:"
+msgstr "Süre:"
+
+#: ../src/Pages/behaviour.vala:137
+msgid "seconds"
+msgstr "saniye"
+
+#: ../src/Pages/behaviour.vala:244
+msgid "Type to test your settings…"
+msgstr "Ayarlarınızı sınamak için yazın..."
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:54
+msgid "Command"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:55
+msgid "Shortcut"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:31
+msgid "Close"
+msgstr "Kapat"
+
+#: ../src/Pages/Shortcuts/list.vala:32
+msgid "Lower"
+msgstr "Alçalt"
+
+#: ../src/Pages/Shortcuts/list.vala:33
+msgid "Maximize"
+msgstr "Ekranı Kapla"
+
+#: ../src/Pages/Shortcuts/list.vala:34
+msgid "Unmaximize"
+msgstr "Tam Ekrandan Çık"
+
+#: ../src/Pages/Shortcuts/list.vala:35
+msgid "Toggle Maximized"
+msgstr "Ekranı Kaplamaya Geç"
+
+#: ../src/Pages/Shortcuts/list.vala:36
+msgid "Minimize"
+msgstr "Küçült"
+
+#: ../src/Pages/Shortcuts/list.vala:37
+msgid "Toggle Fullscreen"
+msgstr "Tam Ekrana Geç"
+
+#: ../src/Pages/Shortcuts/list.vala:38
+msgid "Tile Left"
+msgstr "Sola Döşe"
+
+#: ../src/Pages/Shortcuts/list.vala:39
+msgid "Tile Right"
+msgstr "Sağa Döşe"
+
+#: ../src/Pages/Shortcuts/list.vala:40
+msgid "Toggle on all Workspaces"
+msgstr "Tüm Çalışma Alanlarında aç"
+
+#: ../src/Pages/Shortcuts/list.vala:41
+msgid "Toggle always on Top"
+msgstr "Her zaman üstte olsun."
+
+#: ../src/Pages/Shortcuts/list.vala:42
+msgid "Switch Windows"
+msgstr "Pencereleri Çevir"
+
+#: ../src/Pages/Shortcuts/list.vala:43
+msgid "Switch Windows backwards"
+msgstr "Pencereleri tersine çevir"
+
+#: ../src/Pages/Shortcuts/list.vala:44
+msgid "Window Overview"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:45
+msgid "Show All Windows"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:87
+msgid "Show Workspace Switcher"
+msgstr "Çalışma Alanı Çeviriciyi Göster"
+
+#: ../src/Pages/Shortcuts/list.vala:88
+msgid "Switch to first"
+msgstr "Birinciye geç"
+
+#: ../src/Pages/Shortcuts/list.vala:89
+msgid "Switch to new"
+msgstr "Yeniye geç"
+
+#: ../src/Pages/Shortcuts/list.vala:90
+msgid "Switch to workspace 1"
+msgstr "Çalışma Alanı 1'e geç"
+
+#: ../src/Pages/Shortcuts/list.vala:91
+msgid "Switch to workspace 2"
+msgstr "Çalışma Alanı 2'ye geç"
+
+#: ../src/Pages/Shortcuts/list.vala:92
+msgid "Switch to workspace 3"
+msgstr "Çalışma Alanı 3'e geç"
+
+#: ../src/Pages/Shortcuts/list.vala:93
+msgid "Switch to workspace 4"
+msgstr "Çalışma Alanı 4'e geç"
+
+#: ../src/Pages/Shortcuts/list.vala:94
+msgid "Switch to workspace 5"
+msgstr "Çalışma Alanı 5'e geç"
+
+#: ../src/Pages/Shortcuts/list.vala:95
+msgid "Switch to workspace 6"
+msgstr "Çalışma Alanı 6'ya geç"
+
+#: ../src/Pages/Shortcuts/list.vala:96
+msgid "Switch to workspace 7"
+msgstr "Çalışma Alanı 7'ye geç"
+
+#: ../src/Pages/Shortcuts/list.vala:97
+msgid "Switch to workspace 8"
+msgstr "Çalışma Alanı 8'e geç"
+
+#: ../src/Pages/Shortcuts/list.vala:98
+msgid "Switch to workspace 9"
+msgstr "Çalışma Alanı 9'a geç"
+
+#: ../src/Pages/Shortcuts/list.vala:99
+msgid "Switch to left"
+msgstr "Sola çevir"
+
+#: ../src/Pages/Shortcuts/list.vala:100
+msgid "Switch to right"
+msgstr "Sağa çevir"
+
+#: ../src/Pages/Shortcuts/list.vala:101
+msgid "Move to workspace 1"
+msgstr "Çalışma Alanı 1'e taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:102
+msgid "Move to workspace 2"
+msgstr "Çalışma Alanı 2'ye taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:103
+msgid "Move to workspace 3"
+msgstr "Çalışma Alanı 3'e taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:104
+msgid "Move to workspace 4"
+msgstr "Çalışma Alanı 4'e taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:105
+msgid "Move to workspace 5"
+msgstr "Çalışma Alanı 5'e taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:106
+msgid "Move to workspace 6"
+msgstr "Çalışma Alanı 6'ya taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:107
+msgid "Move to workspace 7"
+msgstr "Çalışma Alanı 7'ye taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:108
+msgid "Move to workspace 8"
+msgstr "Çalışma Alanı 8'e taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:109
+msgid "Move to workspace 9"
+msgstr "Çalışma Alanı 9'a taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:110
+msgid "Move to left"
+msgstr "Sola taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:111
+msgid "Move to right"
+msgstr "Sağa taşı"
+
+#: ../src/Pages/Shortcuts/list.vala:175
+msgid "Take a Screenshot"
+msgstr "Bir Ekran Görüntüsü yakala"
+
+#: ../src/Pages/Shortcuts/list.vala:176
+msgid "Save Screenshot to Clipboard"
+msgstr "Ekran Görüntüsünü Panoya Kaydet"
+
+#: ../src/Pages/Shortcuts/list.vala:177
+msgid "Take a Screenshot of a Window"
+msgstr "Pencerenin Ekran Görüntüsünü yakala"
+
+#: ../src/Pages/Shortcuts/list.vala:178
+msgid "Save Window-Screenshot to Clipboard"
+msgstr "Pencere-Ekran Görüntüsünü Panoya Kaydet"
+
+#: ../src/Pages/Shortcuts/list.vala:179
+msgid "Take a Screenshot of an Area"
+msgstr "Bir Alanın Ekran Görüntüsünü Yakala"
+
+#: ../src/Pages/Shortcuts/list.vala:180
+msgid "Save Area-Screenshot to Clipboard"
+msgstr "Alan-Ekran Görüntüsünü Panoya Kaydet"
+
+#: ../src/Pages/Shortcuts/list.vala:206
+msgid "Calculator"
+msgstr "Hesap Makinesi"
+
+#: ../src/Pages/Shortcuts/list.vala:207
+msgid "Email"
+msgstr "E-Posta"
+
+#: ../src/Pages/Shortcuts/list.vala:208
+msgid "Help"
+msgstr "Yardım"
+
+#: ../src/Pages/Shortcuts/list.vala:209
+msgid "Home Folder"
+msgstr "Ev Klasörü"
+
+#: ../src/Pages/Shortcuts/list.vala:210
+msgid "File Search"
+msgstr "Dosya Arama"
+
+#: ../src/Pages/Shortcuts/list.vala:211
+msgid "Terminal"
+msgstr "Uçbirim"
+
+#: ../src/Pages/Shortcuts/list.vala:212
+msgid "Internet Browser"
+msgstr "İnternet Tarayıcı"
+
+#: ../src/Pages/Shortcuts/list.vala:213
+msgid "Applications Launcher"
+msgstr "Uygulama Başlatıcı"
+
+#: ../src/Pages/Shortcuts/list.vala:243
+msgid "Volume Up"
+msgstr "Sesi Arttır"
+
+#: ../src/Pages/Shortcuts/list.vala:244
+msgid "Volume Down"
+msgstr "Sesi Azalt"
+
+#: ../src/Pages/Shortcuts/list.vala:245
+msgid "Mute"
+msgstr "Sesi Kapat"
+
+#: ../src/Pages/Shortcuts/list.vala:246
+msgid "Launch Media Player"
+msgstr "Ortam Oynatıcıyı Çalıştır"
+
+#: ../src/Pages/Shortcuts/list.vala:247
+msgid "Play"
+msgstr "Oynat"
+
+#: ../src/Pages/Shortcuts/list.vala:249
+msgid "Stop"
+msgstr "Durdur"
+
+#: ../src/Pages/Shortcuts/list.vala:250
+msgid "Previous Track"
+msgstr "Önceki Parça"
+
+#: ../src/Pages/Shortcuts/list.vala:251
+msgid "Next Track"
+msgstr "Sonraki Parça"
+
+#: ../src/Pages/Shortcuts/list.vala:252
+msgid "Eject"
+msgstr "Çıkart"
+
+#: ../src/Pages/Shortcuts/list.vala:286
+msgid "Decrease Text Size"
+msgstr "Metin Boyutunu Küçült"
+
+#: ../src/Pages/Shortcuts/list.vala:287
+msgid "Increase Text Size"
+msgstr "Metin Boyutunu Büyüt"
+
+#: ../src/Pages/Shortcuts/list.vala:288
+msgid "Toggle Magnifier"
+msgstr "Büyüteci çalıştır"
+
+#: ../src/Pages/Shortcuts/list.vala:289
+msgid "Magnifier Zoom in"
+msgstr "Büyüteçle Yaklaştır"
+
+#: ../src/Pages/Shortcuts/list.vala:290
+msgid "Magnifier Zoom out"
+msgstr "Büyüteçle Uzaklaştır"
+
+#: ../src/Pages/Shortcuts/list.vala:291
+msgid "Toggle On Screen Keyboard"
+msgstr "Ekran Klavyesini aç"
+
+#: ../src/Pages/Shortcuts/list.vala:292
+msgid "Toggle Screenreader"
+msgstr "Ekran Okuyucuyu aç"
+
+#: ../src/Pages/Shortcuts/list.vala:293
+msgid "Toggle High Contrast"
+msgstr "Yüksek Karşıtlığı aç"
+
+#: ../src/Pages/Shortcuts/list.vala:294
+msgid "Next Keyboard Layout"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:295
+msgid "Previous Keyboard Layout"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:9
+msgid "If you reassign the shortcut to \\"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
+msgid "Reassign"
+msgstr "Yeniden ata"
+
+#: ../src/Pages/Shortcuts/shortcut.vala:41
+msgid "Disabled"
+msgstr "Devre dışı"
+
+#: ../src/Pages/Shortcuts/shortcut.vala:50
+msgid "Ctrl"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/display.vala:42
+#: ../src/Pages/Shortcuts/display.vala:45
+msgid "Add"
+msgstr "Ekle"
