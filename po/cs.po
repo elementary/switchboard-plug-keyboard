@@ -7,160 +7,152 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2015-05-16 05:45-0500\n"
+"POT-Creation-Date: 2016-04-21 08:32-0300\n"
 "PO-Revision-Date: 2015-05-22 20:31+0000\n"
 "Last-Translator: Tomo Moto <Unknown>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2015-09-24 05:52+0000\n"
-"X-Generator: Launchpad (build 17749)\n"
+"X-Launchpad-Export-Date: 2016-04-22 05:36+0000\n"
+"X-Generator: Launchpad (build 17995)\n"
 
-#: ../src//keyboard.vala:7
+#: ../src/keyboard.vala:7
 msgid "Keyboard"
 msgstr "Klávesnice"
 
-#: ../src//keyboard.vala:8
-msgid "Configure your keyboard"
-msgstr "Nastavení klávesnice"
+#: ../src/keyboard.vala:8
+msgid "Configure keyboard behavior, layouts, and shortcuts"
+msgstr ""
 
-#: ../src//keyboard.vala:21
+#: ../src/keyboard.vala:21
 msgid "Shortcuts"
 msgstr "Klávesové zkratky"
 
-#: ../src//keyboard.vala:22
+#: ../src/keyboard.vala:22
 msgid "Behavior"
 msgstr "Chování"
 
-#: ../src//keyboard.vala:23
+#: ../src/keyboard.vala:23
 msgid "Layout"
 msgstr "Rozložení"
 
-#: ../src//keyboard.vala:24
+#: ../src/keyboard.vala:24
 msgid "Options"
 msgstr "Možnosti"
 
-#: ../src//Pages/layout.vala:24
-msgid "Allow different layouts for individual windows:"
-msgstr "Povolit různé rozložení pro jednotlivá okna:"
-
-#: ../src//Pages/layout.vala:54
-msgid "Type to test your layout…"
-msgstr "Pro vyzkoušení rozložení klávesnice pište zde..."
-
-#: ../src//Pages/Layout/display.vala:48 ../src//Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr "Přidat…"
-
-#: ../src//Pages/Layout/display.vala:49 ../src//Pages/Layout/display.vala:54
-#: ../src//Pages/Shortcuts/display.vala:43
-#: ../src//Pages/Shortcuts/display.vala:46
-msgid "Remove"
-msgstr "Odebrat"
-
-#: ../src//Pages/Layout/display.vala:50 ../src//Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "Posunout nahoru"
-
-#: ../src//Pages/Layout/display.vala:51 ../src//Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "Posunout dolů"
-
-#: ../src//Pages/Layout/add_layout.vala:23
+#: ../src/Pages/Layout/add_layout.vala:19
 msgid "Language:"
 msgstr "Jazyk:"
 
-#: ../src//Pages/Layout/add_layout.vala:24
+#: ../src/Pages/Layout/add_layout.vala:20
 msgid "Layout:"
 msgstr "Rozložení:"
 
-#: ../src//Pages/Layout/add_layout.vala:65
+#: ../src/Pages/Layout/add_layout.vala:61
 msgid "Add Layout"
 msgstr "Přidat rozložení"
 
-#: ../src//Pages/Layout/add_layout.vala:66
-#: ../src//Pages/Shortcuts/conflict_dialog.vala:10
+#: ../src/Pages/Layout/add_layout.vala:62
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:10
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: ../src//Pages/Layout/handler.vala:75
+#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr "Přidat…"
+
+#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46
+msgid "Remove"
+msgstr "Odebrat"
+
+#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "Posunout nahoru"
+
+#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "Posunout dolů"
+
+#: ../src/Pages/Layout/handler.vala:75
 msgid "Default"
 msgstr "Výchozí"
 
-#: ../src//Pages/Options/option_handler.vala:15
+#: ../src/Pages/Options/option_handler.vala:15
 msgid "None"
 msgstr "Žádné"
 
-#: ../src//Pages/Options/option_handler.vala:94
+#: ../src/Pages/Options/option_handler.vala:94
 msgid "Key to choose 3rd level"
 msgstr "Klávesa umožňující výběr 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:95
-#: ../src//Pages/Options/option_handler.vala:188
+#: ../src/Pages/Options/option_handler.vala:95
+#: ../src/Pages/Options/option_handler.vala:188
 msgid "Right Ctrl"
 msgstr "Pravá klávesa Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:96
-#: ../src//Pages/Options/option_handler.vala:186
+#: ../src/Pages/Options/option_handler.vala:96
+#: ../src/Pages/Options/option_handler.vala:186
 msgid "Menu"
 msgstr "Menu"
 
-#: ../src//Pages/Options/option_handler.vala:97
+#: ../src/Pages/Options/option_handler.vala:97
 msgid "Any Win key"
 msgstr "Libovolná klávesa Win"
 
-#: ../src//Pages/Options/option_handler.vala:98
-#: ../src//Pages/Options/option_handler.vala:184
+#: ../src/Pages/Options/option_handler.vala:98
+#: ../src/Pages/Options/option_handler.vala:184
 msgid "Left Win"
 msgstr "Levá klávesa Win"
 
-#: ../src//Pages/Options/option_handler.vala:99
-#: ../src//Pages/Options/option_handler.vala:185
+#: ../src/Pages/Options/option_handler.vala:99
+#: ../src/Pages/Options/option_handler.vala:185
 msgid "Right Win"
 msgstr "Pravá klávesa Win"
 
-#: ../src//Pages/Options/option_handler.vala:100
+#: ../src/Pages/Options/option_handler.vala:100
 msgid "Any Alt key"
 msgstr "Libovolná klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:101
+#: ../src/Pages/Options/option_handler.vala:101
 msgid "Left Alt"
 msgstr "Levá klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:102
-#: ../src//Pages/Options/option_handler.vala:183
+#: ../src/Pages/Options/option_handler.vala:102
+#: ../src/Pages/Options/option_handler.vala:183
 msgid "Right Alt"
 msgstr "Pravá klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:103
+#: ../src/Pages/Options/option_handler.vala:103
 msgid "Right Alt, Shift+Right Alt key is Multi_Key"
 msgstr "Pravá klávesa Alt, Shift a pravá klávesa Alt je Multi_Key"
 
-#: ../src//Pages/Options/option_handler.vala:104
+#: ../src/Pages/Options/option_handler.vala:104
 msgid "Right Alt key never chooses 3rd level"
 msgstr "Pravá klávesa Alt nikdy neumožní výběr 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:105
+#: ../src/Pages/Options/option_handler.vala:105
 msgid "Enter on keypad"
 msgstr "Enter na numerické klávesnici"
 
-#: ../src//Pages/Options/option_handler.vala:106
-#: ../src//Pages/Options/option_handler.vala:127
-#: ../src//Pages/Options/option_handler.vala:189
+#: ../src/Pages/Options/option_handler.vala:106
+#: ../src/Pages/Options/option_handler.vala:127
+#: ../src/Pages/Options/option_handler.vala:189
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:107
+#: ../src/Pages/Options/option_handler.vala:107
 msgid "Backslash"
 msgstr "Zpětné lomítko"
 
-#: ../src//Pages/Options/option_handler.vala:108
-#: ../src//Pages/Options/option_handler.vala:190
+#: ../src/Pages/Options/option_handler.vala:108
+#: ../src/Pages/Options/option_handler.vala:190
 msgid "<Less/Greater>"
 msgstr "<Méně/Více>"
 
-#: ../src//Pages/Options/option_handler.vala:109
+#: ../src/Pages/Options/option_handler.vala:109
 msgid ""
 "Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
@@ -168,7 +160,7 @@ msgstr ""
 "Caps Lock vybírá 3. úroveň, jednorázově uzamyká při stisknutí společně s "
 "jinou výběrovou klávesou 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:110
+#: ../src/Pages/Options/option_handler.vala:110
 msgid ""
 "Backslash chooses 3rd level, acts as onetime lock when pressed together with "
 "another 3rd-level-chooser"
@@ -176,74 +168,74 @@ msgstr ""
 "Zpětné lomítko vybírá 3. úroveň, jednorázově uzamyká při stisknutí společně "
 "s jinou výběrovou klávesou 3. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:111
+#: ../src/Pages/Options/option_handler.vala:111
 msgid ""
 "<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
 "with another 3rd-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:114
+#: ../src/Pages/Options/option_handler.vala:114
 msgid "Ctrl key position"
 msgstr "Umístění klávesy Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:115
+#: ../src/Pages/Options/option_handler.vala:115
 msgid "Caps Lock as Ctrl"
 msgstr "Caps Lock jako Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:116
+#: ../src/Pages/Options/option_handler.vala:116
 msgid "Left Ctrl as Meta"
 msgstr "Levý Ctrl jako Meta"
 
-#: ../src//Pages/Options/option_handler.vala:117
+#: ../src/Pages/Options/option_handler.vala:117
 msgid "Swap Ctrl and Caps Lock"
 msgstr "Zaměnit Ctrl a Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:118
+#: ../src/Pages/Options/option_handler.vala:118
 msgid "At left of 'A'"
 msgstr "Nalevo od „A“"
 
-#: ../src//Pages/Options/option_handler.vala:119
+#: ../src/Pages/Options/option_handler.vala:119
 msgid "At bottom left"
 msgstr "Vlevo dole"
 
-#: ../src//Pages/Options/option_handler.vala:120
+#: ../src/Pages/Options/option_handler.vala:120
 msgid "Right Ctrl as Right Alt"
 msgstr "Pravá klávesa Ctrl funguje jako pravá klávesa Alt"
 
-#: ../src//Pages/Options/option_handler.vala:121
+#: ../src/Pages/Options/option_handler.vala:121
 msgid "Menu as Right Ctrl"
 msgstr "Menu jako pravý Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:122
+#: ../src/Pages/Options/option_handler.vala:122
 msgid "Right Alt as Right Ctrl"
 msgstr "Pravý Alt jako pravý Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:125
+#: ../src/Pages/Options/option_handler.vala:125
 msgid "Use keyboard LED to show alternative layout"
 msgstr "Použít LED klávesnice k zobrazení alternativního rozložení"
 
-#: ../src//Pages/Options/option_handler.vala:126
+#: ../src/Pages/Options/option_handler.vala:126
 msgid "Num Lock"
 msgstr "Num Lock"
 
-#: ../src//Pages/Options/option_handler.vala:128
-#: ../src//Pages/Options/option_handler.vala:193
+#: ../src/Pages/Options/option_handler.vala:128
+#: ../src/Pages/Options/option_handler.vala:193
 msgid "Scroll Lock"
 msgstr "Scroll Lock"
 
-#: ../src//Pages/Options/option_handler.vala:131
+#: ../src/Pages/Options/option_handler.vala:131
 msgid "Numeric keypad layout selection"
 msgstr "Výběr rozložení numerické klávesnice"
 
-#: ../src//Pages/Options/option_handler.vala:132
+#: ../src/Pages/Options/option_handler.vala:132
 msgid "Legacy"
 msgstr "Zděděné"
 
-#: ../src//Pages/Options/option_handler.vala:133
+#: ../src/Pages/Options/option_handler.vala:133
 msgid "Unicode additions (arrows and math operators)"
 msgstr "Doplňky Unicode (šipky a matematické operátory)"
 
-#: ../src//Pages/Options/option_handler.vala:134
+#: ../src/Pages/Options/option_handler.vala:134
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
@@ -251,212 +243,212 @@ msgstr ""
 "Doplňky Unicode (šipky a matematické operátory). Matematické operátory na "
 "výchozí úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:135
+#: ../src/Pages/Options/option_handler.vala:135
 msgid "Legacy Wang 724"
 msgstr "Zděděná Wang 724"
 
-#: ../src//Pages/Options/option_handler.vala:136
+#: ../src/Pages/Options/option_handler.vala:136
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
 "Numerická klávesnice Wang 724 s doplňky Unicode (šipky a matematické "
 "operátory)"
 
-#: ../src//Pages/Options/option_handler.vala:137
+#: ../src/Pages/Options/option_handler.vala:137
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:138
+#: ../src/Pages/Options/option_handler.vala:138
 msgid "Hexadecimal"
 msgstr "Hexadecimální"
 
-#: ../src//Pages/Options/option_handler.vala:139
+#: ../src/Pages/Options/option_handler.vala:139
 msgid "ATM/phone-style"
 msgstr "ATM/telefonní typ"
 
-#: ../src//Pages/Options/option_handler.vala:142
+#: ../src/Pages/Options/option_handler.vala:142
 msgid "Numeric keypad delete key behaviour"
 msgstr "Chování klávesy Delete na numerické klávesnici"
 
-#: ../src//Pages/Options/option_handler.vala:143
+#: ../src/Pages/Options/option_handler.vala:143
 msgid "Legacy key with dot"
 msgstr "Zděděná klávesa s tečkou"
 
-#: ../src//Pages/Options/option_handler.vala:144
+#: ../src/Pages/Options/option_handler.vala:144
 msgid "Legacy key with comma"
 msgstr "Zděděná klávesa s čárkou"
 
-#: ../src//Pages/Options/option_handler.vala:145
+#: ../src/Pages/Options/option_handler.vala:145
 msgid "Four-level key with dot"
 msgstr "Klávesa čtvrté úrovně s tečkou"
 
-#: ../src//Pages/Options/option_handler.vala:146
+#: ../src/Pages/Options/option_handler.vala:146
 msgid "Four-level key with dot, latin-9 restriction"
 msgstr "Klávesa čtvrté úrovně s tečkou, omezení Latin-9"
 
-#: ../src//Pages/Options/option_handler.vala:147
+#: ../src/Pages/Options/option_handler.vala:147
 msgid "Four-level key with comma"
 msgstr "Klávesa čtvrté úrovně s čárkou"
 
-#: ../src//Pages/Options/option_handler.vala:148
+#: ../src/Pages/Options/option_handler.vala:148
 msgid "Four-level key with momayyez"
 msgstr "Klávesa čtvrté úrovně se znakem momajjez"
 
-#: ../src//Pages/Options/option_handler.vala:149
+#: ../src/Pages/Options/option_handler.vala:149
 msgid "Four-level key with abstract separators"
 msgstr "Klávesa čtvrté úrovně s abstraktními oddělovači"
 
-#: ../src//Pages/Options/option_handler.vala:150
+#: ../src/Pages/Options/option_handler.vala:150
 msgid "Semi-colon on third level"
 msgstr "Středník na třetí úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:153
+#: ../src/Pages/Options/option_handler.vala:153
 msgid "Caps Lock key behavior"
 msgstr "Chování klávesy Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:154
+#: ../src/Pages/Options/option_handler.vala:154
 msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
 msgstr ""
 "Caps Lock používá vnitřní převod na verzálky. Shift přerušuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:155
+#: ../src/Pages/Options/option_handler.vala:155
 msgid ""
 "Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock používá vnitřní převod na verzálky. Shift neovlivňuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:156
+#: ../src/Pages/Options/option_handler.vala:156
 msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
 msgstr "Caps Lock funguje jako Shift s uzamčením. Shift přerušuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:157
+#: ../src/Pages/Options/option_handler.vala:157
 msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
 msgstr ""
 "Caps Lock funguje jako Shift s uzamčením. Shift neovlivňuje Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:158
+#: ../src/Pages/Options/option_handler.vala:158
 msgid "Caps Lock toggles normal capitalization of alphabetic characters"
 msgstr "Caps Lock přepne běžný převod abecedních znaků na verzálky"
 
-#: ../src//Pages/Options/option_handler.vala:159
+#: ../src/Pages/Options/option_handler.vala:159
 msgid "Make Caps Lock an additional Num Lock"
 msgstr "Vytvořit z klávesy Caps Lock další Num Lock"
 
-#: ../src//Pages/Options/option_handler.vala:160
+#: ../src/Pages/Options/option_handler.vala:160
 msgid "Swap ESC and Caps Lock"
 msgstr "Zaměnit Esc a Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:161
+#: ../src/Pages/Options/option_handler.vala:161
 msgid "Make Caps Lock an additional ESC"
 msgstr "Vytvořit z klávesy Caps Lock další Esc"
 
-#: ../src//Pages/Options/option_handler.vala:162
+#: ../src/Pages/Options/option_handler.vala:162
 msgid "Make Caps Lock an additional Backspace"
 msgstr "Vytvořit z klávesy Caps Lock další Backspace"
 
-#: ../src//Pages/Options/option_handler.vala:163
+#: ../src/Pages/Options/option_handler.vala:163
 msgid "Make Caps Lock an additional Super"
 msgstr "Vytvořit z klávesy Caps Lock další Super"
 
-#: ../src//Pages/Options/option_handler.vala:164
+#: ../src/Pages/Options/option_handler.vala:164
 msgid "Make Caps Lock an additional Hyper"
 msgstr "Vytvořit z klávesy Caps Lock další Hyper"
 
-#: ../src//Pages/Options/option_handler.vala:165
+#: ../src/Pages/Options/option_handler.vala:165
 msgid "Caps Lock toggles Shift so all keys are affected"
 msgstr "Caps Lock přepne Shift, takže budou dotčeny všechny klávesy"
 
-#: ../src//Pages/Options/option_handler.vala:166
+#: ../src/Pages/Options/option_handler.vala:166
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr "Nastavit Caps Lock jako další Control ale zachovat Caps_Lock keysym"
 
-#: ../src//Pages/Options/option_handler.vala:169
+#: ../src/Pages/Options/option_handler.vala:169
 msgid "Alt/Win key behavior"
 msgstr "Chování klávesy Alt/Win"
 
-#: ../src//Pages/Options/option_handler.vala:170
+#: ../src/Pages/Options/option_handler.vala:170
 msgid "Add the standard behavior to Menu key"
 msgstr "Přidá standardní chování ke klávese Menu"
 
-#: ../src//Pages/Options/option_handler.vala:171
+#: ../src/Pages/Options/option_handler.vala:171
 msgid "Alt and Meta are on Alt keys"
 msgstr "Alt a Meta na klávesách Alt"
 
-#: ../src//Pages/Options/option_handler.vala:172
+#: ../src/Pages/Options/option_handler.vala:172
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
 msgstr "Ctrl je přiřazena ke klávesám Win (a obvyklým klávesám Ctrl)"
 
-#: ../src//Pages/Options/option_handler.vala:173
+#: ../src/Pages/Options/option_handler.vala:173
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
 msgstr "Ctrl je přiřazena ke klávesám Alt, Alt je přiřazena ke klávesám Win"
 
-#: ../src//Pages/Options/option_handler.vala:174
+#: ../src/Pages/Options/option_handler.vala:174
 msgid "Meta is mapped to Win keys"
 msgstr "Meta je přiřazena ke klávesám Win"
 
-#: ../src//Pages/Options/option_handler.vala:175
+#: ../src/Pages/Options/option_handler.vala:175
 msgid "Meta is mapped to Left Win"
 msgstr "Meta je přiřazena k levé klávese Win"
 
-#: ../src//Pages/Options/option_handler.vala:176
+#: ../src/Pages/Options/option_handler.vala:176
 msgid "Hyper is mapped to Win-keys"
 msgstr "Hyper je přiřazena ke klávesám Win"
 
-#: ../src//Pages/Options/option_handler.vala:177
+#: ../src/Pages/Options/option_handler.vala:177
 msgid "Alt is mapped to Right Win, Super to Menu"
 msgstr "Alt je přiřazena k pravé klávese Win a Super k Menu"
 
-#: ../src//Pages/Options/option_handler.vala:178
+#: ../src/Pages/Options/option_handler.vala:178
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:179
+#: ../src/Pages/Options/option_handler.vala:179
 msgid "Alt is swapped with Win"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:182
+#: ../src/Pages/Options/option_handler.vala:182
 msgid "Compose key position"
 msgstr "Umístění klávesy Compose"
 
-#: ../src//Pages/Options/option_handler.vala:187
+#: ../src/Pages/Options/option_handler.vala:187
 msgid "Left Ctrl"
 msgstr "Levá klávesa Ctrl"
 
-#: ../src//Pages/Options/option_handler.vala:191
-#: ../src//Pages/Shortcuts/list.vala:251
+#: ../src/Pages/Options/option_handler.vala:191
+#: ../src/Pages/Shortcuts/list.vala:248
 msgid "Pause"
 msgstr "Pozastavit"
 
-#: ../src//Pages/Options/option_handler.vala:192
+#: ../src/Pages/Options/option_handler.vala:192
 msgid "PrtSc"
 msgstr "PrtSc"
 
-#: ../src//Pages/Options/option_handler.vala:196
+#: ../src/Pages/Options/option_handler.vala:196
 msgid "Miscellaneous compatibility options"
 msgstr "Dodatečné volby kompatibility"
 
-#: ../src//Pages/Options/option_handler.vala:197
+#: ../src/Pages/Options/option_handler.vala:197
 msgid "Default numeric keypad keys"
 msgstr "Výchozí numerická klávesnice"
 
-#: ../src//Pages/Options/option_handler.vala:198
+#: ../src/Pages/Options/option_handler.vala:198
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
 msgstr "Klávesy numerické klávesnice vždy vrací číslice (jako u OS X)"
 
-#: ../src//Pages/Options/option_handler.vala:199
+#: ../src/Pages/Options/option_handler.vala:199
 msgid "Shift with numeric keypad keys works as in MS Windows"
 msgstr "Shift s numerickými klávesami funguje jako v MS Windows"
 
-#: ../src//Pages/Options/option_handler.vala:200
+#: ../src/Pages/Options/option_handler.vala:200
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
 msgstr "Shift neruší Num Lock, namísto toho vybírá 3. úroveň"
 
-#: ../src//Pages/Options/option_handler.vala:201
+#: ../src/Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
 msgstr "Speciální klávesy (Ctrl+Alt+<klávesa>) přijímané serverem"
 
-#: ../src//Pages/Options/option_handler.vala:202
+#: ../src/Pages/Options/option_handler.vala:202
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
@@ -464,74 +456,74 @@ msgstr ""
 "Apple Aluminium Keyboard: emulovat klávesy PC (Print, Scroll Lock, Pause, "
 "Num Lock)"
 
-#: ../src//Pages/Options/option_handler.vala:203
+#: ../src/Pages/Options/option_handler.vala:203
 msgid "Shift cancels Caps Lock"
 msgstr "Shift ruší Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:204
+#: ../src/Pages/Options/option_handler.vala:204
 msgid "Enable extra typographic characters"
 msgstr "Povolit přídavné znaky hladké sazby"
 
-#: ../src//Pages/Options/option_handler.vala:205
+#: ../src/Pages/Options/option_handler.vala:205
 msgid "Both Shift-Keys together toggle Caps Lock"
 msgstr "Obě klávesy Shift současně přepnou Caps Lock"
 
-#: ../src//Pages/Options/option_handler.vala:206
+#: ../src/Pages/Options/option_handler.vala:206
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
 "Stisknutím obou kláves Shift současně se aktivuje Caps Lock, stisknutím "
 "jedné Shift klávesy jej deaktivujete"
 
-#: ../src//Pages/Options/option_handler.vala:207
+#: ../src/Pages/Options/option_handler.vala:207
 msgid "Both Shift-Keys together toggle ShiftLock"
 msgstr "Stisknutím obou kláves Shift současně se přepne ShiftLock"
 
-#: ../src//Pages/Options/option_handler.vala:208
+#: ../src/Pages/Options/option_handler.vala:208
 msgid "Toggle PointerKeys with Shift + NumLock"
 msgstr "Přepnout PointerKeys stisknutím Shift + NumLock"
 
-#: ../src//Pages/Options/option_handler.vala:209
+#: ../src/Pages/Options/option_handler.vala:209
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
 "Umožní porušit uzamčení vstupů pomocí akcí klávesnice (pozor: bezpečnostní "
 "riziko)"
 
-#: ../src//Pages/Options/option_handler.vala:212
+#: ../src/Pages/Options/option_handler.vala:212
 msgid "Adding currency signs to certain keys"
 msgstr "Přidává znaky měny k určitým klávesám"
 
-#: ../src//Pages/Options/option_handler.vala:213
+#: ../src/Pages/Options/option_handler.vala:213
 msgid "Euro on E"
 msgstr "Euro na klávese E"
 
-#: ../src//Pages/Options/option_handler.vala:214
+#: ../src/Pages/Options/option_handler.vala:214
 msgid "Euro on 2"
 msgstr "Euro na klávese 2"
 
-#: ../src//Pages/Options/option_handler.vala:215
+#: ../src/Pages/Options/option_handler.vala:215
 msgid "Euro on 4"
 msgstr "Euro na klávese 4"
 
-#: ../src//Pages/Options/option_handler.vala:216
+#: ../src/Pages/Options/option_handler.vala:216
 msgid "Euro on 5"
 msgstr "Euro na klávese 5"
 
-#: ../src//Pages/Options/option_handler.vala:217
+#: ../src/Pages/Options/option_handler.vala:217
 msgid "Rupee on 4"
 msgstr "Rupie na klávese 4"
 
-#: ../src//Pages/Options/option_handler.vala:220
+#: ../src/Pages/Options/option_handler.vala:220
 msgid "Key to choose 5th level"
 msgstr "Klávesa umožňující výběr 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:221
+#: ../src/Pages/Options/option_handler.vala:221
 msgid ""
 "<Less/Greater> chooses 5th level, locks when pressed together with another "
 "5th-level-chooser"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:222
+#: ../src/Pages/Options/option_handler.vala:222
 msgid ""
 "Right Alt chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
@@ -539,7 +531,7 @@ msgstr ""
 "Pravá klávesa Alt vybírá 5. úroveň, uzamyká při stisknutí společně s jinou "
 "výběrovou klávesou 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:223
+#: ../src/Pages/Options/option_handler.vala:223
 msgid ""
 "Left Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
@@ -547,7 +539,7 @@ msgstr ""
 "Levá klávesa Win vybírá 5. úroveň, uzamyká při stisknutí společně s jinou "
 "výběrovou klávesou 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:224
+#: ../src/Pages/Options/option_handler.vala:224
 msgid ""
 "Right Win chooses 5th level, locks when pressed together with another 5th-"
 "level-chooser"
@@ -555,28 +547,28 @@ msgstr ""
 "Pravá klávesa Win vybírá 5. úroveň, uzamyká při stisknutí společně s jinou "
 "výběrovou klávesou 5. úrovně"
 
-#: ../src//Pages/Options/option_handler.vala:227
+#: ../src/Pages/Options/option_handler.vala:227
 msgid "Using space key to input non-breakable space character"
 msgstr "Používání mezerníku k zadávání znaku nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:228
+#: ../src/Pages/Options/option_handler.vala:228
 msgid "Usual space at any level"
 msgstr "Na jakékoliv úrovni znak běžné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:229
+#: ../src/Pages/Options/option_handler.vala:229
 msgid "Non-breakable space character at second level"
 msgstr "Na druhé úrovni znak nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:230
+#: ../src/Pages/Options/option_handler.vala:230
 msgid "Non-breakable space character at third level"
 msgstr "Na třetí úrovni znak nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:231
+#: ../src/Pages/Options/option_handler.vala:231
 msgid "Non-breakable space character at third level, nothing at fourth leve"
 msgstr ""
 "Na třetí úrovni znak nedělitelné mezery, na páte úrovni žádná funkce."
 
-#: ../src//Pages/Options/option_handler.vala:232
+#: ../src/Pages/Options/option_handler.vala:232
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
@@ -584,11 +576,11 @@ msgstr ""
 "Na třetí úrovni znak nedělitelné mezery, tenká nedělitelná mezera na čtvrté "
 "úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:233
+#: ../src/Pages/Options/option_handler.vala:233
 msgid "Non-breakable space character at fourth level"
 msgstr "Na čtvrté úrovni znak nedělitelné mezery"
 
-#: ../src//Pages/Options/option_handler.vala:234
+#: ../src/Pages/Options/option_handler.vala:234
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
@@ -596,7 +588,7 @@ msgstr ""
 "Na čtvrté úrovni znak nedělitelné mezery, tenká nedělitelná mezera na šesté "
 "úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:235
+#: ../src/Pages/Options/option_handler.vala:235
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
@@ -604,11 +596,11 @@ msgstr ""
 "Na čtvrté úrovni znak nedělitelné mezery, tenká nedělitelná mezera na šesté "
 "úrovni (přes Ctrl+Shift)"
 
-#: ../src//Pages/Options/option_handler.vala:236
+#: ../src/Pages/Options/option_handler.vala:236
 msgid "Zero-width non-joiner character at second level"
 msgstr "Na druhé úrovni znak nespojovače nulové šířky"
 
-#: ../src//Pages/Options/option_handler.vala:237
+#: ../src/Pages/Options/option_handler.vala:237
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
@@ -616,7 +608,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
 "na třetí úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:238
+#: ../src/Pages/Options/option_handler.vala:238
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
@@ -624,7 +616,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
 "na třetí úrovni, nedělitelná mezera na čtvrté úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:239
+#: ../src/Pages/Options/option_handler.vala:239
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
@@ -632,7 +624,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
 "úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:240
+#: ../src/Pages/Options/option_handler.vala:240
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
@@ -640,7 +632,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, na třetí úrovni nedělitelná "
 "mezera, nic na úrovni čtvrté"
 
-#: ../src//Pages/Options/option_handler.vala:241
+#: ../src/Pages/Options/option_handler.vala:241
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
@@ -648,7 +640,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
 "úrovni, spojovač nulové šířky na úrovni čtvrté"
 
-#: ../src//Pages/Options/option_handler.vala:242
+#: ../src/Pages/Options/option_handler.vala:242
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
@@ -656,7 +648,7 @@ msgstr ""
 "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
 "úrovni, tenká nedělitelná mezera na čtvrté úrovni"
 
-#: ../src//Pages/Options/option_handler.vala:243
+#: ../src/Pages/Options/option_handler.vala:243
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
@@ -664,440 +656,440 @@ msgstr ""
 "Na třetí úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
 "na úrovni čtvrté"
 
-#: ../src//Pages/Options/option_handler.vala:246
+#: ../src/Pages/Options/option_handler.vala:246
 msgid "Japanese keyboard options"
 msgstr "Volby japonské klávesnice"
 
-#: ../src//Pages/Options/option_handler.vala:247
+#: ../src/Pages/Options/option_handler.vala:247
 msgid "Kana Lock key is locking"
 msgstr "Klávesa Kana Lock uzamyká"
 
-#: ../src//Pages/Options/option_handler.vala:248
+#: ../src/Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
 msgstr "Backspace typu NICOLA-F"
 
-#: ../src//Pages/Options/option_handler.vala:249
+#: ../src/Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:252
+#: ../src/Pages/Options/option_handler.vala:252
 msgid "Adding Esperanto circumflexes (supersigno)"
 msgstr "Přidává diakritiku jazyka esperanto (supersigno)"
 
-#: ../src//Pages/Options/option_handler.vala:253
+#: ../src/Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:254
+#: ../src/Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:255
+#: ../src/Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
 msgstr ""
 
-#: ../src//Pages/Options/option_handler.vala:258
+#: ../src/Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
 msgstr "Pořadí kláves zabíjející server X"
 
-#: ../src//Pages/Options/option_handler.vala:259
+#: ../src/Pages/Options/option_handler.vala:259
 msgid "Control + Alt + Backspace"
 msgstr "Ctrl + Alt + Backspace"
 
-#: ../src//Pages/behaviour.vala:21
-msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Opakujte Klávesy:</b>"
-
-#: ../src//Pages/behaviour.vala:22
-msgid "Delay:"
-msgstr "Prodleva:"
-
-#: ../src//Pages/behaviour.vala:23
-msgid "Interval:"
-msgstr "Interval:"
-
-#: ../src//Pages/behaviour.vala:24 ../src//Pages/behaviour.vala:25
-#: ../src//Pages/behaviour.vala:136
-msgid "milliseconds"
-msgstr "milisekund"
-
-#: ../src//Pages/behaviour.vala:133
-msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>Blikání Kursoru:</b>"
-
-#: ../src//Pages/behaviour.vala:134
-msgid "Speed:"
-msgstr "Rychlost:"
-
-#: ../src//Pages/behaviour.vala:135
-msgid "Duration:"
-msgstr "Délka:"
-
-#: ../src//Pages/behaviour.vala:137
-msgid "seconds"
-msgstr "sekundy"
-
-#: ../src//Pages/behaviour.vala:243
-msgid "Type to test your settings…"
-msgstr "Pro vyzkoušení nastavení pište zde..."
-
-#: ../src//Pages/Shortcuts/display.vala:42
-#: ../src//Pages/Shortcuts/display.vala:45
-msgid "Add"
-msgstr "Přidat"
-
-#: ../src//Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "Zakázáno"
-
-#: ../src//Pages/Shortcuts/shortcut.vala:50
-msgid "Ctrl"
-msgstr "Ctrl"
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:4
-msgid "Enter Command"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:47
-msgid "You need to logout and login for the changes to take effect"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:65
-msgid "Command"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/custom_tree.vala:66
-msgid "Shortcut"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:31
-msgid "Close"
-msgstr "Zavřít"
-
-#: ../src//Pages/Shortcuts/list.vala:32
-msgid "Lower"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:33
-msgid "Maximize"
-msgstr "Maximalizovat"
-
-#: ../src//Pages/Shortcuts/list.vala:34
-msgid "Unmaximize"
-msgstr "Zrušit maximalizaci"
-
-#: ../src//Pages/Shortcuts/list.vala:35
-msgid "Toggle Maximized"
-msgstr "Přepnout maximalizované"
-
-#: ../src//Pages/Shortcuts/list.vala:36
-msgid "Minimize"
-msgstr "Minimalizovat"
-
-#: ../src//Pages/Shortcuts/list.vala:37
-msgid "Toggle Fullscreen"
-msgstr "Celá obrazovka"
-
-#: ../src//Pages/Shortcuts/list.vala:38
-msgid "Tile Left"
-msgstr "Připnout vlevo"
-
-#: ../src//Pages/Shortcuts/list.vala:39
-msgid "Tile Right"
-msgstr "Připnout vpravo"
-
-#: ../src//Pages/Shortcuts/list.vala:40
-msgid "Toggle Shaded"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:41
-msgid "Toggle on all Workspaces"
-msgstr "Přepnout na všech plochách"
-
-#: ../src//Pages/Shortcuts/list.vala:42
-msgid "Toggle always on Top"
-msgstr "Vždy nahoře"
-
-#: ../src//Pages/Shortcuts/list.vala:43
-msgid "Switch Windows"
-msgstr "Přepnout okna"
-
-#: ../src//Pages/Shortcuts/list.vala:44
-msgid "Switch Windows backwards"
-msgstr "Přepnout okna pozpátku"
-
-#: ../src//Pages/Shortcuts/list.vala:45
-msgid "Window Overview"
-msgstr "Přehled oken"
-
-#: ../src//Pages/Shortcuts/list.vala:46
-msgid "Show All Windows"
-msgstr "Zobrazit všechna okna"
-
-#: ../src//Pages/Shortcuts/list.vala:90
-msgid "Show Workspace Switcher"
-msgstr "Zobrazit přepínač ploch"
-
-#: ../src//Pages/Shortcuts/list.vala:91
-msgid "Switch to first"
-msgstr "Přepnout na první"
-
-#: ../src//Pages/Shortcuts/list.vala:92
-msgid "Switch to new"
-msgstr "Přepnout na nové"
-
-#: ../src//Pages/Shortcuts/list.vala:93
-msgid "Switch to workspace 1"
-msgstr "Přepnout na plochu 1"
-
-#: ../src//Pages/Shortcuts/list.vala:94
-msgid "Switch to workspace 2"
-msgstr "Přepnout na plochu 2"
-
-#: ../src//Pages/Shortcuts/list.vala:95
-msgid "Switch to workspace 3"
-msgstr "Přepnout na plochu 3"
-
-#: ../src//Pages/Shortcuts/list.vala:96
-msgid "Switch to workspace 4"
-msgstr "Přepnout na plochu 4"
-
-#: ../src//Pages/Shortcuts/list.vala:97
-msgid "Switch to workspace 5"
-msgstr "Přepnout na plochu 5"
-
-#: ../src//Pages/Shortcuts/list.vala:98
-msgid "Switch to workspace 6"
-msgstr "Přepnout na plochu 6"
-
-#: ../src//Pages/Shortcuts/list.vala:99
-msgid "Switch to workspace 7"
-msgstr "Přepnout na plochu 7"
-
-#: ../src//Pages/Shortcuts/list.vala:100
-msgid "Switch to workspace 8"
-msgstr "Přepnout na plochu 8"
-
-#: ../src//Pages/Shortcuts/list.vala:101
-msgid "Switch to workspace 9"
-msgstr "Přepnout na plochu 9"
-
-#: ../src//Pages/Shortcuts/list.vala:102
-msgid "Switch to left"
-msgstr "Přepnout vlevo"
-
-#: ../src//Pages/Shortcuts/list.vala:103
-msgid "Switch to right"
-msgstr "Přepnout vpravo"
-
-#: ../src//Pages/Shortcuts/list.vala:104
-msgid "Move to workspace 1"
-msgstr "Přesunout na plochu 1"
-
-#: ../src//Pages/Shortcuts/list.vala:105
-msgid "Move to workspace 2"
-msgstr "Přesunout na plochu 2"
-
-#: ../src//Pages/Shortcuts/list.vala:106
-msgid "Move to workspace 3"
-msgstr "Přesunout na plochu 3"
-
-#: ../src//Pages/Shortcuts/list.vala:107
-msgid "Move to workspace 4"
-msgstr "Přesunout na plochu 4"
-
-#: ../src//Pages/Shortcuts/list.vala:108
-msgid "Move to workspace 5"
-msgstr "Přesunout na plochu 5"
-
-#: ../src//Pages/Shortcuts/list.vala:109
-msgid "Move to workspace 6"
-msgstr "Přesunout na plochu 6"
-
-#: ../src//Pages/Shortcuts/list.vala:110
-msgid "Move to workspace 7"
-msgstr "Přesunout na plochu 7"
-
-#: ../src//Pages/Shortcuts/list.vala:111
-msgid "Move to workspace 8"
-msgstr "Přesunout na plochu 8"
-
-#: ../src//Pages/Shortcuts/list.vala:112
-msgid "Move to workspace 9"
-msgstr "Přesunout na plochu 9"
-
-#: ../src//Pages/Shortcuts/list.vala:113
-msgid "Move to left"
-msgstr "Přesunout vlevo"
-
-#: ../src//Pages/Shortcuts/list.vala:114
-msgid "Move to right"
-msgstr "Přesunout vpravo"
-
-#: ../src//Pages/Shortcuts/list.vala:178
-msgid "Take a Screenshot"
-msgstr "Pořídit snímek obrazovky"
-
-#: ../src//Pages/Shortcuts/list.vala:179
-msgid "Save Screenshot to Clipboard"
-msgstr "Kopírovat snímek obrazovky do schránky"
-
-#: ../src//Pages/Shortcuts/list.vala:180
-msgid "Take a Screenshot of a Window"
-msgstr "Pořídit snímek okna"
-
-#: ../src//Pages/Shortcuts/list.vala:181
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Kopírovat snímek okna do schránky"
-
-#: ../src//Pages/Shortcuts/list.vala:182
-msgid "Take a Screenshot of an Area"
-msgstr "Pořídit snímek oblasti"
-
-#: ../src//Pages/Shortcuts/list.vala:183
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Kopírovat snímek oblasti do schránky"
-
-#: ../src//Pages/Shortcuts/list.vala:209
-msgid "Calculator"
-msgstr "Kalkulačka"
-
-#: ../src//Pages/Shortcuts/list.vala:210
-msgid "Email"
-msgstr "Email"
-
-#: ../src//Pages/Shortcuts/list.vala:211
-msgid "Help"
-msgstr "Nápověda"
-
-#: ../src//Pages/Shortcuts/list.vala:212
-msgid "Home Folder"
-msgstr "Domovská složka"
-
-#: ../src//Pages/Shortcuts/list.vala:213
-msgid "File Search"
-msgstr "Hledat soubory"
-
-#: ../src//Pages/Shortcuts/list.vala:214
-msgid "Terminal"
-msgstr "Příkazová řádka"
-
-#: ../src//Pages/Shortcuts/list.vala:215
-msgid "Internet Browser"
-msgstr "Internetový prohlížeč"
-
-#: ../src//Pages/Shortcuts/list.vala:216
-msgid "Applications Launcher"
-msgstr "Spoušteč aplikací"
-
-#: ../src//Pages/Shortcuts/list.vala:246
-msgid "Volume Up"
-msgstr "Zvýšit hlasitost"
-
-#: ../src//Pages/Shortcuts/list.vala:247
-msgid "Volume Down"
-msgstr "Snížit hlasitost"
-
-#: ../src//Pages/Shortcuts/list.vala:248
-msgid "Mute"
-msgstr "Ztlumit"
-
-#: ../src//Pages/Shortcuts/list.vala:249
-msgid "Launch Media Player"
-msgstr "Spustit přehrávač médií"
-
-#: ../src//Pages/Shortcuts/list.vala:250
-msgid "Play"
-msgstr "Přehrát"
-
-#: ../src//Pages/Shortcuts/list.vala:252
-msgid "Stop"
-msgstr "Zastavit"
-
-#: ../src//Pages/Shortcuts/list.vala:253
-msgid "Previous Track"
-msgstr "Předchozí skladba"
-
-#: ../src//Pages/Shortcuts/list.vala:254
-msgid "Next Track"
-msgstr "Další skladba"
-
-#: ../src//Pages/Shortcuts/list.vala:255
-msgid "Eject"
-msgstr "Vysunout"
-
-#: ../src//Pages/Shortcuts/list.vala:289
-msgid "Decrease Text Size"
-msgstr "Zmenšit velikost písma"
-
-#: ../src//Pages/Shortcuts/list.vala:290
-msgid "Increase Text Size"
-msgstr "Zvětšit velikost písma"
-
-#: ../src//Pages/Shortcuts/list.vala:291
-msgid "Toggle Magnifier"
-msgstr "Zobrazit lupu"
-
-#: ../src//Pages/Shortcuts/list.vala:292
-msgid "Magnifier Zoom in"
-msgstr "Přiblížit"
-
-#: ../src//Pages/Shortcuts/list.vala:293
-msgid "Magnifier Zoom out"
-msgstr "Oddálit"
-
-#: ../src//Pages/Shortcuts/list.vala:294
-msgid "Toggle On Screen Keyboard"
-msgstr "Zobrazit klávenici na obrazovce"
-
-#: ../src//Pages/Shortcuts/list.vala:295
-msgid "Toggle Screenreader"
-msgstr "Zobrazit odečítač obrazovky"
-
-#: ../src//Pages/Shortcuts/list.vala:296
-msgid "Toggle High Contrast"
-msgstr "Vysoký kontrast"
-
-#: ../src//Pages/Shortcuts/list.vala:297
-msgid "Next Keyboard Layout"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/list.vala:298
-msgid "Previous Keyboard Layout"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/conflict_dialog.vala:9
-msgid "If you reassign the shortcut to \\"
-msgstr ""
-
-#: ../src//Pages/Shortcuts/conflict_dialog.vala:11
-msgid "Reassign"
-msgstr "Změnit přiřazení"
-
-#: ../src//Pages/shortcuts.vala:43
+#: ../src/Pages/layout.vala:24
+msgid "Allow different layouts for individual windows:"
+msgstr "Povolit různé rozložení pro jednotlivá okna:"
+
+#: ../src/Pages/layout.vala:55
+msgid "Type to test your layout…"
+msgstr "Pro vyzkoušení rozložení klávesnice pište zde..."
+
+#: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
 msgstr "Okna"
 
-#: ../src//Pages/shortcuts.vala:44
+#: ../src/Pages/shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Pracovní plochy"
 
-#: ../src//Pages/shortcuts.vala:45
+#: ../src/Pages/shortcuts.vala:45
 msgid "Screenshots"
 msgstr "Snímky obrazovky"
 
-#: ../src//Pages/shortcuts.vala:46
+#: ../src/Pages/shortcuts.vala:46
 msgid "Applications"
 msgstr "Aplikace"
 
-#: ../src//Pages/shortcuts.vala:47
+#: ../src/Pages/shortcuts.vala:47
 msgid "Media"
 msgstr "Média"
 
-#: ../src//Pages/shortcuts.vala:48
+#: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
 msgstr "Univerzální přístup"
 
-#: ../src//Pages/shortcuts.vala:49
+#: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
 msgstr "Vlastní"
+
+#: ../src/Pages/behaviour.vala:21
+msgid "<b>Repeat Keys:</b>"
+msgstr "<b>Opakujte Klávesy:</b>"
+
+#: ../src/Pages/behaviour.vala:22
+msgid "Delay:"
+msgstr "Prodleva:"
+
+#: ../src/Pages/behaviour.vala:23
+msgid "Interval:"
+msgstr "Interval:"
+
+#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
+#: ../src/Pages/behaviour.vala:136
+msgid "milliseconds"
+msgstr "milisekund"
+
+#: ../src/Pages/behaviour.vala:133
+msgid "<b>Cursor Blinking:</b>"
+msgstr "<b>Blikání Kursoru:</b>"
+
+#: ../src/Pages/behaviour.vala:134
+msgid "Speed:"
+msgstr "Rychlost:"
+
+#: ../src/Pages/behaviour.vala:135
+msgid "Duration:"
+msgstr "Délka:"
+
+#: ../src/Pages/behaviour.vala:137
+msgid "seconds"
+msgstr "sekundy"
+
+#: ../src/Pages/behaviour.vala:244
+msgid "Type to test your settings…"
+msgstr "Pro vyzkoušení nastavení pište zde..."
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:54
+msgid "Command"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:55
+msgid "Shortcut"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:31
+msgid "Close"
+msgstr "Zavřít"
+
+#: ../src/Pages/Shortcuts/list.vala:32
+msgid "Lower"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:33
+msgid "Maximize"
+msgstr "Maximalizovat"
+
+#: ../src/Pages/Shortcuts/list.vala:34
+msgid "Unmaximize"
+msgstr "Zrušit maximalizaci"
+
+#: ../src/Pages/Shortcuts/list.vala:35
+msgid "Toggle Maximized"
+msgstr "Přepnout maximalizované"
+
+#: ../src/Pages/Shortcuts/list.vala:36
+msgid "Minimize"
+msgstr "Minimalizovat"
+
+#: ../src/Pages/Shortcuts/list.vala:37
+msgid "Toggle Fullscreen"
+msgstr "Celá obrazovka"
+
+#: ../src/Pages/Shortcuts/list.vala:38
+msgid "Tile Left"
+msgstr "Připnout vlevo"
+
+#: ../src/Pages/Shortcuts/list.vala:39
+msgid "Tile Right"
+msgstr "Připnout vpravo"
+
+#: ../src/Pages/Shortcuts/list.vala:40
+msgid "Toggle on all Workspaces"
+msgstr "Přepnout na všech plochách"
+
+#: ../src/Pages/Shortcuts/list.vala:41
+msgid "Toggle always on Top"
+msgstr "Vždy nahoře"
+
+#: ../src/Pages/Shortcuts/list.vala:42
+msgid "Switch Windows"
+msgstr "Přepnout okna"
+
+#: ../src/Pages/Shortcuts/list.vala:43
+msgid "Switch Windows backwards"
+msgstr "Přepnout okna pozpátku"
+
+#: ../src/Pages/Shortcuts/list.vala:44
+msgid "Window Overview"
+msgstr "Přehled oken"
+
+#: ../src/Pages/Shortcuts/list.vala:45
+msgid "Show All Windows"
+msgstr "Zobrazit všechna okna"
+
+#: ../src/Pages/Shortcuts/list.vala:87
+msgid "Show Workspace Switcher"
+msgstr "Zobrazit přepínač ploch"
+
+#: ../src/Pages/Shortcuts/list.vala:88
+msgid "Switch to first"
+msgstr "Přepnout na první"
+
+#: ../src/Pages/Shortcuts/list.vala:89
+msgid "Switch to new"
+msgstr "Přepnout na nové"
+
+#: ../src/Pages/Shortcuts/list.vala:90
+msgid "Switch to workspace 1"
+msgstr "Přepnout na plochu 1"
+
+#: ../src/Pages/Shortcuts/list.vala:91
+msgid "Switch to workspace 2"
+msgstr "Přepnout na plochu 2"
+
+#: ../src/Pages/Shortcuts/list.vala:92
+msgid "Switch to workspace 3"
+msgstr "Přepnout na plochu 3"
+
+#: ../src/Pages/Shortcuts/list.vala:93
+msgid "Switch to workspace 4"
+msgstr "Přepnout na plochu 4"
+
+#: ../src/Pages/Shortcuts/list.vala:94
+msgid "Switch to workspace 5"
+msgstr "Přepnout na plochu 5"
+
+#: ../src/Pages/Shortcuts/list.vala:95
+msgid "Switch to workspace 6"
+msgstr "Přepnout na plochu 6"
+
+#: ../src/Pages/Shortcuts/list.vala:96
+msgid "Switch to workspace 7"
+msgstr "Přepnout na plochu 7"
+
+#: ../src/Pages/Shortcuts/list.vala:97
+msgid "Switch to workspace 8"
+msgstr "Přepnout na plochu 8"
+
+#: ../src/Pages/Shortcuts/list.vala:98
+msgid "Switch to workspace 9"
+msgstr "Přepnout na plochu 9"
+
+#: ../src/Pages/Shortcuts/list.vala:99
+msgid "Switch to left"
+msgstr "Přepnout vlevo"
+
+#: ../src/Pages/Shortcuts/list.vala:100
+msgid "Switch to right"
+msgstr "Přepnout vpravo"
+
+#: ../src/Pages/Shortcuts/list.vala:101
+msgid "Move to workspace 1"
+msgstr "Přesunout na plochu 1"
+
+#: ../src/Pages/Shortcuts/list.vala:102
+msgid "Move to workspace 2"
+msgstr "Přesunout na plochu 2"
+
+#: ../src/Pages/Shortcuts/list.vala:103
+msgid "Move to workspace 3"
+msgstr "Přesunout na plochu 3"
+
+#: ../src/Pages/Shortcuts/list.vala:104
+msgid "Move to workspace 4"
+msgstr "Přesunout na plochu 4"
+
+#: ../src/Pages/Shortcuts/list.vala:105
+msgid "Move to workspace 5"
+msgstr "Přesunout na plochu 5"
+
+#: ../src/Pages/Shortcuts/list.vala:106
+msgid "Move to workspace 6"
+msgstr "Přesunout na plochu 6"
+
+#: ../src/Pages/Shortcuts/list.vala:107
+msgid "Move to workspace 7"
+msgstr "Přesunout na plochu 7"
+
+#: ../src/Pages/Shortcuts/list.vala:108
+msgid "Move to workspace 8"
+msgstr "Přesunout na plochu 8"
+
+#: ../src/Pages/Shortcuts/list.vala:109
+msgid "Move to workspace 9"
+msgstr "Přesunout na plochu 9"
+
+#: ../src/Pages/Shortcuts/list.vala:110
+msgid "Move to left"
+msgstr "Přesunout vlevo"
+
+#: ../src/Pages/Shortcuts/list.vala:111
+msgid "Move to right"
+msgstr "Přesunout vpravo"
+
+#: ../src/Pages/Shortcuts/list.vala:175
+msgid "Take a Screenshot"
+msgstr "Pořídit snímek obrazovky"
+
+#: ../src/Pages/Shortcuts/list.vala:176
+msgid "Save Screenshot to Clipboard"
+msgstr "Kopírovat snímek obrazovky do schránky"
+
+#: ../src/Pages/Shortcuts/list.vala:177
+msgid "Take a Screenshot of a Window"
+msgstr "Pořídit snímek okna"
+
+#: ../src/Pages/Shortcuts/list.vala:178
+msgid "Save Window-Screenshot to Clipboard"
+msgstr "Kopírovat snímek okna do schránky"
+
+#: ../src/Pages/Shortcuts/list.vala:179
+msgid "Take a Screenshot of an Area"
+msgstr "Pořídit snímek oblasti"
+
+#: ../src/Pages/Shortcuts/list.vala:180
+msgid "Save Area-Screenshot to Clipboard"
+msgstr "Kopírovat snímek oblasti do schránky"
+
+#: ../src/Pages/Shortcuts/list.vala:206
+msgid "Calculator"
+msgstr "Kalkulačka"
+
+#: ../src/Pages/Shortcuts/list.vala:207
+msgid "Email"
+msgstr "Email"
+
+#: ../src/Pages/Shortcuts/list.vala:208
+msgid "Help"
+msgstr "Nápověda"
+
+#: ../src/Pages/Shortcuts/list.vala:209
+msgid "Home Folder"
+msgstr "Domovská složka"
+
+#: ../src/Pages/Shortcuts/list.vala:210
+msgid "File Search"
+msgstr "Hledat soubory"
+
+#: ../src/Pages/Shortcuts/list.vala:211
+msgid "Terminal"
+msgstr "Příkazová řádka"
+
+#: ../src/Pages/Shortcuts/list.vala:212
+msgid "Internet Browser"
+msgstr "Internetový prohlížeč"
+
+#: ../src/Pages/Shortcuts/list.vala:213
+msgid "Applications Launcher"
+msgstr "Spoušteč aplikací"
+
+#: ../src/Pages/Shortcuts/list.vala:243
+msgid "Volume Up"
+msgstr "Zvýšit hlasitost"
+
+#: ../src/Pages/Shortcuts/list.vala:244
+msgid "Volume Down"
+msgstr "Snížit hlasitost"
+
+#: ../src/Pages/Shortcuts/list.vala:245
+msgid "Mute"
+msgstr "Ztlumit"
+
+#: ../src/Pages/Shortcuts/list.vala:246
+msgid "Launch Media Player"
+msgstr "Spustit přehrávač médií"
+
+#: ../src/Pages/Shortcuts/list.vala:247
+msgid "Play"
+msgstr "Přehrát"
+
+#: ../src/Pages/Shortcuts/list.vala:249
+msgid "Stop"
+msgstr "Zastavit"
+
+#: ../src/Pages/Shortcuts/list.vala:250
+msgid "Previous Track"
+msgstr "Předchozí skladba"
+
+#: ../src/Pages/Shortcuts/list.vala:251
+msgid "Next Track"
+msgstr "Další skladba"
+
+#: ../src/Pages/Shortcuts/list.vala:252
+msgid "Eject"
+msgstr "Vysunout"
+
+#: ../src/Pages/Shortcuts/list.vala:286
+msgid "Decrease Text Size"
+msgstr "Zmenšit velikost písma"
+
+#: ../src/Pages/Shortcuts/list.vala:287
+msgid "Increase Text Size"
+msgstr "Zvětšit velikost písma"
+
+#: ../src/Pages/Shortcuts/list.vala:288
+msgid "Toggle Magnifier"
+msgstr "Zobrazit lupu"
+
+#: ../src/Pages/Shortcuts/list.vala:289
+msgid "Magnifier Zoom in"
+msgstr "Přiblížit"
+
+#: ../src/Pages/Shortcuts/list.vala:290
+msgid "Magnifier Zoom out"
+msgstr "Oddálit"
+
+#: ../src/Pages/Shortcuts/list.vala:291
+msgid "Toggle On Screen Keyboard"
+msgstr "Zobrazit klávenici na obrazovce"
+
+#: ../src/Pages/Shortcuts/list.vala:292
+msgid "Toggle Screenreader"
+msgstr "Zobrazit odečítač obrazovky"
+
+#: ../src/Pages/Shortcuts/list.vala:293
+msgid "Toggle High Contrast"
+msgstr "Vysoký kontrast"
+
+#: ../src/Pages/Shortcuts/list.vala:294
+msgid "Next Keyboard Layout"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/list.vala:295
+msgid "Previous Keyboard Layout"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:9
+msgid "If you reassign the shortcut to \\"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
+msgid "Reassign"
+msgstr "Změnit přiřazení"
+
+#: ../src/Pages/Shortcuts/shortcut.vala:41
+msgid "Disabled"
+msgstr "Zakázáno"
+
+#: ../src/Pages/Shortcuts/shortcut.vala:50
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: ../src/Pages/Shortcuts/display.vala:42
+#: ../src/Pages/Shortcuts/display.vala:45
+msgid "Add"
+msgstr "Přidat"

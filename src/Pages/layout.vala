@@ -383,18 +383,4 @@ namespace Pantheon.Keyboard.LayoutPage {
             advanced_settings.set_visible_panel_from_layout (active_layout.name);
         }
     }
-
-	// creates a list store from a string vector
-	Gtk.ListStore create_list_store (string[] strv)
-	{
-		Gtk.ListStore list_store = new Gtk.ListStore (1, typeof (string));
-		Gtk.TreeIter iter;
-
-		foreach (string item in strv) {
-			list_store.append (out iter);
-			list_store.set (iter, 0, item);
-		}
-
-		return list_store;
-	}
 }

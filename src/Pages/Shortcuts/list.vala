@@ -58,7 +58,6 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.WM,
 						Schema.WM,
 						Schema.WM,
-						Schema.WM,
 						Schema.GALA,
 						Schema.GALA
 					},
