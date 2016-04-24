@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-21 08:32-0300\n"
-"PO-Revision-Date: 2016-04-16 13:28+0000\n"
-"Last-Translator: Nikos <Unknown>\n"
+"PO-Revision-Date: 2016-04-23 23:36+0000\n"
+"Last-Translator: nilux <contact@nilux.org>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:36+0000\n"
+"X-Launchpad-Export-Date: 2016-04-24 06:03+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/keyboard.vala:7
@@ -23,7 +23,7 @@ msgstr "Clavier"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Configurer les comportements, dispositions et raccourcis du clavier"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -373,6 +373,8 @@ msgstr "Verr. maj. bascule maj., ce qui affecte toutes les touches"
 #: ../src/Pages/Options/option_handler.vala:166
 msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
 msgstr ""
+"Faire de Verr. maj. un Contrôle supplémentaire, mais garder le même nom "
+"symbolique (Caps_Lock)"
 
 #: ../src/Pages/Options/option_handler.vala:169
 msgid "Alt/Win key behavior"
@@ -462,38 +464,42 @@ msgstr "Maj. n'annule pas Verr. numérique, mais sélectionne le niveau 3"
 
 #: ../src/Pages/Options/option_handler.vala:201
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
+msgstr "Les touches spéciales (Ctrl+Alt+<key>) sont traitées dans un serveur"
 
 #: ../src/Pages/Options/option_handler.vala:202
 msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Clavier aluminium Apple : émulation des touches PC (Impr. écr. ; défil. ; "
+"pause ; Verr. Num.)"
 
 #: ../src/Pages/Options/option_handler.vala:203
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Maj. annule Verr. maj."
 
 #: ../src/Pages/Options/option_handler.vala:204
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Activer des caractères typographiques supplémentaires"
 
 #: ../src/Pages/Options/option_handler.vala:205
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Les deux touches Maj. activent ou désactivent Verr. maj."
 
 #: ../src/Pages/Options/option_handler.vala:206
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Les deux touches majuscule activent le verrouillage majuscule, une le "
+"désactive"
 
 #: ../src/Pages/Options/option_handler.vala:207
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "Les deux touches Maj. activent ou désactivent le blocage majuscule"
 
 #: ../src/Pages/Options/option_handler.vala:208
 msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
+msgstr "Activer ou désactiver les Touches de curseur avec maj. + Verr. num."
 
 #: ../src/Pages/Options/option_handler.vala:209
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
@@ -563,131 +569,143 @@ msgstr ""
 
 #: ../src/Pages/Options/option_handler.vala:227
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "Utiliser la barre d'espacement pour insérer un espace insécable"
 
 #: ../src/Pages/Options/option_handler.vala:228
 msgid "Usual space at any level"
-msgstr ""
+msgstr "L'espace habituel quelque soit le niveau"
 
 #: ../src/Pages/Options/option_handler.vala:229
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Espace insécable au niveau 2"
 
 #: ../src/Pages/Options/option_handler.vala:230
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Espace insécable au niveau 3"
 
 #: ../src/Pages/Options/option_handler.vala:231
 msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr ""
+msgstr "Espace insécable au niveau 3, rien au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:232
 msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
-msgstr ""
+msgstr "Espace insécable au niveau 3, espace insécable fin au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:233
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "Espace insécable au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:234
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
-msgstr ""
+msgstr "Espace insécable au niveau 4, espace insécable fin au niveau 6"
 
 #: ../src/Pages/Options/option_handler.vala:235
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
+"Espace insécable au niveau 4, espace insécable fin au niveau 6 (via Ctrl. + "
+"maj.)"
 
 #: ../src/Pages/Options/option_handler.vala:236
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "Antiliant à chasse nulle au niveau 2"
 
 #: ../src/Pages/Options/option_handler.vala:237
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
+"Antiliant à chasse nulle au niveau 2, liant à chasse nulle au niveau 3"
 
 #: ../src/Pages/Options/option_handler.vala:238
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Antiliant à chasse nulle au niveau 2, liant à chasse nulle au niveau 3, "
+"espace insécable au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:239
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
-msgstr ""
+msgstr "Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3"
 
 #: ../src/Pages/Options/option_handler.vala:240
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3, rien au "
+"niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:241
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
+"Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3, liant à "
+"chasse nulle au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:242
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
+"Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3, espace "
+"insécable fin au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:243
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
+"Antiliant à chasse nulle au niveau 3, liant à chasse nulle au niveau 4"
 
 #: ../src/Pages/Options/option_handler.vala:246
 msgid "Japanese keyboard options"
-msgstr ""
+msgstr "Options de clavier japonais"
 
 #: ../src/Pages/Options/option_handler.vala:247
 msgid "Kana Lock key is locking"
-msgstr ""
+msgstr "La touche « verrouillage Kana » verrouille"
 
 #: ../src/Pages/Options/option_handler.vala:248
 msgid "NICOLA-F style Backspace"
-msgstr ""
+msgstr "Eff. Arr. du type NICOLA-F"
 
 #: ../src/Pages/Options/option_handler.vala:249
 msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
+msgstr "Faire du Zenkaku Hankaku un Échap. supplémentaire."
 
 #: ../src/Pages/Options/option_handler.vala:252
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Ajout de l'accent circonflexe espéranto (supersigno)"
 
 #: ../src/Pages/Options/option_handler.vala:253
 msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
+msgstr "Aller à la touche correspondante d'un clavier Qwerty"
 
 #: ../src/Pages/Options/option_handler.vala:254
 msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
+msgstr "Aller à la touche correspondante d'un clavier Dvorak"
 
 #: ../src/Pages/Options/option_handler.vala:255
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "Aller à la touche correspondante d'une disposition Colemak"
 
 #: ../src/Pages/Options/option_handler.vala:258
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Séquence de touches pour tuer le serveur X"
 
 #: ../src/Pages/Options/option_handler.vala:259
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control + Alt + Eff. arrière"
 
 #: ../src/Pages/layout.vala:24
 msgid "Allow different layouts for individual windows:"
@@ -723,7 +741,7 @@ msgstr "Accessibilité"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Personnalisé"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -764,15 +782,15 @@ msgstr "Écrivez pour tester vos paramètres..."
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Entrer une commande"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "Commande"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "Raccourci"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -1060,15 +1078,15 @@ msgstr "Activer le mode Contraste Élevé"
 
 #: ../src/Pages/Shortcuts/list.vala:294
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Agencement de clavier suivant"
 
 #: ../src/Pages/Shortcuts/list.vala:295
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Agencement de clavier précédent"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to \\"
-msgstr ""
+msgstr "Si vous réassignez le raccourci clavier vers \\"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 msgid "Reassign"
@@ -1080,7 +1098,7 @@ msgstr "Désactivé"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
