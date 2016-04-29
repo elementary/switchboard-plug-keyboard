@@ -270,15 +270,12 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             new_label (panel, _("Nicola F Backspace:"), 0);
             new_xkb_option_switch ( panel, "japan:nicola_f_bs", 0);
-            new_switch (panel, 0);
 
             new_label (panel, _("Kana Lock:"), 1);
             new_xkb_option_switch ( panel, "japan:kana_lock", 1);
-            new_switch (panel, 1);
 
             new_label (panel, _("Zenkaku Hankaku as Escape:"), 2);
             new_xkb_option_switch ( panel, "japan:hztg_escape", 2);
-            new_switch (panel, 2);
 
             panel.show_all ();
 
@@ -287,14 +284,14 @@ namespace Pantheon.Keyboard.LayoutPage {
 
 
         // Function that adds a new switch to panel, and sets it up visually
-        // and aligning it
+        // and aligns it with external buttons
         private Gtk.Switch new_switch (Gtk.Grid panel, int v_position, int h_position = 1) {
             var new_switch = new Gtk.Switch ();
             new_switch.halign = Gtk.Align.START;
             new_switch.valign = Gtk.Align.CENTER;
 
-            // There is a bug that makes the switch go outside its socket, this
-            // is a workaround for that.
+            // There is a bug that makes the switch go outside its socket, 
+            // enclosing the switch in a box fixes that.
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
             box.pack_start (new_switch, false, false, 0);
             panel.attach (box, h_position, v_position, 1, 1);
@@ -303,7 +300,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             return new_switch;
         }
 
-        // Function that adds a new switch but also cofigures its functionality
+        // Function that adds a new switch but also configures its functionality
         // to enable/disable an xkb-option
         private Gtk.Switch new_xkb_option_switch
             (Gtk.Grid panel, string xkb_command, int v_position, int h_position = 1) {
@@ -323,14 +320,6 @@ namespace Pantheon.Keyboard.LayoutPage {
                     modifier.update_active_command ( xkb_command );
                 } else {
                     modifier.update_active_command ( "" );
-                }
-            });
-
-            settings.per_window_changed.connect (() => {
-                if (modifier.get_active_command () == "") {
-                    new_switch.active = true;
-                } else {
-                    new_switch.active = false;
                 }
             });
 
