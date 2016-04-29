@@ -24,6 +24,7 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Pages/Layout/add_layout.vala
     Pages/Layout/handler.vala
     Pages/Layout/settings.vala
+    Pages/Layout/xkb_modifier.vala
     
     Pages/shortcuts.vala 
     Pages/Shortcuts/settings.vala

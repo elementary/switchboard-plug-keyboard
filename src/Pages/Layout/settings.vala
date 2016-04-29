@@ -270,6 +270,61 @@ namespace Pantheon.Keyboard.LayoutPage
         // signal when the variable per_window is changed by gsettings
         public signal void per_window_changed ();
 
+        // An array of all view switches that modify in any way xkb_options
+        // the value of xkb_options is computed as an array of all active_command properties
+        private Xkb_modifier [] xkb_options_modifiers;
+
+        void update_modifiers_from_gsettings () {
+            string [] xkb_options = settings.get_strv ("xkb-options");
+            foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
+                bool modifier_is_default = true;
+                foreach ( string xkb_command in xkb_options ){
+                    if ( xkb_command in modifier.xkb_option_commands ) {
+                        modifier.set_active_command ( xkb_command );
+                        modifier_is_default = false;
+                        break;
+                    } else {
+                        continue;
+                    }
+                }
+                if ( modifier_is_default ) {
+                    modifier.set_active_command ( modifier.get_default_command () );
+                }
+            }
+        }
+
+        void update_gsettings_from_modifiers () {
+            string [] new_xkb_options = {};
+            string [] old_xkb_options = settings.get_strv ("xkb-options");
+            // adds all options that come from modifiers
+            foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
+                if ( "" != modifier.get_active_command () )
+                    new_xkb_options += modifier.get_active_command ();
+            }
+
+            // adds all options that are on gsettings but can't be modified
+            // through modifiers to allow compatibility options that cannot
+            // be changed through the GUI.
+            foreach ( string xkb_command in old_xkb_options ) {
+                bool xkb_option_in_modifiers = false;
+                foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
+                    if ( xkb_command in modifier.xkb_option_commands ) {
+                        xkb_option_in_modifiers = true;
+                        break;
+                    }
+                }
+
+                if ( xkb_option_in_modifiers == false ) {
+                    new_xkb_options += xkb_command;
+                }
+            }
+            // Writing to GSettiongs will send a signal telling it changed but we
+            // don't want to trigger the update of all modifiers.
+            currently_writing = true;
+            settings.set_strv ("xkb-options", new_xkb_options);
+            currently_writing = false;
+        }
+
         public void parse_default () {
             var file = File.new_for_path ("/etc/default/keyboard");
 
@@ -318,8 +373,25 @@ namespace Pantheon.Keyboard.LayoutPage
             }
         }
 
-        public void reset_all ()
-        {
+        public void add_xkb_modifier (Xkb_modifier modifier) {
+            xkb_options_modifiers += modifier;
+            modifier.active_command_updated.connect (() => {
+                update_gsettings_from_modifiers ();
+            });
+            update_modifiers_from_gsettings ();
+        }
+
+        public Xkb_modifier get_xkb_modifier_by_name (string name) {
+            foreach (Xkb_modifier modifier in xkb_options_modifiers) {
+                if ( modifier.name == name ) {
+                    return modifier;
+                }
+            }
+
+            return null;
+        }
+
+        public void reset_all () {
             layouts.remove_all ();
             parse_default ();
         }
@@ -333,8 +405,7 @@ namespace Pantheon.Keyboard.LayoutPage
             return instance;
         }
 
-        private LayoutSettings ()
-        {
+        private LayoutSettings () {
             settings = new Settings ("org.gnome.desktop.input-sources");
             layouts = new LayoutList ();
 
@@ -346,6 +417,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
             update_list_from_gsettings ();
             update_active_from_gsettings ();
+            update_modifiers_from_gsettings ();
 
             layouts.layouts_changed.connect (() => {
                 write_list_to_gsettings ();
@@ -361,6 +433,14 @@ namespace Pantheon.Keyboard.LayoutPage
 
             settings.changed["current"].connect (() => {
                 update_active_from_gsettings ();
+            });
+
+            settings.changed["xkb-options"].connect (() => {
+                if (currently_writing) {
+                    return;
+                } else {
+                    update_modifiers_from_gsettings ();
+                }
             });
 
             if (layouts.length == 0)
