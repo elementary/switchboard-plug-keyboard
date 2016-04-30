@@ -7,14 +7,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-04-21 08:32-0300\n"
+"POT-Creation-Date: 2016-04-29 14:19-0700\n"
 "PO-Revision-Date: 2014-12-17 04:46+0000\n"
 "Last-Translator: Alfie Ilhamsyah <Unknown>\n"
 "Language-Team: Indonesian <id@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-22 05:36+0000\n"
+"X-Launchpad-Export-Date: 2016-04-30 05:33+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/keyboard.vala:7
@@ -41,689 +41,139 @@ msgstr "Susunan"
 msgid "Options"
 msgstr ""
 
-#: ../src/Pages/Layout/add_layout.vala:19
-msgid "Language:"
-msgstr ""
-
-#: ../src/Pages/Layout/add_layout.vala:20
-msgid "Layout:"
-msgstr ""
-
-#: ../src/Pages/Layout/add_layout.vala:61
-msgid "Add Layout"
-msgstr ""
-
-#: ../src/Pages/Layout/add_layout.vala:62
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:10
-msgid "Cancel"
-msgstr ""
-
-#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr ""
-
-#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
-#: ../src/Pages/Shortcuts/display.vala:43
-#: ../src/Pages/Shortcuts/display.vala:46
-msgid "Remove"
-msgstr ""
-
-#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "Pindah ke atas"
-
-#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "Geser bawah"
-
-#: ../src/Pages/Layout/handler.vala:75
-msgid "Default"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:15
-msgid "None"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:94
-msgid "Key to choose 3rd level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:95
-#: ../src/Pages/Options/option_handler.vala:188
-msgid "Right Ctrl"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:96
-#: ../src/Pages/Options/option_handler.vala:186
-msgid "Menu"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:97
-msgid "Any Win key"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:98
-#: ../src/Pages/Options/option_handler.vala:184
-msgid "Left Win"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:99
-#: ../src/Pages/Options/option_handler.vala:185
-msgid "Right Win"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:100
-msgid "Any Alt key"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:101
-msgid "Left Alt"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:102
-#: ../src/Pages/Options/option_handler.vala:183
-msgid "Right Alt"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:103
-msgid "Right Alt, Shift+Right Alt key is Multi_Key"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:104
-msgid "Right Alt key never chooses 3rd level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:105
-msgid "Enter on keypad"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:106
-#: ../src/Pages/Options/option_handler.vala:127
-#: ../src/Pages/Options/option_handler.vala:189
-msgid "Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:107
-msgid "Backslash"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:108
-#: ../src/Pages/Options/option_handler.vala:190
-msgid "<Less/Greater>"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:109
-msgid ""
-"Caps Lock chooses 3rd level, acts as onetime lock when pressed together with "
-"another 3rd-level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:110
-msgid ""
-"Backslash chooses 3rd level, acts as onetime lock when pressed together with "
-"another 3rd-level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:111
-msgid ""
-"<Less/Greater> chooses 3rd level, acts as onetime lock when pressed together "
-"with another 3rd-level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:114
-msgid "Ctrl key position"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:115
-msgid "Caps Lock as Ctrl"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:116
-msgid "Left Ctrl as Meta"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:117
-msgid "Swap Ctrl and Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:118
-msgid "At left of 'A'"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:119
-msgid "At bottom left"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:120
-msgid "Right Ctrl as Right Alt"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:121
-msgid "Menu as Right Ctrl"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:122
-msgid "Right Alt as Right Ctrl"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:125
-msgid "Use keyboard LED to show alternative layout"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:126
-msgid "Num Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:128
-#: ../src/Pages/Options/option_handler.vala:193
-msgid "Scroll Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:131
-msgid "Numeric keypad layout selection"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:132
-msgid "Legacy"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:133
-msgid "Unicode additions (arrows and math operators)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:134
-msgid ""
-"Unicode additions (arrows and math operators). Math operators on default "
-"level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:135
-msgid "Legacy Wang 724"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:136
-msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:137
-msgid ""
-"Wang 724 keypad with Unicode additions (arrows and math operators). Math "
-"operators on default level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:138
-msgid "Hexadecimal"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:139
-msgid "ATM/phone-style"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:142
-msgid "Numeric keypad delete key behaviour"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:143
-msgid "Legacy key with dot"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:144
-msgid "Legacy key with comma"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:145
-msgid "Four-level key with dot"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:146
-msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:147
-msgid "Four-level key with comma"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:148
-msgid "Four-level key with momayyez"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:149
-msgid "Four-level key with abstract separators"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:150
-msgid "Semi-colon on third level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:153
-msgid "Caps Lock key behavior"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:154
-msgid "Caps Lock uses internal capitalization. Shift \"pauses\" Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:155
-msgid ""
-"Caps Lock uses internal capitalization. Shift doesn't affect Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:156
-msgid "Caps Lock acts as Shift with locking. Shift \"pauses\" Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:157
-msgid "Caps Lock acts as Shift with locking. Shift doesn't affect Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:158
-msgid "Caps Lock toggles normal capitalization of alphabetic characters"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:159
-msgid "Make Caps Lock an additional Num Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:160
-msgid "Swap ESC and Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:161
-msgid "Make Caps Lock an additional ESC"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:162
-msgid "Make Caps Lock an additional Backspace"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:163
-msgid "Make Caps Lock an additional Super"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:164
-msgid "Make Caps Lock an additional Hyper"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:165
-msgid "Caps Lock toggles Shift so all keys are affected"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:166
-msgid "Make Caps Lock an additional Control but keep the Caps_Lock keysym"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:169
-msgid "Alt/Win key behavior"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:170
-msgid "Add the standard behavior to Menu key"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:171
-msgid "Alt and Meta are on Alt keys"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:172
-msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:173
-msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:174
-msgid "Meta is mapped to Win keys"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:175
-msgid "Meta is mapped to Left Win"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:176
-msgid "Hyper is mapped to Win-keys"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:177
-msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:178
-msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:179
-msgid "Alt is swapped with Win"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:182
-msgid "Compose key position"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:187
-msgid "Left Ctrl"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:191
-#: ../src/Pages/Shortcuts/list.vala:248
-msgid "Pause"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:192
-msgid "PrtSc"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:196
-msgid "Miscellaneous compatibility options"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:197
-msgid "Default numeric keypad keys"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:198
-msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:199
-msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:200
-msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:201
-msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:202
-msgid ""
-"Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
-"Lock)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:203
-msgid "Shift cancels Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:204
-msgid "Enable extra typographic characters"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:205
-msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:206
-msgid ""
-"Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:207
-msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:208
-msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:209
-msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:212
-msgid "Adding currency signs to certain keys"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:213
-msgid "Euro on E"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:214
-msgid "Euro on 2"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:215
-msgid "Euro on 4"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:216
-msgid "Euro on 5"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:217
-msgid "Rupee on 4"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:220
-msgid "Key to choose 5th level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:221
-msgid ""
-"<Less/Greater> chooses 5th level, locks when pressed together with another "
-"5th-level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:222
-msgid ""
-"Right Alt chooses 5th level, locks when pressed together with another 5th-"
-"level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:223
-msgid ""
-"Left Win chooses 5th level, locks when pressed together with another 5th-"
-"level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:224
-msgid ""
-"Right Win chooses 5th level, locks when pressed together with another 5th-"
-"level-chooser"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:227
-msgid "Using space key to input non-breakable space character"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:228
-msgid "Usual space at any level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:229
-msgid "Non-breakable space character at second level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:230
-msgid "Non-breakable space character at third level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:231
-msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:232
-msgid ""
-"Non-breakable space character at third level, thin non-breakable space "
-"character at fourth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:233
-msgid "Non-breakable space character at fourth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:234
-msgid ""
-"Non-breakable space character at fourth level, thin non-breakable space "
-"character at sixth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:235
-msgid ""
-"Non-breakable space character at fourth level, thin non-breakable space "
-"character at sixth level (via Ctrl+Shift)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:236
-msgid "Zero-width non-joiner character at second level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:237
-msgid ""
-"Zero-width non-joiner character at second level, zero-width joiner character "
-"at third level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:238
-msgid ""
-"Zero-width non-joiner character at second level, zero-width joiner character "
-"at third level, non-breakable space character at fourth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:239
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:240
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level, nothing at fourth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:241
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level, zero-width joiner at fourth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:242
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level, thin non-breakable space at fourth level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:243
-msgid ""
-"Zero-width non-joiner character at third level, zero-width joiner at fourth "
-"level"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:246
-msgid "Japanese keyboard options"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:247
-msgid "Kana Lock key is locking"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:248
-msgid "NICOLA-F style Backspace"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:249
-msgid "Make Zenkaku Hankaku an additional ESC"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:252
-msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:253
-msgid "To the corresponding key in a Qwerty keyboard"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:254
-msgid "To the corresponding key in a Dvorak keyboard"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:255
-msgid "To the corresponding key in a Colemak layout"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:258
-msgid "Key sequence to kill the X server"
-msgstr ""
-
-#: ../src/Pages/Options/option_handler.vala:259
-msgid "Control + Alt + Backspace"
-msgstr ""
-
-#: ../src/Pages/layout.vala:24
+#: ../src/Pages/layout.vala:97
 msgid "Allow different layouts for individual windows:"
 msgstr "Izinkan tata letak yang berbeda untuk masing-masing jendela:"
 
-#: ../src/Pages/layout.vala:55
+#: ../src/Pages/layout.vala:110
+msgid "Compose key:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
+#: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
+msgid "Disabled"
+msgstr ""
+
+#: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
+msgid "Right Alt (Alt Gr)"
+msgstr ""
+
+#: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
+#: ../src/Pages/layout.vala:255
+msgid "Right Super"
+msgstr ""
+
+#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
+#: ../src/Pages/layout.vala:251
+msgid "Right Control"
+msgstr ""
+
+#: ../src/Pages/layout.vala:116
+msgid "Left Control"
+msgstr ""
+
+#: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
+#: ../src/Pages/layout.vala:254
+msgid "Left Super"
+msgstr ""
+
+#: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
+#: ../src/Pages/layout.vala:229
+msgid "Caps Lock"
+msgstr ""
+
+#: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
+msgid "Pause"
+msgstr ""
+
+#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
+msgid "Menu"
+msgstr ""
+
+#: ../src/Pages/layout.vala:127
+msgid "Caps Lock function:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:131
+msgid "Num Lock"
+msgstr ""
+
+#: ../src/Pages/layout.vala:132
+msgid "Escape"
+msgstr ""
+
+#: ../src/Pages/layout.vala:133
+msgid "Backspace"
+msgstr ""
+
+#: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
+msgid "Super"
+msgstr ""
+
+#: ../src/Pages/layout.vala:135
+msgid "Hyper"
+msgstr ""
+
+#: ../src/Pages/layout.vala:137
+msgid "Control"
+msgstr ""
+
+#: ../src/Pages/layout.vala:138
+msgid "Swap With Control"
+msgstr ""
+
+#: ../src/Pages/layout.vala:139
+msgid "Swap With Escape"
+msgstr ""
+
+#: ../src/Pages/layout.vala:181
 msgid "Type to test your layout…"
 msgstr "Ketikkan untuk menguji tata letak..."
 
-#: ../src/Pages/shortcuts.vala:43
-msgid "Windows"
+#: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
+msgid "Key to choose third level:"
 msgstr ""
 
-#: ../src/Pages/shortcuts.vala:44
-msgid "Workspaces"
+#: ../src/Pages/layout.vala:225
+msgid "Alt"
 msgstr ""
 
-#: ../src/Pages/shortcuts.vala:45
-msgid "Screenshots"
+#: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
+#: ../src/Pages/layout.vala:253
+msgid "Right Alt"
 msgstr ""
 
-#: ../src/Pages/shortcuts.vala:46
-msgid "Applications"
+#: ../src/Pages/layout.vala:227
+msgid "Left Alt"
 msgstr ""
 
-#: ../src/Pages/shortcuts.vala:47
-msgid "Media"
+#: ../src/Pages/layout.vala:230
+msgid "Backslash"
 msgstr ""
 
-#: ../src/Pages/shortcuts.vala:48
-msgid "Universal Access"
+#: ../src/Pages/layout.vala:248
+msgid "Key to choose fifth level:"
 msgstr ""
 
-#: ../src/Pages/shortcuts.vala:49
-msgid "Custom"
+#: ../src/Pages/layout.vala:256
+msgid "Less/Grater"
 msgstr ""
 
-#: ../src/Pages/behaviour.vala:21
-msgid "<b>Repeat Keys:</b>"
+#: ../src/Pages/layout.vala:271
+msgid "Nicola F Backspace:"
 msgstr ""
 
-#: ../src/Pages/behaviour.vala:22
-msgid "Delay:"
+#: ../src/Pages/layout.vala:274
+msgid "Kana Lock:"
 msgstr ""
 
-#: ../src/Pages/behaviour.vala:23
-msgid "Interval:"
-msgstr "Jangka waktu:"
-
-#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
-#: ../src/Pages/behaviour.vala:136
-msgid "milliseconds"
+#: ../src/Pages/layout.vala:277
+msgid "Zenkaku Hankaku as Escape:"
 msgstr ""
 
-#: ../src/Pages/behaviour.vala:133
-msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>Kedipan Kursor:</b>"
-
-#: ../src/Pages/behaviour.vala:134
-msgid "Speed:"
+#: ../src/Pages/Shortcuts/shortcut.vala:50
+msgid "Ctrl"
 msgstr ""
-
-#: ../src/Pages/behaviour.vala:135
-msgid "Duration:"
-msgstr ""
-
-#: ../src/Pages/behaviour.vala:137
-msgid "seconds"
-msgstr ""
-
-#: ../src/Pages/behaviour.vala:244
-msgid "Type to test your settings…"
-msgstr "Ketikkan untuk menguji pengaturan anda..."
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
@@ -1033,19 +483,471 @@ msgstr ""
 msgid "If you reassign the shortcut to \\"
 msgstr ""
 
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:10
+#: ../src/Pages/Layout/add_layout.vala:63
+msgid "Cancel"
+msgstr ""
+
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 msgid "Reassign"
-msgstr ""
-
-#: ../src/Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr ""
-
-#: ../src/Pages/Shortcuts/shortcut.vala:50
-msgid "Ctrl"
 msgstr ""
 
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
 msgid "Add"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
+#: ../src/Pages/Layout/display.vala:54
+msgid "Remove"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:21
+msgid "<b>Repeat Keys:</b>"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:22
+msgid "Delay:"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:23
+msgid "Interval:"
+msgstr "Jangka waktu:"
+
+#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
+#: ../src/Pages/behaviour.vala:136
+msgid "milliseconds"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:133
+msgid "<b>Cursor Blinking:</b>"
+msgstr "<b>Kedipan Kursor:</b>"
+
+#: ../src/Pages/behaviour.vala:134
+msgid "Speed:"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:135
+msgid "Duration:"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:137
+msgid "seconds"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:244
+msgid "Type to test your settings…"
+msgstr "Ketikkan untuk menguji pengaturan anda..."
+
+#: ../src/Pages/Options/option_handler.vala:15
+msgid "None"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:94
+msgid "Ctrl key position"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:95
+msgid "Caps Lock as Ctrl"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:96
+msgid "Left Ctrl as Meta"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:97
+msgid "Swap Ctrl and Caps Lock"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:98
+msgid "At left of 'A'"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:99
+msgid "At bottom left"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:100
+msgid "Right Ctrl as Right Alt"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:101
+msgid "Menu as Right Ctrl"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:102
+msgid "Right Alt as Right Ctrl"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:105
+msgid "Numeric keypad layout selection"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:106
+msgid "Legacy"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:107
+msgid "Unicode additions (arrows and math operators)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:108
+msgid ""
+"Unicode additions (arrows and math operators). Math operators on default "
+"level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:109
+msgid "Legacy Wang 724"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:110
+msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:111
+msgid ""
+"Wang 724 keypad with Unicode additions (arrows and math operators). Math "
+"operators on default level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:112
+msgid "Hexadecimal"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:113
+msgid "ATM/phone-style"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:116
+msgid "Numeric keypad delete key behaviour"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:117
+msgid "Legacy key with dot"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:118
+msgid "Legacy key with comma"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:119
+msgid "Four-level key with dot"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:120
+msgid "Four-level key with dot, latin-9 restriction"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:121
+msgid "Four-level key with comma"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:122
+msgid "Four-level key with momayyez"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:123
+msgid "Four-level key with abstract separators"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:124
+msgid "Semi-colon on third level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:127
+msgid "Alt/Win key behavior"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:128
+msgid "Add the standard behavior to Menu key"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:129
+msgid "Alt and Meta are on Alt keys"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:130
+msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:131
+msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:132
+msgid "Meta is mapped to Win keys"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:133
+msgid "Meta is mapped to Left Win"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:134
+msgid "Hyper is mapped to Win-keys"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:135
+msgid "Alt is mapped to Right Win, Super to Menu"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:136
+msgid "Alt is mapped to Win keys (and the usual Alt keys)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:137
+msgid "Alt is swapped with Win"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:140
+msgid "Miscellaneous compatibility options"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:141
+msgid "Default numeric keypad keys"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:142
+msgid "Numeric keypad keys always enter digits (as in Mac OS)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:143
+msgid "Shift with numeric keypad keys works as in MS Windows"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:144
+msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:145
+msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:146
+msgid ""
+"Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
+"Lock)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:147
+msgid "Shift cancels Caps Lock"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:148
+msgid "Enable extra typographic characters"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:149
+msgid "Both Shift-Keys together toggle Caps Lock"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:150
+msgid ""
+"Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:151
+msgid "Both Shift-Keys together toggle ShiftLock"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:152
+msgid "Toggle PointerKeys with Shift + NumLock"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:153
+msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:156
+msgid "Adding currency signs to certain keys"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:157
+msgid "Euro on E"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:158
+msgid "Euro on 2"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:159
+msgid "Euro on 4"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:160
+msgid "Euro on 5"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:161
+msgid "Rupee on 4"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:164
+msgid "Using space key to input non-breakable space character"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:165
+msgid "Usual space at any level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:166
+msgid "Non-breakable space character at second level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:167
+msgid "Non-breakable space character at third level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:168
+msgid "Non-breakable space character at third level, nothing at fourth leve"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:169
+msgid ""
+"Non-breakable space character at third level, thin non-breakable space "
+"character at fourth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:170
+msgid "Non-breakable space character at fourth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:171
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:172
+msgid ""
+"Non-breakable space character at fourth level, thin non-breakable space "
+"character at sixth level (via Ctrl+Shift)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:173
+msgid "Zero-width non-joiner character at second level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:174
+msgid ""
+"Zero-width non-joiner character at second level, zero-width joiner character "
+"at third level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:175
+msgid ""
+"Zero-width non-joiner character at second level, zero-width joiner character "
+"at third level, non-breakable space character at fourth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:176
+msgid ""
+"Zero-width non-joiner character at second level, non-breakable space "
+"character at third level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:177
+msgid ""
+"Zero-width non-joiner character at second level, non-breakable space "
+"character at third level, nothing at fourth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:178
+msgid ""
+"Zero-width non-joiner character at second level, non-breakable space "
+"character at third level, zero-width joiner at fourth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:179
+msgid ""
+"Zero-width non-joiner character at second level, non-breakable space "
+"character at third level, thin non-breakable space at fourth level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:180
+msgid ""
+"Zero-width non-joiner character at third level, zero-width joiner at fourth "
+"level"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:183
+msgid "Adding Esperanto circumflexes (supersigno)"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:184
+msgid "To the corresponding key in a Qwerty keyboard"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:185
+msgid "To the corresponding key in a Dvorak keyboard"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:186
+msgid "To the corresponding key in a Colemak layout"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:189
+msgid "Key sequence to kill the X server"
+msgstr ""
+
+#: ../src/Pages/Options/option_handler.vala:190
+msgid "Control + Alt + Backspace"
+msgstr ""
+
+#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr ""
+
+#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "Pindah ke atas"
+
+#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "Geser bawah"
+
+#: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
+#: ../src/Pages/Layout/add_layout.vala:105
+msgid "Default"
+msgstr ""
+
+#: ../src/Pages/Layout/add_layout.vala:19
+msgid "Language:"
+msgstr ""
+
+#: ../src/Pages/Layout/add_layout.vala:20
+msgid "Layout:"
+msgstr ""
+
+#: ../src/Pages/Layout/add_layout.vala:62
+msgid "Add Layout"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:43
+msgid "Windows"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:44
+msgid "Workspaces"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:45
+msgid "Screenshots"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:46
+msgid "Applications"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:47
+msgid "Media"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:48
+msgid "Universal Access"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:49
+msgid "Custom"
 msgstr ""
