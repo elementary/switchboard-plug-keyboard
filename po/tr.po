@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-29 14:19-0700\n"
-"PO-Revision-Date: 2015-06-18 23:03+0000\n"
-"Last-Translator: Furkan Ege Öztürk <Unknown>\n"
+"PO-Revision-Date: 2016-04-30 12:48+0000\n"
+"Last-Translator: Uğurhan <turkerugurhan@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-30 05:33+0000\n"
+"X-Launchpad-Export-Date: 2016-05-01 05:36+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 "Language: tr\n"
 
@@ -24,7 +24,7 @@ msgstr "Klavye"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Klavye davranışını, düzenini ve kısayollarını ayarlayın"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -48,7 +48,7 @@ msgstr "Birbirinden ayrı pencereler için farklı düzenlere izin ver:"
 
 #: ../src/Pages/layout.vala:110
 msgid "Compose key:"
-msgstr ""
+msgstr "Birleştirme (Compose) tuşu:"
 
 #: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
 #: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
@@ -57,26 +57,26 @@ msgstr "Devre dışı"
 
 #: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
 msgid "Right Alt (Alt Gr)"
-msgstr ""
+msgstr "Sağ Alt (Alt Gr)"
 
 #: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
 #: ../src/Pages/layout.vala:255
 msgid "Right Super"
-msgstr ""
+msgstr "Sağ Super"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
 #: ../src/Pages/layout.vala:251
 msgid "Right Control"
-msgstr ""
+msgstr "Sağ Control"
 
 #: ../src/Pages/layout.vala:116
 msgid "Left Control"
-msgstr ""
+msgstr "Sol Control"
 
 #: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
 #: ../src/Pages/layout.vala:254
 msgid "Left Super"
-msgstr ""
+msgstr "Sol Super"
 
 #: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
 #: ../src/Pages/layout.vala:229
@@ -93,19 +93,19 @@ msgstr "Menü"
 
 #: ../src/Pages/layout.vala:127
 msgid "Caps Lock function:"
-msgstr ""
+msgstr "Caps Lock fonksiyonu:"
 
 #: ../src/Pages/layout.vala:131
 msgid "Num Lock"
-msgstr ""
+msgstr "Num Lock"
 
 #: ../src/Pages/layout.vala:132
 msgid "Escape"
-msgstr ""
+msgstr "Escape"
 
 #: ../src/Pages/layout.vala:133
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
 msgid "Super"
@@ -113,19 +113,19 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:135
 msgid "Hyper"
-msgstr ""
+msgstr "Hyper"
 
 #: ../src/Pages/layout.vala:137
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../src/Pages/layout.vala:138
 msgid "Swap With Control"
-msgstr ""
+msgstr "Control ile değiştir"
 
 #: ../src/Pages/layout.vala:139
 msgid "Swap With Escape"
-msgstr ""
+msgstr "Escape ile değiştir"
 
 #: ../src/Pages/layout.vala:181
 msgid "Type to test your layout…"
@@ -137,7 +137,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:225
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
 #: ../src/Pages/layout.vala:253
@@ -162,31 +162,31 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:271
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F Backspace:"
 
 #: ../src/Pages/layout.vala:274
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock:"
 
 #: ../src/Pages/layout.vala:277
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku as Escape:"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Komut gir"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "Komut"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "Kısayol"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -242,11 +242,11 @@ msgstr "Pencereleri tersine çevir"
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr ""
+msgstr "Pencere Görünümü"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr ""
+msgstr "Tüm Pencereleri Göster"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
@@ -474,15 +474,15 @@ msgstr "Yüksek Karşıtlığı aç"
 
 #: ../src/Pages/Shortcuts/list.vala:294
 msgid "Next Keyboard Layout"
-msgstr ""
+msgstr "Sonraki Klavye Düzeni"
 
 #: ../src/Pages/Shortcuts/list.vala:295
 msgid "Previous Keyboard Layout"
-msgstr ""
+msgstr "Önceki Klavye Düzeni"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to \\"
-msgstr ""
+msgstr "Eğer kısayolu tekrar \\ tuşuna atarsanız"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:10
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -555,7 +555,7 @@ msgstr "Caps Lock  Ctrl olur"
 
 #: ../src/Pages/Options/option_handler.vala:96
 msgid "Left Ctrl as Meta"
-msgstr ""
+msgstr "Meta olarak Sol Ctrl"
 
 #: ../src/Pages/Options/option_handler.vala:97
 msgid "Swap Ctrl and Caps Lock"
@@ -575,63 +575,68 @@ msgstr "Sağ Alt Sağ Ctrl olur"
 
 #: ../src/Pages/Options/option_handler.vala:101
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Menü olarak Sağ Ctrl"
 
 #: ../src/Pages/Options/option_handler.vala:102
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Sağ Ctrl olarak Sağ Alt"
 
 #: ../src/Pages/Options/option_handler.vala:105
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Sayısal tuştakımı yerleşimi seçimi"
 
 #: ../src/Pages/Options/option_handler.vala:106
 msgid "Legacy"
-msgstr ""
+msgstr "Eski"
 
 #: ../src/Pages/Options/option_handler.vala:107
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Unicode ekletileri (oklar ve matematik işlemleri)"
 
 #: ../src/Pages/Options/option_handler.vala:108
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Unicode eklentileri (oklar ve matematik işlemleri). Varsayılan seviyede "
+"matematiksel ifadeler"
 
 #: ../src/Pages/Options/option_handler.vala:109
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Eski Wang 724"
 
 #: ../src/Pages/Options/option_handler.vala:110
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
+"Unicode eklentileri ile Wang 724 tuştakımı (oklar ve matematik işlemleri)"
 
 #: ../src/Pages/Options/option_handler.vala:111
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Unicode eklentileri ile Wang 724 tuştakımı (oklar ve matematik işlemleri) "
+"Varsayılan seviyede matematik işlemleri"
 
 #: ../src/Pages/Options/option_handler.vala:112
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Onaltılık Sistem"
 
 #: ../src/Pages/Options/option_handler.vala:113
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "ATM/telefon-stili"
 
 #: ../src/Pages/Options/option_handler.vala:116
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Sayısal tuştakımı sil tuşu davranışı"
 
 #: ../src/Pages/Options/option_handler.vala:117
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "Noktalı eski tuş"
 
 #: ../src/Pages/Options/option_handler.vala:118
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Virgüllü eski tuş"
 
 #: ../src/Pages/Options/option_handler.vala:119
 msgid "Four-level key with dot"
@@ -647,7 +652,7 @@ msgstr "Virgül ile dört seviyeli tuş"
 
 #: ../src/Pages/Options/option_handler.vala:122
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "Momayyez ile seviye dört tuşu"
 
 #: ../src/Pages/Options/option_handler.vala:123
 msgid "Four-level key with abstract separators"
@@ -659,11 +664,11 @@ msgstr "Üçüncü seviyede noktalı virgül"
 
 #: ../src/Pages/Options/option_handler.vala:127
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Alt/Win tuşu davranışı"
 
 #: ../src/Pages/Options/option_handler.vala:128
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Standart düzeni Menü tuşuna ekle"
 
 #: ../src/Pages/Options/option_handler.vala:129
 msgid "Alt and Meta are on Alt keys"
