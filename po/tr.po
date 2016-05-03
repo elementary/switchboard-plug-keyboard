@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-29 14:19-0700\n"
-"PO-Revision-Date: 2016-04-30 12:48+0000\n"
-"Last-Translator: Uğurhan <turkerugurhan@gmail.com>\n"
+"PO-Revision-Date: 2016-05-03 01:25+0000\n"
+"Last-Translator: Cenk  <cenktekin2008@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-01 05:36+0000\n"
+"X-Launchpad-Export-Date: 2016-05-03 05:38+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 "Language: tr\n"
 
@@ -133,7 +133,7 @@ msgstr "Düzeninizi sınamak için yazın..."
 
 #: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
 msgid "Key to choose third level:"
-msgstr ""
+msgstr "Üçüncü seviyeyi seçme tuşu"
 
 #: ../src/Pages/layout.vala:225
 msgid "Alt"
@@ -154,7 +154,7 @@ msgstr "Ters Slash"
 
 #: ../src/Pages/layout.vala:248
 msgid "Key to choose fifth level:"
-msgstr ""
+msgstr "Beşinci seviyeyi seçme tuşu:"
 
 #: ../src/Pages/layout.vala:256
 msgid "Less/Grater"
@@ -398,7 +398,7 @@ msgstr "Uçbirim"
 
 #: ../src/Pages/Shortcuts/list.vala:212
 msgid "Internet Browser"
-msgstr "İnternet Tarayıcı"
+msgstr "İnternet Tarayıcısı"
 
 #: ../src/Pages/Shortcuts/list.vala:213
 msgid "Applications Launcher"
@@ -672,55 +672,57 @@ msgstr "Standart düzeni Menü tuşuna ekle"
 
 #: ../src/Pages/Options/option_handler.vala:129
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt ve Meta, Alt tuşlarındadır"
 
 #: ../src/Pages/Options/option_handler.vala:130
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control tuşu Win tuşlarına haritalanmıştır (aynı zaman Ctrl tuşu)"
 
 #: ../src/Pages/Options/option_handler.vala:131
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Control tuşu Alt tuşlarına, Alt tuşu Win tuşlarına eşleştirilmiş"
 
 #: ../src/Pages/Options/option_handler.vala:132
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta Win tuşlarına eşleştirilmiş"
 
 #: ../src/Pages/Options/option_handler.vala:133
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta Sol Win'e eşleştirilmiş"
 
 #: ../src/Pages/Options/option_handler.vala:134
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Hyper Win tuşlarına eşleştirilmiş"
 
 #: ../src/Pages/Options/option_handler.vala:135
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Alt tuşu Sağ Win tuşuna eşleşmiş, Super ise Menu tuşuna"
 
 #: ../src/Pages/Options/option_handler.vala:136
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt tuşu Win tuşlarına eşleştirilmiş (ve her zamanki Alt tuşları)"
 
 #: ../src/Pages/Options/option_handler.vala:137
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt tuşu Win tuşu ile yer değiştirir"
 
 #: ../src/Pages/Options/option_handler.vala:140
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Çeşitli uyumluluk seçenekleri"
 
 #: ../src/Pages/Options/option_handler.vala:141
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Varsayılan sayısal tuş takımı tuşları"
 
 #: ../src/Pages/Options/option_handler.vala:142
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
 msgstr ""
+"Sayısal tuş takımı tuşları her zaman rakam girer (Mac OS'ta olduğu gibi)"
 
 #: ../src/Pages/Options/option_handler.vala:143
 msgid "Shift with numeric keypad keys works as in MS Windows"
 msgstr ""
+"Shift ile birlikte sayısal tuş takımı tuşları MS Windows'daki gibi çalışır."
 
 #: ../src/Pages/Options/option_handler.vala:144
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
