@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-29 14:19-0700\n"
-"PO-Revision-Date: 2016-04-29 21:44+0000\n"
-"Last-Translator: Yuly Nesterov <crow@rikka.io>\n"
+"PO-Revision-Date: 2016-05-03 23:06+0000\n"
+"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-04-30 05:33+0000\n"
+"X-Launchpad-Export-Date: 2016-05-04 05:54+0000\n"
 "X-Generator: Launchpad (build 17995)\n"
 
 #: ../src/keyboard.vala:7
@@ -23,7 +23,7 @@ msgstr "Клавиатура"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Настройка поведения клавиатуры, шаблонов и сочетаний"
+msgstr "Настройка поведения клавиатуры, раскладок и сочетаний клавиш"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -43,11 +43,11 @@ msgstr "Дополнительно"
 
 #: ../src/Pages/layout.vala:97
 msgid "Allow different layouts for individual windows:"
-msgstr "Разрешить разные раскладки для окон:"
+msgstr "Разрешить разные раскладки для разных окон:"
 
 #: ../src/Pages/layout.vala:110
 msgid "Compose key:"
-msgstr "Составная клавиша:"
+msgstr "Клавиша Compose:"
 
 #: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
 #: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
@@ -56,26 +56,26 @@ msgstr "Отключено"
 
 #: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
 msgid "Right Alt (Alt Gr)"
-msgstr "Правая Alt"
+msgstr "Правый Alt"
 
 #: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
 #: ../src/Pages/layout.vala:255
 msgid "Right Super"
-msgstr "Правая Super"
+msgstr "Правый Super"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
 #: ../src/Pages/layout.vala:251
 msgid "Right Control"
-msgstr "Правая Ctrl"
+msgstr "Правый Ctrl"
 
 #: ../src/Pages/layout.vala:116
 msgid "Left Control"
-msgstr "Левая Ctrl"
+msgstr "Левый Control"
 
 #: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
 #: ../src/Pages/layout.vala:254
 msgid "Left Super"
-msgstr "Левая Super"
+msgstr "Левый Super"
 
 #: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
 #: ../src/Pages/layout.vala:229
@@ -84,11 +84,11 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
 msgid "Pause"
-msgstr "Пауза"
+msgstr "Pause"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
 msgid "Menu"
-msgstr "Меню"
+msgstr "Menu"
 
 #: ../src/Pages/layout.vala:127
 msgid "Caps Lock function:"
@@ -104,7 +104,7 @@ msgstr "Escape"
 
 #: ../src/Pages/layout.vala:133
 msgid "Backspace"
-msgstr "Назад (Стереть)"
+msgstr "Backspace"
 
 #: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
 msgid "Super"
@@ -112,19 +112,19 @@ msgstr "Super"
 
 #: ../src/Pages/layout.vala:135
 msgid "Hyper"
-msgstr ""
+msgstr "Hyper"
 
 #: ../src/Pages/layout.vala:137
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../src/Pages/layout.vala:138
 msgid "Swap With Control"
-msgstr ""
+msgstr "Поменять местами с Control"
 
 #: ../src/Pages/layout.vala:139
 msgid "Swap With Escape"
-msgstr ""
+msgstr "Поменять местами с Escape"
 
 #: ../src/Pages/layout.vala:181
 msgid "Type to test your layout…"
@@ -132,11 +132,11 @@ msgstr "Начните печатать, чтобы проверить раск�
 
 #: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
 msgid "Key to choose third level:"
-msgstr ""
+msgstr "Клавиша для выбора третьего уровня:"
 
 #: ../src/Pages/layout.vala:225
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
 #: ../src/Pages/layout.vala:253
@@ -153,11 +153,11 @@ msgstr "Обратный слеш"
 
 #: ../src/Pages/layout.vala:248
 msgid "Key to choose fifth level:"
-msgstr ""
+msgstr "Клавиша для выбора пятого уровня:"
 
 #: ../src/Pages/layout.vala:256
 msgid "Less/Grater"
-msgstr ""
+msgstr "Меньше/Больше"
 
 #: ../src/Pages/layout.vala:271
 msgid "Nicola F Backspace:"
