@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-04-29 14:19-0700\n"
-"PO-Revision-Date: 2016-05-03 23:06+0000\n"
+"PO-Revision-Date: 2016-05-07 12:07+0000\n"
 "Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
 "Language-Team: Russian <ru@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-04 05:54+0000\n"
-"X-Generator: Launchpad (build 17995)\n"
+"X-Launchpad-Export-Date: 2016-05-08 04:47+0000\n"
+"X-Generator: Launchpad (build 18025)\n"
 
 #: ../src/keyboard.vala:7
 msgid "Keyboard"
@@ -161,15 +161,15 @@ msgstr "Меньше/Больше"
 
 #: ../src/Pages/layout.vala:271
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Backspace как в NICOLA-F:"
 
 #: ../src/Pages/layout.vala:274
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Кана блокируется клавишей Lock:"
 
 #: ../src/Pages/layout.vala:277
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Сделать Zenkaku Hankaku как дополнительный ESC:"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
