@@ -26,35 +26,35 @@ namespace Pantheon.Keyboard.Options
 		
 		public Page ()
 		{
-			option_handler  = new OptionHandler ();
-			option_settings = new OptionSettings ();
-			
-			section_switcher = new SectionSwitcher ();
-			section_display  = new SectionDisplay  ();
-			
-			this.attach (section_switcher, 0, 0, 1, 1);
-			this.attach (section_display,  1, 0, 1, 1);
-			
-			set_option_gui ();
-			
-			// connect switcher and diyplay
-			section_switcher.changed.connect ((i) => {
-				section_display.selected = i;
-			});
-			
-			option_settings.external_change.connect (set_option_gui);
-			
-			section_display.apply_changes.connect (() => {
-				option_settings.apply ();
-			});
-			
-			section_display.changed.connect ((state, group, option) => 
-			{
-				if (state == true)
-					option_settings.add (group, option);
-				else
-					option_settings.remove (group, option);
-			});
+			//option_handler  = new OptionHandler ();
+			//option_settings = new OptionSettings ();
+			//
+			//section_switcher = new SectionSwitcher ();
+			//section_display  = new SectionDisplay  ();
+			//
+			//this.attach (section_switcher, 0, 0, 1, 1);
+			//this.attach (section_display,  1, 0, 1, 1);
+			//
+			//set_option_gui ();
+			//
+			//// connect switcher and diyplay
+			//section_switcher.changed.connect ((i) => {
+			//	section_display.selected = i;
+			//});
+			//
+			//option_settings.external_change.connect (set_option_gui);
+			//
+			//section_display.apply_changes.connect (() => {
+			//	option_settings.apply ();
+			//});
+			//
+			//section_display.changed.connect ((state, group, option) => 
+			//{
+			//	if (state == true)
+			//		option_settings.add (group, option);
+			//	else
+			//		option_settings.remove (group, option);
+			//});
 		}
 	}
 }

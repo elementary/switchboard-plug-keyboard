@@ -62,8 +62,8 @@ namespace Pantheon.Keyboard.Options
 				var add = true;
 				
 				if(!option_handler.from_code (code, out group, out option)) {
-					warning ("The option \"%s\" in \"%s.options\" is invalid and will be removed.", code, settings.schema);
-					add = false;
+					//warning ("The option \"%s\" in \"%s.options\" is invalid and will be removed.", code, settings.schema);
+					//add = false;
 				}
 				
 				for (int i = 0; i < groups.length; i++) {

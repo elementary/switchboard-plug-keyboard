@@ -3,7 +3,7 @@ namespace Pantheon.Keyboard.LayoutPage
     class Xkb_modifier {
         public string name;
         private string active_command;
-        public signal void active_command_updated ();
+        public signal void active_command_updated (string old_opt, string new_opt);
         private string default_command;
 
         public string [] xkb_option_commands;
@@ -36,8 +36,9 @@ namespace Pantheon.Keyboard.LayoutPage
                     return;
                 }
                 if ( val in xkb_option_commands ) {
+					string old_opt = get_active_command();
                     active_command = val;
-                    active_command_updated ();
+                    active_command_updated (old_opt, val);
                 }
         }
 
