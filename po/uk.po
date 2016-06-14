@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-05-14 20:54+0400\n"
-"PO-Revision-Date: 2015-10-04 09:55+0000\n"
-"Last-Translator: Bogdan Lisnenko <Unknown>\n"
+"PO-Revision-Date: 2016-06-13 21:42+0000\n"
+"Last-Translator: Roman Sytnyk <Unknown>\n"
 "Language-Team: Ukrainian <uk@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-15 05:28+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-06-14 06:18+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/keyboard.vala:7
 msgid "Keyboard"
@@ -23,7 +23,7 @@ msgstr "Клавіатура"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Налаштування поведінки клавіатури, макетів та ярликів"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -99,167 +99,172 @@ msgstr "Ліва клавіша Ctrl як Meta"
 
 #: ../src/Pages/Options/option_handler.vala:97
 msgid "Swap Ctrl and Caps Lock"
-msgstr ""
+msgstr "Поміняти місцями клавіші Ctrl та Caps Lock"
 
 #: ../src/Pages/Options/option_handler.vala:98
 msgid "At left of 'A'"
-msgstr ""
+msgstr "Ліворуч від 'A'"
 
 #: ../src/Pages/Options/option_handler.vala:99
 msgid "At bottom left"
-msgstr ""
+msgstr "Знизу ліворуч"
 
 #: ../src/Pages/Options/option_handler.vala:100
 msgid "Right Ctrl as Right Alt"
-msgstr ""
+msgstr "Права клавіша Ctrl працює як права клавіша Alt"
 
 #: ../src/Pages/Options/option_handler.vala:101
 msgid "Menu as Right Ctrl"
-msgstr ""
+msgstr "Menu працює як права клавіша Ctrl"
 
 #: ../src/Pages/Options/option_handler.vala:102
 msgid "Right Alt as Right Ctrl"
-msgstr ""
+msgstr "Права клавіша Alt працює як права клавіша Ctrl"
 
 #: ../src/Pages/Options/option_handler.vala:105
 msgid "Numeric keypad layout selection"
-msgstr ""
+msgstr "Вибір розкладки цифрової клавіатури"
 
 #: ../src/Pages/Options/option_handler.vala:106
 msgid "Legacy"
-msgstr ""
+msgstr "Попередній варіянт"
 
 #: ../src/Pages/Options/option_handler.vala:107
 msgid "Unicode additions (arrows and math operators)"
-msgstr ""
+msgstr "Доповнення Unicode (стрілки та математичні оператори)"
 
 #: ../src/Pages/Options/option_handler.vala:108
 msgid ""
 "Unicode additions (arrows and math operators). Math operators on default "
 "level"
 msgstr ""
+"Доповнення Unicode (стрілки та математичні оператори). Математичні оператори "
+"на типовому рівні."
 
 #: ../src/Pages/Options/option_handler.vala:109
 msgid "Legacy Wang 724"
-msgstr ""
+msgstr "Стара Wang 724"
 
 #: ../src/Pages/Options/option_handler.vala:110
 msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
 msgstr ""
+"Клавіатура Wang 724 з доповненнями Unicode (стрілки та математичні оператори)"
 
 #: ../src/Pages/Options/option_handler.vala:111
 msgid ""
 "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
 "operators on default level"
 msgstr ""
+"Клавіатура Wang 724 з доповненнями Unicode (стрілки та математичні "
+"оператори). Математичні операції на типовому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:112
 msgid "Hexadecimal"
-msgstr ""
+msgstr "Шістнадцяткова"
 
 #: ../src/Pages/Options/option_handler.vala:113
 msgid "ATM/phone-style"
-msgstr ""
+msgstr "У стилі банкоматної/телефонної"
 
 #: ../src/Pages/Options/option_handler.vala:116
 msgid "Numeric keypad delete key behaviour"
-msgstr ""
+msgstr "Вибір поведінки клавіші del на цифровій клавіатурі"
 
 #: ../src/Pages/Options/option_handler.vala:117
 msgid "Legacy key with dot"
-msgstr ""
+msgstr "Застаріла клавіша з крапкою"
 
 #: ../src/Pages/Options/option_handler.vala:118
 msgid "Legacy key with comma"
-msgstr ""
+msgstr "Застаріла клавіша з комою"
 
 #: ../src/Pages/Options/option_handler.vala:119
 msgid "Four-level key with dot"
-msgstr ""
+msgstr "Клавіша четвертого рівня з крапкою"
 
 #: ../src/Pages/Options/option_handler.vala:120
 msgid "Four-level key with dot, latin-9 restriction"
-msgstr ""
+msgstr "Клавіша четвертого рівня з крапкою, обмежена latin-9"
 
 #: ../src/Pages/Options/option_handler.vala:121
 msgid "Four-level key with comma"
-msgstr ""
+msgstr "Клавіша четвертого рівня з комою"
 
 #: ../src/Pages/Options/option_handler.vala:122
 msgid "Four-level key with momayyez"
-msgstr ""
+msgstr "Клавіша четвертого рівня з momayyez"
 
 #: ../src/Pages/Options/option_handler.vala:123
 msgid "Four-level key with abstract separators"
-msgstr ""
+msgstr "Клавіша четвертого рівня з абстрактним розділювачем"
 
 #: ../src/Pages/Options/option_handler.vala:124
 msgid "Semi-colon on third level"
-msgstr ""
+msgstr "Крапка з комою на третьому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:127
 msgid "Alt/Win key behavior"
-msgstr ""
+msgstr "Поведінка клавіш Alt/Win"
 
 #: ../src/Pages/Options/option_handler.vala:128
 msgid "Add the standard behavior to Menu key"
-msgstr ""
+msgstr "Додати звичайну поведінку на клавішу Menu"
 
 #: ../src/Pages/Options/option_handler.vala:129
 msgid "Alt and Meta are on Alt keys"
-msgstr ""
+msgstr "Alt та Meta на клавішах Alt"
 
 #: ../src/Pages/Options/option_handler.vala:130
 msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr ""
+msgstr "Control використовується як Win (і як звичайний Control)"
 
 #: ../src/Pages/Options/option_handler.vala:131
 msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr ""
+msgstr "Control використовується як клавіші Alt, Alt використовується як Win"
 
 #: ../src/Pages/Options/option_handler.vala:132
 msgid "Meta is mapped to Win keys"
-msgstr ""
+msgstr "Meta відповідає клавішам Win"
 
 #: ../src/Pages/Options/option_handler.vala:133
 msgid "Meta is mapped to Left Win"
-msgstr ""
+msgstr "Meta відповідає лівій клавіші Win"
 
 #: ../src/Pages/Options/option_handler.vala:134
 msgid "Hyper is mapped to Win-keys"
-msgstr ""
+msgstr "Hyper відповідає клавішам Win"
 
 #: ../src/Pages/Options/option_handler.vala:135
 msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr ""
+msgstr "Клавіша Alt відповідає правій клавіші Win, а Super - клавіші Menu."
 
 #: ../src/Pages/Options/option_handler.vala:136
 msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr ""
+msgstr "Alt використовуються як Win (і як звичайні Alt)"
 
 #: ../src/Pages/Options/option_handler.vala:137
 msgid "Alt is swapped with Win"
-msgstr ""
+msgstr "Alt міняється з клавішею Win"
 
 #: ../src/Pages/Options/option_handler.vala:140
 msgid "Miscellaneous compatibility options"
-msgstr ""
+msgstr "Різні параметри сумісності"
 
 #: ../src/Pages/Options/option_handler.vala:141
 msgid "Default numeric keypad keys"
-msgstr ""
+msgstr "Стандартні клавіші цифрової клавіатури"
 
 #: ../src/Pages/Options/option_handler.vala:142
 msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr ""
+msgstr "За допомогою цифрової клавіатури вводяться лише цифри (як у Mac OS)"
 
 #: ../src/Pages/Options/option_handler.vala:143
 msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr ""
+msgstr "Shift з цифровою клавіатурою працює як у Microsoft Windows"
 
 #: ../src/Pages/Options/option_handler.vala:144
 msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr ""
+msgstr "Shift не скасовує Num Lock, а вибирає третій рівень"
 
 #: ../src/Pages/Options/option_handler.vala:145
 msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
@@ -270,27 +275,30 @@ msgid ""
 "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
 "Lock)"
 msgstr ""
+"Клавіатура Apple Aluminium (емуляція клавіш ПК: Print, Scroll Lock, Pause, "
+"Num Lock)"
 
 #: ../src/Pages/Options/option_handler.vala:147
 msgid "Shift cancels Caps Lock"
-msgstr ""
+msgstr "Shift скасовує Caps Lock"
 
 #: ../src/Pages/Options/option_handler.vala:148
 msgid "Enable extra typographic characters"
-msgstr ""
+msgstr "Увімкнути додаткові типографські символи"
 
 #: ../src/Pages/Options/option_handler.vala:149
 msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr ""
+msgstr "Обидві клавіші Shift разом перемикають стан Caps Lock"
 
 #: ../src/Pages/Options/option_handler.vala:150
 msgid ""
 "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
 msgstr ""
+"Натискання обох клавіш Shift вмикають Caps Lock, одна клавіша Shift — вимикає"
 
 #: ../src/Pages/Options/option_handler.vala:151
 msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr ""
+msgstr "Обидві клавіші Shift разом перемикають стан Shift"
 
 #: ../src/Pages/Options/option_handler.vala:152
 msgid "Toggle PointerKeys with Shift + NumLock"
@@ -299,46 +307,47 @@ msgstr ""
 #: ../src/Pages/Options/option_handler.vala:153
 msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
 msgstr ""
+"Дозволити скасування захоплення діями з клавіатури (увага: небезпечно)"
 
 #: ../src/Pages/Options/option_handler.vala:156
 msgid "Adding currency signs to certain keys"
-msgstr ""
+msgstr "Додавання знаків валюти до деяких клавіш"
 
 #: ../src/Pages/Options/option_handler.vala:157
 msgid "Euro on E"
-msgstr ""
+msgstr "Євро на E"
 
 #: ../src/Pages/Options/option_handler.vala:158
 msgid "Euro on 2"
-msgstr ""
+msgstr "Євро на 2"
 
 #: ../src/Pages/Options/option_handler.vala:159
 msgid "Euro on 4"
-msgstr ""
+msgstr "Євро на 4"
 
 #: ../src/Pages/Options/option_handler.vala:160
 msgid "Euro on 5"
-msgstr ""
+msgstr "Євро на 5"
 
 #: ../src/Pages/Options/option_handler.vala:161
 msgid "Rupee on 4"
-msgstr ""
+msgstr "Символ рупії на 4"
 
 #: ../src/Pages/Options/option_handler.vala:164
 msgid "Using space key to input non-breakable space character"
-msgstr ""
+msgstr "Клавіша пробіл генерує символ нерозривного пробілу"
 
 #: ../src/Pages/Options/option_handler.vala:165
 msgid "Usual space at any level"
-msgstr ""
+msgstr "Звичайний пробіл на будь-якому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:166
 msgid "Non-breakable space character at second level"
-msgstr ""
+msgstr "Символ нерозривного пробілу на другому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:167
 msgid "Non-breakable space character at third level"
-msgstr ""
+msgstr "Символ нерозривного пробілу на третьому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:168
 msgid "Non-breakable space character at third level, nothing at fourth leve"
@@ -349,72 +358,93 @@ msgid ""
 "Non-breakable space character at third level, thin non-breakable space "
 "character at fourth level"
 msgstr ""
+"Символ нерозривного пробілу на третьому рівні, символ тонкого нерозривного "
+"пробілу на четвертому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:170
 msgid "Non-breakable space character at fourth level"
-msgstr ""
+msgstr "Символ нерозривного пробілу на четвертому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:171
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level"
 msgstr ""
+"Клавіша пробіл видає нерозривний пробіл на 4-му рівні, вузький нерозривний "
+"пробіл на 6-му рівні"
 
 #: ../src/Pages/Options/option_handler.vala:172
 msgid ""
 "Non-breakable space character at fourth level, thin non-breakable space "
 "character at sixth level (via Ctrl+Shift)"
 msgstr ""
+"Клавіша пробіл видає нерозривний пробіл на 4-му рівні, вузький нерозривний "
+"пробіл на 6-му рівні (через Ctrl+Shift)"
 
 #: ../src/Pages/Options/option_handler.vala:173
 msgid "Zero-width non-joiner character at second level"
-msgstr ""
+msgstr "Незв’язувальний символ нульової ширини на другому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:174
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на другому рівні, зв’язувальний "
+"символ нульової ширини на третьому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:175
 msgid ""
 "Zero-width non-joiner character at second level, zero-width joiner character "
 "at third level, non-breakable space character at fourth level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на другому рівні, зв’язувальний "
+"символ нульової ширини на третьому рівні, символ нерозривного пробілу на "
+"четвертому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:176
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на другому рівні, нерозривний пробіл "
+"на третьому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:177
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, nothing at fourth level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на другому рівні, нерозривний пробіл "
+"на третьому рівні, нічого на четвертому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:178
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, zero-width joiner at fourth level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на другому рівні, символ нерозривного "
+"пробілу на третьому рівні, зв’язувальний символ нульової ширини на четвертому"
 
 #: ../src/Pages/Options/option_handler.vala:179
 msgid ""
 "Zero-width non-joiner character at second level, non-breakable space "
 "character at third level, thin non-breakable space at fourth level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на другому рівні, нерозривний пробіл "
+"на третьому рівні, вузький нерозривний пробіл на четвертому рівні"
 
 #: ../src/Pages/Options/option_handler.vala:180
 msgid ""
 "Zero-width non-joiner character at third level, zero-width joiner at fourth "
 "level"
 msgstr ""
+"Незв’язувальний символ нульової ширини на третьому рівні, зв’язувальний "
+"символ нульової ширини на четвертому"
 
 #: ../src/Pages/Options/option_handler.vala:183
 msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr ""
+msgstr "Додавання діакритичних знаків есперанто"
 
 #: ../src/Pages/Options/option_handler.vala:184
 msgid "To the corresponding key in a Qwerty keyboard"
@@ -426,15 +456,15 @@ msgstr ""
 
 #: ../src/Pages/Options/option_handler.vala:186
 msgid "To the corresponding key in a Colemak layout"
-msgstr ""
+msgstr "На відповідну клавішу у розкладці Колемака"
 
 #: ../src/Pages/Options/option_handler.vala:189
 msgid "Key sequence to kill the X server"
-msgstr ""
+msgstr "Комбінація клавіш для переривання роботи X-сервера"
 
 #: ../src/Pages/Options/option_handler.vala:190
 msgid "Control + Alt + Backspace"
-msgstr ""
+msgstr "Control + Alt + Backspace"
 
 #: ../src/Pages/layout.vala:97
 msgid "Allow different layouts for individual windows:"
@@ -442,7 +472,7 @@ msgstr "Дозволити різні розкладки для окремих �
 
 #: ../src/Pages/layout.vala:110
 msgid "Compose key:"
-msgstr ""
+msgstr "Клавіша Compose:"
 
 #: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
 #: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
@@ -451,26 +481,26 @@ msgstr "Вимкнено"
 
 #: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
 msgid "Right Alt (Alt Gr)"
-msgstr ""
+msgstr "Правий Alt (Alt Gr)"
 
 #: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
 #: ../src/Pages/layout.vala:255
 msgid "Right Super"
-msgstr ""
+msgstr "Права клавіша Super"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
 #: ../src/Pages/layout.vala:251
 msgid "Right Control"
-msgstr ""
+msgstr "Правий Control"
 
 #: ../src/Pages/layout.vala:116
 msgid "Left Control"
-msgstr ""
+msgstr "Лівий Control"
 
 #: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
 #: ../src/Pages/layout.vala:254
 msgid "Left Super"
-msgstr ""
+msgstr "Ліва клавіша Super"
 
 #: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
 #: ../src/Pages/layout.vala:229
@@ -479,7 +509,7 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
 msgid "Pause"
-msgstr ""
+msgstr "Pause"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
 msgid "Menu"
@@ -487,7 +517,7 @@ msgstr "Меню"
 
 #: ../src/Pages/layout.vala:127
 msgid "Caps Lock function:"
-msgstr ""
+msgstr "Функція Caps Lock:"
 
 #: ../src/Pages/layout.vala:131
 msgid "Num Lock"
@@ -495,23 +525,23 @@ msgstr "Num Lock"
 
 #: ../src/Pages/layout.vala:132
 msgid "Escape"
-msgstr ""
+msgstr "Escape"
 
 #: ../src/Pages/layout.vala:133
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
 msgid "Super"
-msgstr ""
+msgstr "Super"
 
 #: ../src/Pages/layout.vala:135
 msgid "Hyper"
-msgstr ""
+msgstr "Hyper"
 
 #: ../src/Pages/layout.vala:137
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../src/Pages/layout.vala:138
 msgid "Swap With Control"
@@ -531,7 +561,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:225
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
 #: ../src/Pages/layout.vala:253
@@ -560,7 +590,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:274
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock (японська азбука):"
 
 #: ../src/Pages/layout.vala:277
 msgid "Zenkaku Hankaku as Escape:"
@@ -588,15 +618,15 @@ msgstr "Медіа"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
-msgstr ""
+msgstr "Універсальний Доступ"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Власний"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Повторювати кнопки:</b>"
 
 #: ../src/Pages/behaviour.vala:22
 msgid "Delay:"
@@ -613,7 +643,7 @@ msgstr "мілісекунди"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Мигання Курсору:</b>"
 
 #: ../src/Pages/behaviour.vala:134
 msgid "Speed:"
@@ -629,7 +659,7 @@ msgstr "секунди"
 
 #: ../src/Pages/behaviour.vala:244
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Друкуйте для перевірки налаштувань..."
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
@@ -657,7 +687,7 @@ msgstr "Максимізувати"
 
 #: ../src/Pages/Shortcuts/list.vala:34
 msgid "Unmaximize"
-msgstr ""
+msgstr "Відновити Розмір"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
@@ -669,7 +699,7 @@ msgstr "Згорнути"
 
 #: ../src/Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Перемкнути на повний екран"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
@@ -681,7 +711,7 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "На всіх Робочих Просторах"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
@@ -689,7 +719,7 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:42
 msgid "Switch Windows"
-msgstr ""
+msgstr "Перемкнути вікна"
 
 #: ../src/Pages/Shortcuts/list.vala:43
 msgid "Switch Windows backwards"
@@ -697,15 +727,15 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr ""
+msgstr "Огляд вікон"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr ""
+msgstr "Показати всі вікна"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "Показати перемикач робочих місць"
 
 #: ../src/Pages/Shortcuts/list.vala:88
 msgid "Switch to first"
@@ -717,39 +747,39 @@ msgstr "Перейти до нового"
 
 #: ../src/Pages/Shortcuts/list.vala:90
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Перейти до робочого простору 1"
 
 #: ../src/Pages/Shortcuts/list.vala:91
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Перейти до робочого простору 2"
 
 #: ../src/Pages/Shortcuts/list.vala:92
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Перейти до робочого простору 3"
 
 #: ../src/Pages/Shortcuts/list.vala:93
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Перейти до робочого простору 4"
 
 #: ../src/Pages/Shortcuts/list.vala:94
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Перейти до робочого простору 5"
 
 #: ../src/Pages/Shortcuts/list.vala:95
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Перейти до робочого простору 6"
 
 #: ../src/Pages/Shortcuts/list.vala:96
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Перейти в робочу область 7"
 
 #: ../src/Pages/Shortcuts/list.vala:97
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Перейти в робочу область 8"
 
 #: ../src/Pages/Shortcuts/list.vala:98
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Перейти в робочу область 9"
 
 #: ../src/Pages/Shortcuts/list.vala:99
 msgid "Switch to left"
@@ -805,55 +835,55 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:175
 msgid "Take a Screenshot"
-msgstr ""
+msgstr "Зробити знімок екрану"
 
 #: ../src/Pages/Shortcuts/list.vala:176
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Зберегти знімок у буфері обміну"
 
 #: ../src/Pages/Shortcuts/list.vala:177
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Зробити знімок вікна"
 
 #: ../src/Pages/Shortcuts/list.vala:178
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Зберегти знімок вікна у буфері обміну"
 
 #: ../src/Pages/Shortcuts/list.vala:179
 msgid "Take a Screenshot of an Area"
-msgstr ""
+msgstr "Зробити знімок вибраної області"
 
 #: ../src/Pages/Shortcuts/list.vala:180
 msgid "Save Area-Screenshot to Clipboard"
-msgstr ""
+msgstr "Зберегти знімок вибраної області у буфері обміну"
 
 #: ../src/Pages/Shortcuts/list.vala:206
 msgid "Calculator"
-msgstr ""
+msgstr "Калькулятор"
 
 #: ../src/Pages/Shortcuts/list.vala:207
 msgid "Email"
-msgstr ""
+msgstr "Пошта"
 
 #: ../src/Pages/Shortcuts/list.vala:208
 msgid "Help"
-msgstr ""
+msgstr "Довідка"
 
 #: ../src/Pages/Shortcuts/list.vala:209
 msgid "Home Folder"
-msgstr ""
+msgstr "Домашня папка"
 
 #: ../src/Pages/Shortcuts/list.vala:210
 msgid "File Search"
-msgstr ""
+msgstr "Пошук файлів"
 
 #: ../src/Pages/Shortcuts/list.vala:211
 msgid "Terminal"
-msgstr ""
+msgstr "Термінал"
 
 #: ../src/Pages/Shortcuts/list.vala:212
 msgid "Internet Browser"
-msgstr ""
+msgstr "Інтернет-переглядач"
 
 #: ../src/Pages/Shortcuts/list.vala:213
 msgid "Applications Launcher"
@@ -861,15 +891,15 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:243
 msgid "Volume Up"
-msgstr ""
+msgstr "Збільшити гучність"
 
 #: ../src/Pages/Shortcuts/list.vala:244
 msgid "Volume Down"
-msgstr ""
+msgstr "Зменшити гучність"
 
 #: ../src/Pages/Shortcuts/list.vala:245
 msgid "Mute"
-msgstr ""
+msgstr "Вимкнути звук"
 
 #: ../src/Pages/Shortcuts/list.vala:246
 msgid "Launch Media Player"
@@ -881,27 +911,27 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:249
 msgid "Stop"
-msgstr ""
+msgstr "Стоп"
 
 #: ../src/Pages/Shortcuts/list.vala:250
 msgid "Previous Track"
-msgstr ""
+msgstr "Попередня композиція"
 
 #: ../src/Pages/Shortcuts/list.vala:251
 msgid "Next Track"
-msgstr ""
+msgstr "Наступна композиція"
 
 #: ../src/Pages/Shortcuts/list.vala:252
 msgid "Eject"
-msgstr ""
+msgstr "Витягнути"
 
 #: ../src/Pages/Shortcuts/list.vala:286
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Зменшити розмір тексту"
 
 #: ../src/Pages/Shortcuts/list.vala:287
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Збільшити розмір тексту"
 
 #: ../src/Pages/Shortcuts/list.vala:288
 msgid "Toggle Magnifier"
@@ -937,11 +967,11 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s вже застосовується для %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Якщо ви призначите %s, %s буде відключений"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:12
 msgid "Reassign"
@@ -949,9 +979,9 @@ msgstr "Перепризначити"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
 msgid "Add"
-msgstr ""
+msgstr "Додати"
