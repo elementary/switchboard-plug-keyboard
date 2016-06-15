@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-05-14 20:54+0400\n"
-"PO-Revision-Date: 2016-04-29 09:00+0000\n"
+"PO-Revision-Date: 2016-06-14 21:42+0000\n"
 "Last-Translator: Damian Woźniak <fiszet@gmail.com>\n"
 "Language-Team: Polish <pl@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-15 05:28+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-06-15 06:16+0000\n"
+"X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/keyboard.vala:7
 msgid "Keyboard"
@@ -473,7 +473,7 @@ msgstr "Zezwól na różny układ klawiatury dla indywidualnych okien:"
 
 #: ../src/Pages/layout.vala:110
 msgid "Compose key:"
-msgstr ""
+msgstr "Klawisz Compose:"
 
 #: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
 #: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
@@ -482,26 +482,26 @@ msgstr "Wyłączone"
 
 #: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
 msgid "Right Alt (Alt Gr)"
-msgstr ""
+msgstr "Prawy Alt (Alt Gr)"
 
 #: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
 #: ../src/Pages/layout.vala:255
 msgid "Right Super"
-msgstr ""
+msgstr "Prawy Super"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
 #: ../src/Pages/layout.vala:251
 msgid "Right Control"
-msgstr ""
+msgstr "Prawy Control"
 
 #: ../src/Pages/layout.vala:116
 msgid "Left Control"
-msgstr ""
+msgstr "Lewy Control"
 
 #: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
 #: ../src/Pages/layout.vala:254
 msgid "Left Super"
-msgstr ""
+msgstr "Lewy Super"
 
 #: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
 #: ../src/Pages/layout.vala:229
@@ -518,7 +518,7 @@ msgstr "Menu"
 
 #: ../src/Pages/layout.vala:127
 msgid "Caps Lock function:"
-msgstr ""
+msgstr "Funkcja Caps Lock:"
 
 #: ../src/Pages/layout.vala:131
 msgid "Num Lock"
@@ -526,31 +526,31 @@ msgstr "Num Lock"
 
 #: ../src/Pages/layout.vala:132
 msgid "Escape"
-msgstr ""
+msgstr "Klawisz Esc"
 
 #: ../src/Pages/layout.vala:133
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
 msgid "Super"
-msgstr ""
+msgstr "Super"
 
 #: ../src/Pages/layout.vala:135
 msgid "Hyper"
-msgstr ""
+msgstr "Hyper"
 
 #: ../src/Pages/layout.vala:137
 msgid "Control"
-msgstr ""
+msgstr "Control"
 
 #: ../src/Pages/layout.vala:138
 msgid "Swap With Control"
-msgstr ""
+msgstr "Zamień z Control"
 
 #: ../src/Pages/layout.vala:139
 msgid "Swap With Escape"
-msgstr ""
+msgstr "Zamień z klawiszem Escape"
 
 #: ../src/Pages/layout.vala:181
 msgid "Type to test your layout…"
@@ -558,11 +558,11 @@ msgstr "Zacznij pisać, aby przetestować układ..."
 
 #: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
 msgid "Key to choose third level:"
-msgstr ""
+msgstr "Klawisz wyboru trzeciego poziomu:"
 
 #: ../src/Pages/layout.vala:225
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
 #: ../src/Pages/layout.vala:253
@@ -579,23 +579,23 @@ msgstr "Odwrotny ukośnik"
 
 #: ../src/Pages/layout.vala:248
 msgid "Key to choose fifth level:"
-msgstr ""
+msgstr "Klawisz wyboru piątego poziomu:"
 
 #: ../src/Pages/layout.vala:256
 msgid "Less/Grater"
-msgstr ""
+msgstr "Mniej/Więcej"
 
 #: ../src/Pages/layout.vala:271
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Backspace w stylu Nicola-F"
 
 #: ../src/Pages/layout.vala:274
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Blokada Kana:"
 
 #: ../src/Pages/layout.vala:277
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku jako Escape:"
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -968,11 +968,11 @@ msgstr "Poprzedni układ klawiatury"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s już jest używany do %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Jeżeli przypiszesz skrót do %s, %s zostanie wyłączony"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:12
 msgid "Reassign"
