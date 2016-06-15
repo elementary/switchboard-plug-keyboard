@@ -137,6 +137,8 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("ctrl:nocaps", _("Control"));
             modifier.append_xkb_option ("ctrl:swapcaps", _("Swap With Control"));
             modifier.append_xkb_option ("caps:swapescape", _("Swap With Escape"));
+            modifier.append_xkb_option ("lv3:caps_switch", _("Third Level Key"));
+
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
@@ -155,11 +157,15 @@ namespace Pantheon.Keyboard.LayoutPage {
             // Layout switching keybinding
             var switch_label = new_label (this, _("Switch Layout"), 2, 1);
 
-            modifier = new Xkb_modifier ("switch-layout");
+            modifier = new Xkb_modifier ("switch-layout",
+                    "org.pantheon.desktop.gala.keybindings",
+                    "switch-input-source");
             modifier.append_xkb_option ("<Alt>Space", _("Alt Space"));
-            modifier.append_xkb_option ("<Alt>Shift_L,<Alt>Shift_R,<Shift>Alt_L,<Shift>Alt_R", _("Shift Alt"));
-            modifier.append_xkb_option ("<Ctrl>Shift_L,<Ctrl>Shift_R,<Shift>Ctrl_L,<Shift>Ctrl_R", _("Shift Ctrl"));
+            modifier.append_xkb_option ("<Alt>Shift_L,<Alt>Shift_R,<Shift>Alt_L,<Shift>Alt_R", _("Alt Shift"));
+            modifier.append_xkb_option ("<Ctrl>Shift_L,<Ctrl>Shift_R,<Shift>Control_L,<Shift>Contorl_R", _("Ctrl Shift"));
+            modifier.append_xkb_option ("<Ctrl>Space", _("Control space"));
             modifier.append_xkb_option ("<Shift>Shift_L,<Shift>Shift_R", _("Both Shifts"));
+            modifier.append_xkb_option ("Caps_Lock", _("Caps Lock")); // TODO: caps:ctrl_modifier has to be set in xkb-options
 
             modifier.set_default_command ( "<Alt>Space" );
             settings.add_xkb_modifier (modifier);
@@ -237,9 +243,9 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv3:menu_switch", _("Menu"));
             modifier.append_xkb_option ("lv3:lwin_switch", _("Left Super"));
             modifier.append_xkb_option ("lv3:rwin_switch", _("Right Super"));
-            modifier.append_xkb_option ("lv3:alt_switch", _("Alt"));
+            //modifier.append_xkb_option ("lv3:alt_switch", _("Alt"));
             modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
-            modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
+            //modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
             modifier.append_xkb_option ("lv3:ralt_alt", _("Disabled"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:bksl_switch", _("Backslash"));
@@ -365,7 +371,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         private Gtk.Switch new_xkb_option_switch
             (Gtk.Grid panel, string xkb_command, int v_position, int h_position = 1) {
             var new_switch = new_switch (panel, v_position, h_position);
-            Xkb_modifier modifier = new Xkb_modifier ();
+            Xkb_modifier modifier = new Xkb_modifier (""+xkb_command);
             modifier.append_xkb_option ("", "option off");
             modifier.append_xkb_option (xkb_command, "option on");
             settings.add_xkb_modifier (modifier);
@@ -377,7 +383,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             }
 
             new_switch.notify["active"].connect(() => {
-					warning ("despues");
                 if (new_switch.active) {
                     modifier.update_active_command ( xkb_command );
                 } else {
@@ -403,7 +408,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             });
 
             modifier.active_command_updated.connect (() => {
-                warning("actualizando a id: %s", modifier.get_active_command());
                 new_combo_box.set_active_id (modifier.get_active_command () );
             });
 
@@ -431,7 +435,6 @@ namespace Pantheon.Keyboard.LayoutPage {
         private void show_panel_for_active_layout () {
             Layout active_layout = settings.layouts.get_layout (settings.layouts.active);
             advanced_settings.set_visible_panel_from_layout (active_layout.name);
-            settings.update_modifiers_from_gsettings();
         }
     }
 }

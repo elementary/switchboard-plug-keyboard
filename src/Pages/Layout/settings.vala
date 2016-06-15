@@ -208,7 +208,6 @@ namespace Pantheon.Keyboard.LayoutPage
         public LayoutList layouts { get; private set; }
 
         GLib.Settings settings;
-        GLib.Settings keyb_settings;
 
         /**
          * True if and only if we are currently writing to gsettings
@@ -273,116 +272,6 @@ namespace Pantheon.Keyboard.LayoutPage
 
         // An array of all view switches that modify in any way xkb_options
         // the value of xkb_options is computed as an array of all active_command properties
-        private Xkb_modifier [] xkb_options_modifiers;
-
-        public void update_modifiers_from_gsettings () {
-            string [] xkb_options = settings.get_strv ("xkb-options");
-            foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
-                warning("mod: %s", modifier.name);
-                foreach ( string xkb_command in modifier.xkb_option_commands ){
-                    bool command_is_valid = true;
-                    warning("opt: %s", xkb_command);
-                    if (xkb_command != "") {
-                        var com_arr = xkb_command.split(",", 4);
-                        foreach (string opt in com_arr) {
-                            if (!(opt in xkb_options)) {
-                                command_is_valid = false;
-                            }
-                        }
-                        if (command_is_valid) {
-                            modifier.update_active_command (xkb_command);
-                            warning("updating to opt: %s", xkb_command);
-                            break;
-                        }
-                    }
-                }
-            }
-
-            //    bool modifier_is_default = true;
-            //    foreach ( string xkb_command in xkb_options ){
-            //        if ( xkb_command in modifier.xkb_option_commands ) {
-            //            modifier.set_active_command ( xkb_command );
-            //            modifier_is_default = false;
-            //            break;
-            //        } else {
-            //            continue;
-            //        }
-            //    }
-            //    if ( modifier_is_default ) {
-            //        modifier.set_active_command ( modifier.get_default_command () );
-            //    }
-        }
-
-        void update_gsettings_from_keybindings (string old_opt, string new_opt) {
-            warning("old: %s, new: %s", old_opt, new_opt);
-            string [] new_xkb_options = {};
-            string [] old_xkb_options = keyb_settings.get_strv ("switch-input-source");
-            var old_arr = old_opt.split(",", 4);
-            var new_arr = new_opt.split(",", 4);
-            //// adds all options that come from modifiers
-            //foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
-            //    if ( "" != modifier.get_active_command () )
-            //        new_xkb_options += modifier.get_active_command ();
-            //}
-
-            // adds all options that are on gsettings but can't be modified
-            // through modifiers to allow compatibility options that cannot
-            // be changed through the GUI.
-            foreach ( string xkb_command in old_xkb_options ) {
-                if ((xkb_command in old_arr) && (xkb_command in new_arr)) {
-                    new_xkb_options += xkb_command;
-                } else if (!(xkb_command in old_arr)) {
-                    new_xkb_options += xkb_command;
-                }
-            }
-
-            foreach ( string xkb_command in new_arr ) {
-                if (!(xkb_command in old_xkb_options)) {
-                    new_xkb_options += xkb_command;
-                }
-            }
-
-            // Writing to GSettiongs will send a signal telling it changed but we
-            // don't want to trigger the update of all modifiers.
-            currently_writing = true;
-            keyb_settings.set_strv ("switch-input-source", new_xkb_options);
-            currently_writing = false;
-        }
-        void update_gsettings_from_modifiers (string old_opt, string new_opt) {
-            warning("old: %s, new: %s", old_opt, new_opt);
-            string [] new_xkb_options = {};
-            string [] old_xkb_options = settings.get_strv ("xkb-options");
-            var old_arr = old_opt.split(",", 4);
-            var new_arr = new_opt.split(",", 4);
-            //// adds all options that come from modifiers
-            //foreach ( Xkb_modifier modifier in xkb_options_modifiers ) {
-            //    if ( "" != modifier.get_active_command () )
-            //        new_xkb_options += modifier.get_active_command ();
-            //}
-
-            // adds all options that are on gsettings but can't be modified
-            // through modifiers to allow compatibility options that cannot
-            // be changed through the GUI.
-            foreach ( string xkb_command in old_xkb_options ) {
-                if ((xkb_command in old_arr) && (xkb_command in new_arr)) {
-                    new_xkb_options += xkb_command;
-                } else if (!(xkb_command in old_arr)) {
-                    new_xkb_options += xkb_command;
-                }
-            }
-
-            foreach ( string xkb_command in new_arr ) {
-                if (!(xkb_command in old_xkb_options)) {
-                    new_xkb_options += xkb_command;
-                }
-            }
-
-            // Writing to GSettiongs will send a signal telling it changed but we
-            // don't want to trigger the update of all modifiers.
-            currently_writing = true;
-            settings.set_strv ("xkb-options", new_xkb_options);
-            currently_writing = false;
-        }
 
         public void parse_default () {
             var file = File.new_for_path ("/etc/default/keyboard");
@@ -432,18 +321,12 @@ namespace Pantheon.Keyboard.LayoutPage
             }
         }
 
+        private Xkb_modifier [] xkb_options_modifiers;
+
         public void add_xkb_modifier (Xkb_modifier modifier) {
+            //We assume by this point the modifier has all the options in it.
+            modifier.update_from_gsettings ();
             xkb_options_modifiers += modifier;
-            if (modifier.name == "switch-layout") {
-                modifier.active_command_updated.connect ((old_opt, new_opt) => {
-                    update_gsettings_from_keybindings (old_opt, new_opt);
-                });
-            } else {
-                modifier.active_command_updated.connect ((old_opt, new_opt) => {
-                    update_gsettings_from_modifiers (old_opt, new_opt);
-                });
-            }
-            update_modifiers_from_gsettings ();
         }
 
         public Xkb_modifier get_xkb_modifier_by_name (string name) {
@@ -472,18 +355,10 @@ namespace Pantheon.Keyboard.LayoutPage
 
         private LayoutSettings () {
             settings = new Settings ("org.gnome.desktop.input-sources");
-            keyb_settings = new Settings ("org.pantheon.desktop.gala.keybindings");
             layouts = new LayoutList ();
-
-            _per_window = settings.get_boolean ("per-window");
-            settings.changed["per-window"].connect (() => {
-                _per_window = settings.get_boolean ("per-window");
-                per_window_changed ();
-            });
 
             update_list_from_gsettings ();
             update_active_from_gsettings ();
-            update_modifiers_from_gsettings ();
 
             layouts.layouts_changed.connect (() => {
                 write_list_to_gsettings ();
@@ -499,14 +374,6 @@ namespace Pantheon.Keyboard.LayoutPage
 
             settings.changed["current"].connect (() => {
                 update_active_from_gsettings ();
-            });
-
-            settings.changed["xkb-options"].connect (() => {
-                if (currently_writing) {
-                    return;
-                } else {
-                    update_modifiers_from_gsettings ();
-                }
             });
 
             if (layouts.length == 0)
