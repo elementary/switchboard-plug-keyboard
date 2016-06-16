@@ -157,17 +157,16 @@ namespace Pantheon.Keyboard.LayoutPage {
             // Layout switching keybinding
             var switch_label = new_label (this, _("Switch Layout"), 2, 1);
 
-            modifier = new Xkb_modifier ("switch-layout",
-                    "org.pantheon.desktop.gala.keybindings",
-                    "switch-input-source");
-            modifier.append_xkb_option ("<Alt>Space", _("Alt Space"));
-            modifier.append_xkb_option ("<Alt>Shift_L,<Alt>Shift_R,<Shift>Alt_L,<Shift>Alt_R", _("Alt Shift"));
-            modifier.append_xkb_option ("<Ctrl>Shift_L,<Ctrl>Shift_R,<Shift>Control_L,<Shift>Contorl_R", _("Ctrl Shift"));
-            modifier.append_xkb_option ("<Ctrl>Space", _("Control space"));
-            modifier.append_xkb_option ("<Shift>Shift_L,<Shift>Shift_R", _("Both Shifts"));
-            modifier.append_xkb_option ("Caps_Lock", _("Caps Lock")); // TODO: caps:ctrl_modifier has to be set in xkb-options
+            modifier = new Xkb_modifier ("switch-layout");
+            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt Space"));
+            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt Shift"));
+            modifier.append_xkb_option ("grp:win_space_toggle", _("Super Space"));
+            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl Shift"));
+            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shifts"));
+            modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
+            modifier.append_xkb_option ("", _("Disable"));
 
-            modifier.set_default_command ( "<Alt>Space" );
+            modifier.set_default_command ("grp:alt_space_toggle");
             settings.add_xkb_modifier (modifier);
 
             var switch_combo_box = new_combo_box (this, modifier, 2, 2);
