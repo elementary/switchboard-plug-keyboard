@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-05-14 20:54+0400\n"
-"PO-Revision-Date: 2016-06-16 11:56+0000\n"
+"PO-Revision-Date: 2016-06-17 11:58+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-17 05:41+0000\n"
+"X-Launchpad-Export-Date: 2016-06-18 05:59+0000\n"
 "X-Generator: Launchpad (build 18097)\n"
 
 #: ../src/keyboard.vala:7
@@ -581,19 +581,19 @@ msgstr "Touche pour choisir le cinquième niveau :"
 
 #: ../src/Pages/layout.vala:256
 msgid "Less/Grater"
-msgstr ""
+msgstr "Inférieur/Supérieur"
 
 #: ../src/Pages/layout.vala:271
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F retour arrière :"
 
 #: ../src/Pages/layout.vala:274
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Verrouiller le Kana :"
 
 #: ../src/Pages/layout.vala:277
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku en tant qu'Espace :"
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -633,7 +633,7 @@ msgstr "Délai :"
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr "Intervalle:"
+msgstr "Intervalle :"
 
 #: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
 #: ../src/Pages/behaviour.vala:136
@@ -966,11 +966,11 @@ msgstr "Agencement de clavier précédent"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s est déjà utilisé pour %s !"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "If you reassign the shortcut to %s, %s will be disabled"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:12
 msgid "Reassign"
