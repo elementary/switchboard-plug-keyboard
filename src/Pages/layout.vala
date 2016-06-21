@@ -156,14 +156,27 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             // Layout switching keybinding
             var switch_label = new_label (this, _("Switch Layout"), 2, 1);
-
             modifier = new Xkb_modifier ("switch-layout");
-            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt Space"));
-            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt Shift"));
-            modifier.append_xkb_option ("grp:win_space_toggle", _("Super Space"));
-            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl Shift"));
-            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shifts"));
+
+            modifier.append_xkb_option ("grp:toggle", _("Right Alt"));
+            modifier.append_xkb_option ("grp:lalt_toggle", _("Left Alt"));
             modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
+            modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift+Caps Lock"));
+            modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt+Caps Lock"));
+            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shift keys together"));
+            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl+Shift"));
+            modifier.append_xkb_option ("grp:lctrl_lshift_toggle", _("Left Ctrl+Left Shift"));
+            modifier.append_xkb_option ("grp:rctrl_rshift_toggle", _("Right Ctrl+Right Shift"));
+            modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Alt+Ctrl"));
+            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt+Shift"));
+            modifier.append_xkb_option ("grp:lalt_lshift_toggle", _("Left Alt+Left Shift"));
+            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt+Space"));
+            modifier.append_xkb_option ("grp:lwin_toggle", _("Super Key"));
+            modifier.append_xkb_option ("grp:lshift_toggle", _("Left Shift"));
+            modifier.append_xkb_option ("grp:rshift_toggle", _("Right Shift"));
+            modifier.append_xkb_option ("grp:lctrl_toggle", _("Left Ctrl"));
+            modifier.append_xkb_option ("grp:rctrl_toggle", _("Right Ctrl"));
+            modifier.append_xkb_option ("grp:sclk_toggle", _("Scroll Lock"));
             modifier.append_xkb_option ("", _("Disable"));
 
             modifier.set_default_command ("grp:alt_space_toggle");
