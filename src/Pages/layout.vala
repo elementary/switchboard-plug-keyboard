@@ -189,8 +189,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             this.attach (display, 0, 0, 1, 5);
 
             // Advanced settings panel
-            AdvancedSettingsPanel [] panels = { two_level_layouts_panel (),
-                                                third_level_layouts_panel (),
+            AdvancedSettingsPanel [] panels = { third_level_layouts_panel (),
                                                 fifth_level_layouts_panel (),
                                                 japanese_layouts_panel () };
             this.advanced_settings = new AdvancedSettings (panels, settings);
@@ -262,51 +261,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:bksl_switch", _("Backslash"));
             modifier.set_default_command ( "" );
-            settings.add_xkb_modifier (modifier);
-
-            new_combo_box (panel, modifier, 0);
-
-            panel.show_all ();
-
-            return panel;
-        }
-
-        private AdvancedSettingsPanel two_level_layouts_panel () {
-            string [] valid_input_sources = { "af", "am", "ara", "at",
-                                              "ba", "bd", "bg", "brai", "bw", "by",
-                                              "cd", "cm", "cn", "cs",
-                                              "epo", "et",
-                                              "ge", "gh", "gn",
-                                              "hr",
-                                              "il", "in", "iq",
-                                              "jp",
-                                              "ke", "kg", "kh", "kr", "kz",
-                                              "la",
-                                              "lv",
-                                              "ma", "mao", "md", "me", "mk", "ml", "mm", "mv",
-                                              "ng", "np",
-                                              "ph", "pk",
-                                              "rs", "ru",
-                                              "si", "sn", "sy",
-                                              "th", "tj", "tm", "tw", "tz",
-                                              "ua", "us", "uz" };
-
-            var panel = new AdvancedSettingsPanel ( "two_level_layouts", valid_input_sources );
-
-            new_label (panel, _("Key for additional typographic characters:"), 0);
-
-            Xkb_modifier modifier = new Xkb_modifier ("key_for_additional_chars");
-            modifier.append_xkb_option ("", _("Disabled"));
-            modifier.append_xkb_option ("misc:typo,lv3:ralt_switch", _("Right Alt"));
-            modifier.append_xkb_option ("misc:typo,lv3:switch", _("Right Control"));
-            modifier.append_xkb_option ("misc:typo,lv3:menu_switch", _("Menu"));
-            modifier.append_xkb_option ("misc:typo,lv3:rwin_switch", _("Right Super"));
-            modifier.append_xkb_option ("misc:typo,lv3:alt_switch", _("Alt"));
-            modifier.append_xkb_option ("misc:typo,lv3:ralt_switch", _("Right Alt"));
-            modifier.append_xkb_option ("misc:typo,lv3:lalt_switch", _("Left Alt"));
-            modifier.append_xkb_option ("misc:typo,lv3:caps_switch", _("Caps Lock"));
-            modifier.append_xkb_option ("misc:typo,lv3:bksl_switch", _("Backslash"));
-            modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (panel, modifier, 0);
