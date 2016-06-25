@@ -93,43 +93,27 @@ namespace Pantheon.Keyboard.LayoutPage {
             size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
                            new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
 
-            //// Different layouts per window
-            //new_label (this, _("Allow different layouts for individual windows:"), 0, 1);
-
-            //var layouts_per_window_sw = new_switch (this, 0, 2);
-
-            //layouts_per_window_sw.active = settings.per_window;
-            //layouts_per_window_sw.notify["active"].connect(() => {
-            //    settings.per_window = layouts_per_window_sw.active;
-            //});
-            //settings.per_window_changed.connect (() => {
-            //    layouts_per_window_sw.active = settings.per_window;
-            //});
-
             // Layout switching keybinding
-            var switch_label = new_label (this, _("Switch Layout"), 0, 1);
+            new_label (this, _("Switch Layout:"), 0, 1);
             Xkb_modifier modifier = new Xkb_modifier ("switch-layout");
 
-            modifier.append_xkb_option ("grp:toggle", _("Right Alt"));
-            modifier.append_xkb_option ("grp:lalt_toggle", _("Left Alt"));
-            modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
-            modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift+Caps Lock"));
-            modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt+Caps Lock"));
-            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shift keys together"));
-            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl+Shift"));
-            modifier.append_xkb_option ("grp:lctrl_lshift_toggle", _("Left Ctrl+Left Shift"));
-            modifier.append_xkb_option ("grp:rctrl_rshift_toggle", _("Right Ctrl+Right Shift"));
-            modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Alt+Ctrl"));
-            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt+Shift"));
-            modifier.append_xkb_option ("grp:lalt_lshift_toggle", _("Left Alt+Left Shift"));
-            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt+Space"));
-            modifier.append_xkb_option ("grp:lwin_toggle", _("Super Key"));
-            modifier.append_xkb_option ("grp:lshift_toggle", _("Left Shift"));
-            modifier.append_xkb_option ("grp:rshift_toggle", _("Right Shift"));
-            modifier.append_xkb_option ("grp:lctrl_toggle", _("Left Ctrl"));
-            modifier.append_xkb_option ("grp:rctrl_toggle", _("Right Ctrl"));
+            modifier.append_xkb_option ("", _("Disabled"));
+            modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt ⌥ + Caps Lock ⇪"));
+            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt ⌥ + Shift ⇧"));
+            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt ⌥ + Space"));
+            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Both Shift keys together")); //NOT a TYPO
+            modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock ⇪"));
+            modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl ⌃ + Alt ⌥"));
+            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl ⌃ + Shift ⇧"));
+            modifier.append_xkb_option ("grp:lalt_lshift_toggle", _("Left Alt ⌥ + Left Shift ⇧"));
+            modifier.append_xkb_option ("grp:lctrl_lshift_toggle", _("Left Ctrl ⌃ + Left Shift ⇧"));
+            modifier.append_xkb_option ("grp:toggle", _("Right Alt ⌥"));
+            modifier.append_xkb_option ("grp:rctrl_toggle", _("Right Ctrl ⌃"));
+            modifier.append_xkb_option ("grp:rctrl_rshift_toggle", _("Right Ctrl ⌃ + Right Shift ⇧"));
+            modifier.append_xkb_option ("grp:rshift_toggle", _("Right Shift ⇧"));
+            modifier.append_xkb_option ("grp:rwin_toggle", _("Right Super ⌘"));
             modifier.append_xkb_option ("grp:sclk_toggle", _("Scroll Lock"));
-            modifier.append_xkb_option ("", _("Disable"));
+            modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift ⇧ + Caps Lock ⇪"));
 
             modifier.set_default_command ("grp:alt_space_toggle");
             settings.add_xkb_modifier (modifier);
@@ -140,13 +124,13 @@ namespace Pantheon.Keyboard.LayoutPage {
             new_label (this, _("Compose key:"), 1, 1);
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Disabled"));
-            modifier.append_xkb_option ("compose:ralt", _("Right Alt (Alt Gr)"));
-            modifier.append_xkb_option ("compose:rwin", _("Right Super"));
-            modifier.append_xkb_option ("compose:rctrl", _("Right Control"));
-            modifier.append_xkb_option ("compose:lctrl", _("Left Control"));
-            modifier.append_xkb_option ("compose:lwin", _("Left Super"));
-            modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
+            modifier.append_xkb_option ("compose:caps", _("Caps Lock ⇪"));
             modifier.append_xkb_option ("compose:paus", _("Pause"));
+            modifier.append_xkb_option ("compose:prsc", _("Print Screen"));
+            modifier.append_xkb_option ("compose:ralt", _("Right Alt ⌥"));
+            modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl ⌃"));
+            modifier.append_xkb_option ("compose:rwin", _("Right Super ⌘"));
+            modifier.append_xkb_option ("compose:sclk", _("Scroll Lock"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
@@ -231,21 +215,22 @@ namespace Pantheon.Keyboard.LayoutPage {
 
         private AdvancedSettingsPanel third_level_layouts_panel () {
             string [] valid_input_sources = {"al", "az",
-                                                "be", "br", "bt",
-                                                "ca", "ch", "cs", "cz",
+                                                "be", "br", "bt", "bw",
+                                                "ca", "cd", "ch", "cs", "cz",
                                                 "de","dk",
-                                                "ee", "es",
+                                                "ee", "es", "eu",
                                                 "fi", "fo", "fr",
-                                                "gb", "gr",
+                                                "gb", "gr", "gn",
                                                 "hu",
                                                 "ie", "ir", "is", "it",
+                                                "ke",
                                                 "latam", "lk", "lt",
                                                 "mn", "mt",
                                                 "nl", "no",
-                                                "pl", "pt",
+                                                "pl", "pt", "ph",
                                                 "ro",
-                                                "se", "sk",
-                                                "tr",
+                                                "se", "sk", "sn",
+                                                "tr", "tm", "tj",
                                                 "vn",
                                                 "za",
                                                 "us+euro", "us+inlt", "us+alt-intl", "us+dvorak-intl",
@@ -260,17 +245,12 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
-            modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt (Alt Gr)"));
-            modifier.append_xkb_option ("lv3:switch", _("Right Control"));
-            modifier.append_xkb_option ("lv3:menu_switch", _("Menu"));
-            modifier.append_xkb_option ("lv3:lwin_switch", _("Left Super"));
-            modifier.append_xkb_option ("lv3:rwin_switch", _("Right Super"));
-            //modifier.append_xkb_option ("lv3:alt_switch", _("Alt"));
-            modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
-            //modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
-            modifier.append_xkb_option ("lv3:ralt_alt", _("Disabled"));
-            modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:bksl_switch", _("Backslash"));
+            modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock ⇪"));
+            modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt ⌥"));
+            modifier.append_xkb_option ("lv3:switch", _("Right Ctrl ⌃"));
+            modifier.append_xkb_option ("lv3:rwin", _("Right Super ⌘"));
+
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
@@ -292,11 +272,8 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Right Control"));
-            modifier.append_xkb_option ("lv5:switch", _("Right Alt"));
-            modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
-            modifier.append_xkb_option ("lv5:lwin_switch_lock", _("Left Super"));
-            modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super"));
-            modifier.append_xkb_option ("lv5:lsgt_switch_lock" , _("Less/Grater"));
+            modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt ⌥"));
+            modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super ⌘"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
