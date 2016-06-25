@@ -271,7 +271,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             new_label (panel, _("Key to choose fifth level:"), 1);
 
             modifier = new Xkb_modifier ();
-            modifier.append_xkb_option ("", _("Right Control"));
+            modifier.append_xkb_option ("", _("Right Ctrl ⌃"));
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt ⌥"));
             modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super ⌘"));
             modifier.set_default_command ( "" );
@@ -288,11 +288,11 @@ namespace Pantheon.Keyboard.LayoutPage {
             string [] valid_input_sources = {"jp"};
             var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
 
-            new_label (panel, _("Kana Lock:"), 1);
-            new_xkb_option_switch ( panel, "japan:kana_lock", 1);
+            new_label (panel, _("Kana Lock:"), 0);
+            new_xkb_option_switch ( panel, "japan:kana_lock", 0);
 
-            new_label (panel, _("Nicola F Backspace:"), 0);
-            new_xkb_option_switch ( panel, "japan:nicola_f_bs", 0);
+            new_label (panel, _("Nicola F Backspace:"), 1);
+            new_xkb_option_switch ( panel, "japan:nicola_f_bs", 1);
 
             new_label (panel, _("Zenkaku Hankaku as Escape:"), 2);
             new_xkb_option_switch ( panel, "japan:hztg_escape", 2);
