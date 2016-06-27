@@ -5,13 +5,15 @@ namespace Pantheon.Keyboard.LayoutPage {
     class AdvancedSettingsPanel : Gtk.Grid {
         public string name;
         public string [] input_sources;
-        public AdvancedSettingsPanel ( string name, string [] input_sources ) {
+        public string [] exclusions;
+        public AdvancedSettingsPanel ( string name, string [] input_sources, string [] exclusions = {} ) {
             this.name = name;
             this.input_sources = input_sources;
+            this.exclusions = exclusions;
 
             this.row_spacing = 12;
             this.column_spacing = 12;
-            this.margin_top = 12;
+            this.margin_top = 0;
             this.margin_bottom  = 12;
             this.column_homogeneous = false;
             this.row_homogeneous = false;
@@ -22,18 +24,18 @@ namespace Pantheon.Keyboard.LayoutPage {
     }
 
     class AdvancedSettings : Gtk.Grid {
-        private Gtk.Separator sep;
         private Gtk.Stack stack;
         private HashTable <string, string> panel_for_layout;
+        AdvancedSettingsPanel [] all_panels;
 
-        public AdvancedSettings ( AdvancedSettingsPanel [] panels, LayoutSettings settings) {
-            sep = new Gtk.Separator (Gtk.Orientation.HORIZONTAL);
+        public AdvancedSettings ( AdvancedSettingsPanel [] panels ) {
             panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
-            this.attach (sep, 0, 0, 1, 1);
+
+            all_panels = panels;
 
             stack = new Gtk.Stack ();
             stack.hexpand = true;
-            this.attach (stack, 0, 1, 1, 1);
+            this.attach (stack, 0, 0, 1, 1);
 
             // Add an empty Widget
             var blank_panel = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -50,25 +52,45 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         public void set_visible_panel_from_layout ( string layout_name ){
-            string panel_name = panel_for_layout.lookup (layout_name) ;
+            string panel_name;
+            if (!panel_for_layout.lookup_extended (layout_name, null, out panel_name)) {
+                panel_name = "";
+            }
+            var splited_name = layout_name.split ("+");
 
-            if (panel_name == null ) {
+            if ( panel_name == "" && "+" in layout_name ) {
                 // if layout_name was not found we look for the layout without variant
-                if ("+" in layout_name) {
-                    var splited_name = layout_name.split ("+");
-                    layout_name = splited_name[0];
-                    panel_name = panel_for_layout.lookup (layout_name) ;
-                }
-                if (panel_name == null ) {
-                    // this.hide() cannot be used because it messes the alignment
-                    this.stack.set_visible_child_name ("none");
-                    this.sep.hide();
-                    return;
+                if (!panel_for_layout.lookup_extended (splited_name[0], null, out panel_name)) {
+                    panel_name = "";
                 }
             }
 
-            this.stack.set_visible_child_name (panel_name);
-            this.sep.show();
+            warning("panel to show: %s, layout name: %s", panel_name, layout_name);
+            if (panel_name == "") {
+                foreach ( AdvancedSettingsPanel panel in all_panels ) {
+                    if (panel==null || panel.exclusions.length == 0) 
+                        continue;
+
+                    if (!(splited_name[0] in panel.exclusions) && !("+" in panel_name && splited_name[0]+"*" in panel.exclusions)) {
+                        panel_name = panel.name;
+                        break;
+                    } else if (!(layout_name in panel.exclusions)) {
+                        panel_name = panel.name;
+                        break;
+                    } else if (!(splited_name[0] in panel.exclusions)) {
+                        panel_name = panel.name;
+                        break;
+                    }
+                }
+            }
+
+            if ( panel_name == "" ) {
+                // this.hide() cannot be used because it messes the alignment
+                this.stack.set_visible_child_name ("none");
+                return;
+            } else {
+                this.stack.set_visible_child_name (panel_name);
+            }
         }
     }
 
@@ -183,11 +205,12 @@ namespace Pantheon.Keyboard.LayoutPage {
             this.attach (display, 0, 0, 1, 5);
 
             // Advanced settings panel
-            AdvancedSettingsPanel [] panels = { third_level_layouts_panel (),
-                                                fifth_level_layouts_panel (),
+            AdvancedSettingsPanel [] panels = { fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
-                                                korean_layouts_panel () };
-            this.advanced_settings = new AdvancedSettings (panels, settings);
+                                                korean_layouts_panel (),
+                                                third_level_layouts_panel ()};
+
+            this.advanced_settings = new AdvancedSettings (panels);
 
             advanced_settings.hexpand = advanced_settings.vexpand = true;
             advanced_settings.valign = Gtk.Align.START;
@@ -214,46 +237,31 @@ namespace Pantheon.Keyboard.LayoutPage {
 		}
 
         private AdvancedSettingsPanel third_level_layouts_panel () {
-            string [] valid_input_sources = {"al", "az",
-                                                "be", "br", "bt", "bw",
-                                                "ca", "cd", "ch", "cs", "cz",
-                                                "de","dk",
-                                                "ee", "es", "eu",
-                                                "fi", "fo", "fr",
-                                                "gb", "gr", "gn",
-                                                "hu",
-                                                "ie", "ir", "is", "it",
-                                                "ke",
-                                                "latam", "lk", "lt",
-                                                "mn", "mt",
-                                                "nl", "no",
-                                                "pl", "pt", "ph",
-                                                "ro",
-                                                "se", "sk", "sn",
-                                                "tr", "tm", "tj",
-                                                "vn",
-                                                "za",
-                                                "us+euro", "us+inlt", "us+alt-intl", "us+dvorak-intl",
-                                                "us+dvorak-alt-intl", "us+rus", "us+mac", "us+colemak",
-                                                "us+altgr-intl", "us+olpc", "us+olpcm", "us+hbs", "us+workman",
-                                                "us+workman-intl", "us+norman", "us+cz_sk_de", "us+intl_unicode",
-                                                "us+ats", "us+crd"};
+            string [] invalid_input_sources = { "am*", "ara*", "az+cyrillic",
+                                                "bg*", "by*", "by+legacy",
+                                                "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
+                                                "fr+dvorak",
+                                                "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
+                                                "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
+                                                "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq*",
+                                                "jp*",
+                                                "kg*", "kz*",
+                                                "la*", "lk+tam_TAB", "lk+tam_unicode",
+                                                "mk*", "mv*",
+                                                "no+mac", "no+mac_nodeadkeys", "np*",
+                                                "pk+ara",
+                                                "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
+                                                "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
+                                                "sy", "sy+syc", "sy+syc_phonetic",
+                                                "th*", "tz*",
+                                                "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
+                                                "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
+                                                "us+dvorak-l", "us+dvorak-r", "uz*"};
 
-            var panel = new AdvancedSettingsPanel ( "third_level_layouts", valid_input_sources );
+            var panel = new AdvancedSettingsPanel ( "third_level_layouts", {}, invalid_input_sources );
 
             new_label (panel, _("Key to choose third level:"), 0);
-
-            Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
-            modifier.append_xkb_option ("", _("Default"));
-            modifier.append_xkb_option ("lv3:bksl_switch", _("Backslash"));
-            modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock ⇪"));
-            modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt ⌥"));
-            modifier.append_xkb_option ("lv3:switch", _("Right Ctrl ⌃"));
-            modifier.append_xkb_option ("lv3:rwin", _("Right Super ⌘"));
-
-            modifier.set_default_command ( "" );
-            settings.add_xkb_modifier (modifier);
-
+            Xkb_modifier modifier = settings.get_xkb_modifier_by_name ("third_level_key");
             new_combo_box (panel, modifier, 0);
 
             panel.show_all ();
@@ -265,7 +273,16 @@ namespace Pantheon.Keyboard.LayoutPage {
             var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
 
             new_label (panel, _("Key to choose third level:"), 0);
-            Xkb_modifier modifier = settings.get_xkb_modifier_by_name ("third_level_key");
+            Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
+            modifier.append_xkb_option ("", _("Default"));
+            modifier.append_xkb_option ("lv3:bksl_switch", _("Backslash"));
+            modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock ⇪"));
+            modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt ⌥"));
+            modifier.append_xkb_option ("lv3:switch", _("Right Ctrl ⌃"));
+            modifier.append_xkb_option ("lv3:rwin", _("Right Super ⌘"));
+
+            modifier.set_default_command ( "" );
+            settings.add_xkb_modifier (modifier);
             new_combo_box (panel, modifier, 0);
 
             new_label (panel, _("Key to choose fifth level:"), 1);
