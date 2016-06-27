@@ -134,6 +134,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
+            modifier.append_xkb_option ("compose:rwin", _("Right Super"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
@@ -248,6 +249,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
             modifier.append_xkb_option ("lv3:switch", _("Right Ctrl"));
+            modifier.append_xkb_option ("lv3:rwin", _("Right Super"));
 
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
@@ -258,6 +260,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
             modifier.append_xkb_option ("", _("Right Ctrl"));
+            modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
