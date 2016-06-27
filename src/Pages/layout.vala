@@ -135,7 +135,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
-            modifier.append_xkb_option ("compose:rwin", _("Right Super"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
@@ -163,12 +162,12 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             compose_combo_box.changed.connect (() => {
                 bool disable = compose_combo_box.active_id != "compose:caps";
-                caps_label.set_sensitive (caps);
-                caps_combo_box.set_sensitive (caps);
+                caps_label.set_sensitive (disable);
+                caps_combo_box.set_sensitive (disable);
             });
 
             switch_combo_box.changed.connect (() => {
-                bool disable = switch_combo_box.active_id != "grp:caps_toggle");
+                bool disable = switch_combo_box.active_id != "grp:caps_toggle";
                 caps_label.set_sensitive (disable);
                 caps_combo_box.set_sensitive (disable);
             });
