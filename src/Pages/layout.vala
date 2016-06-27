@@ -109,18 +109,17 @@ namespace Pantheon.Keyboard.LayoutPage {
                            new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
 
             // Layout switching keybinding
-            new_label (this, _("Switch Layout:"), 0, 1);
+            new_label (this, _("Switch layout:"), 0, 1);
             Xkb_modifier modifier = new Xkb_modifier ("switch-layout");
 
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
             modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
             modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt + Space"));
-            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Both Shift keys together")); //NOT a TYPO
+            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Both Shift keys together"));
             modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
             modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl + Alt"));
             modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
-            modifier.append_xkb_option ("grp:rwin_toggle", _("Right Super"));
             modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift + Caps Lock"));
 
             modifier.set_default_command ("grp:alt_space_toggle");
@@ -135,7 +134,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
-            modifier.append_xkb_option ("compose:menu", _("Menu"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
@@ -146,14 +144,14 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Default"));
-            modifier.append_xkb_option ("caps:none", _("Caps Lock Disabled"));
+            modifier.append_xkb_option ("caps:none", _("Caps Lock disabled"));
             modifier.append_xkb_option ("caps:backspace", _("as Backspace"));
             modifier.append_xkb_option ("ctrl:nocaps", _("as Ctrl"));
             modifier.append_xkb_option ("caps:escape", _("as Escape"));
             modifier.append_xkb_option ("caps:numlock", _("as Num Lock"));
             modifier.append_xkb_option ("caps:super", _("as Super"));
-            modifier.append_xkb_option ("ctrl:swapcaps", _("Swap With Control"));
-            modifier.append_xkb_option ("caps:swapescape", _("Swap With Escape"));
+            modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Control"));
+            modifier.append_xkb_option ("caps:swapescape", _("Swap with Escape"));
 
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
@@ -232,7 +230,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var panel = new AdvancedSettingsPanel ( "third_level_layouts", {}, invalid_input_sources );
 
-            new_label (panel, _("Key to choose third level:"), 0);
+            new_label (panel, _("Key to choose 3rd level:"), 0);
             Xkb_modifier modifier = settings.get_xkb_modifier_by_name ("third_level_key");
             new_combo_box (panel, modifier, 0);
 
@@ -244,24 +242,22 @@ namespace Pantheon.Keyboard.LayoutPage {
         private AdvancedSettingsPanel fifth_level_layouts_panel () {
             var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
 
-            new_label (panel, _("Key to choose third level:"), 0);
+            new_label (panel, _("Key to choose 3rd level:"), 0);
             Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
             modifier.append_xkb_option ("lv3:switch", _("Right Ctrl"));
-            modifier.append_xkb_option ("lv3:rwin", _("Right Super"));
 
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
             new_combo_box (panel, modifier, 0);
 
-            new_label (panel, _("Key to choose fifth level:"), 1);
+            new_label (panel, _("Key to choose 5th level:"), 1);
 
             modifier = new Xkb_modifier ();
-            modifier.append_xkb_option ("", _("Right Ctrl"));
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
-            modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super"));
+            modifier.append_xkb_option ("", _("Right Ctrl"));
             modifier.set_default_command ( "" );
             settings.add_xkb_modifier (modifier);
 
