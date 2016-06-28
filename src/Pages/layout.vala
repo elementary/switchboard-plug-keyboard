@@ -6,7 +6,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         public string name;
         public string [] input_sources;
         public string [] exclusions;
-        public AdvancedSettingsPanel ( string name, string [] input_sources, string [] exclusions = {} ) {
+        public AdvancedSettingsPanel (string name, string [] input_sources, string [] exclusions = {}) {
             this.name = name;
             this.input_sources = input_sources;
             this.exclusions = exclusions;
@@ -28,7 +28,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         private HashTable <string, string> panel_for_layout;
         AdvancedSettingsPanel [] all_panels;
 
-        public AdvancedSettings ( AdvancedSettingsPanel [] panels ) {
+        public AdvancedSettings (AdvancedSettingsPanel [] panels) {
             panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
 
             all_panels = panels;
@@ -58,7 +58,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             }
             var splited_name = layout_name.split ("+");
 
-            if ( panel_name == "" && "+" in layout_name ) {
+            if (panel_name == "" && "+" in layout_name) {
                 // if layout_name was not found we look for the layout without variant
                 if (!panel_for_layout.lookup_extended (splited_name[0], null, out panel_name)) {
                     panel_name = "";
@@ -66,7 +66,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             }
 
             if (panel_name == "") {
-                foreach ( AdvancedSettingsPanel panel in all_panels ) {
+                foreach (AdvancedSettingsPanel panel in all_panels) {
                     if (panel==null || panel.exclusions.length == 0) 
                         continue;
 
@@ -77,7 +77,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 }
             }
 
-            if ( panel_name == "" ) {
+            if (panel_name == "") {
                 // this.hide() cannot be used because it messes the alignment
                 this.stack.set_visible_child_name ("none");
                 return;
@@ -125,7 +125,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.set_default_command ("grp:alt_space_toggle");
             settings.add_xkb_modifier (modifier);
 
-            var switch_combo_box = new_combo_box (this, modifier, 0, 2);
+            new_combo_box (this, modifier, 0, 2);
 
             // Compose key position menu
             new_label (this, _("Compose key:"), 1, 1);
@@ -135,13 +135,14 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
             modifier.append_xkb_option ("compose:rwin", _("Right Super"));
-            modifier.set_default_command ( "" );
+
+            modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
-            var compose_combo_box = new_combo_box (this, modifier, 1, 2);
+            new_combo_box (this, modifier, 1, 2);
 
             // Caps Lock key functionality
-            var caps_label = new_label (this, _("Caps Lock behavior:"), 2, 1);
+            new_label (this, _("Caps Lock behavior:"), 2, 1);
 
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Default"));
@@ -154,10 +155,10 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Control"));
             modifier.append_xkb_option ("caps:swapescape", _("Swap with Escape"));
 
-            modifier.set_default_command ( "" );
+            modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
-            var caps_combo_box = new_combo_box (this, modifier, 2, 2);
+            new_combo_box (this, modifier, 2, 2);
 
 			// tree view to display the current layouts
 			display = new LayoutPage.Display ();
@@ -196,28 +197,28 @@ namespace Pantheon.Keyboard.LayoutPage {
 		}
 
         private AdvancedSettingsPanel third_level_layouts_panel () {
-            string [] invalid_input_sources = { "am*", "ara*", "az+cyrillic",
-                                                "bg*", "by", "by+legacy",
-                                                "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
-                                                "fr+dvorak",
-                                                "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
-                                                "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
-                                                "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
-                                                "jp*",
-                                                "kg*", "kz*",
-                                                "la*", "lk+tam_TAB", "lk+tam_unicode",
-                                                "mk*", "mv*",
-                                                "no+mac", "no+mac_nodeadkeys", "np*",
-                                                "pk+ara",
-                                                "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
-                                                "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
-                                                "sy", "sy+syc", "sy+syc_phonetic",
-                                                "th*", "tz*",
-                                                "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
-                                                "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
-                                                "us+dvorak-l", "us+dvorak-r", "uz*"};
+            string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
+                                               "bg*", "by", "by+legacy",
+                                               "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
+                                               "fr+dvorak",
+                                               "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
+                                               "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
+                                               "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
+                                               "jp*",
+                                               "kg*", "kz*",
+                                               "la*", "lk+tam_TAB", "lk+tam_unicode",
+                                               "mk*", "mv*",
+                                               "no+mac", "no+mac_nodeadkeys", "np*",
+                                               "pk+ara",
+                                               "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
+                                               "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
+                                               "sy", "sy+syc", "sy+syc_phonetic",
+                                               "th*", "tz*",
+                                               "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
+                                               "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
+                                               "us+dvorak-l", "us+dvorak-r", "uz*"};
 
-            var panel = new AdvancedSettingsPanel ( "third_level_layouts", {}, invalid_input_sources );
+            var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
 
             new_label (panel, _("Key to choose 3rd level:"), 0);
             Xkb_modifier modifier = settings.get_xkb_modifier_by_name ("third_level_key");
@@ -239,7 +240,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv3:switch", _("Right Ctrl"));
             modifier.append_xkb_option ("lv3:rwin", _("Right Super"));
 
-            modifier.set_default_command ( "" );
+            modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
             new_combo_box (panel, modifier, 0);
 
@@ -264,13 +265,13 @@ namespace Pantheon.Keyboard.LayoutPage {
             var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
 
             new_label (panel, _("Kana Lock:"), 0);
-            new_xkb_option_switch ( panel, "japan:kana_lock", 0);
+            new_xkb_option_switch (panel, "japan:kana_lock", 0);
 
             new_label (panel, _("Nicola F Backspace:"), 1);
-            new_xkb_option_switch ( panel, "japan:nicola_f_bs", 1);
+            new_xkb_option_switch (panel, "japan:nicola_f_bs", 1);
 
             new_label (panel, _("Zenkaku Hankaku as Escape:"), 2);
-            new_xkb_option_switch ( panel, "japan:hztg_escape", 2);
+            new_xkb_option_switch (panel, "japan:hztg_escape", 2);
 
             panel.show_all ();
 
@@ -279,11 +280,10 @@ namespace Pantheon.Keyboard.LayoutPage {
 
         private AdvancedSettingsPanel korean_layouts_panel () {
             string [] valid_input_sources = {"kr"};
-            var panel = new AdvancedSettingsPanel ( "korean_layouts", valid_input_sources );
+            var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
 
-            Xkb_modifier modifier = new Xkb_modifier ();
             new_label (panel, _("Hangul/Hanja keys on Right Alt/Ctrl:"), 0);
-            new_xkb_option_switch ( panel, "korean:ralt_rctrl", 0);
+            new_xkb_option_switch (panel, "korean:ralt_rctrl", 0);
 
             panel.show_all ();
 

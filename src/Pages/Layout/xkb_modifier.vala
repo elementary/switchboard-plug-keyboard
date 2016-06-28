@@ -43,7 +43,7 @@ namespace Pantheon.Keyboard.LayoutPage
         public void update_from_gsettings () {
             string [] xkb_options = settings.get_strv (this.gsettings_key);
             bool found = false;
-            foreach ( string xkb_command in this.xkb_option_commands ){
+            foreach (string xkb_command in this.xkb_option_commands) {
                 bool command_is_valid = true;
                 if (xkb_command != "") {
                     var com_arr = xkb_command.split(",", 4);
@@ -65,7 +65,7 @@ namespace Pantheon.Keyboard.LayoutPage
         }
 
         public void update_active_command ( string val ) {
-            if ( !(val in xkb_option_commands) || val == active_command ) {
+            if (!(val in xkb_option_commands) || val == active_command) {
                 return;
             }
 
@@ -77,13 +77,13 @@ namespace Pantheon.Keyboard.LayoutPage
             var old_arr = old_opt.split(",", 4);
             var new_arr = val.split(",", 4);
 
-            foreach ( string xkb_command in old_xkb_options ) {
+            foreach (string xkb_command in old_xkb_options) {
                 if (!(xkb_command in old_arr) || (xkb_command in new_arr)) {
                     new_xkb_options += xkb_command;
                 } 
             }
 
-            foreach ( string xkb_command in new_arr ) {
+            foreach (string xkb_command in new_arr) {
                 if (!(xkb_command in new_xkb_options)) {
                     new_xkb_options += xkb_command;
                 } 

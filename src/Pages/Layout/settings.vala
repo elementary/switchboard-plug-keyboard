@@ -270,9 +270,6 @@ namespace Pantheon.Keyboard.LayoutPage
         // signal when the variable per_window is changed by gsettings
         public signal void per_window_changed ();
 
-        // An array of all view switches that modify in any way xkb_options
-        // the value of xkb_options is computed as an array of all active_command properties
-
         public void parse_default () {
             var file = File.new_for_path ("/etc/default/keyboard");
 
