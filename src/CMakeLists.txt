@@ -37,13 +37,6 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     Pages/Shortcuts/custom_shortcut_settings.vala
     Pages/Shortcuts/conflict_dialog.vala
     Pages/Shortcuts/display_tree.vala
-    
-    Pages/options.vala
-    Pages/Options/section_switcher.vala
-    Pages/Options/option_handler.vala
-    Pages/Options/section_display.vala
-    Pages/Options/option_tree.vala
-    Pages/Options/option_settings.vala
 
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
