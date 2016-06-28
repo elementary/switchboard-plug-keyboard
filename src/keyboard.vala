@@ -21,7 +21,6 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
-            stack.add_titled (new Keyboard.Options.Page (), "options", _("Options"));
 
             grid.attach (stack_switcher, 0, 0, 1, 1);
             grid.attach (stack, 0, 1, 1, 1);

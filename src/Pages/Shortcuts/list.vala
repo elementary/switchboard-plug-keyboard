@@ -291,8 +291,6 @@ namespace Pantheon.Keyboard.Shortcuts
 						_("Toggle On Screen Keyboard"),
 						_("Toggle Screenreader"),
 						_("Toggle High Contrast"),
-						_("Next Keyboard Layout"),
-						_("Previous Keyboard Layout")
 					},
 
 					schemas = {
@@ -304,8 +302,6 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.GALA,
-						Schema.GALA
 					},
 		
 					keys = {
@@ -317,8 +313,6 @@ namespace Pantheon.Keyboard.Shortcuts
 						"on-screen-keyboard",
 						"screenreader",
 						"toggle-contrast",
-						"switch-input-source",
-						"switch-input-source-backward"
 					}
 				}
 			};
