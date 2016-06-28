@@ -171,6 +171,12 @@ namespace Pantheon.Keyboard.LayoutPage {
                 caps_combo_box.set_sensitive (disable);
             });
             
+            switch_combo_box.changed.connect (() => {
+                bool disable = switch_combo_box.active_id != "grp:caps_toggle";
+                caps_label.set_sensitive (disable);
+                caps_combo_box.set_sensitive (disable);
+            });
+            
 			// tree view to display the current layouts
 			display = new LayoutPage.Display ();
             this.attach (display, 0, 0, 1, 5);
