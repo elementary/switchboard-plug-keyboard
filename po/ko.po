@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-05-14 20:54+0400\n"
+"POT-Creation-Date: 2016-06-27 22:20+0200\n"
 "PO-Revision-Date: 2016-06-25 22:27+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <ko@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-26 05:56+0000\n"
-"X-Generator: Launchpad (build 18111)\n"
+"X-Launchpad-Export-Date: 2016-06-28 05:38+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/keyboard.vala:7
 msgid "Keyboard"
@@ -41,45 +41,163 @@ msgstr "레이아웃"
 msgid "Options"
 msgstr "옵션"
 
-#: ../src/Pages/Layout/add_layout.vala:19
-msgid "Language:"
-msgstr "언어："
+#: ../src/Pages/layout.vala:97
+msgid "Allow different layouts for individual windows:"
+msgstr "각 창마다 다른 레이아웃 사용:"
 
-#: ../src/Pages/Layout/add_layout.vala:20
-msgid "Layout:"
-msgstr "레이아웃:"
+#: ../src/Pages/layout.vala:110
+msgid "Compose key:"
+msgstr "조합 키:"
 
-#: ../src/Pages/Layout/add_layout.vala:62
-msgid "Add Layout"
-msgstr "레이아웃 추가"
+#: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
+#: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
+msgid "Disabled"
+msgstr "사용 안 함"
 
-#: ../src/Pages/Layout/add_layout.vala:63
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
-msgid "Cancel"
-msgstr "취소"
+#: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
+msgid "Right Alt (Alt Gr)"
+msgstr "오른쪽 Alt (Alt Gr)"
 
-#: ../src/Pages/Layout/add_layout.vala:101
-#: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
-msgid "Default"
-msgstr "기본값"
+#: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
+#: ../src/Pages/layout.vala:255
+msgid "Right Super"
+msgstr "오른쪽 수퍼"
 
-#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr "추가…"
+#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
+#: ../src/Pages/layout.vala:251
+msgid "Right Control"
+msgstr "오른쪽 Ctrl"
 
-#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
-#: ../src/Pages/Shortcuts/display.vala:43
-#: ../src/Pages/Shortcuts/display.vala:46
-msgid "Remove"
-msgstr "제거"
+#: ../src/Pages/layout.vala:116
+msgid "Left Control"
+msgstr "왼쪽 Ctrl"
 
-#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "위로 이동"
+#: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
+#: ../src/Pages/layout.vala:254
+msgid "Left Super"
+msgstr "왼쪽 수퍼"
 
-#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "아래로 이동"
+#: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
+#: ../src/Pages/layout.vala:229
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
+msgid "Pause"
+msgstr "일시 정지"
+
+#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
+msgid "Menu"
+msgstr "메뉴"
+
+#: ../src/Pages/layout.vala:127
+msgid "Caps Lock function:"
+msgstr "Caps Lock 기능:"
+
+#: ../src/Pages/layout.vala:131
+msgid "Num Lock"
+msgstr "Num Lock"
+
+#: ../src/Pages/layout.vala:132
+msgid "Escape"
+msgstr "Esc"
+
+#: ../src/Pages/layout.vala:133
+msgid "Backspace"
+msgstr "Backspace"
+
+#: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
+msgid "Super"
+msgstr "수퍼"
+
+#: ../src/Pages/layout.vala:135
+msgid "Hyper"
+msgstr "하이퍼"
+
+#: ../src/Pages/layout.vala:137
+msgid "Control"
+msgstr "Ctrl"
+
+#: ../src/Pages/layout.vala:138
+msgid "Swap With Control"
+msgstr "Ctrl과 바꾸기"
+
+#: ../src/Pages/layout.vala:139
+msgid "Swap With Escape"
+msgstr "Esc와 바꾸기"
+
+#: ../src/Pages/layout.vala:181
+msgid "Type to test your layout…"
+msgstr "글자를 입력해서 레이아웃 설정을 확인해 보세요…"
+
+#: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
+msgid "Key to choose third level:"
+msgstr "3 단계 선택 키:"
+
+#: ../src/Pages/layout.vala:225
+msgid "Alt"
+msgstr "Alt"
+
+#: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
+#: ../src/Pages/layout.vala:253
+msgid "Right Alt"
+msgstr "오른쪽 Alt"
+
+#: ../src/Pages/layout.vala:227
+msgid "Left Alt"
+msgstr "왼쪽 Alt"
+
+#: ../src/Pages/layout.vala:230
+msgid "Backslash"
+msgstr "백슬래시"
+
+#: ../src/Pages/layout.vala:248
+msgid "Key to choose fifth level:"
+msgstr "5 단계 선택 키:"
+
+#: ../src/Pages/layout.vala:256
+msgid "Less/Grater"
+msgstr "< 작게/크게 >"
+
+#: ../src/Pages/layout.vala:271
+msgid "Nicola F Backspace:"
+msgstr "NICOLA-F 식 Backspace:"
+
+#: ../src/Pages/layout.vala:274
+msgid "Kana Lock:"
+msgstr "가나 잠금:"
+
+#: ../src/Pages/layout.vala:277
+msgid "Zenkaku Hankaku as Escape:"
+msgstr "전각과 반각 키를 Esc로 사용:"
+
+#: ../src/Pages/shortcuts.vala:43
+msgid "Windows"
+msgstr "창"
+
+#: ../src/Pages/shortcuts.vala:44
+msgid "Workspaces"
+msgstr "작업공간"
+
+#: ../src/Pages/shortcuts.vala:45
+msgid "Screenshots"
+msgstr "스크린샷"
+
+#: ../src/Pages/shortcuts.vala:46
+msgid "Applications"
+msgstr "애플리케이션"
+
+#: ../src/Pages/shortcuts.vala:47
+msgid "Media"
+msgstr "미디어"
+
+#: ../src/Pages/shortcuts.vala:48
+msgid "Universal Access"
+msgstr "편리한 기능"
+
+#: ../src/Pages/shortcuts.vala:49
+msgid "Custom"
+msgstr "사용자 설정"
 
 #: ../src/Pages/Options/option_handler.vala:15
 msgid "None"
@@ -436,163 +554,45 @@ msgstr "X 서버를 멈추는 키 조합"
 msgid "Control + Alt + Backspace"
 msgstr "Ctrl + Alt + Backspace"
 
-#: ../src/Pages/layout.vala:97
-msgid "Allow different layouts for individual windows:"
-msgstr "각 창마다 다른 레이아웃 사용:"
+#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr "추가…"
 
-#: ../src/Pages/layout.vala:110
-msgid "Compose key:"
-msgstr "조합 키:"
+#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46
+msgid "Remove"
+msgstr "제거"
 
-#: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
-#: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "사용 안 함"
+#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "위로 이동"
 
-#: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
-msgid "Right Alt (Alt Gr)"
-msgstr "오른쪽 Alt (Alt Gr)"
+#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "아래로 이동"
 
-#: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
-#: ../src/Pages/layout.vala:255
-msgid "Right Super"
-msgstr "오른쪽 수퍼"
+#: ../src/Pages/Layout/add_layout.vala:19
+msgid "Language:"
+msgstr "언어："
 
-#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
-#: ../src/Pages/layout.vala:251
-msgid "Right Control"
-msgstr "오른쪽 Ctrl"
+#: ../src/Pages/Layout/add_layout.vala:20
+msgid "Layout:"
+msgstr "레이아웃:"
 
-#: ../src/Pages/layout.vala:116
-msgid "Left Control"
-msgstr "왼쪽 Ctrl"
+#: ../src/Pages/Layout/add_layout.vala:62
+msgid "Add Layout"
+msgstr "레이아웃 추가"
 
-#: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
-#: ../src/Pages/layout.vala:254
-msgid "Left Super"
-msgstr "왼쪽 수퍼"
+#: ../src/Pages/Layout/add_layout.vala:63
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
+msgid "Cancel"
+msgstr "취소"
 
-#: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
-#: ../src/Pages/layout.vala:229
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
-msgid "Pause"
-msgstr "일시 정지"
-
-#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
-msgid "Menu"
-msgstr "메뉴"
-
-#: ../src/Pages/layout.vala:127
-msgid "Caps Lock function:"
-msgstr "Caps Lock 기능:"
-
-#: ../src/Pages/layout.vala:131
-msgid "Num Lock"
-msgstr "Num Lock"
-
-#: ../src/Pages/layout.vala:132
-msgid "Escape"
-msgstr "Esc"
-
-#: ../src/Pages/layout.vala:133
-msgid "Backspace"
-msgstr "Backspace"
-
-#: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
-msgid "Super"
-msgstr "수퍼"
-
-#: ../src/Pages/layout.vala:135
-msgid "Hyper"
-msgstr "하이퍼"
-
-#: ../src/Pages/layout.vala:137
-msgid "Control"
-msgstr "Ctrl"
-
-#: ../src/Pages/layout.vala:138
-msgid "Swap With Control"
-msgstr "Ctrl과 바꾸기"
-
-#: ../src/Pages/layout.vala:139
-msgid "Swap With Escape"
-msgstr "Esc와 바꾸기"
-
-#: ../src/Pages/layout.vala:181
-msgid "Type to test your layout…"
-msgstr "글자를 입력해서 레이아웃 설정을 확인해 보세요…"
-
-#: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
-msgid "Key to choose third level:"
-msgstr "3 단계 선택 키:"
-
-#: ../src/Pages/layout.vala:225
-msgid "Alt"
-msgstr "Alt"
-
-#: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
-#: ../src/Pages/layout.vala:253
-msgid "Right Alt"
-msgstr "오른쪽 Alt"
-
-#: ../src/Pages/layout.vala:227
-msgid "Left Alt"
-msgstr "왼쪽 Alt"
-
-#: ../src/Pages/layout.vala:230
-msgid "Backslash"
-msgstr "백슬래시"
-
-#: ../src/Pages/layout.vala:248
-msgid "Key to choose fifth level:"
-msgstr "5 단계 선택 키:"
-
-#: ../src/Pages/layout.vala:256
-msgid "Less/Grater"
-msgstr "< 작게/크게 >"
-
-#: ../src/Pages/layout.vala:271
-msgid "Nicola F Backspace:"
-msgstr "NICOLA-F 식 Backspace:"
-
-#: ../src/Pages/layout.vala:274
-msgid "Kana Lock:"
-msgstr "가나 잠금:"
-
-#: ../src/Pages/layout.vala:277
-msgid "Zenkaku Hankaku as Escape:"
-msgstr "전각과 반각 키를 Esc로 사용:"
-
-#: ../src/Pages/shortcuts.vala:43
-msgid "Windows"
-msgstr "창"
-
-#: ../src/Pages/shortcuts.vala:44
-msgid "Workspaces"
-msgstr "작업공간"
-
-#: ../src/Pages/shortcuts.vala:45
-msgid "Screenshots"
-msgstr "스크린샷"
-
-#: ../src/Pages/shortcuts.vala:46
-msgid "Applications"
-msgstr "애플리케이션"
-
-#: ../src/Pages/shortcuts.vala:47
-msgid "Media"
-msgstr "미디어"
-
-#: ../src/Pages/shortcuts.vala:48
-msgid "Universal Access"
-msgstr "편리한 기능"
-
-#: ../src/Pages/shortcuts.vala:49
-msgid "Custom"
-msgstr "사용자 설정"
+#: ../src/Pages/Layout/add_layout.vala:101
+#: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
+msgid "Default"
+msgstr "기본값"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -631,17 +631,10 @@ msgstr "초"
 msgid "Type to test your settings…"
 msgstr "설정을 시험하려면 입력하세요"
 
-#: ../src/Pages/Shortcuts/custom_tree.vala:4
-msgid "Enter Command"
-msgstr "명령어 입력하기"
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:54
-msgid "Command"
-msgstr "명령어"
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:55
-msgid "Shortcut"
-msgstr "단축키"
+#: ../src/Pages/Shortcuts/display.vala:42
+#: ../src/Pages/Shortcuts/display.vala:45
+msgid "Add"
+msgstr "추가하기"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -935,6 +928,10 @@ msgstr "다음 키보드 배치"
 msgid "Previous Keyboard Layout"
 msgstr "이전 키보드 배치"
 
+#: ../src/Pages/Shortcuts/shortcut.vala:50
+msgid "Ctrl"
+msgstr "Ctrl"
+
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
 msgstr "%s는 이미 %s가 사용하고 있습니다!"
@@ -947,11 +944,14 @@ msgstr "단축키를 %s에 할당하면, %s는 기존의 단축키로 사용할 
 msgid "Reassign"
 msgstr "재할당"
 
-#: ../src/Pages/Shortcuts/shortcut.vala:50
-msgid "Ctrl"
-msgstr "Ctrl"
+#: ../src/Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr "명령어 입력하기"
 
-#: ../src/Pages/Shortcuts/display.vala:42
-#: ../src/Pages/Shortcuts/display.vala:45
-msgid "Add"
-msgstr "추가하기"
+#: ../src/Pages/Shortcuts/custom_tree.vala:54
+msgid "Command"
+msgstr "명령어"
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:55
+msgid "Shortcut"
+msgstr "단축키"

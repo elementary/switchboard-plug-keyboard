@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-05-14 20:54+0400\n"
+"POT-Creation-Date: 2016-06-27 22:20+0200\n"
 "PO-Revision-Date: 2014-10-12 10:45+0000\n"
 "Last-Translator: Yennefer of Vengerberg <Unknown>\n"
 "Language-Team: Bulgarian <bg@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-05-15 05:27+0000\n"
-"X-Generator: Launchpad (build 18025)\n"
+"X-Launchpad-Export-Date: 2016-06-28 05:38+0000\n"
+"X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/keyboard.vala:7
 msgid "Keyboard"
@@ -41,45 +41,163 @@ msgstr "Подредба"
 msgid "Options"
 msgstr "Настройки"
 
-#: ../src/Pages/Layout/add_layout.vala:19
-msgid "Language:"
-msgstr "Език:"
+#: ../src/Pages/layout.vala:97
+msgid "Allow different layouts for individual windows:"
+msgstr "Позволи различни подредби за отделните прозорци:"
 
-#: ../src/Pages/Layout/add_layout.vala:20
-msgid "Layout:"
-msgstr "Подредба:"
+#: ../src/Pages/layout.vala:110
+msgid "Compose key:"
+msgstr ""
 
-#: ../src/Pages/Layout/add_layout.vala:62
-msgid "Add Layout"
-msgstr "Добави подредба"
+#: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
+#: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
+msgid "Disabled"
+msgstr "Негодно"
 
-#: ../src/Pages/Layout/add_layout.vala:63
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
-msgid "Cancel"
-msgstr "Отказ"
+#: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
+msgid "Right Alt (Alt Gr)"
+msgstr ""
 
-#: ../src/Pages/Layout/add_layout.vala:101
-#: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
-msgid "Default"
-msgstr "Обикновено"
+#: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
+#: ../src/Pages/layout.vala:255
+msgid "Right Super"
+msgstr ""
 
-#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr "Добави…"
+#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
+#: ../src/Pages/layout.vala:251
+msgid "Right Control"
+msgstr ""
 
-#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
-#: ../src/Pages/Shortcuts/display.vala:43
-#: ../src/Pages/Shortcuts/display.vala:46
-msgid "Remove"
-msgstr "Премахни"
+#: ../src/Pages/layout.vala:116
+msgid "Left Control"
+msgstr ""
 
-#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "Премести нагоре"
+#: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
+#: ../src/Pages/layout.vala:254
+msgid "Left Super"
+msgstr ""
 
-#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "Премести надолу"
+#: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
+#: ../src/Pages/layout.vala:229
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
+msgid "Pause"
+msgstr "Прекъсване"
+
+#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
+msgid "Menu"
+msgstr "Меню"
+
+#: ../src/Pages/layout.vala:127
+msgid "Caps Lock function:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:131
+msgid "Num Lock"
+msgstr "Num Lock"
+
+#: ../src/Pages/layout.vala:132
+msgid "Escape"
+msgstr ""
+
+#: ../src/Pages/layout.vala:133
+msgid "Backspace"
+msgstr ""
+
+#: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
+msgid "Super"
+msgstr ""
+
+#: ../src/Pages/layout.vala:135
+msgid "Hyper"
+msgstr ""
+
+#: ../src/Pages/layout.vala:137
+msgid "Control"
+msgstr ""
+
+#: ../src/Pages/layout.vala:138
+msgid "Swap With Control"
+msgstr ""
+
+#: ../src/Pages/layout.vala:139
+msgid "Swap With Escape"
+msgstr ""
+
+#: ../src/Pages/layout.vala:181
+msgid "Type to test your layout…"
+msgstr "Напишете нещо за да проверите подредбата..."
+
+#: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
+msgid "Key to choose third level:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:225
+msgid "Alt"
+msgstr ""
+
+#: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
+#: ../src/Pages/layout.vala:253
+msgid "Right Alt"
+msgstr "Десен Alt"
+
+#: ../src/Pages/layout.vala:227
+msgid "Left Alt"
+msgstr "Ляв Alt"
+
+#: ../src/Pages/layout.vala:230
+msgid "Backslash"
+msgstr "Обратно наклонена черта"
+
+#: ../src/Pages/layout.vala:248
+msgid "Key to choose fifth level:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:256
+msgid "Less/Grater"
+msgstr ""
+
+#: ../src/Pages/layout.vala:271
+msgid "Nicola F Backspace:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:274
+msgid "Kana Lock:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:277
+msgid "Zenkaku Hankaku as Escape:"
+msgstr ""
+
+#: ../src/Pages/shortcuts.vala:43
+msgid "Windows"
+msgstr "Прозорци"
+
+#: ../src/Pages/shortcuts.vala:44
+msgid "Workspaces"
+msgstr "Работни места"
+
+#: ../src/Pages/shortcuts.vala:45
+msgid "Screenshots"
+msgstr "Екраноснимки"
+
+#: ../src/Pages/shortcuts.vala:46
+msgid "Applications"
+msgstr "Приложения"
+
+#: ../src/Pages/shortcuts.vala:47
+msgid "Media"
+msgstr "Носител"
+
+#: ../src/Pages/shortcuts.vala:48
+msgid "Universal Access"
+msgstr "Всемирен Достъп"
+
+#: ../src/Pages/shortcuts.vala:49
+msgid "Custom"
+msgstr ""
 
 #: ../src/Pages/Options/option_handler.vala:15
 msgid "None"
@@ -467,163 +585,45 @@ msgstr "Клавишна комбинация за спиране на X сър�
 msgid "Control + Alt + Backspace"
 msgstr "Control+Alt+Backspace"
 
-#: ../src/Pages/layout.vala:97
-msgid "Allow different layouts for individual windows:"
-msgstr "Позволи различни подредби за отделните прозорци:"
+#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr "Добави…"
 
-#: ../src/Pages/layout.vala:110
-msgid "Compose key:"
-msgstr ""
+#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46
+msgid "Remove"
+msgstr "Премахни"
 
-#: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
-#: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
-msgid "Disabled"
-msgstr "Негодно"
+#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "Премести нагоре"
 
-#: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
-msgid "Right Alt (Alt Gr)"
-msgstr ""
+#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "Премести надолу"
 
-#: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
-#: ../src/Pages/layout.vala:255
-msgid "Right Super"
-msgstr ""
+#: ../src/Pages/Layout/add_layout.vala:19
+msgid "Language:"
+msgstr "Език:"
 
-#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
-#: ../src/Pages/layout.vala:251
-msgid "Right Control"
-msgstr ""
+#: ../src/Pages/Layout/add_layout.vala:20
+msgid "Layout:"
+msgstr "Подредба:"
 
-#: ../src/Pages/layout.vala:116
-msgid "Left Control"
-msgstr ""
+#: ../src/Pages/Layout/add_layout.vala:62
+msgid "Add Layout"
+msgstr "Добави подредба"
 
-#: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
-#: ../src/Pages/layout.vala:254
-msgid "Left Super"
-msgstr ""
+#: ../src/Pages/Layout/add_layout.vala:63
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
+msgid "Cancel"
+msgstr "Отказ"
 
-#: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
-#: ../src/Pages/layout.vala:229
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
-msgid "Pause"
-msgstr "Прекъсване"
-
-#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
-msgid "Menu"
-msgstr "Меню"
-
-#: ../src/Pages/layout.vala:127
-msgid "Caps Lock function:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:131
-msgid "Num Lock"
-msgstr "Num Lock"
-
-#: ../src/Pages/layout.vala:132
-msgid "Escape"
-msgstr ""
-
-#: ../src/Pages/layout.vala:133
-msgid "Backspace"
-msgstr ""
-
-#: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
-msgid "Super"
-msgstr ""
-
-#: ../src/Pages/layout.vala:135
-msgid "Hyper"
-msgstr ""
-
-#: ../src/Pages/layout.vala:137
-msgid "Control"
-msgstr ""
-
-#: ../src/Pages/layout.vala:138
-msgid "Swap With Control"
-msgstr ""
-
-#: ../src/Pages/layout.vala:139
-msgid "Swap With Escape"
-msgstr ""
-
-#: ../src/Pages/layout.vala:181
-msgid "Type to test your layout…"
-msgstr "Напишете нещо за да проверите подредбата..."
-
-#: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
-msgid "Key to choose third level:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:225
-msgid "Alt"
-msgstr ""
-
-#: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
-#: ../src/Pages/layout.vala:253
-msgid "Right Alt"
-msgstr "Десен Alt"
-
-#: ../src/Pages/layout.vala:227
-msgid "Left Alt"
-msgstr "Ляв Alt"
-
-#: ../src/Pages/layout.vala:230
-msgid "Backslash"
-msgstr "Обратно наклонена черта"
-
-#: ../src/Pages/layout.vala:248
-msgid "Key to choose fifth level:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:256
-msgid "Less/Grater"
-msgstr ""
-
-#: ../src/Pages/layout.vala:271
-msgid "Nicola F Backspace:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:274
-msgid "Kana Lock:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:277
-msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
-
-#: ../src/Pages/shortcuts.vala:43
-msgid "Windows"
-msgstr "Прозорци"
-
-#: ../src/Pages/shortcuts.vala:44
-msgid "Workspaces"
-msgstr "Работни места"
-
-#: ../src/Pages/shortcuts.vala:45
-msgid "Screenshots"
-msgstr "Екраноснимки"
-
-#: ../src/Pages/shortcuts.vala:46
-msgid "Applications"
-msgstr "Приложения"
-
-#: ../src/Pages/shortcuts.vala:47
-msgid "Media"
-msgstr "Носител"
-
-#: ../src/Pages/shortcuts.vala:48
-msgid "Universal Access"
-msgstr "Всемирен Достъп"
-
-#: ../src/Pages/shortcuts.vala:49
-msgid "Custom"
-msgstr ""
+#: ../src/Pages/Layout/add_layout.vala:101
+#: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
+msgid "Default"
+msgstr "Обикновено"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -662,17 +662,10 @@ msgstr "секунди"
 msgid "Type to test your settings…"
 msgstr "Пишете тук, за да си пробвате настройките..."
 
-#: ../src/Pages/Shortcuts/custom_tree.vala:4
-msgid "Enter Command"
-msgstr ""
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:54
-msgid "Command"
-msgstr ""
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:55
-msgid "Shortcut"
-msgstr ""
+#: ../src/Pages/Shortcuts/display.vala:42
+#: ../src/Pages/Shortcuts/display.vala:45
+msgid "Add"
+msgstr "Добави"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -966,6 +959,10 @@ msgstr ""
 msgid "Previous Keyboard Layout"
 msgstr ""
 
+#: ../src/Pages/Shortcuts/shortcut.vala:50
+msgid "Ctrl"
+msgstr "Ctrl"
+
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
 msgstr ""
@@ -978,11 +975,14 @@ msgstr ""
 msgid "Reassign"
 msgstr "Прехвърляне"
 
-#: ../src/Pages/Shortcuts/shortcut.vala:50
-msgid "Ctrl"
-msgstr "Ctrl"
+#: ../src/Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr ""
 
-#: ../src/Pages/Shortcuts/display.vala:42
-#: ../src/Pages/Shortcuts/display.vala:45
-msgid "Add"
-msgstr "Добави"
+#: ../src/Pages/Shortcuts/custom_tree.vala:54
+msgid "Command"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:55
+msgid "Shortcut"
+msgstr ""
