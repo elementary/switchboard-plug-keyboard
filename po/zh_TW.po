@@ -7,634 +7,186 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-06-27 22:20+0200\n"
+"POT-Creation-Date: 2016-06-28 19:08-0500\n"
 "PO-Revision-Date: 2015-07-27 13:35+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <zh_TW@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-28 05:39+0000\n"
+"X-Launchpad-Export-Date: 2016-06-29 05:39+0000\n"
 "X-Generator: Launchpad (build 18115)\n"
 
-#: ../src/keyboard.vala:7
-msgid "Keyboard"
-msgstr "鍵盤"
-
-#: ../src/keyboard.vala:8
-msgid "Configure keyboard behavior, layouts, and shortcuts"
+#: ../src/Pages/layout.vala:112
+msgid "Switch layout:"
 msgstr ""
 
-#: ../src/keyboard.vala:21
-msgid "Shortcuts"
-msgstr "快捷鍵"
-
-#: ../src/keyboard.vala:22
-msgid "Behavior"
-msgstr "行為"
-
-#: ../src/keyboard.vala:23
-msgid "Layout"
-msgstr "鍵盤配置"
-
-#: ../src/keyboard.vala:24
-msgid "Options"
-msgstr "選項"
-
-#: ../src/Pages/layout.vala:97
-msgid "Allow different layouts for individual windows:"
-msgstr "允許各個視窗使用不同鍵盤配置："
-
-#: ../src/Pages/layout.vala:110
-msgid "Compose key:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:112 ../src/Pages/layout.vala:136
-#: ../src/Pages/layout.vala:228 ../src/Pages/Shortcuts/shortcut.vala:41
+#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
+#: ../src/Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
 msgstr "已停用"
 
-#: ../src/Pages/layout.vala:113 ../src/Pages/layout.vala:219
-msgid "Right Alt (Alt Gr)"
-msgstr ""
-
-#: ../src/Pages/layout.vala:114 ../src/Pages/layout.vala:224
-#: ../src/Pages/layout.vala:255
-msgid "Right Super"
-msgstr ""
-
-#: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:220
-#: ../src/Pages/layout.vala:251
-msgid "Right Control"
-msgstr ""
-
 #: ../src/Pages/layout.vala:116
-msgid "Left Control"
+msgid "Alt + Caps Lock"
 msgstr ""
 
-#: ../src/Pages/layout.vala:117 ../src/Pages/layout.vala:223
-#: ../src/Pages/layout.vala:254
-msgid "Left Super"
+#: ../src/Pages/layout.vala:117
+msgid "Alt + Shift"
 msgstr ""
 
-#: ../src/Pages/layout.vala:118 ../src/Pages/layout.vala:130
-#: ../src/Pages/layout.vala:229
+#: ../src/Pages/layout.vala:118
+msgid "Alt + Space"
+msgstr ""
+
+#: ../src/Pages/layout.vala:119
+msgid "Both Shift keys together"
+msgstr ""
+
+#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
+#: ../src/Pages/layout.vala:238
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: ../src/Pages/layout.vala:119 ../src/Pages/Shortcuts/list.vala:248
-msgid "Pause"
-msgstr "暫停"
+#: ../src/Pages/layout.vala:121
+msgid "Ctrl + Alt"
+msgstr ""
 
-#: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:221
-msgid "Menu"
-msgstr "選單鍵"
+#: ../src/Pages/layout.vala:122
+msgid "Ctrl + Shift"
+msgstr ""
 
-#: ../src/Pages/layout.vala:127
-msgid "Caps Lock function:"
+#: ../src/Pages/layout.vala:123
+msgid "Shift + Caps Lock"
 msgstr ""
 
 #: ../src/Pages/layout.vala:131
-msgid "Num Lock"
-msgstr "Num Lock"
-
-#: ../src/Pages/layout.vala:132
-msgid "Escape"
+msgid "Compose key:"
 msgstr ""
 
-#: ../src/Pages/layout.vala:133
-msgid "Backspace"
-msgstr ""
-
-#: ../src/Pages/layout.vala:134 ../src/Pages/layout.vala:222
-msgid "Super"
-msgstr ""
-
-#: ../src/Pages/layout.vala:135
-msgid "Hyper"
-msgstr ""
-
-#: ../src/Pages/layout.vala:137
-msgid "Control"
-msgstr ""
-
-#: ../src/Pages/layout.vala:138
-msgid "Swap With Control"
-msgstr ""
-
-#: ../src/Pages/layout.vala:139
-msgid "Swap With Escape"
-msgstr ""
-
-#: ../src/Pages/layout.vala:181
-msgid "Type to test your layout…"
-msgstr "請輸入以測試您的鍵盤配置…"
-
-#: ../src/Pages/layout.vala:216 ../src/Pages/layout.vala:244
-msgid "Key to choose third level:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:225
-msgid "Alt"
-msgstr ""
-
-#: ../src/Pages/layout.vala:226 ../src/Pages/layout.vala:252
-#: ../src/Pages/layout.vala:253
+#: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
+#: ../src/Pages/layout.vala:250
 msgid "Right Alt"
 msgstr "右側 Alt"
 
-#: ../src/Pages/layout.vala:227
-msgid "Left Alt"
-msgstr "左側 Alt"
-
-#: ../src/Pages/layout.vala:230
-msgid "Backslash"
-msgstr "倒斜線鍵"
-
-#: ../src/Pages/layout.vala:248
-msgid "Key to choose fifth level:"
+#: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
+#: ../src/Pages/layout.vala:251
+msgid "Right Ctrl"
 msgstr ""
 
-#: ../src/Pages/layout.vala:256
-msgid "Less/Grater"
+#: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
+#: ../src/Pages/layout.vala:252
+msgid "Right Super"
 msgstr ""
 
-#: ../src/Pages/layout.vala:271
-msgid "Nicola F Backspace:"
+#: ../src/Pages/layout.vala:145
+msgid "Caps Lock behavior:"
 msgstr ""
 
-#: ../src/Pages/layout.vala:274
-msgid "Kana Lock:"
-msgstr ""
-
-#: ../src/Pages/layout.vala:277
-msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
-
-#: ../src/Pages/shortcuts.vala:43
-msgid "Windows"
-msgstr "視窗"
-
-#: ../src/Pages/shortcuts.vala:44
-msgid "Workspaces"
-msgstr "工作區"
-
-#: ../src/Pages/shortcuts.vala:45
-msgid "Screenshots"
-msgstr "螢幕擷圖"
-
-#: ../src/Pages/shortcuts.vala:46
-msgid "Applications"
-msgstr "應用程式"
-
-#: ../src/Pages/shortcuts.vala:47
-msgid "Media"
-msgstr "媒體"
-
-#: ../src/Pages/shortcuts.vala:48
-msgid "Universal Access"
-msgstr "無障礙環境"
-
-#: ../src/Pages/shortcuts.vala:49
-msgid "Custom"
-msgstr "自訂"
-
-#: ../src/Pages/Options/option_handler.vala:15
-msgid "None"
-msgstr "無"
-
-#: ../src/Pages/Options/option_handler.vala:94
-msgid "Ctrl key position"
-msgstr "Ctrl 鍵位置"
-
-#: ../src/Pages/Options/option_handler.vala:95
-msgid "Caps Lock as Ctrl"
-msgstr "Caps Lock 作為 Ctrl"
-
-#: ../src/Pages/Options/option_handler.vala:96
-msgid "Left Ctrl as Meta"
-msgstr "左側 Ctrl 作為 Meta 鍵"
-
-#: ../src/Pages/Options/option_handler.vala:97
-msgid "Swap Ctrl and Caps Lock"
-msgstr "Ctrl 與 Caps Lock 交換"
-
-#: ../src/Pages/Options/option_handler.vala:98
-msgid "At left of 'A'"
-msgstr "於 A 左側"
-
-#: ../src/Pages/Options/option_handler.vala:99
-msgid "At bottom left"
-msgstr "於左下角"
-
-#: ../src/Pages/Options/option_handler.vala:100
-msgid "Right Ctrl as Right Alt"
-msgstr "右側 Ctrl 為右側 Alt"
-
-#: ../src/Pages/Options/option_handler.vala:101
-msgid "Menu as Right Ctrl"
-msgstr "選單鍵為右側 Ctrl"
-
-#: ../src/Pages/Options/option_handler.vala:102
-msgid "Right Alt as Right Ctrl"
-msgstr "右側 Alt 為右側 Ctrl"
-
-#: ../src/Pages/Options/option_handler.vala:105
-msgid "Numeric keypad layout selection"
-msgstr "數字鍵盤配置選擇"
-
-#: ../src/Pages/Options/option_handler.vala:106
-msgid "Legacy"
-msgstr "舊式"
-
-#: ../src/Pages/Options/option_handler.vala:107
-msgid "Unicode additions (arrows and math operators)"
-msgstr "Unicode 附加元 (箭頭與數學運算子)"
-
-#: ../src/Pages/Options/option_handler.vala:108
-msgid ""
-"Unicode additions (arrows and math operators). Math operators on default "
-"level"
-msgstr "Unicode 附加元 (箭頭和數學運算子)。數學運算子於預設等級上"
-
-#: ../src/Pages/Options/option_handler.vala:109
-msgid "Legacy Wang 724"
-msgstr "舊式 Wang 724"
-
-#: ../src/Pages/Options/option_handler.vala:110
-msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-msgstr "Wang 724 數字鍵盤具備 Unicode 附加元 (箭頭和數學運算子)"
-
-#: ../src/Pages/Options/option_handler.vala:111
-msgid ""
-"Wang 724 keypad with Unicode additions (arrows and math operators). Math "
-"operators on default level"
-msgstr "Wang 724 數字鍵臺具備 Unicode 附加元 (箭頭和數學運算子)。數學運算子於預設等級"
-
-#: ../src/Pages/Options/option_handler.vala:112
-msgid "Hexadecimal"
-msgstr "16 進位"
-
-#: ../src/Pages/Options/option_handler.vala:113
-msgid "ATM/phone-style"
-msgstr "自動櫃員機/電話樣式"
-
-#: ../src/Pages/Options/option_handler.vala:116
-msgid "Numeric keypad delete key behaviour"
-msgstr "數字鍵盤 delete 鍵行為"
-
-#: ../src/Pages/Options/option_handler.vala:117
-msgid "Legacy key with dot"
-msgstr "舊式鍵附英文句號"
-
-#: ../src/Pages/Options/option_handler.vala:118
-msgid "Legacy key with comma"
-msgstr "舊式鍵附英文逗號"
-
-#: ../src/Pages/Options/option_handler.vala:119
-msgid "Four-level key with dot"
-msgstr "四等級鍵附英文句號"
-
-#: ../src/Pages/Options/option_handler.vala:120
-msgid "Four-level key with dot, latin-9 restriction"
-msgstr "四等級鍵附英文句號，latin-9 限制"
-
-#: ../src/Pages/Options/option_handler.vala:121
-msgid "Four-level key with comma"
-msgstr "四等級鍵附英文逗號"
-
-#: ../src/Pages/Options/option_handler.vala:122
-msgid "Four-level key with momayyez"
-msgstr "四等級鍵附 momayyez"
-
-#: ../src/Pages/Options/option_handler.vala:123
-msgid "Four-level key with abstract separators"
-msgstr "四等級鍵附摘要分隔符號"
-
-#: ../src/Pages/Options/option_handler.vala:124
-msgid "Semi-colon on third level"
-msgstr "分號於第三等級"
-
-#: ../src/Pages/Options/option_handler.vala:127
-msgid "Alt/Win key behavior"
-msgstr "Alt/Win 鍵行為"
-
-#: ../src/Pages/Options/option_handler.vala:128
-msgid "Add the standard behavior to Menu key"
-msgstr "將標準行為加入選單鍵"
-
-#: ../src/Pages/Options/option_handler.vala:129
-msgid "Alt and Meta are on Alt keys"
-msgstr "Alt 和 Meta 鍵都位於 Alt 鍵"
-
-#: ../src/Pages/Options/option_handler.vala:130
-msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-msgstr "Ctl 映射到 Win 鍵 (與一般 Ctrl 鍵)"
-
-#: ../src/Pages/Options/option_handler.vala:131
-msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-msgstr "Ctrl 映射到 Alt 鍵，Alt 映射到 Win 鍵"
-
-#: ../src/Pages/Options/option_handler.vala:132
-msgid "Meta is mapped to Win keys"
-msgstr "Meta 鍵映射到 Win 鍵"
-
-#: ../src/Pages/Options/option_handler.vala:133
-msgid "Meta is mapped to Left Win"
-msgstr "Meta 鍵映射到左側 Win 鍵"
-
-#: ../src/Pages/Options/option_handler.vala:134
-msgid "Hyper is mapped to Win-keys"
-msgstr "Hyper 鍵映射到 Win 鍵"
-
-#: ../src/Pages/Options/option_handler.vala:135
-msgid "Alt is mapped to Right Win, Super to Menu"
-msgstr "Alt 映射到右側 Win 鍵，Super 鍵映射到選單鍵"
-
-#: ../src/Pages/Options/option_handler.vala:136
-msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-msgstr "Alt 鍵映射到 Win 鍵 (以及常見的 Alt 鍵)"
-
-#: ../src/Pages/Options/option_handler.vala:137
-msgid "Alt is swapped with Win"
-msgstr "Alt 鍵與 Win 鍵交換"
-
-#: ../src/Pages/Options/option_handler.vala:140
-msgid "Miscellaneous compatibility options"
-msgstr "其餘相容選項"
-
-#: ../src/Pages/Options/option_handler.vala:141
-msgid "Default numeric keypad keys"
-msgstr "預設數字鍵盤鍵"
-
-#: ../src/Pages/Options/option_handler.vala:142
-msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-msgstr "數字鍵盤按鍵總是輸入數字 (如同 Mac OS)"
-
-#: ../src/Pages/Options/option_handler.vala:143
-msgid "Shift with numeric keypad keys works as in MS Windows"
-msgstr "Shift 加數字鍵盤按鍵作用與 MS Windows 相同"
-
-#: ../src/Pages/Options/option_handler.vala:144
-msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-msgstr "Shift 不會取消 Num Lock，改為選擇第三等級"
-
-#: ../src/Pages/Options/option_handler.vala:145
-msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-msgstr "於伺服器中處理的特殊按鍵 (Ctrl+Alt+<按鍵>)"
-
-#: ../src/Pages/Options/option_handler.vala:146
-msgid ""
-"Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
-"Lock)"
-msgstr "Apple 鋁製鍵盤：模擬 PC 按鍵 (Print、Scroll Lock,、Pause、Num Lock)"
-
-#: ../src/Pages/Options/option_handler.vala:147
-msgid "Shift cancels Caps Lock"
-msgstr "Shift 取消 Caps Lock"
-
-#: ../src/Pages/Options/option_handler.vala:148
-msgid "Enable extra typographic characters"
-msgstr "啟用額外的排版印刷字元"
-
-#: ../src/Pages/Options/option_handler.vala:149
-msgid "Both Shift-Keys together toggle Caps Lock"
-msgstr "兩個 Shift 鍵一起按會切換 Caps Lock"
-
-#: ../src/Pages/Options/option_handler.vala:150
-msgid ""
-"Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-msgstr "兩個 Shift 鍵一起按會開啟 Caps Lock，而一個 Shift 鍵則關閉"
-
-#: ../src/Pages/Options/option_handler.vala:151
-msgid "Both Shift-Keys together toggle ShiftLock"
-msgstr "兩個 Shift 鍵一起按會切換 Shift 鎖定"
-
-#: ../src/Pages/Options/option_handler.vala:152
-msgid "Toggle PointerKeys with Shift + NumLock"
-msgstr "使用 Shift + NumLock 切換 PointerKey"
-
-#: ../src/Pages/Options/option_handler.vala:153
-msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-msgstr "允許以鍵盤動作中斷抓取 (警告：有安全風險)"
-
-#: ../src/Pages/Options/option_handler.vala:156
-msgid "Adding currency signs to certain keys"
-msgstr "加入貨幣符號到特定鍵"
-
-#: ../src/Pages/Options/option_handler.vala:157
-msgid "Euro on E"
-msgstr "歐元符於 E"
-
-#: ../src/Pages/Options/option_handler.vala:158
-msgid "Euro on 2"
-msgstr "歐元符於 2"
-
-#: ../src/Pages/Options/option_handler.vala:159
-msgid "Euro on 4"
-msgstr "歐元符於 4"
-
-#: ../src/Pages/Options/option_handler.vala:160
-msgid "Euro on 5"
-msgstr "歐元符於 5"
-
-#: ../src/Pages/Options/option_handler.vala:161
-msgid "Rupee on 4"
-msgstr "盧比符於 4"
-
-#: ../src/Pages/Options/option_handler.vala:164
-msgid "Using space key to input non-breakable space character"
-msgstr "使用空白鍵輸入不可斷開的空白字元"
-
-#: ../src/Pages/Options/option_handler.vala:165
-msgid "Usual space at any level"
-msgstr "一般空白鍵於任何等級"
-
-#: ../src/Pages/Options/option_handler.vala:166
-msgid "Non-breakable space character at second level"
-msgstr "不可斷開的空白字元於第二等級"
-
-#: ../src/Pages/Options/option_handler.vala:167
-msgid "Non-breakable space character at third level"
-msgstr "不可斷開的空白字元於第三等級"
-
-#: ../src/Pages/Options/option_handler.vala:168
-msgid "Non-breakable space character at third level, nothing at fourth leve"
-msgstr "不可斷開的空白字元於第三等級，第四等級則沒有東西"
-
-#: ../src/Pages/Options/option_handler.vala:169
-msgid ""
-"Non-breakable space character at third level, thin non-breakable space "
-"character at fourth level"
-msgstr "不可斷開的空白字元於第三等級，短窄不可斷開的空白字元於第四等級"
-
-#: ../src/Pages/Options/option_handler.vala:170
-msgid "Non-breakable space character at fourth level"
-msgstr "不可斷開的空白字元於第四等級"
-
-#: ../src/Pages/Options/option_handler.vala:171
-msgid ""
-"Non-breakable space character at fourth level, thin non-breakable space "
-"character at sixth level"
-msgstr "不可斷開的空白字元於第四等級，短窄不可斷開的空白字元於第六等級"
-
-#: ../src/Pages/Options/option_handler.vala:172
-msgid ""
-"Non-breakable space character at fourth level, thin non-breakable space "
-"character at sixth level (via Ctrl+Shift)"
-msgstr "不可斷開的空白字元於第四等級，短窄不可斷列的空白字元於第六等級 (透過 Ctrl+Shift)"
-
-#: ../src/Pages/Options/option_handler.vala:173
-msgid "Zero-width non-joiner character at second level"
-msgstr "零寬度的非聯結字元於第二等級"
-
-#: ../src/Pages/Options/option_handler.vala:174
-msgid ""
-"Zero-width non-joiner character at second level, zero-width joiner character "
-"at third level"
-msgstr "零寬度的非聯結字元於第二等級，零寬度的聯結字元於第三等級"
-
-#: ../src/Pages/Options/option_handler.vala:175
-msgid ""
-"Zero-width non-joiner character at second level, zero-width joiner character "
-"at third level, non-breakable space character at fourth level"
-msgstr "零寬度的非聯結字元於第二等級，零寬度的聯結字元於第三等級，不可斷開的空白字元於第四等級"
-
-#: ../src/Pages/Options/option_handler.vala:176
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level"
-msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級"
-
-#: ../src/Pages/Options/option_handler.vala:177
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level, nothing at fourth level"
-msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級，第四等級則沒有東西"
-
-#: ../src/Pages/Options/option_handler.vala:178
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level, zero-width joiner at fourth level"
-msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級，零寬度的聯結字元於第四等級"
-
-#: ../src/Pages/Options/option_handler.vala:179
-msgid ""
-"Zero-width non-joiner character at second level, non-breakable space "
-"character at third level, thin non-breakable space at fourth level"
-msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級，短窄不可斷列的空白字元於第四等級"
-
-#: ../src/Pages/Options/option_handler.vala:180
-msgid ""
-"Zero-width non-joiner character at third level, zero-width joiner at fourth "
-"level"
-msgstr "零寬度的非聯結字元於第三等級，零寬度的聯結字元於第四等級"
-
-#: ../src/Pages/Options/option_handler.vala:183
-msgid "Adding Esperanto circumflexes (supersigno)"
-msgstr "加入世界語抑揚符號 (supersigno)"
-
-#: ../src/Pages/Options/option_handler.vala:184
-msgid "To the corresponding key in a Qwerty keyboard"
-msgstr "到 Qwerty 鍵盤中的對應鍵"
-
-#: ../src/Pages/Options/option_handler.vala:185
-msgid "To the corresponding key in a Dvorak keyboard"
-msgstr "到 Dvorak 鍵盤中的對應鍵"
-
-#: ../src/Pages/Options/option_handler.vala:186
-msgid "To the corresponding key in a Colemak layout"
-msgstr "到 Colemak 配置的對應鍵"
-
-#: ../src/Pages/Options/option_handler.vala:189
-msgid "Key sequence to kill the X server"
-msgstr "砍掉 X 伺服器的按鍵順序"
-
-#: ../src/Pages/Options/option_handler.vala:190
-msgid "Control + Alt + Backspace"
-msgstr "Ctl + Alt + Backspace"
-
-#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
-msgid "Add…"
-msgstr "加入…"
-
-#: ../src/Pages/Layout/display.vala:49 ../src/Pages/Layout/display.vala:54
-#: ../src/Pages/Shortcuts/display.vala:43
-#: ../src/Pages/Shortcuts/display.vala:46
-msgid "Remove"
-msgstr "移除"
-
-#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
-msgid "Move up"
-msgstr "上移"
-
-#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
-msgid "Move down"
-msgstr "下移"
-
-#: ../src/Pages/Layout/add_layout.vala:19
-msgid "Language:"
-msgstr "語言："
-
-#: ../src/Pages/Layout/add_layout.vala:20
-msgid "Layout:"
-msgstr "鍵盤配置："
-
-#: ../src/Pages/Layout/add_layout.vala:62
-msgid "Add Layout"
-msgstr "加入鍵盤配置"
-
-#: ../src/Pages/Layout/add_layout.vala:63
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
-msgid "Cancel"
-msgstr "取消"
-
-#: ../src/Pages/Layout/add_layout.vala:101
-#: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
+#: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
+#: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
+#: ../src/Pages/Layout/add_layout.vala:105
 msgid "Default"
 msgstr "預設"
 
-#: ../src/Pages/behaviour.vala:21
-msgid "<b>Repeat Keys:</b>"
-msgstr "<b>重複鍵：</b>"
+#: ../src/Pages/layout.vala:149
+msgid "Caps Lock disabled"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:22
-msgid "Delay:"
-msgstr "延遲："
+#: ../src/Pages/layout.vala:150
+msgid "as Backspace"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:23
-msgid "Interval:"
-msgstr "間隔："
+#: ../src/Pages/layout.vala:151
+msgid "as Ctrl"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
-#: ../src/Pages/behaviour.vala:136
-msgid "milliseconds"
-msgstr "毫秒"
+#: ../src/Pages/layout.vala:152
+msgid "as Escape"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:133
-msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>游標閃爍：</b>"
+#: ../src/Pages/layout.vala:153
+msgid "as Num Lock"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:134
-msgid "Speed:"
-msgstr "速度："
+#: ../src/Pages/layout.vala:154
+msgid "as Super"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:135
-msgid "Duration:"
-msgstr "時間長度："
+#: ../src/Pages/layout.vala:155
+msgid "Swap with Control"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:137
-msgid "seconds"
-msgstr "秒"
+#: ../src/Pages/layout.vala:156
+msgid "Swap with Escape"
+msgstr ""
 
-#: ../src/Pages/behaviour.vala:244
-msgid "Type to test your settings…"
-msgstr "請輸入以測試您的設定..."
+#: ../src/Pages/layout.vala:191
+msgid "Type to test your layout…"
+msgstr "請輸入以測試您的鍵盤配置…"
+
+#: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
+msgid "Key to choose 3rd level:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:247
+msgid "Key to choose 5th level:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:267
+msgid "Kana Lock:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:270
+msgid "Nicola F Backspace:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:273
+msgid "Zenkaku Hankaku as Escape:"
+msgstr ""
+
+#: ../src/Pages/layout.vala:285
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr "輸入指令"
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:54
+msgid "Command"
+msgstr "指令"
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:55
+msgid "Shortcut"
+msgstr "快捷鍵"
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:8
+msgid "%s is already used for %s!"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:9
+msgid "If you reassign the shortcut to %s, %s will be disabled"
+msgstr ""
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:11
+#: ../src/Pages/Layout/add_layout.vala:63
+msgid "Cancel"
+msgstr "取消"
+
+#: ../src/Pages/Shortcuts/conflict_dialog.vala:12
+msgid "Reassign"
+msgstr "重新指派"
 
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
 msgid "Add"
 msgstr "加入"
+
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
+#: ../src/Pages/Layout/display.vala:54
+msgid "Remove"
+msgstr "移除"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -872,6 +424,10 @@ msgstr "啟動媒體播放器"
 msgid "Play"
 msgstr "播放"
 
+#: ../src/Pages/Shortcuts/list.vala:248
+msgid "Pause"
+msgstr "暫停"
+
 #: ../src/Pages/Shortcuts/list.vala:249
 msgid "Stop"
 msgstr "停止"
@@ -920,38 +476,412 @@ msgstr "開關螢幕閱讀器"
 msgid "Toggle High Contrast"
 msgstr "開關高對比外觀"
 
-#: ../src/Pages/Shortcuts/list.vala:294
-msgid "Next Keyboard Layout"
-msgstr "下個鍵盤配置"
-
-#: ../src/Pages/Shortcuts/list.vala:295
-msgid "Previous Keyboard Layout"
-msgstr "上個鍵盤配置"
-
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:8
-msgid "%s is already used for %s!"
+#: ../src/Pages/behaviour.vala:21
+msgid "<b>Repeat Keys:</b>"
+msgstr "<b>重複鍵：</b>"
+
+#: ../src/Pages/behaviour.vala:22
+msgid "Delay:"
+msgstr "延遲："
+
+#: ../src/Pages/behaviour.vala:23
+msgid "Interval:"
+msgstr "間隔："
+
+#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
+#: ../src/Pages/behaviour.vala:136
+msgid "milliseconds"
+msgstr "毫秒"
+
+#: ../src/Pages/behaviour.vala:133
+msgid "<b>Cursor Blinking:</b>"
+msgstr "<b>游標閃爍：</b>"
+
+#: ../src/Pages/behaviour.vala:134
+msgid "Speed:"
+msgstr "速度："
+
+#: ../src/Pages/behaviour.vala:135
+msgid "Duration:"
+msgstr "時間長度："
+
+#: ../src/Pages/behaviour.vala:137
+msgid "seconds"
+msgstr "秒"
+
+#: ../src/Pages/behaviour.vala:244
+msgid "Type to test your settings…"
+msgstr "請輸入以測試您的設定..."
+
+#: ../src/Pages/shortcuts.vala:43
+msgid "Windows"
+msgstr "視窗"
+
+#: ../src/Pages/shortcuts.vala:44
+msgid "Workspaces"
+msgstr "工作區"
+
+#: ../src/Pages/shortcuts.vala:45
+msgid "Screenshots"
+msgstr "螢幕擷圖"
+
+#: ../src/Pages/shortcuts.vala:46
+msgid "Applications"
+msgstr "應用程式"
+
+#: ../src/Pages/shortcuts.vala:47
+msgid "Media"
+msgstr "媒體"
+
+#: ../src/Pages/shortcuts.vala:48
+msgid "Universal Access"
+msgstr "無障礙環境"
+
+#: ../src/Pages/shortcuts.vala:49
+msgid "Custom"
+msgstr "自訂"
+
+#: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
+msgid "Add…"
+msgstr "加入…"
+
+#: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
+msgid "Move up"
+msgstr "上移"
+
+#: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
+msgid "Move down"
+msgstr "下移"
+
+#: ../src/Pages/Layout/add_layout.vala:19
+msgid "Language:"
+msgstr "語言："
+
+#: ../src/Pages/Layout/add_layout.vala:20
+msgid "Layout:"
+msgstr "鍵盤配置："
+
+#: ../src/Pages/Layout/add_layout.vala:62
+msgid "Add Layout"
+msgstr "加入鍵盤配置"
+
+#: ../src/keyboard.vala:7
+msgid "Keyboard"
+msgstr "鍵盤"
+
+#: ../src/keyboard.vala:8
+msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:9
-msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
-
-#: ../src/Pages/Shortcuts/conflict_dialog.vala:12
-msgid "Reassign"
-msgstr "重新指派"
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:4
-msgid "Enter Command"
-msgstr "輸入指令"
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:54
-msgid "Command"
-msgstr "指令"
-
-#: ../src/Pages/Shortcuts/custom_tree.vala:55
-msgid "Shortcut"
+#: ../src/keyboard.vala:21
+msgid "Shortcuts"
 msgstr "快捷鍵"
+
+#: ../src/keyboard.vala:22
+msgid "Behavior"
+msgstr "行為"
+
+#: ../src/keyboard.vala:23
+msgid "Layout"
+msgstr "鍵盤配置"
+
+#~ msgid "Options"
+#~ msgstr "選項"
+
+#~ msgid "Allow different layouts for individual windows:"
+#~ msgstr "允許各個視窗使用不同鍵盤配置："
+
+#~ msgid "None"
+#~ msgstr "無"
+
+#~ msgid "Left Alt"
+#~ msgstr "左側 Alt"
+
+#~ msgid "Menu"
+#~ msgstr "選單鍵"
+
+#~ msgid "Ctrl key position"
+#~ msgstr "Ctrl 鍵位置"
+
+#~ msgid "Backslash"
+#~ msgstr "倒斜線鍵"
+
+#~ msgid "Caps Lock as Ctrl"
+#~ msgstr "Caps Lock 作為 Ctrl"
+
+#~ msgid "Left Ctrl as Meta"
+#~ msgstr "左側 Ctrl 作為 Meta 鍵"
+
+#~ msgid "Legacy"
+#~ msgstr "舊式"
+
+#~ msgid "Numeric keypad layout selection"
+#~ msgstr "數字鍵盤配置選擇"
+
+#~ msgid "At left of 'A'"
+#~ msgstr "於 A 左側"
+
+#~ msgid "Swap Ctrl and Caps Lock"
+#~ msgstr "Ctrl 與 Caps Lock 交換"
+
+#~ msgid "Right Ctrl as Right Alt"
+#~ msgstr "右側 Ctrl 為右側 Alt"
+
+#~ msgid "At bottom left"
+#~ msgstr "於左下角"
+
+#~ msgid "Right Alt as Right Ctrl"
+#~ msgstr "右側 Alt 為右側 Ctrl"
+
+#~ msgid "Menu as Right Ctrl"
+#~ msgstr "選單鍵為右側 Ctrl"
+
+#~ msgid "Num Lock"
+#~ msgstr "Num Lock"
+
+#~ msgid "Unicode additions (arrows and math operators)"
+#~ msgstr "Unicode 附加元 (箭頭與數學運算子)"
+
+#~ msgid ""
+#~ "Unicode additions (arrows and math operators). Math operators on default "
+#~ "level"
+#~ msgstr "Unicode 附加元 (箭頭和數學運算子)。數學運算子於預設等級上"
+
+#~ msgid "Legacy Wang 724"
+#~ msgstr "舊式 Wang 724"
+
+#~ msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
+#~ msgstr "Wang 724 數字鍵盤具備 Unicode 附加元 (箭頭和數學運算子)"
+
+#~ msgid ""
+#~ "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
+#~ "operators on default level"
+#~ msgstr "Wang 724 數字鍵臺具備 Unicode 附加元 (箭頭和數學運算子)。數學運算子於預設等級"
+
+#~ msgid "Hexadecimal"
+#~ msgstr "16 進位"
+
+#~ msgid "ATM/phone-style"
+#~ msgstr "自動櫃員機/電話樣式"
+
+#~ msgid "Legacy key with dot"
+#~ msgstr "舊式鍵附英文句號"
+
+#~ msgid "Legacy key with comma"
+#~ msgstr "舊式鍵附英文逗號"
+
+#~ msgid "Numeric keypad delete key behaviour"
+#~ msgstr "數字鍵盤 delete 鍵行為"
+
+#~ msgid "Four-level key with momayyez"
+#~ msgstr "四等級鍵附 momayyez"
+
+#~ msgid "Four-level key with comma"
+#~ msgstr "四等級鍵附英文逗號"
+
+#~ msgid "Four-level key with dot, latin-9 restriction"
+#~ msgstr "四等級鍵附英文句號，latin-9 限制"
+
+#~ msgid "Four-level key with dot"
+#~ msgstr "四等級鍵附英文句號"
+
+#~ msgid "Semi-colon on third level"
+#~ msgstr "分號於第三等級"
+
+#~ msgid "Four-level key with abstract separators"
+#~ msgstr "四等級鍵附摘要分隔符號"
+
+#~ msgid "Alt is mapped to Right Win, Super to Menu"
+#~ msgstr "Alt 映射到右側 Win 鍵，Super 鍵映射到選單鍵"
+
+#~ msgid "Hyper is mapped to Win-keys"
+#~ msgstr "Hyper 鍵映射到 Win 鍵"
+
+#~ msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
+#~ msgstr "Ctl 映射到 Win 鍵 (與一般 Ctrl 鍵)"
+
+#~ msgid "Meta is mapped to Left Win"
+#~ msgstr "Meta 鍵映射到左側 Win 鍵"
+
+#~ msgid "Meta is mapped to Win keys"
+#~ msgstr "Meta 鍵映射到 Win 鍵"
+
+#~ msgid "Alt/Win key behavior"
+#~ msgstr "Alt/Win 鍵行為"
+
+#~ msgid "Alt and Meta are on Alt keys"
+#~ msgstr "Alt 和 Meta 鍵都位於 Alt 鍵"
+
+#~ msgid "Add the standard behavior to Menu key"
+#~ msgstr "將標準行為加入選單鍵"
+
+#~ msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
+#~ msgstr "Ctrl 映射到 Alt 鍵，Alt 映射到 Win 鍵"
+
+#~ msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
+#~ msgstr "於伺服器中處理的特殊按鍵 (Ctrl+Alt+<按鍵>)"
+
+#~ msgid "Default numeric keypad keys"
+#~ msgstr "預設數字鍵盤鍵"
+
+#~ msgid "Numeric keypad keys always enter digits (as in Mac OS)"
+#~ msgstr "數字鍵盤按鍵總是輸入數字 (如同 Mac OS)"
+
+#~ msgid "Shift with numeric keypad keys works as in MS Windows"
+#~ msgstr "Shift 加數字鍵盤按鍵作用與 MS Windows 相同"
+
+#~ msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
+#~ msgstr "Shift 不會取消 Num Lock，改為選擇第三等級"
+
+#~ msgid "Miscellaneous compatibility options"
+#~ msgstr "其餘相容選項"
+
+#~ msgid ""
+#~ "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
+#~ "Lock)"
+#~ msgstr "Apple 鋁製鍵盤：模擬 PC 按鍵 (Print、Scroll Lock,、Pause、Num Lock)"
+
+#~ msgid "Adding currency signs to certain keys"
+#~ msgstr "加入貨幣符號到特定鍵"
+
+#~ msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
+#~ msgstr "允許以鍵盤動作中斷抓取 (警告：有安全風險)"
+
+#~ msgid "Toggle PointerKeys with Shift + NumLock"
+#~ msgstr "使用 Shift + NumLock 切換 PointerKey"
+
+#~ msgid "Both Shift-Keys together toggle ShiftLock"
+#~ msgstr "兩個 Shift 鍵一起按會切換 Shift 鎖定"
+
+#~ msgid ""
+#~ "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
+#~ msgstr "兩個 Shift 鍵一起按會開啟 Caps Lock，而一個 Shift 鍵則關閉"
+
+#~ msgid "Both Shift-Keys together toggle Caps Lock"
+#~ msgstr "兩個 Shift 鍵一起按會切換 Caps Lock"
+
+#~ msgid "Enable extra typographic characters"
+#~ msgstr "啟用額外的排版印刷字元"
+
+#~ msgid "Shift cancels Caps Lock"
+#~ msgstr "Shift 取消 Caps Lock"
+
+#~ msgid "Euro on 2"
+#~ msgstr "歐元符於 2"
+
+#~ msgid "Euro on E"
+#~ msgstr "歐元符於 E"
+
+#~ msgid "Usual space at any level"
+#~ msgstr "一般空白鍵於任何等級"
+
+#~ msgid "Using space key to input non-breakable space character"
+#~ msgstr "使用空白鍵輸入不可斷開的空白字元"
+
+#~ msgid "Rupee on 4"
+#~ msgstr "盧比符於 4"
+
+#~ msgid "Euro on 5"
+#~ msgstr "歐元符於 5"
+
+#~ msgid "Euro on 4"
+#~ msgstr "歐元符於 4"
+
+#~ msgid "Non-breakable space character at second level"
+#~ msgstr "不可斷開的空白字元於第二等級"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at second level, zero-width joiner character "
+#~ "at third level"
+#~ msgstr "零寬度的非聯結字元於第二等級，零寬度的聯結字元於第三等級"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at second level, zero-width joiner character "
+#~ "at third level, non-breakable space character at fourth level"
+#~ msgstr "零寬度的非聯結字元於第二等級，零寬度的聯結字元於第三等級，不可斷開的空白字元於第四等級"
+
+#~ msgid "Non-breakable space character at third level"
+#~ msgstr "不可斷開的空白字元於第三等級"
+
+#~ msgid "Non-breakable space character at third level, nothing at fourth leve"
+#~ msgstr "不可斷開的空白字元於第三等級，第四等級則沒有東西"
+
+#~ msgid ""
+#~ "Non-breakable space character at third level, thin non-breakable space "
+#~ "character at fourth level"
+#~ msgstr "不可斷開的空白字元於第三等級，短窄不可斷開的空白字元於第四等級"
+
+#~ msgid "Non-breakable space character at fourth level"
+#~ msgstr "不可斷開的空白字元於第四等級"
+
+#~ msgid ""
+#~ "Non-breakable space character at fourth level, thin non-breakable space "
+#~ "character at sixth level"
+#~ msgstr "不可斷開的空白字元於第四等級，短窄不可斷開的空白字元於第六等級"
+
+#~ msgid ""
+#~ "Non-breakable space character at fourth level, thin non-breakable space "
+#~ "character at sixth level (via Ctrl+Shift)"
+#~ msgstr "不可斷開的空白字元於第四等級，短窄不可斷列的空白字元於第六等級 (透過 Ctrl+Shift)"
+
+#~ msgid "Zero-width non-joiner character at second level"
+#~ msgstr "零寬度的非聯結字元於第二等級"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at third level, zero-width joiner at fourth "
+#~ "level"
+#~ msgstr "零寬度的非聯結字元於第三等級，零寬度的聯結字元於第四等級"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at second level, non-breakable space "
+#~ "character at third level, nothing at fourth level"
+#~ msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級，第四等級則沒有東西"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at second level, non-breakable space "
+#~ "character at third level"
+#~ msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at second level, non-breakable space "
+#~ "character at third level, thin non-breakable space at fourth level"
+#~ msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級，短窄不可斷列的空白字元於第四等級"
+
+#~ msgid "Adding Esperanto circumflexes (supersigno)"
+#~ msgstr "加入世界語抑揚符號 (supersigno)"
+
+#~ msgid ""
+#~ "Zero-width non-joiner character at second level, non-breakable space "
+#~ "character at third level, zero-width joiner at fourth level"
+#~ msgstr "零寬度的非聯結字元於第二等級，不可斷開的空白字元於第三等級，零寬度的聯結字元於第四等級"
+
+#~ msgid "Key sequence to kill the X server"
+#~ msgstr "砍掉 X 伺服器的按鍵順序"
+
+#~ msgid "Control + Alt + Backspace"
+#~ msgstr "Ctl + Alt + Backspace"
+
+#~ msgid "To the corresponding key in a Qwerty keyboard"
+#~ msgstr "到 Qwerty 鍵盤中的對應鍵"
+
+#~ msgid "To the corresponding key in a Dvorak keyboard"
+#~ msgstr "到 Dvorak 鍵盤中的對應鍵"
+
+#~ msgid "Alt is swapped with Win"
+#~ msgstr "Alt 鍵與 Win 鍵交換"
+
+#~ msgid "To the corresponding key in a Colemak layout"
+#~ msgstr "到 Colemak 配置的對應鍵"
+
+#~ msgid "Alt is mapped to Win keys (and the usual Alt keys)"
+#~ msgstr "Alt 鍵映射到 Win 鍵 (以及常見的 Alt 鍵)"
+
+#~ msgid "Previous Keyboard Layout"
+#~ msgstr "上個鍵盤配置"
+
+#~ msgid "Next Keyboard Layout"
+#~ msgstr "下個鍵盤配置"
