@@ -122,7 +122,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
             modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift + Caps Lock"));
 
-            modifier.set_default_command ("grp:alt_space_toggle");
+            modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (this, modifier, 0, 2);
