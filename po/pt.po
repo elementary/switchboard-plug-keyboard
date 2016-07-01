@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-28 19:08-0500\n"
-"PO-Revision-Date: 2015-06-20 18:00+0000\n"
+"PO-Revision-Date: 2016-06-30 19:08+0000\n"
 "Last-Translator: Pedro Monteiro <Unknown>\n"
 "Language-Team: Portuguese <pt@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-30 05:48+0000\n"
+"X-Launchpad-Export-Date: 2016-07-01 05:56+0000\n"
 "X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "Alternar esquema:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -28,19 +28,19 @@ msgstr "Inativo"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Espaço"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Ambas as teclas Shift em simultâneo"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
@@ -49,19 +49,19 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr ""
+msgstr "Tecla Compose:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
@@ -71,16 +71,16 @@ msgstr "Alt Direito"
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Ctrl Direito"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr ""
+msgstr "Super Direito"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Comportamento do Caps Lock"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
@@ -90,35 +90,35 @@ msgstr "Predefinido"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Caps Lock desativado"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr ""
+msgstr "como Backspace"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr ""
+msgstr "como Ctrl"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr ""
+msgstr "como Escape"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr ""
+msgstr "como Num Lock"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr ""
+msgstr "como Super"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Trocar com Ctrl"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Trocar com Escape"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
@@ -126,47 +126,47 @@ msgstr "Escreva para testar o esquema..."
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "Tecla para escolher o 3º nível:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "Tecla  para escolher o 5º nível:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F Backspace:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku como Escape:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Teclas Hangul/Hanja no Alt/Ctrl Direitos:"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Introduzir Comando"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "Atalho"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s já está em uso para %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Se atribuir o atalho a %s, %s será desativado"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -242,11 +242,11 @@ msgstr "Trocar para a janela anterior"
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr ""
+msgstr "Visão geral de janelas"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr ""
+msgstr "Mostrar Todas as Janelas"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
@@ -478,7 +478,7 @@ msgstr "Alternar Alto Contraste"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -543,7 +543,7 @@ msgstr "Acessibilidade"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Personalizados"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
@@ -575,7 +575,7 @@ msgstr "Teclado"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Configurar o comportamento do teclado, esquemas e teclas de atalho"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -588,63 +588,3 @@ msgstr "Comportamento"
 #: ../src/keyboard.vala:23
 msgid "Layout"
 msgstr "Esquema"
-
-#~ msgid "Options"
-#~ msgstr "Opções"
-
-#~ msgid "Allow different layouts for individual windows:"
-#~ msgstr "Permitir diferentes esquemas para janelas individuais:"
-
-#~ msgid "None"
-#~ msgstr "Nenhum"
-
-#~ msgid "Left Alt"
-#~ msgstr "Alt Esquerdo"
-
-#~ msgid "Menu"
-#~ msgstr "Menu"
-
-#~ msgid "Ctrl key position"
-#~ msgstr "Posição da tecla Control"
-
-#~ msgid "Backslash"
-#~ msgstr "Barra Invertida"
-
-#~ msgid "Caps Lock as Ctrl"
-#~ msgstr "Caps Lock como Ctrl"
-
-#~ msgid "Left Ctrl as Meta"
-#~ msgstr "Ctrl Esquerdo como Meta"
-
-#~ msgid "At left of 'A'"
-#~ msgstr "À esquerda de 'A'"
-
-#~ msgid "Swap Ctrl and Caps Lock"
-#~ msgstr "trocar Ctrl e Caps Lock"
-
-#~ msgid "Right Ctrl as Right Alt"
-#~ msgstr "Ctrl Direito como Alt Direito"
-
-#~ msgid "At bottom left"
-#~ msgstr "No fundo à esquerda"
-
-#~ msgid "Right Alt as Right Ctrl"
-#~ msgstr "Alt Direito como Ctrl Direito"
-
-#~ msgid "Menu as Right Ctrl"
-#~ msgstr "Menu como Ctrl Direito"
-
-#~ msgid "Num Lock"
-#~ msgstr "Num Lock"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "Hexadecimal"
-
-#~ msgid "Legacy"
-#~ msgstr "Antigo"
-
-#~ msgid "ATM/phone-style"
-#~ msgstr "ATM/Estilo telefone"
-
-#~ msgid "Numeric keypad delete key behaviour"
-#~ msgstr "Comportamento da tecla Delete do teclado numérico"
