@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-28 19:08-0500\n"
-"PO-Revision-Date: 2016-06-17 11:58+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementaryos.org>\n"
+"PO-Revision-Date: 2016-07-07 10:54+0000\n"
+"Last-Translator: Nikos <Unknown>\n"
 "Language-Team: French <fr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-30 05:48+0000\n"
+"X-Launchpad-Export-Date: 2016-07-08 05:36+0000\n"
 "X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "Basculer l'agencement :"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -28,19 +28,19 @@ msgstr "Désactivé"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Maj"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Espace"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Les deux Maj. ensemble"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
@@ -49,15 +49,15 @@ msgstr "Verr. maj."
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Maj"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
@@ -71,7 +71,7 @@ msgstr "Alt. droite"
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Ctrl droite"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
@@ -90,7 +90,7 @@ msgstr "Par défaut"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Verrouillage Majuscule désactivé"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
@@ -114,11 +114,11 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Inversé avec Ctrl"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Inversé avec Echap"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
@@ -588,377 +588,3 @@ msgstr "Comportement"
 #: ../src/keyboard.vala:23
 msgid "Layout"
 msgstr "Disposition"
-
-#~ msgid "Options"
-#~ msgstr "Paramètres"
-
-#~ msgid "Allow different layouts for individual windows:"
-#~ msgstr "Autoriser des agencements différents pour chaque fenêtre"
-
-#~ msgid "None"
-#~ msgstr "Aucun(e)"
-
-#~ msgid "Left Alt"
-#~ msgstr "Alt de gauche"
-
-#~ msgid "Menu"
-#~ msgstr "Menu"
-
-#~ msgid "Backslash"
-#~ msgstr "Antislash"
-
-#~ msgid "Caps Lock as Ctrl"
-#~ msgstr "Verr. Maj. comme Ctrl"
-
-#~ msgid "At bottom left"
-#~ msgstr "En bas à gauche"
-
-#~ msgid "Swap Ctrl and Caps Lock"
-#~ msgstr "Intervertir Ctrl et Verr. Maj."
-
-#~ msgid "Left Ctrl as Meta"
-#~ msgstr "Ctrl gauche comme Méta"
-
-#~ msgid "Unicode additions (arrows and math operators)"
-#~ msgstr "Ajouts Unicode (touches fléchées et opérateurs mathématiques)"
-
-#~ msgid "Legacy Wang 724"
-#~ msgstr "Clavier Wang 724 obsolète"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "Hexadécimal"
-
-#~ msgid "Num Lock"
-#~ msgstr "Verr. Num."
-
-#~ msgid "Numeric keypad delete key behaviour"
-#~ msgstr "Comportement de la touche de suppression du pavé numérique"
-
-#~ msgid "Four-level key with momayyez"
-#~ msgstr "Touche à quatre niveaux avec le séparateur décimal momayyez"
-
-#~ msgid "Semi-colon on third level"
-#~ msgstr "Point-virgule au 3e niveau"
-
-#~ msgid "Rupee on 4"
-#~ msgstr "Roupie sur le 4"
-
-#~ msgid "Euro on 5"
-#~ msgstr "Euro sur le 5"
-
-#~ msgid "Euro on 4"
-#~ msgstr "Euro sur le 4"
-
-#~ msgid "Adding currency signs to certain keys"
-#~ msgstr "Ajout des signes monétaires sur certaines touches"
-
-#~ msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-#~ msgstr ""
-#~ "Autoriser des actions clavier à casser les captures (attention : risque de "
-#~ "faille de sécurité)"
-
-#~ msgid "Euro on 2"
-#~ msgstr "Euro sur le 2"
-
-#~ msgid "Euro on E"
-#~ msgstr "Euro sur le E"
-
-#~ msgid "Right Ctrl as Right Alt"
-#~ msgstr "Ctrl droite comme Alt droite"
-
-#~ msgid "Menu as Right Ctrl"
-#~ msgstr "Menu comme Ctrl droite"
-
-#~ msgid "Ctrl key position"
-#~ msgstr "Emplacement de la touche Ctrl"
-
-#~ msgid "At left of 'A'"
-#~ msgstr "À gauche du 'A'"
-
-#~ msgid ""
-#~ "Unicode additions (arrows and math operators). Math operators on default "
-#~ "level"
-#~ msgstr ""
-#~ "Ajouts Unicode (touches fléchées et opérateurs mathématiques). Les "
-#~ "opérateurs mathématiques se trouvent au niveau par défaut"
-
-#~ msgid "Legacy"
-#~ msgstr "Ancien"
-
-#~ msgid "Numeric keypad layout selection"
-#~ msgstr "Sélection de la disposition du pavé numérique"
-
-#~ msgid "Right Alt as Right Ctrl"
-#~ msgstr "Alt. droite comme Ctrl droite"
-
-#~ msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-#~ msgstr ""
-#~ "Clavier Wang 724 avec ajouts Unicode (touches fléchées et opérateurs "
-#~ "mathématiques)"
-
-#~ msgid ""
-#~ "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
-#~ "operators on default level"
-#~ msgstr ""
-#~ "Wang 724 avec ajouts Unicode (touches fléchées et opérateurs mathématiques). "
-#~ "Les opérateurs mathématiques se trouvent au niveau par défaut"
-
-#~ msgid "ATM/phone-style"
-#~ msgstr "Clavier de type téléphonique"
-
-#~ msgid "Legacy key with dot"
-#~ msgstr "Touche obsolète avec point"
-
-#~ msgid "Legacy key with comma"
-#~ msgstr "Touche obsolète avec virgule"
-
-#~ msgid "Four-level key with dot, latin-9 restriction"
-#~ msgstr "Touche à quatre niveaux avec point, latin-9 uniquement"
-
-#~ msgid "Four-level key with dot"
-#~ msgstr "Touche à quatre niveaux avec point"
-
-#~ msgid "Four-level key with comma"
-#~ msgstr "Touche à quatre niveaux avec virgule"
-
-#~ msgid "Four-level key with abstract separators"
-#~ msgstr "Touche à quatre niveaux avec séparateurs abstraits"
-
-#~ msgid "Add the standard behavior to Menu key"
-#~ msgstr "Ajouter le comportement standard sur la touche Menu"
-
-#~ msgid "Previous Keyboard Layout"
-#~ msgstr "Agencement de clavier précédent"
-
-#~ msgid "Next Keyboard Layout"
-#~ msgstr "Agencement de clavier suivant"
-
-#~ msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-#~ msgstr "Les touches spéciales (Ctrl+Alt+<key>) sont traitées dans un serveur"
-
-#~ msgid "Usual space at any level"
-#~ msgstr "L'espace habituel quelque soit le niveau"
-
-#~ msgid "Toggle PointerKeys with Shift + NumLock"
-#~ msgstr "Activer ou désactiver les Touches de curseur avec maj. + Verr. num."
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level"
-#~ msgstr "Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, nothing at fourth level"
-#~ msgstr ""
-#~ "Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3, rien au "
-#~ "niveau 4"
-
-#~ msgid ""
-#~ "Non-breakable space character at fourth level, thin non-breakable space "
-#~ "character at sixth level"
-#~ msgstr "Espace insécable au niveau 4, espace insécable fin au niveau 6"
-
-#~ msgid "Non-breakable space character at third level, nothing at fourth leve"
-#~ msgstr "Espace insécable au niveau 3, rien au niveau 4"
-
-#~ msgid ""
-#~ "Non-breakable space character at third level, thin non-breakable space "
-#~ "character at fourth level"
-#~ msgstr "Espace insécable au niveau 3, espace insécable fin au niveau 4"
-
-#~ msgid ""
-#~ "Non-breakable space character at fourth level, thin non-breakable space "
-#~ "character at sixth level (via Ctrl+Shift)"
-#~ msgstr ""
-#~ "Espace insécable au niveau 4, espace insécable fin au niveau 6 (via Ctrl. + "
-#~ "maj.)"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, thin non-breakable space at fourth level"
-#~ msgstr ""
-#~ "Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3, espace "
-#~ "insécable fin au niveau 4"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, zero-width joiner at fourth level"
-#~ msgstr ""
-#~ "Antiliant à chasse nulle au niveau 2, espace insécable au niveau 3, liant à "
-#~ "chasse nulle au niveau 4"
-
-#~ msgid "To the corresponding key in a Qwerty keyboard"
-#~ msgstr "Aller à la touche correspondante d'un clavier Qwerty"
-
-#~ msgid "To the corresponding key in a Dvorak keyboard"
-#~ msgstr "Aller à la touche correspondante d'un clavier Dvorak"
-
-#~ msgid "To the corresponding key in a Colemak layout"
-#~ msgstr "Aller à la touche correspondante d'une disposition Colemak"
-
-#~ msgid "Enable extra typographic characters"
-#~ msgstr "Activer des caractères typographiques supplémentaires"
-
-#~ msgid "Hyper is mapped to Win-keys"
-#~ msgstr "Hyper est placé sur les touches Windows"
-
-#~ msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-#~ msgstr "Ctrl est placé sur les touches Alt., Alt. sur les touches Windows"
-
-#~ msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-#~ msgstr ""
-#~ "Ctrl est placé sur les touches Windows (et les touches Ctrl habituelles)"
-
-#~ msgid "Meta is mapped to Left Win"
-#~ msgstr "Méta est placé sur Windows gauche"
-
-#~ msgid "Meta is mapped to Win keys"
-#~ msgstr "Méta est placé sur les touches Windows"
-
-#~ msgid "Alt/Win key behavior"
-#~ msgstr "Comportement des touches Alt et Windows"
-
-#~ msgid "Alt and Meta are on Alt keys"
-#~ msgstr "Alt et Meta sont sur les touches Alt"
-
-#~ msgid "Alt is mapped to Right Win, Super to Menu"
-#~ msgstr "Alt est placé sur Windows droite, Super sur Menu"
-
-#~ msgid "Alt is swapped with Win"
-#~ msgstr "Alt échangé avec Windows"
-
-#~ msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-#~ msgstr ""
-#~ "Alt est placé sur les touches Windows (et les touches Alt habituelles)"
-
-#~ msgid "Default numeric keypad keys"
-#~ msgstr "Touches du pavé numérique par défaut"
-
-#~ msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-#~ msgstr ""
-#~ "Les touches du pavé numérique saisissent toujours des chiffres (comme dans "
-#~ "Mac OS)"
-
-#~ msgid "Shift with numeric keypad keys works as in MS Windows"
-#~ msgstr ""
-#~ "La touche Maj. avec le pavé numérique se comporte comme dans MS Windows"
-
-#~ msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-#~ msgstr "Maj. n'annule pas Verr. numérique, mais sélectionne le niveau 3"
-
-#~ msgid "Miscellaneous compatibility options"
-#~ msgstr "Options de compatibilité diverses"
-
-#~ msgid "Both Shift-Keys together toggle ShiftLock"
-#~ msgstr "Les deux touches Maj. activent ou désactivent le blocage majuscule"
-
-#~ msgid ""
-#~ "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-#~ msgstr ""
-#~ "Les deux touches majuscule activent le verrouillage majuscule, une le "
-#~ "désactive"
-
-#~ msgid "Both Shift-Keys together toggle Caps Lock"
-#~ msgstr "Les deux touches Maj. activent ou désactivent Verr. maj."
-
-#~ msgid "Shift cancels Caps Lock"
-#~ msgstr "Maj. annule Verr. maj."
-
-#~ msgid ""
-#~ "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
-#~ "Lock)"
-#~ msgstr ""
-#~ "Clavier aluminium Apple : émulation des touches PC (Impr. écr. ; défil. ; "
-#~ "pause ; Verr. Num.)"
-
-#~ msgid "Using space key to input non-breakable space character"
-#~ msgstr "Utiliser la barre d'espacement pour insérer un espace insécable"
-
-#~ msgid "Non-breakable space character at second level"
-#~ msgstr "Espace insécable au niveau 2"
-
-#~ msgid "Non-breakable space character at third level"
-#~ msgstr "Espace insécable au niveau 3"
-
-#~ msgid "Non-breakable space character at fourth level"
-#~ msgstr "Espace insécable au niveau 4"
-
-#~ msgid "Zero-width non-joiner character at second level"
-#~ msgstr "Antiliant à chasse nulle au niveau 2"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at third level, zero-width joiner at fourth "
-#~ "level"
-#~ msgstr ""
-#~ "Antiliant à chasse nulle au niveau 3, liant à chasse nulle au niveau 4"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, zero-width joiner character "
-#~ "at third level"
-#~ msgstr ""
-#~ "Antiliant à chasse nulle au niveau 2, liant à chasse nulle au niveau 3"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, zero-width joiner character "
-#~ "at third level, non-breakable space character at fourth level"
-#~ msgstr ""
-#~ "Antiliant à chasse nulle au niveau 2, liant à chasse nulle au niveau 3, "
-#~ "espace insécable au niveau 4"
-
-#~ msgid "Adding Esperanto circumflexes (supersigno)"
-#~ msgstr "Ajout de l'accent circonflexe espéranto (supersigno)"
-
-#~ msgid "Key sequence to kill the X server"
-#~ msgstr "Séquence de touches pour tuer le serveur X"
-
-#~ msgid "Control + Alt + Backspace"
-#~ msgstr "Control + Alt + Eff. arrière"
-
-#~ msgid "Left Super"
-#~ msgstr "Super gauche"
-
-#~ msgid "Left Control"
-#~ msgstr "Ctrl gauche"
-
-#~ msgid "Right Control"
-#~ msgstr "Ctrl droit"
-
-#~ msgid "Escape"
-#~ msgstr "Échap"
-
-#~ msgid "Backspace"
-#~ msgstr "Retour arrière"
-
-#~ msgid "Super"
-#~ msgstr "Super"
-
-#~ msgid "Key to choose third level:"
-#~ msgstr "Touche pour choisir le troisième niveau :"
-
-#~ msgid "Right Alt (Alt Gr)"
-#~ msgstr "Alt Droit (Alt Gr)"
-
-#~ msgid "Caps Lock function:"
-#~ msgstr "Comportement de la touche Verrouillage Majuscule :"
-
-#~ msgid "Hyper"
-#~ msgstr "Hyper"
-
-#~ msgid "Control"
-#~ msgstr "Contrôle"
-
-#~ msgid "Swap With Escape"
-#~ msgstr "Échanger avec Échap"
-
-#~ msgid "Alt"
-#~ msgstr "Alt"
-
-#~ msgid "Key to choose fifth level:"
-#~ msgstr "Touche pour choisir le cinquième niveau :"
-
-#~ msgid "Swap With Control"
-#~ msgstr "Échanger avec Contrôle"
-
-#~ msgid "Less/Grater"
-#~ msgstr "Inférieur/Supérieur"
