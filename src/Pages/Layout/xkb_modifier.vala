@@ -19,6 +19,7 @@ namespace Pantheon.Keyboard.LayoutPage
             this.gsettings_schema = schem;
             this.gsettings_key = key;
             this.settings = new Settings (schem);
+            this.default_command = "";
 
             settings.changed[gsettings_key].connect (update_from_gsettings);
         }

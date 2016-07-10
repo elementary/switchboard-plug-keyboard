@@ -318,9 +318,9 @@ namespace Pantheon.Keyboard.LayoutPage {
             settings.add_xkb_modifier (modifier);
 
             if (modifier.get_active_command () == "") {
-                new_switch.active = true;
-            } else {
                 new_switch.active = false;
+            } else {
+                new_switch.active = true;
             }
 
             new_switch.notify["active"].connect(() => {
