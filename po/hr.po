@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-28 19:08-0500\n"
-"PO-Revision-Date: 2016-07-05 15:21+0000\n"
+"PO-Revision-Date: 2016-07-13 15:17+0000\n"
 "Last-Translator: gogo <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <hr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-07-06 05:38+0000\n"
+"X-Launchpad-Export-Date: 2016-07-14 05:58+0000\n"
 "X-Generator: Launchpad (build 18115)\n"
 
 #: ../src/Pages/layout.vala:112
@@ -575,7 +575,7 @@ msgstr "Tipkovnica"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Konfiguriraj ponašanje tipkovnice, raspored i prečice"
+msgstr "Podesite ponašanje tipkovnice, raspored i prečace"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
