@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-28 19:08-0500\n"
-"PO-Revision-Date: 2016-06-20 22:39+0000\n"
+"PO-Revision-Date: 2016-08-04 00:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-30 05:48+0000\n"
-"X-Generator: Launchpad (build 18115)\n"
+"X-Launchpad-Export-Date: 2016-08-04 05:42+0000\n"
+"X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "Klaviatuuriasetuse vahetamine:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -28,19 +28,19 @@ msgstr "Keelatud"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Tühik"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Mõlemad Shift klahvid koos"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
@@ -49,19 +49,19 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr ""
+msgstr "Koosteklahv:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
@@ -71,16 +71,16 @@ msgstr "Parem Alt"
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Parem Ctrl"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr ""
+msgstr "Parem Super"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Caps Lock'i käitumisviis:"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
@@ -90,35 +90,35 @@ msgstr "Vaikimisi"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Caps Lock keelatud"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr ""
+msgstr "kustusklahvina"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr ""
+msgstr "Ctrl'na"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr ""
+msgstr "Escape'ina"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr ""
+msgstr "Num Lock'ina"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr ""
+msgstr "Super'ina"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Ctrl'iga vahetamine"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Escape'iga vahetamine"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
@@ -126,47 +126,47 @@ msgstr "Klaviatuuri paigutuse testimiseks kirjuta siia..."
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "Kolmanda taseme valimise klahv:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "Viienda taseme valimise klahv:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F kustutusklahv:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku Escape klahvina:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja klahvid parema Alt/Ctrl asemel:"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Käsu sisestamine"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "Käsk"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "Kiirklahv"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s on juba kasutusel %s jaoks!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Määrates kiirklahv %s jaoks, siis %s keelatakse ära"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -478,7 +478,7 @@ msgstr "Kõrge kontrasti sisse- või väljalülitamine"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -543,7 +543,7 @@ msgstr "Kasutaja abivahendid"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Kohandatud"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
@@ -575,7 +575,7 @@ msgstr "Klaviatuur"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Klaviatuuri käitumise, paigutuste ning kiirklahvide muutmine"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -588,211 +588,3 @@ msgstr "Käitumine"
 #: ../src/keyboard.vala:23
 msgid "Layout"
 msgstr "Paigutus"
-
-#~ msgid "Options"
-#~ msgstr "Eelistused"
-
-#~ msgid "None"
-#~ msgstr "Puudub"
-
-#~ msgid "Allow different layouts for individual windows:"
-#~ msgstr "Rakenduste jaoks erinevate klaviatuuri paigutuste kasutamine:"
-
-#~ msgid "Left Alt"
-#~ msgstr "Vasak Alt"
-
-#~ msgid "Menu"
-#~ msgstr "Menüü"
-
-#~ msgid "Ctrl key position"
-#~ msgstr "Ctrl klahvi asukoht"
-
-#~ msgid "Backslash"
-#~ msgstr "Kurakaldkriips"
-
-#~ msgid "Caps Lock as Ctrl"
-#~ msgstr "Caps Lock kui Ctrl klahv"
-
-#~ msgid "Left Ctrl as Meta"
-#~ msgstr "Vasak Ctrl kui Meta"
-
-#~ msgid "At left of 'A'"
-#~ msgstr "A-st vasakulpool"
-
-#~ msgid "Swap Ctrl and Caps Lock"
-#~ msgstr "Ctrl ja Caps Lock klahvide vahetamine"
-
-#~ msgid "Unicode additions (arrows and math operators)"
-#~ msgstr "Unicode'i lisad (nooled ja matemaatilised märgid)"
-
-#~ msgid ""
-#~ "Unicode additions (arrows and math operators). Math operators on default "
-#~ "level"
-#~ msgstr ""
-#~ "Unicode'i lisad (nooled ja matemaatilised märgid). Matemaatilised märgid "
-#~ "vaikimisi tasemel"
-
-#~ msgid "Numeric keypad layout selection"
-#~ msgstr "Numbrilise klaviatuuri paigutuse valik"
-
-#~ msgid "Legacy"
-#~ msgstr "Legacy"
-
-#~ msgid "Right Ctrl as Right Alt"
-#~ msgstr "Parem Ctrl kui parem Alt"
-
-#~ msgid "At bottom left"
-#~ msgstr "Allpool vasakul"
-
-#~ msgid "Right Alt as Right Ctrl"
-#~ msgstr "Parem Alt kui parem Ctrl"
-
-#~ msgid "Menu as Right Ctrl"
-#~ msgstr "Menüü kui parem Ctrl"
-
-#~ msgid "Num Lock"
-#~ msgstr "Num Lock"
-
-#~ msgid "Legacy Wang 724"
-#~ msgstr "Legacy Wang 724"
-
-#~ msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-#~ msgstr ""
-#~ "Wang 724 paigutus koos Unicode lisadega (nooled ja matemaatilised märgid)"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "16"
-
-#~ msgid "ATM/phone-style"
-#~ msgstr "ATM/phone-style"
-
-#~ msgid "Legacy key with dot"
-#~ msgstr "Legacy klahv punktiga"
-
-#~ msgid "Legacy key with comma"
-#~ msgstr "Legacy klahv komaga"
-
-#~ msgid "Numeric keypad delete key behaviour"
-#~ msgstr "Numbriklaviatuuri Delete klahvi käitumisviis"
-
-#~ msgid "Four-level key with dot, latin-9 restriction"
-#~ msgstr "Neljanda taseme klahv punktiga, latin-9 piirangutega"
-
-#~ msgid "Four-level key with dot"
-#~ msgstr "Neljanda taseme klahv punktiga"
-
-#~ msgid "Four-level key with momayyez"
-#~ msgstr "Neljanda taseme klahv eraldajaga"
-
-#~ msgid "Four-level key with comma"
-#~ msgstr "Neljanda taseme klahv komaga"
-
-#~ msgid "Four-level key with abstract separators"
-#~ msgstr "Neljanda taseme klahv abstraktse eraldajaga"
-
-#~ msgid "Alt/Win key behavior"
-#~ msgstr "Alt/Win klahvi käitumine"
-
-#~ msgid "Alt is mapped to Right Win, Super to Menu"
-#~ msgstr "Alt käitub kui parem Win klahv, Win klahv käitub kui Menüü klahv"
-
-#~ msgid "Hyper is mapped to Win-keys"
-#~ msgstr "Hyper käitub kui Win klahvid"
-
-#~ msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-#~ msgstr "Ctrl käitub kui Alt klahvid, Alt käitub kui Win klahvid"
-
-#~ msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-#~ msgstr "Ctrl käitub kui Win klahv (ja kui tavalised Ctrl klahvid)"
-
-#~ msgid "Meta is mapped to Left Win"
-#~ msgstr "Meta käitub kui vasak Win klahv"
-
-#~ msgid "Meta is mapped to Win keys"
-#~ msgstr "Meta käitub kui Win klahvid"
-
-#~ msgid "Alt and Meta are on Alt keys"
-#~ msgstr "Alt ja Meta on Alt klahvidel"
-
-#~ msgid "Add the standard behavior to Menu key"
-#~ msgstr "Tavatoimingu lisamine Menüü klahvile"
-
-#~ msgid "Enable extra typographic characters"
-#~ msgstr "Eriliste tüpograafiliste karakterite lubamine"
-
-#~ msgid "Shift cancels Caps Lock"
-#~ msgstr "Shift peatab Caps Lock'i mõju"
-
-#~ msgid "Default numeric keypad keys"
-#~ msgstr "Vaikimisi numbrilise klaviatuuri klahvid"
-
-#~ msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-#~ msgstr "Numbriline klaviatuur sisestab alati numbreid (nagu Mac OS-is)"
-
-#~ msgid "Shift with numeric keypad keys works as in MS Windows"
-#~ msgstr "Shift numbrilise klaviatuuriga töötab kui MS Windows'is)"
-
-#~ msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-#~ msgstr "Shift ei katkesta Num Lock'i mõju, valib hoopis kolmanda taseme"
-
-#~ msgid "Miscellaneous compatibility options"
-#~ msgstr "Mitmesugused ühilduvusvalikud"
-
-#~ msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-#~ msgstr "Eriklahvide (Ctrl + Alt + <klahv>) käsitlemine serveris"
-
-#~ msgid ""
-#~ "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
-#~ "Lock)"
-#~ msgstr ""
-#~ "Apple'i Aluminium klaviatuur: jäljenda PC klahve (Print, Scroll Lock, Pause, "
-#~ "Num Lock)"
-
-#~ msgid "Both Shift-Keys together toggle ShiftLock"
-#~ msgstr "Mõlemad Shift klahvid koos toimivad kui ShiftLock"
-
-#~ msgid ""
-#~ "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-#~ msgstr ""
-#~ "Shift klahve koos vajutades toimib kui Caps Lock, ühe Shift klahvi "
-#~ "vajutamine peatab Caps Lock'i toime"
-
-#~ msgid "Both Shift-Keys together toggle Caps Lock"
-#~ msgstr "Shift klahve koos vajutades toimib kui Caps Lock"
-
-#~ msgid "Adding currency signs to certain keys"
-#~ msgstr "Valuuta sümbolite määramine teatud klahvidele"
-
-#~ msgid "Euro on 2"
-#~ msgstr "Euro number 2 klavil"
-
-#~ msgid "Euro on E"
-#~ msgstr "Euro E-klahvil"
-
-#~ msgid "Alt is swapped with Win"
-#~ msgstr "Alt klahvide vahetamine Win nuppudega"
-
-#~ msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-#~ msgstr "Alt kasutamine Win klahvidena (ja tavalised Alt nupud)"
-
-#~ msgid "Rupee on 4"
-#~ msgstr "Ruupia number 4 klahvil"
-
-#~ msgid "Euro on 5"
-#~ msgstr "Euro number 5 klahvil"
-
-#~ msgid "Euro on 4"
-#~ msgstr "Euro number 4 klahvil"
-
-#~ msgid ""
-#~ "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
-#~ "operators on default level"
-#~ msgstr ""
-#~ "Wang 724 numbriline klaviatuur koos Unicode'i lisadega (nooled ja "
-#~ "matemaatilised funktsioonid). Matemaatilised märgid vaikimisi tasemel"
-
-#~ msgid "Usual space at any level"
-#~ msgstr "Tavaline tühik kõikidel tasemetel"
-
-#~ msgid "Semi-colon on third level"
-#~ msgstr "Semikoolon kolmandal tasemel"

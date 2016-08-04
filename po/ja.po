@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-28 19:08-0500\n"
-"PO-Revision-Date: 2016-08-02 01:15+0000\n"
+"PO-Revision-Date: 2016-08-03 10:09+0000\n"
 "Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-03 05:53+0000\n"
+"X-Launchpad-Export-Date: 2016-08-04 05:42+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "レイアウトの切替:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -28,59 +28,59 @@ msgstr "無効"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + スペース"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "両方の Shift キーを同時に"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr ""
+msgstr "Compose キー:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
 msgid "Right Alt"
-msgstr ""
+msgstr "右 Alt"
 
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "右Ctrl"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr ""
+msgstr "右 Super"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Caps Lock の動作:"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
@@ -90,35 +90,35 @@ msgstr "デフォルト"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Caps Lock を無効にする"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr ""
+msgstr "Back Space として動作"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr ""
+msgstr "Ctrl として動作"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr ""
+msgstr "Esc として動作"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr ""
+msgstr "Num Lock として動作"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr ""
+msgstr "Super として動作"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Ctrl と交換する"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Esc と交換する"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
@@ -134,35 +134,35 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "かなロック:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "NICOLA-F BS キー:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "全角/半角 を Esc として動作"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Apple 英数/かな を右 Ctrl/Alt に割当:"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "コマンドを実行"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "コマンド"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "ショートカット"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s はすでに %s で使用しています！"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
@@ -206,7 +206,7 @@ msgstr "元のサイズに戻す"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "最大化の切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:36
 msgid "Minimize"
@@ -214,7 +214,7 @@ msgstr "最小化"
 
 #: ../src/Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr "全画面表示に切り替え"
+msgstr "全画面表示の切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
@@ -226,7 +226,7 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "全ワークスペースの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
@@ -234,7 +234,7 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:42
 msgid "Switch Windows"
-msgstr ""
+msgstr "ウインドウの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:43
 msgid "Switch Windows backwards"
@@ -246,19 +246,19 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr ""
+msgstr "すべてのウィンドウを表示"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
-msgstr ""
+msgstr "ワークスペース切り替えを表示"
 
 #: ../src/Pages/Shortcuts/list.vala:88
 msgid "Switch to first"
-msgstr ""
+msgstr "最初に切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:89
 msgid "Switch to new"
-msgstr ""
+msgstr "新規に切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:90
 msgid "Switch to workspace 1"
@@ -390,7 +390,7 @@ msgstr "ホームフォルダー"
 
 #: ../src/Pages/Shortcuts/list.vala:210
 msgid "File Search"
-msgstr "ファイル検索"
+msgstr "ファイルの検索"
 
 #: ../src/Pages/Shortcuts/list.vala:211
 msgid "Terminal"
@@ -398,7 +398,7 @@ msgstr "ターミナル"
 
 #: ../src/Pages/Shortcuts/list.vala:212
 msgid "Internet Browser"
-msgstr "インターネット ブラウザ"
+msgstr "インターネットブラウザ"
 
 #: ../src/Pages/Shortcuts/list.vala:213
 msgid "Applications Launcher"
@@ -418,7 +418,7 @@ msgstr "消音"
 
 #: ../src/Pages/Shortcuts/list.vala:246
 msgid "Launch Media Player"
-msgstr ""
+msgstr "メディアプレーヤーの起動"
 
 #: ../src/Pages/Shortcuts/list.vala:247
 msgid "Play"
@@ -474,7 +474,7 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/list.vala:293
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "ハイコントラストの切り替え"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
@@ -543,7 +543,7 @@ msgstr "ユニバーサルアクセス"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "カスタム"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
