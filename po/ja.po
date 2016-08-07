@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-06-28 19:08-0500\n"
-"PO-Revision-Date: 2016-08-03 10:09+0000\n"
-"Last-Translator: BALLOON a.k.a. Fu-sen. (Keiichi SHIGA) <Unknown>\n"
+"PO-Revision-Date: 2016-08-06 11:06+0000\n"
+"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
 "Language-Team: Japanese <ja@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-08-04 05:42+0000\n"
+"X-Launchpad-Export-Date: 2016-08-07 05:32+0000\n"
 "X-Generator: Launchpad (build 18169)\n"
 
 #: ../src/Pages/layout.vala:112
@@ -126,11 +126,11 @@ msgstr "入力してレイアウトを試して下さい..."
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "3rd level を選択するキー:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "5th level を選択するキー:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
@@ -166,7 +166,7 @@ msgstr "%s はすでに %s で使用しています！"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "%sにショートカットを再割り当てすると、％sは無効になります"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -194,7 +194,7 @@ msgstr "閉じる"
 
 #: ../src/Pages/Shortcuts/list.vala:32
 msgid "Lower"
-msgstr ""
+msgstr "背面へ移動"
 
 #: ../src/Pages/Shortcuts/list.vala:33
 msgid "Maximize"
@@ -218,11 +218,11 @@ msgstr "全画面表示の切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
-msgstr ""
+msgstr "左にタイル"
 
 #: ../src/Pages/Shortcuts/list.vala:39
 msgid "Tile Right"
-msgstr ""
+msgstr "右にタイル"
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
@@ -230,7 +230,7 @@ msgstr "全ワークスペースの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "常に手前に表示する"
 
 #: ../src/Pages/Shortcuts/list.vala:42
 msgid "Switch Windows"
@@ -238,11 +238,11 @@ msgstr "ウインドウの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:43
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "逆順でウィンドウの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr ""
+msgstr "ウィンドウオーバービュー"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
@@ -298,11 +298,11 @@ msgstr "ワークスペース 9 に切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:99
 msgid "Switch to left"
-msgstr ""
+msgstr "左に切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:100
 msgid "Switch to right"
-msgstr ""
+msgstr "右に切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:101
 msgid "Move to workspace 1"
@@ -454,23 +454,23 @@ msgstr "フォントサイズを大きく"
 
 #: ../src/Pages/Shortcuts/list.vala:288
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "拡大鏡の切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:289
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "拡大鏡の拡大"
 
 #: ../src/Pages/Shortcuts/list.vala:290
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "拡大鏡の縮小"
 
 #: ../src/Pages/Shortcuts/list.vala:291
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "オンスクリーンキーボードの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:292
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "スクリーンリーダーの切り替え"
 
 #: ../src/Pages/Shortcuts/list.vala:293
 msgid "Toggle High Contrast"
@@ -478,7 +478,7 @@ msgstr "ハイコントラストの切り替え"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -575,7 +575,7 @@ msgstr "キーボード"
 
 #: ../src/keyboard.vala:8
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "キーボードの動作、レイアウトとショートカットを設定します。"
 
 #: ../src/keyboard.vala:21
 msgid "Shortcuts"
@@ -583,7 +583,7 @@ msgstr "ショートカット"
 
 #: ../src/keyboard.vala:22
 msgid "Behavior"
-msgstr ""
+msgstr "動作"
 
 #: ../src/keyboard.vala:23
 msgid "Layout"
