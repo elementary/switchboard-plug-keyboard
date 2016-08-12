@@ -1,3 +1,9 @@
+switchboard-plug-keyboard (0.3) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Fri, 12 Aug 2016 04:47:20 -0500
+
 switchboard-plug-keyboard (0.2.1) trusty; urgency=low
 
   * Added custom keyboard shortcut support (lp:1100088)
