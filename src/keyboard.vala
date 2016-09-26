@@ -1,5 +1,6 @@
 public class Pantheon.Keyboard.Plug : Switchboard.Plug {
-    Gtk.Grid grid;
+    Gtk.Grid  grid;
+    Gtk.Stack stack;
 
     public Plug () {
         Object (category: Category.HARDWARE,
@@ -13,7 +14,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         if (grid == null) {
             grid = new Gtk.Grid ();
             grid.margin = 12;
-            var stack = new Gtk.Stack ();
+            stack = new Gtk.Stack ();
             var stack_switcher = new Gtk.StackSwitcher ();
             stack_switcher.set_stack (stack);
             stack_switcher.halign = Gtk.Align.CENTER;
@@ -38,12 +39,30 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     }
 
     public override void search_callback (string location) {
-
+        switch (location) {
+            default:
+            case "Shortcuts":
+                stack.visible_child_name = "shortcuts";
+                break;
+            case "Behavior":
+                stack.visible_child_name = "behavior";
+                break;
+            case "Layout":
+                stack.visible_child_name = "layout";
+                break;
+        }
     }
 
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
-        return new Gee.TreeMap<string, string> (null, null);
+        var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        search_results.set ("%s → %s".printf (display_name, _("Shortcuts")), "Shortcuts");
+        search_results.set ("%s → %s".printf (display_name, _("Repeat Keys")), "Behavior");
+        search_results.set ("%s → %s".printf (display_name, _("Cursor Blinking")), "Behavior");
+        search_results.set ("%s → %s".printf (display_name, _("Switch layout")), "Layout");
+        search_results.set ("%s → %s".printf (display_name, _("Compose Key")), "Layout");
+        search_results.set ("%s → %s".printf (display_name, _("Caps Lock behavior")), "Layout");
+	return search_results;
     }
 }
 
