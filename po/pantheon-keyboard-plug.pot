@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-06-28 19:08-0500\n"
+"POT-Creation-Date: 2016-10-10 18:06-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -569,22 +569,42 @@ msgstr ""
 msgid "Add Layout"
 msgstr ""
 
-#: ../src/keyboard.vala:7
+#: ../src/keyboard.vala:8
 msgid "Keyboard"
 msgstr ""
 
-#: ../src/keyboard.vala:8
+#: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: ../src/keyboard.vala:21
+#: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
 msgstr ""
 
-#: ../src/keyboard.vala:22
+#: ../src/keyboard.vala:23
 msgid "Behavior"
 msgstr ""
 
-#: ../src/keyboard.vala:23
+#: ../src/keyboard.vala:24
 msgid "Layout"
+msgstr ""
+
+#: ../src/keyboard.vala:60
+msgid "Repeat Keys"
+msgstr ""
+
+#: ../src/keyboard.vala:61
+msgid "Cursor Blinking"
+msgstr ""
+
+#: ../src/keyboard.vala:62
+msgid "Switch layout"
+msgstr ""
+
+#: ../src/keyboard.vala:63
+msgid "Compose Key"
+msgstr ""
+
+#: ../src/keyboard.vala:64
+msgid "Caps Lock behavior"
 msgstr ""
