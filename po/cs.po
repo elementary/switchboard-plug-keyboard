@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-06-28 19:08-0500\n"
+"POT-Creation-Date: 2016-10-10 18:06-0500\n"
 "PO-Revision-Date: 2015-05-22 20:31+0000\n"
 "Last-Translator: Tomo Moto <Unknown>\n"
 "Language-Team: Czech <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-30 05:48+0000\n"
-"X-Generator: Launchpad (build 18115)\n"
+"X-Launchpad-Export-Date: 2016-10-11 07:33+0000\n"
+"X-Generator: Launchpad (build 18227)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -569,324 +569,42 @@ msgstr "Rozložení:"
 msgid "Add Layout"
 msgstr "Přidat rozložení"
 
-#: ../src/keyboard.vala:7
+#: ../src/keyboard.vala:8
 msgid "Keyboard"
 msgstr "Klávesnice"
 
-#: ../src/keyboard.vala:8
+#: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: ../src/keyboard.vala:21
+#: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
 msgstr "Klávesové zkratky"
 
-#: ../src/keyboard.vala:22
+#: ../src/keyboard.vala:23
 msgid "Behavior"
 msgstr "Chování"
 
-#: ../src/keyboard.vala:23
+#: ../src/keyboard.vala:24
 msgid "Layout"
 msgstr "Rozložení"
 
-#~ msgid "Options"
-#~ msgstr "Možnosti"
-
-#~ msgid "Left Alt"
-#~ msgstr "Levá klávesa Alt"
-
-#~ msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-#~ msgstr "Speciální klávesy (Ctrl+Alt+<klávesa>) přijímané serverem"
-
-#~ msgid "Toggle PointerKeys with Shift + NumLock"
-#~ msgstr "Přepnout PointerKeys stisknutím Shift + NumLock"
-
-#~ msgid "Both Shift-Keys together toggle ShiftLock"
-#~ msgstr "Stisknutím obou kláves Shift současně se přepne ShiftLock"
-
-#~ msgid ""
-#~ "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-#~ msgstr ""
-#~ "Stisknutím obou kláves Shift současně se aktivuje Caps Lock, stisknutím "
-#~ "jedné Shift klávesy jej deaktivujete"
-
-#~ msgid "None"
-#~ msgstr "Žádné"
-
-#~ msgid "Backslash"
-#~ msgstr "Zpětné lomítko"
-
-#~ msgid "Caps Lock as Ctrl"
-#~ msgstr "Caps Lock jako Ctrl"
-
-#~ msgid "Left Ctrl as Meta"
-#~ msgstr "Levý Ctrl jako Meta"
-
-#~ msgid "At left of 'A'"
-#~ msgstr "Nalevo od „A“"
-
-#~ msgid "Swap Ctrl and Caps Lock"
-#~ msgstr "Zaměnit Ctrl a Caps Lock"
-
-#~ msgid "At bottom left"
-#~ msgstr "Vlevo dole"
-
-#~ msgid "Ctrl key position"
-#~ msgstr "Umístění klávesy Ctrl"
-
-#~ msgid "Unicode additions (arrows and math operators)"
-#~ msgstr "Doplňky Unicode (šipky a matematické operátory)"
-
-#~ msgid "Legacy Wang 724"
-#~ msgstr "Zděděná Wang 724"
-
-#~ msgid "Legacy"
-#~ msgstr "Zděděné"
-
-#~ msgid "Numeric keypad layout selection"
-#~ msgstr "Výběr rozložení numerické klávesnice"
-
-#~ msgid "Right Ctrl as Right Alt"
-#~ msgstr "Pravá klávesa Ctrl funguje jako pravá klávesa Alt"
-
-#~ msgid "Right Alt as Right Ctrl"
-#~ msgstr "Pravý Alt jako pravý Ctrl"
-
-#~ msgid "Menu as Right Ctrl"
-#~ msgstr "Menu jako pravý Ctrl"
-
-#~ msgid "Num Lock"
-#~ msgstr "Num Lock"
-
-#~ msgid ""
-#~ "Unicode additions (arrows and math operators). Math operators on default "
-#~ "level"
-#~ msgstr ""
-#~ "Doplňky Unicode (šipky a matematické operátory). Matematické operátory na "
-#~ "výchozí úrovni"
-
-#~ msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-#~ msgstr ""
-#~ "Numerická klávesnice Wang 724 s doplňky Unicode (šipky a matematické "
-#~ "operátory)"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "Hexadecimální"
-
-#~ msgid "ATM/phone-style"
-#~ msgstr "ATM/telefonní typ"
-
-#~ msgid "Legacy key with dot"
-#~ msgstr "Zděděná klávesa s tečkou"
-
-#~ msgid "Legacy key with comma"
-#~ msgstr "Zděděná klávesa s čárkou"
-
-#~ msgid "Numeric keypad delete key behaviour"
-#~ msgstr "Chování klávesy Delete na numerické klávesnici"
-
-#~ msgid "Four-level key with comma"
-#~ msgstr "Klávesa čtvrté úrovně s čárkou"
-
-#~ msgid "Four-level key with dot, latin-9 restriction"
-#~ msgstr "Klávesa čtvrté úrovně s tečkou, omezení Latin-9"
-
-#~ msgid "Four-level key with dot"
-#~ msgstr "Klávesa čtvrté úrovně s tečkou"
-
-#~ msgid "Four-level key with momayyez"
-#~ msgstr "Klávesa čtvrté úrovně se znakem momajjez"
-
-#~ msgid "Semi-colon on third level"
-#~ msgstr "Středník na třetí úrovni"
-
-#~ msgid "Four-level key with abstract separators"
-#~ msgstr "Klávesa čtvrté úrovně s abstraktními oddělovači"
-
-#~ msgid "Alt/Win key behavior"
-#~ msgstr "Chování klávesy Alt/Win"
-
-#~ msgid "Add the standard behavior to Menu key"
-#~ msgstr "Přidá standardní chování ke klávese Menu"
-
-#~ msgid "Alt is mapped to Right Win, Super to Menu"
-#~ msgstr "Alt je přiřazena k pravé klávese Win a Super k Menu"
-
-#~ msgid "Hyper is mapped to Win-keys"
-#~ msgstr "Hyper je přiřazena ke klávesám Win"
-
-#~ msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-#~ msgstr "Ctrl je přiřazena ke klávesám Alt, Alt je přiřazena ke klávesám Win"
-
-#~ msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-#~ msgstr "Ctrl je přiřazena ke klávesám Win (a obvyklým klávesám Ctrl)"
-
-#~ msgid "Meta is mapped to Left Win"
-#~ msgstr "Meta je přiřazena k levé klávese Win"
-
-#~ msgid "Meta is mapped to Win keys"
-#~ msgstr "Meta je přiřazena ke klávesám Win"
-
-#~ msgid "Alt and Meta are on Alt keys"
-#~ msgstr "Alt a Meta na klávesách Alt"
-
-#~ msgid "Enable extra typographic characters"
-#~ msgstr "Povolit přídavné znaky hladké sazby"
-
-#~ msgid "Shift cancels Caps Lock"
-#~ msgstr "Shift ruší Caps Lock"
-
-#~ msgid "Default numeric keypad keys"
-#~ msgstr "Výchozí numerická klávesnice"
-
-#~ msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-#~ msgstr "Klávesy numerické klávesnice vždy vrací číslice (jako u OS X)"
-
-#~ msgid "Shift with numeric keypad keys works as in MS Windows"
-#~ msgstr "Shift s numerickými klávesami funguje jako v MS Windows"
-
-#~ msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-#~ msgstr "Shift neruší Num Lock, namísto toho vybírá 3. úroveň"
-
-#~ msgid "Miscellaneous compatibility options"
-#~ msgstr "Dodatečné volby kompatibility"
-
-#~ msgid ""
-#~ "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
-#~ "Lock)"
-#~ msgstr ""
-#~ "Apple Aluminium Keyboard: emulovat klávesy PC (Print, Scroll Lock, Pause, "
-#~ "Num Lock)"
-
-#~ msgid "Euro on 5"
-#~ msgstr "Euro na klávese 5"
-
-#~ msgid "Euro on 4"
-#~ msgstr "Euro na klávese 4"
-
-#~ msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-#~ msgstr ""
-#~ "Umožní porušit uzamčení vstupů pomocí akcí klávesnice (pozor: bezpečnostní "
-#~ "riziko)"
-
-#~ msgid "Adding currency signs to certain keys"
-#~ msgstr "Přidává znaky měny k určitým klávesám"
-
-#~ msgid "Both Shift-Keys together toggle Caps Lock"
-#~ msgstr "Obě klávesy Shift současně přepnou Caps Lock"
-
-#~ msgid "Euro on 2"
-#~ msgstr "Euro na klávese 2"
-
-#~ msgid "Euro on E"
-#~ msgstr "Euro na klávese E"
-
-#~ msgid "Usual space at any level"
-#~ msgstr "Na jakékoliv úrovni znak běžné mezery"
-
-#~ msgid "Using space key to input non-breakable space character"
-#~ msgstr "Používání mezerníku k zadávání znaku nedělitelné mezery"
-
-#~ msgid "Rupee on 4"
-#~ msgstr "Rupie na klávese 4"
-
-#~ msgid "Non-breakable space character at second level"
-#~ msgstr "Na druhé úrovni znak nedělitelné mezery"
-
-#~ msgid "Non-breakable space character at third level"
-#~ msgstr "Na třetí úrovni znak nedělitelné mezery"
-
-#~ msgid ""
-#~ "Non-breakable space character at third level, thin non-breakable space "
-#~ "character at fourth level"
-#~ msgstr ""
-#~ "Na třetí úrovni znak nedělitelné mezery, tenká nedělitelná mezera na čtvrté "
-#~ "úrovni"
-
-#~ msgid "Non-breakable space character at third level, nothing at fourth leve"
-#~ msgstr ""
-#~ "Na třetí úrovni znak nedělitelné mezery, na páte úrovni žádná funkce."
-
-#~ msgid "Non-breakable space character at fourth level"
-#~ msgstr "Na čtvrté úrovni znak nedělitelné mezery"
-
-#~ msgid ""
-#~ "Non-breakable space character at fourth level, thin non-breakable space "
-#~ "character at sixth level"
-#~ msgstr ""
-#~ "Na čtvrté úrovni znak nedělitelné mezery, tenká nedělitelná mezera na šesté "
-#~ "úrovni"
-
-#~ msgid ""
-#~ "Non-breakable space character at fourth level, thin non-breakable space "
-#~ "character at sixth level (via Ctrl+Shift)"
-#~ msgstr ""
-#~ "Na čtvrté úrovni znak nedělitelné mezery, tenká nedělitelná mezera na šesté "
-#~ "úrovni (přes Ctrl+Shift)"
-
-#~ msgid "Zero-width non-joiner character at second level"
-#~ msgstr "Na druhé úrovni znak nespojovače nulové šířky"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, zero-width joiner character "
-#~ "at third level"
-#~ msgstr ""
-#~ "Na druhé úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
-#~ "na třetí úrovni"
-
-#~ msgid "Adding Esperanto circumflexes (supersigno)"
-#~ msgstr "Přidává diakritiku jazyka esperanto (supersigno)"
-
-#~ msgid "Key sequence to kill the X server"
-#~ msgstr "Pořadí kláves zabíjející server X"
-
-#~ msgid "Control + Alt + Backspace"
-#~ msgstr "Ctrl + Alt + Backspace"
-
-#~ msgid "Allow different layouts for individual windows:"
-#~ msgstr "Povolit různé rozložení pro jednotlivá okna:"
-
-#~ msgid "Menu"
-#~ msgstr "Menu"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, nothing at fourth level"
-#~ msgstr ""
-#~ "Na druhé úrovni znak nespojovače nulové šířky, na třetí úrovni nedělitelná "
-#~ "mezera, nic na úrovni čtvrté"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level"
-#~ msgstr ""
-#~ "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
-#~ "úrovni"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, zero-width joiner character "
-#~ "at third level, non-breakable space character at fourth level"
-#~ msgstr ""
-#~ "Na druhé úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
-#~ "na třetí úrovni, nedělitelná mezera na čtvrté úrovni"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at third level, zero-width joiner at fourth "
-#~ "level"
-#~ msgstr ""
-#~ "Na třetí úrovni znak nespojovače nulové šířky, znak spojovače nulové šířky "
-#~ "na úrovni čtvrté"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, thin non-breakable space at fourth level"
-#~ msgstr ""
-#~ "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
-#~ "úrovni, tenká nedělitelná mezera na čtvrté úrovni"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, zero-width joiner at fourth level"
-#~ msgstr ""
-#~ "Na druhé úrovni znak nespojovače nulové šířky, nedělitelná mezera na třetí "
-#~ "úrovni, spojovač nulové šířky na úrovni čtvrté"
+#: ../src/keyboard.vala:60
+msgid "Repeat Keys"
+msgstr ""
+
+#: ../src/keyboard.vala:61
+msgid "Cursor Blinking"
+msgstr ""
+
+#: ../src/keyboard.vala:62
+msgid "Switch layout"
+msgstr ""
+
+#: ../src/keyboard.vala:63
+msgid "Compose Key"
+msgstr ""
+
+#: ../src/keyboard.vala:64
+msgid "Caps Lock behavior"
+msgstr ""

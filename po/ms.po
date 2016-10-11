@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-06-28 19:08-0500\n"
+"POT-Creation-Date: 2016-10-10 18:06-0500\n"
 "PO-Revision-Date: 2015-06-09 01:15+0000\n"
 "Last-Translator: abuyop <Unknown>\n"
 "Language-Team: Malay <ms@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-30 05:48+0000\n"
-"X-Generator: Launchpad (build 18115)\n"
+"X-Launchpad-Export-Date: 2016-10-11 07:33+0000\n"
+"X-Generator: Launchpad (build 18227)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -569,357 +569,42 @@ msgstr "Bentangan:"
 msgid "Add Layout"
 msgstr "Tambah Bentangan"
 
-#: ../src/keyboard.vala:7
+#: ../src/keyboard.vala:8
 msgid "Keyboard"
 msgstr "Papan Kekunci"
 
-#: ../src/keyboard.vala:8
+#: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: ../src/keyboard.vala:21
+#: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
 msgstr "Pintasan"
 
-#: ../src/keyboard.vala:22
+#: ../src/keyboard.vala:23
 msgid "Behavior"
 msgstr "Kelakuan"
 
-#: ../src/keyboard.vala:23
+#: ../src/keyboard.vala:24
 msgid "Layout"
 msgstr "Bentangan"
 
-#~ msgid "Options"
-#~ msgstr "Pilihan"
-
-#~ msgid "Allow different layouts for individual windows:"
-#~ msgstr "Benarkan bentangan berlainan untuk tetingkap secara individu:"
-
-#~ msgid "None"
-#~ msgstr "Tiada"
-
-#~ msgid "Left Alt"
-#~ msgstr "Alt Kiri"
-
-#~ msgid "Menu"
-#~ msgstr "Menu"
-
-#~ msgid "Ctrl key position"
-#~ msgstr "Kedudukan kekunci Ctrl"
-
-#~ msgid "Backslash"
-#~ msgstr "Backslash"
-
-#~ msgid "Caps Lock as Ctrl"
-#~ msgstr "Caps Lock sebagai Ctrl"
-
-#~ msgid "Legacy"
-#~ msgstr "Legasi"
-
-#~ msgid "Numeric keypad layout selection"
-#~ msgstr "Pemilihan bentangan pad kekunci numerik"
-
-#~ msgid "At left of 'A'"
-#~ msgstr "Di kiri 'A'"
-
-#~ msgid "Swap Ctrl and Caps Lock"
-#~ msgstr "Silih Ctrl dengan Caps Lock"
-
-#~ msgid "Right Ctrl as Right Alt"
-#~ msgstr "Ctrl Kanan sebagai Alt Kanan"
-
-#~ msgid "At bottom left"
-#~ msgstr "Di kiri bawah"
-
-#~ msgid "Right Alt as Right Ctrl"
-#~ msgstr "Alt Kanan sebagai Ctrl Kanan"
-
-#~ msgid "Menu as Right Ctrl"
-#~ msgstr "Menu sebagai Ctrl Kanan"
-
-#~ msgid "Num Lock"
-#~ msgstr "Num Lock"
-
-#~ msgid "Adding Esperanto circumflexes (supersigno)"
-#~ msgstr "Menambah sirkumfleks Esperanto (supersigno)"
-
-#~ msgid "Key sequence to kill the X server"
-#~ msgstr "Jujukan kekunci untuk matikan pelayan X"
-
-#~ msgid "Control + Alt + Backspace"
-#~ msgstr "Control + Alt + Backspace"
-
-#~ msgid "Unicode additions (arrows and math operators)"
-#~ msgstr "Tambahan Unikod (anak panah dan operator matematik)"
-
-#~ msgid "Left Ctrl as Meta"
-#~ msgstr "Left Ctrl sebagai Meta"
-
-#~ msgid "Legacy key with dot"
-#~ msgstr "Kekunci legasi dengan titik"
-
-#~ msgid "Legacy key with comma"
-#~ msgstr "Kekunci legasi dengan koma"
-
-#~ msgid "ATM/phone-style"
-#~ msgstr "ATM/gaya-telefon"
-
-#~ msgid "Numeric keypad delete key behaviour"
-#~ msgstr "Kelakuan kekunci padam pad numerik"
-
-#~ msgid "Four-level key with momayyez"
-#~ msgstr "Kekunci aras-empat dengan momayyez"
-
-#~ msgid "Four-level key with comma"
-#~ msgstr "Kekunci aras-empat dengan koma"
-
-#~ msgid "Four-level key with dot, latin-9 restriction"
-#~ msgstr "Kekunci aras-empat dengan titik, sekatan latin-9"
-
-#~ msgid "Four-level key with dot"
-#~ msgstr "Kekunci aras-empat dengan titik"
-
-#~ msgid "Semi-colon on third level"
-#~ msgstr "Dua titik bertindih pada aras ke-3"
-
-#~ msgid "Four-level key with abstract separators"
-#~ msgstr "Kekunci aras-empat dengan pemisah abstrak"
-
-#~ msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-#~ msgstr "Control dipetakan ke kekunci Alt, Alt dipetakan ke kekunci Win"
-
-#~ msgid "Alt/Win key behavior"
-#~ msgstr "Kelakuan kekunci Alt/Win"
-
-#~ msgid "Alt and Meta are on Alt keys"
-#~ msgstr "Alt dan Meta berada pada kekunci Alt"
-
-#~ msgid "Add the standard behavior to Menu key"
-#~ msgstr "Tambah kelakuan piawai kepada kekunci Menu"
-
-#~ msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-#~ msgstr ""
-#~ "Control dipetakan dengan kekunci Win (dan kekunci Ctrl seperti biasa)"
-
-#~ msgid "Alt is mapped to Right Win, Super to Menu"
-#~ msgstr "Alt dipetakan ke Win Kanan, Super ke Menu"
-
-#~ msgid "Hyper is mapped to Win-keys"
-#~ msgstr "Hyper dipetakan kepada kekunci-Win"
-
-#~ msgid "Meta is mapped to Left Win"
-#~ msgstr "Meta dipetakan ke Win Kiri"
-
-#~ msgid "Meta is mapped to Win keys"
-#~ msgstr "Meta dipetakan ke kekunci Win"
-
-#~ msgid "Default numeric keypad keys"
-#~ msgstr "Kekunci pad numerik lalai"
-
-#~ msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-#~ msgstr ""
-#~ "Kekunci pad numerik sentiasa masukkan digit (sepertimana di dalam Mac OS)"
-
-#~ msgid "Miscellaneous compatibility options"
-#~ msgstr "Pelbagai pilihan keserasian"
-
-#~ msgid "Both Shift-Keys together toggle ShiftLock"
-#~ msgstr "Kedua-dua Kekunci-Shift menogol ShiftLock"
-
-#~ msgid ""
-#~ "Both Shift-Keys together activate Caps Lock, one Shift-Key deactivates"
-#~ msgstr ""
-#~ "Kedua-dua Kekunci-Shift aktifkan Caps Lock, satu Kekunci-Shift "
-#~ "menyahaktifkannya"
-
-#~ msgid "Both Shift-Keys together toggle Caps Lock"
-#~ msgstr "Kedua-dua Kekunci-Shift menogol Caps Lock"
-
-#~ msgid "Enable extra typographic characters"
-#~ msgstr "Benarkan aksara tipografik tambahan"
-
-#~ msgid "Shift cancels Caps Lock"
-#~ msgstr "Shift batalkan Caps Lock"
-
-#~ msgid "Shift with numeric keypad keys works as in MS Windows"
-#~ msgstr ""
-#~ "Shift dengan kekunci pad numerik yang berfungsi sebagaimana dalam MS Windows"
-
-#~ msgid "Shift does not cancel Num Lock, chooses 3rd level instead"
-#~ msgstr "Shift tidak membatalkan Num Lock, pilih aras ke-3"
-
-#~ msgid ""
-#~ "Apple Aluminium Keyboard: emulate PC keys (Print, Scroll Lock, Pause, Num "
-#~ "Lock)"
-#~ msgstr ""
-#~ "Papan Kekunci Apple: emulasikan kekunci PC (Print, Scroll Lock, Pause, Num "
-#~ "Lock)"
-
-#~ msgid "Rupee on 4"
-#~ msgstr "Rupee pada 4"
-
-#~ msgid "Euro on 5"
-#~ msgstr "Euro pada 5"
-
-#~ msgid "Euro on 4"
-#~ msgstr "Euro pada 4"
-
-#~ msgid "Adding currency signs to certain keys"
-#~ msgstr "Menambah simbol wang kepada kekunci tertentu"
-
-#~ msgid "Allow breaking grabs with keyboard actions (warning: security risk)"
-#~ msgstr ""
-#~ "Benarkan pemecahan cekau dengan tindakan papan kekunci (amaran: risiko "
-#~ "keselamatan)"
-
-#~ msgid "Euro on E"
-#~ msgstr "Euro pada E"
-
-#~ msgid "Euro on 2"
-#~ msgstr "Euro pada 2"
-
-#~ msgid "Usual space at any level"
-#~ msgstr "Space biasa pada sebarang aras"
-
-#~ msgid "Using space key to input non-breakable space character"
-#~ msgstr ""
-#~ "Menggunakan kekunci space untuk masukkan aksara space tidak-boleh-dipecah"
-
-#~ msgid "Non-breakable space character at second level"
-#~ msgstr "Aksara space tidak-boleh-dipecah pada aras kedua"
-
-#~ msgid "Non-breakable space character at third level"
-#~ msgstr "Aksara space tidak-boleh-dipecah pada aras ketiga"
-
-#~ msgid ""
-#~ "Non-breakable space character at third level, thin non-breakable space "
-#~ "character at fourth level"
-#~ msgstr ""
-#~ "Aksara space tidak-boleh-dipecah pada aras ketiga, aksara space tidak-boleh-"
-#~ "dipecah yang nipis pada aras keempat"
-
-#~ msgid "Non-breakable space character at fourth level"
-#~ msgstr "Aksara space tidak-boleh-dipecah pada aras keempat"
-
-#~ msgid ""
-#~ "Non-breakable space character at fourth level, thin non-breakable space "
-#~ "character at sixth level"
-#~ msgstr ""
-#~ "Aksara space tidak-boleh-dipecah pada aras keempat, aksara space tidak-boleh-"
-#~ "dipecah yang nipis pada aras keenam"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, zero-width joiner at fourth level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras kedua, aksara space tidak-boleh-"
-#~ "dipecah pada aras ketiga, penggabung lebar-sifar pada aras keempat"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at third level, zero-width joiner at fourth "
-#~ "level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras ketiga, penggabung berlebar-"
-#~ "sifar pada aras keempat"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, nothing at fourth level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras kedua, aksara space tidak-boleh-"
-#~ "dipecah pada aras ketiga, tiada apa pada aras keempat"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras kedua, aksara space tidak-boleh-"
-#~ "dipecah pada aras ketiga"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, non-breakable space "
-#~ "character at third level, thin non-breakable space at fourth level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras kedua, aksara space tidak-boleh-"
-#~ "dipecah pada aras ketiga, space tidak-boleh-dipecah pada aras keempat"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, zero-width joiner character "
-#~ "at third level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras kedua, aksara penggabung "
-#~ "berlebar-sifat pada aras ketiga"
-
-#~ msgid ""
-#~ "Zero-width non-joiner character at second level, zero-width joiner character "
-#~ "at third level, non-breakable space character at fourth level"
-#~ msgstr ""
-#~ "Aksara bukan-gabung berlebar-sifar pada aras kedua, aksaran penggabung "
-#~ "berlebar-sifat pada aras ketiga, aksara space tidak-boleh-dipecah pada aras "
-#~ "keempat"
-
-#~ msgid ""
-#~ "Non-breakable space character at fourth level, thin non-breakable space "
-#~ "character at sixth level (via Ctrl+Shift)"
-#~ msgstr ""
-#~ "Aksara space tidak-boleh-dipecah pada aras keempat, aksara space tidak-boleh-"
-#~ "dipecah yang nipis pada aras keenam (melalui Ctrl+Shift)"
-
-#~ msgid "Zero-width non-joiner character at second level"
-#~ msgstr "Aksara bukan-gabung berlebar-sifar pada aras kedua"
-
-#~ msgid ""
-#~ "Unicode additions (arrows and math operators). Math operators on default "
-#~ "level"
-#~ msgstr ""
-#~ "Tambahan Unikod (anak panah dan operator matematik). Operator matematik pada "
-#~ "aras lalai"
-
-#~ msgid "Legacy Wang 724"
-#~ msgstr "wang 724 Legasi"
-
-#~ msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-#~ msgstr ""
-#~ "Pad kekunci Wang 724 dengan tambahan Unikod (anak panah dan operator "
-#~ "matematik)"
-
-#~ msgid ""
-#~ "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
-#~ "operators on default level"
-#~ msgstr ""
-#~ "Pad kekunci Wang 724 dengan tambahan Unikod (anak panah dan operator "
-#~ "matematik). Operator matematik pada aras lalai"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "Heksadesimal"
-
-#~ msgid "Non-breakable space character at third level, nothing at fourth leve"
-#~ msgstr ""
-#~ "Aksara spaca tidak-boleh-pecah pada aras ketiga, tiada apa pada aras keempat"
-
-#~ msgid "Toggle PointerKeys with Shift + NumLock"
-#~ msgstr "Togol Kekunci Penuding dengan Shift + NumLock"
-
-#~ msgid "Special keys (Ctrl+Alt+<key>) handled in a server"
-#~ msgstr "Kekunci khas (Ctrl+Alt+<key>) dikendali dalam pelayan"
-
-#~ msgid "To the corresponding key in a Qwerty keyboard"
-#~ msgstr "Ke kekunci berkenaan dalam papan kekunci Qwerty"
-
-#~ msgid "To the corresponding key in a Dvorak keyboard"
-#~ msgstr "Ke kekunci berkenaan dalam papan kekunci Drovak"
-
-#~ msgid "Alt is swapped with Win"
-#~ msgstr "Alt disilih dengan Win"
-
-#~ msgid "To the corresponding key in a Colemak layout"
-#~ msgstr "Ke kekunci berkenaan dalam bentangan Colemak"
-
-#~ msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-#~ msgstr "Alt dipetakan ke kekunci Win (dan biasanya kekunci Alt)"
-
-#~ msgid "Previous Keyboard Layout"
-#~ msgstr "Bentangan Papan Kekunci Terdahulu"
-
-#~ msgid "Next Keyboard Layout"
-#~ msgstr "Bentangan Papan Kekunci Berikutnya"
+#: ../src/keyboard.vala:60
+msgid "Repeat Keys"
+msgstr ""
+
+#: ../src/keyboard.vala:61
+msgid "Cursor Blinking"
+msgstr ""
+
+#: ../src/keyboard.vala:62
+msgid "Switch layout"
+msgstr ""
+
+#: ../src/keyboard.vala:63
+msgid "Compose Key"
+msgstr ""
+
+#: ../src/keyboard.vala:64
+msgid "Caps Lock behavior"
+msgstr ""

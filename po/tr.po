@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-06-28 19:08-0500\n"
+"POT-Creation-Date: 2016-10-10 18:06-0500\n"
 "PO-Revision-Date: 2016-05-03 01:25+0000\n"
 "Last-Translator: Cenk  <cenktekin2008@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-06-30 05:49+0000\n"
-"X-Generator: Launchpad (build 18115)\n"
+"X-Launchpad-Export-Date: 2016-10-11 07:33+0000\n"
+"X-Generator: Launchpad (build 18227)\n"
 "Language: tr\n"
 
 #: ../src/Pages/layout.vala:112
@@ -570,228 +570,42 @@ msgstr "Düzen:"
 msgid "Add Layout"
 msgstr "Düzen Ekle"
 
-#: ../src/keyboard.vala:7
+#: ../src/keyboard.vala:8
 msgid "Keyboard"
 msgstr "Klavye"
 
-#: ../src/keyboard.vala:8
+#: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Klavye davranışını, düzenini ve kısayollarını ayarlayın"
 
-#: ../src/keyboard.vala:21
+#: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
 msgstr "Kısayollar"
 
-#: ../src/keyboard.vala:22
+#: ../src/keyboard.vala:23
 msgid "Behavior"
 msgstr "Davranış"
 
-#: ../src/keyboard.vala:23
+#: ../src/keyboard.vala:24
 msgid "Layout"
 msgstr "Düzen"
 
-#~ msgid "Options"
-#~ msgstr "Seçenekler"
-
-#~ msgid "Allow different layouts for individual windows:"
-#~ msgstr "Birbirinden ayrı pencereler için farklı düzenlere izin ver:"
-
-#~ msgid "None"
-#~ msgstr "Hiçbiri"
-
-#~ msgid "Menu"
-#~ msgstr "Menü"
-
-#~ msgid "Ctrl key position"
-#~ msgstr "Ctrl tuşu pozisyonu"
-
-#~ msgid "Caps Lock as Ctrl"
-#~ msgstr "Caps Lock  Ctrl olur"
-
-#~ msgid "Swap Ctrl and Caps Lock"
-#~ msgstr "Ctrl ve Caps Lock yer değiştirir"
-
-#~ msgid "Right Ctrl as Right Alt"
-#~ msgstr "Sağ Alt Sağ Ctrl olur"
-
-#~ msgid "At bottom left"
-#~ msgstr "Sol altta"
-
-#~ msgid "Num Lock"
-#~ msgstr "Num Lock"
-
-#~ msgid "Legacy Wang 724"
-#~ msgstr "Eski Wang 724"
-
-#~ msgid "ATM/phone-style"
-#~ msgstr "ATM/telefon-stili"
-
-#~ msgid "Legacy key with dot"
-#~ msgstr "Noktalı eski tuş"
-
-#~ msgid "Numeric keypad delete key behaviour"
-#~ msgstr "Sayısal tuştakımı sil tuşu davranışı"
-
-#~ msgid "Legacy key with comma"
-#~ msgstr "Virgüllü eski tuş"
-
-#~ msgid "Left Alt"
-#~ msgstr "Sol Alt"
-
-#~ msgid "Backslash"
-#~ msgstr "Ters Slash"
-
-#~ msgid "At left of 'A'"
-#~ msgstr "'A' 'nın soluna"
-
-#~ msgid "Four-level key with comma"
-#~ msgstr "Virgül ile dört seviyeli tuş"
-
-#~ msgid "Four-level key with dot, latin-9 restriction"
-#~ msgstr "Nokta ile dört seviyeli tuş, latin-9 kısıtlaması"
-
-#~ msgid "Four-level key with dot"
-#~ msgstr "Nokta ile dört seviyeli tuş"
-
-#~ msgid "Semi-colon on third level"
-#~ msgstr "Üçüncü seviyede noktalı virgül"
-
-#~ msgid "Four-level key with abstract separators"
-#~ msgstr "Soyut ayırıcılar ile dört seviyeli tuş"
-
-#~ msgid "Alt and Meta are on Alt keys"
-#~ msgstr "Alt ve Meta, Alt tuşlarındadır"
-
-#~ msgid "Four-level key with momayyez"
-#~ msgstr "Momayyez ile seviye dört tuşu"
-
-#~ msgid "Hyper is mapped to Win-keys"
-#~ msgstr "Hyper Win tuşlarına eşleştirilmiş"
-
-#~ msgid "Control is mapped to Alt keys, Alt is mapped to Win keys"
-#~ msgstr "Control tuşu Alt tuşlarına, Alt tuşu Win tuşlarına eşleştirilmiş"
-
-#~ msgid "Alt is mapped to Right Win, Super to Menu"
-#~ msgstr "Alt tuşu Sağ Win tuşuna eşleşmiş, Super ise Menu tuşuna"
-
-#~ msgid "Meta is mapped to Left Win"
-#~ msgstr "Meta Sol Win'e eşleştirilmiş"
-
-#~ msgid "Meta is mapped to Win keys"
-#~ msgstr "Meta Win tuşlarına eşleştirilmiş"
-
-#~ msgid "Alt is mapped to Win keys (and the usual Alt keys)"
-#~ msgstr "Alt tuşu Win tuşlarına eşleştirilmiş (ve her zamanki Alt tuşları)"
-
-#~ msgid "Previous Keyboard Layout"
-#~ msgstr "Önceki Klavye Düzeni"
-
-#~ msgid "Numeric keypad layout selection"
-#~ msgstr "Sayısal tuştakımı yerleşimi seçimi"
-
-#~ msgid "Control is mapped to Win keys (and the usual Ctrl keys)"
-#~ msgstr "Control tuşu Win tuşlarına haritalanmıştır (aynı zaman Ctrl tuşu)"
-
-#~ msgid "Alt/Win key behavior"
-#~ msgstr "Alt/Win tuşu davranışı"
-
-#~ msgid "Alt is swapped with Win"
-#~ msgstr "Alt tuşu Win tuşu ile yer değiştirir"
-
-#~ msgid "Miscellaneous compatibility options"
-#~ msgstr "Çeşitli uyumluluk seçenekleri"
-
-#~ msgid "Next Keyboard Layout"
-#~ msgstr "Sonraki Klavye Düzeni"
-
-#~ msgid "Hexadecimal"
-#~ msgstr "Onaltılık Sistem"
-
-#~ msgid "Add the standard behavior to Menu key"
-#~ msgstr "Standart düzeni Menü tuşuna ekle"
-
-#~ msgid "Right Alt (Alt Gr)"
-#~ msgstr "Sağ Alt (Alt Gr)"
-
-#~ msgid "Left Super"
-#~ msgstr "Sol Super"
-
-#~ msgid "Right Control"
-#~ msgstr "Sağ Control"
-
-#~ msgid "Caps Lock function:"
-#~ msgstr "Caps Lock fonksiyonu:"
-
-#~ msgid "Escape"
-#~ msgstr "Escape"
-
-#~ msgid "Left Control"
-#~ msgstr "Sol Control"
-
-#~ msgid "Key to choose third level:"
-#~ msgstr "Üçüncü seviyeyi seçme tuşu"
-
-#~ msgid "Alt"
-#~ msgstr "Alt"
-
-#~ msgid "Backspace"
-#~ msgstr "Backspace"
-
-#~ msgid "Hyper"
-#~ msgstr "Hyper"
-
-#~ msgid "Control"
-#~ msgstr "Control"
-
-#~ msgid "Swap With Control"
-#~ msgstr "Control ile değiştir"
-
-#~ msgid "Key to choose fifth level:"
-#~ msgstr "Beşinci seviyeyi seçme tuşu:"
-
-#~ msgid "Swap With Escape"
-#~ msgstr "Escape ile değiştir"
-
-#~ msgid "Unicode additions (arrows and math operators)"
-#~ msgstr "Unicode ekletileri (oklar ve matematik işlemleri)"
-
-#~ msgid ""
-#~ "Unicode additions (arrows and math operators). Math operators on default "
-#~ "level"
-#~ msgstr ""
-#~ "Unicode eklentileri (oklar ve matematik işlemleri). Varsayılan seviyede "
-#~ "matematiksel ifadeler"
-
-#~ msgid "Left Ctrl as Meta"
-#~ msgstr "Meta olarak Sol Ctrl"
-
-#~ msgid "Legacy"
-#~ msgstr "Eski"
-
-#~ msgid "Right Alt as Right Ctrl"
-#~ msgstr "Sağ Ctrl olarak Sağ Alt"
-
-#~ msgid "Menu as Right Ctrl"
-#~ msgstr "Menü olarak Sağ Ctrl"
-
-#~ msgid "Wang 724 keypad with Unicode additions (arrows and math operators)"
-#~ msgstr ""
-#~ "Unicode eklentileri ile Wang 724 tuştakımı (oklar ve matematik işlemleri)"
-
-#~ msgid ""
-#~ "Wang 724 keypad with Unicode additions (arrows and math operators). Math "
-#~ "operators on default level"
-#~ msgstr ""
-#~ "Unicode eklentileri ile Wang 724 tuştakımı (oklar ve matematik işlemleri) "
-#~ "Varsayılan seviyede matematik işlemleri"
-
-#~ msgid "Default numeric keypad keys"
-#~ msgstr "Varsayılan sayısal tuş takımı tuşları"
-
-#~ msgid "Numeric keypad keys always enter digits (as in Mac OS)"
-#~ msgstr ""
-#~ "Sayısal tuş takımı tuşları her zaman rakam girer (Mac OS'ta olduğu gibi)"
-
-#~ msgid "Shift with numeric keypad keys works as in MS Windows"
-#~ msgstr ""
-#~ "Shift ile birlikte sayısal tuş takımı tuşları MS Windows'daki gibi çalışır."
+#: ../src/keyboard.vala:60
+msgid "Repeat Keys"
+msgstr ""
+
+#: ../src/keyboard.vala:61
+msgid "Cursor Blinking"
+msgstr ""
+
+#: ../src/keyboard.vala:62
+msgid "Switch layout"
+msgstr ""
+
+#: ../src/keyboard.vala:63
+msgid "Compose Key"
+msgstr ""
+
+#: ../src/keyboard.vala:64
+msgid "Caps Lock behavior"
+msgstr ""
