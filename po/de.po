@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-10 18:06-0500\n"
-"PO-Revision-Date: 2016-11-06 20:41+0000\n"
+"PO-Revision-Date: 2016-11-27 16:45+0000\n"
 "Last-Translator: UweS <Unknown>\n"
 "Language-Team: German <de@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-11-07 06:29+0000\n"
-"X-Generator: Launchpad (build 18246)\n"
+"X-Launchpad-Export-Date: 2016-11-28 05:43+0000\n"
+"X-Generator: Launchpad (build 18282)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -134,11 +134,11 @@ msgstr "Taste zur Wahl der 5. Ebene:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana-Sperre:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola-F-Rücktaste:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
@@ -593,7 +593,7 @@ msgstr "Tastenbelegung"
 
 #: ../src/keyboard.vala:60
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Tastenwiederholung"
 
 #: ../src/keyboard.vala:61
 msgid "Cursor Blinking"
@@ -605,7 +605,7 @@ msgstr "Belegung ändern"
 
 #: ../src/keyboard.vala:63
 msgid "Compose Key"
-msgstr ""
+msgstr "Compose-Taste"
 
 #: ../src/keyboard.vala:64
 msgid "Caps Lock behavior"
