@@ -1,3 +1,9 @@
+switchboard-plug-keyboard (0.3.1) xenial; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <cody@elementary.io>  Thu, 08 Dec 2016 12:10:25 -0600
+
 switchboard-plug-keyboard (0.3) xenial; urgency=medium
 
   * New upstream release.
