@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-10 18:06-0500\n"
-"PO-Revision-Date: 2016-04-29 22:50+0000\n"
-"Last-Translator: Daniel Fore <Unknown>\n"
+"PO-Revision-Date: 2016-12-08 20:19+0000\n"
+"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-11 07:33+0000\n"
-"X-Generator: Launchpad (build 18227)\n"
+"X-Launchpad-Export-Date: 2016-12-09 05:34+0000\n"
+"X-Generator: Launchpad (build 18292)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "Cambiar distribución:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -28,19 +28,19 @@ msgstr "Desactivado"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Bloq Mayús"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Mayús"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Espacio"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Ambas teclas Mayús juntas"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
@@ -49,19 +49,19 @@ msgstr "Bloq Mayús"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Mayús"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Mayús + Bloq Mayús"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr ""
+msgstr "Tecla modificadora:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
@@ -71,16 +71,16 @@ msgstr "Alt derecha"
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Ctrl derecho"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr ""
+msgstr "Mayús derecho"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Comportamiento de Bloq Mayús"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
@@ -90,35 +90,35 @@ msgstr "Predeterminado"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Bloq Mayús  deshabilitado"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr ""
+msgstr "como Retroceso"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr ""
+msgstr "como Ctrl"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr ""
+msgstr "como Esc"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr ""
+msgstr "como Bloq Num"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr ""
+msgstr "como Super"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Cambiar con Ctrl"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Cambiar con Esc"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku como Esc:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -150,23 +150,23 @@ msgstr ""
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Introducir comando"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "Comando"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "Atajo"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "¡%s ya se utiliza para %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Si reasignar el acceso directo a %s, %s se desactivará"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -180,7 +180,7 @@ msgstr "Reasignar"
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
 msgid "Add"
-msgstr ""
+msgstr "Añadir"
 
 #: ../src/Pages/Shortcuts/display.vala:43
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
@@ -206,7 +206,7 @@ msgstr "Restaurar"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "Activar o desactivar maximizado"
 
 #: ../src/Pages/Shortcuts/list.vala:36
 msgid "Minimize"
@@ -214,23 +214,23 @@ msgstr "Minimizar"
 
 #: ../src/Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Activar o desactivar pantalla completa"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
-msgstr ""
+msgstr "Cuadricula izquierda"
 
 #: ../src/Pages/Shortcuts/list.vala:39
 msgid "Tile Right"
-msgstr ""
+msgstr "Cuadricula derecha"
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "Activar o desactivar en todas las áreas de trabajo"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Activar o desactivar siempre visible"
 
 #: ../src/Pages/Shortcuts/list.vala:42
 msgid "Switch Windows"
@@ -238,15 +238,15 @@ msgstr "Cambiar de ventana"
 
 #: ../src/Pages/Shortcuts/list.vala:43
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "Cambiar de ventana hacia atrás"
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr ""
+msgstr "Vista general de ventanas"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr ""
+msgstr "Mostrar todas las ventanas"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
@@ -254,11 +254,11 @@ msgstr "Mostrar selector de áreas de trabajo"
 
 #: ../src/Pages/Shortcuts/list.vala:88
 msgid "Switch to first"
-msgstr ""
+msgstr "Cambiar al primero"
 
 #: ../src/Pages/Shortcuts/list.vala:89
 msgid "Switch to new"
-msgstr ""
+msgstr "Cambiar al nuevo"
 
 #: ../src/Pages/Shortcuts/list.vala:90
 msgid "Switch to workspace 1"
@@ -298,11 +298,11 @@ msgstr "Cambiar al área de trabajo 9"
 
 #: ../src/Pages/Shortcuts/list.vala:99
 msgid "Switch to left"
-msgstr ""
+msgstr "Cambiar a la izquierda"
 
 #: ../src/Pages/Shortcuts/list.vala:100
 msgid "Switch to right"
-msgstr ""
+msgstr "Cambiar a la derecha"
 
 #: ../src/Pages/Shortcuts/list.vala:101
 msgid "Move to workspace 1"
@@ -358,7 +358,7 @@ msgstr "Guardar captura en el portapapeles"
 
 #: ../src/Pages/Shortcuts/list.vala:177
 msgid "Take a Screenshot of a Window"
-msgstr ""
+msgstr "Tomar captura de pantalla de una ventana"
 
 #: ../src/Pages/Shortcuts/list.vala:178
 msgid "Save Window-Screenshot to Clipboard"
@@ -478,7 +478,7 @@ msgstr "Activar o desactivar contraste alto"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
@@ -543,7 +543,7 @@ msgstr "Acceso universal"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Personalizado"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
@@ -575,7 +575,7 @@ msgstr "Teclado"
 
 #: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Configurar comportamiento, disposición y atajos del teclado"
 
 #: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
@@ -595,11 +595,11 @@ msgstr ""
 
 #: ../src/keyboard.vala:61
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "Parpadeo del cursor"
 
 #: ../src/keyboard.vala:62
 msgid "Switch layout"
-msgstr ""
+msgstr "Cambiar disposición"
 
 #: ../src/keyboard.vala:63
 msgid "Compose Key"
@@ -607,4 +607,4 @@ msgstr ""
 
 #: ../src/keyboard.vala:64
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Comportamiento de Bloq Mayús"
