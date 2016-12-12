@@ -3,11 +3,17 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     Gtk.Stack stack;
 
     public Plug () {
+        var settings = new Gee.TreeMap<string, string?> (null, null);
+        settings.set ("input/keyboard", "Layout");
+        settings.set ("input/keyboard/layout", "Layout");
+        settings.set ("input/keyboard/behavior", "Behavior");
+        settings.set ("input/keyboard/shortcuts", "Shortcuts");
         Object (category: Category.HARDWARE,
                 code_name: "hardware-pantheon-keyboard",
                 display_name: _("Keyboard"),
                 description: _("Configure keyboard behavior, layouts, and shortcuts"),
-                icon: "preferences-desktop-keyboard");
+                icon: "preferences-desktop-keyboard",
+                supported_settings: settings);
     }
 
     public override Gtk.Widget get_widget () {
@@ -19,9 +25,9 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
             stack_switcher.set_stack (stack);
             stack_switcher.halign = Gtk.Align.CENTER;
 
+            stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
-            stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
 
             grid.attach (stack_switcher, 0, 0, 1, 1);
             grid.attach (stack, 0, 1, 1, 1);
