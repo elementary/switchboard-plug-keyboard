@@ -1,51 +1,52 @@
-# Spanish translation for switchboard-plug-keyboard
-# Copyright (c) 2013 Rosetta Contributors and Canonical Ltd 2013
+# Uyghur translation for switchboard-plug-keyboard
+# Copyright (c) 2016 Rosetta Contributors and Canonical Ltd 2016
 # This file is distributed under the same license as the switchboard-plug-keyboard package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2013.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2016.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-10 18:06-0500\n"
-"PO-Revision-Date: 2016-12-16 20:45+0000\n"
-"Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
-"Language-Team: Spanish <es@li.org>\n"
+"PO-Revision-Date: 2016-12-16 17:30+0000\n"
+"Last-Translator: ablimet <Unknown>\n"
+"Language-Team: Uyghur <ug@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Launchpad-Export-Date: 2016-12-17 05:24+0000\n"
 "X-Generator: Launchpad (build 18298)\n"
+"Language: ug\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr "Cambiar distribución:"
+msgstr "ئالماشتۇرۇش بەت يۈزى:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr "Desactivado"
+msgstr "چەكلەنگەن"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr "Alt + Bloq Mayús"
+msgstr "Alt + Caps Lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr "Alt + Mayús"
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr "Alt + Espacio"
+msgstr "Alt + Space"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr "Ambas teclas Mayús juntas"
+msgstr "ئىككى Shift كۇنۇپكىسىنى تەڭ بىسىش"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
 msgid "Caps Lock"
-msgstr "Bloq Mayús"
+msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
@@ -53,558 +54,558 @@ msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr "Ctrl + Mayús"
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr "Mayús + Bloq Mayús"
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr "Tecla modificadora:"
+msgstr "بىرىكمە كۇنۇپكا:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
 msgid "Right Alt"
-msgstr "Alt derecha"
+msgstr "ئوڭ Alt"
 
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr "Ctrl derecho"
+msgstr "ئوڭ Ctrl"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr "Mayús derecho"
+msgstr "ئوڭ Super"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr "Comportamiento de Bloq Mayús"
+msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
 #: ../src/Pages/Layout/add_layout.vala:105
 msgid "Default"
-msgstr "Predeterminado"
+msgstr "نورمالدىكى قىممىتى"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr "Bloq Mayús  deshabilitado"
+msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى چەكلەنگەن"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr "como Retroceso"
+msgstr "Backspace قىلىپ ئىشلىتىش"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr "como Ctrl"
+msgstr "Ctrl قىلىپ ئىشلىتىش"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr "como Esc"
+msgstr "Escape قىلىپ ئىشلىتىش"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr "como Bloq Num"
+msgstr "Num Lock قىلىپ ئىشلىتىش"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr "como Super"
+msgstr "Super قىلىپ ئىشلىتىش"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr "Cambiar con Ctrl"
+msgstr "Control بىلەن ئالماشتۇرۇش"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr "Cambiar con Esc"
+msgstr "Escape بىلەن ئالماشتۇرۇش"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Escriba para probar su disposición..."
+msgstr "خەت بىسىپ بەت يۈزىڭىزنى سىناپ بىقىڭ...."
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "ئۈچىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "بەشىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "باشقا ئىسىم بىلەن قۇلۇپلاش:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F نۇسخىسىدىكى Backspace:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr "Zenkaku Hankaku como Esc:"
+msgstr "Zenkaku Hankaku نى Escape قىلىپ ئىشلىتىش:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja نى ئوڭ Alt/Ctrl دا ئىشلىتىش:"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr "Introducir comando"
+msgstr "كىرگۈزۈش كوماندىسى"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr "Comando"
+msgstr "كوماندا"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr "Atajo"
+msgstr "قولاي كۇنۇپكا"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr "¡%s ya se utiliza para %s!"
+msgstr "%s %s غا ئىشلىتىلگەن!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr "Si reasignar el acceso directo a %s, %s se desactivará"
+msgstr "ئەگەر سىز %s نى قولاي كۇنۇپكا قىلىپ بىكىتسىڭىز، %s ئىشلىمەيدۇ"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
 msgid "Cancel"
-msgstr "Cancelar"
+msgstr "ئەمەلدىن قالدۇرۇش"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:12
 msgid "Reassign"
-msgstr "Reasignar"
+msgstr "قايتا تەقسىملەش"
 
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
 msgid "Add"
-msgstr "Añadir"
+msgstr "قىتىش"
 
 #: ../src/Pages/Shortcuts/display.vala:43
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
 #: ../src/Pages/Layout/display.vala:54
 msgid "Remove"
-msgstr "Quitar"
+msgstr "ئۆچۈرۈش"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
-msgstr "Cerrar"
+msgstr "تاقاش"
 
 #: ../src/Pages/Shortcuts/list.vala:32
 msgid "Lower"
-msgstr "Bajar"
+msgstr "كەينىگە قويۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:33
 msgid "Maximize"
-msgstr "Maximizar"
+msgstr "چوڭايتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:34
 msgid "Unmaximize"
-msgstr "Restaurar"
+msgstr "ئەسلىگە چوڭلىقىغا قايتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr "Activar o desactivar maximizado"
+msgstr "چوڭ-كىچىكلىكنى ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:36
 msgid "Minimize"
-msgstr "Minimizar"
+msgstr "كىچىكلىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr "Activar o desactivar pantalla completa"
+msgstr "پۈتۈن ئىكران بىلەن غەيرى پۈتۈن ئىكراننى ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
-msgstr "Cuadricula izquierda"
+msgstr "سول يىرىم ئىكرنغا قويۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:39
 msgid "Tile Right"
-msgstr "Cuadricula derecha"
+msgstr "ئوڭ يىرىم ئىكرانغا قويۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
-msgstr "Activar o desactivar en todas las áreas de trabajo"
+msgstr "پۈتۈن خىزمەت رايونىدا كۆرسىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
-msgstr "Activar o desactivar siempre visible"
+msgstr "داۋاملىق ئالدىدا كۆرسىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:42
 msgid "Switch Windows"
-msgstr "Cambiar de ventana"
+msgstr "كۆزنەكنى ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:43
 msgid "Switch Windows backwards"
-msgstr "Cambiar de ventana hacia atrás"
+msgstr "كۆزنەكنى ئارقىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr "Vista general de ventanas"
+msgstr "كۆزنەكنىڭ ئومۇمىي كۆرۈنۈشى"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr "Mostrar todas las ventanas"
+msgstr "ھەممە كۆزنەكلەرنى كۆرسىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
-msgstr "Mostrar selector de áreas de trabajo"
+msgstr "خىزمەت رايونى ئالماشتۇرغۇچىسىنى كۆرسىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:88
 msgid "Switch to first"
-msgstr "Cambiar al primero"
+msgstr "بىرىنچى خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:89
 msgid "Switch to new"
-msgstr "Cambiar al nuevo"
+msgstr "يىڭى خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:90
 msgid "Switch to workspace 1"
-msgstr "Cambiar al área de trabajo 1"
+msgstr "1-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:91
 msgid "Switch to workspace 2"
-msgstr "Cambiar al área de trabajo 2"
+msgstr "2-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:92
 msgid "Switch to workspace 3"
-msgstr "Cambiar al área de trabajo 3"
+msgstr "3-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:93
 msgid "Switch to workspace 4"
-msgstr "Cambiar al área de trabajo 4"
+msgstr "4-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:94
 msgid "Switch to workspace 5"
-msgstr "Cambiar al área de trabajo 5"
+msgstr "5-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:95
 msgid "Switch to workspace 6"
-msgstr "Cambiar al área de trabajo 6"
+msgstr "6-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:96
 msgid "Switch to workspace 7"
-msgstr "Cambiar al área de trabajo 7"
+msgstr "7-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:97
 msgid "Switch to workspace 8"
-msgstr "Cambiar al área de trabajo 8"
+msgstr "8-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:98
 msgid "Switch to workspace 9"
-msgstr "Cambiar al área de trabajo 9"
+msgstr "9-خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:99
 msgid "Switch to left"
-msgstr "Cambiar a la izquierda"
+msgstr "سولدىكى خىزمەت رايونىغا ئالماشتۇرۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:100
 msgid "Switch to right"
-msgstr "Cambiar a la derecha"
+msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:101
 msgid "Move to workspace 1"
-msgstr "Mover al área de trabajo 1"
+msgstr "1-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:102
 msgid "Move to workspace 2"
-msgstr "Mover al área de trabajo 2"
+msgstr "2-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:103
 msgid "Move to workspace 3"
-msgstr "Mover al área de trabajo 3"
+msgstr "3-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:104
 msgid "Move to workspace 4"
-msgstr "Mover al área de trabajo 4"
+msgstr "4-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:105
 msgid "Move to workspace 5"
-msgstr "Mover al área de trabajo 5"
+msgstr "5-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:106
 msgid "Move to workspace 6"
-msgstr "Mover al área de trabajo 6"
+msgstr "6-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:107
 msgid "Move to workspace 7"
-msgstr "Mover al área de trabajo 7"
+msgstr "7-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:108
 msgid "Move to workspace 8"
-msgstr "Mover al área de trabajo 8"
+msgstr "8-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:109
 msgid "Move to workspace 9"
-msgstr "Mover al área de trabajo 9"
+msgstr "9-خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:110
 msgid "Move to left"
-msgstr "Mover a la izquierda"
+msgstr "سولدىكى خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:111
 msgid "Move to right"
-msgstr "Mover a la derecha"
+msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
 
 #: ../src/Pages/Shortcuts/list.vala:175
 msgid "Take a Screenshot"
-msgstr "Capturar la pantalla"
+msgstr "ئىكران رەسىمىنى كىسىش"
 
 #: ../src/Pages/Shortcuts/list.vala:176
 msgid "Save Screenshot to Clipboard"
-msgstr "Guardar captura en el portapapeles"
+msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
 #: ../src/Pages/Shortcuts/list.vala:177
 msgid "Take a Screenshot of a Window"
-msgstr "Tomar captura de pantalla de una ventana"
+msgstr "كۆزنەك رەسىمىنى كىسىش"
 
 #: ../src/Pages/Shortcuts/list.vala:178
 msgid "Save Window-Screenshot to Clipboard"
-msgstr "Guardar la captura de la ventana en el portapapeles"
+msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
 #: ../src/Pages/Shortcuts/list.vala:179
 msgid "Take a Screenshot of an Area"
-msgstr "Capturar un área de la pantalla"
+msgstr "تاللانغان رايوننىڭ رەسىمىنى كىسىش"
 
 #: ../src/Pages/Shortcuts/list.vala:180
 msgid "Save Area-Screenshot to Clipboard"
-msgstr "Guardar la captura del área en el portapapeles"
+msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
 #: ../src/Pages/Shortcuts/list.vala:206
 msgid "Calculator"
-msgstr "Calculadora"
+msgstr "ھىسابلىغۇچ"
 
 #: ../src/Pages/Shortcuts/list.vala:207
 msgid "Email"
-msgstr "Correo electrónico"
+msgstr "ئېلخەت"
 
 #: ../src/Pages/Shortcuts/list.vala:208
 msgid "Help"
-msgstr "Ayuda"
+msgstr "ياردەم"
 
 #: ../src/Pages/Shortcuts/list.vala:209
 msgid "Home Folder"
-msgstr "Carpeta personal"
+msgstr "ئاساسىي مۇندەرىجە"
 
 #: ../src/Pages/Shortcuts/list.vala:210
 msgid "File Search"
-msgstr "Búsqueda de archivos"
+msgstr "ھۆججەت ئىزدەش"
 
 #: ../src/Pages/Shortcuts/list.vala:211
 msgid "Terminal"
-msgstr "Terminal"
+msgstr "تېرمىنال"
 
 #: ../src/Pages/Shortcuts/list.vala:212
 msgid "Internet Browser"
-msgstr "Navegador web"
+msgstr "توركۆرگۈچ"
 
 #: ../src/Pages/Shortcuts/list.vala:213
 msgid "Applications Launcher"
-msgstr "Lanzador de aplicaciones"
+msgstr "ئەپ قوزغاتقۇچىسى"
 
 #: ../src/Pages/Shortcuts/list.vala:243
 msgid "Volume Up"
-msgstr "Subir volumen"
+msgstr "ئاۋازنى ئۈنلۈكلىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:244
 msgid "Volume Down"
-msgstr "Bajar volumen"
+msgstr "ئاۋازنى پەسەيتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:245
 msgid "Mute"
-msgstr "SIlenciar"
+msgstr "ئاۋازنى تاقاش"
 
 #: ../src/Pages/Shortcuts/list.vala:246
 msgid "Launch Media Player"
-msgstr "Iniciar reproductor multimedia"
+msgstr "مېدىئا قويغۇچنى قوزغىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:247
 msgid "Play"
-msgstr "Reproducir"
+msgstr "قويۇش"
 
 #: ../src/Pages/Shortcuts/list.vala:248
 msgid "Pause"
-msgstr "Pausa"
+msgstr "ۋاقىتلىق توختىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:249
 msgid "Stop"
-msgstr "Detener"
+msgstr "توختىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:250
 msgid "Previous Track"
-msgstr "Pista anterior"
+msgstr "ئالدىنقى كۈي"
 
 #: ../src/Pages/Shortcuts/list.vala:251
 msgid "Next Track"
-msgstr "Pista siguiente"
+msgstr "كىيىنكى كۈي"
 
 #: ../src/Pages/Shortcuts/list.vala:252
 msgid "Eject"
-msgstr "Expulsar"
+msgstr "چىقىرىش"
 
 #: ../src/Pages/Shortcuts/list.vala:286
 msgid "Decrease Text Size"
-msgstr "Reducir el tamaño de la letra"
+msgstr "تېكست چوڭلۇقىنى كىچىكلىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:287
 msgid "Increase Text Size"
-msgstr "Aumentar el tamaño de la letra"
+msgstr "تېكست چوڭلۇقىنى چوڭايتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:288
 msgid "Toggle Magnifier"
-msgstr "Activar o desactivar lupa"
+msgstr "چوڭايتىش ئەينىكىنى قوزغىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:289
 msgid "Magnifier Zoom in"
-msgstr "Acercar"
+msgstr "چوڭايتىش ئەينىكىنى چوڭايتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:290
 msgid "Magnifier Zoom out"
-msgstr "Alejar"
+msgstr "چوڭايتىش ئەينىكىنى كىچىكلىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:291
 msgid "Toggle On Screen Keyboard"
-msgstr "Activar o desactivar teclado en pantalla"
+msgstr "ئىكران كۇنۇپكا تاختىسىنى قوزغىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:292
 msgid "Toggle Screenreader"
-msgstr "Activar o desactivar lector de pantalla"
+msgstr "ئىكران ئوقۇغۇچنى قوزغىتىش"
 
 #: ../src/Pages/Shortcuts/list.vala:293
 msgid "Toggle High Contrast"
-msgstr "Activar o desactivar contraste alto"
+msgstr "يۇقىرى سىلىشتۇرمىنى قوزغىتىش"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr "Ctrl"
+msgstr "Ctrl كۇنۇپكىسى"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Repetir teclas:</b>"
+msgstr "<b>كۇنۇپكىلارنى تەكرارلاش：</b>"
 
 #: ../src/Pages/behaviour.vala:22
 msgid "Delay:"
-msgstr "Retardo:"
+msgstr "ئارقىغا سوزۇش："
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Interval:"
-msgstr "Intervalo:"
+msgstr "ۋاقىت ئارىلىقى："
 
 #: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
 #: ../src/Pages/behaviour.vala:136
 msgid "milliseconds"
-msgstr "milisegundos"
+msgstr "مىللىسىكۇنت"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>Parpadeo del cursor:</b>"
+msgstr "<b>مائۇس ئىستىرىلكىسى چاقناش：</b>"
 
 #: ../src/Pages/behaviour.vala:134
 msgid "Speed:"
-msgstr "Velocidad:"
+msgstr "سۈرئەت："
 
 #: ../src/Pages/behaviour.vala:135
 msgid "Duration:"
-msgstr "Duración:"
+msgstr "داۋاملىشىش："
 
 #: ../src/Pages/behaviour.vala:137
 msgid "seconds"
-msgstr "segundos"
+msgstr "سىكۇنت"
 
 #: ../src/Pages/behaviour.vala:244
 msgid "Type to test your settings…"
-msgstr "Escriba para probar su configuración..."
+msgstr "كونۇپكىلارنى بىسىش ئارقىلىق تەڭشەكلىرىڭىزنى سىناپ بىقىڭ...."
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
-msgstr "Ventanas"
+msgstr "كۆزنەكلەر"
 
 #: ../src/Pages/shortcuts.vala:44
 msgid "Workspaces"
-msgstr "Áreas de trabajo"
+msgstr "خىزمەت رايونلىرى"
 
 #: ../src/Pages/shortcuts.vala:45
 msgid "Screenshots"
-msgstr "Capturas de pantalla"
+msgstr "ئىكران كەسمە رەسىملىرى"
 
 #: ../src/Pages/shortcuts.vala:46
 msgid "Applications"
-msgstr "Aplicaciones"
+msgstr "ئەپلەر"
 
 #: ../src/Pages/shortcuts.vala:47
 msgid "Media"
-msgstr "Multimedia"
+msgstr "مېدىئا"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
-msgstr "Acceso universal"
+msgstr "ئۇنىۋىرسال تەڭشەكلەر"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr "Personalizado"
+msgstr "ئۆزگىچىلەشتۈرۈش"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "Añadir…"
+msgstr "قىتىش...."
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
-msgstr "Subir"
+msgstr "يۇقىرىغا يۆتكەش"
 
 #: ../src/Pages/Layout/display.vala:51 ../src/Pages/Layout/display.vala:56
 msgid "Move down"
-msgstr "Bajar"
+msgstr "ئاستىغا يۆتكەش"
 
 #: ../src/Pages/Layout/add_layout.vala:19
 msgid "Language:"
-msgstr "Idioma:"
+msgstr "تىل:"
 
 #: ../src/Pages/Layout/add_layout.vala:20
 msgid "Layout:"
-msgstr "Disposición:"
+msgstr "بەتيۈزى:"
 
 #: ../src/Pages/Layout/add_layout.vala:62
 msgid "Add Layout"
-msgstr "Añadir disposición"
+msgstr "بەتيۈزى قىتىش"
 
 #: ../src/keyboard.vala:8
 msgid "Keyboard"
-msgstr "Teclado"
+msgstr "كۇنۇپكا تاختىسى"
 
 #: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Configurar comportamiento, disposición y atajos del teclado"
+msgstr "كۇنۇپكا تاختىسى ھەركىتى، بەتيۈزى ۋە قولاي كۇنۇپكىلارنى تەڭشەش"
 
 #: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
-msgstr "Atajos"
+msgstr "قولاي كۇنۇپكىلار"
 
 #: ../src/keyboard.vala:23
 msgid "Behavior"
-msgstr "Comportamiento"
+msgstr "ھەركەت"
 
 #: ../src/keyboard.vala:24
 msgid "Layout"
-msgstr "Disposición"
+msgstr "بەتيۈزى"
 
 #: ../src/keyboard.vala:60
 msgid "Repeat Keys"
-msgstr "Repetir teclas"
+msgstr "كۇنۇپكىلارنى تەكرارلاش"
 
 #: ../src/keyboard.vala:61
 msgid "Cursor Blinking"
-msgstr "Parpadeo del cursor"
+msgstr "مائۇس ئىستىرىلكىسى چاقناش"
 
 #: ../src/keyboard.vala:62
 msgid "Switch layout"
-msgstr "Cambiar disposición"
+msgstr "بەتيۈزىنى ئالماشتۇرۇش"
 
 #: ../src/keyboard.vala:63
 msgid "Compose Key"
-msgstr ""
+msgstr "بىرىكمە كۇنۇپكا"
 
 #: ../src/keyboard.vala:64
 msgid "Caps Lock behavior"
-msgstr "Comportamiento de Bloq Mayús"
+msgstr "Caps Lock كۇنۇپكىسى ھەركىتى"
