@@ -8,18 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-10 18:06-0500\n"
-"PO-Revision-Date: 2014-07-29 01:45+0000\n"
-"Last-Translator: K. Moreno Herrera <kmoreno.herrera@gmail.com>\n"
+"PO-Revision-Date: 2016-12-20 16:33+0000\n"
+"Last-Translator: Davidmp <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <ca@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-11 07:33+0000\n"
-"X-Generator: Launchpad (build 18227)\n"
+"X-Launchpad-Export-Date: 2016-12-21 05:31+0000\n"
+"X-Generator: Launchpad (build 18298)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "Canvia'n la disposició:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -28,59 +28,59 @@ msgstr "Inhabilitat"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Bloqueig de majúscules"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + majúscules"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + espai"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Les dues tecles de majúscules juntes"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
 msgid "Caps Lock"
-msgstr ""
+msgstr "Bloqueig de majúscules"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + majúscules"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Majúscules + bloqueig de majúscules"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr ""
+msgstr "Composició de tecla:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
 msgid "Right Alt"
-msgstr ""
+msgstr "Alt dreta"
 
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Ctrl dreta"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr ""
+msgstr "Supertecla dreta"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Comportament del bloqueig de majúscules:"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
@@ -90,83 +90,83 @@ msgstr "Per defecte"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Bloqueig de majúscules inhabilitat"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr ""
+msgstr "com a tecla de retrocés"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr ""
+msgstr "com a Ctrl"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr ""
+msgstr "com a tecla d'escapada"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr ""
+msgstr "com a bloqueig numèric"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr ""
+msgstr "com a supertecla"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Intercanvia amb el control"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Intercanvia amb l'escapada"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr ""
+msgstr "Escriviu per provar la disposició del teclat..."
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "Tecla per triar el 3r nivell:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "Tecla per triar el 5è nivell:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Bloqueig Kana:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Retrocés Nicola F:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku com a escapada:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Tecles Hangul/Hanja a Alt/Ctrl dretes:"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Introduïu l'ordre"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
-msgstr ""
+msgstr "Ordre"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:55
 msgid "Shortcut"
-msgstr ""
+msgstr "Drecera"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s ja s'usa per a %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Si reassigneu la drecera a %s, %s s'inhabilitarà."
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -175,7 +175,7 @@ msgstr "Cancel·la"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:12
 msgid "Reassign"
-msgstr ""
+msgstr "Reassigna"
 
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
@@ -186,7 +186,7 @@ msgstr "Afegeix"
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
 #: ../src/Pages/Layout/display.vala:54
 msgid "Remove"
-msgstr ""
+msgstr "Suprimeix"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -206,7 +206,7 @@ msgstr "Desmaximitza"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "Commuta la maximització"
 
 #: ../src/Pages/Shortcuts/list.vala:36
 msgid "Minimize"
@@ -214,39 +214,39 @@ msgstr "Minimitza"
 
 #: ../src/Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "Commuta a pantalla completa"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
-msgstr ""
+msgstr "Mosaic equerre"
 
 #: ../src/Pages/Shortcuts/list.vala:39
 msgid "Tile Right"
-msgstr ""
+msgstr "Mosaic dret"
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "Commuta a tots els espais de treball"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "Commuta sempre al davant"
 
 #: ../src/Pages/Shortcuts/list.vala:42
 msgid "Switch Windows"
-msgstr ""
+msgstr "Alterna les finestres"
 
 #: ../src/Pages/Shortcuts/list.vala:43
 msgid "Switch Windows backwards"
-msgstr ""
+msgstr "Canvia les finestres enrere"
 
 #: ../src/Pages/Shortcuts/list.vala:44
 msgid "Window Overview"
-msgstr ""
+msgstr "Resum de finestres"
 
 #: ../src/Pages/Shortcuts/list.vala:45
 msgid "Show All Windows"
-msgstr ""
+msgstr "Mostra totes les finestres"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
@@ -254,11 +254,11 @@ msgstr "Mostra l'alternador d'espais de treball"
 
 #: ../src/Pages/Shortcuts/list.vala:88
 msgid "Switch to first"
-msgstr ""
+msgstr "Canvia al primer"
 
 #: ../src/Pages/Shortcuts/list.vala:89
 msgid "Switch to new"
-msgstr ""
+msgstr "Alternar al nou"
 
 #: ../src/Pages/Shortcuts/list.vala:90
 msgid "Switch to workspace 1"
@@ -298,47 +298,47 @@ msgstr "Canvia a l'espai de treball 9"
 
 #: ../src/Pages/Shortcuts/list.vala:99
 msgid "Switch to left"
-msgstr ""
+msgstr "Canvia a l'esquerra"
 
 #: ../src/Pages/Shortcuts/list.vala:100
 msgid "Switch to right"
-msgstr ""
+msgstr "Canvia a la dreta"
 
 #: ../src/Pages/Shortcuts/list.vala:101
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Mou a l'espai de treball 1"
 
 #: ../src/Pages/Shortcuts/list.vala:102
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Mou a l'espai de treball 2"
 
 #: ../src/Pages/Shortcuts/list.vala:103
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Mou a l'espai de treball 3"
 
 #: ../src/Pages/Shortcuts/list.vala:104
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Mou a l'espai de treball 4"
 
 #: ../src/Pages/Shortcuts/list.vala:105
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Mou a l'espai de treball 5"
 
 #: ../src/Pages/Shortcuts/list.vala:106
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Mou a l'espai de treball 6"
 
 #: ../src/Pages/Shortcuts/list.vala:107
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Mou a l'espai de treball 7"
 
 #: ../src/Pages/Shortcuts/list.vala:108
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Mou a l'espai de treball 8"
 
 #: ../src/Pages/Shortcuts/list.vala:109
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Mou a l'espai de treball 9"
 
 #: ../src/Pages/Shortcuts/list.vala:110
 msgid "Move to left"
@@ -354,7 +354,7 @@ msgstr "Fes una captura de pantalla"
 
 #: ../src/Pages/Shortcuts/list.vala:176
 msgid "Save Screenshot to Clipboard"
-msgstr ""
+msgstr "Desa la captura de pantalla al porta-retalls"
 
 #: ../src/Pages/Shortcuts/list.vala:177
 msgid "Take a Screenshot of a Window"
@@ -362,7 +362,7 @@ msgstr "Fes una captura de pantalla de la finestra"
 
 #: ../src/Pages/Shortcuts/list.vala:178
 msgid "Save Window-Screenshot to Clipboard"
-msgstr ""
+msgstr "Desa la captura de la finestra al porta-retalls"
 
 #: ../src/Pages/Shortcuts/list.vala:179
 msgid "Take a Screenshot of an Area"
@@ -386,7 +386,7 @@ msgstr "Ajuda"
 
 #: ../src/Pages/Shortcuts/list.vala:209
 msgid "Home Folder"
-msgstr ""
+msgstr "Carpeta de l'usuari"
 
 #: ../src/Pages/Shortcuts/list.vala:210
 msgid "File Search"
@@ -406,15 +406,15 @@ msgstr "Llançador d'aplicacions"
 
 #: ../src/Pages/Shortcuts/list.vala:243
 msgid "Volume Up"
-msgstr ""
+msgstr "Apuja el volum"
 
 #: ../src/Pages/Shortcuts/list.vala:244
 msgid "Volume Down"
-msgstr ""
+msgstr "Abaixa el volum"
 
 #: ../src/Pages/Shortcuts/list.vala:245
 msgid "Mute"
-msgstr ""
+msgstr "Silencia"
 
 #: ../src/Pages/Shortcuts/list.vala:246
 msgid "Launch Media Player"
@@ -454,35 +454,35 @@ msgstr "Augmenta la mida del text"
 
 #: ../src/Pages/Shortcuts/list.vala:288
 msgid "Toggle Magnifier"
-msgstr ""
+msgstr "Activa la lupa"
 
 #: ../src/Pages/Shortcuts/list.vala:289
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Amplia"
 
 #: ../src/Pages/Shortcuts/list.vala:290
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Redueix"
 
 #: ../src/Pages/Shortcuts/list.vala:291
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Activa el teclat en pantalla"
 
 #: ../src/Pages/Shortcuts/list.vala:292
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Activa el lector de pantalla"
 
 #: ../src/Pages/Shortcuts/list.vala:293
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Commuta el contrast alt"
 
 #: ../src/Pages/Shortcuts/shortcut.vala:50
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: ../src/Pages/behaviour.vala:21
 msgid "<b>Repeat Keys:</b>"
-msgstr ""
+msgstr "<b>Tecles de repetició:</b>"
 
 #: ../src/Pages/behaviour.vala:22
 msgid "Delay:"
@@ -499,7 +499,7 @@ msgstr "mil·lisegons"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "<b>Cursor Blinking:</b>"
-msgstr ""
+msgstr "<b>Parpelleig del cursor:</b>"
 
 #: ../src/Pages/behaviour.vala:134
 msgid "Speed:"
@@ -515,7 +515,7 @@ msgstr "segons"
 
 #: ../src/Pages/behaviour.vala:244
 msgid "Type to test your settings…"
-msgstr ""
+msgstr "Escriviu per provar la configuració..."
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -535,7 +535,7 @@ msgstr "Programari"
 
 #: ../src/Pages/shortcuts.vala:47
 msgid "Media"
-msgstr ""
+msgstr "Mitjà"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
@@ -543,7 +543,7 @@ msgstr "Accés universal"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Personalitzat"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
@@ -576,6 +576,7 @@ msgstr "Teclat"
 #: ../src/keyboard.vala:9
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
+"Configureu el comportament, les disposicions i les dreceres del teclat"
 
 #: ../src/keyboard.vala:22 ../src/keyboard.vala:59
 msgid "Shortcuts"
@@ -583,7 +584,7 @@ msgstr "Dreceres"
 
 #: ../src/keyboard.vala:23
 msgid "Behavior"
-msgstr ""
+msgstr "Comportament"
 
 #: ../src/keyboard.vala:24
 msgid "Layout"
@@ -591,20 +592,20 @@ msgstr "Disposició"
 
 #: ../src/keyboard.vala:60
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Tecles de repetició"
 
 #: ../src/keyboard.vala:61
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "Parpelleig del cursor"
 
 #: ../src/keyboard.vala:62
 msgid "Switch layout"
-msgstr ""
+msgstr "Canvia'n la disposició"
 
 #: ../src/keyboard.vala:63
 msgid "Compose Key"
-msgstr ""
+msgstr "Tecla de composició"
 
 #: ../src/keyboard.vala:64
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Comportament del bloqueig de majúscules"
