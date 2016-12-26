@@ -83,7 +83,7 @@ namespace Pantheon.Keyboard.Shortcuts
 		// validator
 		public bool valid()
 		{
-			if (accel_key == 0 || modifiers == (Gdk.ModifierType) 0)
+			if (accel_key == 0 || (modifiers == (Gdk.ModifierType) 0 && accel_key != Gdk.Key.Print))
 				return false;
 				
 			if (modifiers == Gdk.ModifierType.SHIFT_MASK)
