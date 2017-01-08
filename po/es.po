@@ -8,14 +8,14 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2016-10-10 18:06-0500\n"
-"PO-Revision-Date: 2016-12-16 20:45+0000\n"
+"PO-Revision-Date: 2017-01-08 05:03+0000\n"
 "Last-Translator: Félix Brezo <felixbrezo@gmail.com>\n"
 "Language-Team: Spanish <es@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-12-17 05:24+0000\n"
-"X-Generator: Launchpad (build 18298)\n"
+"X-Launchpad-Export-Date: 2017-01-08 05:43+0000\n"
+"X-Generator: Launchpad (build 18302)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -126,19 +126,19 @@ msgstr "Escriba para probar su disposición..."
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "Tecla para elegir el tercer nivel:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "Tecla para elegir el quinto nivel:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Bloqueo de Kana:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F Backspace:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
@@ -146,7 +146,7 @@ msgstr "Zenkaku Hankaku como Esc:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Teclas de Hangul/Hanja en Alt y Cntrl derecho"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
@@ -603,7 +603,7 @@ msgstr "Cambiar disposición"
 
 #: ../src/keyboard.vala:63
 msgid "Compose Key"
-msgstr ""
+msgstr "Tecla de composición"
 
 #: ../src/keyboard.vala:64
 msgid "Caps Lock behavior"
