@@ -17,20 +17,21 @@ namespace Pantheon.Keyboard.Behaviour
 			settings_repeat = new Behaviour.SettingsRepeat ();
 			settings_blink  = new Behaviour.SettingsBlink  ();
 
-			// create widgets
-			var label_repeat       = new Gtk.Label (_("<b>Repeat Keys:</b>"));
+            var label_repeat = new Gtk.Label (_("Repeat Keys:"));
+            label_repeat.get_style_context ().add_class ("h4");
+
 			var label_repeat_delay = new Gtk.Label (_("Delay:"));
 			var label_repeat_speed = new Gtk.Label (_("Interval:"));
 			var label_repeat_ms1   = new Gtk.Label (_("milliseconds"));
 			var label_repeat_ms2   = new Gtk.Label (_("milliseconds"));
 			var switch_repeat      = new Gtk.Switch ();
+            switch_repeat.valign = Gtk.Align.CENTER;
+
 			var scale_repeat_delay = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 1000, 1);
 			var scale_repeat_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 100,  1);
 			var spin_repeat_delay  = new Gtk.SpinButton.with_range (10, 1000, 1);
 			var spin_repeat_speed  = new Gtk.SpinButton.with_range (10, 100,  1);
 
-			// align labels vertically to CENTER and horizontally to END
-			label_repeat.use_markup   = true;
 			label_repeat.halign       = Gtk.Align.END;
 			label_repeat_delay.halign = Gtk.Align.END;
 			label_repeat_speed.halign = Gtk.Align.END;
@@ -125,24 +126,23 @@ namespace Pantheon.Keyboard.Behaviour
 				switch_repeat.active         = active;
 			} );
 
+            var label_blink = new Gtk.Label (_("Cursor Blinking:"));
+            label_blink.get_style_context ().add_class ("h4");
+            label_blink.margin_top = 24;
 
-
-			/** Cursor Blinking **/
-
-			// setup gui
-			var label_blink       = new Gtk.Label (_("<b>Cursor Blinking:</b>"));
 			var label_blink_speed = new Gtk.Label (_("Speed:"));
 			var label_blink_time  = new Gtk.Label (_("Duration:"));
 			var label_blink_ms    = new Gtk.Label (_("milliseconds"));
 			var label_blink_s     = new Gtk.Label (_("seconds"));
 			var switch_blink      = new Gtk.Switch ();
+            switch_blink.valign = Gtk.Align.CENTER;
+            switch_blink.margin_top = 24;
+
 			var scale_blink_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 100, 2500, 10);
 			var scale_blink_time  = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1, 100, 1);
 			var spin_blink_speed  = new Gtk.SpinButton.with_range (100, 2500, 10);
 			var spin_blink_time   = new Gtk.SpinButton.with_range (1, 100, 1);
 
-			// align labels vertically to CENTER and hoizontally to END
-			label_blink.use_markup   = true;
 			label_blink.halign       = Gtk.Align.END;
 			label_blink_time.halign  = Gtk.Align.END;
 			label_blink_speed.halign = Gtk.Align.END;
@@ -241,8 +241,8 @@ namespace Pantheon.Keyboard.Behaviour
 			/** Test Settings **/
 
 			var entry_test = new Gtk.Entry ();
+            entry_test.margin_top = 24;
 			entry_test.placeholder_text = (_("Type to test your settings…"));
-
 			entry_test.hexpand = true;
 
 			this.attach (entry_test, 1, 6, 1, 1);
