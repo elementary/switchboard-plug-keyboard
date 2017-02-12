@@ -7,7 +7,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 		var label_language = new Gtk.Label (_("Language:"));
 		var label_layout   = new Gtk.Label (_("Layout:"));
 
-		label_language.valign = label_layout.valign = Gtk.Align.CENTER;
 		label_language.halign = label_layout.halign = Gtk.Align.END;
 
 		// list stores
@@ -36,16 +35,15 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 			layout_box.active = 0;
 		});
 
-		// add buttons
-		var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-		button_box.layout_style = Gtk.ButtonBoxStyle.END;
-		button_box.spacing      = 6;
-
 		var button_add    = new Gtk.Button.with_label (_("Add Layout"));
 		var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
-		button_box.add (button_cancel);
-		button_box.add (button_add);
+        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+        button_box.layout_style = Gtk.ButtonBoxStyle.END;
+        button_box.margin_top = 12;
+        button_box.spacing = 6;
+        button_box.add (button_cancel);
+        button_box.add (button_add);
 
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
