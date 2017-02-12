@@ -68,13 +68,6 @@ namespace Pantheon.Keyboard.Behaviour
 
 			switch_repeat.active = settings_repeat.repeat;
 
-			scale_repeat_delay.sensitive = switch_repeat.active;
-			label_repeat_delay.sensitive = switch_repeat.active;
-			spin_repeat_delay.sensitive  = switch_repeat.active;
-			scale_repeat_speed.sensitive = switch_repeat.active;
-			label_repeat_speed.sensitive = switch_repeat.active;
-			spin_repeat_speed.sensitive  = switch_repeat.active;
-
 			// connect signals
 			scale_repeat_delay.value_changed.connect (() => {
 				settings_repeat.delay = (uint) (spin_repeat_delay.adjustment.value = scale_repeat_delay.adjustment.value);
@@ -100,31 +93,13 @@ namespace Pantheon.Keyboard.Behaviour
 				scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value = (double) settings_repeat.repeat_interval;
 			} );
 
-			switch_repeat.notify["active"].connect (() =>
-			{
-				var active = switch_repeat.active;
+            switch_repeat.notify["active"].connect (() => {
+                settings_repeat.repeat = switch_repeat.active;
+            });
 
-				scale_repeat_delay.sensitive = active;
-				label_repeat_delay.sensitive = active;
-				spin_repeat_delay.sensitive  = active;
-				scale_repeat_speed.sensitive = active;
-				label_repeat_speed.sensitive = active;
-				spin_repeat_speed.sensitive  = active;
-				settings_repeat.repeat       = active;
-			} );
-
-			settings_repeat.changed["repeat"].connect (() =>
-			{
-				var active = settings_repeat.repeat;
-
-				scale_repeat_delay.sensitive = active;
-				label_repeat_delay.sensitive = active;
-				spin_repeat_delay.sensitive  = active;
-				scale_repeat_speed.sensitive = active;
-				label_repeat_speed.sensitive = active;
-				spin_repeat_speed.sensitive  = active;
-				switch_repeat.active         = active;
-			} );
+            settings_repeat.changed["repeat"].connect (() => {
+                switch_repeat.active = settings_repeat.repeat;
+            });
 
             var label_blink = new Gtk.Label (_("Cursor Blinking:"));
             label_blink.get_style_context ().add_class ("h4");
@@ -180,12 +155,19 @@ namespace Pantheon.Keyboard.Behaviour
 
 			switch_blink.active = settings_blink.cursor_blink;
 
-			scale_blink_speed.sensitive = switch_blink.active;
-			label_blink_speed.sensitive = switch_blink.active;
-			spin_blink_speed.sensitive  = switch_blink.active;
-			scale_blink_time.sensitive  = switch_blink.active;
-			label_blink_time.sensitive  = switch_blink.active;
-			spin_blink_time.sensitive   = switch_blink.active;
+            switch_blink.bind_property ("active", label_blink_speed, "sensitive", BindingFlags.DEFAULT);
+            switch_blink.bind_property ("active", label_blink_time, "sensitive", BindingFlags.DEFAULT);
+            switch_blink.bind_property ("active", scale_blink_speed, "sensitive", BindingFlags.DEFAULT);
+            switch_blink.bind_property ("active", scale_blink_time, "sensitive", BindingFlags.DEFAULT);
+            switch_blink.bind_property ("active", spin_blink_speed, "sensitive", BindingFlags.DEFAULT);
+            switch_blink.bind_property ("active", spin_blink_time, "sensitive", BindingFlags.DEFAULT);
+
+            switch_repeat.bind_property ("active", label_repeat_delay, "sensitive", BindingFlags.DEFAULT);
+            switch_repeat.bind_property ("active", label_repeat_speed, "sensitive", BindingFlags.DEFAULT);
+            switch_repeat.bind_property ("active", scale_repeat_delay, "sensitive", BindingFlags.DEFAULT);
+            switch_repeat.bind_property ("active", scale_repeat_speed, "sensitive", BindingFlags.DEFAULT);
+            switch_repeat.bind_property ("active", spin_repeat_delay, "sensitive", BindingFlags.DEFAULT);
+            switch_repeat.bind_property ("active", spin_repeat_speed, "sensitive", BindingFlags.DEFAULT);
 
 			// connect signals
 			scale_blink_speed.value_changed.connect (() => {
@@ -212,31 +194,13 @@ namespace Pantheon.Keyboard.Behaviour
 				scale_blink_time.adjustment.value = spin_blink_time.adjustment.value = (double) settings_blink.cursor_blink_timeout;
 			} );
 
-			switch_blink.notify["active"].connect (() =>
-			{
-				var active = switch_blink.active;
+            switch_blink.notify["active"].connect (() => {
+                settings_blink.cursor_blink = switch_blink.active;
+            });
 
-				scale_blink_speed.sensitive = active;
-				label_blink_speed.sensitive = active;
-				spin_blink_speed.sensitive  = active;
-				scale_blink_time.sensitive  = active;
-				label_blink_time.sensitive  = active;
-				spin_blink_time.sensitive   = active;
-				settings_blink.cursor_blink = active;
-			} );
-
-			settings_blink.changed["cursor-blink"].connect (() =>
-			{
-				var active = settings_blink.cursor_blink;
-
-				scale_blink_speed.sensitive = active;
-				label_blink_speed.sensitive = active;
-				spin_blink_speed.sensitive  = active;
-				scale_blink_time.sensitive  = active;
-				label_blink_time.sensitive  = active;
-				spin_blink_time.sensitive   = active;
-				switch_blink.active         = active;
-			} );
+            settings_blink.changed["cursor-blink"].connect (() => {
+                switch_blink.active = settings_blink.cursor_blink;
+            });
 
 			/** Test Settings **/
 
