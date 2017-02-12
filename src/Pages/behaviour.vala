@@ -1,19 +1,24 @@
-namespace Pantheon.Keyboard.Behaviour
-{
+namespace Pantheon.Keyboard.Behaviour {
 	Behaviour.SettingsRepeat settings_repeat;
 	Behaviour.SettingsBlink  settings_blink;
 
-	class Page : Pantheon.Keyboard.AbstractPage
-	{
-		public override void reset ()
-		{
-			settings_repeat.reset_all ();
-			settings_blink.reset_all ();
-			return;
-		}
+    class Page : Pantheon.Keyboard.AbstractPage {
+        Settings gsettings_blink;
+        Settings gsettings_repeat;
 
-		public Page ()
-		{
+        public override void reset () {
+            gsettings_blink.reset ("cursor-blink");
+            gsettings_blink.reset ("cursor-blink-time");
+            gsettings_blink.reset ("cursor-blink-timeout");
+
+            gsettings_repeat.reset ("delay");
+            gsettings_repeat.reset ("repeat");
+            gsettings_repeat.reset ("repeat-interval");
+
+            return;
+        }
+
+        public Page () {
 			settings_repeat = new Behaviour.SettingsRepeat ();
 			settings_blink  = new Behaviour.SettingsBlink  ();
 
@@ -24,7 +29,9 @@ namespace Pantheon.Keyboard.Behaviour
 			var label_repeat_speed = new Gtk.Label (_("Interval:"));
 			var label_repeat_ms1   = new Gtk.Label (_("milliseconds"));
 			var label_repeat_ms2   = new Gtk.Label (_("milliseconds"));
-			var switch_repeat      = new Gtk.Switch ();
+
+            var switch_repeat = new Gtk.Switch ();
+            switch_repeat.halign = Gtk.Align.START;
             switch_repeat.valign = Gtk.Align.CENTER;
 
 			var scale_repeat_delay = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 1000, 1);
@@ -39,7 +46,6 @@ namespace Pantheon.Keyboard.Behaviour
 			label_repeat_ms2.halign   = Gtk.Align.START;
 
 			// tweak other widgets
-			switch_repeat.halign          = Gtk.Align.START;
 			scale_repeat_delay.hexpand    = true;
 			scale_repeat_speed.hexpand    = true;
 			scale_repeat_delay.draw_value = false;
@@ -66,8 +72,6 @@ namespace Pantheon.Keyboard.Behaviour
 			spin_repeat_delay.set_value  (double_delay);
 			spin_repeat_speed.set_value  (double_speed);
 
-			switch_repeat.active = settings_repeat.repeat;
-
 			// connect signals
 			scale_repeat_delay.value_changed.connect (() => {
 				settings_repeat.delay = (uint) (spin_repeat_delay.adjustment.value = scale_repeat_delay.adjustment.value);
@@ -93,14 +97,6 @@ namespace Pantheon.Keyboard.Behaviour
 				scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value = (double) settings_repeat.repeat_interval;
 			} );
 
-            switch_repeat.notify["active"].connect (() => {
-                settings_repeat.repeat = switch_repeat.active;
-            });
-
-            settings_repeat.changed["repeat"].connect (() => {
-                switch_repeat.active = settings_repeat.repeat;
-            });
-
             var label_blink = new Gtk.Label (_("Cursor Blinking:"));
             label_blink.get_style_context ().add_class ("h4");
             label_blink.margin_top = 24;
@@ -109,7 +105,9 @@ namespace Pantheon.Keyboard.Behaviour
 			var label_blink_time  = new Gtk.Label (_("Duration:"));
 			var label_blink_ms    = new Gtk.Label (_("milliseconds"));
 			var label_blink_s     = new Gtk.Label (_("seconds"));
-			var switch_blink      = new Gtk.Switch ();
+
+            var switch_blink = new Gtk.Switch ();
+            switch_blink.halign = Gtk.Align.START;
             switch_blink.valign = Gtk.Align.CENTER;
             switch_blink.margin_top = 24;
 
@@ -125,8 +123,6 @@ namespace Pantheon.Keyboard.Behaviour
 			label_blink_s.halign     = Gtk.Align.START;
 
 			// tweak other widgets
-			switch_blink.halign          = Gtk.Align.START;
-			switch_blink.active          = true;
 			scale_blink_speed.hexpand    = true;
 			scale_blink_time.hexpand     = true;
 			scale_blink_speed.draw_value = false;
@@ -153,7 +149,11 @@ namespace Pantheon.Keyboard.Behaviour
 			spin_blink_speed.set_value  (double_blink_speed);
 			spin_blink_time.set_value   (double_blink_time);
 
-			switch_blink.active = settings_blink.cursor_blink;
+            gsettings_blink = new Settings ("org.gnome.desktop.interface");
+            gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);
+
+            gsettings_repeat = new Settings ("org.gnome.desktop.peripherals.keyboard");
+            gsettings_repeat.bind ("repeat", switch_repeat, "active", SettingsBindFlags.DEFAULT);
 
             switch_blink.bind_property ("active", label_blink_speed, "sensitive", BindingFlags.DEFAULT);
             switch_blink.bind_property ("active", label_blink_time, "sensitive", BindingFlags.DEFAULT);
@@ -193,14 +193,6 @@ namespace Pantheon.Keyboard.Behaviour
 			settings_blink.changed["cursor-blink-timeout"].connect (() => {
 				scale_blink_time.adjustment.value = spin_blink_time.adjustment.value = (double) settings_blink.cursor_blink_timeout;
 			} );
-
-            switch_blink.notify["active"].connect (() => {
-                settings_blink.cursor_blink = switch_blink.active;
-            });
-
-            settings_blink.changed["cursor-blink"].connect (() => {
-                switch_blink.active = settings_blink.cursor_blink;
-            });
 
 			/** Test Settings **/
 
