@@ -13,30 +13,34 @@ ensure_vala_version ("0.22.0" MINIMUM)
 include (ValaPrecompile)
 # Add all your vala files and required packages to the List below to include them in the build
 vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
-    keyboard.vala
-    page.vala
+    Keyboard.vala
 
-    Pages/behaviour.vala
-    Pages/Behaviour/settings.vala
+    Behavior/Settings.vala
 
-    Pages/layout.vala   
-    Pages/Layout/display.vala
-    Pages/Layout/add_layout.vala
-    Pages/Layout/handler.vala
-    Pages/Layout/settings.vala
-    Pages/Layout/xkb_modifier.vala
-    
-    Pages/shortcuts.vala 
-    Pages/Shortcuts/settings.vala
-    Pages/Shortcuts/tree.vala
-    Pages/Shortcuts/display.vala
-    Pages/Shortcuts/shortcut.vala
-    Pages/Shortcuts/list.vala
-    Pages/Shortcuts/section_switcher.vala
-    Pages/Shortcuts/custom_tree.vala
-    Pages/Shortcuts/custom_shortcut_settings.vala
-    Pages/Shortcuts/conflict_dialog.vala
-    Pages/Shortcuts/display_tree.vala
+    Dialogs/ConflictDialog.vala
+
+    Layout/Handler.vala
+    Layout/Settings.vala
+    Layout/XkbModifier.vala
+
+    Shortcuts/CustomShortcutSettings.vala
+    Shortcuts/List.vala
+    Shortcuts/Settings.vala
+    Shortcuts/Shortcut.vala
+
+    Views/AbstractPage.vala
+    Views/Behavior.vala
+    Views/Layout.vala
+    Views/Shortcuts.vala
+
+    Widgets/Layout/AddLayoutPopover.vala
+    Widgets/Layout/Display.vala
+
+    Widgets/Shortcuts/CustomTree.vala
+    Widgets/Shortcuts/Display.vala
+    Widgets/Shortcuts/DisplayTree.vala
+    Widgets/Shortcuts/SectionSwitcher.vala
+    Widgets/Shortcuts/Tree.vala
 
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
