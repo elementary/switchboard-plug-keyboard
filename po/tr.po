@@ -7,15 +7,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
-"POT-Creation-Date: 2016-10-10 18:06-0500\n"
+"POT-Creation-Date: 2017-02-11 12:15-0800\n"
 "PO-Revision-Date: 2016-05-03 01:25+0000\n"
 "Last-Translator: Cenk  <cenktekin2008@gmail.com>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2016-10-11 07:33+0000\n"
-"X-Generator: Launchpad (build 18227)\n"
+"X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
+"X-Generator: Launchpad (build 18326)\n"
 "Language: tr\n"
 
 #: ../src/Pages/layout.vala:112
@@ -84,8 +84,8 @@ msgid "Caps Lock behavior:"
 msgstr ""
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
-#: ../src/Pages/Layout/handler.vala:45 ../src/Pages/Layout/add_layout.vala:101
-#: ../src/Pages/Layout/add_layout.vala:105
+#: ../src/Pages/Layout/add_layout.vala:101
+#: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
 msgid "Default"
 msgstr "Varsayılan"
 
@@ -149,17 +149,33 @@ msgstr "Zenkaku Hankaku as Escape:"
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr ""
 
-#: ../src/Pages/Shortcuts/custom_tree.vala:4
-msgid "Enter Command"
-msgstr "Komut gir"
+#: ../src/Pages/shortcuts.vala:43
+msgid "Windows"
+msgstr "Pencereler"
 
-#: ../src/Pages/Shortcuts/custom_tree.vala:54
-msgid "Command"
-msgstr "Komut"
+#: ../src/Pages/shortcuts.vala:44
+msgid "Workspaces"
+msgstr "Çalışma Alanları"
 
-#: ../src/Pages/Shortcuts/custom_tree.vala:55
-msgid "Shortcut"
-msgstr "Kısayol"
+#: ../src/Pages/shortcuts.vala:45
+msgid "Screenshots"
+msgstr "Ekran Görüntüleri"
+
+#: ../src/Pages/shortcuts.vala:46
+msgid "Applications"
+msgstr "Uygulamalar"
+
+#: ../src/Pages/shortcuts.vala:47
+msgid "Media"
+msgstr "Ortam"
+
+#: ../src/Pages/shortcuts.vala:48
+msgid "Universal Access"
+msgstr "Evrensel Erişim"
+
+#: ../src/Pages/shortcuts.vala:49
+msgid "Custom"
+msgstr ""
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
@@ -178,16 +194,21 @@ msgstr "İptal"
 msgid "Reassign"
 msgstr "Yeniden ata"
 
-#: ../src/Pages/Shortcuts/display.vala:42
-#: ../src/Pages/Shortcuts/display.vala:45
-msgid "Add"
-msgstr "Ekle"
+#: ../src/Pages/Shortcuts/custom_tree.vala:4
+msgid "Enter Command"
+msgstr "Komut gir"
 
-#: ../src/Pages/Shortcuts/display.vala:43
-#: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
-#: ../src/Pages/Layout/display.vala:54
-msgid "Remove"
-msgstr "Kaldır"
+#: ../src/Pages/Shortcuts/custom_tree.vala:54
+msgid "Command"
+msgstr "Komut"
+
+#: ../src/Pages/Shortcuts/custom_tree.vala:55
+msgid "Shortcut"
+msgstr "Kısayol"
+
+#: ../src/Pages/Shortcuts/shortcut.vala:50
+msgid "Ctrl"
+msgstr "Ctrl"
 
 #: ../src/Pages/Shortcuts/list.vala:31
 msgid "Close"
@@ -477,74 +498,16 @@ msgstr "Ekran Okuyucuyu aç"
 msgid "Toggle High Contrast"
 msgstr "Yüksek Karşıtlığı aç"
 
-#: ../src/Pages/Shortcuts/shortcut.vala:50
-msgid "Ctrl"
-msgstr "Ctrl"
+#: ../src/Pages/Shortcuts/display.vala:42
+#: ../src/Pages/Shortcuts/display.vala:45
+msgid "Add"
+msgstr "Ekle"
 
-#: ../src/Pages/behaviour.vala:21
-msgid "<b>Repeat Keys:</b>"
-msgstr "<b>Tekrar Tuşları:</b>"
-
-#: ../src/Pages/behaviour.vala:22
-msgid "Delay:"
-msgstr "Gecikme:"
-
-#: ../src/Pages/behaviour.vala:23
-msgid "Interval:"
-msgstr "Aralık:"
-
-#: ../src/Pages/behaviour.vala:24 ../src/Pages/behaviour.vala:25
-#: ../src/Pages/behaviour.vala:136
-msgid "milliseconds"
-msgstr "milisaniye"
-
-#: ../src/Pages/behaviour.vala:133
-msgid "<b>Cursor Blinking:</b>"
-msgstr "<b>İmleç Yanıp Sönmesi:</b>"
-
-#: ../src/Pages/behaviour.vala:134
-msgid "Speed:"
-msgstr "Hız:"
-
-#: ../src/Pages/behaviour.vala:135
-msgid "Duration:"
-msgstr "Süre:"
-
-#: ../src/Pages/behaviour.vala:137
-msgid "seconds"
-msgstr "saniye"
-
-#: ../src/Pages/behaviour.vala:244
-msgid "Type to test your settings…"
-msgstr "Ayarlarınızı sınamak için yazın..."
-
-#: ../src/Pages/shortcuts.vala:43
-msgid "Windows"
-msgstr "Pencereler"
-
-#: ../src/Pages/shortcuts.vala:44
-msgid "Workspaces"
-msgstr "Çalışma Alanları"
-
-#: ../src/Pages/shortcuts.vala:45
-msgid "Screenshots"
-msgstr "Ekran Görüntüleri"
-
-#: ../src/Pages/shortcuts.vala:46
-msgid "Applications"
-msgstr "Uygulamalar"
-
-#: ../src/Pages/shortcuts.vala:47
-msgid "Media"
-msgstr "Ortam"
-
-#: ../src/Pages/shortcuts.vala:48
-msgid "Universal Access"
-msgstr "Evrensel Erişim"
-
-#: ../src/Pages/shortcuts.vala:49
-msgid "Custom"
-msgstr ""
+#: ../src/Pages/Shortcuts/display.vala:43
+#: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
+#: ../src/Pages/Layout/display.vala:54
+msgid "Remove"
+msgstr "Kaldır"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
@@ -570,42 +533,79 @@ msgstr "Düzen:"
 msgid "Add Layout"
 msgstr "Düzen Ekle"
 
-#: ../src/keyboard.vala:8
+#: ../src/Pages/behaviour.vala:20
+msgid "Repeat Keys:"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:23
+msgid "Delay:"
+msgstr "Gecikme:"
+
+#: ../src/Pages/behaviour.vala:24
+msgid "Interval:"
+msgstr "Aralık:"
+
+#: ../src/Pages/behaviour.vala:25 ../src/Pages/behaviour.vala:26
+#: ../src/Pages/behaviour.vala:135
+msgid "milliseconds"
+msgstr "milisaniye"
+
+#: ../src/Pages/behaviour.vala:129
+msgid "Cursor Blinking:"
+msgstr ""
+
+#: ../src/Pages/behaviour.vala:133
+msgid "Speed:"
+msgstr "Hız:"
+
+#: ../src/Pages/behaviour.vala:134
+msgid "Duration:"
+msgstr "Süre:"
+
+#: ../src/Pages/behaviour.vala:136
+msgid "seconds"
+msgstr "saniye"
+
+#: ../src/Pages/behaviour.vala:245
+msgid "Type to test your settings…"
+msgstr "Ayarlarınızı sınamak için yazın..."
+
+#: ../src/keyboard.vala:13
 msgid "Keyboard"
 msgstr "Klavye"
 
-#: ../src/keyboard.vala:9
+#: ../src/keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Klavye davranışını, düzenini ve kısayollarını ayarlayın"
 
-#: ../src/keyboard.vala:22 ../src/keyboard.vala:59
-msgid "Shortcuts"
-msgstr "Kısayollar"
-
-#: ../src/keyboard.vala:23
-msgid "Behavior"
-msgstr "Davranış"
-
-#: ../src/keyboard.vala:24
+#: ../src/keyboard.vala:28
 msgid "Layout"
 msgstr "Düzen"
 
-#: ../src/keyboard.vala:60
+#: ../src/keyboard.vala:29 ../src/keyboard.vala:65
+msgid "Shortcuts"
+msgstr "Kısayollar"
+
+#: ../src/keyboard.vala:30
+msgid "Behavior"
+msgstr "Davranış"
+
+#: ../src/keyboard.vala:66
 msgid "Repeat Keys"
 msgstr ""
 
-#: ../src/keyboard.vala:61
+#: ../src/keyboard.vala:67
 msgid "Cursor Blinking"
 msgstr ""
 
-#: ../src/keyboard.vala:62
+#: ../src/keyboard.vala:68
 msgid "Switch layout"
 msgstr ""
 
-#: ../src/keyboard.vala:63
+#: ../src/keyboard.vala:69
 msgid "Compose Key"
 msgstr ""
 
-#: ../src/keyboard.vala:64
+#: ../src/keyboard.vala:70
 msgid "Caps Lock behavior"
 msgstr ""
