@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2016-08-01 13:50+0000\n"
-"Last-Translator: Thiago Abreu <Unknown>\n"
+"PO-Revision-Date: 2017-02-12 16:56+0000\n"
+"Last-Translator: Leonardo Lemos <Unknown>\n"
 "Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
+"X-Launchpad-Export-Date: 2017-02-13 05:55+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Pages/layout.vala:112
@@ -534,7 +534,7 @@ msgstr "Adicionar layout"
 
 #: ../src/Pages/behaviour.vala:20
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Repetir teclas:"
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Delay:"
@@ -551,7 +551,7 @@ msgstr "millisegundos"
 
 #: ../src/Pages/behaviour.vala:129
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "Cursor piscando:"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "Speed:"
@@ -591,20 +591,20 @@ msgstr "Comportamento"
 
 #: ../src/keyboard.vala:66
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Repetir teclas"
 
 #: ../src/keyboard.vala:67
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "Cursor piscando"
 
 #: ../src/keyboard.vala:68
 msgid "Switch layout"
-msgstr ""
+msgstr "Mudar de esquema"
 
 #: ../src/keyboard.vala:69
 msgid "Compose Key"
-msgstr ""
+msgstr "Tecla de composição"
 
 #: ../src/keyboard.vala:70
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Comportamento do Caps Lock"
