@@ -51,18 +51,6 @@ namespace Pantheon.Keyboard.Behaviour {
 			scale_repeat_delay.draw_value = false;
 			scale_repeat_speed.draw_value = false;
 
-			// attach to this
-			this.attach (label_repeat,       0, 0, 1, 1);
-			this.attach (label_repeat_delay, 0, 1, 1, 1);
-			this.attach (label_repeat_speed, 0, 2, 1, 1);
-			this.attach (switch_repeat,      1, 0, 1, 1);
-			this.attach (scale_repeat_delay, 1, 1, 1, 1);
-			this.attach (scale_repeat_speed, 1, 2, 1, 1);
-			this.attach (spin_repeat_delay,  2, 1, 1, 1);
-			this.attach (spin_repeat_speed,  2, 2, 1, 1);
-			this.attach (label_repeat_ms1,   3, 1, 1, 1);
-			this.attach (label_repeat_ms2,   3, 2, 1, 1);
-
 			// set values from settigns
 			var double_delay = (double) settings_repeat.delay;
 			var double_speed = (double) settings_repeat.repeat_interval;
@@ -128,17 +116,32 @@ namespace Pantheon.Keyboard.Behaviour {
 			scale_blink_speed.draw_value = false;
 			scale_blink_time.draw_value  = false;
 
-			// attach to this
-			this.attach (label_blink,       0, 3, 1, 1);
-			this.attach (label_blink_speed, 0, 4, 1, 1);
-			this.attach (label_blink_time,  0, 5, 1, 1);
-			this.attach (switch_blink,      1, 3, 1, 1);
-			this.attach (scale_blink_speed, 1, 4, 1, 1);
-			this.attach (scale_blink_time,  1, 5, 1, 1);
-			this.attach (spin_blink_speed,  2, 4, 1, 1);
-			this.attach (spin_blink_time,   2, 5, 1, 1);
-			this.attach (label_blink_ms,    3, 4, 1, 1);
-			this.attach (label_blink_s,     3, 5, 1, 1);
+            var entry_test = new Gtk.Entry ();
+            entry_test.margin_top = 24;
+            entry_test.placeholder_text = (_("Type to test your settings…"));
+            entry_test.hexpand = true;
+
+            attach (label_repeat, 0, 0, 1, 1);
+            attach (switch_repeat, 1, 0, 1, 1);
+            attach (label_repeat_delay, 0, 1, 1, 1);
+            attach (scale_repeat_delay, 1, 1, 1, 1);
+            attach (spin_repeat_delay, 2, 1, 1, 1);
+            attach (label_repeat_ms1, 3, 1, 1, 1);
+            attach (label_repeat_speed, 0, 2, 1, 1);
+            attach (scale_repeat_speed, 1, 2, 1, 1);
+            attach (spin_repeat_speed, 2, 2, 1, 1);
+            attach (label_repeat_ms2, 3, 2, 1, 1);
+            attach (label_blink, 0, 3, 1, 1);
+            attach (switch_blink, 1, 3, 1, 1);
+            attach (label_blink_speed, 0, 4, 1, 1);
+            attach (scale_blink_speed, 1, 4, 1, 1);
+            attach (spin_blink_speed, 2, 4, 1, 1);
+            attach (label_blink_ms, 3, 4, 1, 1);
+            attach (label_blink_time, 0, 5, 1, 1);
+            attach (scale_blink_time, 1, 5, 1, 1);
+            attach (spin_blink_time, 2, 5, 1, 1);
+            attach (label_blink_s, 3, 5, 1, 1);
+            attach (entry_test, 1, 6, 1, 1);
 
 			// set values from settings
 			var double_blink_speed = (double) settings_blink.cursor_blink_time;
@@ -193,15 +196,6 @@ namespace Pantheon.Keyboard.Behaviour {
 			settings_blink.changed["cursor-blink-timeout"].connect (() => {
 				scale_blink_time.adjustment.value = spin_blink_time.adjustment.value = (double) settings_blink.cursor_blink_timeout;
 			} );
-
-			/** Test Settings **/
-
-			var entry_test = new Gtk.Entry ();
-            entry_test.margin_top = 24;
-			entry_test.placeholder_text = (_("Type to test your settings…"));
-			entry_test.hexpand = true;
-
-			this.attach (entry_test, 1, 6, 1, 1);
 		}
 	}
 }
