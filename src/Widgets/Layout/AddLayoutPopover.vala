@@ -3,23 +3,11 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
 	public AddLayout()
 	{
-		var grid = new Gtk.Grid();
-
-		grid.margin         = 12;
-		grid.column_spacing = 12;
-		grid.row_spacing    = 12;
-
-		this.add_with_properties (grid);
-
 		// add some labels
 		var label_language = new Gtk.Label (_("Language:"));
 		var label_layout   = new Gtk.Label (_("Layout:"));
 
-		label_language.valign = label_layout.valign = Gtk.Align.CENTER;
 		label_language.halign = label_layout.halign = Gtk.Align.END;
-
-		grid.attach (label_language, 0, 0, 1, 1);
-		grid.attach (label_layout,   0, 1, 1, 1);
 
 		// list stores
 		var lang_list   = create_list_store (handler.languages);
@@ -42,26 +30,32 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 		layout_box.add_attribute (renderer, "text", 1);
 		layout_box.active = 0;
 
-		grid.attach (language_box, 1, 0, 1, 1);
-		grid.attach (layout_box,   1, 1, 1, 1);
-
 		language_box.changed.connect(() => {
 			layout_box.model = create_list_store (handler.get_variants_for_language (language_box.active_id));
 			layout_box.active = 0;
 		});
 
-		// add buttons
-		var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-		button_box.layout_style = Gtk.ButtonBoxStyle.END;
-		button_box.spacing      = 6;
-
 		var button_add    = new Gtk.Button.with_label (_("Add Layout"));
 		var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
-		button_box.add (button_cancel);
-		button_box.add (button_add);
+        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
+        button_box.layout_style = Gtk.ButtonBoxStyle.END;
+        button_box.margin_top = 12;
+        button_box.spacing = 6;
+        button_box.add (button_cancel);
+        button_box.add (button_add);
 
-		grid.attach (button_box, 0, 2, 2, 1);
+        var grid = new Gtk.Grid ();
+        grid.column_spacing = 12;
+        grid.row_spacing = 12;
+        grid.margin = 12;
+        grid.attach (label_language, 0, 0, 1, 1);
+        grid.attach (label_layout, 0, 1, 1, 1);
+        grid.attach (language_box, 1, 0, 1, 1);
+        grid.attach (layout_box, 1, 1, 1, 1);
+        grid.attach (button_box, 0, 2, 2, 1);
+
+        add (grid);
 
 		button_cancel.clicked.connect (() => {
 			this.hide ();
