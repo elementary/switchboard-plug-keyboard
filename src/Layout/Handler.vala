@@ -8,72 +8,94 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
     construct {
         languages = new HashTable<string, string> (str_hash, str_equal);
     }
-
+    
     private void parse_layouts () {
-        var file = File.new_for_path ("/usr/share/X11/xkb/rules/evdev.lst");
+	    Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
+	    if (doc == null) {
+		    critical ("'evdev.xml' not found or permissions missing\n");
+	    }
 
-        if (!file.query_exists ()) {
-            critical ("File '%s' doesn't exist.", file.get_path ());
-            return;
+        Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
+	    Xml.XPath.Object* res = cntx.eval_expression ("/xkbConfigRegistry/layoutList/layout/configItem");
+
+        if (res == null) {
+            delete doc;
+            critical ("Unable to parse 'evdev.xml'");        
         }
 
-        try {
-            var dis = new DataInputStream (file.read ());
-            string line;
-            bool layout_found = false;
-            while ((line = dis.read_line (null)) != null) {
-                if (layout_found) {
-                    if ("!" in line || line == "") {
-                        break;
-                    }
-                    
-                    var parts = line.chug ().split (" ", 2);
-                    languages.set (parts[0], dgettext ("xkeyboard-config", parts[1].chug ()));
-                } else {
-                    if ("!" in line && "layout" in line) {
-                        layout_found = true;
-                    }
-                }
+        if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
+            delete res;
+            delete doc;
+            critical ("No layouts found in 'evdev.xml'");
+        }
+
+	    for (int i = 0; i < res->nodesetval->length (); i++) {
+		    Xml.Node* node = res->nodesetval->item (i);
+            string? name = null;
+            string? description = null;
+            for (Xml.Node* iter = node->children; iter != null; iter = iter->next) {
+		        if (iter->type == Xml.ElementType.ELEMENT_NODE) {
+			        if (iter->name == "name") {
+				        name = iter->get_content ();
+			        } else if (iter->name == "description") {
+				        description = dgettext ("xkeyboard-config", iter->get_content ());
+			        }
+		        }
+	        }
+            if (name != null && description != null) {
+                
+                languages.set (name, description);
             }
-        } catch (Error e) {
-            error (e.message);
-        }
+	    }
+
+        delete res;
+        delete doc;
     }
 
     public HashTable<string, string> get_variants_for_language (string language) {
         var returned_table = new HashTable<string, string> (str_hash, str_equal);
         returned_table.set ("", _("Default"));
-        var file = File.new_for_path ("/usr/share/X11/xkb/rules/evdev.lst");
+        Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
+	    if (doc == null) {
+		    critical ("'evdev.xml' not found or permissions incorrect\n");
+	    }
 
-        if (!file.query_exists ()) {
-            critical ("File '%s' doesn't exist.", file.get_path ());
-            return returned_table;
+        Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
+        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem";
+	    Xml.XPath.Object* res = cntx.eval_expression (xpath);
+
+        if (res == null) {
+            delete doc;
+            critical ("Unable to parse 'evdev.xml'");        
         }
 
-        try {
-            var dis = new DataInputStream (file.read ());
-            string line;
-            bool variant_found = false;
-            while ((line = dis.read_line (null)) != null) {
-                if (variant_found) {
-                    if ("!" in line || line == "") {
-                        break;
-                    }
-                    
-                    var parts = line.chug ().split (" ", 2);
-                    var subparts = parts[1].chug ().split (":", 2);
-                    if (subparts[0] == language) {
-                        returned_table.set (parts[0], dgettext ("xkeyboard-config", subparts[1].chug ()));
-                    }
-                } else {
-                    if ("!" in line && "variant" in line) {
-                        variant_found = true;
-                    }
-                }
+        if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
+            delete res;
+            delete doc;
+            warning (@"No variants for $language found in 'evdev.xml'");
+        }
+
+	    for (int i = 0; i < res->nodesetval->length (); i++) {
+		    Xml.Node* node = res->nodesetval->item (i);
+            
+            string? name = null;
+            string? description = null;
+            for (Xml.Node* iter = node->children; iter != null; iter = iter->next) {
+		        if (iter->type == Xml.ElementType.ELEMENT_NODE) {
+			        if (iter->name == "name") {
+				        name = iter->get_content ();
+			        } else if (iter->name == "description") {
+				        description = dgettext ("xkeyboard-config", iter->get_content ());
+			        }
+		        }
+	        }
+            if (name != null && description != null) {
+                returned_table.set (name, description);
             }
-        } catch (Error e) {
-            error (e.message);
-        }
+	    }
+
+        delete res;
+        delete doc;
 
         return returned_table;
     }
