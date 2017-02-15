@@ -1,7 +1,4 @@
 namespace Pantheon.Keyboard.Behaviour {
-	Behaviour.SettingsRepeat settings_repeat;
-	Behaviour.SettingsBlink  settings_blink;
-
     class Page : Pantheon.Keyboard.AbstractPage {
         Settings gsettings_blink;
         Settings gsettings_repeat;
@@ -19,46 +16,49 @@ namespace Pantheon.Keyboard.Behaviour {
         }
 
         public Page () {
-			settings_repeat = new Behaviour.SettingsRepeat ();
-			settings_blink  = new Behaviour.SettingsBlink  ();
+            var settings_repeat = new Behaviour.SettingsRepeat ();
+            var settings_blink  = new Behaviour.SettingsBlink  ();
+
+            var double_delay = (double) settings_repeat.delay;
+            var double_speed = (double) settings_repeat.repeat_interval;
+            var double_blink_speed = (double) settings_blink.cursor_blink_time;
+            var double_blink_time = (double) settings_blink.cursor_blink_timeout;
 
             var label_repeat = new Gtk.Label (_("Repeat Keys:"));
+            label_repeat.halign = Gtk.Align.END;
             label_repeat.get_style_context ().add_class ("h4");
 
 			var label_repeat_delay = new Gtk.Label (_("Delay:"));
+            label_repeat_delay.halign = Gtk.Align.END;
+
 			var label_repeat_speed = new Gtk.Label (_("Interval:"));
+            label_repeat_speed.halign = Gtk.Align.END;
+
 			var label_repeat_ms1   = new Gtk.Label (_("milliseconds"));
+            label_repeat_ms1.halign = Gtk.Align.START;
+
 			var label_repeat_ms2   = new Gtk.Label (_("milliseconds"));
+            label_repeat_ms2.halign = Gtk.Align.START;
 
             var switch_repeat = new Gtk.Switch ();
             switch_repeat.halign = Gtk.Align.START;
             switch_repeat.valign = Gtk.Align.CENTER;
 
 			var scale_repeat_delay = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 1000, 1);
+            scale_repeat_delay.draw_value = false;
+            scale_repeat_delay.hexpand = true;
+            scale_repeat_delay.set_value (double_delay);
+
 			var scale_repeat_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 100,  1);
+            scale_repeat_speed.draw_value = false;
+            scale_repeat_speed.hexpand = true;
+            scale_repeat_speed.set_value (double_speed);
+
 			var spin_repeat_delay  = new Gtk.SpinButton.with_range (10, 1000, 1);
+            spin_repeat_delay.set_value (double_delay);
+
 			var spin_repeat_speed  = new Gtk.SpinButton.with_range (10, 100,  1);
-
-			label_repeat.halign       = Gtk.Align.END;
-			label_repeat_delay.halign = Gtk.Align.END;
-			label_repeat_speed.halign = Gtk.Align.END;
-			label_repeat_ms1.halign   = Gtk.Align.START;
-			label_repeat_ms2.halign   = Gtk.Align.START;
-
-			// tweak other widgets
-			scale_repeat_delay.hexpand    = true;
-			scale_repeat_speed.hexpand    = true;
-			scale_repeat_delay.draw_value = false;
-			scale_repeat_speed.draw_value = false;
-
-			// set values from settigns
-			var double_delay = (double) settings_repeat.delay;
-			var double_speed = (double) settings_repeat.repeat_interval;
-
-			scale_repeat_delay.set_value (double_delay);
-			scale_repeat_speed.set_value (double_speed);
-			spin_repeat_delay.set_value  (double_delay);
-			spin_repeat_speed.set_value  (double_speed);
+            spin_repeat_speed.set_value (double_speed);
 
 			// connect signals
 			scale_repeat_delay.value_changed.connect (() => {
@@ -87,12 +87,20 @@ namespace Pantheon.Keyboard.Behaviour {
 
             var label_blink = new Gtk.Label (_("Cursor Blinking:"));
             label_blink.get_style_context ().add_class ("h4");
+            label_blink.halign = Gtk.Align.END;
             label_blink.margin_top = 24;
 
 			var label_blink_speed = new Gtk.Label (_("Speed:"));
+            label_blink_speed.halign = Gtk.Align.END;
+
 			var label_blink_time  = new Gtk.Label (_("Duration:"));
+            label_blink_time.halign = Gtk.Align.END;
+
 			var label_blink_ms    = new Gtk.Label (_("milliseconds"));
+            label_blink_ms.halign = Gtk.Align.START;
+
 			var label_blink_s     = new Gtk.Label (_("seconds"));
+            label_blink_s.halign = Gtk.Align.START;
 
             var switch_blink = new Gtk.Switch ();
             switch_blink.halign = Gtk.Align.START;
@@ -100,21 +108,20 @@ namespace Pantheon.Keyboard.Behaviour {
             switch_blink.margin_top = 24;
 
 			var scale_blink_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 100, 2500, 10);
+            scale_blink_speed.draw_value = false;
+            scale_blink_speed.hexpand = true;
+            scale_blink_speed.set_value (double_blink_speed);
+
 			var scale_blink_time  = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1, 100, 1);
+            scale_blink_time.draw_value = false;
+            scale_blink_time.hexpand = true;
+            scale_blink_time.set_value (double_blink_time);
+
 			var spin_blink_speed  = new Gtk.SpinButton.with_range (100, 2500, 10);
+            spin_blink_speed.set_value  (double_blink_speed);
+
 			var spin_blink_time   = new Gtk.SpinButton.with_range (1, 100, 1);
-
-			label_blink.halign       = Gtk.Align.END;
-			label_blink_time.halign  = Gtk.Align.END;
-			label_blink_speed.halign = Gtk.Align.END;
-			label_blink_ms.halign    = Gtk.Align.START;
-			label_blink_s.halign     = Gtk.Align.START;
-
-			// tweak other widgets
-			scale_blink_speed.hexpand    = true;
-			scale_blink_time.hexpand     = true;
-			scale_blink_speed.draw_value = false;
-			scale_blink_time.draw_value  = false;
+            spin_blink_time.set_value (double_blink_time);
 
             var entry_test = new Gtk.Entry ();
             entry_test.margin_top = 24;
@@ -142,15 +149,6 @@ namespace Pantheon.Keyboard.Behaviour {
             attach (spin_blink_time, 2, 5, 1, 1);
             attach (label_blink_s, 3, 5, 1, 1);
             attach (entry_test, 1, 6, 1, 1);
-
-			// set values from settings
-			var double_blink_speed = (double) settings_blink.cursor_blink_time;
-			var double_blink_time  = (double) settings_blink.cursor_blink_timeout;
-
-			scale_blink_speed.set_value (double_blink_speed);
-			scale_blink_time.set_value  (double_blink_time);
-			spin_blink_speed.set_value  (double_blink_speed);
-			spin_blink_time.set_value   (double_blink_time);
 
             gsettings_blink = new Settings ("org.gnome.desktop.interface");
             gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);
