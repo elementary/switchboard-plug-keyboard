@@ -8,13 +8,13 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2016-05-03 01:25+0000\n"
-"Last-Translator: Cenk  <cenktekin2008@gmail.com>\n"
+"PO-Revision-Date: 2017-02-18 13:21+0000\n"
+"Last-Translator: İbrahim Ethem Göl <Unknown>\n"
 "Language-Team: Turkish <tr@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
+"X-Launchpad-Export-Date: 2017-02-19 05:44+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 "Language: tr\n"
 
@@ -29,19 +29,19 @@ msgstr "Devre dışı"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Boşluk"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Her iki Shift tuşu birlikte"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
@@ -50,15 +50,15 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
@@ -72,7 +72,7 @@ msgstr "Sağ Alt"
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Sağ Ctrl"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
@@ -81,7 +81,7 @@ msgstr "Sağ Super"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Caps Look tuşu davranışı:"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/add_layout.vala:101
@@ -91,7 +91,7 @@ msgstr "Varsayılan"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Caps Lock devre dışı"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
@@ -175,7 +175,7 @@ msgstr "Evrensel Erişim"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
-msgstr ""
+msgstr "Özel"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
@@ -596,7 +596,7 @@ msgstr ""
 
 #: ../src/keyboard.vala:67
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "İmleç Yanıp Sönmesi"
 
 #: ../src/keyboard.vala:68
 msgid "Switch layout"
@@ -608,4 +608,4 @@ msgstr ""
 
 #: ../src/keyboard.vala:70
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Caps Lock davranışı"
