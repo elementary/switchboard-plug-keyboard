@@ -60,31 +60,6 @@ namespace Pantheon.Keyboard.Behaviour {
 			var spin_repeat_speed  = new Gtk.SpinButton.with_range (10, 100,  1);
             spin_repeat_speed.set_value (double_speed);
 
-			// connect signals
-			scale_repeat_delay.value_changed.connect (() => {
-				settings_repeat.delay = (uint) (spin_repeat_delay.adjustment.value = scale_repeat_delay.adjustment.value);
-			} );
-
-			scale_repeat_speed.value_changed.connect (() => {
-				settings_repeat.repeat_interval = (uint) (spin_repeat_speed.adjustment.value = scale_repeat_speed.adjustment.value);
-			} );
-
-			spin_repeat_delay.value_changed.connect (() => {
-				settings_repeat.delay = (uint) (scale_repeat_delay.adjustment.value = spin_repeat_delay.adjustment.value);
-			} );
-
-			spin_repeat_speed.value_changed.connect (() => {
-				settings_repeat.repeat_interval = (uint) (scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value);
-			} );
-
-			settings_repeat.changed["delay"].connect (() => {
-				scale_repeat_delay.adjustment.value = spin_repeat_delay.adjustment.value = (double) settings_repeat.delay;
-			} );
-
-			settings_repeat.changed["repeat-interval"].connect (() => {
-				scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value = (double) settings_repeat.repeat_interval;
-			} );
-
             var label_blink = new Gtk.Label (_("Cursor Blinking:"));
             label_blink.get_style_context ().add_class ("h4");
             label_blink.halign = Gtk.Align.END;
@@ -170,7 +145,22 @@ namespace Pantheon.Keyboard.Behaviour {
             switch_repeat.bind_property ("active", spin_repeat_delay, "sensitive", BindingFlags.DEFAULT);
             switch_repeat.bind_property ("active", spin_repeat_speed, "sensitive", BindingFlags.DEFAULT);
 
-			// connect signals
+            scale_repeat_delay.value_changed.connect (() => {
+                settings_repeat.delay = (uint) (spin_repeat_delay.adjustment.value = scale_repeat_delay.adjustment.value);
+            });
+
+            scale_repeat_speed.value_changed.connect (() => {
+                settings_repeat.repeat_interval = (uint) (spin_repeat_speed.adjustment.value = scale_repeat_speed.adjustment.value);
+            });
+
+            spin_repeat_delay.value_changed.connect (() => {
+                settings_repeat.delay = (uint) (scale_repeat_delay.adjustment.value = spin_repeat_delay.adjustment.value);
+            });
+
+            spin_repeat_speed.value_changed.connect (() => {
+                settings_repeat.repeat_interval = (uint) (scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value);
+            });
+
 			scale_blink_speed.value_changed.connect (() => {
 				settings_blink.cursor_blink_time = (int) (spin_blink_speed.adjustment.value = scale_blink_speed.adjustment.value);
 			} );
@@ -186,6 +176,14 @@ namespace Pantheon.Keyboard.Behaviour {
 			spin_blink_time.value_changed.connect (() => {
 				settings_blink.cursor_blink_timeout = (int) (scale_blink_time.adjustment.value = spin_blink_time.adjustment.value);
 			} );
+
+            settings_repeat.changed["delay"].connect (() => {
+                scale_repeat_delay.adjustment.value = spin_repeat_delay.adjustment.value = (double) settings_repeat.delay;
+            });
+
+            settings_repeat.changed["repeat-interval"].connect (() => {
+                scale_repeat_speed.adjustment.value = spin_repeat_speed.adjustment.value = (double) settings_repeat.repeat_interval;
+            });
 
 			settings_blink.changed["cursor-blink-time"].connect (() => {
 				scale_blink_speed.adjustment.value = spin_blink_speed.adjustment.value = (double) settings_blink.cursor_blink_time;
