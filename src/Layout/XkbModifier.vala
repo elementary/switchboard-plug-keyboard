@@ -105,10 +105,6 @@ namespace Pantheon.Keyboard.LayoutPage
             }
         }
 
-        public string get_default_command () {
-            return default_command;
-        }
-
         public void append_xkb_option ( string xkb_command, string description ){
             xkb_option_commands += xkb_command;
             option_descriptions += description;
