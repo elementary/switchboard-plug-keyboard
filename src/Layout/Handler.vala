@@ -73,6 +73,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
             delete res;
             delete doc;
             warning (@"No variants for $language found in 'evdev.xml'");
+            return returned_table;
         }
 
         for (int i = 0; i < res->nodesetval->length (); i++) {
