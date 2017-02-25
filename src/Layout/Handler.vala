@@ -20,13 +20,15 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
 
         if (res == null) {
             delete doc;
-            critical ("Unable to parse 'evdev.xml'");        
+            critical ("Unable to parse 'evdev.xml'");   
+            return;     
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
             delete res;
             delete doc;
             critical ("No layouts found in 'evdev.xml'");
+            return;
         }
 
         for (int i = 0; i < res->nodesetval->length (); i++) {
@@ -42,8 +44,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
                     }
                 }
             }
-            if (name != null && description != null) {
-                
+            if (name != null && description != null) {                
                 languages.set (name, description);
             }
         }
@@ -66,7 +67,8 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
 
         if (res == null) {
             delete doc;
-            critical ("Unable to parse 'evdev.xml'");        
+            critical ("Unable to parse 'evdev.xml'");
+            return returned_table;      
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
