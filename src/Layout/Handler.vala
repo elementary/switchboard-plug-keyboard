@@ -13,6 +13,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
         Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
         if (doc == null) {
             critical ("'evdev.xml' not found or permissions missing\n");
+            return;
         }
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
@@ -59,6 +60,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
         Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
         if (doc == null) {
             critical ("'evdev.xml' not found or permissions incorrect\n");
+            return returned_table;
         }
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
