@@ -9,23 +9,20 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
 		label_language.halign = label_layout.halign = Gtk.Align.END;
 
-		// list stores
 		var lang_list   = create_list_store (handler.languages);
+
+        var renderer = new Gtk.CellRendererText ();
+
 		var language_box = new Gtk.ComboBox.with_model (lang_list);
-		language_box.id_column = 0;
-		language_box.active = 0;
-
-		var layout_list = create_list_store (handler.get_variants_for_language (language_box.active_id));
-		var layout_box   = new Gtk.ComboBox.with_model (layout_list);
-		layout_box.id_column = 0;
-		layout_box.active = 0;
-
-		var renderer = new Gtk.CellRendererText ();
-
 		language_box.pack_start (renderer, true);
 		language_box.add_attribute (renderer, "text", 1);
 		language_box.active = 0;
+        language_box.id_column = 0;
 
+        var layout_list = create_list_store (handler.get_variants_for_language (language_box.active_id));
+
+        var layout_box = new Gtk.ComboBox.with_model (layout_list);
+        layout_box.id_column = 0;
 		layout_box.pack_start (renderer, true);
 		layout_box.add_attribute (renderer, "text", 1);
 		layout_box.active = 0;
