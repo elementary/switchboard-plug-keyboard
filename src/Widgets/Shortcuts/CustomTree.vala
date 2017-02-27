@@ -252,7 +252,11 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
 
             CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
+#if VALA_0_36
+            list_store.remove (ref iter);
+#else
             list_store.remove (iter);
+#endif
         }
 
         bool tree_key_press (Gdk.EventKey ev) {
