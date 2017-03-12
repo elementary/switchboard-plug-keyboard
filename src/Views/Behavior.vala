@@ -14,7 +14,7 @@ class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         return;
     }
 
-    public Page () {
+    construct {
         var settings_repeat = new Behaviour.SettingsRepeat ();
         var settings_blink  = new Behaviour.SettingsBlink  ();
 
@@ -43,14 +43,17 @@ class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         switch_repeat.halign = Gtk.Align.START;
         switch_repeat.valign = Gtk.Align.CENTER;
 
-        var scale_repeat_delay = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 1000, 1);
+        var scale_repeat_delay = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 100, 900, 1);
         scale_repeat_delay.draw_value = false;
         scale_repeat_delay.hexpand = true;
+        scale_repeat_delay.add_mark (500, Gtk.PositionType.BOTTOM, null);
         scale_repeat_delay.set_value (double_delay);
 
-        var scale_repeat_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 100, 1);
+        var scale_repeat_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 10, 70, 1);
         scale_repeat_speed.draw_value = false;
         scale_repeat_speed.hexpand = true;
+        scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
+        scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.set_value (double_speed);
 
         var spin_repeat_delay = new Gtk.SpinButton.with_range (10, 1000, 1);
@@ -81,14 +84,17 @@ class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         switch_blink.valign = Gtk.Align.CENTER;
         switch_blink.margin_top = 24;
 
-        var scale_blink_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 100, 2500, 10);
+        var scale_blink_speed = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 100, 2300, 10);
         scale_blink_speed.draw_value = false;
         scale_blink_speed.hexpand = true;
+        scale_blink_speed.add_mark (1200, Gtk.PositionType.BOTTOM, null);
         scale_blink_speed.set_value (double_blink_speed);
 
-        var scale_blink_time = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1, 100, 1);
+        var scale_blink_time = new Gtk.Scale.with_range (Gtk.Orientation.HORIZONTAL, 1, 29, 1);
         scale_blink_time.draw_value = false;
         scale_blink_time.hexpand = true;
+        scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
+        scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.set_value (double_blink_time);
 
         var spin_blink_speed = new Gtk.SpinButton.with_range (100, 2500, 10);
