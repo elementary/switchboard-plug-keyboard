@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-08 11:45+0000\n"
-"Last-Translator: Jonathan Moerman <jonathanmoerman@gmail.com>\n"
+"PO-Revision-Date: 2017-04-09 18:32+0000\n"
+"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <http://weblate.elementary.io/projects/desktop"
 "/switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr ""
+msgstr "Verander layout:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
@@ -31,19 +31,19 @@ msgstr "Uitgeschakeld"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Spatie"
 
 #: ../src/Pages/layout.vala:119
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Beide shift toetsen samen"
 
 #: ../src/Pages/layout.vala:120 ../src/Pages/layout.vala:134
 #: ../src/Pages/layout.vala:238
@@ -52,38 +52,38 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
-msgstr ""
+msgstr "Samenstellingstoets:"
 
 #: ../src/Pages/layout.vala:135 ../src/Pages/layout.vala:239
 #: ../src/Pages/layout.vala:250
 msgid "Right Alt"
-msgstr "Rechter Alt-toets"
+msgstr "Rechtse Alt"
 
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Rechtse Ctrl"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
 msgid "Right Super"
-msgstr ""
+msgstr "Rechtse Super"
 
 #: ../src/Pages/layout.vala:145
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "Caps Lock gedrag:"
 
 #: ../src/Pages/layout.vala:148 ../src/Pages/layout.vala:237
 #: ../src/Pages/Layout/add_layout.vala:101
@@ -93,35 +93,35 @@ msgstr "Standaard"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "Caps Lock uitgeschakeld"
 
 #: ../src/Pages/layout.vala:150
 msgid "as Backspace"
-msgstr ""
+msgstr "zoals Backspace"
 
 #: ../src/Pages/layout.vala:151
 msgid "as Ctrl"
-msgstr ""
+msgstr "zoals Ctrl"
 
 #: ../src/Pages/layout.vala:152
 msgid "as Escape"
-msgstr ""
+msgstr "zoals Escape"
 
 #: ../src/Pages/layout.vala:153
 msgid "as Num Lock"
-msgstr ""
+msgstr "zoals Num Lock"
 
 #: ../src/Pages/layout.vala:154
 msgid "as Super"
-msgstr ""
+msgstr "zoals Super"
 
 #: ../src/Pages/layout.vala:155
 msgid "Swap with Control"
-msgstr ""
+msgstr "Wissel met Control"
 
 #: ../src/Pages/layout.vala:156
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Wissel met Escape"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
@@ -129,27 +129,27 @@ msgstr "Type om je indeling te testen…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "Toets om 3de niveau te kiezen:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "Toets om 5de niveau te kiezen:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F Backspace:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku als Escape:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja toetsen op rechtse Alt/Ctrl:"
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -173,7 +173,7 @@ msgstr "Media"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
-msgstr "Universele Toegang"
+msgstr "Universele toegang"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
@@ -181,11 +181,11 @@ msgstr "Aangepast"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr ""
+msgstr "%s wordt reeds gebruikt voor %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
+msgstr "Als u de sneltoets toewijst aan %s, dan zal %s uitgeschakeld worden"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -230,7 +230,7 @@ msgstr "Demaximaliseer"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr "Schakel maximaleren"
+msgstr "Schakel maximalisatie"
 
 #: ../src/Pages/Shortcuts/list.vala:36
 msgid "Minimize"
@@ -370,7 +370,7 @@ msgstr "Verplaats naar links"
 
 #: ../src/Pages/Shortcuts/list.vala:111
 msgid "Move to right"
-msgstr "Verplaats naar rerchts"
+msgstr "Verplaats naar rechts"
 
 #: ../src/Pages/Shortcuts/list.vala:175
 msgid "Take a Screenshot"
@@ -537,7 +537,7 @@ msgstr "Indeling toevoegen"
 
 #: ../src/Pages/behaviour.vala:20
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Herhalingstoetsen:"
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Delay:"
@@ -554,7 +554,7 @@ msgstr "milliseconden"
 
 #: ../src/Pages/behaviour.vala:129
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "Knipperende cursor:"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "Speed:"
@@ -578,7 +578,7 @@ msgstr "Toetsenbord"
 
 #: ../src/keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Configureer gedrag, indeling en sneltoetsen van het toetsenbord"
 
 #: ../src/keyboard.vala:28
 msgid "Layout"
@@ -594,20 +594,20 @@ msgstr "Gedrag"
 
 #: ../src/keyboard.vala:66
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Herhalingstoetsen"
 
 #: ../src/keyboard.vala:67
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "Knipperende cursor"
 
 #: ../src/keyboard.vala:68
 msgid "Switch layout"
-msgstr ""
+msgstr "Verander indeling"
 
 #: ../src/keyboard.vala:69
 msgid "Compose Key"
-msgstr ""
+msgstr "Samenstellingstoets"
 
 #: ../src/keyboard.vala:70
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Caps Lock gedrag"
