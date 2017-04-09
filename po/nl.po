@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr "Verander layout:"
+msgstr "Verander indeling:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
