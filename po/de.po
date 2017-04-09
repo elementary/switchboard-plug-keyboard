@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-08 15:31+0000\n"
-"Last-Translator: quassy <quassy.github.io@gmail.com>\n"
+"PO-Revision-Date: 2017-04-09 07:39+0000\n"
+"Last-Translator: Max Mustermann <mustermann_23@posteo.eu>\n"
 "Language-Team: German <http://weblate.elementary.io/projects/desktop"
 "/switchboard-plug-keyboard/de/>\n"
 "Language: de\n"
@@ -22,7 +22,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
-msgstr "Tastenbelegung ändern"
+msgstr "Tastenbelegung ändern:"
 
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
