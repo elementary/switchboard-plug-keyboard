@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-09 22:40+0000\n"
+"PO-Revision-Date: 2017-04-10 23:17+0000\n"
 "Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
-"Language-Team: Russian <http://weblate.elementary.io/projects/desktop"
+"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
@@ -174,7 +174,7 @@ msgstr "Мультимедиа"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
-msgstr "Специальные возможности"
+msgstr "Универсальный доступ"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
@@ -515,7 +515,7 @@ msgstr "Удалить"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "Добавить..."
+msgstr "Добавить…"
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
