@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-14 16:48+0000\n"
+"PO-Revision-Date: 2017-04-14 16:49+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/bg/>\n"
@@ -125,7 +125,7 @@ msgstr "Разменен с Escape клавиша"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Напишете нещо за да проверите подредбата..."
+msgstr "Напишете нещо за да проверите подредбата…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
@@ -181,12 +181,11 @@ msgstr "Потребителски"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr "%s вече се използва за %s"
+msgstr "%s вече се използва за %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
-"Ако присвоите този пряк път на %s, прекият път за %s ще бъде премахнат."
+msgstr "Ако присвоите този пряк път на %s, прекият път за %s ще бъде премахнат"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -403,7 +402,7 @@ msgstr "Калкулатор"
 
 #: ../src/Pages/Shortcuts/list.vala:207
 msgid "Email"
-msgstr "Е-поща"
+msgstr "Ел. поща"
 
 #: ../src/Pages/Shortcuts/list.vala:208
 msgid "Help"
@@ -510,11 +509,11 @@ msgstr "Добави"
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
 #: ../src/Pages/Layout/display.vala:54
 msgid "Remove"
-msgstr "Премахни"
+msgstr "Премахване"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "Добави…"
+msgstr "Добавяне…"
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
