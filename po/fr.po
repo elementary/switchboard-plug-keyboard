@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-07 23:17+0000\n"
+"PO-Revision-Date: 2017-04-15 00:52+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
-"Language-Team: French <http://weblate.elementary.io/projects/desktop"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
@@ -125,7 +125,7 @@ msgstr "Inversé avec Echap"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Écrivez pour essayer l'agencement du clavier..."
+msgstr "Écrivez pour essayer l'agencement du clavier…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
@@ -149,7 +149,7 @@ msgstr "Zenkaku Hankaku en tant qu'Espace :"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "Touches Hangul/Hanja sur Alt/Ctrl de droite"
+msgstr "Touches Hangul/Hanja sur Alt/Ctrl de droite :"
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -185,7 +185,7 @@ msgstr "%s est déjà utilisé pour %s !"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr "If you reassign the shortcut to %s, %s will be disabled"
+msgstr "Si le raccourcis est réassigné en %s, %s sera désactivé"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -402,7 +402,7 @@ msgstr "Calculatrice"
 
 #: ../src/Pages/Shortcuts/list.vala:207
 msgid "Email"
-msgstr "E-mail"
+msgstr "E-Mail"
 
 #: ../src/Pages/Shortcuts/list.vala:208
 msgid "Help"
@@ -509,7 +509,7 @@ msgstr "Ajouter"
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
 #: ../src/Pages/Layout/display.vala:54
 msgid "Remove"
-msgstr "Enlever"
+msgstr "Supprimer"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
@@ -570,7 +570,7 @@ msgstr "secondes"
 
 #: ../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "Écrivez pour tester vos paramètres..."
+msgstr "Écrivez pour tester vos paramètres…"
 
 #: ../src/keyboard.vala:13
 msgid "Keyboard"
