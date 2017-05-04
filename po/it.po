@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-09 11:49+0000\n"
+"PO-Revision-Date: 2017-05-04 21:09+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <http://weblate.elementary.io/projects/desktop"
+"Language-Team: Italian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
@@ -157,7 +157,7 @@ msgstr "Finestre"
 
 #: ../src/Pages/shortcuts.vala:44
 msgid "Workspaces"
-msgstr "Aree di lavoro"
+msgstr "Spazi di lavoro"
 
 #: ../src/Pages/shortcuts.vala:45
 msgid "Screenshots"
@@ -169,7 +169,7 @@ msgstr "Applicazioni"
 
 #: ../src/Pages/shortcuts.vala:47
 msgid "Media"
-msgstr "Media"
+msgstr "Multimediali"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
@@ -230,7 +230,7 @@ msgstr "Demassimizza"
 
 #: ../src/Pages/Shortcuts/list.vala:35
 msgid "Toggle Maximized"
-msgstr "Massimizza"
+msgstr "Attiva/disattiva la modalità massimizzata"
 
 #: ../src/Pages/Shortcuts/list.vala:36
 msgid "Minimize"
@@ -238,19 +238,19 @@ msgstr "Minimizza"
 
 #: ../src/Pages/Shortcuts/list.vala:37
 msgid "Toggle Fullscreen"
-msgstr "Schermo intero"
+msgstr "Attiva/disattiva la modalità a schermo intero"
 
 #: ../src/Pages/Shortcuts/list.vala:38
 msgid "Tile Left"
-msgstr "Mostra in pila a sinistra"
+msgstr "Affianca a sinistra"
 
 #: ../src/Pages/Shortcuts/list.vala:39
 msgid "Tile Right"
-msgstr "Mostra in pila a destra"
+msgstr "Affianca a destra"
 
 #: ../src/Pages/Shortcuts/list.vala:40
 msgid "Toggle on all Workspaces"
-msgstr "Attiva/disattiva in tutte le aree di lavoro"
+msgstr "Attiva/disattiva in tutti gli spazi di lavoro"
 
 #: ../src/Pages/Shortcuts/list.vala:41
 msgid "Toggle always on Top"
@@ -274,95 +274,95 @@ msgstr "Mostra tutte le finestre"
 
 #: ../src/Pages/Shortcuts/list.vala:87
 msgid "Show Workspace Switcher"
-msgstr "Mostra panoramica aree di lavoro"
+msgstr "Mostra una panoramica degli spazi di lavoro"
 
 #: ../src/Pages/Shortcuts/list.vala:88
 msgid "Switch to first"
-msgstr "Seleziona la prima finestra"
+msgstr "Passa al primo spazio di lavoro"
 
 #: ../src/Pages/Shortcuts/list.vala:89
 msgid "Switch to new"
-msgstr "Seleziona nuova"
+msgstr "Passa ad un nuovo spazio di lavoro"
 
 #: ../src/Pages/Shortcuts/list.vala:90
 msgid "Switch to workspace 1"
-msgstr "Passa all'area di lavoro 1"
+msgstr "Passa allo spazio di lavoro 1"
 
 #: ../src/Pages/Shortcuts/list.vala:91
 msgid "Switch to workspace 2"
-msgstr "Passa all'area di lavoro 2"
+msgstr "Passa allo spazio di lavoro 2"
 
 #: ../src/Pages/Shortcuts/list.vala:92
 msgid "Switch to workspace 3"
-msgstr "Passa all'area di lavoro 3"
+msgstr "Passa allo spazio di lavoro 3"
 
 #: ../src/Pages/Shortcuts/list.vala:93
 msgid "Switch to workspace 4"
-msgstr "Passa all'area di lavoro 4"
+msgstr "Passa allo spazio di lavoro 4"
 
 #: ../src/Pages/Shortcuts/list.vala:94
 msgid "Switch to workspace 5"
-msgstr "Passa all'area di lavoro 5"
+msgstr "Passa allo spazio di lavoro 5"
 
 #: ../src/Pages/Shortcuts/list.vala:95
 msgid "Switch to workspace 6"
-msgstr "Passa all'area di lavoro 6"
+msgstr "Passa allo spazio di lavoro 6"
 
 #: ../src/Pages/Shortcuts/list.vala:96
 msgid "Switch to workspace 7"
-msgstr "Passa all'area di lavoro 7"
+msgstr "Passa allo spazio di lavoro 7"
 
 #: ../src/Pages/Shortcuts/list.vala:97
 msgid "Switch to workspace 8"
-msgstr "Passa all'area di lavoro 8"
+msgstr "Passa allo spazio di lavoro 8"
 
 #: ../src/Pages/Shortcuts/list.vala:98
 msgid "Switch to workspace 9"
-msgstr "Passa all'area di lavoro 9"
+msgstr "Passa allo spazio di lavoro 9"
 
 #: ../src/Pages/Shortcuts/list.vala:99
 msgid "Switch to left"
-msgstr "Seleziona a sinistra"
+msgstr "Scorri verso sinistra"
 
 #: ../src/Pages/Shortcuts/list.vala:100
 msgid "Switch to right"
-msgstr "Seleziona a destra"
+msgstr "Scorri verso destra"
 
 #: ../src/Pages/Shortcuts/list.vala:101
 msgid "Move to workspace 1"
-msgstr "Sposta nell'area di lavoro 1"
+msgstr "Sposta nello spazio di lavoro 1"
 
 #: ../src/Pages/Shortcuts/list.vala:102
 msgid "Move to workspace 2"
-msgstr "Sposta nell'area di lavoro 2"
+msgstr "Sposta nello spazio di lavoro 2"
 
 #: ../src/Pages/Shortcuts/list.vala:103
 msgid "Move to workspace 3"
-msgstr "Sposta nell'area di lavoro 3"
+msgstr "Sposta nello spazio di lavoro 3"
 
 #: ../src/Pages/Shortcuts/list.vala:104
 msgid "Move to workspace 4"
-msgstr "Sposta nell'area di lavoro 4"
+msgstr "Sposta nello spazio di lavoro 4"
 
 #: ../src/Pages/Shortcuts/list.vala:105
 msgid "Move to workspace 5"
-msgstr "Sposta nell'area di lavoro 5"
+msgstr "Sposta nello spazio di lavoro 5"
 
 #: ../src/Pages/Shortcuts/list.vala:106
 msgid "Move to workspace 6"
-msgstr "Sposta nell'area di lavoro 6"
+msgstr "Sposta nello spazio di lavoro 6"
 
 #: ../src/Pages/Shortcuts/list.vala:107
 msgid "Move to workspace 7"
-msgstr "Sposta nell'area di lavoro 7"
+msgstr "Sposta nello spazio di lavoro 7"
 
 #: ../src/Pages/Shortcuts/list.vala:108
 msgid "Move to workspace 8"
-msgstr "Sposta nell'area di lavoro 8"
+msgstr "Sposta nello spazio di lavoro 8"
 
 #: ../src/Pages/Shortcuts/list.vala:109
 msgid "Move to workspace 9"
-msgstr "Sposta nell'area di lavoro 9"
+msgstr "Sposta nello spazio di lavoro 9"
 
 #: ../src/Pages/Shortcuts/list.vala:110
 msgid "Move to left"
