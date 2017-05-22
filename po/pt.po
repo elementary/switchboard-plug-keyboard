@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-05-21 19:40+0000\n"
+"PO-Revision-Date: 2017-05-22 08:21+0000\n"
 "Last-Translator: Luís Lima <geral@liqensoft.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/pt/>\n"
@@ -27,7 +27,7 @@ msgstr "Alternar esquema:"
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr "Inativo"
+msgstr "Desativado"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
