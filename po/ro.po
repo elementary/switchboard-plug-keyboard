@@ -8,9 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-04-08 11:01+0000\n"
-"Last-Translator: popvladaurel <popvladaurel@gmail.com>\n"
-"Language-Team: Romanian <http://weblate.elementary.io/projects/desktop"
+"PO-Revision-Date: 2017-05-23 12:24+0000\n"
+"Last-Translator: Sergiu Pruteanu <sergiup26@gmail.com>\n"
+"Language-Team: Romanian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ro/>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: ../src/Pages/layout.vala:112
@@ -28,7 +28,7 @@ msgstr ""
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "Dezactivat"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
@@ -90,7 +90,7 @@ msgstr ""
 #: ../src/Pages/Layout/add_layout.vala:101
 #: ../src/Pages/Layout/add_layout.vala:105 ../src/Pages/Layout/handler.vala:45
 msgid "Default"
-msgstr ""
+msgstr "Implicit"
 
 #: ../src/Pages/layout.vala:149
 msgid "Caps Lock disabled"
@@ -166,7 +166,7 @@ msgstr ""
 
 #: ../src/Pages/shortcuts.vala:46
 msgid "Applications"
-msgstr ""
+msgstr "Aplicaţii"
 
 #: ../src/Pages/shortcuts.vala:47
 msgid "Media"
@@ -191,7 +191,7 @@ msgstr ""
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
 msgid "Cancel"
-msgstr "Anulați"
+msgstr "Anulează"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:12
 msgid "Reassign"
