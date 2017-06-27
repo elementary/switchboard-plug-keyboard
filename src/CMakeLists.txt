@@ -19,6 +19,8 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
 
     Dialogs/ConflictDialog.vala
 
+    Layout/AdvancedSettingsPanel.vala
+    Layout/AdvancedSettingsGrid.vala
     Layout/Handler.vala
     Layout/Settings.vala
     Layout/XkbModifier.vala

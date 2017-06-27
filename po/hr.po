@@ -6,16 +6,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2016-10-30 21:08+0000\n"
-"Last-Translator: gogo <trebelnik2@gmail.com>\n"
-"Language-Team: Croatian <hr@li.org>\n"
+"PO-Revision-Date: 2017-04-17 14:16+0000\n"
+"Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
+"Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/hr/>\n"
+"Language: hr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -71,7 +75,7 @@ msgstr "Desni Alt"
 #: ../src/Pages/layout.vala:136 ../src/Pages/layout.vala:240
 #: ../src/Pages/layout.vala:251
 msgid "Right Ctrl"
-msgstr "Right Ctrl"
+msgstr "Desni Ctrl"
 
 #: ../src/Pages/layout.vala:137 ../src/Pages/layout.vala:241
 #: ../src/Pages/layout.vala:252
@@ -122,15 +126,15 @@ msgstr "Zamijeni sa Escape"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Tipkajte za testiranje vašeg rasporeda..."
+msgstr "Tipkajte za testiranje vašeg rasporeda…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
-msgstr "Tipka za odabir treće razine"
+msgstr "Tipka za odabir treće razine:"
 
 #: ../src/Pages/layout.vala:247
 msgid "Key to choose 5th level:"
-msgstr "Tipka za odabir pete razine"
+msgstr "Tipka za odabir pete razine:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
@@ -178,7 +182,7 @@ msgstr "Prilagođeno"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr "%s se već koristi za %s"
+msgstr "%s se već koristi za %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
@@ -510,7 +514,7 @@ msgstr "Ukloni"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "Dodaj..."
+msgstr "Dodaj…"
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
@@ -534,7 +538,7 @@ msgstr "Dodaj raspored"
 
 #: ../src/Pages/behaviour.vala:20
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Ponavljajuće tipke:"
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Delay:"
@@ -551,7 +555,7 @@ msgstr "milisekundi"
 
 #: ../src/Pages/behaviour.vala:129
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "Treperenje pokazivača:"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "Speed:"
@@ -567,7 +571,7 @@ msgstr "sekundi"
 
 #: ../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "Tipkajte za testiranje vaših postavki..."
+msgstr "Tipkajte za testiranje vaših postavki…"
 
 #: ../src/keyboard.vala:13
 msgid "Keyboard"
