@@ -108,23 +108,6 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
     public string get_display_name (string variant) {
         if ("+" in variant) {
             var parts = variant.split ("+", 2);
-            var name = get_variants_for_language (parts[0]).get (parts[1]);
-            if (name.length > 20) {
-                name = name.splice(17,name.length, "...");
-            }
-            return name;
-        } else {
-            var name = languages.get (variant);
-            if (name.length > 20) {
-                name = name.splice(17, name.length, "...");
-            }
-            return name;
-        }
-    }
-
-    public string get_full_name (string variant) {
-        if ("+" in variant) {
-            var parts = variant.split ("+", 2);
             return get_variants_for_language (parts[0]).get (parts[1]);
         } else {
             return languages.get (variant);
