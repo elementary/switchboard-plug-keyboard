@@ -8,7 +8,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
     construct {
         languages = new HashTable<string, string> (str_hash, str_equal);
     }
-    
+
     private void parse_layouts () {
         Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
         if (doc == null) {
@@ -21,8 +21,8 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
 
         if (res == null) {
             delete doc;
-            critical ("Unable to parse 'evdev.xml'");   
-            return;     
+            critical ("Unable to parse 'evdev.xml'");
+            return;
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
@@ -45,7 +45,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
                     }
                 }
             }
-            if (name != null && description != null) {                
+            if (name != null && description != null) {
                 languages.set (name, description);
             }
         }
@@ -70,7 +70,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
         if (res == null) {
             delete doc;
             critical ("Unable to parse 'evdev.xml'");
-            return returned_table;      
+            return returned_table;
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
@@ -82,7 +82,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
 
         for (int i = 0; i < res->nodesetval->length (); i++) {
             Xml.Node* node = res->nodesetval->item (i);
-            
+
             string? name = null;
             string? description = null;
             for (Xml.Node* iter = node->children; iter != null; iter = iter->next) {
