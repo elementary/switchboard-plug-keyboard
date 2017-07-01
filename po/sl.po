@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-05-31 22:24+0000\n"
+"PO-Revision-Date: 2017-07-01 13:20+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/sl/>\n"
@@ -32,11 +32,11 @@ msgstr "Onemogočeno"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps lock"
 
 #: ../src/Pages/layout.vala:117
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: ../src/Pages/layout.vala:118
 msgid "Alt + Space"
@@ -53,15 +53,15 @@ msgstr "Caps Lock"
 
 #: ../src/Pages/layout.vala:121
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: ../src/Pages/layout.vala:122
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: ../src/Pages/layout.vala:123
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: ../src/Pages/layout.vala:131
 msgid "Compose key:"
@@ -138,19 +138,19 @@ msgstr "Tipka za izbiro 5. nivoja:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F Backspace:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku kot Escape:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja tipke na desnem Alt/Ctrl:"
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -538,7 +538,7 @@ msgstr "Dodaj razporeditev"
 
 #: ../src/Pages/behaviour.vala:20
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Ponavljaj tipke:"
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Delay:"
@@ -555,7 +555,7 @@ msgstr "milisekund"
 
 #: ../src/Pages/behaviour.vala:129
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "Utripanje kurzorja:"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "Speed:"
