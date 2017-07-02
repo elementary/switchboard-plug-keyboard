@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-07-01 13:20+0000\n"
+"PO-Revision-Date: 2017-07-02 09:17+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/sl/>\n"
@@ -126,7 +126,7 @@ msgstr "zamenjaj z Escape"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Pišite, da preverite vašo razporeditev ..."
+msgstr "Pišite, da preverite vašo razporeditev…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
@@ -174,7 +174,7 @@ msgstr "Predstavnost"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
-msgstr "Splošni dostop"
+msgstr "Univerzalni dostop"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
@@ -571,7 +571,7 @@ msgstr "sekund"
 
 #: ../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "Pišite, da preverite vaše nastavitve ..."
+msgstr "Pišite, da preverite vaše nastavitve …"
 
 #: ../src/keyboard.vala:13
 msgid "Keyboard"
