@@ -167,6 +167,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
+            modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
             modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
             modifier.append_xkb_option ("lv3:switch", _("Right Ctrl"));
             modifier.append_xkb_option ("lv3:rwin", _("Right Super"));
@@ -228,7 +229,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             new_switch.halign = Gtk.Align.START;
             new_switch.valign = Gtk.Align.CENTER;
 
-            // There is a bug that makes the switch go outside its socket, 
+            // There is a bug that makes the switch go outside its socket,
             // enclosing the switch in a box fixes that.
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
             box.pack_start (new_switch, false, false, 0);
