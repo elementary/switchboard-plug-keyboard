@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-07-31 08:40+0000\n"
-"Last-Translator: Kukuh Syafaat <syafaatkukuh@gmail.com>\n"
+"PO-Revision-Date: 2017-08-22 11:16+0000\n"
+"Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/id/>\n"
 "Language: id\n"
@@ -125,7 +125,7 @@ msgstr ""
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Ketikkan untuk menguji tata letak..."
+msgstr "Ketik untuk menguji tata letak…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
@@ -165,7 +165,7 @@ msgstr ""
 
 #: ../src/Pages/shortcuts.vala:46
 msgid "Applications"
-msgstr ""
+msgstr "Aplikasi"
 
 #: ../src/Pages/shortcuts.vala:47
 msgid "Media"
@@ -503,7 +503,7 @@ msgstr ""
 #: ../src/Pages/Shortcuts/display.vala:42
 #: ../src/Pages/Shortcuts/display.vala:45
 msgid "Add"
-msgstr ""
+msgstr "Tambah"
 
 #: ../src/Pages/Shortcuts/display.vala:43
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
@@ -525,7 +525,7 @@ msgstr "Geser bawah"
 
 #: ../src/Pages/Layout/add_layout.vala:19
 msgid "Language:"
-msgstr ""
+msgstr "Bahasa:"
 
 #: ../src/Pages/Layout/add_layout.vala:20
 msgid "Layout:"
@@ -570,7 +570,7 @@ msgstr ""
 
 #: ../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "Ketikkan untuk menguji pengaturan anda..."
+msgstr "Ketikkan untuk menguji pengaturan anda…"
 
 #: ../src/keyboard.vala:13
 msgid "Keyboard"
