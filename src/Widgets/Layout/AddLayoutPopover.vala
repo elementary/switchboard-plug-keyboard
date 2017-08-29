@@ -29,14 +29,13 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         keyboard_layout_list_title.use_markup = true;
 
         var keyboard_layout_list_box = new Gtk.ListBox ();
-        keyboard_layout_list_box.valign = Gtk.Align.FILL;
+        keyboard_layout_list_box.vexpand = true;
         keyboard_layout_list_box.bind_model (layout_list, (item) => {
             return new LayoutRow ((item as ListStoreItem).name);
         });
 
         var keyboard_layout_scrolled = new Gtk.ScrolledWindow (null, null);
         keyboard_layout_scrolled.add (keyboard_layout_list_box);
-        keyboard_layout_scrolled.valign = Gtk.Align.FILL;
 
         var keyboard_layout_grid = new Gtk.Grid ();
         keyboard_layout_grid.column_homogeneous = true;
@@ -67,7 +66,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         var frame = new Gtk.Frame (null);
         frame.add (selection_grid);
 
-        var button_add    = new Gtk.Button.with_label (_("Add Layout"));
+        var button_add = new Gtk.Button.with_label (_("Add Layout"));
         var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
@@ -105,6 +104,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
             update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
 
             keyboard_layout_list_title.label = "<b>%s</b>".printf (selected_lang.name);
+            keyboard_layout_list_box.show_all ();
 
             stack.visible_child = keyboard_layout_grid;
         });
@@ -149,7 +149,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
             var label = new Gtk.Label (name);
             label.margin = 6;
             label.xalign = 0;
-            label.get_style_context ().add_class ("h3");
             add (label);
         }
 	}
