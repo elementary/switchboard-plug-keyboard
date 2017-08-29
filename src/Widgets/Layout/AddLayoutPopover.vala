@@ -91,7 +91,14 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
         button_add.clicked.connect (() => {
             this.hide ();
-            //layout_added (language_box.active_id, layout_box.active_id);
+
+            var selected_lang_row = input_language_list_box.get_selected_row ();
+            var selected_lang = lang_list.get_item (selected_lang_row.get_index ()) as ListStoreItem;
+
+            var selected_layout_row = keyboard_layout_list_box.get_selected_row ();
+            var selected_layout = layout_list.get_item (selected_layout_row.get_index ()) as ListStoreItem;
+
+            layout_added (selected_lang.id, selected_layout.id);
         });
 
         back_button.clicked.connect (() => {
