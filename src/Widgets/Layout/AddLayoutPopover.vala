@@ -1,39 +1,74 @@
 class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
-	public signal void layout_added (string language, string layout);
+    public signal void layout_added (string language, string layout);
 
-	public AddLayout()
-	{
-		// add some labels
-		var label_language = new Gtk.Label (_("Language:"));
-		var label_layout   = new Gtk.Label (_("Layout:"));
+    public AddLayout()
+    {
+        height_request = 400;
 
-		label_language.halign = label_layout.halign = Gtk.Align.END;
+        var lang_list = new GLib.ListStore (typeof (ListStoreItem));
+        var layout_list = new GLib.ListStore (typeof (ListStoreItem));
 
-		var lang_list   = create_list_store (handler.languages);
+        update_list_store (lang_list, handler.languages);
+        var first_lang = lang_list.get_item (0) as ListStoreItem;
+        update_list_store (layout_list, handler.get_variants_for_language (first_lang.id));
 
-        var renderer = new Gtk.CellRendererText ();
+        var input_language_list_box = new Gtk.ListBox ();
+        input_language_list_box.bind_model (lang_list, (item) => {
+            return new LayoutRow ((item as ListStoreItem).name);
+        });
 
-		var language_box = new Gtk.ComboBox.with_model (lang_list);
-		language_box.pack_start (renderer, true);
-		language_box.add_attribute (renderer, "text", 1);
-		language_box.active = 0;
-        language_box.id_column = 0;
+        var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
+        input_language_scrolled.add (input_language_list_box);
 
-        var layout_list = create_list_store (handler.get_variants_for_language (language_box.active_id));
+        var back_button = new Gtk.Button.with_label (_("Input Language"));
+        back_button.halign = Gtk.Align.START;
+        back_button.margin = 6;
+        back_button.get_style_context ().add_class ("back-button");
 
-        var layout_box = new Gtk.ComboBox.with_model (layout_list);
-        layout_box.id_column = 0;
-		layout_box.pack_start (renderer, true);
-		layout_box.add_attribute (renderer, "text", 1);
-		layout_box.active = 0;
+        var keyboard_layout_list_title = new Gtk.Label ("");
+        keyboard_layout_list_title.use_markup = true;
 
-		language_box.changed.connect(() => {
-			layout_box.model = create_list_store (handler.get_variants_for_language (language_box.active_id));
-			layout_box.active = 0;
-		});
+        var keyboard_layout_list_box = new Gtk.ListBox ();
+        keyboard_layout_list_box.valign = Gtk.Align.FILL;
+        keyboard_layout_list_box.bind_model (layout_list, (item) => {
+            return new LayoutRow ((item as ListStoreItem).name);
+        });
 
-		var button_add    = new Gtk.Button.with_label (_("Add Layout"));
-		var button_cancel = new Gtk.Button.with_label (_("Cancel"));
+        var keyboard_layout_scrolled = new Gtk.ScrolledWindow (null, null);
+        keyboard_layout_scrolled.add (keyboard_layout_list_box);
+        keyboard_layout_scrolled.valign = Gtk.Align.FILL;
+
+        var keyboard_layout_grid = new Gtk.Grid ();
+        keyboard_layout_grid.column_homogeneous = true;
+        keyboard_layout_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        keyboard_layout_grid.attach (back_button, 0, 0, 1, 1);
+        keyboard_layout_grid.attach (keyboard_layout_list_title, 1, 0, 1, 1);
+        keyboard_layout_grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1, 3, 1);
+        keyboard_layout_grid.attach (keyboard_layout_scrolled, 0, 2, 3, 1);
+
+        var stack = new Gtk.Stack ();
+        stack.expand = true;
+        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
+        stack.add (input_language_scrolled);
+        stack.add (keyboard_layout_grid);
+
+        var keyboard_map_button = new Gtk.Button.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+        keyboard_map_button.tooltip_text = (_("Show keyboard layout"));
+
+        var action_bar = new Gtk.ActionBar ();
+        action_bar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        action_bar.add (keyboard_map_button);
+
+        var selection_grid = new Gtk.Grid ();
+        selection_grid.orientation = Gtk.Orientation.VERTICAL;
+        selection_grid.add (stack);
+        selection_grid.add (action_bar);
+
+        var frame = new Gtk.Frame (null);
+        frame.add (selection_grid);
+
+        var button_add    = new Gtk.Button.with_label (_("Add Layout"));
+        var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
         button_box.layout_style = Gtk.ButtonBoxStyle.END;
@@ -46,53 +81,76 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         grid.column_spacing = 12;
         grid.row_spacing = 12;
         grid.margin = 12;
-        grid.attach (label_language, 0, 0, 1, 1);
-        grid.attach (label_layout, 0, 1, 1, 1);
-        grid.attach (language_box, 1, 0, 1, 1);
-        grid.attach (layout_box, 1, 1, 1, 1);
-        grid.attach (button_box, 0, 2, 2, 1);
+        grid.attach (frame, 0, 0, 1, 1);
+        grid.attach (button_box, 0, 1, 1, 1);
 
         add (grid);
 
-		button_cancel.clicked.connect (() => {
-			this.hide ();
-		} );
+        button_cancel.clicked.connect (() => {
+            this.hide ();
+        });
 
-		button_add.clicked.connect (() => {
-			this.hide ();
-			layout_added (language_box.active_id, layout_box.active_id);
-		} );
-	}
+        button_add.clicked.connect (() => {
+            this.hide ();
+            //layout_added (language_box.active_id, layout_box.active_id);
+        });
 
-	// creates a list store from a string vector
-	Gtk.ListStore create_list_store (HashTable<string, string> values)
-	{
-		Gtk.ListStore list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
-		list_store.set_default_sort_func (compare_func);
-		list_store.set_sort_column_id (Gtk.TREE_SORTABLE_DEFAULT_SORT_COLUMN_ID, Gtk.SortType.ASCENDING);
+        back_button.clicked.connect (() => {
+            stack.visible_child = input_language_scrolled;
+        });
 
-		values.foreach ((key, val) => {
-			Gtk.TreeIter iter;
-			list_store.append (out iter);
-			list_store.set (iter, 0, key, 1, val);
-		});
+        input_language_list_box.row_activated.connect (() => {
+            var selected = input_language_list_box.get_selected_row ();
+            var selected_lang = lang_list.get_item (selected.get_index ()) as ListStoreItem;
+            update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
 
-		return list_store;
-	}
+            keyboard_layout_list_title.label = "<b>%s</b>".printf (selected_lang.name);
 
-	int compare_func (Gtk.TreeModel model, Gtk.TreeIter a, Gtk.TreeIter b) {
-		Value val_a;
-		Value val_b;
-		model.get_value (a, 1, out val_a);
-		model.get_value (b, 1, out val_b);
-		if (((string) val_a) == _("Default")) {
-			return -1;
-		}
+            stack.visible_child = keyboard_layout_grid;
+        });
+    }
 
-		if (((string) val_b) == _("Default")) {
-			return 1;
-		}
+    void update_list_store (GLib.ListStore store, HashTable<string, string> values)
+    {
+        store.remove_all ();
 
-		return ((string) val_a).collate ((string) val_b);
+        values.foreach ((key, val) => {
+            store.append (new ListStoreItem (key, val));
+        });
+
+        store.sort ((a, b) => {
+            var val_a = a as ListStoreItem;
+            var val_b = b as ListStoreItem;
+
+            if (val_a.name == _("Default")) {
+                return -1;
+            }
+
+            if (val_b.name == _("Default")) {
+                return 1;
+            }
+
+            return val_a.name.collate (val_b.name);
+        });
+    }
+
+    private class ListStoreItem : Object {
+        public string id;
+        public string name;
+
+        public ListStoreItem (string id, string name) {
+            this.id = id;
+            this.name = name;
+        }
+    }
+
+    private class LayoutRow : Gtk.ListBoxRow {
+        public LayoutRow (string name) {
+            var label = new Gtk.Label (name);
+            label.margin = 6;
+            label.xalign = 0;
+            label.get_style_context ().add_class ("h3");
+            add (label);
+        }
 	}
 }
