@@ -1,19 +1,25 @@
 class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
     public signal void layout_added (string language, string layout);
+    private Gtk.Widget keyboard_drawing_dialog;
+
+    private Gtk.ListBox input_language_list_box;
+    private Gtk.ListBox keyboard_layout_list_box;
+    private GLib.ListStore language_list;
+    private GLib.ListStore layout_list;
 
     construct
     {
         height_request = 400;
 
-        var lang_list = new GLib.ListStore (typeof (ListStoreItem));
-        var layout_list = new GLib.ListStore (typeof (ListStoreItem));
+        language_list = new GLib.ListStore (typeof (ListStoreItem));
+        layout_list = new GLib.ListStore (typeof (ListStoreItem));
 
-        update_list_store (lang_list, handler.languages);
-        var first_lang = lang_list.get_item (0) as ListStoreItem;
+        update_list_store (language_list, handler.languages);
+        var first_lang = language_list.get_item (0) as ListStoreItem;
         update_list_store (layout_list, handler.get_variants_for_language (first_lang.id));
 
-        var input_language_list_box = new Gtk.ListBox ();
-        input_language_list_box.bind_model (lang_list, (item) => {
+        input_language_list_box = new Gtk.ListBox ();
+        input_language_list_box.bind_model (language_list, (item) => {
             return new LayoutRow ((item as ListStoreItem).name);
         });
 
@@ -28,7 +34,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         var keyboard_layout_list_title = new Gtk.Label ("");
         keyboard_layout_list_title.use_markup = true;
 
-        var keyboard_layout_list_box = new Gtk.ListBox ();
+        keyboard_layout_list_box = new Gtk.ListBox ();
         keyboard_layout_list_box.vexpand = true;
         keyboard_layout_list_box.bind_model (layout_list, (item) => {
             return new LayoutRow ((item as ListStoreItem).name);
@@ -55,16 +61,22 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         keyboard_map_button.tooltip_text = (_("Show keyboard layout"));
         keyboard_map_button.sensitive = false;
         keyboard_map_button.clicked.connect (() => {
-            var selected_lang_row = input_language_list_box.get_selected_row ();
-            var selected_lang = lang_list.get_item (selected_lang_row.get_index ()) as ListStoreItem;
+            keyboard_map_button.sensitive = false;
 
-            string command = "gkbd-keyboard-display -l %s".printf (selected_lang.id);
+            Gdk.Window rootwin = Gdk.get_default_root_window ();
+            unowned X.Display display = (rootwin.get_display () as Gdk.X11.Display).get_xdisplay ();
 
-            try {
-                AppInfo.create_from_commandline (command, null, AppInfoCreateFlags.NONE).launch (null, null);
-            } catch (Error e) {
-                warning ("%s\n", e.message);
-            }
+            var engine = Xkl.Engine.get_instance (display);
+            var registry = Xkl.ConfigRegistry.get_instance (engine);
+
+            keyboard_drawing_dialog = new Gkbd.KeyboardDrawing.dialog_new ();
+            keyboard_drawing_dialog.destroy.connect (() => {
+                keyboard_map_button.sensitive = true;
+            });
+
+            var layout_id = "%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id);
+            Gkbd.KeyboardDrawing.dialog_set_layout (keyboard_drawing_dialog, registry, layout_id);
+            keyboard_drawing_dialog.show_all ();
         });
 
         var action_bar = new Gtk.ActionBar ();
@@ -105,14 +117,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
         button_add.clicked.connect (() => {
             this.hide ();
-
-            var selected_lang_row = input_language_list_box.get_selected_row ();
-            var selected_lang = lang_list.get_item (selected_lang_row.get_index ()) as ListStoreItem;
-
-            var selected_layout_row = keyboard_layout_list_box.get_selected_row ();
-            var selected_layout = layout_list.get_item (selected_layout_row.get_index ()) as ListStoreItem;
-
-            layout_added (selected_lang.id, selected_layout.id);
+            layout_added (get_selected_lang ().id, get_selected_layout ().id);
         });
 
         back_button.clicked.connect (() => {
@@ -121,8 +126,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         });
 
         input_language_list_box.row_activated.connect (() => {
-            var selected = input_language_list_box.get_selected_row ();
-            var selected_lang = lang_list.get_item (selected.get_index ()) as ListStoreItem;
+            var selected_lang = get_selected_lang ();
             update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
 
             keyboard_layout_list_title.label = "<b>%s</b>".printf (selected_lang.name);
@@ -139,6 +143,16 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
             keyboard_map_button.sensitive = row != null;
             button_add.sensitive = row != null;
         });
+    }
+
+    private ListStoreItem get_selected_lang () {
+        var selected_lang_row = input_language_list_box.get_selected_row ();
+        return language_list.get_item (selected_lang_row.get_index ()) as ListStoreItem;
+    }
+
+    private ListStoreItem get_selected_layout () {
+        var selected_layout_row = keyboard_layout_list_box.get_selected_row ();
+        return layout_list.get_item (selected_layout_row.get_index ()) as ListStoreItem;
     }
 
     private void update_list_store (GLib.ListStore store, HashTable<string, string> values)
