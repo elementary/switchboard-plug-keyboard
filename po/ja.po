@@ -124,8 +124,8 @@ msgid "Swap with Escape"
 msgstr "Esc と交換する"
 
 #: ../src/Pages/layout.vala:191
-msgid "Type to test your layout…"
-msgstr "入力してレイアウトを試してください…"
+msgid "Type to test your layout"
+msgstr "入力してレイアウトを試してください"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
