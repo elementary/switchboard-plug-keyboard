@@ -507,7 +507,7 @@ msgid "Swap with Escape"
 msgstr ""
 
 #: ../src/Views/Layout.vala:122
-msgid "Type to test your layout"
+msgid "Type to test your layout…"
 msgstr ""
 
 #: ../src/Views/Layout.vala:154 ../src/Views/Layout.vala:166

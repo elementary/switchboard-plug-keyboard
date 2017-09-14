@@ -124,8 +124,8 @@ msgid "Swap with Escape"
 msgstr "Wissel met Escape"
 
 #: ../src/Pages/layout.vala:191
-msgid "Type to test your layout"
-msgstr "Type om je indeling te testen"
+msgid "Type to test your layout…"
+msgstr "Type om je indeling te testen…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
