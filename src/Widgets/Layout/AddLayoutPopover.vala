@@ -89,6 +89,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
         var button_add = new Gtk.Button.with_label (_("Add Layout"));
         button_add.sensitive = false;
+        button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
