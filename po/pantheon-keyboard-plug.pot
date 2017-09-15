@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2017-09-10 20:05-0700\n"
+"POT-Creation-Date: 2017-09-15 09:43-0700\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,23 +16,6 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-
-#: ../src/Dialogs/ConflictDialog.vala:8
-msgid "%s is already used for %s!"
-msgstr ""
-
-#: ../src/Dialogs/ConflictDialog.vala:9
-msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
-
-#: ../src/Dialogs/ConflictDialog.vala:11
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:100
-msgid "Cancel"
-msgstr ""
-
-#: ../src/Dialogs/ConflictDialog.vala:12
-msgid "Reassign"
-msgstr ""
 
 #: ../src/Keyboard.vala:13
 msgid "Keyboard"
@@ -74,10 +57,30 @@ msgstr ""
 msgid "Caps Lock behavior"
 msgstr ""
 
-#: ../src/Layout/Handler.vala:59 ../src/Views/Layout.vala:79
-#: ../src/Views/Layout.vala:168 ../src/Widgets/Layout/AddLayoutPopover.vala:170
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:174
-msgid "Default"
+#: ../src/Dialogs/ConflictDialog.vala:8
+msgid "%s is already used for %s!"
+msgstr ""
+
+#: ../src/Dialogs/ConflictDialog.vala:9
+msgid "If you reassign the shortcut to %s, %s will be disabled"
+msgstr ""
+
+#: ../src/Dialogs/ConflictDialog.vala:11
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:100
+msgid "Cancel"
+msgstr ""
+
+#: ../src/Dialogs/ConflictDialog.vala:12
+msgid "Reassign"
+msgstr ""
+
+#: ../src/Shortcuts/Shortcut.vala:41 ../src/Views/Layout.vala:46
+#: ../src/Views/Layout.vala:64
+msgid "Disabled"
+msgstr ""
+
+#: ../src/Shortcuts/Shortcut.vala:50
+msgid "Ctrl"
 msgstr ""
 
 #: ../src/Shortcuts/List.vala:31
@@ -368,13 +371,10 @@ msgstr ""
 msgid "Toggle High Contrast"
 msgstr ""
 
-#: ../src/Shortcuts/Shortcut.vala:41 ../src/Views/Layout.vala:46
-#: ../src/Views/Layout.vala:64
-msgid "Disabled"
-msgstr ""
-
-#: ../src/Shortcuts/Shortcut.vala:50
-msgid "Ctrl"
+#: ../src/Layout/Handler.vala:59 ../src/Views/Layout.vala:79
+#: ../src/Views/Layout.vala:168 ../src/Widgets/Layout/AddLayoutPopover.vala:170
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:174
+msgid "Default"
 msgstr ""
 
 #: ../src/Views/Behavior.vala:26
@@ -411,7 +411,7 @@ msgid "seconds"
 msgstr ""
 
 #: ../src/Views/Behavior.vala:108
-msgid "Type to test your settings…"
+msgid "Type to test your settings"
 msgstr ""
 
 #: ../src/Views/Layout.vala:43
@@ -507,7 +507,7 @@ msgid "Swap with Escape"
 msgstr ""
 
 #: ../src/Views/Layout.vala:122
-msgid "Type to test your layout…"
+msgid "Type to test your layout"
 msgstr ""
 
 #: ../src/Views/Layout.vala:154 ../src/Views/Layout.vala:166
@@ -566,34 +566,15 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:29
-msgid "Input Language"
+#: ../src/Widgets/Shortcuts/Display.vala:42
+#: ../src/Widgets/Shortcuts/Display.vala:45
+msgid "Add"
 msgstr ""
 
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:65
-msgid "Show keyboard layout"
-msgstr ""
-
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:98
-msgid "Add Layout"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:51 ../src/Widgets/Layout/Display.vala:56
-msgid "Add…"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:52 ../src/Widgets/Layout/Display.vala:57
 #: ../src/Widgets/Shortcuts/Display.vala:43
 #: ../src/Widgets/Shortcuts/Display.vala:46
+#: ../src/Widgets/Layout/Display.vala:52 ../src/Widgets/Layout/Display.vala:57
 msgid "Remove"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:53 ../src/Widgets/Layout/Display.vala:58
-msgid "Move up"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:54 ../src/Widgets/Layout/Display.vala:59
-msgid "Move down"
 msgstr ""
 
 #: ../src/Widgets/Shortcuts/CustomTree.vala:4
@@ -608,7 +589,26 @@ msgstr ""
 msgid "Shortcut"
 msgstr ""
 
-#: ../src/Widgets/Shortcuts/Display.vala:42
-#: ../src/Widgets/Shortcuts/Display.vala:45
-msgid "Add"
+#: ../src/Widgets/Layout/Display.vala:51 ../src/Widgets/Layout/Display.vala:56
+msgid "Add…"
+msgstr ""
+
+#: ../src/Widgets/Layout/Display.vala:53 ../src/Widgets/Layout/Display.vala:58
+msgid "Move up"
+msgstr ""
+
+#: ../src/Widgets/Layout/Display.vala:54 ../src/Widgets/Layout/Display.vala:59
+msgid "Move down"
+msgstr ""
+
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:29
+msgid "Input Language"
+msgstr ""
+
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:65
+msgid "Show keyboard layout"
+msgstr ""
+
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:98
+msgid "Add Layout"
 msgstr ""
