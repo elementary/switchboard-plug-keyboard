@@ -74,6 +74,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
             var registry = Xkl.ConfigRegistry.get_instance (engine);
 
             keyboard_drawing_dialog = new Gkbd.KeyboardDrawing.dialog_new ();
+            ((Gtk.Dialog) keyboard_drawing_dialog).deletable = false;
             keyboard_drawing_dialog.destroy.connect (() => {
                 keyboard_map_button.sensitive = true;
             });
