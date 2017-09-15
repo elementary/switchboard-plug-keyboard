@@ -24,6 +24,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         });
 
         var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
+        input_language_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
         input_language_scrolled.add (input_language_list_box);
 
         var back_button = new Gtk.Button.with_label (_("Input Language"));
@@ -40,7 +41,9 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         layout_list_box.bind_model (layout_list, (item) => {
             return new LayoutRow ((item as ListStoreItem).name);
         });
+
         var layout_scrolled = new Gtk.ScrolledWindow (null, null);
+        layout_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
         layout_scrolled.expand = true;
         layout_scrolled.add (layout_list_box);
 
@@ -57,6 +60,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
         var stack = new Gtk.Stack ();
         stack.expand = true;
+        stack.margin_top = 3;
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.add (input_language_scrolled);
         stack.add (layout_grid);
@@ -84,9 +88,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
             keyboard_drawing_dialog.show_all ();
         });
 
-        var frame = new Gtk.Frame (null);
-        frame.add (stack);
-
         var button_add = new Gtk.Button.with_label (_("Add Layout"));
         button_add.sensitive = false;
 
@@ -94,7 +95,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
         button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin_top = 12;
+        button_box.margin = 12;
         button_box.spacing = 6;
         button_box.add (keyboard_map_button);
         button_box.add (button_cancel);
@@ -104,10 +105,10 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
 
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
-        grid.row_spacing = 12;
-        grid.margin = 12;
-        grid.attach (frame, 0, 0, 1, 1);
-        grid.attach (button_box, 0, 1, 1, 1);
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.add (stack);
+        grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        grid.add (button_box);
 
         add (grid);
 
@@ -189,6 +190,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
         public LayoutRow (string name) {
             var label = new Gtk.Label (name);
             label.margin = 6;
+            label.margin_end = 12;
+            label.margin_start = 12;
             label.xalign = 0;
             add (label);
         }
