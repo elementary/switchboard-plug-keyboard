@@ -83,28 +83,23 @@ class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
             keyboard_drawing_dialog.show_all ();
         });
 
-        var action_bar = new Gtk.ActionBar ();
-        action_bar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        action_bar.add (keyboard_map_button);
-
-        var selection_grid = new Gtk.Grid ();
-        selection_grid.orientation = Gtk.Orientation.VERTICAL;
-        selection_grid.add (stack);
-        selection_grid.add (action_bar);
-
         var frame = new Gtk.Frame (null);
-        frame.add (selection_grid);
+        frame.add (stack);
 
         var button_add = new Gtk.Button.with_label (_("Add Layout"));
         button_add.sensitive = false;
+
         var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
         button_box.layout_style = Gtk.ButtonBoxStyle.END;
         button_box.margin_top = 12;
         button_box.spacing = 6;
+        button_box.add (keyboard_map_button);
         button_box.add (button_cancel);
         button_box.add (button_add);
+        button_box.set_child_non_homogeneous (keyboard_map_button, true);
+        button_box.set_child_secondary (keyboard_map_button, true);
 
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
