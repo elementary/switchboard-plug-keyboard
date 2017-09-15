@@ -105,7 +105,7 @@ class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
 
         var entry_test = new Gtk.Entry ();
         entry_test.margin_top = 24;
-        entry_test.placeholder_text = (_("Type to test your settings…"));
+        entry_test.placeholder_text = (_("Type to test your settings"));
         entry_test.hexpand = true;
 
         attach (label_repeat, 0, 0, 1, 1);
