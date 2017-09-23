@@ -1,7 +1,7 @@
 find_package (PkgConfig)
 
 # Add all your dependencies to the list below
-pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0>=3.10 switchboard-2.0 granite libxml-2.0)
+pkg_check_modules (DEPS REQUIRED gthread-2.0 gtk+-3.0>=3.10 switchboard-2.0 granite libxml-2.0 libgnomekbdui libgnomekbd)
 
 add_definitions (${DEPS_CFLAGS})
 link_directories (${DEPS_LIBRARY_DIRS})
@@ -19,6 +19,8 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
 
     Dialogs/ConflictDialog.vala
 
+    Layout/AdvancedSettingsPanel.vala
+    Layout/AdvancedSettingsGrid.vala
     Layout/Handler.vala
     Layout/Settings.vala
     Layout/XkbModifier.vala
@@ -45,11 +47,14 @@ vala_precompile (VALA_C ${CMAKE_PROJECT_NAME}
     ${CMAKE_CURRENT_BINARY_DIR}/config.vala
 PACKAGES
     gtk+-3.0
+    gdk-x11-3.0
     switchboard-2.0
     granite
     libxml-2.0
+    libgnomekbd
 OPTIONS
     --thread
+    --vapidir=${CMAKE_SOURCE_DIR}/vapi/
 )
 
 add_library (${CMAKE_PROJECT_NAME} MODULE ${VALA_C})

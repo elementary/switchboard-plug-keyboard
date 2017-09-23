@@ -23,11 +23,13 @@ namespace Pantheon.Keyboard.LayoutPage
 
             tree     = new Gtk.TreeView ();
             var cell = new Gtk.CellRendererText ();
+            cell.ellipsize_set = true;
+            cell.ellipsize = Pango.EllipsizeMode.END;
 
             tree.insert_column_with_attributes (-1, null, cell, "text", 0);
             tree.headers_visible = false;
             tree.expand = true;
-            tree.tooltip_column = 2;
+            tree.tooltip_column = 0;
 
             var scroll = new Gtk.ScrolledWindow(null, null);
             scroll.hscrollbar_policy = Gtk.PolicyType.NEVER;

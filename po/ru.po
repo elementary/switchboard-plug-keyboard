@@ -6,16 +6,20 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-02-11 20:49+0000\n"
-"Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <ru@li.org>\n"
+"PO-Revision-Date: 2017-06-25 08:52+0000\n"
+"Last-Translator: Maxim Taranov <png2378@gmail.com>\n"
+"Language-Team: Russian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 2.14\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -142,7 +146,7 @@ msgstr "Backspace как в Nicola-F:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr "Zenkaku Hankaku как дополнительный Escape:"
+msgstr "Zenkaku Hankaku как Escape:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -170,7 +174,7 @@ msgstr "Мультимедиа"
 
 #: ../src/Pages/shortcuts.vala:48
 msgid "Universal Access"
-msgstr "Специальные возможности"
+msgstr "Универсальный доступ"
 
 #: ../src/Pages/shortcuts.vala:49
 msgid "Custom"
@@ -400,11 +404,11 @@ msgstr "Калькулятор"
 
 #: ../src/Pages/Shortcuts/list.vala:207
 msgid "Email"
-msgstr "Электронная почта"
+msgstr "Почта"
 
 #: ../src/Pages/Shortcuts/list.vala:208
 msgid "Help"
-msgstr "Справка"
+msgstr "Помощь"
 
 #: ../src/Pages/Shortcuts/list.vala:209
 msgid "Home Folder"
@@ -511,7 +515,7 @@ msgstr "Удалить"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "Добавить..."
+msgstr "Добавить…"
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
@@ -576,7 +580,7 @@ msgstr "Клавиатура"
 
 #: ../src/keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Настройка поведения клавиатуры, раскладок и сочетаний клавиш"
+msgstr "Настройка поведения клавиатуры, раскладок и комбинаций клавиш"
 
 #: ../src/keyboard.vala:28
 msgid "Layout"
@@ -584,7 +588,7 @@ msgstr "Раскладка"
 
 #: ../src/keyboard.vala:29 ../src/keyboard.vala:65
 msgid "Shortcuts"
-msgstr "Горячие клавиши"
+msgstr "Комбинации клавиш"
 
 #: ../src/keyboard.vala:30
 msgid "Behavior"

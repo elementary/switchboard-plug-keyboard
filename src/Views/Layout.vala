@@ -1,108 +1,39 @@
+/*
+* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
+
 namespace Pantheon.Keyboard.LayoutPage {
     // global handler
     LayoutHandler handler;
 
-    class AdvancedSettingsPanel : Gtk.Grid {
-        public string name;
-        public string [] input_sources;
-        public string [] exclusions;
-        public AdvancedSettingsPanel (string name, string [] input_sources, string [] exclusions = {}) {
-            this.name = name;
-            this.input_sources = input_sources;
-            this.exclusions = exclusions;
-
-            this.row_spacing = 12;
-            this.column_spacing = 12;
-            this.margin_top = 0;
-            this.margin_bottom  = 12;
-            this.column_homogeneous = false;
-            this.row_homogeneous = false;
-
-            this.hexpand = true;
-            this.halign = Gtk.Align.CENTER;
-        }
-    }
-
-    class AdvancedSettings : Gtk.Grid {
-        private Gtk.Stack stack;
-        private HashTable <string, string> panel_for_layout;
-        AdvancedSettingsPanel [] all_panels;
-
-        public AdvancedSettings (AdvancedSettingsPanel [] panels) {
-            panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
-
-            all_panels = panels;
-
-            stack = new Gtk.Stack ();
-            stack.hexpand = true;
-            this.attach (stack, 0, 0, 1, 1);
-
-            // Add an empty Widget
-            var blank_panel = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
-            stack.add_named (blank_panel, "none");
-            blank_panel.show();
-
-            foreach ( AdvancedSettingsPanel panel in panels ) {
-                stack.add_named ( panel, panel.name );
-                foreach ( string layout_name in panel.input_sources ) {
-                    // currently we only want *one* panel per input-source
-                    panel_for_layout.insert ( layout_name, panel.name );
-                }
-            }
-        }
-
-        public void set_visible_panel_from_layout ( string layout_name ){
-            string panel_name;
-            if (!panel_for_layout.lookup_extended (layout_name, null, out panel_name)) {
-                panel_name = "";
-            }
-            var splited_name = layout_name.split ("+");
-
-            if (panel_name == "" && "+" in layout_name) {
-                // if layout_name was not found we look for the layout without variant
-                if (!panel_for_layout.lookup_extended (splited_name[0], null, out panel_name)) {
-                    panel_name = "";
-                }
-            }
-
-            if (panel_name == "") {
-                foreach (AdvancedSettingsPanel panel in all_panels) {
-                    if (panel==null || panel.exclusions.length == 0) 
-                        continue;
-
-                    if (!(splited_name[0]+"*" in panel.exclusions || layout_name in panel.exclusions)) {
-                        panel_name = panel.name;
-                        break;
-                    }
-                }
-            }
-
-            if (panel_name == "") {
-                // this.hide() cannot be used because it messes the alignment
-                this.stack.set_visible_child_name ("none");
-                return;
-            } else {
-                this.stack.set_visible_child_name (panel_name);
-            }
-        }
-    }
-
-	class Page : Pantheon.Keyboard.AbstractPage
-	{
+	public class Page : Pantheon.Keyboard.AbstractPage {
 		private LayoutPage.Display display;
 		private LayoutSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
 
-		public override void reset ()
-		{
+		public override void reset () {
 			settings.reset_all ();
 			display.reset_all ();
 			return;
 		}
 
-		public Page ()
-		{
+		public Page () {
 			handler  = new LayoutHandler ();
 			settings = LayoutSettings.get_instance ();
             size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
@@ -188,7 +119,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
 			// Test entry
 			var entry_test = new Gtk.Entry ();
-			entry_test.placeholder_text = (_("Type to test your layout…"));
+			entry_test.placeholder_text = (_("Type to test your layout"));
 
 			entry_test.hexpand = entry_test.vexpand = true;
 			entry_test.valign  = Gtk.Align.END;
@@ -236,6 +167,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
+            modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
             modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
             modifier.append_xkb_option ("lv3:switch", _("Right Ctrl"));
             modifier.append_xkb_option ("lv3:rwin", _("Right Super"));
@@ -297,7 +229,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             new_switch.halign = Gtk.Align.START;
             new_switch.valign = Gtk.Align.CENTER;
 
-            // There is a bug that makes the switch go outside its socket, 
+            // There is a bug that makes the switch go outside its socket,
             // enclosing the switch in a box fixes that.
             var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
             box.pack_start (new_switch, false, false, 0);

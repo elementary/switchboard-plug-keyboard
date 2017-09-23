@@ -1,6 +1,15 @@
 # Switchboard Keyboard Plug
 
 ## Building and Installation
+You'll need the following dependencies:
+
+    cmake
+    libgranite-dev
+    libswitchboard-2.0-dev
+    libxml2-dev
+    libgnomekbd-dev
+    libxklavier-dev
+    valac
 
 It's recommended to create a clean build environment
 

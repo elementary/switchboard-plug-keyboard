@@ -6,16 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2016-08-11 13:05+0000\n"
-"Last-Translator: Stanislav <stunito0o0o0@gmail.com>\n"
-"Language-Team: Bulgarian <bg@li.org>\n"
+"PO-Revision-Date: 2017-04-14 16:49+0000\n"
+"Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
+"Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/bg/>\n"
+"Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.13-dev\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -24,7 +27,7 @@ msgstr "Смяна на клавиатурната подредба:"
 #: ../src/Pages/layout.vala:115 ../src/Pages/layout.vala:133
 #: ../src/Pages/Shortcuts/shortcut.vala:41
 msgid "Disabled"
-msgstr "Негодно"
+msgstr "Изключено"
 
 #: ../src/Pages/layout.vala:116
 msgid "Alt + Caps Lock"
@@ -122,7 +125,7 @@ msgstr "Разменен с Escape клавиша"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "Напишете нещо за да проверите подредбата..."
+msgstr "Напишете нещо за да проверите подредбата…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
@@ -134,19 +137,19 @@ msgstr "Клавиш за 5ти левел:"
 
 #: ../src/Pages/layout.vala:267
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Кана клавиш:"
 
 #: ../src/Pages/layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Никола Ф клавиш:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Зенкаку Ханкаку като esc:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja клавипи на десни Alt/Ctrl:"
 
 #: ../src/Pages/shortcuts.vala:43
 msgid "Windows"
@@ -178,12 +181,11 @@ msgstr "Потребителски"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:8
 msgid "%s is already used for %s!"
-msgstr "%s вече се използва за %s"
+msgstr "%s вече се използва за %s!"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:9
 msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
-"Ако присвоите този пряк път на %s, прекият път за %s ще бъде премахнат."
+msgstr "Ако присвоите този пряк път на %s, прекият път за %s ще бъде премахнат"
 
 #: ../src/Pages/Shortcuts/conflict_dialog.vala:11
 #: ../src/Pages/Layout/add_layout.vala:63
@@ -196,7 +198,7 @@ msgstr "Прехвърляне"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:4
 msgid "Enter Command"
-msgstr ""
+msgstr "Въведете команда"
 
 #: ../src/Pages/Shortcuts/custom_tree.vala:54
 msgid "Command"
@@ -400,7 +402,7 @@ msgstr "Калкулатор"
 
 #: ../src/Pages/Shortcuts/list.vala:207
 msgid "Email"
-msgstr "Е-поща"
+msgstr "Ел. поща"
 
 #: ../src/Pages/Shortcuts/list.vala:208
 msgid "Help"
@@ -507,11 +509,11 @@ msgstr "Добави"
 #: ../src/Pages/Shortcuts/display.vala:46 ../src/Pages/Layout/display.vala:49
 #: ../src/Pages/Layout/display.vala:54
 msgid "Remove"
-msgstr "Премахни"
+msgstr "Премахване"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "Добави…"
+msgstr "Добавяне…"
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
@@ -535,7 +537,7 @@ msgstr "Добави подредба"
 
 #: ../src/Pages/behaviour.vala:20
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Повтарящи се клавиши:"
 
 #: ../src/Pages/behaviour.vala:23
 msgid "Delay:"
@@ -552,7 +554,7 @@ msgstr "милисекунди"
 
 #: ../src/Pages/behaviour.vala:129
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "Мигащ курсор:"
 
 #: ../src/Pages/behaviour.vala:133
 msgid "Speed:"
@@ -576,8 +578,7 @@ msgstr "Клавиатура"
 
 #: ../src/keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
-"Настройка на поведението, подредбите и преките пътища на клавиатурата"
+msgstr "Настройка на поведението, подредбите и преките пътища на клавиатурата"
 
 #: ../src/keyboard.vala:28
 msgid "Layout"
@@ -593,20 +594,20 @@ msgstr "Поведение"
 
 #: ../src/keyboard.vala:66
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Повтарящи се клавиши"
 
 #: ../src/keyboard.vala:67
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "Мигащ курсор"
 
 #: ../src/keyboard.vala:68
 msgid "Switch layout"
-msgstr ""
+msgstr "Промяна на клавиатурната подредба"
 
 #: ../src/keyboard.vala:69
 msgid "Compose Key"
-msgstr ""
+msgstr "Compose клавиш"
 
 #: ../src/keyboard.vala:70
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Caps Lock настройка"

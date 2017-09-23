@@ -6,16 +6,19 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
-"Report-Msgid-Bugs-To: FULL NAME <EMAIL@ADDRESS>\n"
+"Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-02-16 12:38+0000\n"
-"Last-Translator: Jun Takeda <takeda.jun@gmail.com>\n"
-"Language-Team: Japanese <ja@li.org>\n"
+"PO-Revision-Date: 2017-09-03 00:22+0000\n"
+"Last-Translator: Ryo Nakano <rmfmada3q@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/ja/>\n"
+"Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 2.16\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: ../src/Pages/layout.vala:112
 msgid "Switch layout:"
@@ -122,7 +125,7 @@ msgstr "Esc と交換する"
 
 #: ../src/Pages/layout.vala:191
 msgid "Type to test your layout…"
-msgstr "入力してレイアウトを試して下さい..."
+msgstr "入力してレイアウトを試してください…"
 
 #: ../src/Pages/layout.vala:223 ../src/Pages/layout.vala:235
 msgid "Key to choose 3rd level:"
@@ -142,7 +145,7 @@ msgstr "NICOLA-F BS キー:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr "全角/半角 を Esc として動作"
+msgstr "全角/半角 を Esc として動作："
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -510,7 +513,7 @@ msgstr "削除"
 
 #: ../src/Pages/Layout/display.vala:48 ../src/Pages/Layout/display.vala:53
 msgid "Add…"
-msgstr "追加..."
+msgstr "追加…"
 
 #: ../src/Pages/Layout/display.vala:50 ../src/Pages/Layout/display.vala:55
 msgid "Move up"
@@ -567,7 +570,7 @@ msgstr "秒"
 
 #: ../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "入力して設定を確認して下さい..."
+msgstr "入力して設定を確認してください…"
 
 #: ../src/keyboard.vala:13
 msgid "Keyboard"
