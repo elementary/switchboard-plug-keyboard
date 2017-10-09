@@ -30,6 +30,7 @@ namespace Pantheon.Keyboard.LayoutPage
             tree.headers_visible = false;
             tree.expand = true;
             tree.tooltip_column = 0;
+            tree.set_size_request (183, -1);
 
             var scroll = new Gtk.ScrolledWindow(null, null);
             scroll.hscrollbar_policy = Gtk.PolicyType.NEVER;
