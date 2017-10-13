@@ -38,6 +38,10 @@ namespace Pantheon.Keyboard.LayoutPage {
 			settings = LayoutSettings.get_instance ();
             size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
                            new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
+                           
+            // tree view to display the current layouts
+            display = new LayoutPage.Display ();
+            this.attach (display, 0, 0, 1, 5);
 
             // Layout switching keybinding
             new_label (this, _("Switch layout:"), 0, 1);
@@ -90,10 +94,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (this, modifier, 2, 2);
-
-			// tree view to display the current layouts
-			display = new LayoutPage.Display ();
-            this.attach (display, 0, 0, 1, 5);
 
             // Advanced settings panel
             AdvancedSettingsPanel [] panels = { fifth_level_layouts_panel (),

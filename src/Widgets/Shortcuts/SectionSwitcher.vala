@@ -27,7 +27,6 @@ namespace Pantheon.Keyboard.Shortcuts
 			tree.headers_visible = false;
 			tree.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
 			tree.set_cursor (new Gtk.TreePath.first (), null, false);
-			tree.set_size_request (183, -1);
 
 			this.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			this.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
