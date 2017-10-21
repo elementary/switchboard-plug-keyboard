@@ -281,7 +281,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
 
-                var modifier = new Xkb_modifier (""+xkb_command);
+                var modifier = new Xkb_modifier ("" + xkb_command);
                 modifier.append_xkb_option ("", "option off");
                 modifier.append_xkb_option (xkb_command, "option on");
 
