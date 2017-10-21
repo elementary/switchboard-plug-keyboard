@@ -1,3 +1,5 @@
+
+
 public class ConflictDialog : Gtk.MessageDialog {
 
     public signal void reassign ();
