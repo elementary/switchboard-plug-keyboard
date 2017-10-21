@@ -108,7 +108,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var entry_test = new Gtk.Entry ();
             entry_test.hexpand = entry_test.vexpand = true;
             entry_test.placeholder_text = (_("Type to test your layout"));
-            entry_test.valign  = Gtk.Align.END;
+            entry_test.valign = Gtk.Align.END;
 
             attach (display, 0, 0, 1, 5);
             attach (switch_layout_label, 1, 0, 1, 1);
