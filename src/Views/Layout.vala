@@ -36,13 +36,13 @@ namespace Pantheon.Keyboard.LayoutPage {
 		public Page () {
 			handler  = new LayoutHandler ();
 			settings = LayoutSettings.get_instance ();
-            size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
-                           new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
+            size_group = { new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
+                           new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL) };
+
+            var switch_layout_label = new SettingsLabel (_("Switch layout:"), size_group[0]);
 
             // Layout switching keybinding
-            new_label (this, _("Switch layout:"), 0, 1);
-            Xkb_modifier modifier = new Xkb_modifier ("switch-layout");
-
+            var modifier = new Xkb_modifier ("switch-layout");
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
             modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
@@ -52,29 +52,30 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl + Alt"));
             modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
             modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift + Caps Lock"));
-
             modifier.set_default_command ("");
+
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (this, modifier, 0, 2);
 
+            var compose_key_label = new SettingsLabel (_("Compose key:"), size_group[0]);
+
             // Compose key position menu
-            new_label (this, _("Compose key:"), 1, 1);
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
             modifier.append_xkb_option ("compose:rwin", _("Right Super"));
-
             modifier.set_default_command ("");
+
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (this, modifier, 1, 2);
 
-            // Caps Lock key functionality
-            new_label (this, _("Caps Lock behavior:"), 2, 1);
+            var caps_lock_label = new SettingsLabel (_("Caps Lock behavior:"), size_group[0]);
 
+            // Caps Lock key functionality
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("caps:none", _("Caps Lock disabled"));
@@ -93,7 +94,6 @@ namespace Pantheon.Keyboard.LayoutPage {
 
 			// tree view to display the current layouts
 			display = new LayoutPage.Display ();
-            this.attach (display, 0, 0, 1, 5);
 
             // Advanced settings panel
             AdvancedSettingsPanel [] panels = { fifth_level_layouts_panel (),
@@ -101,11 +101,21 @@ namespace Pantheon.Keyboard.LayoutPage {
                                                 korean_layouts_panel (),
                                                 third_level_layouts_panel ()};
 
-            this.advanced_settings = new AdvancedSettings (panels);
-
+            advanced_settings = new AdvancedSettings (panels);
             advanced_settings.hexpand = advanced_settings.vexpand = true;
             advanced_settings.valign = Gtk.Align.START;
-            this.attach (advanced_settings, 1, 3, 2, 1);
+
+            var entry_test = new Gtk.Entry ();
+            entry_test.hexpand = entry_test.vexpand = true;
+            entry_test.placeholder_text = (_("Type to test your layout"));
+            entry_test.valign  = Gtk.Align.END;
+
+            attach (display, 0, 0, 1, 5);
+            attach (switch_layout_label, 1, 0, 1, 1);
+            attach (compose_key_label, 1, 1, 1, 1);
+            attach (caps_lock_label, 1, 2, 1, 1);
+            attach (entry_test, 1, 4, 2, 1);
+            attach (advanced_settings, 1, 3, 2, 1);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -116,15 +126,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             settings.layouts.active_changed.connect (() => {
                 show_panel_for_active_layout ();
             });
-
-			// Test entry
-			var entry_test = new Gtk.Entry ();
-			entry_test.placeholder_text = (_("Type to test your layout"));
-
-			entry_test.hexpand = entry_test.vexpand = true;
-			entry_test.valign  = Gtk.Align.END;
-
-            this.attach (entry_test, 1, 4, 2, 1);
 		}
 
         private AdvancedSettingsPanel third_level_layouts_panel () {
@@ -149,12 +150,14 @@ namespace Pantheon.Keyboard.LayoutPage {
                                                "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
                                                "us+dvorak-l", "us+dvorak-r", "uz*"};
 
+            var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
+
             var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
 
-            new_label (panel, _("Key to choose 3rd level:"), 0);
-            Xkb_modifier modifier = settings.get_xkb_modifier_by_name ("third_level_key");
+            var modifier = settings.get_xkb_modifier_by_name ("third_level_key");
             new_combo_box (panel, modifier, 0);
 
+            panel.attach (third_level_label, 0, 0, 1, 1);
             panel.show_all ();
 
             return panel;
@@ -163,7 +166,8 @@ namespace Pantheon.Keyboard.LayoutPage {
         private AdvancedSettingsPanel fifth_level_layouts_panel () {
             var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
 
-            new_label (panel, _("Key to choose 3rd level:"), 0);
+            var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
+
             Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
@@ -176,7 +180,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             settings.add_xkb_modifier (modifier);
             new_combo_box (panel, modifier, 0);
 
-            new_label (panel, _("Key to choose 5th level:"), 1);
+            var fifth_level_label = new SettingsLabel (_("Key to choose 5th level:"), size_group[0]);
 
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
@@ -187,6 +191,8 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             new_combo_box (panel, modifier, 1);
 
+            panel.attach (third_level_label, 0, 0, 1, 1);
+            panel.attach (fifth_level_label, 0, 1, 1, 1);
             panel.show_all ();
 
             return panel;
@@ -196,15 +202,18 @@ namespace Pantheon.Keyboard.LayoutPage {
             string [] valid_input_sources = {"jp"};
             var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
 
-            new_label (panel, _("Kana Lock:"), 0);
+            var kana_lock_label = new SettingsLabel (_("Kana Lock:"), size_group[0]);
             new_xkb_option_switch (panel, "japan:kana_lock", 0);
 
-            new_label (panel, _("Nicola F Backspace:"), 1);
+            var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace:"), size_group[0]);
             new_xkb_option_switch (panel, "japan:nicola_f_bs", 1);
 
-            new_label (panel, _("Zenkaku Hankaku as Escape:"), 2);
+            var zenkaku_label = new SettingsLabel (_("Zenkaku Hankaku as Escape:"), size_group[0]);
             new_xkb_option_switch (panel, "japan:hztg_escape", 2);
 
+            panel.attach (kana_lock_label, 0, 0, 1, 1);
+            panel.attach (nicola_backspace_label, 0, 1, 1, 1);
+            panel.attach (zenkaku_label, 0, 2, 1, 1);
             panel.show_all ();
 
             return panel;
@@ -214,9 +223,10 @@ namespace Pantheon.Keyboard.LayoutPage {
             string [] valid_input_sources = {"kr"};
             var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
 
-            new_label (panel, _("Hangul/Hanja keys on Right Alt/Ctrl:"), 0);
+            var hangul_label = new SettingsLabel (_("Hangul/Hanja keys on Right Alt/Ctrl:"), size_group[0]);
             new_xkb_option_switch (panel, "korean:ralt_rctrl", 0);
 
+            panel.attach (hangul_label, 0, 0, 1, 1);
             panel.show_all ();
 
             return panel;
@@ -293,21 +303,17 @@ namespace Pantheon.Keyboard.LayoutPage {
             return new_combo_box;
         }
 
-
-        private Gtk.Label new_label (Gtk.Grid panel, string text, int v_position, int h_position = 0) {
-            // v_position and h_position is relative to the panel provided
-            var new_label = new Gtk.Label (text);
-            new_label.valign = Gtk.Align.CENTER;
-            ((Gtk.Misc) new_label).xalign = 1;
-            panel.attach (new_label, h_position, v_position, 1, 1);
-            size_group[0].add_widget (new_label);
-
-            return new_label;
-        }
-
         private void show_panel_for_active_layout () {
             Layout active_layout = settings.layouts.get_layout (settings.layouts.active);
             advanced_settings.set_visible_panel_from_layout (active_layout.name);
+        }
+
+        private class SettingsLabel : Gtk.Label {
+            public SettingsLabel (string label, Gtk.SizeGroup size_group) {
+                Object (label: label);
+                xalign = 1;
+                size_group.add_widget (this);
+            }
         }
     }
 }
