@@ -24,6 +24,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         });
 
         var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
+        input_language_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
         input_language_scrolled.add (input_language_list_box);
 
         var back_button = new Gtk.Button.with_label (_("Input Language"));
@@ -40,7 +41,9 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         layout_list_box.bind_model (layout_list, (item) => {
             return new LayoutRow ((item as ListStoreItem).name);
         });
+
         var layout_scrolled = new Gtk.ScrolledWindow (null, null);
+        layout_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
         layout_scrolled.expand = true;
         layout_scrolled.add (layout_list_box);
 
@@ -57,6 +60,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
         var stack = new Gtk.Stack ();
         stack.expand = true;
+        stack.margin_top = 3;
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.add (input_language_scrolled);
         stack.add (layout_grid);
@@ -74,6 +78,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             var registry = Xkl.ConfigRegistry.get_instance (engine);
 
             keyboard_drawing_dialog = new Gkbd.KeyboardDrawing.dialog_new ();
+            ((Gtk.Dialog) keyboard_drawing_dialog).deletable = false;
             keyboard_drawing_dialog.destroy.connect (() => {
                 keyboard_map_button.sensitive = true;
             });
@@ -83,35 +88,28 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             keyboard_drawing_dialog.show_all ();
         });
 
-        var action_bar = new Gtk.ActionBar ();
-        action_bar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        action_bar.add (keyboard_map_button);
-
-        var selection_grid = new Gtk.Grid ();
-        selection_grid.orientation = Gtk.Orientation.VERTICAL;
-        selection_grid.add (stack);
-        selection_grid.add (action_bar);
-
-        var frame = new Gtk.Frame (null);
-        frame.add (selection_grid);
-
         var button_add = new Gtk.Button.with_label (_("Add Layout"));
         button_add.sensitive = false;
+        button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+
         var button_cancel = new Gtk.Button.with_label (_("Cancel"));
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
         button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin_top = 12;
+        button_box.margin = 12;
         button_box.spacing = 6;
+        button_box.add (keyboard_map_button);
         button_box.add (button_cancel);
         button_box.add (button_add);
+        button_box.set_child_non_homogeneous (keyboard_map_button, true);
+        button_box.set_child_secondary (keyboard_map_button, true);
 
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
-        grid.row_spacing = 12;
-        grid.margin = 12;
-        grid.attach (frame, 0, 0, 1, 1);
-        grid.attach (button_box, 0, 1, 1, 1);
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.add (stack);
+        grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        grid.add (button_box);
 
         add (grid);
 
@@ -193,6 +191,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         public LayoutRow (string name) {
             var label = new Gtk.Label (name);
             label.margin = 6;
+            label.margin_end = 12;
+            label.margin_start = 12;
             label.xalign = 0;
             add (label);
         }
