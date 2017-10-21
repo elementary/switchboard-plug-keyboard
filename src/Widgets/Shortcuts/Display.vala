@@ -24,46 +24,46 @@ namespace Pantheon.Keyboard.Shortcuts
 	class ShortcutDisplay : Gtk.Grid
 	{
 		int selected;
-		
+
 		Gtk.ScrolledWindow scroll;
 		DisplayTree[] trees;
-		
+
 		Gtk.Toolbar tbar;
 		Gtk.ToolButton add_button;
 		Gtk.ToolButton remove_button;
-		
+
 		public ShortcutDisplay (DisplayTree[] t)
 		{
 			selected = 0;
-			
+
 			foreach (var tree in t) {
 				trees += tree;
 			}
-			
+
 			scroll = new Gtk.ScrolledWindow (null, null);
 			scroll.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			scroll.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
 			scroll.shadow_type = Gtk.ShadowType.IN;
 			scroll.expand = true;
 			scroll.add (t[selected]);
-	
+
 			tbar = new Gtk.Toolbar ();
 			tbar.set_style (Gtk.ToolbarStyle.ICONS);
 			tbar.set_icon_size (Gtk.IconSize.SMALL_TOOLBAR);
 			tbar.set_show_arrow (false);
 			tbar.hexpand = true;
 			tbar.no_show_all = true;
-			
+
 			scroll.get_style_context ().set_junction_sides(Gtk.JunctionSides.BOTTOM);
 			tbar.get_style_context ().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
 			tbar.get_style_context ().set_junction_sides(Gtk.JunctionSides.TOP);
 
 			add_button = new Gtk.ToolButton (null, _("Add"));
 			remove_button = new Gtk.ToolButton (null, _("Remove"));
-		
+
 			add_button.set_tooltip_text    (_("Add"));
 			remove_button.set_tooltip_text (_("Remove"));
-			
+
 			add_button.set_icon_name    ("list-add-symbolic");
 			remove_button.set_icon_name ("list-remove-symbolic");
 
@@ -73,7 +73,7 @@ namespace Pantheon.Keyboard.Shortcuts
 			this.attach (scroll, 0, 0, 1, 1);
 			this.attach (tbar,   0, 1, 1, 1);
 
-			add_button.clicked.connect (() => 
+			add_button.clicked.connect (() =>
 			    (trees[selected] as CustomTree).on_add_clicked ());
 			remove_button.clicked.connect (() =>
 			    (trees[selected] as CustomTree).on_remove_clicked ());
@@ -135,6 +135,6 @@ namespace Pantheon.Keyboard.Shortcuts
 		{
 			add_button.sensitive = true;
 		}
-		
+
 	}
 }
