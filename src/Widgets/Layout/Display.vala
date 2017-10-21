@@ -80,7 +80,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             add (grid);
 
-            var pop = new AddLayout ();
+            var pop = new AddLayoutPopover ();
 
             add_button.clicked.connect( () => {
                 pop.set_relative_to (add_button);
@@ -184,14 +184,12 @@ namespace Pantheon.Keyboard.LayoutPage {
             update_buttons ();
         }
 
-        void remove_item ()
-        {
+        void remove_item () {
             settings.layouts.remove_active_layout ();
             rebuild_list ();
         }
 
-        void add_item (LayoutPage.AddLayout pop)
-        {
+        void add_item (LayoutPage.AddLayoutPopover pop) {
             pop.layout_added.connect ((layout, variant) => {
                 settings.layouts.add_layout (new Layout.XKB (layout, variant));
                 rebuild_list ();

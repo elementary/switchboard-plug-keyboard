@@ -1,4 +1,4 @@
-class Pantheon.Keyboard.LayoutPage.AddLayout : Gtk.Popover {
+class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
     public signal void layout_added (string language, string layout);
     private Gtk.Widget keyboard_drawing_dialog;
 
