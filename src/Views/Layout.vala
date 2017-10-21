@@ -199,81 +199,49 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private AdvancedSettingsPanel japanese_layouts_panel () {
-            string [] valid_input_sources = {"jp"};
-            var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
-
             var kana_lock_label = new SettingsLabel (_("Kana Lock:"), size_group[0]);
-            new_xkb_option_switch (panel, "japan:kana_lock", 0);
+            var kana_lock_switch = new XkbOptionSwitch (settings, "japan:kana_lock");
+
+            // Used to align this grid without expanding the switch itself
+            var spacer_grid = new Gtk.Grid ();
+            spacer_grid.add (kana_lock_switch);
+            size_group[1].add_widget (spacer_grid);
 
             var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace:"), size_group[0]);
-            new_xkb_option_switch (panel, "japan:nicola_f_bs", 1);
+            var nicola_backspace_switch = new XkbOptionSwitch (settings, "japan:nicola_f_bs");
 
             var zenkaku_label = new SettingsLabel (_("Zenkaku Hankaku as Escape:"), size_group[0]);
-            new_xkb_option_switch (panel, "japan:hztg_escape", 2);
+            var zenkaku_switch = new XkbOptionSwitch (settings, "japan:hztg_escape");
 
+            string [] valid_input_sources = {"jp"};
+            var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
             panel.attach (kana_lock_label, 0, 0, 1, 1);
+            panel.attach (spacer_grid, 1, 0, 1, 1);
             panel.attach (nicola_backspace_label, 0, 1, 1, 1);
+            panel.attach (nicola_backspace_switch, 1, 1, 1, 1);
             panel.attach (zenkaku_label, 0, 2, 1, 1);
+            panel.attach (zenkaku_switch, 1, 2, 1, 1);
             panel.show_all ();
 
             return panel;
         }
 
         private AdvancedSettingsPanel korean_layouts_panel () {
+            var hangul_label = new SettingsLabel (_("Hangul/Hanja keys on Right Alt/Ctrl:"), size_group[0]);
+            var hangul_switch = new XkbOptionSwitch (settings, "korean:ralt_rctrl");
+
+            // Used to align this grid without expanding the switch itself
+            var spacer_grid = new Gtk.Grid ();
+            spacer_grid.add (hangul_switch);
+            size_group[1].add_widget (spacer_grid);
+
             string [] valid_input_sources = {"kr"};
             var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
-
-            var hangul_label = new SettingsLabel (_("Hangul/Hanja keys on Right Alt/Ctrl:"), size_group[0]);
-            new_xkb_option_switch (panel, "korean:ralt_rctrl", 0);
-
             panel.attach (hangul_label, 0, 0, 1, 1);
+            panel.attach (spacer_grid, 1, 0, 1, 1);
             panel.show_all ();
 
             return panel;
-        }
-
-        // Function that adds a new switch to panel, and sets it up visually
-        // and aligns it with external buttons
-        private Gtk.Switch new_switch (Gtk.Grid panel, int v_position, int h_position = 1) {
-            var new_switch = new Gtk.Switch ();
-            new_switch.halign = Gtk.Align.START;
-            new_switch.valign = Gtk.Align.CENTER;
-
-            // There is a bug that makes the switch go outside its socket,
-            // enclosing the switch in a box fixes that.
-            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
-            box.pack_start (new_switch, false, false, 0);
-            panel.attach (box, h_position, v_position, 1, 1);
-            size_group[1].add_widget (box);
-
-            return new_switch;
-        }
-
-        // Function that adds a new switch but also configures its functionality
-        // to enable/disable an xkb-option
-        private Gtk.Switch new_xkb_option_switch
-            (Gtk.Grid panel, string xkb_command, int v_position, int h_position = 1) {
-            var new_switch = new_switch (panel, v_position, h_position);
-            Xkb_modifier modifier = new Xkb_modifier (""+xkb_command);
-            modifier.append_xkb_option ("", "option off");
-            modifier.append_xkb_option (xkb_command, "option on");
-            settings.add_xkb_modifier (modifier);
-
-            if (modifier.get_active_command () == "") {
-                new_switch.active = false;
-            } else {
-                new_switch.active = true;
-            }
-
-            new_switch.notify["active"].connect(() => {
-                if (new_switch.active) {
-                    modifier.update_active_command ( xkb_command );
-                } else {
-                    modifier.update_active_command ( "" );
-                }
-            });
-
-            return new_switch;
         }
 
         private Gtk.ComboBoxText new_combo_box
@@ -306,6 +274,33 @@ namespace Pantheon.Keyboard.LayoutPage {
         private void show_panel_for_active_layout () {
             Layout active_layout = settings.layouts.get_layout (settings.layouts.active);
             advanced_settings.set_visible_panel_from_layout (active_layout.name);
+        }
+
+        private class XkbOptionSwitch : Gtk.Switch {
+            public XkbOptionSwitch (LayoutSettings settings, string xkb_command) {
+                halign = Gtk.Align.START;
+                valign = Gtk.Align.CENTER;
+
+                var modifier = new Xkb_modifier (""+xkb_command);
+                modifier.append_xkb_option ("", "option off");
+                modifier.append_xkb_option (xkb_command, "option on");
+
+                settings.add_xkb_modifier (modifier);
+
+                if (modifier.get_active_command () == "") {
+                    active = false;
+                } else {
+                    active = true;
+                }
+
+                notify["active"].connect(() => {
+                    if (active) {
+                        modifier.update_active_command (xkb_command);
+                    } else {
+                        modifier.update_active_command ("");
+                    }
+                });
+            }
         }
 
         private class SettingsLabel : Gtk.Label {
