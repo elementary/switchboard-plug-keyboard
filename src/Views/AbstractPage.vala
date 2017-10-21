@@ -17,16 +17,11 @@
 * Boston, MA 02110-1301 USA
 */
 
-// a common class for all pages
 public abstract class Pantheon.Keyboard.AbstractPage : Gtk.Grid {
     public AbstractPage () {
         Object (
-            column_homogeneous: false,
-            row_homogeneous: false,
             column_spacing: 12,
-            row_spacing: 12,
-            margin_bottom: 12,
-            margin_top: 12
+            row_spacing: 12
         );
     }
 
