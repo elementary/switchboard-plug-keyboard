@@ -19,17 +19,18 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     public override Gtk.Widget get_widget () {
         if (grid == null) {
             stack = new Gtk.Stack ();
+            stack.margin = 12;
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
             var stack_switcher = new Gtk.StackSwitcher ();
+            stack_switcher.margin = 12;
             stack_switcher.halign = Gtk.Align.CENTER;
             stack_switcher.homogeneous = true;
             stack_switcher.stack = stack;
 
             grid = new Gtk.Grid ();
-            grid.margin = 12;
             grid.attach (stack_switcher, 0, 0, 1, 1);
             grid.attach (stack, 0, 1, 1, 1);
         }
