@@ -2,7 +2,7 @@
 public abstract class Pantheon.Keyboard.AbstractPage : Gtk.Grid {
     public AbstractPage () {
         Object (
-            column_homogeneous: true,
+            column_homogeneous: false,
             row_homogeneous: false,
             column_spacing: 12,
             row_spacing: 12,

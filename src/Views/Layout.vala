@@ -34,6 +34,8 @@ namespace Pantheon.Keyboard.LayoutPage {
 		}
 
 		public Page () {
+            this.column_homogeneous = true;
+            
 			handler  = new LayoutHandler ();
 			settings = LayoutSettings.get_instance ();
             size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),

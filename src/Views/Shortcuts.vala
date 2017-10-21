@@ -36,6 +36,8 @@ namespace Pantheon.Keyboard.Shortcuts
 
 		public Page ()
 		{
+            this.column_homogeneous = true;
+            
 			CustomShortcutSettings.init ();
 
 			// init public elements
