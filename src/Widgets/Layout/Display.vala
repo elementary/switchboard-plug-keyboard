@@ -20,7 +20,6 @@
 namespace Pantheon.Keyboard.LayoutPage {
     // widget to display/add/remove/move keyboard layouts
     class Display : Gtk.Frame {
-
         private LayoutSettings settings;
         private Gtk.TreeView tree;
         private Gtk.Button up_button;
@@ -133,12 +132,12 @@ namespace Pantheon.Keyboard.LayoutPage {
 
                 // if empty list
                 if (index == -1) {
-                    up_button.sensitive     = false;
-                    down_button.sensitive   = false;
+                    up_button.sensitive = false;
+                    down_button.sensitive = false;
                     remove_button.sensitive = false;
                 } else {
-                    up_button.sensitive     = (index != 0);
-                    down_button.sensitive   = (index != settings.layouts.length - 1);
+                    up_button.sensitive = (index != 0);
+                    down_button.sensitive = (index != settings.layouts.length - 1);
                     remove_button.sensitive = (settings.layouts.length > 0);
                 }
         }
