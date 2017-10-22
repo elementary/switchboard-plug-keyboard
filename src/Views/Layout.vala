@@ -34,10 +34,16 @@ namespace Pantheon.Keyboard.LayoutPage {
 		}
 
 		public Page () {
+            this.column_homogeneous = true;
+            
 			handler  = new LayoutHandler ();
 			settings = LayoutSettings.get_instance ();
-            size_group = { new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
-                           new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL) };
+            size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
+                           new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
+                           
+            // tree view to display the current layouts
+            display = new LayoutPage.Display ();
+            this.attach (display, 0, 0, 1, 5);
 
             var switch_layout_label = new SettingsLabel (_("Switch layout:"), size_group[0]);
 
@@ -91,9 +97,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             settings.add_xkb_modifier (modifier);
 
             new_combo_box (this, modifier, 2, 2);
-
-			// tree view to display the current layouts
-			display = new LayoutPage.Display ();
 
             // Advanced settings panel
             AdvancedSettingsPanel [] panels = { fifth_level_layouts_panel (),

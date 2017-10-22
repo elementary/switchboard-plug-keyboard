@@ -30,7 +30,7 @@ public class AdvancedSettingsPanel : Gtk.Grid {
         this.column_spacing = 12;
         this.margin_top = 0;
         this.margin_bottom  = 12;
-        this.column_homogeneous = false;
+        this.column_homogeneous = true;
         this.row_homogeneous = false;
 
         this.hexpand = true;

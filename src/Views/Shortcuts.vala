@@ -55,6 +55,8 @@ namespace Pantheon.Keyboard.Shortcuts
 
 		public Page ()
 		{
+            this.column_homogeneous = true;
+            
 			CustomShortcutSettings.init ();
 
 			// init public elements
@@ -78,8 +80,8 @@ namespace Pantheon.Keyboard.Shortcuts
 				trees += new CustomTree ();
 
 			// private elements
-			var shortcut_display = new ShortcutDisplay (trees);
 			var section_switcher = new SectionSwitcher ();
+			var shortcut_display = new ShortcutDisplay (trees);
 
 			this.attach (section_switcher, 0, 0, 1, 1);
 			this.attach (shortcut_display, 1, 0, 2, 1);
