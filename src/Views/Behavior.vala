@@ -216,5 +216,7 @@ class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         settings_blink.changed["cursor-blink-timeout"].connect (() => {
             scale_blink_time.adjustment.value = spin_blink_time.adjustment.value = (double) settings_blink.cursor_blink_timeout;
         });
+
+        scale_repeat_delay.grab_focus (); /* We want entry unfocussed so that placeholder shows */
     }
 }
