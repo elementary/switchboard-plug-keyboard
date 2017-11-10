@@ -21,23 +21,23 @@ namespace Pantheon.Keyboard.LayoutPage {
     // global handler
     LayoutHandler handler;
 
-	public class Page : Pantheon.Keyboard.AbstractPage {
-		private LayoutPage.Display display;
-		private LayoutSettings settings;
+    public class Page : Pantheon.Keyboard.AbstractPage {
+        private LayoutPage.Display display;
+        private LayoutSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
 
-		public override void reset () {
-			settings.reset_all ();
-			display.reset_all ();
-			return;
-		}
+        public override void reset () {
+            settings.reset_all ();
+            display.reset_all ();
+            return;
+        }
 
-		public Page () {
+        public Page () {
             this.column_homogeneous = true;
             
-			handler  = new LayoutHandler ();
-			settings = LayoutSettings.get_instance ();
+            handler  = new LayoutHandler ();
+            settings = LayoutSettings.get_instance ();
             size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
                            new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
                            
@@ -131,7 +131,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             settings.layouts.active_changed.connect (() => {
                 show_panel_for_active_layout ();
             });
-		}
+        }
 
         private AdvancedSettingsPanel third_level_layouts_panel () {
             string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
