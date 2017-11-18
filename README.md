@@ -25,3 +25,7 @@ To install, use `make install`, then execute with `switchboard`
 
     sudo make install
     switchboard
+
+To reinstall the default version:
+
+    sudo apt install --reinstall switchboard-plug-keyboard
