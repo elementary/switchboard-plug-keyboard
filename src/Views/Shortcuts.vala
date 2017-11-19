@@ -1,3 +1,22 @@
+/*
+* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
+
 namespace Pantheon.Keyboard.Shortcuts
 {
 	// list of all shortcuts in gsettings, global object
@@ -36,6 +55,8 @@ namespace Pantheon.Keyboard.Shortcuts
 
 		public Page ()
 		{
+            this.column_homogeneous = true;
+            
 			CustomShortcutSettings.init ();
 
 			// init public elements
@@ -59,8 +80,8 @@ namespace Pantheon.Keyboard.Shortcuts
 				trees += new CustomTree ();
 
 			// private elements
-			var shortcut_display = new ShortcutDisplay (trees);
 			var section_switcher = new SectionSwitcher ();
+			var shortcut_display = new ShortcutDisplay (trees);
 
 			this.attach (section_switcher, 0, 0, 1, 1);
 			this.attach (shortcut_display, 1, 0, 2, 1);
