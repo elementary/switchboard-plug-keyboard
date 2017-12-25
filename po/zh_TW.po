@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2017-12-25 03:18+0000\n"
+"PO-Revision-Date: 2017-12-26 00:10+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -571,7 +571,7 @@ msgstr "秒"
 
 #: ../src/Pages/behaviour.vala:245
 msgid "Type to test your settings…"
-msgstr "請輸入以測試您的設定..."
+msgstr "請按鍵盤以測試您的設定…"
 
 #: ../src/keyboard.vala:13
 msgid "Keyboard"
