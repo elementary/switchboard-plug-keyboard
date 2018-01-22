@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2018-01-10 00:04+0000\n"
+"PO-Revision-Date: 2018-01-23 00:06+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -145,7 +145,7 @@ msgstr "NICOLA-F BS キー:"
 
 #: ../src/Pages/layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr "全角/半角 を Esc として動作："
+msgstr "全角/半角 を Esc として動作:"
 
 #: ../src/Pages/layout.vala:285
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
