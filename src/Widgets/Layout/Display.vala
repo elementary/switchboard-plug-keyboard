@@ -45,6 +45,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             tree.headers_visible = false;
             tree.expand = true;
             tree.tooltip_column = 0;
+            tree.set_size_request (183, -1);
 
             var scroll = new Gtk.ScrolledWindow (null, null);
             scroll.hscrollbar_policy = Gtk.PolicyType.NEVER;
@@ -165,13 +166,14 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         Gtk.ListStore build_store () {
-            Gtk.ListStore list_store = new Gtk.ListStore (2, typeof (string), typeof(string));
+            Gtk.ListStore list_store = new Gtk.ListStore (3, typeof (string), typeof(string), typeof(string));
             Gtk.TreeIter iter;
             for (uint i = 0; i < settings.layouts.length; i++) {
                 string item = settings.layouts.get_layout (i).name;
                 list_store.append (out iter);
                 list_store.set (iter, 0, handler.get_display_name (item));
                 list_store.set (iter, 1, item);
+                list_store.set (iter, 2, handler.get_full_name (item));
             }
 
             return list_store;
