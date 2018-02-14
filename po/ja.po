@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2018-01-23 00:06+0000\n"
+"PO-Revision-Date: 2018-02-18 11:09+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -422,7 +422,7 @@ msgstr "ターミナル"
 
 #: ../src/Pages/Shortcuts/list.vala:212
 msgid "Internet Browser"
-msgstr "インターネットブラウザ"
+msgstr "インターネットブラウザー"
 
 #: ../src/Pages/Shortcuts/list.vala:213
 msgid "Applications Launcher"
