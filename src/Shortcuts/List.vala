@@ -304,7 +304,6 @@ namespace Pantheon.Keyboard.Shortcuts
 					actions = {
 						_("Decrease Text Size"),
 						_("Increase Text Size"),
-						_("Toggle Magnifier"),
 						_("Magnifier Zoom in"),
 						_("Magnifier Zoom out"),
 						_("Toggle On Screen Keyboard"),
@@ -315,9 +314,8 @@ namespace Pantheon.Keyboard.Shortcuts
 					schemas = {
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.MEDIA,
-						Schema.MEDIA,
-						Schema.MEDIA,
+                        Schema.GALA,
+                        Schema.GALA,
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
@@ -326,9 +324,8 @@ namespace Pantheon.Keyboard.Shortcuts
 					keys = {
 						"decrease-text-size",
 						"increase-text-size",
-						"magnifier",
-						"magnifier-zoom-in",
-						"magnifier-zoom-out",
+                        "zoom-in",
+                        "zoom-out",
 						"on-screen-keyboard",
 						"screenreader",
 						"toggle-contrast",
