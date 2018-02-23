@@ -134,6 +134,12 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private AdvancedSettingsPanel? third_level_layouts_panel () {
+            var modifier = settings.get_xkb_modifier_by_name ("third_level_key");
+
+            if (modifier == null) {
+                return null;
+            }
+
             string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
                                                "bg*", "by", "by+legacy",
                                                "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
@@ -159,14 +165,10 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
 
-            var modifier = settings.get_xkb_modifier_by_name ("third_level_key");
+            var third_level_combo = new XkbComboBox (modifier, size_group[1]);
 
-            if (modifier != null) {
-                var third_level_combo = new XkbComboBox (modifier, size_group[1]);
-
-                panel.attach (third_level_label, 0, 0, 1, 1);
-                panel.attach (third_level_combo, 1, 0, 1, 1);
-            }
+            panel.attach (third_level_label, 0, 0, 1, 1);
+            panel.attach (third_level_combo, 1, 0, 1, 1);
 
             panel.show_all ();
 
