@@ -326,7 +326,7 @@ namespace Pantheon.Keyboard.LayoutPage
             xkb_options_modifiers += modifier;
         }
 
-        public Xkb_modifier get_xkb_modifier_by_name (string name) {
+        public Xkb_modifier? get_xkb_modifier_by_name (string name) {
             foreach (Xkb_modifier modifier in xkb_options_modifiers) {
                 if ( modifier.name == name ) {
                     return modifier;
