@@ -42,28 +42,48 @@ namespace Pantheon.Keyboard.Shortcuts
 				
 			string tmp = "";
 			
-			if ((modifiers & Gdk.ModifierType.SHIFT_MASK) > 0)
-			    tmp += "⇧" + SEPARATOR;
-			if ((modifiers & Gdk.ModifierType.SUPER_MASK) > 0)
-			    tmp += "⌘" + SEPARATOR;
-			if ((modifiers & Gdk.ModifierType.CONTROL_MASK) > 0)
-			    tmp += _("Ctrl") + SEPARATOR;
-			if ((modifiers & Gdk.ModifierType.MOD1_MASK) > 0)
-			    tmp += "⎇" + SEPARATOR;
-			if ((modifiers & Gdk.ModifierType.MOD2_MASK) > 0)
-			    tmp += "Mod2" + SEPARATOR;
-			if ((modifiers & Gdk.ModifierType.MOD3_MASK) > 0)
-			    tmp += "Mod3" + SEPARATOR;
-			if ((modifiers & Gdk.ModifierType.MOD4_MASK) > 0)
-			    tmp += "Mod4" + SEPARATOR;
+            if ((modifiers & Gdk.ModifierType.SHIFT_MASK) > 0) {
+                tmp += _("Shift") + SEPARATOR;
+            }
+
+            if ((modifiers & Gdk.ModifierType.SUPER_MASK) > 0) {
+                tmp += "⌘" + SEPARATOR;
+            }
+
+            if ((modifiers & Gdk.ModifierType.CONTROL_MASK) > 0) {
+                tmp += _("Ctrl") + SEPARATOR;
+            }
+
+            if ((modifiers & Gdk.ModifierType.MOD1_MASK) > 0) {
+                tmp += _("Alt") + SEPARATOR;
+            }
+
+            if ((modifiers & Gdk.ModifierType.MOD2_MASK) > 0) {
+                tmp += "Mod2" + SEPARATOR;
+            }
+
+            if ((modifiers & Gdk.ModifierType.MOD3_MASK) > 0) {
+                tmp += "Mod3" + SEPARATOR;
+            }
+
+            if ((modifiers & Gdk.ModifierType.MOD4_MASK) > 0) {
+                tmp += "Mod4" + SEPARATOR;
+            }
+
 
             switch (accel_key) {
-            
-                case Gdk.Key.Tab:   tmp += "↹"; break;
-                case Gdk.Key.Up:    tmp += "↑"; break;
-                case Gdk.Key.Down:  tmp += "↓"; break;
-                case Gdk.Key.Left:  tmp += "←"; break;
-                case Gdk.Key.Right: tmp += "→"; break;
+                case Gdk.Key.Up:
+                    tmp += "↑";
+                    break;
+                case Gdk.Key.Down:
+                    tmp += "↓";
+                    break;
+                case Gdk.Key.Left:
+                    tmp += "←";
+                    break;
+                case Gdk.Key.Right:
+                    tmp += "→";
+                    break;
                 default:
                     tmp += Gtk.accelerator_get_label (accel_key, 0);
                     break;
