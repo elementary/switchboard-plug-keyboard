@@ -16,9 +16,9 @@
 * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
 * Boston, MA 02110-1301 USA
 */
-    
+
 public class AdvancedSettingsPanel : Gtk.Grid {
-    public string name;
+    public new string name;
     public string [] input_sources;
     public string [] exclusions;
     public AdvancedSettingsPanel (string name, string [] input_sources, string [] exclusions = {}) {

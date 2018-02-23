@@ -20,7 +20,7 @@
 public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
     private Gtk.Stack stack;
     private HashTable <string, string> panel_for_layout;
-    AdvancedSettingsPanel [] all_panels;
+    AdvancedSettingsPanel? [] all_panels;
 
     public AdvancedSettings (AdvancedSettingsPanel? [] panels) {
         panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
@@ -64,8 +64,8 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         }
 
         if (panel_name == "") {
-            foreach (AdvancedSettingsPanel panel in all_panels) {
-                if (panel==null || panel.exclusions.length == 0)
+            foreach (AdvancedSettingsPanel? panel in all_panels) {
+                if (panel == null || panel.exclusions.length == 0)
                     continue;
 
                 if (!(splited_name[0]+"*" in panel.exclusions || layout_name in panel.exclusions)) {
