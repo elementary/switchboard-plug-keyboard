@@ -222,11 +222,8 @@ namespace Pantheon.Keyboard.Shortcuts
 				Group () 
 				{
 					actions = {
-						_("Calculator"),
 						_("Email"),
-						_("Help"),
 						_("Home Folder"),
-						_("File Search"),
 						_("Terminal"),
 						_("Internet Browser"),
 						_("Applications Launcher")
@@ -237,18 +234,12 @@ namespace Pantheon.Keyboard.Shortcuts
 						Schema.MEDIA,
 						Schema.MEDIA,
 						Schema.MEDIA,
-						Schema.MEDIA,
-						Schema.MEDIA,
-						Schema.MEDIA,
 						Schema.WM
 					},
 		
 					keys = {
-						"calculator",
 						"email",
-						"help",
 						"home",
-						"search",
 						"terminal",
 						"www",
 						"panel-main-menu"
