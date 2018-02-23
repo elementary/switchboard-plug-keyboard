@@ -41,10 +41,10 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
                 continue;
             }
 
-            stack.add_named ( panel, panel.name );
+            stack.add_named ( panel, panel.panel_name );
             foreach ( string layout_name in panel.input_sources ) {
                 // currently we only want *one* panel per input-source
-                panel_for_layout.insert ( layout_name, panel.name );
+                panel_for_layout.insert ( layout_name, panel.panel_name );
             }
         }
     }
@@ -68,8 +68,8 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
                 if (panel == null || panel.exclusions.length == 0)
                     continue;
 
-                if (!(splited_name[0]+"*" in panel.exclusions || layout_name in panel.exclusions)) {
-                    panel_name = panel.name;
+                if (!(splited_name[0] + "*" in panel.exclusions || layout_name in panel.exclusions)) {
+                    panel_name = panel.panel_name;
                     break;
                 }
             }
