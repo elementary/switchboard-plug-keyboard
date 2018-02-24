@@ -28,18 +28,6 @@ namespace Pantheon.Keyboard.Shortcuts {
         public Group[] groups;
 
         construct {
-            init_goups ();
-        }
-
-        public void get_group (SectionID group, out string[] a, out Schema[] s, out string[] k) {
-            a = groups[group].actions;
-            s = groups[group].schemas;
-            k = groups[group].keys;
-            return;
-        }
-
-        private void init_goups () {
-
             Group windows_group = {};
             add_action (ref windows_group, Schema.WM, _("Lower"), "lower");
             add_action (ref windows_group, Schema.WM, _("Maximize"), "maximize");
@@ -132,6 +120,13 @@ namespace Pantheon.Keyboard.Shortcuts {
                 media_group,
                 a11y_group
             };
+        }
+
+        public void get_group (SectionID group, out string[] a, out Schema[] s, out string[] k) {
+            a = groups[group].actions;
+            s = groups[group].schemas;
+            k = groups[group].keys;
+            return;
         }
 
         public void add_action (ref Group group, Schema schema, string action, string key) {
