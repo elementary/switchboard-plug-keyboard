@@ -17,8 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts
-{
+namespace Pantheon.Keyboard.Shortcuts {
     struct Group { 
         public string[] actions;
         public Schema[] schemas;
@@ -27,12 +26,10 @@ namespace Pantheon.Keyboard.Shortcuts
 
     // this class provides an interface to the structure containing
     // all the shortcuts (description, dconf schema and key)
-    class List : GLib.Object
-    {
+    class List : GLib.Object {
         public Group[] groups;
 
-        public void get_group (SectionID group, out string[] a, out Schema[] s, out string[] k)
-        {
+        public void get_group (SectionID group, out string[] a, out Schema[] s, out string[] k) {
             a = groups[group].actions;
             s = groups[group].schemas;
             k = groups[group].keys;
@@ -40,10 +37,8 @@ namespace Pantheon.Keyboard.Shortcuts
             return;
         }
 
-        public List ()
-        {
-            groups =
-            {
+        public List () {
+            groups = {
                 // windows group
                 Group () {
                     actions = {
@@ -100,8 +95,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 },
 
                 // workspaces group
-                Group () 
-                {
+                Group () {
                     actions = {
                         _("Show Workspace Switcher"),
                         _("Switch to first"),
@@ -194,8 +188,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 },
 
                 // screenshots group
-                Group () 
-                {
+                Group () {
                     actions = {
                         _("Take a Screenshot"),
                         _("Save Screenshot to Clipboard"),
@@ -225,8 +218,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 },
 
                 // launchers group
-                Group () 
-                {
+                Group () {
                     actions = {
                         _("Calculator"),
                         _("Email"),
@@ -262,8 +254,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 },
 
                 // media group
-                Group () 
-                {
+                Group () {
                     actions = {
                         _("Volume Up"),
                         _("Volume Down"),
@@ -305,8 +296,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 },
 
                 // a11y group
-                Group () 
-                {
+                Group () {
                     actions = {
                         _("Decrease Text Size"),
                         _("Increase Text Size"),
