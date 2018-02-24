@@ -20,11 +20,11 @@
 public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
     private Gtk.Stack stack;
     private HashTable <string, string> panel_for_layout;
-    AdvancedSettingsPanel? [] all_panels;
+    AdvancedSettingsPanel [] all_panels;
 
-    public AdvancedSettings (AdvancedSettingsPanel? [] panels) {
+    public AdvancedSettings (AdvancedSettingsPanel [] panels) {
         panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
-
+        /* panels must not contain nulls */
         all_panels = panels;
 
         stack = new Gtk.Stack ();
@@ -37,11 +37,8 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         blank_panel.show ();
 
         foreach (AdvancedSettingsPanel? panel in panels) {
-            if (panel == null) {
-                continue;
-            }
-
             stack.add_named (panel, panel.panel_name);
+
             foreach (string layout_name in panel.input_sources) {
                 // currently we only want *one* panel per input-source
                 panel_for_layout.insert (layout_name, panel.panel_name);
@@ -64,9 +61,10 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         }
 
         if (panel_name == "") {
-            foreach (AdvancedSettingsPanel? panel in all_panels) {
-                if (panel == null || panel.exclusions.length == 0)
+            foreach (AdvancedSettingsPanel panel in all_panels) {
+                if (panel.exclusions.length == 0) {
                     continue;
+                }
 
                 if (!(splited_name[0] + "*" in panel.exclusions || layout_name in panel.exclusions)) {
                     panel_name = panel.panel_name;

@@ -98,10 +98,14 @@ namespace Pantheon.Keyboard.LayoutPage {
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
             // Advanced settings panel
-            AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
-                                                japanese_layouts_panel (),
-                                                korean_layouts_panel (),
-                                                third_level_layouts_panel ()};
+
+            var panel_set = new Gee.ArrayList<AdvancedSettingsPanel> ();
+            panel_set.add_all_array (fifth_level_layouts_panel ());
+            panel_set.add_all_array (japanese_layouts_panel ());
+            panel_set.add_all_array (korean_layouts_panel ());
+            panel_set.add_all_array (third_level_layouts_panel ());
+
+           AdvancedSettingsPanel [] panels = panel_set.to_array ();
 
             advanced_settings = new AdvancedSettings (panels);
             advanced_settings.hexpand = advanced_settings.vexpand = true;
@@ -133,49 +137,48 @@ namespace Pantheon.Keyboard.LayoutPage {
             });
         }
 
-        private AdvancedSettingsPanel? third_level_layouts_panel () {
+        private AdvancedSettingsPanel[] third_level_layouts_panel () {
             var modifier = settings.get_xkb_modifier_by_name ("third_level_key");
+            foreach (Xkb_modifier xkb_mod in modifier) {
+                string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
+                                                   "bg*", "by", "by+legacy",
+                                                   "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
+                                                   "fr+dvorak",
+                                                   "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
+                                                   "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
+                                                   "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
+                                                   "jp*",
+                                                   "kg*", "kz*",
+                                                   "la*", "lk+tam_TAB", "lk+tam_unicode",
+                                                   "mk*", "mv*",
+                                                   "no+mac", "no+mac_nodeadkeys", "np*",
+                                                   "pk+ara",
+                                                   "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
+                                                   "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
+                                                   "sy", "sy+syc", "sy+syc_phonetic",
+                                                   "th*", "tz*",
+                                                   "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
+                                                   "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
+                                                   "us+dvorak-l", "us+dvorak-r", "uz*"};
 
-            if (modifier == null) {
-                return null;
+                var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
+
+                var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
+
+                var third_level_combo = new XkbComboBox (xkb_mod, size_group[1]);
+
+                panel.attach (third_level_label, 0, 0, 1, 1);
+                panel.attach (third_level_combo, 1, 0, 1, 1);
+
+                panel.show_all ();
+
+                return {panel};
             }
 
-            string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
-                                               "bg*", "by", "by+legacy",
-                                               "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
-                                               "fr+dvorak",
-                                               "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
-                                               "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
-                                               "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
-                                               "jp*",
-                                               "kg*", "kz*",
-                                               "la*", "lk+tam_TAB", "lk+tam_unicode",
-                                               "mk*", "mv*",
-                                               "no+mac", "no+mac_nodeadkeys", "np*",
-                                               "pk+ara",
-                                               "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
-                                               "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
-                                               "sy", "sy+syc", "sy+syc_phonetic",
-                                               "th*", "tz*",
-                                               "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
-                                               "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
-                                               "us+dvorak-l", "us+dvorak-r", "uz*"};
-
-            var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
-
-            var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
-
-            var third_level_combo = new XkbComboBox (modifier, size_group[1]);
-
-            panel.attach (third_level_label, 0, 0, 1, 1);
-            panel.attach (third_level_combo, 1, 0, 1, 1);
-
-            panel.show_all ();
-
-            return panel;
+            return {};
         }
 
-        private AdvancedSettingsPanel fifth_level_layouts_panel () {
+        private AdvancedSettingsPanel[] fifth_level_layouts_panel () {
             var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
 
             var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
@@ -210,10 +213,10 @@ namespace Pantheon.Keyboard.LayoutPage {
             panel.attach (fifth_level_combo, 1, 1, 1, 1);
             panel.show_all ();
 
-            return panel;
+            return {panel};
         }
 
-        private AdvancedSettingsPanel japanese_layouts_panel () {
+        private AdvancedSettingsPanel[] japanese_layouts_panel () {
             var kana_lock_label = new SettingsLabel (_("Kana Lock:"), size_group[0]);
             var kana_lock_switch = new XkbOptionSwitch (settings, "japan:kana_lock");
 
@@ -238,10 +241,10 @@ namespace Pantheon.Keyboard.LayoutPage {
             panel.attach (zenkaku_switch, 1, 2, 1, 1);
             panel.show_all ();
 
-            return panel;
+            return {panel};
         }
 
-        private AdvancedSettingsPanel korean_layouts_panel () {
+        private AdvancedSettingsPanel[] korean_layouts_panel () {
             var hangul_label = new SettingsLabel (_("Hangul/Hanja keys on Right Alt/Ctrl:"), size_group[0]);
             var hangul_switch = new XkbOptionSwitch (settings, "korean:ralt_rctrl");
 
@@ -256,7 +259,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             panel.attach (spacer_grid, 1, 0, 1, 1);
             panel.show_all ();
 
-            return panel;
+            return {panel};
         }
 
         private void show_panel_for_active_layout () {
