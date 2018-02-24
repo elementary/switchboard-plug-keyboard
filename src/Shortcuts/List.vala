@@ -27,7 +27,7 @@ namespace Pantheon.Keyboard.Shortcuts {
     class List : GLib.Object {
         public Group[] groups;
 
-        public List () {
+        construct {
             init_goups ();
         }
 
