@@ -50,7 +50,7 @@ namespace Pantheon.Keyboard.Shortcuts
             this.hscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
             this.vscrollbar_policy = Gtk.PolicyType.AUTOMATIC;
             this.shadow_type = Gtk.ShadowType.IN;
-            this.add(tree);
+            this.add (tree);
             this.expand = true;
 
             // when cursor changes, emit signal "changed" with correct index

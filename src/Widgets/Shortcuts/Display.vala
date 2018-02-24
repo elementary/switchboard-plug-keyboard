@@ -54,9 +54,9 @@ namespace Pantheon.Keyboard.Shortcuts
             tbar.hexpand = true;
             tbar.no_show_all = true;
 
-            scroll.get_style_context ().set_junction_sides(Gtk.JunctionSides.BOTTOM);
-            tbar.get_style_context ().add_class(Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-            tbar.get_style_context ().set_junction_sides(Gtk.JunctionSides.TOP);
+            scroll.get_style_context ().set_junction_sides (Gtk.JunctionSides.BOTTOM);
+            tbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+            tbar.get_style_context ().set_junction_sides (Gtk.JunctionSides.TOP);
 
             add_button = new Gtk.ToolButton (null, _("Add"));
             remove_button = new Gtk.ToolButton (null, _("Remove"));
