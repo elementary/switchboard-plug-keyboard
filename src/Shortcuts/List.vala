@@ -21,7 +21,7 @@ namespace Pantheon.Keyboard.Shortcuts
 {
     struct Group { 
         public string[] actions;
-        public Schema[]  schemas;
+        public Schema[] schemas;
         public string[] keys;
     }
 
@@ -117,6 +117,8 @@ namespace Pantheon.Keyboard.Shortcuts
                         _("Switch to workspace 9"),
                         _("Switch to left"),
                         _("Switch to right"),
+                        _("Cycle workspaces"),
+                        _("Cycle workspaces backwards"),
                         _("Move to workspace 1"),
                         _("Move to workspace 2"),
                         _("Move to workspace 3"),
@@ -145,6 +147,8 @@ namespace Pantheon.Keyboard.Shortcuts
                         Schema.WM,
                         Schema.WM,
                         Schema.WM,
+                        Schema.GALA,
+                        Schema.GALA,
                         Schema.WM,
                         Schema.WM,
                         Schema.WM,
@@ -173,6 +177,8 @@ namespace Pantheon.Keyboard.Shortcuts
                         "switch-to-workspace-9",
                         "switch-to-workspace-left",
                         "switch-to-workspace-right",
+                        "cycle-workspaces-next",
+                        "cycle-workspaces-previous",
                         "move-to-workspace-1",
                         "move-to-workspace-2",
                         "move-to-workspace-3",
