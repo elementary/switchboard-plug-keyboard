@@ -130,7 +130,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 screenshot_group,
                 launchers_group,
                 media_group,
-                a11y_group
+                a11y_group   
             };
         }
 
