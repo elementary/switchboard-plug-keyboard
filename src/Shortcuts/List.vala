@@ -58,6 +58,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                         _("Window Overview"),
                         _("Show All Windows")
                     },
+
                     schemas = {
                         Schema.WM,
                         Schema.WM,
@@ -75,6 +76,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                         Schema.GALA,
                         Schema.GALA
                     },
+
                     keys = {
                         "close",
                         "lower",
