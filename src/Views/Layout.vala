@@ -38,8 +38,8 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             handler  = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
-            size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
-                           new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
+            size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
+                          new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
 
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
@@ -98,7 +98,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
             // Advanced settings panel
-            AdvancedSettingsPanel? [] panels = { fifth_level_layouts_panel (),
+            AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
                                                 korean_layouts_panel (),
                                                 third_level_layouts_panel ()};

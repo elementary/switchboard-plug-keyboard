@@ -34,17 +34,17 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         // Add an empty Widget
         var blank_panel = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         stack.add_named (blank_panel, "none");
-        blank_panel.show();
+        blank_panel.show ();
 
-        foreach ( AdvancedSettingsPanel? panel in panels ) {
+        foreach (AdvancedSettingsPanel? panel in panels) {
             if (panel == null) {
                 continue;
             }
 
             stack.add_named ( panel, panel.panel_name );
-            foreach ( string layout_name in panel.input_sources ) {
+            foreach (string layout_name in panel.input_sources) {
                 // currently we only want *one* panel per input-source
-                panel_for_layout.insert ( layout_name, panel.panel_name );
+                panel_for_layout.insert (layout_name, panel.panel_name);
             }
         }
     }
