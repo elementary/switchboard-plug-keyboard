@@ -215,5 +215,5 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             label.xalign = 0;
             add (label);
         }
-	}
+    }
 }
