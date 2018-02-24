@@ -35,12 +35,12 @@ namespace Pantheon.Keyboard.LayoutPage {
 
         public Page () {
             this.column_homogeneous = true;
-            
+
             handler  = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
-            size_group = { new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
-                           new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL) };
-                           
+            size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
+                          new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
+
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
 
@@ -98,7 +98,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
             // Advanced settings panel
-            AdvancedSettingsPanel [] panels = { fifth_level_layouts_panel (),
+            AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
                                                 korean_layouts_panel (),
                                                 third_level_layouts_panel ()};
@@ -133,7 +133,13 @@ namespace Pantheon.Keyboard.LayoutPage {
             });
         }
 
-        private AdvancedSettingsPanel third_level_layouts_panel () {
+        private AdvancedSettingsPanel? third_level_layouts_panel () {
+            var modifier = settings.get_xkb_modifier_by_name ("third_level_key");
+
+            if (modifier == null) {
+                return null;
+            }
+
             string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
                                                "bg*", "by", "by+legacy",
                                                "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
@@ -159,12 +165,11 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
 
-            var modifier = settings.get_xkb_modifier_by_name ("third_level_key");
-
             var third_level_combo = new XkbComboBox (modifier, size_group[1]);
 
             panel.attach (third_level_label, 0, 0, 1, 1);
             panel.attach (third_level_combo, 1, 0, 1, 1);
+
             panel.show_all ();
 
             return panel;
