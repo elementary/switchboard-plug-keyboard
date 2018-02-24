@@ -41,7 +41,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
                 continue;
             }
 
-            stack.add_named ( panel, panel.panel_name );
+            stack.add_named (panel, panel.panel_name);
             foreach (string layout_name in panel.input_sources) {
                 // currently we only want *one* panel per input-source
                 panel_for_layout.insert (layout_name, panel.panel_name);
