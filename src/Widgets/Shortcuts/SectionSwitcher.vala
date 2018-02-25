@@ -31,8 +31,9 @@ class Pantheon.Keyboard.Shortcuts.SectionSwitcher : Gtk.ScrolledWindow {
             var grid = new Gtk.Grid ();
 
             var icon = get_icon_for_index (id);
-            icon.margin_top = icon.margin_bottom = 4;
-            icon.margin_left = 2;
+            icon.margin_top = 4;
+            icon.margin_bottom = 4;
+            icon.margin_left = 4;
 
             var label = new Gtk.Label (section_names[id]);
             label.margin = 3;
