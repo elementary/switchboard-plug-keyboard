@@ -28,12 +28,18 @@ class Pantheon.Keyboard.Shortcuts.SectionSwitcher : Gtk.ScrolledWindow {
                              : SectionID.CUSTOM;
 
         for (int id = 0; id < max_section_id; id++) {
+            var icon = new Gtk.Image.from_icon_name (section_icons[id], Gtk.IconSize.DND);
+
             var label = new Gtk.Label (section_names[id]);
-            label.margin = 3;
-            label.margin_start = label.margin_end = 6;
             label.xalign = 0;
 
-            listbox.add (label);
+            var grid = new Gtk.Grid ();
+            grid.margin = 6;
+            grid.column_spacing = 6;
+            grid.add (icon);
+            grid.add (label);
+
+            listbox.add (grid);
         }
 
         var frame = new Gtk.Frame (null);

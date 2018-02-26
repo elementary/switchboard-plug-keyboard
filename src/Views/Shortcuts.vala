@@ -36,6 +36,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         COUNT
     }
 
+    private string[] section_icons;
     private string[] section_names;
 
     class Page : Pantheon.Keyboard.AbstractPage {
@@ -53,7 +54,16 @@ namespace Pantheon.Keyboard.Shortcuts {
         construct {            
             CustomShortcutSettings.init ();
 
-            // init public elements
+            section_icons = {
+                "preferences-system-windows",
+                "preferences-desktop-wallpaper",
+                "accessories-screenshot",
+                "preferences-desktop-applications",
+                "applications-multimedia",
+                "preferences-desktop-accessibility",
+                "applications-other"
+            };
+
             section_names = {
                 _("Windows"),
                 _("Workspaces"),
