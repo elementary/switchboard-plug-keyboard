@@ -32,6 +32,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         APPS,
         MEDIA,
         A11Y,
+        SYSTEM,
         CUSTOM,
         COUNT
     }
@@ -61,6 +62,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 _("Applications"),
                 _("Media"),
                 _("Universal Access"),
+                _("System"),
                 _("Custom")
             };
 

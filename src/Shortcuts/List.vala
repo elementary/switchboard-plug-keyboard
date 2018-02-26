@@ -89,7 +89,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref launchers_group, Schema.MEDIA, _("File Search"), "search");
             add_action (ref launchers_group, Schema.MEDIA, _("Terminal"), "terminal");
             add_action (ref launchers_group, Schema.MEDIA, _("Internet Browser"), "www");
-            add_action (ref launchers_group, Schema.WM, _("Applications Launcher"), "panel-main-menu");
 
             Group media_group = {};
             add_action (ref media_group, Schema.MEDIA, _("Volume Up"), "volume-up");
@@ -112,13 +111,19 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle Screenreader"), "screenreader");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle High Contrast"), "toggle-contrast");
 
+            Group system_group = {};
+            add_action (ref system_group, Schema.WM, _("Applications Launcher"), "panel-main-menu");
+            add_action (ref system_group, Schema.MEDIA, _("Lock"), "screensaver");
+            add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
+
             groups = {
                 windows_group,
                 workspaces_group,
                 screenshot_group,
                 launchers_group,
                 media_group,
-                a11y_group
+                a11y_group,
+                system_group
             };
         }
 
