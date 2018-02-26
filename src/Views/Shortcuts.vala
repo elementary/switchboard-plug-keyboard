@@ -36,9 +36,6 @@ namespace Pantheon.Keyboard.Shortcuts {
         COUNT
     }
 
-    private string[] section_icons;
-    private string[] section_names;
-
     class Page : Pantheon.Keyboard.AbstractPage {
         public override void reset () {
             for (int i = 0; i < SectionID.COUNT; i++) {
@@ -54,26 +51,6 @@ namespace Pantheon.Keyboard.Shortcuts {
         construct {            
             CustomShortcutSettings.init ();
 
-            section_icons = {
-                "preferences-system-windows",
-                "preferences-desktop-wallpaper",
-                "accessories-screenshot",
-                "preferences-desktop-applications",
-                "applications-multimedia",
-                "preferences-desktop-accessibility",
-                "applications-other"
-            };
-
-            section_names = {
-                _("Windows"),
-                _("Workspaces"),
-                _("Screenshots"),
-                _("Applications"),
-                _("Media"),
-                _("Universal Access"),
-                _("Custom")
-            };
-
             list = new List ();
             settings = new Shortcuts.Settings ();
 
@@ -86,6 +63,14 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             var section_switcher = new SectionSwitcher ();
+            section_switcher.add_section (list.windows_group);
+            section_switcher.add_section (list.workspaces_group);
+            section_switcher.add_section (list.screenshot_group);
+            section_switcher.add_section (list.launchers_group);
+            section_switcher.add_section (list.media_group);
+            section_switcher.add_section (list.a11y_group);
+            section_switcher.add_section (list.custom_group);
+
             var shortcut_display = new ShortcutDisplay (trees);
 
             column_homogeneous = true;

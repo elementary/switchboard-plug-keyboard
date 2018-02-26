@@ -20,27 +20,10 @@
 class Pantheon.Keyboard.Shortcuts.SectionSwitcher : Gtk.ScrolledWindow {
     public signal bool changed (int i);
 
+    private Gtk.ListBox listbox;
+
     construct {
-        var listbox = new Gtk.ListBox ();
-
-        var max_section_id = CustomShortcutSettings.available
-                             ? SectionID.COUNT
-                             : SectionID.CUSTOM;
-
-        for (int id = 0; id < max_section_id; id++) {
-            var icon = new Gtk.Image.from_icon_name (section_icons[id], Gtk.IconSize.DND);
-
-            var label = new Gtk.Label (section_names[id]);
-            label.xalign = 0;
-
-            var grid = new Gtk.Grid ();
-            grid.margin = 6;
-            grid.column_spacing = 6;
-            grid.add (icon);
-            grid.add (label);
-
-            listbox.add (grid);
-        }
+        listbox = new Gtk.ListBox ();
 
         var frame = new Gtk.Frame (null);
         frame.add (listbox);
@@ -51,5 +34,20 @@ class Pantheon.Keyboard.Shortcuts.SectionSwitcher : Gtk.ScrolledWindow {
         listbox.row_selected.connect ((row) => {
             changed (row.get_index ());
         });
+    }
+
+    public void add_section (Pantheon.Keyboard.Shortcuts.Group group) {
+        var icon = new Gtk.Image.from_icon_name (group.icon_name, Gtk.IconSize.DND);
+
+        var label = new Gtk.Label (group.label);
+        label.xalign = 0;
+
+        var grid = new Gtk.Grid ();
+        grid.margin = 6;
+        grid.column_spacing = 6;
+        grid.add (icon);
+        grid.add (label);
+
+        listbox.add (grid);
     }
 }
