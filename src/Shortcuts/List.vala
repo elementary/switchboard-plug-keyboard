@@ -58,9 +58,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 8"), "switch-to-workspace-8");
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 9"), "switch-to-workspace-9");
             add_action (ref workspaces_group, Schema.WM, _("Switch to left"), "switch-to-workspace-left");
-            add_action (ref workspaces_group, Schema.WM, _("Switch to right"), "cycle-workspaces-previous");
+            add_action (ref workspaces_group, Schema.WM, _("Switch to right"), "switch-to-workspace-right");
             add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces"), "cycle-workspaces-next");
-            add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces backwards"), "show-desktop");
+            add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces backwards"), "cycle-workspaces-previous");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 1"), "move-to-workspace-1");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 2"), "move-to-workspace-2");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 3"), "move-to-workspace-3");
@@ -82,11 +82,8 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref screenshot_group, Schema.MEDIA, _("Save Area-Screenshot to Clipboard"), "area-screenshot-clip");
 
             Group launchers_group = {};
-            add_action (ref launchers_group, Schema.MEDIA, _("Calculator"), "calculator");
             add_action (ref launchers_group, Schema.MEDIA, _("Email"), "email");
-            add_action (ref launchers_group, Schema.MEDIA, _("Help"), "help");
             add_action (ref launchers_group, Schema.MEDIA, _("Home Folder"), "home");
-            add_action (ref launchers_group, Schema.MEDIA, _("File Search"), "search");
             add_action (ref launchers_group, Schema.MEDIA, _("Terminal"), "terminal");
             add_action (ref launchers_group, Schema.MEDIA, _("Internet Browser"), "www");
 
@@ -105,8 +102,8 @@ namespace Pantheon.Keyboard.Shortcuts {
             Group a11y_group = {};
             add_action (ref a11y_group, Schema.MEDIA, _("Decrease Text Size"), "decrease-text-size");
             add_action (ref a11y_group, Schema.MEDIA, _("Increase Text Size"), "increase-text-size");
-            add_action (ref a11y_group, Schema.MEDIA, _("Magnifier Zoom in"), "zoom-in");
-            add_action (ref a11y_group, Schema.MEDIA, _("Magnifier Zoom out"), "zoom-out");
+            add_action (ref a11y_group, Schema.GALA, _("Magnifier Zoom in"), "zoom-in");
+            add_action (ref a11y_group, Schema.GALA, _("Magnifier Zoom out"), "zoom-out");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle On Screen Keyboard"), "on-screen-keyboard");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle Screenreader"), "screenreader");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle High Contrast"), "toggle-contrast");
