@@ -256,7 +256,8 @@ namespace Pantheon.Keyboard.Shortcuts {
                             CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
                             load_and_display_custom_shortcuts ();
                         });
-                    dialog.show ();
+                    dialog.transient_for = (Gtk.Window) this.get_toplevel ();
+                    dialog.present ();
                     return false;
                 }
             }

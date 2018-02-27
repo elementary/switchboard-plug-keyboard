@@ -133,7 +133,8 @@ namespace Pantheon.Keyboard.Shortcuts {
                         settings.set_val ((Schema) schema, (string) key, shortcut);
                         load_and_display_shortcuts ();
                     });
-                    dialog.show ();
+                    dialog.transient_for = (Gtk.Window) this.get_toplevel ();
+                    dialog.present ();
                     return false;
                 }
             }
