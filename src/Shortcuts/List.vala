@@ -117,7 +117,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref media_group, Schema.MEDIA, _("Stop"), "stop");
             add_action (ref media_group, Schema.MEDIA, _("Previous Track"), "previous");
             add_action (ref media_group, Schema.MEDIA, _("Next Track"), "next");
-            add_action (ref media_group, Schema.MEDIA, _("Stop"), "eject");
+            add_action (ref media_group, Schema.MEDIA, _("Eject"), "eject");
 
             a11y_group = {};
             a11y_group.icon_name = "preferences-desktop-accessibility";
