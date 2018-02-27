@@ -97,16 +97,13 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
-            // Advanced settings panel
-
             var panel_set = new Gee.ArrayList<AdvancedSettingsPanel> ();
             panel_set.add_all_array (fifth_level_layouts_panel ());
             panel_set.add_all_array (japanese_layouts_panel ());
             panel_set.add_all_array (korean_layouts_panel ());
             panel_set.add_all_array (third_level_layouts_panel ());
 
-           AdvancedSettingsPanel [] panels = panel_set.to_array ();
-
+            AdvancedSettingsPanel [] panels = panel_set.to_array ();
             advanced_settings = new AdvancedSettings (panels);
             advanced_settings.hexpand = advanced_settings.vexpand = true;
             advanced_settings.valign = Gtk.Align.START;

@@ -36,7 +36,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         stack.add_named (blank_panel, "none");
         blank_panel.show ();
 
-        foreach (AdvancedSettingsPanel? panel in panels) {
+        foreach (AdvancedSettingsPanel panel in panels) {
             stack.add_named (panel, panel.panel_name);
 
             foreach (string layout_name in panel.input_sources) {

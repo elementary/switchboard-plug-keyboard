@@ -19,6 +19,8 @@
 
 namespace Pantheon.Keyboard.Shortcuts {
     struct Group {
+        public string icon_name;
+        public string label;
         public string[] actions;
         public Schema[] schemas;
         public string[] keys;
@@ -26,9 +28,18 @@ namespace Pantheon.Keyboard.Shortcuts {
 
     class List : GLib.Object {
         public Group[] groups;
+        public Group windows_group;
+        public Group workspaces_group;
+        public Group screenshot_group;
+        public Group launchers_group;
+        public Group media_group;
+        public Group a11y_group;
+        public Group custom_group;
 
         construct {
-            Group windows_group = {};
+            windows_group = {};
+            windows_group.icon_name = "preferences-system-windows";
+            windows_group.label = _("Windows");
             add_action (ref windows_group, Schema.WM, _("Lower"), "lower");
             add_action (ref windows_group, Schema.WM, _("Maximize"), "maximize");
             add_action (ref windows_group, Schema.WM, _("Unmaximize"), "unmaximize");
@@ -44,7 +55,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.GALA, _("Window Overview"), "expose-windows");
             add_action (ref windows_group, Schema.GALA, _("Show All Windows"), "expose-all-windows");
 
-            Group workspaces_group = {};
+            workspaces_group = {};
+            workspaces_group.icon_name = "preferences-desktop-wallpaper";
+            workspaces_group.label = _("Workspaces");
             add_action (ref workspaces_group, Schema.WM, _("Show Workspace Switcher"), "show-desktop");
             add_action (ref workspaces_group, Schema.GALA, _("Switch to first"), "switch-to-workspace-first");
             add_action (ref workspaces_group, Schema.GALA, _("Switch to new"), "switch-to-workspace-last");
@@ -58,9 +71,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 8"), "switch-to-workspace-8");
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 9"), "switch-to-workspace-9");
             add_action (ref workspaces_group, Schema.WM, _("Switch to left"), "switch-to-workspace-left");
-            add_action (ref workspaces_group, Schema.WM, _("Switch to right"), "cycle-workspaces-previous");
+            add_action (ref workspaces_group, Schema.WM, _("Switch to right"), "switch-to-workspace-right");
             add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces"), "cycle-workspaces-next");
-            add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces backwards"), "show-desktop");
+            add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces backwards"), "cycle-workspaces-previous");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 1"), "move-to-workspace-1");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 2"), "move-to-workspace-2");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 3"), "move-to-workspace-3");
@@ -73,7 +86,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Move to left"), "move-to-workspace-left");
             add_action (ref workspaces_group, Schema.WM, _("Move to right"), "move-to-workspace-right");
 
-            Group screenshot_group = {};
+            screenshot_group = {};
+            screenshot_group.icon_name = "accessories-screenshot";
+            screenshot_group.label = _("Screenshots");
             add_action (ref screenshot_group, Schema.MEDIA, _("Take a Screenshot"), "screenshot");
             add_action (ref screenshot_group, Schema.MEDIA, _("Save Screenshot to Clipboard"), "screenshot-clip");
             add_action (ref screenshot_group, Schema.MEDIA, _("Take a Screenshot of a Window"), "window-screenshot");
@@ -81,36 +96,43 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref screenshot_group, Schema.MEDIA, _("Take a Screenshot of an Area"), "area-screenshot");
             add_action (ref screenshot_group, Schema.MEDIA, _("Save Area-Screenshot to Clipboard"), "area-screenshot-clip");
 
-            Group launchers_group = {};
-            add_action (ref launchers_group, Schema.MEDIA, _("Calculator"), "calculator");
+            launchers_group = {};
+            launchers_group.icon_name = "preferences-desktop-applications";
+            launchers_group.label = _("Applications");
             add_action (ref launchers_group, Schema.MEDIA, _("Email"), "email");
-            add_action (ref launchers_group, Schema.MEDIA, _("Help"), "help");
             add_action (ref launchers_group, Schema.MEDIA, _("Home Folder"), "home");
-            add_action (ref launchers_group, Schema.MEDIA, _("File Search"), "search");
+            add_action (ref launchers_group, Schema.MEDIA, _("Music"), "media");
             add_action (ref launchers_group, Schema.MEDIA, _("Terminal"), "terminal");
             add_action (ref launchers_group, Schema.MEDIA, _("Internet Browser"), "www");
             add_action (ref launchers_group, Schema.WM, _("Applications Launcher"), "panel-main-menu");
 
-            Group media_group = {};
+            media_group = {};
+            media_group.icon_name = "applications-multimedia";
+            media_group.label = _("Media");
             add_action (ref media_group, Schema.MEDIA, _("Volume Up"), "volume-up");
             add_action (ref media_group, Schema.MEDIA, _("Volume Down"), "volume-down");
             add_action (ref media_group, Schema.MEDIA, _("Mute"), "volume-mute");
-            add_action (ref media_group, Schema.MEDIA, _("Launch Media Player"), "media");
             add_action (ref media_group, Schema.MEDIA, _("Play"), "play");
             add_action (ref media_group, Schema.MEDIA, _("Pause"), "pause");
             add_action (ref media_group, Schema.MEDIA, _("Stop"), "stop");
             add_action (ref media_group, Schema.MEDIA, _("Previous Track"), "previous");
             add_action (ref media_group, Schema.MEDIA, _("Next Track"), "next");
-            add_action (ref media_group, Schema.MEDIA, _("Stop"), "eject");
+            add_action (ref media_group, Schema.MEDIA, _("Eject"), "eject");
 
-            Group a11y_group = {};
+            a11y_group = {};
+            a11y_group.icon_name = "preferences-desktop-accessibility";
+            a11y_group.label = _("Universal Access");
             add_action (ref a11y_group, Schema.MEDIA, _("Decrease Text Size"), "decrease-text-size");
             add_action (ref a11y_group, Schema.MEDIA, _("Increase Text Size"), "increase-text-size");
-            add_action (ref a11y_group, Schema.MEDIA, _("Magnifier Zoom in"), "zoom-in");
-            add_action (ref a11y_group, Schema.MEDIA, _("Magnifier Zoom out"), "zoom-out");
+            add_action (ref a11y_group, Schema.GALA, _("Magnifier Zoom in"), "zoom-in");
+            add_action (ref a11y_group, Schema.GALA, _("Magnifier Zoom out"), "zoom-out");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle On Screen Keyboard"), "on-screen-keyboard");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle Screenreader"), "screenreader");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle High Contrast"), "toggle-contrast");
+
+            custom_group = {};
+            custom_group.icon_name = "applications-other";
+            custom_group.label = _("Custom");
 
             groups = {
                 windows_group,

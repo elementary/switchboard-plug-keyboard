@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright (c) 2017-2018 elementary, LLC. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -17,76 +17,67 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts
-{
-	// list of all shortcuts in gsettings, global object
-	private List list;
-	// class to interact with gsettings
-	private Shortcuts.Settings settings;
-	// array of tree views, one for each section
-	private DisplayTree[] trees;
+namespace Pantheon.Keyboard.Shortcuts {
+    // list of all shortcuts in gsettings, global object
+    private List list;
+    // class to interact with gsettings
+    private Shortcuts.Settings settings;
+    // array of tree views, one for each section
+    private DisplayTree[] trees;
 
-	private enum SectionID {
-	    WINDOWS,
-	    WORKSPACES,
-	    SCREENSHOTS,
-	    APPS,
-	    MEDIA,
-	    A11Y,
-	    CUSTOM,
-	    COUNT
-	}
+    private enum SectionID {
+        WINDOWS,
+        WORKSPACES,
+        SCREENSHOTS,
+        APPS,
+        MEDIA,
+        A11Y,
+        CUSTOM,
+        COUNT
+    }
 
-	private string[] section_names;
+    class Page : Pantheon.Keyboard.AbstractPage {
+        public override void reset () {
+            for (int i = 0; i < SectionID.COUNT; i++) {
+                var g = list.groups[i];
 
-	// main class
-	class Page : Pantheon.Keyboard.AbstractPage
-	{
-		public override void reset ()
-		{
-			for (int i = 0; i < SectionID.COUNT; i++) {
-				var g = list.groups[i];
+                for (int k = 0; k < g.actions.length; k++) {
+                    settings.reset (g.schemas[k], g.keys[k]);
+                }
+            }
+            return;
+        }
 
-				for (int k = 0; k < g.actions.length; k++)
-					settings.reset (g.schemas[k], g.keys[k]);
-			}
-			return;
-		}
+        construct {            
+            CustomShortcutSettings.init ();
 
-		public Page ()
-		{
-            this.column_homogeneous = true;
-            
-			CustomShortcutSettings.init ();
+            list = new List ();
+            settings = new Shortcuts.Settings ();
 
-			// init public elements
-			section_names = {
-				_("Windows"),
-				_("Workspaces"),
-				_("Screenshots"),
-				_("Applications"),
-				_("Media"),
-				_("Universal Access"),
-				_("Custom")
-			};
+            for (int id = 0; id < SectionID.CUSTOM; id++) {
+                trees += new Tree ((SectionID) id);
+            }
 
-			list     = new List ();
-			settings = new Shortcuts.Settings ();
+            if (CustomShortcutSettings.available) {
+                trees += new CustomTree ();
+            }
 
-			for (int id = 0; id < SectionID.CUSTOM; id++)
-				trees += new Tree ((SectionID) id);
+            var section_switcher = new SectionSwitcher ();
+            section_switcher.add_section (list.windows_group);
+            section_switcher.add_section (list.workspaces_group);
+            section_switcher.add_section (list.screenshot_group);
+            section_switcher.add_section (list.launchers_group);
+            section_switcher.add_section (list.media_group);
+            section_switcher.add_section (list.a11y_group);
+            section_switcher.add_section (list.custom_group);
 
-			if (CustomShortcutSettings.available)
-				trees += new CustomTree ();
+            var shortcut_display = new ShortcutDisplay (trees);
 
-			// private elements
-			var section_switcher = new SectionSwitcher ();
-			var shortcut_display = new ShortcutDisplay (trees);
+            column_homogeneous = true;
+            attach (section_switcher, 0, 0, 1, 1);
+            attach (shortcut_display, 1, 0, 2, 1);
 
-			this.attach (section_switcher, 0, 0, 1, 1);
-			this.attach (shortcut_display, 1, 0, 2, 1);
-
-			section_switcher.changed.connect (shortcut_display.change_selection);
-		}
-	}
+            section_switcher.changed.connect (shortcut_display.change_selection);
+        }
+    }
 }
