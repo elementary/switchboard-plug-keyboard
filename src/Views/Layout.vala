@@ -85,7 +85,6 @@ namespace Pantheon.Keyboard.LayoutPage {
             overlay_key_combo.halign = Gtk.Align.START;
             overlay_key_combo.append_text (_("Disabled"));
             overlay_key_combo.append_text (_("Applications Menu"));
-            overlay_key_combo.append_text (_("Multitasking View"));
 
             string? cheatsheet_path = Environment.find_program_in_path ("io.elementary.shortcut-overlay");
             if (cheatsheet_path != null) {
@@ -161,11 +160,8 @@ namespace Pantheon.Keyboard.LayoutPage {
                 case "wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
-                case "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1":
-                    overlay_key_combo.active = 2;
-                    break;
                 case "io.elementary.shortcut-overlay":
-                    overlay_key_combo.active = 3;
+                    overlay_key_combo.active = 2;
                     break;
             }
 
@@ -177,8 +173,6 @@ namespace Pantheon.Keyboard.LayoutPage {
                 } else if (combo_active == 1) {
                     gala_behavior_settings.set_string ("overlay-action", "wingpanel --toggle-indicator=app-launcher");
                 } else if (combo_active == 2) {
-                    gala_behavior_settings.set_string ("overlay-action", "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1");
-                } else if (combo_active == 3) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
             });
