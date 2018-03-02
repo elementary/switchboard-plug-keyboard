@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-02-27 01:00-0600\n"
+"POT-Creation-Date: 2018-03-01 16:02-0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,69 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../src/Dialogs/ConflictDialog.vala:26
+msgid "%s is already used for %s"
+msgstr ""
+
+#: ../src/Dialogs/ConflictDialog.vala:27
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr ""
+
+#: ../src/Dialogs/ConflictDialog.vala:36
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:114
+msgid "Cancel"
+msgstr ""
+
+#: ../src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr ""
+
+#: ../src/Keyboard.vala:13
+msgid "Keyboard"
+msgstr ""
+
+#: ../src/Keyboard.vala:14
+msgid "Configure keyboard behavior, layouts, and shortcuts"
+msgstr ""
+
+#: ../src/Keyboard.vala:23
+msgid "Layout"
+msgstr ""
+
+#: ../src/Keyboard.vala:24 ../src/Keyboard.vala:67
+msgid "Shortcuts"
+msgstr ""
+
+#: ../src/Keyboard.vala:25
+msgid "Behavior"
+msgstr ""
+
+#: ../src/Keyboard.vala:68
+msgid "Repeat Keys"
+msgstr ""
+
+#: ../src/Keyboard.vala:69
+msgid "Cursor Blinking"
+msgstr ""
+
+#: ../src/Keyboard.vala:70
+msgid "Switch layout"
+msgstr ""
+
+#: ../src/Keyboard.vala:71
+msgid "Compose Key"
+msgstr ""
+
+#: ../src/Keyboard.vala:72
+msgid "Caps Lock behavior"
+msgstr ""
+
+#: ../src/Layout/Handler.vala:78 ../src/Views/Layout.vala:85
+#: ../src/Views/Layout.vala:184 ../src/Widgets/Layout/AddLayoutPopover.vala:187
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:191
+msgid "Default"
+msgstr ""
 
 #: ../src/Shortcuts/List.vala:42
 msgid "Windows"
@@ -338,10 +401,41 @@ msgstr ""
 msgid "Alt"
 msgstr ""
 
-#: ../src/Layout/Handler.vala:78 ../src/Views/Layout.vala:85
-#: ../src/Views/Layout.vala:184 ../src/Widgets/Layout/AddLayoutPopover.vala:187
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:191
-msgid "Default"
+#: ../src/Views/Behavior.vala:45
+msgid "Repeat Keys:"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:49
+msgid "Delay:"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:52
+msgid "Interval:"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:55 ../src/Views/Behavior.vala:58
+#: ../src/Views/Behavior.vala:95
+msgid "milliseconds"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:84
+msgid "Cursor Blinking:"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:89
+msgid "Speed:"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:92
+msgid "Duration:"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:98
+msgid "seconds"
+msgstr ""
+
+#: ../src/Views/Behavior.vala:127
+msgid "Type to test your settings"
 msgstr ""
 
 #: ../src/Views/Layout.vala:47
@@ -468,92 +562,33 @@ msgstr ""
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr ""
 
-#: ../src/Views/Behavior.vala:45
-msgid "Repeat Keys:"
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:49
+msgid "Input Language"
 msgstr ""
 
-#: ../src/Views/Behavior.vala:49
-msgid "Delay:"
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:88
+msgid "Show keyboard layout"
 msgstr ""
 
-#: ../src/Views/Behavior.vala:52
-msgid "Interval:"
+#: ../src/Widgets/Layout/AddLayoutPopover.vala:110
+msgid "Add Layout"
 msgstr ""
 
-#: ../src/Views/Behavior.vala:55 ../src/Views/Behavior.vala:58
-#: ../src/Views/Behavior.vala:95
-msgid "milliseconds"
+#: ../src/Widgets/Layout/Display.vala:55
+msgid "Add…"
 msgstr ""
 
-#: ../src/Views/Behavior.vala:84
-msgid "Cursor Blinking:"
-msgstr ""
-
-#: ../src/Views/Behavior.vala:89
-msgid "Speed:"
-msgstr ""
-
-#: ../src/Views/Behavior.vala:92
-msgid "Duration:"
-msgstr ""
-
-#: ../src/Views/Behavior.vala:98
-msgid "seconds"
-msgstr ""
-
-#: ../src/Views/Behavior.vala:127
-msgid "Type to test your settings"
-msgstr ""
-
-#: ../src/Keyboard.vala:13
-msgid "Keyboard"
-msgstr ""
-
-#: ../src/Keyboard.vala:14
-msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
-
-#: ../src/Keyboard.vala:23
-msgid "Layout"
-msgstr ""
-
-#: ../src/Keyboard.vala:24 ../src/Keyboard.vala:67
-msgid "Shortcuts"
-msgstr ""
-
-#: ../src/Keyboard.vala:25
-msgid "Behavior"
-msgstr ""
-
-#: ../src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr ""
-
-#: ../src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr ""
-
-#: ../src/Keyboard.vala:70
-msgid "Switch layout"
-msgstr ""
-
-#: ../src/Keyboard.vala:71
-msgid "Compose Key"
-msgstr ""
-
-#: ../src/Keyboard.vala:72
-msgid "Caps Lock behavior"
-msgstr ""
-
-#: ../src/Widgets/Shortcuts/Display.vala:61
-#: ../src/Widgets/Shortcuts/Display.vala:64
-msgid "Add"
-msgstr ""
-
-#: ../src/Widgets/Shortcuts/Display.vala:62
-#: ../src/Widgets/Shortcuts/Display.vala:65
 #: ../src/Widgets/Layout/Display.vala:59
+#: ../src/Widgets/Shortcuts/Display.vala:48
 msgid "Remove"
+msgstr ""
+
+#: ../src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr ""
+
+#: ../src/Widgets/Layout/Display.vala:67
+msgid "Move down"
 msgstr ""
 
 #: ../src/Widgets/Shortcuts/CustomTree.vala:23
@@ -568,43 +603,6 @@ msgstr ""
 msgid "Shortcut"
 msgstr ""
 
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:49
-msgid "Input Language"
-msgstr ""
-
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:88
-msgid "Show keyboard layout"
-msgstr ""
-
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:110
-msgid "Add Layout"
-msgstr ""
-
-#: ../src/Widgets/Layout/AddLayoutPopover.vala:114
-#: ../src/Dialogs/ConflictDialog.vala:13
-msgid "Cancel"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:63
-msgid "Move up"
-msgstr ""
-
-#: ../src/Widgets/Layout/Display.vala:67
-msgid "Move down"
-msgstr ""
-
-#: ../src/Dialogs/ConflictDialog.vala:10
-msgid "%s is already used for %s!"
-msgstr ""
-
-#: ../src/Dialogs/ConflictDialog.vala:11
-msgid "If you reassign the shortcut to %s, %s will be disabled"
-msgstr ""
-
-#: ../src/Dialogs/ConflictDialog.vala:14
-msgid "Reassign"
+#: ../src/Widgets/Shortcuts/Display.vala:44
+msgid "Add"
 msgstr ""
