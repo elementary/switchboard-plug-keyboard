@@ -69,6 +69,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
+            modifier.append_xkb_option ("compose:menu", _("Menu"));
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
             modifier.append_xkb_option ("compose:rwin", _("Right Super"));
