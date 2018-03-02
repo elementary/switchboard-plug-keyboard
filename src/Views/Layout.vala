@@ -78,7 +78,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var compose_key_combo = new XkbComboBox (modifier, size_group[1]);
 
-            var overlay_key_label = new SettingsLabel (_("Super key:"), size_group[0]);
+            var overlay_key_label = new SettingsLabel (_("Super key behavior:"), size_group[0]);
 
             var overlay_key_combo = new Gtk.ComboBoxText ();
             overlay_key_combo.halign = Gtk.Align.START;
