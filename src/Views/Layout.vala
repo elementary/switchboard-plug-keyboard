@@ -78,6 +78,20 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var compose_key_combo = new XkbComboBox (modifier, size_group[1]);
 
+            var overlay_key_label = new SettingsLabel (_("Super key:"), size_group[0]);
+
+            var overlay_key_combo = new Gtk.ComboBoxText ();
+            overlay_key_combo.halign = Gtk.Align.START;
+            overlay_key_combo.append_text (_("Disabled"));
+            overlay_key_combo.append_text (_("Applications Menu"));
+
+            string? cheatsheet_path = Environment.find_program_in_path ("io.elementary.shortcut-overlay");
+            if (cheatsheet_path != null) {
+                overlay_key_combo.append_text (_("Shortcut Overlay"));
+            }
+
+            size_group[1].add_widget (overlay_key_combo);
+
             var caps_lock_label = new SettingsLabel (_("Caps Lock behavior:"), size_group[0]);
 
             // Caps Lock key functionality
@@ -112,15 +126,17 @@ namespace Pantheon.Keyboard.LayoutPage {
             entry_test.placeholder_text = (_("Type to test your layout"));
             entry_test.valign = Gtk.Align.END;
 
-            attach (display, 0, 0, 1, 5);
+            attach (display, 0, 0, 1, 6);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
             attach (compose_key_label, 1, 1, 1, 1);
             attach (compose_key_combo, 2, 1, 1, 1);
-            attach (caps_lock_label, 1, 2, 1, 1);
-            attach (caps_lock_combo, 2, 2, 1, 1);
-            attach (entry_test, 1, 4, 2, 1);
-            attach (advanced_settings, 1, 3, 2, 1);
+            attach (overlay_key_label, 1, 2, 1, 1);
+            attach (overlay_key_combo, 2, 2, 1, 1);
+            attach (caps_lock_label, 1, 3, 1, 1);
+            attach (caps_lock_combo, 2, 3, 1, 1);
+            attach (advanced_settings, 1, 4, 2, 1);
+            attach (entry_test, 1, 5, 2, 1);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -130,6 +146,34 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             settings.layouts.active_changed.connect (() => {
                 show_panel_for_active_layout ();
+            });
+
+            var gala_behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
+
+            var overlay_string = gala_behavior_settings.get_string ("overlay-action");
+
+            switch (overlay_string) {
+                case "":
+                    overlay_key_combo.active = 0;
+                    break;
+                case "wingpanel --toggle-indicator=app-launcher":
+                    overlay_key_combo.active = 1;
+                    break;
+                case "io.elementary.shortcut-overlay":
+                    overlay_key_combo.active = 2;
+                    break;
+            }
+
+            overlay_key_combo.changed.connect (() => {
+                var combo_active = overlay_key_combo.active;
+
+                if (combo_active == 0) {
+                    gala_behavior_settings.set_string ("overlay-action", "");
+                } else if (combo_active == 1) {
+                    gala_behavior_settings.set_string ("overlay-action", "wingpanel --toggle-indicator=app-launcher");
+                } else if (combo_active == 2) {
+                    gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
+                }
             });
         }
 
