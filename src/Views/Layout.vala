@@ -71,7 +71,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:ralt", _("Right Alt"));
             modifier.append_xkb_option ("compose:rctrl", _("Right Ctrl"));
-            modifier.append_xkb_option ("compose:rwin", _("Right Super"));
+            modifier.append_xkb_option ("compose:rwin", _("Right ⌘"));
             modifier.set_default_command ("");
 
             settings.add_xkb_modifier (modifier);
@@ -88,7 +88,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("ctrl:nocaps", _("as Ctrl"));
             modifier.append_xkb_option ("caps:escape", _("as Escape"));
             modifier.append_xkb_option ("caps:numlock", _("as Num Lock"));
-            modifier.append_xkb_option ("caps:super", _("as Super"));
+            modifier.append_xkb_option ("caps:super", _("as ⌘"));
             modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Control"));
             modifier.append_xkb_option ("caps:swapescape", _("Swap with Escape"));
 
@@ -186,7 +186,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
             modifier.append_xkb_option ("lv3:ralt_switch", _("Right Alt"));
             modifier.append_xkb_option ("lv3:switch", _("Right Ctrl"));
-            modifier.append_xkb_option ("lv3:rwin", _("Right Super"));
+            modifier.append_xkb_option ("lv3:rwin", _("Right ⌘"));
 
             modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
@@ -198,7 +198,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
             modifier.append_xkb_option ("", _("Right Ctrl"));
-            modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right Super"));
+            modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right ⌘"));
             modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
