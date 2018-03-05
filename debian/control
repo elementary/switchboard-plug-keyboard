@@ -20,4 +20,7 @@ Architecture: any
 Depends: xkb-data, xkb-data-i18n, ${misc:Depends}, ${shlibs:Depends}
 Enhances: switchboard
 Description: Switchboard plug for keyboard settings
- This plug can be used to change several keyboard settings, for example the delay and speed of the key repetition, or the cursor blinking speed. You can change your keyboard layout, and use multiple layouts at the same time. Keyboard shortcuts are also part of this plug.
+ This plug can be used to change several keyboard settings, for example the
+ delay and speed of the key repetition, or the cursor blinking speed. You can
+ change your keyboard layout, and use multiple layouts at the same time.
+ Keyboard shortcuts are also part of this plug.
