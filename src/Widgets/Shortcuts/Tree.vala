@@ -124,8 +124,9 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             if (shortcut != null) {
                 foreach (var tree in trees) {
-                    if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
+                    if (tree.shortcut_conflicts (shortcut, out conflict_name) == false || conflict_name == (string) name) {
                         continue;
+                    }
 
                     var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) name);
                     dialog.reassign.connect (() => {
