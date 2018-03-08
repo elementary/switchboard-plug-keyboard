@@ -48,8 +48,8 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Toggle Fullscreen"), "toggle-fullscreen");
             add_action (ref windows_group, Schema.WM, _("Toggle on all Workspaces"), "toggle-on-all-workspaces");
             add_action (ref windows_group, Schema.WM, _("Toggle always on Top"), "toggle-above");
-            add_action (ref windows_group, Schema.WM, _("Switch Windows"), "switch-windows");
-            add_action (ref windows_group, Schema.WM, _("Switch Windows backwards"), "switch-windows-backward");
+            add_action (ref windows_group, Schema.WM, _("Cycle Windows"), "switch-windows");
+            add_action (ref windows_group, Schema.WM, _("Cycle Windows backwards"), "switch-windows-backward");
             add_action (ref windows_group, Schema.MUTTER, _("Tile Left"), "toggle-tiled-left");
             add_action (ref windows_group, Schema.MUTTER, _("Tile Right"), "toggle-tiled-right");
             add_action (ref windows_group, Schema.GALA, _("Window Overview"), "expose-windows");
@@ -58,7 +58,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             workspaces_group = {};
             workspaces_group.icon_name = "preferences-desktop-wallpaper";
             workspaces_group.label = _("Workspaces");
-            add_action (ref workspaces_group, Schema.WM, _("Show Workspace Switcher"), "show-desktop");
+            add_action (ref workspaces_group, Schema.WM, _("Multitasking View"), "show-desktop");
+            add_action (ref workspaces_group, Schema.WM, _("Switch left"), "switch-to-workspace-left");
+            add_action (ref workspaces_group, Schema.WM, _("Switch right"), "switch-to-workspace-right");
             add_action (ref workspaces_group, Schema.GALA, _("Switch to first"), "switch-to-workspace-first");
             add_action (ref workspaces_group, Schema.GALA, _("Switch to new"), "switch-to-workspace-last");
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 1"), "switch-to-workspace-1");
@@ -70,8 +72,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 7"), "switch-to-workspace-7");
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 8"), "switch-to-workspace-8");
             add_action (ref workspaces_group, Schema.WM, _("Switch to workspace 9"), "switch-to-workspace-9");
-            add_action (ref workspaces_group, Schema.WM, _("Switch to left"), "switch-to-workspace-left");
-            add_action (ref workspaces_group, Schema.WM, _("Switch to right"), "switch-to-workspace-right");
             add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces"), "cycle-workspaces-next");
             add_action (ref workspaces_group, Schema.GALA, _("Cycle workspaces backwards"), "cycle-workspaces-previous");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 1"), "move-to-workspace-1");
@@ -83,18 +83,18 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 7"), "move-to-workspace-7");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 8"), "move-to-workspace-8");
             add_action (ref workspaces_group, Schema.WM, _("Move to workspace 9"), "move-to-workspace-9");
-            add_action (ref workspaces_group, Schema.WM, _("Move to left"), "move-to-workspace-left");
-            add_action (ref workspaces_group, Schema.WM, _("Move to right"), "move-to-workspace-right");
+            add_action (ref workspaces_group, Schema.WM, _("Move to left workspace"), "move-to-workspace-left");
+            add_action (ref workspaces_group, Schema.WM, _("Move to right workspace"), "move-to-workspace-right");
 
             screenshot_group = {};
             screenshot_group.icon_name = "accessories-screenshot";
             screenshot_group.label = _("Screenshots");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Take a Screenshot"), "screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Save Screenshot to Clipboard"), "screenshot-clip");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Take a Screenshot of a Window"), "window-screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Save Window-Screenshot to Clipboard"), "window-screenshot-clip");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Take a Screenshot of an Area"), "area-screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Save Area-Screenshot to Clipboard"), "area-screenshot-clip");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Grab the whole screen"), "screenshot");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Copy the whole screen to clipboard"), "screenshot-clip");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Grab the current window"), "window-screenshot");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Copy the current window to clipboard"), "window-screenshot-clip");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Select an area to grab"), "area-screenshot");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Copy an area to Clipboard"), "area-screenshot-clip");
 
             launchers_group = {};
             launchers_group.icon_name = "preferences-desktop-applications";
