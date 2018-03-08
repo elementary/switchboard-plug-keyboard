@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2017-02-11 12:15-0800\n"
-"PO-Revision-Date: 2018-03-02 23:02+0000\n"
+"PO-Revision-Date: 2018-03-09 00:06+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/it/>\n"
@@ -426,7 +426,7 @@ msgstr "Browser Internet"
 
 #: ../src/Pages/Shortcuts/list.vala:213
 msgid "Applications Launcher"
-msgstr "Avvio applicazioni"
+msgstr "Menu applicazioni"
 
 #: ../src/Pages/Shortcuts/list.vala:243
 msgid "Volume Up"
