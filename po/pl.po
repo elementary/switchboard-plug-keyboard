@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2018-03-09 18:59+0000\n"
+"PO-Revision-Date: 2018-03-10 00:04+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/pl/>\n"
@@ -103,7 +103,7 @@ msgstr "Wyświetl układ klawiatury"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:110
 msgid "Add Layout"
-msgstr "Dodaj układ:"
+msgstr "Dodaj układ"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:114
 #: src/Dialogs/ConflictDialog.vala:36
@@ -247,7 +247,7 @@ msgstr "Blokada Kana:"
 
 #: src/Views/Layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr "Backspace w stylu Nicola-F"
+msgstr "Backspace w stylu Nicola-F:"
 
 #: src/Views/Layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
