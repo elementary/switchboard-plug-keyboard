@@ -541,7 +541,7 @@ msgstr "Browser Internet"
 
 #: src/Shortcuts/List.vala:107
 msgid "Applications Launcher"
-msgstr "Avvio applicazioni"
+msgstr "Menu applicazioni"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
