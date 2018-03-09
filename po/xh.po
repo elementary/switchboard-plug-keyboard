@@ -1,0 +1,620 @@
+# Xhosa translations for keyboard-plug package.
+# Copyright (C) 2018 THE keyboard-plug'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the keyboard-plug package.
+# Automatically generated, 2018.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: keyboard-plug\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-03-05 23:35+0000\n"
+"PO-Revision-Date: 2018-03-05 23:33+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: xh\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/Keyboard.vala:13
+msgid "Keyboard"
+msgstr ""
+
+#: src/Keyboard.vala:14
+msgid "Configure keyboard behavior, layouts, and shortcuts"
+msgstr ""
+
+#: src/Keyboard.vala:23
+msgid "Layout"
+msgstr ""
+
+#: src/Keyboard.vala:24 src/Keyboard.vala:67
+msgid "Shortcuts"
+msgstr ""
+
+#: src/Keyboard.vala:25
+msgid "Behavior"
+msgstr ""
+
+#: src/Keyboard.vala:68
+msgid "Repeat Keys"
+msgstr ""
+
+#: src/Keyboard.vala:69
+msgid "Cursor Blinking"
+msgstr ""
+
+#: src/Keyboard.vala:70
+msgid "Switch layout"
+msgstr ""
+
+#: src/Keyboard.vala:71
+msgid "Compose Key"
+msgstr ""
+
+#: src/Keyboard.vala:72
+msgid "Caps Lock behavior"
+msgstr ""
+
+#: src/Widgets/Shortcuts/Display.vala:44
+msgid "Add"
+msgstr ""
+
+#: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomTree.vala:23
+msgid "Enter Command"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomTree.vala:73
+msgid "Command"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomTree.vala:74
+msgid "Shortcut"
+msgstr ""
+
+#: src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr ""
+
+#: src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr ""
+
+#: src/Widgets/Layout/Display.vala:67
+msgid "Move down"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:49
+msgid "Input Language"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:88
+msgid "Show keyboard layout"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:110
+msgid "Add Layout"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:114
+#: src/Dialogs/ConflictDialog.vala:36
+msgid "Cancel"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:187
+#: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
+#: src/Views/Layout.vala:229 src/Layout/Handler.vala:78
+msgid "Default"
+msgstr ""
+
+#: src/Views/Layout.vala:47
+msgid "Switch layout:"
+msgstr ""
+
+#: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
+#: src/Shortcuts/Shortcut.vala:41
+msgid "Disabled"
+msgstr ""
+
+#: src/Views/Layout.vala:52
+msgid "Alt + Caps Lock"
+msgstr ""
+
+#: src/Views/Layout.vala:53
+msgid "Alt + Shift"
+msgstr ""
+
+#: src/Views/Layout.vala:54
+msgid "Alt + Space"
+msgstr ""
+
+#: src/Views/Layout.vala:55
+msgid "Both Shift keys together"
+msgstr ""
+
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:230
+msgid "Caps Lock"
+msgstr ""
+
+#: src/Views/Layout.vala:57
+msgid "Ctrl + Alt"
+msgstr ""
+
+#: src/Views/Layout.vala:58
+msgid "Ctrl + Shift"
+msgstr ""
+
+#: src/Views/Layout.vala:59
+msgid "Shift + Caps Lock"
+msgstr ""
+
+#: src/Views/Layout.vala:66
+msgid "Compose key:"
+msgstr ""
+
+#: src/Views/Layout.vala:72
+msgid "Menu"
+msgstr ""
+
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
+msgid "Right Alt"
+msgstr ""
+
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:233 src/Views/Layout.vala:245
+msgid "Right Ctrl"
+msgstr ""
+
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
+msgid "Right ⌘"
+msgstr ""
+
+#: src/Views/Layout.vala:82
+msgid "⌘ key behavior:"
+msgstr ""
+
+#: src/Views/Layout.vala:87
+msgid "Applications Menu"
+msgstr ""
+
+#: src/Views/Layout.vala:91
+msgid "Shortcut Overlay"
+msgstr ""
+
+#: src/Views/Layout.vala:96
+msgid "Caps Lock behavior:"
+msgstr ""
+
+#: src/Views/Layout.vala:101
+msgid "Caps Lock disabled"
+msgstr ""
+
+#: src/Views/Layout.vala:102
+msgid "as Backspace"
+msgstr ""
+
+#: src/Views/Layout.vala:103
+msgid "as Ctrl"
+msgstr ""
+
+#: src/Views/Layout.vala:104
+msgid "as Escape"
+msgstr ""
+
+#: src/Views/Layout.vala:105
+msgid "as Num Lock"
+msgstr ""
+
+#: src/Views/Layout.vala:106
+msgid "as ⌘"
+msgstr ""
+
+#: src/Views/Layout.vala:107
+msgid "Swap with Control"
+msgstr ""
+
+#: src/Views/Layout.vala:108
+msgid "Swap with Escape"
+msgstr ""
+
+#: src/Views/Layout.vala:127
+msgid "Type to test your layout"
+msgstr ""
+
+#: src/Views/Layout.vala:209 src/Views/Layout.vala:226
+msgid "Key to choose 3rd level:"
+msgstr ""
+
+#: src/Views/Layout.vala:231
+msgid "Left Alt"
+msgstr ""
+
+#: src/Views/Layout.vala:241
+msgid "Key to choose 5th level:"
+msgstr ""
+
+#: src/Views/Layout.vala:262
+msgid "Kana Lock:"
+msgstr ""
+
+#: src/Views/Layout.vala:270
+msgid "Nicola F Backspace:"
+msgstr ""
+
+#: src/Views/Layout.vala:273
+msgid "Zenkaku Hankaku as Escape:"
+msgstr ""
+
+#: src/Views/Layout.vala:290
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr ""
+
+#: src/Views/Behavior.vala:45
+msgid "Repeat Keys:"
+msgstr ""
+
+#: src/Views/Behavior.vala:49
+msgid "Delay:"
+msgstr ""
+
+#: src/Views/Behavior.vala:52
+msgid "Interval:"
+msgstr ""
+
+#: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:95
+msgid "milliseconds"
+msgstr ""
+
+#: src/Views/Behavior.vala:84
+msgid "Cursor Blinking:"
+msgstr ""
+
+#: src/Views/Behavior.vala:89
+msgid "Speed:"
+msgstr ""
+
+#: src/Views/Behavior.vala:92
+msgid "Duration:"
+msgstr ""
+
+#: src/Views/Behavior.vala:98
+msgid "seconds"
+msgstr ""
+
+#: src/Views/Behavior.vala:127
+msgid "Type to test your settings"
+msgstr ""
+
+#: src/Shortcuts/Shortcut.vala:46
+msgid "Shift"
+msgstr ""
+
+#: src/Shortcuts/Shortcut.vala:54
+msgid "Ctrl"
+msgstr ""
+
+#: src/Shortcuts/Shortcut.vala:58
+msgid "Alt"
+msgstr ""
+
+#: src/Shortcuts/List.vala:42
+msgid "Windows"
+msgstr ""
+
+#: src/Shortcuts/List.vala:43
+msgid "Lower"
+msgstr ""
+
+#: src/Shortcuts/List.vala:44
+msgid "Maximize"
+msgstr ""
+
+#: src/Shortcuts/List.vala:45
+msgid "Unmaximize"
+msgstr ""
+
+#: src/Shortcuts/List.vala:46
+msgid "Toggle Maximized"
+msgstr ""
+
+#: src/Shortcuts/List.vala:47
+msgid "Minimize"
+msgstr ""
+
+#: src/Shortcuts/List.vala:48
+msgid "Toggle Fullscreen"
+msgstr ""
+
+#: src/Shortcuts/List.vala:49
+msgid "Toggle on all Workspaces"
+msgstr ""
+
+#: src/Shortcuts/List.vala:50
+msgid "Toggle always on Top"
+msgstr ""
+
+#: src/Shortcuts/List.vala:51
+msgid "Switch Windows"
+msgstr ""
+
+#: src/Shortcuts/List.vala:52
+msgid "Switch Windows backwards"
+msgstr ""
+
+#: src/Shortcuts/List.vala:53
+msgid "Tile Left"
+msgstr ""
+
+#: src/Shortcuts/List.vala:54
+msgid "Tile Right"
+msgstr ""
+
+#: src/Shortcuts/List.vala:55
+msgid "Window Overview"
+msgstr ""
+
+#: src/Shortcuts/List.vala:56
+msgid "Show All Windows"
+msgstr ""
+
+#: src/Shortcuts/List.vala:60
+msgid "Workspaces"
+msgstr ""
+
+#: src/Shortcuts/List.vala:61
+msgid "Show Workspace Switcher"
+msgstr ""
+
+#: src/Shortcuts/List.vala:62
+msgid "Switch to first"
+msgstr ""
+
+#: src/Shortcuts/List.vala:63
+msgid "Switch to new"
+msgstr ""
+
+#: src/Shortcuts/List.vala:64
+msgid "Switch to workspace 1"
+msgstr ""
+
+#: src/Shortcuts/List.vala:65
+msgid "Switch to workspace 2"
+msgstr ""
+
+#: src/Shortcuts/List.vala:66
+msgid "Switch to workspace 3"
+msgstr ""
+
+#: src/Shortcuts/List.vala:67
+msgid "Switch to workspace 4"
+msgstr ""
+
+#: src/Shortcuts/List.vala:68
+msgid "Switch to workspace 5"
+msgstr ""
+
+#: src/Shortcuts/List.vala:69
+msgid "Switch to workspace 6"
+msgstr ""
+
+#: src/Shortcuts/List.vala:70
+msgid "Switch to workspace 7"
+msgstr ""
+
+#: src/Shortcuts/List.vala:71
+msgid "Switch to workspace 8"
+msgstr ""
+
+#: src/Shortcuts/List.vala:72
+msgid "Switch to workspace 9"
+msgstr ""
+
+#: src/Shortcuts/List.vala:73
+msgid "Switch to left"
+msgstr ""
+
+#: src/Shortcuts/List.vala:74
+msgid "Switch to right"
+msgstr ""
+
+#: src/Shortcuts/List.vala:75
+msgid "Cycle workspaces"
+msgstr ""
+
+#: src/Shortcuts/List.vala:76
+msgid "Cycle workspaces backwards"
+msgstr ""
+
+#: src/Shortcuts/List.vala:77
+msgid "Move to workspace 1"
+msgstr ""
+
+#: src/Shortcuts/List.vala:78
+msgid "Move to workspace 2"
+msgstr ""
+
+#: src/Shortcuts/List.vala:79
+msgid "Move to workspace 3"
+msgstr ""
+
+#: src/Shortcuts/List.vala:80
+msgid "Move to workspace 4"
+msgstr ""
+
+#: src/Shortcuts/List.vala:81
+msgid "Move to workspace 5"
+msgstr ""
+
+#: src/Shortcuts/List.vala:82
+msgid "Move to workspace 6"
+msgstr ""
+
+#: src/Shortcuts/List.vala:83
+msgid "Move to workspace 7"
+msgstr ""
+
+#: src/Shortcuts/List.vala:84
+msgid "Move to workspace 8"
+msgstr ""
+
+#: src/Shortcuts/List.vala:85
+msgid "Move to workspace 9"
+msgstr ""
+
+#: src/Shortcuts/List.vala:86
+msgid "Move to left"
+msgstr ""
+
+#: src/Shortcuts/List.vala:87
+msgid "Move to right"
+msgstr ""
+
+#: src/Shortcuts/List.vala:91
+msgid "Screenshots"
+msgstr ""
+
+#: src/Shortcuts/List.vala:92
+msgid "Take a Screenshot"
+msgstr ""
+
+#: src/Shortcuts/List.vala:93
+msgid "Save Screenshot to Clipboard"
+msgstr ""
+
+#: src/Shortcuts/List.vala:94
+msgid "Take a Screenshot of a Window"
+msgstr ""
+
+#: src/Shortcuts/List.vala:95
+msgid "Save Window-Screenshot to Clipboard"
+msgstr ""
+
+#: src/Shortcuts/List.vala:96
+msgid "Take a Screenshot of an Area"
+msgstr ""
+
+#: src/Shortcuts/List.vala:97
+msgid "Save Area-Screenshot to Clipboard"
+msgstr ""
+
+#: src/Shortcuts/List.vala:101
+msgid "Applications"
+msgstr ""
+
+#: src/Shortcuts/List.vala:102
+msgid "Email"
+msgstr ""
+
+#: src/Shortcuts/List.vala:103
+msgid "Home Folder"
+msgstr ""
+
+#: src/Shortcuts/List.vala:104
+msgid "Music"
+msgstr ""
+
+#: src/Shortcuts/List.vala:105
+msgid "Terminal"
+msgstr ""
+
+#: src/Shortcuts/List.vala:106
+msgid "Internet Browser"
+msgstr ""
+
+#: src/Shortcuts/List.vala:107
+msgid "Applications Launcher"
+msgstr ""
+
+#: src/Shortcuts/List.vala:111
+msgid "Media"
+msgstr ""
+
+#: src/Shortcuts/List.vala:112
+msgid "Volume Up"
+msgstr ""
+
+#: src/Shortcuts/List.vala:113
+msgid "Volume Down"
+msgstr ""
+
+#: src/Shortcuts/List.vala:114
+msgid "Mute"
+msgstr ""
+
+#: src/Shortcuts/List.vala:115
+msgid "Play"
+msgstr ""
+
+#: src/Shortcuts/List.vala:116
+msgid "Pause"
+msgstr ""
+
+#: src/Shortcuts/List.vala:117
+msgid "Stop"
+msgstr ""
+
+#: src/Shortcuts/List.vala:118
+msgid "Previous Track"
+msgstr ""
+
+#: src/Shortcuts/List.vala:119
+msgid "Next Track"
+msgstr ""
+
+#: src/Shortcuts/List.vala:120
+msgid "Eject"
+msgstr ""
+
+#: src/Shortcuts/List.vala:124
+msgid "Universal Access"
+msgstr ""
+
+#: src/Shortcuts/List.vala:125
+msgid "Decrease Text Size"
+msgstr ""
+
+#: src/Shortcuts/List.vala:126
+msgid "Increase Text Size"
+msgstr ""
+
+#: src/Shortcuts/List.vala:127
+msgid "Magnifier Zoom in"
+msgstr ""
+
+#: src/Shortcuts/List.vala:128
+msgid "Magnifier Zoom out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:129
+msgid "Toggle On Screen Keyboard"
+msgstr ""
+
+#: src/Shortcuts/List.vala:130
+msgid "Toggle Screenreader"
+msgstr ""
+
+#: src/Shortcuts/List.vala:131
+msgid "Toggle High Contrast"
+msgstr ""
+
+#: src/Shortcuts/List.vala:135
+msgid "Custom"
+msgstr ""
+
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr ""
+
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr ""
+
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr ""
