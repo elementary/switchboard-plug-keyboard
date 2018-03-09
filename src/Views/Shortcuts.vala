@@ -73,9 +73,12 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             var shortcut_display = new ShortcutDisplay (trees);
 
+            var frame = new Gtk.Frame (null);
+            frame.add (shortcut_display);
+
             column_homogeneous = true;
             attach (section_switcher, 0, 0, 1, 1);
-            attach (shortcut_display, 1, 0, 2, 1);
+            attach (frame, 1, 0, 2, 1);
 
             section_switcher.changed.connect (shortcut_display.change_selection);
         }
