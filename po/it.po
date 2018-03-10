@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2018-03-10 12:01+0000\n"
+"PO-Revision-Date: 2018-03-11 00:06+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/it/>\n"
@@ -55,7 +55,7 @@ msgstr "Cambia disposizione"
 
 #: src/Keyboard.vala:71
 msgid "Compose Key"
-msgstr "Tasto «componi»"
+msgstr "Tasto Componi"
 
 #: src/Keyboard.vala:72
 msgid "Caps Lock behavior"
@@ -114,7 +114,7 @@ msgstr "Annulla"
 #: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:229 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr "Predefinite"
+msgstr "Predefinito"
 
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
@@ -159,7 +159,7 @@ msgstr "Maiusc + Bloc Maiusc"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr "Tasto «componi»:"
+msgstr "Tasto Componi:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
@@ -592,7 +592,7 @@ msgstr "Aumenta lo zoom della lente di ingrandimento"
 
 #: src/Shortcuts/List.vala:128
 msgid "Magnifier Zoom out"
-msgstr "Diminuisci lo zoom della lente di ingrandimento"
+msgstr "Riduci lo zoom della lente di ingrandimento"
 
 #: src/Shortcuts/List.vala:129
 msgid "Toggle On Screen Keyboard"
