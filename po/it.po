@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2018-03-02 23:02+0000\n"
+"PO-Revision-Date: 2018-03-10 12:01+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/it/>\n"
+"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -94,13 +94,12 @@ msgid "Move down"
 msgstr "Sposta in basso"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:49
-#, fuzzy
 msgid "Input Language"
-msgstr "Lingua:"
+msgstr "Lingua di inserimento"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:88
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Mostra la disposizione della tastiera"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:110
 msgid "Add Layout"
@@ -164,7 +163,7 @@ msgstr "Tasto «componi»:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "Menu contestuale"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
 msgid "Right Alt"
@@ -175,24 +174,20 @@ msgid "Right Ctrl"
 msgstr "Ctrl destro"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Alt destro"
+msgstr "⌘ destro"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Comportamento del tasto Bloc Maiusc:"
+msgstr "Comportamento del tasto ⌘:"
 
 #: src/Views/Layout.vala:87
-#, fuzzy
 msgid "Applications Menu"
-msgstr "Applicazioni"
+msgstr "Menu applicazioni"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Scorciatoia"
+msgstr "Scorciatoie da tastiera"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -220,7 +215,7 @@ msgstr "come Bloc Num"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "come ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
@@ -231,9 +226,8 @@ msgid "Swap with Escape"
 msgstr "Cambia con Esc"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Digita per testare la tua disposizione…"
+msgstr "Digita per testare la tua disposizione"
 
 #: src/Views/Layout.vala:209 src/Views/Layout.vala:226
 msgid "Key to choose 3rd level:"
@@ -241,7 +235,7 @@ msgstr "Tasto per scegliere il terzo livello:"
 
 #: src/Views/Layout.vala:231
 msgid "Left Alt"
-msgstr ""
+msgstr "Alt sinistro"
 
 #: src/Views/Layout.vala:241
 msgid "Key to choose 5th level:"
@@ -297,14 +291,12 @@ msgid "seconds"
 msgstr "secondi"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Digita per testare le tue impostazioni…"
+msgstr "Digita per testare le tue impostazioni"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Maiusc"
+msgstr "Maiusc"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -312,7 +304,7 @@ msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Shortcuts/List.vala:42
 msgid "Windows"
@@ -435,13 +427,12 @@ msgid "Switch to right"
 msgstr "Scorri verso destra"
 
 #: src/Shortcuts/List.vala:75
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "Spazi di lavoro"
+msgstr "Passa da uno spazio di lavoro all'altro"
 
 #: src/Shortcuts/List.vala:76
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "Passa da uno spazio di lavoro all'altro procedendo all'indietro"
 
 #: src/Shortcuts/List.vala:77
 msgid "Move to workspace 1"
@@ -529,7 +520,7 @@ msgstr "Apri cartella iniziale"
 
 #: src/Shortcuts/List.vala:104
 msgid "Music"
-msgstr ""
+msgstr "Musica"
 
 #: src/Shortcuts/List.vala:105
 msgid "Terminal"
@@ -620,14 +611,14 @@ msgid "Custom"
 msgstr "Personalizzato"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "%s è già utilizzato per %s!"
+msgstr "%s è già utilizzato per %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Se assegni nuovamente la scorciatoia a %s, %s sarà disattivato"
+msgstr "Se assegni nuovamente la scorciatoia a %s, %s sarà disabilitato."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
