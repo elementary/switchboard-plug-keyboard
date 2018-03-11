@@ -94,7 +94,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref screenshot_group, Schema.MEDIA, _("Grab the current window"), "window-screenshot");
             add_action (ref screenshot_group, Schema.MEDIA, _("Copy the current window to clipboard"), "window-screenshot-clip");
             add_action (ref screenshot_group, Schema.MEDIA, _("Select an area to grab"), "area-screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Copy an area to Clipboard"), "area-screenshot-clip");
+            add_action (ref screenshot_group, Schema.MEDIA, _("Copy an area to clipboard"), "area-screenshot-clip");
 
             launchers_group = {};
             launchers_group.icon_name = "preferences-desktop-applications";
