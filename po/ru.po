@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2018-03-11 09:54+0000\n"
+"PO-Revision-Date: 2018-03-11 20:35+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ru/>\n"
@@ -174,14 +174,12 @@ msgid "Right Ctrl"
 msgstr "Правый Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Правый Alt"
+msgstr "Правый ⌘"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Поведение Caps Lock:"
+msgstr "Поведение ⌘:"
 
 #: src/Views/Layout.vala:87
 msgid "Applications Menu"
@@ -217,7 +215,7 @@ msgstr "как Num Lock"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "как ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
