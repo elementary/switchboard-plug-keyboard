@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-08-22 11:16+0000\n"
 "Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/"
@@ -347,11 +347,13 @@ msgid "Toggle always on Top"
 msgstr ""
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
+#, fuzzy
+msgid "Cycle Windows"
 msgstr "Pindah Jendela"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Pindah Jendela secara terbalik"
 
 #: src/Shortcuts/List.vala:53
@@ -375,60 +377,62 @@ msgid "Workspaces"
 msgstr ""
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Tampilkan Penukar Ruang Kerja"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Pindah ke kiri"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Pindah ke kanan"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Pindah ke yang pertama"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Pindah ke yang baru"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr ""
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr ""
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr ""
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr ""
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr ""
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr ""
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr ""
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr ""
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr ""
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Pindah ke kiri"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Pindah ke kanan"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -476,40 +480,44 @@ msgid "Move to workspace 9"
 msgstr "Pindah ke ruang kerja 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Pindah ke kiri"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Pindah ke ruang kerja 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Pindah ke kanan"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Pindah ke ruang kerja 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr ""
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Ambil Cuplikan Layar"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Simpan Cuplikan Layar ke Clipboard"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Ambil Cuplikan Jendela"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Simpan Cuplikan Jendela ke Clipboard"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Ambil Cuplikan Area"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Simpan Cuplikan Area ke Clipboard"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Simpan Cuplikan Layar ke Clipboard"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -628,6 +636,30 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr ""
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Tampilkan Penukar Ruang Kerja"
+
+#~ msgid "Move to left"
+#~ msgstr "Pindah ke kiri"
+
+#~ msgid "Move to right"
+#~ msgstr "Pindah ke kanan"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Ambil Cuplikan Layar"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Ambil Cuplikan Jendela"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Simpan Cuplikan Jendela ke Clipboard"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Ambil Cuplikan Area"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Simpan Cuplikan Area ke Clipboard"
 
 #~ msgid "File Search"
 #~ msgstr "Pencarian Berkas"

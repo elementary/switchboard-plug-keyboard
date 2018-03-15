@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-04-09 17:35+0000\n"
 "Last-Translator: Daniel Foré <daniel@elementary.io>\n"
 "Language-Team: Spanish <http://weblate.elementary.io/projects/desktop/"
@@ -350,11 +350,13 @@ msgid "Toggle always on Top"
 msgstr "Activar o desactivar siempre visible"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Cambiar de ventana"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Ventanas"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Cambiar de ventana hacia atrás"
 
 #: src/Shortcuts/List.vala:53
@@ -378,60 +380,62 @@ msgid "Workspaces"
 msgstr "Áreas de trabajo"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Mostrar selector de áreas de trabajo"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Cambiar a la izquierda"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Cambiar a la derecha"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Cambiar al primero"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Cambiar al nuevo"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Cambiar al área de trabajo 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Cambiar al área de trabajo 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Cambiar al área de trabajo 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Cambiar al área de trabajo 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Cambiar al área de trabajo 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Cambiar al área de trabajo 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Cambiar al área de trabajo 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Cambiar al área de trabajo 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Cambiar al área de trabajo 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Cambiar a la izquierda"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Cambiar a la derecha"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -479,40 +483,44 @@ msgid "Move to workspace 9"
 msgstr "Mover al área de trabajo 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Mover a la izquierda"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Mover al área de trabajo 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Mover a la derecha"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Mover al área de trabajo 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Capturar la pantalla"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Guardar captura en el portapapeles"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Tomar captura de pantalla de una ventana"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Guardar la captura de la ventana en el portapapeles"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Capturar un área de la pantalla"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Guardar la captura del área en el portapapeles"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Guardar captura en el portapapeles"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -631,6 +639,33 @@ msgstr "Si reasignar el acceso directo a %s, %s se desactivará"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Reasignar"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Cambiar de ventana"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Mostrar selector de áreas de trabajo"
+
+#~ msgid "Move to left"
+#~ msgstr "Mover a la izquierda"
+
+#~ msgid "Move to right"
+#~ msgstr "Mover a la derecha"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Capturar la pantalla"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Tomar captura de pantalla de una ventana"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Guardar la captura de la ventana en el portapapeles"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Capturar un área de la pantalla"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Guardar la captura del área en el portapapeles"
 
 #~ msgid "Right Super"
 #~ msgstr "Mayús derecho"

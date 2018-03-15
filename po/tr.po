@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-05-04 11:10+0000\n"
 "Last-Translator: Seyit Ali Doğan <seyit822@yandex.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -350,11 +350,13 @@ msgid "Toggle always on Top"
 msgstr "Her zaman üstte olsun."
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Pencereleri Çevir"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Pencereler"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Pencereleri tersine çevir"
 
 #: src/Shortcuts/List.vala:53
@@ -378,60 +380,62 @@ msgid "Workspaces"
 msgstr "Çalışma Alanları"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Çalışma Alanı Çeviriciyi Göster"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Sola çevir"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Sağa çevir"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Birinciye geç"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Yeniye geç"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Çalışma Alanı 1'e geç"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Çalışma Alanı 2'ye geç"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Çalışma Alanı 3'e geç"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Çalışma Alanı 4'e geç"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Çalışma Alanı 5'e geç"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Çalışma Alanı 6'ya geç"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Çalışma Alanı 7'ye geç"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Çalışma Alanı 8'e geç"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Çalışma Alanı 9'a geç"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Sola çevir"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Sağa çevir"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -479,40 +483,44 @@ msgid "Move to workspace 9"
 msgstr "Çalışma Alanı 9'a taşı"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Sola taşı"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Çalışma Alanı 1'e taşı"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Sağa taşı"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Çalışma Alanı 1'e taşı"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Ekran Görüntüleri"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Bir Ekran Görüntüsü yakala"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Ekran Görüntüsünü Panoya Kaydet"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Pencerenin Ekran Görüntüsünü yakala"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Pencere-Ekran Görüntüsünü Panoya Kaydet"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Bir Alanın Ekran Görüntüsünü Yakala"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Alan-Ekran Görüntüsünü Panoya Kaydet"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Ekran Görüntüsünü Panoya Kaydet"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -631,6 +639,33 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Yeniden ata"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Pencereleri Çevir"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Çalışma Alanı Çeviriciyi Göster"
+
+#~ msgid "Move to left"
+#~ msgstr "Sola taşı"
+
+#~ msgid "Move to right"
+#~ msgstr "Sağa taşı"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Bir Ekran Görüntüsü yakala"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Pencerenin Ekran Görüntüsünü yakala"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Pencere-Ekran Görüntüsünü Panoya Kaydet"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Bir Alanın Ekran Görüntüsünü Yakala"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Alan-Ekran Görüntüsünü Panoya Kaydet"
 
 #~ msgid "Right Super"
 #~ msgstr "Sağ Super"

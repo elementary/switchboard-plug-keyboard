@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -348,11 +348,13 @@ msgid "Toggle always on Top"
 msgstr "داۋاملىق ئالدىدا كۆرسىتىش"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "كۆزنەكنى ئالماشتۇرۇش"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "كۆزنەكلەر"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "كۆزنەكنى ئارقىغا ئالماشتۇرۇش"
 
 #: src/Shortcuts/List.vala:53
@@ -376,60 +378,62 @@ msgid "Workspaces"
 msgstr "خىزمەت رايونلىرى"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "خىزمەت رايونى ئالماشتۇرغۇچىسىنى كۆرسىتىش"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "سولدىكى خىزمەت رايونىغا ئالماشتۇرۇش"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "بىرىنچى خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "يىڭى خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "1-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "2-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "3-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "4-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "5-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "6-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "7-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "8-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "9-خىزمەت رايونىغا ئالماشتۇرۇش"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "سولدىكى خىزمەت رايونىغا ئالماشتۇرۇش"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -477,39 +481,43 @@ msgid "Move to workspace 9"
 msgstr "9-خىزمەت رايونىغا يۆتكەش"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "سولدىكى خىزمەت رايونىغا يۆتكەش"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "1-خىزمەت رايونىغا يۆتكەش"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "1-خىزمەت رايونىغا يۆتكەش"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "ئىكران كەسمە رەسىملىرى"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "ئىكران رەسىمىنى كىسىش"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "كۆزنەك رەسىمىنى كىسىش"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "تاللانغان رايوننىڭ رەسىمىنى كىسىش"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy an area to clipboard"
 msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
 #: src/Shortcuts/List.vala:101
@@ -629,6 +637,33 @@ msgstr "ئەگەر سىز %s نى قولاي كۇنۇپكا قىلىپ بىكى�
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "قايتا تەقسىملەش"
+
+#~ msgid "Switch Windows"
+#~ msgstr "كۆزنەكنى ئالماشتۇرۇش"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "خىزمەت رايونى ئالماشتۇرغۇچىسىنى كۆرسىتىش"
+
+#~ msgid "Move to left"
+#~ msgstr "سولدىكى خىزمەت رايونىغا يۆتكەش"
+
+#~ msgid "Move to right"
+#~ msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "ئىكران رەسىمىنى كىسىش"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "كۆزنەك رەسىمىنى كىسىش"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "تاللانغان رايوننىڭ رەسىمىنى كىسىش"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
 #~ msgid "Right Super"
 #~ msgstr "ئوڭ Super"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-04-17 14:16+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -351,11 +351,13 @@ msgid "Toggle always on Top"
 msgstr "Uključi uvijek na vrhu"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Zamijeni prozore"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Prozori"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Zamijeni prozore unatrag"
 
 #: src/Shortcuts/List.vala:53
@@ -379,60 +381,62 @@ msgid "Workspaces"
 msgstr "Radni prostori"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Prikaži izmjenjivač radnih površina"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Prebaci lijevo"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Prebaci desno"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Pomakni na prvi"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Pomakni na novi"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Prebaci na radni prostor 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Prebaci na radni prostor 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Prebaci na radni prostor 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Prebaci na radni prostor 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Prebaci na radni prostor 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Prebaci na radni prostor 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Prebaci na radni prostor 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Prebaci na radni prostor 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Prebaci na radni prostor 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Prebaci lijevo"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Prebaci desno"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -480,40 +484,44 @@ msgid "Move to workspace 9"
 msgstr "Pomakni na radni prostor 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Pomakni lijevo"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Pomakni na radni prostor 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Pomakni desno"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Pomakni na radni prostor 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Snimke zaslona"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Uslikaj zaslon"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Spremi sliku zaslona u međuspremnik"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Uslikaj prozor"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Spremi sliku prozora u međuspremnik"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Uslikaj područje zaslona"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Spremi sliku područja zaslona u međuspremnik"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Spremi sliku zaslona u međuspremnik"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -632,6 +640,33 @@ msgstr "Ako prenamijenite prečac na %s, %s će biti onemogućen"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Promijeni"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Zamijeni prozore"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Prikaži izmjenjivač radnih površina"
+
+#~ msgid "Move to left"
+#~ msgstr "Pomakni lijevo"
+
+#~ msgid "Move to right"
+#~ msgstr "Pomakni desno"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Uslikaj zaslon"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Uslikaj prozor"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Spremi sliku prozora u međuspremnik"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Uslikaj područje zaslona"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Spremi sliku područja zaslona u međuspremnik"
 
 #~ msgid "Right Super"
 #~ msgstr "Desna Super tipka"

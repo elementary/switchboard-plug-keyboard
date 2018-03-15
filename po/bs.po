@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2014-11-14 12:18+0000\n"
 "Last-Translator: aleksandar-todorovic <aleksandar.todorovic@mail.ru>\n"
 "Language-Team: Bosnian <bs@li.org>\n"
@@ -346,11 +346,13 @@ msgid "Toggle always on Top"
 msgstr "Aktiviraju uvijek na vrhu"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Zamijeni prozore"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Prozori"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Zamijeni prozore unazad"
 
 #: src/Shortcuts/List.vala:53
@@ -374,60 +376,62 @@ msgid "Workspaces"
 msgstr "Radne površine"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Prikaži mijenjač radnih površina"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Promjeni na lijevo"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Promjeni na desno"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Promjeni na prvi"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Promjeni na novi"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Promjeni na 1. radnu površinu"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Promjeni na 2. radnu površinu"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Promjeni na 3. radnu površinu"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Promjeni na 4. radnu površinu"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Promjeni na 5. radnu površinu"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Promjeni na 6. radnu površinu"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Promjeni na 7. radnu površinu"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Promjeni na 8. radnu površinu"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Promjeni na 9. radnu površinu"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Promjeni na lijevo"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Promjeni na desno"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -475,40 +479,44 @@ msgid "Move to workspace 9"
 msgstr "Premjesti na 9. radnu površinu"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Premjesti ulijevo"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Premjesti na 1. radnu površinu"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Premjesti udesno"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Premjesti na 1. radnu površinu"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Slike ekrana"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Slikaj čitav ekran"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Sačuvaj sliku ekrana u Clipboard"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Slikaj prozor"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Sačuvaj sliku prozora u Clipboard"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Slikaj određeni prostor"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Sačuvaj sliku oređenog prostora u Clipboard"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Sačuvaj sliku ekrana u Clipboard"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -627,6 +635,33 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Premjesti"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Zamijeni prozore"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Prikaži mijenjač radnih površina"
+
+#~ msgid "Move to left"
+#~ msgstr "Premjesti ulijevo"
+
+#~ msgid "Move to right"
+#~ msgstr "Premjesti udesno"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Slikaj čitav ekran"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Slikaj prozor"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Sačuvaj sliku prozora u Clipboard"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Slikaj određeni prostor"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Sačuvaj sliku oređenog prostora u Clipboard"
 
 #~ msgid "Close"
 #~ msgstr "Zatvori"

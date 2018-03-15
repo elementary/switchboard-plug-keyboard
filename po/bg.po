@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-04-14 16:49+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -350,11 +350,13 @@ msgid "Toggle always on Top"
 msgstr "Запази винаги отгоре"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Смяна на прозорци"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Прозорци"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Смяна на прозорци в обратен ред"
 
 #: src/Shortcuts/List.vala:53
@@ -378,60 +380,62 @@ msgid "Workspaces"
 msgstr "Работни места"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Покажи Превключвателя на Местата"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Превключи наляво"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Превключи надясно"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Превключи на първото"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Превключи на новото"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Превключикъм работен плот 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Превключи към работен плот 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Превключи към работен плот 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Превключи към работен плот 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Превключи към работен плот 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Превключи към работен плот 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Превключи към работен плот 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Превключи към работен плот 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Превключи към работен плот 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Превключи наляво"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Превключи надясно"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -479,40 +483,44 @@ msgid "Move to workspace 9"
 msgstr "Премести в работнен плот 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Премести наляво"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Премести в работнен плот 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Премести надясно"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Премести в работнен плот 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Снимки на екрана"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Направи снимка на екрана"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Запази снимката на екрана в Клипборда"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Направи снимка на определен прозорец"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Запази снимката на прозореца в Клипборда"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Направи снимка на определена област"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Запази снимката на областта в Клипборда"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Запази снимката на екрана в Клипборда"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -631,6 +639,33 @@ msgstr "Ако присвоите този пряк път на %s, прекия
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Прехвърляне"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Смяна на прозорци"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Покажи Превключвателя на Местата"
+
+#~ msgid "Move to left"
+#~ msgstr "Премести наляво"
+
+#~ msgid "Move to right"
+#~ msgstr "Премести надясно"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Направи снимка на екрана"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Направи снимка на определен прозорец"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Запази снимката на прозореца в Клипборда"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Направи снимка на определена област"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Запази снимката на областта в Клипборда"
 
 #~ msgid "Right Super"
 #~ msgstr "Десен Super клавиш"

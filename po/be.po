@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2015-09-24 14:26+0000\n"
 "Last-Translator: Siamion Šachalevič <semen.shah@gmail.com>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -345,11 +345,11 @@ msgid "Toggle always on Top"
 msgstr ""
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
+msgid "Cycle Windows"
 msgstr ""
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+msgid "Cycle Windows backwards"
 msgstr ""
 
 #: src/Shortcuts/List.vala:53
@@ -373,59 +373,59 @@ msgid "Workspaces"
 msgstr ""
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
+msgid "Multitasking View"
 msgstr ""
 
 #: src/Shortcuts/List.vala:62
-msgid "Switch to first"
+msgid "Switch left"
 msgstr ""
 
 #: src/Shortcuts/List.vala:63
-msgid "Switch to new"
+msgid "Switch right"
 msgstr ""
 
 #: src/Shortcuts/List.vala:64
-msgid "Switch to workspace 1"
+msgid "Switch to first"
 msgstr ""
 
 #: src/Shortcuts/List.vala:65
-msgid "Switch to workspace 2"
+msgid "Switch to new"
 msgstr ""
 
 #: src/Shortcuts/List.vala:66
-msgid "Switch to workspace 3"
+msgid "Switch to workspace 1"
 msgstr ""
 
 #: src/Shortcuts/List.vala:67
-msgid "Switch to workspace 4"
+msgid "Switch to workspace 2"
 msgstr ""
 
 #: src/Shortcuts/List.vala:68
-msgid "Switch to workspace 5"
+msgid "Switch to workspace 3"
 msgstr ""
 
 #: src/Shortcuts/List.vala:69
-msgid "Switch to workspace 6"
+msgid "Switch to workspace 4"
 msgstr ""
 
 #: src/Shortcuts/List.vala:70
-msgid "Switch to workspace 7"
+msgid "Switch to workspace 5"
 msgstr ""
 
 #: src/Shortcuts/List.vala:71
-msgid "Switch to workspace 8"
+msgid "Switch to workspace 6"
 msgstr ""
 
 #: src/Shortcuts/List.vala:72
-msgid "Switch to workspace 9"
+msgid "Switch to workspace 7"
 msgstr ""
 
 #: src/Shortcuts/List.vala:73
-msgid "Switch to left"
+msgid "Switch to workspace 8"
 msgstr ""
 
 #: src/Shortcuts/List.vala:74
-msgid "Switch to right"
+msgid "Switch to workspace 9"
 msgstr ""
 
 #: src/Shortcuts/List.vala:75
@@ -473,11 +473,11 @@ msgid "Move to workspace 9"
 msgstr ""
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
+msgid "Move to left workspace"
 msgstr ""
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
+msgid "Move to right workspace"
 msgstr ""
 
 #: src/Shortcuts/List.vala:91
@@ -485,27 +485,27 @@ msgid "Screenshots"
 msgstr ""
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
+msgid "Grab the whole screen"
 msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+msgid "Copy the whole screen to clipboard"
 msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
+msgid "Grab the current window"
 msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
+msgid "Copy the current window to clipboard"
 msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
+msgid "Select an area to grab"
 msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
+msgid "Copy an area to clipboard"
 msgstr ""
 
 #: src/Shortcuts/List.vala:101

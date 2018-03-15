@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2016-08-04 00:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -348,11 +348,13 @@ msgid "Toggle always on Top"
 msgstr "Alati pealmise sisse- või väljalülitamine"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Akende vahetamine"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Aknad"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Akende vahetamine tagurpidi"
 
 #: src/Shortcuts/List.vala:53
@@ -376,60 +378,62 @@ msgid "Workspaces"
 msgstr "Tööalad"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Tööalade vahetaja näitamine"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Liikumine vasakpoolsele tööalale"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Liikumine parempoolsele tööalale"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Esimene tööala"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Uus tööala"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Tööala nr. 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Tööala nr. 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Tööala nr. 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Tööala nr. 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Tööala nr. 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Tööala nr. 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Tööala nr. 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Tööala nr. 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Tööala nr. 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Liikumine vasakpoolsele tööalale"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Liikumine parempoolsele tööalale"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -477,40 +481,44 @@ msgid "Move to workspace 9"
 msgstr "Akna liigutamine 9. tööalale"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Aktiivse akna liigutamine vasakpoolsele tööalale"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Akna liigutamine 1. tööalale"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Aktiivse akna liigutamine parempoolsele tööalale"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Akna liigutamine 1. tööalale"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Ekraanipilt"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Ekraanist pildi tegemine"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Rakenduse aknast pildi tegemine"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Rakenduse aknast pildi tegemine ning vahemällu salvestamine"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Valitud ekraani alast pildi tegemine"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Valitud ekraani alast pildi tegemine ning vahemällu salvestamine"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -629,6 +637,33 @@ msgstr "Määrates kiirklahv %s jaoks, siis %s keelatakse ära"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Asenda"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Akende vahetamine"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Tööalade vahetaja näitamine"
+
+#~ msgid "Move to left"
+#~ msgstr "Aktiivse akna liigutamine vasakpoolsele tööalale"
+
+#~ msgid "Move to right"
+#~ msgstr "Aktiivse akna liigutamine parempoolsele tööalale"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Ekraanist pildi tegemine"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Rakenduse aknast pildi tegemine"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Rakenduse aknast pildi tegemine ning vahemällu salvestamine"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Valitud ekraani alast pildi tegemine"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Valitud ekraani alast pildi tegemine ning vahemällu salvestamine"
 
 #~ msgid "Right Super"
 #~ msgstr "Parem Super"
