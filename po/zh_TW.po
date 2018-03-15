@@ -7,12 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2018-03-13 02:57+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) "
-"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
-"keyboard/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-keyboard/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -343,11 +342,13 @@ msgid "Toggle always on Top"
 msgstr "開關總是在最上層"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "切換視窗"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "視窗"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "往後切換視窗"
 
 #: src/Shortcuts/List.vala:53
@@ -371,60 +372,62 @@ msgid "Workspaces"
 msgstr "工作區"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "顯示工作區切換器"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "切換至左側"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "切換至右側"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "切換到第一個"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "切換到新的"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "切換到工作區 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "切換到工作區 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "切換到工作區 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "切換到工作區 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "切換到工作區 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "切換到工作區 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "切換到工作區 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "切換到工作區 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "切換到工作區 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "切換至左側"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "切換至右側"
 
 #: src/Shortcuts/List.vala:75
 msgid "Cycle workspaces"
@@ -471,40 +474,44 @@ msgid "Move to workspace 9"
 msgstr "移動到工作區 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "向左移動"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "移動到工作區 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "向右移動"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "移動到工作區 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "螢幕擷圖"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "拍攝畫面快照"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "將螢幕截圖複製到剪貼簿"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "拍攝視窗螢幕擷圖"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "將視窗螢幕截圖複製到剪貼簿"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "拍攝某區域的螢幕擷圖"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "將區域螢幕截圖複製到剪貼簿"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "將螢幕截圖複製到剪貼簿"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -623,6 +630,33 @@ msgstr "若您重新分派快捷鍵為 %s，則 %s 將會停用。"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "重新指派"
+
+#~ msgid "Switch Windows"
+#~ msgstr "切換視窗"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "顯示工作區切換器"
+
+#~ msgid "Move to left"
+#~ msgstr "向左移動"
+
+#~ msgid "Move to right"
+#~ msgstr "向右移動"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "拍攝畫面快照"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "拍攝視窗螢幕擷圖"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "將視窗螢幕截圖複製到剪貼簿"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "拍攝某區域的螢幕擷圖"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "將區域螢幕截圖複製到剪貼簿"
 
 #~ msgid "Right Super"
 #~ msgstr "右側 Super"

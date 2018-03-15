@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2018-03-10 12:21+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
-"Language-Team: Lithuanian <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-keyboard/lt/>\n"
+"Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
+"switchboard/switchboard-plug-keyboard/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
-"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
+"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-14 05:48+0000\n"
 
@@ -343,11 +343,13 @@ msgid "Toggle always on Top"
 msgstr "Perjungti „Visada viršuje“"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Perjungti langus"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Langai"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Perjungti langus atvirkštine tvarka"
 
 #: src/Shortcuts/List.vala:53
@@ -371,60 +373,62 @@ msgid "Workspaces"
 msgstr "Darbo sritys"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Rodyti darbo sričių perjungiklį"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Perjungti į kairę"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Perjungti į dešinę"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Perjungti į pirmą"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Perjungti į naują"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Perjungti į 1-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Perjungti į 2-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Perjungti į 3-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Perjungti į 4-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Perjungti į 5-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Perjungti į 6-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Perjungti į 7-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Perjungti į 8-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Perjungti į 9-ą darbo sritį"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Perjungti į kairę"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Perjungti į dešinę"
 
 #: src/Shortcuts/List.vala:75
 msgid "Cycle workspaces"
@@ -471,40 +475,44 @@ msgid "Move to workspace 9"
 msgstr "Perkelti į 9-ą darbo sritį"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Perkelti į kairę"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Perkelti į 1-ą darbo sritį"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Perkelti į dešinę"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Perkelti į 1-ą darbo sritį"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Ekrano kopijos"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Padaryti ekrano kopiją"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Įrašyti ekrano kopiją į iškarpinę"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Padaryti lango ekrano kopiją"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Įrašyti lango ekrano kopiją į iškarpinę"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Padaryti ekrano dalies ekrano kopiją"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Įrašyti ekrano dalies ekrano kopiją į iškarpinę"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Įrašyti ekrano kopiją į iškarpinę"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -625,6 +633,33 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Priskirti iš naujo"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Perjungti langus"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Rodyti darbo sričių perjungiklį"
+
+#~ msgid "Move to left"
+#~ msgstr "Perkelti į kairę"
+
+#~ msgid "Move to right"
+#~ msgstr "Perkelti į dešinę"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Padaryti ekrano kopiją"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Padaryti lango ekrano kopiją"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Įrašyti lango ekrano kopiją į iškarpinę"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Padaryti ekrano dalies ekrano kopiją"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Įrašyti ekrano dalies ekrano kopiją į iškarpinę"
 
 #~ msgid "Right Super"
 #~ msgstr "Dešinysis Super (Win)"

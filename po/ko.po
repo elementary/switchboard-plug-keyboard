@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-04-21 09:47+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -350,11 +350,13 @@ msgid "Toggle always on Top"
 msgstr "항상 앞에 토글"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "전환"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "창"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "반대로 전환"
 
 #: src/Shortcuts/List.vala:53
@@ -378,60 +380,62 @@ msgid "Workspaces"
 msgstr "작업공간"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "작업 공간 전환기 보이기"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "왼쪽으로 전환"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "오른쪽으로 전환"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "맨 앞 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "새 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "작업 공간 1로 전환"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "작업 공간 2로 전환"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "작업 공간 3으로 전환"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "작업 공간 4로 전환"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "작업 공간 5로 전환"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "작업 공간 6으로 전환"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "작업 공간 7로 전환"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "작업 공간 8로 전환"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "작업 공간 9로 이동"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "왼쪽으로 전환"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "오른쪽으로 전환"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -479,40 +483,44 @@ msgid "Move to workspace 9"
 msgstr "9번 작업 공간으로 이동"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "왼쪽 으로 이동"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "1번 작업 공간으로 이동"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "오른쪽으로 이동"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "1번 작업 공간으로 이동"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "스크린샷"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "스크린샷 찍기"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "스크린샷을 클립보드에 저장하기"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "지정한 창의 스크린샷 찍기"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "지정한 창의 스크린샷을 클립보드에 저장하기"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "지정한 영역의 스크린샷 찍기"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "지정한 영역의 스크린샷을 클립보드에 저장하기"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "스크린샷을 클립보드에 저장하기"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -631,6 +639,33 @@ msgstr "단축키를 %s에 할당하면, %s에 기존의 단축키를 사용할 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "재할당"
+
+#~ msgid "Switch Windows"
+#~ msgstr "전환"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "작업 공간 전환기 보이기"
+
+#~ msgid "Move to left"
+#~ msgstr "왼쪽 으로 이동"
+
+#~ msgid "Move to right"
+#~ msgstr "오른쪽으로 이동"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "스크린샷 찍기"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "지정한 창의 스크린샷 찍기"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "지정한 창의 스크린샷을 클립보드에 저장하기"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "지정한 영역의 스크린샷 찍기"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "지정한 영역의 스크린샷을 클립보드에 저장하기"
 
 #~ msgid "Right Super"
 #~ msgstr "오른쪽 수퍼"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2017-05-12 16:00+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -350,11 +350,13 @@ msgid "Toggle always on Top"
 msgstr "Schakel altijd bovenaan"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Wissel vensters"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Vensters"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Wissel vensters achterstevoren"
 
 #: src/Shortcuts/List.vala:53
@@ -378,60 +380,62 @@ msgid "Workspaces"
 msgstr "Werkbladen"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Laat werkbladwisselaar zien"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Wissel naar links"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Wissel naar rechts"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Wissel naar eerste"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Wissel naar nieuwe"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Wissel naar werkblad 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Wissel naar werkblad 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Wissel naar werkblad 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Wissel naar werkblad 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Wissel naar werkblad 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Wissel naar werkblad 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Wissel naar werkblad 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Wissel naar werkblad 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Wissel naar werkblad 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Wissel naar links"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Wissel naar rechts"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -479,40 +483,44 @@ msgid "Move to workspace 9"
 msgstr "Verplaats naar werkblad 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Verplaats naar links"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Verplaats naar werkblad 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Verplaats naar rechts"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Verplaats naar werkblad 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Schermafdrukken"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Neem een schermafdruk"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Sla schermafdruk op op het klembord"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Neem een schermafdruk van een venster"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Sla venster-schermafdruk op op het klembord"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Neem een schermafdruk van een gebied"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Sla gebied-schermafdruk op op het klembord"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Sla schermafdruk op op het klembord"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -631,6 +639,33 @@ msgstr "Als u de sneltoets toewijst aan %s, dan zal %s uitgeschakeld worden"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Opnieuw toewijzen"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Wissel vensters"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Laat werkbladwisselaar zien"
+
+#~ msgid "Move to left"
+#~ msgstr "Verplaats naar links"
+
+#~ msgid "Move to right"
+#~ msgstr "Verplaats naar rechts"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Neem een schermafdruk"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Neem een schermafdruk van een venster"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Sla venster-schermafdruk op op het klembord"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Neem een schermafdruk van een gebied"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Sla gebied-schermafdruk op op het klembord"
 
 #~ msgid "Right Super"
 #~ msgstr "Rechtse Super"

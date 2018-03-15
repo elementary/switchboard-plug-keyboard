@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2014-09-27 17:23+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -345,11 +345,13 @@ msgid "Toggle always on Top"
 msgstr ""
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "መስኮቶች መቀየሪያ"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "መስኮቶች"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "የ መስኮቶች መደብ መቀየሪያ"
 
 #: src/Shortcuts/List.vala:53
@@ -373,60 +375,62 @@ msgid "Workspaces"
 msgstr "የስራ ቦታዎች"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "የ ስራ ቦታ መቀየሪያ ማሳያ"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "ወደ ግራ መቀየሪያ"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "ወደ ቀኝ መቀየሪያ"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "ወደ መጀመሪያው መቀየሪያ"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "ወደ አዲስ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "ወደ ግራ መቀየሪያ"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "ወደ ቀኝ መቀየሪያ"
 
 #: src/Shortcuts/List.vala:75
 #, fuzzy
@@ -474,39 +478,41 @@ msgid "Move to workspace 9"
 msgstr "ወደ ስራ ቦታ 9 ማንቀሳቀሻ"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "ወደ ግራ ማንቀሳቀሻ"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "ወደ ቀኝ ማንቀሳቀሻ"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr ""
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
+msgid "Grab the whole screen"
 msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+msgid "Copy the whole screen to clipboard"
 msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
+msgid "Grab the current window"
 msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
+msgid "Copy the current window to clipboard"
 msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
+msgid "Select an area to grab"
 msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
+msgid "Copy an area to clipboard"
 msgstr ""
 
 #: src/Shortcuts/List.vala:101
@@ -626,6 +632,18 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "እንደገና መመደቢያ"
+
+#~ msgid "Switch Windows"
+#~ msgstr "መስኮቶች መቀየሪያ"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "የ ስራ ቦታ መቀየሪያ ማሳያ"
+
+#~ msgid "Move to left"
+#~ msgstr "ወደ ግራ ማንቀሳቀሻ"
+
+#~ msgid "Move to right"
+#~ msgstr "ወደ ቀኝ ማንቀሳቀሻ"
 
 #~ msgid "Close"
 #~ msgstr "መዝጊያ"

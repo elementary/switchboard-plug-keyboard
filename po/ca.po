@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 11:44-0700\n"
 "PO-Revision-Date: 2018-03-12 15:56+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-keyboard/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-keyboard/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,11 +342,13 @@ msgid "Toggle always on Top"
 msgstr "Commuta sempre al davant"
 
 #: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Alterna les finestres"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Finestres"
 
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#, fuzzy
+msgid "Cycle Windows backwards"
 msgstr "Canvia les finestres enrere"
 
 #: src/Shortcuts/List.vala:53
@@ -370,60 +372,62 @@ msgid "Workspaces"
 msgstr "Espais de treball"
 
 #: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Mostra l'alternador d'espais de treball"
+msgid "Multitasking View"
+msgstr ""
 
 #: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Switch left"
+msgstr "Canvia a l'esquerra"
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch right"
+msgstr "Canvia a la dreta"
+
+#: src/Shortcuts/List.vala:64
 msgid "Switch to first"
 msgstr "Canvia al primer"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Switch to new"
 msgstr "Alternar al nou"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:66
 msgid "Switch to workspace 1"
 msgstr "Canvia a l'espai de treball 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 2"
 msgstr "Canvia a l'espai de treball 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 3"
 msgstr "Canvia a l'espai de treball 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 4"
 msgstr "Canvia a l'espai de treball 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 5"
 msgstr "Canvia a l'espai de treball 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 6"
 msgstr "Canvia a l'espai de treball 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 7"
 msgstr "Canvia a l'espai de treball 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 8"
 msgstr "Canvia a l'espai de treball 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 9"
 msgstr "Canvia a l'espai de treball 9"
-
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Canvia a l'esquerra"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Canvia a la dreta"
 
 #: src/Shortcuts/List.vala:75
 msgid "Cycle workspaces"
@@ -470,40 +474,44 @@ msgid "Move to workspace 9"
 msgstr "Mou a l'espai de treball 9"
 
 #: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Desplaça a l’esquerra"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Mou a l'espai de treball 1"
 
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Desplaça a la dreta"
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Mou a l'espai de treball 1"
 
 #: src/Shortcuts/List.vala:91
 msgid "Screenshots"
 msgstr "Captures de pantalla"
 
 #: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Fes una captura de pantalla"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
 msgstr "Desa la captura de pantalla al porta-retalls"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Fes una captura de pantalla de la finestra"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Desa la captura de la finestra al porta-retalls"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Fes una captura de pantalla d'una àrea determinada"
+msgid "Select an area to grab"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Guarda la captura de pantalla de l'àrea al portapapers"
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Desa la captura de pantalla al porta-retalls"
 
 #: src/Shortcuts/List.vala:101
 msgid "Applications"
@@ -622,6 +630,33 @@ msgstr "Si reassigneu la drecera a %s, s'inhabilitarà %s."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Reassigna"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Alterna les finestres"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Mostra l'alternador d'espais de treball"
+
+#~ msgid "Move to left"
+#~ msgstr "Desplaça a l’esquerra"
+
+#~ msgid "Move to right"
+#~ msgstr "Desplaça a la dreta"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Fes una captura de pantalla"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Fes una captura de pantalla de la finestra"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Desa la captura de la finestra al porta-retalls"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Fes una captura de pantalla d'una àrea determinada"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Guarda la captura de pantalla de l'àrea al portapapers"
 
 #~ msgid "Right Super"
 #~ msgstr "Supertecla dreta"
