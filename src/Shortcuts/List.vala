@@ -34,6 +34,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         public Group launchers_group;
         public Group media_group;
         public Group a11y_group;
+        public Group system_group;
         public Group custom_group;
 
         construct {
@@ -104,7 +105,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref launchers_group, Schema.MEDIA, _("Music"), "media");
             add_action (ref launchers_group, Schema.MEDIA, _("Terminal"), "terminal");
             add_action (ref launchers_group, Schema.MEDIA, _("Internet Browser"), "www");
-            add_action (ref launchers_group, Schema.WM, _("Applications Launcher"), "panel-main-menu");
 
             media_group = {};
             media_group.icon_name = "applications-multimedia";
@@ -130,6 +130,13 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle Screenreader"), "screenreader");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle High Contrast"), "toggle-contrast");
 
+            system_group = {};
+            system_group.icon_name = "preferences-system";
+            system_group.label = _("System");
+            add_action (ref system_group, Schema.WM, _("Applications Menu"), "panel-main-menu");
+            add_action (ref system_group, Schema.MEDIA, _("Lock"), "screensaver");
+            add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
+            
             custom_group = {};
             custom_group.icon_name = "applications-other";
             custom_group.label = _("Custom");
@@ -140,7 +147,8 @@ namespace Pantheon.Keyboard.Shortcuts {
                 screenshot_group,
                 launchers_group,
                 media_group,
-                a11y_group
+                a11y_group,
+                system_group
             };
         }
 
