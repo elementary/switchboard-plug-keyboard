@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-12 14:53+0000\n"
+"PO-Revision-Date: 2018-03-16 06:03+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
-"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/he/>\n"
+"Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/he/>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,14 +342,12 @@ msgid "Toggle always on Top"
 msgstr "החלפת מצב תמיד עליון"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Windows"
+msgstr "דפדוף בין חלונות"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "החלפה בין חלונות לאחור"
+msgstr "דפדוף בין חלונות לאחור"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -373,15 +371,13 @@ msgstr "סביבות עבודה"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "תצוגת ריבוי משימות"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "מעבר לשמאלי"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "מעבר לימני"
 
@@ -474,14 +470,12 @@ msgid "Move to workspace 9"
 msgstr "העברה לסביבת עבודה 9"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "העברה לסביבת עבודה 1"
+msgstr "העברה לסביבת עבודה משמאל"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "העברה לסביבת עבודה 1"
+msgstr "העברה לסביבת עבודה מימין"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -489,29 +483,27 @@ msgstr "צילומי מסך"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "לכידת כל המסך"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "שמירת צילום המסך ללוח הגזירים"
+msgstr "העתקת המסך כולו ללוח הגזירים"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "לכידת החלון הנוכחי"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "העתקת המסך הנוכחי ללוח הגזירים"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "בחירת איזור ללכידה"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "שמירת צילום המסך ללוח הגזירים"
+msgstr "העתקת איזור ללוח הגזירים"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -611,16 +603,15 @@ msgstr "הפעלה או השבתה של ניגודיות גבוהה"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "מערכת"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "נעילה"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "יציאה"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
