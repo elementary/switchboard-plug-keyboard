@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-10 00:23+0000\n"
+"PO-Revision-Date: 2018-03-16 09:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/ja/>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,12 +342,10 @@ msgid "Toggle always on Top"
 msgstr "常に手前に表示する"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "ウィンドウ"
+msgstr "ウィンドウの切り替え"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
 msgstr "逆順でウィンドウの切り替え"
 
@@ -373,15 +371,13 @@ msgstr "ワークスペース"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "マルチタスクビュー"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "左に切り替え"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "右に切り替え"
 
@@ -474,14 +470,12 @@ msgid "Move to workspace 9"
 msgstr "ワークスペース 9 へ移動"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "ワークスペース 1 へ移動"
+msgstr "左のワークスペースへ移動"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "ワークスペース 1 へ移動"
+msgstr "右のワークスペースへ移動"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -489,29 +483,27 @@ msgstr "スクリーンショット"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "スクリーン全体を取得"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "スクリーンショットをクリップボードへ保存"
+msgstr "スクリーン全体をクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "現在のウィンドウを取得"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "現在のウィンドウをクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "エリアを選択して取得"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "スクリーンショットをクリップボードへ保存"
+msgstr "エリアを選択してクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -611,16 +603,15 @@ msgstr "ハイコントラストの切り替え"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "システム"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "ロック"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "ログアウト"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
