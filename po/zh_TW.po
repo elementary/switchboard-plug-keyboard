@@ -8,10 +8,11 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-13 02:57+0000\n"
+"PO-Revision-Date: 2018-03-16 02:50+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
-"Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-keyboard/zh_TW/>\n"
+"Language-Team: Chinese (Traditional) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"keyboard/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,14 +343,12 @@ msgid "Toggle always on Top"
 msgstr "開關總是在最上層"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "視窗"
+msgstr "循環切換視窗"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "往後切換視窗"
+msgstr "往後循環切換視窗"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -373,15 +372,13 @@ msgstr "工作區"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "多工作業檢視"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "切換至左側"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "切換至右側"
 
@@ -474,44 +471,40 @@ msgid "Move to workspace 9"
 msgstr "移動到工作區 9"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "移動到工作區 1"
+msgstr "移動到左側工作區"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "移動到工作區 1"
+msgstr "移動到右側工作區"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
-msgstr "螢幕擷圖"
+msgstr "螢幕快照"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "抓取整個螢幕"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "將螢幕截圖複製到剪貼簿"
+msgstr "將整個螢幕複製到剪貼簿"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "抓取目前的視窗"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "複製目前的視窗到剪貼簿"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "選取抓取區域"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "將螢幕截圖複製到剪貼簿"
+msgstr "將一塊區域複製到剪貼簿"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -611,16 +604,15 @@ msgstr "開關高對比外觀"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "系統"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "鎖定"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "登出"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
