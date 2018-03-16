@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-15 11:44-0700\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
 "PO-Revision-Date: 2014-09-27 17:23+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -179,7 +179,7 @@ msgstr ""
 msgid "⌘ key behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 #, fuzzy
 msgid "Applications Menu"
 msgstr "መተግበሪያዎች"
@@ -308,240 +308,236 @@ msgstr ""
 msgid "Alt"
 msgstr ""
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "መስኮቶች"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "ዝቅተኛ"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "ማሳደጊያ"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "አታሳድግ"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr ""
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "ማሳነሻ"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr ""
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr ""
 
-#: src/Shortcuts/List.vala:51
+#: src/Shortcuts/List.vala:52
 #, fuzzy
 msgid "Cycle Windows"
 msgstr "መስኮቶች"
 
-#: src/Shortcuts/List.vala:52
+#: src/Shortcuts/List.vala:53
 #, fuzzy
 msgid "Cycle Windows backwards"
 msgstr "የ መስኮቶች መደብ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "በ ግራ መደርደሪያ"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "በ ቀኝ መደርደሪያ"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr ""
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "ሁሉንም መስኮቶች መመልከቻ"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "የስራ ቦታዎች"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 #, fuzzy
 msgid "Switch left"
 msgstr "ወደ ግራ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 #, fuzzy
 msgid "Switch right"
 msgstr "ወደ ቀኝ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "ወደ መጀመሪያው መቀየሪያ"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "ወደ አዲስ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 1"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 2"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 3"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 4"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 5"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 6"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 7"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 8"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 9"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "የስራ ቦታዎች"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "ወደ ስራ ቦታ 2 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "ወደ ስራ ቦታ 3 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "ወደ ስራ ቦታ 4 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "ወደ ስራ ቦታ 5 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "ወደ ስራ ቦታ 6 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "ወደ ስራ ቦታ 7 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "ወደ ስራ ቦታ 8 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "ወደ ስራ ቦታ 9 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr ""
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Copy the whole screen to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
 msgstr ""
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
 msgstr ""
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Copy an area to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "መተግበሪያዎች"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "ኢሜይል"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "የፎልደር ቤት"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "ተርሚናል"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "ኢንተርኔት መቃኛ"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "መተግበሪያዎች ማስነሻ"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -616,6 +612,18 @@ msgid "Toggle High Contrast"
 msgstr ""
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+msgid "Lock"
+msgstr ""
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr ""
 
@@ -632,6 +640,9 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "እንደገና መመደቢያ"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "መተግበሪያዎች ማስነሻ"
 
 #~ msgid "Switch Windows"
 #~ msgstr "መስኮቶች መቀየሪያ"

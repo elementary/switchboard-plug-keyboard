@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-15 11:44-0700\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
@@ -165,7 +165,7 @@ msgstr ""
 msgid "⌘ key behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 msgid "Applications Menu"
 msgstr ""
 
@@ -290,232 +290,228 @@ msgstr ""
 msgid "Alt"
 msgstr ""
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr ""
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr ""
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr ""
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr ""
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr ""
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr ""
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr ""
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr ""
 
-#: src/Shortcuts/List.vala:51
+#: src/Shortcuts/List.vala:52
 msgid "Cycle Windows"
 msgstr ""
 
-#: src/Shortcuts/List.vala:52
+#: src/Shortcuts/List.vala:53
 msgid "Cycle Windows backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr ""
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr ""
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr ""
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr ""
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr ""
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Switch left"
 msgstr ""
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 msgid "Switch right"
 msgstr ""
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr ""
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr ""
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr ""
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr ""
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr ""
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr ""
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr ""
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr ""
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr ""
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr ""
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr ""
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Cycle workspaces"
 msgstr ""
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr ""
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr ""
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr ""
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr ""
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr ""
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr ""
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr ""
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr ""
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr ""
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to left workspace"
 msgstr ""
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 msgid "Move to right workspace"
 msgstr ""
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr ""
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Copy the whole screen to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
 msgstr ""
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
 msgstr ""
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Copy an area to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr ""
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr ""
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr ""
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr ""
 
-#: src/Shortcuts/List.vala:106
-msgid "Internet Browser"
-msgstr ""
-
 #: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
+msgid "Internet Browser"
 msgstr ""
 
 #: src/Shortcuts/List.vala:111
@@ -591,6 +587,18 @@ msgid "Toggle High Contrast"
 msgstr ""
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+msgid "Lock"
+msgstr ""
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr ""
 
