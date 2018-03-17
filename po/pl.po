@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-10 00:04+0000\n"
+"PO-Revision-Date: 2018-03-17 10:04+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
-"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/pl/>\n"
+"Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -343,12 +343,10 @@ msgid "Toggle always on Top"
 msgstr "Zawsze na wierzchu"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Okna"
+msgstr "Przełącz okna"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
 msgstr "Przełącz okna wstecz"
 
@@ -374,15 +372,13 @@ msgstr "Obszary robocze"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "Podgląd wielozadaniowy"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "Przełącz w lewo"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "Przełącz w prawo"
 
@@ -475,14 +471,12 @@ msgid "Move to workspace 9"
 msgstr "Przemieść na dziewiąty obszar roboczy"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Przemieść na pierwszy obszar roboczy"
+msgstr "Przemieść na obszar roboczy po lewej"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Przemieść na pierwszy obszar roboczy"
+msgstr "Przemieść na obszar roboczy po prawej"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -490,29 +484,27 @@ msgstr "Zrzuty ekranu"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Pobierz cały ekran"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Zapisz zrzut ekranu do schowka"
+msgstr "Skopiuj zrzut całego ekranu do schowka"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "Pobierz bieżące okno"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Skopiuj bieżące okno do schowka"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Wybierz obszar do pobrania"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Zapisz zrzut ekranu do schowka"
+msgstr "Skopiuj zrzut obszaru do schowka"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -612,16 +604,15 @@ msgstr "Włącz/Wyłącz tryb wysokiego kontrastu"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "System"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Zablokuj"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "Wyloguj"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
