@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-17 10:04+0000\n"
+"PO-Revision-Date: 2018-03-18 00:08+0000\n"
 "Last-Translator: Piotr Strebski <strebski@o2.pl>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/pl/>\n"
@@ -512,7 +512,7 @@ msgstr "Programy"
 
 #: src/Shortcuts/List.vala:103
 msgid "Email"
-msgstr "Poczta e-mail"
+msgstr "Poczta"
 
 #: src/Shortcuts/List.vala:104
 msgid "Home Folder"
