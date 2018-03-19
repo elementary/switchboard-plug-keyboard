@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-12 15:56+0000\n"
+"PO-Revision-Date: 2018-03-19 15:12+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
-"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/ca/>\n"
+"Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -342,14 +342,12 @@ msgid "Toggle always on Top"
 msgstr "Commuta sempre al davant"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Finestres"
+msgstr "Cicle de finestres"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Canvia les finestres enrere"
+msgstr "Cicle de finestres invers"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -373,15 +371,13 @@ msgstr "Espais de treball"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "Vista de multitasca"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "Canvia a l'esquerra"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "Canvia a la dreta"
 
@@ -474,14 +470,12 @@ msgid "Move to workspace 9"
 msgstr "Mou a l'espai de treball 9"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Mou a l'espai de treball 1"
+msgstr "Mou a l'espai de treball de l'esquerra"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Mou a l'espai de treball 1"
+msgstr "Mou a l'espai de treball de la dreta"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -489,29 +483,27 @@ msgstr "Captures de pantalla"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Pren tota la pantalla"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Desa la captura de pantalla al porta-retalls"
+msgstr "Copia la pantalla sencera al porta-retalls"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "Pren la finestra actual"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Copia la finestra actual al porta-retalls"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Selecciona una àrea per capturar"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Desa la captura de pantalla al porta-retalls"
+msgstr "Copia l'àrea al porta-retalls"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -611,16 +603,15 @@ msgstr "Commuta el contrast alt"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Bloqueig de majúscules"
+msgstr "Bloqueja"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "Desbloqueja"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
