@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-16 09:10+0000\n"
+"PO-Revision-Date: 2018-03-20 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -371,7 +371,7 @@ msgstr "ワークスペース"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr "マルチタスクビュー"
+msgstr "マルチタスキングビュー"
 
 #: src/Shortcuts/List.vala:63
 msgid "Switch left"
