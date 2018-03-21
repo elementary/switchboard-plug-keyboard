@@ -8,17 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2017-07-02 09:17+0000\n"
+"PO-Revision-Date: 2018-03-22 00:05+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/sl/>\n"
+"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.14\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -624,9 +624,8 @@ msgid "System"
 msgstr ""
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Zakleni"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
