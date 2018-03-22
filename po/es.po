@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-18 00:08+0000\n"
-"Last-Translator: Alain M. <alain23@protonmail.com>\n"
+"PO-Revision-Date: 2018-03-23 00:05+0000\n"
+"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/es/>\n"
 "Language: es\n"
@@ -606,9 +606,8 @@ msgid "System"
 msgstr "Sistema"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Bloq Mayús"
+msgstr "Bloquear"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
