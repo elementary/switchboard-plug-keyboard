@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-11 20:35+0000\n"
+"PO-Revision-Date: 2018-03-23 15:32+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
-"Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/ru/>\n"
+"Language-Team: Russian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
+"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
@@ -343,14 +343,12 @@ msgid "Toggle always on Top"
 msgstr "Поверх всех окон"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Окна"
+msgstr "Прокрутка окон"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Переключить открытые окна в обратном порядке"
+msgstr "Прокрутка окон в обратном направлении"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -374,17 +372,15 @@ msgstr "Рабочие столы"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "Многозадачный вид"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
-msgstr "Переключиться влево"
+msgstr "Переключиться на рабочий стол слева"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
-msgstr "Переключиться вправо"
+msgstr "Переключиться на рабочий стол справа"
 
 #: src/Shortcuts/List.vala:65
 msgid "Switch to first"
@@ -475,14 +471,12 @@ msgid "Move to workspace 9"
 msgstr "Переместить окно на рабочий стол 9"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Переместить окно на рабочий стол 1"
+msgstr "Переместить окно на первый рабочий стол"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Переместить окно на рабочий стол 1"
+msgstr "Переместить окно на новый рабочий стол"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -490,29 +484,27 @@ msgstr "Снимки экрана"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Снять весь экран"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Сохранить снимок в буфер обмена"
+msgstr "Сохранить весь экран в буфер обмена"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "Снять текущее окно"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Сохранить текущее окно в буфер обмена"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Выбрать область для снимка"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Сохранить снимок в буфер обмена"
+msgstr "Сохранить область в буфер обмена"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -612,16 +604,15 @@ msgstr "Включить высокую контрастность"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "Система"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Заблокировать"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "Выйти из системы"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
