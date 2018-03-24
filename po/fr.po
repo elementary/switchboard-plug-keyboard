@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-20 00:11+0000\n"
+"PO-Revision-Date: 2018-03-24 00:02+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/fr/>\n"
@@ -342,14 +342,12 @@ msgid "Toggle always on Top"
 msgstr "Activer/Désactiver la mise au premier plan de la fenêtre"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Fenêtres"
+msgstr "Faire défiler les fenêtres"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Faire défiler les fenêtres à l'envers"
+msgstr "Faire défiler les fenêtres en sens inverse"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -373,15 +371,13 @@ msgstr "Espaces de travail"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "Vue multitâche"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "Basculer à gauche"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "Basculer à droite"
 
@@ -474,14 +470,12 @@ msgid "Move to workspace 9"
 msgstr "Déplacer vers l'espace de travail 9"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Déplacer vers l'espace de travail 1"
+msgstr "Déplacer vers l'espace de travail de gauche"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Déplacer vers l'espace de travail 1"
+msgstr "Déplacer vers l'espace de travail de droite"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -489,29 +483,27 @@ msgstr "Captures d'écran"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Prendre tout l'écran"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Copier la capture d'écran"
+msgstr "Copier la capture d'écran dans le presse papier"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
-msgstr ""
+msgstr "Prendre la fenêtre actuelle"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Copier la capture d'écran de la fenêtre dans le presse papier"
 
 #: src/Shortcuts/List.vala:97
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Sélectionner une zone à capturer"
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Copier la capture d'écran"
+msgstr "Copier la capture d'écran d'une zone dans le presse papier"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -611,7 +603,7 @@ msgstr "Activer le mode Contraste Élevé"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "Système"
 
 #: src/Shortcuts/List.vala:137
 msgid "Lock"
@@ -619,7 +611,7 @@ msgstr "Verrouiller"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
-msgstr ""
+msgstr "Fermer la session"
 
 #: src/Shortcuts/List.vala:142
 msgid "Custom"
