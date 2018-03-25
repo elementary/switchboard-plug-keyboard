@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-24 20:50+0000\n"
+"PO-Revision-Date: 2018-03-26 00:09+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/da/>\n"
@@ -571,7 +571,7 @@ msgstr "Skub ud"
 
 #: src/Shortcuts/List.vala:124
 msgid "Universal Access"
-msgstr "Universel adgang"
+msgstr "Universel Tilgængelighed"
 
 #: src/Shortcuts/List.vala:125
 msgid "Decrease Text Size"
