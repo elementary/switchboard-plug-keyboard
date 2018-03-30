@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-26 00:09+0000\n"
+"PO-Revision-Date: 2018-03-31 00:05+0000\n"
 "Last-Translator: H. Gerhard. A <henrik.ahlkvist@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/sv/>\n"
@@ -175,9 +175,8 @@ msgid "Right Ctrl"
 msgstr "Höger Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Höger Alt"
+msgstr "Höger ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
@@ -211,7 +210,7 @@ msgstr ""
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr ""
+msgstr "som Esc"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
@@ -219,15 +218,15 @@ msgstr ""
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "som ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr ""
+msgstr "Byt med ctrl"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Byt med esc"
 
 #: src/Views/Layout.vala:127
 #, fuzzy
