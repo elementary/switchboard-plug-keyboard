@@ -26,6 +26,8 @@ plug_files = files(
 
 switchboard_dep = dependency('switchboard-2.0')
 
+gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
+
 shared_module(
     meson.project_name(),
     plug_files,
@@ -37,6 +39,7 @@ shared_module(
         dependency('gtk+-3.0'),
         dependency('libxml-2.0'),
         dependency('libgnomekbd'),
+        gnome_keyboard_ui_dep,
         switchboard_dep
     ],
     install: true,
