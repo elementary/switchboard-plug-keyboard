@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2017-05-12 16:00+0000\n"
+"PO-Revision-Date: 2018-04-02 00:04+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/nl/>\n"
+"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "Verplaats omlaag"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:49
-#, fuzzy
 msgid "Input Language"
-msgstr "Taal:"
+msgstr "Invoertaal"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:88
 msgid "Show keyboard layout"
@@ -174,24 +173,20 @@ msgid "Right Ctrl"
 msgstr "Rechtse Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Rechtse Alt"
+msgstr "Rechtse ⌘"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Caps Lock gedrag:"
+msgstr "Gedrag ⌘-toets:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
-#, fuzzy
 msgid "Applications Menu"
-msgstr "Toepassingen"
+msgstr "Applicatiemenu"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Sneltoets"
+msgstr "Sneltoetsoverlay"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -230,9 +225,8 @@ msgid "Swap with Escape"
 msgstr "Wissel met Escape"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Type om je indeling te testen…"
+msgstr "Type om je indeling te testen"
 
 #: src/Views/Layout.vala:209 src/Views/Layout.vala:226
 msgid "Key to choose 3rd level:"
@@ -296,14 +290,12 @@ msgid "seconds"
 msgstr "seconden"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Type om je instellingen te testen…"
+msgstr "Type om je instellingen te testen"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -350,14 +342,12 @@ msgid "Toggle always on Top"
 msgstr "Schakel altijd bovenaan"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Vensters"
+msgstr "Door vensters bladeren"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Wissel vensters achterstevoren"
+msgstr "Achterwaarts door vensters bladeren"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -384,12 +374,10 @@ msgid "Multitasking View"
 msgstr ""
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
 msgid "Switch left"
 msgstr "Wissel naar links"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch right"
 msgstr "Wissel naar rechts"
 
@@ -438,9 +426,8 @@ msgid "Switch to workspace 9"
 msgstr "Wissel naar werkblad 9"
 
 #: src/Shortcuts/List.vala:76
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "Werkbladen"
+msgstr "Blader door werkbladen"
 
 #: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
@@ -483,14 +470,12 @@ msgid "Move to workspace 9"
 msgstr "Verplaats naar werkblad 9"
 
 #: src/Shortcuts/List.vala:87
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Verplaats naar werkblad 1"
+msgstr "Verplaats naar linkse werkblad"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Verplaats naar werkblad 1"
+msgstr "Verplaats naar rechtse werkblad"
 
 #: src/Shortcuts/List.vala:92
 msgid "Screenshots"
@@ -501,9 +486,8 @@ msgid "Grab the whole screen"
 msgstr ""
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Sla schermafdruk op op het klembord"
+msgstr "Kopieer volledig scherm naar klembord"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
@@ -518,9 +502,8 @@ msgid "Select an area to grab"
 msgstr ""
 
 #: src/Shortcuts/List.vala:98
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Sla schermafdruk op op het klembord"
+msgstr "Kopieer een gebied naar klembord"
 
 #: src/Shortcuts/List.vala:102
 msgid "Applications"
@@ -536,7 +519,7 @@ msgstr "Persoonlijke map"
 
 #: src/Shortcuts/List.vala:105
 msgid "Music"
-msgstr ""
+msgstr "Muziek"
 
 #: src/Shortcuts/List.vala:106
 msgid "Terminal"
@@ -623,9 +606,8 @@ msgid "System"
 msgstr ""
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Vergrendeling"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
@@ -636,14 +618,14 @@ msgid "Custom"
 msgstr "Aangepast"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "%s wordt reeds gebruikt voor %s!"
+msgstr "%s wordt reeds gebruikt voor %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Als u de sneltoets toewijst aan %s, dan zal %s uitgeschakeld worden"
+msgstr "Als u de sneltoets toewijst aan %s, dan zal %s uitgeschakeld worden."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
