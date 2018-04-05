@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-04-05 14:28+0000\n"
+"PO-Revision-Date: 2018-04-06 00:03+0000\n"
 "Last-Translator: Shawn <syst3mfailur3@gmail.com>\n"
 "Language-Team: English (Canada) "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -27,7 +27,7 @@ msgstr "Keyboard"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Configure keyboard behavior, layouts, and shortcuts"
+msgstr "Configure keyboard behaviour, layouts, and shortcuts"
 
 #: src/Keyboard.vala:23
 msgid "Layout"
