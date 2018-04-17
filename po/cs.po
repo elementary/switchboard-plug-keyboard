@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
 "PO-Revision-Date: 2017-05-17 21:36+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -182,7 +182,7 @@ msgstr "Pravá klávesa Alt"
 msgid "⌘ key behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Aplikace"
@@ -311,234 +311,238 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr ""
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "Okna"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr ""
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "Maximalizovat"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "Zrušit maximalizaci"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "Přepnout maximalizované"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "Minimalizovat"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "Celá obrazovka"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "Přepnout na všech plochách"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "Vždy nahoře"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Přepnout okna"
-
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
-msgstr "Přepnout okna pozpátku"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Okna"
 
 #: src/Shortcuts/List.vala:53
+#, fuzzy
+msgid "Cycle Windows backwards"
+msgstr "Přepnout okna pozpátku"
+
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "Připnout vlevo"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "Připnout vpravo"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "Přehled oken"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "Zobrazit všechna okna"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "Pracovní plochy"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Zobrazit přepínač ploch"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr ""
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch left"
+msgstr "Přepnout vlevo"
+
+#: src/Shortcuts/List.vala:64
+#, fuzzy
+msgid "Switch right"
+msgstr "Přepnout vpravo"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "Přepnout na první"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "Přepnout na nové"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "Přepnout na plochu 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "Přepnout na plochu 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "Přepnout na plochu 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "Přepnout na plochu 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "Přepnout na plochu 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "Přepnout na plochu 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "Přepnout na plochu 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "Přepnout na plochu 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "Přepnout na plochu 9"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Přepnout vlevo"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Přepnout vpravo"
-
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Pracovní plochy"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "Přesunout na plochu 1"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "Přesunout na plochu 2"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "Přesunout na plochu 3"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "Přesunout na plochu 4"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "Přesunout na plochu 5"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "Přesunout na plochu 6"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "Přesunout na plochu 7"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "Přesunout na plochu 8"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "Přesunout na plochu 9"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Přesunout vlevo"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Přesunout vpravo"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Přesunout na plochu 1"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Přesunout na plochu 1"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "Snímky obrazovky"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Pořídit snímek obrazovky"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "Kopírovat snímek obrazovky do schránky"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Pořídit snímek okna"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "Kopírovat snímek obrazovky do schránky"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Kopírovat snímek okna do schránky"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Pořídit snímek oblasti"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Kopírovat snímek oblasti do schránky"
+msgid "Select an area to grab"
+msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Kopírovat snímek obrazovky do schránky"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "Aplikace"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "Email"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "Domovská složka"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "Příkazová řádka"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "Internetový prohlížeč"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "Spoušteč aplikací"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -613,6 +617,19 @@ msgid "Toggle High Contrast"
 msgstr "Vysoký kontrast"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+#, fuzzy
+msgid "Lock"
+msgstr "Caps Lock"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "Vlastní"
 
@@ -629,6 +646,36 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Změnit přiřazení"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "Spoušteč aplikací"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Přepnout okna"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Zobrazit přepínač ploch"
+
+#~ msgid "Move to left"
+#~ msgstr "Přesunout vlevo"
+
+#~ msgid "Move to right"
+#~ msgstr "Přesunout vpravo"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Pořídit snímek obrazovky"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Pořídit snímek okna"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Kopírovat snímek okna do schránky"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Pořídit snímek oblasti"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Kopírovat snímek oblasti do schránky"
 
 #~ msgid "Close"
 #~ msgstr "Zavřít"

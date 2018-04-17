@@ -32,6 +32,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         APPS,
         MEDIA,
         A11Y,
+        SYSTEM,
         CUSTOM,
         COUNT
     }
@@ -69,6 +70,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             section_switcher.add_section (list.launchers_group);
             section_switcher.add_section (list.media_group);
             section_switcher.add_section (list.a11y_group);
+            section_switcher.add_section (list.system_group);
             section_switcher.add_section (list.custom_group);
 
             var shortcut_display = new ShortcutDisplay (trees);

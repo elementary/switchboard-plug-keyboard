@@ -7,16 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2017-02-16 07:23+0000\n"
-"Last-Translator: Jiri Grönroos <Unknown>\n"
-"Language-Team: Finnish <fi@li.org>\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"PO-Revision-Date: 2018-03-26 00:09+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -91,13 +93,12 @@ msgid "Move down"
 msgstr "Siirrä alas"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:49
-#, fuzzy
 msgid "Input Language"
-msgstr "Kieli:"
+msgstr "Syötekieli"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:88
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Näytä näppäimistön asettelu"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:110
 msgid "Add Layout"
@@ -172,19 +173,16 @@ msgid "Right Ctrl"
 msgstr "Oikea Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Oikea Alt"
+msgstr "Oikea ⌘"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Caps Lockin toiminta:"
+msgstr "⌘-näppäimen toiminta:"
 
-#: src/Views/Layout.vala:87
-#, fuzzy
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 msgid "Applications Menu"
-msgstr "Sovellukset"
+msgstr "Sovellusvalikko"
 
 #: src/Views/Layout.vala:91
 #, fuzzy
@@ -228,9 +226,8 @@ msgid "Swap with Escape"
 msgstr ""
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Kirjoita testataksesi asettelua…"
+msgstr "Kirjoita testataksesi asettelua"
 
 #: src/Views/Layout.vala:209 src/Views/Layout.vala:226
 msgid "Key to choose 3rd level:"
@@ -238,7 +235,7 @@ msgstr "Kolmannen tason valintanäppäin:"
 
 #: src/Views/Layout.vala:231
 msgid "Left Alt"
-msgstr ""
+msgstr "Vasen Alt"
 
 #: src/Views/Layout.vala:241
 msgid "Key to choose 5th level:"
@@ -294,14 +291,12 @@ msgid "seconds"
 msgstr "sekuntia"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Kirjoita testataksesi asetuksia…"
+msgstr "Kirjoita testataksesi asetuksia"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -309,236 +304,236 @@ msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "Ikkunat"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "Siirrä taakse"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "Suurenna"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "Palauta koko"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "Suurenna / palauta koko"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "Pienennä"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "Koko näyttö päällä/pois"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "Vaihda kaikissa työtiloissa"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "Aina päällimmäisenä päällä/pois"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
+#: src/Shortcuts/List.vala:52
+msgid "Cycle Windows"
 msgstr "Vaihda ikkunoiden välillä"
 
-#: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#: src/Shortcuts/List.vala:53
+msgid "Cycle Windows backwards"
 msgstr "Vaihda ikkunoiden välillä päinvastaisesti"
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "Tasaa vasemmalle"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "Tasaa oikealle"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "Ikkunan yleisnäkymä"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "Näytä kaikki ikkunat"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "Työtilat"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Näytä työtilan vaihtaja"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr ""
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch left"
+msgstr "Vaihda vasemmalle"
+
+#: src/Shortcuts/List.vala:64
+#, fuzzy
+msgid "Switch right"
+msgstr "Vaihda oikealle"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "Vaihda ensimmäiseen"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "Vaihda uuteen"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "Vaihda työtilaan 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "Vaihda työtilaan 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "Vaihda työtilaan 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "Vaihda työtilaan 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "Vaihda työtilaan 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "Vaihda työtilaan 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "Vaihda työtilaan 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "Vaihda työtilaan 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "Vaihda työtilaan 9"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Vaihda vasemmalle"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Vaihda oikealle"
-
-#: src/Shortcuts/List.vala:75
-#, fuzzy
-msgid "Cycle workspaces"
-msgstr "Työtilat"
-
 #: src/Shortcuts/List.vala:76
-msgid "Cycle workspaces backwards"
-msgstr ""
+msgid "Cycle workspaces"
+msgstr "Vaihda työtilojen välillä"
 
 #: src/Shortcuts/List.vala:77
+msgid "Cycle workspaces backwards"
+msgstr "Vaihda työtilojen välillä päinvastaisesti"
+
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "Siirrä työtilaan 1"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "Siirrä työtilaan 2"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "Siirrä työtilaan 3"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "Siirrä työtilaan 4"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "Siirrä työtilaan 5"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "Siirrä työtilaan 6"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "Siirrä työtilaan 7"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "Siirrä työtilaan 8"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "Siirrä työtilaan 9"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Siirrä vasemmalle"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Siirrä oikealle"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Siirrä työtilaan 1"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Siirrä työtilaan 1"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "Kuvakaappaukset"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Ota kuvakaappaus"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "Tallenna kuvakaappaus leikepöydälle"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Ota kuvakaappaus ikkunasta"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "Tallenna kuvakaappaus leikepöydälle"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Tallenna ikkunan kuvakaappaus leikepöydälle"
+msgid "Grab the current window"
+msgstr "Kaappaa nykyinen ikkuna"
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Ota kuvakaappaus alueesta"
+msgid "Copy the current window to clipboard"
+msgstr "Kopioi nykyinen ikkuna leikepöydälle"
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Tallenna alueen kuvakaappaus leikepöydälle"
+msgid "Select an area to grab"
+msgstr "Valitse kaapattava alue"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+msgid "Copy an area to clipboard"
+msgstr "Kopioi alue leikepöydälle"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "Sovellukset"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "Sähköposti"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "Kotikansio"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "Pääte"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "Internetselain"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "Sovelluskäynnistin"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -613,6 +608,19 @@ msgid "Toggle High Contrast"
 msgstr "Suuri kontrasti päällä/pois"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+#, fuzzy
+msgid "Lock"
+msgstr "Caps Lock"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr "Kirjaudu ulos"
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "Omavalintainen"
 
@@ -631,6 +639,36 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Aseta uudelleen"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "Sovelluskäynnistin"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Vaihda ikkunoiden välillä"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Näytä työtilan vaihtaja"
+
+#~ msgid "Move to left"
+#~ msgstr "Siirrä vasemmalle"
+
+#~ msgid "Move to right"
+#~ msgstr "Siirrä oikealle"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Ota kuvakaappaus"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Ota kuvakaappaus ikkunasta"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Tallenna ikkunan kuvakaappaus leikepöydälle"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Ota kuvakaappaus alueesta"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Tallenna alueen kuvakaappaus leikepöydälle"
 
 #~ msgid "Right Super"
 #~ msgstr "Oikea Super"

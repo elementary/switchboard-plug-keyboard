@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2017-07-02 09:17+0000\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"PO-Revision-Date: 2018-03-22 00:05+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
-"Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/sl/>\n"
+"Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/sl/>\n"
 "Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
-"X-Generator: Weblate 2.14\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -184,7 +184,7 @@ msgstr "Desni Alt"
 msgid "⌘ key behavior:"
 msgstr "Obnašanje Caps Lock:"
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Aplikacije"
@@ -314,234 +314,238 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr ""
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "Okna"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "Nižje"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "Razpni"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "Pomanjšaj"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "Preklopi razpeto"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "Skrči"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "Preklopi na celozaslonski način"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "Preklopi vse delovne površine"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "Preklopi vedno na vrhu"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Preklopi okna"
-
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
-msgstr "Preklopi okna vzvratno"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Okna"
 
 #: src/Shortcuts/List.vala:53
+#, fuzzy
+msgid "Cycle Windows backwards"
+msgstr "Preklopi okna vzvratno"
+
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "Razpostavi levo"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "Razpostavi desno"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "Pregled oken"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "Pokaži vsa okna"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "Delovne površine"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Pokaži preklopnik delovnih površin"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr ""
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch left"
+msgstr "Preklopi na levo"
+
+#: src/Shortcuts/List.vala:64
+#, fuzzy
+msgid "Switch right"
+msgstr "Preklopi na desno"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "Preklopi na prvo"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "Preklopi na novo"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "Preklopi na delovno površino 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "Preklopi na delovno površino 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "Preklopi na delovno površino 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "Preklopi na delovno površino 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "Preklopi na delovno površino 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "Preklopi na delovno površino 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "Preklopi na delovno površino 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "Preklopi na delovno površino 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "Preklopi na delovno površino 9"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Preklopi na levo"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Preklopi na desno"
-
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Delovne površine"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "Premakni na delovno površino 1"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "Premakni na delovno površino 2"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "Premakni na delovno površino 3"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "Premakni na delovno površino 4"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "Premakni na delovno površino 5"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "Premakni na delovno površino 6"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "Premakni na delovno površino 7"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "Premakni na delovno površino 8"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "Premakni na delovno površino 9"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Premakni na levo"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Premakni na desno"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Premakni na delovno površino 1"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Premakni na delovno površino 1"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "Zaslonske slike"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Ustvari zaslonsko sliko"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "Shrani zaslonsko sliko na odložišče"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Ustvari zaslonsko sliko okna"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "Shrani zaslonsko sliko na odložišče"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Shrani zaslonsko sliko okna na odložišče"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Ustvari zaslonsko sliko območja"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Shrani zaslonsko sliko območja na odložišče"
+msgid "Select an area to grab"
+msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Shrani zaslonsko sliko na odložišče"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "Aplikacije"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "Elektronska pošta"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "Osebna mapa"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "Internetni brskalnik"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "Zaganjalnik programov"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -616,6 +620,18 @@ msgid "Toggle High Contrast"
 msgstr "Preklopi visok kontrast"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+msgid "Lock"
+msgstr "Zakleni"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "Po meri"
 
@@ -632,6 +648,36 @@ msgstr "Če prestavite bljižnico na %s bo %s onemogočeno"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Ponovno dodeli"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "Zaganjalnik programov"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Preklopi okna"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Pokaži preklopnik delovnih površin"
+
+#~ msgid "Move to left"
+#~ msgstr "Premakni na levo"
+
+#~ msgid "Move to right"
+#~ msgstr "Premakni na desno"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Ustvari zaslonsko sliko"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Ustvari zaslonsko sliko okna"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Shrani zaslonsko sliko okna na odložišče"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Ustvari zaslonsko sliko območja"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Shrani zaslonsko sliko območja na odložišče"
 
 #~ msgid "Right Super"
 #~ msgstr "Desni Super"

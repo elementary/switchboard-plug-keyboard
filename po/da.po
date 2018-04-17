@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2017-07-01 22:11+0000\n"
-"Last-Translator: scootergrisen <scootergrisen@gmail.com>\n"
-"Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/da/>\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"PO-Revision-Date: 2018-03-26 00:09+0000\n"
+"Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
+"Language-Team: Danish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/da/>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.14\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-03-19 06:32+0000\n"
 
 #: src/Keyboard.vala:13
@@ -93,13 +93,12 @@ msgid "Move down"
 msgstr "Flyt ned"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:49
-#, fuzzy
 msgid "Input Language"
-msgstr "Sprog:"
+msgstr "Input Sprog"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:88
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Vis tastatur layout"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:110
 msgid "Add Layout"
@@ -163,7 +162,7 @@ msgstr "Skriv-tast:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
 msgid "Right Alt"
@@ -174,24 +173,20 @@ msgid "Right Ctrl"
 msgstr "Højre Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Højre Alt"
+msgstr "Højre ⌘"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Caps Lock adfædr:"
+msgstr "⌘ tast adfær:"
 
-#: src/Views/Layout.vala:87
-#, fuzzy
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 msgid "Applications Menu"
-msgstr "Programmer"
+msgstr "Applikationsmenu"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Genvej"
+msgstr "Genvej Overlay"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -219,7 +214,7 @@ msgstr "som Num Lock"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "som ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
@@ -230,9 +225,8 @@ msgid "Swap with Escape"
 msgstr "Byt med Escape"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Skriv for at teste dit layout…"
+msgstr "Skriv for at teste dit layout"
 
 #: src/Views/Layout.vala:209 src/Views/Layout.vala:226
 msgid "Key to choose 3rd level:"
@@ -240,7 +234,7 @@ msgstr "Tast til at vælge 3. niveau:"
 
 #: src/Views/Layout.vala:231
 msgid "Left Alt"
-msgstr ""
+msgstr "Venstre Alt"
 
 #: src/Views/Layout.vala:241
 msgid "Key to choose 5th level:"
@@ -296,14 +290,12 @@ msgid "seconds"
 msgstr "sekunder"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Skriv for at teste dine indstillinger…"
+msgstr "Skriv for at teste dine indstillinger"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Skift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -311,236 +303,231 @@ msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "Vinduer"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "Lavere"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "Maksimer"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "Gendan fra maksimeret"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "Maksimeret til/fra"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "Minimér"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "Slå fuldskærm til/fra"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "På alle arbejdsområder til/fra"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "Altid øverst til/fra"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Skift vinduer"
-
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
-msgstr "Skift vinduer baglæns"
+msgid "Cycle Windows"
+msgstr "Cycle Vinduer"
 
 #: src/Shortcuts/List.vala:53
+msgid "Cycle Windows backwards"
+msgstr "Cycle vinduer baglæns"
+
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "Flæselæg til venstre"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "Flæselæg til højre"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "Vinduesoversigt"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "Vis alle vinduer"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "Arbejdsområder"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Vis arbejdsområdeskifter"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr "Vindueoversigt"
+
+#: src/Shortcuts/List.vala:63
+msgid "Switch left"
+msgstr "Skift til venstre"
+
+#: src/Shortcuts/List.vala:64
+msgid "Switch right"
+msgstr "Skift til højre"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "Skift til første"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "Skift til nye"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "Skift til arbejdsområde 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "Skift til arbejdsområde 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "Skift til arbejdsområde 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "Skift til arbejdsområde 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "Skift til arbejdsområde 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "Skift til arbejdsområde 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "Skift til arbejdsområde 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "Skift til arbejdsområde 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "Skift til arbejdsområde 9"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Skift til venstre"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Skift til højre"
-
-#: src/Shortcuts/List.vala:75
-#, fuzzy
-msgid "Cycle workspaces"
-msgstr "Arbejdsområder"
-
 #: src/Shortcuts/List.vala:76
-msgid "Cycle workspaces backwards"
-msgstr ""
+msgid "Cycle workspaces"
+msgstr "Cycle skriveborde"
 
 #: src/Shortcuts/List.vala:77
+msgid "Cycle workspaces backwards"
+msgstr "Cycle skriveborde baglæns"
+
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "Flyt til arbejdsområde 1"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "Flyt til arbejdsområde 2"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "Flyt til arbejdsområde 3"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "Flyt til arbejdsområde 4"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "Flyt til arbejdsområde 5"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "Flyt til arbejdsområde 6"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "Flyt til arbejdsområde 7"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "Flyt til arbejdsområde 8"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "Flyt til arbejdsområde 9"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Flyt til venstre"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Flyt til højre"
+msgid "Move to left workspace"
+msgstr "Flyt til venstre skrivebord"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+msgid "Move to right workspace"
+msgstr "Flyt til højre skrivebord"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "Skærmbilleder"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Tag et skærmbillede"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "Gem skærmbillede til udklipsholder"
+msgid "Grab the whole screen"
+msgstr "Screenshot hele skærmen"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Tag skærmbillede af et vindue"
+msgid "Copy the whole screen to clipboard"
+msgstr "Kopier hele skærmen til udklipsholder"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Gem skærmbillede af vindue til udklipsholder"
+msgid "Grab the current window"
+msgstr "Screenshot det nuværende vindue"
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Tag skærmbillede af et område"
+msgid "Copy the current window to clipboard"
+msgstr "Kopier det nuværende vindue til udklipsholderen"
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Gem skærmbillede af område til udklipsholder"
+msgid "Select an area to grab"
+msgstr "Vælg et område at screnshotte"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+msgid "Copy an area to clipboard"
+msgstr "Kopier et område til udklipsholderen"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "Programmer"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "E-mail"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "Hjemmemappe"
 
-#: src/Shortcuts/List.vala:104
-msgid "Music"
-msgstr ""
-
 #: src/Shortcuts/List.vala:105
+msgid "Music"
+msgstr "Musik"
+
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "Internetbrowser"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "Programstarter"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -584,7 +571,7 @@ msgstr "Skub ud"
 
 #: src/Shortcuts/List.vala:124
 msgid "Universal Access"
-msgstr "Universel adgang"
+msgstr "Universel Tilgængelighed"
 
 #: src/Shortcuts/List.vala:125
 msgid "Decrease Text Size"
@@ -615,22 +602,64 @@ msgid "Toggle High Contrast"
 msgstr "Høj kontrast til/fra"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr "System"
+
+#: src/Shortcuts/List.vala:137
+msgid "Lock"
+msgstr "Lås"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr "Log Ud"
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "Brugerdefineret"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "%s er allerede i brug til %s!"
+msgstr "%s er allerede brugt til %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Hvis du gentildeler genvejen til %s vil %s blive deaktiveret"
+msgstr "Hvis du gentildeler genvejen til %s, %s vil blive deaktiveret."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Gentildel"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "Programstarter"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Skift vinduer"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Vis arbejdsområdeskifter"
+
+#~ msgid "Move to left"
+#~ msgstr "Flyt til venstre"
+
+#~ msgid "Move to right"
+#~ msgstr "Flyt til højre"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Tag et skærmbillede"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Tag skærmbillede af et vindue"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Gem skærmbillede af vindue til udklipsholder"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Tag skærmbillede af et område"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Gem skærmbillede af område til udklipsholder"
 
 #~ msgid "Right Super"
 #~ msgstr "Højre Super"

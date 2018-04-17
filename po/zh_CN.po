@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
 "PO-Revision-Date: 2017-06-21 00:28+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -183,7 +183,7 @@ msgstr "右 Alt"
 msgid "⌘ key behavior:"
 msgstr "大写锁定键："
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 #, fuzzy
 msgid "Applications Menu"
 msgstr "应用程序"
@@ -313,234 +313,238 @@ msgstr "Ctrl 键"
 msgid "Alt"
 msgstr ""
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "窗口布局"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "窗口靠后"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "最大化"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "还原"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "最大化切换"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "最小化"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "全屏切换"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "在所有工作区中显示"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "窗口总在最前"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "往前切换窗口"
-
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
-msgstr "往回切换窗口"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "窗口布局"
 
 #: src/Shortcuts/List.vala:53
+#, fuzzy
+msgid "Cycle Windows backwards"
+msgstr "往回切换窗口"
+
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "贴满左半屏"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "贴满右半屏"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "窗口概览"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "显示全部窗口"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "工作区"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "显示工作区切换栏"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr ""
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch left"
+msgstr "切换至左一工作区"
+
+#: src/Shortcuts/List.vala:64
+#, fuzzy
+msgid "Switch right"
+msgstr "切换至右一工作区"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "切换至第一工作区"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "切换至新的作区"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "切换至工作区 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "切换至工作区 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "切换至工作区 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "切换至工作区 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "切换至工作区 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "切换至工作区 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "切换至工作区 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "切换至工作区 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "切换至工作区 9"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "切换至左一工作区"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "切换至右一工作区"
-
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "工作区"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "移动至工作区 1"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "移动至工作区 2"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "移动至工作区 3"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "移动至工作区 4"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "移动至工作区 5"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "移动至工作区 6"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "移动至工作区 7"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "移动至工作区 8"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "移动至工作区 9"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "移动至左一工作区"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "移动至右一工作区"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "移动至工作区 1"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "移动至工作区 1"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "屏幕截图"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "截取屏幕截图"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "将屏幕截图保存至剪贴板"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "截取窗口截图"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "将屏幕截图保存至剪贴板"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "将窗口截图保存至剪贴板"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "截取选区截图"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "将选区截图保存至剪贴板"
+msgid "Select an area to grab"
+msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "将屏幕截图保存至剪贴板"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "应用程序"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "电子邮件"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "主文件夹"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "终端"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "网络浏览器"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "程序启动器"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -615,6 +619,19 @@ msgid "Toggle High Contrast"
 msgstr "启用高对比度"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+#, fuzzy
+msgid "Lock"
+msgstr "Caps Lock"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "自定义"
 
@@ -631,6 +648,36 @@ msgstr "如果您重新指定 %s 为快捷键，%s 将被替换"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "重新分配"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "程序启动器"
+
+#~ msgid "Switch Windows"
+#~ msgstr "往前切换窗口"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "显示工作区切换栏"
+
+#~ msgid "Move to left"
+#~ msgstr "移动至左一工作区"
+
+#~ msgid "Move to right"
+#~ msgstr "移动至右一工作区"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "截取屏幕截图"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "截取窗口截图"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "将窗口截图保存至剪贴板"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "截取选区截图"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "将选区截图保存至剪贴板"
 
 #~ msgid "Right Super"
 #~ msgstr "右 Super"

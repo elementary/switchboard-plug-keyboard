@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
 "PO-Revision-Date: 2017-09-08 17:38+0000\n"
 "Last-Translator: M Aiman <m.aimanismail@gmail.com>\n"
 "Language-Team: Malay <https://weblate.elementary.io/projects/switchboard/"
@@ -182,7 +182,7 @@ msgstr "Alt Kanan"
 msgid "⌘ key behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Aplikasi"
@@ -311,234 +311,238 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr ""
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "Tetingkap"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "Lebih Rendah"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "Maksimum"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "Nyahmaksimum"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "Togol Dimaksimumkan"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "Minimum"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "Togol Skrin Penuh"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "Togol pada semu Ruang Kerja"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "Togol sentiasa di Atas"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "Tukar Tetingkap"
-
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
-msgstr "Tukar Tetingkap dibelakang"
+#, fuzzy
+msgid "Cycle Windows"
+msgstr "Tetingkap"
 
 #: src/Shortcuts/List.vala:53
+#, fuzzy
+msgid "Cycle Windows backwards"
+msgstr "Tukar Tetingkap dibelakang"
+
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "Jubin Kiri"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "Jubin Kanan"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "Selayang Pandang Tetingkap"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "Tunjuk Semua Tetingkap"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "Ruang Kerja"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Tunjuk Penukar Ruang Kerja"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr ""
+
+#: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Switch left"
+msgstr "Tukar ke kiri"
+
+#: src/Shortcuts/List.vala:64
+#, fuzzy
+msgid "Switch right"
+msgstr "Tukar ke kanan"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "Tukar ke pertama"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "Tukar baharu"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "Tukar ke ruang kerja 1"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "Tukar ke  ruang kerja 2"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "Tukar ke ruang kerja 3"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "Tukar ke ruang kerja 4"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "Tukar ke  ruang kerja 5"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "Tukar ke ruang kerja 6"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "Tukar ke  ruang kerja 7"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "Tukar ke  ruang kerja 8"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "Tukar ke ruang kerja 9"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Tukar ke kiri"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Tukar ke kanan"
-
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Ruang Kerja"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "Alih ke ruang kerja 1"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "Alih ke ruang kerja 2"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "Alih ke ruang kerja 3"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "Alih ke ruang kerja 4"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "Alih ke ruang kerja 5"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "Alih ke ruang kerja 6"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "Alih ke ruang kerja 7"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "Alih ke ruang kerja 8"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "Alih ke ruang kerja 9"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Alih ke kiri"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Alih ke kanan"
+#, fuzzy
+msgid "Move to left workspace"
+msgstr "Alih ke ruang kerja 1"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+#, fuzzy
+msgid "Move to right workspace"
+msgstr "Alih ke ruang kerja 1"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "Cekupan Skrin"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Ambil Cekupan Skrin"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "Simpan Cekupan Skrin ke Papan Keratan"
+msgid "Grab the whole screen"
+msgstr ""
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Ambil Cekupan Skrin Tetingkap"
+#, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "Simpan Cekupan Skrin ke Papan Keratan"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Simpan Cekupan Skrin Tetingkap ke Papan Keratan"
+msgid "Grab the current window"
+msgstr ""
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Ambil Cekupan Skrin Kawasan"
+msgid "Copy the current window to clipboard"
+msgstr ""
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Simpan Cekupan Skrin Kawasan ke Papan Keratan"
+msgid "Select an area to grab"
+msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+#, fuzzy
+msgid "Copy an area to clipboard"
+msgstr "Simpan Cekupan Skrin ke Papan Keratan"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "Aplikasi"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "E-mel"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "Folder Rumah"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "Pelayar Internet"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "Pelancar Aplikasi"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -613,6 +617,19 @@ msgid "Toggle High Contrast"
 msgstr "Togol Beza Jelas Tinggi"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr ""
+
+#: src/Shortcuts/List.vala:137
+#, fuzzy
+msgid "Lock"
+msgstr "Caps Lock"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr ""
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "Suai"
 
@@ -629,6 +646,36 @@ msgstr ""
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Umpuk Semula"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "Pelancar Aplikasi"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Tukar Tetingkap"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Tunjuk Penukar Ruang Kerja"
+
+#~ msgid "Move to left"
+#~ msgstr "Alih ke kiri"
+
+#~ msgid "Move to right"
+#~ msgstr "Alih ke kanan"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Ambil Cekupan Skrin"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Ambil Cekupan Skrin Tetingkap"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Simpan Cekupan Skrin Tetingkap ke Papan Keratan"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Ambil Cekupan Skrin Kawasan"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Simpan Cekupan Skrin Kawasan ke Papan Keratan"
 
 #~ msgid "Close"
 #~ msgstr "Tutup"

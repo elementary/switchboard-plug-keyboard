@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2018-03-11 00:06+0000\n"
-"Last-Translator: Felix Günther <felix.gnthr@gmail.com>\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"PO-Revision-Date: 2018-04-14 12:26+0000\n"
+"Last-Translator: Jörg Arnold <j0ar@posteo.de>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/de/>\n"
 "Language: de\n"
@@ -180,7 +180,7 @@ msgstr "Rechte ⌘-Taste"
 msgid "⌘ key behavior:"
 msgstr "Funktion der ⌘-Taste:"
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 msgid "Applications Menu"
 msgstr "Anwendungen"
 
@@ -305,235 +305,231 @@ msgstr "Strg-Taste"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "Fenster"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "Niedriger"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "Maximieren"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "Wiederherstellen"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "Zwischen normaler und maximierter Darstellung umschalten"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "Minimieren"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "Vollbild umschalten"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr ""
 "Zwischen »Nur auf dieser Arbeitsfläche« und »Immer auf der sichtbaren "
 "Arbeitsfläche« umschalten"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "»Im Vordergrund« umschalten"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
+#: src/Shortcuts/List.vala:52
+msgid "Cycle Windows"
 msgstr "Fenster wechseln"
 
-#: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
+#: src/Shortcuts/List.vala:53
+msgid "Cycle Windows backwards"
 msgstr "Fenster rückwärts wechseln"
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "Links kacheln"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "Rechts kacheln"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "Übersicht aller Fenster der aktiven Arbeitsfläche"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "Übersicht aller Fenster aller Arbeitsflächen"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "Arbeitsflächen"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "Übersicht der Arbeitsflächen anzeigen"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr "Übersicht der Arbeitsflächen"
+
+#: src/Shortcuts/List.vala:63
+msgid "Switch left"
+msgstr "Wechsel nach links"
+
+#: src/Shortcuts/List.vala:64
+msgid "Switch right"
+msgstr "Wechsel nach rechts"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "Zur ersten Arbeitsfläche wechseln"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "Zur neuen Arbeitsfläche wechseln"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "Zur Arbeitsfläche 1 wechseln"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "Zur Arbeitsfläche 2 wechseln"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "Zur Arbeitsfläche 3 wechseln"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "Zur Arbeitsfläche 4 wechseln"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "Zur Arbeitsfläche 5 wechseln"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "Zur Arbeitsfläche 6 wechseln"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "Zur Arbeitsfläche 7 wechseln"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "Zur Arbeitsfläche 8 wechseln"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "Zur Arbeitsfläche 9 wechseln"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "Zur links anschließenden Arbeitsfläche wechseln"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "Zur rechts anschließenden Arbeitsfläche wechseln"
-
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Cycle workspaces"
 msgstr "Arbeitsflächen wechseln"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr "Arbeitsflächen rückwärts wechseln"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "Fenster zur Arbeitsfläche 1 bewegen"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "Fenster zur Arbeitsfläche 2 bewegen"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "Fenster zur Arbeitsfläche 3 bewegen"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "Fenster zur Arbeitsfläche 4 bewegen"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "Fenster zur Arbeitsfläche 5 bewegen"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "Fenster zur Arbeitsfläche 6 bewegen"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "Fenster zur Arbeitsfläche 7 bewegen"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "Fenster zur Arbeitsfläche 8 bewegen"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "Fenster zur Arbeitsfläche 9 bewegen"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "Fenster auf die links anschließende Arbeitsfläche bewegen"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "Fenster auf die rechts anschließende Arbeitsfläche bewegen"
+msgid "Move to left workspace"
+msgstr "Auf die linke Arbeitsfläche verschieben"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+msgid "Move to right workspace"
+msgstr "Auf die rechte Arbeitsfläche verschieben"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "Bildschirmfotos"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "Bildschirmfoto aufnehmen"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "Bildschirmfoto in die Zwischenablage kopieren"
+msgid "Grab the whole screen"
+msgstr "Den ganzen Bildschirm aufnehmen"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "Bildschirmfoto eines Fensters aufnehmen"
+msgid "Copy the whole screen to clipboard"
+msgstr "Bildschirmfoto in die Zwischenablage kopieren"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "Fensterbildschirmfoto in die Zwischenablage kopieren"
+msgid "Grab the current window"
+msgstr "Das aktuelle Fenster aufnehmen"
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "Bildschirmfoto eines Bereichs aufnehmen"
+msgid "Copy the current window to clipboard"
+msgstr "Bildschirmfoto des aktuellen Fensters in die Zwischenablage kopieren"
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "Bildschirmfoto eines Bereichs in die Zwischenablage kopieren"
+msgid "Select an area to grab"
+msgstr "Einen Bereich auswählen zum Aufnehmen"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+msgid "Copy an area to clipboard"
+msgstr "Bildschirmfoto eines Bereiches in die Zwischenablage kopieren"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "Anwendungen"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "E-Mail"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "Persönlicher Ordner"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr "Musik"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "Internet-Browser"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "Anwendungsstarter"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -557,7 +553,7 @@ msgstr "Wiedergabe"
 
 #: src/Shortcuts/List.vala:116
 msgid "Pause"
-msgstr "Pause"
+msgstr "Pausieren"
 
 #: src/Shortcuts/List.vala:117
 msgid "Stop"
@@ -608,6 +604,18 @@ msgid "Toggle High Contrast"
 msgstr "Hoher-Kontrast-Modus umschalten"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr "System"
+
+#: src/Shortcuts/List.vala:137
+msgid "Lock"
+msgstr "Sperre"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr "Abmelden"
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "Benutzerdefiniert"
 
@@ -624,6 +632,36 @@ msgstr "Wenn Sie das Kürzel neu %s zuordnen, wird %s deaktiviert."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Neu zuordnen"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "Anwendungsstarter"
+
+#~ msgid "Switch Windows"
+#~ msgstr "Fenster wechseln"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "Übersicht der Arbeitsflächen anzeigen"
+
+#~ msgid "Move to left"
+#~ msgstr "Fenster auf die links anschließende Arbeitsfläche bewegen"
+
+#~ msgid "Move to right"
+#~ msgstr "Fenster auf die rechts anschließende Arbeitsfläche bewegen"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "Bildschirmfoto aufnehmen"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "Bildschirmfoto eines Fensters aufnehmen"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "Fensterbildschirmfoto in die Zwischenablage kopieren"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "Bildschirmfoto eines Bereichs aufnehmen"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "Bildschirmfoto eines Bereichs in die Zwischenablage kopieren"
 
 #~ msgid "Right Super"
 #~ msgstr "Rechte Super-Taste"

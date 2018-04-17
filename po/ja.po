@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-09 12:03-0600\n"
-"PO-Revision-Date: 2018-03-10 00:23+0000\n"
+"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"PO-Revision-Date: 2018-03-20 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -180,7 +180,7 @@ msgstr "右 ⌘"
 msgid "⌘ key behavior:"
 msgstr "⌘ キーの動作:"
 
-#: src/Views/Layout.vala:87
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 msgid "Applications Menu"
 msgstr "アプリケーションメニュー"
 
@@ -305,233 +305,229 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Shortcuts/List.vala:42
+#: src/Shortcuts/List.vala:43
 msgid "Windows"
 msgstr "ウィンドウ"
 
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:44
 msgid "Lower"
 msgstr "背面へ移動"
 
-#: src/Shortcuts/List.vala:44
+#: src/Shortcuts/List.vala:45
 msgid "Maximize"
 msgstr "最大化"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Unmaximize"
 msgstr "元のサイズに戻す"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
 msgstr "最大化の切り替え"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Minimize"
 msgstr "最小化"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
 msgstr "全画面表示の切り替え"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr "全ワークスペースの切り替え"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
 msgstr "常に手前に表示する"
 
-#: src/Shortcuts/List.vala:51
-msgid "Switch Windows"
-msgstr "ウインドウの切り替え"
-
 #: src/Shortcuts/List.vala:52
-msgid "Switch Windows backwards"
-msgstr "逆順でウィンドウの切り替え"
+msgid "Cycle Windows"
+msgstr "ウィンドウの切り替え"
 
 #: src/Shortcuts/List.vala:53
+msgid "Cycle Windows backwards"
+msgstr "逆順でウィンドウの切り替え"
+
+#: src/Shortcuts/List.vala:54
 msgid "Tile Left"
 msgstr "左にタイル"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Right"
 msgstr "右にタイル"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Window Overview"
 msgstr "ウィンドウオーバービュー"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Show All Windows"
 msgstr "すべてのウィンドウを表示"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:61
 msgid "Workspaces"
 msgstr "ワークスペース"
 
-#: src/Shortcuts/List.vala:61
-msgid "Show Workspace Switcher"
-msgstr "ワークスペース切り替えを表示"
-
 #: src/Shortcuts/List.vala:62
+msgid "Multitasking View"
+msgstr "マルチタスキングビュー"
+
+#: src/Shortcuts/List.vala:63
+msgid "Switch left"
+msgstr "左に切り替え"
+
+#: src/Shortcuts/List.vala:64
+msgid "Switch right"
+msgstr "右に切り替え"
+
+#: src/Shortcuts/List.vala:65
 msgid "Switch to first"
 msgstr "最初に切り替え"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:66
 msgid "Switch to new"
 msgstr "新規に切り替え"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:67
 msgid "Switch to workspace 1"
 msgstr "ワークスペース 1 に切り替え"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 2"
 msgstr "ワークスペース 2 に切り替え"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 3"
 msgstr "ワークスペース 3 に切り替え"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 4"
 msgstr "ワークスペース 4 に切り替え"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 5"
 msgstr "ワークスペース 5 に切り替え"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 6"
 msgstr "ワークスペース 6 に切り替え"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 7"
 msgstr "ワークスペース 7 に切り替え"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 8"
 msgstr "ワークスペース 8 に切り替え"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 9"
 msgstr "ワークスペース 9 に切り替え"
 
-#: src/Shortcuts/List.vala:73
-msgid "Switch to left"
-msgstr "左に切り替え"
-
-#: src/Shortcuts/List.vala:74
-msgid "Switch to right"
-msgstr "右に切り替え"
-
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Cycle workspaces"
 msgstr "ワークスペースを切り替え"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces backwards"
 msgstr "ワークスペースを逆に切り替え"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Move to workspace 1"
 msgstr "ワークスペース 1 へ移動"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 2"
 msgstr "ワークスペース 2 へ移動"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 3"
 msgstr "ワークスペース 3 へ移動"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 4"
 msgstr "ワークスペース 4 へ移動"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 5"
 msgstr "ワークスペース 5 へ移動"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 6"
 msgstr "ワークスペース 6 へ移動"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 7"
 msgstr "ワークスペース 7 へ移動"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 8"
 msgstr "ワークスペース 8 へ移動"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 9"
 msgstr "ワークスペース 9 へ移動"
 
-#: src/Shortcuts/List.vala:86
-msgid "Move to left"
-msgstr "左へ移動"
-
 #: src/Shortcuts/List.vala:87
-msgid "Move to right"
-msgstr "右へ移動"
+msgid "Move to left workspace"
+msgstr "左のワークスペースへ移動"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:88
+msgid "Move to right workspace"
+msgstr "右のワークスペースへ移動"
+
+#: src/Shortcuts/List.vala:92
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: src/Shortcuts/List.vala:92
-msgid "Take a Screenshot"
-msgstr "スクリーンショットを撮影"
-
 #: src/Shortcuts/List.vala:93
-msgid "Save Screenshot to Clipboard"
-msgstr "スクリーンショットをクリップボードへ保存"
+msgid "Grab the whole screen"
+msgstr "スクリーン全体を取得"
 
 #: src/Shortcuts/List.vala:94
-msgid "Take a Screenshot of a Window"
-msgstr "ウインドウのスクリーンショットを撮影"
+msgid "Copy the whole screen to clipboard"
+msgstr "スクリーン全体をクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:95
-msgid "Save Window-Screenshot to Clipboard"
-msgstr "ウインドウのスクリーンショットをクリップボードへ保存"
+msgid "Grab the current window"
+msgstr "現在のウィンドウを取得"
 
 #: src/Shortcuts/List.vala:96
-msgid "Take a Screenshot of an Area"
-msgstr "範囲指定でスクリーンショットを撮影"
+msgid "Copy the current window to clipboard"
+msgstr "現在のウィンドウをクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:97
-msgid "Save Area-Screenshot to Clipboard"
-msgstr "範囲指定したスクリーンショットをクリップボードへ保存"
+msgid "Select an area to grab"
+msgstr "エリアを選択して取得"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:98
+msgid "Copy an area to clipboard"
+msgstr "エリアを選択してクリップボードへコピー"
+
+#: src/Shortcuts/List.vala:102
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Email"
 msgstr "メール"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Home Folder"
 msgstr "ホームフォルダ"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Music"
 msgstr "ミュージック"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Terminal"
 msgstr "ターミナル"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Internet Browser"
 msgstr "インターネットブラウザー"
-
-#: src/Shortcuts/List.vala:107
-msgid "Applications Launcher"
-msgstr "アプリケーションランチャー"
 
 #: src/Shortcuts/List.vala:111
 msgid "Media"
@@ -606,6 +602,18 @@ msgid "Toggle High Contrast"
 msgstr "ハイコントラストの切り替え"
 
 #: src/Shortcuts/List.vala:135
+msgid "System"
+msgstr "システム"
+
+#: src/Shortcuts/List.vala:137
+msgid "Lock"
+msgstr "ロック"
+
+#: src/Shortcuts/List.vala:138
+msgid "Log Out"
+msgstr "ログアウト"
+
+#: src/Shortcuts/List.vala:142
 msgid "Custom"
 msgstr "カスタム"
 
@@ -622,6 +630,36 @@ msgstr "%s にショートカットを再割り当てすると、%s は無効に
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "再割り当て"
+
+#~ msgid "Applications Launcher"
+#~ msgstr "アプリケーションランチャー"
+
+#~ msgid "Switch Windows"
+#~ msgstr "ウインドウの切り替え"
+
+#~ msgid "Show Workspace Switcher"
+#~ msgstr "ワークスペース切り替えを表示"
+
+#~ msgid "Move to left"
+#~ msgstr "左へ移動"
+
+#~ msgid "Move to right"
+#~ msgstr "右へ移動"
+
+#~ msgid "Take a Screenshot"
+#~ msgstr "スクリーンショットを撮影"
+
+#~ msgid "Take a Screenshot of a Window"
+#~ msgstr "ウインドウのスクリーンショットを撮影"
+
+#~ msgid "Save Window-Screenshot to Clipboard"
+#~ msgstr "ウインドウのスクリーンショットをクリップボードへ保存"
+
+#~ msgid "Take a Screenshot of an Area"
+#~ msgstr "範囲指定でスクリーンショットを撮影"
+
+#~ msgid "Save Area-Screenshot to Clipboard"
+#~ msgstr "範囲指定したスクリーンショットをクリップボードへ保存"
 
 #~ msgid "Right Super"
 #~ msgstr "右 Super"
