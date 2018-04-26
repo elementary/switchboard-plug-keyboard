@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-23 00:05+0000\n"
+"PO-Revision-Date: 2018-04-27 00:03+0000\n"
 "Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/es/>\n"
@@ -623,7 +623,7 @@ msgid "%s is already used for %s"
 msgstr "%s ya se utiliza para %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "Si reasignar el acceso directo a %s, %s se desactivará"
 
