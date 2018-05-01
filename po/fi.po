@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-26 00:09+0000\n"
+"PO-Revision-Date: 2018-05-03 16:15+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/fi/>\n"
@@ -122,7 +122,7 @@ msgstr "Vaihda asettelua:"
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr "Ei käytössä"
+msgstr "Pois käytöstä"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
@@ -182,12 +182,11 @@ msgstr "⌘-näppäimen toiminta:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
 msgid "Applications Menu"
-msgstr "Sovellusvalikko"
+msgstr "Sovellukset-valikko"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Pikanäppäin"
+msgstr "Pikanäppäinten esittely"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -372,7 +371,7 @@ msgstr "Työtilat"
 
 #: src/Shortcuts/List.vala:62
 msgid "Multitasking View"
-msgstr ""
+msgstr "Moniajonäkymä"
 
 #: src/Shortcuts/List.vala:63
 #, fuzzy
@@ -488,12 +487,11 @@ msgstr "Kuvakaappaukset"
 
 #: src/Shortcuts/List.vala:93
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Kaappaa koko näyttö"
 
 #: src/Shortcuts/List.vala:94
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Tallenna kuvakaappaus leikepöydälle"
+msgstr "Tallenna koko näytön kuvakaappaus leikepöydälle"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the current window"
@@ -525,7 +523,7 @@ msgstr "Kotikansio"
 
 #: src/Shortcuts/List.vala:105
 msgid "Music"
-msgstr ""
+msgstr "Musiikki"
 
 #: src/Shortcuts/List.vala:106
 msgid "Terminal"
@@ -609,12 +607,11 @@ msgstr "Suuri kontrasti päällä/pois"
 
 #: src/Shortcuts/List.vala:135
 msgid "System"
-msgstr ""
+msgstr "Järjestelmä"
 
 #: src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Lukitse"
 
 #: src/Shortcuts/List.vala:138
 msgid "Log Out"
@@ -625,16 +622,16 @@ msgid "Custom"
 msgstr "Omavalintainen"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "Pikanäppäin %s on jo käytössä toimintoon %s!"
+msgstr "%s on jo käytössä toiminnolle %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr ""
-"Jos asetat pikanäppäimen toimintoon %s, pikanäppäin toimintoon %s poistetaan "
-"käytöstä"
+"Jos asetat pikanäppäimen toimintoon %s, toiminnon %s pikanäppäin poistetaan "
+"käytöstä."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
