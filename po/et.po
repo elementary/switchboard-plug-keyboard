@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"POT-Creation-Date: 2018-05-03 09:15-0700\n"
 "PO-Revision-Date: 2016-08-04 00:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -181,7 +181,7 @@ msgstr "Parem Alt"
 msgid "⌘ key behavior:"
 msgstr "Caps Lock'i käitumisviis:"
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Rakendused"
@@ -373,263 +373,267 @@ msgstr "Tööala akende ülevaade"
 msgid "Show All Windows"
 msgstr "Kõikide akende ülevaade"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:58
+msgid "Picture in Picture Mode"
+msgstr ""
+
+#: src/Shortcuts/List.vala:62
 msgid "Workspaces"
 msgstr "Tööalad"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 #, fuzzy
 msgid "Switch left"
 msgstr "Liikumine vasakpoolsele tööalale"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 #, fuzzy
 msgid "Switch right"
 msgstr "Liikumine parempoolsele tööalale"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch to first"
 msgstr "Esimene tööala"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to new"
 msgstr "Uus tööala"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 1"
 msgstr "Tööala nr. 1"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 2"
 msgstr "Tööala nr. 2"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 3"
 msgstr "Tööala nr. 3"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 4"
 msgstr "Tööala nr. 4"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 5"
 msgstr "Tööala nr. 5"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 6"
 msgstr "Tööala nr. 6"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 7"
 msgstr "Tööala nr. 7"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 8"
 msgstr "Tööala nr. 8"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 9"
 msgstr "Tööala nr. 9"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Tööalad"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
 msgstr "Akna liigutamine 1. tööalale"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 2"
 msgstr "Akna liigutamine 2. tööalale"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 3"
 msgstr "Akna liigutamine 3. tööalale"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 4"
 msgstr "Akna liigutamine 4. tööalale"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 5"
 msgstr "Akna liigutamine 5. tööalale"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 6"
 msgstr "Akna liigutamine 6. tööalale"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 7"
 msgstr "Akna liigutamine 7. tööalale"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 8"
 msgstr "Akna liigutamine 8. tööalale"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 9"
 msgstr "Akna liigutamine 9. tööalale"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "Akna liigutamine 1. tööalale"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:89
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "Akna liigutamine 1. tööalale"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:93
 msgid "Screenshots"
 msgstr "Ekraanipilt"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 #, fuzzy
 msgid "Copy the whole screen to clipboard"
 msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
 msgstr ""
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
 msgstr ""
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:99
 #, fuzzy
 msgid "Copy an area to clipboard"
 msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Applications"
 msgstr "Rakendused"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Email"
 msgstr "E-post"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Home Folder"
 msgstr "Failihaldur"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:108
 msgid "Internet Browser"
 msgstr "Veebibrauser"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:112
 msgid "Media"
 msgstr "Meedia"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:113
 msgid "Volume Up"
 msgstr "Heli valjemaks"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:114
 msgid "Volume Down"
 msgstr "Heli vaiksemaks"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:115
 msgid "Mute"
 msgstr "Vaigistamine"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:116
 msgid "Play"
 msgstr "Esita"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:117
 msgid "Pause"
 msgstr "Paus"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:118
 msgid "Stop"
 msgstr "Peata"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:119
 msgid "Previous Track"
 msgstr "Eelmine lugu"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:120
 msgid "Next Track"
 msgstr "Järgmine lugu"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:121
 msgid "Eject"
 msgstr "Väljasta"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:125
 msgid "Universal Access"
 msgstr "Kasutaja abivahendid"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:126
 msgid "Decrease Text Size"
 msgstr "Teksti suuruse vähendamine"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:127
 msgid "Increase Text Size"
 msgstr "Teksti suuruse suurendamine"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:128
 msgid "Magnifier Zoom in"
 msgstr "Sissesuumimine"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom out"
 msgstr "Väljasuumimine"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:130
 msgid "Toggle On Screen Keyboard"
 msgstr "Ekraani klaviatuuri sisse- või väljalülitamine"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:131
 msgid "Toggle Screenreader"
 msgstr "Ekraani lugeja sisse- või väljalülitamine"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:132
 msgid "Toggle High Contrast"
 msgstr "Kõrge kontrasti sisse- või väljalülitamine"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:136
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:138
 #, fuzzy
 msgid "Lock"
 msgstr "Caps Lock"
 
-#: src/Shortcuts/List.vala:138
+#: src/Shortcuts/List.vala:139
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:143
 msgid "Custom"
 msgstr "Kohandatud"
 
