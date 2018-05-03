@@ -55,6 +55,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.MUTTER, _("Tile Right"), "toggle-tiled-right");
             add_action (ref windows_group, Schema.GALA, _("Window Overview"), "expose-windows");
             add_action (ref windows_group, Schema.GALA, _("Show All Windows"), "expose-all-windows");
+            add_action (ref windows_group, Schema.GALA, _("Picture in Picture Mode"), "pip");
 
             workspaces_group = {};
             workspaces_group.icon_name = "preferences-desktop-wallpaper";
