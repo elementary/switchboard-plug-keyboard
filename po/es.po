@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-04-27 00:03+0000\n"
-"Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
-"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/es/>\n"
+"PO-Revision-Date: 2018-05-05 02:30+0000\n"
+"Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
+"Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -178,7 +178,7 @@ msgstr "Derecha ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
-msgstr ""
+msgstr "Comportamiento de la tecla ⌘:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
@@ -186,7 +186,7 @@ msgstr "Menú de aplicaciones"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
-msgstr ""
+msgstr "Atajo"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -367,7 +367,7 @@ msgstr "Mostrar todas las ventanas"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Modo Mini Pantalla"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
