@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-05-05 02:30+0000\n"
+"PO-Revision-Date: 2018-05-08 00:11+0000\n"
 "Last-Translator: Iuninefrendor <iuninefrendor@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/es/>\n"
@@ -117,7 +117,7 @@ msgstr "Predeterminado"
 
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
-msgstr "Cambiar distribución:"
+msgstr "Cambiar la disposición del teclado:"
 
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
