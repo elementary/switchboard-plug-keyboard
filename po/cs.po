@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-04-25 10:23+0000\n"
+"PO-Revision-Date: 2018-05-10 07:17+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/cs/>\n"
+"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -26,7 +26,7 @@ msgstr "Klávesnice"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Nastavuj chování klávesnice, rozložení a klávesové zkratky"
+msgstr "Nastavuj chování klávesnice, rozložení a zkratky"
 
 #: src/Keyboard.vala:23
 msgid "Layout"
@@ -34,7 +34,7 @@ msgstr "Rozložení"
 
 #: src/Keyboard.vala:24 src/Keyboard.vala:67
 msgid "Shortcuts"
-msgstr "Klávesové zkratky"
+msgstr "Zkratky"
 
 #: src/Keyboard.vala:25
 msgid "Behavior"
@@ -58,7 +58,7 @@ msgstr "Klávesa Compose"
 
 #: src/Keyboard.vala:72
 msgid "Caps Lock behavior"
-msgstr "Chování klávesy Caps Lock"
+msgstr "Chování Caps Locku"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"
@@ -206,7 +206,7 @@ msgstr "jako Ctrl"
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr "jako Escape"
+msgstr "jako Esc"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
@@ -218,7 +218,7 @@ msgstr "jako ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr "Vyměnit s klávesou Control"
+msgstr "Vyměnit s klávesou Ctrl"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
@@ -250,7 +250,7 @@ msgstr "Nicola F Backspace:"
 
 #: src/Views/Layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
-msgstr "Zenkaku Hankaku jako Escape:"
+msgstr "Zenkaku Hankaku jako Esc:"
 
 #: src/Views/Layout.vala:290
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -351,11 +351,11 @@ msgstr "Přepínat okna pozpátku"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
-msgstr "Připnout vlevo"
+msgstr "Roztáhnout vlevo"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Right"
-msgstr "Připnout vpravo"
+msgstr "Roztáhnout vpravo"
 
 #: src/Shortcuts/List.vala:56
 msgid "Window Overview"
@@ -367,7 +367,7 @@ msgstr "Zobrazit všechna okna"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Režim obrázek v obrázku"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
@@ -391,7 +391,7 @@ msgstr "Přepnout na první"
 
 #: src/Shortcuts/List.vala:67
 msgid "Switch to new"
-msgstr "Přepnout na nové"
+msgstr "Přepnout na novou"
 
 #: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 1"
