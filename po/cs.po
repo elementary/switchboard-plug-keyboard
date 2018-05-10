@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-05-10 07:17+0000\n"
+"PO-Revision-Date: 2018-05-11 00:06+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/cs/>\n"
@@ -182,7 +182,7 @@ msgstr "Chování klávesy ⌘:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
-msgstr "Menu aplikací"
+msgstr "Nabídka aplikací"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
