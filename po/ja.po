@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-05-04 02:21+0000\n"
+"PO-Revision-Date: 2018-05-13 00:11+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -218,11 +218,11 @@ msgstr "⌘ として動作"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr "Ctrl と交換する"
+msgstr "Ctrl と入れ替える"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr "Esc と交換する"
+msgstr "Esc と入れ替える"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
@@ -291,7 +291,7 @@ msgstr "秒"
 
 #: src/Views/Behavior.vala:127
 msgid "Type to test your settings"
-msgstr "入力して設定を確認してください"
+msgstr "入力して設定を試してください"
 
 #: src/Shortcuts/Shortcut.vala:46
 msgid "Shift"
