@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-03-20 00:11+0000\n"
+"PO-Revision-Date: 2018-05-13 09:06+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
-"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/it/>\n"
+"Language-Team: Italian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/it/>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -368,7 +368,7 @@ msgstr "Mostra tutte le finestre"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Modalità Picture in Picture"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
@@ -608,7 +608,7 @@ msgstr "Abilita/disabilita alto contrasto"
 
 #: src/Shortcuts/List.vala:136
 msgid "System"
-msgstr ""
+msgstr "Sistema"
 
 #: src/Shortcuts/List.vala:138
 msgid "Lock"
@@ -616,7 +616,7 @@ msgstr "Blocca"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
-msgstr ""
+msgstr "Termina sessione"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
