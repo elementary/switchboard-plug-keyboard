@@ -8,10 +8,10 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-05-03 16:15+0000\n"
+"PO-Revision-Date: 2018-05-18 00:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/fi/>\n"
+"Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -367,7 +367,7 @@ msgstr "Näytä kaikki ikkunat"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Kuva kuvassa -tila (PIP)"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
