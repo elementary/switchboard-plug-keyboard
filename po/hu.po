@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2015-08-20 11:53+0000\n"
-"Last-Translator: Papp Ferenc <Unknown>\n"
-"Language-Team: Hungarian <hu@li.org>\n"
+"PO-Revision-Date: 2018-05-30 00:03+0000\n"
+"Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
+"Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/hu/>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -181,9 +183,8 @@ msgid "⌘ key behavior:"
 msgstr ""
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Applications Menu"
-msgstr "Alkalmazások"
+msgstr "Alkalmazás menü"
 
 #: src/Views/Layout.vala:91
 #, fuzzy
@@ -587,7 +588,7 @@ msgstr "Kiadás"
 
 #: src/Shortcuts/List.vala:125
 msgid "Universal Access"
-msgstr "Akadály­mentesítés"
+msgstr "Akadálymentes hozzáférés"
 
 #: src/Shortcuts/List.vala:126
 msgid "Decrease Text Size"
