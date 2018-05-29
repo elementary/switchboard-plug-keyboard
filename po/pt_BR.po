@@ -8,15 +8,18 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2017-02-12 16:56+0000\n"
-"Last-Translator: Leonardo Lemos <Unknown>\n"
-"Language-Team: Brazilian Portuguese <pt_BR@li.org>\n"
+"PO-Revision-Date: 2018-05-29 00:12+0000\n"
+"Last-Translator: Fernando da Silva Sousa <wild.nando@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) "
+"<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
+"keyboard/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:55+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -570,7 +573,7 @@ msgstr "Reproduzir"
 
 #: src/Shortcuts/List.vala:117
 msgid "Pause"
-msgstr "Pausar"
+msgstr "Pausa"
 
 #: src/Shortcuts/List.vala:118
 msgid "Stop"
