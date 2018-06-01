@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-05-31 00:02+0000\n"
+"PO-Revision-Date: 2018-06-02 00:06+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål "
 "<https://weblate.elementary.io/projects/switchboard/switchboard-plug-"
@@ -576,7 +576,7 @@ msgstr "Spill av"
 
 #: src/Shortcuts/List.vala:117
 msgid "Pause"
-msgstr "Stans midlertidig"
+msgstr "Pause"
 
 #: src/Shortcuts/List.vala:118
 msgid "Stop"
