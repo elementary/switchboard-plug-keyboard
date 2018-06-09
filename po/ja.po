@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-06-08 00:12+0000\n"
+"PO-Revision-Date: 2018-06-10 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -487,11 +487,11 @@ msgstr "スクリーンショット"
 
 #: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
-msgstr "スクリーン全体を取得"
+msgstr "画面全体を取得"
 
 #: src/Shortcuts/List.vala:95
 msgid "Copy the whole screen to clipboard"
-msgstr "スクリーン全体をクリップボードへコピー"
+msgstr "画面全体をクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
