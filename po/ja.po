@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-06-10 00:12+0000\n"
+"PO-Revision-Date: 2018-06-13 00:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -587,11 +587,11 @@ msgstr "フォントサイズを大きく"
 
 #: src/Shortcuts/List.vala:128
 msgid "Magnifier Zoom in"
-msgstr "拡大鏡の拡大"
+msgstr "拡大鏡のズームイン"
 
 #: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom out"
-msgstr "拡大鏡の縮小"
+msgstr "拡大鏡のズームイン"
 
 #: src/Shortcuts/List.vala:130
 msgid "Toggle On Screen Keyboard"
