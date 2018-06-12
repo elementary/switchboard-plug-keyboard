@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2017-08-22 11:16+0000\n"
-"Last-Translator: Aprianto Nursetiawan <noersetiawan@gmail.com>\n"
-"Language-Team: Indonesian <https://weblate.elementary.io/projects/"
-"switchboard/switchboard-plug-keyboard/id/>\n"
+"PO-Revision-Date: 2018-06-13 00:07+0000\n"
+"Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
+"Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
+"/switchboard-plug-keyboard/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.15\n"
+"X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -182,9 +182,8 @@ msgid "⌘ key behavior:"
 msgstr ""
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Applications Menu"
-msgstr "Aplikasi"
+msgstr "Menu Aplikasi"
 
 #: src/Views/Layout.vala:91
 #, fuzzy
@@ -625,7 +624,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:138
 msgid "Lock"
-msgstr ""
+msgstr "Kunci"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
