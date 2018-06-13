@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-06-13 00:07+0000\n"
+"PO-Revision-Date: 2018-06-14 00:09+0000\n"
 "Last-Translator: Eri Hidayat <eriwhidayat@gmail.com>\n"
 "Language-Team: Indonesian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/id/>\n"
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "Geser bawah"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:49
-#, fuzzy
 msgid "Input Language"
-msgstr "Bahasa:"
+msgstr "Bahasa Masukan"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:88
 msgid "Show keyboard layout"
@@ -186,9 +185,8 @@ msgid "Applications Menu"
 msgstr "Menu Aplikasi"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Pintasan"
+msgstr "Hamparan Pintasan"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -227,9 +225,8 @@ msgid "Swap with Escape"
 msgstr ""
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Ketik untuk menguji tata letak…"
+msgstr "Ketik untuk menguji tata letak Anda"
 
 #: src/Views/Layout.vala:209 src/Views/Layout.vala:226
 msgid "Key to choose 3rd level:"
@@ -293,9 +290,8 @@ msgid "seconds"
 msgstr ""
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Ketikkan untuk menguji pengaturan anda…"
+msgstr "Ketikkan untuk menguji pengaturan Anda"
 
 #: src/Shortcuts/Shortcut.vala:46
 msgid "Shift"
@@ -346,14 +342,12 @@ msgid "Toggle always on Top"
 msgstr ""
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Pindah Jendela"
+msgstr "Jendela Siklus"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Pindah Jendela secara terbalik"
+msgstr "Jendela Siklus ke belakang"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -384,14 +378,12 @@ msgid "Multitasking View"
 msgstr ""
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch left"
-msgstr "Pindah ke kiri"
+msgstr "Beralih ke kiri"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch right"
-msgstr "Pindah ke kanan"
+msgstr "Beralih ke kanan"
 
 #: src/Shortcuts/List.vala:66
 msgid "Switch to first"
@@ -438,9 +430,8 @@ msgid "Switch to workspace 9"
 msgstr ""
 
 #: src/Shortcuts/List.vala:77
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "Pindah ke ruang kerja 1"
+msgstr "Ruang kerja siklus"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
@@ -483,14 +474,12 @@ msgid "Move to workspace 9"
 msgstr "Pindah ke ruang kerja 9"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Pindah ke ruang kerja 1"
+msgstr "Pindah ke ruang kerja sebelah kiri"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Pindah ke ruang kerja 1"
+msgstr "Pindah ke ruang kerja sebelah kanan"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
@@ -501,9 +490,8 @@ msgid "Grab the whole screen"
 msgstr ""
 
 #: src/Shortcuts/List.vala:95
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Simpan Cuplikan Layar ke Clipboard"
+msgstr "Salin keseluruhan layar ke papan klip"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
@@ -518,9 +506,8 @@ msgid "Select an area to grab"
 msgstr ""
 
 #: src/Shortcuts/List.vala:99
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Simpan Cuplikan Layar ke Clipboard"
+msgstr "Salin area ke papan klip"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
