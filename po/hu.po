@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-06-14 08:57+0000\n"
+"PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/hu/>\n"
@@ -27,7 +27,7 @@ msgstr "Billentyűzet"
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
-"A billentyűzet viselkedésének és kiosztásának, valamint a gyorsbillentyűk "
+"A billentyűzet viselkedésének és kiosztásának, valamint a billentyűparancsok "
 "beállítása"
 
 #: src/Keyboard.vala:23
@@ -36,7 +36,7 @@ msgstr "Kiosztás"
 
 #: src/Keyboard.vala:24 src/Keyboard.vala:67
 msgid "Shortcuts"
-msgstr "Gyorsbillentyűk"
+msgstr "Billentyűparancsok"
 
 #: src/Keyboard.vala:25
 msgid "Behavior"
@@ -80,7 +80,7 @@ msgstr "Parancs"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
-msgstr "Gyorsbillentyű"
+msgstr "Billentyűparancs"
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
@@ -124,7 +124,7 @@ msgstr "Kiosztás váltása:"
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr "Letiltva"
+msgstr "Kikapcsolva"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
@@ -248,7 +248,7 @@ msgstr "Kana zár:"
 
 #: src/Views/Layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr "Nicola F Backspace:"
+msgstr "Nicola F típusú Backspace:"
 
 #: src/Views/Layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
@@ -441,39 +441,39 @@ msgstr "Munkaterületek forgatása visszafelé"
 
 #: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
-msgstr "Átmozgatás az 1. munkaterületre"
+msgstr "Áthelyezés az 1. munkaterületre"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 2"
-msgstr "Átmozgatás a 2. munkaterületre"
+msgstr "Áthelyezés a 2. munkaterületre"
 
 #: src/Shortcuts/List.vala:81
 msgid "Move to workspace 3"
-msgstr "Átmozgatás a 3. munkaterületre"
+msgstr "Áthelyezés a 3. munkaterületre"
 
 #: src/Shortcuts/List.vala:82
 msgid "Move to workspace 4"
-msgstr "Átmozgatás a 4. munkaterületre"
+msgstr "Áthelyezés a 4. munkaterületre"
 
 #: src/Shortcuts/List.vala:83
 msgid "Move to workspace 5"
-msgstr "Átmozgatás az 5. munkaterületre"
+msgstr "Áthelyezés az 5. munkaterületre"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 6"
-msgstr "Átmozgatás a 6. munkaterületre"
+msgstr "Áthelyezés a 6. munkaterületre"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 7"
-msgstr "Átmozgatás a 7. munkaterületre"
+msgstr "Áthelyezés a 7. munkaterületre"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 8"
-msgstr "Átmozgatás a 8. munkaterületre"
+msgstr "Áthelyezés a 8. munkaterületre"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 9"
-msgstr "Átmozgatás a 9. munkaterületre"
+msgstr "Áthelyezés a 9. munkaterületre"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to left workspace"
@@ -631,7 +631,9 @@ msgstr "A(z) %s már használatban van: %s"
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Ha a gyorsbillentyűt hozzárendeli ehhez: %s, akkor %s le lesz tiltva."
+msgstr ""
+"Ha újra hozzárendeli a billentyűparancsot ehhez: %s, akkor %s ki lesz "
+"kapcsolva."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
