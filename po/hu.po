@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-06-02 00:06+0000\n"
+"PO-Revision-Date: 2018-06-14 08:57+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/hu/>\n"
@@ -56,7 +56,7 @@ msgstr "Elrendezés váltása"
 
 #: src/Keyboard.vala:71
 msgid "Compose Key"
-msgstr ""
+msgstr "Levélírás gomb"
 
 #: src/Keyboard.vala:72
 msgid "Caps Lock behavior"
@@ -160,7 +160,7 @@ msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr ""
+msgstr "Levélírás gomb:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
@@ -188,7 +188,7 @@ msgstr "Alkalmazás menü"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
-msgstr ""
+msgstr "Billentyűparancs áttekintés"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
