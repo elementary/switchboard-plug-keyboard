@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-05-03 09:15-0700\n"
-"PO-Revision-Date: 2018-06-13 00:07+0000\n"
+"PO-Revision-Date: 2018-06-17 00:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
 "/switchboard-plug-keyboard/ja/>\n"
@@ -246,7 +246,7 @@ msgstr "かなロック:"
 
 #: src/Views/Layout.vala:270
 msgid "Nicola F Backspace:"
-msgstr "NICOLA-F BS キー:"
+msgstr "NICOLA-F バックスペース:"
 
 #: src/Views/Layout.vala:273
 msgid "Zenkaku Hankaku as Escape:"
@@ -339,7 +339,7 @@ msgstr "全ワークスペースの切り替え"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
-msgstr "常に手前に表示する"
+msgstr "常に手前に表示"
 
 #: src/Shortcuts/List.vala:52
 msgid "Cycle Windows"
