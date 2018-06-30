@@ -123,9 +123,15 @@ namespace Pantheon.Keyboard.LayoutPage {
             advanced_settings.valign = Gtk.Align.START;
 
             var entry_test = new Gtk.Entry ();
-            entry_test.hexpand = entry_test.vexpand = true;
+            entry_test.hexpand = true;
             entry_test.placeholder_text = (_("Type to test your layout"));
-            entry_test.valign = Gtk.Align.END;
+
+            var ibus_button = new Gtk.Button.with_label (_("Input Method Settings…"));
+
+            var action_area = new Gtk.Grid ();
+            action_area.column_spacing = 12;
+            action_area.add (entry_test);
+            action_area.add (ibus_button);
 
             attach (display, 0, 0, 1, 6);
             attach (switch_layout_label, 1, 0, 1, 1);
@@ -137,7 +143,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
             attach (advanced_settings, 1, 4, 2, 1);
-            attach (entry_test, 1, 5, 2, 1);
+            attach (action_area, 1, 5, 2, 1);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -147,6 +153,15 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             settings.layouts.active_changed.connect (() => {
                 show_panel_for_active_layout ();
+            });
+
+            ibus_button.clicked.connect (() => {
+                try {
+                    var appinfo = GLib.AppInfo.create_from_commandline ("ibus-setup", null, GLib.AppInfoCreateFlags.NONE);
+                    appinfo.launch (null, null);
+                } catch (Error e) {
+                    critical ("Could not open ibus setup: %s", e.message);   
+                }
             });
 
             var gala_behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
