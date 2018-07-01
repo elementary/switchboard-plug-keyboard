@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 09:15-0700\n"
+"POT-Creation-Date: 2018-07-01 07:55-0700\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -110,7 +110,7 @@ msgstr "ئەمەلدىن قالدۇرۇش"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:187
 #: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:229 src/Layout/Handler.vala:78
+#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "نورمالدىكى قىممىتى"
 
@@ -139,7 +139,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "ئىككى Shift كۇنۇپكىسىنى تەڭ بىسىش"
 
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:230
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -163,15 +163,15 @@ msgstr "بىرىكمە كۇنۇپكا:"
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
 msgstr "ئوڭ Alt"
 
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:233 src/Views/Layout.vala:245
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
 msgid "Right Ctrl"
 msgstr "ئوڭ Ctrl"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 #, fuzzy
 msgid "Right ⌘"
 msgstr "ئوڭ Alt"
@@ -232,31 +232,35 @@ msgstr "Escape بىلەن ئالماشتۇرۇش"
 msgid "Type to test your layout"
 msgstr "خەت بىسىپ بەت يۈزىڭىزنى سىناپ بىقىڭ...."
 
-#: src/Views/Layout.vala:209 src/Views/Layout.vala:226
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
 msgstr "ئۈچىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
 
-#: src/Views/Layout.vala:231
+#: src/Views/Layout.vala:246
 msgid "Left Alt"
 msgstr ""
 
-#: src/Views/Layout.vala:241
+#: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
 msgstr "بەشىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
 
-#: src/Views/Layout.vala:262
+#: src/Views/Layout.vala:277
 msgid "Kana Lock:"
 msgstr "باشقا ئىسىم بىلەن قۇلۇپلاش:"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
 msgstr "Nicola F نۇسخىسىدىكى Backspace:"
 
-#: src/Views/Layout.vala:273
+#: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
 msgstr "Zenkaku Hankaku نى Escape قىلىپ ئىشلىتىش:"
 
-#: src/Views/Layout.vala:290
+#: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Hangul/Hanja نى ئوڭ Alt/Ctrl دا ئىشلىتىش:"
 

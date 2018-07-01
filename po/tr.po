@@ -7,11 +7,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-03 09:15-0700\n"
+"POT-Creation-Date: 2018-07-01 07:55-0700\n"
 "PO-Revision-Date: 2018-05-27 00:05+0000\n"
 "Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-keyboard/tr/>\n"
+"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-keyboard/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -112,7 +112,7 @@ msgstr "İptal"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:187
 #: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:229 src/Layout/Handler.vala:78
+#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "Varsayılan"
 
@@ -141,7 +141,7 @@ msgstr "Alt + Boşluk"
 msgid "Both Shift keys together"
 msgstr "Her iki Shift tuşu birlikte"
 
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:230
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -165,15 +165,15 @@ msgstr "Birleştirme (Compose) tuşu:"
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
 msgstr "Sağ Alt"
 
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:233 src/Views/Layout.vala:245
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
 msgid "Right Ctrl"
 msgstr "Sağ Ctrl"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 #, fuzzy
 msgid "Right ⌘"
 msgstr "Sağ Alt"
@@ -233,31 +233,35 @@ msgstr ""
 msgid "Type to test your layout"
 msgstr "Düzeninizi sınamak için yazın..."
 
-#: src/Views/Layout.vala:209 src/Views/Layout.vala:226
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
 msgstr ""
 
-#: src/Views/Layout.vala:231
+#: src/Views/Layout.vala:246
 msgid "Left Alt"
 msgstr ""
 
-#: src/Views/Layout.vala:241
+#: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
 msgstr ""
 
-#: src/Views/Layout.vala:262
+#: src/Views/Layout.vala:277
 msgid "Kana Lock:"
 msgstr "Kana Lock:"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:273
+#: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
 msgstr "Zenkaku Hankaku as Escape:"
 
-#: src/Views/Layout.vala:290
+#: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr ""
 
