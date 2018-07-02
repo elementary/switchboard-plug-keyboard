@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-06-06 00:09+0000\n"
+"PO-Revision-Date: 2018-07-02 02:01+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:55+0000\n"
 
 #: src/Keyboard.vala:13
@@ -230,7 +230,7 @@ msgstr "글자를 입력해서 레이아웃 설정을 확인해 보세요"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "한글 입력 설정…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
