@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-06 19:19+0000\n"
+"PO-Revision-Date: 2018-07-07 00:04+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
@@ -26,7 +26,7 @@ msgstr "Tastatur"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Konfigurer tastaturopførsel, layouts og genveje"
+msgstr "Konfigurer tastatur adfærd, layouts og genveje"
 
 #: src/Keyboard.vala:23
 msgid "Layout"
@@ -38,7 +38,7 @@ msgstr "Tastaturgenveje"
 
 #: src/Keyboard.vala:25
 msgid "Behavior"
-msgstr "Opførsel"
+msgstr "Adfærd"
 
 #: src/Keyboard.vala:68
 msgid "Repeat Keys"
@@ -58,7 +58,7 @@ msgstr "Skriv-tast"
 
 #: src/Keyboard.vala:72
 msgid "Caps Lock behavior"
-msgstr "Caps Lock opførsel"
+msgstr "Caps Lock adfærd"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"
@@ -178,7 +178,7 @@ msgstr "Højre ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
-msgstr "⌘ tast adfær:"
+msgstr "⌘ tast adfærd:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
@@ -190,7 +190,7 @@ msgstr "Genvej Overlay"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
-msgstr "Caps Lock opførsel:"
+msgstr "Caps Lock adfærd:"
 
 #: src/Views/Layout.vala:101
 msgid "Caps Lock disabled"
