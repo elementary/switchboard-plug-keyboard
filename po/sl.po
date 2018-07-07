@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-04 00:09+0000\n"
+"PO-Revision-Date: 2018-07-08 00:09+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sl/>\n"
@@ -94,13 +94,12 @@ msgid "Move down"
 msgstr "Premakni dol"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:49
-#, fuzzy
 msgid "Input Language"
-msgstr "Jezik:"
+msgstr "Jezik"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:88
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Prikaži razpored tipk"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:110
 msgid "Add Layout"
@@ -164,7 +163,7 @@ msgstr "Tipka za sestavljanje:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "Meni"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
@@ -175,23 +174,20 @@ msgid "Right Ctrl"
 msgstr "Desni Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Desni Alt"
+msgstr "Desni ⌘"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Obnašanje Caps Lock:"
+msgstr "Obnašanje ⌘:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
 msgstr "Meni z aplikacijami"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Bližnjica"
+msgstr "Pregled bližnjic"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -219,7 +215,7 @@ msgstr "kot Num Lock"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "kot ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
@@ -230,13 +226,12 @@ msgid "Swap with Escape"
 msgstr "zamenjaj z Escape"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Pišite, da preverite vašo razporeditev…"
+msgstr "Pišite, da preverite vašo razporeditev"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "Nastavitve tipkovnice…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
@@ -244,7 +239,7 @@ msgstr "Tipka za izbiro 3. nivoja:"
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
-msgstr ""
+msgstr "Levi Alt"
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
@@ -300,14 +295,12 @@ msgid "seconds"
 msgstr "sekund"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Pišite, da preverite vaše nastavitve …"
+msgstr "Pišite, da preverite vaše nastavitve"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -315,7 +308,7 @@ msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -354,14 +347,12 @@ msgid "Toggle always on Top"
 msgstr "Preklopi vedno na vrhu"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Okna"
+msgstr "Preklopi na naslednje okno"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Preklopi okna vzvratno"
+msgstr "Preklopi na prejšnje okno"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -381,7 +372,7 @@ msgstr "Pokaži vsa okna"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Slika v sliki"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
@@ -389,15 +380,13 @@ msgstr "Delovne površine"
 
 #: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
-msgstr ""
+msgstr "Pokaži vsa okna"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch left"
 msgstr "Preklopi na levo"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch right"
 msgstr "Preklopi na desno"
 
@@ -446,13 +435,12 @@ msgid "Switch to workspace 9"
 msgstr "Preklopi na delovno površino 9"
 
 #: src/Shortcuts/List.vala:77
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "Delovne površine"
+msgstr "Naslednja delovna površina"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "Prejšnja delovna površina"
 
 #: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
@@ -491,14 +479,12 @@ msgid "Move to workspace 9"
 msgstr "Premakni na delovno površino 9"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Premakni na delovno površino 1"
+msgstr "Premakni na levo delovno površino"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Premakni na delovno površino 1"
+msgstr "Premakni na desno delovno površino"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
@@ -506,29 +492,27 @@ msgstr "Zaslonske slike"
 
 #: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Zajemi cel zaslon"
 
 #: src/Shortcuts/List.vala:95
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Shrani zaslonsko sliko na odložišče"
+msgstr "Skopiraj cel zaslon na odložišče"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
-msgstr ""
+msgstr "Zajemi trenutno okno"
 
 #: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Skopiraj trenutno okno na odložišče"
 
 #: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Zajemi izbrano območje"
 
 #: src/Shortcuts/List.vala:99
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Shrani zaslonsko sliko na odložišče"
+msgstr "Skopiraj izbrano območje na odložišče"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
@@ -544,7 +528,7 @@ msgstr "Osebna mapa"
 
 #: src/Shortcuts/List.vala:106
 msgid "Music"
-msgstr ""
+msgstr "Glasba"
 
 #: src/Shortcuts/List.vala:107
 msgid "Terminal"
@@ -628,7 +612,7 @@ msgstr "Preklopi visok kontrast"
 
 #: src/Shortcuts/List.vala:136
 msgid "System"
-msgstr ""
+msgstr "Sistem"
 
 #: src/Shortcuts/List.vala:138
 msgid "Lock"
@@ -636,16 +620,16 @@ msgstr "Zakleni"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
-msgstr ""
+msgstr "Odjava"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
 msgstr "Po meri"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "%s je že v uporabi za %s!"
+msgstr "%s je že v uporabi za %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, fuzzy, c-format
