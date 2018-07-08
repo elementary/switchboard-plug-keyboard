@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-05 00:07+0000\n"
+"PO-Revision-Date: 2018-07-09 00:10+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -382,12 +382,10 @@ msgid "Multitasking View"
 msgstr "Moniajonäkymä"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch left"
 msgstr "Vaihda vasemmalle"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch right"
 msgstr "Vaihda oikealle"
 
@@ -480,14 +478,12 @@ msgid "Move to workspace 9"
 msgstr "Siirrä työtilaan 9"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Siirrä työtilaan 1"
+msgstr "Siirrä vasemmalla olevaan työtilaan"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Siirrä työtilaan 1"
+msgstr "Siirrä oikealla olevaan työtilaan"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
