@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-08 00:09+0000\n"
+"PO-Revision-Date: 2018-07-09 20:56+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sl/>\n"
@@ -632,9 +632,9 @@ msgid "%s is already used for %s"
 msgstr "%s je že v uporabi za %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Če prestavite bljižnico na %s bo %s onemogočeno"
+msgstr "Če prestavite bližnjico na %s bo %s onemogočen."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
