@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-15 17:19-0700\n"
+"POT-Creation-Date: 2018-07-01 07:55-0700\n"
 "PO-Revision-Date: 2017-02-17 16:47+0000\n"
 "Last-Translator: Christos Iatropoulos <Unknown>\n"
 "Language-Team: Greek <el@li.org>\n"
@@ -110,7 +110,7 @@ msgstr "Ακύρωση"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:187
 #: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:229 src/Layout/Handler.vala:78
+#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "Προεπιλογή"
 
@@ -139,7 +139,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "Και τα δύο πλήκτρα Shift μαζί"
 
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:230
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -163,15 +163,15 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
 msgstr "Δεξί Alt"
 
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:233 src/Views/Layout.vala:245
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
 msgid "Right Ctrl"
 msgstr "Δεξί Ctrl"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 #, fuzzy
 msgid "Right ⌘"
 msgstr "Δεξί Alt"
@@ -180,7 +180,7 @@ msgstr "Δεξί Alt"
 msgid "⌘ key behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Εφαρμογές"
@@ -231,31 +231,35 @@ msgstr ""
 msgid "Type to test your layout"
 msgstr "Πληκτρολογήστε για να δοκιμάσετε τη διάταξή σας…"
 
-#: src/Views/Layout.vala:209 src/Views/Layout.vala:226
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
 msgstr ""
 
-#: src/Views/Layout.vala:231
+#: src/Views/Layout.vala:246
 msgid "Left Alt"
 msgstr ""
 
-#: src/Views/Layout.vala:241
+#: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
 msgstr ""
 
-#: src/Views/Layout.vala:262
+#: src/Views/Layout.vala:277
 msgid "Kana Lock:"
 msgstr ""
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
 msgstr ""
 
-#: src/Views/Layout.vala:273
+#: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
 msgstr ""
 
-#: src/Views/Layout.vala:290
+#: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr ""
 
@@ -372,263 +376,267 @@ msgstr ""
 msgid "Show All Windows"
 msgstr "Εμφάνιση όλων των παραθύρων"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:58
+msgid "Picture in Picture Mode"
+msgstr ""
+
+#: src/Shortcuts/List.vala:62
 msgid "Workspaces"
 msgstr "Χώροι εργασίας"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 #, fuzzy
 msgid "Switch left"
 msgstr "Εναλλαγή προς τα αριστερά"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 #, fuzzy
 msgid "Switch right"
 msgstr "Εναλλαγή προς τα δεξιά"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch to first"
 msgstr "Εναλλαγή στον πρώτο"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to new"
 msgstr "Εναλλαγή στο νέο"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 1"
 msgstr "Εναλλαγή στο χώρο εργασίας 1"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 2"
 msgstr "Εναλλαγή στο χώρο εργασίας 2"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 3"
 msgstr "Εναλλαγή στο χώρο εργασίας 3"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 4"
 msgstr "Εναλλαγή στο χώρο εργασίας 4"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 5"
 msgstr "Εναλλαγή στο χώρο εργασίας 5"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 6"
 msgstr "Εναλλαγή στο χώρο εργασίας 6"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 7"
 msgstr "Εναλλαγή στο χώρο εργασίας 7"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 8"
 msgstr "Εναλλαγή στο χώρο εργασίας 8"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 9"
 msgstr "Εναλλαγή στο χώρο εργασίας 9"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Χώροι εργασίας"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
 msgstr "Μετακίνηση στο χώρο εργασίας 1"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 2"
 msgstr "Μετακίνηση στο χώρο εργασίας 2"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 3"
 msgstr "Μετακίνηση στο χώρο εργασίας 3"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 4"
 msgstr "Μετακίνηση στο χώρο εργασίας 4"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 5"
 msgstr "Μετακίνηση στο χώρο εργασίας 5"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 6"
 msgstr "Μετακίνηση στο χώρο εργασίας 6"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 7"
 msgstr "Μετακίνηση στο χώρο εργασίας 7"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 8"
 msgstr "Μετακίνηση στο χώρο εργασίας 8"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 9"
 msgstr "Μετακίνηση στο χώρο εργασίας 9"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "Μετακίνηση στο χώρο εργασίας 1"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:89
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "Μετακίνηση στο χώρο εργασίας 1"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:93
 msgid "Screenshots"
 msgstr "Στιγμιότυπα οθόνης"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 #, fuzzy
 msgid "Copy the whole screen to clipboard"
 msgstr "Αποθήκευση του Στιγμιότυπου Οθόνης στο Πρόχειρο"
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
 msgstr ""
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
 msgstr ""
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:99
 #, fuzzy
 msgid "Copy an area to clipboard"
 msgstr "Αποθήκευση του Στιγμιότυπου Οθόνης στο Πρόχειρο"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Applications"
 msgstr "Εφαρμογές"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Email"
 msgstr "Email"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Home Folder"
 msgstr "Προσωπικός Φάκελος"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Terminal"
 msgstr "Τερματικό"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:108
 msgid "Internet Browser"
 msgstr "Περιηγητής Ιστού"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:112
 msgid "Media"
 msgstr "Πολυμέσα"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:113
 msgid "Volume Up"
 msgstr "Αύξηση Έντασης"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:114
 msgid "Volume Down"
 msgstr "Μείωση Έντασης"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:115
 msgid "Mute"
 msgstr "Σίγαση"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:116
 msgid "Play"
 msgstr "Αναπαραγωγή"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:117
 msgid "Pause"
 msgstr "Παύση"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:118
 msgid "Stop"
 msgstr "Διακοπή"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:119
 msgid "Previous Track"
 msgstr "Προηγούμενο Κομμάτι"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:120
 msgid "Next Track"
 msgstr "Επόμενο Κομμάτι"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:121
 msgid "Eject"
 msgstr "Εξαγωγή"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:125
 msgid "Universal Access"
 msgstr "Γενική πρόσβαση"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:126
 msgid "Decrease Text Size"
 msgstr "Μείωση μεγέθους κειμένου"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:127
 msgid "Increase Text Size"
 msgstr "Αύξηση μεγέθους κειμένου"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:128
 msgid "Magnifier Zoom in"
 msgstr "Μεγέθυνση με Μεγεθυντικό Φακό"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom out"
 msgstr "Σμίκρυνση με Μεγεθυντικό Φακό"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:130
 msgid "Toggle On Screen Keyboard"
 msgstr "Εναλλαγή πληκτρολογίου οθόνης"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:131
 msgid "Toggle Screenreader"
 msgstr "Εναλλαγή Αναγνώστη Οθόνης"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:132
 msgid "Toggle High Contrast"
 msgstr "Εναλλαγή Υψηλής Αντίθεσης"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:136
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:138
 #, fuzzy
 msgid "Lock"
 msgstr "Caps Lock"
 
-#: src/Shortcuts/List.vala:138
+#: src/Shortcuts/List.vala:139
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:143
 msgid "Custom"
 msgstr ""
 

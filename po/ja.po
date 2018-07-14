@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-03-15 17:19-0700\n"
-"PO-Revision-Date: 2018-03-20 00:11+0000\n"
-"Last-Translator: Ryo Nakano <ryonakaknock@gmail.com>\n"
-"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard"
-"/switchboard-plug-keyboard/ja/>\n"
+"POT-Creation-Date: 2018-07-01 07:55-0700\n"
+"PO-Revision-Date: 2018-07-01 14:59+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
+"Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
+"switchboard-plug-keyboard/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Keyboard.vala:13
@@ -111,7 +111,7 @@ msgstr "キャンセル"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:187
 #: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:229 src/Layout/Handler.vala:78
+#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "デフォルト"
 
@@ -140,7 +140,7 @@ msgstr "Alt + スペース"
 msgid "Both Shift keys together"
 msgstr "両方の Shift キーを同時に"
 
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:230
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -164,15 +164,15 @@ msgstr "Compose キー:"
 msgid "Menu"
 msgstr "メニュー"
 
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:232 src/Views/Layout.vala:244
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
 msgstr "右 Alt"
 
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:233 src/Views/Layout.vala:245
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
 msgid "Right Ctrl"
 msgstr "右Ctrl"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:234 src/Views/Layout.vala:246
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 msgid "Right ⌘"
 msgstr "右 ⌘"
 
@@ -180,7 +180,7 @@ msgstr "右 ⌘"
 msgid "⌘ key behavior:"
 msgstr "⌘ キーの動作:"
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:136
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
 msgstr "アプリケーションメニュー"
 
@@ -218,41 +218,45 @@ msgstr "⌘ として動作"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr "Ctrl と交換する"
+msgstr "Ctrl と入れ替える"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr "Esc と交換する"
+msgstr "Esc と入れ替える"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
 msgstr "入力してレイアウトを試してください"
 
-#: src/Views/Layout.vala:209 src/Views/Layout.vala:226
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr "インプットメソッドの設定…"
+
+#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
 msgstr "3rd level を選択するキー:"
 
-#: src/Views/Layout.vala:231
+#: src/Views/Layout.vala:246
 msgid "Left Alt"
 msgstr "左 Alt"
 
-#: src/Views/Layout.vala:241
+#: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
 msgstr "5th level を選択するキー:"
 
-#: src/Views/Layout.vala:262
+#: src/Views/Layout.vala:277
 msgid "Kana Lock:"
 msgstr "かなロック:"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
-msgstr "NICOLA-F BS キー:"
+msgstr "NICOLA-F バックスペース:"
 
-#: src/Views/Layout.vala:273
+#: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
 msgstr "全角/半角 を Esc として動作:"
 
-#: src/Views/Layout.vala:290
+#: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Apple 英数/かな を右 Ctrl/Alt に割当:"
 
@@ -291,7 +295,7 @@ msgstr "秒"
 
 #: src/Views/Behavior.vala:127
 msgid "Type to test your settings"
-msgstr "入力して設定を確認してください"
+msgstr "入力して設定を試してください"
 
 #: src/Shortcuts/Shortcut.vala:46
 msgid "Shift"
@@ -339,7 +343,7 @@ msgstr "全ワークスペースの切り替え"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
-msgstr "常に手前に表示する"
+msgstr "常に手前に表示"
 
 #: src/Shortcuts/List.vala:52
 msgid "Cycle Windows"
@@ -365,255 +369,259 @@ msgstr "ウィンドウオーバービュー"
 msgid "Show All Windows"
 msgstr "すべてのウィンドウを表示"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:58
+msgid "Picture in Picture Mode"
+msgstr "ピクチャーインピクチャーモード"
+
+#: src/Shortcuts/List.vala:62
 msgid "Workspaces"
 msgstr "ワークスペース"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
 msgstr "マルチタスキングビュー"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 msgid "Switch left"
 msgstr "左に切り替え"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 msgid "Switch right"
 msgstr "右に切り替え"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch to first"
 msgstr "最初に切り替え"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to new"
 msgstr "新規に切り替え"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 1"
 msgstr "ワークスペース 1 に切り替え"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 2"
 msgstr "ワークスペース 2 に切り替え"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 3"
 msgstr "ワークスペース 3 に切り替え"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 4"
 msgstr "ワークスペース 4 に切り替え"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 5"
 msgstr "ワークスペース 5 に切り替え"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 6"
 msgstr "ワークスペース 6 に切り替え"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 7"
 msgstr "ワークスペース 7 に切り替え"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 8"
 msgstr "ワークスペース 8 に切り替え"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 9"
 msgstr "ワークスペース 9 に切り替え"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Cycle workspaces"
 msgstr "ワークスペースを切り替え"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
 msgstr "ワークスペースを逆に切り替え"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
 msgstr "ワークスペース 1 へ移動"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 2"
 msgstr "ワークスペース 2 へ移動"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 3"
 msgstr "ワークスペース 3 へ移動"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 4"
 msgstr "ワークスペース 4 へ移動"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 5"
 msgstr "ワークスペース 5 へ移動"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 6"
 msgstr "ワークスペース 6 へ移動"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 7"
 msgstr "ワークスペース 7 へ移動"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 8"
 msgstr "ワークスペース 8 へ移動"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 9"
 msgstr "ワークスペース 9 へ移動"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 msgid "Move to left workspace"
 msgstr "左のワークスペースへ移動"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:89
 msgid "Move to right workspace"
 msgstr "右のワークスペースへ移動"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:93
 msgid "Screenshots"
 msgstr "スクリーンショット"
 
-#: src/Shortcuts/List.vala:93
-msgid "Grab the whole screen"
-msgstr "スクリーン全体を取得"
-
 #: src/Shortcuts/List.vala:94
-msgid "Copy the whole screen to clipboard"
-msgstr "スクリーン全体をクリップボードへコピー"
+msgid "Grab the whole screen"
+msgstr "画面全体を取得"
 
 #: src/Shortcuts/List.vala:95
+msgid "Copy the whole screen to clipboard"
+msgstr "画面全体をクリップボードへコピー"
+
+#: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
 msgstr "現在のウィンドウを取得"
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
 msgstr "現在のウィンドウをクリップボードへコピー"
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
 msgstr "エリアを選択して取得"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:99
 msgid "Copy an area to clipboard"
 msgstr "エリアを選択してクリップボードへコピー"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:103
 msgid "Applications"
 msgstr "アプリケーション"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Email"
 msgstr "メール"
 
-#: src/Shortcuts/List.vala:104
-msgid "Home Folder"
-msgstr "ホームフォルダ"
-
 #: src/Shortcuts/List.vala:105
+msgid "Home Folder"
+msgstr "ホームフォルダー"
+
+#: src/Shortcuts/List.vala:106
 msgid "Music"
 msgstr "ミュージック"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Terminal"
 msgstr "ターミナル"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:108
 msgid "Internet Browser"
 msgstr "インターネットブラウザー"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:112
 msgid "Media"
 msgstr "メディア"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:113
 msgid "Volume Up"
 msgstr "音量を上げる"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:114
 msgid "Volume Down"
 msgstr "音量を下げる"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:115
 msgid "Mute"
 msgstr "消音"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:116
 msgid "Play"
 msgstr "再生"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:117
 msgid "Pause"
 msgstr "一時停止"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:118
 msgid "Stop"
 msgstr "停止"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:119
 msgid "Previous Track"
 msgstr "前のトラック"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:120
 msgid "Next Track"
 msgstr "次のトラック"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:121
 msgid "Eject"
 msgstr "取り出し"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:125
 msgid "Universal Access"
 msgstr "ユニバーサルアクセス"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:126
 msgid "Decrease Text Size"
 msgstr "フォントサイズを小さく"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:127
 msgid "Increase Text Size"
 msgstr "フォントサイズを大きく"
 
-#: src/Shortcuts/List.vala:127
-msgid "Magnifier Zoom in"
-msgstr "拡大鏡の拡大"
-
 #: src/Shortcuts/List.vala:128
-msgid "Magnifier Zoom out"
-msgstr "拡大鏡の縮小"
+msgid "Magnifier Zoom in"
+msgstr "拡大鏡のズームイン"
 
 #: src/Shortcuts/List.vala:129
+msgid "Magnifier Zoom out"
+msgstr "拡大鏡のズームイン"
+
+#: src/Shortcuts/List.vala:130
 msgid "Toggle On Screen Keyboard"
 msgstr "オンスクリーンキーボードの切り替え"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:131
 msgid "Toggle Screenreader"
 msgstr "スクリーンリーダーの切り替え"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:132
 msgid "Toggle High Contrast"
 msgstr "ハイコントラストの切り替え"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:136
 msgid "System"
 msgstr "システム"
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:138
 msgid "Lock"
 msgstr "ロック"
 
-#: src/Shortcuts/List.vala:138
+#: src/Shortcuts/List.vala:139
 msgid "Log Out"
 msgstr "ログアウト"
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:143
 msgid "Custom"
 msgstr "カスタム"
 
