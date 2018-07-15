@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-01 14:59+0000\n"
+"PO-Revision-Date: 2018-07-16 00:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -339,11 +339,11 @@ msgstr "全画面表示の切り替え"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
-msgstr "全ワークスペースの切り替え"
+msgstr "すべてのワークスペースに表示の切り替え"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
-msgstr "常に手前に表示"
+msgstr "最前面に維持の切り替え"
 
 #: src/Shortcuts/List.vala:52
 msgid "Cycle Windows"
