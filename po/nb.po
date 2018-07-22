@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-06-02 00:06+0000\n"
-"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
+"PO-Revision-Date: 2018-07-23 00:04+0000\n"
+"Last-Translator: Nils K <slx@nilsk.net>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -175,9 +175,8 @@ msgid "Right Ctrl"
 msgstr "Høyre Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Høyre Alt"
+msgstr "Høyre ⌘"
 
 #: src/Views/Layout.vala:82
 #, fuzzy
@@ -189,9 +188,8 @@ msgid "Applications Menu"
 msgstr "Programmeny"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Snarvei"
+msgstr "Snarveioverlegg"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -230,9 +228,8 @@ msgid "Swap with Escape"
 msgstr "Bytt med Esc"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Skriv for å prøve tastaturoppsettet…"
+msgstr "Skriv for å prøve tastaturoppsettet"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
@@ -251,7 +248,6 @@ msgid "Key to choose 5th level:"
 msgstr "Tast for å velge femte nivå:"
 
 #: src/Views/Layout.vala:277
-#, fuzzy
 msgid "Kana Lock:"
 msgstr "Kana-lås:"
 
@@ -303,14 +299,12 @@ msgid "seconds"
 msgstr "sekund"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Skriv for å prøve ditt oppsett…"
+msgstr "Skriv for å prøve ditt oppsett"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Skift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -359,12 +353,12 @@ msgstr "Veksle alltid til topp"
 #: src/Shortcuts/List.vala:52
 #, fuzzy
 msgid "Cycle Windows"
-msgstr "Vinduer"
+msgstr "Ruller vinduer"
 
 #: src/Shortcuts/List.vala:53
 #, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Bytt vinduer bakover"
+msgstr "Ruller vinduer bakover"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -395,12 +389,10 @@ msgid "Multitasking View"
 msgstr "Fleroppgavevisning"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch left"
 msgstr "Bytt til venstre"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch right"
 msgstr "Bytt til høyre"
 
@@ -494,14 +486,12 @@ msgid "Move to workspace 9"
 msgstr "Flytt til arbeidsflate 9"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Flytt til arbeidsflate 1"
+msgstr "Flytt til venstre arbeidsflate"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Flytt til arbeidsflate 1"
+msgstr "Flytt til høyre arbeidsflate"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
@@ -512,9 +502,8 @@ msgid "Grab the whole screen"
 msgstr "Fang hele skjermen"
 
 #: src/Shortcuts/List.vala:95
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Lagre skjermbilde til utklippstavle"
+msgstr "Lagre hele skjermbildet til utklippstavle"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
@@ -529,9 +518,8 @@ msgid "Select an area to grab"
 msgstr "Velg et område å fange"
 
 #: src/Shortcuts/List.vala:99
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Lagre skjermbilde til utklippstavle"
+msgstr "Lagre et område til utklippstavle"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
@@ -634,9 +622,8 @@ msgid "System"
 msgstr "System"
 
 #: src/Shortcuts/List.vala:138
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Lås"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
@@ -647,14 +634,14 @@ msgid "Custom"
 msgstr "Egendefinert"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "% er allerede i bruk for %s!"
+msgstr "%s er allerede i bruk for %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Hvis du tildeler en snarvei til %s, vil %s bli avskrudd"
+msgstr "Hvis du tildeler en snarvei til %s, vil %s bli avskrudd."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
