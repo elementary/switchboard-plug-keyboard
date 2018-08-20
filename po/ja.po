@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-16 00:04+0000\n"
+"PO-Revision-Date: 2018-08-21 00:02+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -102,7 +102,7 @@ msgstr "キーボードレイアウトを表示"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:110
 msgid "Add Layout"
-msgstr "レイアウトの追加"
+msgstr "レイアウトを追加"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:114
 #: src/Dialogs/ConflictDialog.vala:36
