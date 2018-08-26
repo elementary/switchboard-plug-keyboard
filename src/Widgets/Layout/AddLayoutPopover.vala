@@ -21,6 +21,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
     public signal void layout_added (string language, string layout);
     private Gtk.Widget keyboard_drawing_dialog;
 
+    private Gtk.SearchEntry search_entry;
+
     private Gtk.ListBox input_language_list_box;
     private Gtk.ListBox layout_list_box;
     private GLib.ListStore language_list;
@@ -30,6 +32,10 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         height_request = 400;
         width_request = 400;
 
+        search_entry = new Gtk.SearchEntry ();
+        search_entry.margin = 6;
+        search_entry.placeholder_text = _("Search input language");
+
         language_list = new GLib.ListStore (typeof (ListStoreItem));
         layout_list = new GLib.ListStore (typeof (ListStoreItem));
 
@@ -38,13 +44,20 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         update_list_store (layout_list, handler.get_variants_for_language (first_lang.id));
 
         input_language_list_box = new Gtk.ListBox ();
-        input_language_list_box.bind_model (language_list, (item) => {
-            return new LayoutRow ((item as ListStoreItem).name);
-        });
+        input_language_list_box.set_filter_func (filter_function);
+        this.update_input_language_list_box ();
 
         var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
         input_language_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
+        input_language_scrolled.expand = true;
         input_language_scrolled.add (input_language_list_box);
+
+        var input_language_grid = new Gtk.Grid ();
+        input_language_grid.orientation = Gtk.Orientation.VERTICAL;
+
+        input_language_grid.add (search_entry);
+        input_language_grid.add (input_language_scrolled);
+
 
         var back_button = new Gtk.Button.with_label (_("Input Language"));
         back_button.halign = Gtk.Align.START;
@@ -81,7 +94,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         stack.expand = true;
         stack.margin_top = 3;
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
-        stack.add (input_language_scrolled);
+        stack.add (input_language_grid);
         stack.add (layout_grid);
 
         var keyboard_map_button = new Gtk.Button.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
@@ -126,23 +139,28 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
         grid.orientation = Gtk.Orientation.VERTICAL;
+
         grid.add (stack);
         grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         grid.add (button_box);
 
         add (grid);
 
+        search_entry.grab_focus ();
+
+        search_entry.search_changed.connect (apply_filter);
+
         button_cancel.clicked.connect (() => {
-            this.hide ();
+            this.popdown ();
         });
 
         button_add.clicked.connect (() => {
-            this.hide ();
+            this.popdown ();
             layout_added (get_selected_lang ().id, get_selected_layout ().id);
         });
 
         back_button.clicked.connect (() => {
-            stack.visible_child = input_language_scrolled;
+            stack.visible_child = input_language_grid;
             layout_list_box.unselect_all ();
         });
 
@@ -166,6 +184,15 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         });
     }
 
+    bool filter_function (Gtk.ListBoxRow list_box_row) {
+        var item = list_box_row.get_child () as ListStoreItemRow;
+        return search_entry.text.down () in item.get_item ().name.down ();
+    }
+
+    private void apply_filter () {
+        input_language_list_box.set_filter_func (filter_function);
+    }
+
     private ListStoreItem get_selected_lang () {
         var selected_lang_row = input_language_list_box.get_selected_row ();
         return language_list.get_item (selected_lang_row.get_index ()) as ListStoreItem;
@@ -174,6 +201,15 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
     private ListStoreItem get_selected_layout () {
         var selected_layout_row = layout_list_box.get_selected_row ();
         return layout_list.get_item (selected_layout_row.get_index ()) as ListStoreItem;
+    }
+
+    private void update_input_language_list_box () {
+        for (int i = 0; i < language_list.get_n_items (); i++) {
+            var item = language_list.get_item (i) as ListStoreItem;
+            var row = new ListStoreItemRow (item);
+
+            input_language_list_box.add (row);
+        }
     }
 
     private void update_list_store (GLib.ListStore store, HashTable<string, string> values) {
@@ -196,7 +232,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         });
     }
 
-    private class ListStoreItem : Object {
+    public class ListStoreItem : Object {
         public string id;
         public string name;
 
@@ -214,6 +250,24 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             label.margin_start = 12;
             label.xalign = 0;
             add (label);
+        }
+    }
+
+    public class ListStoreItemRow : Gtk.Grid {
+        public ListStoreItem item;
+
+        public ListStoreItemRow (ListStoreItem item) {
+            this.item = item;
+            var label = new Gtk.Label (item.name);
+            label.margin = 6;
+            label.margin_end = 12;
+            label.margin_start = 12;
+            label.xalign = 0;
+            add (label);
+        }
+
+        public ListStoreItem get_item () {
+            return this.item;
         }
     }
 }
