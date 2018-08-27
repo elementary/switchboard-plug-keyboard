@@ -145,11 +145,13 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
         search_entry.grab_focus ();
 
+        input_language_list_box.set_filter_func ((list_box_row) => {
+           var item = list_box_row.get_child () as ListStoreItemRow;
+           return search_entry.text.down () in item.get_item ().name.down ();
+        });
+
         search_entry.search_changed.connect (() => {
-            input_language_list_box.set_filter_func ((list_box_row) => {
-               var item = list_box_row.get_child () as ListStoreItemRow;
-               return search_entry.text.down () in item.get_item ().name.down ();
-            });
+            input_language_list_box.invalidate_filter ();
         });
 
         button_cancel.clicked.connect (() => {
