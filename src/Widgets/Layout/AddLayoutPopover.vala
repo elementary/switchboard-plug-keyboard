@@ -44,8 +44,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         update_list_store (layout_list, handler.get_variants_for_language (first_lang.id));
 
         input_language_list_box = new Gtk.ListBox ();
-        input_language_list_box.set_filter_func (filter_function);
-        this.update_input_language_list_box ();
+        update_input_language_list_box ();
 
         var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
         input_language_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
@@ -54,7 +53,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
         var input_language_grid = new Gtk.Grid ();
         input_language_grid.orientation = Gtk.Orientation.VERTICAL;
-
         input_language_grid.add (search_entry);
         input_language_grid.add (input_language_scrolled);
 
@@ -139,7 +137,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         var grid = new Gtk.Grid ();
         grid.column_spacing = 12;
         grid.orientation = Gtk.Orientation.VERTICAL;
-
         grid.add (stack);
         grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         grid.add (button_box);
@@ -148,7 +145,12 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
         search_entry.grab_focus ();
 
-        search_entry.search_changed.connect (apply_filter);
+        search_entry.search_changed.connect (() => {
+            input_language_list_box.set_filter_func ((list_box_row) => {
+               var item = list_box_row.get_child () as ListStoreItemRow;
+               return search_entry.text.down () in item.get_item ().name.down ();
+            });
+        });
 
         button_cancel.clicked.connect (() => {
             this.popdown ();
@@ -182,15 +184,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             keyboard_map_button.sensitive = row != null;
             button_add.sensitive = row != null;
         });
-    }
-
-    bool filter_function (Gtk.ListBoxRow list_box_row) {
-        var item = list_box_row.get_child () as ListStoreItemRow;
-        return search_entry.text.down () in item.get_item ().name.down ();
-    }
-
-    private void apply_filter () {
-        input_language_list_box.set_filter_func (filter_function);
     }
 
     private ListStoreItem get_selected_lang () {
