@@ -20,9 +20,6 @@
 class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
     public signal void layout_added (string language, string layout);
     private Gtk.Widget keyboard_drawing_dialog;
-
-    private Gtk.SearchEntry search_entry;
-
     private Gtk.ListBox input_language_list_box;
     private Gtk.ListBox layout_list_box;
     private GLib.ListStore language_list;
@@ -32,7 +29,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         height_request = 400;
         width_request = 400;
 
-        search_entry = new Gtk.SearchEntry ();
+        var search_entry = new Gtk.SearchEntry ();
         search_entry.margin = 6;
         search_entry.placeholder_text = _("Search input language");
 
@@ -44,7 +41,12 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         update_list_store (layout_list, handler.get_variants_for_language (first_lang.id));
 
         input_language_list_box = new Gtk.ListBox ();
-        update_input_language_list_box ();
+        for (int i = 0; i < language_list.get_n_items (); i++) {
+            var item = language_list.get_item (i) as ListStoreItem;
+            var row = new LayoutRow (item.name);
+
+            input_language_list_box.add (row);
+        }
 
         var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
         input_language_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
@@ -55,7 +57,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         input_language_grid.orientation = Gtk.Orientation.VERTICAL;
         input_language_grid.add (search_entry);
         input_language_grid.add (input_language_scrolled);
-
 
         var back_button = new Gtk.Button.with_label (_("Input Language"));
         back_button.halign = Gtk.Align.START;
@@ -146,8 +147,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         search_entry.grab_focus ();
 
         input_language_list_box.set_filter_func ((list_box_row) => {
-           var item = list_box_row.get_child () as ListStoreItemRow;
-           return search_entry.text.down () in item.get_item ().name.down ();
+            var item = language_list.get_item (list_box_row.get_index ()) as ListStoreItem;
+            return search_entry.text.down () in item.name.down ();
         });
 
         search_entry.search_changed.connect (() => {
@@ -198,15 +199,6 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         return layout_list.get_item (selected_layout_row.get_index ()) as ListStoreItem;
     }
 
-    private void update_input_language_list_box () {
-        for (int i = 0; i < language_list.get_n_items (); i++) {
-            var item = language_list.get_item (i) as ListStoreItem;
-            var row = new ListStoreItemRow (item);
-
-            input_language_list_box.add (row);
-        }
-    }
-
     private void update_list_store (GLib.ListStore store, HashTable<string, string> values) {
         store.remove_all ();
 
@@ -227,7 +219,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         });
     }
 
-    public class ListStoreItem : Object {
+    private class ListStoreItem : Object {
         public string id;
         public string name;
 
@@ -239,30 +231,12 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
     private class LayoutRow : Gtk.ListBoxRow {
         public LayoutRow (string name) {
-            var label = new Gtk.Label (name);
+        var label = new Gtk.Label (name);
             label.margin = 6;
-            label.margin_end = 12;
-            label.margin_start = 12;
+            label.margin_end = 6;
+            label.margin_start = 6;
             label.xalign = 0;
             add (label);
-        }
-    }
-
-    public class ListStoreItemRow : Gtk.Grid {
-        public ListStoreItem item;
-
-        public ListStoreItemRow (ListStoreItem item) {
-            this.item = item;
-            var label = new Gtk.Label (item.name);
-            label.margin = 6;
-            label.margin_end = 12;
-            label.margin_start = 12;
-            label.xalign = 0;
-            add (label);
-        }
-
-        public ListStoreItem get_item () {
-            return this.item;
         }
     }
 }
