@@ -231,8 +231,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
     private class LayoutRow : Gtk.ListBoxRow {
         public LayoutRow (string name) {
-        var label = new Gtk.Label (name);
-            label.margin = 6;
+            var label = new Gtk.Label (name);
+        label.margin = 6;
             label.margin_end = 6;
             label.margin_start = 6;
             label.xalign = 0;
