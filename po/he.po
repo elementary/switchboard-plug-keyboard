@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-07-02 04:10+0000\n"
+"PO-Revision-Date: 2018-08-28 20:26+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "העברה למטה"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "שפת קלט"
+msgstr "חיפוש בשפת הקלט"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
