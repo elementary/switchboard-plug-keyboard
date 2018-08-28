@@ -30,7 +30,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         width_request = 400;
 
         var search_entry = new Gtk.SearchEntry ();
-        search_entry.margin = 6;
+        search_entry.margin = 12;
+        search_entry.margin_bottom = 6;
         search_entry.placeholder_text = _("Search input language");
 
         language_list = new GLib.ListStore (typeof (ListStoreItem));
@@ -233,8 +234,8 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         public LayoutRow (string name) {
             var label = new Gtk.Label (name);
             label.margin = 6;
-            label.margin_end = 6;
-            label.margin_start = 6;
+            label.margin_end = 12;
+            label.margin_start = 12;
             label.xalign = 0;
             add (label);
         }
