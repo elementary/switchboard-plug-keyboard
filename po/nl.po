@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-01 07:55-0700\n"
+"POT-Creation-Date: 2018-08-28 08:31-0700\n"
 "PO-Revision-Date: 2018-04-02 00:04+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
@@ -92,33 +92,42 @@ msgstr "Verplaats omhoog"
 msgid "Move down"
 msgstr "Verplaats omlaag"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:49
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+#, fuzzy
+msgid "Search input language"
+msgstr "Invoertaal"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
 msgstr "Invoertaal"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:88
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:110
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
 msgstr "Indeling toevoegen"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:114
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
 msgstr "Annuleren"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:187
-#: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
+#. Caps Lock key functionality
+#: src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "Standaard"
 
+#. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
 msgstr "Verander indeling:"
 
+#. Layout switching keybinding
+#. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
