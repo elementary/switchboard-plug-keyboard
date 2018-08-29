@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
 "PO-Revision-Date: 2018-08-29 06:43+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -504,7 +505,7 @@ msgstr "Capturas de tela"
 
 #: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
-msgstr "Capturar tela inteira"
+msgstr "Capturar a tela inteira"
 
 #: src/Shortcuts/List.vala:95
 #, fuzzy
@@ -513,7 +514,7 @@ msgstr "Salvar captura de tela na área de transferência"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
-msgstr "Capturar a janela atual"
+msgstr "Capturar janela atual"
 
 #: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
@@ -524,9 +525,8 @@ msgid "Select an area to grab"
 msgstr "Selecionar uma área para capturar"
 
 #: src/Shortcuts/List.vala:99
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Salvar captura de tela na área de transferência"
+msgstr "Salvar captura na área de transferência"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
