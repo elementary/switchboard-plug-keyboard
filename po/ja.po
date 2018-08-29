@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-21 00:02+0000\n"
+"PO-Revision-Date: 2018-08-29 03:04+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "下へ移動"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "入力言語"
+msgstr "入力言語を検索"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
