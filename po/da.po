@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-07-17 00:03+0000\n"
+"PO-Revision-Date: 2018-08-29 04:52+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "Flyt ned"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Input Sprog"
+msgstr "Søg Input Sprog"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
