@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
 "PO-Revision-Date: 2018-08-29 06:41+0000\n"
-"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
+"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
+"\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -98,9 +99,8 @@ msgid "Search input language"
 msgstr "Idioma:"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
 msgid "Input Language"
-msgstr "Idioma:"
+msgstr "Idioma de Entrada"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
@@ -183,23 +183,20 @@ msgid "Right Ctrl"
 msgstr "Ctrl Direito"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Alt direito"
+msgstr "⌘ Direito"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Comportamento do Caps Lock:"
+msgstr "Comportamento da tecla ⌘:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
 msgstr "Menu de Aplicativos"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Atalho"
+msgstr "Sobreposição de Atalhos"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -244,7 +241,7 @@ msgstr "Digite para testar sua disposição..."
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "Configurações do Método de Entrada..."
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
@@ -308,14 +305,12 @@ msgid "seconds"
 msgstr "segundos"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Digite para testar suas configurações..."
+msgstr "Digite para testar suas configurações"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -362,9 +357,8 @@ msgid "Toggle always on Top"
 msgstr "Alternar sempre no topo"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Janelas"
+msgstr "Ciclo de Janelas"
 
 #: src/Shortcuts/List.vala:53
 #, fuzzy
@@ -498,14 +492,12 @@ msgid "Move to workspace 9"
 msgstr "Mover para a área de trabalho 9"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Mover para a área de trabalho 1"
+msgstr "Mover para a área de trabalho à esquerda"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Mover para a área de trabalho 1"
+msgstr "Mover para a área de trabalho à direita"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
