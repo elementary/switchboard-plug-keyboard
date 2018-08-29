@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-29 06:44+0000\n"
-"Last-Translator: Israel Felipe de Lima Araújo S <israelita.felipe@gmail.com>"
-"\n"
+"PO-Revision-Date: 2018-08-29 15:53+0000\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -94,9 +93,8 @@ msgid "Move down"
 msgstr "Para baixo"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Idioma:"
+msgstr "Pesquisa de idioma de entrada"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
@@ -361,9 +359,8 @@ msgid "Cycle Windows"
 msgstr "Ciclo de Janelas"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Alternar janelas para trás"
+msgstr "Ciclo inverso de janelas"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -630,7 +627,7 @@ msgstr "Sistema"
 
 #: src/Shortcuts/List.vala:138
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Bloquear"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
