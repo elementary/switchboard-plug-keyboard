@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-04-02 00:04+0000\n"
+"PO-Revision-Date: 2018-09-01 00:08+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "Verplaats omlaag"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Invoertaal"
+msgstr "Zoek invoertaal"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
