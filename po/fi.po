@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-31 11:51+0000\n"
-"Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
+"PO-Revision-Date: 2018-08-31 12:00+0000\n"
+"Last-Translator: Robin Lahtinen <robin.lahtinen@gmail.com>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
 "Language: fi\n"
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "Siirrä alas"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Syötekieli"
+msgstr "Hae syötekieli"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
@@ -207,7 +206,7 @@ msgstr "Caps Lock pois käytöstä"
 
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
-msgstr "Backspace-näppäimenä"
+msgstr "askelpalauttimena"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
@@ -259,11 +258,11 @@ msgstr "Kana Lock:"
 
 #: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F -askelpalautin:"
 
 #: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku Esc-näppäimenä:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
