@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-30 00:07+0000\n"
+"PO-Revision-Date: 2018-08-31 11:51+0000\n"
 "Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -207,7 +207,7 @@ msgstr "Caps Lock pois käytöstä"
 
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
-msgstr "askelpalauttimena"
+msgstr "Backspace-näppäimenä"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
