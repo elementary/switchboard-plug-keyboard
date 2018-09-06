@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-09-05 23:29+0000\n"
+"PO-Revision-Date: 2018-09-07 00:06+0000\n"
 "Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/it/>\n"
@@ -67,7 +67,7 @@ msgstr "Aggiungi"
 
 #: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
 msgid "Remove"
-msgstr "Rimuovi"
+msgstr "Eliminare"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
