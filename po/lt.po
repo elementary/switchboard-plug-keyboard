@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-28 21:11+0000\n"
+"PO-Revision-Date: 2018-09-19 00:09+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/lt/>\n"
@@ -131,7 +131,7 @@ msgstr "Perjungti išdėstymą:"
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr "Išjungtas"
+msgstr "Išjungta"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
