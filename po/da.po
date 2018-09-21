@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-29 04:52+0000\n"
+"PO-Revision-Date: 2018-09-22 00:10+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
@@ -335,7 +335,7 @@ msgstr "Gendan fra maksimeret"
 
 #: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
-msgstr "Maksimeret til/fra"
+msgstr "Aktiver/Deaktiver Maksimeret"
 
 #: src/Shortcuts/List.vala:48
 msgid "Minimize"
@@ -343,11 +343,11 @@ msgstr "Minimér"
 
 #: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
-msgstr "Slå fuldskærm til/fra"
+msgstr "Aktiver/Deaktiver Fuldskærm"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
-msgstr "På alle arbejdsområder til/fra"
+msgstr "Aktiver/Deaktiver på alle Arbejdsområder"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
