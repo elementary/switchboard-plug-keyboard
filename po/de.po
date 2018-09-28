@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-09-20 10:32+0000\n"
+"PO-Revision-Date: 2018-09-29 00:09+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -106,7 +106,7 @@ msgstr "Tastaturbelegung anzeigen"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
-msgstr "Tastenbelegung hinzufügen"
+msgstr "Tastaturbelegung hinzufügen"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
@@ -123,7 +123,7 @@ msgstr "Vorgabe"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
-msgstr "Tastenbelegung ändern:"
+msgstr "Tastaturbelegung ändern:"
 
 #. Layout switching keybinding
 #. Compose key position menu
@@ -190,7 +190,7 @@ msgstr "Funktion der ⌘-Taste:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
-msgstr "Anwendungen"
+msgstr "Anwendungsmenü"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
@@ -222,19 +222,19 @@ msgstr "als Num-Lock-Taste"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr "als ⌘"
+msgstr "als ⌘-Taste"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr "Tausch mit Steuerung"
+msgstr "Tausch mit Strg"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr "Tausch mit Escape"
+msgstr "Tausch mit Esc"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
-msgstr "Tippen Sie um die Tastaturbelegung zu testen"
+msgstr "Geben Sie hier etwas ein, um Ihre Tastaturbelegung auszuprobieren"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
@@ -303,7 +303,7 @@ msgstr "Sekunden"
 
 #: src/Views/Behavior.vala:127
 msgid "Type to test your settings"
-msgstr "Tippen Sie um die Einstellungen zu testen"
+msgstr "Geben Sie hier etwas ein, um Ihre Einstellungen auszuprobieren"
 
 #: src/Shortcuts/Shortcut.vala:46
 msgid "Shift"
@@ -323,7 +323,7 @@ msgstr "Fenster"
 
 #: src/Shortcuts/List.vala:44
 msgid "Lower"
-msgstr "Niedriger"
+msgstr "Absenken"
 
 #: src/Shortcuts/List.vala:45
 msgid "Maximize"
@@ -348,8 +348,7 @@ msgstr "Vollbild umschalten"
 #: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
 msgstr ""
-"Zwischen »Nur auf dieser Arbeitsfläche« und »Immer auf der sichtbaren "
-"Arbeitsfläche« umschalten"
+"Festlegen, ob das Fenster auf allen oder nur einer Arbeitsfläche sichtbar ist"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
@@ -389,7 +388,7 @@ msgstr "Arbeitsflächen"
 
 #: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
-msgstr "Übersicht der Arbeitsflächen"
+msgstr "Arbeitsflächenübersicht"
 
 #: src/Shortcuts/List.vala:64
 msgid "Switch left"
@@ -405,7 +404,7 @@ msgstr "Zur ersten Arbeitsfläche wechseln"
 
 #: src/Shortcuts/List.vala:67
 msgid "Switch to new"
-msgstr "Zur neuen Arbeitsfläche wechseln"
+msgstr "Zu einer neuen Arbeitsfläche wechseln"
 
 #: src/Shortcuts/List.vala:68
 msgid "Switch to workspace 1"
