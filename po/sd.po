@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-01 07:55-0700\n"
+"POT-Creation-Date: 2018-08-28 08:31-0700\n"
 "PO-Revision-Date: 2018-03-05 23:33+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -88,33 +88,41 @@ msgstr ""
 msgid "Move down"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:49
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+msgid "Search input language"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:88
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:110
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:114
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:187
-#: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
+#. Caps Lock key functionality
+#: src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr ""
 
+#. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
 msgstr ""
 
+#. Layout switching keybinding
+#. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-07 00:04+0000\n"
+"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"PO-Revision-Date: 2018-09-22 00:10+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
@@ -92,33 +92,41 @@ msgstr "Flyt op"
 msgid "Move down"
 msgstr "Flyt ned"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:49
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+msgid "Search input language"
+msgstr "Søg Input Sprog"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
 msgstr "Input Sprog"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:88
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
 msgstr "Vis tastatur layout"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:110
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
 msgstr "Tilføj layout"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:114
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
 msgstr "Annuller"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:187
-#: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
+#. Caps Lock key functionality
+#: src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "Standard"
 
+#. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
 msgstr "Skift layout:"
 
+#. Layout switching keybinding
+#. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
@@ -327,7 +335,7 @@ msgstr "Gendan fra maksimeret"
 
 #: src/Shortcuts/List.vala:47
 msgid "Toggle Maximized"
-msgstr "Maksimeret til/fra"
+msgstr "Aktiver/Deaktiver Maksimeret"
 
 #: src/Shortcuts/List.vala:48
 msgid "Minimize"
@@ -335,11 +343,11 @@ msgstr "Minimér"
 
 #: src/Shortcuts/List.vala:49
 msgid "Toggle Fullscreen"
-msgstr "Slå fuldskærm til/fra"
+msgstr "Aktiver/Deaktiver Fuldskærm"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle on all Workspaces"
-msgstr "På alle arbejdsområder til/fra"
+msgstr "Aktiver/Deaktiver på alle Arbejdsområder"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
@@ -379,7 +387,7 @@ msgstr "Arbejdsområder"
 
 #: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
-msgstr "Vindueoversigt"
+msgstr "Multitasking"
 
 #: src/Shortcuts/List.vala:64
 msgid "Switch left"

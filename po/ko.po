@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-02 02:01+0000\n"
+"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"PO-Revision-Date: 2018-08-28 16:23+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ko/>\n"
@@ -92,33 +92,41 @@ msgstr "위로 이동"
 msgid "Move down"
 msgstr "아래로 이동"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:49
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+msgid "Search input language"
+msgstr "입력 언어 검색"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
 msgstr "언어 입력"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:88
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
 msgstr "키보드 레이아웃 보기"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:110
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
 msgstr "레이아웃 추가"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:114
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
 msgstr "취소"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:187
-#: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
+#. Caps Lock key functionality
+#: src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "기본값"
 
+#. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
 msgstr "레이아웃 변경:"
 
+#. Layout switching keybinding
+#. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"

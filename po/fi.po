@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-07-01 07:55-0700\n"
-"PO-Revision-Date: 2018-07-09 00:10+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"PO-Revision-Date: 2018-09-06 00:09+0000\n"
+"Last-Translator: Veli-Pekka Samuli Finnilä <vpf@tuta.io>\n"
 "Language-Team: Finnish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
 "Language: fi\n"
@@ -92,33 +92,41 @@ msgstr "Siirrä ylös"
 msgid "Move down"
 msgstr "Siirrä alas"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:49
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+msgid "Search input language"
+msgstr "Hae syötekieli"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
 msgstr "Syötekieli"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:88
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
 msgstr "Näytä näppäimistön asettelu"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:110
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
 msgstr "Lisää asettelu"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:114
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:187
-#: src/Widgets/Layout/AddLayoutPopover.vala:191 src/Views/Layout.vala:100
+#. Caps Lock key functionality
+#: src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
 msgstr "Oletus"
 
+#. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
 msgstr "Vaihda asettelua:"
 
+#. Layout switching keybinding
+#. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
@@ -162,7 +170,7 @@ msgstr "Compose-näppäin:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "Valikko"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
@@ -198,31 +206,31 @@ msgstr "Caps Lock pois käytöstä"
 
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
-msgstr ""
+msgstr "askelpalauttimena"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
-msgstr ""
+msgstr "Ctrl-näppäimenä"
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr ""
+msgstr "Escape-näppäimenä"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
-msgstr ""
+msgstr "Num Lock -näppäimenä"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "⌘-näppäimenä"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr ""
+msgstr "Vaihda Controlin kanssa"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Vaihda Escapen kanssa"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
@@ -246,19 +254,19 @@ msgstr "Viidennen tason valintanäppäin:"
 
 #: src/Views/Layout.vala:277
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana Lock:"
 
 #: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F Backspace:"
 
 #: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku Escape-näppäimenä:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja-näppäimet oikeanpuoleisissa Alt- ja Ctrl-näppäimissä:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
