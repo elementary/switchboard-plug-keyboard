@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-07-09 07:49+0000\n"
-"Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
+"PO-Revision-Date: 2018-10-03 14:42+0000\n"
+"Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
 "Language: cs\n"
@@ -93,9 +93,8 @@ msgid "Move down"
 msgstr "Posunout dolů"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Vstupní jazyk"
+msgstr "Vyhledejte vstupní jazyk"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
