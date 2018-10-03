@@ -67,6 +67,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         search_results.set ("%s → %s".printf (display_name, _("Layout")), "Layout");
         search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("Switch layout")), "Layout");
         search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("Compose Key")), "Layout");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("⌘ key behavior")), "Layout");
         search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("Caps Lock behavior")), "Layout");
         search_results.set ("%s → %s".printf (display_name, _("Shortcuts")), "Shortcuts");
         search_results.set ("%s → %s".printf (display_name, _("Behavior")), "Behavior");
