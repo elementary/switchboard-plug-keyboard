@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-08-28 08:31-0700\n"
-"PO-Revision-Date: 2018-08-29 03:04+0000\n"
+"PO-Revision-Date: 2018-10-08 00:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -535,7 +535,7 @@ msgstr "ホームフォルダー"
 
 #: src/Shortcuts/List.vala:106
 msgid "Music"
-msgstr "ミュージック"
+msgstr "音楽"
 
 #: src/Shortcuts/List.vala:107
 msgid "Terminal"
