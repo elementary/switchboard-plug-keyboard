@@ -4,6 +4,11 @@
   <extends>io.elementary.switchboard</extends>
   <name>Keyboard</name>
   <summary>Configure keyboard behavior, layouts, and shortcuts</summary>
+  <screenshots>
+      <screenshot type="default">
+          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot.png</image>
+      </screenshot>
+  </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-keyboard/issues</url>
   <metadata_license>CC0-1.0</metadata_license>
