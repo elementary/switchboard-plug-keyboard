@@ -64,12 +64,15 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     // 'search' returns results like ("Keyboard → Behavior → Duration", "keyboard<sep>behavior")
     public override async Gee.TreeMap<string, string> search (string search) {
         var search_results = new Gee.TreeMap<string, string> ((GLib.CompareDataFunc<string>)strcmp, (Gee.EqualDataFunc<string>)str_equal);
+        search_results.set ("%s → %s".printf (display_name, _("Layout")), "Layout");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("Switch layout")), "Layout");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("Compose Key")), "Layout");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("⌘ key behavior")), "Layout");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Layout"), _("Caps Lock behavior")), "Layout");
         search_results.set ("%s → %s".printf (display_name, _("Shortcuts")), "Shortcuts");
-        search_results.set ("%s → %s".printf (display_name, _("Repeat Keys")), "Behavior");
-        search_results.set ("%s → %s".printf (display_name, _("Cursor Blinking")), "Behavior");
-        search_results.set ("%s → %s".printf (display_name, _("Switch layout")), "Layout");
-        search_results.set ("%s → %s".printf (display_name, _("Compose Key")), "Layout");
-        search_results.set ("%s → %s".printf (display_name, _("Caps Lock behavior")), "Layout");
+        search_results.set ("%s → %s".printf (display_name, _("Behavior")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Repeat Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Cursor Blinking")), "Behavior");
         return search_results;
     }
 }
