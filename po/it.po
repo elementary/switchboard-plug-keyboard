@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-09-07 00:06+0000\n"
-"Last-Translator: strozzascotte <marco.depaolini@gmail.com>\n"
+"PO-Revision-Date: 2018-10-16 00:47+0000\n"
+"Last-Translator: Marco De Paolini <marco.depaolini@gmail.com>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/it/>\n"
 "Language: it\n"
@@ -52,9 +52,8 @@ msgid "Compose Key"
 msgstr "Tasto Componi"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "Comportamento del tasto ⌘:"
+msgstr "Comportamento del tasto ⌘"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
