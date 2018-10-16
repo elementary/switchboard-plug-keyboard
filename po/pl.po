@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-08-28 15:45+0000\n"
+"PO-Revision-Date: 2018-10-16 10:08+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -52,9 +52,8 @@ msgid "Compose Key"
 msgstr "Klawisz Compose"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "Zachowanie klawisza ⌘:"
+msgstr "Zachowanie klawisza ⌘"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
