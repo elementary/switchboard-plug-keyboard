@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2018-10-03 14:42+0000\n"
 "Last-Translator: Daniel Zvir <zvir.daniel@seznam.cz>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -28,37 +28,44 @@ msgstr "Klávesnice"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Nastavuj chování klávesnice, rozložení a zkratky"
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "Rozložení"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "Zkratky"
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "Chování"
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr "Opakování kláves"
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr "Blikání kurzoru"
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr "Přepnout rozložení"
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "Klávesa Compose"
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+#, fuzzy
+msgid "⌘ key behavior"
+msgstr "Chování klávesy ⌘:"
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Chování Caps Locku"
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr "Opakování kláves"
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
+msgstr "Blikání kurzoru"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"

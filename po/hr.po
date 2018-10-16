@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2017-04-17 14:16+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,37 +29,44 @@ msgstr "Tipkovnica"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Podesite ponašanje tipkovnice, raspored i prečace"
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "Raspored"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "Prečaci"
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "Ponašanje"
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr "Ponovljene tipke"
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr "Treptanje pokazivača"
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr "Prebaci raspored"
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "Tipka za sastavljanje"
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+#, fuzzy
+msgid "⌘ key behavior"
+msgstr "Caps Lock ponašanje:"
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Ponašanje tipke Caps Lock"
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr "Ponovljene tipke"
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
+msgstr "Treptanje pokazivača"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"

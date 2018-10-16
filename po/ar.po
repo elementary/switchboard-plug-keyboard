@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2013-10-20 17:29+0000\n"
 "Last-Translator: Fathallah Wael <fathallahwael80@gmail.com>\n"
 "Language-Team: Arabic <ar@li.org>\n"
@@ -26,36 +26,42 @@ msgstr "لوحة المفاتيح"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "التخطيط"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr ""
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr ""
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr ""
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr ""
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr ""
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr ""
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+msgid "⌘ key behavior"
+msgstr ""
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
+msgstr ""
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr ""
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
 msgstr ""
 
 #: src/Widgets/Shortcuts/Display.vala:44

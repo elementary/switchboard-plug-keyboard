@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -26,37 +26,44 @@ msgstr "كۇنۇپكا تاختىسى"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "كۇنۇپكا تاختىسى ھەركىتى، بەتيۈزى ۋە قولاي كۇنۇپكىلارنى تەڭشەش"
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "بەتيۈزى"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "قولاي كۇنۇپكىلار"
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "ھەركەت"
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr "كۇنۇپكىلارنى تەكرارلاش"
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr "مائۇس ئىستىرىلكىسى چاقناش"
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr "بەتيۈزىنى ئالماشتۇرۇش"
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "بىرىكمە كۇنۇپكا"
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+#, fuzzy
+msgid "⌘ key behavior"
+msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Caps Lock كۇنۇپكىسى ھەركىتى"
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr "كۇنۇپكىلارنى تەكرارلاش"
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
+msgstr "مائۇس ئىستىرىلكىسى چاقناش"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"

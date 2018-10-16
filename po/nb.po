@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2018-08-29 00:03+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -28,38 +28,45 @@ msgstr "Tastatur"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Sett opp tastaturoppførsel, oppsett, og snarveier"
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "Tastaturoppsett"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "Snarveier"
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "Oppførsel"
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr "Gjentagende taster"
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr "Pekerblinking"
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr "Bytt oppsett"
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 #, fuzzy
 msgid "Compose Key"
 msgstr "Komponerings-tast"
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+#, fuzzy
+msgid "⌘ key behavior"
+msgstr "Caps Lock-oppførsel:"
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Caps Lock-oppførsel"
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr "Gjentagende taster"
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
+msgstr "Pekerblinking"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"

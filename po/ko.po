@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2018-08-28 16:23+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
@@ -28,37 +28,44 @@ msgstr "키보드"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "키보드 사용, 레이아웃, 그리고 단축키 등을 관리합니다"
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "레이아웃"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "바로가기"
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "동작"
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr "키 반복"
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr "커서 깜빡임"
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr "레이아웃 변경"
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "조합 키"
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+#, fuzzy
+msgid "⌘ key behavior"
+msgstr "⌘ 키 동작:"
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Caps Lock 동작"
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr "키 반복"
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
+msgstr "커서 깜빡임"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"

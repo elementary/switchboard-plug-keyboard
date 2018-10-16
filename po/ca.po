@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-08-28 08:31-0700\n"
+"POT-Creation-Date: 2018-10-15 19:31-0500\n"
 "PO-Revision-Date: 2018-08-29 09:41+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://weblate.elementary.io/projects/switchboard/"
@@ -28,37 +28,44 @@ msgstr "Teclat"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configureu el comportament, les disposicions i les dreceres del teclat"
 
-#: src/Keyboard.vala:23
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "Disposició"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:67
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "Dreceres"
 
-#: src/Keyboard.vala:25
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "Comportament"
 
 #: src/Keyboard.vala:68
-msgid "Repeat Keys"
-msgstr "Tecles de repetició"
-
-#: src/Keyboard.vala:69
-msgid "Cursor Blinking"
-msgstr "Parpelleig del cursor"
-
-#: src/Keyboard.vala:70
 msgid "Switch layout"
 msgstr "Canvia'n la disposició"
 
-#: src/Keyboard.vala:71
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "Tecla de composició"
 
-#: src/Keyboard.vala:72
+#: src/Keyboard.vala:70
+#, fuzzy
+msgid "⌘ key behavior"
+msgstr "⌘ comportament de les tecles:"
+
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Comportament del bloqueig de majúscules"
+
+#: src/Keyboard.vala:74
+msgid "Repeat Keys"
+msgstr "Tecles de repetició"
+
+#: src/Keyboard.vala:75
+msgid "Cursor Blinking"
+msgstr "Parpelleig del cursor"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"
