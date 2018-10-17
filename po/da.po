@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-10-16 09:44+0000\n"
+"PO-Revision-Date: 2018-10-18 00:10+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
@@ -505,7 +505,7 @@ msgstr "Skærmbilleder"
 
 #: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
-msgstr "Screenshot hele skærmen"
+msgstr "Tag skærmbillede af hele skærmen"
 
 #: src/Shortcuts/List.vala:95
 msgid "Copy the whole screen to clipboard"
@@ -513,7 +513,7 @@ msgstr "Kopier hele skærmen til udklipsholder"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
-msgstr "Screenshot det nuværende vindue"
+msgstr "Tag skærmbillede af det nuværende vindue"
 
 #: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
