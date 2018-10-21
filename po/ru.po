@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-10-21 13:28+0000\n"
+"PO-Revision-Date: 2018-10-25 14:09+0000\n"
 "Last-Translator: Kirill Romanov <djaler1@gmail.com>\n"
 "Language-Team: Russian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -193,7 +193,7 @@ msgstr "Правый ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
-msgstr "Поведение ⌘:"
+msgstr "Поведение клавиши ⌘:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
