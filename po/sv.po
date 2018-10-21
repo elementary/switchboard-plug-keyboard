@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-03-31 00:05+0000\n"
-"Last-Translator: H. Gerhard. A <henrik.ahlkvist@gmail.com>\n"
+"PO-Revision-Date: 2018-10-21 11:57+0000\n"
+"Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sv/>\n"
 "Language: sv\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -49,12 +49,11 @@ msgstr "Byt layout"
 
 #: src/Keyboard.vala:69
 msgid "Compose Key"
-msgstr ""
+msgstr "Skriv tangent"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "⌘ tangent beteende:"
+msgstr "⌘ tangentbeteende"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
@@ -62,7 +61,7 @@ msgstr "Caps Lock beteende"
 
 #: src/Keyboard.vala:74
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Upprepa tangenter"
 
 #: src/Keyboard.vala:75
 msgid "Cursor Blinking"
@@ -101,14 +100,12 @@ msgid "Move down"
 msgstr "Flytta ner"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Språk:"
+msgstr "Sök inmatningsspråk"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
 msgid "Input Language"
-msgstr "Språk:"
+msgstr "Inmatningsspråk"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
@@ -176,7 +173,7 @@ msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr ""
+msgstr "Skriv tangent:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
@@ -199,12 +196,10 @@ msgid "⌘ key behavior:"
 msgstr "⌘ tangent beteende:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
-#, fuzzy
 msgid "Applications Menu"
-msgstr "Program"
+msgstr "Programmeny"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
 msgstr "Snabbkommandon"
 
@@ -218,11 +213,11 @@ msgstr "Caps Lock inaktiverad"
 
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
-msgstr ""
+msgstr "som backsteg"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
-msgstr ""
+msgstr "som Ctrl"
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
@@ -230,7 +225,7 @@ msgstr "som Esc"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
-msgstr ""
+msgstr "som Num Lock"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
@@ -245,17 +240,16 @@ msgid "Swap with Escape"
 msgstr "Byt med esc"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Skriv för att testa din layout..."
+msgstr "Skriv för att testa din layout"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "Inmatningsmetodinställningar…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "Tangent för att välja tredje nivå:"
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
@@ -263,27 +257,27 @@ msgstr "Vänster Alt"
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "Tangent för att välja femte nivå:"
 
 #: src/Views/Layout.vala:277
 msgid "Kana Lock:"
-msgstr ""
+msgstr "Kana-lås:"
 
 #: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "Nicola F-backsteg:"
 
 #: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
-msgstr ""
+msgstr "Zenkaku Hankaku som Esc:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja keys på högra Alt/Ctrl:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Upprepa tangenter:"
 
 #: src/Views/Behavior.vala:49
 msgid "Delay:"
@@ -315,9 +309,8 @@ msgid "seconds"
 msgstr "sekunder"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Skriv något för att testa dina inställningar..."
+msgstr "Skriv något för att testa dina inställningar"
 
 #: src/Shortcuts/Shortcut.vala:46
 msgid "Shift"
@@ -368,14 +361,12 @@ msgid "Toggle always on Top"
 msgstr "Växla alltid överst"
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Fönster"
+msgstr "Växla fönster"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Växla Fönster bakåt"
+msgstr "Växla fönster bakåt"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -395,7 +386,7 @@ msgstr "Visa alla fönster"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Bild-i-bild-läge"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
@@ -406,14 +397,12 @@ msgid "Multitasking View"
 msgstr "Multitaskingvy"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch left"
-msgstr "Växla till vänster"
+msgstr "Skifta åt vänster"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch right"
-msgstr "Växla till höger"
+msgstr "Skifta åt höger"
 
 #: src/Shortcuts/List.vala:66
 msgid "Switch to first"
@@ -460,9 +449,8 @@ msgid "Switch to workspace 9"
 msgstr "Byt till arbetsyta 9"
 
 #: src/Shortcuts/List.vala:77
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "Arbetsytor"
+msgstr "Växla arbetsytor"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
@@ -505,14 +493,12 @@ msgid "Move to workspace 9"
 msgstr "Flytta till arbetsyta 9"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Flytta till arbetsyta 1"
+msgstr "Flytta till vänster arbetsyta"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Flytta till arbetsyta 1"
+msgstr "Flytta till höger arbetsyta"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
@@ -523,26 +509,24 @@ msgid "Grab the whole screen"
 msgstr "Ta hela skärmen"
 
 #: src/Shortcuts/List.vala:95
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Kopiera Skärmbild till Urklipp"
+msgstr "Kopiera fullskärmsdump till urklipp"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
-msgstr ""
+msgstr "Fånga nuvarande fönster"
 
 #: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Kopiera nuvarande fönster till urklipp"
 
 #: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Välj ett område att fånga"
 
 #: src/Shortcuts/List.vala:99
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Kopiera Skärmbild till Urklipp"
+msgstr "Kopiera ett område till urklipp"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
@@ -554,7 +538,7 @@ msgstr "E-post"
 
 #: src/Shortcuts/List.vala:105
 msgid "Home Folder"
-msgstr ""
+msgstr "Hemmapp"
 
 #: src/Shortcuts/List.vala:106
 msgid "Music"
@@ -574,11 +558,11 @@ msgstr "Media"
 
 #: src/Shortcuts/List.vala:113
 msgid "Volume Up"
-msgstr ""
+msgstr "Öka ljudstyrka"
 
 #: src/Shortcuts/List.vala:114
 msgid "Volume Down"
-msgstr ""
+msgstr "Sänk ljudstyrka"
 
 #: src/Shortcuts/List.vala:115
 msgid "Mute"
@@ -622,11 +606,11 @@ msgstr "Öka textstorlek"
 
 #: src/Shortcuts/List.vala:128
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Zooma in med förstoringsglas"
 
 #: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Zooma ut med förstoringsglas"
 
 #: src/Shortcuts/List.vala:130
 msgid "Toggle On Screen Keyboard"
@@ -654,17 +638,17 @@ msgstr "Logga ut"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
-msgstr ""
+msgstr "Egendefinierat"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr ""
+msgstr "%s är redan använd för %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr ""
+msgstr "Om du återtilldelar genvägen till %s kommer %s bli inaktiverad."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
