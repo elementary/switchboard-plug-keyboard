@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-10-21 11:57+0000\n"
+"PO-Revision-Date: 2018-10-25 12:03+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sv/>\n"
@@ -149,7 +149,7 @@ msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Space"
-msgstr "Alt + Space"
+msgstr "Alt + Mellanslag"
 
 #: src/Views/Layout.vala:55
 msgid "Both Shift keys together"
@@ -574,7 +574,7 @@ msgstr "Spela"
 
 #: src/Shortcuts/List.vala:117
 msgid "Pause"
-msgstr "Pause"
+msgstr "Pausa"
 
 #: src/Shortcuts/List.vala:118
 msgid "Stop"
