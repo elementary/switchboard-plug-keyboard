@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-05-03 19:10+0000\n"
-"Last-Translator: Ciaran Ainsworth <cda@whistlingkappa.com>\n"
+"PO-Revision-Date: 2018-10-25 08:23+0000\n"
+"Last-Translator: Ciaran Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://weblate.elementary.io/"
 "projects/switchboard/switchboard-plug-keyboard/en_GB/>\n"
 "Language: en_GB\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -51,9 +51,8 @@ msgid "Compose Key"
 msgstr "Compose Key"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "⌘key behaviour:"
+msgstr "⌘ key behaviour"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
@@ -100,9 +99,8 @@ msgid "Move down"
 msgstr "Move down"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Input Language"
+msgstr "Search input language"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
@@ -246,7 +244,7 @@ msgstr "Type to test your layout"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "Input Method Settings…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
