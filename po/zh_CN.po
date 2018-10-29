@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-08-13 00:03+0000\n"
+"PO-Revision-Date: 2018-11-02 04:04+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -51,9 +51,8 @@ msgid "Compose Key"
 msgstr "组合键"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "大写锁定键："
+msgstr "⌘ 键行为："
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
@@ -111,7 +110,7 @@ msgstr "账户语言："
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "显示键盘布局"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
@@ -179,7 +178,7 @@ msgstr "组合键："
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "菜单"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
@@ -195,9 +194,8 @@ msgid "Right ⌘"
 msgstr "右 Alt"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "大写锁定键："
+msgstr "⌘键行为："
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
@@ -234,7 +232,7 @@ msgstr "代替 Num Lock"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "作为 ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
@@ -251,7 +249,7 @@ msgstr "键入任意内容来测试您的布局…"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "输入法设置…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
@@ -259,7 +257,7 @@ msgstr "三级选择键："
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
-msgstr ""
+msgstr "左 Alt"
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
@@ -330,7 +328,7 @@ msgstr "Ctrl 键"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -396,7 +394,7 @@ msgstr "显示全部窗口"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "画中画模式"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
@@ -404,7 +402,7 @@ msgstr "工作区"
 
 #: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
-msgstr ""
+msgstr "多任务视图"
 
 #: src/Shortcuts/List.vala:64
 #, fuzzy
@@ -467,7 +465,7 @@ msgstr "工作区"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "工作区反向循环"
 
 #: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
@@ -521,7 +519,7 @@ msgstr "屏幕截图"
 
 #: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "全屏抓取"
 
 #: src/Shortcuts/List.vala:95
 #, fuzzy
@@ -530,15 +528,15 @@ msgstr "将屏幕截图保存至剪贴板"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
-msgstr ""
+msgstr "抓取当前窗口"
 
 #: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "复制当前窗口至剪贴板"
 
 #: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
-msgstr ""
+msgstr "抓取选中区域"
 
 #: src/Shortcuts/List.vala:99
 #, fuzzy
@@ -559,7 +557,7 @@ msgstr "主文件夹"
 
 #: src/Shortcuts/List.vala:106
 msgid "Music"
-msgstr ""
+msgstr "音乐"
 
 #: src/Shortcuts/List.vala:107
 msgid "Terminal"
@@ -643,16 +641,15 @@ msgstr "启用高对比度"
 
 #: src/Shortcuts/List.vala:136
 msgid "System"
-msgstr ""
+msgstr "系统"
 
 #: src/Shortcuts/List.vala:138
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "锁定"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
-msgstr ""
+msgstr "注销"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
