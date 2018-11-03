@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-10-16 01:51+0000\n"
+"PO-Revision-Date: 2018-11-07 14:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -521,11 +521,11 @@ msgstr "現在のウィンドウをクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
-msgstr "エリアを選択して取得"
+msgstr "範囲を選択して取得"
 
 #: src/Shortcuts/List.vala:99
 msgid "Copy an area to clipboard"
-msgstr "エリアを選択してクリップボードへコピー"
+msgstr "範囲を選択してクリップボードへコピー"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
