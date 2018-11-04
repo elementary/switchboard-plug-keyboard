@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-11-04 14:38+0000\n"
+"PO-Revision-Date: 2018-11-09 23:07+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/bs/>\n"
@@ -394,7 +394,7 @@ msgstr "Radni prostori"
 
 #: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
-msgstr "Pregled radnih prostora"
+msgstr "Prikaz radnih prostora"
 
 #: src/Shortcuts/List.vala:64
 msgid "Switch left"
@@ -652,7 +652,7 @@ msgstr "Ako opet podesite prečicu na %s, deaktivirat će se %s."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
-msgstr "Premjesti"
+msgstr "Dodijeli nanovo"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Pokretač aplikacija"
