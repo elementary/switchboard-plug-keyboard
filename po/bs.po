@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-11-04 14:17+0000\n"
+"PO-Revision-Date: 2018-11-04 14:38+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/bs/>\n"
@@ -522,7 +522,7 @@ msgstr "Kopiraj trenutni prozor u međuspremnik"
 
 #: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Odaberi područje za snimku"
 
 #: src/Shortcuts/List.vala:99
 msgid "Copy an area to clipboard"
@@ -538,7 +538,7 @@ msgstr "E-pošta"
 
 #: src/Shortcuts/List.vala:105
 msgid "Home Folder"
-msgstr "Početni folder"
+msgstr "Lična fascikla"
 
 #: src/Shortcuts/List.vala:106
 msgid "Music"
@@ -550,11 +550,11 @@ msgstr "Terminal"
 
 #: src/Shortcuts/List.vala:108
 msgid "Internet Browser"
-msgstr "Internet pretraživač"
+msgstr "Internetski preglednik"
 
 #: src/Shortcuts/List.vala:112
 msgid "Media"
-msgstr "Media"
+msgstr "Mediji"
 
 #: src/Shortcuts/List.vala:113
 msgid "Volume Up"
@@ -566,27 +566,27 @@ msgstr "Smanji zvuk"
 
 #: src/Shortcuts/List.vala:115
 msgid "Mute"
-msgstr "Ugasi zvuk"
+msgstr "Utišaj"
 
 #: src/Shortcuts/List.vala:116
 msgid "Play"
-msgstr "Reprodukuj"
+msgstr "Pokreni"
 
 #: src/Shortcuts/List.vala:117
 msgid "Pause"
-msgstr "Pauziraj"
+msgstr "Pauza"
 
 #: src/Shortcuts/List.vala:118
 msgid "Stop"
-msgstr "Stopiraj"
+msgstr "Stop"
 
 #: src/Shortcuts/List.vala:119
 msgid "Previous Track"
-msgstr "Prethodna pjesma"
+msgstr "Prethodni naslov"
 
 #: src/Shortcuts/List.vala:120
 msgid "Next Track"
-msgstr "Sledjeća pjesma"
+msgstr "Sljedeći naslov"
 
 #: src/Shortcuts/List.vala:121
 msgid "Eject"
@@ -606,27 +606,27 @@ msgstr "Povećaj veličinu teksta"
 
 #: src/Shortcuts/List.vala:128
 msgid "Magnifier Zoom in"
-msgstr "Zumiraj povećalo"
+msgstr "Uvećaj povećalo"
 
 #: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom out"
-msgstr "Odzumiraj povećalo"
+msgstr "Umanji povećalo"
 
 #: src/Shortcuts/List.vala:130
 msgid "Toggle On Screen Keyboard"
-msgstr "Uključi/isključi tastaturu na ekranu"
+msgstr "Tastatura na ekranu"
 
 #: src/Shortcuts/List.vala:131
 msgid "Toggle Screenreader"
-msgstr "Uključi/isključi čitača ekrana"
+msgstr "Čitač ekrana"
 
 #: src/Shortcuts/List.vala:132
 msgid "Toggle High Contrast"
-msgstr "Uključi/isključi visoki kontrast"
+msgstr "Visoki kontrast"
 
 #: src/Shortcuts/List.vala:136
 msgid "System"
-msgstr ""
+msgstr "Sistem"
 
 #: src/Shortcuts/List.vala:138
 msgid "Lock"
@@ -634,21 +634,21 @@ msgstr "Zaključaj"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
-msgstr ""
+msgstr "Odjava"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
-msgstr ""
+msgstr "Prilagođeno"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr ""
+msgstr "%s se već koristi za %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr ""
+msgstr "Ako opet podesite prečicu na %s, deaktivirat će se %s."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
