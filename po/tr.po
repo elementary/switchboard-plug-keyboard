@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-05-27 00:05+0000\n"
-"Last-Translator: İbrahim Ethem Göl <ethem578@gmail.com>\n"
+"PO-Revision-Date: 2018-11-06 22:00+0000\n"
+"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
 "Language: tr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:44+0000\n"
 
 #: src/Keyboard.vala:13
@@ -44,16 +44,15 @@ msgstr "Davranış"
 
 #: src/Keyboard.vala:68
 msgid "Switch layout"
-msgstr ""
+msgstr "Düzeni değiştir"
 
 #: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "Anahtar Oluştur"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "Caps Look tuşu davranışı:"
+msgstr "⌘ tuş davranışı"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
@@ -61,7 +60,7 @@ msgstr "Caps Lock davranışı"
 
 #: src/Keyboard.vala:74
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Tuşları tekrar et"
 
 #: src/Keyboard.vala:75
 msgid "Cursor Blinking"
@@ -100,18 +99,16 @@ msgid "Move down"
 msgstr "Aşağı Taşı"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "Dil:"
+msgstr "Girdi dili ara"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
 msgid "Input Language"
-msgstr "Dil:"
+msgstr "Girdi dili"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Klavye düzenini göster"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
@@ -179,7 +176,7 @@ msgstr "Birleştirme (Compose) tuşu:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "Menü"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
@@ -190,23 +187,20 @@ msgid "Right Ctrl"
 msgstr "Sağ Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
 msgid "Right ⌘"
-msgstr "Sağ Alt"
+msgstr "Sağ ⌘"
 
 #: src/Views/Layout.vala:82
-#, fuzzy
 msgid "⌘ key behavior:"
-msgstr "Caps Look tuşu davranışı:"
+msgstr "⌘ tuş davranışı:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
 msgid "Applications Menu"
 msgstr "Uygulamalar Menüsü"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "Kısayol"
+msgstr "Kısayol Kaplaması"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -218,23 +212,23 @@ msgstr "Caps Lock devre dışı"
 
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
-msgstr ""
+msgstr "Backspace olarak"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
-msgstr ""
+msgstr "Ctrl olarak"
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr ""
+msgstr "Escape olarak"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
-msgstr ""
+msgstr "Num Lock olarak"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "⌘ olarak"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
@@ -242,28 +236,27 @@ msgstr "Kontrolle Değiştir"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Escape ile değiştir"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "Düzeninizi sınamak için yazın..."
+msgstr "Düzeninizi sınamak için yazın"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "Girdi Metot Ayarları…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "3. seviye seçmek için tuş:"
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
-msgstr ""
+msgstr "Sol Alt"
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "5. seviyeyi seçmek için tuş:"
 
 #: src/Views/Layout.vala:277
 msgid "Kana Lock:"
@@ -279,11 +272,11 @@ msgstr "Zenkaku Hankaku as Escape:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "Hangul/Hanja tuşları Sağ Alt/Ctrl:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "Tuşları Tekrar Et:"
 
 #: src/Views/Behavior.vala:49
 msgid "Delay:"
@@ -300,7 +293,7 @@ msgstr "milisaniye"
 
 #: src/Views/Behavior.vala:84
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "İmleç yanıp sönmesi:"
 
 #: src/Views/Behavior.vala:89
 msgid "Speed:"
@@ -315,14 +308,12 @@ msgid "seconds"
 msgstr "saniye"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "Ayarlarınızı sınamak için yazın..."
+msgstr "Ayarlarınızı sınamak için yazın"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -330,7 +321,7 @@ msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -369,14 +360,12 @@ msgid "Toggle always on Top"
 msgstr "Her zaman üstte olsun."
 
 #: src/Shortcuts/List.vala:52
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "Pencereler"
+msgstr "Pencereler arası gez"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "Pencereleri tersine çevir"
+msgstr "Pencereleri geriye doğru gez"
 
 #: src/Shortcuts/List.vala:54
 msgid "Tile Left"
@@ -396,7 +385,7 @@ msgstr "Tüm Pencereleri Göster"
 
 #: src/Shortcuts/List.vala:58
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Resim içinde Resim Modu"
 
 #: src/Shortcuts/List.vala:62
 msgid "Workspaces"
@@ -404,17 +393,15 @@ msgstr "Çalışma Alanları"
 
 #: src/Shortcuts/List.vala:63
 msgid "Multitasking View"
-msgstr ""
+msgstr "Çoklu Görev Görünümü"
 
 #: src/Shortcuts/List.vala:64
-#, fuzzy
 msgid "Switch left"
-msgstr "Sola çevir"
+msgstr "Sola geç"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch right"
-msgstr "Sağa çevir"
+msgstr "Sağa geç"
 
 #: src/Shortcuts/List.vala:66
 msgid "Switch to first"
@@ -461,13 +448,12 @@ msgid "Switch to workspace 9"
 msgstr "Çalışma Alanı 9'a geç"
 
 #: src/Shortcuts/List.vala:77
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "Çalışma Alanları"
+msgstr "Çalışma Alanlarını gez"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "Çalışma alanlarını geriye doğru gez"
 
 #: src/Shortcuts/List.vala:79
 msgid "Move to workspace 1"
@@ -506,14 +492,12 @@ msgid "Move to workspace 9"
 msgstr "Çalışma Alanı 9'a taşı"
 
 #: src/Shortcuts/List.vala:88
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "Çalışma Alanı 1'e taşı"
+msgstr "Soldaki çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "Çalışma Alanı 1'e taşı"
+msgstr "Sağdaki çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:93
 msgid "Screenshots"
@@ -521,29 +505,27 @@ msgstr "Ekran Görüntüleri"
 
 #: src/Shortcuts/List.vala:94
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Bütün ekranı yakala"
 
 #: src/Shortcuts/List.vala:95
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
-msgstr "Ekran Görüntüsünü Panoya Kaydet"
+msgstr "Bütün ekranı Panoya Kaydet"
 
 #: src/Shortcuts/List.vala:96
 msgid "Grab the current window"
-msgstr ""
+msgstr "Seçili pencereyi yakala"
 
 #: src/Shortcuts/List.vala:97
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Seçili pencereyi panoya kopyala"
 
 #: src/Shortcuts/List.vala:98
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Yakalamak üzere bir alan seçin"
 
 #: src/Shortcuts/List.vala:99
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "Ekran Görüntüsünü Panoya Kaydet"
+msgstr "Bir alanı panoya kaydet"
 
 #: src/Shortcuts/List.vala:103
 msgid "Applications"
@@ -551,7 +533,7 @@ msgstr "Uygulamalar"
 
 #: src/Shortcuts/List.vala:104
 msgid "Email"
-msgstr "E-Posta"
+msgstr "E-posta"
 
 #: src/Shortcuts/List.vala:105
 msgid "Home Folder"
@@ -559,7 +541,7 @@ msgstr "Ev Klasörü"
 
 #: src/Shortcuts/List.vala:106
 msgid "Music"
-msgstr ""
+msgstr "Müzik"
 
 #: src/Shortcuts/List.vala:107
 msgid "Terminal"
@@ -643,30 +625,29 @@ msgstr "Yüksek Karşıtlığı aç"
 
 #: src/Shortcuts/List.vala:136
 msgid "System"
-msgstr ""
+msgstr "Sistem"
 
 #: src/Shortcuts/List.vala:138
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Kilitle"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
-msgstr ""
+msgstr "Çık"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
 msgstr "Özel"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "%s zaten kullanıldığı için %s!"
+msgstr "%s zaten %s için kullanılıyor"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr ""
+msgstr "Kısayolu %s'e yeniden atarsanız, %s devre dışı bırakılacak."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
