@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-10-15 19:31-0500\n"
-"PO-Revision-Date: 2018-11-06 22:00+0000\n"
+"PO-Revision-Date: 2018-11-10 22:05+0000\n"
 "Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
 "Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -357,7 +357,7 @@ msgstr "Tüm Çalışma Alanlarında aç"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle always on Top"
-msgstr "Her zaman üstte olsun."
+msgstr "Her zaman üstte'yi aç/kapat"
 
 #: src/Shortcuts/List.vala:52
 msgid "Cycle Windows"
