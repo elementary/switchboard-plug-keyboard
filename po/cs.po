@@ -633,7 +633,7 @@ msgstr "Zamknout"
 
 #: src/Shortcuts/List.vala:139
 msgid "Log Out"
-msgstr "Odhlasit se"
+msgstr "Odhlásit se"
 
 #: src/Shortcuts/List.vala:143
 msgid "Custom"
