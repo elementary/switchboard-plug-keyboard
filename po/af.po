@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:31-0500\n"
+"POT-Creation-Date: 2018-11-13 13:20-0800\n"
 "PO-Revision-Date: 2014-07-20 09:06+0000\n"
 "Last-Translator: Jacques Strydom <jacquesafro@gmail.com>\n"
 "Language-Team: Afrikaans <af@li.org>\n"
@@ -194,7 +194,7 @@ msgstr ""
 msgid "⌘ key behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Programme"
@@ -332,323 +332,327 @@ msgid "Windows"
 msgstr "Vensters"
 
 #: src/Shortcuts/List.vala:44
+msgid "Close"
+msgstr "Sluit"
+
+#: src/Shortcuts/List.vala:45
 msgid "Lower"
 msgstr "Verlaag"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Maximize"
 msgstr "Maksimeer"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Unmaximize"
 msgstr "Onmaksimeer"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
 msgstr "Wissel Gemaksimeer"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Minimize"
 msgstr "Minimaliseer"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
 msgstr "Wissel Volskerm"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
 msgstr "Wissel op alle Werkruimtes"
 
-#: src/Shortcuts/List.vala:51
+#: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
 msgstr "Wissel altyd bo"
 
-#: src/Shortcuts/List.vala:52
+#: src/Shortcuts/List.vala:53
 #, fuzzy
 msgid "Cycle Windows"
 msgstr "Vensters"
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 #, fuzzy
 msgid "Cycle Windows backwards"
 msgstr "Skakel Vensters agteruit"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Left"
 msgstr "Teël Links"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Tile Right"
 msgstr "Teël Regs"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Window Overview"
 msgstr ""
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
 msgstr ""
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Workspaces"
 msgstr "Werksruimtes"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 #, fuzzy
 msgid "Switch left"
 msgstr "Wissel na links"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 #, fuzzy
 msgid "Switch right"
 msgstr "Wissel na regs"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to first"
 msgstr "Skakel na Eerste"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to new"
 msgstr "Skakel na nuwe"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
 msgstr "Skakel na werkruimte 1"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
 msgstr "Skakel na werkruimte 2"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
 msgstr "Skakel na werkruimte 3"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
 msgstr "Skakel na werkruimte 4"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
 msgstr "Skakel na werkruimte 5"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
 msgstr "Skakel na werkruimte 6"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
 msgstr "Skakel na werkruimte 7"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
 msgstr "Skakel na werkruimte 8"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
 msgstr "Skakel na werkruimte 9"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Werksruimtes"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
 msgstr "Wissel na werksruimte 1"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
 msgstr "Wissel na werksruimte 2"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
 msgstr "Wissel na werksruimte 3"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
 msgstr "Wissel na werksruimte 4"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
 msgstr "Wissel na werksruimte 5"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
 msgstr "Wissel na werksruimte 6"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
 msgstr "Wissel na werksruimte 7"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
 msgstr "Wissel na werksruimte 8"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
 msgstr "Wissel na werksruimte 9"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:89
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "Wissel na werksruimte 1"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:90
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "Wissel na werksruimte 1"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Screenshots"
 msgstr "Skermskote"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 #, fuzzy
 msgid "Copy the whole screen to clipboard"
 msgstr "Stoor 'n Skermskoot na Klembord"
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
 msgstr ""
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Copy the current window to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:99
 msgid "Select an area to grab"
 msgstr ""
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:100
 #, fuzzy
 msgid "Copy an area to clipboard"
 msgstr "Stoor 'n Skermskoot na Klembord"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Applications"
 msgstr "Programme"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Email"
 msgstr "E-pos"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Home Folder"
 msgstr "Tuis Gids"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:108
 msgid "Terminal"
 msgstr "Terminaal"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
 msgstr "Internet Blaaier"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:113
 msgid "Media"
 msgstr "Media"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:114
 msgid "Volume Up"
 msgstr "Volume Harder"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:115
 msgid "Volume Down"
 msgstr "Volume Sagter"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:116
 msgid "Mute"
 msgstr "Doof uit"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:117
 msgid "Play"
 msgstr "Speel"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:118
 msgid "Pause"
 msgstr "Wag"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:119
 msgid "Stop"
 msgstr "Stop"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:120
 msgid "Previous Track"
 msgstr "Vorige Snit"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:121
 msgid "Next Track"
 msgstr "Volgende Snit"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:122
 msgid "Eject"
 msgstr "Skiet uit"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:126
 msgid "Universal Access"
 msgstr "Universele Toegang"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
 msgstr "Verminder Teks Grote"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
 msgstr "Verminder Teks Grootte"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
 msgstr "Vergroter Vergroot"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
 msgstr "Vergroter Verklein"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
 msgstr "Wissel Op-Skerm Sleutelbord"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:132
 msgid "Toggle Screenreader"
 msgstr "Wissel Skermleser"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:133
 msgid "Toggle High Contrast"
 msgstr "Wissel Hoë Kontras"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:137
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:138
+#: src/Shortcuts/List.vala:139
 msgid "Lock"
 msgstr ""
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:140
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:144
 msgid "Custom"
 msgstr ""
 
@@ -695,9 +699,6 @@ msgstr "Hertoewys"
 
 #~ msgid "Save Area-Screenshot to Clipboard"
 #~ msgstr "Stoor 'n Area-Skermskoot na Klembord"
-
-#~ msgid "Close"
-#~ msgstr "Sluit"
 
 #~ msgid "Calculator"
 #~ msgstr "Sakrekenaar"

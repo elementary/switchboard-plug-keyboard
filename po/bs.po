@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:31-0500\n"
+"POT-Creation-Date: 2018-11-13 13:20-0800\n"
 "PO-Revision-Date: 2018-11-09 23:07+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<="
-"4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
@@ -195,7 +195,7 @@ msgstr "Desna ⌘ tipka"
 msgid "⌘ key behavior:"
 msgstr "Ponašanje tipke ⌘:"
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
 msgstr "Izbornik aplikacija"
 
@@ -329,314 +329,318 @@ msgid "Windows"
 msgstr "Prozori"
 
 #: src/Shortcuts/List.vala:44
+msgid "Close"
+msgstr "Zatvori"
+
+#: src/Shortcuts/List.vala:45
 msgid "Lower"
 msgstr "Spusti niže"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Maximize"
 msgstr "Uvećaj"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Unmaximize"
 msgstr "Poništi uvećanje"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
 msgstr "Uvećanje"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Minimize"
 msgstr "Minimiziraj"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
 msgstr "Preko cijelog ekrana"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
 msgstr "Aktiviraj na svim radnim prostorima"
 
-#: src/Shortcuts/List.vala:51
+#: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
 msgstr "Uvijek na vrhu"
 
-#: src/Shortcuts/List.vala:52
+#: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
 msgstr "Kruži kroz prozore"
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
 msgstr "Kruži kroz prozore unazad"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Left"
 msgstr "Pomjeri ulijevo"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Tile Right"
 msgstr "Pomjeri udesno"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Window Overview"
 msgstr "Pregled prozora"
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
 msgstr "Prikaži sve prozore"
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
 msgstr "Slika u slici"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Workspaces"
 msgstr "Radni prostori"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
 msgstr "Prikaz radnih prostora"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 msgid "Switch left"
 msgstr "Prebaci nalijevo"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch right"
 msgstr "Prebaci nadesno"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to first"
 msgstr "Prebaci na prvi"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to new"
 msgstr "Prebaci na novi"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
 msgstr "Prebaci na radni prostor 1"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
 msgstr "Prebaci na radni prostor 2"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
 msgstr "Prebaci na radni prostor 3"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
 msgstr "Prebaci na radni prostor 4"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
 msgstr "Prebaci na radni prostor 5"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
 msgstr "Prebaci na radni prostor 6"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
 msgstr "Prebaci na radni prostor 7"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
 msgstr "Prebaci na radni prostor 8"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
 msgstr "Prebaci na radni prostor 9"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
 msgstr "Kruži kroz radne prostore"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
 msgstr "Kruži kroz radne prostore unazad"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
 msgstr "Premjesti na radni prostor 1"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
 msgstr "Premjesti na radni prostor 2"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
 msgstr "Premjesti na radni prostor 3"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
 msgstr "Premjesti na radni prostor 4"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
 msgstr "Premjesti na radni prostor 5"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
 msgstr "Premjesti na radni prostor 6"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
 msgstr "Premjesti na radni prostor 7"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
 msgstr "Premjesti na radni prostor 8"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
 msgstr "Premjesti na radni prostor 9"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
 msgstr "Premjesti na lijevi radni prostor"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:90
 msgid "Move to right workspace"
 msgstr "Premjesti na desni radni prostor"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Screenshots"
 msgstr "Snimke ekrana"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
 msgstr "Obuhvati cijeli ekran"
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
 msgstr "Kopiraj cijeli ekran u međuspremnik"
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
 msgstr "Obuhvati trenutni prozor"
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Copy the current window to clipboard"
 msgstr "Kopiraj trenutni prozor u međuspremnik"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:99
 msgid "Select an area to grab"
 msgstr "Odaberi područje za snimku"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:100
 msgid "Copy an area to clipboard"
 msgstr "Kopiraj područje u međuspremnik"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Applications"
 msgstr "Aplikacije"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Email"
 msgstr "E-pošta"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Home Folder"
 msgstr "Lična fascikla"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Music"
 msgstr "Muzika"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:108
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
 msgstr "Internetski preglednik"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:113
 msgid "Media"
 msgstr "Mediji"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:114
 msgid "Volume Up"
 msgstr "Pojačaj zvuk"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:115
 msgid "Volume Down"
 msgstr "Smanji zvuk"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:116
 msgid "Mute"
 msgstr "Utišaj"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:117
 msgid "Play"
 msgstr "Pokreni"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:118
 msgid "Pause"
 msgstr "Pauza"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:119
 msgid "Stop"
 msgstr "Stop"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:120
 msgid "Previous Track"
 msgstr "Prethodni naslov"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:121
 msgid "Next Track"
 msgstr "Sljedeći naslov"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:122
 msgid "Eject"
 msgstr "Izbaci"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:126
 msgid "Universal Access"
 msgstr "Univerzalni pristup"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
 msgstr "Smanji veličinu teksta"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
 msgstr "Povećaj veličinu teksta"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
 msgstr "Uvećaj povećalo"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
 msgstr "Umanji povećalo"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
 msgstr "Tastatura na ekranu"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:132
 msgid "Toggle Screenreader"
 msgstr "Čitač ekrana"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:133
 msgid "Toggle High Contrast"
 msgstr "Visoki kontrast"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:137
 msgid "System"
 msgstr "Sistem"
 
-#: src/Shortcuts/List.vala:138
+#: src/Shortcuts/List.vala:139
 msgid "Lock"
 msgstr "Zaključaj"
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:140
 msgid "Log Out"
 msgstr "Odjava"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:144
 msgid "Custom"
 msgstr "Prilagođeno"
 
@@ -683,9 +687,6 @@ msgstr "Dodijeli nanovo"
 
 #~ msgid "Save Area-Screenshot to Clipboard"
 #~ msgstr "Sačuvaj sliku oređenog prostora u Clipboard"
-
-#~ msgid "Close"
-#~ msgstr "Zatvori"
 
 #~ msgid "Calculator"
 #~ msgstr "Kalkulator"

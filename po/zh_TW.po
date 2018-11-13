@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-15 19:31-0500\n"
+"POT-Creation-Date: 2018-11-13 13:20-0800\n"
 "PO-Revision-Date: 2018-03-16 02:50+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -196,7 +196,7 @@ msgstr "右側 ⌘"
 msgid "⌘ key behavior:"
 msgstr "⌘ 按鍵行為："
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:137
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
 msgstr "應用程式選單"
 
@@ -330,314 +330,318 @@ msgid "Windows"
 msgstr "視窗"
 
 #: src/Shortcuts/List.vala:44
+msgid "Close"
+msgstr "關閉"
+
+#: src/Shortcuts/List.vala:45
 msgid "Lower"
 msgstr "降低"
 
-#: src/Shortcuts/List.vala:45
+#: src/Shortcuts/List.vala:46
 msgid "Maximize"
 msgstr "最大化"
 
-#: src/Shortcuts/List.vala:46
+#: src/Shortcuts/List.vala:47
 msgid "Unmaximize"
 msgstr "取消最大化"
 
-#: src/Shortcuts/List.vala:47
+#: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
 msgstr "開關最大化狀態"
 
-#: src/Shortcuts/List.vala:48
+#: src/Shortcuts/List.vala:49
 msgid "Minimize"
 msgstr "最小化"
 
-#: src/Shortcuts/List.vala:49
+#: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
 msgstr "開關全螢幕"
 
-#: src/Shortcuts/List.vala:50
+#: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
 msgstr "開關顯示在所有工作區上"
 
-#: src/Shortcuts/List.vala:51
+#: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
 msgstr "開關總是在最上層"
 
-#: src/Shortcuts/List.vala:52
+#: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
 msgstr "循環切換視窗"
 
-#: src/Shortcuts/List.vala:53
+#: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
 msgstr "往後循環切換視窗"
 
-#: src/Shortcuts/List.vala:54
+#: src/Shortcuts/List.vala:55
 msgid "Tile Left"
 msgstr "向左鋪排"
 
-#: src/Shortcuts/List.vala:55
+#: src/Shortcuts/List.vala:56
 msgid "Tile Right"
 msgstr "向右鋪排"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:57
 msgid "Window Overview"
 msgstr "視窗概覽"
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
 msgstr "顯示所有視窗"
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:63
 msgid "Workspaces"
 msgstr "工作區"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
 msgstr "多工作業檢視"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:65
 msgid "Switch left"
 msgstr "切換至左側"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:66
 msgid "Switch right"
 msgstr "切換至右側"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:67
 msgid "Switch to first"
 msgstr "切換到第一個"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:68
 msgid "Switch to new"
 msgstr "切換到新的"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
 msgstr "切換到工作區 1"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
 msgstr "切換到工作區 2"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
 msgstr "切換到工作區 3"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
 msgstr "切換到工作區 4"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
 msgstr "切換到工作區 5"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
 msgstr "切換到工作區 6"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
 msgstr "切換到工作區 7"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
 msgstr "切換到工作區 8"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
 msgstr "切換到工作區 9"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
 msgstr "循環切換工作區"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
 msgstr "向後循環切換工作區"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
 msgstr "移動到工作區 1"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
 msgstr "移動到工作區 2"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
 msgstr "移動到工作區 3"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
 msgstr "移動到工作區 4"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
 msgstr "移動到工作區 5"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
 msgstr "移動到工作區 6"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
 msgstr "移動到工作區 7"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
 msgstr "移動到工作區 8"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
 msgstr "移動到工作區 9"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
 msgstr "移動到左側工作區"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:90
 msgid "Move to right workspace"
 msgstr "移動到右側工作區"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:94
 msgid "Screenshots"
 msgstr "螢幕快照"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
 msgstr "抓取整個螢幕"
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
 msgstr "將整個螢幕複製到剪貼簿"
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
 msgstr "抓取目前的視窗"
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:98
 msgid "Copy the current window to clipboard"
 msgstr "複製目前的視窗到剪貼簿"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:99
 msgid "Select an area to grab"
 msgstr "選取抓取區域"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:100
 msgid "Copy an area to clipboard"
 msgstr "將一塊區域複製到剪貼簿"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:104
 msgid "Applications"
 msgstr "應用程式"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:105
 msgid "Email"
 msgstr "電子郵件"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:106
 msgid "Home Folder"
 msgstr "家屋資料夾"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:107
 msgid "Music"
 msgstr "音樂"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:108
 msgid "Terminal"
 msgstr "終端機"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
 msgstr "網際網路瀏覽器"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:113
 msgid "Media"
 msgstr "媒體"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:114
 msgid "Volume Up"
 msgstr "調高音量"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:115
 msgid "Volume Down"
 msgstr "調低音量"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:116
 msgid "Mute"
 msgstr "靜音"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:117
 msgid "Play"
 msgstr "播放"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:118
 msgid "Pause"
 msgstr "暫停"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:119
 msgid "Stop"
 msgstr "停止"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:120
 msgid "Previous Track"
 msgstr "上一首曲目"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:121
 msgid "Next Track"
 msgstr "下一首曲目"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:122
 msgid "Eject"
 msgstr "退出"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:126
 msgid "Universal Access"
 msgstr "無障礙環境"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
 msgstr "縮小文字"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
 msgstr "放大文字"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
 msgstr "放大鏡拉近"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
 msgstr "放大鏡拉遠"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
 msgstr "開關螢幕鍵盤"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:132
 msgid "Toggle Screenreader"
 msgstr "開關螢幕閱讀器"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:133
 msgid "Toggle High Contrast"
 msgstr "開關高對比外觀"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:137
 msgid "System"
 msgstr "系統"
 
-#: src/Shortcuts/List.vala:138
+#: src/Shortcuts/List.vala:139
 msgid "Lock"
 msgstr "鎖定"
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:140
 msgid "Log Out"
 msgstr "登出"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:144
 msgid "Custom"
 msgstr "自訂"
 
@@ -690,9 +694,6 @@ msgstr "重新指派"
 
 #~ msgid "as Super"
 #~ msgstr "視為 Super"
-
-#~ msgid "Close"
-#~ msgstr "關閉"
 
 #~ msgid "Calculator"
 #~ msgstr "計算機"
