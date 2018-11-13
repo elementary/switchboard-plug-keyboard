@@ -41,6 +41,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             windows_group = {};
             windows_group.icon_name = "preferences-system-windows";
             windows_group.label = _("Windows");
+            add_action (ref windows_group, Schema.WM, _("Close"), "close");
             add_action (ref windows_group, Schema.WM, _("Lower"), "lower");
             add_action (ref windows_group, Schema.WM, _("Maximize"), "maximize");
             add_action (ref windows_group, Schema.WM, _("Unmaximize"), "unmaximize");
