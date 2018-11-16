@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-09-02 07:51+0000\n"
+"PO-Revision-Date: 2018-11-16 08:39+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -51,7 +51,6 @@ msgid "Compose Key"
 msgstr "Touche de composition"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
 msgstr "Comportement de la touche ⌘ :"
 
