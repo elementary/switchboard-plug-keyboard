@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-11-24 13:09+0000\n"
+"PO-Revision-Date: 2018-12-02 06:36+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -129,7 +129,7 @@ msgstr "デフォルト"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
-msgstr "レイアウトを切替："
+msgstr "レイアウトを切替:"
 
 #. Layout switching keybinding
 #. Compose key position menu
@@ -172,7 +172,7 @@ msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr "Compose キー："
+msgstr "Compose キー:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
@@ -192,7 +192,7 @@ msgstr "右 ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
-msgstr "⌘ キーの動作："
+msgstr "⌘ キーの動作:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
@@ -204,7 +204,7 @@ msgstr "ショートカットオーバーレイ"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
-msgstr "Caps Lock の動作："
+msgstr "Caps Lock の動作:"
 
 #: src/Views/Layout.vala:101
 msgid "Caps Lock disabled"
@@ -248,7 +248,7 @@ msgstr "インプットメソッドの設定…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
-msgstr "3rd level を選択するキー："
+msgstr "3rd level を選択するキー:"
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
@@ -256,35 +256,35 @@ msgstr "左 Alt"
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
-msgstr "5th level を選択するキー："
+msgstr "5th level を選択するキー:"
 
 #: src/Views/Layout.vala:277
 msgid "Kana Lock:"
-msgstr "かなロック："
+msgstr "かなロック:"
 
 #: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
-msgstr "NICOLA-F バックスペース："
+msgstr "NICOLA-F バックスペース:"
 
 #: src/Views/Layout.vala:288
 msgid "Zenkaku Hankaku as Escape:"
-msgstr "全角／半角 を Esc として動作："
+msgstr "全角／半角 を Esc として動作:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "ハングル／漢字キーを右 Alt／Ctrl に割り当て："
+msgstr "ハングル／漢字キーを右 Alt／Ctrl に割り当て:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
-msgstr "キーの繰り返し："
+msgstr "キーの繰り返し:"
 
 #: src/Views/Behavior.vala:49
 msgid "Delay:"
-msgstr "遅延："
+msgstr "遅延:"
 
 #: src/Views/Behavior.vala:52
 msgid "Interval:"
-msgstr "間隔："
+msgstr "間隔:"
 
 #: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
 #: src/Views/Behavior.vala:95
@@ -293,15 +293,15 @@ msgstr "ミリ秒"
 
 #: src/Views/Behavior.vala:84
 msgid "Cursor Blinking:"
-msgstr "カーソルの点滅："
+msgstr "カーソルの点滅:"
 
 #: src/Views/Behavior.vala:89
 msgid "Speed:"
-msgstr "速度："
+msgstr "速度:"
 
 #: src/Views/Behavior.vala:92
 msgid "Duration:"
-msgstr "再生時間："
+msgstr "再生時間:"
 
 #: src/Views/Behavior.vala:98
 msgid "seconds"
