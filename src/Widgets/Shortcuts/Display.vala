@@ -62,7 +62,11 @@ namespace Pantheon.Keyboard.Shortcuts {
         }
 
         // replace old tree view with new one
-        public bool change_selection (int new_selection) {
+        public void change_selection (int new_selection) {
+            if (new_selection == selected) {
+                return;
+            }
+
             scroll.remove (trees[selected]);
             scroll.add (trees[new_selection]);
 
@@ -92,7 +96,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             show_all ();
 
-            return true;
+            return;
         }
 
         private void row_selected () {
