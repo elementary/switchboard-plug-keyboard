@@ -18,7 +18,7 @@
 */
 
 class Pantheon.Keyboard.Shortcuts.SectionSwitcher : Gtk.ScrolledWindow {
-    public signal bool changed (int i);
+    public signal void changed (int i);
 
     private Gtk.ListBox listbox;
 
@@ -49,5 +49,9 @@ class Pantheon.Keyboard.Shortcuts.SectionSwitcher : Gtk.ScrolledWindow {
         grid.add (label);
 
         listbox.add (grid);
+    }
+
+    public void set_selected (int index) {
+        listbox.select_row (listbox.get_row_at_index (index));
     }
 }
