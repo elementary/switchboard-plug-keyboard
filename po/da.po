@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-10-18 00:10+0000\n"
+"PO-Revision-Date: 2018-12-17 00:04+0000\n"
 "Last-Translator: Kaj Printz Madsen <kajprintz@gmail.com>\n"
 "Language-Team: Danish <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
@@ -35,7 +35,7 @@ msgstr "Layout"
 
 #: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
-msgstr "Tastaturgenveje"
+msgstr "Genveje"
 
 #: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
 #: src/Keyboard.vala:75
@@ -48,7 +48,7 @@ msgstr "Skift layout"
 
 #: src/Keyboard.vala:69
 msgid "Compose Key"
-msgstr "Skriv-tast"
+msgstr "Compose-tast"
 
 #: src/Keyboard.vala:70
 msgid "⌘ key behavior"
@@ -60,7 +60,7 @@ msgstr "Caps Lock adfærd"
 
 #: src/Keyboard.vala:74
 msgid "Repeat Keys"
-msgstr "Gentag taster"
+msgstr "Gentagelses Taster"
 
 #: src/Keyboard.vala:75
 msgid "Cursor Blinking"
@@ -76,7 +76,7 @@ msgstr "Fjern"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
-msgstr "Indtast kommando"
+msgstr "Indtast Kommando"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:73
 msgid "Command"
@@ -112,7 +112,7 @@ msgstr "Vis tastatur layout"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
-msgstr "Tilføj layout"
+msgstr "Tilføj Layout"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
@@ -144,7 +144,7 @@ msgstr "Alt + Caps Lock"
 
 #: src/Views/Layout.vala:53
 msgid "Alt + Shift"
-msgstr "Alt + Skift"
+msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Space"
@@ -152,7 +152,7 @@ msgstr "Alt + Mellemrum"
 
 #: src/Views/Layout.vala:55
 msgid "Both Shift keys together"
-msgstr "Begge Skift-taster på samme tid"
+msgstr "Begge Shift-taster på samme tid"
 
 #: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
@@ -164,15 +164,15 @@ msgstr "Ctrl + Alt"
 
 #: src/Views/Layout.vala:58
 msgid "Ctrl + Shift"
-msgstr "Ctrl + Skift"
+msgstr "Ctrl + Shift"
 
 #: src/Views/Layout.vala:59
 msgid "Shift + Caps Lock"
-msgstr "Skift + Caps Lock"
+msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr "Skriv-tast:"
+msgstr "Compose tast:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
@@ -200,7 +200,7 @@ msgstr "Applikationsmenu"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
-msgstr "Genvej Overlay"
+msgstr "Genvejs-Overlay"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -276,7 +276,7 @@ msgstr "Hangul/Hanja-taster på højre Alt/Ctrl:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
-msgstr "Gentag taster:"
+msgstr "Gentagelsestaster:"
 
 #: src/Views/Behavior.vala:49
 msgid "Delay:"
@@ -349,7 +349,7 @@ msgstr "Aktiver/Deaktiver Maksimeret"
 
 #: src/Shortcuts/List.vala:49
 msgid "Minimize"
-msgstr "Minimér"
+msgstr "Minimer"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -365,23 +365,23 @@ msgstr "Altid øverst til/fra"
 
 #: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
-msgstr "Cycle Vinduer"
+msgstr "Skift Mellem Vinduer"
 
 #: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
-msgstr "Cycle vinduer baglæns"
+msgstr "Cirkuler Vinduer Baglæns"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Left"
-msgstr "Flæselæg til venstre"
+msgstr "Tile til venstre"
 
 #: src/Shortcuts/List.vala:56
 msgid "Tile Right"
-msgstr "Flæselæg til højre"
+msgstr "Tile til højre"
 
 #: src/Shortcuts/List.vala:57
 msgid "Window Overview"
-msgstr "Vinduesoversigt"
+msgstr "Vindueoversigt"
 
 #: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
@@ -453,11 +453,11 @@ msgstr "Skift til arbejdsområde 9"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
-msgstr "Cycle skriveborde"
+msgstr "Cirkuler mellem skriveborde"
 
 #: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
-msgstr "Cycle skriveborde baglæns"
+msgstr "Cirkuler skriveborde baglæns"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
