@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-10-14 00:03+0000\n"
+"PO-Revision-Date: 2018-12-14 22:10+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
 msgid "Remove"
-msgstr ""
+msgstr "काढा"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
-msgstr ""
+msgstr "जोडा ..."
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
@@ -110,7 +110,7 @@ msgstr ""
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
-msgstr ""
+msgstr "रद्द करा"
 
 #. Caps Lock key functionality
 #: src/Widgets/Layout/AddLayoutPopover.vala:211
@@ -530,7 +530,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:105
 msgid "Email"
-msgstr ""
+msgstr "ईमेल"
 
 #: src/Shortcuts/List.vala:106
 msgid "Home Folder"
