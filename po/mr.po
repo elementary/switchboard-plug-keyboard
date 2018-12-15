@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-14 22:10+0000\n"
+"PO-Revision-Date: 2018-12-18 00:01+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -590,7 +590,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:126
 msgid "Universal Access"
-msgstr ""
+msgstr "सार्वत्रिक प्रवेश"
 
 #: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
