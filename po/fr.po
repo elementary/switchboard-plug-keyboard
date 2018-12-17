@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-11-16 08:39+0000\n"
+"PO-Revision-Date: 2018-12-18 00:01+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -124,7 +124,7 @@ msgstr "Annuler"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr "Par défaut"
+msgstr "Défaut"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
