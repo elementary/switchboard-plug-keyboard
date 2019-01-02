@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-29 00:01+0000\n"
+"PO-Revision-Date: 2019-01-02 19:44+0000\n"
 "Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
 "Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -51,9 +51,8 @@ msgid "Compose Key"
 msgstr "Compose-Taste"
 
 #: src/Keyboard.vala:70
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "Funktion der ⌘-Taste:"
+msgstr "Funktion der ⌘-Taste"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
@@ -125,7 +124,7 @@ msgstr "Abbrechen"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr "Vorgabe"
+msgstr "Standard"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
