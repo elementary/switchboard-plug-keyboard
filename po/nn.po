@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2019-01-06 14:34+0000\n"
+"PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nn/>\n"
@@ -124,7 +124,7 @@ msgstr "Avbryt"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr "Standardval"
+msgstr "Standard"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
@@ -136,7 +136,7 @@ msgstr "Byt oppsett:"
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr "Slått av"
+msgstr "Avslått"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
@@ -397,7 +397,7 @@ msgstr "Arbeidsområde"
 
 #: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
-msgstr "Fleiroppgåve-vising"
+msgstr "Vis arbeidsområde"
 
 #: src/Shortcuts/List.vala:65
 msgid "Switch left"
@@ -655,7 +655,7 @@ msgstr "Viss du tildeler snarvegen til %s, vil %s bli slått av."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
-msgstr "Tildel"
+msgstr "Tildel på nytt"
 
 #~ msgid "Right Super"
 #~ msgstr "Høgre Super"
