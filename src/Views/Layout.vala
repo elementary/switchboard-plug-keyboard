@@ -98,7 +98,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             // Caps Lock key functionality
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Default"));
-            modifier.append_xkb_option ("caps:none", _("Caps Lock disabled"));
+            modifier.append_xkb_option ("caps:none", _("Disabled"));
             modifier.append_xkb_option ("caps:backspace", _("as Backspace"));
             modifier.append_xkb_option ("ctrl:nocaps", _("as Ctrl"));
             modifier.append_xkb_option ("caps:escape", _("as Escape"));
