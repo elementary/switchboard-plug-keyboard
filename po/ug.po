@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -273,7 +273,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F نۇسخىسىدىكى Backspace:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku نى Escape قىلىپ ئىشلىتىش:"
 
 #: src/Views/Layout.vala:305

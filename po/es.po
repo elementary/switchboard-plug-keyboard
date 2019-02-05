@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
 "PO-Revision-Date: 2018-10-03 00:11+0000\n"
 "Last-Translator: Pablo Solís La Beira <pabsol1977@gmail.com>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
@@ -269,7 +269,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku como Esc:"
 
 #: src/Views/Layout.vala:305

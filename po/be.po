@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
 "PO-Revision-Date: 2015-09-24 14:26+0000\n"
 "Last-Translator: Siamion Šachalevič <semen.shah@gmail.com>\n"
 "Language-Team: Belarusian <be@li.org>\n"
@@ -270,7 +270,7 @@ msgid "Nicola F Backspace:"
 msgstr ""
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr ""
 
 #: src/Views/Layout.vala:305
