@@ -285,7 +285,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace:"), size_group[0]);
             var nicola_backspace_switch = new XkbOptionSwitch (settings, "japan:nicola_f_bs");
 
-            var zenkaku_label = new SettingsLabel (_("Zenkaku Hankaku as Escape:"), size_group[0]);
+            var zenkaku_label = new SettingsLabel (_("Hankaku Zenkaku as Escape:"), size_group[0]);
             var zenkaku_switch = new XkbOptionSwitch (settings, "japan:hztg_escape");
 
             string [] valid_input_sources = {"jp"};

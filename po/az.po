@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
@@ -252,7 +252,7 @@ msgid "Nicola F Backspace:"
 msgstr ""
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr ""
 
 #: src/Views/Layout.vala:305
