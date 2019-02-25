@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-18 00:01+0000\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-02-06 12:56+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/lt/>\n"
@@ -268,8 +268,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace (Naikinimo):"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
-msgstr "Zenkaku Hankaku kaip Escape (Atšaukimo):"
+msgid "Hankaku Zenkaku as Escape:"
+msgstr "Hankaku Zenkaku kaip Escape (Atšaukimo):"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"

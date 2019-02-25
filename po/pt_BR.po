@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-10-22 04:11+0000\n"
-"Last-Translator: Deyvison Rocha <deyvison@gmail.com>\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-02-11 05:10+0000\n"
+"Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -267,7 +267,7 @@ msgid "Nicola F Backspace:"
 msgstr "Espaço Nicola F:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku como Escape:"
 
 #: src/Views/Layout.vala:305

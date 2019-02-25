@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-11-02 04:04+0000\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-01-14 13:27+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -52,7 +52,7 @@ msgstr "组合键"
 
 #: src/Keyboard.vala:70
 msgid "⌘ key behavior"
-msgstr "⌘ 键行为："
+msgstr "⌘ 键行为"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
@@ -99,14 +99,12 @@ msgid "Move down"
 msgstr "向下移动"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
 msgid "Search input language"
-msgstr "账户语言："
+msgstr "搜索输入语言"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
 msgid "Input Language"
-msgstr "账户语言："
+msgstr "输入语言"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
@@ -126,7 +124,7 @@ msgstr "取消"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr "默认值"
+msgstr "默认"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
@@ -189,9 +187,8 @@ msgid "Right Ctrl"
 msgstr "右 Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
 msgid "Right ⌘"
-msgstr "右 Alt"
+msgstr "右 ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
@@ -202,7 +199,6 @@ msgid "Applications Menu"
 msgstr "程序菜单"
 
 #: src/Views/Layout.vala:91
-#, fuzzy
 msgid "Shortcut Overlay"
 msgstr "快捷键"
 
@@ -243,9 +239,8 @@ msgid "Swap with Escape"
 msgstr "和 Escape 互换"
 
 #: src/Views/Layout.vala:127
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "键入任意内容来测试您的布局…"
+msgstr "键入任意内容测试您的布局"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
@@ -272,7 +267,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F 样式 Backspace："
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku 代替 Escape："
 
 #: src/Views/Layout.vala:305
@@ -313,14 +309,12 @@ msgid "seconds"
 msgstr "秒"
 
 #: src/Views/Behavior.vala:127
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "键入任意内容来测试您的设置…"
+msgstr "键入任意内容来测试您的设置"
 
 #: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
 msgid "Shift"
-msgstr "Alt + Shift"
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
@@ -371,14 +365,12 @@ msgid "Toggle always on Top"
 msgstr "窗口总在最前"
 
 #: src/Shortcuts/List.vala:53
-#, fuzzy
 msgid "Cycle Windows"
-msgstr "窗口布局"
+msgstr "循环窗口"
 
 #: src/Shortcuts/List.vala:54
-#, fuzzy
 msgid "Cycle Windows backwards"
-msgstr "往回切换窗口"
+msgstr "反向循环窗口"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Left"
@@ -409,14 +401,12 @@ msgid "Multitasking View"
 msgstr "多任务视图"
 
 #: src/Shortcuts/List.vala:65
-#, fuzzy
 msgid "Switch left"
-msgstr "切换至左一工作区"
+msgstr "切换至左侧工作区"
 
 #: src/Shortcuts/List.vala:66
-#, fuzzy
 msgid "Switch right"
-msgstr "切换至右一工作区"
+msgstr "切换至右侧工作区"
 
 #: src/Shortcuts/List.vala:67
 msgid "Switch to first"
@@ -463,9 +453,8 @@ msgid "Switch to workspace 9"
 msgstr "切换至工作区 9"
 
 #: src/Shortcuts/List.vala:78
-#, fuzzy
 msgid "Cycle workspaces"
-msgstr "工作区"
+msgstr "循环工作区"
 
 #: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
@@ -508,14 +497,12 @@ msgid "Move to workspace 9"
 msgstr "移动至工作区 9"
 
 #: src/Shortcuts/List.vala:89
-#, fuzzy
 msgid "Move to left workspace"
-msgstr "移动至工作区 1"
+msgstr "移动至左侧工作区"
 
 #: src/Shortcuts/List.vala:90
-#, fuzzy
 msgid "Move to right workspace"
-msgstr "移动至工作区 1"
+msgstr "移动至右侧工作区"
 
 #: src/Shortcuts/List.vala:94
 msgid "Screenshots"
@@ -526,7 +513,6 @@ msgid "Grab the whole screen"
 msgstr "全屏抓取"
 
 #: src/Shortcuts/List.vala:96
-#, fuzzy
 msgid "Copy the whole screen to clipboard"
 msgstr "将屏幕截图保存至剪贴板"
 
@@ -543,9 +529,8 @@ msgid "Select an area to grab"
 msgstr "抓取选中区域"
 
 #: src/Shortcuts/List.vala:100
-#, fuzzy
 msgid "Copy an area to clipboard"
-msgstr "将屏幕截图保存至剪贴板"
+msgstr "将选中区域截图保存至剪贴板"
 
 #: src/Shortcuts/List.vala:104
 msgid "Applications"
@@ -660,14 +645,14 @@ msgid "Custom"
 msgstr "自定义"
 
 #: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
+#, c-format
 msgid "%s is already used for %s"
-msgstr "%s 已经用于 %s！"
+msgstr "%s 已经用于 %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
+#, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "如果您重新指定 %s 为快捷键，%s 将被替换"
+msgstr "如果您重新指定 %s 为快捷键，%s 将被替换。"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"

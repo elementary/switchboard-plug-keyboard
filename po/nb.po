@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-08-29 00:03+0000\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-02-22 00:05+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
@@ -273,7 +273,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F-rettetast:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku som Esc:"
 
 #: src/Views/Layout.vala:305
@@ -360,15 +361,16 @@ msgstr "Minimer"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
-msgstr "Slå av/på fullskjerm"
+msgstr "Veksle fullskjermsvisning"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
-msgstr "Veksle på alle arbeidsflater"
+msgstr "Veksle på alle arbeidsområder"
 
 #: src/Shortcuts/List.vala:52
+#, fuzzy
 msgid "Toggle always on Top"
-msgstr "Veksle alltid til topp"
+msgstr "Alltid veksle i forgrunn"
 
 #: src/Shortcuts/List.vala:53
 #, fuzzy
@@ -390,11 +392,11 @@ msgstr "Flislegg til høyre"
 
 #: src/Shortcuts/List.vala:57
 msgid "Window Overview"
-msgstr "Vindu Oversikt"
+msgstr "Vindusoversikt"
 
 #: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
-msgstr "Vis Alle Vinduer"
+msgstr "Vis alle vinduer"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
@@ -430,35 +432,35 @@ msgstr "Bytt til arbeidflate 1"
 
 #: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
-msgstr "Bytt til arbeidsflate 2"
+msgstr "Bytt til arbeidsområde 2"
 
 #: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
-msgstr "Bytt til arbeidsflate 3"
+msgstr "Bytt til arbeidsområde 3"
 
 #: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
-msgstr "Bytt til arbeidsflate 4"
+msgstr "Bytt til arbeidsområde 4"
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
-msgstr "Bytt til arbeidsflate 5"
+msgstr "Bytt til arbeidsområde 5"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
-msgstr "Bytt til arbeidsflate 6"
+msgstr "Bytt til arbeidsområde 6"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
-msgstr "Bytt til arbeidsflate 7"
+msgstr "Bytt til arbeidsområde 7"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
-msgstr "Bytt til arbeidsflate 8"
+msgstr "Bytt til arbeidsområde 8"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
-msgstr "Bytt til arbeidsflate 9"
+msgstr "Bytt til arbeidsområde 9"
 
 #: src/Shortcuts/List.vala:78
 #, fuzzy
@@ -471,51 +473,51 @@ msgstr "Gå gjennom arbeidsområder baklengs"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
-msgstr "Flytt til arbeidsflate 1"
+msgstr "Flytt til arbeidsområde 1"
 
 #: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
-msgstr "Flytt til arbeidsflate 2"
+msgstr "Flytt til arbeidsområde 2"
 
 #: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
-msgstr "Flytt til arbeidsflate 3"
+msgstr "Flytt til arbeidsområde 3"
 
 #: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
-msgstr "Flytt til arbeidsflate 4"
+msgstr "Flytt til arbeidsområde 4"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
-msgstr "Flytt til arbeidsflate 5"
+msgstr "Flytt til arbeidsområde 5"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
-msgstr "Flytt til arbeidsflate 6"
+msgstr "Flytt til arbeidsområde 6"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
-msgstr "Flytt til arbeidsflate 7"
+msgstr "Flytt til arbeidsområde 7"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
-msgstr "Flytt til arbeidsflate 8"
+msgstr "Flytt til arbeidsområde 8"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
-msgstr "Flytt til arbeidsflate 9"
+msgstr "Flytt til arbeidsområde 9"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
-msgstr "Flytt til venstre arbeidsflate"
+msgstr "Flytt til venstre arbeidsområde"
 
 #: src/Shortcuts/List.vala:90
 msgid "Move to right workspace"
-msgstr "Flytt til høyre arbeidsflate"
+msgstr "Flytt til høyre arbeidsområde"
 
 #: src/Shortcuts/List.vala:94
 msgid "Screenshots"
-msgstr "Skjermbilder"
+msgstr "Skjermavbildninger"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
@@ -523,7 +525,7 @@ msgstr "Fang hele skjermen"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
-msgstr "Lagre hele skjermbildet til utklippstavle"
+msgstr "Kopier hele skjermen til utklippstavlen"
 
 #: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
