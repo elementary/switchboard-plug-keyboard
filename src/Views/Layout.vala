@@ -104,7 +104,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             modifier.append_xkb_option ("caps:escape", _("as Escape"));
             modifier.append_xkb_option ("caps:numlock", _("as Num Lock"));
             modifier.append_xkb_option ("caps:super", _("as ⌘"));
-            modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Control"));
+            modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Ctrl"));
             modifier.append_xkb_option ("caps:swapescape", _("Swap with Escape"));
 
             modifier.set_default_command ("");
@@ -160,7 +160,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                     var appinfo = GLib.AppInfo.create_from_commandline ("ibus-setup", null, GLib.AppInfoCreateFlags.NONE);
                     appinfo.launch (null, null);
                 } catch (Error e) {
-                    critical ("Could not open ibus setup: %s", e.message);   
+                    critical ("Could not open ibus setup: %s", e.message);
                 }
             });
 
