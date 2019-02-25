@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2018-09-01 00:08+0000\n"
 "Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
 "Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
@@ -135,7 +135,7 @@ msgstr "Verander indeling:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Uitgeschakeld"
 
@@ -207,10 +207,6 @@ msgstr "Sneltoetsoverlay"
 msgid "Caps Lock behavior:"
 msgstr "Caps Lock gedrag:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock uitgeschakeld"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "zoals Backspace"
@@ -232,7 +228,8 @@ msgid "as ⌘"
 msgstr ""
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Wissel met Control"
 
 #: src/Views/Layout.vala:108
@@ -658,6 +655,9 @@ msgstr "Als u de sneltoets toewijst aan %s, dan zal %s uitgeschakeld worden."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Opnieuw toewijzen"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock uitgeschakeld"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "App-opener"

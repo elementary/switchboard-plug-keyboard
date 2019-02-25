@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2018-11-09 23:07+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -135,7 +135,7 @@ msgstr "Promijeni raspored:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Deaktivirano"
 
@@ -207,10 +207,6 @@ msgstr "Pregled prečica tastature"
 msgid "Caps Lock behavior:"
 msgstr "Ponašanje Caps Lock tipke:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock deaktiviran"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "kao Backspace"
@@ -232,7 +228,8 @@ msgid "as ⌘"
 msgstr "kao ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Zamijeni s Ctrl tipkom"
 
 #: src/Views/Layout.vala:108
@@ -658,6 +655,9 @@ msgstr "Ako opet podesite prečicu na %s, deaktivirat će se %s."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Dodijeli nanovo"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock deaktiviran"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Pokretač aplikacija"

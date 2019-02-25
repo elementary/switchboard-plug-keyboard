@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-02-11 05:10+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://weblate.elementary.io/projects/"
@@ -134,7 +134,7 @@ msgstr "Alterar layout:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Desabilitado"
 
@@ -206,10 +206,6 @@ msgstr "Sobreposição de Atalhos"
 msgid "Caps Lock behavior:"
 msgstr "Comportamento do Caps Lock:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock desativado"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "como Backspace"
@@ -231,7 +227,8 @@ msgid "as ⌘"
 msgstr "como ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Trocar com Control"
 
 #: src/Views/Layout.vala:108
@@ -656,6 +653,9 @@ msgstr "Se atribuir o atalho para %s, %s será desativado."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Reatribuir"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock desativado"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Lançador de aplicações:"

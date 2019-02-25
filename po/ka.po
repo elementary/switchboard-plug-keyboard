@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2018-02-11 00:08+0000\n"
 "Last-Translator: Lasha-Giorgi Esebua <lashagiorgiesebua@gmail.com>\n"
 "Language-Team: Georgian <https://weblate.elementary.io/projects/switchboard/"
@@ -134,7 +134,7 @@ msgstr ""
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "გამორთულია"
 
@@ -207,10 +207,6 @@ msgstr "მალსახმობები"
 msgid "Caps Lock behavior:"
 msgstr ""
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr ""
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr ""
@@ -232,7 +228,7 @@ msgid "as ⌘"
 msgstr ""
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+msgid "Swap with Ctrl"
 msgstr ""
 
 #: src/Views/Layout.vala:108

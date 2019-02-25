@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-02-09 10:53+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
@@ -135,7 +135,7 @@ msgstr "Przełącz układ:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Wyłączone"
 
@@ -207,10 +207,6 @@ msgstr "Nakładka skrótów klawiszowych"
 msgid "Caps Lock behavior:"
 msgstr "Zachowanie klawisza Caps Lock:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock wyłączony"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "jak Backspace"
@@ -232,7 +228,8 @@ msgid "as ⌘"
 msgstr "jako ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Zamień z klawiszem Control"
 
 #: src/Views/Layout.vala:108
@@ -657,6 +654,9 @@ msgstr "Jeżeli przypiszesz skrót do %s, %s zostanie wyłączony."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Przypisz ponownie"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock wyłączony"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Wyzwalacz programów"

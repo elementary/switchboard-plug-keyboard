@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2017-04-14 16:49+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -137,7 +137,7 @@ msgstr "Смяна на клавиатурната подредба:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Изключено"
 
@@ -213,10 +213,6 @@ msgstr "Пряк път"
 msgid "Caps Lock behavior:"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock е изключен"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "като Backspace клавиш"
@@ -238,7 +234,8 @@ msgid "as ⌘"
 msgstr ""
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Разменен с Ctrl клавиша"
 
 #: src/Views/Layout.vala:108
@@ -677,6 +674,9 @@ msgstr "Ако присвоите този пряк път на %s, прекия
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Прехвърляне"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock е изключен"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Лаунчер на приложения"

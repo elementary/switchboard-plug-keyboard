@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2017-04-09 09:38+0000\n"
 "Last-Translator: Kseniia Shimanska <kshimanska@gmail.com>\n"
 "Language-Team: Ukrainian <http://weblate.elementary.io/projects/desktop/"
@@ -138,7 +138,7 @@ msgstr "Перемикання розкладки:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Вимкнено"
 
@@ -214,10 +214,6 @@ msgstr "Гаряча клявіша"
 msgid "Caps Lock behavior:"
 msgstr "Поведінка Caps Lock:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock вимкнений"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "як Backspace"
@@ -239,7 +235,7 @@ msgid "as ⌘"
 msgstr ""
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+msgid "Swap with Ctrl"
 msgstr ""
 
 #: src/Views/Layout.vala:108
@@ -676,6 +672,9 @@ msgstr "Якщо ви призначите %s, %s буде відключени�
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Перепризначити"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock вимкнений"
 
 #~ msgid "Switch Windows"
 #~ msgstr "Перемкнути вікна"

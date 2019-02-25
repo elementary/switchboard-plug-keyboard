@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-01-14 13:27+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
@@ -134,7 +134,7 @@ msgstr "切换布局："
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "已禁用"
 
@@ -206,10 +206,6 @@ msgstr "快捷键"
 msgid "Caps Lock behavior:"
 msgstr "大写锁定键："
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "大写锁定键已禁用"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "代替 Backspace"
@@ -231,7 +227,8 @@ msgid "as ⌘"
 msgstr "作为 ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "和 Control 互换"
 
 #: src/Views/Layout.vala:108
@@ -657,6 +654,9 @@ msgstr "如果您重新指定 %s 为快捷键，%s 将被替换。"
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "重新分配"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "大写锁定键已禁用"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "程序启动器"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-02-06 02:46+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.elementary.io/projects/switchboard/"
@@ -134,7 +134,7 @@ msgstr "レイアウトを切替:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "無効"
 
@@ -206,10 +206,6 @@ msgstr "ショートカットオーバーレイ"
 msgid "Caps Lock behavior:"
 msgstr "Caps Lock の動作:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock を無効にする"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "バックスペースとして動作"
@@ -231,7 +227,8 @@ msgid "as ⌘"
 msgstr "⌘ として動作"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Ctrl と入れ替える"
 
 #: src/Views/Layout.vala:108
@@ -656,6 +653,9 @@ msgstr "%s にショートカットを再割り当てすると、%s は無効に
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "再割り当て"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock を無効にする"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "アプリケーションランチャー"
