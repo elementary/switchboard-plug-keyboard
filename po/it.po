@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-01-27 00:01+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
@@ -135,7 +135,7 @@ msgstr "Cambia disposizione:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Disabilitato"
 
@@ -207,10 +207,6 @@ msgstr "Scorciatoie da tastiera"
 msgid "Caps Lock behavior:"
 msgstr "Comportamento del tasto Bloc Maiusc:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Bloc Maiusc disabilitato"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "come Canc"
@@ -232,7 +228,8 @@ msgid "as ⌘"
 msgstr "come ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Cambia con Ctrl"
 
 #: src/Views/Layout.vala:108
@@ -658,6 +655,9 @@ msgstr "Se assegni nuovamente la scorciatoia a %s, %s sarà disabilitato."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Riassegna"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Bloc Maiusc disabilitato"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Menu applicazioni"

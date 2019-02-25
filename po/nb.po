@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-02-22 00:05+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://weblate.elementary.io/projects/"
@@ -138,7 +138,7 @@ msgstr "Bytt oppsett:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Slått av"
 
@@ -211,10 +211,6 @@ msgstr "Snarveioverlegg"
 msgid "Caps Lock behavior:"
 msgstr "Caps Lock-oppførsel:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock avskrudd"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "som rettetast"
@@ -236,7 +232,8 @@ msgid "as ⌘"
 msgstr "som"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Bytt med Ctrl"
 
 #: src/Views/Layout.vala:108
@@ -668,6 +665,9 @@ msgstr "Hvis du tildeler en snarvei til %s, vil %s bli avskrudd."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Tildel på nytt"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock avskrudd"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Applikasjonsoppstarter"

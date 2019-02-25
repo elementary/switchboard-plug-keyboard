@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2018-07-09 20:56+0000\n"
 "Last-Translator: Jernej Virag <jernej@virag.si>\n"
 "Language-Team: Slovenian <https://weblate.elementary.io/projects/switchboard/"
@@ -137,7 +137,7 @@ msgstr "Preklopi razpored:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Onemogočeno"
 
@@ -209,10 +209,6 @@ msgstr "Pregled bližnjic"
 msgid "Caps Lock behavior:"
 msgstr "Obnašanje Caps Lock:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock onemogočen"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "kot Backspace"
@@ -234,7 +230,8 @@ msgid "as ⌘"
 msgstr "kot ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "zamenjaj z Ctrl"
 
 #: src/Views/Layout.vala:108
@@ -660,6 +657,9 @@ msgstr "Če prestavite bližnjico na %s bo %s onemogočen."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Ponovno dodeli"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock onemogočen"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Zaganjalnik programov"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -135,7 +135,7 @@ msgstr "Cambiar desenul:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Dezactivat"
 
@@ -207,10 +207,6 @@ msgstr "Suprapunere cu acces direct"
 msgid "Caps Lock behavior:"
 msgstr "Comportament Caps Lock :"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock dezactivat"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "Ca returnare"
@@ -232,7 +228,8 @@ msgid "as ⌘"
 msgstr "ca ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Schimbați cu Control"
 
 #: src/Views/Layout.vala:108
@@ -658,3 +655,6 @@ msgstr "Dacă reatribuiți comanda rapidă la %s 1, %s 2 vor fi dezactivate."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Realocaţi"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock dezactivat"

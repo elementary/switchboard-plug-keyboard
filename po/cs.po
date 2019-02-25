@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2018-10-18 07:06+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
 "Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
@@ -134,7 +134,7 @@ msgstr "Přepnout rozložení:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Vypnuto"
 
@@ -206,10 +206,6 @@ msgstr "Přehled zkratek"
 msgid "Caps Lock behavior:"
 msgstr "Chování klávesy Caps Lock:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Caps Lock zakázán"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "jako Backspace"
@@ -231,7 +227,8 @@ msgid "as ⌘"
 msgstr "jako ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Vyměnit s klávesou Ctrl"
 
 #: src/Views/Layout.vala:108
@@ -657,6 +654,9 @@ msgstr "Pokud přeřadíte klávesovou zkratku k %s, %s bude vypnuto."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Přeřadit"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Caps Lock zakázán"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Spoušteč aplikací"

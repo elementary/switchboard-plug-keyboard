@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-02-25 15:56-0800\n"
 "PO-Revision-Date: 2019-02-07 00:06+0000\n"
 "Last-Translator: haggen svastian <h2gn@openmailbox.org>\n"
 "Language-Team: Spanish <https://weblate.elementary.io/projects/switchboard/"
@@ -136,7 +136,7 @@ msgstr "Cambiar la disposición del teclado:"
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Shortcuts/Shortcut.vala:41
+#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
 msgstr "Desactivado"
 
@@ -208,10 +208,6 @@ msgstr "Atajo"
 msgid "Caps Lock behavior:"
 msgstr "Comportamiento de Bloq Mayús:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "Bloq Mayús  deshabilitado"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "como Retroceso"
@@ -233,7 +229,8 @@ msgid "as ⌘"
 msgstr "como ⌘"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "Cambiar con Ctrl"
 
 #: src/Views/Layout.vala:108
@@ -659,6 +656,9 @@ msgstr "Si reasignar el acceso directo a %s, %s se desactivará."
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "Reasignar"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "Bloq Mayús  deshabilitado"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Lanzador de aplicaciones"
