@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-05-12 00:11+0000\n"
-"Last-Translator: Anand Kumar <anand@anandkumar.net>\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2018-12-24 00:06+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Hindi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hi/>\n"
 "Language: hi\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.18\n"
+"X-Generator: Weblate 3.0.1\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -65,7 +65,7 @@ msgstr ""
 
 #: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
 msgid "Remove"
-msgstr ""
+msgstr "हटाएँ"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
@@ -81,7 +81,7 @@ msgstr ""
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
-msgstr ""
+msgstr "जोड़ें…"
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
@@ -260,7 +260,7 @@ msgid "Nicola F Backspace:"
 msgstr ""
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr ""
 
 #: src/Views/Layout.vala:305

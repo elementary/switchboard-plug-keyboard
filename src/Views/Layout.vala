@@ -98,13 +98,13 @@ namespace Pantheon.Keyboard.LayoutPage {
             // Caps Lock key functionality
             modifier = new Xkb_modifier ();
             modifier.append_xkb_option ("", _("Default"));
-            modifier.append_xkb_option ("caps:none", _("Caps Lock disabled"));
+            modifier.append_xkb_option ("caps:none", _("Disabled"));
             modifier.append_xkb_option ("caps:backspace", _("as Backspace"));
             modifier.append_xkb_option ("ctrl:nocaps", _("as Ctrl"));
             modifier.append_xkb_option ("caps:escape", _("as Escape"));
             modifier.append_xkb_option ("caps:numlock", _("as Num Lock"));
             modifier.append_xkb_option ("caps:super", _("as ⌘"));
-            modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Control"));
+            modifier.append_xkb_option ("ctrl:swapcaps", _("Swap with Ctrl"));
             modifier.append_xkb_option ("caps:swapescape", _("Swap with Escape"));
 
             modifier.set_default_command ("");
@@ -160,7 +160,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                     var appinfo = GLib.AppInfo.create_from_commandline ("ibus-setup", null, GLib.AppInfoCreateFlags.NONE);
                     appinfo.launch (null, null);
                 } catch (Error e) {
-                    critical ("Could not open ibus setup: %s", e.message);   
+                    critical ("Could not open ibus setup: %s", e.message);
                 }
             });
 
@@ -285,7 +285,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace:"), size_group[0]);
             var nicola_backspace_switch = new XkbOptionSwitch (settings, "japan:nicola_f_bs");
 
-            var zenkaku_label = new SettingsLabel (_("Zenkaku Hankaku as Escape:"), size_group[0]);
+            var zenkaku_label = new SettingsLabel (_("Hankaku Zenkaku as Escape:"), size_group[0]);
             var zenkaku_switch = new XkbOptionSwitch (settings, "japan:hztg_escape");
 
             string [] valid_input_sources = {"jp"};

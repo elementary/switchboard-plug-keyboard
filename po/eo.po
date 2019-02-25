@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
 "PO-Revision-Date: 2018-10-25 15:09+0000\n"
 "Last-Translator: Jesse ALTER <jesse@jessealter.com>\n"
 "Language-Team: Esperanto <https://weblate.elementary.io/projects/switchboard/"
@@ -260,7 +260,7 @@ msgid "Nicola F Backspace:"
 msgstr ""
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr ""
 
 #: src/Views/Layout.vala:305

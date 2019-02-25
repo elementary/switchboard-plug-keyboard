@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-18 00:01+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-02-16 18:08+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
 "Language: fr\n"
@@ -156,7 +156,7 @@ msgstr "Les deux Maj. ensemble"
 
 #: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
-msgstr "Verr. maj."
+msgstr "Verr. Maj."
 
 #: src/Views/Layout.vala:57
 msgid "Ctrl + Alt"
@@ -172,7 +172,7 @@ msgstr "Shift + Maj"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr "Touche « compose » :"
+msgstr "Touche « Compose » :"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
@@ -220,11 +220,11 @@ msgstr "comme Ctrl"
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr "comme Echape"
+msgstr "comme Echap"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
-msgstr "comme Verr Num"
+msgstr "comme Verr. Num"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
@@ -267,8 +267,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F retour arrière :"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
-msgstr "Zenkaku Hankaku en tant qu'Espace :"
+msgid "Hankaku Zenkaku as Escape:"
+msgstr "Hankaku Zenkaku en tant qu'Espace :"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -293,7 +293,7 @@ msgstr "millisecondes"
 
 #: src/Views/Behavior.vala:84
 msgid "Cursor Blinking:"
-msgstr "Clignottement du curseur :"
+msgstr "Clignotement du curseur :"
 
 #: src/Views/Behavior.vala:89
 msgid "Speed:"
@@ -373,11 +373,11 @@ msgstr "Faire défiler les fenêtres en sens inverse"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Left"
-msgstr "Colonne de gauche"
+msgstr "Tuiler à gauche"
 
 #: src/Shortcuts/List.vala:56
 msgid "Tile Right"
-msgstr "Colonne de droite"
+msgstr "Tuiler à droite"
 
 #: src/Shortcuts/List.vala:57
 msgid "Window Overview"
@@ -389,7 +389,7 @@ msgstr "Afficher toutes les fenêtres"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr "Mode image dans l'image"
+msgstr "Mode Picture-In-Picture"
 
 #: src/Shortcuts/List.vala:63
 msgid "Workspaces"
@@ -541,7 +541,7 @@ msgstr "E-Mail"
 
 #: src/Shortcuts/List.vala:106
 msgid "Home Folder"
-msgstr "Dossier utilisateur"
+msgstr "Dossier personnel"
 
 #: src/Shortcuts/List.vala:107
 msgid "Music"
@@ -597,7 +597,7 @@ msgstr "Éjecter"
 
 #: src/Shortcuts/List.vala:126
 msgid "Universal Access"
-msgstr "Accès universel"
+msgstr "Accessibilité"
 
 #: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
@@ -613,7 +613,7 @@ msgstr "Zoomer"
 
 #: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
-msgstr "Dézoomer"
+msgstr "Dé-zoomer"
 
 #: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
@@ -651,7 +651,7 @@ msgstr "%s est déjà utilisé pour %s"
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Si le raccourcis est réassigné en %s, %s sera désactivé."
+msgstr "Si le raccourci est réassigné en %s, %s sera désactivé."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"

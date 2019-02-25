@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-11 16:05+0000\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-01-27 00:01+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/it/>\n"
@@ -125,7 +125,7 @@ msgstr "Annulla"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr "Predefinito"
+msgstr "Predefinita"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
@@ -268,7 +268,8 @@ msgid "Nicola F Backspace:"
 msgstr "Barra spaziatrice Nicola F:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku come Esc:"
 
 #: src/Views/Layout.vala:305

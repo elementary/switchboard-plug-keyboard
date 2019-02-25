@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-10-16 12:44+0000\n"
-"Last-Translator: Nuno Alexandre MS Ribeiro <nuno.anarresti@gmail.com>\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-02-06 16:02+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://weblate.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/pt/>\n"
 "Language: pt\n"
@@ -26,12 +26,12 @@ msgstr "Teclado"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Configurar o comportamento do teclado, esquemas e teclas de atalho"
+msgstr "Configurar o comportamento do teclado, disposições e teclas de atalho"
 
 #: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
 #: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
-msgstr "Esquema"
+msgstr "Disposição"
 
 #: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
@@ -44,7 +44,7 @@ msgstr "Comportamento"
 
 #: src/Keyboard.vala:68
 msgid "Switch layout"
-msgstr "Alternar esquema"
+msgstr "Alternar disposição"
 
 #: src/Keyboard.vala:69
 msgid "Compose Key"
@@ -108,11 +108,11 @@ msgstr "Idioma de entrada"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr "Mostrar esquema do teclado"
+msgstr "Mostrar disposição do teclado"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
-msgstr "Adicionar Esquema"
+msgstr "Adicionar Disposição"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
@@ -129,7 +129,7 @@ msgstr "Predefinido"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
-msgstr "Alternar esquema:"
+msgstr "Alternar disposição:"
 
 #. Layout switching keybinding
 #. Compose key position menu
@@ -188,7 +188,7 @@ msgstr "Ctrl Direito"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 msgid "Right ⌘"
-msgstr "Direita ⌘"
+msgstr "⌘ Direito"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
@@ -200,7 +200,7 @@ msgstr "Menu de Aplicações"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
-msgstr "Overlay de atalhos"
+msgstr "Sobreposição de atalhos"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
@@ -232,7 +232,7 @@ msgstr "como ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr "Trocar com Ctrl"
+msgstr "Trocar com Control"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
@@ -240,7 +240,7 @@ msgstr "Trocar com Escape"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
-msgstr "Escreva para testar o esquema"
+msgstr "Escreva para testar a disposição"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
@@ -267,7 +267,7 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku como Escape:"
 
 #: src/Views/Layout.vala:305
@@ -353,7 +353,7 @@ msgstr "Minimizar"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
-msgstr "Alternar ecrã completo"
+msgstr "Alternar ecrã inteiro"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
@@ -509,11 +509,11 @@ msgstr "Capturas de ecrã"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
-msgstr "Capturar tela inteira"
+msgstr "Capturar o ecrã inteiro"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
-msgstr "Gravar captura de tela inteira na área de transferência"
+msgstr "Gravar captura de ecrã inteira na área de transferência"
 
 #: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
@@ -537,11 +537,11 @@ msgstr "Aplicações"
 
 #: src/Shortcuts/List.vala:105
 msgid "Email"
-msgstr "E-mail"
+msgstr "Email"
 
 #: src/Shortcuts/List.vala:106
 msgid "Home Folder"
-msgstr "Pasta pessoal"
+msgstr "Pasta Pessoal"
 
 #: src/Shortcuts/List.vala:107
 msgid "Music"
@@ -637,7 +637,7 @@ msgstr "Bloquear"
 
 #: src/Shortcuts/List.vala:140
 msgid "Log Out"
-msgstr "Encerrar Sessão"
+msgstr "Terminar Sessão"
 
 #: src/Shortcuts/List.vala:144
 msgid "Custom"
@@ -651,7 +651,7 @@ msgstr "%s já está em uso para %s"
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Se atribuir o atalho a %s, %s será desativado."
+msgstr "Se reatribuir o atalho a %s, %s será desativado."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-18 00:01+0000\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2019-02-06 13:39+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ko/>\n"
@@ -267,7 +267,7 @@ msgid "Nicola F Backspace:"
 msgstr "NICOLA-F 식 Backspace:"
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr "전각과 반각 키를 Esc로 사용:"
 
 #: src/Views/Layout.vala:305

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-11-13 13:20-0800\n"
-"PO-Revision-Date: 2018-12-18 00:01+0000\n"
+"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"PO-Revision-Date: 2018-12-24 00:07+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -117,7 +117,7 @@ msgstr "रद्द करा"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr ""
+msgstr "डिफॉल्ट"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
@@ -189,7 +189,7 @@ msgstr ""
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
-msgstr ""
+msgstr "अप्लिकेशन मेनू"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
@@ -260,7 +260,7 @@ msgid "Nicola F Backspace:"
 msgstr ""
 
 #: src/Views/Layout.vala:288
-msgid "Zenkaku Hankaku as Escape:"
+msgid "Hankaku Zenkaku as Escape:"
 msgstr ""
 
 #: src/Views/Layout.vala:305
