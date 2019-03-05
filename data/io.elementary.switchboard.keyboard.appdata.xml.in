@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard-plug-keyboard</id>
+  <id>io.elementary.switchboard.keyboard</id>
   <extends>io.elementary.switchboard</extends>
   <name>Keyboard</name>
   <summary>Configure keyboard behavior, layouts, and shortcuts</summary>
