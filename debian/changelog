@@ -1,3 +1,9 @@
+switchboard-plug-keyboard (2.3.5) bionic; urgency=medium
+
+  * New upstream release.
+
+ -- Cody Garver <codygarver@gmail.com>  Wed, 06 Mar 2019 03:03:16 -0600
+
 switchboard-plug-keyboard (2.3.4) bionic; urgency=medium
 
   * New upstream release.
