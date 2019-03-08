@@ -2,66 +2,66 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2018-12-24 00:07+0000\n"
+"PO-Revision-Date: 2019-03-09 13:31+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Marathi <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
 "Language: mr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.4\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
-msgstr ""
+msgstr "कीबोर्ड"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "कीबोर्ड वर्तन, मांडणी आणि शॉर्टकट कॉन्फिगर करा"
 
 #: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
 #: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
-msgstr ""
+msgstr "मांडणी"
 
 #: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
-msgstr ""
+msgstr "शॉर्टकट"
 
 #: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
 #: src/Keyboard.vala:75
 msgid "Behavior"
-msgstr ""
+msgstr "वर्तन"
 
 #: src/Keyboard.vala:68
 msgid "Switch layout"
-msgstr ""
+msgstr "मांडणी बदला"
 
 #: src/Keyboard.vala:69
 msgid "Compose Key"
-msgstr ""
+msgstr "की तयार करा"
 
 #: src/Keyboard.vala:70
 msgid "⌘ key behavior"
-msgstr ""
+msgstr "⌘ की वर्तन"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "कॅप्स लॉक वर्तन"
 
 #: src/Keyboard.vala:74
 msgid "Repeat Keys"
-msgstr ""
+msgstr "रिपीट कीज"
 
 #: src/Keyboard.vala:75
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "कर्सर ब्लिंकिंग"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"
-msgstr ""
+msgstr "वाढवा"
 
 #: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
 msgid "Remove"
@@ -69,15 +69,15 @@ msgstr "काढा"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
-msgstr ""
+msgstr "आज्ञा प्रविष्ट करा"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:73
 msgid "Command"
-msgstr ""
+msgstr "आज्ञा"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
-msgstr ""
+msgstr "शॉर्टकट"
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
@@ -85,27 +85,27 @@ msgstr "जोडा ..."
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
-msgstr ""
+msgstr "वर सरकवा"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move down"
-msgstr ""
+msgstr "खाली सरकवा"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
 msgid "Search input language"
-msgstr ""
+msgstr "इनपुट भाषा शोधा"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
-msgstr ""
+msgstr "इनपुट भाषा"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "कीबोर्ड मांडणी दाखवा"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
-msgstr ""
+msgstr "मांडणी वाढवा"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
@@ -122,7 +122,7 @@ msgstr "डिफॉल्ट"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
-msgstr ""
+msgstr "मांडणी बदला:"
 
 #. Layout switching keybinding
 #. Compose key position menu
@@ -133,59 +133,59 @@ msgstr "अक्षम"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: src/Views/Layout.vala:53
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + Space"
 
 #: src/Views/Layout.vala:55
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "दोन्ही शिफ्ट की एकत्र"
 
 #: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
-msgstr ""
+msgstr "कॅप्स लॉक"
 
 #: src/Views/Layout.vala:57
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: src/Views/Layout.vala:58
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: src/Views/Layout.vala:59
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr ""
+msgstr "की तयार करा:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "मेनू"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
-msgstr ""
+msgstr "उजवा Alt"
 
 #: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
 msgid "Right Ctrl"
-msgstr ""
+msgstr "उजवा Ctrl"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 msgid "Right ⌘"
-msgstr ""
+msgstr "उजवा ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
-msgstr ""
+msgstr "⌘ की वर्तन:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
@@ -193,340 +193,340 @@ msgstr "अप्लिकेशन मेनू"
 
 #: src/Views/Layout.vala:91
 msgid "Shortcut Overlay"
-msgstr ""
+msgstr "शॉर्टकट आच्छादन"
 
 #: src/Views/Layout.vala:96
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "कॅप्स लॉक वर्तन:"
 
 #: src/Views/Layout.vala:101
 msgid "Caps Lock disabled"
-msgstr ""
+msgstr "कॅप्स लॉक अक्षम"
 
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
-msgstr ""
+msgstr "बॅकस्पेस म्हणून"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
-msgstr ""
+msgstr "Ctrl म्हणून"
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr ""
+msgstr "Escape म्हणून"
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
-msgstr ""
+msgstr "नम लॉक म्हणून"
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
-msgstr ""
+msgstr "⌘ म्हणून"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Control"
-msgstr ""
+msgstr "कंट्रोल सह बदला"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr ""
+msgstr "Escape सह बदला"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
-msgstr ""
+msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "इनपुट पद्धत सेटिंग्ज…"
 
 #: src/Views/Layout.vala:224 src/Views/Layout.vala:241
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "तृतीय स्तर निवडण्याची की:"
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
-msgstr ""
+msgstr "डावा Alt"
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "पाचवी पातळी निवडण्याची की:"
 
 #: src/Views/Layout.vala:277
 msgid "Kana Lock:"
-msgstr ""
+msgstr "काना लॉक:"
 
 #: src/Views/Layout.vala:285
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "निकोला एफ बॅकस्पेस:"
 
 #: src/Views/Layout.vala:288
 msgid "Hankaku Zenkaku as Escape:"
-msgstr ""
+msgstr "हँककु झेंकाकू Escape म्हणून:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "हांगुल/हांजा की उजव्या Alt/Ctrl वर:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "रिपीट कीज:"
 
 #: src/Views/Behavior.vala:49
 msgid "Delay:"
-msgstr ""
+msgstr "विलंब:"
 
 #: src/Views/Behavior.vala:52
 msgid "Interval:"
-msgstr ""
+msgstr "अंतराल:"
 
 #: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
 #: src/Views/Behavior.vala:95
 msgid "milliseconds"
-msgstr ""
+msgstr "मिलीसेकंद"
 
 #: src/Views/Behavior.vala:84
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "कर्सर ब्लिंकिंग:"
 
 #: src/Views/Behavior.vala:89
 msgid "Speed:"
-msgstr ""
+msgstr "वेग:"
 
 #: src/Views/Behavior.vala:92
 msgid "Duration:"
-msgstr ""
+msgstr "कालावधी:"
 
 #: src/Views/Behavior.vala:98
 msgid "seconds"
-msgstr ""
+msgstr "सेकंद"
 
 #: src/Views/Behavior.vala:127
 msgid "Type to test your settings"
-msgstr ""
+msgstr "आपल्या सेटिंग्ज तपासण्यासाठी टाइप करा"
 
 #: src/Shortcuts/Shortcut.vala:46
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
-msgstr ""
+msgstr "विंडोज"
 
 #: src/Shortcuts/List.vala:44
 msgid "Close"
-msgstr ""
+msgstr "बंद करा"
 
 #: src/Shortcuts/List.vala:45
 msgid "Lower"
-msgstr ""
+msgstr "खाली"
 
 #: src/Shortcuts/List.vala:46
 msgid "Maximize"
-msgstr ""
+msgstr "जास्तीत जास्त मोठा करा"
 
 #: src/Shortcuts/List.vala:47
 msgid "Unmaximize"
-msgstr ""
+msgstr "जास्तीत जास्त मोठा ठेऊ नका"
 
 #: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "मॅक्सिमाइज्ड टॉगल करा"
 
 #: src/Shortcuts/List.vala:49
 msgid "Minimize"
-msgstr ""
+msgstr "कमी करा"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "पूर्णस्क्रीन टॉगल करा"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "सर्व कार्यक्षेत्रांवर टॉगल करा"
 
 #: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "नेहमी वरती टॉगल करा"
 
 #: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
-msgstr ""
+msgstr "विंडोज सायकल करा"
 
 #: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
-msgstr ""
+msgstr "विंडोज मागे सायकल करा"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Left"
-msgstr ""
+msgstr "डावी टाइल"
 
 #: src/Shortcuts/List.vala:56
 msgid "Tile Right"
-msgstr ""
+msgstr "उजवी टाइल"
 
 #: src/Shortcuts/List.vala:57
 msgid "Window Overview"
-msgstr ""
+msgstr "विंडो विहंगावलोकन"
 
 #: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
-msgstr ""
+msgstr "सर्व विंडोज दाखवा"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "पिक्चर इन पिक्चर मोड"
 
 #: src/Shortcuts/List.vala:63
 msgid "Workspaces"
-msgstr ""
+msgstr "कार्यक्षेत्रे"
 
 #: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
-msgstr ""
+msgstr "मल्टीटास्किंग दृश्य"
 
 #: src/Shortcuts/List.vala:65
 msgid "Switch left"
-msgstr ""
+msgstr "डावीकडे बदला"
 
 #: src/Shortcuts/List.vala:66
 msgid "Switch right"
-msgstr ""
+msgstr "उजवीकडे बदला"
 
 #: src/Shortcuts/List.vala:67
 msgid "Switch to first"
-msgstr ""
+msgstr "पहिल्यावर बदला"
 
 #: src/Shortcuts/List.vala:68
 msgid "Switch to new"
-msgstr ""
+msgstr "नव्यासह बदला"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "कार्यक्षेत्र 1 वर बदला"
 
 #: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "कार्यक्षेत्र 2 वर बदला"
 
 #: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "कार्यक्षेत्र 3 वर बदला"
 
 #: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "कार्यक्षेत्र 4 वर बदला"
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "कार्यक्षेत्र 5 वर बदला"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "कार्यक्षेत्र 6 वर बदला"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "कार्यक्षेत्र 7 वर बदला"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "कार्यक्षेत्र 8 वर बदला"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "कार्यक्षेत्र 9 वर बदला"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
-msgstr ""
+msgstr "कार्यक्षेत्रे सायकल करा"
 
 #: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "कार्यक्षेत्रे मागे सायकल करा"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "कार्यक्षेत्र 1 वर हलवा"
 
 #: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "कार्यक्षेत्र 2 वर हलवा"
 
 #: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "कार्यक्षेत्र 3 वर हलवा"
 
 #: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "कार्यक्षेत्र 4 वर हलवा"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "कार्यक्षेत्र 5 वर हलवा"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "कार्यक्षेत्र 6 वर हलवा"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "कार्यक्षेत्र 7 वर हलवा"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "कार्यक्षेत्र 8 वर हलवा"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "कार्यक्षेत्र 9 वर हलवा"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
-msgstr ""
+msgstr "डाव्या कार्यक्षेत्रावर हलवा"
 
 #: src/Shortcuts/List.vala:90
 msgid "Move to right workspace"
-msgstr ""
+msgstr "उजव्या कार्यक्षेत्रावर हलवा"
 
 #: src/Shortcuts/List.vala:94
 msgid "Screenshots"
-msgstr ""
+msgstr "स्क्रीनशॉट"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "संपूर्ण स्क्रीन मिळवा"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
-msgstr ""
+msgstr "संपूर्ण स्क्रीन क्लिपबोर्डवर कॉपी करा"
 
 #: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
-msgstr ""
+msgstr "वर्तमान विंडो मिळवा"
 
 #: src/Shortcuts/List.vala:98
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "वर्तमान विंडो क्लिपबोर्डवर कॉपी करा"
 
 #: src/Shortcuts/List.vala:99
 msgid "Select an area to grab"
-msgstr ""
+msgstr "मिळविण्यासाठी विंडोचा भाग निवडा"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy an area to clipboard"
-msgstr ""
+msgstr "विंडोचा भाग क्लिपबोर्डवर कॉपी करा"
 
 #: src/Shortcuts/List.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "ॲप्लिकेशन्स्"
 
 #: src/Shortcuts/List.vala:105
 msgid "Email"
@@ -534,59 +534,59 @@ msgstr "ईमेल"
 
 #: src/Shortcuts/List.vala:106
 msgid "Home Folder"
-msgstr ""
+msgstr "होम फोल्डर"
 
 #: src/Shortcuts/List.vala:107
 msgid "Music"
-msgstr ""
+msgstr "संगीत"
 
 #: src/Shortcuts/List.vala:108
 msgid "Terminal"
-msgstr ""
+msgstr "टर्मिनल"
 
 #: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
-msgstr ""
+msgstr "इंटरनेट ब्राउझर"
 
 #: src/Shortcuts/List.vala:113
 msgid "Media"
-msgstr ""
+msgstr "मीडिया"
 
 #: src/Shortcuts/List.vala:114
 msgid "Volume Up"
-msgstr ""
+msgstr "आवाज वाढवा"
 
 #: src/Shortcuts/List.vala:115
 msgid "Volume Down"
-msgstr ""
+msgstr "आवाज कमी करा"
 
 #: src/Shortcuts/List.vala:116
 msgid "Mute"
-msgstr ""
+msgstr "आवाज बंद करा"
 
 #: src/Shortcuts/List.vala:117
 msgid "Play"
-msgstr ""
+msgstr "प्ले"
 
 #: src/Shortcuts/List.vala:118
 msgid "Pause"
-msgstr ""
+msgstr "थांबवा"
 
 #: src/Shortcuts/List.vala:119
 msgid "Stop"
-msgstr ""
+msgstr "बंद करा"
 
 #: src/Shortcuts/List.vala:120
 msgid "Previous Track"
-msgstr ""
+msgstr "मागील ट्रॅक"
 
 #: src/Shortcuts/List.vala:121
 msgid "Next Track"
-msgstr ""
+msgstr "पुढील ट्रॅक"
 
 #: src/Shortcuts/List.vala:122
 msgid "Eject"
-msgstr ""
+msgstr "बाहेर काढा"
 
 #: src/Shortcuts/List.vala:126
 msgid "Universal Access"
@@ -594,58 +594,58 @@ msgstr "सार्वत्रिक प्रवेश"
 
 #: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "अक्षराचा आकार कमी करा"
 
 #: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
-msgstr ""
+msgstr "अक्षराचा आकार वाढवा"
 
 #: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "मॅग्निफायर झूम इन"
 
 #: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "मॅग्निफायर झूम आउट"
 
 #: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "ऑन स्क्रीन कीबोर्ड टॉगल करा"
 
 #: src/Shortcuts/List.vala:132
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "स्क्रीन रीडर टॉगल करा"
 
 #: src/Shortcuts/List.vala:133
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "उच्च तीव्रता टॉगल करा"
 
 #: src/Shortcuts/List.vala:137
 msgid "System"
-msgstr ""
+msgstr "सिस्टिम"
 
 #: src/Shortcuts/List.vala:139
 msgid "Lock"
-msgstr ""
+msgstr "लॉक"
 
 #: src/Shortcuts/List.vala:140
 msgid "Log Out"
-msgstr ""
+msgstr "लॉग आऊट"
 
 #: src/Shortcuts/List.vala:144
 msgid "Custom"
-msgstr ""
+msgstr "सानुकूल"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr ""
+msgstr "%s आधीच %s साठी वापरली गेली आहे"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr ""
+msgstr "आपण शॉर्टकट पुन्हा %s वर पुनर्निर्देशित केल्यास, %s अक्षम केले जाईल."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
-msgstr ""
+msgstr "पुनर्निर्देशित करा"
