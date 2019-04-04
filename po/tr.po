@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2018-11-10 22:05+0000\n"
-"Last-Translator: Sinan Decron <intenfinitia@gmail.com>\n"
-"Language-Team: Turkish <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2019-04-06 22:03+0000\n"
+"Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
+"Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:44+0000\n"
 
 #: src/Keyboard.vala:13
@@ -346,7 +346,7 @@ msgstr "Tam Ekrandan Çık"
 
 #: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
-msgstr "Ekranı Kaplamaya Geç"
+msgstr "Ekranı Kaplamayı Değiştir"
 
 #: src/Shortcuts/List.vala:49
 msgid "Minimize"
@@ -366,11 +366,11 @@ msgstr "Her zaman üstte'yi aç/kapat"
 
 #: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
-msgstr "Pencereler arası gez"
+msgstr "Pencereleri Değiştir"
 
 #: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
-msgstr "Pencereleri geriye doğru gez"
+msgstr "Pencereleri geriye doğru değiştir"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Left"
@@ -418,83 +418,83 @@ msgstr "Yeniye geç"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
-msgstr "Çalışma Alanı 1'e geç"
+msgstr "1. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
-msgstr "Çalışma Alanı 2'ye geç"
+msgstr "2. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
-msgstr "Çalışma Alanı 3'e geç"
+msgstr "3. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
-msgstr "Çalışma Alanı 4'e geç"
+msgstr "4. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
-msgstr "Çalışma Alanı 5'e geç"
+msgstr "5. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
-msgstr "Çalışma Alanı 6'ya geç"
+msgstr "6. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
-msgstr "Çalışma Alanı 7'ye geç"
+msgstr "7. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
-msgstr "Çalışma Alanı 8'e geç"
+msgstr "8. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
-msgstr "Çalışma Alanı 9'a geç"
+msgstr "9. çalışma alanına geç"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
-msgstr "Çalışma Alanlarını gez"
+msgstr "Çalışma alanlarını değiştir"
 
 #: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
-msgstr "Çalışma alanlarını geriye doğru gez"
+msgstr "Çalışma alanlarını geriye doğru değiştir"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
-msgstr "Çalışma Alanı 1'e taşı"
+msgstr "1. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
-msgstr "Çalışma Alanı 2'ye taşı"
+msgstr "2. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
-msgstr "Çalışma Alanı 3'e taşı"
+msgstr "3. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
-msgstr "Çalışma Alanı 4'e taşı"
+msgstr "4. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
-msgstr "Çalışma Alanı 5'e taşı"
+msgstr "5. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
-msgstr "Çalışma Alanı 6'ya taşı"
+msgstr "6. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
-msgstr "Çalışma Alanı 7'ye taşı"
+msgstr "7. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
-msgstr "Çalışma Alanı 8'e taşı"
+msgstr "8. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
-msgstr "Çalışma Alanı 9'a taşı"
+msgstr "9. çalışma alanına taşı"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
@@ -550,7 +550,7 @@ msgstr "Müzik"
 
 #: src/Shortcuts/List.vala:108
 msgid "Terminal"
-msgstr "Uçbirim"
+msgstr "Terminal"
 
 #: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
