@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2019-01-14 13:27+0000\n"
+"PO-Revision-Date: 2019-04-06 22:03+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
-"Language-Team: Chinese (Simplified) <https://weblate.elementary.io/projects/"
+"Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
 
 #: src/Keyboard.vala:13
@@ -267,9 +267,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F 样式 Backspace："
 
 #: src/Views/Layout.vala:288
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku 代替 Escape："
+msgstr "Hankaku Zenkaku 代替 Esc 键："
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -414,7 +413,7 @@ msgstr "切换至第一工作区"
 
 #: src/Shortcuts/List.vala:68
 msgid "Switch to new"
-msgstr "切换至新的作区"
+msgstr "切换至新的工作区"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
@@ -458,7 +457,7 @@ msgstr "循环工作区"
 
 #: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
-msgstr "工作区反向循环"
+msgstr "反向循环工作区"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
