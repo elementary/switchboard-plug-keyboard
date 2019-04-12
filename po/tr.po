@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2019-04-11 22:53+0000\n"
+"PO-Revision-Date: 2019-04-12 18:25+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -136,7 +136,7 @@ msgstr "Düzeni değiştir:"
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr "Devre Dışı"
+msgstr "Devre dışı bırakıldı"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
