@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2019-03-09 13:31+0000\n"
+"PO-Revision-Date: 2019-04-16 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.4\n"
+"X-Generator: Weblate 3.5.1\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -81,7 +81,7 @@ msgstr "शॉर्टकट"
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
-msgstr "जोडा ..."
+msgstr "जोडा…"
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
