@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2019-04-12 18:25+0000\n"
+"PO-Revision-Date: 2019-04-17 21:53+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -637,7 +637,7 @@ msgstr "Kilitle"
 
 #: src/Shortcuts/List.vala:140
 msgid "Log Out"
-msgstr "Çık"
+msgstr "Oturumu Kapat"
 
 #: src/Shortcuts/List.vala:144
 msgid "Custom"
