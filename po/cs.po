@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-02-05 12:47-0800\n"
-"PO-Revision-Date: 2018-10-18 07:06+0000\n"
+"PO-Revision-Date: 2019-04-22 18:59+0000\n"
 "Last-Translator: Jan Marek <janmarek28@gmail.com>\n"
-"Language-Team: Czech <https://weblate.elementary.io/projects/switchboard/"
+"Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.5.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Keyboard.vala:13
@@ -267,9 +267,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
 #: src/Views/Layout.vala:288
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku jako Esc:"
+msgstr "Hankaku Zenkaku jako Esc:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
