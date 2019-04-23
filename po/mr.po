@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-02-05 12:47-0800\n"
+"POT-Creation-Date: 2019-04-23 11:42-0700\n"
 "PO-Revision-Date: 2019-04-16 09:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -199,10 +199,6 @@ msgstr "शॉर्टकट आच्छादन"
 msgid "Caps Lock behavior:"
 msgstr "कॅप्स लॉक वर्तन:"
 
-#: src/Views/Layout.vala:101
-msgid "Caps Lock disabled"
-msgstr "कॅप्स लॉक अक्षम"
-
 #: src/Views/Layout.vala:102
 msgid "as Backspace"
 msgstr "बॅकस्पेस म्हणून"
@@ -224,7 +220,8 @@ msgid "as ⌘"
 msgstr "⌘ म्हणून"
 
 #: src/Views/Layout.vala:107
-msgid "Swap with Control"
+#, fuzzy
+msgid "Swap with Ctrl"
 msgstr "कंट्रोल सह बदला"
 
 #: src/Views/Layout.vala:108
@@ -649,3 +646,6 @@ msgstr "आपण शॉर्टकट पुन्हा %s वर पुन�
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "पुनर्निर्देशित करा"
+
+#~ msgid "Caps Lock disabled"
+#~ msgstr "कॅप्स लॉक अक्षम"
