@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:42-0700\n"
-"PO-Revision-Date: 2019-04-16 09:25+0000\n"
+"PO-Revision-Date: 2019-05-09 03:32+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.6.1\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -141,7 +141,7 @@ msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Space"
-msgstr "Alt + Space"
+msgstr "Alt +  Space"
 
 #: src/Views/Layout.vala:55
 msgid "Both Shift keys together"
@@ -220,7 +220,6 @@ msgid "as ⌘"
 msgstr "⌘ म्हणून"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
 msgid "Swap with Ctrl"
 msgstr "कंट्रोल सह बदला"
 
