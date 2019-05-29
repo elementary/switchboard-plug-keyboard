@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:42-0700\n"
-"PO-Revision-Date: 2019-05-08 06:32+0000\n"
+"PO-Revision-Date: 2019-05-30 13:03+0000\n"
 "Last-Translator: Corentin Noël <corentin@elementary.io>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -26,7 +26,9 @@ msgstr "Clavier"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Configurer les comportements, dispositions et raccourcis du clavier"
+msgstr ""
+"Configurer le comportement du clavier, sa disposition ainsi que les "
+"raccourcis"
 
 #: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
 #: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
