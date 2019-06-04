@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:42-0700\n"
-"PO-Revision-Date: 2019-02-16 18:08+0000\n"
-"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
-"Language-Team: French <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2019-05-30 13:03+0000\n"
+"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.6.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:07+0000\n"
 
 #: src/Keyboard.vala:13
@@ -26,7 +26,9 @@ msgstr "Clavier"
 
 #: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Configurer les comportements, dispositions et raccourcis du clavier"
+msgstr ""
+"Configurer le comportement du clavier, sa disposition ainsi que les "
+"raccourcis"
 
 #: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
 #: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
@@ -227,7 +229,6 @@ msgid "as ⌘"
 msgstr "en tant que ⌘"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
 msgid "Swap with Ctrl"
 msgstr "Inversé avec Ctrl"
 
