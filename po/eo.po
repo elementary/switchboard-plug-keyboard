@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:42-0700\n"
-"PO-Revision-Date: 2019-06-19 19:06+0000\n"
+"PO-Revision-Date: 2019-07-02 14:46+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/eo/>\n"
@@ -110,7 +110,7 @@ msgstr ""
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
 msgid "Cancel"
-msgstr ""
+msgstr "Rezigni"
 
 #. Caps Lock key functionality
 #: src/Widgets/Layout/AddLayoutPopover.vala:211
