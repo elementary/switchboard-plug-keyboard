@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:42-0700\n"
-"PO-Revision-Date: 2019-07-02 14:46+0000\n"
+"PO-Revision-Date: 2019-07-05 04:28+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/eo/>\n"
@@ -117,7 +117,7 @@ msgstr "Rezigni"
 #: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
 #: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
 msgid "Default"
-msgstr ""
+msgstr "Apriora"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
@@ -522,7 +522,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:104
 msgid "Applications"
-msgstr ""
+msgstr "Aplikaĵoj"
 
 #: src/Shortcuts/List.vala:105
 msgid "Email"
@@ -622,7 +622,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:139
 msgid "Lock"
-msgstr ""
+msgstr "Ŝlosi"
 
 #: src/Shortcuts/List.vala:140
 msgid "Log Out"
