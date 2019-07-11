@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-04-23 11:42-0700\n"
-"PO-Revision-Date: 2019-07-11 02:46+0000\n"
+"PO-Revision-Date: 2019-07-15 17:12+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/eo/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -24,44 +24,44 @@ msgstr "Agordi klavaran konduton, aranĝon, kaj fulmklavojn"
 #: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
 #: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
-msgstr ""
+msgstr "Aranĝo"
 
 #: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
-msgstr ""
+msgstr "Fulmklavoj"
 
 #: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
 #: src/Keyboard.vala:75
 msgid "Behavior"
-msgstr ""
+msgstr "Konduto"
 
 #: src/Keyboard.vala:68
 msgid "Switch layout"
-msgstr ""
+msgstr "Baskuli aranĝon"
 
 #: src/Keyboard.vala:69
 msgid "Compose Key"
-msgstr ""
+msgstr "Kunigo-klavo"
 
 #: src/Keyboard.vala:70
 msgid "⌘ key behavior"
-msgstr ""
+msgstr "⌘-klava konduto"
 
 #: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "Konduto de la majuskla baskulo"
 
 #: src/Keyboard.vala:74
 msgid "Repeat Keys"
-msgstr ""
+msgstr "Ripeti klavojn"
 
 #: src/Keyboard.vala:75
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "Montrila blinko"
 
 #: src/Widgets/Shortcuts/Display.vala:44
 msgid "Add"
-msgstr ""
+msgstr "Aldoni"
 
 #: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
 msgid "Remove"
@@ -77,35 +77,35 @@ msgstr "Komando"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
-msgstr ""
+msgstr "Fulmklavo"
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
-msgstr ""
+msgstr "Aldoni…"
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
-msgstr ""
+msgstr "Movi supren"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move down"
-msgstr ""
+msgstr "Movi malsupren"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
 msgid "Search input language"
-msgstr ""
+msgstr "Serĉi enigan lingvon"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:62
 msgid "Input Language"
-msgstr ""
+msgstr "Eniga lingvo"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Montri la klavaran aranĝon"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
-msgstr ""
+msgstr "Aldoni aranĝon"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
@@ -122,70 +122,70 @@ msgstr "Apriora"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:47
 msgid "Switch layout:"
-msgstr ""
+msgstr "Baskuli aranĝon:"
 
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "Malaktivigita"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt. + Maj. Bask."
 
 #: src/Views/Layout.vala:53
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt. + Maj."
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt. + Spaco"
 
 #: src/Views/Layout.vala:55
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "Ambaŭ Maj.-klavoj kune"
 
 #: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
 msgid "Caps Lock"
-msgstr ""
+msgstr "Maj. Bask."
 
 #: src/Views/Layout.vala:57
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Stir. + Alt."
 
 #: src/Views/Layout.vala:58
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Stir. + Maj."
 
 #: src/Views/Layout.vala:59
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Maj. + Maj. Bask."
 
 #: src/Views/Layout.vala:66
 msgid "Compose key:"
-msgstr ""
+msgstr "Kunigo-klavo:"
 
 #: src/Views/Layout.vala:72
 msgid "Menu"
-msgstr ""
+msgstr "Menuo"
 
 #: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
 msgid "Right Alt"
-msgstr ""
+msgstr "Dekstra Alt."
 
 #: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
 msgid "Right Ctrl"
-msgstr ""
+msgstr "Dekstra Stir."
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
 msgid "Right ⌘"
-msgstr ""
+msgstr "Dekstra ⌘"
 
 #: src/Views/Layout.vala:82
 msgid "⌘ key behavior:"
-msgstr ""
+msgstr "⌘-klava konduto:"
 
 #: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
@@ -205,15 +205,15 @@ msgstr "kiel retropaŝa klavo"
 
 #: src/Views/Layout.vala:103
 msgid "as Ctrl"
-msgstr "kiel Ctrl"
+msgstr "kiel Stir."
 
 #: src/Views/Layout.vala:104
 msgid "as Escape"
-msgstr "kiel eskapa klavo"
+msgstr "kiel Esk."
 
 #: src/Views/Layout.vala:105
 msgid "as Num Lock"
-msgstr "kiel nombra baskulo"
+msgstr "kiel Nom.Bask."
 
 #: src/Views/Layout.vala:106
 msgid "as ⌘"
@@ -221,11 +221,11 @@ msgstr "kiel ⌘"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Ctrl"
-msgstr "Interŝanĝi kun Ctrl"
+msgstr "Interŝanĝi kun Stir."
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
-msgstr "Interŝanĝi kun Esc"
+msgstr "Interŝanĝi kun Esk."
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
@@ -241,7 +241,7 @@ msgstr "Klavo por elekti la 3an nivelon:"
 
 #: src/Views/Layout.vala:246
 msgid "Left Alt"
-msgstr "Maldekstra Alt"
+msgstr "Maldekstra Alt."
 
 #: src/Views/Layout.vala:256
 msgid "Key to choose 5th level:"
@@ -261,7 +261,7 @@ msgstr "Hankaku Zenkaku kiel Esc:"
 
 #: src/Views/Layout.vala:305
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "Klavoj Hangul/Hanja ĉe dekstra Alt/Ctrl:"
+msgstr "Klavoj Hangul/Hanja ĉe dekstra Alt./Stir.:"
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
@@ -306,11 +306,11 @@ msgstr "Majuskliga klavo"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
-msgstr "Ctrl"
+msgstr "Stir."
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"
-msgstr "Alt"
+msgstr "Alt."
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -378,11 +378,11 @@ msgstr "Montri Ĉiujn Fenestrojn"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Ekranon en ekrano"
 
 #: src/Shortcuts/List.vala:63
 msgid "Workspaces"
-msgstr ""
+msgstr "Laborspacoj"
 
 #: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
@@ -390,99 +390,99 @@ msgstr "Taskbaskula vido"
 
 #: src/Shortcuts/List.vala:65
 msgid "Switch left"
-msgstr ""
+msgstr "Baskuli maldekstren"
 
 #: src/Shortcuts/List.vala:66
 msgid "Switch right"
-msgstr ""
+msgstr "Baskuli dekstren"
 
 #: src/Shortcuts/List.vala:67
 msgid "Switch to first"
-msgstr ""
+msgstr "Baskuli al la unua"
 
 #: src/Shortcuts/List.vala:68
 msgid "Switch to new"
-msgstr ""
+msgstr "Baskuli al nova"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "Baskuli al laborspaco 1a"
 
 #: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "Baskuli al laborspaco 2a"
 
 #: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "Baskuli al laborspaco 3a"
 
 #: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "Baskuli al laborspaco 4a"
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "Baskuli al laborspaco 5a"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "Baskuli al laborspaco 6a"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "Baskuli al laborspaco 7a"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "Baskuli al laborspaco 8a"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "Baskuli al laborspaco 9a"
 
 #: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
-msgstr ""
+msgstr "Cikli inter laborspacoj"
 
 #: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "Retrocikli inter laborspacoj"
 
 #: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "Movi al laborspaco 1a"
 
 #: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "Movi al laborspaco 2a"
 
 #: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "Movi al laborspaco 3a"
 
 #: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "Movi al laborspaco 4a"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "Movi al laborspaco 5a"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "Movi al laborspaco 6a"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "Movi al laborspaco 7a"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "Movi al laborspaco 8a"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "Movi al laborspaco 9a"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
@@ -494,31 +494,31 @@ msgstr "Movi al la dekstra laborspaco"
 
 #: src/Shortcuts/List.vala:94
 msgid "Screenshots"
-msgstr ""
+msgstr "Ekrankopioj"
 
 #: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Kapti la tutan ekranon"
 
 #: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
-msgstr ""
+msgstr "Kopii la tutan ekranon en la tondujo"
 
 #: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
-msgstr ""
+msgstr "Kapti la nunan fenestron"
 
 #: src/Shortcuts/List.vala:98
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Kopii la aktivan fenestron en la tondujo"
 
 #: src/Shortcuts/List.vala:99
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Kapti elektotan areaĵon"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy an area to clipboard"
-msgstr ""
+msgstr "Kopii areaĵon en la tondujo"
 
 #: src/Shortcuts/List.vala:104
 msgid "Applications"
@@ -526,99 +526,99 @@ msgstr "Aplikaĵoj"
 
 #: src/Shortcuts/List.vala:105
 msgid "Email"
-msgstr ""
+msgstr "Retmesaĝo"
 
 #: src/Shortcuts/List.vala:106
 msgid "Home Folder"
-msgstr ""
+msgstr "Hejma dosierujo"
 
 #: src/Shortcuts/List.vala:107
 msgid "Music"
-msgstr ""
+msgstr "Muziko"
 
 #: src/Shortcuts/List.vala:108
 msgid "Terminal"
-msgstr ""
+msgstr "Terminalo"
 
 #: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
-msgstr ""
+msgstr "Foliumilo"
 
 #: src/Shortcuts/List.vala:113
 msgid "Media"
-msgstr ""
+msgstr "Aŭdovidaĵo"
 
 #: src/Shortcuts/List.vala:114
 msgid "Volume Up"
-msgstr ""
+msgstr "Laŭtigi"
 
 #: src/Shortcuts/List.vala:115
 msgid "Volume Down"
-msgstr ""
+msgstr "Mallaŭtigi"
 
 #: src/Shortcuts/List.vala:116
 msgid "Mute"
-msgstr ""
+msgstr "Sensonigi"
 
 #: src/Shortcuts/List.vala:117
 msgid "Play"
-msgstr ""
+msgstr "Ludi"
 
 #: src/Shortcuts/List.vala:118
 msgid "Pause"
-msgstr ""
+msgstr "Paŭzigi"
 
 #: src/Shortcuts/List.vala:119
 msgid "Stop"
-msgstr ""
+msgstr "Haltigi"
 
 #: src/Shortcuts/List.vala:120
 msgid "Previous Track"
-msgstr ""
+msgstr "Antaŭa kanto"
 
 #: src/Shortcuts/List.vala:121
 msgid "Next Track"
-msgstr ""
+msgstr "Sekva kanto"
 
 #: src/Shortcuts/List.vala:122
 msgid "Eject"
-msgstr ""
+msgstr "Eligi"
 
 #: src/Shortcuts/List.vala:126
 msgid "Universal Access"
-msgstr ""
+msgstr "Faciluziloj"
 
 #: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "Malampleksigi tekston"
 
 #: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
-msgstr ""
+msgstr "Ampleksigi tekston"
 
 #: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "Zomi"
 
 #: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "Malzomi"
 
 #: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "Baskuli surekranan klavaron"
 
 #: src/Shortcuts/List.vala:132
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "Baskuli ekranlegilon"
 
 #: src/Shortcuts/List.vala:133
 msgid "Toggle High Contrast"
-msgstr ""
+msgstr "Baskuli altan kontraston"
 
 #: src/Shortcuts/List.vala:137
 msgid "System"
-msgstr ""
+msgstr "Sistemo"
 
 #: src/Shortcuts/List.vala:139
 msgid "Lock"
@@ -626,16 +626,16 @@ msgstr "Ŝlosi"
 
 #: src/Shortcuts/List.vala:140
 msgid "Log Out"
-msgstr ""
+msgstr "Elsaluti"
 
 #: src/Shortcuts/List.vala:144
 msgid "Custom"
-msgstr ""
+msgstr "Tajlorita"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr ""
+msgstr "%s estas jam uzata por %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
@@ -644,4 +644,4 @@ msgstr "Se vi reagordas la klavkomandon %s, %s malebliĝos."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
-msgstr "Reagordi"
+msgstr "Reatribui"
