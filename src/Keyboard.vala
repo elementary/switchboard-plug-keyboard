@@ -9,7 +9,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         settings.set ("input/keyboard/behavior", "Behavior");
         settings.set ("input/keyboard/shortcuts", "Shortcuts");
         Object (category: Category.HARDWARE,
-                code_name: "hardware-pantheon-keyboard",
+                code_name: "io.elementary.switchboard.keyboard",
                 display_name: _("Keyboard"),
                 description: _("Configure keyboard behavior, layouts, and shortcuts"),
                 icon: "preferences-desktop-keyboard",
