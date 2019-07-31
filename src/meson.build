@@ -1,5 +1,5 @@
 plug_files = files(
-    'Keyboard.vala',
+    'Plug.vala',
     'Widgets/Shortcuts/Tree.vala',
     'Widgets/Shortcuts/SectionSwitcher.vala',
     'Widgets/Shortcuts/DisplayTree.vala',
