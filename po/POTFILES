@@ -14,6 +14,7 @@ src/Shortcuts/Shortcut.vala
 src/Shortcuts/Settings.vala
 src/Shortcuts/List.vala
 src/Shortcuts/CustomShortcutSettings.vala
+src/Shortcuts/ApplicationShortcutSettings.vala
 src/Layout/XkbModifier.vala
 src/Layout/Settings.vala
 src/Layout/Handler.vala

@@ -51,12 +51,18 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         construct {            
             CustomShortcutSettings.init ();
+            ApplicationShortcutSettings.init ();
 
             list = new List ();
             settings = new Shortcuts.Settings ();
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
-                trees += new Tree ((SectionID) id);
+                if (id == SectionID.APPS && ApplicationShortcutSettings.available) {
+                    debug ("Application shorcuts are available!");
+                    trees += new ApplicationTree ();
+                } else {
+                    trees += new Tree ((SectionID) id);
+                }
             }
 
             if (CustomShortcutSettings.available) {
@@ -73,7 +79,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             section_switcher.add_section (list.system_group);
             section_switcher.add_section (list.custom_group);
 
-            section_switcher.set_selected (0);
+            section_switcher.set_selected (3);
 
             var shortcut_display = new ShortcutDisplay (trees);
 

@@ -17,22 +17,23 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
+class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
 
-    const string SCHEMA = "org.gnome.settings-daemon.plugins.media-keys";
-    const string KEY = "custom-keybinding";
+    const string SCHEMA = "org.pantheon.desktop.gala.keybindings";
+    const string KEY = "custom-application-keybinding";
 
-    const string RELOCATABLE_SCHEMA_PATH_TEMLPATE = "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom%d/";
+    const string RELOCATABLE_SCHEMA_PATH_TEMLPATE = "/org/pantheon/desktop/gala/keybindings/custom-application-keybindings/custom%d/";
 
-    const int MAX_SHORTCUTS = 100;
+    const int MAX_SHORTCUTS = 8;
 
     static GLib.Settings settings;
 
     public static bool available = false;
 
     public struct CustomShortcut {
+        string name;
+        string desktop_id;
         string shortcut;
-        string command;
         string relocatable_schema;
     }
 
@@ -62,14 +63,14 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         return new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
     }
 
-    public static string? create_shortcut () requires (available) {
-        debug ("create shortcut!");
+    public static string? create_shortcut (AppInfo info) requires (available) {
         for (int i = 0; i < MAX_SHORTCUTS; i++) {
             var new_relocatable_schema = get_relocatable_schema_path (i);
 
             if (relocatable_schema_is_used (new_relocatable_schema) == false) {
                 reset_relocatable_schema (new_relocatable_schema);
                 add_relocatable_schema (new_relocatable_schema);
+                edit_desktop_id (new_relocatable_schema, info.get_name (), info.get_id ());
                 return new_relocatable_schema;
             }
         }
@@ -97,8 +98,8 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     static void reset_relocatable_schema (string relocatable_schema) {
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
         relocatable_settings.reset ("name");
-        relocatable_settings.reset ("command");
-        relocatable_settings.reset ("binding");
+        relocatable_settings.reset ("desktop-id");
+        relocatable_settings.reset ("binding" + relocatable_schema.substring (-2, 1));
         apply_settings (relocatable_settings);
     }
 
@@ -120,17 +121,17 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         requires (available) {
 
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
-        relocatable_settings.set_string ("binding", shortcut);
+        relocatable_settings.set_strv ("binding"  + relocatable_schema.substring (-2, 1), {shortcut});
         apply_settings (relocatable_settings);
         return true;
     }
 
-    public static bool edit_command (string relocatable_schema, string command)
+    public static bool edit_desktop_id (string relocatable_schema, string name, string desktop_id)
         requires (available) {
 
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
-        relocatable_settings.set_string ("command", command);
-        relocatable_settings.set_string ("name", command);
+        relocatable_settings.set_string ("desktop-id", desktop_id);
+        relocatable_settings.set_string ("name", name);
         apply_settings (relocatable_settings);
         return true;
     }
@@ -148,22 +149,23 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
 
         return {
-            relocatable_settings.get_string ("binding"),
-            relocatable_settings.get_string ("command"),
+            relocatable_settings.get_string ("name"),
+            relocatable_settings.get_string ("desktop-id"),
+            relocatable_settings.get_strv ("binding"  + relocatable_schema.substring (-2, 1))[0],
             relocatable_schema
         };
     }
 
-    public static bool shortcut_conflicts (Shortcut new_shortcut, out string command,
+    public static bool shortcut_conflicts (Shortcut new_shortcut, out string name,
                                            out string relocatable_schema) {
         var custom_shortcuts = list_custom_shortcuts ();
-        command = "";
+        name = "";
         relocatable_schema = "";
 
         foreach (var custom_shortcut in custom_shortcuts) {
             var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
             if (shortcut.is_equal (new_shortcut)) {
-                command = custom_shortcut.command;
+                name = custom_shortcut.name;
                 relocatable_schema = custom_shortcut.relocatable_schema;
                 return true;
             }
