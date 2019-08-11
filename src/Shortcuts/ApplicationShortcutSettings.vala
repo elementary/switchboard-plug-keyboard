@@ -19,163 +19,150 @@
 
 class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
 
-    const string SCHEMA = "org.pantheon.desktop.gala.keybindings";
-    const string KEY = "custom-application-keybinding";
-
-    const string RELOCATABLE_SCHEMA_PATH_TEMLPATE = "/org/pantheon/desktop/gala/keybindings/custom-application-keybindings/custom%d/";
-
+    const string SCHEMA_DEFAULT = "org.pantheon.desktop.gala.keybindings.applications";
+    const string SCHEMA_CUSTOM = "org.pantheon.desktop.gala.keybindings.applications.custom";
+    const string KEY_TEMPLATE = "applications-custom%d";
+    const string KEY_DESKTOP_IDS = "desktop-ids";
     const int MAX_SHORTCUTS = 8;
-
-    static GLib.Settings settings;
-
-    public static bool available = false;
+    static HashTable<string, string> keybindings_to_types;
+    static GLib.Settings settings_custom;
+    static GLib.Settings settings_default;
 
     public struct CustomShortcut {
         string name;
         string desktop_id;
         string shortcut;
-        string relocatable_schema;
+        string key;
     }
 
     public static void init () {
+        keybindings_to_types = new HashTable<string, string> (str_hash, str_equal);
+        keybindings_to_types.insert ("applications-webbrowser", "x-scheme-handler/http");
+        keybindings_to_types.insert ("applications-emailclient", "x-scheme-handler/mailto");
+        keybindings_to_types.insert ("applications-calendar", "text/calendar");
+        keybindings_to_types.insert ("applications-videoplayer", "video/x-ogm+ogg");
+        keybindings_to_types.insert ("applications-musicplayer", "audio/x-vorbis+ogg");
+        keybindings_to_types.insert ("applications-imageviewer", "image/jpeg");
+        keybindings_to_types.insert ("applications-texteditor", "text/plain");
+        keybindings_to_types.insert ("applications-filebrowser", "inode/directory");
+        keybindings_to_types.insert ("applications-terminal", "");
+
         var schema_source = GLib.SettingsSchemaSource.get_default ();
 
-        var schema = schema_source.lookup (SCHEMA, true);
+        var schema_default = schema_source.lookup (SCHEMA_DEFAULT, true);
 
-        if (schema == null) {
-            warning ("Schema \"%s\" is not installed on your system.", SCHEMA);
+        if (schema_default == null) {
+            warning ("Schema \"%s\" is not installed on your system.", SCHEMA_DEFAULT);
             return;
         }
 
-        settings = new GLib.Settings.full (schema, null, null);
-        available = true;
+        settings_default = new GLib.Settings.full (schema_default, null, null);
+
+        var schema_custom = schema_source.lookup (SCHEMA_CUSTOM, true);
+
+        if (schema_custom == null) {
+            warning ("Schema \"%s\" is not installed on your system.", SCHEMA_CUSTOM);
+            return;
+        }
+
+        settings_custom = new GLib.Settings.full (schema_custom, null, null);
     }
 
-    static string[] get_relocatable_schemas () {
-        return settings.get_strv (KEY + "s");
-    }
+    public static GLib.List <CustomShortcut?> list_custom_shortcuts () {
 
-    static string get_relocatable_schema_path (int i) {
-        return RELOCATABLE_SCHEMA_PATH_TEMLPATE.printf (i);
-    }
-
-    static GLib.Settings? get_relocatable_schema_settings (string relocatable_schema) {
-        return new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
-    }
-
-    public static string? create_shortcut (AppInfo info) requires (available) {
+        var desktop_ids = settings_custom.get_strv (KEY_DESKTOP_IDS);
+        var l = new GLib.List <CustomShortcut?> ();
         for (int i = 0; i < MAX_SHORTCUTS; i++) {
-            var new_relocatable_schema = get_relocatable_schema_path (i);
+            var desktop_id = desktop_ids [i];
+            debug ("desktopid: %s", desktop_id);
+            if (desktop_id != "") {
+                var key = KEY_TEMPLATE.printf (i);
+                l.append ({
+                    (new DesktopAppInfo (desktop_id)).get_name (),
+                    desktop_id,
+                    settings_custom.get_strv (key) [0],
+                    key
+                });
+            }
+        }
 
-            if (relocatable_schema_is_used (new_relocatable_schema) == false) {
-                reset_relocatable_schema (new_relocatable_schema);
-                add_relocatable_schema (new_relocatable_schema);
-                edit_desktop_id (new_relocatable_schema, info.get_name (), info.get_id ());
-                return new_relocatable_schema;
+        return l;
+   }
+
+    public static GLib.List <CustomShortcut?> list_default_shortcuts () {
+        GLib.List <CustomShortcut?> l = null; 
+        var keys = list.launchers_group.keys;
+        var actions = list.launchers_group.actions;
+
+        for (var i=0; i < keys.length; i++) {
+            var key = keys [i];
+            var action = actions [i];
+            var type = keybindings_to_types.get (key);
+            string desktop_id;
+            debug ("action: %s", action);
+
+            if (key == "applications-terminal") { // can't set default application for terminal
+                desktop_id = "io.elementary.terminal.desktop";
+            } else { 
+                desktop_id = AppInfo.get_default_for_type (type, false).get_id ();
+            }
+
+            l.append ({
+                action,
+                desktop_id,
+                settings_default.get_strv (key) [0],
+                key
+            });
+        }
+
+        return l;
+   }
+
+
+    public static string? create_shortcut (AppInfo info) {
+        var desktop_ids = settings_custom.get_strv (KEY_DESKTOP_IDS);
+
+        for (int i = 0; i < MAX_SHORTCUTS; i++) {
+            if (desktop_ids [i] == "") {
+                desktop_ids [i] = info.get_id ();
+                settings_custom.set_strv (KEY_DESKTOP_IDS, desktop_ids);
+                return KEY_TEMPLATE.printf (i);
             }
         }
 
         return (string) null;
     }
 
-    static bool relocatable_schema_is_used (string new_relocatable_schema) {
-        var relocatable_schemas = get_relocatable_schemas ();
 
-        foreach (var relocatable_schema in relocatable_schemas)
-            if (relocatable_schema == new_relocatable_schema)
-                return true;
-
-        return false;
+    public static void remove_shortcut (string key) {
+        var index = int.parse(key.substring (-1));
+        var desktop_ids = settings_custom.get_strv (KEY_DESKTOP_IDS);
+        desktop_ids [index] = "";
+        settings_custom.set_strv (KEY_DESKTOP_IDS, desktop_ids);
+        settings_custom.set_strv (key, {""});
     }
 
-    static void add_relocatable_schema (string new_relocatable_schema) {
-        var relocatable_schemas = get_relocatable_schemas ();
-        relocatable_schemas += new_relocatable_schema;
-        settings.set_strv (KEY + "s", relocatable_schemas);
-        apply_settings (settings);
-    }
-
-    static void reset_relocatable_schema (string relocatable_schema) {
-        var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
-        relocatable_settings.reset ("name");
-        relocatable_settings.reset ("desktop-id");
-        relocatable_settings.reset ("binding" + relocatable_schema.substring (-2, 1));
-        apply_settings (relocatable_settings);
-    }
-
-    public static void remove_shortcut (string relocatable_schema)
-        requires (available) {
-
-        string []relocatable_schemas = {};
-
-        foreach (var schema in get_relocatable_schemas ())
-            if (schema != relocatable_schema)
-                relocatable_schemas += schema;
-
-        reset_relocatable_schema (relocatable_schema);
-        settings.set_strv (KEY + "s", relocatable_schemas);
-        apply_settings (settings);
-    }
-
-    public static bool edit_shortcut (string relocatable_schema, string shortcut)
-        requires (available) {
-
-        var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
-        relocatable_settings.set_strv ("binding"  + relocatable_schema.substring (-2, 1), {shortcut});
-        apply_settings (relocatable_settings);
+    public static bool edit_shortcut (string key, Shortcut shortcut) {
+        var custom = key.slice (0, -1) == KEY_TEMPLATE.slice (0, -2);
+        var settings = custom ? settings_custom : settings_default;
+        settings.set_strv (key, {shortcut.to_gsettings ()});
         return true;
     }
 
-    public static bool edit_desktop_id (string relocatable_schema, string name, string desktop_id)
-        requires (available) {
-
-        var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
-        relocatable_settings.set_string ("desktop-id", desktop_id);
-        relocatable_settings.set_string ("name", name);
-        apply_settings (relocatable_settings);
-        return true;
-    }
-
-    public static GLib.List <CustomShortcut?> list_custom_shortcuts ()
-        requires (available) {
-
-        var list = new GLib.List <CustomShortcut?> ();
-        foreach (var relocatable_schema in get_relocatable_schemas ())
-            list.append (create_custom_shortcut_object (relocatable_schema));
-        return list;
-    }
-
-    static CustomShortcut? create_custom_shortcut_object (string relocatable_schema) {
-        var relocatable_settings = get_relocatable_schema_settings (relocatable_schema);
-
-        return {
-            relocatable_settings.get_string ("name"),
-            relocatable_settings.get_string ("desktop-id"),
-            relocatable_settings.get_strv ("binding"  + relocatable_schema.substring (-2, 1))[0],
-            relocatable_schema
-        };
-    }
-
-    public static bool shortcut_conflicts (Shortcut new_shortcut, out string name,
-                                           out string relocatable_schema) {
+    public static bool shortcut_conflicts (Shortcut new_shortcut, out string name, out string key) {
         var custom_shortcuts = list_custom_shortcuts ();
         name = "";
-        relocatable_schema = "";
+        key = "";
 
         foreach (var custom_shortcut in custom_shortcuts) {
             var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
             if (shortcut.is_equal (new_shortcut)) {
                 name = custom_shortcut.name;
-                relocatable_schema = custom_shortcut.relocatable_schema;
+                key = custom_shortcut.key;
                 return true;
             }
         }
 
         return false;
-    }
-
-    private static void apply_settings (GLib.Settings asettings) {
-        asettings.apply ();
-        GLib.Settings.sync ();
     }
 }

@@ -19,7 +19,7 @@
 
 namespace Pantheon.Keyboard.Shortcuts
 {
-    private enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
+    private enum Schema { WM, MUTTER, GALA, APPS, MEDIA, COUNT }
 
     // helper class for gsettings
     // note that media key are stored as strings, all others as string vectors
@@ -34,6 +34,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 "org.gnome.desktop.wm.keybindings",
                 "org.gnome.mutter.keybindings",
                 "org.pantheon.desktop.gala.keybindings",
+                "org.pantheon.desktop.gala.keybindings.applications",
                 "org.gnome.settings-daemon.plugins.media-keys"
             };
 

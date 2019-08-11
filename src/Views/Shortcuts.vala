@@ -57,7 +57,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             settings = new Shortcuts.Settings ();
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
-                if (id == SectionID.APPS && ApplicationShortcutSettings.available) {
+                if (id == SectionID.APPS) {
                     debug ("Application shorcuts are available!");
                     trees += new ApplicationTree ();
                 } else {

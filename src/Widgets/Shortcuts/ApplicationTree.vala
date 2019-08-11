@@ -20,18 +20,18 @@
 namespace Pantheon.Keyboard.Shortcuts {
 
     private class ApplicationTree : Gtk.Viewport, DisplayTree {
-        Gtk.Grid container;
         Gtk.CellRendererText cell_desc;
         Gtk.CellRendererAccel cell_edit;
         Gtk.CellRendererPixbuf cell_icon;
         Gtk.TreeView tv;
+        Gtk.TreeView tv2;
 
         enum Column {
             NAME,
             DESKTOP_ID,
             SHORTCUT,
             ICON,
-            SCHEMA,
+            KEY,
             COUNT,
         }
 
@@ -44,12 +44,12 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         public ApplicationTree () {
             setup_gui ();
-            load_and_display_custom_shortcuts ();
+            load_and_display_shortcuts ();
             connect_signals ();
         }
 
         void setup_gui () {
-            container = new Gtk.Grid ();
+            var container = new Gtk.Grid ();
 
             tv = new Gtk.TreeView ();
 
@@ -83,11 +83,32 @@ namespace Pantheon.Keyboard.Shortcuts {
             add (container);
         }
 
-        public void load_and_display_custom_shortcuts () {
+        public void load_and_display_shortcuts () {
             Gtk.TreeIter iter;
             var store = list_store;
 
             store.clear ();
+
+            foreach (var default_shortcut in ApplicationShortcutSettings.list_default_shortcuts ()) {
+                var shortcut = new Shortcut.parse (default_shortcut.shortcut);
+
+                if (shortcut == null)
+                    continue;
+
+                debug ("before");
+                var desktop_id = default_shortcut.desktop_id;
+                debug ("after %s", desktop_id);
+                var desktop_appinfo = new DesktopAppInfo (desktop_id);
+                debug ("after2");
+                store.append (out iter);
+                store.set (iter,
+                           Column.NAME, default_shortcut.name,
+                           Column.DESKTOP_ID, default_shortcut.desktop_id,
+                           Column.SHORTCUT, shortcut.to_readable (),
+                           Column.ICON, desktop_appinfo.get_icon (),
+                           Column.KEY, default_shortcut.key
+                    );
+            }
 
             foreach (var custom_shortcut in ApplicationShortcutSettings.list_custom_shortcuts ()) {
                 var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
@@ -96,11 +117,11 @@ namespace Pantheon.Keyboard.Shortcuts {
                 var desktop_appinfo = new DesktopAppInfo (custom_shortcut.desktop_id);
                 store.append (out iter);
                 store.set (iter,
-                           Column.NAME, desktop_appinfo.get_name (),
+                           Column.NAME, custom_shortcut.name,
                            Column.DESKTOP_ID, custom_shortcut.desktop_id,
                            Column.SHORTCUT, shortcut.to_readable (),
                            Column.ICON, desktop_appinfo.get_icon (),
-                           Column.SCHEMA, custom_shortcut.relocatable_schema
+                           Column.KEY, custom_shortcut.key
                     );
             }
         }
@@ -159,16 +180,18 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             var store = tv.model as Gtk.ListStore;
             Gtk.TreeIter iter;
-            var relocatable_schema = ApplicationShortcutSettings.create_shortcut (info);
+            var key = ApplicationShortcutSettings.create_shortcut (info);
+            debug ("the key is %s", key);
+
+            if (key == null)
+                return;
 
             store.append (out iter);
             store.set (iter, Column.DESKTOP_ID, info.get_name ());
             store.set (iter, Column.SHORTCUT, (new Shortcut.parse ("")).to_readable ());
-            store.set (iter, Column.SCHEMA, relocatable_schema);
+            store.set (iter,  Column.KEY, key);
 
-            var path = tv.model.get_path (iter);
-            var col = tv.get_column (Column.DESKTOP_ID);
-            load_and_display_custom_shortcuts ();
+            load_and_display_shortcuts ();
         }
 
         public void on_remove_clicked () {
@@ -180,70 +203,56 @@ namespace Pantheon.Keyboard.Shortcuts {
             remove_shortcut_for_iter (iter);
         }
 
-        void change_desktop_id (string path) {
-            var info = get_app_info_dialog ();
-            if (info == null)
-                return;
-
-            Gtk.TreeIter iter;
-            GLib.Value relocatable_schema;
-
-            tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-            ApplicationShortcutSettings.edit_desktop_id ((string) relocatable_schema, info.get_name (), info.get_id ());
-            load_and_display_custom_shortcuts ();
-        }
-
         public bool shortcut_conflicts (Shortcut shortcut, out string name) {
             return ApplicationShortcutSettings.shortcut_conflicts (shortcut, out name, null);
         }
 
         public void reset_shortcut (Shortcut shortcut) {
-            string relocatable_schema;
-            ApplicationShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
-            ApplicationShortcutSettings.edit_shortcut (relocatable_schema, "");
-            load_and_display_custom_shortcuts ();
+            string key;
+            CustomShortcutSettings.shortcut_conflicts (shortcut, null, out key);
+            CustomShortcutSettings.edit_shortcut (key, "");
+            load_and_display_shortcuts ();
         }
 
-        bool change_shortcut (string path, Shortcut? shortcut) {
-            Gtk.TreeIter iter;
-            GLib.Value command, relocatable_schema;
+        public bool change_shortcut (string path, Shortcut? shortcut) {
+            Gtk.TreeIter  iter;
+            GLib.Value    key, name;
 
             tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-            tv.model.get_value (iter, Column.DESKTOP_ID, out command);
 
-            var not_null_shortcut = shortcut ?? new Shortcut ();
+            tv.model.get_value (iter, Column.NAME, out name);
+            tv.model.get_value (iter, Column.KEY, out key);
 
             string conflict_name;
 
             if (shortcut != null) {
                 foreach (var tree in trees) {
-                    if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
+                    if (tree.shortcut_conflicts (shortcut, out conflict_name) == false || conflict_name == (string) name) {
                         continue;
+                    }
 
-                    var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
+                    var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) name);
                     dialog.reassign.connect (() => {
-                            tree.reset_shortcut (shortcut);
-                            ApplicationShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-                            load_and_display_custom_shortcuts ();
-                        });
+                        tree.reset_shortcut (shortcut);
+                        ApplicationShortcutSettings.edit_shortcut ((string) key, shortcut);
+                        load_and_display_shortcuts ();
+                    });
                     dialog.transient_for = (Gtk.Window) this.get_toplevel ();
                     dialog.present ();
                     return false;
                 }
             }
 
-            ApplicationShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-            load_and_display_custom_shortcuts ();
+            ApplicationShortcutSettings.edit_shortcut ((string) key, shortcut ?? new Shortcut ());
+            load_and_display_shortcuts ();
             return true;
         }
 
         void remove_shortcut_for_iter (Gtk.TreeIter iter) {
-            GLib.Value relocatable_schema;
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
+            GLib.Value key;
+            tv.model.get_value (iter,  Column.KEY, out key);
 
-            ApplicationShortcutSettings.remove_shortcut ((string) relocatable_schema);
+            ApplicationShortcutSettings.remove_shortcut ((string) key);
 #if VALA_0_36
             list_store.remove (ref iter);
 #else
