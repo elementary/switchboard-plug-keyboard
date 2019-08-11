@@ -23,7 +23,7 @@ class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
     const string SCHEMA_CUSTOM = "org.pantheon.desktop.gala.keybindings.applications.custom";
     const string KEY_TEMPLATE = "applications-custom%d";
     const string KEY_DESKTOP_IDS = "desktop-ids";
-    const int MAX_SHORTCUTS = 8;
+    const int MAX_SHORTCUTS = 10;
     static HashTable<string, string> keybindings_to_types;
     static GLib.Settings settings_custom;
     static GLib.Settings settings_default;
@@ -69,12 +69,10 @@ class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
     }
 
     public static GLib.List <CustomShortcut?> list_custom_shortcuts () {
-
         var desktop_ids = settings_custom.get_strv (KEY_DESKTOP_IDS);
         var l = new GLib.List <CustomShortcut?> ();
         for (int i = 0; i < MAX_SHORTCUTS; i++) {
             var desktop_id = desktop_ids [i];
-            debug ("desktopid: %s", desktop_id);
             if (desktop_id != "") {
                 var key = KEY_TEMPLATE.printf (i);
                 l.append ({
@@ -99,7 +97,6 @@ class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
             var action = actions [i];
             var type = keybindings_to_types.get (key);
             string desktop_id;
-            debug ("action: %s", action);
 
             if (key == "applications-terminal") { // can't set default application for terminal
                 desktop_id = "io.elementary.terminal.desktop";
@@ -118,7 +115,6 @@ class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
         return l;
    }
 
-
     public static string? create_shortcut (AppInfo info) {
         var desktop_ids = settings_custom.get_strv (KEY_DESKTOP_IDS);
 
@@ -132,7 +128,6 @@ class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
 
         return (string) null;
     }
-
 
     public static void remove_shortcut (string key) {
         var index = int.parse(key.substring (-1));
@@ -150,15 +145,17 @@ class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
     }
 
     public static bool shortcut_conflicts (Shortcut new_shortcut, out string name, out string key) {
-        var custom_shortcuts = list_custom_shortcuts ();
+        var shortcuts = list_default_shortcuts ();
+        shortcuts.concat (list_custom_shortcuts ());
+
         name = "";
         key = "";
 
-        foreach (var custom_shortcut in custom_shortcuts) {
-            var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
+        foreach (var sc in shortcuts) {
+            var shortcut = new Shortcut.parse (sc.shortcut);
             if (shortcut.is_equal (new_shortcut)) {
-                name = custom_shortcut.name;
-                key = custom_shortcut.key;
+                name = sc.name;
+                key = sc.key;
                 return true;
             }
         }
