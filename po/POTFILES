@@ -1,4 +1,4 @@
-src/Keyboard.vala
+src/Plug.vala
 src/Widgets/Shortcuts/Tree.vala
 src/Widgets/Shortcuts/SectionSwitcher.vala
 src/Widgets/Shortcuts/DisplayTree.vala
