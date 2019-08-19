@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2019-08-19 22:16+0200\n"
 "PO-Revision-Date: 2019-02-09 10:53+0000\n"
 "Last-Translator: Piotr Strebski <strebski@gmail.com>\n"
 "Language-Team: Polish <https://weblate.elementary.io/projects/switchboard/"
@@ -21,49 +21,48 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:32+0000\n"
 
-#: src/Keyboard.vala:13
+#: src/Plug.vala:13
 msgid "Keyboard"
 msgstr "Klawiatura"
 
-#: src/Keyboard.vala:14
+#: src/Plug.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 
-#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
-#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
+#: src/Plug.vala:23 src/Plug.vala:67 src/Plug.vala:68 src/Plug.vala:69
+#: src/Plug.vala:70 src/Plug.vala:71
 msgid "Layout"
 msgstr "Układ"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:72
+#: src/Plug.vala:24 src/Plug.vala:72
 msgid "Shortcuts"
 msgstr "Skróty"
 
-#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
-#: src/Keyboard.vala:75
+#: src/Plug.vala:25 src/Plug.vala:73 src/Plug.vala:74 src/Plug.vala:75
 msgid "Behavior"
 msgstr "Zachowanie"
 
-#: src/Keyboard.vala:68
+#: src/Plug.vala:68
 msgid "Switch layout"
 msgstr "Przełącz układ"
 
-#: src/Keyboard.vala:69
+#: src/Plug.vala:69
 msgid "Compose Key"
 msgstr "Klawisz Compose"
 
-#: src/Keyboard.vala:70
+#: src/Plug.vala:70
 msgid "⌘ key behavior"
 msgstr "Zachowanie klawisza ⌘"
 
-#: src/Keyboard.vala:71
+#: src/Plug.vala:71
 msgid "Caps Lock behavior"
 msgstr "Zachowanie klawisza Caps Lock"
 
-#: src/Keyboard.vala:74
+#: src/Plug.vala:74
 msgid "Repeat Keys"
 msgstr "Powtórzenia klawiszy"
 
-#: src/Keyboard.vala:75
+#: src/Plug.vala:75
 msgid "Cursor Blinking"
 msgstr "Miganie kursora"
 
@@ -195,7 +194,7 @@ msgstr "Prawy ⌘"
 msgid "⌘ key behavior:"
 msgstr "Zachowanie klawisza ⌘:"
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:142
 msgid "Applications Menu"
 msgstr "Menu programów"
 
@@ -389,255 +388,279 @@ msgstr "Pokaż wszystkie okna"
 msgid "Picture in Picture Mode"
 msgstr "Tryb obraz w obrazie"
 
+#: src/Shortcuts/List.vala:60
+#, fuzzy
+msgid "Move to monitor above"
+msgstr "Przemieść na obszar roboczy po prawej"
+
+#: src/Shortcuts/List.vala:61
+msgid "Move to monitor below"
+msgstr ""
+
+#: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Move to monitor on the right"
+msgstr "Przemieść w prawo"
+
 #: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Move to monitor on the left"
+msgstr "Przemieść w lewo"
+
+#: src/Shortcuts/List.vala:67
 msgid "Workspaces"
 msgstr "Obszary robocze"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
 msgstr "Podgląd wielozadaniowy"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:69
 msgid "Switch left"
 msgstr "Przełącz w lewo"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:70
 msgid "Switch right"
 msgstr "Przełącz w prawo"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:71
 msgid "Switch to first"
 msgstr "Przełącz na pierwszy"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:72
 msgid "Switch to new"
 msgstr "Przełącz na nowy"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
 msgstr "Przełącz na pierwszy obszar roboczy"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
 msgstr "Przełącz na drugi obszar roboczy"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
 msgstr "Przełącz na trzeci obszar roboczy"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
 msgstr "Przełącz na czwarty obszar roboczy"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
 msgstr "Przełącz na piąty obszar roboczy"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
 msgstr "Przełącz na szósty obszar roboczy"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
 msgstr "Przełącz na siódmy obszar roboczy"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
 msgstr "Przełącz na ósmy obszar roboczy"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
 msgstr "Przełącz na dziewiąty obszar roboczy"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:82
 msgid "Cycle workspaces"
 msgstr "Przełączanie obszarów roboczych"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
 msgstr "Przełączanie obszarów roboczych do tyłu"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
 msgstr "Przemieść na pierwszy obszar roboczy"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
 msgstr "Przemieść na drugi obszar roboczy"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
 msgstr "Przemieść na trzeci obszar roboczy"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
 msgstr "Przemieść na czwarty obszar roboczy"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
 msgstr "Przemieść na piąty obszar roboczy"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
 msgstr "Przemieść na szósty obszar roboczy"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
 msgstr "Przemieść na siódmy obszar roboczy"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
 msgstr "Przemieść na ósmy obszar roboczy"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
 msgstr "Przemieść na dziewiąty obszar roboczy"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:93
 msgid "Move to left workspace"
 msgstr "Przemieść na obszar roboczy po lewej"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:94
 msgid "Move to right workspace"
 msgstr "Przemieść na obszar roboczy po prawej"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:98
 msgid "Screenshots"
 msgstr "Zrzuty ekranu"
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
 msgstr "Pobierz cały ekran"
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
 msgstr "Skopiuj zrzut całego ekranu do schowka"
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
 msgstr "Pobierz bieżące okno"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
 msgstr "Skopiuj bieżące okno do schowka"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
 msgstr "Wybierz obszar do pobrania"
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
 msgstr "Skopiuj zrzut obszaru do schowka"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:108
 msgid "Applications"
 msgstr "Programy"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:109
 msgid "Email"
 msgstr "Poczta"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:110
 msgid "Home Folder"
 msgstr "Katalog domowy"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:111
 msgid "Music"
 msgstr "Muzyka"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:112
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:113
 msgid "Internet Browser"
 msgstr "Przeglądarka internetowa"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:117
 msgid "Media"
 msgstr "Media"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:118
 msgid "Volume Up"
 msgstr "Głośniej"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:119
 msgid "Volume Down"
 msgstr "Ciszej"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:120
 msgid "Mute"
 msgstr "Wycisz"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:121
 msgid "Play"
 msgstr "Odtwórz"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:122
 msgid "Pause"
 msgstr "Wstrzymaj"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:123
 msgid "Stop"
 msgstr "Zatrzymaj"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:124
 msgid "Previous Track"
 msgstr "Poprzedni utwór"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:125
 msgid "Next Track"
 msgstr "Następny utwór"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:126
 msgid "Eject"
 msgstr "Wysuń"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:130
 msgid "Universal Access"
 msgstr "Dostęp uniwersalny"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
 msgstr "Zmniejsz wielkość tekstu"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
 msgstr "Zwiększ wielkość tekstu"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
 msgstr "Powiększenie lupy"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
 msgstr "Pomniejszenie lupy"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
 msgstr "Włącz/Wyłącz klawiaturę ekranową"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
 msgstr "Włącz/Wyłącz czytnik ekranowy"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:137
 msgid "Toggle High Contrast"
 msgstr "Włącz/Wyłącz tryb wysokiego kontrastu"
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:141
 msgid "System"
 msgstr "System"
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:143
 msgid "Lock"
 msgstr "Zablokuj"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:144
 msgid "Log Out"
 msgstr "Wyloguj"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:145
+#, fuzzy
+msgid "Switch monitor configurations"
+msgstr "Przełącz na pierwszy"
+
+#: src/Shortcuts/List.vala:149
 msgid "Custom"
 msgstr "Własny"
 
@@ -666,12 +689,6 @@ msgstr "Przypisz ponownie"
 
 #~ msgid "Show Workspace Switcher"
 #~ msgstr "Pokaż ekran zmiany obszaru roboczego"
-
-#~ msgid "Move to left"
-#~ msgstr "Przemieść w lewo"
-
-#~ msgid "Move to right"
-#~ msgstr "Przemieść w prawo"
 
 #~ msgid "Take a Screenshot"
 #~ msgstr "Zrób zrzut ekranu"
