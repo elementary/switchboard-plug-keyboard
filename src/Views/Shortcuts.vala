@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017-2018 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2019 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -38,6 +38,9 @@ namespace Pantheon.Keyboard.Shortcuts {
     }
 
     class Page : Pantheon.Keyboard.AbstractPage {
+        private Gtk.Button add_button;
+        private Gtk.Button remove_button;
+
         public override void reset () {
             for (int i = 0; i < SectionID.COUNT; i++) {
                 var g = list.groups[i];
@@ -49,19 +52,11 @@ namespace Pantheon.Keyboard.Shortcuts {
             return;
         }
 
-        construct {            
+        construct {
             CustomShortcutSettings.init ();
 
             list = new List ();
             settings = new Shortcuts.Settings ();
-
-            for (int id = 0; id < SectionID.CUSTOM; id++) {
-                trees += new Tree ((SectionID) id);
-            }
-
-            if (CustomShortcutSettings.available) {
-                trees += new CustomTree ();
-            }
 
             var section_switcher = new SectionSwitcher ();
             section_switcher.add_section (list.windows_group);
@@ -75,16 +70,83 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             section_switcher.set_selected (0);
 
-            var shortcut_display = new ShortcutDisplay (trees);
+            var stack = new Gtk.Stack ();
+            stack.homogeneous = false;
+
+            var scrolledwindow = new Gtk.ScrolledWindow (null, null);
+            scrolledwindow.expand = true;
+            scrolledwindow.add (stack);
+
+            add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+            add_button.tooltip_text = _("Add");
+
+            remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+            remove_button.sensitive = false;
+            remove_button.tooltip_text = _("Remove");
+
+            var actionbar = new Gtk.ActionBar ();
+            actionbar.hexpand = true;
+            actionbar.no_show_all = true;
+            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+            actionbar.add (add_button);
+            actionbar.add (remove_button);
+
+            var action_grid = new Gtk.Grid ();
+            action_grid.attach (scrolledwindow, 0, 0);
+            action_grid.attach (actionbar, 0, 1);
 
             var frame = new Gtk.Frame (null);
-            frame.add (shortcut_display);
+            frame.add (action_grid);
 
             column_homogeneous = true;
             attach (section_switcher, 0, 0, 1, 1);
             attach (frame, 1, 0, 2, 1);
 
-            section_switcher.changed.connect (shortcut_display.change_selection);
+            for (int id = 0; id < SectionID.CUSTOM; id++) {
+                trees += new Tree ((SectionID) id);
+            }
+
+            if (CustomShortcutSettings.available) {
+                var custom_tree = new CustomTree ();
+                custom_tree.row_selected.connect (row_selected);
+                custom_tree.row_unselected.connect (row_unselected);
+
+                custom_tree.command_editing_started.connect (disable_add);
+                custom_tree.command_editing_ended.connect (enable_add);
+
+                add_button.clicked.connect (() => custom_tree.on_add_clicked ());
+                remove_button.clicked.connect (() => custom_tree.on_remove_clicked ());
+
+                trees += custom_tree;
+            }
+
+            foreach (unowned Gtk.Widget tree in trees) {
+                stack.add (tree);
+            }
+
+            section_switcher.changed.connect ((index) => {
+                stack.visible_child = trees[index];
+
+                actionbar.no_show_all = index != SectionID.CUSTOM;
+                actionbar.visible = index == SectionID.CUSTOM;
+                show_all ();
+            });
+        }
+
+        private void row_selected () {
+            remove_button.sensitive = true;
+        }
+
+        private void row_unselected () {
+            remove_button.sensitive = false;
+        }
+
+        private void disable_add () {
+            add_button.sensitive = false;
+        }
+
+        private void enable_add () {
+            add_button.sensitive = true;
         }
     }
 }

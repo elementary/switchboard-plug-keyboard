@@ -3,7 +3,6 @@ plug_files = files(
     'Widgets/Shortcuts/Tree.vala',
     'Widgets/Shortcuts/SectionSwitcher.vala',
     'Widgets/Shortcuts/DisplayTree.vala',
-    'Widgets/Shortcuts/Display.vala',
     'Widgets/Shortcuts/CustomTree.vala',
     'Widgets/Layout/Display.vala',
     'Widgets/Layout/AddLayoutPopover.vala',
