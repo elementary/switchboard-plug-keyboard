@@ -20,4 +20,3 @@ src/Layout/Handler.vala
 src/Layout/AdvancedSettingsPanel.vala
 src/Layout/AdvancedSettingsGrid.vala
 src/Dialogs/ConflictDialog.vala
-src/Behavior/Settings.vala
