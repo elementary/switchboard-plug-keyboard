@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-19 22:16+0200\n"
+"POT-Creation-Date: 2019-06-26 22:45+0200\n"
 "PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -20,51 +20,52 @@ msgstr ""
 "X-Generator: Weblate 2.18\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
-#: src/Plug.vala:13
+#: src/Keyboard.vala:13
 msgid "Keyboard"
 msgstr "Billentyűzet"
 
-#: src/Plug.vala:14
+#: src/Keyboard.vala:14
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 "A billentyűzet viselkedésének és kiosztásának, valamint a billentyűparancsok "
 "beállítása"
 
-#: src/Plug.vala:23 src/Plug.vala:67 src/Plug.vala:68 src/Plug.vala:69
-#: src/Plug.vala:70 src/Plug.vala:71
+#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
+#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
 msgid "Layout"
 msgstr "Kiosztás"
 
-#: src/Plug.vala:24 src/Plug.vala:72
+#: src/Keyboard.vala:24 src/Keyboard.vala:72
 msgid "Shortcuts"
 msgstr "Billentyűparancsok"
 
-#: src/Plug.vala:25 src/Plug.vala:73 src/Plug.vala:74 src/Plug.vala:75
+#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
+#: src/Keyboard.vala:75
 msgid "Behavior"
 msgstr "Viselkedés"
 
-#: src/Plug.vala:68
+#: src/Keyboard.vala:68
 msgid "Switch layout"
 msgstr "Elrendezés váltása"
 
-#: src/Plug.vala:69
+#: src/Keyboard.vala:69
 msgid "Compose Key"
 msgstr "Levélírás gomb"
 
-#: src/Plug.vala:70
+#: src/Keyboard.vala:70
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "⌘ billentyű viselkedése:"
 
-#: src/Plug.vala:71
+#: src/Keyboard.vala:71
 msgid "Caps Lock behavior"
 msgstr "Caps Lock viselkedés"
 
-#: src/Plug.vala:74
+#: src/Keyboard.vala:74
 msgid "Repeat Keys"
 msgstr "Billentyűismétlés"
 
-#: src/Plug.vala:75
+#: src/Keyboard.vala:75
 msgid "Cursor Blinking"
 msgstr "Kurzorvillogás"
 
@@ -197,7 +198,7 @@ msgstr "Jobb ⌘"
 msgid "⌘ key behavior:"
 msgstr "⌘ billentyű viselkedése:"
 
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:142
+#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
 msgid "Applications Menu"
 msgstr "Alkalmazás menü"
 
@@ -392,279 +393,255 @@ msgstr "Összes ablak megtekintése"
 msgid "Picture in Picture Mode"
 msgstr "Kép a képben mód"
 
-#: src/Shortcuts/List.vala:60
-#, fuzzy
-msgid "Move to monitor above"
-msgstr "Mozgatás a jobbra lévő munkaterületre"
-
-#: src/Shortcuts/List.vala:61
-msgid "Move to monitor below"
-msgstr ""
-
-#: src/Shortcuts/List.vala:62
-#, fuzzy
-msgid "Move to monitor on the right"
-msgstr "Mozgatás jobbra"
-
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-msgid "Move to monitor on the left"
-msgstr "Mozgatás balra"
-
-#: src/Shortcuts/List.vala:67
 msgid "Workspaces"
 msgstr "Munkaterületek"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:64
 msgid "Multitasking View"
 msgstr "Többfeladatos nézet"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:65
 msgid "Switch left"
 msgstr "Váltás balra"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:66
 msgid "Switch right"
 msgstr "Váltás jobbra"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:67
 msgid "Switch to first"
 msgstr "Váltás az elsőre"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:68
 msgid "Switch to new"
 msgstr "Váltás az újra"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:69
 msgid "Switch to workspace 1"
 msgstr "Átváltás az 1. munkaterületre"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:70
 msgid "Switch to workspace 2"
 msgstr "Átváltás a 2. munkaterületre"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:71
 msgid "Switch to workspace 3"
 msgstr "Átváltás a 3. munkaterületre"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:72
 msgid "Switch to workspace 4"
 msgstr "Átváltás a 4. munkaterületre"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 5"
 msgstr "Átváltás az 5. munkaterületre"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 6"
 msgstr "Átváltás a 6. munkaterületre"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 7"
 msgstr "Átváltás a 7. munkaterületre"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 8"
 msgstr "Átváltás a 8. munkaterületre"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 9"
 msgstr "Átváltás a 9. munkaterületre"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:78
 msgid "Cycle workspaces"
 msgstr "Munkaterületek forgatása"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:79
 msgid "Cycle workspaces backwards"
 msgstr "Munkaterületek forgatása visszafelé"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:80
 msgid "Move to workspace 1"
 msgstr "Áthelyezés az 1. munkaterületre"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:81
 msgid "Move to workspace 2"
 msgstr "Áthelyezés a 2. munkaterületre"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:82
 msgid "Move to workspace 3"
 msgstr "Áthelyezés a 3. munkaterületre"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:83
 msgid "Move to workspace 4"
 msgstr "Áthelyezés a 4. munkaterületre"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 5"
 msgstr "Áthelyezés az 5. munkaterületre"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 6"
 msgstr "Áthelyezés a 6. munkaterületre"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 7"
 msgstr "Áthelyezés a 7. munkaterületre"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 8"
 msgstr "Áthelyezés a 8. munkaterületre"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 9"
 msgstr "Áthelyezés a 9. munkaterületre"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:89
 msgid "Move to left workspace"
 msgstr "Mozgatás a balra lévő munkaterületre"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:90
 msgid "Move to right workspace"
 msgstr "Mozgatás a jobbra lévő munkaterületre"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:94
 msgid "Screenshots"
 msgstr "Képernyőképek"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:95
 msgid "Grab the whole screen"
 msgstr "A teljes képernyő mentése"
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:96
 msgid "Copy the whole screen to clipboard"
 msgstr "A teljes képernyő mentése a vágólapra"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:97
 msgid "Grab the current window"
 msgstr "Az aktuális ablak mentése"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:98
 msgid "Copy the current window to clipboard"
 msgstr "Az aktuális ablak mentése a vágólapra"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:99
 msgid "Select an area to grab"
 msgstr "Kijelölt terület mentése"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:100
 msgid "Copy an area to clipboard"
 msgstr "Kijelölt terület mentése a vágólapra"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:104
 msgid "Applications"
 msgstr "Alkalmazások"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:105
 msgid "Email"
 msgstr "E-mail"
 
-#: src/Shortcuts/List.vala:110
+#: src/Shortcuts/List.vala:106
 msgid "Home Folder"
 msgstr "Saját mappa"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:107
 msgid "Music"
 msgstr "Zenék"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:108
 msgid "Terminal"
 msgstr "Terminál"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:109
 msgid "Internet Browser"
 msgstr "Internetböngésző"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:113
 msgid "Media"
 msgstr "Média"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:114
 msgid "Volume Up"
 msgstr "Hangosítás"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:115
 msgid "Volume Down"
 msgstr "Halkítás"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:116
 msgid "Mute"
 msgstr "Némítás"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:117
 msgid "Play"
 msgstr "Lejátszás"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:118
 msgid "Pause"
 msgstr "Szünet"
 
-#: src/Shortcuts/List.vala:123
+#: src/Shortcuts/List.vala:119
 msgid "Stop"
 msgstr "Leállítás"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:120
 msgid "Previous Track"
 msgstr "Előző szám"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:121
 msgid "Next Track"
 msgstr "Következő szám"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:122
 msgid "Eject"
 msgstr "Kiadás"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:126
 msgid "Universal Access"
 msgstr "Kisegítő lehetőségek"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
 msgstr "Betűméret csökkentése"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
 msgstr "Betűméret növelése"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
 msgstr "Nagyító közelítés"
 
-#: src/Shortcuts/List.vala:134
+#: src/Shortcuts/List.vala:130
 msgid "Magnifier Zoom out"
 msgstr "Nagyító távolítás"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:131
 msgid "Toggle On Screen Keyboard"
 msgstr "Képernyőbillentyűzet bekapcsolása"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:132
 msgid "Toggle Screenreader"
 msgstr "Képernyőolvasó bekapcsolása"
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:133
 msgid "Toggle High Contrast"
 msgstr "A nagy kontraszt bekapcsolása"
 
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:137
 msgid "System"
 msgstr "Rendszer"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:139
 msgid "Lock"
 msgstr "Lezárás"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:140
 msgid "Log Out"
 msgstr "Kijelentkezés"
 
-#: src/Shortcuts/List.vala:145
-#, fuzzy
-msgid "Switch monitor configurations"
-msgstr "Váltás az elsőre"
-
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:144
 msgid "Custom"
 msgstr "Egyedi"
 
@@ -695,6 +672,12 @@ msgstr "Hozzárendelés"
 
 #~ msgid "Show Workspace Switcher"
 #~ msgstr "Munkaterületváltó megjelenítése"
+
+#~ msgid "Move to left"
+#~ msgstr "Mozgatás balra"
+
+#~ msgid "Move to right"
+#~ msgstr "Mozgatás jobbra"
 
 #~ msgid "Take a Screenshot"
 #~ msgstr "Képernyőkép készítése"
