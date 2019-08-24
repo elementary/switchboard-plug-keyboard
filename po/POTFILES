@@ -1,6 +1,5 @@
 src/Plug.vala
 src/Widgets/Shortcuts/Tree.vala
-src/Widgets/Shortcuts/SectionSwitcher.vala
 src/Widgets/Shortcuts/DisplayTree.vala
 src/Widgets/Shortcuts/Display.vala
 src/Widgets/Shortcuts/CustomTree.vala
