@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017-2018 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2019 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -38,18 +38,7 @@ namespace Pantheon.Keyboard.Shortcuts {
     }
 
     class Page : Pantheon.Keyboard.AbstractPage {
-        public override void reset () {
-            for (int i = 0; i < SectionID.COUNT; i++) {
-                var g = list.groups[i];
-
-                for (int k = 0; k < g.actions.length; k++) {
-                    settings.reset (g.schemas[k], g.keys[k]);
-                }
-            }
-            return;
-        }
-
-        construct {            
+        construct {
             CustomShortcutSettings.init ();
 
             list = new List ();
@@ -63,17 +52,23 @@ namespace Pantheon.Keyboard.Shortcuts {
                 trees += new CustomTree ();
             }
 
-            var section_switcher = new SectionSwitcher ();
-            section_switcher.add_section (list.windows_group);
-            section_switcher.add_section (list.workspaces_group);
-            section_switcher.add_section (list.screenshot_group);
-            section_switcher.add_section (list.launchers_group);
-            section_switcher.add_section (list.media_group);
-            section_switcher.add_section (list.a11y_group);
-            section_switcher.add_section (list.system_group);
-            section_switcher.add_section (list.custom_group);
+            var section_switcher = new Gtk.ListBox ();
+            section_switcher.add (new SwitcherRow (list.windows_group));
+            section_switcher.add (new SwitcherRow (list.workspaces_group));
+            section_switcher.add (new SwitcherRow (list.screenshot_group));
+            section_switcher.add (new SwitcherRow (list.launchers_group));
+            section_switcher.add (new SwitcherRow (list.media_group));
+            section_switcher.add (new SwitcherRow (list.a11y_group));
+            section_switcher.add (new SwitcherRow (list.system_group));
+            section_switcher.add (new SwitcherRow (list.custom_group));
 
-            section_switcher.set_selected (0);
+            section_switcher.select_row (section_switcher.get_row_at_index (0));
+
+            var scrolled_window = new Gtk.ScrolledWindow (null, null);
+            scrolled_window.add (section_switcher);
+
+            var switcher_frame = new Gtk.Frame (null);
+            switcher_frame.add (scrolled_window);
 
             var shortcut_display = new ShortcutDisplay (trees);
 
@@ -81,10 +76,46 @@ namespace Pantheon.Keyboard.Shortcuts {
             frame.add (shortcut_display);
 
             column_homogeneous = true;
-            attach (section_switcher, 0, 0, 1, 1);
+            attach (switcher_frame, 0, 0);
             attach (frame, 1, 0, 2, 1);
 
-            section_switcher.changed.connect (shortcut_display.change_selection);
+            section_switcher.row_selected.connect ((row) => {
+                shortcut_display.change_selection (row.get_index ());
+            });
+        }
+
+        public override void reset () {
+            for (int i = 0; i < SectionID.COUNT; i++) {
+                var g = list.groups[i];
+
+                for (int k = 0; k < g.actions.length; k++) {
+                    settings.reset (g.schemas[k], g.keys[k]);
+                }
+            }
+            return;
+        }
+
+        private class SwitcherRow : Gtk.ListBoxRow {
+            public Pantheon.Keyboard.Shortcuts.Group group { get; construct; }
+
+            public SwitcherRow (Pantheon.Keyboard.Shortcuts.Group group) {
+                Object (group: group);
+            }
+
+            construct {
+                var icon = new Gtk.Image.from_icon_name (group.icon_name, Gtk.IconSize.DND);
+
+                var label = new Gtk.Label (group.label);
+                label.xalign = 0;
+
+                var grid = new Gtk.Grid ();
+                grid.margin = 6;
+                grid.column_spacing = 6;
+                grid.add (icon);
+                grid.add (label);
+
+                add (grid);
+            }
         }
     }
 }
