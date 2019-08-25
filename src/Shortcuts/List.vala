@@ -59,7 +59,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.GALA, _("Picture in Picture Mode"), "pip");
 
             workspaces_group = {};
-            workspaces_group.icon_name = "preferences-desktop-wallpaper";
+            workspaces_group.icon_name = "preferences-desktop-workspaces";
             workspaces_group.label = _("Workspaces");
             add_action (ref workspaces_group, Schema.WM, _("Multitasking View"), "show-desktop");
             add_action (ref workspaces_group, Schema.WM, _("Switch left"), "switch-to-workspace-left");
