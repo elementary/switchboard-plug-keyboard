@@ -35,9 +35,13 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
     }
 
     private void load_and_display_shortcuts () {
+        var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
+
         for (int i = 0; i < actions.length; i++) {
             var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
             add (row);
+
+            sizegroup.add_widget (row);
         }
 
         show_all ();
@@ -121,6 +125,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             grid.column_spacing = 12;
             grid.margin = 3;
             grid.margin_start = grid.margin_end = 6;
+            grid.valign = Gtk.Align.CENTER;
             grid.add (label);
             grid.add (keycap_grid);
 
