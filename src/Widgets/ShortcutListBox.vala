@@ -68,8 +68,8 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         public Schema schema { get; construct; }
         public string key { get; construct; }
 
-        private Gtk.Button clear_button;
-        private Gtk.Button reset_button;
+        private Gtk.ModelButton clear_button;
+        private Gtk.ModelButton reset_button;
         private Gtk.Grid keycap_grid;
 
         public ShortcutRow (string action, Schema schema, string key) {
@@ -89,19 +89,28 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             keycap_grid.column_spacing = 6;
             keycap_grid.valign = Gtk.Align.CENTER;
 
-            reset_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic", Gtk.IconSize.MENU);
-            reset_button.tooltip_text = _("Reset to default");
-            reset_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            reset_button = new Gtk.ModelButton ();
+            reset_button.text = _("Reset to Default");
 
-            clear_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
-            clear_button.tooltip_text = _("Disable");
-            clear_button.valign = Gtk.Align.CENTER;
+            clear_button = new Gtk.ModelButton ();
+            clear_button.text = _("Disable");
             clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
 
             var action_grid = new Gtk.Grid ();
+            action_grid.margin_top = action_grid.margin_bottom = 3;
+            action_grid.orientation = Gtk.Orientation.VERTICAL;
             action_grid.add (reset_button);
             action_grid.add (clear_button);
+            action_grid.show_all ();
+
+            var popover = new Gtk.Popover (null);
+            popover.add (action_grid);
+
+            var menubutton = new Gtk.MenuButton ();
+            menubutton.image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU);
+            menubutton.popover = popover;
+            menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
@@ -110,7 +119,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             grid.valign = Gtk.Align.CENTER;
             grid.add (label);
             grid.add (keycap_grid);
-            grid.add (action_grid);
+            grid.add (menubutton);
 
             add (grid);
 
