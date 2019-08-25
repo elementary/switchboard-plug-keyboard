@@ -117,7 +117,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             render_keycaps ();
 
             var glib_setting = settings.schemas[schema];
-            glib_setting.changed.connect (render_keycaps);
+            glib_setting.changed[key].connect (render_keycaps);
         }
 
         private void render_keycaps () {
