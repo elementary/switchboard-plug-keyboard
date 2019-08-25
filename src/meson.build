@@ -1,6 +1,6 @@
 plug_files = files(
     'Plug.vala',
-    'Widgets/Shortcuts/Tree.vala',
+    'Widgets/ShortcutListBox.vala',
     'Widgets/Shortcuts/DisplayTree.vala',
     'Widgets/Shortcuts/Display.vala',
     'Widgets/Shortcuts/CustomTree.vala',

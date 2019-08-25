@@ -45,7 +45,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             settings = new Shortcuts.Settings ();
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
-                trees += new Tree ((SectionID) id);
+                trees += new ShortcutListBox ((SectionID) id);
             }
 
             if (CustomShortcutSettings.available) {
