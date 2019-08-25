@@ -68,6 +68,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         public Schema schema { get; construct; }
         public string key { get; construct; }
 
+        private Gtk.Button clear_button;
         private Gtk.Button reset_button;
         private Gtk.Grid keycap_grid;
 
@@ -92,6 +93,16 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             reset_button.tooltip_text = _("Reset to default");
             reset_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
+            clear_button = new Gtk.Button.from_icon_name ("edit-delete-symbolic", Gtk.IconSize.MENU);
+            clear_button.tooltip_text = _("Disable");
+            clear_button.valign = Gtk.Align.CENTER;
+            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+            var action_grid = new Gtk.Grid ();
+            action_grid.add (reset_button);
+            action_grid.add (clear_button);
+
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
             grid.margin = 3;
@@ -99,7 +110,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             grid.valign = Gtk.Align.CENTER;
             grid.add (label);
             grid.add (keycap_grid);
-            grid.add (reset_button);
+            grid.add (action_grid);
 
             add (grid);
 
@@ -107,9 +118,17 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
 
             settings.schemas[schema].changed[key].connect (render_keycaps);
 
+            clear_button.clicked.connect (() => {
+                var key_value = settings.schemas[schema].get_value (key);
+                if (key_value.is_of_type (VariantType.ARRAY)) {
+                    settings.schemas[schema].set_strv (key, {""});
+                } else {
+                    settings.schemas[schema].set_string (key, "");
+                }
+            });
+
             reset_button.clicked.connect (() => {
                 settings.schemas[schema].reset (key);
-                reset_button.sensitive = false;
             });
         }
 
@@ -123,7 +142,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             string[] accels = {""};
             if (key_value.is_of_type (VariantType.ARRAY)) {
                 var key_value_strv = key_value.get_strv ();
-                if (key_value_strv.length > 0) {
+                if (key_value_strv.length > 0 && key_value_strv[0] != "") {
                     accels = Granite.accel_to_string (key_value_strv[0]).split (" + ");
                 }
             } else {
@@ -142,10 +161,14 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                     keycap_label.get_style_context ().add_class ("keycap");
                     keycap_grid.add (keycap_label);
                 }
+
+                clear_button.sensitive = true;
             } else {
                 var keycap_label = new Gtk.Label (_("Disabled"));
                 keycap_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
                 keycap_grid.add (keycap_label);
+
+                clear_button.sensitive = false;
             }
 
             if (settings.schemas[schema].get_user_value (key) == null) {
