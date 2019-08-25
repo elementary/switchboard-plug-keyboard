@@ -31,10 +31,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
     construct {
         list.get_group (group, out actions, out schemas, out keys);
 
-        load_and_display_shortcuts ();
-    }
-
-    private void load_and_display_shortcuts () {
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
         for (int i = 0; i < actions.length; i++) {
@@ -65,27 +61,14 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         return false;
     }
 
-    public void reset_shortcut (Shortcut shortcut) {
-        string[] actions, keys;
-        Schema[] schemas;
-        var empty_shortcut = new Shortcut ();
-
-        list.get_group (group, out actions, out schemas, out keys);
-
-        for (int i = 0; i < actions.length; i++) {
-            if (shortcut.is_equal (settings.get_val (schemas[i], keys[i]))) {
-                settings.set_val (schemas[i], keys[i], empty_shortcut);
-            }
-        }
-
-        load_and_display_shortcuts ();
-    }
+    public void reset_shortcut (Shortcut shortcut) {}
 
     private class ShortcutRow : Gtk.ListBoxRow {
         public string action { get; construct; }
         public Schema schema { get; construct; }
         public string key { get; construct; }
 
+        private Gtk.Button reset_button;
         private Gtk.Grid keycap_grid;
 
         public ShortcutRow (string action, Schema schema, string key) {
@@ -103,6 +86,11 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
 
             keycap_grid = new Gtk.Grid ();
             keycap_grid.column_spacing = 6;
+            keycap_grid.valign = Gtk.Align.CENTER;
+
+            reset_button = new Gtk.Button.from_icon_name ("view-refresh-symbolic", Gtk.IconSize.MENU);
+            reset_button.tooltip_text = _("Reset to default");
+            reset_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             var grid = new Gtk.Grid ();
             grid.column_spacing = 12;
@@ -111,13 +99,18 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             grid.valign = Gtk.Align.CENTER;
             grid.add (label);
             grid.add (keycap_grid);
+            grid.add (reset_button);
 
             add (grid);
 
             render_keycaps ();
 
-            var glib_setting = settings.schemas[schema];
-            glib_setting.changed[key].connect (render_keycaps);
+            settings.schemas[schema].changed[key].connect (render_keycaps);
+
+            reset_button.clicked.connect (() => {
+                settings.schemas[schema].reset (key);
+                reset_button.sensitive = false;
+            });
         }
 
         private void render_keycaps () {
@@ -142,6 +135,12 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                 var keycap_label = new Gtk.Label (_("Disabled"));
                 keycap_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
                 keycap_grid.add (keycap_label);
+            }
+
+            if (settings.schemas[schema].get_user_value (key) == null) {
+                reset_button.sensitive = false;
+            } else {
+                reset_button.sensitive = true;
             }
 
             keycap_grid.show_all ();

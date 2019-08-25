@@ -84,18 +84,6 @@ namespace Pantheon.Keyboard.Shortcuts
                 return new Shortcut.parse ((schemas[schema].get_strv (key)) [0]);
         }
 
-        public bool set_val  (Schema schema, string key, Shortcut sc)
-        {
-            if (!valid (schema, key))
-                return false;
-
-            if (schema == Schema.MEDIA)
-                schemas[schema].set_string (key, sc.to_gsettings ());
-            else
-                schemas[schema].set_strv (key, {sc.to_gsettings ()});
-            return true;
-        }
-
         public void reset (Schema schema, string key)
         {
             if (!valid (schema, key))
