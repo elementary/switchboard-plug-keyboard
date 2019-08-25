@@ -25,7 +25,7 @@ namespace Pantheon.Keyboard.Shortcuts
     // note that media key are stored as strings, all others as string vectors
     class Settings : GLib.Object
     {
-        private GLib.Settings[] schemas;
+        public GLib.Settings[] schemas;
         private string[] schema_names;
 
         public Settings ()

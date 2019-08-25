@@ -86,6 +86,8 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         public Schema schema { get; construct; }
         public string key { get; construct; }
 
+        private Gtk.Grid keycap_grid;
+
         public ShortcutRow (string action, Schema schema, string key) {
             Object (
                 action: action,
@@ -99,12 +101,33 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             label.hexpand = true;
             label.halign = Gtk.Align.START;
 
+            keycap_grid = new Gtk.Grid ();
+            keycap_grid.column_spacing = 6;
+
+            var grid = new Gtk.Grid ();
+            grid.column_spacing = 12;
+            grid.margin = 3;
+            grid.margin_start = grid.margin_end = 6;
+            grid.valign = Gtk.Align.CENTER;
+            grid.add (label);
+            grid.add (keycap_grid);
+
+            add (grid);
+
+            render_keycaps ();
+
+            var glib_setting = settings.schemas[schema];
+            glib_setting.changed.connect (render_keycaps);
+        }
+
+        private void render_keycaps () {
+            foreach (unowned Gtk.Widget child in keycap_grid.get_children ()) {
+                child.destroy ();
+            };
+
             var shortcut = settings.get_val (schema, key);
 
             string[] accels = shortcut.to_readable ().split (" + ");
-
-            var keycap_grid = new Gtk.Grid ();
-            keycap_grid.column_spacing = 6;
 
             if (accels[0] != "" && accels[0] != _("Disabled")) {
                 foreach (unowned string accel in accels) {
@@ -121,15 +144,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                 keycap_grid.add (keycap_label);
             }
 
-            var grid = new Gtk.Grid ();
-            grid.column_spacing = 12;
-            grid.margin = 3;
-            grid.margin_start = grid.margin_end = 6;
-            grid.valign = Gtk.Align.CENTER;
-            grid.add (label);
-            grid.add (keycap_grid);
-
-            add (grid);
+            keycap_grid.show_all ();
         }
     }
 }
