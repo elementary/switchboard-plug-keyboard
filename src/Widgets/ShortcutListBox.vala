@@ -118,11 +118,22 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                 child.destroy ();
             };
 
-            var shortcut = settings.get_val (schema, key);
+            var key_value = settings.schemas[schema].get_value (key);
 
-            string[] accels = shortcut.to_readable ().split (" + ");
+            string[] accels = {""};
+            if (key_value.is_of_type (VariantType.ARRAY)) {
+                var key_value_strv = key_value.get_strv ();
+                if (key_value_strv.length > 0) {
+                    accels = Granite.accel_to_string (key_value_strv[0]).split (" + ");
+                }
+            } else {
+                var value_string = key_value.dup_string ();
+                if (value_string != "") {
+                    accels = Granite.accel_to_string (value_string).split (" + ");
+                }
+            }
 
-            if (accels[0] != "" && accels[0] != _("Disabled")) {
+            if (accels[0] != "") {
                 foreach (unowned string accel in accels) {
                     if (accel == "") {
                         continue;
