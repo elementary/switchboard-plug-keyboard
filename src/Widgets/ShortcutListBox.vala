@@ -71,6 +71,8 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         private Gtk.ModelButton clear_button;
         private Gtk.ModelButton reset_button;
         private Gtk.Grid keycap_grid;
+        private Gtk.Label status_label;
+        private Gtk.Stack keycap_stack;
 
         public ShortcutRow (string action, Schema schema, string key) {
             Object (
@@ -85,9 +87,19 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             label.hexpand = true;
             label.halign = Gtk.Align.START;
 
+            status_label = new Gtk.Label ("Disabled");
+            status_label.halign = Gtk.Align.END;
+            status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
             keycap_grid = new Gtk.Grid ();
             keycap_grid.column_spacing = 6;
             keycap_grid.valign = Gtk.Align.CENTER;
+            keycap_grid.halign = Gtk.Align.END;
+
+            keycap_stack = new Gtk.Stack ();
+            keycap_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
+            keycap_stack.add (keycap_grid);
+            keycap_stack.add (status_label);
 
             reset_button = new Gtk.ModelButton ();
             reset_button.text = _("Reset to Default");
@@ -95,7 +107,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             clear_button = new Gtk.ModelButton ();
             clear_button.text = _("Disable");
             clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
-
 
             var action_grid = new Gtk.Grid ();
             action_grid.margin_top = action_grid.margin_bottom = 3;
@@ -118,8 +129,9 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             grid.margin_start = grid.margin_end = 6;
             grid.valign = Gtk.Align.CENTER;
             grid.add (label);
-            grid.add (keycap_grid);
+            grid.add (keycap_stack);
             grid.add (menubutton);
+            grid.show_all ();
 
             add (grid);
 
@@ -142,10 +154,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         }
 
         private void render_keycaps () {
-            foreach (unowned Gtk.Widget child in keycap_grid.get_children ()) {
-                child.destroy ();
-            };
-
             var key_value = settings.schemas[schema].get_value (key);
 
             string[] accels = {""};
@@ -162,6 +170,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             }
 
             if (accels[0] != "") {
+                foreach (unowned Gtk.Widget child in keycap_grid.get_children ()) {
+                    child.destroy ();
+                };
+
                 foreach (unowned string accel in accels) {
                     if (accel == "") {
                         continue;
@@ -171,12 +183,11 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                     keycap_grid.add (keycap_label);
                 }
 
+                keycap_grid.show_all ();
+                keycap_stack.visible_child = keycap_grid;
                 clear_button.sensitive = true;
             } else {
-                var keycap_label = new Gtk.Label (_("Disabled"));
-                keycap_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-                keycap_grid.add (keycap_label);
-
+                keycap_stack.visible_child = status_label;
                 clear_button.sensitive = false;
             }
 
@@ -185,8 +196,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             } else {
                 reset_button.sensitive = true;
             }
-
-            keycap_grid.show_all ();
         }
     }
 }
