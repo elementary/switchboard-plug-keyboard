@@ -30,8 +30,10 @@ namespace Pantheon.Keyboard.Shortcuts
         // converters
         public string to_gsettings ()
         {
-            if (!valid())
+            if (!valid()) {
                 return "";
+            }
+
             return Gtk.accelerator_name (accel_key, modifiers);
         }
 

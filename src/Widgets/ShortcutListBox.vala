@@ -66,19 +66,20 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
     private class ShortcutRow : Gtk.ListBoxRow {
         public string action { get; construct; }
         public Schema schema { get; construct; }
-        public string key { get; construct; }
+        public string gsettings_key { get; construct; }
 
+        private bool editing = false;
         private Gtk.ModelButton clear_button;
         private Gtk.ModelButton reset_button;
         private Gtk.Grid keycap_grid;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
 
-        public ShortcutRow (string action, Schema schema, string key) {
+        public ShortcutRow (string action, Schema schema, string gsettings_key) {
             Object (
                 action: action,
                 schema: schema,
-                key: key
+                gsettings_key: gsettings_key
             );
         }
 
@@ -87,7 +88,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             label.hexpand = true;
             label.halign = Gtk.Align.START;
 
-            status_label = new Gtk.Label ("Disabled");
+            status_label = new Gtk.Label (_("Disabled"));
             status_label.halign = Gtk.Align.END;
             status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
@@ -101,6 +102,9 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             keycap_stack.add (keycap_grid);
             keycap_stack.add (status_label);
 
+            var set_accel_button = new Gtk.ModelButton ();
+            set_accel_button.text = _("Set New Shortcut");
+
             reset_button = new Gtk.ModelButton ();
             reset_button.text = _("Reset to Default");
 
@@ -111,6 +115,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             var action_grid = new Gtk.Grid ();
             action_grid.margin_top = action_grid.margin_bottom = 3;
             action_grid.orientation = Gtk.Orientation.VERTICAL;
+            action_grid.add (set_accel_button);
             action_grid.add (reset_button);
             action_grid.add (clear_button);
             action_grid.show_all ();
@@ -137,24 +142,55 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
 
             render_keycaps ();
 
-            settings.schemas[schema].changed[key].connect (render_keycaps);
+            settings.schemas[schema].changed[gsettings_key].connect (render_keycaps);
 
             clear_button.clicked.connect (() => {
-                var key_value = settings.schemas[schema].get_value (key);
+                var key_value = settings.schemas[schema].get_value (gsettings_key);
                 if (key_value.is_of_type (VariantType.ARRAY)) {
-                    settings.schemas[schema].set_strv (key, {""});
+                    settings.schemas[schema].set_strv (gsettings_key, {""});
                 } else {
-                    settings.schemas[schema].set_string (key, "");
+                    settings.schemas[schema].set_string (gsettings_key, "");
                 }
             });
 
             reset_button.clicked.connect (() => {
-                settings.schemas[schema].reset (key);
+                settings.schemas[schema].reset (gsettings_key);
             });
+
+            set_accel_button.clicked.connect (() => {
+                keycap_stack.visible_child = status_label;
+                status_label.label = _("Enter new shortcut…");
+                editing = true;
+            });
+
+            key_release_event.connect (on_key_pressed);
+        }
+
+        private bool on_key_pressed (Gdk.EventKey key) {
+            if (!editing) {
+                return Gdk.EVENT_STOP;
+            }
+
+            var key_state = key.state;
+            Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref key_state);
+
+            var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (key.keyval, key_state).to_gsettings ();
+
+            var key_value = settings.schemas[schema].get_value (gsettings_key);
+            if (key_value.is_of_type (VariantType.ARRAY)) {
+                settings.schemas[schema].set_strv (gsettings_key, {shortcut});
+            } else {
+                settings.schemas[schema].set_string (gsettings_key, shortcut);
+            }
+
+            editing = false;
+            render_keycaps ();
+
+            return Gdk.EVENT_STOP; 
         }
 
         private void render_keycaps () {
-            var key_value = settings.schemas[schema].get_value (key);
+            var key_value = settings.schemas[schema].get_value (gsettings_key);
 
             string[] accels = {""};
             if (key_value.is_of_type (VariantType.ARRAY)) {
@@ -183,15 +219,16 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                     keycap_grid.add (keycap_label);
                 }
 
+                clear_button.sensitive = true;
                 keycap_grid.show_all ();
                 keycap_stack.visible_child = keycap_grid;
-                clear_button.sensitive = true;
             } else {
-                keycap_stack.visible_child = status_label;
                 clear_button.sensitive = false;
+                keycap_stack.visible_child = status_label;
+                status_label.label = _("Disabled");
             }
 
-            if (settings.schemas[schema].get_user_value (key) == null) {
+            if (settings.schemas[schema].get_user_value (gsettings_key) == null) {
                 reset_button.sensitive = false;
             } else {
                 reset_button.sensitive = true;
