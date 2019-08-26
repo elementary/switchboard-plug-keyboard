@@ -108,7 +108,7 @@ namespace Pantheon.Keyboard.Shortcuts
             if (accel_key == 0) {
                 return false;
             }
-            
+
             if (modifiers == (Gdk.ModifierType) 0 || modifiers == Gdk.ModifierType.SHIFT_MASK) {
                 if ((accel_key >= Gdk.Key.a                   && accel_key <= Gdk.Key.z)
                 || (accel_key >= Gdk.Key.A                    && accel_key <= Gdk.Key.Z)
@@ -141,6 +141,7 @@ namespace Pantheon.Keyboard.Shortcuts
                 || (accel_key == Gdk.Key.slash)
                 || (accel_key == Gdk.Key.period)
                 || (accel_key == Gdk.Key.comma)
+                || (accel_key == Gdk.Key.space)
                 || (accel_key == Gdk.Key.grave)) {
                    return false;
                }
