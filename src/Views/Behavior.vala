@@ -81,7 +81,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         switch_blink.valign = Gtk.Align.CENTER;
         switch_blink.margin_top = 24;
 
-        var blink_speed_adjustment = new Gtk.Adjustment (-1, 100, 2300, 10, 0, 0);
+        var blink_speed_adjustment = new Gtk.Adjustment (-1, 100, 2500, 10, 0, 0);
 
         var scale_blink_speed = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, blink_speed_adjustment);
         scale_blink_speed.draw_value = false;
