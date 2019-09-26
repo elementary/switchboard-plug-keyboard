@@ -18,15 +18,15 @@
 */
 
 public class AdvancedSettingsPanel : Gtk.Grid {
-    public string panel_name {get; construct;}
-    public string [] input_sources  {get; construct;}
-    public string [] exclusions {get; construct;}
+    public string panel_name { get; construct; }
+    public string [] input_sources { get; construct; }
+    public string [] exclusions { get; construct; }
 
     construct {
         row_spacing = 12;
         column_spacing = 12;
         margin_top = 0;
-        margin_bottom  = 12;
+        margin_bottom = 12;
         column_homogeneous = true;
         row_homogeneous = false;
 

@@ -43,7 +43,7 @@ public class ConflictDialog : Granite.MessageDialog {
                 reassign ();
             }
 
-            destroy();
+            destroy ();
         });
     }
 }

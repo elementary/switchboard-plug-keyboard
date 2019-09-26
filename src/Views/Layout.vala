@@ -36,10 +36,12 @@ namespace Pantheon.Keyboard.LayoutPage {
         public Page () {
             this.column_homogeneous = true;
 
-            handler  = new LayoutHandler ();
+            handler = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
-            size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
-                          new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
+            size_group = {
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
+            };
 
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
@@ -363,7 +365,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                     active = true;
                 }
 
-                notify["active"].connect(() => {
+                notify["active"].connect (() => {
                     if (active) {
                         modifier.update_active_command (xkb_command);
                     } else {

@@ -210,7 +210,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             if (selection.get_selected (out model, out iter)) {
 
                 // if command is same as the default text, remove it
-                if (entry.text  == ENTER_COMMAND) {
+                if (entry.text == ENTER_COMMAND) {
                     remove_shorcut_for_iter (iter);
                 } else {
                 Gtk.TreePath path;

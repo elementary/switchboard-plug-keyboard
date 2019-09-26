@@ -1,5 +1,23 @@
-namespace Pantheon.Keyboard.LayoutPage
-{
+/*
+* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
+
+namespace Pantheon.Keyboard.LayoutPage {
     class Xkb_modifier {
         public string name;
         private string active_command;
@@ -47,7 +65,7 @@ namespace Pantheon.Keyboard.LayoutPage
             foreach (string xkb_command in this.xkb_option_commands) {
                 bool command_is_valid = true;
                 if (xkb_command != "") {
-                    var com_arr = xkb_command.split(",", 4);
+                    var com_arr = xkb_command.split (",", 4);
                     foreach (string opt in com_arr) {
                         if (!(opt in xkb_options)) {
                             command_is_valid = false;
@@ -70,24 +88,24 @@ namespace Pantheon.Keyboard.LayoutPage
                 return;
             }
 
-            string old_opt = get_active_command();
-            set_active_command(val);
+            string old_opt = get_active_command ();
+            set_active_command (val);
 
             string [] new_xkb_options = {};
             string [] old_xkb_options = settings.get_strv (gsettings_key);
-            var old_arr = old_opt.split(",", 4);
-            var new_arr = val.split(",", 4);
+            var old_arr = old_opt.split (",", 4);
+            var new_arr = val.split (",", 4);
 
             foreach (string xkb_command in old_xkb_options) {
                 if (!(xkb_command in old_arr) || (xkb_command in new_arr)) {
                     new_xkb_options += xkb_command;
-                } 
+                }
             }
 
             foreach (string xkb_command in new_arr) {
                 if (!(xkb_command in new_xkb_options)) {
                     new_xkb_options += xkb_command;
-                } 
+                }
             }
 
             settings.changed[gsettings_key].disconnect (update_from_gsettings);
@@ -105,12 +123,9 @@ namespace Pantheon.Keyboard.LayoutPage
             }
         }
 
-        public void append_xkb_option ( string xkb_command, string description ){
+        public void append_xkb_option (string xkb_command, string description) {
             xkb_option_commands += xkb_command;
             option_descriptions += description;
         }
     }
 }
-
-
-
