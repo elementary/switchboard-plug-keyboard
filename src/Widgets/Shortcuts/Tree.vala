@@ -1,5 +1,23 @@
-namespace Pantheon.Keyboard.Shortcuts {
+/*
+* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
 
+namespace Pantheon.Keyboard.Shortcuts {
     private class Tree : Gtk.TreeView, DisplayTree {
 
         public SectionID group { private get; construct; }
@@ -16,14 +34,14 @@ namespace Pantheon.Keyboard.Shortcuts {
             var cell_desc = new Gtk.CellRendererText ();
             var cell_edit = new Gtk.CellRendererAccel ();
 
-            cell_edit.editable   = true;
+            cell_edit.editable = true;
             cell_edit.accel_mode = Gtk.CellRendererAccelMode.OTHER;
 
             this.insert_column_with_attributes (-1, null, cell_desc, "text", 0);
             this.insert_column_with_attributes (-1, null, cell_edit, "text", 1);
 
             this.headers_visible = false;
-            this.expand          = true;
+            this.expand = true;
 
             this.get_column (0).expand = true;
 
@@ -43,7 +61,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 return true;
             });
 
-            cell_edit.accel_edited.connect ((path, key, mods) =>  {
+            cell_edit.accel_edited.connect ((path, key, mods) => {
                 var shortcut = new Shortcut (key, mods);
                 change_shortcut (path, shortcut);
             });
@@ -62,16 +80,21 @@ namespace Pantheon.Keyboard.Shortcuts {
             Gtk.TreeIter iter;
 
             for (int i = 0; i < actions.length; i++) {
-                var shortcut = settings.get_val(schemas[i], keys[i]);
+                var shortcut = settings.get_val (schemas[i], keys[i]);
 
-                if (shortcut == null)
+                if (shortcut == null) {
                     continue;
+                }
 
                 store.append (out iter);
-                store.set (iter, 0, actions[i],
-                                 1, shortcut.to_readable(),
-                                 2, schemas[i],    // hidden
-                                 3, keys[i], -1);  // hidden
+                store.set (
+                    iter,
+                    0, actions[i],
+                    1, shortcut.to_readable (),
+                    2, schemas[i], // hidden
+                    3, keys[i], // hidden
+                    -1
+                );
             }
 
             model = store;
@@ -110,8 +133,8 @@ namespace Pantheon.Keyboard.Shortcuts {
         }
 
         public bool change_shortcut (string path, Shortcut? shortcut) {
-            Gtk.TreeIter  iter;
-            GLib.Value    key, schema, name;
+            Gtk.TreeIter iter;
+            GLib.Value key, schema, name;
 
             model.get_iter (out iter, new Gtk.TreePath.from_string (path));
 

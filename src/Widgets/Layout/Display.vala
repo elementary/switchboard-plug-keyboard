@@ -81,13 +81,13 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var pop = new AddLayoutPopover ();
 
-            add_button.clicked.connect( () => {
+            add_button.clicked.connect (() => {
                 pop.set_relative_to (add_button);
                 pop.show_all ();
                 add_item (pop);
             });
 
-            remove_button.clicked.connect( () => {
+            remove_button.clicked.connect (() => {
                 remove_item ();
             });
 
@@ -151,8 +151,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
                 tree.get_cursor (out path, null);
 
-                if (path == null)
-                {
+                if (path == null) {
                     return -1;
                 }
 
@@ -165,7 +164,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         Gtk.ListStore build_store () {
-            Gtk.ListStore list_store = new Gtk.ListStore (2, typeof (string), typeof(string));
+            Gtk.ListStore list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
             Gtk.TreeIter iter;
             for (uint i = 0; i < settings.layouts.length; i++) {
                 string item = settings.layouts.get_layout (i).name;
