@@ -331,16 +331,16 @@ namespace Pantheon.Keyboard.LayoutPage {
             }
         }
 
-        private Xkb_modifier [] xkb_options_modifiers;
+        private XkbModifier [] xkb_options_modifiers;
 
-        public void add_xkb_modifier (Xkb_modifier modifier) {
+        public void add_xkb_modifier (XkbModifier modifier) {
             //We assume by this point the modifier has all the options in it.
             modifier.update_from_gsettings ();
             xkb_options_modifiers += modifier;
         }
 
-        public Xkb_modifier? get_xkb_modifier_by_name (string name) {
-            foreach (Xkb_modifier modifier in xkb_options_modifiers) {
+        public XkbModifier? get_xkb_modifier_by_name (string name) {
+            foreach (XkbModifier modifier in xkb_options_modifiers) {
                 if (modifier.name == name) {
                     return modifier;
                 }
