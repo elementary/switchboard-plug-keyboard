@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:45+0200\n"
-"PO-Revision-Date: 2019-04-06 22:03+0000\n"
+"PO-Revision-Date: 2019-10-05 03:23+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.5.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
 
 #: src/Keyboard.vala:13
@@ -60,7 +60,7 @@ msgstr "大写锁定键行为"
 
 #: src/Keyboard.vala:74
 msgid "Repeat Keys"
-msgstr "重复键"
+msgstr "按键重复"
 
 #: src/Keyboard.vala:75
 msgid "Cursor Blinking"
@@ -148,7 +148,7 @@ msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Space"
-msgstr "Alt + 空格"
+msgstr "Alt + Space"
 
 #: src/Views/Layout.vala:55
 msgid "Both Shift keys together"
@@ -227,9 +227,8 @@ msgid "as ⌘"
 msgstr "作为 ⌘"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "和 Control 互换"
+msgstr "和 Ctrl 互换"
 
 #: src/Views/Layout.vala:108
 msgid "Swap with Escape"
@@ -273,7 +272,7 @@ msgstr "右 Alt/Ctrl 使用 Hangul/Hanja："
 
 #: src/Views/Behavior.vala:45
 msgid "Repeat Keys:"
-msgstr "重复键："
+msgstr "按键重复："
 
 #: src/Views/Behavior.vala:49
 msgid "Delay:"
@@ -314,7 +313,7 @@ msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:54
 msgid "Ctrl"
-msgstr "Ctrl 键"
+msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:58
 msgid "Alt"

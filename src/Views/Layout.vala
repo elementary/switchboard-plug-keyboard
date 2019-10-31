@@ -36,10 +36,12 @@ namespace Pantheon.Keyboard.LayoutPage {
         public Page () {
             this.column_homogeneous = true;
 
-            handler  = new LayoutHandler ();
+            handler = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
-            size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
-                          new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
+            size_group = {
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
+            };
 
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
@@ -47,7 +49,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var switch_layout_label = new SettingsLabel (_("Switch layout:"), size_group[0]);
 
             // Layout switching keybinding
-            var modifier = new Xkb_modifier ("switch-layout");
+            var modifier = new XkbModifier ("switch-layout");
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
             modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
@@ -66,7 +68,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var compose_key_label = new SettingsLabel (_("Compose key:"), size_group[0]);
 
             // Compose key position menu
-            modifier = new Xkb_modifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
@@ -96,7 +98,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var caps_lock_label = new SettingsLabel (_("Caps Lock behavior:"), size_group[0]);
 
             // Caps Lock key functionality
-            modifier = new Xkb_modifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("caps:none", _("Disabled"));
             modifier.append_xkb_option ("caps:backspace", _("as Backspace"));
@@ -240,7 +242,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
 
-            Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
+            XkbModifier modifier = new XkbModifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
@@ -255,7 +257,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var fifth_level_label = new SettingsLabel (_("Key to choose 5th level:"), size_group[0]);
 
-            modifier = new Xkb_modifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
             modifier.append_xkb_option ("", _("Right Ctrl"));
             modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right ⌘"));
@@ -325,7 +327,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private class XkbComboBox : Gtk.ComboBoxText {
-            public XkbComboBox (Xkb_modifier modifier, Gtk.SizeGroup size_group) {
+            public XkbComboBox (XkbModifier modifier, Gtk.SizeGroup size_group) {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
                 size_group.add_widget (this);
@@ -351,7 +353,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
 
-                var modifier = new Xkb_modifier ("" + xkb_command);
+                var modifier = new XkbModifier ("" + xkb_command);
                 modifier.append_xkb_option ("", "option off");
                 modifier.append_xkb_option (xkb_command, "option on");
 
@@ -363,7 +365,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                     active = true;
                 }
 
-                notify["active"].connect(() => {
+                notify["active"].connect (() => {
                     if (active) {
                         modifier.update_active_command (xkb_command);
                     } else {

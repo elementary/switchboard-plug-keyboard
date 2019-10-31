@@ -2,16 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-06-26 22:45+0200\n"
-"PO-Revision-Date: 2018-12-24 00:06+0000\n"
-"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
-"Language-Team: Hindi <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2019-10-17 17:23+0000\n"
+"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"Language-Team: Hindi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hi/>\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.7.1\n"
 
 #: src/Keyboard.vala:13
 msgid "Keyboard"
@@ -129,7 +129,7 @@ msgstr ""
 #: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
 #: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
 msgid "Disabled"
-msgstr ""
+msgstr "निष्क्रिय"
 
 #: src/Views/Layout.vala:52
 msgid "Alt + Caps Lock"
