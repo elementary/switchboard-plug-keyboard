@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2019-11-06 17:15+0000\n"
 "PO-Revision-Date: 2019-10-05 03:23+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -20,304 +20,76 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
 
-#: src/Keyboard.vala:13
+#: src/Plug.vala:32
 msgid "Keyboard"
 msgstr "键盘"
 
-#: src/Keyboard.vala:14
+#: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "配置键盘功能、布局和快捷键"
 
-#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
-#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
+#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
+#: src/Plug.vala:89 src/Plug.vala:90
 msgid "Layout"
 msgstr "布局"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:72
+#: src/Plug.vala:43 src/Plug.vala:91
 msgid "Shortcuts"
 msgstr "快捷键"
 
-#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
-#: src/Keyboard.vala:75
+#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
 msgid "Behavior"
 msgstr "行为"
 
-#: src/Keyboard.vala:68
+#: src/Plug.vala:87
 msgid "Switch layout"
 msgstr "切换布局"
 
-#: src/Keyboard.vala:69
+#: src/Plug.vala:88
 msgid "Compose Key"
 msgstr "组合键"
 
-#: src/Keyboard.vala:70
+#: src/Plug.vala:89
 msgid "⌘ key behavior"
 msgstr "⌘ 键行为"
 
-#: src/Keyboard.vala:71
+#: src/Plug.vala:90
 msgid "Caps Lock behavior"
 msgstr "大写锁定键行为"
 
-#: src/Keyboard.vala:74
+#: src/Plug.vala:93
 msgid "Repeat Keys"
 msgstr "按键重复"
 
-#: src/Keyboard.vala:75
+#: src/Plug.vala:94
 msgid "Cursor Blinking"
 msgstr "光标闪烁"
 
-#: src/Widgets/Shortcuts/Display.vala:44
-msgid "Add"
-msgstr "添加"
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr "%s 已经用于 %s"
 
-#: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "删除"
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "如果您重新指定 %s 为快捷键，%s 将被替换。"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
-msgstr "输入指令"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Command 键"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr "快捷键"
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "添加…"
-
-#: src/Widgets/Layout/Display.vala:63
-msgid "Move up"
-msgstr "向上移动"
-
-#: src/Widgets/Layout/Display.vala:67
-msgid "Move down"
-msgstr "向下移动"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "搜索输入语言"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "输入语言"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "显示键盘布局"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "添加布局"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
 msgstr "取消"
 
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "重新分配"
+
 #. Caps Lock key functionality
-#: src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
+#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Views/Layout.vala:246 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "默认"
-
-#. tree view to display the current layouts
-#: src/Views/Layout.vala:47
-msgid "Switch layout:"
-msgstr "切换布局："
-
-#. Layout switching keybinding
-#. Compose key position menu
-#: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
-msgid "Disabled"
-msgstr "已禁用"
-
-#: src/Views/Layout.vala:52
-msgid "Alt + Caps Lock"
-msgstr "Alt + Caps Lock"
-
-#: src/Views/Layout.vala:53
-msgid "Alt + Shift"
-msgstr "Alt + Shift"
-
-#: src/Views/Layout.vala:54
-msgid "Alt + Space"
-msgstr "Alt + Space"
-
-#: src/Views/Layout.vala:55
-msgid "Both Shift keys together"
-msgstr "同时按下两个 Shift"
-
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: src/Views/Layout.vala:57
-msgid "Ctrl + Alt"
-msgstr "Ctrl + Alt"
-
-#: src/Views/Layout.vala:58
-msgid "Ctrl + Shift"
-msgstr "Ctrl + Shift"
-
-#: src/Views/Layout.vala:59
-msgid "Shift + Caps Lock"
-msgstr "Shift + Caps Lock"
-
-#: src/Views/Layout.vala:66
-msgid "Compose key:"
-msgstr "组合键："
-
-#: src/Views/Layout.vala:72
-msgid "Menu"
-msgstr "菜单"
-
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
-msgid "Right Alt"
-msgstr "右 Alt"
-
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
-msgid "Right Ctrl"
-msgstr "右 Ctrl"
-
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-msgid "Right ⌘"
-msgstr "右 ⌘"
-
-#: src/Views/Layout.vala:82
-msgid "⌘ key behavior:"
-msgstr "⌘键行为："
-
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
-msgid "Applications Menu"
-msgstr "程序菜单"
-
-#: src/Views/Layout.vala:91
-msgid "Shortcut Overlay"
-msgstr "快捷键"
-
-#: src/Views/Layout.vala:96
-msgid "Caps Lock behavior:"
-msgstr "大写锁定键："
-
-#: src/Views/Layout.vala:102
-msgid "as Backspace"
-msgstr "代替 Backspace"
-
-#: src/Views/Layout.vala:103
-msgid "as Ctrl"
-msgstr "代替 Ctrl"
-
-#: src/Views/Layout.vala:104
-msgid "as Escape"
-msgstr "代替 Escape"
-
-#: src/Views/Layout.vala:105
-msgid "as Num Lock"
-msgstr "代替 Num Lock"
-
-#: src/Views/Layout.vala:106
-msgid "as ⌘"
-msgstr "作为 ⌘"
-
-#: src/Views/Layout.vala:107
-msgid "Swap with Ctrl"
-msgstr "和 Ctrl 互换"
-
-#: src/Views/Layout.vala:108
-msgid "Swap with Escape"
-msgstr "和 Escape 互换"
-
-#: src/Views/Layout.vala:127
-msgid "Type to test your layout"
-msgstr "键入任意内容测试您的布局"
-
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr "输入法设置…"
-
-#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
-msgid "Key to choose 3rd level:"
-msgstr "三级选择键："
-
-#: src/Views/Layout.vala:246
-msgid "Left Alt"
-msgstr "左 Alt"
-
-#: src/Views/Layout.vala:256
-msgid "Key to choose 5th level:"
-msgstr "五级选择键："
-
-#: src/Views/Layout.vala:277
-msgid "Kana Lock:"
-msgstr "假名锁定："
-
-#: src/Views/Layout.vala:285
-msgid "Nicola F Backspace:"
-msgstr "Nicola F 样式 Backspace："
-
-#: src/Views/Layout.vala:288
-msgid "Hankaku Zenkaku as Escape:"
-msgstr "Hankaku Zenkaku 代替 Esc 键："
-
-#: src/Views/Layout.vala:305
-msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "右 Alt/Ctrl 使用 Hangul/Hanja："
-
-#: src/Views/Behavior.vala:45
-msgid "Repeat Keys:"
-msgstr "按键重复："
-
-#: src/Views/Behavior.vala:49
-msgid "Delay:"
-msgstr "延迟："
-
-#: src/Views/Behavior.vala:52
-msgid "Interval:"
-msgstr "间隔："
-
-#: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
-#: src/Views/Behavior.vala:95
-msgid "milliseconds"
-msgstr "毫秒"
-
-#: src/Views/Behavior.vala:84
-msgid "Cursor Blinking:"
-msgstr "光标闪烁："
-
-#: src/Views/Behavior.vala:89
-msgid "Speed:"
-msgstr "速度："
-
-#: src/Views/Behavior.vala:92
-msgid "Duration:"
-msgstr "持续："
-
-#: src/Views/Behavior.vala:98
-msgid "seconds"
-msgstr "秒"
-
-#: src/Views/Behavior.vala:127
-msgid "Type to test your settings"
-msgstr "键入任意内容来测试您的设置"
-
-#: src/Shortcuts/Shortcut.vala:46
-msgid "Shift"
-msgstr "Shift"
-
-#: src/Shortcuts/Shortcut.vala:54
-msgid "Ctrl"
-msgstr "Ctrl"
-
-#: src/Shortcuts/Shortcut.vala:58
-msgid "Alt"
-msgstr "Alt"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -627,6 +399,10 @@ msgstr "启用高对比度"
 msgid "System"
 msgstr "系统"
 
+#: src/Shortcuts/List.vala:138 src/Views/Layout.vala:89
+msgid "Applications Menu"
+msgstr "程序菜单"
+
 #: src/Shortcuts/List.vala:139
 msgid "Lock"
 msgstr "锁定"
@@ -639,19 +415,242 @@ msgstr "注销"
 msgid "Custom"
 msgstr "自定义"
 
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
-msgstr "%s 已经用于 %s"
+#. Layout switching keybinding
+#. Compose key position menu
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+msgid "Disabled"
+msgstr "已禁用"
 
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "如果您重新指定 %s 为快捷键，%s 将被替换。"
+#: src/Shortcuts/Shortcut.vala:61
+msgid "Shift"
+msgstr "Shift"
 
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "重新分配"
+#: src/Shortcuts/Shortcut.vala:69
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/Shortcuts/Shortcut.vala:73
+msgid "Alt"
+msgstr "Alt"
+
+#: src/Views/Behavior.vala:25
+msgid "Repeat Keys:"
+msgstr "按键重复："
+
+#: src/Views/Behavior.vala:28
+msgid "Delay:"
+msgstr "延迟："
+
+#: src/Views/Behavior.vala:31
+msgid "Interval:"
+msgstr "间隔："
+
+#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
+#: src/Views/Behavior.vala:73
+msgid "milliseconds"
+msgstr "毫秒"
+
+#: src/Views/Behavior.vala:63
+msgid "Cursor Blinking:"
+msgstr "光标闪烁："
+
+#: src/Views/Behavior.vala:67
+msgid "Speed:"
+msgstr "速度："
+
+#: src/Views/Behavior.vala:70
+msgid "Duration:"
+msgstr "持续："
+
+#: src/Views/Behavior.vala:76
+msgid "seconds"
+msgstr "秒"
+
+#: src/Views/Behavior.vala:105
+msgid "Type to test your settings"
+msgstr "键入任意内容来测试您的设置"
+
+#. tree view to display the current layouts
+#: src/Views/Layout.vala:49
+msgid "Switch layout:"
+msgstr "切换布局："
+
+#: src/Views/Layout.vala:54
+msgid "Alt + Caps Lock"
+msgstr "Alt + Caps Lock"
+
+#: src/Views/Layout.vala:55
+msgid "Alt + Shift"
+msgstr "Alt + Shift"
+
+#: src/Views/Layout.vala:56
+msgid "Alt + Space"
+msgstr "Alt + Space"
+
+#: src/Views/Layout.vala:57
+msgid "Both Shift keys together"
+msgstr "同时按下两个 Shift"
+
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:247
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:59
+msgid "Ctrl + Alt"
+msgstr "Ctrl + Alt"
+
+#: src/Views/Layout.vala:60
+msgid "Ctrl + Shift"
+msgstr "Ctrl + Shift"
+
+#: src/Views/Layout.vala:61
+msgid "Shift + Caps Lock"
+msgstr "Shift + Caps Lock"
+
+#: src/Views/Layout.vala:68
+msgid "Compose key:"
+msgstr "组合键："
+
+#: src/Views/Layout.vala:74
+msgid "Menu"
+msgstr "菜单"
+
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
+msgid "Right Alt"
+msgstr "右 Alt"
+
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:250 src/Views/Layout.vala:262
+msgid "Right Ctrl"
+msgstr "右 Ctrl"
+
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:251 src/Views/Layout.vala:263
+msgid "Right ⌘"
+msgstr "右 ⌘"
+
+#: src/Views/Layout.vala:84
+msgid "⌘ key behavior:"
+msgstr "⌘键行为："
+
+#: src/Views/Layout.vala:93
+msgid "Shortcut Overlay"
+msgstr "快捷键"
+
+#: src/Views/Layout.vala:98
+msgid "Caps Lock behavior:"
+msgstr "大写锁定键："
+
+#: src/Views/Layout.vala:104
+msgid "as Backspace"
+msgstr "代替 Backspace"
+
+#: src/Views/Layout.vala:105
+msgid "as Ctrl"
+msgstr "代替 Ctrl"
+
+#: src/Views/Layout.vala:106
+msgid "as Escape"
+msgstr "代替 Escape"
+
+#: src/Views/Layout.vala:107
+msgid "as Num Lock"
+msgstr "代替 Num Lock"
+
+#: src/Views/Layout.vala:108
+msgid "as ⌘"
+msgstr "作为 ⌘"
+
+#: src/Views/Layout.vala:109
+msgid "Swap with Ctrl"
+msgstr "和 Ctrl 互换"
+
+#: src/Views/Layout.vala:110
+msgid "Swap with Escape"
+msgstr "和 Escape 互换"
+
+#: src/Views/Layout.vala:129
+msgid "Type to test your layout"
+msgstr "键入任意内容测试您的布局"
+
+#: src/Views/Layout.vala:131
+msgid "Input Method Settings…"
+msgstr "输入法设置…"
+
+#: src/Views/Layout.vala:226 src/Views/Layout.vala:243
+msgid "Key to choose 3rd level:"
+msgstr "三级选择键："
+
+#: src/Views/Layout.vala:248
+msgid "Left Alt"
+msgstr "左 Alt"
+
+#: src/Views/Layout.vala:258
+msgid "Key to choose 5th level:"
+msgstr "五级选择键："
+
+#: src/Views/Layout.vala:279
+msgid "Kana Lock:"
+msgstr "假名锁定："
+
+#: src/Views/Layout.vala:287
+msgid "Nicola F Backspace:"
+msgstr "Nicola F 样式 Backspace："
+
+#: src/Views/Layout.vala:290
+msgid "Hankaku Zenkaku as Escape:"
+msgstr "Hankaku Zenkaku 代替 Esc 键："
+
+#: src/Views/Layout.vala:307
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr "右 Alt/Ctrl 使用 Hangul/Hanja："
+
+#: src/Views/Shortcuts.vala:76
+msgid "Add"
+msgstr "添加"
+
+#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr "删除"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+msgid "Search input language"
+msgstr "搜索输入语言"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
+msgid "Input Language"
+msgstr "输入语言"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
+msgid "Show keyboard layout"
+msgstr "显示键盘布局"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
+msgid "Add Layout"
+msgstr "添加布局"
+
+#: src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr "添加…"
+
+#: src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr "向上移动"
+
+#: src/Widgets/Layout/Display.vala:67
+msgid "Move down"
+msgstr "向下移动"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:23
+msgid "Enter Command"
+msgstr "输入指令"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:73
+msgid "Command"
+msgstr "Command 键"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:74
+msgid "Shortcut"
+msgstr "快捷键"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "大写锁定键已禁用"

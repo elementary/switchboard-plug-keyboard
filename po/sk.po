@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2019-11-06 17:15+0000\n"
 "PO-Revision-Date: 2016-07-05 18:41+0000\n"
 "Last-Translator: Ľubomír Hlavko <5lubo555@azet.sk>\n"
 "Language-Team: Slovak <sk@li.org>\n"
@@ -18,314 +18,77 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/Keyboard.vala:13
+#: src/Plug.vala:32
 msgid "Keyboard"
 msgstr "Klávesnica"
 
-#: src/Keyboard.vala:14
+#: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
-#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
+#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
+#: src/Plug.vala:89 src/Plug.vala:90
 msgid "Layout"
 msgstr "Rozloženie"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:72
+#: src/Plug.vala:43 src/Plug.vala:91
 msgid "Shortcuts"
 msgstr "Klávesové skratky"
 
-#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
-#: src/Keyboard.vala:75
+#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
 msgid "Behavior"
 msgstr "Správanie"
 
-#: src/Keyboard.vala:68
+#: src/Plug.vala:87
 msgid "Switch layout"
 msgstr ""
 
-#: src/Keyboard.vala:69
+#: src/Plug.vala:88
 msgid "Compose Key"
 msgstr ""
 
-#: src/Keyboard.vala:70
+#: src/Plug.vala:89
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "Správanie sa Caps Lock:"
 
-#: src/Keyboard.vala:71
+#: src/Plug.vala:90
 msgid "Caps Lock behavior"
 msgstr ""
 
-#: src/Keyboard.vala:74
+#: src/Plug.vala:93
 msgid "Repeat Keys"
 msgstr ""
 
-#: src/Keyboard.vala:75
+#: src/Plug.vala:94
 msgid "Cursor Blinking"
 msgstr ""
 
-#: src/Widgets/Shortcuts/Display.vala:44
-msgid "Add"
-msgstr "Pridať"
-
-#: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "Odstrániť"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr ""
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "Pridať…"
-
-#: src/Widgets/Layout/Display.vala:63
-msgid "Move up"
-msgstr "Posunúť nahor"
-
-#: src/Widgets/Layout/Display.vala:67
-msgid "Move down"
-msgstr "Posunúť nadol"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "Jazyk:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
-msgid "Input Language"
-msgstr "Jazyk:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr ""
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Pridať rozloženie"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
 msgstr "Zrušiť"
 
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Znovu priradiť"
+
 #. Caps Lock key functionality
-#: src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
+#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Views/Layout.vala:246 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "Predvolené"
-
-#. tree view to display the current layouts
-#: src/Views/Layout.vala:47
-msgid "Switch layout:"
-msgstr "Zmeniť rozloženie:"
-
-#. Layout switching keybinding
-#. Compose key position menu
-#: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
-msgid "Disabled"
-msgstr "Zakázané"
-
-#: src/Views/Layout.vala:52
-msgid "Alt + Caps Lock"
-msgstr "Alt + Caps Lock"
-
-#: src/Views/Layout.vala:53
-msgid "Alt + Shift"
-msgstr "Alt + Shift"
-
-#: src/Views/Layout.vala:54
-msgid "Alt + Space"
-msgstr "Alt + Medzerník"
-
-#: src/Views/Layout.vala:55
-msgid "Both Shift keys together"
-msgstr "Oba klávesy Shift naraz"
-
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: src/Views/Layout.vala:57
-msgid "Ctrl + Alt"
-msgstr "Ctrl + Alt"
-
-#: src/Views/Layout.vala:58
-msgid "Ctrl + Shift"
-msgstr "Ctrl + Shift"
-
-#: src/Views/Layout.vala:59
-msgid "Shift + Caps Lock"
-msgstr "Shift + Caps Lock"
-
-#: src/Views/Layout.vala:66
-msgid "Compose key:"
-msgstr ""
-
-#: src/Views/Layout.vala:72
-msgid "Menu"
-msgstr ""
-
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
-msgid "Right Alt"
-msgstr "Pravý Alt"
-
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
-msgid "Right Ctrl"
-msgstr "Pravý Ctrl"
-
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
-msgid "Right ⌘"
-msgstr "Pravý Alt"
-
-#: src/Views/Layout.vala:82
-#, fuzzy
-msgid "⌘ key behavior:"
-msgstr "Správanie sa Caps Lock:"
-
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
-#, fuzzy
-msgid "Applications Menu"
-msgstr "Aplikácie"
-
-#: src/Views/Layout.vala:91
-#, fuzzy
-msgid "Shortcut Overlay"
-msgstr "Klávesové skratky"
-
-#: src/Views/Layout.vala:96
-msgid "Caps Lock behavior:"
-msgstr "Správanie sa Caps Lock:"
-
-#: src/Views/Layout.vala:102
-msgid "as Backspace"
-msgstr "ako Backspace"
-
-#: src/Views/Layout.vala:103
-msgid "as Ctrl"
-msgstr "ako Ctrl"
-
-#: src/Views/Layout.vala:104
-msgid "as Escape"
-msgstr ""
-
-#: src/Views/Layout.vala:105
-msgid "as Num Lock"
-msgstr "ako Num Lock"
-
-#: src/Views/Layout.vala:106
-msgid "as ⌘"
-msgstr ""
-
-#: src/Views/Layout.vala:107
-msgid "Swap with Ctrl"
-msgstr ""
-
-#: src/Views/Layout.vala:108
-msgid "Swap with Escape"
-msgstr ""
-
-#: src/Views/Layout.vala:127
-#, fuzzy
-msgid "Type to test your layout"
-msgstr "Otestujte vaše rozloženie..."
-
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr ""
-
-#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
-msgid "Key to choose 3rd level:"
-msgstr ""
-
-#: src/Views/Layout.vala:246
-msgid "Left Alt"
-msgstr ""
-
-#: src/Views/Layout.vala:256
-msgid "Key to choose 5th level:"
-msgstr ""
-
-#: src/Views/Layout.vala:277
-msgid "Kana Lock:"
-msgstr ""
-
-#: src/Views/Layout.vala:285
-msgid "Nicola F Backspace:"
-msgstr ""
-
-#: src/Views/Layout.vala:288
-msgid "Hankaku Zenkaku as Escape:"
-msgstr ""
-
-#: src/Views/Layout.vala:305
-msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
-
-#: src/Views/Behavior.vala:45
-msgid "Repeat Keys:"
-msgstr ""
-
-#: src/Views/Behavior.vala:49
-msgid "Delay:"
-msgstr "Oneskorenie:"
-
-#: src/Views/Behavior.vala:52
-msgid "Interval:"
-msgstr "Interval:"
-
-#: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
-#: src/Views/Behavior.vala:95
-msgid "milliseconds"
-msgstr "milisekúnd"
-
-#: src/Views/Behavior.vala:84
-msgid "Cursor Blinking:"
-msgstr ""
-
-#: src/Views/Behavior.vala:89
-msgid "Speed:"
-msgstr "Rýchlosť:"
-
-#: src/Views/Behavior.vala:92
-msgid "Duration:"
-msgstr "Trvanie:"
-
-#: src/Views/Behavior.vala:98
-msgid "seconds"
-msgstr "sekúnd"
-
-#: src/Views/Behavior.vala:127
-#, fuzzy
-msgid "Type to test your settings"
-msgstr "Píšte pre otestovanie vašich nastavení..."
-
-#: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
-msgid "Shift"
-msgstr "Alt + Shift"
-
-#: src/Shortcuts/Shortcut.vala:54
-msgid "Ctrl"
-msgstr ""
-
-#: src/Shortcuts/Shortcut.vala:58
-msgid "Alt"
-msgstr ""
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -644,6 +407,11 @@ msgstr "Prepnúť vysoký kontrast"
 msgid "System"
 msgstr ""
 
+#: src/Shortcuts/List.vala:138 src/Views/Layout.vala:89
+#, fuzzy
+msgid "Applications Menu"
+msgstr "Aplikácie"
+
 #: src/Shortcuts/List.vala:139
 #, fuzzy
 msgid "Lock"
@@ -657,19 +425,250 @@ msgstr ""
 msgid "Custom"
 msgstr ""
 
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
+#. Layout switching keybinding
+#. Compose key position menu
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+msgid "Disabled"
+msgstr "Zakázané"
+
+#: src/Shortcuts/Shortcut.vala:61
+#, fuzzy
+msgid "Shift"
+msgstr "Alt + Shift"
+
+#: src/Shortcuts/Shortcut.vala:69
+msgid "Ctrl"
 msgstr ""
 
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
+#: src/Shortcuts/Shortcut.vala:73
+msgid "Alt"
 msgstr ""
 
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Znovu priradiť"
+#: src/Views/Behavior.vala:25
+msgid "Repeat Keys:"
+msgstr ""
+
+#: src/Views/Behavior.vala:28
+msgid "Delay:"
+msgstr "Oneskorenie:"
+
+#: src/Views/Behavior.vala:31
+msgid "Interval:"
+msgstr "Interval:"
+
+#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
+#: src/Views/Behavior.vala:73
+msgid "milliseconds"
+msgstr "milisekúnd"
+
+#: src/Views/Behavior.vala:63
+msgid "Cursor Blinking:"
+msgstr ""
+
+#: src/Views/Behavior.vala:67
+msgid "Speed:"
+msgstr "Rýchlosť:"
+
+#: src/Views/Behavior.vala:70
+msgid "Duration:"
+msgstr "Trvanie:"
+
+#: src/Views/Behavior.vala:76
+msgid "seconds"
+msgstr "sekúnd"
+
+#: src/Views/Behavior.vala:105
+#, fuzzy
+msgid "Type to test your settings"
+msgstr "Píšte pre otestovanie vašich nastavení..."
+
+#. tree view to display the current layouts
+#: src/Views/Layout.vala:49
+msgid "Switch layout:"
+msgstr "Zmeniť rozloženie:"
+
+#: src/Views/Layout.vala:54
+msgid "Alt + Caps Lock"
+msgstr "Alt + Caps Lock"
+
+#: src/Views/Layout.vala:55
+msgid "Alt + Shift"
+msgstr "Alt + Shift"
+
+#: src/Views/Layout.vala:56
+msgid "Alt + Space"
+msgstr "Alt + Medzerník"
+
+#: src/Views/Layout.vala:57
+msgid "Both Shift keys together"
+msgstr "Oba klávesy Shift naraz"
+
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:247
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:59
+msgid "Ctrl + Alt"
+msgstr "Ctrl + Alt"
+
+#: src/Views/Layout.vala:60
+msgid "Ctrl + Shift"
+msgstr "Ctrl + Shift"
+
+#: src/Views/Layout.vala:61
+msgid "Shift + Caps Lock"
+msgstr "Shift + Caps Lock"
+
+#: src/Views/Layout.vala:68
+msgid "Compose key:"
+msgstr ""
+
+#: src/Views/Layout.vala:74
+msgid "Menu"
+msgstr ""
+
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
+msgid "Right Alt"
+msgstr "Pravý Alt"
+
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:250 src/Views/Layout.vala:262
+msgid "Right Ctrl"
+msgstr "Pravý Ctrl"
+
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:251 src/Views/Layout.vala:263
+#, fuzzy
+msgid "Right ⌘"
+msgstr "Pravý Alt"
+
+#: src/Views/Layout.vala:84
+#, fuzzy
+msgid "⌘ key behavior:"
+msgstr "Správanie sa Caps Lock:"
+
+#: src/Views/Layout.vala:93
+#, fuzzy
+msgid "Shortcut Overlay"
+msgstr "Klávesové skratky"
+
+#: src/Views/Layout.vala:98
+msgid "Caps Lock behavior:"
+msgstr "Správanie sa Caps Lock:"
+
+#: src/Views/Layout.vala:104
+msgid "as Backspace"
+msgstr "ako Backspace"
+
+#: src/Views/Layout.vala:105
+msgid "as Ctrl"
+msgstr "ako Ctrl"
+
+#: src/Views/Layout.vala:106
+msgid "as Escape"
+msgstr ""
+
+#: src/Views/Layout.vala:107
+msgid "as Num Lock"
+msgstr "ako Num Lock"
+
+#: src/Views/Layout.vala:108
+msgid "as ⌘"
+msgstr ""
+
+#: src/Views/Layout.vala:109
+msgid "Swap with Ctrl"
+msgstr ""
+
+#: src/Views/Layout.vala:110
+msgid "Swap with Escape"
+msgstr ""
+
+#: src/Views/Layout.vala:129
+#, fuzzy
+msgid "Type to test your layout"
+msgstr "Otestujte vaše rozloženie..."
+
+#: src/Views/Layout.vala:131
+msgid "Input Method Settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:226 src/Views/Layout.vala:243
+msgid "Key to choose 3rd level:"
+msgstr ""
+
+#: src/Views/Layout.vala:248
+msgid "Left Alt"
+msgstr ""
+
+#: src/Views/Layout.vala:258
+msgid "Key to choose 5th level:"
+msgstr ""
+
+#: src/Views/Layout.vala:279
+msgid "Kana Lock:"
+msgstr ""
+
+#: src/Views/Layout.vala:287
+msgid "Nicola F Backspace:"
+msgstr ""
+
+#: src/Views/Layout.vala:290
+msgid "Hankaku Zenkaku as Escape:"
+msgstr ""
+
+#: src/Views/Layout.vala:307
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr ""
+
+#: src/Views/Shortcuts.vala:76
+msgid "Add"
+msgstr "Pridať"
+
+#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr "Odstrániť"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+#, fuzzy
+msgid "Search input language"
+msgstr "Jazyk:"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
+#, fuzzy
+msgid "Input Language"
+msgstr "Jazyk:"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
+msgid "Show keyboard layout"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
+msgid "Add Layout"
+msgstr "Pridať rozloženie"
+
+#: src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr "Pridať…"
+
+#: src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr "Posunúť nahor"
+
+#: src/Widgets/Layout/Display.vala:67
+msgid "Move down"
+msgstr "Posunúť nadol"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:23
+msgid "Enter Command"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomTree.vala:73
+msgid "Command"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomTree.vala:74
+msgid "Shortcut"
+msgstr ""
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Spúšťač aplikácie"

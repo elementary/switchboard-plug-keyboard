@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-03 10:00-0700\n"
+"POT-Creation-Date: 2019-11-06 17:15+0000\n"
 "PO-Revision-Date: 2019-08-28 09:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -19,10 +19,10 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 3.7.1\n"
 
-#: data/io.elementary.switchboard-plug-keyboard.appdata.xml.in:5
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard"
 msgstr "键盘"
 
-#: data/io.elementary.switchboard-plug-keyboard.appdata.xml.in:6
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "配置键盘功能、布局和快捷键"
