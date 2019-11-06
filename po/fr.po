@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 17:15+0000\n"
-"PO-Revision-Date: 2019-05-30 13:03+0000\n"
-"Last-Translator: Corentin Noël <corentin@elementary.io>\n"
+"PO-Revision-Date: 2019-11-08 04:24+0000\n"
+"Last-Translator: Kristien <kristien@mailo.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
 "Language: fr\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.7.1\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:07+0000\n"
 
 #: src/Plug.vala:32
@@ -580,7 +580,7 @@ msgstr "Paramètres des méthodes de saisie…"
 
 #: src/Views/Layout.vala:226 src/Views/Layout.vala:243
 msgid "Key to choose 3rd level:"
-msgstr "Touche sélectionnant le 3e niveau :"
+msgstr "Touche sélectionnant le 3ème niveau :"
 
 #: src/Views/Layout.vala:248
 msgid "Left Alt"
