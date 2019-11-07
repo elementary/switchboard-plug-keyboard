@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-06 17:15+0000\n"
-"PO-Revision-Date: 2019-11-06 09:24+0000\n"
+"PO-Revision-Date: 2019-11-08 04:24+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -369,11 +369,11 @@ msgstr "ユニバーサルアクセス"
 
 #: src/Shortcuts/List.vala:127
 msgid "Decrease Text Size"
-msgstr "テキストサイズを小さく"
+msgstr "テキストサイズを縮小"
 
 #: src/Shortcuts/List.vala:128
 msgid "Increase Text Size"
-msgstr "テキストサイズを大きく"
+msgstr "テキストサイズを拡大"
 
 #: src/Shortcuts/List.vala:129
 msgid "Magnifier Zoom in"
