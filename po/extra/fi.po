@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 17:15+0000\n"
+"POT-Creation-Date: 2019-11-15 20:40+0000\n"
 "PO-Revision-Date: 2019-06-19 19:06+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -26,3 +26,15 @@ msgstr "Näppäimistö"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Määritä näppäimistön toiminta, asettelut ja pikanäppäimet"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
+msgid "New \"Workspaces\" icon"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
+msgid "Exclude Space from single-key shortcuts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "Updated translations"
+msgstr ""

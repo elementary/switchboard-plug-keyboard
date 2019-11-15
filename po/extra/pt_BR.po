@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-06 17:15+0000\n"
+"POT-Creation-Date: 2019-11-15 20:40+0000\n"
 "PO-Revision-Date: 2019-05-20 18:15+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -26,3 +26,15 @@ msgstr "Teclado"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configurar o comportamento do teclado, disposições e teclas de atalho"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
+msgid "New \"Workspaces\" icon"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
+msgid "Exclude Space from single-key shortcuts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "Updated translations"
+msgstr ""
