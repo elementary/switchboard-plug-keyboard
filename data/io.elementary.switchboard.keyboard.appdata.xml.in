@@ -4,10 +4,19 @@
   <extends>io.elementary.switchboard</extends>
   <name>Keyboard</name>
   <summary>Configure keyboard behavior, layouts, and shortcuts</summary>
+  <releases>
+    <release version="2.3.6" date="2019-11-14" urgency="medium">
+      <description>
+        <p>New "Workspaces" icon</p>
+        <p>Exclude Space from single-key shortcuts</p>
+        <p>Updated translations</p>
+      </description>
+    </release>
+  </releases>
   <screenshots>
-      <screenshot type="default">
-          <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot.png</image>
-      </screenshot>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-keyboard/issues</url>
