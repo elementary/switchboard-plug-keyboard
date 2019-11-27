@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-15 20:40+0000\n"
-"PO-Revision-Date: 2019-11-25 09:25+0000\n"
+"PO-Revision-Date: 2019-11-28 16:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/mr/>\n"
@@ -29,11 +29,11 @@ msgstr "कीबोर्ड वर्तन, मांडणी आणि श�
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
 msgid "New \"Workspaces\" icon"
-msgstr ""
+msgstr "नवीन \"कार्यक्षेत्र\" चिन्ह"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
+msgstr "सिंगल -की शॉर्टकटमधून स्पेस वगळा"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Updated translations"
