@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-11-15 20:40+0000\n"
-"PO-Revision-Date: 2019-10-05 03:23+0000\n"
+"PO-Revision-Date: 2019-12-05 05:25+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -125,7 +125,7 @@ msgstr "全屏切换"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
-msgstr "在所有工作区中显示"
+msgstr "在所有工作区中切换"
 
 #: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
