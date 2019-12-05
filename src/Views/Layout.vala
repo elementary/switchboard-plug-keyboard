@@ -388,7 +388,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
         private class StatusIndicatorSwitch : Gtk.Switch {
             public StatusIndicatorSwitch (string key_indicator) {
-                var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard-status");
+                var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
                 active = indicator_settings.get_boolean (key_indicator);
