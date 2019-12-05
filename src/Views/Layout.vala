@@ -114,13 +114,6 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
-            // CapsLock and NumLock indicators
-            var caps_lock_indicator_label = new SettingsLabel (_("Display Caps Lock indicator:"), size_group[0]);
-            var caps_lock_indicator_switch = new StatusIndicatorSwitch ("capslock");
-
-            var num_lock_indicator_label = new SettingsLabel (_("Display Num Lock indicator:"), size_group[0]);
-            var num_lock_indicator_switch = new StatusIndicatorSwitch ("numlock");
-
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
@@ -151,12 +144,31 @@ namespace Pantheon.Keyboard.LayoutPage {
             attach (overlay_key_combo, 2, 2, 1, 1);
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
-            attach (caps_lock_indicator_label, 1, 4, 1, 1);
-            attach (caps_lock_indicator_switch, 2, 4, 1, 1);
-            attach (num_lock_indicator_label, 1, 5, 1, 1);
-            attach (num_lock_indicator_switch, 2, 5, 1, 1);
             attach (advanced_settings, 1, 6, 2, 1);
             attach (action_area, 1, 7, 2, 1);
+
+            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", false) != null) {
+                var caps_lock_indicator_label = new SettingsLabel (_("Display Caps Lock indicator:"), size_group[0]);
+
+                var caps_lock_indicator_switch = new Gtk.Switch ();
+                caps_lock_indicator_switch.halign = Gtk.Align.START;
+                caps_lock_indicator_switch.valign = Gtk.Align.CENTER;
+
+                var num_lock_indicator_label = new SettingsLabel (_("Display Num Lock indicator:"), size_group[0]);
+
+                var num_lock_indicator_switch = new Gtk.Switch ();
+                num_lock_indicator_switch.halign = Gtk.Align.START;
+                num_lock_indicator_switch.valign = Gtk.Align.CENTER;
+
+                var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
+                indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
+                indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
+
+                attach (caps_lock_indicator_label, 1, 4);
+                attach (caps_lock_indicator_switch, 2, 4);
+                attach (num_lock_indicator_label, 1, 5);
+                attach (num_lock_indicator_switch, 2, 5);
+            }
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -382,19 +394,6 @@ namespace Pantheon.Keyboard.LayoutPage {
                     } else {
                         modifier.update_active_command ("");
                     }
-                });
-            }
-        }
-
-        private class StatusIndicatorSwitch : Gtk.Switch {
-            public StatusIndicatorSwitch (string key_indicator) {
-                var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
-                halign = Gtk.Align.START;
-                valign = Gtk.Align.CENTER;
-                active = indicator_settings.get_boolean (key_indicator);
-
-                notify["active"].connect (() => {
-                    indicator_settings.set_boolean (key_indicator, this.active);
                 });
             }
         }
