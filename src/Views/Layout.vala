@@ -394,10 +394,10 @@ namespace Pantheon.Keyboard.LayoutPage {
                     var num_lock_indicator_label = new SettingsLabel (_("Display Num Lock indicator:"), size_group);
                     var num_lock_indicator_switch = new StatusIndicatorSwitch ("numlock");
 
-                    attach (caps_lock_indicator_label, 0,0);
-                    attach (caps_lock_indicator_switch, 1,0);
-                    attach (num_lock_indicator_label, 0,1);
-                    attach (num_lock_indicator_switch, 1,1);
+                    attach (caps_lock_indicator_label, 0, 0);
+                    attach (caps_lock_indicator_switch, 1, 0);
+                    attach (num_lock_indicator_label, 0, 1);
+                    attach (num_lock_indicator_switch, 1, 1);
 
                     show_all ();
                 }
