@@ -115,11 +115,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
             // CapsLock and NumLock indicators
-            var caps_lock_indicator_label = new SettingsLabel (_("Display Caps Lock indicator:"), size_group[0]);
-            var caps_lock_indicator_switch = new StatusIndicatorSwitch ("capslock");
-
-            var num_lock_indicator_label = new SettingsLabel (_("Display Num Lock indicator:"), size_group[0]);
-            var num_lock_indicator_switch = new StatusIndicatorSwitch ("numlock");
+            var caps_num_lock_indicator = new KeysStatusIndicator (size_group[0]);
 
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
@@ -151,12 +147,9 @@ namespace Pantheon.Keyboard.LayoutPage {
             attach (overlay_key_combo, 2, 2, 1, 1);
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
-            attach (caps_lock_indicator_label, 1, 4, 1, 1);
-            attach (caps_lock_indicator_switch, 2, 4, 1, 1);
-            attach (num_lock_indicator_label, 1, 5, 1, 1);
-            attach (num_lock_indicator_switch, 2, 5, 1, 1);
-            attach (advanced_settings, 1, 6, 2, 1);
-            attach (action_area, 1, 7, 2, 1);
+            attach (caps_num_lock_indicator, 1, 4, 2, 1);
+            attach (advanced_settings, 1, 5, 2, 1);
+            attach (action_area, 1, 6, 2, 1);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -383,6 +376,31 @@ namespace Pantheon.Keyboard.LayoutPage {
                         modifier.update_active_command ("");
                     }
                 });
+            }
+        }
+
+        private class KeysStatusIndicator : Gtk.Grid {
+            public KeysStatusIndicator (Gtk.SizeGroup size_group) {
+                Object (
+                    column_homogeneous: true,
+                    column_spacing: 12,
+                    row_spacing: 12
+                );
+
+                if (SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", false) != null) {
+                    var caps_lock_indicator_label = new SettingsLabel (_("Display Caps Lock indicator:"), size_group);
+                    var caps_lock_indicator_switch = new StatusIndicatorSwitch ("capslock");
+
+                    var num_lock_indicator_label = new SettingsLabel (_("Display Num Lock indicator:"), size_group);
+                    var num_lock_indicator_switch = new StatusIndicatorSwitch ("numlock");
+
+                    attach (caps_lock_indicator_label, 0,0);
+                    attach (caps_lock_indicator_switch, 1,0);
+                    attach (num_lock_indicator_label, 0,1);
+                    attach (num_lock_indicator_switch, 1,1);
+
+                    show_all ();
+                }
             }
         }
 
