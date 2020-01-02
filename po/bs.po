@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-15 20:40+0000\n"
+"POT-Creation-Date: 2020-01-02 18:48+0000\n"
 "PO-Revision-Date: 2018-11-09 23:07+0000\n"
 "Last-Translator: Elvis Mujanović <elvis.mujanovic@gmail.com>\n"
 "Language-Team: Bosnian <https://weblate.elementary.io/projects/switchboard/"
@@ -87,7 +87,7 @@ msgstr "Dodijeli nanovo"
 
 #. Caps Lock key functionality
 #: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:246 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
 #: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "Zadano"
@@ -493,7 +493,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "Obje Shift tipke zajedno"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:247
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:278
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -517,15 +517,15 @@ msgstr "Tipka za sastavljanje:"
 msgid "Menu"
 msgstr "Izbornik"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
 msgid "Right Alt"
 msgstr "Desna Alt tipka"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:250 src/Views/Layout.vala:262
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:281 src/Views/Layout.vala:293
 msgid "Right Ctrl"
 msgstr "Desna Ctrl tipka"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:251 src/Views/Layout.vala:263
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:282 src/Views/Layout.vala:294
 msgid "Right ⌘"
 msgstr "Desna ⌘ tipka"
 
@@ -570,40 +570,56 @@ msgstr "Zamijeni s Ctrl tipkom"
 msgid "Swap with Escape"
 msgstr "Zamijeni s Esc tipkom"
 
-#: src/Views/Layout.vala:129
+#: src/Views/Layout.vala:127
 msgid "Type to test your layout"
 msgstr "Kucajte kako biste provjerili svoj raspored"
 
-#: src/Views/Layout.vala:131
+#: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
 msgstr "Podešavanja načina unosa…"
 
-#: src/Views/Layout.vala:226 src/Views/Layout.vala:243
+#: src/Views/Layout.vala:150
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Layout.vala:156
+#, fuzzy
+#| msgid "Caps Lock"
+msgid "Caps Lock:"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:162
+#, fuzzy
+#| msgid "as Num Lock"
+msgid "Num Lock:"
+msgstr "kao Num Lock"
+
+#: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
 msgstr "Tipka za izbor 3. nivoa:"
 
-#: src/Views/Layout.vala:248
+#: src/Views/Layout.vala:279
 msgid "Left Alt"
 msgstr "Lijeva Alt tipka"
 
-#: src/Views/Layout.vala:258
+#: src/Views/Layout.vala:289
 msgid "Key to choose 5th level:"
 msgstr "TIpka za izbor 5. nivoa:"
 
-#: src/Views/Layout.vala:279
+#: src/Views/Layout.vala:310
 msgid "Kana Lock:"
 msgstr "Kana zaključavanje:"
 
-#: src/Views/Layout.vala:287
+#: src/Views/Layout.vala:318
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:290
+#: src/Views/Layout.vala:321
 #, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku kao Escape:"
 
-#: src/Views/Layout.vala:307
+#: src/Views/Layout.vala:338
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Hangul/Hanja tipke na desnim Alt/Ctrl:"
 
