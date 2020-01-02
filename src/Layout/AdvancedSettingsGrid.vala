@@ -29,6 +29,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
 
         stack = new Gtk.Stack ();
         stack.hexpand = true;
+        stack.homogeneous = false;
         this.attach (stack, 0, 0, 1, 1);
 
         // Add an empty Widget
