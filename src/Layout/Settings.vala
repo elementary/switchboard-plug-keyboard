@@ -1,5 +1,23 @@
-namespace Pantheon.Keyboard.LayoutPage
-{
+/*
+* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+*
+* This program is free software; you can redistribute it and/or
+* modify it under the terms of the GNU General Public
+* License as published by the Free Software Foundation; either
+* version 2 of the License, or (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+* General Public License for more details.
+*
+* You should have received a copy of the GNU General Public
+* License along with this program; if not, write to the
+* Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
+* Boston, MA 02110-1301 USA
+*/
+
+namespace Pantheon.Keyboard.LayoutPage {
 
     /**
      * Type of a keyboard-layout as described in the description of
@@ -14,7 +32,6 @@ namespace Pantheon.Keyboard.LayoutPage
      * tupel of strings, and the @name parameter equals the second string.
      */
     class Layout {
-
         public LayoutType layout_type { get; private set; }
         public string name { get; private set; }
 
@@ -78,7 +95,6 @@ namespace Pantheon.Keyboard.LayoutPage
 
             return result;
         }
-
     }
 
     /**
@@ -202,9 +218,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
     }
 
-    class LayoutSettings
-    {
-
+    class LayoutSettings {
         public LayoutList layouts { get; private set; }
 
         GLib.Settings settings;
@@ -242,7 +256,7 @@ namespace Pantheon.Keyboard.LayoutPage
 
             GLib.Variant sources = settings.get_value ("sources");
             if (sources.is_of_type (VariantType.ARRAY)) {
-                for(size_t i = 0; i < sources.n_children (); i++) {
+                for (size_t i = 0; i < sources.n_children (); i++) {
                     GLib.Variant child = sources.get_child_value (i);
                     layouts.add_layout (new Layout.from_variant (child));
                 }
@@ -251,7 +265,7 @@ namespace Pantheon.Keyboard.LayoutPage
             }
         }
 
-        void update_active_from_gsettings () {
+        private void update_active_from_gsettings () {
             layouts.active = settings.get_uint ("current");
         }
 
@@ -278,7 +292,7 @@ namespace Pantheon.Keyboard.LayoutPage
                 return;
             }
 
-            string xkb_layout  = "";
+            string xkb_layout = "";
             string xkb_variant = "";
 
             try {
@@ -286,10 +300,8 @@ namespace Pantheon.Keyboard.LayoutPage
 
                 string line;
 
-                while ((line = dis.read_line (null)) != null)
-                {
-                    if (line.contains ("XKBLAYOUT="))
-                    {
+                while ((line = dis.read_line (null)) != null) {
+                    if (line.contains ("XKBLAYOUT=")) {
                         xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
 
                         while ((line = dis.read_line (null)) != null) {
@@ -308,26 +320,27 @@ namespace Pantheon.Keyboard.LayoutPage
             }
 
             var variants = xkb_variant.split (",");
-            var xkb_layouts  = xkb_layout.split (",");
+            var xkb_layouts = xkb_layout.split (",");
 
             for (int i = 0; i < layouts.length; i++) {
-                if (variants[i] != null && variants[i] != "")
+                if (variants[i] != null && variants[i] != "") {
                     layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
-                else
+                } else {
                     layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i]));
+                }
             }
         }
 
-        private Xkb_modifier [] xkb_options_modifiers;
+        private XkbModifier [] xkb_options_modifiers;
 
-        public void add_xkb_modifier (Xkb_modifier modifier) {
+        public void add_xkb_modifier (XkbModifier modifier) {
             //We assume by this point the modifier has all the options in it.
             modifier.update_from_gsettings ();
             xkb_options_modifiers += modifier;
         }
 
-        public Xkb_modifier? get_xkb_modifier_by_name (string name) {
-            foreach (Xkb_modifier modifier in xkb_options_modifiers) {
+        public XkbModifier? get_xkb_modifier_by_name (string name) {
+            foreach (XkbModifier modifier in xkb_options_modifiers) {
                 if (modifier.name == name) {
                     return modifier;
                 }

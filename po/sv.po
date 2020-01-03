@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2020-01-02 18:48+0000\n"
 "PO-Revision-Date: 2018-10-25 12:03+0000\n"
 "Last-Translator: Fredrik B <frbo9002@gmail.com>\n"
 "Language-Team: Swedish <https://weblate.elementary.io/projects/switchboard/"
@@ -20,307 +20,77 @@ msgstr ""
 "X-Generator: Weblate 3.0.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
-#: src/Keyboard.vala:13
+#: src/Plug.vala:32
 msgid "Keyboard"
 msgstr "Tangentbord"
 
-#: src/Keyboard.vala:14
+#: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 "Konfigurera tangentbords-beteende, tangentbordslayout och snabbkommandon"
 
-#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
-#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
+#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
+#: src/Plug.vala:89 src/Plug.vala:90
 msgid "Layout"
 msgstr "Layout"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:72
+#: src/Plug.vala:43 src/Plug.vala:91
 msgid "Shortcuts"
 msgstr "Snabbkommandon"
 
-#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
-#: src/Keyboard.vala:75
+#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
 msgid "Behavior"
 msgstr "Beteende"
 
-#: src/Keyboard.vala:68
+#: src/Plug.vala:87
 msgid "Switch layout"
 msgstr "Byt layout"
 
-#: src/Keyboard.vala:69
+#: src/Plug.vala:88
 msgid "Compose Key"
 msgstr "Skriv tangent"
 
-#: src/Keyboard.vala:70
+#: src/Plug.vala:89
 msgid "⌘ key behavior"
 msgstr "⌘ tangentbeteende"
 
-#: src/Keyboard.vala:71
+#: src/Plug.vala:90
 msgid "Caps Lock behavior"
 msgstr "Caps Lock beteende"
 
-#: src/Keyboard.vala:74
+#: src/Plug.vala:93
 msgid "Repeat Keys"
 msgstr "Upprepa tangenter"
 
-#: src/Keyboard.vala:75
+#: src/Plug.vala:94
 msgid "Cursor Blinking"
 msgstr "Markör blinkning"
 
-#: src/Widgets/Shortcuts/Display.vala:44
-msgid "Add"
-msgstr "Lägg till"
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr "%s är redan använd för %s"
 
-#: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "Ta bort"
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "Om du återtilldelar genvägen till %s kommer %s bli inaktiverad."
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
-msgstr "Ange kommando"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Kommando"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr "Genväg"
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "Lägg till…"
-
-#: src/Widgets/Layout/Display.vala:63
-msgid "Move up"
-msgstr "Flytta upp"
-
-#: src/Widgets/Layout/Display.vala:67
-msgid "Move down"
-msgstr "Flytta ner"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "Sök inmatningsspråk"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "Inmatningsspråk"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "Visa tangentbordslayout"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Lägg till layout"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
 msgstr "Avbryt"
 
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Ändra tilldelning"
+
 #. Caps Lock key functionality
-#: src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
+#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "Standard"
-
-#. tree view to display the current layouts
-#: src/Views/Layout.vala:47
-msgid "Switch layout:"
-msgstr "Byt layout:"
-
-#. Layout switching keybinding
-#. Compose key position menu
-#: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
-msgid "Disabled"
-msgstr "Inaktiverad"
-
-#: src/Views/Layout.vala:52
-msgid "Alt + Caps Lock"
-msgstr "Alt + Caps Lock"
-
-#: src/Views/Layout.vala:53
-msgid "Alt + Shift"
-msgstr "Alt + Shift"
-
-#: src/Views/Layout.vala:54
-msgid "Alt + Space"
-msgstr "Alt + Mellanslag"
-
-#: src/Views/Layout.vala:55
-msgid "Both Shift keys together"
-msgstr "Båda shift tangenterna samtidigt"
-
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: src/Views/Layout.vala:57
-msgid "Ctrl + Alt"
-msgstr "Ctrl + Alt"
-
-#: src/Views/Layout.vala:58
-msgid "Ctrl + Shift"
-msgstr "Ctrl + Shift"
-
-#: src/Views/Layout.vala:59
-msgid "Shift + Caps Lock"
-msgstr "Shift + Caps Lock"
-
-#: src/Views/Layout.vala:66
-msgid "Compose key:"
-msgstr "Skriv tangent:"
-
-#: src/Views/Layout.vala:72
-msgid "Menu"
-msgstr "Meny"
-
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
-msgid "Right Alt"
-msgstr "Höger Alt"
-
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
-msgid "Right Ctrl"
-msgstr "Höger Ctrl"
-
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-msgid "Right ⌘"
-msgstr "Höger ⌘"
-
-#: src/Views/Layout.vala:82
-msgid "⌘ key behavior:"
-msgstr "⌘ tangent beteende:"
-
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
-msgid "Applications Menu"
-msgstr "Programmeny"
-
-#: src/Views/Layout.vala:91
-msgid "Shortcut Overlay"
-msgstr "Snabbkommandon"
-
-#: src/Views/Layout.vala:96
-msgid "Caps Lock behavior:"
-msgstr "Caps Lock beteende:"
-
-#: src/Views/Layout.vala:102
-msgid "as Backspace"
-msgstr "som backsteg"
-
-#: src/Views/Layout.vala:103
-msgid "as Ctrl"
-msgstr "som Ctrl"
-
-#: src/Views/Layout.vala:104
-msgid "as Escape"
-msgstr "som Esc"
-
-#: src/Views/Layout.vala:105
-msgid "as Num Lock"
-msgstr "som Num Lock"
-
-#: src/Views/Layout.vala:106
-msgid "as ⌘"
-msgstr "som ⌘"
-
-#: src/Views/Layout.vala:107
-#, fuzzy
-msgid "Swap with Ctrl"
-msgstr "Byt med ctrl"
-
-#: src/Views/Layout.vala:108
-msgid "Swap with Escape"
-msgstr "Byt med esc"
-
-#: src/Views/Layout.vala:127
-msgid "Type to test your layout"
-msgstr "Skriv för att testa din layout"
-
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr "Inmatningsmetodinställningar…"
-
-#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
-msgid "Key to choose 3rd level:"
-msgstr "Tangent för att välja tredje nivå:"
-
-#: src/Views/Layout.vala:246
-msgid "Left Alt"
-msgstr "Vänster Alt"
-
-#: src/Views/Layout.vala:256
-msgid "Key to choose 5th level:"
-msgstr "Tangent för att välja femte nivå:"
-
-#: src/Views/Layout.vala:277
-msgid "Kana Lock:"
-msgstr "Kana-lås:"
-
-#: src/Views/Layout.vala:285
-msgid "Nicola F Backspace:"
-msgstr "Nicola F-backsteg:"
-
-#: src/Views/Layout.vala:288
-#, fuzzy
-msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku som Esc:"
-
-#: src/Views/Layout.vala:305
-msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "Hangul/Hanja keys på högra Alt/Ctrl:"
-
-#: src/Views/Behavior.vala:45
-msgid "Repeat Keys:"
-msgstr "Upprepa tangenter:"
-
-#: src/Views/Behavior.vala:49
-msgid "Delay:"
-msgstr "Fördröjning:"
-
-#: src/Views/Behavior.vala:52
-msgid "Interval:"
-msgstr "Intervall:"
-
-#: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
-#: src/Views/Behavior.vala:95
-msgid "milliseconds"
-msgstr "millisekunder"
-
-#: src/Views/Behavior.vala:84
-msgid "Cursor Blinking:"
-msgstr "Markör blinkning:"
-
-#: src/Views/Behavior.vala:89
-msgid "Speed:"
-msgstr "Hastighet:"
-
-#: src/Views/Behavior.vala:92
-msgid "Duration:"
-msgstr "Längd:"
-
-#: src/Views/Behavior.vala:98
-msgid "seconds"
-msgstr "sekunder"
-
-#: src/Views/Behavior.vala:127
-msgid "Type to test your settings"
-msgstr "Skriv något för att testa dina inställningar"
-
-#: src/Shortcuts/Shortcut.vala:46
-msgid "Shift"
-msgstr "Shift"
-
-#: src/Shortcuts/Shortcut.vala:54
-msgid "Ctrl"
-msgstr "Ctrl"
-
-#: src/Shortcuts/Shortcut.vala:58
-msgid "Alt"
-msgstr "Alt"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -630,6 +400,10 @@ msgstr "Växla Hög Kontrast"
 msgid "System"
 msgstr "System"
 
+#: src/Shortcuts/List.vala:138 src/Views/Layout.vala:89
+msgid "Applications Menu"
+msgstr "Programmeny"
+
 #: src/Shortcuts/List.vala:139
 msgid "Lock"
 msgstr "Lås"
@@ -642,19 +416,260 @@ msgstr "Logga ut"
 msgid "Custom"
 msgstr "Egendefinierat"
 
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
-msgstr "%s är redan använd för %s"
+#. Layout switching keybinding
+#. Compose key position menu
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+msgid "Disabled"
+msgstr "Inaktiverad"
 
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Om du återtilldelar genvägen till %s kommer %s bli inaktiverad."
+#: src/Shortcuts/Shortcut.vala:61
+msgid "Shift"
+msgstr "Shift"
 
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Ändra tilldelning"
+#: src/Shortcuts/Shortcut.vala:69
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/Shortcuts/Shortcut.vala:73
+msgid "Alt"
+msgstr "Alt"
+
+#: src/Views/Behavior.vala:25
+msgid "Repeat Keys:"
+msgstr "Upprepa tangenter:"
+
+#: src/Views/Behavior.vala:28
+msgid "Delay:"
+msgstr "Fördröjning:"
+
+#: src/Views/Behavior.vala:31
+msgid "Interval:"
+msgstr "Intervall:"
+
+#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
+#: src/Views/Behavior.vala:73
+msgid "milliseconds"
+msgstr "millisekunder"
+
+#: src/Views/Behavior.vala:63
+msgid "Cursor Blinking:"
+msgstr "Markör blinkning:"
+
+#: src/Views/Behavior.vala:67
+msgid "Speed:"
+msgstr "Hastighet:"
+
+#: src/Views/Behavior.vala:70
+msgid "Duration:"
+msgstr "Längd:"
+
+#: src/Views/Behavior.vala:76
+msgid "seconds"
+msgstr "sekunder"
+
+#: src/Views/Behavior.vala:105
+msgid "Type to test your settings"
+msgstr "Skriv något för att testa dina inställningar"
+
+#. tree view to display the current layouts
+#: src/Views/Layout.vala:49
+msgid "Switch layout:"
+msgstr "Byt layout:"
+
+#: src/Views/Layout.vala:54
+msgid "Alt + Caps Lock"
+msgstr "Alt + Caps Lock"
+
+#: src/Views/Layout.vala:55
+msgid "Alt + Shift"
+msgstr "Alt + Shift"
+
+#: src/Views/Layout.vala:56
+msgid "Alt + Space"
+msgstr "Alt + Mellanslag"
+
+#: src/Views/Layout.vala:57
+msgid "Both Shift keys together"
+msgstr "Båda shift tangenterna samtidigt"
+
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:278
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:59
+msgid "Ctrl + Alt"
+msgstr "Ctrl + Alt"
+
+#: src/Views/Layout.vala:60
+msgid "Ctrl + Shift"
+msgstr "Ctrl + Shift"
+
+#: src/Views/Layout.vala:61
+msgid "Shift + Caps Lock"
+msgstr "Shift + Caps Lock"
+
+#: src/Views/Layout.vala:68
+msgid "Compose key:"
+msgstr "Skriv tangent:"
+
+#: src/Views/Layout.vala:74
+msgid "Menu"
+msgstr "Meny"
+
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
+msgid "Right Alt"
+msgstr "Höger Alt"
+
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:281 src/Views/Layout.vala:293
+msgid "Right Ctrl"
+msgstr "Höger Ctrl"
+
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:282 src/Views/Layout.vala:294
+msgid "Right ⌘"
+msgstr "Höger ⌘"
+
+#: src/Views/Layout.vala:84
+msgid "⌘ key behavior:"
+msgstr "⌘ tangent beteende:"
+
+#: src/Views/Layout.vala:93
+msgid "Shortcut Overlay"
+msgstr "Snabbkommandon"
+
+#: src/Views/Layout.vala:98
+msgid "Caps Lock behavior:"
+msgstr "Caps Lock beteende:"
+
+#: src/Views/Layout.vala:104
+msgid "as Backspace"
+msgstr "som backsteg"
+
+#: src/Views/Layout.vala:105
+msgid "as Ctrl"
+msgstr "som Ctrl"
+
+#: src/Views/Layout.vala:106
+msgid "as Escape"
+msgstr "som Esc"
+
+#: src/Views/Layout.vala:107
+msgid "as Num Lock"
+msgstr "som Num Lock"
+
+#: src/Views/Layout.vala:108
+msgid "as ⌘"
+msgstr "som ⌘"
+
+#: src/Views/Layout.vala:109
+#, fuzzy
+msgid "Swap with Ctrl"
+msgstr "Byt med ctrl"
+
+#: src/Views/Layout.vala:110
+msgid "Swap with Escape"
+msgstr "Byt med esc"
+
+#: src/Views/Layout.vala:127
+msgid "Type to test your layout"
+msgstr "Skriv för att testa din layout"
+
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr "Inmatningsmetodinställningar…"
+
+#: src/Views/Layout.vala:150
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Layout.vala:156
+#, fuzzy
+#| msgid "Caps Lock"
+msgid "Caps Lock:"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:162
+#, fuzzy
+#| msgid "as Num Lock"
+msgid "Num Lock:"
+msgstr "som Num Lock"
+
+#: src/Views/Layout.vala:257 src/Views/Layout.vala:274
+msgid "Key to choose 3rd level:"
+msgstr "Tangent för att välja tredje nivå:"
+
+#: src/Views/Layout.vala:279
+msgid "Left Alt"
+msgstr "Vänster Alt"
+
+#: src/Views/Layout.vala:289
+msgid "Key to choose 5th level:"
+msgstr "Tangent för att välja femte nivå:"
+
+#: src/Views/Layout.vala:310
+msgid "Kana Lock:"
+msgstr "Kana-lås:"
+
+#: src/Views/Layout.vala:318
+msgid "Nicola F Backspace:"
+msgstr "Nicola F-backsteg:"
+
+#: src/Views/Layout.vala:321
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
+msgstr "Zenkaku Hankaku som Esc:"
+
+#: src/Views/Layout.vala:338
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr "Hangul/Hanja keys på högra Alt/Ctrl:"
+
+#: src/Views/Shortcuts.vala:76
+msgid "Add"
+msgstr "Lägg till"
+
+#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr "Ta bort"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+msgid "Search input language"
+msgstr "Sök inmatningsspråk"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
+msgid "Input Language"
+msgstr "Inmatningsspråk"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
+msgid "Show keyboard layout"
+msgstr "Visa tangentbordslayout"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
+msgid "Add Layout"
+msgstr "Lägg till layout"
+
+#: src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr "Lägg till…"
+
+#: src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr "Flytta upp"
+
+#: src/Widgets/Layout/Display.vala:67
+msgid "Move down"
+msgstr "Flytta ner"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:23
+msgid "Enter Command"
+msgstr "Ange kommando"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:73
+msgid "Command"
+msgstr "Kommando"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:74
+msgid "Shortcut"
+msgstr "Genväg"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Caps Lock inaktiverad"

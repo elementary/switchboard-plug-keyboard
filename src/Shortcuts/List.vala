@@ -63,7 +63,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Move to monitor on the left"), "move-to-monitor-left");
 
             workspaces_group = {};
-            workspaces_group.icon_name = "preferences-desktop-wallpaper";
+            workspaces_group.icon_name = "preferences-desktop-workspaces";
             workspaces_group.label = _("Workspaces");
             add_action (ref workspaces_group, Schema.WM, _("Multitasking View"), "show-desktop");
             add_action (ref workspaces_group, Schema.WM, _("Switch left"), "switch-to-workspace-left");
@@ -143,7 +143,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref system_group, Schema.MEDIA, _("Lock"), "screensaver");
             add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
             add_action (ref system_group, Schema.MUTTER, _("Switch monitor configurations"), "switch-monitor");
-            
+
             custom_group = {};
             custom_group.icon_name = "applications-other";
             custom_group.label = _("Custom");

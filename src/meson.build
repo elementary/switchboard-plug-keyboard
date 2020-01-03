@@ -1,9 +1,7 @@
 plug_files = files(
     'Plug.vala',
     'Widgets/Shortcuts/Tree.vala',
-    'Widgets/Shortcuts/SectionSwitcher.vala',
     'Widgets/Shortcuts/DisplayTree.vala',
-    'Widgets/Shortcuts/Display.vala',
     'Widgets/Shortcuts/CustomTree.vala',
     'Widgets/Layout/Display.vala',
     'Widgets/Layout/AddLayoutPopover.vala',
@@ -20,11 +18,11 @@ plug_files = files(
     'Layout/Handler.vala',
     'Layout/AdvancedSettingsPanel.vala',
     'Layout/AdvancedSettingsGrid.vala',
-    'Dialogs/ConflictDialog.vala',
-    'Behavior/Settings.vala'
+    'Dialogs/ConflictDialog.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
+switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('gnomekbdui')
 
@@ -43,5 +41,5 @@ shared_module(
         switchboard_dep
     ],
     install: true,
-    install_dir : join_paths(switchboard_dep.get_pkgconfig_variable('plugsdir'), 'hardware')
+    install_dir : join_paths(switchboard_plugsdir, 'hardware')
 )

@@ -29,6 +29,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
 
         stack = new Gtk.Stack ();
         stack.hexpand = true;
+        stack.homogeneous = false;
         this.attach (stack, 0, 0, 1, 1);
 
         // Add an empty Widget
@@ -49,7 +50,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         }
     }
 
-    public void set_visible_panel_from_layout ( string layout_name ){
+    public void set_visible_panel_from_layout (string layout_name) {
         string panel_name;
         if (!panel_for_layout.lookup_extended (layout_name, null, out panel_name)) {
             panel_name = "";
