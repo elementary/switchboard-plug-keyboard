@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-02 18:48+0000\n"
+"POT-Creation-Date: 2020-01-03 01:27+0000\n"
 "PO-Revision-Date: 2019-05-09 02:33+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -162,259 +162,287 @@ msgstr "Rodyti visus langus"
 msgid "Picture in Picture Mode"
 msgstr "Paveikslas paveikslo veiksenoje"
 
+#: src/Shortcuts/List.vala:60
+#, fuzzy
+#| msgid "Move to left"
+msgid "Move to display above"
+msgstr "Perkelti į kairę"
+
+#: src/Shortcuts/List.vala:61
+#, fuzzy
+#| msgid "Move to left"
+msgid "Move to display below"
+msgstr "Perkelti į kairę"
+
+#: src/Shortcuts/List.vala:62
+#, fuzzy
+#| msgid "Move to right workspace"
+msgid "Move to right display"
+msgstr "Perkelti į darbo sritį dešinėje"
+
 #: src/Shortcuts/List.vala:63
+#, fuzzy
+#| msgid "Move to left workspace"
+msgid "Move to left display"
+msgstr "Perkelti į darbo sritį kairėje"
+
+#: src/Shortcuts/List.vala:67
 msgid "Workspaces"
 msgstr "Darbo sritys"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
 msgstr "Daugiaprogramio apdorojimo rodinys"
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:69
 msgid "Switch left"
 msgstr "Perjungti kairėn"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:70
 msgid "Switch right"
 msgstr "Perjungti dešinėn"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:71
 msgid "Switch to first"
 msgstr "Perjungti į pirmą"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:72
 msgid "Switch to new"
 msgstr "Perjungti į naują"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
 msgstr "Perjungti į 1-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
 msgstr "Perjungti į 2-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
 msgstr "Perjungti į 3-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
 msgstr "Perjungti į 4-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
 msgstr "Perjungti į 5-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
 msgstr "Perjungti į 6-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
 msgstr "Perjungti į 7-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
 msgstr "Perjungti į 8-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
 msgstr "Perjungti į 9-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:82
 msgid "Cycle workspaces"
 msgstr "Perjunginėti darbo sritis"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
 msgstr "Perjunginėti darbo sritis atvirkštine tvarka"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
 msgstr "Perkelti į 1-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
 msgstr "Perkelti į 2-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
 msgstr "Perkelti į 3-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
 msgstr "Perkelti į 4-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
 msgstr "Perkelti į 5-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
 msgstr "Perkelti į 6-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
 msgstr "Perkelti į 7-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
 msgstr "Perkelti į 8-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
 msgstr "Perkelti į 9-ą darbo sritį"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:93
 msgid "Move to left workspace"
 msgstr "Perkelti į darbo sritį kairėje"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:94
 msgid "Move to right workspace"
 msgstr "Perkelti į darbo sritį dešinėje"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:98
 msgid "Screenshots"
 msgstr "Ekrano kopijos"
 
-#: src/Shortcuts/List.vala:95
+#: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
 msgstr "Fotografuoti visą ekraną"
 
-#: src/Shortcuts/List.vala:96
+#: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
 msgstr "Kopijuoti visą ekraną į iškarpinę"
 
-#: src/Shortcuts/List.vala:97
+#: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
 msgstr "Fotografuoti esamą langą"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
 msgstr "Kopijuoti esamą langą į iškarpinę"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
 msgstr "Pasirinkti sritį, kurią fotografuoti"
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
 msgstr "Kopijuoti sritį į iškarpinę"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:108
 msgid "Applications"
 msgstr "Programos"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:109
 msgid "Email"
 msgstr "El. paštas"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:110
 msgid "Home Folder"
 msgstr "Namų aplankas"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:111
 msgid "Music"
 msgstr "Muzika"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:112
 msgid "Terminal"
 msgstr "Terminalas"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:113
 msgid "Internet Browser"
 msgstr "Interneto naršyklė"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:117
 msgid "Media"
 msgstr "Medija"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:118
 msgid "Volume Up"
 msgstr "Garsinti"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:119
 msgid "Volume Down"
 msgstr "Tildyti"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:120
 msgid "Mute"
 msgstr "Nutildyti"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:121
 msgid "Play"
 msgstr "Groti"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:122
 msgid "Pause"
 msgstr "Pristabdyti"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:123
 msgid "Stop"
 msgstr "Stabdyti"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:124
 msgid "Previous Track"
 msgstr "Ankstesnis takelis"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:125
 msgid "Next Track"
 msgstr "Kitas takelis"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:126
 msgid "Eject"
 msgstr "Išstumti"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:130
 msgid "Universal Access"
 msgstr "Universalioji prieiga"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
 msgstr "Sumažinti teksto dydį"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
 msgstr "Padidinti teksto dydį"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
 msgstr "Didinti didintuvą"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
 msgstr "Mažinti didintuvą"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
 msgstr "Perjungti ekraninę klaviatūrą"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
 msgstr "Perjungti ekrano skaityklę"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:137
 msgid "Toggle High Contrast"
 msgstr "Perjungti didelį kontrastą"
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:141
 msgid "System"
 msgstr "Sistema"
 
-#: src/Shortcuts/List.vala:138 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
 msgid "Applications Menu"
 msgstr "Programų meniu"
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:143
 msgid "Lock"
 msgstr "Užrakinti"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:144
 msgid "Log Out"
 msgstr "Atsijungti"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:145
+msgid "Cycle display mode"
+msgstr ""
+
+#: src/Shortcuts/List.vala:149
 msgid "Custom"
 msgstr "Tinkinti"
 
@@ -682,9 +710,6 @@ msgstr "Susiejimas"
 
 #~ msgid "Show Workspace Switcher"
 #~ msgstr "Rodyti darbo sričių perjungiklį"
-
-#~ msgid "Move to left"
-#~ msgstr "Perkelti į kairę"
 
 #~ msgid "Move to right"
 #~ msgstr "Perkelti į dešinę"
