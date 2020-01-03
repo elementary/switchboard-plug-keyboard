@@ -20,7 +20,7 @@
 namespace Pantheon.Keyboard.Shortcuts {
 
     private class CustomTree : Gtk.Viewport, DisplayTree {
-        static string ENTER_COMMAND = _("Enter Command");
+        private static string enter_command = _("Enter Command");
 
         Gtk.Grid container;
         Gtk.CellRendererText cell_desc;
@@ -154,7 +154,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         string command_to_display (string? command) {
             if (command == null || command.strip () == "")
-                return "<i>" + ENTER_COMMAND + "</i>";
+                return "<i>" + enter_command + "</i>";
             return GLib.Markup.escape_text (command);
         }
 
@@ -189,7 +189,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
 
-            if (new_text == ENTER_COMMAND) {
+            if (new_text == enter_command) {
                 debug (new_text);
                 // no changes were made, remove row
                 remove_shorcut_for_iter (iter);
@@ -210,7 +210,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             if (selection.get_selected (out model, out iter)) {
 
                 // if command is same as the default text, remove it
-                if (entry.text  == ENTER_COMMAND) {
+                if (entry.text == enter_command) {
                     remove_shorcut_for_iter (iter);
                 } else {
                 Gtk.TreePath path;

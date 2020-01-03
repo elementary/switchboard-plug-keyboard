@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2020-01-03 01:27+0000\n"
 "PO-Revision-Date: 2016-08-04 00:16+0000\n"
 "Last-Translator: Kristjan Vool <tictac7x@gmail.com>\n"
 "Language-Team: Estonian <et@li.org>\n"
@@ -18,316 +18,77 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/Keyboard.vala:13
+#: src/Plug.vala:32
 msgid "Keyboard"
 msgstr "Klaviatuur"
 
-#: src/Keyboard.vala:14
+#: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Klaviatuuri käitumise, paigutuste ning kiirklahvide muutmine"
 
-#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
-#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
+#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
+#: src/Plug.vala:89 src/Plug.vala:90
 msgid "Layout"
 msgstr "Paigutus"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:72
+#: src/Plug.vala:43 src/Plug.vala:91
 msgid "Shortcuts"
 msgstr "Kiirklahvid"
 
-#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
-#: src/Keyboard.vala:75
+#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
 msgid "Behavior"
 msgstr "Käitumine"
 
-#: src/Keyboard.vala:68
+#: src/Plug.vala:87
 msgid "Switch layout"
 msgstr ""
 
-#: src/Keyboard.vala:69
+#: src/Plug.vala:88
 msgid "Compose Key"
 msgstr ""
 
-#: src/Keyboard.vala:70
+#: src/Plug.vala:89
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "Caps Lock'i käitumisviis:"
 
-#: src/Keyboard.vala:71
+#: src/Plug.vala:90
 msgid "Caps Lock behavior"
 msgstr ""
 
-#: src/Keyboard.vala:74
+#: src/Plug.vala:93
 msgid "Repeat Keys"
 msgstr ""
 
-#: src/Keyboard.vala:75
+#: src/Plug.vala:94
 msgid "Cursor Blinking"
 msgstr ""
 
-#: src/Widgets/Shortcuts/Display.vala:44
-msgid "Add"
-msgstr "Lisa"
+#: src/Dialogs/ConflictDialog.vala:26
+#, fuzzy, c-format
+msgid "%s is already used for %s"
+msgstr "%s on juba kasutusel %s jaoks!"
 
-#: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "Eemalda"
+#: src/Dialogs/ConflictDialog.vala:27
+#, fuzzy, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "Määrates kiirklahv %s jaoks, siis %s keelatakse ära"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
-msgstr "Käsu sisestamine"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Käsk"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr "Kiirklahv"
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "Lisa…"
-
-#: src/Widgets/Layout/Display.vala:63
-msgid "Move up"
-msgstr "Liiguta üles"
-
-#: src/Widgets/Layout/Display.vala:67
-msgid "Move down"
-msgstr "Liiguta alla"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "Keel:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
-msgid "Input Language"
-msgstr "Keel:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr ""
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Lisa paigutus"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
 msgstr "Loobu"
 
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Asenda"
+
 #. Caps Lock key functionality
-#: src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
+#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "Vaikimisi"
-
-#. tree view to display the current layouts
-#: src/Views/Layout.vala:47
-msgid "Switch layout:"
-msgstr "Klaviatuuriasetuse vahetamine:"
-
-#. Layout switching keybinding
-#. Compose key position menu
-#: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
-msgid "Disabled"
-msgstr "Keelatud"
-
-#: src/Views/Layout.vala:52
-msgid "Alt + Caps Lock"
-msgstr "Alt + Caps Lock"
-
-#: src/Views/Layout.vala:53
-msgid "Alt + Shift"
-msgstr "Alt + Shift"
-
-#: src/Views/Layout.vala:54
-msgid "Alt + Space"
-msgstr "Alt + Tühik"
-
-#: src/Views/Layout.vala:55
-msgid "Both Shift keys together"
-msgstr "Mõlemad Shift klahvid koos"
-
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: src/Views/Layout.vala:57
-msgid "Ctrl + Alt"
-msgstr "Ctrl + Alt"
-
-#: src/Views/Layout.vala:58
-msgid "Ctrl + Shift"
-msgstr "Ctrl + Shift"
-
-#: src/Views/Layout.vala:59
-msgid "Shift + Caps Lock"
-msgstr "Shift + Caps Lock"
-
-#: src/Views/Layout.vala:66
-msgid "Compose key:"
-msgstr "Koosteklahv:"
-
-#: src/Views/Layout.vala:72
-msgid "Menu"
-msgstr ""
-
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
-msgid "Right Alt"
-msgstr "Parem Alt"
-
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
-msgid "Right Ctrl"
-msgstr "Parem Ctrl"
-
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
-msgid "Right ⌘"
-msgstr "Parem Alt"
-
-#: src/Views/Layout.vala:82
-#, fuzzy
-msgid "⌘ key behavior:"
-msgstr "Caps Lock'i käitumisviis:"
-
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
-#, fuzzy
-msgid "Applications Menu"
-msgstr "Rakendused"
-
-#: src/Views/Layout.vala:91
-#, fuzzy
-msgid "Shortcut Overlay"
-msgstr "Kiirklahv"
-
-#: src/Views/Layout.vala:96
-msgid "Caps Lock behavior:"
-msgstr "Caps Lock'i käitumisviis:"
-
-#: src/Views/Layout.vala:102
-msgid "as Backspace"
-msgstr "kustusklahvina"
-
-#: src/Views/Layout.vala:103
-msgid "as Ctrl"
-msgstr "Ctrl'na"
-
-#: src/Views/Layout.vala:104
-msgid "as Escape"
-msgstr "Escape'ina"
-
-#: src/Views/Layout.vala:105
-msgid "as Num Lock"
-msgstr "Num Lock'ina"
-
-#: src/Views/Layout.vala:106
-msgid "as ⌘"
-msgstr ""
-
-#: src/Views/Layout.vala:107
-#, fuzzy
-msgid "Swap with Ctrl"
-msgstr "Ctrl'iga vahetamine"
-
-#: src/Views/Layout.vala:108
-msgid "Swap with Escape"
-msgstr "Escape'iga vahetamine"
-
-#: src/Views/Layout.vala:127
-#, fuzzy
-msgid "Type to test your layout"
-msgstr "Klaviatuuri paigutuse testimiseks kirjuta siia..."
-
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr ""
-
-#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
-msgid "Key to choose 3rd level:"
-msgstr "Kolmanda taseme valimise klahv:"
-
-#: src/Views/Layout.vala:246
-msgid "Left Alt"
-msgstr ""
-
-#: src/Views/Layout.vala:256
-msgid "Key to choose 5th level:"
-msgstr "Viienda taseme valimise klahv:"
-
-#: src/Views/Layout.vala:277
-msgid "Kana Lock:"
-msgstr "Kana Lock:"
-
-#: src/Views/Layout.vala:285
-msgid "Nicola F Backspace:"
-msgstr "Nicola F kustutusklahv:"
-
-#: src/Views/Layout.vala:288
-#, fuzzy
-msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku Escape klahvina:"
-
-#: src/Views/Layout.vala:305
-msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "Hangul/Hanja klahvid parema Alt/Ctrl asemel:"
-
-#: src/Views/Behavior.vala:45
-msgid "Repeat Keys:"
-msgstr ""
-
-#: src/Views/Behavior.vala:49
-msgid "Delay:"
-msgstr "Viivitus:"
-
-#: src/Views/Behavior.vala:52
-msgid "Interval:"
-msgstr "Ajavahemik:"
-
-#: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
-#: src/Views/Behavior.vala:95
-msgid "milliseconds"
-msgstr "millisekundit"
-
-#: src/Views/Behavior.vala:84
-msgid "Cursor Blinking:"
-msgstr ""
-
-#: src/Views/Behavior.vala:89
-msgid "Speed:"
-msgstr "Kiirus:"
-
-#: src/Views/Behavior.vala:92
-msgid "Duration:"
-msgstr "Kestvus:"
-
-#: src/Views/Behavior.vala:98
-msgid "seconds"
-msgstr "sekundit"
-
-#: src/Views/Behavior.vala:127
-#, fuzzy
-msgid "Type to test your settings"
-msgstr "Klaviatuuri paigutuse testimiseks kirjuta siia..."
-
-#: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
-msgid "Shift"
-msgstr "Alt + Shift"
-
-#: src/Shortcuts/Shortcut.vala:54
-msgid "Ctrl"
-msgstr "Ctrl"
-
-#: src/Shortcuts/Shortcut.vala:58
-msgid "Alt"
-msgstr ""
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -399,279 +160,559 @@ msgstr "Kõikide akende ülevaade"
 msgid "Picture in Picture Mode"
 msgstr ""
 
+#: src/Shortcuts/List.vala:60
+#, fuzzy
+#| msgid "Move to left"
+msgid "Move to display above"
+msgstr "Aktiivse akna liigutamine vasakpoolsele tööalale"
+
+#: src/Shortcuts/List.vala:61
+#, fuzzy
+#| msgid "Move to left"
+msgid "Move to display below"
+msgstr "Aktiivse akna liigutamine vasakpoolsele tööalale"
+
+#: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Move to right display"
+msgstr "Akna liigutamine 1. tööalale"
+
 #: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Move to left display"
+msgstr "Akna liigutamine 1. tööalale"
+
+#: src/Shortcuts/List.vala:67
 msgid "Workspaces"
 msgstr "Tööalad"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:69
 #, fuzzy
 msgid "Switch left"
 msgstr "Liikumine vasakpoolsele tööalale"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:70
 #, fuzzy
 msgid "Switch right"
 msgstr "Liikumine parempoolsele tööalale"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:71
 msgid "Switch to first"
 msgstr "Esimene tööala"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:72
 msgid "Switch to new"
 msgstr "Uus tööala"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
 msgstr "Tööala nr. 1"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
 msgstr "Tööala nr. 2"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
 msgstr "Tööala nr. 3"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
 msgstr "Tööala nr. 4"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
 msgstr "Tööala nr. 5"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
 msgstr "Tööala nr. 6"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
 msgstr "Tööala nr. 7"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
 msgstr "Tööala nr. 8"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
 msgstr "Tööala nr. 9"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:82
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "Tööalad"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
 msgstr "Akna liigutamine 1. tööalale"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
 msgstr "Akna liigutamine 2. tööalale"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
 msgstr "Akna liigutamine 3. tööalale"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
 msgstr "Akna liigutamine 4. tööalale"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
 msgstr "Akna liigutamine 5. tööalale"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
 msgstr "Akna liigutamine 6. tööalale"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
 msgstr "Akna liigutamine 7. tööalale"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
 msgstr "Akna liigutamine 8. tööalale"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
 msgstr "Akna liigutamine 9. tööalale"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:93
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "Akna liigutamine 1. tööalale"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:94
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "Akna liigutamine 1. tööalale"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:98
 msgid "Screenshots"
 msgstr "Ekraanipilt"
 
-#: src/Shortcuts/List.vala:95
-msgid "Grab the whole screen"
-msgstr ""
-
-#: src/Shortcuts/List.vala:96
-#, fuzzy
-msgid "Copy the whole screen to clipboard"
-msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
-
-#: src/Shortcuts/List.vala:97
-msgid "Grab the current window"
-msgstr ""
-
-#: src/Shortcuts/List.vala:98
-msgid "Copy the current window to clipboard"
-msgstr ""
-
 #: src/Shortcuts/List.vala:99
-msgid "Select an area to grab"
+msgid "Grab the whole screen"
 msgstr ""
 
 #: src/Shortcuts/List.vala:100
 #, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
+
+#: src/Shortcuts/List.vala:101
+msgid "Grab the current window"
+msgstr ""
+
+#: src/Shortcuts/List.vala:102
+msgid "Copy the current window to clipboard"
+msgstr ""
+
+#: src/Shortcuts/List.vala:103
+msgid "Select an area to grab"
+msgstr ""
+
+#: src/Shortcuts/List.vala:104
+#, fuzzy
 msgid "Copy an area to clipboard"
 msgstr "Ekraanist pildi tegemine ning vahemällu salvestamine"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:108
 msgid "Applications"
 msgstr "Rakendused"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:109
 msgid "Email"
 msgstr "E-post"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:110
 msgid "Home Folder"
 msgstr "Failihaldur"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:111
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:112
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:113
 msgid "Internet Browser"
 msgstr "Veebibrauser"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:117
 msgid "Media"
 msgstr "Meedia"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:118
 msgid "Volume Up"
 msgstr "Heli valjemaks"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:119
 msgid "Volume Down"
 msgstr "Heli vaiksemaks"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:120
 msgid "Mute"
 msgstr "Vaigistamine"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:121
 msgid "Play"
 msgstr "Esita"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:122
 msgid "Pause"
 msgstr "Paus"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:123
 msgid "Stop"
 msgstr "Peata"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:124
 msgid "Previous Track"
 msgstr "Eelmine lugu"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:125
 msgid "Next Track"
 msgstr "Järgmine lugu"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:126
 msgid "Eject"
 msgstr "Väljasta"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:130
 msgid "Universal Access"
 msgstr "Kasutaja abivahendid"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
 msgstr "Teksti suuruse vähendamine"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
 msgstr "Teksti suuruse suurendamine"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
 msgstr "Sissesuumimine"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
 msgstr "Väljasuumimine"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
 msgstr "Ekraani klaviatuuri sisse- või väljalülitamine"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
 msgstr "Ekraani lugeja sisse- või väljalülitamine"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:137
 msgid "Toggle High Contrast"
 msgstr "Kõrge kontrasti sisse- või väljalülitamine"
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:141
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#, fuzzy
+msgid "Applications Menu"
+msgstr "Rakendused"
+
+#: src/Shortcuts/List.vala:143
 #, fuzzy
 msgid "Lock"
 msgstr "Caps Lock"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:144
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:145
+msgid "Cycle display mode"
+msgstr ""
+
+#: src/Shortcuts/List.vala:149
 msgid "Custom"
 msgstr "Kohandatud"
 
-#: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
-msgid "%s is already used for %s"
-msgstr "%s on juba kasutusel %s jaoks!"
+#. Layout switching keybinding
+#. Compose key position menu
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+msgid "Disabled"
+msgstr "Keelatud"
 
-#: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Määrates kiirklahv %s jaoks, siis %s keelatakse ära"
+#: src/Shortcuts/Shortcut.vala:61
+#, fuzzy
+msgid "Shift"
+msgstr "Alt + Shift"
 
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Asenda"
+#: src/Shortcuts/Shortcut.vala:69
+msgid "Ctrl"
+msgstr "Ctrl"
+
+#: src/Shortcuts/Shortcut.vala:73
+msgid "Alt"
+msgstr ""
+
+#: src/Views/Behavior.vala:25
+msgid "Repeat Keys:"
+msgstr ""
+
+#: src/Views/Behavior.vala:28
+msgid "Delay:"
+msgstr "Viivitus:"
+
+#: src/Views/Behavior.vala:31
+msgid "Interval:"
+msgstr "Ajavahemik:"
+
+#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
+#: src/Views/Behavior.vala:73
+msgid "milliseconds"
+msgstr "millisekundit"
+
+#: src/Views/Behavior.vala:63
+msgid "Cursor Blinking:"
+msgstr ""
+
+#: src/Views/Behavior.vala:67
+msgid "Speed:"
+msgstr "Kiirus:"
+
+#: src/Views/Behavior.vala:70
+msgid "Duration:"
+msgstr "Kestvus:"
+
+#: src/Views/Behavior.vala:76
+msgid "seconds"
+msgstr "sekundit"
+
+#: src/Views/Behavior.vala:105
+#, fuzzy
+msgid "Type to test your settings"
+msgstr "Klaviatuuri paigutuse testimiseks kirjuta siia..."
+
+#. tree view to display the current layouts
+#: src/Views/Layout.vala:49
+msgid "Switch layout:"
+msgstr "Klaviatuuriasetuse vahetamine:"
+
+#: src/Views/Layout.vala:54
+msgid "Alt + Caps Lock"
+msgstr "Alt + Caps Lock"
+
+#: src/Views/Layout.vala:55
+msgid "Alt + Shift"
+msgstr "Alt + Shift"
+
+#: src/Views/Layout.vala:56
+msgid "Alt + Space"
+msgstr "Alt + Tühik"
+
+#: src/Views/Layout.vala:57
+msgid "Both Shift keys together"
+msgstr "Mõlemad Shift klahvid koos"
+
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:278
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:59
+msgid "Ctrl + Alt"
+msgstr "Ctrl + Alt"
+
+#: src/Views/Layout.vala:60
+msgid "Ctrl + Shift"
+msgstr "Ctrl + Shift"
+
+#: src/Views/Layout.vala:61
+msgid "Shift + Caps Lock"
+msgstr "Shift + Caps Lock"
+
+#: src/Views/Layout.vala:68
+msgid "Compose key:"
+msgstr "Koosteklahv:"
+
+#: src/Views/Layout.vala:74
+msgid "Menu"
+msgstr ""
+
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
+msgid "Right Alt"
+msgstr "Parem Alt"
+
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:281 src/Views/Layout.vala:293
+msgid "Right Ctrl"
+msgstr "Parem Ctrl"
+
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:282 src/Views/Layout.vala:294
+#, fuzzy
+msgid "Right ⌘"
+msgstr "Parem Alt"
+
+#: src/Views/Layout.vala:84
+#, fuzzy
+msgid "⌘ key behavior:"
+msgstr "Caps Lock'i käitumisviis:"
+
+#: src/Views/Layout.vala:93
+#, fuzzy
+msgid "Shortcut Overlay"
+msgstr "Kiirklahv"
+
+#: src/Views/Layout.vala:98
+msgid "Caps Lock behavior:"
+msgstr "Caps Lock'i käitumisviis:"
+
+#: src/Views/Layout.vala:104
+msgid "as Backspace"
+msgstr "kustusklahvina"
+
+#: src/Views/Layout.vala:105
+msgid "as Ctrl"
+msgstr "Ctrl'na"
+
+#: src/Views/Layout.vala:106
+msgid "as Escape"
+msgstr "Escape'ina"
+
+#: src/Views/Layout.vala:107
+msgid "as Num Lock"
+msgstr "Num Lock'ina"
+
+#: src/Views/Layout.vala:108
+msgid "as ⌘"
+msgstr ""
+
+#: src/Views/Layout.vala:109
+#, fuzzy
+msgid "Swap with Ctrl"
+msgstr "Ctrl'iga vahetamine"
+
+#: src/Views/Layout.vala:110
+msgid "Swap with Escape"
+msgstr "Escape'iga vahetamine"
+
+#: src/Views/Layout.vala:127
+#, fuzzy
+msgid "Type to test your layout"
+msgstr "Klaviatuuri paigutuse testimiseks kirjuta siia..."
+
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:150
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Layout.vala:156
+#, fuzzy
+#| msgid "Caps Lock"
+msgid "Caps Lock:"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:162
+#, fuzzy
+#| msgid "as Num Lock"
+msgid "Num Lock:"
+msgstr "Num Lock'ina"
+
+#: src/Views/Layout.vala:257 src/Views/Layout.vala:274
+msgid "Key to choose 3rd level:"
+msgstr "Kolmanda taseme valimise klahv:"
+
+#: src/Views/Layout.vala:279
+msgid "Left Alt"
+msgstr ""
+
+#: src/Views/Layout.vala:289
+msgid "Key to choose 5th level:"
+msgstr "Viienda taseme valimise klahv:"
+
+#: src/Views/Layout.vala:310
+msgid "Kana Lock:"
+msgstr "Kana Lock:"
+
+#: src/Views/Layout.vala:318
+msgid "Nicola F Backspace:"
+msgstr "Nicola F kustutusklahv:"
+
+#: src/Views/Layout.vala:321
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
+msgstr "Zenkaku Hankaku Escape klahvina:"
+
+#: src/Views/Layout.vala:338
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr "Hangul/Hanja klahvid parema Alt/Ctrl asemel:"
+
+#: src/Views/Shortcuts.vala:76
+msgid "Add"
+msgstr "Lisa"
+
+#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr "Eemalda"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+#, fuzzy
+msgid "Search input language"
+msgstr "Keel:"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
+#, fuzzy
+msgid "Input Language"
+msgstr "Keel:"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
+msgid "Show keyboard layout"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
+msgid "Add Layout"
+msgstr "Lisa paigutus"
+
+#: src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr "Lisa…"
+
+#: src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr "Liiguta üles"
+
+#: src/Widgets/Layout/Display.vala:67
+msgid "Move down"
+msgstr "Liiguta alla"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:23
+msgid "Enter Command"
+msgstr "Käsu sisestamine"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:73
+msgid "Command"
+msgstr "Käsk"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:74
+msgid "Shortcut"
+msgstr "Kiirklahv"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Caps Lock keelatud"
@@ -684,9 +725,6 @@ msgstr "Asenda"
 
 #~ msgid "Show Workspace Switcher"
 #~ msgstr "Tööalade vahetaja näitamine"
-
-#~ msgid "Move to left"
-#~ msgstr "Aktiivse akna liigutamine vasakpoolsele tööalale"
 
 #~ msgid "Move to right"
 #~ msgstr "Aktiivse akna liigutamine parempoolsele tööalale"

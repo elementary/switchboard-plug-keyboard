@@ -36,10 +36,12 @@ namespace Pantheon.Keyboard.LayoutPage {
         public Page () {
             this.column_homogeneous = true;
 
-            handler  = new LayoutHandler ();
+            handler = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
-            size_group = {new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL),
-                          new Gtk.SizeGroup(Gtk.SizeGroupMode.HORIZONTAL)};
+            size_group = {
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
+            };
 
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
@@ -47,7 +49,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var switch_layout_label = new SettingsLabel (_("Switch layout:"), size_group[0]);
 
             // Layout switching keybinding
-            var modifier = new Xkb_modifier ("switch-layout");
+            var modifier = new XkbModifier ("switch-layout");
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
             modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
@@ -66,7 +68,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var compose_key_label = new SettingsLabel (_("Compose key:"), size_group[0]);
 
             // Compose key position menu
-            modifier = new Xkb_modifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
@@ -96,7 +98,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             var caps_lock_label = new SettingsLabel (_("Caps Lock behavior:"), size_group[0]);
 
             // Caps Lock key functionality
-            modifier = new Xkb_modifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("caps:none", _("Disabled"));
             modifier.append_xkb_option ("caps:backspace", _("as Backspace"));
@@ -119,8 +121,6 @@ namespace Pantheon.Keyboard.LayoutPage {
                                                 third_level_layouts_panel ()};
 
             advanced_settings = new AdvancedSettings (panels);
-            advanced_settings.hexpand = advanced_settings.vexpand = true;
-            advanced_settings.valign = Gtk.Align.START;
 
             var entry_test = new Gtk.Entry ();
             entry_test.hexpand = true;
@@ -130,10 +130,12 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var action_area = new Gtk.Grid ();
             action_area.column_spacing = 12;
+            action_area.valign = Gtk.Align.END;
+            action_area.vexpand = true;
             action_area.add (entry_test);
             action_area.add (ibus_button);
 
-            attach (display, 0, 0, 1, 6);
+            attach (display, 0, 0, 1, 9);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
             attach (compose_key_label, 1, 1, 1, 1);
@@ -142,8 +144,39 @@ namespace Pantheon.Keyboard.LayoutPage {
             attach (overlay_key_combo, 2, 2, 1, 1);
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
-            attach (advanced_settings, 1, 4, 2, 1);
-            attach (action_area, 1, 5, 2, 1);
+            attach (advanced_settings, 1, 4, 2);
+
+            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", false) != null) {
+                var indicator_header = new Granite.HeaderLabel (_("Show in Panel"));
+                indicator_header.halign = Gtk.Align.END;
+                indicator_header.xalign = 1;
+
+                size_group[0].add_widget (indicator_header);
+
+                var caps_lock_indicator_label = new SettingsLabel (_("Caps Lock:"), size_group[0]);
+
+                var caps_lock_indicator_switch = new Gtk.Switch ();
+                caps_lock_indicator_switch.halign = Gtk.Align.START;
+                caps_lock_indicator_switch.valign = Gtk.Align.CENTER;
+
+                var num_lock_indicator_label = new SettingsLabel (_("Num Lock:"), size_group[0]);
+
+                var num_lock_indicator_switch = new Gtk.Switch ();
+                num_lock_indicator_switch.halign = Gtk.Align.START;
+                num_lock_indicator_switch.valign = Gtk.Align.CENTER;
+
+                var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
+                indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
+                indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
+
+                attach (indicator_header, 1, 5);
+                attach (caps_lock_indicator_label, 1, 6);
+                attach (caps_lock_indicator_switch, 2, 6);
+                attach (num_lock_indicator_label, 1, 7);
+                attach (num_lock_indicator_switch, 2, 7);
+            }
+
+            attach (action_area, 1, 8, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -240,7 +273,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
 
-            Xkb_modifier modifier = new Xkb_modifier ("third_level_key");
+            XkbModifier modifier = new XkbModifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
             modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
             modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
@@ -255,7 +288,7 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             var fifth_level_label = new SettingsLabel (_("Key to choose 5th level:"), size_group[0]);
 
-            modifier = new Xkb_modifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
             modifier.append_xkb_option ("", _("Right Ctrl"));
             modifier.append_xkb_option ("lv5:rwin_switch_lock", _("Right ⌘"));
@@ -325,7 +358,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private class XkbComboBox : Gtk.ComboBoxText {
-            public XkbComboBox (Xkb_modifier modifier, Gtk.SizeGroup size_group) {
+            public XkbComboBox (XkbModifier modifier, Gtk.SizeGroup size_group) {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
                 size_group.add_widget (this);
@@ -351,7 +384,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
 
-                var modifier = new Xkb_modifier ("" + xkb_command);
+                var modifier = new XkbModifier ("" + xkb_command);
                 modifier.append_xkb_option ("", "option off");
                 modifier.append_xkb_option (xkb_command, "option on");
 
@@ -363,7 +396,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                     active = true;
                 }
 
-                notify["active"].connect(() => {
+                notify["active"].connect (() => {
                     if (active) {
                         modifier.update_active_command (xkb_command);
                     } else {

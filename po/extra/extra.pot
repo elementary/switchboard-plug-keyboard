@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-10-03 10:00-0700\n"
+"POT-Creation-Date: 2020-01-03 01:27+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: data/io.elementary.switchboard-plug-keyboard.appdata.xml.in:5
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard"
 msgstr ""
 
-#: data/io.elementary.switchboard-plug-keyboard.appdata.xml.in:6
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
+msgid "New \"Workspaces\" icon"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
+msgid "Exclude Space from single-key shortcuts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "Updated translations"
 msgstr ""

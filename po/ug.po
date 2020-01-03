@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-06-26 22:45+0200\n"
+"POT-Creation-Date: 2020-01-03 01:27+0000\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -18,316 +18,77 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 "X-Generator: Launchpad (build 18326)\n"
 
-#: src/Keyboard.vala:13
+#: src/Plug.vala:32
 msgid "Keyboard"
 msgstr "كۇنۇپكا تاختىسى"
 
-#: src/Keyboard.vala:14
+#: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "كۇنۇپكا تاختىسى ھەركىتى، بەتيۈزى ۋە قولاي كۇنۇپكىلارنى تەڭشەش"
 
-#: src/Keyboard.vala:23 src/Keyboard.vala:67 src/Keyboard.vala:68
-#: src/Keyboard.vala:69 src/Keyboard.vala:70 src/Keyboard.vala:71
+#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
+#: src/Plug.vala:89 src/Plug.vala:90
 msgid "Layout"
 msgstr "بەتيۈزى"
 
-#: src/Keyboard.vala:24 src/Keyboard.vala:72
+#: src/Plug.vala:43 src/Plug.vala:91
 msgid "Shortcuts"
 msgstr "قولاي كۇنۇپكىلار"
 
-#: src/Keyboard.vala:25 src/Keyboard.vala:73 src/Keyboard.vala:74
-#: src/Keyboard.vala:75
+#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
 msgid "Behavior"
 msgstr "ھەركەت"
 
-#: src/Keyboard.vala:68
+#: src/Plug.vala:87
 msgid "Switch layout"
 msgstr "بەتيۈزىنى ئالماشتۇرۇش"
 
-#: src/Keyboard.vala:69
+#: src/Plug.vala:88
 msgid "Compose Key"
 msgstr "بىرىكمە كۇنۇپكا"
 
-#: src/Keyboard.vala:70
+#: src/Plug.vala:89
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
 
-#: src/Keyboard.vala:71
+#: src/Plug.vala:90
 msgid "Caps Lock behavior"
 msgstr "Caps Lock كۇنۇپكىسى ھەركىتى"
 
-#: src/Keyboard.vala:74
+#: src/Plug.vala:93
 msgid "Repeat Keys"
 msgstr "كۇنۇپكىلارنى تەكرارلاش"
 
-#: src/Keyboard.vala:75
+#: src/Plug.vala:94
 msgid "Cursor Blinking"
 msgstr "مائۇس ئىستىرىلكىسى چاقناش"
 
-#: src/Widgets/Shortcuts/Display.vala:44
-msgid "Add"
-msgstr "قىتىش"
+#: src/Dialogs/ConflictDialog.vala:26
+#, fuzzy, c-format
+msgid "%s is already used for %s"
+msgstr "%s %s غا ئىشلىتىلگەن!"
 
-#: src/Widgets/Shortcuts/Display.vala:48 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "ئۆچۈرۈش"
+#: src/Dialogs/ConflictDialog.vala:27
+#, fuzzy, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "ئەگەر سىز %s نى قولاي كۇنۇپكا قىلىپ بىكىتسىڭىز، %s ئىشلىمەيدۇ"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
-msgstr "كىرگۈزۈش كوماندىسى"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "كوماندا"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr "قولاي كۇنۇپكا"
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "قىتىش...."
-
-#: src/Widgets/Layout/Display.vala:63
-msgid "Move up"
-msgstr "يۇقىرىغا يۆتكەش"
-
-#: src/Widgets/Layout/Display.vala:67
-msgid "Move down"
-msgstr "ئاستىغا يۆتكەش"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "تىل:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
-msgid "Input Language"
-msgstr "تىل:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr ""
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "بەتيۈزى قىتىش"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
 #: src/Dialogs/ConflictDialog.vala:36
+#: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
 msgstr "ئەمەلدىن قالدۇرۇش"
 
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "قايتا تەقسىملەش"
+
 #. Caps Lock key functionality
-#: src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215 src/Views/Layout.vala:100
-#: src/Views/Layout.vala:244 src/Layout/Handler.vala:78
+#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "نورمالدىكى قىممىتى"
-
-#. tree view to display the current layouts
-#: src/Views/Layout.vala:47
-msgid "Switch layout:"
-msgstr "ئالماشتۇرۇش بەت يۈزى:"
-
-#. Layout switching keybinding
-#. Compose key position menu
-#: src/Views/Layout.vala:51 src/Views/Layout.vala:70 src/Views/Layout.vala:86
-#: src/Views/Layout.vala:101 src/Shortcuts/Shortcut.vala:41
-msgid "Disabled"
-msgstr "چەكلەنگەن"
-
-#: src/Views/Layout.vala:52
-msgid "Alt + Caps Lock"
-msgstr "Alt + Caps Lock"
-
-#: src/Views/Layout.vala:53
-msgid "Alt + Shift"
-msgstr "Alt + Shift"
-
-#: src/Views/Layout.vala:54
-msgid "Alt + Space"
-msgstr "Alt + Space"
-
-#: src/Views/Layout.vala:55
-msgid "Both Shift keys together"
-msgstr "ئىككى Shift كۇنۇپكىسىنى تەڭ بىسىش"
-
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:71 src/Views/Layout.vala:245
-msgid "Caps Lock"
-msgstr "Caps Lock"
-
-#: src/Views/Layout.vala:57
-msgid "Ctrl + Alt"
-msgstr "Ctrl + Alt"
-
-#: src/Views/Layout.vala:58
-msgid "Ctrl + Shift"
-msgstr "Ctrl + Shift"
-
-#: src/Views/Layout.vala:59
-msgid "Shift + Caps Lock"
-msgstr "Shift + Caps Lock"
-
-#: src/Views/Layout.vala:66
-msgid "Compose key:"
-msgstr "بىرىكمە كۇنۇپكا:"
-
-#: src/Views/Layout.vala:72
-msgid "Menu"
-msgstr ""
-
-#: src/Views/Layout.vala:73 src/Views/Layout.vala:247 src/Views/Layout.vala:259
-msgid "Right Alt"
-msgstr "ئوڭ Alt"
-
-#: src/Views/Layout.vala:74 src/Views/Layout.vala:248 src/Views/Layout.vala:260
-msgid "Right Ctrl"
-msgstr "ئوڭ Ctrl"
-
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:249 src/Views/Layout.vala:261
-#, fuzzy
-msgid "Right ⌘"
-msgstr "ئوڭ Alt"
-
-#: src/Views/Layout.vala:82
-#, fuzzy
-msgid "⌘ key behavior:"
-msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
-
-#: src/Views/Layout.vala:87 src/Shortcuts/List.vala:138
-#, fuzzy
-msgid "Applications Menu"
-msgstr "ئەپلەر"
-
-#: src/Views/Layout.vala:91
-#, fuzzy
-msgid "Shortcut Overlay"
-msgstr "قولاي كۇنۇپكا"
-
-#: src/Views/Layout.vala:96
-msgid "Caps Lock behavior:"
-msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
-
-#: src/Views/Layout.vala:102
-msgid "as Backspace"
-msgstr "Backspace قىلىپ ئىشلىتىش"
-
-#: src/Views/Layout.vala:103
-msgid "as Ctrl"
-msgstr "Ctrl قىلىپ ئىشلىتىش"
-
-#: src/Views/Layout.vala:104
-msgid "as Escape"
-msgstr "Escape قىلىپ ئىشلىتىش"
-
-#: src/Views/Layout.vala:105
-msgid "as Num Lock"
-msgstr "Num Lock قىلىپ ئىشلىتىش"
-
-#: src/Views/Layout.vala:106
-msgid "as ⌘"
-msgstr ""
-
-#: src/Views/Layout.vala:107
-#, fuzzy
-msgid "Swap with Ctrl"
-msgstr "Control بىلەن ئالماشتۇرۇش"
-
-#: src/Views/Layout.vala:108
-msgid "Swap with Escape"
-msgstr "Escape بىلەن ئالماشتۇرۇش"
-
-#: src/Views/Layout.vala:127
-#, fuzzy
-msgid "Type to test your layout"
-msgstr "خەت بىسىپ بەت يۈزىڭىزنى سىناپ بىقىڭ...."
-
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr ""
-
-#: src/Views/Layout.vala:224 src/Views/Layout.vala:241
-msgid "Key to choose 3rd level:"
-msgstr "ئۈچىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
-
-#: src/Views/Layout.vala:246
-msgid "Left Alt"
-msgstr ""
-
-#: src/Views/Layout.vala:256
-msgid "Key to choose 5th level:"
-msgstr "بەشىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
-
-#: src/Views/Layout.vala:277
-msgid "Kana Lock:"
-msgstr "باشقا ئىسىم بىلەن قۇلۇپلاش:"
-
-#: src/Views/Layout.vala:285
-msgid "Nicola F Backspace:"
-msgstr "Nicola F نۇسخىسىدىكى Backspace:"
-
-#: src/Views/Layout.vala:288
-#, fuzzy
-msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku نى Escape قىلىپ ئىشلىتىش:"
-
-#: src/Views/Layout.vala:305
-msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "Hangul/Hanja نى ئوڭ Alt/Ctrl دا ئىشلىتىش:"
-
-#: src/Views/Behavior.vala:45
-msgid "Repeat Keys:"
-msgstr ""
-
-#: src/Views/Behavior.vala:49
-msgid "Delay:"
-msgstr "ئارقىغا سوزۇش："
-
-#: src/Views/Behavior.vala:52
-msgid "Interval:"
-msgstr "ۋاقىت ئارىلىقى："
-
-#: src/Views/Behavior.vala:55 src/Views/Behavior.vala:58
-#: src/Views/Behavior.vala:95
-msgid "milliseconds"
-msgstr "مىللىسىكۇنت"
-
-#: src/Views/Behavior.vala:84
-msgid "Cursor Blinking:"
-msgstr ""
-
-#: src/Views/Behavior.vala:89
-msgid "Speed:"
-msgstr "سۈرئەت："
-
-#: src/Views/Behavior.vala:92
-msgid "Duration:"
-msgstr "داۋاملىشىش："
-
-#: src/Views/Behavior.vala:98
-msgid "seconds"
-msgstr "سىكۇنت"
-
-#: src/Views/Behavior.vala:127
-#, fuzzy
-msgid "Type to test your settings"
-msgstr "كونۇپكىلارنى بىسىش ئارقىلىق تەڭشەكلىرىڭىزنى سىناپ بىقىڭ...."
-
-#: src/Shortcuts/Shortcut.vala:46
-#, fuzzy
-msgid "Shift"
-msgstr "Alt + Shift"
-
-#: src/Shortcuts/Shortcut.vala:54
-msgid "Ctrl"
-msgstr "Ctrl كۇنۇپكىسى"
-
-#: src/Shortcuts/Shortcut.vala:58
-msgid "Alt"
-msgstr ""
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -399,279 +160,559 @@ msgstr "ھەممە كۆزنەكلەرنى كۆرسىتىش"
 msgid "Picture in Picture Mode"
 msgstr ""
 
+#: src/Shortcuts/List.vala:60
+#, fuzzy
+#| msgid "Move to left"
+msgid "Move to display above"
+msgstr "سولدىكى خىزمەت رايونىغا يۆتكەش"
+
+#: src/Shortcuts/List.vala:61
+#, fuzzy
+#| msgid "Move to left"
+msgid "Move to display below"
+msgstr "سولدىكى خىزمەت رايونىغا يۆتكەش"
+
+#: src/Shortcuts/List.vala:62
+#, fuzzy
+msgid "Move to right display"
+msgstr "1-خىزمەت رايونىغا يۆتكەش"
+
 #: src/Shortcuts/List.vala:63
+#, fuzzy
+msgid "Move to left display"
+msgstr "1-خىزمەت رايونىغا يۆتكەش"
+
+#: src/Shortcuts/List.vala:67
 msgid "Workspaces"
 msgstr "خىزمەت رايونلىرى"
 
-#: src/Shortcuts/List.vala:64
+#: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:65
+#: src/Shortcuts/List.vala:69
 #, fuzzy
 msgid "Switch left"
 msgstr "سولدىكى خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:66
+#: src/Shortcuts/List.vala:70
 #, fuzzy
 msgid "Switch right"
 msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:71
 msgid "Switch to first"
 msgstr "بىرىنچى خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:72
 msgid "Switch to new"
 msgstr "يىڭى خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
 msgstr "1-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
 msgstr "2-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
 msgstr "3-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
 msgstr "4-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
 msgstr "5-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
 msgstr "6-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
 msgstr "7-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
 msgstr "8-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
 msgstr "9-خىزمەت رايونىغا ئالماشتۇرۇش"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:82
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "خىزمەت رايونلىرى"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
 msgstr "1-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
 msgstr "2-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
 msgstr "3-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
 msgstr "4-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
 msgstr "5-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
 msgstr "6-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
 msgstr "7-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
 msgstr "8-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
 msgstr "9-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:93
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "1-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:94
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "1-خىزمەت رايونىغا يۆتكەش"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:98
 msgid "Screenshots"
 msgstr "ئىكران كەسمە رەسىملىرى"
 
-#: src/Shortcuts/List.vala:95
-msgid "Grab the whole screen"
-msgstr ""
-
-#: src/Shortcuts/List.vala:96
-#, fuzzy
-msgid "Copy the whole screen to clipboard"
-msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
-
-#: src/Shortcuts/List.vala:97
-msgid "Grab the current window"
-msgstr ""
-
-#: src/Shortcuts/List.vala:98
-msgid "Copy the current window to clipboard"
-msgstr ""
-
 #: src/Shortcuts/List.vala:99
-msgid "Select an area to grab"
+msgid "Grab the whole screen"
 msgstr ""
 
 #: src/Shortcuts/List.vala:100
 #, fuzzy
+msgid "Copy the whole screen to clipboard"
+msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
+
+#: src/Shortcuts/List.vala:101
+msgid "Grab the current window"
+msgstr ""
+
+#: src/Shortcuts/List.vala:102
+msgid "Copy the current window to clipboard"
+msgstr ""
+
+#: src/Shortcuts/List.vala:103
+msgid "Select an area to grab"
+msgstr ""
+
+#: src/Shortcuts/List.vala:104
+#, fuzzy
 msgid "Copy an area to clipboard"
 msgstr "كەسكەن رەسىمنى چاپلاش تاختىسىغا ساقلاش"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:108
 msgid "Applications"
 msgstr "ئەپلەر"
 
-#: src/Shortcuts/List.vala:105
+#: src/Shortcuts/List.vala:109
 msgid "Email"
 msgstr "ئېلخەت"
 
-#: src/Shortcuts/List.vala:106
+#: src/Shortcuts/List.vala:110
 msgid "Home Folder"
 msgstr "ئاساسىي مۇندەرىجە"
 
-#: src/Shortcuts/List.vala:107
+#: src/Shortcuts/List.vala:111
 msgid "Music"
 msgstr ""
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:112
 msgid "Terminal"
 msgstr "تېرمىنال"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:113
 msgid "Internet Browser"
 msgstr "توركۆرگۈچ"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:117
 msgid "Media"
 msgstr "مېدىئا"
 
-#: src/Shortcuts/List.vala:114
+#: src/Shortcuts/List.vala:118
 msgid "Volume Up"
 msgstr "ئاۋازنى ئۈنلۈكلىتىش"
 
-#: src/Shortcuts/List.vala:115
+#: src/Shortcuts/List.vala:119
 msgid "Volume Down"
 msgstr "ئاۋازنى پەسەيتىش"
 
-#: src/Shortcuts/List.vala:116
+#: src/Shortcuts/List.vala:120
 msgid "Mute"
 msgstr "ئاۋازنى تاقاش"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:121
 msgid "Play"
 msgstr "قويۇش"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:122
 msgid "Pause"
 msgstr "ۋاقىتلىق توختىتىش"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:123
 msgid "Stop"
 msgstr "توختىتىش"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:124
 msgid "Previous Track"
 msgstr "ئالدىنقى كۈي"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:125
 msgid "Next Track"
 msgstr "كىيىنكى كۈي"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:126
 msgid "Eject"
 msgstr "چىقىرىش"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:130
 msgid "Universal Access"
 msgstr "ئۇنىۋىرسال تەڭشەكلەر"
 
-#: src/Shortcuts/List.vala:127
+#: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
 msgstr "تېكست چوڭلۇقىنى كىچىكلىتىش"
 
-#: src/Shortcuts/List.vala:128
+#: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
 msgstr "تېكست چوڭلۇقىنى چوڭايتىش"
 
-#: src/Shortcuts/List.vala:129
+#: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
 msgstr "چوڭايتىش ئەينىكىنى چوڭايتىش"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
 msgstr "چوڭايتىش ئەينىكىنى كىچىكلىتىش"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
 msgstr "ئىكران كۇنۇپكا تاختىسىنى قوزغىتىش"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
 msgstr "ئىكران ئوقۇغۇچنى قوزغىتىش"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:137
 msgid "Toggle High Contrast"
 msgstr "يۇقىرى سىلىشتۇرمىنى قوزغىتىش"
 
-#: src/Shortcuts/List.vala:137
+#: src/Shortcuts/List.vala:141
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:139
+#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#, fuzzy
+msgid "Applications Menu"
+msgstr "ئەپلەر"
+
+#: src/Shortcuts/List.vala:143
 #, fuzzy
 msgid "Lock"
 msgstr "Caps Lock"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:144
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:145
+msgid "Cycle display mode"
+msgstr ""
+
+#: src/Shortcuts/List.vala:149
 msgid "Custom"
 msgstr "ئۆزگىچىلەشتۈرۈش"
 
-#: src/Dialogs/ConflictDialog.vala:26
-#, fuzzy, c-format
-msgid "%s is already used for %s"
-msgstr "%s %s غا ئىشلىتىلگەن!"
+#. Layout switching keybinding
+#. Compose key position menu
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+msgid "Disabled"
+msgstr "چەكلەنگەن"
 
-#: src/Dialogs/ConflictDialog.vala:27
-#, fuzzy, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "ئەگەر سىز %s نى قولاي كۇنۇپكا قىلىپ بىكىتسىڭىز، %s ئىشلىمەيدۇ"
+#: src/Shortcuts/Shortcut.vala:61
+#, fuzzy
+msgid "Shift"
+msgstr "Alt + Shift"
 
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "قايتا تەقسىملەش"
+#: src/Shortcuts/Shortcut.vala:69
+msgid "Ctrl"
+msgstr "Ctrl كۇنۇپكىسى"
+
+#: src/Shortcuts/Shortcut.vala:73
+msgid "Alt"
+msgstr ""
+
+#: src/Views/Behavior.vala:25
+msgid "Repeat Keys:"
+msgstr ""
+
+#: src/Views/Behavior.vala:28
+msgid "Delay:"
+msgstr "ئارقىغا سوزۇش："
+
+#: src/Views/Behavior.vala:31
+msgid "Interval:"
+msgstr "ۋاقىت ئارىلىقى："
+
+#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
+#: src/Views/Behavior.vala:73
+msgid "milliseconds"
+msgstr "مىللىسىكۇنت"
+
+#: src/Views/Behavior.vala:63
+msgid "Cursor Blinking:"
+msgstr ""
+
+#: src/Views/Behavior.vala:67
+msgid "Speed:"
+msgstr "سۈرئەت："
+
+#: src/Views/Behavior.vala:70
+msgid "Duration:"
+msgstr "داۋاملىشىش："
+
+#: src/Views/Behavior.vala:76
+msgid "seconds"
+msgstr "سىكۇنت"
+
+#: src/Views/Behavior.vala:105
+#, fuzzy
+msgid "Type to test your settings"
+msgstr "كونۇپكىلارنى بىسىش ئارقىلىق تەڭشەكلىرىڭىزنى سىناپ بىقىڭ...."
+
+#. tree view to display the current layouts
+#: src/Views/Layout.vala:49
+msgid "Switch layout:"
+msgstr "ئالماشتۇرۇش بەت يۈزى:"
+
+#: src/Views/Layout.vala:54
+msgid "Alt + Caps Lock"
+msgstr "Alt + Caps Lock"
+
+#: src/Views/Layout.vala:55
+msgid "Alt + Shift"
+msgstr "Alt + Shift"
+
+#: src/Views/Layout.vala:56
+msgid "Alt + Space"
+msgstr "Alt + Space"
+
+#: src/Views/Layout.vala:57
+msgid "Both Shift keys together"
+msgstr "ئىككى Shift كۇنۇپكىسىنى تەڭ بىسىش"
+
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:278
+msgid "Caps Lock"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:59
+msgid "Ctrl + Alt"
+msgstr "Ctrl + Alt"
+
+#: src/Views/Layout.vala:60
+msgid "Ctrl + Shift"
+msgstr "Ctrl + Shift"
+
+#: src/Views/Layout.vala:61
+msgid "Shift + Caps Lock"
+msgstr "Shift + Caps Lock"
+
+#: src/Views/Layout.vala:68
+msgid "Compose key:"
+msgstr "بىرىكمە كۇنۇپكا:"
+
+#: src/Views/Layout.vala:74
+msgid "Menu"
+msgstr ""
+
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
+msgid "Right Alt"
+msgstr "ئوڭ Alt"
+
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:281 src/Views/Layout.vala:293
+msgid "Right Ctrl"
+msgstr "ئوڭ Ctrl"
+
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:282 src/Views/Layout.vala:294
+#, fuzzy
+msgid "Right ⌘"
+msgstr "ئوڭ Alt"
+
+#: src/Views/Layout.vala:84
+#, fuzzy
+msgid "⌘ key behavior:"
+msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
+
+#: src/Views/Layout.vala:93
+#, fuzzy
+msgid "Shortcut Overlay"
+msgstr "قولاي كۇنۇپكا"
+
+#: src/Views/Layout.vala:98
+msgid "Caps Lock behavior:"
+msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى:"
+
+#: src/Views/Layout.vala:104
+msgid "as Backspace"
+msgstr "Backspace قىلىپ ئىشلىتىش"
+
+#: src/Views/Layout.vala:105
+msgid "as Ctrl"
+msgstr "Ctrl قىلىپ ئىشلىتىش"
+
+#: src/Views/Layout.vala:106
+msgid "as Escape"
+msgstr "Escape قىلىپ ئىشلىتىش"
+
+#: src/Views/Layout.vala:107
+msgid "as Num Lock"
+msgstr "Num Lock قىلىپ ئىشلىتىش"
+
+#: src/Views/Layout.vala:108
+msgid "as ⌘"
+msgstr ""
+
+#: src/Views/Layout.vala:109
+#, fuzzy
+msgid "Swap with Ctrl"
+msgstr "Control بىلەن ئالماشتۇرۇش"
+
+#: src/Views/Layout.vala:110
+msgid "Swap with Escape"
+msgstr "Escape بىلەن ئالماشتۇرۇش"
+
+#: src/Views/Layout.vala:127
+#, fuzzy
+msgid "Type to test your layout"
+msgstr "خەت بىسىپ بەت يۈزىڭىزنى سىناپ بىقىڭ...."
+
+#: src/Views/Layout.vala:129
+msgid "Input Method Settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:150
+msgid "Show in Panel"
+msgstr ""
+
+#: src/Views/Layout.vala:156
+#, fuzzy
+#| msgid "Caps Lock"
+msgid "Caps Lock:"
+msgstr "Caps Lock"
+
+#: src/Views/Layout.vala:162
+#, fuzzy
+#| msgid "as Num Lock"
+msgid "Num Lock:"
+msgstr "Num Lock قىلىپ ئىشلىتىش"
+
+#: src/Views/Layout.vala:257 src/Views/Layout.vala:274
+msgid "Key to choose 3rd level:"
+msgstr "ئۈچىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
+
+#: src/Views/Layout.vala:279
+msgid "Left Alt"
+msgstr ""
+
+#: src/Views/Layout.vala:289
+msgid "Key to choose 5th level:"
+msgstr "بەشىنچى دەرىجىلىك تاللاش كۇنۇپكىسى:"
+
+#: src/Views/Layout.vala:310
+msgid "Kana Lock:"
+msgstr "باشقا ئىسىم بىلەن قۇلۇپلاش:"
+
+#: src/Views/Layout.vala:318
+msgid "Nicola F Backspace:"
+msgstr "Nicola F نۇسخىسىدىكى Backspace:"
+
+#: src/Views/Layout.vala:321
+#, fuzzy
+msgid "Hankaku Zenkaku as Escape:"
+msgstr "Zenkaku Hankaku نى Escape قىلىپ ئىشلىتىش:"
+
+#: src/Views/Layout.vala:338
+msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
+msgstr "Hangul/Hanja نى ئوڭ Alt/Ctrl دا ئىشلىتىش:"
+
+#: src/Views/Shortcuts.vala:76
+msgid "Add"
+msgstr "قىتىش"
+
+#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr "ئۆچۈرۈش"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:35
+#, fuzzy
+msgid "Search input language"
+msgstr "تىل:"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:62
+#, fuzzy
+msgid "Input Language"
+msgstr "تىل:"
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:101
+msgid "Show keyboard layout"
+msgstr ""
+
+#: src/Widgets/Layout/AddLayoutPopover.vala:123
+msgid "Add Layout"
+msgstr "بەتيۈزى قىتىش"
+
+#: src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr "قىتىش...."
+
+#: src/Widgets/Layout/Display.vala:63
+msgid "Move up"
+msgstr "يۇقىرىغا يۆتكەش"
+
+#: src/Widgets/Layout/Display.vala:67
+msgid "Move down"
+msgstr "ئاستىغا يۆتكەش"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:23
+msgid "Enter Command"
+msgstr "كىرگۈزۈش كوماندىسى"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:73
+msgid "Command"
+msgstr "كوماندا"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:74
+msgid "Shortcut"
+msgstr "قولاي كۇنۇپكا"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى چەكلەنگەن"
@@ -684,9 +725,6 @@ msgstr "قايتا تەقسىملەش"
 
 #~ msgid "Show Workspace Switcher"
 #~ msgstr "خىزمەت رايونى ئالماشتۇرغۇچىسىنى كۆرسىتىش"
-
-#~ msgid "Move to left"
-#~ msgstr "سولدىكى خىزمەت رايونىغا يۆتكەش"
 
 #~ msgid "Move to right"
 #~ msgstr "ئوڭدىكى خىزمەت رايونىغا يۆتكەش"
