@@ -57,10 +57,10 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.GALA, _("Window Overview"), "expose-windows");
             add_action (ref windows_group, Schema.GALA, _("Show All Windows"), "expose-all-windows");
             add_action (ref windows_group, Schema.GALA, _("Picture in Picture Mode"), "pip");
-            add_action (ref windows_group, Schema.WM, _("Move to monitor above"), "move-to-monitor-up");
-            add_action (ref windows_group, Schema.WM, _("Move to monitor below"), "move-to-monitor-down");
-            add_action (ref windows_group, Schema.WM, _("Move to monitor on the right"), "move-to-monitor-right");
-            add_action (ref windows_group, Schema.WM, _("Move to monitor on the left"), "move-to-monitor-left");
+            add_action (ref windows_group, Schema.WM, _("Move to display above"), "move-to-monitor-up");
+            add_action (ref windows_group, Schema.WM, _("Move to display below"), "move-to-monitor-down");
+            add_action (ref windows_group, Schema.WM, _("Move to right display"), "move-to-monitor-right");
+            add_action (ref windows_group, Schema.WM, _("Move to left display"), "move-to-monitor-left");
 
             workspaces_group = {};
             workspaces_group.icon_name = "preferences-desktop-workspaces";
@@ -142,7 +142,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref system_group, Schema.WM, _("Applications Menu"), "panel-main-menu");
             add_action (ref system_group, Schema.MEDIA, _("Lock"), "screensaver");
             add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
-            add_action (ref system_group, Schema.MUTTER, _("Switch monitor configurations"), "switch-monitor");
+            add_action (ref system_group, Schema.MUTTER, _("Cycle display mode"), "switch-monitor");
 
             custom_group = {};
             custom_group.icon_name = "applications-other";
