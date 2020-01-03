@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2018-09-01 00:08+0000\n"
-"Last-Translator: Dieter Debast <dieter_debast@hotmail.com>\n"
-"Language-Team: Dutch <https://weblate.elementary.io/projects/switchboard/"
+"PO-Revision-Date: 2020-01-05 13:07+0000\n"
+"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Plug.vala:32
@@ -50,9 +50,8 @@ msgid "Compose Key"
 msgstr "Samenstellingstoets"
 
 #: src/Plug.vala:89
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "Gedrag ⌘-toets:"
+msgstr "Gedrag ⌘-toets"
 
 #: src/Plug.vala:90
 msgid "Caps Lock behavior"
@@ -158,31 +157,23 @@ msgstr "Toon alle vensters"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "Beeld in beeld modus"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Verplaats naar links"
+msgstr "Verplaats naar de display boven"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Verplaats naar links"
+msgstr "Verplaats naar display beneden"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Verplaats naar rechtse werkblad"
+msgstr "Verplaats naar rechter display"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Verplaats naar linkse werkblad"
+msgstr "Verplaats naar linker display"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -190,7 +181,7 @@ msgstr "Werkbladen"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr ""
+msgstr "Multitasking weergave"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
@@ -250,7 +241,7 @@ msgstr "Blader door werkbladen"
 
 #: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "Blader omgekeerd door werkbladen"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
@@ -302,7 +293,7 @@ msgstr "Schermafdrukken"
 
 #: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "Maak een opname van het hele scherm"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
@@ -310,15 +301,15 @@ msgstr "Kopieer volledig scherm naar klembord"
 
 #: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
-msgstr ""
+msgstr "Maak een opname van het huidige venster"
 
 #: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "Kopieer het huidige venster naar het klembord"
 
 #: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
-msgstr ""
+msgstr "Kies een opnamegebied"
 
 #: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
@@ -422,7 +413,7 @@ msgstr "Schakel hoog contrast"
 
 #: src/Shortcuts/List.vala:141
 msgid "System"
-msgstr ""
+msgstr "Systeem"
 
 #: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
 msgid "Applications Menu"
@@ -434,11 +425,11 @@ msgstr "Vergrendeling"
 
 #: src/Shortcuts/List.vala:144
 msgid "Log Out"
-msgstr ""
+msgstr "Uitloggen"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Blader door display modi"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -461,7 +452,7 @@ msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Views/Behavior.vala:25
 msgid "Repeat Keys:"
@@ -543,7 +534,7 @@ msgstr "Samenstellingstoets:"
 
 #: src/Views/Layout.vala:74
 msgid "Menu"
-msgstr ""
+msgstr "Menu"
 
 #: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
 msgid "Right Alt"
@@ -587,12 +578,11 @@ msgstr "zoals Num Lock"
 
 #: src/Views/Layout.vala:108
 msgid "as ⌘"
-msgstr ""
+msgstr "zoals ⌘"
 
 #: src/Views/Layout.vala:109
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Wissel met Control"
+msgstr "Wissel met Ctrl"
 
 #: src/Views/Layout.vala:110
 msgid "Swap with Escape"
@@ -604,23 +594,19 @@ msgstr "Type om je indeling te testen"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
-msgstr ""
+msgstr "Input methode instellingen…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "Toon in paneel"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "zoals Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
@@ -628,7 +614,7 @@ msgstr "Toets om 3de niveau te kiezen:"
 
 #: src/Views/Layout.vala:279
 msgid "Left Alt"
-msgstr ""
+msgstr "Linker Alt"
 
 #: src/Views/Layout.vala:289
 msgid "Key to choose 5th level:"
@@ -643,9 +629,8 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
 #: src/Views/Layout.vala:321
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku als Escape:"
+msgstr "Hankaku Zenkaku als Escape:"
 
 #: src/Views/Layout.vala:338
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -657,7 +642,7 @@ msgstr "Voeg toe"
 
 #: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
 msgid "Remove"
-msgstr "Verwijderen"
+msgstr "Verwijder"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
 msgid "Search input language"
@@ -669,7 +654,7 @@ msgstr "Invoertaal"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr ""
+msgstr "Toon layout van het toetsenbord"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
