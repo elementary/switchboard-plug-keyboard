@@ -186,7 +186,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             editing = false;
             render_keycaps ();
 
-            return Gdk.EVENT_STOP; 
+            return Gdk.EVENT_STOP;
         }
 
         private void render_keycaps () {
