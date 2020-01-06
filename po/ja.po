@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2020-01-03 01:26+0000\n"
+"PO-Revision-Date: 2020-01-08 13:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -160,28 +160,20 @@ msgid "Picture in Picture Mode"
 msgstr "ピクチャーインピクチャーモード"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "左へ移動"
+msgstr "上のディスプレイに移動"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "左へ移動"
+msgstr "下のディスプレイに移動"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "右のワークスペースに移動"
+msgstr "右のディスプレイに移動"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "左のワークスペースに移動"
+msgstr "左のディスプレイに移動"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -437,7 +429,7 @@ msgstr "ログアウト"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "ディスプレイモードを切り替え"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
