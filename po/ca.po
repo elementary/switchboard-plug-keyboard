@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2019-05-15 03:02+0000\n"
+"PO-Revision-Date: 2020-01-08 13:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-04-05 07:13+0000\n"
 
 #: src/Plug.vala:32
@@ -160,28 +160,20 @@ msgid "Picture in Picture Mode"
 msgstr "Imatge en mode d'imatge"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Desplaça a l’esquerra"
+msgstr "Desplaça a la pantalla de dalt"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Desplaça a l’esquerra"
+msgstr "Desplaça a la pantalla de baix"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Mou a l'espai de treball de la dreta"
+msgstr "Desplaça a la pantalla de la dreta"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Mou a l'espai de treball de l'esquerra"
+msgstr "Desplaça a la pantalla de l'esquerra"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -253,47 +245,47 @@ msgstr "Cicle d'espais de treball invers"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
-msgstr "Mou a l'espai de treball 1"
+msgstr "Desplaça a l'espai de treball 1"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
-msgstr "Mou a l'espai de treball 2"
+msgstr "Desplaça a l'espai de treball 2"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
-msgstr "Mou a l'espai de treball 3"
+msgstr "Desplaça a l'espai de treball 3"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
-msgstr "Mou a l'espai de treball 4"
+msgstr "Desplaça a l'espai de treball 4"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
-msgstr "Mou a l'espai de treball 5"
+msgstr "Desplaça a l'espai de treball 5"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
-msgstr "Mou a l'espai de treball 6"
+msgstr "Desplaça a l'espai de treball 6"
 
 #: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
-msgstr "Mou a l'espai de treball 7"
+msgstr "Desplaça a l'espai de treball 7"
 
 #: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
-msgstr "Mou a l'espai de treball 8"
+msgstr "Desplaça a l'espai de treball 8"
 
 #: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
-msgstr "Mou a l'espai de treball 9"
+msgstr "Desplaça a l'espai de treball 9"
 
 #: src/Shortcuts/List.vala:93
 msgid "Move to left workspace"
-msgstr "Mou a l'espai de treball de l'esquerra"
+msgstr "Desplaça a l'espai de treball de l'esquerra"
 
 #: src/Shortcuts/List.vala:94
 msgid "Move to right workspace"
-msgstr "Mou a l'espai de treball de la dreta"
+msgstr "Desplaça a l'espai de treball de la dreta"
 
 #: src/Shortcuts/List.vala:98
 msgid "Screenshots"
@@ -437,7 +429,7 @@ msgstr "Desbloqueja"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Mode de pantalla cíclic"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -606,19 +598,15 @@ msgstr "Paràmetres del mètode d'entrada…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "Mostra-ho al plafó"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Bloqueig de majúscules"
+msgstr "Bloqueig de majúscules:"
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "com a bloqueig numèric"
+msgstr "Bloqueig numèric:"
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
@@ -678,11 +666,11 @@ msgstr "Afegeix…"
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
-msgstr "Mou cap amunt"
+msgstr "Desplaça amunt"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move down"
-msgstr "Mou cap avall"
+msgstr "Desplaça avall"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
