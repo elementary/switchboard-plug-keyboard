@@ -98,7 +98,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             attach (frame, 1, 0, 2, 1);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
-                trees += new Tree ((SectionID) id);
+                trees += new ShortcutListBox ((SectionID) id);
             }
 
             if (CustomShortcutSettings.available) {
