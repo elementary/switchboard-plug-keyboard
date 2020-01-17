@@ -80,7 +80,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             add (grid);
 
             add_button.clicked.connect (() => {
-                var dialog = new AddLayoutPopover ();
+                var dialog = new AddLayoutDialog ();
                 dialog.transient_for = (Gtk.Window) get_toplevel ();
                 dialog.show_all ();
 

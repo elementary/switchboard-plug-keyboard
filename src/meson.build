@@ -4,7 +4,6 @@ plug_files = files(
     'Widgets/Shortcuts/DisplayTree.vala',
     'Widgets/Shortcuts/CustomTree.vala',
     'Widgets/Layout/Display.vala',
-    'Widgets/Layout/AddLayoutPopover.vala',
     'Views/Shortcuts.vala',
     'Views/Layout.vala',
     'Views/Behavior.vala',
@@ -18,7 +17,8 @@ plug_files = files(
     'Layout/Handler.vala',
     'Layout/AdvancedSettingsPanel.vala',
     'Layout/AdvancedSettingsGrid.vala',
-    'Dialogs/ConflictDialog.vala'
+    'Dialogs/ConflictDialog.vala',
+    'Dialogs/AddLayoutDialog.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')

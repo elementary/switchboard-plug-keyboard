@@ -17,22 +17,16 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Dialog {
+public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
     public signal void layout_added (string language, string layout);
     private Gtk.ListBox input_language_list_box;
     private Gtk.ListBox layout_list_box;
     private GLib.ListStore language_list;
     private GLib.ListStore layout_list;
 
-    private static Gkbd.KeyboardDrawingGroupLevel top_left = { 0, 1 };
-    private static Gkbd.KeyboardDrawingGroupLevel top_right = { 0, 3 };
-    private static Gkbd.KeyboardDrawingGroupLevel bottom_left = { 0, 0 };
-    private static Gkbd.KeyboardDrawingGroupLevel bottom_right = { 0, 2 };
-    private static Gkbd.KeyboardDrawingGroupLevel*[] group = { &top_left, &top_right, &bottom_left, &bottom_right };
-
     construct {
-        height_request = 500;
-        width_request = 600;
+        default_height = 450;
+        default_width = 750;
 
         var search_entry = new Gtk.SearchEntry ();
         search_entry.margin = 12;
@@ -94,8 +88,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Dialog {
         layout_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         layout_grid.add (layout_scrolled);
 
-        var gkbd_drawing = new Gkbd.KeyboardDrawing ();
-        gkbd_drawing.set_groups_levels (((unowned Gkbd.KeyboardDrawingGroupLevel)[])group);
+        var gkbd_drawing = new KeyBoardDrawing ();
 
         var stack = new Gtk.Stack ();
         stack.expand = true;
@@ -173,7 +166,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Dialog {
             if (stack.visible_child == gkbd_drawing) {
                 stack.visible_child = layout_grid;
             } else {
-                gkbd_drawing.set_layout ("%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id));
+                gkbd_drawing.layout_id = "%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id);
                 gkbd_drawing.show_all ();
 
                 stack.visible_child = gkbd_drawing;
@@ -234,6 +227,39 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Dialog {
             label.margin_start = 12;
             label.xalign = 0;
             add (label);
+        }
+    }
+
+    private class KeyBoardDrawing : Gtk.Grid {
+        private Gkbd.KeyboardDrawing gkbd_drawing;
+
+        private static Gkbd.KeyboardDrawingGroupLevel top_left = { 0, 1 };
+        private static Gkbd.KeyboardDrawingGroupLevel top_right = { 0, 3 };
+        private static Gkbd.KeyboardDrawingGroupLevel bottom_left = { 0, 0 };
+        private static Gkbd.KeyboardDrawingGroupLevel bottom_right = { 0, 2 };
+        private static Gkbd.KeyboardDrawingGroupLevel*[] group = { &top_left, &top_right, &bottom_left, &bottom_right };
+
+        public string layout_id {
+            set {
+                gkbd_drawing.set_layout (value);
+            }
+        }
+
+        construct {
+            gkbd_drawing = new Gkbd.KeyboardDrawing ();
+            gkbd_drawing.parent = this;
+            gkbd_drawing.set_groups_levels (((unowned Gkbd.KeyboardDrawingGroupLevel)[])group);
+        }
+
+        public override bool draw (Cairo.Context cr) {
+            gkbd_drawing.render (cr,
+                Pango.cairo_create_layout (cr), 0, 0,
+                get_allocated_width (),
+                get_allocated_height (),
+                50,
+                50
+            );
+            return true;
         }
     }
 }

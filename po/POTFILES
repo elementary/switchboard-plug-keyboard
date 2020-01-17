@@ -1,4 +1,5 @@
 src/Plug.vala
+src/Dialogs/AddLayoutDialog.vala
 src/Dialogs/ConflictDialog.vala
 src/Layout/AdvancedSettingsGrid.vala
 src/Layout/AdvancedSettingsPanel.vala
@@ -13,7 +14,6 @@ src/Views/AbstractPage.vala
 src/Views/Behavior.vala
 src/Views/Layout.vala
 src/Views/Shortcuts.vala
-src/Widgets/Layout/AddLayoutPopover.vala
 src/Widgets/Layout/Display.vala
 src/Widgets/Shortcuts/CustomTree.vala
 src/Widgets/Shortcuts/DisplayTree.vala
