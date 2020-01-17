@@ -24,7 +24,8 @@ plug_files = files(
 switchboard_dep = dependency('switchboard-2.0')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
-gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('gnomekbdui')
+gnome_keyboard_dep = dependency('libgnomekbd')
+gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 
 shared_module(
     meson.project_name(),
@@ -36,7 +37,7 @@ shared_module(
         dependency('granite'),
         dependency('gtk+-3.0'),
         dependency('libxml-2.0'),
-        dependency('libgnomekbd'),
+        gnome_keyboard_dep,
         gnome_keyboard_ui_dep,
         switchboard_dep
     ],

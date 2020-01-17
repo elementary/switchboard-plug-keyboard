@@ -79,12 +79,15 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             add (grid);
 
-            var pop = new AddLayoutPopover ();
-
             add_button.clicked.connect (() => {
-                pop.set_relative_to (add_button);
-                pop.show_all ();
-                add_item (pop);
+                var dialog = new AddLayoutPopover ();
+                dialog.transient_for = (Gtk.Window) get_toplevel ();
+                dialog.show_all ();
+
+                dialog.layout_added.connect ((layout, variant) => {
+                    settings.layouts.add_layout (new Layout.XKB (layout, variant));
+                    rebuild_list ();
+                });
             });
 
             remove_button.clicked.connect (() => {
@@ -185,13 +188,6 @@ namespace Pantheon.Keyboard.LayoutPage {
         void remove_item () {
             settings.layouts.remove_active_layout ();
             rebuild_list ();
-        }
-
-        void add_item (LayoutPage.AddLayoutPopover pop) {
-            pop.layout_added.connect ((layout, variant) => {
-                settings.layouts.add_layout (new Layout.XKB (layout, variant));
-                rebuild_list ();
-            });
         }
     }
 }

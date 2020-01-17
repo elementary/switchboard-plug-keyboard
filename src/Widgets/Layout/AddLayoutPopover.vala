@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -17,17 +17,22 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
+public class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Dialog {
     public signal void layout_added (string language, string layout);
-    private Gtk.Widget keyboard_drawing_dialog;
     private Gtk.ListBox input_language_list_box;
     private Gtk.ListBox layout_list_box;
     private GLib.ListStore language_list;
     private GLib.ListStore layout_list;
 
+    private static Gkbd.KeyboardDrawingGroupLevel top_left = { 0, 1 };
+    private static Gkbd.KeyboardDrawingGroupLevel top_right = { 0, 3 };
+    private static Gkbd.KeyboardDrawingGroupLevel bottom_left = { 0, 0 };
+    private static Gkbd.KeyboardDrawingGroupLevel bottom_right = { 0, 2 };
+    private static Gkbd.KeyboardDrawingGroupLevel*[] group = { &top_left, &top_right, &bottom_left, &bottom_right };
+
     construct {
-        height_request = 400;
-        width_request = 400;
+        height_request = 500;
+        width_request = 600;
 
         var search_entry = new Gtk.SearchEntry ();
         search_entry.margin = 12;
@@ -62,7 +67,7 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         var back_button = new Gtk.Button.with_label (_("Input Language"));
         back_button.halign = Gtk.Align.START;
         back_button.margin = 6;
-        back_button.get_style_context ().add_class ("back-button");
+        back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var layout_list_title = new Gtk.Label (null);
         layout_list_title.ellipsize = Pango.EllipsizeMode.END;
@@ -85,10 +90,12 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
 
         var layout_grid = new Gtk.Grid ();
         layout_grid.orientation = Gtk.Orientation.VERTICAL;
-        layout_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         layout_grid.add (layout_header_box);
         layout_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         layout_grid.add (layout_scrolled);
+
+        var gkbd_drawing = new Gkbd.KeyboardDrawing ();
+        gkbd_drawing.set_groups_levels (((unowned Gkbd.KeyboardDrawingGroupLevel)[])group);
 
         var stack = new Gtk.Stack ();
         stack.expand = true;
@@ -96,54 +103,32 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
         stack.add (input_language_grid);
         stack.add (layout_grid);
+        stack.add (gkbd_drawing);
 
-        var keyboard_map_button = new Gtk.Button.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+        var frame = new Gtk.Frame (null);
+        frame.margin = 10;
+        frame.margin_top = 0;
+        frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        frame.add (stack);
+
+        var keyboard_map_button = new Gtk.ToggleButton ();
+        keyboard_map_button.image = new Gtk.Image.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
+        keyboard_map_button.halign = Gtk.Align.START;
         keyboard_map_button.tooltip_text = (_("Show keyboard layout"));
         keyboard_map_button.sensitive = false;
-        keyboard_map_button.clicked.connect (() => {
-            keyboard_map_button.sensitive = false;
 
-            Gdk.Window rootwin = Gdk.get_default_root_window ();
-            unowned X.Display display = (rootwin.get_display () as Gdk.X11.Display).get_xdisplay ();
+        add_action_widget (keyboard_map_button, Gtk.ResponseType.HELP);
 
-            var engine = Xkl.Engine.get_instance (display);
-            var registry = Xkl.ConfigRegistry.get_instance (engine);
+        add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
-            keyboard_drawing_dialog = new Gkbd.KeyboardDrawing.dialog_new ();
-            ((Gtk.Dialog) keyboard_drawing_dialog).deletable = false;
-            keyboard_drawing_dialog.destroy.connect (() => {
-                keyboard_map_button.sensitive = true;
-            });
-
-            var layout_id = "%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id);
-            Gkbd.KeyboardDrawing.dialog_set_layout (keyboard_drawing_dialog, registry, layout_id);
-            keyboard_drawing_dialog.show_all ();
-        });
-
-        var button_add = new Gtk.Button.with_label (_("Add Layout"));
+        var button_add = add_button (_("Add Layout"), Gtk.ResponseType.ACCEPT);
         button_add.sensitive = false;
         button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_cancel = new Gtk.Button.with_label (_("Cancel"));
-
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL);
-        button_box.layout_style = Gtk.ButtonBoxStyle.END;
-        button_box.margin = 12;
-        button_box.spacing = 6;
-        button_box.add (keyboard_map_button);
-        button_box.add (button_cancel);
-        button_box.add (button_add);
-        button_box.set_child_non_homogeneous (keyboard_map_button, true);
-        button_box.set_child_secondary (keyboard_map_button, true);
-
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.orientation = Gtk.Orientation.VERTICAL;
-        grid.add (stack);
-        grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-        grid.add (button_box);
-
-        add (grid);
+        deletable = false;
+        modal = true;
+        get_content_area ().add (frame);
+        get_action_area ().margin = 5;
 
         search_entry.grab_focus ();
 
@@ -156,13 +141,13 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             input_language_list_box.invalidate_filter ();
         });
 
-        button_cancel.clicked.connect (() => {
-            this.popdown ();
-        });
-
-        button_add.clicked.connect (() => {
-            this.popdown ();
-            layout_added (get_selected_lang ().id, get_selected_layout ().id);
+        response.connect ((response_id) => {
+            if (response_id == Gtk.ResponseType.HELP) {
+                return;
+            } else if (response_id == Gtk.ResponseType.ACCEPT) {
+                layout_added (get_selected_lang ().id, get_selected_layout ().id);
+            }
+            destroy ();
         });
 
         back_button.clicked.connect (() => {
@@ -182,6 +167,17 @@ class Pantheon.Keyboard.LayoutPage.AddLayoutPopover : Gtk.Popover {
             }
 
             stack.visible_child = layout_grid;
+        });
+
+        keyboard_map_button.clicked.connect (() => {
+            if (stack.visible_child == gkbd_drawing) {
+                stack.visible_child = layout_grid;
+            } else {
+                gkbd_drawing.set_layout ("%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id));
+                gkbd_drawing.show_all ();
+
+                stack.visible_child = gkbd_drawing;
+            }
         });
 
         layout_list_box.row_selected.connect ((row) => {
