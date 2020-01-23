@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2019-05-28 14:29+0000\n"
+"PO-Revision-Date: 2020-01-24 01:08+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/pt_BR/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:55+0000\n"
 
 #: src/Plug.vala:32
@@ -160,28 +160,20 @@ msgid "Picture in Picture Mode"
 msgstr "Modo Picture in Picture"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Mover para a esquerda"
+msgstr "Mover para exibir acima"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Mover para a esquerda"
+msgstr "Mover para exibir abaixo"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Mover para a área de trabalho direita"
+msgstr "Mover para a tela direita"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Mover para a área de trabalho esquerda"
+msgstr "Mover para a tela esquerda"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -437,7 +429,7 @@ msgstr "Encerrar Sessão"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Modo de exibição em ciclo"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -606,19 +598,15 @@ msgstr "Configurações do Método de Entrada…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "Mostrar no painel"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "como Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
