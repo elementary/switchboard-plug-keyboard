@@ -1,3 +1,14 @@
+xkbconf = dependency('xkeyboard-config')
+xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
+
+conf_data = configuration_data()
+conf_data.set('XKB_BASE', xkb_base)
+config_file = configure_file (
+    input: 'Config.vala.in',
+    output: 'Config.vala',
+    configuration: conf_data
+)
+
 plug_files = files(
     'Plug.vala',
     'Widgets/Shortcuts/Tree.vala',
@@ -30,6 +41,7 @@ gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 shared_module(
     meson.project_name(),
     plug_files,
+    config_file,
     dependencies: [
         dependency('glib-2.0'),
         dependency('gio-2.0'),
