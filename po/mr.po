@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2019-05-09 03:32+0000\n"
+"PO-Revision-Date: 2020-02-06 20:08+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Plug.vala:32
 msgid "Keyboard"
@@ -153,28 +153,20 @@ msgid "Picture in Picture Mode"
 msgstr "पिक्चर इन पिक्चर मोड"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to workspace 1"
 msgid "Move to display above"
-msgstr "कार्यक्षेत्र 1 वर हलवा"
+msgstr "वरील प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to workspace 1"
 msgid "Move to display below"
-msgstr "कार्यक्षेत्र 1 वर हलवा"
+msgstr "खालील प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "उजव्या कार्यक्षेत्रावर हलवा"
+msgstr "उजवीकडील प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "डाव्या कार्यक्षेत्रावर हलवा"
+msgstr "डाव्या प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -430,7 +422,7 @@ msgstr "लॉग आऊट"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "प्रदर्शन मोड सायकल करा"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -599,19 +591,15 @@ msgstr "इनपुट पद्धत सेटिंग्ज…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "पॅनेलमध्ये दाखवा"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "कॅप्स लॉक"
+msgstr "कॅप्स लॉक:"
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "नम लॉक म्हणून"
+msgstr "नम लॉक:"
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
