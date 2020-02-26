@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2020-01-21 16:08+0000\n"
+"PO-Revision-Date: 2020-02-03 17:08+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -181,7 +181,7 @@ msgstr "Áreas de trabalho"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr "Vista Multitarefa"
+msgstr "Vista Multitarefas"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
