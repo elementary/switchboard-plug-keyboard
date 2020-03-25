@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2019-05-08 07:32+0000\n"
+"PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Plug.vala:32
@@ -160,28 +160,20 @@ msgid "Picture in Picture Mode"
 msgstr "מצב תמונה בתוך תמונה"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "העברה לשמאלי"
+msgstr "העברה לתצוגה שמעל"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "העברה לשמאלי"
+msgstr "העברה לתצוגה שמתחת"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "העברה לסביבת עבודה מימין"
+msgstr "העברה לתצוגה שמימין"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "העברה לסביבת עבודה משמאל"
+msgstr "העברה לתצוגה שמשמאל"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -437,7 +429,7 @@ msgstr "יציאה"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "החלפת מצבי תצוגה"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -606,19 +598,15 @@ msgstr "הגדרות שיטת קלט…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "הצגה בלוח"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "בתור Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
