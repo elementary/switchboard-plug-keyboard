@@ -1,3 +1,45 @@
+switchboard-plug-keyboard (2.3.6) bionic; urgency=medium
+
+  * Release 2.3.6 (#276)
+  * Honor XKB_CONFIG_ROOT environment variable, don't hardcode (#266)
+  * Update translation files
+  * Update translation template
+  * Add shortcuts related to multi-monitor setup (#237)
+  * Update translation files
+  * Update translation template
+  * Show Caps and Num indicator settings when available (#263)
+  * Update translation template
+  * AppData: Add 2.3.6 release info (#259)
+  * Update translation template
+  * Update POTFILES
+  * po/meson: include extra dir
+  * Add Gettext Updates to Actions
+  * Use new Workspaces icon in Shortcuts tab  (#242)
+  * Split deb packaging into its own branch (#256)
+  * Add Release to Actions
+  * run installation in CI (#252)
+  * Add Lint to CI (#250)
+  * Fix variable naming
+  * Xkb_modifier → XkbModifier (#251)
+  * Fix linting errors, add copyright headers
+  * Combine Display and Shortcuts view (#239)
+  * Use GitHub CI (#249)
+  * Delete CODE_OF_CONDUCT.md
+  * Delete FUNDING.yml
+  * Behavior: Finish port to gsettings (#240)
+  * exclude space from single key shortcuts (#243)
+  * Combine Shortcuts view and SectionSwitcher (#236)
+  * build: fix install path for switchboard plug  (#234)
+  * Allow setting single key shortcuts (#214)
+  * Rename Keyboard.vala to Plug.vala (#230)
+  * Keyboard: Change code name to RDNN
+  * Add Silesian and update translation template
+  * Create FUNDING.yml
+  * Update translation files
+  * Constructors of abstract classes should not be public
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 01 Apr 2020 23:36:35 +0000
+
 switchboard-plug-keyboard (2.3.5) bionic; urgency=medium
 
   * New upstream release.
