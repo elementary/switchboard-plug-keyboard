@@ -5,7 +5,7 @@
   <name>Keyboard</name>
   <summary>Configure keyboard behavior, layouts, and shortcuts</summary>
   <releases>
-    <release version="2.3.6" date="2019-11-14" urgency="medium">
+    <release version="2.3.6" date="2020-04-01" urgency="medium">
       <description>
         <p>New "Workspaces" icon</p>
         <p>Exclude Space from single-key shortcuts</p>
