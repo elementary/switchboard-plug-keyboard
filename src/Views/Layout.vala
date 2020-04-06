@@ -146,7 +146,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             attach (caps_lock_combo, 2, 3, 1, 1);
             attach (advanced_settings, 1, 4, 2);
 
-            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", false) != null) {
+            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel"));
                 indicator_header.halign = Gtk.Align.END;
                 indicator_header.xalign = 1;
