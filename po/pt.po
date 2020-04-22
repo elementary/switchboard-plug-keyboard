@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2020-03-30 18:09+0000\n"
+"PO-Revision-Date: 2020-04-23 19:10+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -26,12 +26,12 @@ msgstr "Teclado"
 
 #: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Configurar o comportamento do teclado, disposições e teclas de atalho"
+msgstr "Configurar o comportamento do teclado, esquemas e teclas de atalho"
 
 #: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Plug.vala:89 src/Plug.vala:90
 msgid "Layout"
-msgstr "Disposição"
+msgstr "Esquema"
 
 #: src/Plug.vala:43 src/Plug.vala:91
 msgid "Shortcuts"
@@ -43,7 +43,7 @@ msgstr "Comportamento"
 
 #: src/Plug.vala:87
 msgid "Switch layout"
-msgstr "Alternar disposição"
+msgstr "Alternar esquema"
 
 #: src/Plug.vala:88
 msgid "Compose Key"
@@ -494,7 +494,7 @@ msgstr "Escreva para testar as definições"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
 msgid "Switch layout:"
-msgstr "Alternar disposição:"
+msgstr "Alternar esquema:"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Caps Lock"
@@ -590,7 +590,7 @@ msgstr "Trocar com Escape"
 
 #: src/Views/Layout.vala:127
 msgid "Type to test your layout"
-msgstr "Escreva para testar a disposição"
+msgstr "Escreva para testar o esquema"
 
 #: src/Views/Layout.vala:129
 msgid "Input Method Settings…"
@@ -654,11 +654,11 @@ msgstr "Idioma de entrada"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:101
 msgid "Show keyboard layout"
-msgstr "Mostrar disposição do teclado"
+msgstr "Mostrar esquema do teclado"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
-msgstr "Adicionar Disposição"
+msgstr "Adicionar esquema"
 
 #: src/Widgets/Layout/Display.vala:55
 msgid "Add…"
