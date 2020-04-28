@@ -2,7 +2,7 @@
 <component type="addon">
   <id>io.elementary.switchboard.keyboard</id>
   <extends>io.elementary.switchboard</extends>
-  <name>Keyboard</name>
+  <name>Keyboard Settings</name>
   <summary>Configure keyboard behavior, layouts, and shortcuts</summary>
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
