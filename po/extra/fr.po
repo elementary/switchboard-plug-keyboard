@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-15 20:40+0000\n"
+"POT-Creation-Date: 2020-04-28 22:19+0000\n"
 "PO-Revision-Date: 2019-11-18 00:24+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -20,7 +20,9 @@ msgstr ""
 "X-Generator: Weblate 3.7.1\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
-msgid "Keyboard"
+#, fuzzy
+#| msgid "Keyboard"
+msgid "Keyboard Settings"
 msgstr "Clavier"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
@@ -29,14 +31,14 @@ msgstr ""
 "Configurer le comportement du clavier, sa disposition ainsi que les "
 "raccourcis"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "New \"Workspaces\" icon"
 msgstr "Nouvelle icône « Espaces de travail »"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Exclusion de la touche Espace des raccourcis à une touche"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
