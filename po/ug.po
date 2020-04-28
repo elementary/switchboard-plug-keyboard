@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 01:27+0000\n"
+"POT-Creation-Date: 2020-04-28 22:19+0000\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -84,7 +84,7 @@ msgid "Reassign"
 msgstr "قايتا تەقسىملەش"
 
 #. Caps Lock key functionality
-#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
 #: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
 #: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
