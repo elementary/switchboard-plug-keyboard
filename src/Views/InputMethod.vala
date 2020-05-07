@@ -235,7 +235,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         listbox.show_all ();
         listbox.select_row (listbox.get_row_at_index (0));
 
-        // Update the sensitivity of remove_button depends on whether there are any listboxrow or not
+        // Update the sensitivity of buttons depends on whether there are active engines
         remove_button.sensitive = listbox.get_row_at_index (0) != null;
         show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
     }
