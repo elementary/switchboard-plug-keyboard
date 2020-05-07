@@ -18,6 +18,8 @@
 */
 
 public class Pantheon.Keyboard.Plug : Switchboard.Plug {
+    public static GLib.Settings ibus_general_settings;
+
     private Gtk.Grid grid;
     private Gtk.Stack stack;
 
@@ -35,11 +37,16 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
                 supported_settings: settings);
     }
 
+    static construct {
+        ibus_general_settings = new GLib.Settings ("org.freedesktop.ibus.general");
+    }
+
     public override Gtk.Widget get_widget () {
         if (grid == null) {
             stack = new Gtk.Stack ();
             stack.margin = 12;
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
+            stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("InputMethod"));
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
