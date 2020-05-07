@@ -16,9 +16,10 @@
 */
 
 public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
+    public signal void add_engine (string new_engine);
+
     private GLib.ListStore liststore;
     private Gtk.ListBox listbox;
-    public signal void add_engine (string new_engine);
 
     public AddEnginesPopover (Gtk.Widget relative_object) {
         Object (

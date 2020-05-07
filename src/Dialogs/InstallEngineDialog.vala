@@ -15,8 +15,8 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class InstallEngineDialog : Granite.MessageDialog {
-    private Pantheon.Keyboard.InputMethodPage.InstallList? engines_filter;
+public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialog {
+    private InstallList? engines_filter;
 
     public InstallEngineDialog (Gtk.Window parent) {
         Object (
@@ -34,8 +34,8 @@ public class InstallEngineDialog : Granite.MessageDialog {
         languages_list.expand = true;
         languages_list.selection_mode = Gtk.SelectionMode.NONE;
 
-        foreach (var language in Pantheon.Keyboard.InputMethodPage.InstallList.get_all ()) {
-            var lang = new Pantheon.Keyboard.InputMethodPage.LanguagesRow (language);
+        foreach (var language in InstallList.get_all ()) {
+            var lang = new LanguagesRow (language);
             languages_list.add (lang);
         }
 
@@ -55,9 +55,9 @@ public class InstallEngineDialog : Granite.MessageDialog {
         listbox.set_filter_func (filter_function);
         listbox.set_sort_func (sort_function);
 
-        foreach (var language in Pantheon.Keyboard.InputMethodPage.InstallList.get_all ()) {
+        foreach (var language in InstallList.get_all ()) {
             foreach (var engine in language.get_components ()) {
-                listbox.add (new Pantheon.Keyboard.InputMethodPage.EnginesRow (engine));
+                listbox.add (new EnginesRow (engine));
             }
         }
 
@@ -91,8 +91,8 @@ public class InstallEngineDialog : Granite.MessageDialog {
 
         languages_list.row_activated.connect ((row) => {
             stack.visible_child = engine_list_grid;
-            language_title.label = ((Pantheon.Keyboard.InputMethodPage.LanguagesRow) row).language.get_name ();
-            engines_filter = ((Pantheon.Keyboard.InputMethodPage.LanguagesRow) row).language;
+            language_title.label = ((LanguagesRow) row).language.get_name ();
+            engines_filter = ((LanguagesRow) row).language;
             listbox.invalidate_filter ();
             var adjustment = scrolled.get_vadjustment ();
             adjustment.set_value (adjustment.lower);
@@ -105,23 +105,23 @@ public class InstallEngineDialog : Granite.MessageDialog {
 
         listbox.selected_rows_changed.connect (() => {
             foreach (var engines_row in listbox.get_children ()) {
-                ((Pantheon.Keyboard.InputMethodPage.EnginesRow) engines_row).selected = false;
+                ((EnginesRow) engines_row).selected = false;
             }
-            ((Pantheon.Keyboard.InputMethodPage.EnginesRow) listbox.get_selected_row ()).selected = true;
+            ((EnginesRow) listbox.get_selected_row ()).selected = true;
             install_button.sensitive = true;
         });
 
         response.connect ((response_id) => {
             if (response_id == Gtk.ResponseType.OK) {
-                string engine_to_install = ((Pantheon.Keyboard.InputMethodPage.EnginesRow) listbox.get_selected_row ()).engine_name;
-                Pantheon.Keyboard.InputMethodPage.UbuntuInstaller.get_default ().install (engine_to_install);
+                string engine_to_install = ((EnginesRow) listbox.get_selected_row ()).engine_name;
+                UbuntuInstaller.get_default ().install (engine_to_install);
             }
         });
     }
 
     [CCode (instance_pos = -1)]
     private bool filter_function (Gtk.ListBoxRow row) {
-        if (Pantheon.Keyboard.InputMethodPage.InstallList.get_language_from_engine_name (((Pantheon.Keyboard.InputMethodPage.EnginesRow) row).engine_name) == engines_filter) {
+        if (InstallList.get_language_from_engine_name (((EnginesRow) row).engine_name) == engines_filter) {
             return true;
         }
 
@@ -130,6 +130,6 @@ public class InstallEngineDialog : Granite.MessageDialog {
 
     [CCode (instance_pos = -1)]
     private int sort_function (Gtk.ListBoxRow row1, Gtk.ListBoxRow row2) {
-        return ((Pantheon.Keyboard.InputMethodPage.EnginesRow) row1).engine_name.collate (((Pantheon.Keyboard.InputMethodPage.EnginesRow) row1).engine_name);
+        return ((EnginesRow) row1).engine_name.collate (((EnginesRow) row1).engine_name);
     }
 }

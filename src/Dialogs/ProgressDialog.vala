@@ -16,7 +16,7 @@
 * with this program. If not, see http://www.gnu.org/licenses/.
 */
 
-public class ProgressDialog : Gtk.Dialog {
+public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Gtk.Dialog {
     public int progress {
         set {
             if (value >= 100) {
@@ -33,7 +33,7 @@ public class ProgressDialog : Gtk.Dialog {
         var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG);
         image.valign = Gtk.Align.START;
 
-        unowned Pantheon.Keyboard.InputMethodPage.UbuntuInstaller installer = Pantheon.Keyboard.InputMethodPage.UbuntuInstaller.get_default ();
+        unowned UbuntuInstaller installer = UbuntuInstaller.get_default ();
 
         var primary_label = new Gtk.Label (null);
         primary_label.max_width_chars = 50;
@@ -42,10 +42,10 @@ public class ProgressDialog : Gtk.Dialog {
         primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
         switch (installer.transaction_mode) {
-            case Pantheon.Keyboard.InputMethodPage.UbuntuInstaller.TransactionMode.INSTALL:
+            case UbuntuInstaller.TransactionMode.INSTALL:
                 primary_label.label = _("Installing %s").printf (installer.engine_to_address);
                 break;
-            case Pantheon.Keyboard.InputMethodPage.UbuntuInstaller.TransactionMode.REMOVE:
+            case UbuntuInstaller.TransactionMode.REMOVE:
                 primary_label.label = _("Removing %s").printf (installer.engine_to_address);
                 break;
         }
