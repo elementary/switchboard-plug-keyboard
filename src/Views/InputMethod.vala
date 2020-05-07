@@ -26,6 +26,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
     private Gtk.ListBox listbox;
     private Gtk.Button remove_button;
+    private Gtk.Switch show_system_tray_switch;
 
     public Page () {
     }
@@ -45,8 +46,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.tooltip_text = _("Remove");
-
-        update_engines_list ();
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -84,7 +83,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         var show_system_tray_label = new Gtk.Label (_("Show icon on system tray:"));
         show_system_tray_label.halign = Gtk.Align.END;
 
-        var show_system_tray_switch = new Gtk.Switch ();
+        show_system_tray_switch = new Gtk.Switch ();
         show_system_tray_switch.halign = Gtk.Align.START;
 
         var embed_preedit_text_label = new Gtk.Label (_("Embed preedit text in application window:"));
@@ -157,6 +156,8 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         ibus_panel_settings.bind ("show-icon-on-systray", show_system_tray_switch, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
+
+        update_engines_list ();
     }
 
     private string get_keyboard_shortcut () {
@@ -236,6 +237,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         // Update the sensitivity of remove_button depends on whether there are any listboxrow or not
         remove_button.sensitive = (listbox.get_row_at_index (0) == null) ? false : true;
+        show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
     }
 
     public override void reset () {}
