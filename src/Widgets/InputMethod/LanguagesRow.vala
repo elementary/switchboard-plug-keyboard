@@ -16,9 +16,9 @@
 */
 
 public class Pantheon.Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
-    public Pantheon.Keyboard.InputMethodPage.InstallList language { get; construct; }
+    public InstallList language { get; construct; }
 
-    public LanguagesRow (Pantheon.Keyboard.InputMethodPage.InstallList language) {
+    public LanguagesRow (InstallList language) {
         Object (
             language: language
         );

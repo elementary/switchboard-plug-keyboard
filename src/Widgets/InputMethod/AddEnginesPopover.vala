@@ -45,17 +45,17 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 #endif
 
         foreach (var engine in engines) {
-            liststore.append (new Pantheon.Keyboard.InputMethodPage.AddEnginesList (engine));
+            liststore.append (new AddEnginesList (engine));
         }
 
         liststore.sort ((a, b) => {
-            return ((Pantheon.Keyboard.InputMethodPage.AddEnginesList) a).engine_full_name.collate (((Pantheon.Keyboard.InputMethodPage.AddEnginesList) b).engine_full_name);
+            return ((AddEnginesList) a).engine_full_name.collate (((AddEnginesList) b).engine_full_name);
         });
 
         for (int i = 0; i < liststore.get_n_items (); i++) {
             var listboxrow = new Gtk.ListBoxRow ();
 
-            var label = new Gtk.Label (((Pantheon.Keyboard.InputMethodPage.AddEnginesList) liststore.get_item (i)).engine_full_name);
+            var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name);
             label.margin = 6;
             label.halign = Gtk.Align.START;
 
@@ -108,7 +108,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         });
 
         listbox.set_filter_func ((list_box_row) => {
-            var item = (Pantheon.Keyboard.InputMethodPage.AddEnginesList) liststore.get_item (list_box_row.get_index ());
+            var item = (AddEnginesList) liststore.get_item (list_box_row.get_index ());
             return search_entry.text.down () in item.engine_full_name.down ();
         });
 
@@ -137,12 +137,12 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         int index = listbox.get_selected_row ().get_index ();
 
         // If the engine trying to add is already active, do not add it
-        foreach (var active_engine in Pantheon.Keyboard.InputMethodPage.Utils.active_engines) {
-            if (active_engine == (((Pantheon.Keyboard.InputMethodPage.AddEnginesList) liststore.get_item (index)).engine_id)) {
+        foreach (var active_engine in Utils.active_engines) {
+            if (active_engine == (((AddEnginesList) liststore.get_item (index)).engine_id)) {
                 popdown ();
                 return;
             }
         }
-        add_engine (((Pantheon.Keyboard.InputMethodPage.AddEnginesList) liststore.get_item (index)).engine_id);
+        add_engine (((AddEnginesList) liststore.get_item (index)).engine_id);
     }
 }

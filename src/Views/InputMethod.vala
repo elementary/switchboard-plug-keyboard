@@ -118,9 +118,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         });
 
         pop.add_engine.connect ((engine) => {
-            string[] new_engine_list = Pantheon.Keyboard.InputMethodPage.Utils.active_engines;
+            string[] new_engine_list = Utils.active_engines;
             new_engine_list += engine;
-            Pantheon.Keyboard.InputMethodPage.Utils.active_engines = new_engine_list;
+            Utils.active_engines = new_engine_list;
 
             update_engines_list ();
             pop.popdown ();
@@ -131,7 +131,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
             // Convert to GLib.Array once, because Vala does not support "-=" operator
             Array<string> removed_lists = new Array<string> ();
-            foreach (var active_engine in Pantheon.Keyboard.InputMethodPage.Utils.active_engines) {
+            foreach (var active_engine in Utils.active_engines) {
                 removed_lists.append_val (active_engine);
             }
             // Remove applicable engine from the list
@@ -145,7 +145,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
             for (int i = 0; i < removed_lists.length; i++) {
                 new_engines += removed_lists.index (i);
             }
-            Pantheon.Keyboard.InputMethodPage.Utils.active_engines = new_engines;
+            Utils.active_engines = new_engines;
             update_engines_list ();
         });
 
@@ -212,7 +212,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         });
 
         // Add the language and the name of activated engines
-        foreach (var active_engine in Pantheon.Keyboard.InputMethodPage.Utils.active_engines) {
+        foreach (var active_engine in Utils.active_engines) {
             foreach (var engine in engines) {
                 if (engine.name == active_engine) {
                     engine_full_names += "%s - %s".printf (IBus.get_language_name (engine.language),
@@ -236,7 +236,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         listbox.select_row (listbox.get_row_at_index (0));
 
         // Update the sensitivity of remove_button depends on whether there are any listboxrow or not
-        remove_button.sensitive = (listbox.get_row_at_index (0) == null) ? false : true;
+        remove_button.sensitive = listbox.get_row_at_index (0) != null;
         show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
     }
 
