@@ -92,6 +92,19 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         var embed_preedit_text_switch = new Gtk.Switch ();
         embed_preedit_text_switch.halign = Gtk.Align.START;
 
+        var entry_test = new Gtk.Entry ();
+        entry_test.hexpand = true;
+        entry_test.placeholder_text = (_("Type to test your settings"));
+
+        var ibus_button = new Gtk.Button.with_label (_("Advanced Settings…"));
+
+        var action_area = new Gtk.Grid ();
+        action_area.column_spacing = 12;
+        action_area.valign = Gtk.Align.END;
+        action_area.vexpand = true;
+        action_area.add (entry_test);
+        action_area.add (ibus_button);
+
         var right_grid = new Gtk.Grid ();
         right_grid.halign = Gtk.Align.CENTER;
         right_grid.hexpand = true;
@@ -108,8 +121,11 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         right_grid.attach (embed_preedit_text_switch, 1, 3, 1, 1);
 
         var main_grid = new Gtk.Grid ();
-        main_grid.attach (display, 0, 0, 1, 1);
+        main_grid.column_spacing = 12;
+        main_grid.row_spacing = 12;
+        main_grid.attach (display, 0, 0, 1, 2);
         main_grid.attach (right_grid, 1, 0, 1, 1);
+        main_grid.attach (action_area, 1, 1, 1, 1);
 
         add (main_grid);
 
@@ -151,6 +167,15 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         keyboard_shortcut_combobox.changed.connect (() => {
             set_keyboard_shortcut (keyboard_shortcut_combobox.active_id);
+        });
+
+        ibus_button.clicked.connect (() => {
+            try {
+                var appinfo = GLib.AppInfo.create_from_commandline ("ibus-setup", null, GLib.AppInfoCreateFlags.NONE);
+                appinfo.launch (null, null);
+            } catch (Error e) {
+                critical ("Could not open ibus setup: %s", e.message);
+            }
         });
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
