@@ -265,5 +265,10 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
     }
 
-    public override void reset () {}
+    public override void reset () {
+        set_keyboard_shortcut ("ctrl-space");
+        ibus_panel_settings.reset ("show");
+        ibus_panel_settings.reset ("show-icon-on-systray");
+        Pantheon.Keyboard.Plug.ibus_general_settings.reset ("embed-preedit-text");
+    }
 }
