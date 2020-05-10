@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-05-08 14:10+0000\n"
+"PO-Revision-Date: 2020-05-11 20:10+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
@@ -26,7 +26,7 @@ msgstr "Klávesnice"
 
 #: src/Plug.vala:33
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Nastavuj chování klávesnice, rozložení a zkratky"
+msgstr "Nastavit chování klávesnice, rozložení a klávesové zkratky"
 
 #: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
 #: src/Plug.vala:89 src/Plug.vala:90
@@ -78,7 +78,7 @@ msgstr "Pokud přeřadíte klávesovou zkratku k %s, %s bude vypnuto."
 #: src/Dialogs/ConflictDialog.vala:36
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Storno"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -160,28 +160,20 @@ msgid "Picture in Picture Mode"
 msgstr "Režim obrázek v obrázku"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Přesunout vlevo"
+msgstr "Přesunout na displej nad"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Přesunout vlevo"
+msgstr "Přesunout na displej pod"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Přesunout na plochu vpravo"
+msgstr "Přesunout na displej vpravo"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Přesunout na plochu vlevo"
+msgstr "Přesunout na displej vlevo"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -437,7 +429,7 @@ msgstr "Odhlásit se"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Střídat režim displeje"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -589,9 +581,8 @@ msgid "as ⌘"
 msgstr "jako ⌘"
 
 #: src/Views/Layout.vala:109
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Vyměnit s klávesou Ctrl"
+msgstr "Prohodit s klávesou Ctrl"
 
 #: src/Views/Layout.vala:110
 msgid "Swap with Escape"
@@ -607,19 +598,15 @@ msgstr "Nastavení metody vstupu…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "Zobrazit v panelu"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "jako Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"
