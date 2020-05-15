@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-01-08 13:07+0000\n"
+"PO-Revision-Date: 2020-05-08 14:10+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -506,7 +506,7 @@ msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:56
 msgid "Alt + Space"
-msgstr "Alt + スペース"
+msgstr "Alt + Space"
 
 #: src/Views/Layout.vala:57
 msgid "Both Shift keys together"
