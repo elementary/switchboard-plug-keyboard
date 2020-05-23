@@ -304,7 +304,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         uint timeout_start_daemon = Timeout.add (500, () => {
             set_visible_view ();
-            return false;
+            return Gdk.EVENT_PROPAGATE;
         });
         timeout_start_daemon = 0;
     }
