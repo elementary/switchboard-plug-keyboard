@@ -128,6 +128,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
     public void update_engines_list () {
         engines = new IBus.Bus ().list_engines ();
+        liststore.remove_all ();
 
         foreach (var engine in engines) {
             liststore.append (new AddEnginesList (engine));
