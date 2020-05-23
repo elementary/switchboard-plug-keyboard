@@ -18,6 +18,13 @@
 public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     public signal void add_engine (string new_engine);
 
+#if IBUS_1_5_19
+    private List<IBus.EngineDesc> engines;
+#else
+    private List<weak IBus.EngineDesc> engines;
+#endif
+
+    private Gtk.SearchEntry search_entry;
     private GLib.ListStore liststore;
     private Gtk.ListBox listbox;
 
@@ -28,7 +35,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     }
 
     construct {
-        var search_entry = new Gtk.SearchEntry ();
+        search_entry = new Gtk.SearchEntry ();
         search_entry.margin = 6;
         ///TRANSLATORS: This text appears in a search entry and tell users to type some search word
         ///to look for a input method engine they want to add.
@@ -38,31 +45,6 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         liststore = new GLib.ListStore (Type.OBJECT);
 
         listbox = new Gtk.ListBox ();
-
-#if IBUS_1_5_19
-        List<IBus.EngineDesc> engines = new IBus.Bus ().list_engines ();
-#else
-        List<weak IBus.EngineDesc> engines = new IBus.Bus ().list_engines ();
-#endif
-
-        foreach (var engine in engines) {
-            liststore.append (new AddEnginesList (engine));
-        }
-
-        liststore.sort ((a, b) => {
-            return ((AddEnginesList) a).engine_full_name.collate (((AddEnginesList) b).engine_full_name);
-        });
-
-        for (int i = 0; i < liststore.get_n_items (); i++) {
-            var listboxrow = new Gtk.ListBoxRow ();
-
-            var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name);
-            label.margin = 6;
-            label.halign = Gtk.Align.START;
-
-            listboxrow.add (label);
-            listbox.add (listboxrow);
-        }
 
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.height_request = 300;
@@ -93,9 +75,6 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         grid.attach (scrolled, 0, 1, 1, 1);
         grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 2, 1, 1);
         grid.attach (buttons_grid, 0, 3, 1, 1);
-
-        listbox.select_row (listbox.get_row_at_index (0));
-        search_entry.grab_focus ();
 
         add (grid);
 
@@ -145,5 +124,31 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             }
         }
         add_engine (((AddEnginesList) liststore.get_item (index)).engine_id);
+    }
+
+    public void update_engines_list () {
+        engines = new IBus.Bus ().list_engines ();
+
+        foreach (var engine in engines) {
+            liststore.append (new AddEnginesList (engine));
+        }
+
+        liststore.sort ((a, b) => {
+            return ((AddEnginesList) a).engine_full_name.collate (((AddEnginesList) b).engine_full_name);
+        });
+
+        for (int i = 0; i < liststore.get_n_items (); i++) {
+            var listboxrow = new Gtk.ListBoxRow ();
+
+            var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name);
+            label.margin = 6;
+            label.halign = Gtk.Align.START;
+
+            listboxrow.add (label);
+            listbox.add (listboxrow);
+        }
+
+        listbox.select_row (listbox.get_row_at_index (0));
+        search_entry.grab_focus ();
     }
 }

@@ -16,24 +16,46 @@
 */
 
 public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.AbstractPage {
+    private IBus.Bus bus;
     private GLib.Settings ibus_panel_settings;
     // Stores all installed engines
 #if IBUS_1_5_19
-    private List<IBus.EngineDesc> engines = new IBus.Bus ().list_engines ();
+    private List<IBus.EngineDesc> engines;
 #else
-    private List<weak IBus.EngineDesc> engines = new IBus.Bus ().list_engines ();
+    private List<weak IBus.EngineDesc> engines;
 #endif
 
     private Gtk.ListBox listbox;
     private Gtk.Button remove_button;
+    private AddEnginesPopover add_engines_popover;
     private Gtk.Switch show_system_tray_switch;
+    private Gtk.Stack stack;
 
     public Page () {
     }
 
     construct {
+        bus = new IBus.Bus ();
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
+        // no_daemon_runnning view shown if IBus Daemon is not running
+        var no_daemon_runnning_alert = new Granite.Widgets.AlertView (
+            _("IBus Daemon is not running"),
+            _("You need to run IBus Daemon to enable or configure input method engines."),
+            "dialog-information"
+        );
+        no_daemon_runnning_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+        no_daemon_runnning_alert.halign = Gtk.Align.CENTER;
+        no_daemon_runnning_alert.valign = Gtk.Align.CENTER;
+        no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
+        no_daemon_runnning_alert.action_activated.connect (() => {
+            start_ibus_daemon ();
+        });
+
+        var no_daemon_runnning_grid = new Gtk.Grid ();
+        no_daemon_runnning_grid.attach (no_daemon_runnning_alert, 0, 0, 1, 1);
+
+        // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox ();
 
         var scroll = new Gtk.ScrolledWindow (null, null);
@@ -59,7 +81,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         var display = new Gtk.Frame (null);
         display.add (left_grid);
 
-        var pop = new AddEnginesPopover (add_button);
+        add_engines_popover = new AddEnginesPopover (add_button);
 
         var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:"));
         keyboard_shortcut_label.halign = Gtk.Align.END;
@@ -127,19 +149,27 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         main_grid.attach (right_grid, 1, 0, 1, 1);
         main_grid.attach (action_area, 1, 1, 1, 1);
 
-        add (main_grid);
+        stack = new Gtk.Stack ();
+        stack.add_named (no_daemon_runnning_grid, "no_daemon_runnning_view");
+        stack.add_named (main_grid, "main_view");
+        stack.visible_child_name = "no_daemon_runnning_view";
+        stack.show_all ();
+
+        add (stack);
+
+        set_visible_view ();
 
         add_button.clicked.connect (() => {
-            pop.show_all ();
+            add_engines_popover.show_all ();
         });
 
-        pop.add_engine.connect ((engine) => {
+        add_engines_popover.add_engine.connect ((engine) => {
             string[] new_engine_list = Utils.active_engines;
             new_engine_list += engine;
             Utils.active_engines = new_engine_list;
 
             update_engines_list ();
-            pop.popdown ();
+            add_engines_popover.popdown ();
         });
 
         remove_button.clicked.connect (() => {
@@ -181,8 +211,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         ibus_panel_settings.bind ("show-icon-on-systray", show_system_tray_switch, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
-
-        update_engines_list ();
     }
 
     private string get_keyboard_shortcut () {
@@ -229,6 +257,8 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
     }
 
     private void update_engines_list () {
+        engines = new IBus.Bus ().list_engines ();
+
         // Stores names of currently activated engines
         string[] engine_full_names = {};
 
@@ -263,6 +293,30 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         // Update the sensitivity of buttons depends on whether there are active engines
         remove_button.sensitive = listbox.get_row_at_index (0) != null;
         show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
+    }
+
+    private void start_ibus_daemon () {
+        try {
+            Process.spawn_sync ("/", { "ibus-daemon", "-drx" }, Environ.get (), SpawnFlags.SEARCH_PATH, null);
+        } catch (GLib.SpawnError e) {
+            warning (e.message);
+        }
+
+        uint timeout_start_daemon = Timeout.add (500, () => {
+            set_visible_view ();
+            return false;
+        });
+        timeout_start_daemon = 0;
+    }
+
+    private void set_visible_view () {
+        if (bus.is_connected ()) {
+            stack.visible_child_name = "main_view";
+            update_engines_list ();
+            add_engines_popover.update_engines_list ();
+        } else {
+            stack.visible_child_name = "no_daemon_runnning_view";
+        }
     }
 
     public override void reset () {
