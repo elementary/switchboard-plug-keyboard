@@ -167,7 +167,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         stack.add_named (no_daemon_runnning_grid, "no_daemon_runnning_view");
         stack.add_named (spawn_failed_grid, "spawn_failed_view");
         stack.add_named (main_grid, "main_view");
-        stack.visible_child_name = "no_daemon_runnning_view";
         stack.show_all ();
 
         add (stack);
@@ -195,6 +194,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
             foreach (var active_engine in Utils.active_engines) {
                 removed_lists.append_val (active_engine);
             }
+
             // Remove applicable engine from the list
             removed_lists.remove_index (index);
 
@@ -206,6 +206,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
             for (int i = 0; i < removed_lists.length; i++) {
                 new_engines += removed_lists.index (i);
             }
+
             Utils.active_engines = new_engines;
             update_engines_list ();
         });

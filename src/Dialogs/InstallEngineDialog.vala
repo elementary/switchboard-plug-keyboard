@@ -107,6 +107,7 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
             foreach (var engines_row in listbox.get_children ()) {
                 ((EnginesRow) engines_row).selected = false;
             }
+
             ((EnginesRow) listbox.get_selected_row ()).selected = true;
             install_button.sensitive = true;
         });

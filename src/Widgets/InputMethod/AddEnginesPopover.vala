@@ -123,6 +123,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                 return;
             }
         }
+
         add_engine (((AddEnginesList) liststore.get_item (index)).engine_id);
     }
 
