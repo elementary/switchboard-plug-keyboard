@@ -25,6 +25,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
     private List<weak IBus.EngineDesc> engines;
 #endif
 
+    private Granite.Widgets.AlertView spawn_failed_alert;
     private Gtk.ListBox listbox;
     private Gtk.Button remove_button;
     private AddEnginesPopover add_engines_popover;
@@ -49,11 +50,24 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         no_daemon_runnning_alert.valign = Gtk.Align.CENTER;
         no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
         no_daemon_runnning_alert.action_activated.connect (() => {
-            start_ibus_daemon ();
+            spawn_ibus_daemon ();
         });
 
         var no_daemon_runnning_grid = new Gtk.Grid ();
-        no_daemon_runnning_grid.attach (no_daemon_runnning_alert, 0, 0, 1, 1);
+        no_daemon_runnning_grid.add (no_daemon_runnning_alert);
+
+        // spawn_failed view shown if IBus Daemon is not running
+        spawn_failed_alert = new Granite.Widgets.AlertView (
+            _("Failed to start IBus Daemon"),
+            "",
+            "dialog-error"
+        );
+        spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+        spawn_failed_alert.halign = Gtk.Align.CENTER;
+        spawn_failed_alert.valign = Gtk.Align.CENTER;
+
+        var spawn_failed_grid = new Gtk.Grid ();
+        spawn_failed_grid.add (spawn_failed_alert);
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox ();
@@ -151,6 +165,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         stack = new Gtk.Stack ();
         stack.add_named (no_daemon_runnning_grid, "no_daemon_runnning_view");
+        stack.add_named (spawn_failed_grid, "spawn_failed_view");
         stack.add_named (main_grid, "main_view");
         stack.visible_child_name = "no_daemon_runnning_view";
         stack.show_all ();
@@ -295,11 +310,14 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
     }
 
-    private void start_ibus_daemon () {
+    private void spawn_ibus_daemon () {
+        bool is_spawn_succeeded = false;
         try {
-            Process.spawn_sync ("/", { "ibus-daemon", "-drx" }, Environ.get (), SpawnFlags.SEARCH_PATH, null);
+            is_spawn_succeeded = Process.spawn_sync ("/", { "ibus-daemon", "-drx" }, Environ.get (), SpawnFlags.SEARCH_PATH, null);
         } catch (GLib.SpawnError e) {
             warning (e.message);
+            set_visible_view (e.message);
+            return;
         }
 
         uint timeout_start_daemon = Timeout.add (500, () => {
@@ -309,8 +327,11 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         timeout_start_daemon = 0;
     }
 
-    private void set_visible_view () {
-        if (bus.is_connected ()) {
+    private void set_visible_view (string error_message = "") {
+        if (error_message != "") {
+            stack.visible_child_name = "spawn_failed_view";
+            spawn_failed_alert.description = error_message;
+        } else if (bus.is_connected ()) {
             stack.visible_child_name = "main_view";
             update_engines_list ();
             add_engines_popover.update_engines_list ();
