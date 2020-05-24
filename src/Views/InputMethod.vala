@@ -272,7 +272,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
     }
 
     private void update_engines_list () {
-        engines = new IBus.Bus ().list_engines ();
+        engines = bus.list_engines ();
 
         // Stores names of currently activated engines
         string[] engine_full_names = {};
