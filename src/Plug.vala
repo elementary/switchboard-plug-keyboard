@@ -104,8 +104,8 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
 }
 
 public Switchboard.Plug get_plug (Module module) {
-    IBus.init ();
     debug ("Activating Keyboard plug");
+    IBus.init ();
     var plug = new Pantheon.Keyboard.Plug ();
     return plug;
 }
