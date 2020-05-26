@@ -29,7 +29,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
     private Gtk.ListBox listbox;
     private Gtk.Button remove_button;
     private AddEnginesPopover add_engines_popover;
-    private Gtk.Switch show_system_tray_switch;
     private Gtk.Stack stack;
 
     public Page () {
@@ -116,12 +115,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         show_ibus_panel_combobox.append ("auto-hide", _("Auto hide"));
         show_ibus_panel_combobox.append ("always-show", _("Always show"));
 
-        var show_system_tray_label = new Gtk.Label (_("Show icon on system tray:"));
-        show_system_tray_label.halign = Gtk.Align.END;
-
-        show_system_tray_switch = new Gtk.Switch ();
-        show_system_tray_switch.halign = Gtk.Align.START;
-
         var embed_preedit_text_label = new Gtk.Label (_("Embed preedit text in application window:"));
         embed_preedit_text_label.halign = Gtk.Align.END;
 
@@ -151,10 +144,8 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         right_grid.attach (keyboard_shortcut_combobox, 1, 0, 1, 1);
         right_grid.attach (show_ibus_panel_label, 0, 1, 1, 1);
         right_grid.attach (show_ibus_panel_combobox, 1, 1, 1, 1);
-        right_grid.attach (show_system_tray_label, 0, 2, 1, 1);
-        right_grid.attach (show_system_tray_switch, 1, 2, 1, 1);
-        right_grid.attach (embed_preedit_text_label, 0, 3, 1, 1);
-        right_grid.attach (embed_preedit_text_switch, 1, 3, 1, 1);
+        right_grid.attach (embed_preedit_text_label, 0, 2, 1, 1);
+        right_grid.attach (embed_preedit_text_switch, 1, 2, 1, 1);
 
         var main_grid = new Gtk.Grid ();
         main_grid.column_spacing = 12;
@@ -225,7 +216,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         });
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
-        ibus_panel_settings.bind ("show-icon-on-systray", show_system_tray_switch, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
     }
 
@@ -308,7 +298,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         // Update the sensitivity of buttons depends on whether there are active engines
         remove_button.sensitive = listbox.get_row_at_index (0) != null;
-        show_system_tray_switch.sensitive = listbox.get_row_at_index (0) != null;
     }
 
     private void spawn_ibus_daemon () {
