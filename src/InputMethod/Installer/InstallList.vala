@@ -36,7 +36,7 @@ public enum Pantheon.Keyboard.InputMethodPage.InstallList {
     public string[] get_components () {
         switch (this) {
             case JA:
-                return { "ibus-mozc", "ibus-skk" };
+                return { "ibus-anthy", "ibus-mozc", "ibus-skk" };
             case KO:
                 return { "ibus-hangul" };
             case ZH:
@@ -48,6 +48,8 @@ public enum Pantheon.Keyboard.InputMethodPage.InstallList {
 
     public static InstallList get_language_from_engine_name (string engine_name) {
         switch (engine_name) {
+            case "ibus-anthy":
+                return JA;
             case "ibus-mozc":
                 return JA;
             case "ibus-skk":
