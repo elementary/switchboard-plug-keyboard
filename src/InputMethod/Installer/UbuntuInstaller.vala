@@ -127,12 +127,6 @@ public class Pantheon.Keyboard.InputMethodPage.UbuntuInstaller : Object {
         }
 
         var action = transactions.get (id);
-        if (action == "install-missing") {
-            install_finished ("");
-            transactions.unset (id);
-            return;
-        }
-
         var lang = action[2:action.length];
 
         message ("ID %s -> %s", id, success ? "success" : "failed");
