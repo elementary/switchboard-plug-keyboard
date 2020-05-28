@@ -52,9 +52,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
             spawn_ibus_daemon ();
         });
 
-        var no_daemon_runnning_grid = new Gtk.Grid ();
-        no_daemon_runnning_grid.add (no_daemon_runnning_alert);
-
         // spawn_failed view shown if IBus Daemon is not running
         spawn_failed_alert = new Granite.Widgets.AlertView (
             _("Failed to start IBus Daemon"),
@@ -64,9 +61,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
         spawn_failed_alert.halign = Gtk.Align.CENTER;
         spawn_failed_alert.valign = Gtk.Align.CENTER;
-
-        var spawn_failed_grid = new Gtk.Grid ();
-        spawn_failed_grid.add (spawn_failed_alert);
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox ();
@@ -155,8 +149,8 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         main_grid.attach (action_area, 1, 1, 1, 1);
 
         stack = new Gtk.Stack ();
-        stack.add_named (no_daemon_runnning_grid, "no_daemon_runnning_view");
-        stack.add_named (spawn_failed_grid, "spawn_failed_view");
+        stack.add_named (no_daemon_runnning_alert, "no_daemon_runnning_view");
+        stack.add_named (spawn_failed_alert, "spawn_failed_view");
         stack.add_named (main_grid, "main_view");
         stack.show_all ();
 
