@@ -27,7 +27,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
     private Granite.Widgets.AlertView spawn_failed_alert;
     private Gtk.ListBox listbox;
-    private Gtk.Button remove_button;
+    private Gtk.MenuButton remove_button;
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
 
@@ -70,10 +70,15 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         scroll.expand = true;
         scroll.add (listbox);
 
-        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
-        add_button.tooltip_text = _("Add…");
+        add_engines_popover = new AddEnginesPopover ();
 
-        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
+        var add_button = new Gtk.MenuButton ();
+        add_button.image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
+        add_button.tooltip_text = _("Add…");
+        add_button.popover = add_engines_popover;
+
+        remove_button = new Gtk.MenuButton ();
+        remove_button.image = new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
         remove_button.tooltip_text = _("Remove");
 
         var actionbar = new Gtk.ActionBar ();
@@ -87,8 +92,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         var display = new Gtk.Frame (null);
         display.add (left_grid);
-
-        add_engines_popover = new AddEnginesPopover (add_button);
 
         var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:"));
         keyboard_shortcut_label.halign = Gtk.Align.END;

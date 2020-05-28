@@ -28,10 +28,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     private GLib.ListStore liststore;
     private Gtk.ListBox listbox;
 
-    public AddEnginesPopover (Gtk.Widget relative_object) {
-        Object (
-            relative_to: relative_object
-        );
+    public AddEnginesPopover () {
     }
 
     construct {
