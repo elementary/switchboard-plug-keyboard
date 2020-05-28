@@ -72,10 +72,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             if (!valid (schema, key))
                 return (Shortcut) null;
 
-            if (schema == Schema.MEDIA)
-                return new Shortcut.parse (schemas[schema].get_string (key));
-            else
-                return new Shortcut.parse ((schemas[schema].get_strv (key)) [0]);
+            return new Shortcut.parse ((schemas[schema].get_strv (key)) [0]);
         }
 
         public bool set_val (Schema schema, string key, Shortcut sc) {
@@ -83,11 +80,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 return false;
             }
 
-            if (schema == Schema.MEDIA) {
-                schemas[schema].set_string (key, sc.to_gsettings ());
-            } else {
-                schemas[schema].set_strv (key, {sc.to_gsettings ()});
-            }
+            schemas[schema].set_strv (key, {sc.to_gsettings ()});
 
             return true;
         }
