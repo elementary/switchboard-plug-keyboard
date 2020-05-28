@@ -95,9 +95,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         var keyboard_shortcut_combobox = new Gtk.ComboBoxText ();
         keyboard_shortcut_combobox.halign = Gtk.Align.START;
-        keyboard_shortcut_combobox.append ("alt-space", _("Alt + Space"));
-        keyboard_shortcut_combobox.append ("ctl-space", _("Ctrl + Space"));
-        keyboard_shortcut_combobox.append ("shift-space", _("Shift + Space"));
+        keyboard_shortcut_combobox.append ("alt-space", Granite.accel_to_string ("<Alt>space"));
+        keyboard_shortcut_combobox.append ("ctl-space", Granite.accel_to_string ("<Control>space"));
+        keyboard_shortcut_combobox.append ("shift-space", Granite.accel_to_string ("<Shift>space"));
         keyboard_shortcut_combobox.active_id = get_keyboard_shortcut ();
 
         var show_ibus_panel_label = new Gtk.Label (_("Show candidate window:"));
