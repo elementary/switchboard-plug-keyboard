@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2019-12-05 05:25+0000\n"
+"POT-Creation-Date: 2020-04-28 22:19+0000\n"
+"PO-Revision-Date: 2020-05-22 12:11+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
 
 #: src/Plug.vala:32
@@ -85,7 +85,7 @@ msgid "Reassign"
 msgstr "重新分配"
 
 #. Caps Lock key functionality
-#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
+#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
 #: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
 #: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
@@ -160,28 +160,20 @@ msgid "Picture in Picture Mode"
 msgstr "画中画模式"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "移动至左一工作区"
+msgstr "移至上方显示器"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "移动至左一工作区"
+msgstr "移至下方显示器"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "移动至右侧工作区"
+msgstr "移至右侧显示器"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "移动至左侧工作区"
+msgstr "移至左侧显示器"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -437,7 +429,7 @@ msgstr "注销"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
-msgstr ""
+msgstr "循环显示模式"
 
 #: src/Shortcuts/List.vala:149
 msgid "Custom"
@@ -606,19 +598,15 @@ msgstr "输入法设置…"
 
 #: src/Views/Layout.vala:150
 msgid "Show in Panel"
-msgstr ""
+msgstr "在指示器面板中显示"
 
 #: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "大写锁定键："
 
 #: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "代替 Num Lock"
+msgstr "数字锁定键："
 
 #: src/Views/Layout.vala:257 src/Views/Layout.vala:274
 msgid "Key to choose 3rd level:"

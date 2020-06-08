@@ -1,7 +1,7 @@
 project(
     'keyboard',
     'vala', 'c',
-    version: '2.3.5'
+    version: '2.3.6'
 )
 
 gettext_name = meson.project_name() + '-plug'
