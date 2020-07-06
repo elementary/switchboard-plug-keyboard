@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-04-28 22:19+0000\n"
-"PO-Revision-Date: 2020-04-23 19:10+0000\n"
+"PO-Revision-Date: 2020-06-28 20:12+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -133,7 +133,7 @@ msgstr "Alternar sempre na frente"
 
 #: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
-msgstr "Percorrer Janelas"
+msgstr "Percorrer janelas"
 
 #: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
@@ -153,11 +153,11 @@ msgstr "Visão geral de janelas"
 
 #: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
-msgstr "Mostrar Todas as Janelas"
+msgstr "Mostrar todas as janelas"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr "Modo Picture in Picture"
+msgstr "Modo de imagem sobre imagem"
 
 #: src/Shortcuts/List.vala:60
 msgid "Move to display above"
@@ -301,11 +301,11 @@ msgstr "Gravar captura de ecrã inteira na área de transferência"
 
 #: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
-msgstr "Capturar a janela corrente"
+msgstr "Capturar a janela atual"
 
 #: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
-msgstr "Copiar a janela corrente para a área de transferência"
+msgstr "Copiar a janela atual para a área de transferência"
 
 #: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
@@ -325,7 +325,7 @@ msgstr "Email"
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
-msgstr "Pasta Pessoal"
+msgstr "Pasta pessoal"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
@@ -373,7 +373,7 @@ msgstr "Faixa anterior"
 
 #: src/Shortcuts/List.vala:125
 msgid "Next Track"
-msgstr "Próxima faixa"
+msgstr "Faixa seguinte"
 
 #: src/Shortcuts/List.vala:126
 msgid "Eject"
@@ -401,15 +401,15 @@ msgstr "Reduzir"
 
 #: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
-msgstr "Alternar Teclado no Ecrã"
+msgstr "Alternar teclado no ecrã"
 
 #: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
-msgstr "Alternar Leitor de Ecrã"
+msgstr "Alternar leitor de ecrã"
 
 #: src/Shortcuts/List.vala:137
 msgid "Toggle High Contrast"
-msgstr "Alternar Alto Contraste"
+msgstr "Alternar alto contraste"
 
 #: src/Shortcuts/List.vala:141
 msgid "System"
@@ -425,7 +425,7 @@ msgstr "Bloquear"
 
 #: src/Shortcuts/List.vala:144
 msgid "Log Out"
-msgstr "Terminar Sessão"
+msgstr "Terminar sessão"
 
 #: src/Shortcuts/List.vala:145
 msgid "Cycle display mode"
