@@ -83,6 +83,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             actionbar.hexpand = true;
             actionbar.no_show_all = true;
             actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
             actionbar.add (add_button);
             actionbar.add (remove_button);
 
