@@ -29,17 +29,18 @@ public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Gtk.Dialog {
     private Gtk.ProgressBar progress_bar;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG);
-        image.valign = Gtk.Align.START;
+        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+            valign = Gtk.Align.START
+        };
 
-        unowned UbuntuInstaller installer = UbuntuInstaller.get_default ();
-
-        var primary_label = new Gtk.Label (null);
-        primary_label.max_width_chars = 50;
-        primary_label.wrap = true;
-        primary_label.xalign = 0;
+        var primary_label = new Gtk.Label (null) {
+            max_width_chars = 50,
+            wrap = true,
+            xalign = 0
+        };
         primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
+        unowned UbuntuInstaller installer = UbuntuInstaller.get_default ();
         switch (installer.transaction_mode) {
             case UbuntuInstaller.TransactionMode.INSTALL:
                 primary_label.label = _("Installing %s").printf (installer.engine_to_address);
@@ -49,19 +50,21 @@ public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Gtk.Dialog {
                 break;
         }
 
-        progress_bar = new Gtk.ProgressBar ();
-        progress_bar.width_request = 300;
-        progress_bar.hexpand = true;
-        progress_bar.valign = Gtk.Align.START;
+        progress_bar = new Gtk.ProgressBar () {
+            hexpand = true,
+            valign = Gtk.Align.START,
+            width_request = 300
+        };
 
         var cancel_button = (Gtk.Button) add_button (_("Cancel"), 0);
 
         installer.bind_property ("install-cancellable", cancel_button, "sensitive");
 
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 12;
-        grid.row_spacing = 6;
-        grid.margin = 6;
+        var grid = new Gtk.Grid () {
+            column_spacing = 12,
+            margin = 6,
+            row_spacing = 6
+        };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (primary_label, 1, 0);
         grid.attach (progress_bar, 1, 1);
