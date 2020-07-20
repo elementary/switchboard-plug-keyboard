@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:19+0000\n"
+"POT-Creation-Date: 2020-07-20 17:44+0000\n"
 "PO-Revision-Date: 2020-02-06 20:08+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -13,48 +13,69 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/Plug.vala:32
+#: src/Plug.vala:35
 msgid "Keyboard"
 msgstr "कीबोर्ड"
 
-#: src/Plug.vala:33
+#: src/Plug.vala:36
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "कीबोर्ड वर्तन, मांडणी आणि शॉर्टकट कॉन्फिगर करा"
 
-#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
-#: src/Plug.vala:89 src/Plug.vala:90
+#: src/Plug.vala:49 src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99
+#: src/Plug.vala:100 src/Plug.vala:101
 msgid "Layout"
 msgstr "मांडणी"
 
-#: src/Plug.vala:43 src/Plug.vala:91
+#: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:105
+#, fuzzy
+#| msgid "Input Method Settings…"
+msgid "Input Method"
+msgstr "इनपुट पद्धत सेटिंग्ज…"
+
+#: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
 msgstr "शॉर्टकट"
 
-#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
+#: src/Plug.vala:52 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
 msgid "Behavior"
 msgstr "वर्तन"
 
-#: src/Plug.vala:87
+#: src/Plug.vala:98
 msgid "Switch layout"
 msgstr "मांडणी बदला"
 
-#: src/Plug.vala:88
+#: src/Plug.vala:99
 msgid "Compose Key"
 msgstr "की तयार करा"
 
-#: src/Plug.vala:89
+#: src/Plug.vala:100
 msgid "⌘ key behavior"
 msgstr "⌘ की वर्तन"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:101
 msgid "Caps Lock behavior"
 msgstr "कॅप्स लॉक वर्तन"
 
-#: src/Plug.vala:93
+#: src/Plug.vala:103
+#, fuzzy
+#| msgid "Switch to new"
+msgid "Switch engines"
+msgstr "नव्यासह बदला"
+
+#: src/Plug.vala:104
+msgid "Show candidate window"
+msgstr ""
+
+#: src/Plug.vala:105
+msgid "Embed preedit text in application window"
+msgstr ""
+
+#: src/Plug.vala:108
 msgid "Repeat Keys"
 msgstr "रिपीट कीज"
 
-#: src/Plug.vala:94
+#: src/Plug.vala:109
 msgid "Cursor Blinking"
 msgstr "कर्सर ब्लिंकिंग"
 
@@ -68,7 +89,8 @@ msgstr "%s आधीच %s साठी वापरली गेली आह�
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "आपण शॉर्टकट पुन्हा %s वर पुनर्निर्देशित केल्यास, %s अक्षम केले जाईल."
 
-#: src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
 #: src/Widgets/Layout/AddLayoutPopover.vala:127
 msgid "Cancel"
 msgstr "रद्द करा"
@@ -77,9 +99,49 @@ msgstr "रद्द करा"
 msgid "Reassign"
 msgstr "पुनर्निर्देशित करा"
 
+#: src/Dialogs/InstallEngineDialog.vala:23
+msgid "Choose an engine to install"
+msgstr ""
+
+#: src/Dialogs/InstallEngineDialog.vala:24
+msgid "Select an engine from the list to install and use."
+msgstr ""
+
+#: src/Dialogs/InstallEngineDialog.vala:43
+#, fuzzy
+#| msgid "Input Language"
+msgid "Languages"
+msgstr "इनपुट भाषा"
+
+#: src/Dialogs/InstallEngineDialog.vala:92
+msgid "Install"
+msgstr ""
+
+#: src/Dialogs/ProgressDialog.vala:46
+#, c-format
+msgid "Installing %s"
+msgstr ""
+
+#: src/Dialogs/ProgressDialog.vala:49
+#, c-format
+msgid "Removing %s"
+msgstr ""
+
+#: src/InputMethod/Installer/InstallList.vala:26
+msgid "Japanese"
+msgstr ""
+
+#: src/InputMethod/Installer/InstallList.vala:28
+msgid "Korean"
+msgstr ""
+
+#: src/InputMethod/Installer/InstallList.vala:30
+msgid "Chinese"
+msgstr ""
+
 #. Caps Lock key functionality
 #: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
+#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
 #: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
 msgstr "डिफॉल्ट"
@@ -480,9 +542,69 @@ msgstr "कालावधी:"
 msgid "seconds"
 msgstr "सेकंद"
 
-#: src/Views/Behavior.vala:105
+#: src/Views/Behavior.vala:105 src/Views/InputMethod.vala:131
 msgid "Type to test your settings"
 msgstr "आपल्या सेटिंग्ज तपासण्यासाठी टाइप करा"
+
+#. no_daemon_runnning view shown if IBus Daemon is not running
+#: src/Views/InputMethod.vala:40
+msgid "IBus Daemon is not running"
+msgstr ""
+
+#: src/Views/InputMethod.vala:41
+msgid ""
+"You need to run IBus Daemon to enable or configure input method engines."
+msgstr ""
+
+#: src/Views/InputMethod.vala:48
+msgid "Start IBus Daemon"
+msgstr ""
+
+#. spawn_failed view shown if IBus Daemon is not running
+#: src/Views/InputMethod.vala:55
+msgid "Failed to start IBus Daemon"
+msgstr ""
+
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+msgid "Add…"
+msgstr "जोडा…"
+
+#: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
+#: src/Widgets/Layout/Display.vala:59
+msgid "Remove"
+msgstr "काढा"
+
+#: src/Views/InputMethod.vala:98
+#, fuzzy
+#| msgid "Switch to new"
+msgid "Switch engines:"
+msgstr "नव्यासह बदला"
+
+#: src/Views/InputMethod.vala:110
+msgid "Show candidate window:"
+msgstr ""
+
+#: src/Views/InputMethod.vala:117
+msgid "Do not show"
+msgstr ""
+
+#: src/Views/InputMethod.vala:118
+msgid "Auto hide"
+msgstr ""
+
+#: src/Views/InputMethod.vala:119
+msgid "Always show"
+msgstr ""
+
+#: src/Views/InputMethod.vala:121
+msgid "Embed preedit text in application window:"
+msgstr ""
+
+#: src/Views/InputMethod.vala:134
+#, fuzzy
+#| msgid "Input Method Settings…"
+msgid "Advanced Settings…"
+msgstr "इनपुट पद्धत सेटिंग्ज…"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
@@ -505,7 +627,7 @@ msgstr "Alt +  Space"
 msgid "Both Shift keys together"
 msgstr "दोन्ही शिफ्ट की एकत्र"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:278
+#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "कॅप्स लॉक"
 
@@ -529,15 +651,15 @@ msgstr "की तयार करा:"
 msgid "Menu"
 msgstr "मेनू"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
+#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "उजवा Alt"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:281 src/Views/Layout.vala:293
+#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "उजवा Ctrl"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:282 src/Views/Layout.vala:294
+#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 msgid "Right ⌘"
 msgstr "उजवा ⌘"
 
@@ -581,51 +703,47 @@ msgstr "कंट्रोल सह बदला"
 msgid "Swap with Escape"
 msgstr "Escape सह बदला"
 
-#: src/Views/Layout.vala:127
+#: src/Views/Layout.vala:128
 msgid "Type to test your layout"
 msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
 
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr "इनपुट पद्धत सेटिंग्ज…"
-
-#: src/Views/Layout.vala:150
+#: src/Views/Layout.vala:142
 msgid "Show in Panel"
 msgstr "पॅनेलमध्ये दाखवा"
 
-#: src/Views/Layout.vala:156
+#: src/Views/Layout.vala:148
 msgid "Caps Lock:"
 msgstr "कॅप्स लॉक:"
 
-#: src/Views/Layout.vala:162
+#: src/Views/Layout.vala:154
 msgid "Num Lock:"
 msgstr "नम लॉक:"
 
-#: src/Views/Layout.vala:257 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:240 src/Views/Layout.vala:257
 msgid "Key to choose 3rd level:"
 msgstr "तृतीय स्तर निवडण्याची की:"
 
-#: src/Views/Layout.vala:279
+#: src/Views/Layout.vala:262
 msgid "Left Alt"
 msgstr "डावा Alt"
 
-#: src/Views/Layout.vala:289
+#: src/Views/Layout.vala:272
 msgid "Key to choose 5th level:"
 msgstr "पाचवी पातळी निवडण्याची की:"
 
-#: src/Views/Layout.vala:310
+#: src/Views/Layout.vala:293
 msgid "Kana Lock:"
 msgstr "काना लॉक:"
 
-#: src/Views/Layout.vala:318
+#: src/Views/Layout.vala:301
 msgid "Nicola F Backspace:"
 msgstr "निकोला एफ बॅकस्पेस:"
 
-#: src/Views/Layout.vala:321
+#: src/Views/Layout.vala:304
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "हँककु झेंकाकू Escape म्हणून:"
 
-#: src/Views/Layout.vala:338
+#: src/Views/Layout.vala:321
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "हांगुल/हांजा की उजव्या Alt/Ctrl वर:"
 
@@ -633,9 +751,20 @@ msgstr "हांगुल/हांजा की उजव्या Alt/Ctrl �
 msgid "Add"
 msgstr "वाढवा"
 
-#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "काढा"
+#. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
+#. /to look for a input method engine they want to add.
+#. /It does not mean search engines in web browsers.
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:39
+msgid "Search engine"
+msgstr ""
+
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:52
+msgid "Install Unlisted Engines…"
+msgstr ""
+
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:56
+msgid "Add Engine"
+msgstr ""
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
 msgid "Search input language"
@@ -652,10 +781,6 @@ msgstr "कीबोर्ड मांडणी दाखवा"
 #: src/Widgets/Layout/AddLayoutPopover.vala:123
 msgid "Add Layout"
 msgstr "मांडणी वाढवा"
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "जोडा…"
 
 #: src/Widgets/Layout/Display.vala:63
 msgid "Move up"
