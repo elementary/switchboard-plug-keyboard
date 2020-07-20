@@ -26,20 +26,22 @@ public class Pantheon.Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
     }
 
     construct {
-        var label = new Gtk.Label (engine_name);
-        label.hexpand = true;
-        label.halign = Gtk.Align.START;
+        var label = new Gtk.Label (engine_name) {
+            halign = Gtk.Align.START,
+            hexpand = true
+        };
 
-        var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic", Gtk.IconSize.MENU);
-        selection_icon.no_show_all = true;
-        selection_icon.visible = false;
+        var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic", Gtk.IconSize.MENU) {
+            no_show_all = true,
+            visible = false
+        };
 
-        var grid = new Gtk.Grid ();
-        grid.column_spacing = 6;
-        grid.margin = 3;
-        grid.margin_start = 6;
-        grid.margin_end = 6;
-
+        var grid = new Gtk.Grid () {
+            column_spacing = 6,
+            margin = 3,
+            margin_start = 6,
+            margin_end = 6
+        };
         grid.add (label);
         grid.add (selection_icon);
 
