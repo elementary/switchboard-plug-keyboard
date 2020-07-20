@@ -31,9 +31,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
 
-    public Page () {
-    }
-
     construct {
         bus = new IBus.Bus ();
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
@@ -43,10 +40,11 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
             _("IBus Daemon is not running"),
             _("You need to run IBus Daemon to enable or configure input method engines."),
             "dialog-information"
-        );
+        ) {
+            halign = Gtk.Align.CENTER,
+            valign = Gtk.Align.CENTER
+        };
         no_daemon_runnning_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
-        no_daemon_runnning_alert.halign = Gtk.Align.CENTER;
-        no_daemon_runnning_alert.valign = Gtk.Align.CENTER;
         no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
         no_daemon_runnning_alert.action_activated.connect (() => {
             spawn_ibus_daemon ();
@@ -57,29 +55,33 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
             _("Failed to start IBus Daemon"),
             "",
             "dialog-error"
-        );
+        ) {
+            halign = Gtk.Align.CENTER,
+            valign = Gtk.Align.CENTER
+        };
         spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
-        spawn_failed_alert.halign = Gtk.Align.CENTER;
-        spawn_failed_alert.valign = Gtk.Align.CENTER;
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox ();
 
-        var scroll = new Gtk.ScrolledWindow (null, null);
-        scroll.hscrollbar_policy = Gtk.PolicyType.NEVER;
-        scroll.expand = true;
+        var scroll = new Gtk.ScrolledWindow (null, null) {
+            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            expand = true
+        };
         scroll.add (listbox);
 
         add_engines_popover = new AddEnginesPopover ();
 
-        var add_button = new Gtk.MenuButton ();
-        add_button.image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
-        add_button.tooltip_text = _("Add…");
-        add_button.popover = add_engines_popover;
+        var add_button = new Gtk.MenuButton () {
+            image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON),
+            popover = add_engines_popover,
+            tooltip_text = _("Add…")
+        };
 
-        remove_button = new Gtk.MenuButton ();
-        remove_button.image = new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
-        remove_button.tooltip_text = _("Remove");
+        remove_button = new Gtk.MenuButton () {
+            image = new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON),
+            tooltip_text = _("Remove")
+        };
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -87,69 +89,79 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         actionbar.add (remove_button);
 
         var left_grid = new Gtk.Grid ();
-        left_grid.attach (scroll, 0, 0, 1, 1);
-        left_grid.attach (actionbar, 0, 1, 1, 1);
+        left_grid.attach (scroll, 0, 0);
+        left_grid.attach (actionbar, 0, 1);
 
         var display = new Gtk.Frame (null);
         display.add (left_grid);
 
-        var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:"));
-        keyboard_shortcut_label.halign = Gtk.Align.END;
+        var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:")) {
+            halign = Gtk.Align.END
+        };
 
-        var keyboard_shortcut_combobox = new Gtk.ComboBoxText ();
-        keyboard_shortcut_combobox.halign = Gtk.Align.START;
+        var keyboard_shortcut_combobox = new Gtk.ComboBoxText () {
+            halign = Gtk.Align.START
+        };
         keyboard_shortcut_combobox.append ("alt-space", Granite.accel_to_string ("<Alt>space"));
         keyboard_shortcut_combobox.append ("ctl-space", Granite.accel_to_string ("<Control>space"));
         keyboard_shortcut_combobox.append ("shift-space", Granite.accel_to_string ("<Shift>space"));
         keyboard_shortcut_combobox.active_id = get_keyboard_shortcut ();
 
-        var show_ibus_panel_label = new Gtk.Label (_("Show candidate window:"));
-        show_ibus_panel_label.halign = Gtk.Align.END;
+        var show_ibus_panel_label = new Gtk.Label (_("Show candidate window:")) {
+            halign = Gtk.Align.END
+        };
 
-        var show_ibus_panel_combobox = new Gtk.ComboBoxText ();
-        show_ibus_panel_combobox.halign = Gtk.Align.START;
+        var show_ibus_panel_combobox = new Gtk.ComboBoxText () {
+            halign = Gtk.Align.START
+        };
         show_ibus_panel_combobox.append ("none", _("Do not show"));
         show_ibus_panel_combobox.append ("auto-hide", _("Auto hide"));
         show_ibus_panel_combobox.append ("always-show", _("Always show"));
 
-        var embed_preedit_text_label = new Gtk.Label (_("Embed preedit text in application window:"));
-        embed_preedit_text_label.halign = Gtk.Align.END;
+        var embed_preedit_text_label = new Gtk.Label (_("Embed preedit text in application window:")) {
+            halign = Gtk.Align.END
+        };
 
-        var embed_preedit_text_switch = new Gtk.Switch ();
-        embed_preedit_text_switch.halign = Gtk.Align.START;
+        var embed_preedit_text_switch = new Gtk.Switch () {
+            halign = Gtk.Align.START
+        };
 
-        var entry_test = new Gtk.Entry ();
-        entry_test.hexpand = true;
-        entry_test.placeholder_text = (_("Type to test your settings"));
+        var entry_test = new Gtk.Entry () {
+            hexpand = true,
+            placeholder_text = (_("Type to test your settings"))
+        };
 
         var ibus_button = new Gtk.Button.with_label (_("Advanced Settings…"));
 
-        var action_area = new Gtk.Grid ();
-        action_area.column_spacing = 12;
-        action_area.valign = Gtk.Align.END;
-        action_area.vexpand = true;
+        var action_area = new Gtk.Grid () {
+            column_spacing = 12,
+            valign = Gtk.Align.END,
+            vexpand = true
+        };
         action_area.add (entry_test);
         action_area.add (ibus_button);
 
-        var right_grid = new Gtk.Grid ();
-        right_grid.halign = Gtk.Align.CENTER;
-        right_grid.hexpand = true;
-        right_grid.column_spacing = 12;
-        right_grid.row_spacing = 12;
-        right_grid.margin = 12;
-        right_grid.attach (keyboard_shortcut_label, 0, 0, 1, 1);
-        right_grid.attach (keyboard_shortcut_combobox, 1, 0, 1, 1);
-        right_grid.attach (show_ibus_panel_label, 0, 1, 1, 1);
-        right_grid.attach (show_ibus_panel_combobox, 1, 1, 1, 1);
-        right_grid.attach (embed_preedit_text_label, 0, 2, 1, 1);
-        right_grid.attach (embed_preedit_text_switch, 1, 2, 1, 1);
+        var right_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            halign = Gtk.Align.CENTER,
+            hexpand = true,
+            margin = 12,
+            row_spacing = 12
+        };
+        right_grid.attach (keyboard_shortcut_label, 0, 0);
+        right_grid.attach (keyboard_shortcut_combobox, 1, 0);
+        right_grid.attach (show_ibus_panel_label, 0, 1);
+        right_grid.attach (show_ibus_panel_combobox, 1, 1);
+        right_grid.attach (embed_preedit_text_label, 0, 2);
+        right_grid.attach (embed_preedit_text_switch, 1, 2);
 
-        var main_grid = new Gtk.Grid ();
-        main_grid.column_spacing = 12;
-        main_grid.row_spacing = 12;
+        var main_grid = new Gtk.Grid () {
+            column_spacing = 12,
+            row_spacing = 12
+        };
         main_grid.attach (display, 0, 0, 1, 2);
-        main_grid.attach (right_grid, 1, 0, 1, 1);
-        main_grid.attach (action_area, 1, 1, 1, 1);
+        main_grid.attach (right_grid, 1, 0);
+        main_grid.attach (action_area, 1, 1);
 
         stack = new Gtk.Stack ();
         stack.add_named (no_daemon_runnning_alert, "no_daemon_runnning_view");
@@ -280,13 +292,14 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         }
 
         foreach (var engine_full_name in engine_full_names) {
+            var label = new Gtk.Label (engine_full_name) {
+                halign = Gtk.Align.START,
+                margin = 6
+            };
+
             var listboxrow = new Gtk.ListBoxRow ();
-
-            var label = new Gtk.Label (engine_full_name);
-            label.margin = 6;
-            label.halign = Gtk.Align.START;
-
             listboxrow.add (label);
+
             listbox.add (listboxrow);
         }
 
