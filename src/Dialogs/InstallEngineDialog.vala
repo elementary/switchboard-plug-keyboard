@@ -22,26 +22,28 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         Object (
             primary_text: _("Choose an engine to install"),
             secondary_text: _("Select an engine from the list to install and use."),
-            image_icon: new ThemedIcon ("dialog-information"),
+            image_icon: new ThemedIcon ("extension"),
             transient_for: parent,
             buttons: Gtk.ButtonsType.CANCEL
         );
     }
 
     construct {
-        var languages_list = new Gtk.ListBox ();
-        languages_list.activate_on_single_click = true;
-        languages_list.expand = true;
-        languages_list.selection_mode = Gtk.SelectionMode.NONE;
+        var languages_list = new Gtk.ListBox () {
+            activate_on_single_click = true,
+            expand = true,
+            selection_mode = Gtk.SelectionMode.NONE
+        };
 
         foreach (var language in InstallList.get_all ()) {
             var lang = new LanguagesRow (language);
             languages_list.add (lang);
         }
 
-        var back_button = new Gtk.Button.with_label (_("Languages"));
-        back_button.halign = Gtk.Align.START;
-        back_button.margin = 6;
+        var back_button = new Gtk.Button.with_label (_("Languages")) {
+            halign = Gtk.Align.START,
+            margin = 6
+        };
         back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var language_title = new Gtk.Label ("");
@@ -50,8 +52,9 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         language_header.pack_start (back_button);
         language_header.set_center_widget (language_title);
 
-        var listbox = new Gtk.ListBox ();
-        listbox.expand = true;
+        var listbox = new Gtk.ListBox () {
+            expand = true
+        };
         listbox.set_filter_func (filter_function);
         listbox.set_sort_func (sort_function);
 
@@ -64,17 +67,19 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         var scrolled = new Gtk.ScrolledWindow (null, null);
         scrolled.add (listbox);
 
-        var engine_list_grid = new Gtk.Grid ();
-        engine_list_grid.orientation = Gtk.Orientation.VERTICAL;
+        var engine_list_grid = new Gtk.Grid () {
+            orientation = Gtk.Orientation.VERTICAL
+        };
         engine_list_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         engine_list_grid.add (language_header);
         engine_list_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         engine_list_grid.add (scrolled);
 
-        var stack = new Gtk.Stack ();
-        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
-        stack.width_request = 300;
-        stack.height_request = 200;
+        var stack = new Gtk.Stack () {
+            height_request = 200,
+            width_request = 300,
+            transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
+        };
         stack.add (languages_list);
         stack.add (engine_list_grid);
 
@@ -82,12 +87,11 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         frame.add (stack);
 
         custom_bin.add (frame);
+        custom_bin.show_all ();
 
         var install_button = add_button (_("Install"), Gtk.ResponseType.OK);
-        install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
         install_button.sensitive = false;
-
-        show_all ();
+        install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         languages_list.row_activated.connect ((row) => {
             stack.visible_child = engine_list_grid;
