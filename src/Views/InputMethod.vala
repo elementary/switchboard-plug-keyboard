@@ -128,18 +128,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         var entry_test = new Gtk.Entry () {
             hexpand = true,
-            placeholder_text = (_("Type to test your settings"))
+            placeholder_text = (_("Type to test your settings")),
+            valign = Gtk.Align.END
         };
-
-        var ibus_button = new Gtk.Button.with_label (_("Advanced Settings…"));
-
-        var action_area = new Gtk.Grid () {
-            column_spacing = 12,
-            valign = Gtk.Align.END,
-            vexpand = true
-        };
-        action_area.add (entry_test);
-        action_area.add (ibus_button);
 
         var right_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -161,7 +152,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         };
         main_grid.attach (display, 0, 0, 1, 2);
         main_grid.attach (right_grid, 1, 0);
-        main_grid.attach (action_area, 1, 1);
+        main_grid.attach (entry_test, 1, 1);
 
         stack = new Gtk.Stack ();
         stack.add_named (no_daemon_runnning_alert, "no_daemon_runnning_view");
@@ -213,15 +204,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
 
         keyboard_shortcut_combobox.changed.connect (() => {
             set_keyboard_shortcut (keyboard_shortcut_combobox.active_id);
-        });
-
-        ibus_button.clicked.connect (() => {
-            try {
-                var appinfo = GLib.AppInfo.create_from_commandline ("ibus-setup", null, GLib.AppInfoCreateFlags.NONE);
-                appinfo.launch (null, null);
-            } catch (Error e) {
-                critical ("Could not open ibus setup: %s", e.message);
-            }
         });
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
