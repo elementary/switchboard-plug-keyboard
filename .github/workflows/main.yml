@@ -15,7 +15,7 @@ jobs:
     - name: Install Dependencies
       run: |
         apt update
-        apt install -y meson libgranite-dev libswitchboard-2.0-dev libxml2-dev libgnomekbd-dev libxklavier-dev valac
+        apt install -y meson libgranite-dev libswitchboard-2.0-dev libxml2-dev libgnomekbd-dev libibus-1.0-dev libxklavier-dev valac
     - name: Build
       env:
         DESTDIR: out
