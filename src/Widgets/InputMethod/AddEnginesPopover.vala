@@ -28,12 +28,11 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     private GLib.ListStore liststore;
     private Gtk.ListBox listbox;
 
-    public AddEnginesPopover () {
-    }
-
     construct {
-        search_entry = new Gtk.SearchEntry ();
-        search_entry.margin = 6;
+        search_entry = new Gtk.SearchEntry () {
+            margin = 12
+        };
+
         ///TRANSLATORS: This text appears in a search entry and tell users to type some search word
         ///to look for a input method engine they want to add.
         ///It does not mean search engines in web browsers.
@@ -43,35 +42,35 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
         listbox = new Gtk.ListBox ();
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.height_request = 300;
-        scrolled.width_request = 500;
-        scrolled.expand = true;
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            expand = true,
+            height_request = 300,
+            width_request = 500
+        };
         scrolled.add (listbox);
 
-        var install_button = new Gtk.Button.with_label (_("Install unlisted engines…"));
+        var install_button = new Gtk.Button.with_label (_("Install Unlisted Engines…"));
 
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
         var add_button = new Gtk.Button.with_label (_("Add Engine"));
         add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var buttons_grid = new Gtk.Grid ();
-        buttons_grid.margin = 6;
-        buttons_grid.column_spacing = 6;
-        buttons_grid.hexpand = true;
-        buttons_grid.halign = Gtk.Align.END;
-        buttons_grid.attach (install_button, 0, 0, 1, 1);
-        buttons_grid.attach (cancel_button, 1, 0, 1, 1);
-        buttons_grid.attach (add_button, 2, 0, 1, 1);
+        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
+            layout_style = Gtk.ButtonBoxStyle.END,
+            margin = 12,
+            spacing = 6
+        };
+        button_box.add (install_button);
+        button_box.add (cancel_button);
+        button_box.add (add_button);
+        button_box.set_child_secondary (install_button, true);
 
         var grid = new Gtk.Grid ();
-        grid.margin = 6;
-        grid.hexpand = true;
-        grid.attach (search_entry, 0, 0, 1, 1);
-        grid.attach (scrolled, 0, 1, 1, 1);
-        grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 2, 1, 1);
-        grid.attach (buttons_grid, 0, 3, 1, 1);
+        grid.attach (search_entry, 0, 0);
+        grid.attach (scrolled, 0, 1);
+        grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 2);
+        grid.attach (button_box, 0, 3);
 
         add (grid);
 
@@ -137,13 +136,16 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         });
 
         for (int i = 0; i < liststore.get_n_items (); i++) {
+            var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name) {
+                halign = Gtk.Align.START,
+                margin = 6,
+                margin_end = 12,
+                margin_start = 12
+            };
+
             var listboxrow = new Gtk.ListBoxRow ();
-
-            var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name);
-            label.margin = 6;
-            label.halign = Gtk.Align.START;
-
             listboxrow.add (label);
+
             listbox.add (listboxrow);
         }
 
