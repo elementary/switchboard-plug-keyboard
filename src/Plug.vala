@@ -102,7 +102,6 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         search_results.set ("%s → %s".printf (display_name, _("Input Method")), "Input Method");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input Method"), _("Switch engines")), "Input Method");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input Method"), _("Show candidate window")), "Input Method");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Input Method"), _("Show icon on system tray")), "Input Method");
         search_results.set ("%s → %s → %s".printf (display_name, _("Input Method"), _("Embed preedit text in application window")), "Input Method");
         search_results.set ("%s → %s".printf (display_name, _("Shortcuts")), "Shortcuts");
         search_results.set ("%s → %s".printf (display_name, _("Behavior")), "Behavior");
