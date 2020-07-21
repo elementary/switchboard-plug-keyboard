@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-20 17:44+0000\n"
+"POT-Creation-Date: 2020-07-21 16:43+0000\n"
 "PO-Revision-Date: 2018-06-16 00:10+0000\n"
 "Last-Translator: martin fromont <martin.fromont1@gmail.com>\n"
 "Language-Team: French (Canada) <https://weblate.elementary.io/projects/"
@@ -602,10 +602,6 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr ""
-
-#: src/Views/InputMethod.vala:134
-msgid "Advanced Settings…"
 msgstr ""
 
 #. tree view to display the current layouts

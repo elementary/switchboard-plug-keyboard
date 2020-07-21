@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-20 17:44+0000\n"
+"POT-Creation-Date: 2020-07-21 16:43+0000\n"
 "PO-Revision-Date: 2019-08-30 21:22+0000\n"
 "Last-Translator: Shtonchjo <shtonchjo@gmail.com>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
@@ -608,12 +608,6 @@ msgstr ""
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:134
-#, fuzzy
-#| msgid "Input Method Settings…"
-msgid "Advanced Settings…"
-msgstr "Eniga agorda metodo…"
-
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
 msgid "Switch layout:"
@@ -813,3 +807,8 @@ msgstr "Komando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Fulmklavo"
+
+#, fuzzy
+#~| msgid "Input Method Settings…"
+#~ msgid "Advanced Settings…"
+#~ msgstr "Eniga agorda metodo…"

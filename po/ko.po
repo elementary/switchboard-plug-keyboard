@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-20 17:44+0000\n"
+"POT-Creation-Date: 2020-07-21 16:43+0000\n"
 "PO-Revision-Date: 2019-05-13 15:02+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -615,12 +615,6 @@ msgstr ""
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:134
-#, fuzzy
-#| msgid "Input Method Settings…"
-msgid "Advanced Settings…"
-msgstr "한글 입력 설정…"
-
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
 msgid "Switch layout:"
@@ -820,6 +814,11 @@ msgstr "명령어"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "단축키"
+
+#, fuzzy
+#~| msgid "Input Method Settings…"
+#~ msgid "Advanced Settings…"
+#~ msgstr "한글 입력 설정…"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Caps Lock 사용 안 함"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-20 17:44+0000\n"
+"POT-Creation-Date: 2020-07-21 16:43+0000\n"
 "PO-Revision-Date: 2019-07-02 14:46+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -616,12 +616,6 @@ msgstr ""
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:134
-#, fuzzy
-#| msgid "Input Method Settings…"
-msgid "Advanced Settings…"
-msgstr "Impostazioni del metodo di inserimento…"
-
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
 msgid "Switch layout:"
@@ -822,6 +816,11 @@ msgstr "Comando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Scorciatoia"
+
+#, fuzzy
+#~| msgid "Input Method Settings…"
+#~ msgid "Advanced Settings…"
+#~ msgstr "Impostazioni del metodo di inserimento…"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Bloc Maiusc disabilitato"
