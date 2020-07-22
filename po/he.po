@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:43+0000\n"
+"POT-Creation-Date: 2020-07-22 18:13+0000\n"
 "PO-Revision-Date: 2020-03-26 23:09+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -469,31 +469,27 @@ msgstr "הפעלה או סגירה של מקלדת על גבי המסך"
 msgid "Toggle Screenreader"
 msgstr "הפעלה או סגירה של מקריא מסך"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "הפעלה או השבתה של ניגודיות גבוהה"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr "מערכת"
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
 msgid "Applications Menu"
 msgstr "תפריט יישומים"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 msgid "Lock"
 msgstr "נעילה"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr "יציאה"
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
 msgstr "החלפת מצבי תצוגה"
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "התאמה אישית"
 
@@ -802,6 +798,9 @@ msgstr "פקודה"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "קיצור דרך"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "הפעלה או השבתה של ניגודיות גבוהה"
 
 #, fuzzy
 #~| msgid "Input Method Settings…"

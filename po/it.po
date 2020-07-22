@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:43+0000\n"
+"POT-Creation-Date: 2020-07-22 18:13+0000\n"
 "PO-Revision-Date: 2019-07-02 14:46+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -478,31 +478,27 @@ msgstr "Abilita/disabilita tastiera a schermo"
 msgid "Toggle Screenreader"
 msgstr "Attiva/disattiva il lettore dello schermo"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "Abilita/disabilita alto contrasto"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr "Sistema"
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
 msgid "Applications Menu"
 msgstr "Menu applicazioni"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 msgid "Lock"
 msgstr "Blocca"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr "Termina sessione"
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "Personalizzato"
 
@@ -816,6 +812,9 @@ msgstr "Comando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Scorciatoia"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "Abilita/disabilita alto contrasto"
 
 #, fuzzy
 #~| msgid "Input Method Settings…"

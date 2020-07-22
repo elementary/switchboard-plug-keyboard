@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:43+0000\n"
+"POT-Creation-Date: 2020-07-22 18:13+0000\n"
 "PO-Revision-Date: 2018-03-16 02:50+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -476,31 +476,27 @@ msgstr "開關螢幕鍵盤"
 msgid "Toggle Screenreader"
 msgstr "開關螢幕閱讀器"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "開關高對比外觀"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr "系統"
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
 msgid "Applications Menu"
 msgstr "應用程式選單"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 msgid "Lock"
 msgstr "鎖定"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr "登出"
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "自訂"
 
@@ -816,6 +812,9 @@ msgstr "指令"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "快捷鍵"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "開關高對比外觀"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Caps Lock 已停用"

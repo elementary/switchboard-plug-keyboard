@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:43+0000\n"
+"POT-Creation-Date: 2020-07-22 18:13+0000\n"
 "PO-Revision-Date: 2020-01-05 13:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -469,31 +469,27 @@ msgstr "Schakel schermtoetsenbord"
 msgid "Toggle Screenreader"
 msgstr "Schakel schermlezer"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "Schakel hoog contrast"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr "Systeem"
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
 msgid "Applications Menu"
 msgstr "Applicatiemenu"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 msgid "Lock"
 msgstr "Vergrendeling"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr "Uitloggen"
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
 msgstr "Blader door display modi"
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "Aangepast"
 
@@ -802,6 +798,9 @@ msgstr "Opdracht"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Sneltoets"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "Schakel hoog contrast"
 
 #, fuzzy
 #~| msgid "Input Method Settings…"

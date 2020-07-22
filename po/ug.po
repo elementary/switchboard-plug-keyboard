@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:43+0000\n"
+"POT-Creation-Date: 2020-07-22 18:13+0000\n"
 "PO-Revision-Date: 2016-12-16 17:30+0000\n"
 "Last-Translator: ablimet <Unknown>\n"
 "Language-Team: Uyghur <ug@li.org>\n"
@@ -480,33 +480,29 @@ msgstr "ئىكران كۇنۇپكا تاختىسىنى قوزغىتىش"
 msgid "Toggle Screenreader"
 msgstr "ئىكران ئوقۇغۇچنى قوزغىتىش"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "يۇقىرى سىلىشتۇرمىنى قوزغىتىش"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
 #, fuzzy
 msgid "Applications Menu"
 msgstr "ئەپلەر"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 #, fuzzy
 msgid "Lock"
 msgstr "Caps Lock"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "ئۆزگىچىلەشتۈرۈش"
 
@@ -829,6 +825,9 @@ msgstr "كوماندا"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "قولاي كۇنۇپكا"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "يۇقىرى سىلىشتۇرمىنى قوزغىتىش"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "چوڭ يىزىشقا قۇلۇپلاش كۇنۇپكىسى چەكلەنگەن"

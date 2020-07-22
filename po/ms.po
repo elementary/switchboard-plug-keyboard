@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:43+0000\n"
+"POT-Creation-Date: 2020-07-22 18:13+0000\n"
 "PO-Revision-Date: 2017-09-08 17:38+0000\n"
 "Last-Translator: M Aiman <m.aimanismail@gmail.com>\n"
 "Language-Team: Malay <https://weblate.elementary.io/projects/switchboard/"
@@ -481,33 +481,29 @@ msgstr "Togol Papan Kekunci Atas Skrin"
 msgid "Toggle Screenreader"
 msgstr "Togol Pembaca Skrin"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "Togol Beza Jelas Tinggi"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Aplikasi"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 #, fuzzy
 msgid "Lock"
 msgstr "Caps Lock"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "Suai"
 
@@ -825,6 +821,9 @@ msgstr "Perintah"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Pintasan"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "Togol Beza Jelas Tinggi"
 
 #~ msgid "Applications Launcher"
 #~ msgstr "Pelancar Aplikasi"
