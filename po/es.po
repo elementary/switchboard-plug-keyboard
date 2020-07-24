@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-22 18:13+0000\n"
-"PO-Revision-Date: 2020-06-02 12:11+0000\n"
+"PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
@@ -36,10 +36,8 @@ msgstr "Disposición"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Configuración del método de entrada…"
+msgstr "Método de entrada"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -66,18 +64,16 @@ msgid "Caps Lock behavior"
 msgstr "Comportamiento de Bloq Mayús"
 
 #: src/Plug.vala:103
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Cambiar de ventana"
+msgstr "Cambiar de motor"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
-msgstr ""
+msgstr "Mostrar ventana de candidatos"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Incrustar texto de preedición en la ventana de la aplicación"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -109,43 +105,41 @@ msgstr "Reasignar"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Elija el motor que debe instalarse"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Seleccione un motor de la lista para instalarlo y utilizarlo."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Idioma de entrada"
+msgstr "Idiomas"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Instalar"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "Instalando %s"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "Desinstalando %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japonés"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Coreano"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Chino"
 
 #. Caps Lock key functionality
 #: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
@@ -448,11 +442,11 @@ msgstr "Acceso universal"
 
 #: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
-msgstr "Reducir el tamaño de la letra"
+msgstr "Reducir tamaño del texto"
 
 #: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
-msgstr "Aumentar el tamaño de la letra"
+msgstr "Aumentar tamaño del texto"
 
 #: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
@@ -553,21 +547,23 @@ msgstr "Escriba para probar su configuración"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "El demonio de IBus no está ejecutándose"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"Es necesario ejecutar el demonio de IBus para activar o configurar motores "
+"para métodos de entrada."
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "Iniciar demonio de IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "No se pudo iniciar el demonio de IBus"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
 msgid "Add…"
@@ -579,35 +575,33 @@ msgid "Remove"
 msgstr "Quitar"
 
 #: src/Views/InputMethod.vala:98
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Cambiar de ventana"
+msgstr "Cambiar de motor:"
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Mostrar ventana de candidatos:"
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "No mostrar"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "Ocultar automáticamente"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "Mostrar siempre"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Incrustar texto de preedición en la ventana de la aplicación:"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
 msgid "Switch layout:"
-msgstr "Cambiar la disposición del teclado:"
+msgstr "Cambiar disposición de teclado:"
 
 #: src/Views/Layout.vala:54
 msgid "Alt + Caps Lock"
@@ -754,15 +748,15 @@ msgstr "Añadir"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "Buscador"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Instalar motores no mostrados…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "Añadir motor"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
 msgid "Search input language"
