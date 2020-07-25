@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-22 18:13+0000\n"
-"PO-Revision-Date: 2020-07-24 13:12+0000\n"
+"PO-Revision-Date: 2020-07-27 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -72,7 +72,7 @@ msgstr "候補ウィンドウを表示"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr "インライン入力を有効化"
+msgstr "インライン入力"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -593,7 +593,7 @@ msgstr "常に表示"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr "インライン入力を有効化:"
+msgstr "インライン入力:"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:49
