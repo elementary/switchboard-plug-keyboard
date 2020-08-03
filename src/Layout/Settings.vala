@@ -72,11 +72,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             return this.layout_type == other.layout_type && this.name == other.name;
         }
 
-        /**
-         * GSettings saves values in the form of GLib.Variant and this
-         * function creates a Variant representing this object.
-         */
-        public GLib.Variant to_variant () {
+        public string get_type_as_string () {
             string type_name = "";
             switch (layout_type) {
                 case LayoutType.IBUS:
@@ -89,6 +85,17 @@ namespace Pantheon.Keyboard.LayoutPage {
                     error ("You need to implemnt this for all possible values of"
                            + "the LayoutType-enum");
             }
+
+            return type_name;
+        }
+
+        /**
+         * GSettings saves values in the form of GLib.Variant and this
+         * function creates a Variant representing this object.
+         */
+        public GLib.Variant to_variant () {
+            string type_name = get_type_as_string ();
+
             GLib.Variant first = new GLib.Variant.string (type_name);
             GLib.Variant second = new GLib.Variant.string (name);
             GLib.Variant result = new GLib.Variant.tuple ({first, second});
@@ -221,7 +228,8 @@ namespace Pantheon.Keyboard.LayoutPage {
     class LayoutSettings {
         public LayoutList layouts { get; private set; }
 
-        GLib.Settings settings;
+        private GLib.Settings settings;
+        private AccountsService accounts_service;
 
         /**
          * True if and only if we are currently writing to gsettings
@@ -231,21 +239,37 @@ namespace Pantheon.Keyboard.LayoutPage {
 
         void write_list_to_gsettings () {
             currently_writing = true;
+
+            var act_layouts = new AccountsService.Layout[layouts.length];
+
             try {
                 Variant[] elements = {};
                 for (uint i = 0; i < layouts.length; i++) {
+                    act_layouts[i] = AccountsService.Layout () {
+                        backend = layouts.get_layout (i).get_type_as_string (),
+                        name = layouts.get_layout(i).name
+                    };
                     elements += layouts.get_layout (i).to_variant ();
                 }
+
                 GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), elements);
                 settings.set_value ("sources", list);
             } finally {
                 currently_writing = false;
+            }
+
+            if (accounts_service != null) {
+                accounts_service.keyboard_layouts = act_layouts;
             }
         }
 
         void write_active_to_gsettings () {
             uint active = layouts.active;
             settings.set_uint ("current", active);
+
+            if (accounts_service != null) {
+                accounts_service.active_keyboard_layout = active;
+            }
         }
 
         void update_list_from_gsettings () {
@@ -363,9 +387,27 @@ namespace Pantheon.Keyboard.LayoutPage {
             return instance;
         }
 
+        private async void setup_accountsservice () {
+             try {
+                var act_service = yield GLib.Bus.get_proxy<FDO.Accounts> (GLib.BusType.SYSTEM,
+                                                                          "org.freedesktop.Accounts",
+                                                                          "/org/freedesktop/Accounts");
+                var user_path = act_service.find_user_by_name (GLib.Environment.get_user_name ());
+
+                accounts_service = yield GLib.Bus.get_proxy (GLib.BusType.SYSTEM,
+                                                            "org.freedesktop.Accounts",
+                                                            user_path,
+                                                            GLib.DBusProxyFlags.GET_INVALIDATED_PROPERTIES);
+            } catch (Error e) {
+                warning ("Unable to get AccountsService proxy, greeter keyboard settings may be incorrect");
+            }
+        }
+
         private LayoutSettings () {
             settings = new Settings ("org.gnome.desktop.input-sources");
             layouts = new LayoutList ();
+
+            setup_accountsservice.begin ();
 
             update_list_from_gsettings ();
             update_active_from_gsettings ();

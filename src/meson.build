@@ -10,6 +10,7 @@ config_file = configure_file (
 )
 
 plug_files = files(
+    'AccountsServiceInterface.vala',
     'Plug.vala',
     'Widgets/Shortcuts/Tree.vala',
     'Widgets/Shortcuts/DisplayTree.vala',
