@@ -247,7 +247,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 for (uint i = 0; i < layouts.length; i++) {
                     act_layouts[i] = AccountsService.Layout () {
                         backend = layouts.get_layout (i).get_type_as_string (),
-                        name = layouts.get_layout(i).name
+                        name = layouts.get_layout (i).name
                     };
                     elements += layouts.get_layout (i).to_variant ();
                 }
