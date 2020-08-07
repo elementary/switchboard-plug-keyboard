@@ -7,7 +7,7 @@
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
   <releases>
-    <release version="2.4.0" date="2020-07-21" urgency="medium">
+    <release version="2.4.0" date="2020-08-07" urgency="medium">
       <description>
         <p>Add a view to configure input methods</p>
         <p>Updated translations</p>
