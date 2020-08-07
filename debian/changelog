@@ -1,3 +1,33 @@
+switchboard-plug-keyboard (2.4.0) bionic; urgency=medium
+
+  * Release 2.4.0 (#301)
+  * Update translation files
+  * Update translation template
+  * List: Remove high contrast shortcut (#297)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+  * Update io.elementary.switchboard.keyboard.appdata.xml.in
+  * Update translation template
+  * InputMethodView: Remove advanced button (#296)
+  * Update translation files
+  * Update translation template
+  * Release: revert release branch to Juno
+  * Add InputMethod View (#287)
+  * Shortcuts: Add flat class to actionbar (#290)
+  * Do not assume shorcut setting is string array (#295)
+  * Release: Change branch to Odin (#292)
+  * Store gsd-mediakeys settings in array (#291)
+  * Update translation files
+  * Update translation files
+  * Update translation template
+  * AppData: Add "Settings" to name (#286)
+  * AppData: Add gettext domain (#281)
+  * Appdata: Add icon name (#279)
+  * Layout: lookup io.elementary.wingpanel.keyboard recursive (#278)
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 07 Aug 2020 18:16:07 +0000
+
 switchboard-plug-keyboard (2.3.6) bionic; urgency=medium
 
   * Release 2.3.6 (#276)
