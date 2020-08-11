@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-22 18:13+0000\n"
-"PO-Revision-Date: 2020-01-05 13:07+0000\n"
+"PO-Revision-Date: 2020-08-12 12:13+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -35,10 +35,8 @@ msgstr "Düzen"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Girdi Yöntemi Ayarları…"
+msgstr "Girdi Yöntemi"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -116,36 +114,34 @@ msgid "Select an engine from the list to install and use."
 msgstr ""
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Giriş Dili"
+msgstr "Diller"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Yükle"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "%s yükleniyor"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "%s kaldırılıyor"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japonca"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Korece"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Çince"
 
 #. Caps Lock key functionality
 #: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
@@ -553,21 +549,23 @@ msgstr "Ayarlarınızı sınamak için yazın"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus Arka Plan Programı çalışmıyor"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"Giriş yöntemi motorlarını etkinleştirmek veya yapılandırmak için IBus Arka "
+"Plan Programını çalıştırmanız gerekir."
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "IBus Arka Plan Programını Başlat"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "IBus Arka Plan Programı başlatılamadı"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
 msgid "Add…"
@@ -590,15 +588,15 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "Gösterme"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "Otomatik gizle"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "Her zaman göster"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
