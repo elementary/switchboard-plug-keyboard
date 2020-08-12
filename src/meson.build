@@ -29,6 +29,8 @@ plug_files = files(
     'Shortcuts/List.vala',
     'Shortcuts/CustomShortcutSettings.vala',
     'Layout/XkbModifier.vala',
+    'Layout/LayoutList.vala',
+    'Layout/LayoutSettings.vala',
     'Layout/Settings.vala',
     'Layout/Handler.vala',
     'Layout/AdvancedSettingsPanel.vala',
