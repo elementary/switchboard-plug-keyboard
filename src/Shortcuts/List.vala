@@ -118,7 +118,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref media_group, Schema.MEDIA, _("Volume Up"), "volume-up");
             add_action (ref media_group, Schema.MEDIA, _("Volume Down"), "volume-down");
             add_action (ref media_group, Schema.MEDIA, _("Mute"), "volume-mute");
-            add_action (ref media_group, Schema.MEDIA, _("Play"), "play");
+            add_action (ref media_group, Schema.MEDIA, _("Play/Pause"), "play");
             add_action (ref media_group, Schema.MEDIA, _("Pause"), "pause");
             add_action (ref media_group, Schema.MEDIA, _("Stop"), "stop");
             add_action (ref media_group, Schema.MEDIA, _("Previous Track"), "previous");

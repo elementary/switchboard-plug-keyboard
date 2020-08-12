@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-07-27 00:12+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -412,8 +412,10 @@ msgid "Mute"
 msgstr "消音"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "再生"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "一時停止"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -551,7 +553,9 @@ msgstr "IBus Daemon が起動していません"
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
-msgstr "インプットメソッドエンジンを有効化したり設定するには、IBus Daemon を起動する必要があります。"
+msgstr ""
+"インプットメソッドエンジンを有効化したり設定するには、IBus Daemon を起動する"
+"必要があります。"
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
@@ -562,12 +566,12 @@ msgstr "IBus Daemon を起動"
 msgid "Failed to start IBus Daemon"
 msgstr "IBus Daemon を起動できませんでした"
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "追加…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "削除"
 
@@ -771,11 +775,11 @@ msgstr "キーボードレイアウトを表示します"
 msgid "Add Layout"
 msgstr "レイアウトを追加"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "上へ移動"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "下へ移動"
 
@@ -790,6 +794,9 @@ msgstr "コマンド"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "ショートカット"
+
+#~ msgid "Play"
+#~ msgstr "再生"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "ハイコントラストを切り替え"

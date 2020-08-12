@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-02-22 14:08+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -420,8 +420,10 @@ msgid "Mute"
 msgstr "Vaimenna"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Toista"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Keskeytä"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -570,12 +572,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Lisää…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Poista"
 
@@ -781,11 +783,11 @@ msgstr "Näytä näppäimistön asettelu"
 msgid "Add Layout"
 msgstr "Lisää asettelu"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Siirrä ylös"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Siirrä alas"
 
@@ -800,6 +802,9 @@ msgstr "Komento"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Pikanäppäin"
+
+#~ msgid "Play"
+#~ msgstr "Toista"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Suuri kontrasti päällä/pois"

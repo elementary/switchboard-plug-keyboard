@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2018-03-16 02:50+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://weblate.elementary.io/projects/"
@@ -425,8 +425,10 @@ msgid "Mute"
 msgstr "靜音"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "播放"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "暫停"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -575,12 +577,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "加入…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "移除"
 
@@ -793,11 +795,11 @@ msgstr "顯示鍵盤配置"
 msgid "Add Layout"
 msgstr "加入鍵盤配置"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "上移"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "下移"
 
@@ -812,6 +814,9 @@ msgstr "指令"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "快捷鍵"
+
+#~ msgid "Play"
+#~ msgstr "播放"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "開關高對比外觀"
