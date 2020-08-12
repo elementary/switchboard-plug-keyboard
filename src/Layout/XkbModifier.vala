@@ -40,7 +40,7 @@ class Pantheon.Keyboard.LayoutPage.XkbModifier : Object {
     }
 
     construct {
-        settings = new Settings (gsettings_schema);
+        settings = new GLib.Settings (gsettings_schema);
         settings.changed[gsettings_key].connect (update_from_gsettings);
     }
 
