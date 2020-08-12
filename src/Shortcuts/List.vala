@@ -134,7 +134,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref a11y_group, Schema.GALA, _("Magnifier Zoom out"), "zoom-out");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle On Screen Keyboard"), "on-screen-keyboard");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle Screenreader"), "screenreader");
-            add_action (ref a11y_group, Schema.MEDIA, _("Toggle High Contrast"), "toggle-contrast");
 
             system_group = {};
             system_group.icon_name = "preferences-system";

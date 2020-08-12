@@ -15,8 +15,12 @@ plug_files = files(
     'Widgets/Shortcuts/DisplayTree.vala',
     'Widgets/Shortcuts/CustomTree.vala',
     'Widgets/Layout/Display.vala',
+    'Widgets/InputMethod/LanguagesRow.vala',
+    'Widgets/InputMethod/EnginesRow.vala',
+    'Widgets/InputMethod/AddEnginesPopover.vala',
     'Views/Shortcuts.vala',
     'Views/Layout.vala',
+    'Views/InputMethod.vala',
     'Views/Behavior.vala',
     'Views/AbstractPage.vala',
     'Shortcuts/Shortcut.vala',
@@ -28,6 +32,13 @@ plug_files = files(
     'Layout/Handler.vala',
     'Layout/AdvancedSettingsPanel.vala',
     'Layout/AdvancedSettingsGrid.vala',
+    'InputMethod/Utils.vala',
+    'InputMethod/AddEnginesList.vala',
+    'InputMethod/Installer/UbuntuInstaller.vala',
+    'InputMethod/Installer/InstallList.vala',
+    'InputMethod/Installer/aptd-client.vala',
+    'Dialogs/ProgressDialog.vala',
+    'Dialogs/InstallEngineDialog.vala',
     'Dialogs/ConflictDialog.vala',
     'Dialogs/AddLayoutDialog.vala'
 )
@@ -37,6 +48,11 @@ switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define
 
 gnome_keyboard_dep = dependency('libgnomekbd')
 gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
+
+ibus_dep = dependency('ibus-1.0')
+if(ibus_dep.version().version_compare('>=1.5.19'))
+    add_project_arguments(['--define', 'IBUS_1_5_19'], language: 'vala')
+endif
 
 shared_module(
     meson.project_name(),
@@ -51,6 +67,7 @@ shared_module(
         dependency('libxml-2.0'),
         gnome_keyboard_dep,
         gnome_keyboard_ui_dep,
+        ibus_dep,
         switchboard_dep
     ],
     install: true,

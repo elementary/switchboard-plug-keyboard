@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-28 22:19+0000\n"
+"POT-Creation-Date: 2020-07-21 16:44+0000\n"
 "PO-Revision-Date: 2020-04-11 08:28+0000\n"
 "Last-Translator: gogogogi <trebelnik2@gmail.com>\n"
 "Language-Team: Croatian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,13 +29,18 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "New \"Workspaces\" icon"
+msgid "Add a view to configure input methods"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
-msgid "Exclude Space from single-key shortcuts"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
 msgid "Updated translations"
 msgstr "Nadopunjeni prijevodi"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+msgid "New \"Workspaces\" icon"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+msgid "Exclude Space from single-key shortcuts"
+msgstr ""
