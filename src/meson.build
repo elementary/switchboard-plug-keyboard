@@ -23,7 +23,6 @@ plug_files = files(
     'Views/Layout.vala',
     'Views/InputMethod.vala',
     'Views/Behavior.vala',
-    'Views/AbstractPage.vala',
     'Shortcuts/Shortcut.vala',
     'Shortcuts/Settings.vala',
     'Shortcuts/List.vala',

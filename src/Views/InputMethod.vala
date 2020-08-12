@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.AbstractPage {
+public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private IBus.Bus bus;
     private GLib.Settings ibus_panel_settings;
     // Stores all installed engines
@@ -322,7 +322,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Pantheon.Keyboard.Abstract
         }
     }
 
-    public override void reset () {
+    public void reset () {
         set_keyboard_shortcut ("ctrl-space");
         ibus_panel_settings.reset ("show");
         ibus_panel_settings.reset ("show-icon-on-systray");
