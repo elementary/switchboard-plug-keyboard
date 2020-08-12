@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-04-11 08:28+0000\n"
 "Last-Translator: Stas <SedovSG@yandex.ru>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -428,8 +428,10 @@ msgid "Mute"
 msgstr "Приглушить звук"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Воспроизвести"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Пауза"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -578,12 +580,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Добавить…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Удалить"
 
@@ -795,11 +797,11 @@ msgstr "Показать раскладку клавиатуры"
 msgid "Add Layout"
 msgstr "Добавить раскладку"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Переместить выше"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Переместить ниже"
 
@@ -814,6 +816,9 @@ msgstr "Команда"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Горячая клавиша"
+
+#~ msgid "Play"
+#~ msgstr "Воспроизвести"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Включить высокую контрастность"

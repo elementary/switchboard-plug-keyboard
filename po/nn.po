@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2019-01-07 00:03+0000\n"
 "Last-Translator: Simon Dagfinrud <semonje@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://weblate.elementary.io/projects/"
@@ -426,8 +426,10 @@ msgid "Mute"
 msgstr "Demp lyden"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Spel av"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Pause"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -576,12 +578,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Legg til…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Fjern"
 
@@ -793,11 +795,11 @@ msgstr "Vis tastaturoppsett"
 msgid "Add Layout"
 msgstr "Legg til oppsett"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Flytt oppover"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Flytt nedover"
 
@@ -812,6 +814,9 @@ msgstr "Kommando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Snarveg"
+
+#~ msgid "Play"
+#~ msgstr "Spel av"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Slå på/av høg kontrast"

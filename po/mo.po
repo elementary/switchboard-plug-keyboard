@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -424,8 +424,10 @@ msgid "Mute"
 msgstr "Mut"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Reproduce"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Pauză"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -574,12 +576,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Adaugă…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Șterge"
 
@@ -792,11 +794,11 @@ msgstr "Afișați aspectul tastaturii"
 msgid "Add Layout"
 msgstr "Adăugați aspectul"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Mutați sus"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Mută în jos"
 
@@ -811,6 +813,9 @@ msgstr "Comandă"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Scurtătură"
+
+#~ msgid "Play"
+#~ msgstr "Reproduce"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Schimbați contrastul ridicat"
