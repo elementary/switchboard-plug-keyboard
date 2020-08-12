@@ -29,7 +29,7 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
      */
     private bool currently_writing;
 
-    static LayoutSettings? instance;
+    private static LayoutSettings? instance;
     public static LayoutSettings get_instance () {
         if (instance == null) {
             instance = new LayoutSettings ();
@@ -38,7 +38,7 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
     }
 
     private LayoutSettings () {
-        settings = new Settings ("org.gnome.desktop.input-sources");
+        settings = new GLib.Settings ("org.gnome.desktop.input-sources");
         layouts = new LayoutList ();
 
         update_list_from_gsettings ();
@@ -60,9 +60,9 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
             update_active_from_gsettings ();
         });
 
-        if (layouts.length == 0)
+        if (layouts.length == 0) {
             parse_default ();
-
+        }
     }
 
     private void write_list_to_gsettings () {
