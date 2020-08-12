@@ -51,7 +51,7 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         for (int i = 0; i < MAX_SHORTCUTS; i++) {
             var new_relocatable_schema = RELOCATABLE_SCHEMA_PATH_TEMLPATE.printf (i);
 
-            if (relocatable_schema_is_used (new_relocatable_schema) == false) {
+            if (!relocatable_schema_is_used (new_relocatable_schema)) {
                 reset_relocatable_schema (new_relocatable_schema);
 
                 var relocatable_schemas = settings.get_strv (KEY + "s");
