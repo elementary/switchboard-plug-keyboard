@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
+public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     public static bool available = false;
 
     public struct CustomShortcut {
