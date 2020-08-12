@@ -31,20 +31,27 @@ namespace Pantheon.Keyboard.LayoutPage {
      * This means that the enum parameter @layout_type equals the first string in the
      * tupel of strings, and the @name parameter equals the second string.
      */
-    class Layout {
-        public LayoutType layout_type { get; private set; }
-        public string name { get; private set; }
+    class Layout : Object {
+        public LayoutType layout_type { get; construct; }
+        public string name { get; construct; }
 
         public Layout (LayoutType layout_type, string name) {
-            this.layout_type = layout_type;
-            this.name = name;
+            Object (
+                layout_type: layout_type,
+                name: name
+            );
         }
 
         public Layout.XKB (string layout, string? variant) {
             string full_name = layout;
-            if (variant != null && variant != "")
+            if (variant != null && variant != "") {
                 full_name += "+" + variant;
-            this (LayoutType.XKB, full_name);
+            }
+
+            Object (
+                layout_type: LayoutType.XKB,
+                name: full_name
+            );
         }
 
         public Layout.from_variant (GLib.Variant variant) {
@@ -54,17 +61,23 @@ namespace Pantheon.Keyboard.LayoutPage {
 
                 variant.get ("(&s&s)", out type, out name);
 
+                LayoutType? _layout_type = null;
                 if (type == "xkb") {
-                    layout_type = LayoutType.XKB;
+                    _layout_type = LayoutType.XKB;
                 } else if (type == "ibus") {
-                    layout_type = LayoutType.IBUS;
-                } else {
-                    warning ("Unkown type %s", type);
+                    _layout_type = LayoutType.IBUS;
                 }
-                this.name = name;
 
+                if (_layout_type != null) {
+                    Object (
+                        layout_type: _layout_type,
+                        name: name
+                    );
+                } else {
+                    critical ("Unkown type %s", type);
+                }
             } else {
-                warning ("Variant has invalid type");
+                critical ("Variant has invalid type");
             }
         }
 
