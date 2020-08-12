@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2019-05-09 02:33+0000\n"
 "Last-Translator: Moo <hazap@hotmail.com>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
@@ -429,8 +429,10 @@ msgid "Mute"
 msgstr "Nutildyti"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Groti"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Pristabdyti"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -579,12 +581,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Pridėti…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Šalinti"
 
@@ -794,11 +796,11 @@ msgstr "Rodyti klaviatūros išdėstymą"
 msgid "Add Layout"
 msgstr "Pridėti išdėstymą"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Pakelti aukštyn"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Nuleisti žemyn"
 
@@ -813,6 +815,9 @@ msgstr "Komanda"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Susiejimas"
+
+#~ msgid "Play"
+#~ msgstr "Groti"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Perjungti didelį kontrastą"

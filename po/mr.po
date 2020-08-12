@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-02-06 20:08+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -411,8 +411,10 @@ msgid "Mute"
 msgstr "आवाज बंद करा"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "प्ले"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "थांबवा"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -561,12 +563,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "जोडा…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "काढा"
 
@@ -772,11 +774,11 @@ msgstr "कीबोर्ड मांडणी दाखवा"
 msgid "Add Layout"
 msgstr "मांडणी वाढवा"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "वर सरकवा"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "खाली सरकवा"
 
@@ -791,6 +793,9 @@ msgstr "आज्ञा"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "शॉर्टकट"
+
+#~ msgid "Play"
+#~ msgstr "प्ले"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "उच्च तीव्रता टॉगल करा"

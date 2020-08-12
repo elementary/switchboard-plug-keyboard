@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-01-24 01:08+0000\n"
 "Last-Translator: Rodrigo Oliveira <rod.oliveira@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://l10n.elementary.io/projects/"
@@ -418,8 +418,10 @@ msgid "Mute"
 msgstr "Mudo"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Reproduzir"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Pausa"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -568,12 +570,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Adicionar…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Remover"
 
@@ -779,11 +781,11 @@ msgstr "Exibir layout do teclado"
 msgid "Add Layout"
 msgstr "Adicionar layout"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Para cima"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Para baixo"
 
@@ -798,6 +800,9 @@ msgstr "Comando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Atalho"
+
+#~ msgid "Play"
+#~ msgstr "Reproduzir"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Alternar para alto contraste"
