@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -429,8 +429,10 @@ msgid "Mute"
 msgstr "Némítás"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Lejátszás"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Szünet"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -579,12 +581,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Hozzáadás…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Eltávolítás"
 
@@ -797,11 +799,11 @@ msgstr "Billentyűzetkiosztás mutatása"
 msgid "Add Layout"
 msgstr "Kiosztás hozzáadása"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Mozgatás fel"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Mozgatás le"
 
@@ -816,6 +818,9 @@ msgstr "Parancs"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Billentyűparancs"
+
+#~ msgid "Play"
+#~ msgstr "Lejátszás"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "A nagy kontraszt bekapcsolása"

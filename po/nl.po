@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-01-05 13:07+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -418,8 +418,10 @@ msgid "Mute"
 msgstr "Dempen"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Speel af"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Pauzeer"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -568,12 +570,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Voeg toe…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Verwijder"
 
@@ -779,11 +781,11 @@ msgstr "Toon layout van het toetsenbord"
 msgid "Add Layout"
 msgstr "Indeling toevoegen"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Verplaats omhoog"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Verplaats omlaag"
 
@@ -798,6 +800,9 @@ msgstr "Opdracht"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Sneltoets"
+
+#~ msgid "Play"
+#~ msgstr "Speel af"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Schakel hoog contrast"

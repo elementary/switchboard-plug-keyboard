@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-08-12 22:07+0000\n"
 "PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -413,8 +413,10 @@ msgid "Mute"
 msgstr "SIlenciar"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Reproducir"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Pausar"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -565,12 +567,12 @@ msgstr "Iniciar demonio de IBus"
 msgid "Failed to start IBus Daemon"
 msgstr "No se pudo iniciar el demonio de IBus"
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
 msgid "Add…"
 msgstr "Añadir…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:63
 msgid "Remove"
 msgstr "Quitar"
 
@@ -774,11 +776,11 @@ msgstr "Mostrar disposición de teclado"
 msgid "Add Layout"
 msgstr "Añadir disposición"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:68
 msgid "Move up"
 msgstr "Subir"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:73
 msgid "Move down"
 msgstr "Bajar"
 
@@ -793,6 +795,9 @@ msgstr "Orden"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Atajo"
+
+#~ msgid "Play"
+#~ msgstr "Reproducir"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Activar o desactivar contraste alto"
