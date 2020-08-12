@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -101,8 +101,7 @@ namespace Pantheon.Keyboard.LayoutPage {
      * Represents a list of layouts.
      */
     class LayoutList : Object {
-
-        GLib.List<Layout> layouts = new GLib.List<Layout> ();
+        private GLib.List<Layout> layouts = new GLib.List<Layout> ();
 
         // signals
         public signal void layouts_changed ();
@@ -132,20 +131,6 @@ namespace Pantheon.Keyboard.LayoutPage {
                 active_changed ();
             }
 
-        }
-
-        public bool contains_layout (Layout given_layout) {
-            return get_layout_index (given_layout) != -1;
-        }
-
-        public int get_layout_index (Layout given_layout) {
-            int i = 0;
-            foreach (Layout l in layouts) {
-                if (l.equal (given_layout))
-                    return i;
-                i++;
-            }
-            return -1;
         }
 
         private void switch_items (uint pos1, uint pos2) {
@@ -184,12 +169,18 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         public bool add_layout (Layout new_layout) {
-            if (! contains_layout (new_layout)) {
-                layouts.append (new_layout);
-                layouts_changed ();
-                return true;
+            int i = 0;
+            foreach (Layout l in layouts) {
+                if (l.equal (new_layout)) {
+                    return false;
+                }
+
+                i++;
             }
-            return false;
+
+            layouts.append (new_layout);
+            layouts_changed ();
+            return true;
         }
 
         public void remove_active_layout () {
@@ -269,22 +260,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             layouts.active = settings.get_uint ("current");
         }
 
-        bool _per_window;
-        public bool per_window {
-            get {
-                return _per_window;
-            }
-            set {
-                if (value != _per_window) {
-                    settings.set_boolean ("per-window", value);
-                    _per_window = value;
-                }
-            }
-        }
-        // signal when the variable per_window is changed by gsettings
-        public signal void per_window_changed ();
-
-        public void parse_default () {
+        private void parse_default () {
             var file = File.new_for_path ("/etc/default/keyboard");
 
             if (!file.query_exists ()) {
