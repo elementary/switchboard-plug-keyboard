@@ -20,15 +20,52 @@
 class Pantheon.Keyboard.LayoutPage.LayoutSettings {
     public LayoutList layouts { get; private set; }
 
-    GLib.Settings settings;
+    private XkbModifier [] xkb_options_modifiers;
+    private GLib.Settings settings;
 
     /**
      * True if and only if we are currently writing to gsettings
      * by ourselves.
      */
-    bool currently_writing;
+    private bool currently_writing;
 
-    void write_list_to_gsettings () {
+    private static LayoutSettings? instance;
+    public static LayoutSettings get_instance () {
+        if (instance == null) {
+            instance = new LayoutSettings ();
+        }
+        return instance;
+    }
+
+    private LayoutSettings () {
+        settings = new GLib.Settings ("org.gnome.desktop.input-sources");
+        layouts = new LayoutList ();
+
+        update_list_from_gsettings ();
+        update_active_from_gsettings ();
+
+        layouts.layouts_changed.connect (() => {
+            write_list_to_gsettings ();
+        });
+
+        layouts.active_changed.connect (() => {
+            write_active_to_gsettings ();
+        });
+
+        settings.changed["sources"].connect (() => {
+            update_list_from_gsettings ();
+        });
+
+        settings.changed["current"].connect (() => {
+            update_active_from_gsettings ();
+        });
+
+        if (layouts.length == 0) {
+            parse_default ();
+        }
+    }
+
+    private void write_list_to_gsettings () {
         currently_writing = true;
         try {
             Variant[] elements = {};
@@ -42,12 +79,12 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
         }
     }
 
-    void write_active_to_gsettings () {
+    private void write_active_to_gsettings () {
         uint active = layouts.active;
         settings.set_uint ("current", active);
     }
 
-    void update_list_from_gsettings () {
+    private void update_list_from_gsettings () {
         // We currently write to gsettings, so we caused this signal
         // and therefore don't need to read the list again from dconf
         if (currently_writing)
@@ -115,8 +152,6 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
         }
     }
 
-    private XkbModifier [] xkb_options_modifiers;
-
     public void add_xkb_modifier (XkbModifier modifier) {
         //We assume by this point the modifier has all the options in it.
         modifier.update_from_gsettings ();
@@ -136,42 +171,5 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
     public void reset_all () {
         layouts.remove_all ();
         parse_default ();
-    }
-
-    // singleton pattern
-    static LayoutSettings? instance;
-    public static LayoutSettings get_instance () {
-        if (instance == null) {
-            instance = new LayoutSettings ();
-        }
-        return instance;
-    }
-
-    private LayoutSettings () {
-        settings = new Settings ("org.gnome.desktop.input-sources");
-        layouts = new LayoutList ();
-
-        update_list_from_gsettings ();
-        update_active_from_gsettings ();
-
-        layouts.layouts_changed.connect (() => {
-            write_list_to_gsettings ();
-        });
-
-        layouts.active_changed.connect (() => {
-            write_active_to_gsettings ();
-        });
-
-        settings.changed["sources"].connect (() => {
-            update_list_from_gsettings ();
-        });
-
-        settings.changed["current"].connect (() => {
-            update_active_from_gsettings ();
-        });
-
-        if (layouts.length == 0)
-            parse_default ();
-
     }
 }
