@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -33,38 +33,45 @@ namespace Pantheon.Keyboard.LayoutPage {
          */
         private bool cursor_changing = false;
 
-        public Display () {
+        construct {
             settings = LayoutSettings.get_instance ();
 
-            var cell = new Gtk.CellRendererText ();
-            cell.ellipsize_set = true;
-            cell.ellipsize = Pango.EllipsizeMode.END;
+            var cell = new Gtk.CellRendererText () {
+                ellipsize_set = true,
+                ellipsize = Pango.EllipsizeMode.END
+            };
 
-            tree = new Gtk.TreeView ();
+            tree = new Gtk.TreeView () {
+                headers_visible = false,
+                expand = true,
+                tooltip_column = 0
+            };
             tree.insert_column_with_attributes (-1, null, cell, "text", 0);
-            tree.headers_visible = false;
-            tree.expand = true;
-            tree.tooltip_column = 0;
 
-            var scroll = new Gtk.ScrolledWindow (null, null);
-            scroll.hscrollbar_policy = Gtk.PolicyType.NEVER;
-            scroll.expand = true;
+            var scroll = new Gtk.ScrolledWindow (null, null) {
+                hscrollbar_policy = Gtk.PolicyType.NEVER,
+                expand = true
+            };
             scroll.add (tree);
 
-            add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON);
-            add_button.tooltip_text = _("Add…");
+            add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON) {
+                tooltip_text = _("Add…")
+            };
 
-            remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON);
-            remove_button.sensitive = false;
-            remove_button.tooltip_text = _("Remove");
+            remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON) {
+                sensitive = false,
+                tooltip_text = _("Remove")
+            };
 
-            up_button = new Gtk.Button.from_icon_name ("go-up-symbolic", Gtk.IconSize.BUTTON);
-            up_button.sensitive = false;
-            up_button.tooltip_text = _("Move up");
+            up_button = new Gtk.Button.from_icon_name ("go-up-symbolic", Gtk.IconSize.BUTTON) {
+                sensitive = false,
+                tooltip_text = _("Move up")
+            };
 
-            down_button = new Gtk.Button.from_icon_name ("go-down-symbolic", Gtk.IconSize.BUTTON);
-            down_button.sensitive = false;
-            down_button.tooltip_text = _("Move down");
+            down_button = new Gtk.Button.from_icon_name ("go-down-symbolic", Gtk.IconSize.BUTTON) {
+                sensitive = false,
+                tooltip_text = _("Move down")
+            };
 
             var actionbar = new Gtk.ActionBar ();
             actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
@@ -74,21 +81,26 @@ namespace Pantheon.Keyboard.LayoutPage {
             actionbar.add (down_button);
 
             var grid = new Gtk.Grid ();
-            grid.attach (scroll, 0, 0, 1, 1);
-            grid.attach (actionbar, 0, 1, 1, 1);
+            grid.attach (scroll, 0, 0);
+            grid.attach (actionbar, 0, 1);
 
             add (grid);
 
             var pop = new AddLayoutPopover ();
+            pop.set_relative_to (add_button);
+
+            pop.layout_added.connect ((layout, variant) => {
+                settings.layouts.add_layout (new Layout.XKB (layout, variant));
+                rebuild_list ();
+            });
 
             add_button.clicked.connect (() => {
-                pop.set_relative_to (add_button);
                 pop.show_all ();
-                add_item (pop);
             });
 
             remove_button.clicked.connect (() => {
-                remove_item ();
+                settings.layouts.remove_active_layout ();
+                rebuild_list ();
             });
 
             up_button.clicked.connect (() => {
@@ -113,8 +125,10 @@ namespace Pantheon.Keyboard.LayoutPage {
             });
 
             settings.layouts.active_changed.connect (() => {
-                if (cursor_changing)
+                if (cursor_changing) {
                     return;
+                }
+
                 update_cursor ();
             });
 
@@ -127,71 +141,55 @@ namespace Pantheon.Keyboard.LayoutPage {
             rebuild_list ();
         }
 
-        void update_buttons () {
-                int index = get_cursor_index ();
+        private void update_buttons () {
+            int index = get_cursor_index ();
 
-                // if empty list
-                if (index == -1) {
-                    up_button.sensitive = false;
-                    down_button.sensitive = false;
-                    remove_button.sensitive = false;
-                } else {
-                    up_button.sensitive = (index != 0);
-                    down_button.sensitive = (index != settings.layouts.length - 1);
-                    remove_button.sensitive = (settings.layouts.length > 0);
-                }
+            // if empty list
+            if (index == -1) {
+                up_button.sensitive = false;
+                down_button.sensitive = false;
+                remove_button.sensitive = false;
+            } else {
+                up_button.sensitive = (index != 0);
+                down_button.sensitive = (index != settings.layouts.length - 1);
+                remove_button.sensitive = (settings.layouts.length > 0);
+            }
         }
 
         /**
          * Returns the index of the selected layout in the UI.
          * In case the list contains no layouts, it returns -1.
          */
-        int get_cursor_index () {
-                Gtk.TreePath path;
+        private int get_cursor_index () {
+            Gtk.TreePath path;
 
-                tree.get_cursor (out path, null);
+            tree.get_cursor (out path, null);
 
-                if (path == null) {
-                    return -1;
-                }
+            if (path == null) {
+                return -1;
+            }
 
-                return (path.get_indices ())[0];
+            return (path.get_indices ())[0];
         }
 
-        void update_cursor () {
-            Gtk.TreePath path = new Gtk.TreePath.from_indices (settings.layouts.active);
+        private void update_cursor () {
+            var path = new Gtk.TreePath.from_indices (settings.layouts.active);
             tree.set_cursor (path, null, false);
         }
 
-        Gtk.ListStore build_store () {
-            Gtk.ListStore list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
+        private void rebuild_list () {
+            var list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
             Gtk.TreeIter iter;
             for (uint i = 0; i < settings.layouts.length; i++) {
-                string item = settings.layouts.get_layout (i).name;
+                var item = settings.layouts.get_layout (i).name;
                 list_store.append (out iter);
                 list_store.set (iter, 0, handler.get_display_name (item));
                 list_store.set (iter, 1, item);
             }
 
-            return list_store;
-        }
-
-        void rebuild_list () {
-            tree.model = build_store ();
+            tree.model = list_store;
             update_cursor ();
             update_buttons ();
-        }
-
-        void remove_item () {
-            settings.layouts.remove_active_layout ();
-            rebuild_list ();
-        }
-
-        void add_item (LayoutPage.AddLayoutPopover pop) {
-            pop.layout_added.connect ((layout, variant) => {
-                settings.layouts.add_layout (new Layout.XKB (layout, variant));
-                rebuild_list ();
-            });
         }
     }
 }
