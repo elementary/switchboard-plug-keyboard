@@ -18,28 +18,13 @@
 */
 
 public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
-    public const string XKB_RULES_FILE = "evdev.xml";
+    private const string XKB_RULES_FILE = "evdev.xml";
 
-    public HashTable<string, string> languages { public get; private set; }
-
-    public LayoutHandler () {
-        parse_layouts ();
-    }
+    public HashTable<string, string> languages { get; private set; }
 
     construct {
         languages = new HashTable<string, string> (str_hash, str_equal);
-    }
 
-    public string get_xml_rules_file_path () {
-        unowned string? base_path = GLib.Environment.get_variable ("XKB_CONFIG_ROOT");
-        if (base_path == null) {
-            base_path = Constants.XKB_BASE;
-        }
-
-        return Path.build_filename (base_path, "rules", XKB_RULES_FILE);
-    }
-
-    private void parse_layouts () {
         Xml.Doc* doc = Xml.Parser.parse_file (get_xml_rules_file_path ());
         if (doc == null) {
             critical ("'%s' not found or permissions missing\n", XKB_RULES_FILE);
@@ -82,6 +67,15 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
 
         delete res;
         delete doc;
+    }
+
+    private string get_xml_rules_file_path () {
+        unowned string? base_path = GLib.Environment.get_variable ("XKB_CONFIG_ROOT");
+        if (base_path == null) {
+            base_path = Constants.XKB_BASE;
+        }
+
+        return Path.build_filename (base_path, "rules", XKB_RULES_FILE);
     }
 
     public HashTable<string, string> get_variants_for_language (string language) {
