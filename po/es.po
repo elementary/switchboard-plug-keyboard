@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2020-07-25 16:12+0000\n"
+"PO-Revision-Date: 2020-08-14 18:13+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
@@ -413,10 +413,8 @@ msgid "Mute"
 msgstr "SIlenciar"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Pausar"
+msgstr "Reproducir/pausar"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -515,7 +513,7 @@ msgstr "Repetir teclas:"
 
 #: src/Views/Behavior.vala:28
 msgid "Delay:"
-msgstr "Retardo:"
+msgstr "Demora:"
 
 #: src/Views/Behavior.vala:31
 msgid "Interval:"
@@ -619,7 +617,7 @@ msgstr "Alt + Espacio"
 
 #: src/Views/Layout.vala:57
 msgid "Both Shift keys together"
-msgstr "Ambas teclas Mayús juntas"
+msgstr "Ambas teclas Mayús a la vez"
 
 #: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
 msgid "Caps Lock"
