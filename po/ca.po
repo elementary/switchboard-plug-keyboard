@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2020-07-21 16:42+0000\n"
+"PO-Revision-Date: 2020-08-14 18:13+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ca/>\n"
@@ -412,10 +412,8 @@ msgid "Mute"
 msgstr "Silencia"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Pausa"
+msgstr "Reprodueix / Pausa"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
