@@ -16,7 +16,6 @@ src/Shortcuts/CustomShortcutSettings.vala
 src/Shortcuts/List.vala
 src/Shortcuts/Settings.vala
 src/Shortcuts/Shortcut.vala
-src/Views/AbstractPage.vala
 src/Views/Behavior.vala
 src/Views/InputMethod.vala
 src/Views/Layout.vala
