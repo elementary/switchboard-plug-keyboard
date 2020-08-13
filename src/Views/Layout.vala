@@ -21,21 +21,18 @@ namespace Pantheon.Keyboard.LayoutPage {
     // global handler
     LayoutHandler handler;
 
-    public class Page : Pantheon.Keyboard.AbstractPage {
+    public class Page : Gtk.Grid {
         private LayoutPage.Display display;
         private LayoutSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
 
-        public override void reset () {
+        public void reset () {
             settings.reset_all ();
             display.reset_all ();
-            return;
         }
 
         public Page () {
-            this.column_homogeneous = true;
-
             handler = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
             size_group = {
@@ -127,6 +124,9 @@ namespace Pantheon.Keyboard.LayoutPage {
             entry_test.expand = true;
             entry_test.placeholder_text = (_("Type to test your layout"));
 
+            column_homogeneous = true;
+            column_spacing = 12;
+            row_spacing = 12;
             attach (display, 0, 0, 1, 9);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
