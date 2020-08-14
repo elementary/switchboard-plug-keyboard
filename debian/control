@@ -18,7 +18,7 @@ Homepage: https://github.com/elementary/switchboard-plug-keyboard
 
 Package: switchboard-plug-keyboard
 Architecture: any
-Depends: xkb-data, ${misc:Depends}, ${shlibs:Depends}
+Depends: Depends: ibus, xkb-data, ${misc:Depends}, ${shlibs:Depends}
 Recommends: xkb-data-i18n
 Enhances: switchboard
 Description: Switchboard plug for keyboard settings
