@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2020-07-27 00:12+0000\n"
+"PO-Revision-Date: 2020-08-18 01:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -412,10 +412,8 @@ msgid "Mute"
 msgstr "消音"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "一時停止"
+msgstr "再生/一時停止"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
