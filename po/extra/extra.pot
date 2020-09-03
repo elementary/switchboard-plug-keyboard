@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 22:07+0000\n"
+"POT-Creation-Date: 2020-09-03 21:55+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,27 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Add a view to configure input methods"
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+msgid "Add a view to configure input methods"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "New \"Workspaces\" icon"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 msgid "Exclude Space from single-key shortcuts"
 msgstr ""
