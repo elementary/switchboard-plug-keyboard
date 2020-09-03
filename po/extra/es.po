@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:44+0000\n"
+"POT-Creation-Date: 2020-09-03 21:55+0000\n"
 "PO-Revision-Date: 2020-07-25 16:12+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -29,18 +29,27 @@ msgstr ""
 "Configure el comportamiento, las disposiciones y los atajos del teclado"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Add a view to configure input methods"
-msgstr "Se añadió una vista para configurar métodos de entrada"
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
+msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 msgid "Updated translations"
 msgstr "Traducciones actualizadas"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+msgid "Add a view to configure input methods"
+msgstr "Se añadió una vista para configurar métodos de entrada"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "New \"Workspaces\" icon"
 msgstr "Nuevo icono de «Espacios de trabajo»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Excluir el espacio de los atajos de una sola tecla"
