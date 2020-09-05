@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 21:55+0000\n"
-"PO-Revision-Date: 2020-07-28 14:13+0000\n"
+"PO-Revision-Date: 2020-09-06 11:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pt/>\n"
@@ -29,11 +29,13 @@ msgstr "Configurar o comportamento do teclado, esquemas e teclas de atalho"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr ""
+msgstr "A descrição do atalho para \"Reproduzir\" agora é \"Reproduzir/Pausa\""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Corrige um problema em que alguns atalhos eram exibidos incorretamente como "
+"desativados"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
