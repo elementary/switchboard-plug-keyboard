@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 21:55+0000\n"
-"PO-Revision-Date: 2020-07-24 13:12+0000\n"
+"PO-Revision-Date: 2020-09-08 16:14+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/fr/>\n"
@@ -32,10 +32,14 @@ msgstr ""
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
+"La description du raccourci pour « Lire » est désormais « Lire/Mettre en "
+"pause »"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Correction d'un problème où les raccourcis s'affichaient comme désactivés de "
+"façon incorrecte"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
