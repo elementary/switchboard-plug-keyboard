@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 21:55+0000\n"
-"PO-Revision-Date: 2020-07-25 16:12+0000\n"
+"PO-Revision-Date: 2020-09-17 00:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/es/>\n"
@@ -30,11 +30,13 @@ msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr ""
+msgstr "La descripción del atajo «Reproducir» ahora es «Reproducir/pausar»"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Se arregló un problema que causaba que algunos atajos se mostrasen como "
+"desactivados"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
@@ -52,4 +54,4 @@ msgstr "Nuevo icono de «Espacios de trabajo»"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 msgid "Exclude Space from single-key shortcuts"
-msgstr "Excluir el espacio de los atajos de una sola tecla"
+msgstr "Se excluyó el espacio de los atajos de una sola tecla"
