@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 21:55+0000\n"
-"PO-Revision-Date: 2020-01-05 13:07+0000\n"
+"PO-Revision-Date: 2020-09-20 14:33+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
@@ -35,10 +35,8 @@ msgstr "Indeling"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Input methode instellingen…"
+msgstr "Input methode"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -65,18 +63,16 @@ msgid "Caps Lock behavior"
 msgstr "Caps Lock gedrag"
 
 #: src/Plug.vala:103
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Wissel vensters"
+msgstr "Wissel engines"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
-msgstr ""
+msgstr "Toon candidate venster"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Verwerk voorbewerkte tekst in het toepassing venster"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -108,43 +104,41 @@ msgstr "Opnieuw toewijzen"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Kies een engine om te installeren"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Kies een engine uit de lijst om te installeren en gebruiken."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Invoertaal"
+msgstr "Talen"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Installeren"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "%s installeren"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "%s verwijderen"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japans"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Koreaans"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Chinees"
 
 #. Caps Lock key functionality
 #: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
@@ -418,10 +412,8 @@ msgid "Mute"
 msgstr "Dempen"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Pauzeer"
+msgstr "Afspelen/Pauzeren"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -554,21 +546,23 @@ msgstr "Type om je instellingen te testen"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBUS Daemon is niet actief"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"U moet de IBUS Daemon starten om inputmethode engines te gebruiken of in te "
+"stellen."
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "Start IBus Daemon"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "Het starten van IBus Daemon is mislukt"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -580,30 +574,28 @@ msgid "Remove"
 msgstr "Verwijder"
 
 #: src/Views/InputMethod.vala:98
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Wissel vensters"
+msgstr "Wissel tussen engines:"
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Toon candidate venster:"
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "Toon niet"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "Verberg automatisch"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "Toon altijd"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Verwerk voorbewerkte tekst in applicatie venster:"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:46
@@ -755,15 +747,15 @@ msgstr "Voeg toe"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "Zoekterm"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Installeer engines die niet op de lijst staan…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "Voeg engine toe"
 
 #: src/Widgets/Layout/AddLayoutPopover.vala:35
 msgid "Search input language"
