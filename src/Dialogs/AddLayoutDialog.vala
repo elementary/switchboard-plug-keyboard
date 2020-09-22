@@ -31,10 +31,11 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         default_height = 450;
         default_width = 750;
 
-        var search_entry = new Gtk.SearchEntry ();
-        search_entry.margin = 12;
-        search_entry.margin_bottom = 6;
-        search_entry.placeholder_text = _("Search input language");
+        var search_entry = new Gtk.SearchEntry () {
+            margin = 12,
+            margin_bottom = 6,
+            placeholder_text = _("Search input language")
+        };
 
         language_list = new GLib.ListStore (typeof (ListStoreItem));
         layout_list = new GLib.ListStore (typeof (ListStoreItem));
@@ -51,9 +52,10 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
             input_language_list_box.add (row);
         }
 
-        var input_language_scrolled = new Gtk.ScrolledWindow (null, null);
-        input_language_scrolled.hscrollbar_policy = Gtk.PolicyType.NEVER;
-        input_language_scrolled.expand = true;
+        var input_language_scrolled = new Gtk.ScrolledWindow (null, null) {
+            hscrollbar_policy = Gtk.PolicyType.NEVER,
+            expand = true
+        };
         input_language_scrolled.add (input_language_list_box);
 
         var input_language_grid = new Gtk.Grid ();
