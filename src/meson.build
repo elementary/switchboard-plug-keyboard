@@ -65,6 +65,7 @@ shared_module(
         dependency('gobject-2.0'),
         dependency('granite'),
         dependency('gtk+-3.0'),
+        dependency('libhandy-1', version: '>= 0.90.0'),
         dependency('libxml-2.0'),
         gnome_keyboard_dep,
         gnome_keyboard_ui_dep,
