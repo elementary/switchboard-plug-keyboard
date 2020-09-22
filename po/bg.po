@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-22 18:13+0000\n"
+"POT-Creation-Date: 2020-09-03 21:55+0000\n"
 "PO-Revision-Date: 2017-04-14 16:49+0000\n"
 "Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -145,7 +145,7 @@ msgid "Chinese"
 msgstr ""
 
 #. Caps Lock key functionality
-#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
 #: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
 #: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
@@ -431,8 +431,10 @@ msgid "Mute"
 msgstr "Заглушено"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "Възпроизвеждане"
+#, fuzzy
+#| msgid "Pause"
+msgid "Play/Pause"
+msgstr "Прекъсване"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -486,7 +488,7 @@ msgstr "Пусни Екраночетеца"
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Приложения"
@@ -510,21 +512,21 @@ msgstr "Потребителски"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Изключено"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:60
 #, fuzzy
 msgid "Shift"
 msgstr "Alt + Shift"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:68
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:72
 msgid "Alt"
 msgstr ""
 
@@ -585,12 +587,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:55
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Добавяне…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:59
+#: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
 msgstr "Премахване"
 
@@ -621,107 +623,107 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:46
 msgid "Switch layout:"
 msgstr "Смяна на клавиатурната подредба:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:51
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:52
 msgid "Alt + Shift"
 msgstr "Alt + Shift"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:53
 msgid "Alt + Space"
 msgstr "Alt + Space"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
 msgstr "Двата Shift-а заедно"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:70 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:56
 msgid "Ctrl + Alt"
 msgstr "Ctrl + Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:57
 msgid "Ctrl + Shift"
 msgstr "Ctrl + Shift"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:58
 msgid "Shift + Caps Lock"
 msgstr "Shift + Caps Lock"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:65
 msgid "Compose key:"
 msgstr "Клавиш «Compose»:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:71
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "Десен Alt"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "Десен Ctrl"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 #, fuzzy
 msgid "Right ⌘"
 msgstr "Десен Alt"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:81
 #, fuzzy
 msgid "⌘ key behavior:"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:90
 #, fuzzy
 msgid "Shortcut Overlay"
 msgstr "Пряк път"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:95
 msgid "Caps Lock behavior:"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:101
 msgid "as Backspace"
 msgstr "като Backspace клавиш"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:102
 msgid "as Ctrl"
 msgstr "като Ctrl клавиш"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:103
 msgid "as Escape"
 msgstr "като Escape клавиш"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:104
 msgid "as Num Lock"
 msgstr "като Num Lock клавиш"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:105
 msgid "as ⌘"
 msgstr ""
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:106
 #, fuzzy
 msgid "Swap with Ctrl"
 msgstr "Разменен с Ctrl клавиша"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:107
 msgid "Swap with Escape"
 msgstr "Разменен с Escape клавиша"
 
-#: src/Views/Layout.vala:128
+#: src/Views/Layout.vala:125
 #, fuzzy
 msgid "Type to test your layout"
 msgstr "Напишете нещо за да проверите подредбата…"
@@ -808,11 +810,11 @@ msgstr ""
 msgid "Add Layout"
 msgstr "Добави подредба"
 
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Премести нагоре"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "Премести надолу"
 
@@ -827,6 +829,9 @@ msgstr "Команда"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Пряк път"
+
+#~ msgid "Play"
+#~ msgstr "Възпроизвеждане"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Пусни в Режим  Високо-противоцветност"

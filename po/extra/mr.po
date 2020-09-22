@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:44+0000\n"
+"POT-Creation-Date: 2020-09-03 21:55+0000\n"
 "PO-Revision-Date: 2019-11-28 16:25+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -30,18 +30,27 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "कीबोर्ड वर्तन, मांडणी आणि शॉर्टकट कॉन्फिगर करा"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Add a view to configure input methods"
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 msgid "Updated translations"
 msgstr "अद्ययावत भाषांतर"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+msgid "Add a view to configure input methods"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "New \"Workspaces\" icon"
 msgstr "नवीन \"कार्यक्षेत्र\" चिन्ह"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 msgid "Exclude Space from single-key shortcuts"
 msgstr "सिंगल -की शॉर्टकटमधून स्पेस वगळा"

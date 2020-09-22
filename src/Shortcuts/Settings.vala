@@ -76,7 +76,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             var gsettings = schemas[schema];
-            unowned VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
+            VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
             string? str = null;
             if (key_type.equal (VariantType.STRING)) {
                 str = gsettings.get_string (key);
@@ -93,7 +93,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             var gsettings = schemas[schema];
-            unowned VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
+            VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
             if (key_type.equal (VariantType.STRING)) {
                 gsettings.set_string (key, sc.to_gsettings ());
             } else if (key_type.equal (VariantType.STRING_ARRAY)) {

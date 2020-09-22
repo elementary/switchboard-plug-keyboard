@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -17,27 +17,30 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.LayoutPage.XkbModifier {
-    public string name;
-    private string active_command;
-    private string gsettings_schema;
-    private string gsettings_key;
-    private GLib.Settings settings;
+class Pantheon.Keyboard.LayoutPage.XkbModifier : Object {
     public signal void active_command_updated ();
-    private string default_command;
 
-    public string [] xkb_option_commands;
+    public string gsettings_key { get; construct; }
+    public string gsettings_schema { get; construct; }
+    public string name { get; construct; }
+
     public string [] option_descriptions;
+    public string [] xkb_option_commands;
 
-    public XkbModifier (string name = "",
-                         string schem = "org.gnome.desktop.input-sources",
-                         string key = "xkb-options") {
-        this.name = name;
-        this.gsettings_schema = schem;
-        this.gsettings_key = key;
-        this.settings = new Settings (schem);
-        this.default_command = "";
+    private GLib.Settings settings;
+    private string active_command;
+    private string default_command = "";
 
+    public XkbModifier (string name = "", string schem = "org.gnome.desktop.input-sources", string key = "xkb-options") {
+        Object (
+            name: name,
+            gsettings_schema: schem,
+            gsettings_key: key
+        );
+    }
+
+    construct {
+        settings = new GLib.Settings (gsettings_schema);
         settings.changed[gsettings_key].connect (update_from_gsettings);
     }
 
@@ -47,15 +50,6 @@ class Pantheon.Keyboard.LayoutPage.XkbModifier {
         } else {
             return active_command;
         }
-    }
-
-    public void set_active_command ( string val ) {
-            if ( val == active_command ) {
-                return;
-            }
-            if ( val in xkb_option_commands ) {
-                active_command = val;
-            }
     }
 
     public void update_from_gsettings () {
@@ -88,7 +82,9 @@ class Pantheon.Keyboard.LayoutPage.XkbModifier {
         }
 
         string old_opt = get_active_command ();
-        set_active_command (val);
+        if (val != active_command && val in xkb_option_commands) {
+            active_command = val;
+        }
 
         string [] new_xkb_options = {};
         string [] old_xkb_options = settings.get_strv (gsettings_key);
