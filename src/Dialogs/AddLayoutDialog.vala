@@ -66,8 +66,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
 
         var back_button = new Gtk.Button.with_label (_(INPUT_LANGUAGE)) {
             halign = Gtk.Align.START,
-            margin = 6,
-            no_show_all = true
+            margin = 6
         };
 
         back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
@@ -90,48 +89,53 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         layout_scrolled.expand = true;
         layout_scrolled.add (layout_list_box);
 
-        var keyboard_map_button = new Gtk.ToggleButton () {
-            image = new Gtk.Image.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+        var keyboard_map_button = new Gtk.Button.with_label (_("Preview Layout")) {
             halign = Gtk.Align.END,
-            tooltip_text = (_("Show keyboard layout")),
-            no_show_all = true,
             margin = 6
         };
+
+        var keyboard_map_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.CROSSFADE
+        };
+        keyboard_map_revealer.add (keyboard_map_button);
 
         var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             hexpand = true
         };
-
         header_box.pack_start (back_button);
         header_box.set_center_widget (layout_list_title);
-        header_box.pack_end (keyboard_map_button);
+        header_box.pack_end (keyboard_map_revealer);
 
-        var layout_grid = new Gtk.Grid ();
-        layout_grid.orientation = Gtk.Orientation.VERTICAL;
-        //layout_grid.add (header_box);
-        layout_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-        layout_grid.add (layout_scrolled);
+        var header_grid = new Gtk.Grid ();
+        header_grid.attach (header_box, 0, 0);
+        header_grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1);
+
+        var header_revealer = new Gtk.Revealer () {
+            transition_type = Gtk.RevealerTransitionType.NONE
+        };
+        header_revealer.add (header_grid);
 
         var gkbd_drawing = new KeyBoardDrawing ();
 
-        var stack = new Gtk.Stack ();
-        stack.expand = true;
-        stack.margin_top = 3;
-        stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
+        var stack = new Gtk.Stack () {
+            expand = true,
+            margin_top = 3,
+            transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
+        };
         stack.add_named (input_language_grid, LANGUAGE);
-        stack.add_named (layout_grid, LAYOUT);
+        stack.add_named (layout_scrolled, LAYOUT);
         stack.add_named (gkbd_drawing, DRAWING);
 
         var frame_grid = new Gtk.Grid () {
             orientation = Gtk.Orientation.VERTICAL
         };
-
-        frame_grid.add (header_box);
+        frame_grid.add (header_revealer);
         frame_grid.add (stack);
 
-        var frame = new Gtk.Frame (null);
-        frame.margin = 10;
-        frame.margin_top = 0;
+        var frame = new Gtk.Frame (null) {
+            margin = 10,
+            margin_top = 0
+        };
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         frame.add (frame_grid);
 
@@ -139,7 +143,6 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
 
         var button_add = add_button (_("Add Layout"), Gtk.ResponseType.ACCEPT);
         button_add.sensitive = false;
-        button_add.margin_end = 5;
         button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         deletable = false;
@@ -152,13 +155,13 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         stack.notify["visible-child-name"].connect (() => {
             switch (stack.visible_child_name) {
                 case LANGUAGE:
-                    header_box.hide ();
+                    header_revealer.reveal_child = false;
                     break;
+
                 case LAYOUT:
-                    header_box.show ();
-                    back_button.show ();
+                    header_revealer.reveal_child = true;
                     layout_list_title.show ();
-                    keyboard_map_button.show ();
+                    keyboard_map_revealer.reveal_child = true;
 
                     back_button.label = _(INPUT_LANGUAGE);
                     layout_list_title.label = "<b>%s</b>".printf (get_selected_lang ().name);
@@ -170,7 +173,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
                     layout_list_title.label = "<b>%s</b> - %s".printf (
                         get_selected_lang ().name, get_selected_layout ().name
                     );
-                    keyboard_map_button.hide ();
+                    keyboard_map_revealer.reveal_child = false;
 
                 default:
                     assert_not_reached ();
@@ -196,10 +199,10 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         });
 
         back_button.clicked.connect (() => {
-            if (stack.visible_child == layout_grid) {
+            if (stack.visible_child == layout_scrolled) {
                 stack.visible_child = input_language_grid;
             } else if (stack.visible_child == gkbd_drawing) {
-                stack.visible_child = layout_grid;
+                stack.visible_child = layout_scrolled;
             }
             layout_list_box.unselect_all ();
         });
@@ -213,12 +216,12 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
                 layout_list_box.get_row_at_index (0).grab_focus ();
             }
 
-            stack.visible_child = layout_grid;
+            stack.visible_child = layout_scrolled;
         });
 
         keyboard_map_button.clicked.connect (() => {
             if (stack.visible_child == gkbd_drawing) {
-                stack.visible_child = layout_grid;
+                stack.visible_child = layout_scrolled;
             } else {
                 gkbd_drawing.layout_id = "%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id);
                 gkbd_drawing.show_all ();
