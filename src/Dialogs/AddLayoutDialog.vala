@@ -73,7 +73,9 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
             use_markup = true
         };
 
-        layout_list_box = new Gtk.ListBox ();
+        layout_list_box = new Gtk.ListBox () {
+            margin_top = 3
+        };
 
         layout_list_box.bind_model (layout_list, (item) => {
             return new LayoutRow (((ListStoreItem)item).name);
@@ -113,8 +115,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
 
         var deck = new Hdy.Deck () {
             can_swipe_back = true,
-            expand = true,
-            margin_top = 3
+            expand = true
         };
         deck.add (input_language_grid);
         deck.add (layout_scrolled);
