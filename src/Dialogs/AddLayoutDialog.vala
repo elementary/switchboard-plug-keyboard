@@ -70,7 +70,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
 
         layout_list_box = new Gtk.ListBox ();
         layout_list_box.bind_model (layout_list, (item) => {
-            return new LayoutRow ((item as ListStoreItem).name);
+            return new LayoutRow (((ListStoreItem)item).name);
         });
 
         var layout_scrolled = new Gtk.ScrolledWindow (null, null);
