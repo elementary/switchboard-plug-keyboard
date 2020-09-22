@@ -18,6 +18,12 @@
 */
 
 public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
+    private const string LANGUAGE = "Language";
+    private const string LAYOUT = "Layout";
+    private const string DRAWING = "Drawing";
+    private const string INPUT_LANGUAGE = N_("Input Language");
+    private const string LAYOUT_LIST = N_("Layout List");
+
     public signal void layout_added (string language, string layout);
     private Gtk.ListBox input_language_list_box;
     private Gtk.ListBox layout_list_box;
@@ -58,17 +64,23 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         input_language_grid.add (search_entry);
         input_language_grid.add (input_language_scrolled);
 
-        var back_button = new Gtk.Button.with_label (_("Input Language"));
-        back_button.halign = Gtk.Align.START;
-        back_button.margin = 6;
+        var back_button = new Gtk.Button.with_label (_(INPUT_LANGUAGE)) {
+            halign = Gtk.Align.START,
+            margin = 6,
+            no_show_all = true
+        };
+
         back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
-        var layout_list_title = new Gtk.Label (null);
-        layout_list_title.ellipsize = Pango.EllipsizeMode.END;
-        layout_list_title.max_width_chars = 20;
-        layout_list_title.use_markup = true;
+        var layout_list_title = new Gtk.Label (null) {
+            ellipsize = Pango.EllipsizeMode.END,
+            max_width_chars = 20,
+            use_markup = true,
+            no_show_all = true
+        };
 
         layout_list_box = new Gtk.ListBox ();
+
         layout_list_box.bind_model (layout_list, (item) => {
             return new LayoutRow (((ListStoreItem)item).name);
         });
@@ -78,13 +90,25 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         layout_scrolled.expand = true;
         layout_scrolled.add (layout_list_box);
 
-        var layout_header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        layout_header_box.add (back_button);
-        layout_header_box.set_center_widget (layout_list_title);
+        var keyboard_map_button = new Gtk.ToggleButton () {
+            image = new Gtk.Image.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            halign = Gtk.Align.END,
+            tooltip_text = (_("Show keyboard layout")),
+            no_show_all = true,
+            margin = 6
+        };
+
+        var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            hexpand = true
+        };
+
+        header_box.pack_start (back_button);
+        header_box.set_center_widget (layout_list_title);
+        header_box.pack_end (keyboard_map_button);
 
         var layout_grid = new Gtk.Grid ();
         layout_grid.orientation = Gtk.Orientation.VERTICAL;
-        layout_grid.add (layout_header_box);
+        //layout_grid.add (header_box);
         layout_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         layout_grid.add (layout_scrolled);
 
@@ -94,23 +118,22 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         stack.expand = true;
         stack.margin_top = 3;
         stack.transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT;
-        stack.add (input_language_grid);
-        stack.add (layout_grid);
-        stack.add (gkbd_drawing);
+        stack.add_named (input_language_grid, LANGUAGE);
+        stack.add_named (layout_grid, LAYOUT);
+        stack.add_named (gkbd_drawing, DRAWING);
+
+        var frame_grid = new Gtk.Grid () {
+            orientation = Gtk.Orientation.VERTICAL
+        };
+
+        frame_grid.add (header_box);
+        frame_grid.add (stack);
 
         var frame = new Gtk.Frame (null);
         frame.margin = 10;
         frame.margin_top = 0;
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        frame.add (stack);
-
-        var keyboard_map_button = new Gtk.ToggleButton ();
-        keyboard_map_button.image = new Gtk.Image.from_icon_name ("input-keyboard-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-        keyboard_map_button.halign = Gtk.Align.START;
-        keyboard_map_button.tooltip_text = (_("Show keyboard layout"));
-        keyboard_map_button.sensitive = false;
-
-        add_action_widget (keyboard_map_button, Gtk.ResponseType.HELP);
+        frame.add (frame_grid);
 
         add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
@@ -125,6 +148,34 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         get_action_area ().margin = 5;
 
         search_entry.grab_focus ();
+
+        stack.notify["visible-child-name"].connect (() => {
+            switch (stack.visible_child_name) {
+                case LANGUAGE:
+                    header_box.hide ();
+                    break;
+                case LAYOUT:
+                    header_box.show ();
+                    back_button.show ();
+                    layout_list_title.show ();
+                    keyboard_map_button.show ();
+
+                    back_button.label = _(INPUT_LANGUAGE);
+                    layout_list_title.label = "<b>%s</b>".printf (get_selected_lang ().name);
+                    break;
+
+                case DRAWING:
+                    /*Do not need to show header - already showing */
+                    back_button.label = _(LAYOUT_LIST);
+                    layout_list_title.label = "<b>%s</b> - %s".printf (
+                        get_selected_lang ().name, get_selected_layout ().name
+                    );
+                    keyboard_map_button.hide ();
+
+                default:
+                    assert_not_reached ();
+            }
+        });
 
         input_language_list_box.set_filter_func ((list_box_row) => {
             var item = language_list.get_item (list_box_row.get_index ()) as ListStoreItem;
@@ -145,15 +196,17 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         });
 
         back_button.clicked.connect (() => {
-            stack.visible_child = input_language_grid;
+            if (stack.visible_child == layout_grid) {
+                stack.visible_child = input_language_grid;
+            } else if (stack.visible_child == gkbd_drawing) {
+                stack.visible_child = layout_grid;
+            }
             layout_list_box.unselect_all ();
         });
 
         input_language_list_box.row_activated.connect (() => {
             var selected_lang = get_selected_lang ();
             update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
-
-            layout_list_title.label = "<b>%s</b>".printf (selected_lang.name);
             layout_list_box.show_all ();
             layout_list_box.select_row (layout_list_box.get_row_at_index (0));
             if (layout_list_box.get_row_at_index (0) != null) {
