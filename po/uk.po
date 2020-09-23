@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-03 21:55+0000\n"
-"PO-Revision-Date: 2020-09-20 14:33+0000\n"
+"PO-Revision-Date: 2020-09-24 16:44+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -27,7 +27,7 @@ msgstr "Клавіатура"
 
 #: src/Plug.vala:36
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Налаштування поведінки клавіатури, макетів та ярликів"
+msgstr "Налаштувати поведінку клавіатури, розкладки та комбінації клавіш"
 
 #: src/Plug.vala:49 src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99
 #: src/Plug.vala:100 src/Plug.vala:101
@@ -150,7 +150,7 @@ msgstr ""
 #: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
 #: src/Widgets/Layout/AddLayoutPopover.vala:215
 msgid "Default"
-msgstr "Типові"
+msgstr "Типовий"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
