@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-03 21:55+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2018-06-15 00:11+0000\n"
 "Last-Translator: Majer Tamás <mtamas@disroot.org>\n"
 "Language-Team: Hungarian <https://weblate.elementary.io/projects/switchboard/"
@@ -87,6 +87,44 @@ msgstr "Billentyűismétlés"
 msgid "Cursor Blinking"
 msgstr "Kurzorvillogás"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Beviteli nyelv"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Kiosztás"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+#, fuzzy
+msgid "Search input language"
+msgstr "Beviteli nyelv"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "Kiosztás"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "Mégsem"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "Kiosztás hozzáadása"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "Alapértelmezett"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -98,12 +136,6 @@ msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr ""
 "Ha újra hozzárendeli a billentyűparancsot ehhez: %s, akkor %s ki lesz "
 "kapcsolva."
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "Mégsem"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -148,13 +180,6 @@ msgstr ""
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr ""
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "Alapértelmezett"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -782,23 +807,6 @@ msgstr ""
 msgid "Add Engine"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "Beviteli nyelv"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "Beviteli nyelv"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "Billentyűzetkiosztás mutatása"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Kiosztás hozzáadása"
-
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Mozgatás fel"
@@ -818,6 +826,9 @@ msgstr "Parancs"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Billentyűparancs"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "Billentyűzetkiosztás mutatása"
 
 #~ msgid "Play"
 #~ msgstr "Lejátszás"

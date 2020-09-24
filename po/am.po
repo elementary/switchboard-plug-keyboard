@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-03 21:55+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2014-09-27 17:23+0000\n"
 "Last-Translator: samson <Unknown>\n"
 "Language-Team: Amharic <am@li.org>\n"
@@ -82,6 +82,45 @@ msgstr ""
 msgid "Cursor Blinking"
 msgstr ""
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+#, fuzzy
+msgid "Input Language"
+msgstr "ቋንቋ:"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "አቀማመጥ"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+#, fuzzy
+msgid "Search input language"
+msgstr "ቋንቋ:"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "አቀማመጥ"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "መሰረዣ"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "እቅድ መጨመሪያ"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "ነባር"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -91,12 +130,6 @@ msgstr ""
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr ""
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "መሰረዣ"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -140,13 +173,6 @@ msgstr ""
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr ""
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "ነባር"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -776,24 +802,6 @@ msgstr ""
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
 msgstr ""
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "ቋንቋ:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
-msgid "Input Language"
-msgstr "ቋንቋ:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr ""
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "እቅድ መጨመሪያ"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-03 21:55+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2020-09-24 16:44+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -82,6 +82,43 @@ msgstr "連続入力"
 msgid "Cursor Blinking"
 msgstr "カーソルの点滅"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "入力言語"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "レイアウト"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+msgid "Search input language"
+msgstr "入力言語を検索"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "レイアウト"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "キャンセル"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "レイアウトを追加"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "デフォルト"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -91,12 +128,6 @@ msgstr "%s はすでに %s で使用されています"
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "%s にショートカットを再割り当てすると、%s は無効になります。"
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "キャンセル"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -139,13 +170,6 @@ msgstr "韓国語"
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr "中国語"
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "デフォルト"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -551,7 +575,9 @@ msgstr "IBus Daemon が起動していません"
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
-msgstr "インプットメソッドエンジンを有効化したり設定したりするには、IBus Daemon を起動する必要があります。"
+msgstr ""
+"インプットメソッドエンジンを有効化したり設定したりするには、IBus Daemon を起"
+"動する必要があります。"
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
@@ -755,22 +781,6 @@ msgstr "一覧にないエンジンをインストール…"
 msgid "Add Engine"
 msgstr "エンジンを追加"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "入力言語を検索"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "入力言語"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "キーボードレイアウトを表示します"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "レイアウトを追加"
-
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "上へ移動"
@@ -790,6 +800,9 @@ msgstr "コマンド"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "ショートカット"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "キーボードレイアウトを表示します"
 
 #~ msgid "Play"
 #~ msgstr "再生"

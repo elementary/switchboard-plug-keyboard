@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-03 21:55+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2020-08-14 18:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -84,6 +84,43 @@ msgstr "Touches de répétition"
 msgid "Cursor Blinking"
 msgstr "Clignotement du curseur"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Langues d'entrée"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Disposition"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+msgid "Search input language"
+msgstr "Rechercher une langue d'entrée"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "Disposition"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "Annuler"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "Ajouter une disposition"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "Défaut"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -93,12 +130,6 @@ msgstr "%s est déjà utilisé pour %s"
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "Si le raccourci est réassigné en %s, %s sera désactivé."
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "Annuler"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -141,13 +172,6 @@ msgstr "Coréen"
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr "Chinois"
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "Défaut"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -759,22 +783,6 @@ msgstr "Installer un moteur non présent dans la liste…"
 msgid "Add Engine"
 msgstr "Ajouter le moteur"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "Rechercher une langue d'entrée"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "Langues d'entrée"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "Afficher l'agencement du clavier"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Ajouter une disposition"
-
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Déplacer vers le haut"
@@ -794,6 +802,9 @@ msgstr "Commande"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Raccourci"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "Afficher l'agencement du clavier"
 
 #~ msgid "Play"
 #~ msgstr "Lire"
