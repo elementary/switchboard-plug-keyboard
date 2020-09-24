@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-03 21:55+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2020-09-08 16:14+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -30,31 +30,36 @@ msgstr ""
 "raccourcis"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "Add Layout popover is now a dialog"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+msgid "Updated translations"
+msgstr "Mise à jour des traductions"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
 "La description du raccourci pour « Lire » est désormais « Lire/Mettre en "
 "pause »"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Correction d'un problème où les raccourcis s'affichaient comme désactivés de "
 "façon incorrecte"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
-msgid "Updated translations"
-msgstr "Mise à jour des traductions"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "Add a view to configure input methods"
 msgstr "Ajout d'une vue pour configurer les méthodes de saisie"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 msgid "New \"Workspaces\" icon"
 msgstr "Nouvelle icône « Espaces de travail »"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Exclusion de la touche Espace des raccourcis à une touche"
