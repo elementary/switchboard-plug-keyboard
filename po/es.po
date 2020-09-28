@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-08-14 18:13+0000\n"
+"PO-Revision-Date: 2020-09-29 13:14+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
@@ -88,20 +88,16 @@ msgid "Input Language"
 msgstr "Idioma de entrada"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Disposición"
+msgstr "Lista de disposiciones"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
 msgstr "Buscar un idioma de entrada"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Disposición"
+msgstr "Previsualizar disposición"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
