@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2019-10-17 17:23+0000\n"
-"Last-Translator: Daniel Foré <daniel@elementary.io>\n"
+"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bengali <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/bn/>\n"
 "Language: bn\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.7.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Plug.vala:35
 msgid "Keyboard"
@@ -398,7 +398,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
-msgstr ""
+msgstr "গান সমূহ"
 
 #: src/Shortcuts/List.vala:112
 msgid "Terminal"
