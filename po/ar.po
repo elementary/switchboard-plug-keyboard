@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-05-15 12:45+0000\n"
-"Last-Translator: nasserbinlaboun <nasser1990com@gmail.com>\n"
+"PO-Revision-Date: 2020-10-04 21:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Arabic <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ar/>\n"
 "Language: ar\n"
@@ -118,7 +118,7 @@ msgstr ""
 #: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
 #: src/Views/Layout.vala:260
 msgid "Default"
-msgstr ""
+msgstr "افتراضي"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
