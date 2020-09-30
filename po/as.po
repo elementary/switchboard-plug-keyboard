@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2018-03-05 23:33+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2020-10-04 21:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Assamese <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-keyboard/as/>\n"
 "Language: as\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Plug.vala:35
 msgid "Keyboard"
@@ -98,7 +101,7 @@ msgstr ""
 #: src/Dialogs/ProgressDialog.vala:59
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:54
 msgid "Cancel"
-msgstr ""
+msgstr "বাতিল কৰক"
 
 #: src/Dialogs/AddLayoutDialog.vala:141
 msgid "Add Layout"
@@ -585,7 +588,7 @@ msgstr ""
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
 #: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
-msgstr ""
+msgstr "আঁতৰাওক"
 
 #: src/Views/InputMethod.vala:98
 msgid "Switch engines:"
