@@ -8,15 +8,17 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2013-01-27 05:58+0000\n"
-"Last-Translator: Trung Ngô <ndtrung4419@gmail.com>\n"
-"Language-Team: Vietnamese <vi@li.org>\n"
+"PO-Revision-Date: 2020-10-04 21:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Vietnamese <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-keyboard/vi/>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
-"X-Generator: Launchpad (build 18326)\n"
 
 #: src/Plug.vala:35
 msgid "Keyboard"
@@ -591,7 +593,7 @@ msgstr ""
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
 #: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
-msgstr ""
+msgstr "Gỡ bỏ"
 
 #: src/Views/InputMethod.vala:98
 msgid "Switch engines:"
