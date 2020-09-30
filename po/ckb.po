@@ -2,8 +2,16 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: Sorani <https://l10n.elementary.io/projects/switchboard/"
+"switchboard-plug-keyboard/ckb/>\n"
+"Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: src/Plug.vala:35
 msgid "Keyboard"
@@ -87,7 +95,7 @@ msgstr ""
 #: src/Dialogs/ProgressDialog.vala:59
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:54
 msgid "Cancel"
-msgstr ""
+msgstr "هەڵوەشاندنەوە"
 
 #: src/Dialogs/AddLayoutDialog.vala:141
 msgid "Add Layout"
@@ -242,7 +250,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr ""
+msgstr "دیتنی چەندین شاشە"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
