@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -35,10 +35,8 @@ msgstr "布局"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "输入法设置…"
+msgstr "输入法"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -68,7 +66,7 @@ msgstr "大写锁定键行为"
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "往前切换窗口"
+msgstr "切换引擎"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
@@ -91,20 +89,16 @@ msgid "Input Language"
 msgstr "输入语言"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "布局"
+msgstr "布局列表"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
 msgstr "搜索输入语言"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "布局"
+msgstr "预览布局"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -146,14 +140,12 @@ msgid "Select an engine from the list to install and use."
 msgstr ""
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "输入语言"
+msgstr "语言"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "安装"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -167,15 +159,15 @@ msgstr "正在删除 %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "日语"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "韩语"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "中文"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
