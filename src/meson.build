@@ -15,7 +15,6 @@ plug_files = files(
     'Widgets/Shortcuts/DisplayTree.vala',
     'Widgets/Shortcuts/CustomTree.vala',
     'Widgets/Layout/Display.vala',
-    'Widgets/Layout/AddLayoutPopover.vala',
     'Widgets/InputMethod/LanguagesRow.vala',
     'Widgets/InputMethod/EnginesRow.vala',
     'Widgets/InputMethod/AddEnginesPopover.vala',
@@ -42,12 +41,14 @@ plug_files = files(
     'Dialogs/ProgressDialog.vala',
     'Dialogs/InstallEngineDialog.vala',
     'Dialogs/ConflictDialog.vala',
+    'Dialogs/AddLayoutDialog.vala'
 )
 
 switchboard_dep = dependency('switchboard-2.0')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
-gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('gnomekbdui')
+gnome_keyboard_dep = dependency('libgnomekbd')
+gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
 
 ibus_dep = dependency('ibus-1.0')
 if(ibus_dep.version().version_compare('>=1.5.19'))
@@ -64,8 +65,9 @@ shared_module(
         dependency('gobject-2.0'),
         dependency('granite'),
         dependency('gtk+-3.0'),
+        dependency('libhandy-1', version: '>= 0.90.0'),
         dependency('libxml-2.0'),
-        dependency('libgnomekbd'),
+        gnome_keyboard_dep,
         gnome_keyboard_ui_dep,
         ibus_dep,
         switchboard_dep

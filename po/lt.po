@@ -7,18 +7,18 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2019-05-09 02:33+0000\n"
-"Last-Translator: Moo <hazap@hotmail.com>\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/lt/>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
-"%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
-"X-Generator: Weblate 3.6.1\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || "
+"n%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-14 05:48+0000\n"
 
 #: src/Plug.vala:35
@@ -87,6 +87,43 @@ msgstr "Kartoti klavišus"
 msgid "Cursor Blinking"
 msgstr "Žymeklio mirksėjimas"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Įvesties kalba"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Išdėstymas"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+msgid "Search input language"
+msgstr "Ieškoti įvesties kalbos"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "Išdėstymas"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "Atsisakyti"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "Pridėti išdėstymą"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "Numatytasis"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -98,12 +135,6 @@ msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr ""
 "Jeigu veiksmui %s iš naujo priskirsite susiejimą, tuomet susiejimas %s bus "
 "išjungtas."
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "Atsisakyti"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -130,12 +161,12 @@ msgstr ""
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "Įdiegiama %s kalba"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "Šalinama %s kalba"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
@@ -148,13 +179,6 @@ msgstr ""
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr ""
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "Numatytasis"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -486,7 +510,7 @@ msgstr "Perjungti ekrano skaityklę"
 msgid "System"
 msgstr "Sistema"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 msgid "Applications Menu"
 msgstr "Programų meniu"
 
@@ -508,20 +532,20 @@ msgstr "Tinkinti"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Išjungta"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:60
 msgid "Shift"
 msgstr "Shift (Lyg2)"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:68
 msgid "Ctrl"
 msgstr "Ctrl (Vald)"
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:72
 msgid "Alt"
 msgstr "Alt"
 
@@ -581,12 +605,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Pridėti…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
 msgstr "Šalinti"
 
@@ -617,103 +641,103 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:46
 msgid "Switch layout:"
 msgstr "Perjungti išdėstymą:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:51
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock (Didž)"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:52
 msgid "Alt + Shift"
 msgstr "Alt + Shift (Lyg2)"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:53
 msgid "Alt + Space"
 msgstr "Alt + Tarpas"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
 msgstr "Abu Shift (Lyg2) klavišai vienu metu"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:70 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "Caps Lock (Didž)"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:56
 msgid "Ctrl + Alt"
 msgstr "Ctrl (Vald) + Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:57
 msgid "Ctrl + Shift"
 msgstr "Ctrl (Vald) + Shift (Lyg2)"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:58
 msgid "Shift + Caps Lock"
 msgstr "Shift (Lyg2) + Caps Lock (Didž)"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:65
 msgid "Compose key:"
 msgstr "Komponavimo klavišas:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:71
 msgid "Menu"
 msgstr "Meniu"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "Dešinysis Alt"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "Dešinysis Ctrl (Vald)"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 msgid "Right ⌘"
 msgstr "Dešinysis ⌘"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:81
 msgid "⌘ key behavior:"
 msgstr "⌘ klavišo elgsena:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:90
 msgid "Shortcut Overlay"
 msgstr "Susiejimų perdanga"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:95
 msgid "Caps Lock behavior:"
 msgstr "Caps Lock (Didž) elgsena:"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:101
 msgid "as Backspace"
 msgstr "kaip Backspace (Naikinimo)"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:102
 msgid "as Ctrl"
 msgstr "kaip Ctrl (Vald)"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:103
 msgid "as Escape"
 msgstr "kaip Escape (Atšaukimo)"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:104
 msgid "as Num Lock"
 msgstr "kaip Num Lock (Skaitmenų)"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:105
 msgid "as ⌘"
 msgstr "kaip ⌘"
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:106
 msgid "Swap with Ctrl"
 msgstr "Apkeisti su Ctrl (Vald)"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:107
 msgid "Swap with Escape"
 msgstr "Apkeisti su Escape (Atšaukimo)"
 
-#: src/Views/Layout.vala:128
+#: src/Views/Layout.vala:125
 msgid "Type to test your layout"
 msgstr "Rašykite, norėdami išbandyti išdėstymą"
 
@@ -780,27 +804,11 @@ msgstr ""
 msgid "Add Engine"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "Ieškoti įvesties kalbos"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "Įvesties kalba"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "Rodyti klaviatūros išdėstymą"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Pridėti išdėstymą"
-
-#: src/Widgets/Layout/Display.vala:68
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Pakelti aukštyn"
 
-#: src/Widgets/Layout/Display.vala:73
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "Nuleisti žemyn"
 
@@ -815,6 +823,9 @@ msgstr "Komanda"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Susiejimas"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "Rodyti klaviatūros išdėstymą"
 
 #~ msgid "Play"
 #~ msgstr "Groti"

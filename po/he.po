@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2020-07-24 13:12+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"PO-Revision-Date: 2020-09-29 13:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
@@ -82,6 +82,39 @@ msgstr "מקשי חזרה"
 msgid "Cursor Blinking"
 msgstr "הבהוב סמן"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "שפת קלט"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+msgid "Layout List"
+msgstr "רשימת פריסות"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+msgid "Search input language"
+msgstr "חיפוש בשפת הקלט"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+msgid "Preview Layout"
+msgstr "תצוגה מקדימה של פריסה"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "ביטול"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "הוספת פריסה"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "בררת מחדל"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -91,12 +124,6 @@ msgstr "%s כבר משמש לטובת %s"
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "הקצאת הקיצור מחדש לטובת %s, תשבית את %s."
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "ביטול"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -139,13 +166,6 @@ msgstr "קוריאנית"
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr "סינית"
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "בררת מחדל"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -412,10 +432,8 @@ msgid "Mute"
 msgstr "השתקה"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "השהיה"
+msgstr "נגינה/השהיה"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -469,7 +487,7 @@ msgstr "הפעלה או סגירה של מקריא מסך"
 msgid "System"
 msgstr "מערכת"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 msgid "Applications Menu"
 msgstr "תפריט יישומים"
 
@@ -491,20 +509,20 @@ msgstr "התאמה אישית"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "מושבתת"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:60
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:68
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:72
 msgid "Alt"
 msgstr "Alt"
 
@@ -564,12 +582,12 @@ msgstr "הפעלת סוכן IBus"
 msgid "Failed to start IBus Daemon"
 msgstr "הפעלת סוכן IBus נכשלה"
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "הוספה…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
 msgstr "הסרה"
 
@@ -598,103 +616,103 @@ msgid "Embed preedit text in application window:"
 msgstr "הטמעת טקסט קדם העריכה בחלון היישום:"
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:46
 msgid "Switch layout:"
 msgstr "החלפת פריסה:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:51
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:52
 msgid "Alt + Shift"
 msgstr "Alt + Shift"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:53
 msgid "Alt + Space"
 msgstr "Alt + רווח"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
 msgstr "שני מקשי ה־Shift יחד"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:70 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:56
 msgid "Ctrl + Alt"
 msgstr "Ctrl + Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:57
 msgid "Ctrl + Shift"
 msgstr "Ctrl + Shift"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:58
 msgid "Shift + Caps Lock"
 msgstr "Shift + Caps Lock"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:65
 msgid "Compose key:"
 msgstr "מקש Compose:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:71
 msgid "Menu"
 msgstr "תפריט"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "Alt ימני"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "Ctrl ימני"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 msgid "Right ⌘"
 msgstr "⌘ ימני"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:81
 msgid "⌘ key behavior:"
 msgstr "התנהגות המקש ⌘:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:90
 msgid "Shortcut Overlay"
 msgstr "סימון קיצור דרך"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:95
 msgid "Caps Lock behavior:"
 msgstr "התנהגות Caps Lock:"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:101
 msgid "as Backspace"
 msgstr "בתור Backspace"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:102
 msgid "as Ctrl"
 msgstr "בתור Ctrl"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:103
 msgid "as Escape"
 msgstr "בתור Escape"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:104
 msgid "as Num Lock"
 msgstr "בתור Num Lock"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:105
 msgid "as ⌘"
 msgstr "בתור ⌘"
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:106
 msgid "Swap with Ctrl"
 msgstr "החלפה עם Ctrl"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:107
 msgid "Swap with Escape"
 msgstr "החלפה עם Escape"
 
-#: src/Views/Layout.vala:128
+#: src/Views/Layout.vala:125
 msgid "Type to test your layout"
 msgstr "יש להקליד כדי לבדוק את הפריסה שלך"
 
@@ -757,27 +775,11 @@ msgstr "התקנת מנגנונים שאינם מופיעים…"
 msgid "Add Engine"
 msgstr "הוספת מנגנון"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "חיפוש בשפת הקלט"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "שפת קלט"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "הצגת פריסת מקלדת"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "הוספת פריסה"
-
-#: src/Widgets/Layout/Display.vala:68
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "העברה למעלה"
 
-#: src/Widgets/Layout/Display.vala:73
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "העברה למטה"
 
@@ -792,6 +794,9 @@ msgstr "פקודה"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "קיצור דרך"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "הצגת פריסת מקלדת"
 
 #~ msgid "Play"
 #~ msgstr "נגינה"

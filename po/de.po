@@ -7,17 +7,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2019-01-02 19:44+0000\n"
-"Last-Translator: Jörg Arnold <j.ar@mailbox.org>\n"
-"Language-Team: German <https://weblate.elementary.io/projects/switchboard/"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
+"Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.0.1\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:59+0000\n"
 
 #: src/Plug.vala:35
@@ -86,6 +86,43 @@ msgstr "Tastenwiederholung"
 msgid "Cursor Blinking"
 msgstr "Mauszeigerblinken"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Eingabesprache"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Tastenbelegung"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+msgid "Search input language"
+msgstr "Eingabesprache suchen"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "Tastenbelegung"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "Tastaturbelegung hinzufügen"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "Standard"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -95,12 +132,6 @@ msgstr "%s wird bereits für %s verwendet"
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "Wenn Sie das Kürzel neu %s zuordnen, wird %s deaktiviert."
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "Abbrechen"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -127,12 +158,12 @@ msgstr ""
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "Installiere %s"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "Entferne %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
@@ -145,13 +176,6 @@ msgstr ""
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr ""
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "Standard"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -484,7 +508,7 @@ msgstr "Bildschirmleser umschalten"
 msgid "System"
 msgstr "System"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 msgid "Applications Menu"
 msgstr "Anwendungsmenü"
 
@@ -506,20 +530,20 @@ msgstr "Benutzerdefiniert"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Deaktiviert"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:60
 msgid "Shift"
 msgstr "Umschalttaste"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:68
 msgid "Ctrl"
 msgstr "Strg-Taste"
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:72
 msgid "Alt"
 msgstr "Alt"
 
@@ -579,12 +603,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Hinzufügen…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
 msgstr "Entfernen"
 
@@ -615,104 +639,104 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:46
 msgid "Switch layout:"
 msgstr "Tastaturbelegung ändern:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:51
 msgid "Alt + Caps Lock"
 msgstr "Alt + Feststelltaste"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:52
 msgid "Alt + Shift"
 msgstr "Alt + Umschalttaste"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:53
 msgid "Alt + Space"
 msgstr "Alt + Leertaste"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
 msgstr "Beide Umschalttasten gleichzeitig"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:70 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "Feststelltaste"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:56
 msgid "Ctrl + Alt"
 msgstr "Strg + Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:57
 msgid "Ctrl + Shift"
 msgstr "Strg + Umschalttaste"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:58
 msgid "Shift + Caps Lock"
 msgstr "Umschalttaste + Feststelltaste"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:65
 msgid "Compose key:"
 msgstr "Compose-Taste:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:71
 msgid "Menu"
 msgstr "Menü"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "Rechte Alt-Taste"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "Rechte Strg-Taste"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 msgid "Right ⌘"
 msgstr "Rechte ⌘-Taste"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:81
 msgid "⌘ key behavior:"
 msgstr "Funktion der ⌘-Taste:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:90
 msgid "Shortcut Overlay"
 msgstr "Tastenkürzel-Übersicht"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:95
 msgid "Caps Lock behavior:"
 msgstr "Funktion der Feststelltaste:"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:101
 msgid "as Backspace"
 msgstr "als Rücktaste"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:102
 msgid "as Ctrl"
 msgstr "als Strg-Taste"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:103
 msgid "as Escape"
 msgstr "als Escape-Taste"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:104
 msgid "as Num Lock"
 msgstr "als Num-Lock-Taste"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:105
 msgid "as ⌘"
 msgstr "als ⌘-Taste"
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:106
 #, fuzzy
 msgid "Swap with Ctrl"
 msgstr "Tausch mit Strg"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:107
 msgid "Swap with Escape"
 msgstr "Tausch mit Esc"
 
-#: src/Views/Layout.vala:128
+#: src/Views/Layout.vala:125
 msgid "Type to test your layout"
 msgstr "Geben Sie hier etwas ein, um Ihre Tastaturbelegung auszuprobieren"
 
@@ -780,27 +804,11 @@ msgstr ""
 msgid "Add Engine"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "Eingabesprache suchen"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "Eingabesprache"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "Tastaturbelegung anzeigen"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Tastaturbelegung hinzufügen"
-
-#: src/Widgets/Layout/Display.vala:68
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Nach oben verschieben"
 
-#: src/Widgets/Layout/Display.vala:73
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "Nach unten verschieben"
 
@@ -815,6 +823,9 @@ msgstr "Befehl"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Tastenkürzel"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "Tastaturbelegung anzeigen"
 
 #~ msgid "Play"
 #~ msgstr "Wiedergabe"

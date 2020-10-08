@@ -1,6 +1,7 @@
 src/Plug.vala
 src/InputMethod/AddEnginesList.vala
 src/InputMethod/Utils.vala
+src/Dialogs/AddLayoutDialog.vala
 src/Dialogs/ConflictDialog.vala
 src/Dialogs/InstallEngineDialog.vala
 src/Dialogs/ProgressDialog.vala
@@ -23,7 +24,6 @@ src/Views/Shortcuts.vala
 src/Widgets/InputMethod/AddEnginesPopover.vala
 src/Widgets/InputMethod/EnginesRow.vala
 src/Widgets/InputMethod/LanguagesRow.vala
-src/Widgets/Layout/AddLayoutPopover.vala
 src/Widgets/Layout/Display.vala
 src/Widgets/Shortcuts/CustomTree.vala
 src/Widgets/Shortcuts/DisplayTree.vala

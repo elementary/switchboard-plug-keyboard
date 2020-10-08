@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 22:07+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
 "PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -84,6 +84,44 @@ msgstr "Repetați cheile"
 msgid "Cursor Blinking"
 msgstr "Cursor Clipește"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Limbă de introducere"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Aspect"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+#, fuzzy
+msgid "Search input language"
+msgstr "Limbă de introducere"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "Aspect"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "Anulare"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "Adăugați aspectul"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "Mod implicit"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
@@ -93,12 +131,6 @@ msgstr "%s 1 este deja folosit pentru %s 2"
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "Dacă reatribuiți comanda rapidă la %s 1, %s 2 vor fi dezactivate."
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "Anulare"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -143,13 +175,6 @@ msgstr ""
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr ""
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "Mod implicit"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -481,7 +506,7 @@ msgstr "Comutați ecranul de redare"
 msgid "System"
 msgstr "Sistem"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 msgid "Applications Menu"
 msgstr "Meniul Aplicații"
 
@@ -503,20 +528,20 @@ msgstr "Personalizat"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:60
 msgid "Shift"
 msgstr "Schimbă"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:68
 msgid "Ctrl"
 msgstr "Ctrl."
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:72
 msgid "Alt"
 msgstr "Alt."
 
@@ -576,12 +601,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Adaugă…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
 msgstr "Șterge"
 
@@ -612,104 +637,104 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:46
 msgid "Switch layout:"
 msgstr "Cambiar desenul:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:51
 msgid "Alt + Caps Lock"
 msgstr "Alt+Caps Lock"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:52
 msgid "Alt + Shift"
 msgstr "Alt+Shift"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:53
 msgid "Alt + Space"
 msgstr "Alt + Spațiu"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
 msgstr "Ambele taste Shift împreună"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:70 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "CapsLock"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:56
 msgid "Ctrl + Alt"
 msgstr "Ctrl+Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:57
 msgid "Ctrl + Shift"
 msgstr "Ctrl+Shift"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:58
 msgid "Shift + Caps Lock"
 msgstr "Shift + CapsLock"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:65
 msgid "Compose key:"
 msgstr "Tasta de compunere:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:71
 msgid "Menu"
 msgstr "Meniu"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "RightAlt"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "RightCtrl"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 msgid "Right ⌘"
 msgstr "Right⌘"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:81
 msgid "⌘ key behavior:"
 msgstr "⌘ key-behavior:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:90
 msgid "Shortcut Overlay"
 msgstr "Suprapunere cu acces direct"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:95
 msgid "Caps Lock behavior:"
 msgstr "Comportament Caps Lock :"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:101
 msgid "as Backspace"
 msgstr "Ca returnare"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:102
 msgid "as Ctrl"
 msgstr "ca Ctrl"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:103
 msgid "as Escape"
 msgstr "ca Spațiu"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:104
 msgid "as Num Lock"
 msgstr "ca Num Lock"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:105
 msgid "as ⌘"
 msgstr "ca ⌘"
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:106
 #, fuzzy
 msgid "Swap with Ctrl"
 msgstr "Schimbați cu Control"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:107
 msgid "Swap with Escape"
 msgstr "Schimbați cu Esc"
 
-#: src/Views/Layout.vala:128
+#: src/Views/Layout.vala:125
 msgid "Type to test your layout"
 msgstr "Tastați pentru a testa aspectul"
 
@@ -777,28 +802,11 @@ msgstr ""
 msgid "Add Engine"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "Limbă de introducere"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "Limbă de introducere"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "Afișați aspectul tastaturii"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Adăugați aspectul"
-
-#: src/Widgets/Layout/Display.vala:68
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Mutați sus"
 
-#: src/Widgets/Layout/Display.vala:73
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "Mută în jos"
 
@@ -813,6 +821,9 @@ msgstr "Comandă"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Scurtătură"
+
+#~ msgid "Show keyboard layout"
+#~ msgstr "Afișați aspectul tastaturii"
 
 #~ msgid "Play"
 #~ msgstr "Reproduce"

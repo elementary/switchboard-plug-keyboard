@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-21 16:44+0000\n"
-"PO-Revision-Date: 2020-08-09 22:13+0000\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"PO-Revision-Date: 2020-09-29 13:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/he/>\n"
@@ -28,18 +28,32 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "הגדרת התנהגות המקלדת, הפריסות ומקשי הקיצור"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Add a view to configure input methods"
-msgstr "נוספה תצוגה להגדרת שיטות הקלט"
+msgid "Add Layout popover is now a dialog"
+msgstr "החלונית הקופצת להוספת פריסה היא מעכשיו חלונית"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
+msgstr "תיאור הקיצור ל„נגינה” הוא מעתה „נגינה/השהיה”"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr "תיקון תקלה בה חלק מהקיצורים מופיעים בטעות כמושבתים"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+msgid "Add a view to configure input methods"
+msgstr "נוספה תצוגה להגדרת שיטות הקלט"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 msgid "New \"Workspaces\" icon"
 msgstr "סמל „מרחבי עבודה” חדש"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Exclude Space from single-key shortcuts"
 msgstr "הרווח הוחרג מקיצורי מקש בודד"

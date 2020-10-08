@@ -11,6 +11,7 @@ You'll need the following dependencies:
 * libgnomekbd-dev
 * libgranite-dev
 * libgtk-3-dev
+* libhandy-1-dev >= 0.90.0
 * libibus-1.0-dev
 * libxklavier-dev
 * libxml2-dev

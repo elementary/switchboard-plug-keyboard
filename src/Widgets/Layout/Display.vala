@@ -85,16 +85,15 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
 
         add (grid);
 
-        var pop = new AddLayoutPopover ();
-        pop.set_relative_to (add_button);
-
-        pop.layout_added.connect ((layout, variant) => {
-            settings.layouts.add_layout (new Layout.XKB (layout, variant));
-            rebuild_list ();
-        });
-
         add_button.clicked.connect (() => {
-            pop.show_all ();
+            var dialog = new AddLayoutDialog ();
+            dialog.transient_for = (Gtk.Window) get_toplevel ();
+            dialog.show_all ();
+
+            dialog.layout_added.connect ((layout, variant) => {
+                settings.layouts.add_layout (new Layout.XKB (layout, variant));
+                rebuild_list ();
+            });
         });
 
         remove_button.clicked.connect (() => {

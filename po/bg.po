@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-08-12 22:07+0000\n"
-"PO-Revision-Date: 2017-04-14 16:49+0000\n"
-"Last-Translator: Boris Bongalov <b.bongalov@gmail.com>\n"
+"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"PO-Revision-Date: 2020-10-04 21:14+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/bg/>\n"
 "Language: bg\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 2.13-dev\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Plug.vala:35
@@ -85,6 +85,45 @@ msgstr "Повтарящи се клавиши"
 msgid "Cursor Blinking"
 msgstr "Мигащ курсор"
 
+#: src/Dialogs/AddLayoutDialog.vala:21
+#, fuzzy
+msgid "Input Language"
+msgstr "Език:"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Подредба"
+
+#: src/Dialogs/AddLayoutDialog.vala:37
+#, fuzzy
+msgid "Search input language"
+msgstr "Език:"
+
+#: src/Dialogs/AddLayoutDialog.vala:90
+#, fuzzy
+#| msgid "Layout"
+msgid "Preview Layout"
+msgstr "Подредба"
+
+#: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
+msgid "Cancel"
+msgstr "Отказ"
+
+#: src/Dialogs/AddLayoutDialog.vala:141
+msgid "Add Layout"
+msgstr "Добави подредба"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:238 src/Dialogs/AddLayoutDialog.vala:242
+#: src/Layout/Handler.vala:83 src/Views/Layout.vala:99
+#: src/Views/Layout.vala:260
+msgid "Default"
+msgstr "Нормално"
+
 #: src/Dialogs/ConflictDialog.vala:26
 #, fuzzy, c-format
 msgid "%s is already used for %s"
@@ -94,12 +133,6 @@ msgstr "%s вече се използва за %s!"
 #, fuzzy, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "Ако присвоите този пряк път на %s, прекият път за %s ще бъде премахнат"
-
-#: src/Dialogs/ConflictDialog.vala:36 src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "Отказ"
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -143,13 +176,6 @@ msgstr ""
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
 msgstr ""
-
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:89 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:260 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "Нормално"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -249,7 +275,7 @@ msgstr "Работни места"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr ""
+msgstr "Многозадачен изглед"
 
 #: src/Shortcuts/List.vala:69
 #, fuzzy
@@ -404,7 +430,7 @@ msgstr "Домашна папка"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
-msgstr ""
+msgstr "Музика"
 
 #: src/Shortcuts/List.vala:112
 msgid "Terminal"
@@ -488,15 +514,14 @@ msgstr "Пусни Екраночетеца"
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 #, fuzzy
 msgid "Applications Menu"
 msgstr "Приложения"
 
 #: src/Shortcuts/List.vala:142
-#, fuzzy
 msgid "Lock"
-msgstr "Caps Lock"
+msgstr "Заключване"
 
 #: src/Shortcuts/List.vala:143
 msgid "Log Out"
@@ -512,21 +537,21 @@ msgstr "Потребителски"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Изключено"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:60
 #, fuzzy
 msgid "Shift"
 msgstr "Alt + Shift"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:68
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:72
 msgid "Alt"
 msgstr ""
 
@@ -587,12 +612,12 @@ msgstr ""
 msgid "Failed to start IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:58
+#: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Добавяне…"
 
 #: src/Views/InputMethod.vala:83 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:62
 msgid "Remove"
 msgstr "Премахване"
 
@@ -623,107 +648,107 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:46
 msgid "Switch layout:"
 msgstr "Смяна на клавиатурната подредба:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:51
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:52
 msgid "Alt + Shift"
 msgstr "Alt + Shift"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:53
 msgid "Alt + Space"
 msgstr "Alt + Space"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
 msgstr "Двата Shift-а заедно"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:261
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:70 src/Views/Layout.vala:261
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:56
 msgid "Ctrl + Alt"
 msgstr "Ctrl + Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:57
 msgid "Ctrl + Shift"
 msgstr "Ctrl + Shift"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:58
 msgid "Shift + Caps Lock"
 msgstr "Shift + Caps Lock"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:65
 msgid "Compose key:"
 msgstr "Клавиш «Compose»:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:71
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:72 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right Alt"
 msgstr "Десен Alt"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:264 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:73 src/Views/Layout.vala:264 src/Views/Layout.vala:276
 msgid "Right Ctrl"
 msgstr "Десен Ctrl"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:265 src/Views/Layout.vala:277
+#: src/Views/Layout.vala:74 src/Views/Layout.vala:265 src/Views/Layout.vala:277
 #, fuzzy
 msgid "Right ⌘"
 msgstr "Десен Alt"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:81
 #, fuzzy
 msgid "⌘ key behavior:"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:90
 #, fuzzy
 msgid "Shortcut Overlay"
 msgstr "Пряк път"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:95
 msgid "Caps Lock behavior:"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:101
 msgid "as Backspace"
 msgstr "като Backspace клавиш"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:102
 msgid "as Ctrl"
 msgstr "като Ctrl клавиш"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:103
 msgid "as Escape"
 msgstr "като Escape клавиш"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:104
 msgid "as Num Lock"
 msgstr "като Num Lock клавиш"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:105
 msgid "as ⌘"
 msgstr ""
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:106
 #, fuzzy
 msgid "Swap with Ctrl"
 msgstr "Разменен с Ctrl клавиша"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:107
 msgid "Swap with Escape"
 msgstr "Разменен с Escape клавиша"
 
-#: src/Views/Layout.vala:128
+#: src/Views/Layout.vala:125
 #, fuzzy
 msgid "Type to test your layout"
 msgstr "Напишете нещо за да проверите подредбата…"
@@ -792,29 +817,11 @@ msgstr ""
 msgid "Add Engine"
 msgstr ""
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-#, fuzzy
-msgid "Search input language"
-msgstr "Език:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-#, fuzzy
-msgid "Input Language"
-msgstr "Език:"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr ""
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "Добави подредба"
-
-#: src/Widgets/Layout/Display.vala:68
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "Премести нагоре"
 
-#: src/Widgets/Layout/Display.vala:73
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "Премести надолу"
 
