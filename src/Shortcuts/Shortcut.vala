@@ -39,10 +39,7 @@ public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
             Gtk.accelerator_parse (str, out key, out mod);
         }
 
-        Object (
-            accel_key: key,
-            modifiers: mod
-        );
+        this (key, mod);
     }
 
     // converters
