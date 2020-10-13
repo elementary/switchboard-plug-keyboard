@@ -20,24 +20,26 @@
 // stores a shortcut, converts to gsettings format and readable format
 // and checks for validity
 public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
-    public Gdk.ModifierType modifiers;
-    public uint accel_key;
+    public Gdk.ModifierType modifiers { get; construct; }
+    public uint accel_key { get; construct; }
 
     private const string SEPARATOR = " + ";
 
-    // constructors
     public Shortcut (uint key = 0, Gdk.ModifierType mod = (Gdk.ModifierType) 0) {
-        accel_key = key;
-        modifiers = mod;
+        Object (
+            accel_key: key,
+            modifiers: mod
+        );
     }
 
     public Shortcut.parse (string? str) {
-        if (str == null) {
-            accel_key = 0;
-            modifiers = (Gdk.ModifierType) 0;
-            return;
+        uint key = 0;
+        Gdk.ModifierType mod = (Gdk.ModifierType) 0;
+        if (str != null) {
+            Gtk.accelerator_parse (str, out key, out mod);
         }
-        Gtk.accelerator_parse (str, out accel_key, out modifiers);
+
+        this (key, mod);
     }
 
     // converters
@@ -114,7 +116,7 @@ public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
     }
 
     // validator
-    public bool valid () {
+    private bool valid () {
         if (accel_key == 0) {
             return false;
         }
