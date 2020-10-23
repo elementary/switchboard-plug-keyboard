@@ -63,7 +63,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Move to left display"), "move-to-monitor-left");
 
             workspaces_group = {};
-            workspaces_group.icon_name = "preferences-desktop-workspaces";
+            workspaces_group.icon_name = "io.elementary.switchboard.keyboard.multitasking";
             workspaces_group.label = _("Workspaces");
             add_action (ref workspaces_group, Schema.WM, _("Multitasking View"), "show-desktop");
             add_action (ref workspaces_group, Schema.WM, _("Switch left"), "switch-to-workspace-left");
@@ -94,7 +94,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Move to right workspace"), "move-to-workspace-right");
 
             screenshot_group = {};
-            screenshot_group.icon_name = "accessories-screenshot";
+            screenshot_group.icon_name = "io.elementary.switchboard.keyboard.screenshots";
             screenshot_group.label = _("Screenshots");
             add_action (ref screenshot_group, Schema.MEDIA, _("Grab the whole screen"), "screenshot");
             add_action (ref screenshot_group, Schema.MEDIA, _("Copy the whole screen to clipboard"), "screenshot-clip");
