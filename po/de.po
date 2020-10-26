@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-10-27 06:15+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
 "Language: de\n"
@@ -35,10 +35,8 @@ msgstr "Tastenbelegung"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Einstellungen der Eingabemethode…"
+msgstr "Eingabemethode"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -68,11 +66,12 @@ msgstr "Funktion der Feststelltaste"
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Fenster wechseln"
+msgstr "Engine wechseln"
 
 #: src/Plug.vala:104
+#, fuzzy
 msgid "Show candidate window"
-msgstr ""
+msgstr "Kandidatenfenster anzeigen"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
@@ -94,7 +93,7 @@ msgstr "Eingabesprache"
 #, fuzzy
 #| msgid "Layout"
 msgid "Layout List"
-msgstr "Tastenbelegung"
+msgstr "Liste der Tastenbelegungen"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
@@ -104,7 +103,7 @@ msgstr "Eingabesprache suchen"
 #, fuzzy
 #| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Tastenbelegung"
+msgstr "Vorschau der Tastenbelegung"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -138,22 +137,22 @@ msgid "Reassign"
 msgstr "Neu zuordnen"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
+#, fuzzy
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Zu installierende Engine wählen"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
+#, fuzzy
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Aus der  Liste Engine zum Installieren und Verwenden wählen"
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Eingabesprache"
+msgstr "Sprachen"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Installieren"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -167,15 +166,15 @@ msgstr "Entferne %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japanisch"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Koreanisch"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Chinesisch"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -250,25 +249,23 @@ msgstr "Bild-in-Bild Modus"
 #, fuzzy
 #| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Fenster auf die links anschließende Arbeitsfläche bewegen"
+msgstr "Fenster auf die oben anschließende Arbeitsfläche bewegen"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Fenster auf die links anschließende Arbeitsfläche bewegen"
+msgstr "Auf den unten anschließenden Bildschirm bewegen"
 
 #: src/Shortcuts/List.vala:62
 #, fuzzy
 #| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Auf die rechte Arbeitsfläche verschieben"
+msgstr "Auf den rechts anschließenden Bildschirm verschieben"
 
 #: src/Shortcuts/List.vala:63
 #, fuzzy
 #| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Auf die linke Arbeitsfläche verschieben"
+msgstr "Auf den links anschließenden Bildschirm verschieben"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -388,7 +385,7 @@ msgstr "Bildschirmfotos"
 
 #: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
-msgstr "Den ganzen Bildschirm aufnehmen"
+msgstr "Ganzen Bildschirm aufnehmen"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
@@ -451,10 +448,8 @@ msgid "Mute"
 msgstr "Stummschalten"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Pausieren"
+msgstr "Wiedergeben/pausieren"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -587,21 +582,23 @@ msgstr "Geben Sie hier etwas ein, um Ihre Einstellungen auszuprobieren"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus-Dämon wird nicht ausgeführt"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"Der IBus-Dämon muss ausgeführt werden, damit Eingabemethoden-Engines "
+"aktiviert oder eingerichtet werden können."
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "IBus-Dämon ausführen"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "IBus-Dämon konnte nicht ausgeführt werden"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -616,23 +613,24 @@ msgstr "Entfernen"
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Fenster wechseln"
+msgstr "Engines wechseln:"
 
 #: src/Views/InputMethod.vala:110
+#, fuzzy
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Kandidatenfenster anzeigen:"
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "Nicht anzeigen"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "Automatisch ausblenden"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "Immer anzeigen"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
@@ -728,9 +726,8 @@ msgid "as ⌘"
 msgstr "als ⌘-Taste"
 
 #: src/Views/Layout.vala:106
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Tausch mit Strg"
+msgstr "Mit Strg tauschen"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Escape"
@@ -742,19 +739,15 @@ msgstr "Geben Sie hier etwas ein, um Ihre Tastaturbelegung auszuprobieren"
 
 #: src/Views/Layout.vala:142
 msgid "Show in Panel"
-msgstr ""
+msgstr "Im Panel anzeigen"
 
 #: src/Views/Layout.vala:148
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Feststelltaste"
+msgstr "Feststelltaste:"
 
 #: src/Views/Layout.vala:154
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "als Num-Lock-Taste"
+msgstr "Num-Lock:"
 
 #: src/Views/Layout.vala:240 src/Views/Layout.vala:257
 msgid "Key to choose 3rd level:"
@@ -779,7 +772,7 @@ msgstr "Nicola-F-Rücktaste:"
 #: src/Views/Layout.vala:304
 #, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku als Escape:"
+msgstr "Hankaku Zenkaku als Escape:"
 
 #: src/Views/Layout.vala:321
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -794,15 +787,15 @@ msgstr "Hinzufügen"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "Engine suchen"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Nicht aufgeführte Engines installieren …"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "Engine hinzufügen"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
