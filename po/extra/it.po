@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2019-07-02 14:46+0000\n"
+"PO-Revision-Date: 2020-10-24 12:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/it/>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
-#, fuzzy
-#| msgid "Keyboard"
 msgid "Keyboard Settings"
-msgstr "Tastiera"
+msgstr "Impostazioni della tastiera"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
@@ -32,31 +30,35 @@ msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Add Layout popover is now a dialog"
-msgstr ""
+msgstr "Il popover \"Aggiungi disposizione\" ora è una finestra di dialogo"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Updated translations"
-msgstr ""
+msgstr "Traduzioni aggiornate"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
+"La descrizione della scorciatoia per \"Riproduci\" è ora \"Riproduci o metti "
+"in pausa\""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Risolve un problema per cui alcune scorciatoie venivano visualizzate "
+"erroneamente come disabilitate"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "Add a view to configure input methods"
-msgstr ""
+msgstr "Aggiunta una scheda per configurare i metodi di immissione"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 msgid "New \"Workspaces\" icon"
-msgstr ""
+msgstr "Nuova icona per gli \"Spazi di lavoro\""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
+msgstr "Esclude lo spazio dalle scorciatoie con un solo tasto"
