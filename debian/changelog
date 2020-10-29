@@ -1,3 +1,24 @@
+switchboard-plug-keyboard (2.4.1) bionic; urgency=medium
+
+  * Release 2.4.1 (#323)
+  * Fix all keyboard shortcuts are shown as disabled (#321)
+  * Remove AbstractPage (#314)
+  * Layout/Display: inline namespace (#313)
+  * LayoutSettings: organize, explicit scope (#312)
+  * Layout: Break classes into their own files (#311)
+  * Layout/Handler: misc cleanup (#310)
+  * CustomShortcutSettings: misc cleanup (#308)
+  * XkbModifier: Subclass GLib.Object (#305)
+  * Shorcut: inline namespace (#307)
+  * Update translation files
+  * Update translation template
+  * Shortcuts/List: Rename Play to Play/Pause (#306)
+  * Layout/Settings: subclass GLib.Object (#304)
+  * Display: misc cleanup (#302)
+  * Layout/Settings: Remove unused, combine single-use methods (#303)
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 03 Sep 2020 21:56:13 +0000
+
 switchboard-plug-keyboard (2.4.0) bionic; urgency=medium
 
   * Release 2.4.0 (#301)
