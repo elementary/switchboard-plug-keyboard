@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
 "PO-Revision-Date: 2020-10-27 06:15+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -201,8 +201,8 @@ msgid "Toggle Maximized"
 msgstr "Zwischen normaler und maximierter Darstellung umschalten"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "Minimieren"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -525,20 +525,20 @@ msgstr "Benutzerdefiniert"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Deaktiviert"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Umschalttaste"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Strg-Taste"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -816,6 +816,9 @@ msgstr "Befehl"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Tastenkürzel"
+
+#~ msgid "Minimize"
+#~ msgstr "Minimieren"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "Tastaturbelegung anzeigen"

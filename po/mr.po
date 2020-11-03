@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -195,8 +195,8 @@ msgid "Toggle Maximized"
 msgstr "मॅक्सिमाइज्ड टॉगल करा"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "कमी करा"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -514,20 +514,20 @@ msgstr "सानुकूल"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "अक्षम"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -801,6 +801,9 @@ msgstr "आज्ञा"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "शॉर्टकट"
+
+#~ msgid "Minimize"
+#~ msgstr "कमी करा"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "कीबोर्ड मांडणी दाखवा"

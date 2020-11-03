@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
 "PO-Revision-Date: 2020-10-29 18:15+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -193,8 +193,8 @@ msgid "Toggle Maximized"
 msgstr "Ekranı Kaplamayı Değiştir"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "Simge Durumuna Küçült"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -510,20 +510,20 @@ msgstr "Özel"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -797,6 +797,9 @@ msgstr "Komut"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Kısayol"
+
+#~ msgid "Minimize"
+#~ msgstr "Simge Durumuna Küçült"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "Klavye düzenini göster"

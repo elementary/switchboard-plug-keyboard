@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
-"n%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
+"%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
@@ -205,8 +205,8 @@ msgid "Toggle Maximized"
 msgstr "Preklopi razpeto"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "Skrči"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -532,20 +532,20 @@ msgstr "Po meri"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Onemogočeno"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -825,6 +825,9 @@ msgstr "Ukaz"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Bližnjica"
+
+#~ msgid "Minimize"
+#~ msgstr "Skrči"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "Prikaži razpored tipk"

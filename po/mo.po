@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
 "PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -201,8 +201,8 @@ msgid "Toggle Maximized"
 msgstr "Toggle maximizat"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "Minimaliza"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -528,20 +528,20 @@ msgstr "Personalizat"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Dezactivat"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Schimbă"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl."
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt."
 
@@ -821,6 +821,9 @@ msgstr "Comandă"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Scurtătură"
+
+#~ msgid "Minimize"
+#~ msgstr "Minimaliza"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "Afișați aspectul tastaturii"
