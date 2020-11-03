@@ -46,7 +46,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Maximize"), "maximize");
             add_action (ref windows_group, Schema.WM, _("Unmaximize"), "unmaximize");
             add_action (ref windows_group, Schema.WM, _("Toggle Maximized"), "toggle-maximized");
-            add_action (ref windows_group, Schema.WM, _("Minimize"), "minimize");
+            add_action (ref windows_group, Schema.WM, _("Hide"), "minimize");
             add_action (ref windows_group, Schema.WM, _("Toggle Fullscreen"), "toggle-fullscreen");
             add_action (ref windows_group, Schema.WM, _("Toggle on all Workspaces"), "toggle-on-all-workspaces");
             add_action (ref windows_group, Schema.WM, _("Toggle always on Top"), "toggle-above");
