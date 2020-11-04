@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-09-27 09:14+0000\n"
+"PO-Revision-Date: 2020-11-06 02:15+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -195,7 +195,7 @@ msgstr "Maximiser/Restaurer"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Masquer"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
