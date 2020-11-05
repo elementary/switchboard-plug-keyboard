@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-09-29 13:14+0000\n"
+"PO-Revision-Date: 2020-11-06 02:15+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -193,7 +193,7 @@ msgstr "最大化を切り替え"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "非表示にする"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
