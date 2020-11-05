@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
+"PO-Revision-Date: 2020-11-02 17:15+0000\n"
+"Last-Translator: Rantyrant <diseasemonger@gmail.com>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/da/>\n"
 "Language: da\n"
@@ -202,8 +202,8 @@ msgid "Toggle Maximized"
 msgstr "Aktiver/Deaktiver Maksimeret"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "Minimer"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -246,28 +246,20 @@ msgid "Picture in Picture Mode"
 msgstr "Billede i Billede Tilstand"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Flyt til venstre"
+msgstr "Flyt til overstående display"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Flyt til venstre"
+msgstr "Flyt til displayet nedenunder"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Flyt til højre skrivebord"
+msgstr "Flyt til højre display"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Flyt til venstre skrivebord"
+msgstr "Flyt til venstre display"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -521,7 +513,7 @@ msgstr "Log Ud"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Skift mellem display metode"
 
 #: src/Shortcuts/List.vala:148
 msgid "Custom"
@@ -529,20 +521,20 @@ msgstr "Brugerdefineret"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Deaktiveret"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -727,9 +719,8 @@ msgid "as ⌘"
 msgstr "som ⌘"
 
 #: src/Views/Layout.vala:106
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Byt med Control"
+msgstr "Byt med Ctrl"
 
 #: src/Views/Layout.vala:107
 msgid "Swap with Escape"
@@ -741,19 +732,15 @@ msgstr "Skriv for at teste dit layout"
 
 #: src/Views/Layout.vala:142
 msgid "Show in Panel"
-msgstr ""
+msgstr "Vis i Panel"
 
 #: src/Views/Layout.vala:148
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:154
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "som Num Lock"
+msgstr "Num Lock"
 
 #: src/Views/Layout.vala:240 src/Views/Layout.vala:257
 msgid "Key to choose 3rd level:"
@@ -821,6 +808,9 @@ msgstr "Kommando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Genvej"
+
+#~ msgid "Minimize"
+#~ msgstr "Minimer"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "Vis tastatur layout"

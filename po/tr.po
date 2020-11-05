@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-08-12 12:13+0000\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
+"PO-Revision-Date: 2020-10-29 18:15+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -63,18 +63,16 @@ msgid "Caps Lock behavior"
 msgstr "Caps Lock davranışı"
 
 #: src/Plug.vala:103
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Pencereleri Çevir"
+msgstr "Altyapı değiştir"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
-msgstr ""
+msgstr "Aday penceresini göster"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Ön düzenleme metnini uygulama penceresine ekle"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -89,20 +87,16 @@ msgid "Input Language"
 msgstr "Giriş Dili"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Düzen"
+msgstr "Düzen Listesi"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
 msgstr "Giriş dili ara"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Düzen"
+msgstr "Düzeni Önizle"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -138,11 +132,11 @@ msgstr "Yeniden ata"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Yüklenecek bir altyapı seçin"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Listeden yüklemek ve kullanmak için bir altyapı seçin."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
@@ -199,8 +193,8 @@ msgid "Toggle Maximized"
 msgstr "Ekranı Kaplamayı Değiştir"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "Simge Durumuna Küçült"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -439,10 +433,8 @@ msgid "Mute"
 msgstr "Sesi Kapat"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Duraklat"
+msgstr "Oynat/Duraklat"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -518,20 +510,20 @@ msgstr "Özel"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "Devre dışı bırakıldı"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -603,14 +595,12 @@ msgid "Remove"
 msgstr "Kaldır"
 
 #: src/Views/InputMethod.vala:98
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Pencereleri Çevir"
+msgstr "Altyapı değiştir:"
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Aday penceresini göster:"
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
@@ -626,7 +616,7 @@ msgstr "Her zaman göster"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Ön düzenleme metnini uygulama penceresine ekle:"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:46
@@ -778,15 +768,15 @@ msgstr "Ekle"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "Altyapı ara"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Listelenmemiş Altyapı Yükle…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "Altyapı Ekle"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
@@ -807,6 +797,9 @@ msgstr "Komut"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Kısayol"
+
+#~ msgid "Minimize"
+#~ msgstr "Simge Durumuna Küçült"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "Klavye düzenini göster"

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
-"Last-Translator: imgradeone Yan <imgradeone@outlook.com>\n"
+"POT-Creation-Date: 2020-11-03 20:43+0000\n"
+"PO-Revision-Date: 2020-10-28 11:21+0000\n"
+"Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -63,18 +63,16 @@ msgid "Caps Lock behavior"
 msgstr "大写锁定键行为"
 
 #: src/Plug.vala:103
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
 msgstr "切换引擎"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
-msgstr ""
+msgstr "显示候选窗口"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "应用窗口嵌入预编辑文本"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -133,11 +131,11 @@ msgstr "重新分配"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "选择要安装的引擎"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "从列表中选择要安装和使用的引擎。"
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
@@ -194,8 +192,8 @@ msgid "Toggle Maximized"
 msgstr "最大化切换"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "最小化"
+msgid "Hide"
+msgstr ""
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -434,10 +432,8 @@ msgid "Mute"
 msgstr "静音"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "暂停"
+msgstr "播放/暂停"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -513,20 +509,20 @@ msgstr "自定义"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:54 src/Views/Layout.vala:50
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:50
 #: src/Views/Layout.vala:69 src/Views/Layout.vala:85 src/Views/Layout.vala:100
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Shortcuts/Shortcut.vala:60
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:68
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:72
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -570,21 +566,21 @@ msgstr "键入任意内容来测试您的设置"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus 守护进程未运行"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
-msgstr ""
+msgstr "您需要运行 IBus 守护进程来启用或配置输入法引擎。"
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "启动 IBus 守护进程"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "IBus 守护进程启动失败"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -596,30 +592,28 @@ msgid "Remove"
 msgstr "删除"
 
 #: src/Views/InputMethod.vala:98
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "往前切换窗口"
+msgstr "切换引擎："
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr ""
+msgstr "显示候选窗口："
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "不显示"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "自动隐藏"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "总是显示"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "应用窗口嵌入预编辑文本："
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:46
@@ -771,15 +765,15 @@ msgstr "添加"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "搜索引擎"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "安装列表外的引擎…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "添加引擎"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
@@ -800,6 +794,9 @@ msgstr "Command 键"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "快捷键"
+
+#~ msgid "Minimize"
+#~ msgstr "最小化"
 
 #~ msgid "Show keyboard layout"
 #~ msgstr "显示键盘布局"
