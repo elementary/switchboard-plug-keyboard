@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-10-28 11:21+0000\n"
+"PO-Revision-Date: 2020-11-13 02:15+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -193,7 +193,7 @@ msgstr "最大化切换"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "隐藏"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -373,7 +373,7 @@ msgstr "全屏抓取"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
-msgstr "将屏幕截图保存至剪贴板"
+msgstr "将全屏截图保存至剪贴板"
 
 #: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
@@ -630,7 +630,7 @@ msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:53
 msgid "Alt + Space"
-msgstr "Alt + Space"
+msgstr "Alt + 空格"
 
 #: src/Views/Layout.vala:54
 msgid "Both Shift keys together"
@@ -746,7 +746,7 @@ msgstr "假名锁定："
 
 #: src/Views/Layout.vala:301
 msgid "Nicola F Backspace:"
-msgstr "Nicola F 样式 Backspace："
+msgstr "Nicola F 式退格："
 
 #: src/Views/Layout.vala:304
 msgid "Hankaku Zenkaku as Escape:"

@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-10-29 18:15+0000\n"
+"PO-Revision-Date: 2020-11-06 02:15+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -194,7 +194,7 @@ msgstr "Ekranı Kaplamayı Değiştir"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Gizle"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
