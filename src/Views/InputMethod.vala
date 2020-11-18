@@ -321,11 +321,4 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             stack.visible_child_name = "no_daemon_runnning_view";
         }
     }
-
-    public void reset () {
-        set_keyboard_shortcut ("ctrl-space");
-        ibus_panel_settings.reset ("show");
-        ibus_panel_settings.reset ("show-icon-on-systray");
-        Pantheon.Keyboard.Plug.ibus_general_settings.reset ("embed-preedit-text");
-    }
 }

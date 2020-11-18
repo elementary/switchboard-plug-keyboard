@@ -27,11 +27,6 @@ namespace Pantheon.Keyboard.LayoutPage {
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
 
-        public void reset () {
-            settings.reset_all ();
-            display.reset_all ();
-        }
-
         public Page () {
             handler = new LayoutHandler ();
             settings = LayoutSettings.get_instance ();
