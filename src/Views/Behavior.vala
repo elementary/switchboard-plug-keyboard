@@ -159,14 +159,4 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
 
         scale_repeat_delay.grab_focus (); /* We want entry unfocussed so that placeholder shows */
     }
-
-    public void reset () {
-        gsettings_blink.reset ("cursor-blink");
-        gsettings_blink.reset ("cursor-blink-time");
-        gsettings_blink.reset ("cursor-blink-timeout");
-
-        gsettings_repeat.reset ("delay");
-        gsettings_repeat.reset ("repeat");
-        gsettings_repeat.reset ("repeat-interval");
-    }
 }
