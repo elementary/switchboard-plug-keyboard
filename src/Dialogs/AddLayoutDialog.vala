@@ -129,19 +129,17 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
         frame_grid.add (deck);
 
         var frame = new Gtk.Frame (null) {
-            margin = 10,
-            margin_top = 0
+            margin_start = 10,
+            margin_end = 10
         };
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
         frame.add (frame_grid);
 
         var button_cancel = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
-        button_cancel.margin_bottom = button_cancel.margin_start = 5;
 
         var button_add = add_button (_("Add Layout"), Gtk.ResponseType.ACCEPT);
         button_add.sensitive = false;
         button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
-        button_add.margin_bottom = button_add.margin_end = 5;
 
         deletable = false;
         modal = true;
