@@ -150,7 +150,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         } else {
             up_button.sensitive = (index != 0);
             down_button.sensitive = (index != settings.layouts.length - 1);
-            remove_button.sensitive = (settings.layouts.length > 0);
+            remove_button.sensitive = (settings.layouts.length > 1);
         }
     }
 
