@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.LayoutPage.XkbModifier : Object {
+class Pantheon.Keyboard.XkbModifier : Object {
     public signal void active_command_updated ();
 
     public string gsettings_key { get; construct; }
@@ -31,7 +31,9 @@ class Pantheon.Keyboard.LayoutPage.XkbModifier : Object {
     private string active_command;
     private string default_command = "";
 
-    public XkbModifier (string name = "", string schem = "org.gnome.desktop.input-sources", string key = "xkb-options") {
+    public XkbModifier (string name = "",
+                        string schem = "org.gnome.desktop.input-sources",
+                        string key = "xkb-options") {
         Object (
             name: name,
             gsettings_schema: schem,

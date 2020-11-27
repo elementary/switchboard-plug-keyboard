@@ -18,8 +18,9 @@
 */
 
 // widget to display/add/remove/move keyboard layouts
-public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
-    private LayoutSettings settings;
+namespace Pantheon.Keyboard {
+public class LayoutPage.Display : Gtk.Frame {
+    private SourceSettings source_settings;
     private Gtk.TreeView tree;
     private Gtk.Button up_button;
     private Gtk.Button down_button;
@@ -28,12 +29,12 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
 
     /*
      * Set to true when the user has just clicked on the list to prevent
-     * that settings.layouts.active_changed triggers update_cursor
+     * that source_settings.layouts.active_changed triggers update_cursor
      */
     private bool cursor_changing = false;
 
     construct {
-        settings = LayoutSettings.get_instance ();
+        source_settings = SourceSettings.get_instance ();
 
         var cell = new Gtk.CellRendererText () {
             ellipsize_set = true,
@@ -91,23 +92,23 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             dialog.show_all ();
 
             dialog.layout_added.connect ((layout, variant) => {
-                settings.layouts.add_layout (new Layout.XKB (layout, variant));
+                source_settings.layouts.add_layout (InputSource.new_xkb (layout, variant));
                 rebuild_list ();
             });
         });
 
         remove_button.clicked.connect (() => {
-            settings.layouts.remove_active_layout ();
+            source_settings.layouts.remove_active_layout ();
             rebuild_list ();
         });
 
         up_button.clicked.connect (() => {
-            settings.layouts.move_active_layout_up ();
+            source_settings.layouts.move_active_layout_up ();
             rebuild_list ();
         });
 
         down_button.clicked.connect (() => {
-            settings.layouts.move_active_layout_down ();
+            source_settings.layouts.move_active_layout_down ();
             rebuild_list ();
         });
 
@@ -115,14 +116,14 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             cursor_changing = true;
             int new_index = get_cursor_index ();
             if (new_index != -1) {
-                settings.layouts.active = new_index;
+                source_settings.layouts.active = new_index;
             }
             update_buttons ();
 
             cursor_changing = false;
         });
 
-        settings.layouts.active_changed.connect (() => {
+        source_settings.layouts.active_changed.connect (() => {
             if (cursor_changing) {
                 return;
             }
@@ -130,12 +131,15 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             update_cursor ();
         });
 
+        source_settings.layouts.layouts_changed.connect_after (() => {
+            rebuild_list ();
+        });
+
         rebuild_list ();
-        update_cursor ();
     }
 
     public void reset_all () {
-        settings.reset_all ();
+        source_settings.reset_all ();
         rebuild_list ();
     }
 
@@ -149,8 +153,8 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             remove_button.sensitive = false;
         } else {
             up_button.sensitive = (index != 0);
-            down_button.sensitive = (index != settings.layouts.length - 1);
-            remove_button.sensitive = (settings.layouts.length > 1);
+            down_button.sensitive = (index != source_settings.layouts.length - 1);
+            remove_button.sensitive = (source_settings.layouts.length > 1);
         }
     }
 
@@ -171,22 +175,25 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
     }
 
     private void update_cursor () {
-        var path = new Gtk.TreePath.from_indices (settings.layouts.active);
+        var path = new Gtk.TreePath.from_indices (source_settings.layouts.active);
         tree.set_cursor (path, null, false);
     }
 
     private void rebuild_list () {
         var list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
         Gtk.TreeIter iter;
-        for (uint i = 0; i < settings.layouts.length; i++) {
-            var item = settings.layouts.get_layout (i).name;
-            list_store.append (out iter);
-            list_store.set (iter, 0, handler.get_display_name (item));
-            list_store.set (iter, 1, item);
+        for (uint i = 0; i < source_settings.layouts.length; i++) {
+            var layout = source_settings.layouts.get_layout (i);
+            if (layout.layout_type == LayoutType.XKB) {
+                list_store.append (out iter);
+                list_store.set (iter, 0, XkbLayoutHandler.get_instance ().get_display_name (layout.name));
+                list_store.set (iter, 1, layout.name);
+            }
         }
 
         tree.model = list_store;
         update_cursor ();
         update_buttons ();
     }
+}
 }
