@@ -25,6 +25,9 @@ public class Pantheon.Keyboard.SourcesList : Object {
     public static SourcesList get_instance () {
         if (instance == null) {
             instance = new SourcesList ();
+            if (instance.length == 0) {
+                instance.add_default_keyboard ();
+            }
         }
 
         return instance;
@@ -124,9 +127,57 @@ public class Pantheon.Keyboard.SourcesList : Object {
         layouts_changed ();
     }
 
-    public void remove_all () {
+    public void reset_all () {
         layouts = new GLib.List<InputSource> ();
+        add_default_keyboard ();
         layouts_changed ();
+    }
+
+    private void add_default_keyboard () {
+        var file = File.new_for_path ("/etc/default/keyboard");
+
+        if (!file.query_exists ()) {
+            warning ("File '%s' doesn't exist.\n", file.get_path ());
+            return;
+        }
+
+        string xkb_layout = "";
+        string xkb_variant = "";
+
+        try {
+            var dis = new DataInputStream (file.read ());
+
+            string line;
+
+            while ((line = dis.read_line (null)) != null) {
+                if (line.contains ("XKBLAYOUT=")) {
+                    xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
+
+                    while ((line = dis.read_line (null)) != null) {
+                        if (line.contains ("XKBVARIANT=")) {
+                            xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
+                        }
+                    }
+
+                    break;
+                }
+            }
+        }
+        catch (Error e) {
+            warning ("%s", e.message);
+            return;
+        }
+
+        var variants = xkb_variant.split (",");
+        var xkb_layouts = xkb_layout.split (",");
+
+        for (int i = 0; i < layouts.length (); i++) {
+            if (variants[i] != null && variants[i] != "") {
+                add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+            } else {
+                add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i]));
+            }
+        }
     }
 
     /**

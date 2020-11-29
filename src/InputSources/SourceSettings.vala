@@ -59,10 +59,6 @@ class Pantheon.Keyboard.SourceSettings {
         settings.changed["current"].connect (() => {
             update_active_from_gsettings ();
         });
-
-        if (layouts.length == 0) {
-            parse_default ();
-        }
     }
 
     private void write_list_to_gsettings () {
@@ -106,53 +102,6 @@ class Pantheon.Keyboard.SourceSettings {
         layouts.active = settings.get_uint ("current");
     }
 
-    private void parse_default () {
-        var file = File.new_for_path ("/etc/default/keyboard");
-
-        if (!file.query_exists ()) {
-            warning ("File '%s' doesn't exist.\n", file.get_path ());
-            return;
-        }
-
-        string xkb_layout = "";
-        string xkb_variant = "";
-
-        try {
-            var dis = new DataInputStream (file.read ());
-
-            string line;
-
-            while ((line = dis.read_line (null)) != null) {
-                if (line.contains ("XKBLAYOUT=")) {
-                    xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
-
-                    while ((line = dis.read_line (null)) != null) {
-                        if (line.contains ("XKBVARIANT=")) {
-                            xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
-                        }
-                    }
-
-                    break;
-                }
-            }
-        }
-        catch (Error e) {
-            warning ("%s", e.message);
-            return;
-        }
-
-        var variants = xkb_variant.split (",");
-        var xkb_layouts = xkb_layout.split (",");
-
-        for (int i = 0; i < layouts.length; i++) {
-            if (variants[i] != null && variants[i] != "") {
-                layouts.add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
-            } else {
-                layouts.add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i]));
-            }
-        }
-    }
-
     public void add_xkb_modifier (XkbModifier modifier) {
         //We assume by this point the modifier has all the options in it.
         modifier.update_from_gsettings ();
@@ -167,10 +116,5 @@ class Pantheon.Keyboard.SourceSettings {
         }
 
         return null;
-    }
-
-    public void reset_all () {
-        layouts.remove_all ();
-        parse_default ();
     }
 }

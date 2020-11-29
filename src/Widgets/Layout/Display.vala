@@ -140,11 +140,6 @@ public class LayoutPage.Display : Gtk.Frame {
         rebuild_list ();
     }
 
-    public void reset_all () {
-        source_settings.reset_all ();
-        rebuild_list ();
-    }
-
     private void update_buttons () {
         int rows = tree.model.iter_n_children (null);
         int index = get_cursor_index ();
