@@ -21,6 +21,7 @@
 namespace Pantheon.Keyboard {
 public class LayoutPage.Display : Gtk.Frame {
     private SourceSettings source_settings;
+    private SourcesList layouts;
     private Gtk.TreeView tree;
     private Gtk.Button up_button;
     private Gtk.Button down_button;
@@ -29,12 +30,13 @@ public class LayoutPage.Display : Gtk.Frame {
 
     /*
      * Set to true when the user has just clicked on the list to prevent
-     * that source_settings.layouts.active_changed triggers update_cursor
+     * that layouts.active_changed triggers update_cursor
      */
     private bool cursor_changing = false;
 
     construct {
         source_settings = SourceSettings.get_instance ();
+        layouts = SourcesList.get_instance ();
 
         var cell = new Gtk.CellRendererText () {
             ellipsize_set = true,
@@ -92,23 +94,23 @@ public class LayoutPage.Display : Gtk.Frame {
             dialog.show_all ();
 
             dialog.layout_added.connect ((layout, variant) => {
-                source_settings.layouts.add_layout (InputSource.new_xkb (layout, variant));
+                layouts.add_layout (InputSource.new_xkb (layout, variant));
                 rebuild_list ();
             });
         });
 
         remove_button.clicked.connect (() => {
-            source_settings.layouts.remove_active_layout ();
+            layouts.remove_active_layout ();
             rebuild_list ();
         });
 
         up_button.clicked.connect (() => {
-            source_settings.layouts.move_active_layout_up ();
+            layouts.move_active_layout_up ();
             rebuild_list ();
         });
 
         down_button.clicked.connect (() => {
-            source_settings.layouts.move_active_layout_down ();
+            layouts.move_active_layout_down ();
             rebuild_list ();
         });
 
@@ -116,14 +118,14 @@ public class LayoutPage.Display : Gtk.Frame {
             cursor_changing = true;
             int new_index = get_cursor_index ();
             if (new_index != -1) {
-                source_settings.layouts.active = new_index;
+                layouts.active = new_index;
             }
             update_buttons ();
 
             cursor_changing = false;
         });
 
-        source_settings.layouts.active_changed.connect (() => {
+        layouts.active_changed.connect (() => {
             if (cursor_changing) {
                 return;
             }
@@ -131,7 +133,7 @@ public class LayoutPage.Display : Gtk.Frame {
             update_cursor ();
         });
 
-        source_settings.layouts.layouts_changed.connect_after (() => {
+        layouts.layouts_changed.connect_after (() => {
             rebuild_list ();
         });
 
@@ -144,18 +146,11 @@ public class LayoutPage.Display : Gtk.Frame {
     }
 
     private void update_buttons () {
+        int rows = tree.model.iter_n_children (null);
         int index = get_cursor_index ();
-
-        // if empty list
-        if (index == -1) {
-            up_button.sensitive = false;
-            down_button.sensitive = false;
-            remove_button.sensitive = false;
-        } else {
-            up_button.sensitive = (index != 0);
-            down_button.sensitive = (index != source_settings.layouts.length - 1);
-            remove_button.sensitive = (source_settings.layouts.length > 1);
-        }
+        up_button.sensitive = (rows > 1 && index > 0);
+        down_button.sensitive = (rows > 1 && index < rows - 1);
+        remove_button.sensitive = (rows > 0);
     }
 
     /**
@@ -175,15 +170,16 @@ public class LayoutPage.Display : Gtk.Frame {
     }
 
     private void update_cursor () {
-        var path = new Gtk.TreePath.from_indices (source_settings.layouts.active);
+        var path = new Gtk.TreePath.from_indices (layouts.active);
         tree.set_cursor (path, null, false);
     }
 
     private void rebuild_list () {
         var list_store = new Gtk.ListStore (2, typeof (string), typeof (string));
         Gtk.TreeIter iter;
-        for (uint i = 0; i < source_settings.layouts.length; i++) {
-            var layout = source_settings.layouts.get_layout (i);
+        for (uint i = 0; i < layouts.length; i++) {
+            var layout = layouts.get_layout (i);
+            //Ignore any integrated ibus sources
             if (layout.layout_type == LayoutType.XKB) {
                 list_store.append (out iter);
                 list_store.set (iter, 0, XkbLayoutHandler.get_instance ().get_display_name (layout.name));

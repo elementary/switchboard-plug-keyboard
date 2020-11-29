@@ -23,7 +23,7 @@ namespace Pantheon.Keyboard {
      * Type of a keyboard-InputSource as described in the description of
      * "org.gnome.desktop.input-sources sources".
      */
-    enum LayoutType { IBUS, XKB }
+    public enum LayoutType { IBUS, XKB }
 
     /**
      * Immutable class that respresents a keyboard-InputSource according to
@@ -31,7 +31,7 @@ namespace Pantheon.Keyboard {
      * This means that the enum parameter @layout_type equals the first string in the
      * tupel of strings, and the @name parameter equals the second string.
      */
-    class InputSource : Object {
+    public class InputSource : Object {
         public static InputSource new_xkb (string name, string? xkb_variant) {
             string full_name = name;
             if (xkb_variant != null && xkb_variant != "") {

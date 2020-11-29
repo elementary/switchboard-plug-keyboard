@@ -21,11 +21,14 @@ namespace Pantheon.Keyboard {
     public class LayoutPage.Page : Gtk.Grid {
         private Display display;
         private SourceSettings settings;
+        private SourcesList layouts;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
 
-        public Page () {
+        construct {
             settings = SourceSettings.get_instance ();
+            layouts = SourcesList.get_instance ();
+
             size_group = {
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
@@ -167,7 +170,7 @@ namespace Pantheon.Keyboard {
                 show_panel_for_active_layout ();
             });
 
-            settings.layouts.active_changed.connect (() => {
+            layouts.active_changed.connect (() => {
                 show_panel_for_active_layout ();
             });
 
@@ -329,7 +332,7 @@ namespace Pantheon.Keyboard {
         }
 
         private void show_panel_for_active_layout () {
-            var active_layout = settings.layouts.get_layout (settings.layouts.active);
+            var active_layout = layouts.get_layout (layouts.active);
             advanced_settings.set_visible_panel_from_layout (active_layout.name);
         }
 

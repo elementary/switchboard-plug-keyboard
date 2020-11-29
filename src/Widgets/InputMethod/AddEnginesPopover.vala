@@ -85,7 +85,11 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
         listbox.set_filter_func ((list_box_row) => {
             var item = (AddEnginesList) liststore.get_item (list_box_row.get_index ());
-            return search_entry.text.down () in item.engine_full_name.down ();
+            if (item.engine_id.contains ("xkb")) {
+                return false; //Do not want to duplicate function of layout tab
+            } else {
+                return search_entry.text.down () in item.engine_full_name.down ();
+            }
         });
 
         search_entry.search_changed.connect (() => {

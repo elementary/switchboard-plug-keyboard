@@ -18,7 +18,7 @@
 */
 
 class Pantheon.Keyboard.SourceSettings {
-    public SourcesList layouts { get; private set; }
+    private SourcesList layouts;
 
     private XkbModifier [] xkb_options_modifiers;
     private GLib.Settings settings;
@@ -39,7 +39,7 @@ class Pantheon.Keyboard.SourceSettings {
 
     private SourceSettings () {
         settings = new GLib.Settings ("org.gnome.desktop.input-sources");
-        layouts = new SourcesList ();
+        layouts = SourcesList.get_instance ();
 
         update_list_from_gsettings ();
         update_active_from_gsettings ();

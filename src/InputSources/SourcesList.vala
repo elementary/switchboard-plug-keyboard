@@ -20,7 +20,16 @@
 /**
  * Represents a list of layouts.
  */
-class Pantheon.Keyboard.SourcesList : Object {
+public class Pantheon.Keyboard.SourcesList : Object {
+    public static SourcesList? instance = null;
+    public static SourcesList get_instance () {
+        if (instance == null) {
+            instance = new SourcesList ();
+        }
+
+        return instance;
+    }
+
     private GLib.List<InputSource> layouts = new GLib.List<InputSource> ();
 
     // signals
