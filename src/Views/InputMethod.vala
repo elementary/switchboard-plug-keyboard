@@ -27,11 +27,13 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
     private Granite.Widgets.AlertView spawn_failed_alert;
     private Gtk.ListBox listbox;
+    private SourcesList layouts;
     private Gtk.MenuButton remove_button;
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
 
     construct {
+        layouts = SourcesList.get_instance ();
         bus = new IBus.Bus ();
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
@@ -183,7 +185,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             // Convert to GLib.Array once, because Vala does not support "-=" operator
             Array<string> removed_lists = new Array<string> ();
             foreach (var active_engine in Utils.active_engines) {
-                removed_lists.append_val (active_engine);
+
             }
 
             // Remove applicable engine from the list
@@ -264,14 +266,20 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         });
 
         // Add the language and the name of activated engines
+        layouts.reset (LayoutType.IBUS);
+
         foreach (var active_engine in Utils.active_engines) {
             foreach (var engine in engines) {
                 if (engine.name == active_engine) {
                     engine_full_names += "%s - %s".printf (IBus.get_language_name (engine.language),
                                                     Utils.gettext_engine_longname (engine));
+
+                    layouts.add_layout (new InputSource (LayoutType.IBUS, engine.name), false);
                 }
             }
         }
+
+        layouts.layouts_changed ();
 
         foreach (var engine_full_name in engine_full_names) {
             var label = new Gtk.Label (engine_full_name) {

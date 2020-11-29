@@ -43,7 +43,6 @@ class Pantheon.Keyboard.SourceSettings {
 
         update_list_from_gsettings ();
         update_active_from_gsettings ();
-
         layouts.layouts_changed.connect (() => {
             write_list_to_gsettings ();
         });
@@ -87,15 +86,19 @@ class Pantheon.Keyboard.SourceSettings {
             return;
         }
 
+        layouts.reset (null); // Remove all layouts from list
+
         GLib.Variant sources = settings.get_value ("sources");
         if (sources.is_of_type (VariantType.ARRAY)) {
             for (size_t i = 0; i < sources.n_children (); i++) {
                 GLib.Variant child = sources.get_child_value (i);
-                layouts.add_layout (InputSource.new_from_variant (child));
+                layouts.add_layout (InputSource.new_from_variant (child), false);
             }
         } else {
             warning ("Unkown type");
         }
+
+        layouts.layouts_changed ();
     }
 
     private void update_active_from_gsettings () {

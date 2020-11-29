@@ -100,7 +100,7 @@ public class Pantheon.Keyboard.SourcesList : Object {
         }
     }
 
-    public bool add_layout (InputSource? new_layout) {
+    public bool add_layout (InputSource? new_layout, bool signal_change = true) {
         if (new_layout == null) {
             return false;
         }
@@ -115,21 +115,38 @@ public class Pantheon.Keyboard.SourcesList : Object {
         }
 
         layouts.append (new_layout);
-        layouts_changed ();
+        if (signal_change) {
+            layouts_changed ();
+        }
         return true;
     }
 
     public void remove_active_layout () {
         layouts.remove (get_layout (active));
 
-        if (active >= length)
+        if (active >= length) {
             active = length - 1;
+        }
+
         layouts_changed ();
     }
 
-    public void reset_all () {
-        layouts = new GLib.List<InputSource> ();
-        add_default_keyboard ();
+    public void reset (LayoutType? layout_type) {
+        var remove_layouts = new GLib.List<InputSource> ();
+        layouts.@foreach ((source) => {
+            if (layout_type == null || layout_type == source.layout_type) {
+                remove_layouts.append (source);
+            }
+        });
+
+        remove_layouts.@foreach ((layout) => {
+            layouts.remove (layout);
+        });
+
+        if (layouts.length () == 0) {
+            add_default_keyboard ();
+        }
+
         layouts_changed ();
     }
 
