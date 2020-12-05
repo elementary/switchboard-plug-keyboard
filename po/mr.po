@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2020-12-03 16:16+0000\n"
+"Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
 "Language: mr\n"
@@ -28,10 +28,8 @@ msgstr "मांडणी"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "इनपुट पद्धत सेटिंग्ज…"
+msgstr "इनपुट पद्धत"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -58,18 +56,16 @@ msgid "Caps Lock behavior"
 msgstr "कॅप्स लॉक वर्तन"
 
 #: src/Plug.vala:103
-#, fuzzy
-#| msgid "Switch to new"
 msgid "Switch engines"
-msgstr "नव्यासह बदला"
+msgstr "इंजिन बदला"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
-msgstr ""
+msgstr "कॅन्डीडेट विंडो दाखवा"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -84,20 +80,16 @@ msgid "Input Language"
 msgstr "इनपुट भाषा"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "मांडणी"
+msgstr "मांडणी यादी"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
 msgstr "इनपुट भाषा शोधा"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "मांडणी"
+msgstr "मांडणी पूर्वावलोकन"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -132,21 +124,19 @@ msgstr "पुनर्निर्देशित करा"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "स्थापित करण्यासाठी इंजिन निवडा"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "स्थापित करण्यासाठी आणि वापरण्यासाठी यादीमधून एक इंजिन निवडा."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "इनपुट भाषा"
+msgstr "भाषा"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "स्थापित करा"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -160,15 +150,15 @@ msgstr "%s काढून टाकत आहे"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "जपानी"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "कोरियन"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "चीनी"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -196,7 +186,7 @@ msgstr "मॅक्सिमाइज्ड टॉगल करा"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "लपवा"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -435,10 +425,8 @@ msgid "Mute"
 msgstr "आवाज बंद करा"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "थांबवा"
+msgstr "प्ले करा / थांबवा"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -571,21 +559,23 @@ msgstr "आपल्या सेटिंग्ज तपासण्यास�
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus डीमन चालू नाही"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"इनपुट पद्धत इंजिन सक्षम किंवा कॉन्फिगर करण्यासाठी आपल्याला IBus डीमन चालविणे "
+"आवश्यक आहे."
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "IBus डीमन सुरु करा"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "IBus डीमन सुरु करण्यात अयशस्वी"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -597,30 +587,28 @@ msgid "Remove"
 msgstr "काढा"
 
 #: src/Views/InputMethod.vala:98
-#, fuzzy
-#| msgid "Switch to new"
 msgid "Switch engines:"
-msgstr "नव्यासह बदला"
+msgstr "इंजिन बदला:"
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr ""
+msgstr "कॅन्डीडेट विंडो दाखवा:"
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "दाखवू नका"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "स्वयंचलितपणे लपवा"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "नेहमी लपवा"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा:"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:46
@@ -772,15 +760,15 @@ msgstr "वाढवा"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "शोध इंजिन"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "यादीत नसलेली इंजिने स्थापित करा…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "इंजिन जोडा"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
