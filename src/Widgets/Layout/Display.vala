@@ -195,4 +195,3 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         update_buttons ();
     }
 }
-
