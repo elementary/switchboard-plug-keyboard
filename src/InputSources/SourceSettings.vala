@@ -98,7 +98,7 @@ class Pantheon.Keyboard.SourceSettings {
                 layouts.add_layout (InputSource.new_from_variant (child));
             }
         } else {
-            warning ("Unkown type");
+            warning ("Unknown type");
         }
     }
 
