@@ -147,16 +147,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_button.sensitive = true;
         }
 
-        public void reset () {
-            for (int i = 0; i < SectionID.COUNT; i++) {
-                var g = list.groups[i];
-
-                for (int k = 0; k < g.actions.length; k++) {
-                    settings.reset (g.schemas[k], g.keys[k]);
-                }
-            }
-        }
-
         private class SwitcherRow : Gtk.ListBoxRow {
             public Pantheon.Keyboard.Shortcuts.Group group { get; construct; }
 

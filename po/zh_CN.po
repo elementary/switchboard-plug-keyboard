@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-11-13 02:15+0000\n"
+"PO-Revision-Date: 2020-11-27 07:02+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -72,7 +72,7 @@ msgstr "显示候选窗口"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr "应用窗口嵌入预编辑文本"
+msgstr "光标跟随"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -571,7 +571,7 @@ msgstr "IBus 守护进程未运行"
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
-msgstr "您需要运行 IBus 守护进程来启用或配置输入法引擎。"
+msgstr "需要运行 IBus 守护进程来启用或配置输入法引擎。"
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
@@ -597,7 +597,7 @@ msgstr "切换引擎："
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr "显示候选窗口："
+msgstr "显示工具栏："
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
@@ -613,7 +613,7 @@ msgstr "总是显示"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
-msgstr "应用窗口嵌入预编辑文本："
+msgstr "光标跟随："
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:46

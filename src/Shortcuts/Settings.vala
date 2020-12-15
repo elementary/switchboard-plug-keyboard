@@ -104,13 +104,5 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             return true;
         }
-
-        public void reset (Schema schema, string key) {
-            if (!valid (schema, key) || ! schemas[schema].is_writable (key)) {
-                return;
-            }
-
-            schemas[schema].reset (key);
-        }
     }
 }
