@@ -59,6 +59,7 @@ shared_module(
     meson.project_name(),
     plug_files,
     config_file,
+    gresources,
     dependencies: [
         dependency('glib-2.0'),
         dependency('gio-2.0'),

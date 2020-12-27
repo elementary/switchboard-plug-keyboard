@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"PO-Revision-Date: 2020-12-19 11:16+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sr/>\n"
@@ -26,7 +26,7 @@ msgstr "Тастатура"
 
 #: src/Plug.vala:36
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Подесите понашање тастатуре, распореде и пречице"
 
 #: src/Plug.vala:49 src/Plug.vala:97 src/Plug.vala:98 src/Plug.vala:99
 #: src/Plug.vala:100 src/Plug.vala:101
@@ -155,12 +155,12 @@ msgstr ""
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "Инсталирам „%s“"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "Уклањам „%s“"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
@@ -413,7 +413,7 @@ msgstr "Е-пошта"
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
-msgstr ""
+msgstr "Лична фасцикла"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
@@ -449,7 +449,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
-msgstr ""
+msgstr "Застани"
 
 #: src/Shortcuts/List.vala:123
 msgid "Stop"
@@ -497,7 +497,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:140
 msgid "System"
-msgstr ""
+msgstr "Систем"
 
 #: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 #, fuzzy
