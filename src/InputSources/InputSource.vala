@@ -38,7 +38,7 @@ namespace Pantheon.Keyboard {
                 full_name += "+" + xkb_variant;
             }
 
-            return new InputSource (LayoutType.XKB, name);
+            return new InputSource (LayoutType.XKB, full_name);
         }
 
         public static InputSource? new_from_variant (Variant? variant) {
