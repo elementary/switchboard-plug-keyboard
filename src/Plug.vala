@@ -44,6 +44,9 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (grid == null) {
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
+
             stack = new Gtk.Stack ();
             stack.margin = 12;
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));

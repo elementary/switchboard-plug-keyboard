@@ -23,6 +23,12 @@ add_project_arguments(
     language: 'vala'
 )
 
+gresources = gnome.compile_resources(
+    'gresources', join_paths ('data', 'gresource.xml'),
+    source_dir: 'data',
+    c_name: 'as'
+)
+
 subdir('data')
 subdir('src')
 subdir('po')
