@@ -17,71 +17,58 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.LayoutPage {
+namespace Pantheon.Keyboard {
 
     /**
-     * Type of a keyboard-layout as described in the description of
+     * Type of a keyboard-InputSource as described in the description of
      * "org.gnome.desktop.input-sources sources".
      */
     enum LayoutType { IBUS, XKB }
 
     /**
-     * Immutable class that respresents a keyboard-layout according to
+     * Immutable class that respresents a keyboard-InputSource according to
      * "org.gnome.desktop.input-sources sources".
      * This means that the enum parameter @layout_type equals the first string in the
      * tupel of strings, and the @name parameter equals the second string.
      */
-    class Layout : Object {
-        public LayoutType layout_type { get; construct; }
-        public string name { get; construct; }
-
-        public Layout (LayoutType layout_type, string name) {
-            Object (
-                layout_type: layout_type,
-                name: name
-            );
-        }
-
-        public Layout.XKB (string layout, string? variant) {
-            string full_name = layout;
-            if (variant != null && variant != "") {
-                full_name += "+" + variant;
+    class InputSource : Object {
+        public static InputSource new_xkb (string name, string? xkb_variant) {
+            string full_name = name;
+            if (xkb_variant != null && xkb_variant != "") {
+                full_name += "+" + xkb_variant;
             }
 
-            Object (
-                layout_type: LayoutType.XKB,
-                name: full_name
-            );
+            return new InputSource (LayoutType.XKB, full_name);
         }
 
-        public Layout.from_variant (GLib.Variant variant) {
+        public static InputSource? new_from_variant (Variant? variant) {
             if (variant.is_of_type (new VariantType ("(ss)"))) {
                 unowned string type;
                 unowned string name;
 
                 variant.get ("(&s&s)", out type, out name);
 
-                LayoutType? _layout_type = null;
                 if (type == "xkb") {
-                    _layout_type = LayoutType.XKB;
+                    return new InputSource (LayoutType.XKB, name);
                 } else if (type == "ibus") {
-                    _layout_type = LayoutType.IBUS;
+                    return new InputSource (LayoutType.IBUS, name);
                 }
-
-                if (_layout_type != null) {
-                    Object (
-                        layout_type: _layout_type,
-                        name: name
-                    );
-                } else {
-                    critical ("Unkown type %s", type);
-                }
-            } else {
-                critical ("Variant has invalid type");
             }
+
+            return null;
         }
 
-        public bool equal (Layout other) {
+        public LayoutType layout_type { get; construct; }
+        public string name { get; construct; }
+
+        public InputSource (LayoutType layout_type, string name) {
+            Object (
+                layout_type: layout_type,
+                name: name
+            );
+        }
+
+        public bool equal (InputSource other) {
             return this.layout_type == other.layout_type && this.name == other.name;
         }
 

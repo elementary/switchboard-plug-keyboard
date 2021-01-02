@@ -17,8 +17,8 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.LayoutPage.LayoutSettings {
-    public LayoutList layouts { get; private set; }
+class Pantheon.Keyboard.SourceSettings {
+    public SourcesList layouts { get; private set; }
 
     private XkbModifier [] xkb_options_modifiers;
     private GLib.Settings settings;
@@ -29,17 +29,17 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
      */
     private bool currently_writing;
 
-    private static LayoutSettings? instance;
-    public static LayoutSettings get_instance () {
+    private static SourceSettings? instance;
+    public static SourceSettings get_instance () {
         if (instance == null) {
-            instance = new LayoutSettings ();
+            instance = new SourceSettings ();
         }
         return instance;
     }
 
-    private LayoutSettings () {
+    private SourceSettings () {
         settings = new GLib.Settings ("org.gnome.desktop.input-sources");
-        layouts = new LayoutList ();
+        layouts = new SourcesList ();
 
         update_list_from_gsettings ();
         update_active_from_gsettings ();
@@ -87,17 +87,18 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
     private void update_list_from_gsettings () {
         // We currently write to gsettings, so we caused this signal
         // and therefore don't need to read the list again from dconf
-        if (currently_writing)
+        if (currently_writing) {
             return;
+        }
 
         GLib.Variant sources = settings.get_value ("sources");
         if (sources.is_of_type (VariantType.ARRAY)) {
             for (size_t i = 0; i < sources.n_children (); i++) {
                 GLib.Variant child = sources.get_child_value (i);
-                layouts.add_layout (new Layout.from_variant (child));
+                layouts.add_layout (InputSource.new_from_variant (child));
             }
         } else {
-            warning ("Unkown type");
+            warning ("Unknown type");
         }
     }
 
@@ -145,9 +146,9 @@ class Pantheon.Keyboard.LayoutPage.LayoutSettings {
 
         for (int i = 0; i < layouts.length; i++) {
             if (variants[i] != null && variants[i] != "") {
-                layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+                layouts.add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
             } else {
-                layouts.add_layout (new Layout (LayoutType.XKB, xkb_layouts[i]));
+                layouts.add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i]));
             }
         }
     }

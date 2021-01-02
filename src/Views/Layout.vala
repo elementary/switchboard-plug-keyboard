@@ -17,19 +17,15 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.LayoutPage {
-    // global handler
-    LayoutHandler handler;
-
-    public class Page : Gtk.Grid {
-        private LayoutPage.Display display;
-        private LayoutSettings settings;
+namespace Pantheon.Keyboard {
+    public class LayoutPage.Page : Gtk.Grid {
+        private Display display;
+        private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
 
         public Page () {
-            handler = new LayoutHandler ();
-            settings = LayoutSettings.get_instance ();
+            settings = SourceSettings.get_instance ();
             size_group = {
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
@@ -211,26 +207,28 @@ namespace Pantheon.Keyboard.LayoutPage {
                 return null;
             }
 
-            string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
-                                               "bg*", "by", "by+legacy",
-                                               "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
-                                               "fr+dvorak",
-                                               "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
-                                               "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
-                                               "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
-                                               "jp*",
-                                               "kg*", "kz*",
-                                               "la*", "lk+tam_TAB", "lk+tam_unicode",
-                                               "mk*", "mv*",
-                                               "no+mac", "no+mac_nodeadkeys", "np*",
-                                               "pk+ara",
-                                               "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
-                                               "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
-                                               "sy", "sy+syc", "sy+syc_phonetic",
-                                               "th*", "tz*",
-                                               "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
-                                               "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
-                                               "us+dvorak-l", "us+dvorak-r", "uz*"};
+            string [] invalid_input_sources = {
+                "am*", "ara*", "az+cyrillic",
+               "bg*", "by", "by+legacy",
+               "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
+               "fr+dvorak",
+               "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
+               "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
+               "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
+               "jp*",
+               "kg*", "kz*",
+               "la*", "lk+tam_TAB", "lk+tam_unicode",
+               "mk*", "mv*",
+               "no+mac", "no+mac_nodeadkeys", "np*",
+               "pk+ara",
+               "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
+               "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
+               "sy", "sy+syc", "sy+syc_phonetic",
+               "th*", "tz*",
+               "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
+               "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
+               "us+dvorak-l", "us+dvorak-r", "uz*"
+            };
 
             var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
 
@@ -331,7 +329,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private void show_panel_for_active_layout () {
-            Layout active_layout = settings.layouts.get_layout (settings.layouts.active);
+            var active_layout = settings.layouts.get_layout (settings.layouts.active);
             advanced_settings.set_visible_panel_from_layout (active_layout.name);
         }
 
@@ -358,7 +356,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private class XkbOptionSwitch : Gtk.Switch {
-            public XkbOptionSwitch (LayoutSettings settings, string xkb_command) {
+            public XkbOptionSwitch (SourceSettings settings, string xkb_command) {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
 
