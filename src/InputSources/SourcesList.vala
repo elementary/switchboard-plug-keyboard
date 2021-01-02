@@ -20,7 +20,21 @@
 /**
  * Represents a list of layouts.
  */
-class Pantheon.Keyboard.SourcesList : Object {
+public class Pantheon.Keyboard.SourcesList : Object {
+    public static SourcesList? instance = null;
+    public static SourcesList get_instance () {
+        if (instance == null) {
+            instance = new SourcesList ();
+            if (instance.length == 0) {
+                instance.add_default_keyboard ();
+            }
+        }
+
+        return instance;
+    }
+
+    private SourcesList () {} //Need to make this private so singleton used.
+
     private GLib.List<InputSource> layouts = new GLib.List<InputSource> ();
 
     // signals
@@ -88,7 +102,7 @@ class Pantheon.Keyboard.SourcesList : Object {
         }
     }
 
-    public bool add_layout (InputSource? new_layout) {
+    public bool add_layout (InputSource? new_layout, bool signal_change = true) {
         if (new_layout == null) {
             return false;
         }
@@ -103,21 +117,86 @@ class Pantheon.Keyboard.SourcesList : Object {
         }
 
         layouts.append (new_layout);
-        layouts_changed ();
+        if (signal_change) {
+            layouts_changed ();
+        }
         return true;
     }
 
     public void remove_active_layout () {
         layouts.remove (get_layout (active));
 
-        if (active >= length)
+        if (active >= length) {
             active = length - 1;
+        }
+
         layouts_changed ();
     }
 
-    public void remove_all () {
-        layouts = new GLib.List<InputSource> ();
+    public void reset (LayoutType? layout_type) {
+        var remove_layouts = new GLib.List<InputSource> ();
+        layouts.@foreach ((source) => {
+            if (layout_type == null || layout_type == source.layout_type) {
+                remove_layouts.append (source);
+            }
+        });
+
+        remove_layouts.@foreach ((layout) => {
+            layouts.remove (layout);
+        });
+
+        if (layouts.length () == 0) {
+            add_default_keyboard ();
+        }
+
         layouts_changed ();
+    }
+
+    private void add_default_keyboard () {
+        var file = File.new_for_path ("/etc/default/keyboard");
+
+        if (!file.query_exists ()) {
+            warning ("File '%s' doesn't exist.\n", file.get_path ());
+            return;
+        }
+
+        string xkb_layout = "";
+        string xkb_variant = "";
+
+        try {
+            var dis = new DataInputStream (file.read ());
+
+            string line;
+
+            while ((line = dis.read_line (null)) != null) {
+                if (line.contains ("XKBLAYOUT=")) {
+                    xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
+
+                    while ((line = dis.read_line (null)) != null) {
+                        if (line.contains ("XKBVARIANT=")) {
+                            xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
+                        }
+                    }
+
+                    break;
+                }
+            }
+        }
+        catch (Error e) {
+            warning ("%s", e.message);
+            return;
+        }
+
+        var variants = xkb_variant.split (",");
+        var xkb_layouts = xkb_layout.split (",");
+
+        for (int i = 0; i < xkb_layouts.length; i++) {
+            if (variants[i] != null && variants[i] != "") {
+                add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+            } else {
+                add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i]));
+            }
+        }
     }
 
     /**
@@ -130,5 +209,4 @@ class Pantheon.Keyboard.SourcesList : Object {
 
         return layouts.nth_data (index);
     }
-
 }

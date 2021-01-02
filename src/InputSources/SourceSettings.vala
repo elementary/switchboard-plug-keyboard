@@ -39,7 +39,7 @@ class Pantheon.Keyboard.SourceSettings {
 
     private SourceSettings () {
         settings = new GLib.Settings ("org.gnome.desktop.input-sources");
-        layouts = new SourcesList ();
+        layouts = SourcesList.get_instance ();
 
         update_list_from_gsettings ();
         update_active_from_gsettings ();
@@ -59,10 +59,6 @@ class Pantheon.Keyboard.SourceSettings {
         settings.changed["current"].connect (() => {
             update_active_from_gsettings ();
         });
-
-        if (layouts.length == 0) {
-            parse_default ();
-        }
     }
 
     private void write_list_to_gsettings () {
@@ -91,66 +87,23 @@ class Pantheon.Keyboard.SourceSettings {
             return;
         }
 
+        layouts.reset (null);
+
         GLib.Variant sources = settings.get_value ("sources");
         if (sources.is_of_type (VariantType.ARRAY)) {
             for (size_t i = 0; i < sources.n_children (); i++) {
                 GLib.Variant child = sources.get_child_value (i);
-                layouts.add_layout (InputSource.new_from_variant (child));
+                layouts.add_layout (InputSource.new_from_variant (child), false);
             }
         } else {
             warning ("Unknown type");
         }
+
+        layouts.layouts_changed ();
     }
 
     private void update_active_from_gsettings () {
         layouts.active = settings.get_uint ("current");
-    }
-
-    private void parse_default () {
-        var file = File.new_for_path ("/etc/default/keyboard");
-
-        if (!file.query_exists ()) {
-            warning ("File '%s' doesn't exist.\n", file.get_path ());
-            return;
-        }
-
-        string xkb_layout = "";
-        string xkb_variant = "";
-
-        try {
-            var dis = new DataInputStream (file.read ());
-
-            string line;
-
-            while ((line = dis.read_line (null)) != null) {
-                if (line.contains ("XKBLAYOUT=")) {
-                    xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
-
-                    while ((line = dis.read_line (null)) != null) {
-                        if (line.contains ("XKBVARIANT=")) {
-                            xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
-                        }
-                    }
-
-                    break;
-                }
-            }
-        }
-        catch (Error e) {
-            warning ("%s", e.message);
-            return;
-        }
-
-        var variants = xkb_variant.split (",");
-        var xkb_layouts = xkb_layout.split (",");
-
-        for (int i = 0; i < layouts.length; i++) {
-            if (variants[i] != null && variants[i] != "") {
-                layouts.add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
-            } else {
-                layouts.add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i]));
-            }
-        }
     }
 
     public void add_xkb_modifier (XkbModifier modifier) {
@@ -167,10 +120,5 @@ class Pantheon.Keyboard.SourceSettings {
         }
 
         return null;
-    }
-
-    public void reset_all () {
-        layouts.remove_all ();
-        parse_default ();
     }
 }
