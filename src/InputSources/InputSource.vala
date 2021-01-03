@@ -59,6 +59,8 @@ namespace Pantheon.Keyboard {
         }
 
         public LayoutType layout_type { get; construct; }
+        // Name of input source as stored in settings e.g. "gb" (xkb) or "xkb:gb:extd:eng" (ibus) or "mozc-jp" (ibus)
+        // These names are used both in org/gnome/desktop/input-sources and desktop/ibus/general/preload-engines
         public string name { get; construct; }
 
         public InputSource (LayoutType layout_type, string name) {

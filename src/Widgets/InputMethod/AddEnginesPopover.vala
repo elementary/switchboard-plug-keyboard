@@ -18,12 +18,6 @@
 public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     public signal void add_engine (string new_engine);
 
-#if IBUS_1_5_19
-    private List<IBus.EngineDesc> engines;
-#else
-    private List<weak IBus.EngineDesc> engines;
-#endif
-
     private Gtk.SearchEntry search_entry;
     private GLib.ListStore liststore;
     private Gtk.ListBox listbox;
@@ -114,23 +108,16 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     private void trigger_add_engine () {
         int index = listbox.get_selected_row ().get_index ();
 
-        // If the engine trying to add is already active, do not add it
-        foreach (var active_engine in Utils.active_engines) {
-            if (active_engine == (((AddEnginesList) liststore.get_item (index)).engine_id)) {
-                popdown ();
-                return;
-            }
-        }
-
+        // Signal handler to ensure engine not added twice.
         add_engine (((AddEnginesList) liststore.get_item (index)).engine_id);
+        popdown ();
     }
 
-    public void update_engines_list () {
-        engines = new IBus.Bus ().list_engines ();
+    public void update_engines_list (List<AddEnginesList> engine_lists) {
         liststore.remove_all ();
 
-        foreach (var engine in engines) {
-            liststore.append (new AddEnginesList (engine));
+        foreach (var engine_list in engine_lists) {
+            liststore.append (engine_list);
         }
 
         liststore.sort ((a, b) => {
@@ -154,4 +141,6 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         listbox.select_row (listbox.get_row_at_index (0));
         search_entry.grab_focus ();
     }
+
+
 }

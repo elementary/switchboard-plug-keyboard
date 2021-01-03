@@ -27,13 +27,13 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
     private Granite.Widgets.AlertView spawn_failed_alert;
     private Gtk.ListBox listbox;
-    private SourcesList layouts;
+    private SourceSettings settings;
     private Gtk.MenuButton remove_button;
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
 
     construct {
-        layouts = SourcesList.get_instance ();
+        settings = SourceSettings.get_instance ();
         bus = new IBus.Bus ();
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
@@ -66,15 +66,16 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox ();
         listbox.row_selected.connect ((row) => {
-            var child = row.get_child ();
-            string engine_name = "";
-            if (child is Gtk.Label) {
-                engine_name = ((Gtk.Label)child).label;
+            if (!(row is Gtk.ListBoxRow)) {
+                return; // No row was selected or selected row no longer exists
             }
 
-            if (engine_name != "") {
-                bus.set_global_engine (engine_name);
-            }
+            string engine_name = row.get_data ("engine-name");
+            //This sets the active global ibus engine but /org/gnome/desktop/input-sources/current is deprecated
+            //This is currently required so wingpanel shows correct input source
+            settings.set_active_engine_name (engine_name);
+            //Also set ibus engine directly?
+            bus.set_global_engine (engine_name);
         });
 
         var scroll = new Gtk.ScrolledWindow (null, null) {
@@ -182,20 +183,18 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         });
 
         add_engines_popover.add_engine.connect ((engine) => {
-            string[] new_engine_list = Utils.active_engines;
-            new_engine_list += engine;
-            Utils.active_engines = new_engine_list;
-
-            update_engines_list ();
-            add_engines_popover.popdown ();
+            if (settings.add_active_engine (engine)) {
+                update_engines_list ();
+            }
         });
 
         remove_button.clicked.connect (() => {
+        warning ("remove button clicked");
             int index = listbox.get_selected_row ().get_index ();
 
             // Convert to GLib.Array once, because Vala does not support "-=" operator
             Array<string> removed_lists = new Array<string> ();
-            foreach (var active_engine in Utils.active_engines) {
+            foreach (var active_engine in settings.active_engines) {
                 removed_lists.append_val (active_engine);
             }
 
@@ -211,8 +210,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                 new_engines += removed_lists.index (i);
             }
 
-            Utils.active_engines = new_engines;
+            settings.active_engines = new_engines;
             update_engines_list ();
+            settings.active_index = 0; // Not obvious what to do when  currently active input source is removed
         });
 
         keyboard_shortcut_combobox.changed.connect (() => {
@@ -269,42 +269,37 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private void update_engines_list () {
         engines = bus.list_engines ();
 
-        // Stores names of currently activated engines
-        string[] engine_full_names = {};
-
         listbox.get_children ().foreach ((listbox_child) => {
             listbox_child.destroy ();
         });
 
         // Add the language and the name of activated engines
-        layouts.reset (LayoutType.IBUS);
-        foreach (var active_engine in Utils.active_engines) {
+        settings.reset (LayoutType.IBUS);
+        foreach (var active_engine in settings.active_engines) {
             foreach (var engine in engines) {
                 if (engine.name == active_engine) {
-                    engine_full_names += "%s - %s".printf (IBus.get_language_name (engine.language),
-                                                    Utils.gettext_engine_longname (engine));
+                    var engine_full_name = "%s - %s".printf (
+                        IBus.get_language_name (engine.language), gettext_engine_longname (engine)
+                    );
 
-                    layouts.add_layout (new InputSource (LayoutType.IBUS, engine.name), false);
+                    var label = new Gtk.Label (engine_full_name) {
+                        halign = Gtk.Align.START,
+                        margin = 6
+                    };
+
+                    var listboxrow = new Gtk.ListBoxRow ();
+                    listboxrow.set_data<string> ("engine-name", engine.name);
+                    listboxrow.add (label);
+
+                    listbox.add (listboxrow);
+                    settings.add_layout (new InputSource (LayoutType.IBUS, engine.name), false);
                 }
             }
         }
 
-        layouts.layouts_changed ();
-
-        foreach (var engine_full_name in engine_full_names) {
-            var label = new Gtk.Label (engine_full_name) {
-                halign = Gtk.Align.START,
-                margin = 6
-            };
-
-            var listboxrow = new Gtk.ListBoxRow ();
-            listboxrow.add (label);
-
-            listbox.add (listboxrow);
-        }
-
+        settings.layouts_changed ();
         listbox.show_all ();
-        listbox.select_row (listbox.get_row_at_index (0));
+        //Do not autoselect the first entry as that would change the active input method
 
         // Update the sensitivity of buttons depends on whether there are active engines
         remove_button.sensitive = listbox.get_row_at_index (0) != null;
@@ -334,9 +329,38 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         } else if (bus.is_connected ()) {
             stack.visible_child_name = "main_view";
             update_engines_list ();
-            add_engines_popover.update_engines_list ();
+            update_popover_engines_list ();
         } else {
             stack.visible_child_name = "no_daemon_runnning_view";
         }
+    }
+
+    // From https://github.com/ibus/ibus/blob/master/ui/gtk2/i18n.py#L47-L54
+    private string gettext_engine_longname (IBus.EngineDesc engine) {
+        string name = engine.name;
+        if (name.has_prefix ("xkb:")) {
+            return dgettext ("xkeyboard-config", engine.longname);
+        }
+
+        string textdomain = engine.textdomain;
+        if (textdomain == "") {
+            return engine.longname;
+        }
+
+        return dgettext (textdomain, engine.longname);
+    }
+
+    public void update_popover_engines_list () {
+        engines = new IBus.Bus ().list_engines ();
+        var engine_lists = new List<AddEnginesList> ();
+        foreach (var engine in engines) {
+            var full_name = "%s - %s".printf (
+                IBus.get_language_name (engine.language), gettext_engine_longname (engine)
+            );
+
+            engine_lists.append (new AddEnginesList (engine.name, full_name));
+        }
+
+        add_engines_popover.update_engines_list (engine_lists);
     }
 }
