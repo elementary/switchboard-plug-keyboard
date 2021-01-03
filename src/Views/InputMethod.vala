@@ -65,6 +65,17 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox ();
+        listbox.row_selected.connect ((row) => {
+            var child = row.get_child ();
+            string engine_name = "";
+            if (child is Gtk.Label) {
+                engine_name = ((Gtk.Label)child).label;
+            }
+
+            if (engine_name != "") {
+                bus.set_global_engine (engine_name);
+            }
+        });
 
         var scroll = new Gtk.ScrolledWindow (null, null) {
             hscrollbar_policy = Gtk.PolicyType.NEVER,

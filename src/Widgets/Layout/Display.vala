@@ -180,7 +180,6 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
                 list_store.append (out iter);
                 list_store.set (iter, 0, XkbLayoutHandler.get_instance ().get_display_name (layout.name));
                 list_store.set (iter, 1, layout.name);
-            } else {
             }
         }
 
