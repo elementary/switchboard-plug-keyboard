@@ -15,25 +15,25 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-    public class Pantheon.Keyboard.InputMethodPage.AddEnginesList : Object {
-        /*
-         * Stores strings used to add/remove engines in the code and won't be shown in the UI.
-         * It consists from "<Engine name>",
-         * e.g. "mozc-jp" or "libpinyin"
-         */
-        public string engine_id { get; construct; }
+public class Pantheon.Keyboard.InputMethodPage.AddEnginesList : Object {
+    /*
+     * Stores strings used to add/remove engines in the code and won't be shown in the UI.
+     * It consists from "<Engine name>",
+     * e.g. "mozc-jp" or "libpinyin"
+     */
+    public string engine_id { get; construct; }
 
-        /*
-         * Stores strings used to show in the UI.
-         * It consists from "<Language name> - <Engine name>",
-         * e.g. "Japanese - Mozc" or "Chinese - Intelligent Pinyin"
-         */
-        public string engine_full_name { get; construct; }
+    /*
+     * Stores strings used to show in the UI.
+     * It consists from "<Language name> - <Engine name>",
+     * e.g. "Japanese - Mozc" or "Chinese - Intelligent Pinyin"
+     */
+    public string engine_full_name { get; construct; }
 
-        public AddEnginesList (string id, string full_name) {
-            Object (
-                engine_id: id,
-                engine_full_name: full_name
-            );
-        }
+    public AddEnginesList (string id, string full_name) {
+        Object (
+            engine_id: id,
+            engine_full_name: full_name
+        );
     }
+}
