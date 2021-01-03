@@ -21,12 +21,6 @@ class Pantheon.Keyboard.SourceSettings : Object {
     public signal void layouts_changed ();
     public signal void active_input_source_changed ();
 
-    public uint length {
-        get {
-            return input_sources.length ();
-        }
-    }
-
     private uint _active_index = 0;
     public uint active_index { //Index in list of currently active input source
         get {
@@ -178,7 +172,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
     }
 
     public void move_active_layout_up () {
-        if (length == 0)
+        if (input_sources.length () == 0)
             return;
 
         // check that the active item is not the first one
@@ -188,11 +182,11 @@ class Pantheon.Keyboard.SourceSettings : Object {
     }
 
     public void move_active_layout_down () {
-        if (length == 0)
+        if (input_sources.length () == 0)
             return;
 
         // check that the active item is not the last one
-        if (active_index < length - 1) {
+        if (active_index < input_sources.length () - 1) {
             switch_items (active_index, active_index + 1);
         }
     }
@@ -272,8 +266,8 @@ class Pantheon.Keyboard.SourceSettings : Object {
     public void remove_active_layout () {
         input_sources.remove (active_input_source);
 
-        if (active_index >= length) {
-            active_index = length - 1;
+        if (active_index >= input_sources.length ()) {
+            active_index = input_sources.length () - 1;
         }
 
         layouts_changed ();
