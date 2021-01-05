@@ -26,6 +26,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
     private Gtk.ListBox layout_list_box;
     private GLib.ListStore language_list;
     private GLib.ListStore layout_list;
+    private XkbLayoutHandler handler;
 
     construct {
         default_height = 450;
@@ -36,6 +37,8 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Gtk.Dialog {
             margin_bottom = 6,
             placeholder_text = _("Search input language")
         };
+
+        handler = XkbLayoutHandler.get_instance ();
 
         language_list = new GLib.ListStore (typeof (ListStoreItem));
         layout_list = new GLib.ListStore (typeof (ListStoreItem));

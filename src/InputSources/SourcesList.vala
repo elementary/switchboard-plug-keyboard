@@ -20,8 +20,8 @@
 /**
  * Represents a list of layouts.
  */
-class Pantheon.Keyboard.LayoutPage.LayoutList : Object {
-    private GLib.List<Layout> layouts = new GLib.List<Layout> ();
+class Pantheon.Keyboard.SourcesList : Object {
+    private GLib.List<InputSource> layouts = new GLib.List<InputSource> ();
 
     // signals
     public signal void layouts_changed ();
@@ -54,9 +54,9 @@ class Pantheon.Keyboard.LayoutPage.LayoutList : Object {
     }
 
     private void switch_items (uint pos1, uint pos2) {
-        unowned List<Layout> container1 = layouts.nth (pos1);
-        unowned List<Layout> container2 = layouts.nth (pos2);
-        Layout tmp = container1.data;
+        unowned List<InputSource> container1 = layouts.nth (pos1);
+        unowned List<InputSource> container2 = layouts.nth (pos2);
+        InputSource tmp = container1.data;
         container1.data = container2.data;
         container2.data = tmp;
 
@@ -88,9 +88,13 @@ class Pantheon.Keyboard.LayoutPage.LayoutList : Object {
         }
     }
 
-    public bool add_layout (Layout new_layout) {
+    public bool add_layout (InputSource? new_layout) {
+        if (new_layout == null) {
+            return false;
+        }
+
         int i = 0;
-        foreach (Layout l in layouts) {
+        foreach (InputSource l in layouts) {
             if (l.equal (new_layout)) {
                 return false;
             }
@@ -112,15 +116,15 @@ class Pantheon.Keyboard.LayoutPage.LayoutList : Object {
     }
 
     public void remove_all () {
-        layouts = new GLib.List<Layout> ();
+        layouts = new GLib.List<InputSource> ();
         layouts_changed ();
     }
 
     /**
      * This method does not need call layouts_changed in any situation
-     * as a Layout-Object is immutable.
+     * as a InputSource-Object is immutable.
      */
-    public Layout? get_layout (uint index) {
+    public InputSource? get_layout (uint index) {
         if (index >= length)
             return null;
 

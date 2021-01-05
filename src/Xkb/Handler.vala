@@ -17,10 +17,22 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
+public class Pantheon.Keyboard.XkbLayoutHandler : GLib.Object {
     private const string XKB_RULES_FILE = "evdev.xml";
 
+    private static XkbLayoutHandler? instance = null;
+
+    public static XkbLayoutHandler get_instance () {
+        if (instance == null) {
+            instance = new XkbLayoutHandler ();
+        }
+
+        return instance;
+    }
+
     public HashTable<string, string> languages { get; private set; }
+
+    private XkbLayoutHandler () {}
 
     construct {
         languages = new HashTable<string, string> (str_hash, str_equal);
@@ -90,7 +102,7 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
         }
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
-        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem";
+        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem"; //vala-lint=line-length
         Xml.XPath.Object* res = cntx.eval_expression (xpath);
 
         if (res == null) {
