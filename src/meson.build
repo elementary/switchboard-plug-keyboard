@@ -46,7 +46,7 @@ switchboard_dep = dependency('switchboard-2.0')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 gnome_keyboard_dep = dependency('libgnomekbd')
-gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('libgnomekbdui')
+gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('gnomekbdui')
 
 ibus_dep = dependency('ibus-1.0')
 if(ibus_dep.version().version_compare('>=1.5.19'))
