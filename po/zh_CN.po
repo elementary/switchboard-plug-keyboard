@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-11-27 07:02+0000\n"
+"PO-Revision-Date: 2021-01-25 07:22+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
 
 #: src/Plug.vala:35
@@ -417,7 +417,7 @@ msgstr "网络浏览器"
 
 #: src/Shortcuts/List.vala:117
 msgid "Media"
-msgstr "媒体"
+msgstr "多媒体"
 
 #: src/Shortcuts/List.vala:118
 msgid "Volume Up"
@@ -485,7 +485,7 @@ msgstr "启用屏幕阅读器"
 
 #: src/Shortcuts/List.vala:140
 msgid "System"
-msgstr "系统"
+msgstr "系统信息"
 
 #: src/Shortcuts/List.vala:141 src/Views/Layout.vala:86
 msgid "Applications Menu"
@@ -597,7 +597,7 @@ msgstr "切换引擎："
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr "显示工具栏："
+msgstr "悬浮工具栏："
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
@@ -722,11 +722,11 @@ msgstr "在指示器面板中显示"
 
 #: src/Views/Layout.vala:148
 msgid "Caps Lock:"
-msgstr "大写锁定键："
+msgstr "大写锁定："
 
 #: src/Views/Layout.vala:154
 msgid "Num Lock:"
-msgstr "数字锁定键："
+msgstr "数字锁定："
 
 #: src/Views/Layout.vala:240 src/Views/Layout.vala:257
 msgid "Key to choose 3rd level:"
