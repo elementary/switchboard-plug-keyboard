@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2021-01-25 07:22+0000\n"
+"PO-Revision-Date: 2021-02-01 12:46+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -64,7 +64,7 @@ msgstr "大写锁定键行为"
 
 #: src/Plug.vala:103
 msgid "Switch engines"
-msgstr "切换引擎"
+msgstr "切换输入法"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
@@ -593,7 +593,7 @@ msgstr "删除"
 
 #: src/Views/InputMethod.vala:98
 msgid "Switch engines:"
-msgstr "切换引擎："
+msgstr "切换输入法："
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
@@ -718,7 +718,7 @@ msgstr "键入任意内容测试您的布局"
 
 #: src/Views/Layout.vala:142
 msgid "Show in Panel"
-msgstr "在指示器面板中显示"
+msgstr "在顶栏显示"
 
 #: src/Views/Layout.vala:148
 msgid "Caps Lock:"
