@@ -78,6 +78,19 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             bus.set_global_engine (engine_name);
         });
 
+        bus.set_watch_ibus_signal (true);
+        bus.global_engine_changed.connect ((name) => {
+            listbox.@foreach ((widget) => {
+                var row = (Gtk.ListBoxRow)widget;
+                var row_name = row.get_data<string>("engine-name");
+                if (row_name == name) {
+                    listbox.select_row (row);
+                } else {
+                    listbox.unselect_row (row);
+                }
+            });
+        });
+
         var scroll = new Gtk.ScrolledWindow (null, null) {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             expand = true
