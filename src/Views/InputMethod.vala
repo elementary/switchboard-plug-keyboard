@@ -31,6 +31,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private Gtk.MenuButton remove_button;
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
+    private Gtk.Entry entry_test;
 
     construct {
         settings = SourceSettings.get_instance ();
@@ -61,25 +62,29 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
+
         spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
 
         // normal view shown if IBus Daemon is already running
-        listbox = new Gtk.ListBox ();
+        listbox = new Gtk.ListBox () {
+            selection_mode = Gtk.SelectionMode.BROWSE  //One or none selected
+        };
+
         listbox.row_selected.connect ((row) => {
             if (!(row is Gtk.ListBoxRow)) {
+                entry_test.sensitive = false;
                 return; // No row was selected or selected row no longer exists
             }
 
+            entry_test.sensitive = true;
             string engine_name = row.get_data ("engine-name");
-            //This sets the active global ibus engine but /org/gnome/desktop/input-sources/current is deprecated
-            //This is currently required so wingpanel shows correct input source
             settings.set_active_engine_name (engine_name);
-            //Also set ibus engine directly?
             bus.set_global_engine (engine_name);
         });
 
         bus.set_watch_ibus_signal (true);
         bus.global_engine_changed.connect ((name) => {
+            entry_test.sensitive = false;
             listbox.@foreach ((widget) => {
                 var row = (Gtk.ListBoxRow)widget;
                 var row_name = row.get_data<string> ("engine-name");
@@ -153,7 +158,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
-        var entry_test = new Gtk.Entry () {
+        entry_test = new Gtk.Entry () {
             hexpand = true,
             placeholder_text = (_("Type to test your settings")),
             valign = Gtk.Align.END
@@ -202,7 +207,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         });
 
         remove_button.clicked.connect (() => {
-        warning ("remove button clicked");
             int index = listbox.get_selected_row ().get_index ();
 
             // Convert to GLib.Array once, because Vala does not support "-=" operator
@@ -234,6 +238,12 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
+
+        settings.active_input_source_changed.connect (() => {
+            if (settings.active_input_source.layout_type != LayoutType.IBUS) {
+               listbox.unselect_all ();
+            }
+        });
     }
 
     private string get_keyboard_shortcut () {
@@ -282,7 +292,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private void update_engines_list () {
         engines = bus.list_engines ();
 
-        listbox.get_children ().foreach ((listbox_child) => {
+        listbox.@foreach ((listbox_child) => {
             listbox_child.destroy ();
         });
 

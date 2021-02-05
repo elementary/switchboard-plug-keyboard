@@ -30,6 +30,9 @@ class Pantheon.Keyboard.SourceSettings : Object {
         set {
             if (value != _active_index) {
                 _active_index = value;
+                /* org/gnome/desktop/input-sources/current is deprecated and ignored by Gnome but is used by Gala
+                 * and Wingpanel so we need to keep it updated.
+                 */
                 settings.set_uint ("current", value);
                 active_input_source_changed ();
             }

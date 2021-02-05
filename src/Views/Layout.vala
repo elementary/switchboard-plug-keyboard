@@ -23,6 +23,7 @@ namespace Pantheon.Keyboard {
         private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
+        private Gtk.Entry entry_test;
 
         construct {
             settings = SourceSettings.get_instance ();
@@ -111,7 +112,7 @@ namespace Pantheon.Keyboard {
 
             advanced_settings = new AdvancedSettings (panels);
 
-            var entry_test = new Gtk.Entry ();
+            entry_test = new Gtk.Entry ();
             entry_test.valign = Gtk.Align.END;
             entry_test.expand = true;
             entry_test.placeholder_text = (_("Type to test your layout"));
@@ -169,6 +170,7 @@ namespace Pantheon.Keyboard {
             });
 
             settings.active_input_source_changed.connect (() => {
+                entry_test.sensitive = settings.active_input_source.layout_type == LayoutType.XKB;
                 show_panel_for_active_layout ();
             });
 
