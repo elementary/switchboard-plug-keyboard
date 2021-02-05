@@ -82,7 +82,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         bus.global_engine_changed.connect ((name) => {
             listbox.@foreach ((widget) => {
                 var row = (Gtk.ListBoxRow)widget;
-                var row_name = row.get_data<string>("engine-name");
+                var row_name = row.get_data<string> ("engine-name");
                 if (row_name == name) {
                     listbox.select_row (row);
                 } else {
