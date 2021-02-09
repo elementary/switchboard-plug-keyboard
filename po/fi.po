@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-10-04 21:14+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-02-09 20:16+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
 "Language: fi\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Plug.vala:35
@@ -35,10 +35,8 @@ msgstr "Asettelu"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Syötetavan asetukset…"
+msgstr "Syötetapa"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
@@ -65,14 +63,12 @@ msgid "Caps Lock behavior"
 msgstr "Caps Lockin toiminta"
 
 #: src/Plug.vala:103
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Vaihda ikkunoiden välillä"
+msgstr "Vaihda moottoreita"
 
 #: src/Plug.vala:104
 msgid "Show candidate window"
-msgstr ""
+msgstr "Näytä ehdokasikkuna"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
@@ -91,20 +87,16 @@ msgid "Input Language"
 msgstr "Syötekieli"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Asettelu"
+msgstr "Asetteluluettelo"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
 msgstr "Hae syötekieli"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Asettelu"
+msgstr "Esikatsele asettelu"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -141,21 +133,19 @@ msgstr "Aseta uudelleen"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Valitse asennettava moottori"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Valitse asennettava ja käytettävä moottori luettelosta."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Syötekieli"
+msgstr "Kielet"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Asenna"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -205,7 +195,7 @@ msgstr "Suurenna / palauta koko"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Piilota"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -444,10 +434,8 @@ msgid "Mute"
 msgstr "Vaimenna"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Keskeytä"
+msgstr "Toista/keskeytä"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -580,21 +568,23 @@ msgstr "Kirjoita testataksesi asetuksia"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:40
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus-taustapalvelu ei ole käynnissä"
 
 #: src/Views/InputMethod.vala:41
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"IBus-taustapalvelu tulee olla käynnissä, jotta syötetapojen moottoreita voi "
+"ottaa käyttöön tai niiden asetuksia muuttaa."
 
 #: src/Views/InputMethod.vala:48
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "Käynnistä IBus-taustapalvelu"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:55
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "IBus-taustapalvelun käynnistäminen epäonnistui"
 
 #: src/Views/InputMethod.vala:78 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -606,26 +596,24 @@ msgid "Remove"
 msgstr "Poista"
 
 #: src/Views/InputMethod.vala:98
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Vaihda ikkunoiden välillä"
+msgstr "Vaihda moottoreita:"
 
 #: src/Views/InputMethod.vala:110
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Näytä ehdokasikkuna:"
 
 #: src/Views/InputMethod.vala:117
 msgid "Do not show"
-msgstr ""
+msgstr "Älä näytä"
 
 #: src/Views/InputMethod.vala:118
 msgid "Auto hide"
-msgstr ""
+msgstr "Piilota automaattisesti"
 
 #: src/Views/InputMethod.vala:119
 msgid "Always show"
-msgstr ""
+msgstr "Näytä aina"
 
 #: src/Views/InputMethod.vala:121
 msgid "Embed preedit text in application window:"
@@ -781,15 +769,15 @@ msgstr "Lisää"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:39
 msgid "Search engine"
-msgstr ""
+msgstr "Etsi moottoria"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Asenna luettelemattomia moottoreita…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
-msgstr ""
+msgstr "Lisää moottori"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
