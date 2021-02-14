@@ -32,7 +32,12 @@ namespace Pantheon.Keyboard {
      * tupel of strings, and the @name parameter equals the second string.
      */
     public class InputSource : Object {
-        public static InputSource new_xkb (string name, string? xkb_variant) {
+        public static InputSource? new_xkb (string name, string? xkb_variant) {
+            if (name == "") {
+                critical ("Ignoring attempt to create invalid InputSource name %s", name);
+                return null;
+            }
+
             string full_name = name;
             if (xkb_variant != null && xkb_variant != "") {
                 full_name += "+" + xkb_variant;
@@ -48,11 +53,18 @@ namespace Pantheon.Keyboard {
 
                 variant.get ("(&s&s)", out type, out name);
 
-                if (type == "xkb") {
-                    return new InputSource (LayoutType.XKB, name);
-                } else if (type == "ibus") {
-                    return new InputSource (LayoutType.IBUS, name);
+                if (name != "") {
+                    if (type == "xkb") {
+                        return new InputSource (LayoutType.XKB, name);
+                    } else if (type == "ibus") {
+                        return new InputSource (LayoutType.IBUS, name);
+                    }
+                } else {
+                    critical ("Attempt to create invalid InputSource name %s", name);
                 }
+
+            } else {
+                critical ("Ignoring attempt to create InputSource from invalid VariantType");
             }
 
             return null;
@@ -78,7 +90,7 @@ namespace Pantheon.Keyboard {
          * GSettings saves values in the form of GLib.Variant and this
          * function creates a Variant representing this object.
          */
-        public GLib.Variant to_variant () {
+        public GLib.Variant to_variant ()  requires (name != "") {
             string type_name = "";
             switch (layout_type) {
                 case LayoutType.IBUS:
@@ -88,8 +100,7 @@ namespace Pantheon.Keyboard {
                     type_name = "xkb";
                     break;
                 default:
-                    error ("You need to implemnt this for all possible values of"
-                           + "the LayoutType-enum");
+                    assert_not_reached ();
             }
             GLib.Variant first = new GLib.Variant.string (type_name);
             GLib.Variant second = new GLib.Variant.string (name);
