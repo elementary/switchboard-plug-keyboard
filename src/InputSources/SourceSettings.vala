@@ -18,34 +18,17 @@
 */
 
 class Pantheon.Keyboard.SourceSettings : Object {
-    public signal void layouts_changed ();
-    public signal void active_input_source_changed ();
+    public signal void external_layout_change ();
 
-    private uint _active_index = 0;
-    public uint active_index { //Index in list of currently active input source
-        get {
-            return _active_index;
-        }
+    public uint active_index { get; set; }
 
-        set {
-            if (value != _active_index) {
-                _active_index = value;
-                /* org/gnome/desktop/input-sources/current is deprecated and ignored by Gnome but is used by Gala
-                 * and Wingpanel so we need to keep it updated.
-                 */
-                settings.set_uint ("current", value);
-                active_input_source_changed ();
-            }
-        }
-    }
-
-    public InputSource active_input_source {
+    public InputSource? active_input_source {
         get {
             if (active_index >= input_sources.length ()) {
                 active_index = 0;
             }
 
-            return input_sources.nth_data (active_index);
+            return input_sources.nth_data (active_index); //May be null if input source list empty
         }
     }
 
@@ -94,32 +77,16 @@ class Pantheon.Keyboard.SourceSettings : Object {
         update_list_from_gsettings ();
         update_active_from_gsettings ();
 
-        layouts_changed.connect (() => {
-            currently_writing = true;
-            try {
-                Variant[] elements = {};
-                input_sources.foreach ((input_source) => {
-                    elements += input_source.to_variant ();
-                });
-                GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), elements);
-                settings.set_value ("sources", list);
-            } finally {
-                currently_writing = false;
-            }
-        });
-
         settings.changed["sources"].connect (() => {
             update_list_from_gsettings ();
+            external_layout_change ();
         });
 
-        settings.changed["current"].connect (() => {
-            update_active_from_gsettings ();
-        });
+        settings.bind ("current", this, "active-index", SettingsBindFlags.DEFAULT);
     }
 
     private void update_list_from_gsettings () {
-        // We currently write to gsettings, so we caused this signal
-        // and therefore don't need to read the list again from dconf
+        // If we are currentlyly writing to gsettings, we don't need to read the list again from dconf
         if (currently_writing) {
             return;
         }
@@ -127,16 +94,16 @@ class Pantheon.Keyboard.SourceSettings : Object {
         reset (null);
 
         GLib.Variant sources = settings.get_value ("sources");
-        if (sources.is_of_type (VariantType.ARRAY)) {
+        if (sources.get_type ().dup_string () == "a(ss)") {
             for (size_t i = 0; i < sources.n_children (); i++) {
                 GLib.Variant child = sources.get_child_value (i);
-                add_layout (InputSource.new_from_variant (child), false);
+                add_layout_internal (InputSource.new_from_variant (child));
             }
-        } else {
-            warning ("Unknown type");
-        }
 
-        layouts_changed ();
+            external_layout_change ();
+        } else {
+            warning ("GSettings sources of unexpected type");
+        }
     }
 
     private void update_active_from_gsettings () {
@@ -166,17 +133,17 @@ class Pantheon.Keyboard.SourceSettings : Object {
         container1.data = container2.data;
         container2.data = tmp;
 
-        if (active_index == pos1)
+        if (active_index == pos1) {
             active_index = pos2;
-        else if (active_index == pos2)
+        } else if (active_index == pos2) {
             active_index = pos1;
-
-        layouts_changed ();
+        }
     }
 
     public void move_active_layout_up () {
-        if (input_sources.length () == 0)
+        if (input_sources.length () == 0) {
             return;
+        }
 
         // check that the active item is not the first one
         if (active_index > 0) {
@@ -238,14 +205,23 @@ class Pantheon.Keyboard.SourceSettings : Object {
 
         for (int i = 0; i < xkb_layouts.length; i++) {
             if (variants[i] != null && variants[i] != "") {
-                add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+                add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
             } else {
-                add_layout (new InputSource (LayoutType.XKB, xkb_layouts[i]));
+                add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i]));
             }
         }
     }
 
-    public bool add_layout (InputSource? new_layout, bool signal_change = true) {
+    public bool add_layout (InputSource? new_layout) {
+        if (add_layout_internal (new_layout)) {
+            write_to_gsettings ();
+            return true;
+        }
+
+        return false;
+    }
+
+    public bool add_layout_internal (InputSource? new_layout) {
         if (new_layout == null) {
             return false;
         }
@@ -260,9 +236,6 @@ class Pantheon.Keyboard.SourceSettings : Object {
         }
 
         input_sources.append (new_layout);
-        if (signal_change) {
-            layouts_changed ();
-        }
         return true;
     }
 
@@ -273,7 +246,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
             active_index = input_sources.length () - 1;
         }
 
-        layouts_changed ();
+        write_to_gsettings ();
     }
 
     public void reset (LayoutType? layout_type, bool signal_changed = true) {
@@ -291,19 +264,15 @@ class Pantheon.Keyboard.SourceSettings : Object {
         if (input_sources.length () == 0) {
             add_default_keyboard ();
         }
-
-        if (signal_changed) {
-            layouts_changed ();
-        }
     }
 
     private void update_input_sources_ibus () {
         reset (LayoutType.IBUS, false);
         foreach (string engine_name in active_engines) {
-            add_layout (new InputSource (LayoutType.IBUS, engine_name), false);
+            add_layout (new InputSource (LayoutType.IBUS, engine_name));
         }
 
-        layouts_changed ();
+        write_to_gsettings ();
     }
 
     public bool add_active_engine (string engine_name) {
@@ -332,5 +301,19 @@ class Pantheon.Keyboard.SourceSettings : Object {
 
             index++;
         });
+    }
+
+    private void write_to_gsettings () {
+        currently_writing = true;
+        try {
+            Variant[] elements = {};
+            input_sources.foreach ((input_source) => {
+                elements += input_source.to_variant ();
+            });
+            GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), elements);
+            settings.set_value ("sources", list);
+        } finally {
+            currently_writing = false;
+        }
     }
 }

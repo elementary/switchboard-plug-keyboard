@@ -239,7 +239,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
 
-        settings.active_input_source_changed.connect (() => {
+        settings.notify["active-index"].connect (() => {
             if (settings.active_input_source.layout_type != LayoutType.IBUS) {
                listbox.unselect_all ();
             }
@@ -315,12 +315,11 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                     listboxrow.add (label);
 
                     listbox.add (listboxrow);
-                    settings.add_layout (new InputSource (LayoutType.IBUS, engine.name), false);
+                    settings.add_layout (new InputSource (LayoutType.IBUS, engine.name));
                 }
             }
         }
 
-        settings.layouts_changed ();
         listbox.show_all ();
         //Do not autoselect the first entry as that would change the active input method
 

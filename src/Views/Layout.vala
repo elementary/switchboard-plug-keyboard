@@ -169,7 +169,7 @@ namespace Pantheon.Keyboard {
                 show_panel_for_active_layout ();
             });
 
-            settings.active_input_source_changed.connect (() => {
+            settings.notify["active-index"].connect (() => {
                 entry_test.sensitive = settings.active_input_source.layout_type == LayoutType.XKB;
                 show_panel_for_active_layout ();
             });

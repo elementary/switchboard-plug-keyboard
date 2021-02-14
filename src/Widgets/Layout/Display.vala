@@ -111,8 +111,9 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             rebuild_list ();
         });
 
-        tree.cursor_changed.connect (() => {
+        tree.cursor_changed.connect_after (() => {
             cursor_changing = true;
+
             int new_index = get_cursor_index ();
             if (new_index != -1) {
                 settings.active_index = new_index;
@@ -123,17 +124,11 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             cursor_changing = false;
         });
 
-        settings.active_input_source_changed.connect (() => {
-            if (cursor_changing) {
-                return;
-            }
-
+        settings.notify["active-index"].connect (() => {
             update_cursor ();
         });
 
-        settings.layouts_changed.connect_after (() => {
-            rebuild_list ();
-        });
+        settings.external_layout_change.connect (rebuild_list);
 
         rebuild_list ();
     }
@@ -169,6 +164,10 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
     }
 
     private void update_cursor () {
+        if (cursor_changing) {
+            return;
+        }
+
         tree.set_cursor (new Gtk.TreePath (), null, false);
         if (settings.active_input_source.layout_type == LayoutType.XKB) {
             uint index = 0;
