@@ -74,15 +74,14 @@ class Pantheon.Keyboard.SourceSettings : Object {
     private SourceSettings () {
         settings = new GLib.Settings ("org.gnome.desktop.input-sources");
 
-        update_list_from_gsettings ();
-        update_active_from_gsettings ();
-
         settings.changed["sources"].connect (() => {
             update_list_from_gsettings ();
             external_layout_change ();
         });
 
         settings.bind ("current", this, "active-index", SettingsBindFlags.DEFAULT);
+
+        update_list_from_gsettings ();
     }
 
     private void update_list_from_gsettings () {
@@ -106,10 +105,6 @@ class Pantheon.Keyboard.SourceSettings : Object {
         }
 
         add_default_keyboard_if_required ();
-    }
-
-    private void update_active_from_gsettings () {
-        active_index = settings.get_uint ("current");
     }
 
     public void add_xkb_modifier (XkbModifier modifier) {
