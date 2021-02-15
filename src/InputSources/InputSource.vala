@@ -90,7 +90,7 @@ namespace Pantheon.Keyboard {
          * GSettings saves values in the form of GLib.Variant and this
          * function creates a Variant representing this object.
          */
-        public GLib.Variant to_variant ()  requires (name != "") {
+        public GLib.Variant to_variant () requires (name != "") {
             string type_name = "";
             switch (layout_type) {
                 case LayoutType.IBUS:
