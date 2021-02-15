@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2020-10-27 06:15+0000\n"
+"PO-Revision-Date: 2021-02-15 21:09+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-25 05:59+0000\n"
 
 #: src/Plug.vala:35
@@ -75,7 +75,7 @@ msgstr "Kandidatenfenster anzeigen"
 
 #: src/Plug.vala:105
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Vorbereiteten Text ins Anwendungsfenster einsetzen"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
@@ -90,20 +90,16 @@ msgid "Input Language"
 msgstr "Eingabesprache"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Liste der Tastenbelegungen"
+msgstr "Liste der Tastaturbelegungen"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
 msgstr "Eingabesprache suchen"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Vorschau der Tastenbelegung"
+msgstr "Vorschau der Tastaturbelegung"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -130,7 +126,7 @@ msgstr "%s wird bereits für %s verwendet"
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Wenn Sie das Kürzel neu %s zuordnen, wird %s deaktiviert."
+msgstr "Wenn Sie das Kürzel %s neu zuordnen, wird %s deaktiviert."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
@@ -142,9 +138,8 @@ msgid "Choose an engine to install"
 msgstr "Zu installierende Engine wählen"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
-#, fuzzy
 msgid "Select an engine from the list to install and use."
-msgstr "Aus der  Liste Engine zum Installieren und Verwenden wählen"
+msgstr "Aus der Liste Engine zum Installieren und Verwenden wählen."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
@@ -157,12 +152,12 @@ msgstr "Installieren"
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr "Installiere %s"
+msgstr "%s installieren"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr "Entferne %s"
+msgstr "%s entfernen"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
@@ -202,7 +197,7 @@ msgstr "Zwischen normaler und maximierter Darstellung umschalten"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Ausblenden"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -243,27 +238,21 @@ msgstr "Übersicht aller Fenster aller Arbeitsflächen"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr "Bild-in-Bild Modus"
+msgstr "Bild-in-Bild-Modus"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Fenster auf die oben anschließende Arbeitsfläche bewegen"
+msgstr "Auf den oben anschließenden Bildschirm verschieben"
 
 #: src/Shortcuts/List.vala:61
 msgid "Move to display below"
-msgstr "Auf den unten anschließenden Bildschirm bewegen"
+msgstr "Auf den unten anschließenden Bildschirm verschieben"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
 msgstr "Auf den rechts anschließenden Bildschirm verschieben"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
 msgstr "Auf den links anschließenden Bildschirm verschieben"
 
@@ -516,8 +505,9 @@ msgid "Log Out"
 msgstr "Abmelden"
 
 #: src/Shortcuts/List.vala:144
+#, fuzzy
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Bildschirmmodus durchschalten"
 
 #: src/Shortcuts/List.vala:148
 msgid "Custom"
