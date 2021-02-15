@@ -104,6 +104,8 @@ class Pantheon.Keyboard.SourceSettings : Object {
         } else {
             warning ("GSettings sources of unexpected type");
         }
+
+        add_default_keyboard_if_required ();
     }
 
     private void update_active_from_gsettings () {
@@ -165,50 +167,61 @@ class Pantheon.Keyboard.SourceSettings : Object {
         input_sources.foreach (func);
     }
 
-    private void add_default_keyboard () {
-        var file = File.new_for_path ("/etc/default/keyboard");
+    private void add_default_keyboard_if_required () {
+        bool have_xkb = false;
+        input_sources.@foreach ((source) => {
+            if (source.layout_type == LayoutType.XKB) {
+                have_xkb = true;
+            }
+        });
 
-        if (!file.query_exists ()) {
-            warning ("File '%s' doesn't exist.\n", file.get_path ());
-            return;
-        }
+        if (!have_xkb) {
+            var file = File.new_for_path ("/etc/default/keyboard");
 
-        string xkb_layout = "";
-        string xkb_variant = "";
+            if (!file.query_exists ()) {
+                warning ("File '%s' doesn't exist.\n", file.get_path ());
+                return;
+            }
 
-        try {
-            var dis = new DataInputStream (file.read ());
+            string xkb_layout = "";
+            string xkb_variant = "";
 
-            string line;
+            try {
+                var dis = new DataInputStream (file.read ());
 
-            while ((line = dis.read_line (null)) != null) {
-                if (line.contains ("XKBLAYOUT=")) {
-                    xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
+                string line;
 
-                    while ((line = dis.read_line (null)) != null) {
-                        if (line.contains ("XKBVARIANT=")) {
-                            xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
+                while ((line = dis.read_line (null)) != null) {
+                    if (line.contains ("XKBLAYOUT=")) {
+                        xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
+
+                        while ((line = dis.read_line (null)) != null) {
+                            if (line.contains ("XKBVARIANT=")) {
+                                xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
+                            }
                         }
-                    }
 
-                    break;
+                        break;
+                    }
                 }
             }
-        }
-        catch (Error e) {
-            warning ("%s", e.message);
-            return;
-        }
-
-        var variants = xkb_variant.split (",");
-        var xkb_layouts = xkb_layout.split (",");
-
-        for (int i = 0; i < xkb_layouts.length; i++) {
-            if (variants[i] != null && variants[i] != "") {
-                add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
-            } else {
-                add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i]));
+            catch (Error e) {
+                warning ("%s", e.message);
+                return;
             }
+
+            var variants = xkb_variant.split (",");
+            var xkb_layouts = xkb_layout.split (",");
+
+            for (int i = 0; i < xkb_layouts.length; i++) {
+                if (variants[i] != null && variants[i] != "") {
+                    add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+                } else {
+                    add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i]));
+                }
+            }
+
+            write_to_gsettings ();
         }
     }
 
@@ -242,9 +255,11 @@ class Pantheon.Keyboard.SourceSettings : Object {
     public void remove_active_layout () {
         input_sources.remove (active_input_source);
 
-        if (active_index >= input_sources.length ()) {
+        if (active_index >= 1) {
             active_index = input_sources.length () - 1;
         }
+
+        add_default_keyboard_if_required ();
 
         write_to_gsettings ();
     }
@@ -260,10 +275,6 @@ class Pantheon.Keyboard.SourceSettings : Object {
         remove_layouts.@foreach ((layout) => {
             input_sources.remove (layout);
         });
-
-        if (input_sources.length () == 0) {
-            add_default_keyboard ();
-        }
     }
 
     private void update_input_sources_ibus () {
