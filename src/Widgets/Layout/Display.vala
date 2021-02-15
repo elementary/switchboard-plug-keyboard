@@ -115,7 +115,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             cursor_changing = true;
 
             int new_index = get_cursor_index ();
-            if (new_index != -1) {
+            if (new_index >= 0) {
                 settings.active_index = new_index;
             }
 
