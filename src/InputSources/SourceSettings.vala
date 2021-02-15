@@ -128,9 +128,21 @@ class Pantheon.Keyboard.SourceSettings : Object {
         return null;
     }
 
-    private void switch_items (uint pos1, uint pos2) {
+    private void switch_items (uint pos1, bool move_up) {
+        var pos2 = move_up ? pos1 - 1 : pos1 + 1;
         unowned List<InputSource> container1 = input_sources.nth (pos1);
         unowned List<InputSource> container2 = input_sources.nth (pos2);
+        /* We want to move the source relative to its own kind */
+        var max_pos = input_sources.length () - 1;
+        while (container1.data.layout_type != container2.data.layout_type) {
+            pos2 = move_up ? pos2 - 1 : pos2 + 1;
+            if (pos2 < 0 || pos2 > max_pos) {
+                return;
+            }
+
+            container2 = input_sources.nth (pos2);
+        }
+
         InputSource tmp = container1.data;
         container1.data = container2.data;
         container2.data = tmp;
@@ -140,6 +152,8 @@ class Pantheon.Keyboard.SourceSettings : Object {
         } else if (active_index == pos2) {
             active_index = pos1;
         }
+
+        write_to_gsettings ();
     }
 
     public void move_active_layout_up () {
@@ -149,7 +163,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
 
         // check that the active item is not the first one
         if (active_index > 0) {
-            switch_items (active_index, active_index - 1);
+            switch_items (active_index, true);
         }
     }
 
@@ -159,7 +173,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
 
         // check that the active item is not the last one
         if (active_index < input_sources.length () - 1) {
-            switch_items (active_index, active_index + 1);
+            switch_items (active_index, false);
         }
     }
 
