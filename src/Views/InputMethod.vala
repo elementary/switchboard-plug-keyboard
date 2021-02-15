@@ -71,29 +71,19 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         };
 
         listbox.row_selected.connect ((row) => {
-            if (!(row is Gtk.ListBoxRow)) {
-                entry_test.sensitive = false;
-                return; // No row was selected or selected row no longer exists
+            if (row is Gtk.ListBoxRow) {
+                string engine_name = row.get_data ("engine-name");
+                settings.set_active_engine_name (engine_name);
+                bus.set_global_engine (engine_name);
             }
 
-            entry_test.sensitive = true;
-            string engine_name = row.get_data ("engine-name");
-            settings.set_active_engine_name (engine_name);
-            bus.set_global_engine (engine_name);
+            update_entry_test_usable ();
         });
 
         bus.set_watch_ibus_signal (true);
         bus.global_engine_changed.connect ((name) => {
-            entry_test.sensitive = false;
-            listbox.@foreach ((widget) => {
-                var row = (Gtk.ListBoxRow)widget;
-                var row_name = row.get_data<string> ("engine-name");
-                if (row_name == name) {
-                    listbox.select_row (row);
-                } else {
-                    listbox.unselect_row (row);
-                }
-            });
+            update_list_box_selected_row ();
+            update_entry_test_usable ();
         });
 
         var scroll = new Gtk.ScrolledWindow (null, null) {
@@ -160,9 +150,10 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         entry_test = new Gtk.Entry () {
             hexpand = true,
-            placeholder_text = (_("Type to test your settings")),
             valign = Gtk.Align.END
         };
+
+        update_entry_test_usable ();
 
         var right_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -240,10 +231,11 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
 
         settings.notify["active-index"].connect (() => {
-            if (settings.active_input_source.layout_type != LayoutType.IBUS) {
-               listbox.unselect_all ();
-            }
+            update_list_box_selected_row ();
+            update_entry_test_usable ();
         });
+
+        update_list_box_selected_row ();
     }
 
     private string get_keyboard_shortcut () {
@@ -384,5 +376,36 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         }
 
         add_engines_popover.update_engines_list (engine_lists);
+    }
+
+    private void update_entry_test_usable () {
+        if (settings.active_input_source.layout_type == LayoutType.IBUS) {
+            entry_test.placeholder_text = _("Type to test your Input Method");
+            entry_test.sensitive = true;
+        } else {
+            entry_test.placeholder_text = _("A Keyboard Layout is active");
+            entry_test.sensitive = false;
+        }
+    }
+
+    private void update_list_box_selected_row () {
+        var engine_name = "";
+
+        if (settings.active_input_source.layout_type == LayoutType.IBUS) {
+            engine_name = settings.active_input_source.name;
+            bus.set_global_engine (engine_name);
+        }
+
+        /* Emitting "unselect_all ()" on listbox does not unselect rows for some reason so we
+         * unselect rows individually */
+        listbox.@foreach ((widget) => {
+            var row = (Gtk.ListBoxRow)widget;
+            var row_name = row.get_data<string> ("engine-name");
+            if (row_name == engine_name) {
+                listbox.select_row (row);
+            } else {
+                listbox.unselect_row (row);
+            }
+        });
     }
 }

@@ -112,10 +112,12 @@ namespace Pantheon.Keyboard {
 
             advanced_settings = new AdvancedSettings (panels);
 
-            entry_test = new Gtk.Entry ();
-            entry_test.valign = Gtk.Align.END;
-            entry_test.expand = true;
-            entry_test.placeholder_text = (_("Type to test your layout"));
+            entry_test = new Gtk.Entry () {
+                hexpand = true,
+                valign = Gtk.Align.END
+            };
+
+            update_entry_test_usable ();
 
             column_homogeneous = true;
             column_spacing = 12;
@@ -170,7 +172,7 @@ namespace Pantheon.Keyboard {
             });
 
             settings.notify["active-index"].connect (() => {
-                entry_test.sensitive = settings.active_input_source.layout_type == LayoutType.XKB;
+                update_entry_test_usable ();
                 show_panel_for_active_layout ();
             });
 
@@ -386,6 +388,16 @@ namespace Pantheon.Keyboard {
                         modifier.update_active_command ("");
                     }
                 });
+            }
+        }
+
+        private void update_entry_test_usable () {
+            if (settings.active_input_source.layout_type == LayoutType.XKB) {
+                entry_test.placeholder_text = _("Type to test your layout");
+                entry_test.sensitive = true;
+            } else {
+                entry_test.placeholder_text = _("Input Method is active");
+                entry_test.sensitive = false;
             }
         }
 
