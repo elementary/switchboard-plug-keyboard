@@ -179,7 +179,7 @@ namespace Pantheon.Keyboard {
                 case "":
                     overlay_key_combo.active = 0;
                     break;
-                case "wingpanel --toggle-indicator=app-launcher":
+                case "io.elementary.wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
                 case "io.elementary.shortcut-overlay":
@@ -193,7 +193,7 @@ namespace Pantheon.Keyboard {
                 if (combo_active == 0) {
                     gala_behavior_settings.set_string ("overlay-action", "");
                 } else if (combo_active == 1) {
-                    gala_behavior_settings.set_string ("overlay-action", "wingpanel --toggle-indicator=app-launcher");
+                    gala_behavior_settings.set_string ("overlay-action", "io.elementary.wingpanel --toggle-indicator=app-launcher");
                 } else if (combo_active == 2) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
