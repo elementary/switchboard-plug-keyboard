@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2021-02-06 19:48+0000\n"
+"PO-Revision-Date: 2021-03-03 02:55+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -76,27 +76,27 @@ msgstr "Incorporar texto pré-editado na janela de aplicação"
 
 #: src/Plug.vala:108
 msgid "Repeat Keys"
-msgstr "Teclas de Repetição"
+msgstr "Teclas de repetição"
 
 #: src/Plug.vala:109
 msgid "Cursor Blinking"
-msgstr "Piscar do Cursor"
+msgstr "Piscar do cursor"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
 msgid "Input Language"
-msgstr "Idioma de entrada"
+msgstr "Idioma de introdução"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
 msgid "Layout List"
-msgstr "Lista de Esquemas"
+msgstr "Lista de esquemas"
 
 #: src/Dialogs/AddLayoutDialog.vala:37
 msgid "Search input language"
-msgstr "Procurar um idioma de entrada"
+msgstr "Procurar um idioma de introdução"
 
 #: src/Dialogs/AddLayoutDialog.vala:90
 msgid "Preview Layout"
-msgstr "Pré-visualizar Esquema"
+msgstr "Pré-visualizar esquema"
 
 #: src/Dialogs/AddLayoutDialog.vala:138 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -118,7 +118,7 @@ msgstr "Predefinição"
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr "%s já está em uso para %s"
+msgstr "%s já está em utilização para %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format

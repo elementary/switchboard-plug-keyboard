@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2020-09-29 13:14+0000\n"
+"PO-Revision-Date: 2021-02-18 08:37+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -44,7 +44,7 @@ msgstr "\"再生\" メディアキーの説明ラベルを \"再生/一時停止
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
-msgstr "一部のショートカットキーが“無効”と表示される不具合を修正"
+msgstr "一部のショートカットキーが “無効” と表示される不具合を修正"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "Add a view to configure input methods"
