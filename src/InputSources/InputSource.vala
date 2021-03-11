@@ -34,7 +34,7 @@ namespace Pantheon.Keyboard {
     public class InputSource : Object {
         public static InputSource? new_xkb (string name, string? xkb_variant) {
             if (name == "") {
-                critical ("Ignoring attempt to create invalid InputSource name %s", name);
+                critical ("Ignoring attempt to create invalid Xkb InputSource name %s", name);
                 return null;
             }
 
@@ -44,6 +44,15 @@ namespace Pantheon.Keyboard {
             }
 
             return new InputSource (LayoutType.XKB, full_name);
+        }
+
+        public static InputSource? new_ibus (string engine_name) {
+            if (engine_name == "") {
+                critical ("Ignoring attempt to create invalid IBus InputSource name %s", engine_name);
+                return null;
+            }
+
+            return new InputSource (LayoutType.IBUS, engine_name);
         }
 
         public static InputSource? new_from_variant (Variant? variant) {
@@ -75,7 +84,7 @@ namespace Pantheon.Keyboard {
         // These names are used both in org/gnome/desktop/input-sources and desktop/ibus/general/preload-engines
         public string name { get; construct; }
 
-        public InputSource (LayoutType layout_type, string name) {
+        private InputSource (LayoutType layout_type, string name) {
             Object (
                 layout_type: layout_type,
                 name: name

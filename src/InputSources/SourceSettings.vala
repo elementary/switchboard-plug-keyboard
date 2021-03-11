@@ -224,9 +224,9 @@ class Pantheon.Keyboard.SourceSettings : Object {
 
             for (int i = 0; i < xkb_layouts.length; i++) {
                 if (variants[i] != null && variants[i] != "") {
-                    add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i] + "+" + variants[i]));
+                    add_layout_internal (InputSource.new_xkb (xkb_layouts[i], variants[i]));
                 } else {
-                    add_layout_internal (new InputSource (LayoutType.XKB, xkb_layouts[i]));
+                    add_layout_internal (InputSource.new_xkb (xkb_layouts[i], null));
                 }
             }
 
@@ -289,7 +289,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
     private void update_input_sources_ibus () {
         reset (LayoutType.IBUS, false);
         foreach (string engine_name in active_engines) {
-            add_layout (new InputSource (LayoutType.IBUS, engine_name));
+            add_layout (InputSource.new_ibus (engine_name));
         }
 
         write_to_gsettings ();

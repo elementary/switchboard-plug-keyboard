@@ -18,6 +18,7 @@
 public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private IBus.Bus bus;
     private GLib.Settings ibus_panel_settings;
+    private bool selection_changing = false;
     // Stores all installed engines
 #if IBUS_1_5_19
     private List<IBus.EngineDesc> engines;
@@ -71,13 +72,16 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         };
 
         listbox.row_selected.connect ((row) => {
-            if (row is Gtk.ListBoxRow) {
+            // Multiple "row-selected" signals get emitted for change and this handler
+            // is not re-entrant, causing a crash. So a workaround is added to stop this
+            if (!selection_changing && row is Gtk.ListBoxRow) {
+                selection_changing = true;
                 string engine_name = row.get_data ("engine-name");
                 settings.set_active_engine_name (engine_name);
                 bus.set_global_engine (engine_name);
+                update_entry_test_usable ();
+                selection_changing = false;
             }
-
-            update_entry_test_usable ();
         });
 
         bus.set_watch_ibus_signal (true);
@@ -307,7 +311,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                     listboxrow.add (label);
 
                     listbox.add (listboxrow);
-                    settings.add_layout (new InputSource (LayoutType.IBUS, engine.name));
+                    settings.add_layout (InputSource.new_ibus (engine.name));
                 }
             }
         }
@@ -379,7 +383,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     }
 
     private void update_entry_test_usable () {
-        if (settings.active_input_source.layout_type == LayoutType.IBUS) {
+        if (settings.active_input_source != null &&
+            settings.active_input_source.layout_type == LayoutType.IBUS) {
+
             entry_test.placeholder_text = _("Type to test your Input Method");
             entry_test.sensitive = true;
         } else {
@@ -391,7 +397,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private void update_list_box_selected_row () {
         var engine_name = "";
 
-        if (settings.active_input_source.layout_type == LayoutType.IBUS) {
+        if (settings.active_input_source != null &&
+            settings.active_input_source.layout_type == LayoutType.IBUS) {
+
             engine_name = settings.active_input_source.name;
             bus.set_global_engine (engine_name);
         }
