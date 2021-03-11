@@ -113,7 +113,7 @@ namespace Pantheon.Keyboard {
             advanced_settings = new AdvancedSettings (panels);
 
             entry_test = new Gtk.Entry () {
-                hexpand = true,
+                vexpand = true,
                 valign = Gtk.Align.END
             };
 

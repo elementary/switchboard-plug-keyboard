@@ -142,5 +142,4 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         search_entry.grab_focus ();
     }
 
-
 }
