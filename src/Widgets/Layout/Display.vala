@@ -164,7 +164,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
     }
 
     private void update_cursor () {
-        if (cursor_changing || settings.active_input_source  == null) {
+        if (cursor_changing || settings.active_input_source == null) {
             return;
         }
 
