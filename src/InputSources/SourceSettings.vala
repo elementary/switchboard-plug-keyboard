@@ -327,9 +327,22 @@ class Pantheon.Keyboard.SourceSettings : Object {
         currently_writing = true;
         try {
             Variant[] elements = {};
+            List<InputSource> xkb_sources = null;
+            List<InputSource> ibus_sources = null;
             input_sources.foreach ((input_source) => {
-                elements += input_source.to_variant ();
+                if (input_source.layout_type == LayoutType.XKB) {
+                    xkb_sources.append (input_source);
+                } else {
+                    ibus_sources.append (input_source);
+                }
             });
+
+            /* We want xkb sorted before ibus so as to match the layout of the wingpanel indicator and so <Alt><Shift>
+             * cycles in the expected order. */
+
+            xkb_sources.foreach ((input_source) => {elements += input_source.to_variant ();});
+            ibus_sources.foreach ((input_source) => {elements += input_source.to_variant ();});
+
             GLib.Variant list = new GLib.Variant.array (new VariantType ("(ss)"), elements);
             settings.set_value ("sources", list);
         } finally {
