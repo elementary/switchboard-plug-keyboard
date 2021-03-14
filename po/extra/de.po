@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-24 20:21+0000\n"
-"PO-Revision-Date: 2021-02-15 21:09+0000\n"
+"PO-Revision-Date: 2021-03-14 14:49+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/de/>\n"
@@ -25,7 +25,7 @@ msgstr "Tastatureinstellungen"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Verhalten und Belegung der Tastatur sowie Tastenkürzel einrichten"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Add Layout popover is now a dialog"
@@ -36,15 +36,18 @@ msgstr ""
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualisierte Übersetzungen"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
+"Beschreibung des Tastenkürzels für »Wiedergabe« lautet nun »Wiedergabe/Pause«"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Problem behoben: Einige Tastenkürzel wurden fälschlicherweise als inaktiv "
+"angezeigt"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "Add a view to configure input methods"
@@ -52,8 +55,8 @@ msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 msgid "New \"Workspaces\" icon"
-msgstr ""
+msgstr "Neues »Arbeitsflächen«-Symbol"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
+msgstr "Leertaste von den Eintasten-Tastenkürzeln ausgeschlossen"
