@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2021-03-08 04:48+0000\n"
+"PO-Revision-Date: 2021-03-15 22:59+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -36,10 +36,8 @@ msgstr "Раскладка"
 
 #: src/Plug.vala:50 src/Plug.vala:102 src/Plug.vala:103 src/Plug.vala:104
 #: src/Plug.vala:105
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Настройки методов ввода…"
+msgstr "Метод ввода"
 
 #: src/Plug.vala:51 src/Plug.vala:106
 msgid "Shortcuts"
