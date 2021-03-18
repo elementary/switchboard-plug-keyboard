@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-11-03 20:43+0000\n"
-"PO-Revision-Date: 2021-03-15 22:59+0000\n"
+"PO-Revision-Date: 2021-03-18 02:32+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -153,7 +153,7 @@ msgstr "Язык ввода"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Установить"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -167,15 +167,15 @@ msgstr "Удаление %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Японский"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Корейский"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Китайский"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -203,7 +203,7 @@ msgstr "Развернуть/восстановить"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Скрыть"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -246,28 +246,20 @@ msgid "Picture in Picture Mode"
 msgstr "Режим \"картинка в картинке\""
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Переместить окно влево"
+msgstr "Переместить на дисплей выше"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Переместить окно влево"
+msgstr "Переместить на дисплей ниже"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Переместить окно на новый рабочий стол"
+msgstr "Переместить на дисплей справа"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Переместить окно на первый рабочий стол"
+msgstr "Переместить на дисплей слева"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
