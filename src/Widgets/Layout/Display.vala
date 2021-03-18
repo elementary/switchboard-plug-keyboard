@@ -198,7 +198,6 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             index++;
         });
 
-
         tree.model = list_store;
         update_cursor ();
         update_buttons ();
