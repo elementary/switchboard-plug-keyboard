@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-03-19 05:27+0000\n"
+"PO-Revision-Date: 2021-03-20 20:01+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
@@ -73,7 +73,7 @@ msgstr "Vis kandidatvindu"
 
 #: src/Plug.vala:108
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Innebygg forhåndsredigeringstekst i programvindu"
 
 #: src/Plug.vala:111
 msgid "Repeat Keys"
@@ -577,6 +577,7 @@ msgstr "IBus-nissen kjører ikke"
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
+"Du må kjøre IBus-nissen for å skru på eller sette opp inndatametode-motorer."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
@@ -602,7 +603,7 @@ msgstr "Bytt motorer:"
 
 #: src/Views/InputMethod.vala:136
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Vis kandidatvindu:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -618,7 +619,7 @@ msgstr "Alltid vis"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Innebygg forhåndsredigeringstekst i programvindu:"
 
 #: src/Views/InputMethod.vala:389
 #, fuzzy
@@ -628,7 +629,7 @@ msgstr "Skriv for å prøve tastaturoppsettet"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "Et tastaturoppsett er aktivt"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -731,7 +732,7 @@ msgstr "Bytt med Esc"
 
 #: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr ""
+msgstr "Vis i panel"
 
 #: src/Views/Layout.vala:143
 msgid "Caps Lock:"
@@ -795,11 +796,11 @@ msgstr "Søkemotor"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Installer ulistede motorer …"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:50
 msgid "Add Engine"
-msgstr ""
+msgstr "Legg til motor"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
