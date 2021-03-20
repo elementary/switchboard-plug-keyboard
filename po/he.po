@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2020-12-14 19:16+0000\n"
+"PO-Revision-Date: 2021-03-20 20:01+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Plug.vala:35
@@ -615,14 +615,12 @@ msgid "Embed preedit text in application window:"
 msgstr "הטמעת טקסט קדם העריכה בחלון היישום:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "יש להקליד כדי לבדוק את הפריסה שלך"
+msgstr "ניתן להקליד כדי לבדוק את שיטת הקלט שלך"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "פריסת מקלדת פעילה"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -766,10 +764,8 @@ msgid "Type to test your layout"
 msgstr "יש להקליד כדי לבדוק את הפריסה שלך"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "שיטת קלט"
+msgstr "שיטת קלט פעילה"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
