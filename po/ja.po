@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"PO-Revision-Date: 2021-03-21 00:20+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Plug.vala:35
@@ -617,14 +617,12 @@ msgid "Embed preedit text in application window:"
 msgstr "インライン入力:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "入力してレイアウトを確認"
+msgstr "入力してインプットメソッドを確認"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "キーボードレイアウトが有効です"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -768,10 +766,8 @@ msgid "Type to test your layout"
 msgstr "入力してレイアウトを確認"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "インプットメソッド"
+msgstr "インプットメソッドが有効です"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
