@@ -102,7 +102,7 @@ public class Pantheon.Keyboard.XkbLayoutHandler : GLib.Object {
         }
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
-        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem"; //vala-lint=line-length
+        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem";//vala-lint=line-leng //vala-lint=line-length
         Xml.XPath.Object* res = cntx.eval_expression (xpath);
 
         if (res == null) {

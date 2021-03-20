@@ -50,17 +50,21 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         }
     }
 
-    public void set_visible_panel_from_layout (string layout_name) {
-        string panel_name;
-        if (!panel_for_layout.lookup_extended (layout_name, null, out panel_name)) {
-            panel_name = "";
-        }
-        var splited_name = layout_name.split ("+");
+    public void set_visible_panel_from_layout (string? layout_name) {
 
-        if (panel_name == "" && "+" in layout_name) {
-            // if layout_name was not found we look for the layout without variant
-            if (!panel_for_layout.lookup_extended (splited_name[0], null, out panel_name)) {
+        string panel_name = "none";
+        string[] split_name = {};
+        if (layout_name != null) {
+            if (!panel_for_layout.lookup_extended (layout_name, null, out panel_name)) {
                 panel_name = "";
+            }
+            split_name = layout_name.split ("+");
+
+            if (panel_name == "" && "+" in layout_name) {
+                // if layout_name was not found we look for the layout without variant
+                if (!panel_for_layout.lookup_extended (split_name[0], null, out panel_name)) {
+                    panel_name = "";
+                }
             }
         }
 
@@ -69,7 +73,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
                 if (panel == null || panel.exclusions.length == 0)
                     continue;
 
-                if (!(splited_name[0] + "*" in panel.exclusions || layout_name in panel.exclusions)) {
+                if (!(split_name[0] + "*" in panel.exclusions || layout_name in panel.exclusions)) {
                     panel_name = panel.panel_name;
                     break;
                 }

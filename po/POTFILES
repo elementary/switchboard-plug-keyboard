@@ -1,6 +1,5 @@
 src/Plug.vala
 src/InputMethod/AddEnginesList.vala
-src/InputMethod/Utils.vala
 src/Dialogs/AddLayoutDialog.vala
 src/Dialogs/ConflictDialog.vala
 src/Dialogs/InstallEngineDialog.vala
@@ -8,13 +7,10 @@ src/Dialogs/ProgressDialog.vala
 src/InputMethod/Installer/aptd-client.vala
 src/InputMethod/Installer/InstallList.vala
 src/InputMethod/Installer/UbuntuInstaller.vala
-src/Widgets/Layout/AdvancedSettingsGrid.vala
-src/Widgets/Layout/AdvancedSettingsPanel.vala
 src/Xkb/Handler.vala
 src/Xkb/XkbModifier.vala
 src/InputSources/InputSource.vala
 src/InputSources/SourceSettings.vala
-src/InputSources/SourcesList.vala
 src/Shortcuts/CustomShortcutSettings.vala
 src/Shortcuts/List.vala
 src/Shortcuts/Settings.vala
@@ -27,6 +23,8 @@ src/Widgets/InputMethod/AddEnginesPopover.vala
 src/Widgets/InputMethod/EnginesRow.vala
 src/Widgets/InputMethod/LanguagesRow.vala
 src/Widgets/Layout/Display.vala
+src/Widgets/Layout/AdvancedSettingsGrid.vala
+src/Widgets/Layout/AdvancedSettingsPanel.vala
 src/Widgets/Shortcuts/CustomTree.vala
 src/Widgets/Shortcuts/DisplayTree.vala
 src/Widgets/Shortcuts/Tree.vala

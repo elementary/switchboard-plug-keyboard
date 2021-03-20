@@ -23,9 +23,11 @@ namespace Pantheon.Keyboard {
         private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
+        private Gtk.Entry entry_test;
 
-        public Page () {
+        construct {
             settings = SourceSettings.get_instance ();
+
             size_group = {
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
@@ -110,10 +112,12 @@ namespace Pantheon.Keyboard {
 
             advanced_settings = new AdvancedSettings (panels);
 
-            var entry_test = new Gtk.Entry ();
-            entry_test.valign = Gtk.Align.END;
-            entry_test.expand = true;
-            entry_test.placeholder_text = (_("Type to test your layout"));
+            entry_test = new Gtk.Entry () {
+                vexpand = true,
+                valign = Gtk.Align.END
+            };
+
+            update_entry_test_usable ();
 
             column_homogeneous = true;
             column_spacing = 12;
@@ -167,7 +171,8 @@ namespace Pantheon.Keyboard {
                 show_panel_for_active_layout ();
             });
 
-            settings.layouts.active_changed.connect (() => {
+            settings.notify["active-index"].connect (() => {
+                update_entry_test_usable ();
                 show_panel_for_active_layout ();
             });
 
@@ -329,8 +334,12 @@ namespace Pantheon.Keyboard {
         }
 
         private void show_panel_for_active_layout () {
-            var active_layout = settings.layouts.get_layout (settings.layouts.active);
-            advanced_settings.set_visible_panel_from_layout (active_layout.name);
+            var active_layout = settings.active_input_source;
+            if (active_layout != null) {
+                advanced_settings.set_visible_panel_from_layout (active_layout.name);
+            } else {
+                advanced_settings.set_visible_panel_from_layout (null);
+            }
         }
 
         private class XkbComboBox : Gtk.ComboBoxText {
@@ -379,6 +388,18 @@ namespace Pantheon.Keyboard {
                         modifier.update_active_command ("");
                     }
                 });
+            }
+        }
+
+        private void update_entry_test_usable () {
+            if (settings.active_input_source != null &&
+                settings.active_input_source.layout_type == LayoutType.XKB) {
+
+                entry_test.placeholder_text = _("Type to test your layout");
+                entry_test.sensitive = true;
+            } else {
+                entry_test.placeholder_text = _("Input Method is active");
+                entry_test.sensitive = false;
             }
         }
 
