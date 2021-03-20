@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"PO-Revision-Date: 2021-03-20 20:01+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Plug.vala:35
@@ -617,14 +617,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Вставити попередньо змінений текст у вікно застосунку:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "Друкуйте для перевірки розкладки"
+msgstr "Введіть щось для перевірки методу введення"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "Розкладка клавіатури активна"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -768,10 +766,8 @@ msgid "Type to test your layout"
 msgstr "Друкуйте для перевірки розкладки"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Метод введення"
+msgstr "Метод введення активний"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
