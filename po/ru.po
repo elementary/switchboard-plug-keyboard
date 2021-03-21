@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-03-18 02:32+0000\n"
+"PO-Revision-Date: 2021-03-22 02:10+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -786,10 +786,8 @@ msgid "Type to test your layout"
 msgstr "Начните печатать, чтобы проверить раскладку"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Метод ввода"
+msgstr "Метод ввода активен"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
