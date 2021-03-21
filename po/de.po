@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-03-14 14:49+0000\n"
+"PO-Revision-Date: 2021-03-22 02:10+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -36,7 +36,7 @@ msgstr "Tastenbelegung"
 #: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108
 msgid "Input Method"
-msgstr "Eingabemethode"
+msgstr "Eingabeverfahren"
 
 #: src/Plug.vala:54 src/Plug.vala:109
 msgid "Shortcuts"
@@ -577,7 +577,7 @@ msgstr "IBus-Dämon wird nicht ausgeführt"
 msgid ""
 "You need to run IBus Daemon to enable or configure input method engines."
 msgstr ""
-"Der IBus-Dämon muss ausgeführt werden, damit Eingabemethoden-Engines "
+"Der IBus-Dämon muss ausgeführt werden, damit Eingabeverfahren-Engines "
 "aktiviert oder eingerichtet werden können."
 
 #: src/Views/InputMethod.vala:52
@@ -602,7 +602,7 @@ msgstr "Entfernen"
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Engines wechseln:"
+msgstr "Engine wechseln:"
 
 #: src/Views/InputMethod.vala:136
 #, fuzzy
@@ -626,14 +626,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Vorbearbeiteten Text in Anwendungsfenster einsetzen:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "Geben Sie hier etwas ein, um Ihre Tastaturbelegung auszuprobieren"
+msgstr "Hier zum Test des Eingabeverfahrens Text eingeben"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "Eine Tastaturbelegung ist aktiv"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -771,17 +769,15 @@ msgstr "Hankaku Zenkaku als Escape:"
 
 #: src/Views/Layout.vala:319
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "Hangul/Hanja-Tasten auf  Alt/Strg rechts:"
+msgstr "Hangul/Hanja-Tasten auf Alt/Strg rechts:"
 
 #: src/Views/Layout.vala:398
 msgid "Type to test your layout"
 msgstr "Geben Sie hier etwas ein, um Ihre Tastaturbelegung auszuprobieren"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Eingabemethode"
+msgstr "Eingabeverfahren ist aktiv"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
