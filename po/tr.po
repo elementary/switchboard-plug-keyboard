@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2020-11-06 02:15+0000\n"
+"PO-Revision-Date: 2021-03-22 18:15+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/tr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-19 05:44+0000\n"
 
 #: src/Plug.vala:35
@@ -618,14 +618,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Ön düzenleme metnini uygulama penceresine ekle:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "Düzeninizi sınamak için yazın"
+msgstr "Girdi Yöntemini sınamak için yazın"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "Klavye düzeni etkin"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -769,10 +767,8 @@ msgid "Type to test your layout"
 msgstr "Düzeninizi sınamak için yazın"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Girdi Yöntemi"
+msgstr "Girdi Yöntemi etkin"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
