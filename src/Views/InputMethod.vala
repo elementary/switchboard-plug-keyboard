@@ -319,8 +319,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         listbox.show_all ();
         //Do not autoselect the first entry as that would change the active input method
 
-        // Update the sensitivity of buttons depends on whether there are active engines
-        remove_button.sensitive = listbox.get_row_at_index (0) != null;
+        remove_button.sensitive = listbox.get_selected_row () != null;
     }
 
     private void spawn_ibus_daemon () {
@@ -415,5 +414,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                 listbox.unselect_row (row);
             }
         });
+
+        remove_button.sensitive = listbox.get_selected_row () != null;
     }
 }
