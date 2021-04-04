@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-03-22 23:23+0000\n"
+"PO-Revision-Date: 2021-04-04 17:40+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -50,7 +50,7 @@ msgstr "Comportement"
 
 #: src/Plug.vala:101
 msgid "Switch layout"
-msgstr "Basculer l'agencement"
+msgstr "Basculer la disposition"
 
 #: src/Plug.vala:102
 msgid "Compose Key"
@@ -629,7 +629,7 @@ msgstr "Une disposition de clavier est active"
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
 msgid "Switch layout:"
-msgstr "Basculer l'agencement :"
+msgstr "Basculer la disposition :"
 
 #: src/Views/Layout.vala:44
 msgid "Alt + Caps Lock"
@@ -765,7 +765,7 @@ msgstr "Touches Hangul/Hanja sur Alt/Ctrl de droite :"
 
 #: src/Views/Layout.vala:398
 msgid "Type to test your layout"
-msgstr "Écrivez pour essayer l'agencement du clavier"
+msgstr "Écrivez pour essayer la disposition du clavier"
 
 #: src/Views/Layout.vala:401
 msgid "Input Method is active"
