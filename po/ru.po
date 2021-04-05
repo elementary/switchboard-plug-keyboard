@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-03-27 13:48+0000\n"
+"PO-Revision-Date: 2021-04-05 18:56+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -71,11 +71,11 @@ msgstr "Переключить открытые окна"
 
 #: src/Plug.vala:107
 msgid "Show candidate window"
-msgstr ""
+msgstr "Показать окно-кандидат"
 
 #: src/Plug.vala:108
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Вставить предварительно измененный текст в окно приложения"
 
 #: src/Plug.vala:111
 msgid "Repeat Keys"
@@ -90,20 +90,16 @@ msgid "Input Language"
 msgstr "Язык ввода"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Раскладка"
+msgstr "Список раскладок"
 
 #: src/Dialogs/AddLayoutDialog.vala:38
 msgid "Search input language"
 msgstr "Поиск языка ввода"
 
 #: src/Dialogs/AddLayoutDialog.vala:93
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Раскладка"
+msgstr "Предварительный просмотр раскладки"
 
 #: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -145,10 +141,8 @@ msgid "Select an engine from the list to install and use."
 msgstr ""
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Язык ввода"
+msgstr "Языки"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
@@ -441,10 +435,8 @@ msgid "Mute"
 msgstr "Приглушить звук"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Пауза"
+msgstr "Воспроизведение/Пауза"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -512,7 +504,7 @@ msgstr "Выйти из системы"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Переключение режима экрана"
 
 #: src/Shortcuts/List.vala:148
 msgid "Custom"
@@ -577,7 +569,7 @@ msgstr "Начните печатать, чтобы проверить наст�
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus Daemon не запущен"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
@@ -586,12 +578,12 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "Запустить IBus Daemon"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
 msgid "Failed to start IBus Daemon"
-msgstr ""
+msgstr "Не удалось запустить IBus Daemon"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -610,33 +602,31 @@ msgstr "Переключить открытые окна"
 
 #: src/Views/InputMethod.vala:136
 msgid "Show candidate window:"
-msgstr ""
+msgstr "Показать окно-кандидат:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
-msgstr ""
+msgstr "Не показывать"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr ""
+msgstr "Авто-скрытие"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
-msgstr ""
+msgstr "Всегда показывать"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Вставить предварительно измененный текст в окно приложения:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "Начните печатать, чтобы проверить раскладку"
+msgstr "Введите что-то для проверки метода ввода"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "Раскладка клавиатуры активна"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -728,29 +718,24 @@ msgid "as ⌘"
 msgstr "как ⌘"
 
 #: src/Views/Layout.vala:99
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Поменять местами с Ctrl"
+msgstr "Поменять с Ctrl"
 
 #: src/Views/Layout.vala:100
 msgid "Swap with Escape"
-msgstr "Поменять местами с Escape"
+msgstr "Поменять с Escape"
 
 #: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr ""
+msgstr "Показать на панели"
 
 #: src/Views/Layout.vala:143
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:149
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "как Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:238 src/Views/Layout.vala:255
 msgid "Key to choose 3rd level:"
