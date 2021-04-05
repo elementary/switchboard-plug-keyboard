@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-03-27 13:48+0000\n"
+"PO-Revision-Date: 2021-04-05 18:56+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ru/>\n"
@@ -30,7 +30,7 @@ msgstr "Настройка поведения клавиатуры, раскла
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Add Layout popover is now a dialog"
-msgstr ""
+msgstr "Окно добавления раскладки теперь является диалоговым окном"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
@@ -42,14 +42,18 @@ msgstr "Обновлены переводы"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
+"Название комбинации клавиш «Воспроизведение» теперь называется "
+"«Воспроизведение/Пауза»"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Исправлена проблема, когда некоторые горячие клавиши неправильно "
+"отображались как отключенные"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "Add a view to configure input methods"
-msgstr ""
+msgstr "Добавлено представление для настройки методов ввода"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 msgid "New \"Workspaces\" icon"
@@ -57,4 +61,4 @@ msgstr "Новый значок «Рабочих столов»"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
+msgstr "Пробел исключен из горячих клавиш состоящих из одной клавиши"
