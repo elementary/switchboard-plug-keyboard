@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-20 17:46+0000\n"
-"PO-Revision-Date: 2021-02-14 15:23+0000\n"
+"PO-Revision-Date: 2021-04-07 15:37+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/en_GB/>\n"
@@ -616,14 +616,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Embed preedit text in application window:"
 
 #: src/Views/InputMethod.vala:389
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
-msgstr "Type to test your layout"
+msgstr "Type to test your Input Method"
 
 #: src/Views/InputMethod.vala:392
 msgid "A Keyboard Layout is active"
-msgstr ""
+msgstr "A Keyboard Layout is active"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -767,10 +765,8 @@ msgid "Type to test your layout"
 msgstr "Type to test your layout"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Input Method"
+msgstr "Input Method is active"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
