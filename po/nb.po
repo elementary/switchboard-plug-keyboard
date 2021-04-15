@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 15:21+0000\n"
-"PO-Revision-Date: 2021-03-20 20:01+0000\n"
+"PO-Revision-Date: 2021-04-15 18:51+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
@@ -602,10 +602,8 @@ msgid "Switch engines:"
 msgstr "Bytt motorer:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Vis i panel"
+msgstr "Vis i egenskapspanel"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -783,7 +781,7 @@ msgstr "Skriv for å prøve tastaturoppsettet"
 #, fuzzy
 #| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Inndatametode"
+msgstr "Inndatametode er aktiv"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
