@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-03-21 00:20+0000\n"
+"PO-Revision-Date: 2021-04-15 20:15+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -568,9 +568,6 @@ msgid "IBus Daemon is not running"
 msgstr "O Daemon IBus não está em execução"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -583,10 +580,8 @@ msgstr "Iniciar o Daemon IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
-msgstr "Falha ao iniciar o Daemon IBus"
+msgstr "Não foi possível iniciar o daemon IBus"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -602,10 +597,8 @@ msgid "Switch engines:"
 msgstr "Trocar os mecanismos:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Mostrar no painel"
+msgstr "Mostrar painel de propriedade:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -624,16 +617,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Incorporar texto pré-editado na janela de aplicação:"
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your Input Method"
 msgid "Type to test your input method"
 msgstr "Escreva para testar o seu método de entrada"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "A Keyboard Layout is active"
 msgid "A keyboard layout is active"
-msgstr "Um Esquema de Teclado está ativo"
+msgstr "Um esquema de teclado está ativo"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
