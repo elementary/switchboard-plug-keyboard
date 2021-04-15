@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 15:21+0000\n"
-"PO-Revision-Date: 2021-03-20 20:01+0000\n"
+"PO-Revision-Date: 2021-04-15 17:43+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -597,10 +597,8 @@ msgid "Switch engines:"
 msgstr "Перемкнути рушії:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Показати на панелі"
+msgstr "Показати панель властивостей:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
