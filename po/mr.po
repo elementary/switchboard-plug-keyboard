@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 15:21+0000\n"
+"POT-Creation-Date: 2021-04-15 18:51+0000\n"
 "PO-Revision-Date: 2020-12-03 16:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -561,8 +561,11 @@ msgid "IBus Daemon is not running"
 msgstr "IBus डीमन चालू नाही"
 
 #: src/Views/InputMethod.vala:45
+#, fuzzy
+#| msgid ""
+#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
-"You need to run IBus Daemon to enable or configure input method engines."
+"You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "इनपुट पद्धत इंजिन सक्षम किंवा कॉन्फिगर करण्यासाठी आपल्याला IBus डीमन चालविणे आवश्यक आहे."
 
@@ -572,7 +575,9 @@ msgstr "IBus डीमन सुरु करा"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-msgid "Failed to start IBus Daemon"
+#, fuzzy
+#| msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
 msgstr "IBus डीमन सुरु करण्यात अयशस्वी"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
@@ -613,12 +618,14 @@ msgstr "अनुप्रयोग विंडोमध्ये पूर्�
 #: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
-msgid "Type to test your Input Method"
+msgid "Type to test your input method"
 msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
 
 #: src/Views/InputMethod.vala:391
-msgid "A Keyboard Layout is active"
-msgstr ""
+#, fuzzy
+#| msgid "Show keyboard layout"
+msgid "A keyboard layout is active"
+msgstr "कीबोर्ड मांडणी दाखवा"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -811,9 +818,6 @@ msgstr "शॉर्टकट"
 
 #~ msgid "Minimize"
 #~ msgstr "कमी करा"
-
-#~ msgid "Show keyboard layout"
-#~ msgstr "कीबोर्ड मांडणी दाखवा"
 
 #~ msgid "Play"
 #~ msgstr "प्ले"

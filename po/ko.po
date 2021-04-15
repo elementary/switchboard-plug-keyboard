@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 15:21+0000\n"
+"POT-Creation-Date: 2021-04-15 18:51+0000\n"
 "PO-Revision-Date: 2020-10-04 21:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -589,7 +589,7 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:45
 msgid ""
-"You need to run IBus Daemon to enable or configure input method engines."
+"You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 
 #: src/Views/InputMethod.vala:52
@@ -598,7 +598,7 @@ msgstr ""
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
 msgstr ""
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
@@ -639,12 +639,14 @@ msgstr ""
 #: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
-msgid "Type to test your Input Method"
+msgid "Type to test your input method"
 msgstr "글자를 입력해서 레이아웃 설정을 확인해 보세요"
 
 #: src/Views/InputMethod.vala:391
-msgid "A Keyboard Layout is active"
-msgstr ""
+#, fuzzy
+#| msgid "Show keyboard layout"
+msgid "A keyboard layout is active"
+msgstr "키보드 레이아웃 보기"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -838,9 +840,6 @@ msgstr "단축키"
 
 #~ msgid "Minimize"
 #~ msgstr "최소화"
-
-#~ msgid "Show keyboard layout"
-#~ msgstr "키보드 레이아웃 보기"
 
 #~ msgid "Play"
 #~ msgstr "재생"

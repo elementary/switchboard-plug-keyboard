@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 15:21+0000\n"
+"POT-Creation-Date: 2021-04-15 18:51+0000\n"
 "PO-Revision-Date: 2021-04-05 18:56+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -573,7 +573,7 @@ msgstr "IBus Daemon не запущен"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
-"You need to run IBus Daemon to enable or configure input method engines."
+"You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 
 #: src/Views/InputMethod.vala:52
@@ -582,7 +582,9 @@ msgstr "Запустить IBus Daemon"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-msgid "Failed to start IBus Daemon"
+#, fuzzy
+#| msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
 msgstr "Не удалось запустить IBus Daemon"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
@@ -623,11 +625,15 @@ msgid "Embed preedit text in application window:"
 msgstr "Вставить предварительно измененный текст в окно приложения:"
 
 #: src/Views/InputMethod.vala:388
-msgid "Type to test your Input Method"
+#, fuzzy
+#| msgid "Type to test your Input Method"
+msgid "Type to test your input method"
 msgstr "Введите что-то для проверки метода ввода"
 
 #: src/Views/InputMethod.vala:391
-msgid "A Keyboard Layout is active"
+#, fuzzy
+#| msgid "A Keyboard Layout is active"
+msgid "A keyboard layout is active"
 msgstr "Раскладка клавиатуры активна"
 
 #. tree view to display the current layouts

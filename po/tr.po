@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 15:21+0000\n"
+"POT-Creation-Date: 2021-04-15 18:51+0000\n"
 "PO-Revision-Date: 2021-04-15 17:43+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -569,8 +569,11 @@ msgid "IBus Daemon is not running"
 msgstr "IBus Arka Plan Programı çalışmıyor"
 
 #: src/Views/InputMethod.vala:45
+#, fuzzy
+#| msgid ""
+#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
-"You need to run IBus Daemon to enable or configure input method engines."
+"You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "Giriş yöntemi motorlarını etkinleştirmek veya yapılandırmak için IBus Arka "
 "Plan Programını çalıştırmanız gerekir."
@@ -581,7 +584,9 @@ msgstr "IBus Arka Plan Programını Başlat"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-msgid "Failed to start IBus Daemon"
+#, fuzzy
+#| msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
 msgstr "IBus Arka Plan Programı başlatılamadı"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
@@ -618,11 +623,15 @@ msgid "Embed preedit text in application window:"
 msgstr "Ön düzenleme metnini uygulama penceresine ekle:"
 
 #: src/Views/InputMethod.vala:388
-msgid "Type to test your Input Method"
+#, fuzzy
+#| msgid "Type to test your Input Method"
+msgid "Type to test your input method"
 msgstr "Giriş yöntemini sınamak için yazın"
 
 #: src/Views/InputMethod.vala:391
-msgid "A Keyboard Layout is active"
+#, fuzzy
+#| msgid "A Keyboard Layout is active"
+msgid "A keyboard layout is active"
 msgstr "Klavye düzeni etkin"
 
 #. tree view to display the current layouts

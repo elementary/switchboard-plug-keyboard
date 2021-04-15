@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 15:21+0000\n"
+"POT-Creation-Date: 2021-04-15 18:51+0000\n"
 "PO-Revision-Date: 2021-02-17 13:39+0000\n"
 "Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -568,8 +568,11 @@ msgid "IBus Daemon is not running"
 msgstr "Позадинац И-сабирнице није покренут"
 
 #: src/Views/InputMethod.vala:45
+#, fuzzy
+#| msgid ""
+#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
-"You need to run IBus Daemon to enable or configure input method engines."
+"You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "Треба да покренете позадинца И-сабирнице да укључите или подесите погоне "
 "методе уноса."
@@ -580,7 +583,9 @@ msgstr "Покрени позадинца И-сабирнице"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-msgid "Failed to start IBus Daemon"
+#, fuzzy
+#| msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
 msgstr "Нисам успео да покренем позадинца И-сабирнице"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
@@ -621,11 +626,11 @@ msgstr "Уграђени предуређени текст у прозору п�
 #: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
-msgid "Type to test your Input Method"
+msgid "Type to test your input method"
 msgstr "Куцајте да тестирате распоред"
 
 #: src/Views/InputMethod.vala:391
-msgid "A Keyboard Layout is active"
+msgid "A keyboard layout is active"
 msgstr ""
 
 #. tree view to display the current layouts

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 15:21+0000\n"
+"POT-Creation-Date: 2021-04-15 18:51+0000\n"
 "PO-Revision-Date: 2021-02-01 12:46+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -568,8 +568,11 @@ msgid "IBus Daemon is not running"
 msgstr "IBus 守护进程未运行"
 
 #: src/Views/InputMethod.vala:45
+#, fuzzy
+#| msgid ""
+#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
-"You need to run IBus Daemon to enable or configure input method engines."
+"You need to run the IBus daemon to enable or configure input method engines."
 msgstr "需要运行 IBus 守护进程来启用或配置输入法引擎。"
 
 #: src/Views/InputMethod.vala:52
@@ -578,7 +581,9 @@ msgstr "启动 IBus 守护进程"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-msgid "Failed to start IBus Daemon"
+#, fuzzy
+#| msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
 msgstr "IBus 守护进程启动失败"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
@@ -619,12 +624,14 @@ msgstr "光标跟随："
 #: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
-msgid "Type to test your Input Method"
+msgid "Type to test your input method"
 msgstr "键入任意内容测试您的布局"
 
 #: src/Views/InputMethod.vala:391
-msgid "A Keyboard Layout is active"
-msgstr ""
+#, fuzzy
+#| msgid "Show keyboard layout"
+msgid "A keyboard layout is active"
+msgstr "显示键盘布局"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -817,9 +824,6 @@ msgstr "快捷键"
 
 #~ msgid "Minimize"
 #~ msgstr "最小化"
-
-#~ msgid "Show keyboard layout"
-#~ msgstr "显示键盘布局"
 
 #~ msgid "Play"
 #~ msgstr "播放"
