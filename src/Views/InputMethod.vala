@@ -133,7 +133,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         keyboard_shortcut_combobox.append ("shift-space", Granite.accel_to_string ("<Shift>space"));
         keyboard_shortcut_combobox.active_id = get_keyboard_shortcut ();
 
-        var show_ibus_panel_label = new Gtk.Label (_("Show candidate window:")) {
+        var show_ibus_panel_label = new Gtk.Label (_("Show property panel:")) {
             halign = Gtk.Align.END
         };
 
