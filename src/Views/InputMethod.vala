@@ -42,7 +42,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         // no_daemon_runnning view shown if IBus Daemon is not running
         var no_daemon_runnning_alert = new Granite.Widgets.AlertView (
             _("IBus Daemon is not running"),
-            _("You need to run IBus Daemon to enable or configure input method engines."),
+            _("You need to run the IBus daemon to enable or configure input method engines."),
             "dialog-information"
         ) {
             halign = Gtk.Align.CENTER,
@@ -56,7 +56,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         // spawn_failed view shown if IBus Daemon is not running
         spawn_failed_alert = new Granite.Widgets.AlertView (
-            _("Failed to start IBus Daemon"),
+            _("Could not start the IBus daemon"),
             "",
             "dialog-error"
         ) {
@@ -385,10 +385,10 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         if (settings.active_input_source != null &&
             settings.active_input_source.layout_type == LayoutType.IBUS) {
 
-            entry_test.placeholder_text = _("Type to test your Input Method");
+            entry_test.placeholder_text = _("Type to test your input method");
             entry_test.sensitive = true;
         } else {
-            entry_test.placeholder_text = _("A Keyboard Layout is active");
+            entry_test.placeholder_text = _("A keyboard layout is active");
             entry_test.sensitive = false;
         }
     }
