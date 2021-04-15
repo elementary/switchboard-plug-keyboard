@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2020-10-31 21:15+0000\n"
 "Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
@@ -597,8 +597,10 @@ msgid "Switch engines:"
 msgstr "Wissel tussen engines:"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "Toon candidate venster:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "Toon in paneel"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -616,13 +618,13 @@ msgstr "Toon altijd"
 msgid "Embed preedit text in application window:"
 msgstr "Verwerk voorbewerkte tekst in applicatie venster:"
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
 msgstr "Type om je indeling te testen"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 
@@ -811,6 +813,9 @@ msgstr "Opdracht"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Sneltoets"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "Toon candidate venster:"
 
 #~ msgid "Minimize"
 #~ msgstr "Minimaliseer"

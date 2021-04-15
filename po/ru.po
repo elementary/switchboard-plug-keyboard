@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2021-04-05 18:56+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -601,8 +601,10 @@ msgid "Switch engines:"
 msgstr "Переключить открытые окна"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "Показать окно-кандидат:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "Показать на панели"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -620,11 +622,11 @@ msgstr "Всегда показывать"
 msgid "Embed preedit text in application window:"
 msgstr "Вставить предварительно измененный текст в окно приложения:"
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 msgid "Type to test your Input Method"
 msgstr "Введите что-то для проверки метода ввода"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr "Раскладка клавиатуры активна"
 
@@ -812,6 +814,9 @@ msgstr "Команда"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Горячая клавиша"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "Показать окно-кандидат:"
 
 #~ msgid "Minimize"
 #~ msgstr "Свернуть"

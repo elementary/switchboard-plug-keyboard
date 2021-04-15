@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2021-03-26 00:33+0000\n"
 "Last-Translator: Ozgur Baskin <bebeto_baskin@yahoo.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -598,8 +598,10 @@ msgid "Switch engines:"
 msgstr "Altyapı değiştir:"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "Aday penceresini göster:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "Panel'de göster"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -617,11 +619,11 @@ msgstr "Her zaman göster"
 msgid "Embed preedit text in application window:"
 msgstr "Ön düzenleme metnini uygulama penceresine ekle:"
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 msgid "Type to test your Input Method"
 msgstr "Giriş yöntemini sınamak için yazın"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr "Klavye düzeni etkin"
 
@@ -808,6 +810,9 @@ msgstr "Komut"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Kısayol"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "Aday penceresini göster:"
 
 #~ msgid "Minimize"
 #~ msgstr "Simge Durumuna Küçült"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2021-03-03 11:48+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -599,8 +599,10 @@ msgid "Switch engines:"
 msgstr "Vaihda moottoreita:"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "Näytä ehdokasikkuna:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "Näytä paneelissa"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -618,13 +620,13 @@ msgstr "Näytä aina"
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
 msgstr "Kirjoita testataksesi asettelua"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 
@@ -813,6 +815,9 @@ msgstr "Komento"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Pikanäppäin"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "Näytä ehdokasikkuna:"
 
 #~ msgid "Minimize"
 #~ msgstr "Pienennä"

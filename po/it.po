@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2020-10-24 12:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -600,8 +600,10 @@ msgid "Switch engines:"
 msgstr "Passa da un metodo di immissione all'altro:"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "Mostra finestra dei suggerimenti:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "Mostra nel pannello"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -620,13 +622,13 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 "Incorpora il testo precedente alla modifica nella finestra dell'applicazione:"
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
 msgstr "Digita per testare la tua disposizione"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 
@@ -820,6 +822,9 @@ msgstr "Comando"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Scorciatoia"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "Mostra finestra dei suggerimenti:"
 
 #~ msgid "Minimize"
 #~ msgstr "Minimizza"

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2020-12-03 16:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -589,8 +589,10 @@ msgid "Switch engines:"
 msgstr "इंजिन बदला:"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "कॅन्डीडेट विंडो दाखवा:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "पॅनेलमध्ये दाखवा"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -608,13 +610,13 @@ msgstr "नेहमी लपवा"
 msgid "Embed preedit text in application window:"
 msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा:"
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
 msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 
@@ -803,6 +805,9 @@ msgstr "आज्ञा"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "शॉर्टकट"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "कॅन्डीडेट विंडो दाखवा:"
 
 #~ msgid "Minimize"
 #~ msgstr "कमी करा"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2020-08-25 06:13+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -601,8 +601,10 @@ msgid "Switch engines:"
 msgstr "Přepnout enginy:"
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "Zobrazit okno s kandidátem:"
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "Zobrazit v panelu"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -620,13 +622,13 @@ msgstr "Vždy zobrazit"
 msgid "Embed preedit text in application window:"
 msgstr "Vestavět text před úpravou do okna aplikace:"
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
 msgstr "Pro vyzkoušení rozložení pište zde"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 
@@ -815,6 +817,9 @@ msgstr "Příkaz"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "Zkratka"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "Zobrazit okno s kandidátem:"
 
 #~ msgid "Minimize"
 #~ msgstr "Minimalizovat"

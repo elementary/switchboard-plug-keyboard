@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2018-03-05 23:33+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -591,7 +591,7 @@ msgid "Switch engines:"
 msgstr ""
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
+msgid "Show property panel:"
 msgstr ""
 
 #: src/Views/InputMethod.vala:143
@@ -610,11 +610,11 @@ msgstr ""
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 msgid "Type to test your Input Method"
 msgstr ""
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 

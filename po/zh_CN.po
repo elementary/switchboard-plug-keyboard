@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-03-20 17:46+0000\n"
+"POT-Creation-Date: 2021-04-15 15:21+0000\n"
 "PO-Revision-Date: 2021-02-01 12:46+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -595,8 +595,10 @@ msgid "Switch engines:"
 msgstr "切换输入法："
 
 #: src/Views/InputMethod.vala:136
-msgid "Show candidate window:"
-msgstr "悬浮工具栏："
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "在顶栏显示"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -614,13 +616,13 @@ msgstr "总是显示"
 msgid "Embed preedit text in application window:"
 msgstr "光标跟随："
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:388
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your Input Method"
 msgstr "键入任意内容测试您的布局"
 
-#: src/Views/InputMethod.vala:392
+#: src/Views/InputMethod.vala:391
 msgid "A Keyboard Layout is active"
 msgstr ""
 
@@ -809,6 +811,9 @@ msgstr "Command 键"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "快捷键"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "悬浮工具栏："
 
 #~ msgid "Minimize"
 #~ msgstr "最小化"
