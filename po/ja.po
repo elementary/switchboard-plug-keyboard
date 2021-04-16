@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-08 09:06+0000\n"
+"PO-Revision-Date: 2021-04-16 12:05+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -568,14 +568,9 @@ msgid "IBus Daemon is not running"
 msgstr "IBus Daemon が起動していません"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
-msgstr ""
-"インプットメソッドエンジンを有効化したり設定したりするには、IBus Daemon を起"
-"動する必要があります。"
+msgstr "インプットメソッドエンジンを有効化したり設定したりするには、IBus デーモンを起動する必要があります。"
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
