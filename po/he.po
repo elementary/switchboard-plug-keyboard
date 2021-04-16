@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-03-20 20:01+0000\n"
+"PO-Revision-Date: 2021-04-16 16:55+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
@@ -568,9 +568,6 @@ msgid "IBus Daemon is not running"
 msgstr "סוכן ה־IBus אינו פועל"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr "עליך להפעיל את סוכן IBus כדי להפעיל או להגדיר מנגנוני שיטות קלט."
@@ -581,8 +578,6 @@ msgstr "הפעלת סוכן IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
 msgstr "הפעלת סוכן IBus נכשלה"
 
@@ -600,10 +595,8 @@ msgid "Switch engines:"
 msgstr "החלפה בין מנגנונים:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "הצגה בלוח"
+msgstr "הצגת לוח מאפיינים:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -622,14 +615,10 @@ msgid "Embed preedit text in application window:"
 msgstr "הטמעת טקסט קדם העריכה בחלון היישום:"
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your Input Method"
 msgid "Type to test your input method"
 msgstr "ניתן להקליד כדי לבדוק את שיטת הקלט שלך"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "A Keyboard Layout is active"
 msgid "A keyboard layout is active"
 msgstr "פריסת מקלדת פעילה"
 
