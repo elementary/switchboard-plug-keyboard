@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-16 12:06+0000\n"
+"PO-Revision-Date: 2021-04-16 16:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -615,14 +615,10 @@ msgid "Embed preedit text in application window:"
 msgstr "インライン入力:"
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your Input Method"
 msgid "Type to test your input method"
 msgstr "入力してインプットメソッドを確認"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "A Keyboard Layout is active"
 msgid "A keyboard layout is active"
 msgstr "キーボードレイアウトが有効です"
 
