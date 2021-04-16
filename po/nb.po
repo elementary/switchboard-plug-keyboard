@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-15 18:51+0000\n"
+"PO-Revision-Date: 2021-04-16 03:12+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
@@ -574,9 +574,6 @@ msgid "IBus Daemon is not running"
 msgstr "IBus-nissen kjører ikke"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -588,8 +585,6 @@ msgstr "Start IBus-nissen"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
 msgstr "Klarte ikke å starte IBus-nissen"
 
@@ -633,8 +628,6 @@ msgid "Type to test your input method"
 msgstr "Skriv for å prøve tastaturoppsettet"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "A Keyboard Layout is active"
 msgid "A keyboard layout is active"
 msgstr "Et tastaturoppsett er aktivt"
 
@@ -785,8 +778,6 @@ msgid "Type to test your layout"
 msgstr "Skriv for å prøve tastaturoppsettet"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
 msgstr "Inndatametode er aktiv"
 
