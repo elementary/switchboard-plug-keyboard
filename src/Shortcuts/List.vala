@@ -106,11 +106,15 @@ namespace Pantheon.Keyboard.Shortcuts {
             launchers_group = {};
             launchers_group.icon_name = "preferences-desktop-applications";
             launchers_group.label = _("Applications");
-            add_action (ref launchers_group, Schema.MEDIA, _("Email"), "email");
-            add_action (ref launchers_group, Schema.MEDIA, _("Home Folder"), "home");
-            add_action (ref launchers_group, Schema.MEDIA, _("Music"), "media");
-            add_action (ref launchers_group, Schema.MEDIA, _("Terminal"), "terminal");
-            add_action (ref launchers_group, Schema.MEDIA, _("Internet Browser"), "www");
+            add_action (ref launchers_group, Schema.APPS, _("Web Browser"), "webbrowser");
+            add_action (ref launchers_group, Schema.APPS, _("Email Client"), "emailclient");
+            add_action (ref launchers_group, Schema.APPS, _("Calendar"), "calendar");
+            add_action (ref launchers_group, Schema.APPS, _("Video Player"), "videoplayer");
+            add_action (ref launchers_group, Schema.APPS, _("Music Player"), "musicplayer");
+            add_action (ref launchers_group, Schema.APPS, _("Image Viewer"), "imageviewer");
+            add_action (ref launchers_group, Schema.APPS, _("Text Editor"), "texteditor");
+            add_action (ref launchers_group, Schema.APPS, _("File Browser"), "filebrowser");
+            add_action (ref launchers_group, Schema.APPS, _("Terminal"), "terminal");
 
             media_group = {};
             media_group.icon_name = "applications-multimedia";
