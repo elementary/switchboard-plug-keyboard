@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-05-01 19:43+0000\n"
+"PO-Revision-Date: 2021-05-03 15:59+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -365,7 +365,7 @@ msgstr "Перемістити до робочого простору право
 
 #: src/Shortcuts/List.vala:98
 msgid "Screenshots"
-msgstr "Знімки екрану"
+msgstr "Знімки екрана"
 
 #: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
@@ -385,11 +385,11 @@ msgstr "Копіювати поточне вікно до буфера обмі�
 
 #: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
-msgstr "Вибрати область захоплення"
+msgstr "Вибрати ділянку"
 
 #: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
-msgstr "Копіювати область до буфера обміну"
+msgstr "Копіювати ділянку до буфера обміну"
 
 #: src/Shortcuts/List.vala:108
 msgid "Applications"
