@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-05-05 08:17+0000\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: Chengyu Liu <wer5lcy@live.cn>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -769,10 +769,8 @@ msgid "Type to test your layout"
 msgstr "键入任意内容测试您的布局"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "输入法"
+msgstr "输入法已激活"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
