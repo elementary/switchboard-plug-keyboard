@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-29 11:01+0000\n"
+"PO-Revision-Date: 2021-05-05 21:17+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -620,16 +620,12 @@ msgid "Embed preedit text in application window:"
 msgstr "光标跟随："
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "键入任意内容测试您的布局"
+msgstr "键入任意内容以测试您的输入法"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "显示键盘布局"
+msgstr "键盘布局已激活"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -773,10 +769,8 @@ msgid "Type to test your layout"
 msgstr "键入任意内容测试您的布局"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "输入法"
+msgstr "输入法已激活"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"

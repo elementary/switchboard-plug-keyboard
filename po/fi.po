@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-03-03 11:48+0000\n"
+"PO-Revision-Date: 2021-05-04 12:26+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -570,9 +570,6 @@ msgid "IBus Daemon is not running"
 msgstr "IBus-taustapalvelu ei ole käynnissä"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -585,10 +582,8 @@ msgstr "Käynnistä IBus-taustapalvelu"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
-msgstr "IBus-taustapalvelun käynnistäminen epäonnistui"
+msgstr "IBus-taustapalvelua ei voitu käynnistää"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -604,10 +599,8 @@ msgid "Switch engines:"
 msgstr "Vaihda moottoreita:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Näytä paneelissa"
+msgstr "Näytä ominaisuuspaneeli:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -626,16 +619,12 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "Kirjoita testataksesi asettelua"
+msgstr "Kirjoita testataksesi syötetapaa"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "Näytä näppäimistön asettelu"
+msgstr "Näppäimistöasettelu on aktiivinen"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -779,10 +768,8 @@ msgid "Type to test your layout"
 msgstr "Kirjoita testataksesi asettelua"
 
 #: src/Views/Layout.vala:401
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Syötetapa"
+msgstr "Syötetapa on aktiivinen"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"

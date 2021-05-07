@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-15 20:14+0000\n"
+"PO-Revision-Date: 2021-05-03 15:59+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -113,7 +113,7 @@ msgstr "Додати розкладку"
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
 #: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
 msgid "Default"
-msgstr "Типовий"
+msgstr "Типово"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
@@ -177,7 +177,7 @@ msgstr "Закрити"
 
 #: src/Shortcuts/List.vala:45
 msgid "Lower"
-msgstr "Нижній"
+msgstr "Понизити"
 
 #: src/Shortcuts/List.vala:46
 msgid "Maximize"
@@ -257,7 +257,7 @@ msgstr "Робочі простори"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr "Багатозадачне подання"
+msgstr "Багатозадачний вигляд"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
@@ -365,7 +365,7 @@ msgstr "Перемістити до робочого простору право
 
 #: src/Shortcuts/List.vala:98
 msgid "Screenshots"
-msgstr "Знімки екрану"
+msgstr "Знімки екрана"
 
 #: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
@@ -385,11 +385,11 @@ msgstr "Копіювати поточне вікно до буфера обмі�
 
 #: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
-msgstr "Вибрати область захоплення"
+msgstr "Вибрати ділянку"
 
 #: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
-msgstr "Копіювати область до буфера обміну"
+msgstr "Копіювати ділянку до буфера обміну"
 
 #: src/Shortcuts/List.vala:108
 msgid "Applications"
@@ -790,11 +790,11 @@ msgstr "Додати рушій"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
-msgstr "Перемістити вгору"
+msgstr "Підняти"
 
 #: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
-msgstr "Перемістити вниз"
+msgstr "Перемістити нижче"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:23
 msgid "Enter Command"
