@@ -91,7 +91,7 @@ public class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
    }
 
     public static GLib.List <CustomShortcut?> list_default_shortcuts () requires (available) {
-        GLib.List <CustomShortcut?> l = null; 
+        GLib.List <CustomShortcut?> l = null;
         var keys = list.launchers_group.keys;
         var actions = list.launchers_group.actions;
 
@@ -103,7 +103,7 @@ public class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
 
             if (key == "terminal") { // can't set default application for terminal
                 desktop_id = "io.elementary.terminal.desktop";
-            } else { 
+            } else {
                 desktop_id = AppInfo.get_default_for_type (type, false).get_id ();
             }
 
@@ -133,7 +133,7 @@ public class Pantheon.Keyboard.Shortcuts.ApplicationShortcutSettings : Object {
     }
 
     public static void remove_shortcut (string key) requires (available) {
-        var index = int.parse(key.substring (-1));
+        var index = int.parse (key.substring (-1));
         var desktop_ids = settings_custom.get_strv (KEY_DESKTOP_IDS);
         desktop_ids [index] = "";
         settings_custom.set_strv (KEY_DESKTOP_IDS, desktop_ids);

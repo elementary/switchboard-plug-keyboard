@@ -93,7 +93,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             tv_custom_apps.headers_visible = false;
             tv_custom_apps.expand = true;
             tv_custom_apps.get_column (1).expand = true;
-            
+
             container.attach (label_default_apps, 0, 0, 1, 1);
             container.attach (tv_default_apps, 0, 1, 1, 1);
             container.attach (label_custom_apps, 0, 2, 1, 1);
@@ -113,9 +113,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 if (shortcut == null)
                     continue;
 
-                debug(@"hihi before $(default_shortcut.name))");
                 var desktop_appinfo = new DesktopAppInfo (default_shortcut.desktop_id);
-                debug("hihi after");
                 store_default_apps.append (out iter);
                 store_default_apps.set (iter,
                                         Column.NAME, default_shortcut.name,
@@ -200,7 +198,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             store.append (out iter);
             store.set (iter, Column.DESKTOP_ID, info.get_name ());
             store.set (iter, Column.SHORTCUT, (new Shortcut.parse ("")).to_readable ());
-            store.set (iter,  Column.KEY, key);
+            store.set (iter, Column.KEY, key);
 
             load_and_display_shortcuts ();
         }
@@ -226,8 +224,8 @@ namespace Pantheon.Keyboard.Shortcuts {
         }
 
         public bool change_shortcut (string path, Shortcut? shortcut, Gtk.TreeView tv) {
-            Gtk.TreeIter  iter;
-            GLib.Value    key, name;
+            Gtk.TreeIter iter;
+            GLib.Value key, name;
 
             tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
             tv.model.get_value (iter, Column.NAME, out name);
@@ -260,7 +258,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         void remove_shortcut_for_iter (Gtk.TreeIter iter) {
             GLib.Value key;
-            tv_custom_apps.model.get_value (iter,  Column.KEY, out key);
+            tv_custom_apps.model.get_value (iter, Column.KEY, out key);
             var store = tv_custom_apps.model as Gtk.ListStore;
 
             ApplicationShortcutSettings.remove_shortcut ((string) key);

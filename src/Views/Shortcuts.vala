@@ -145,7 +145,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 stack.visible_child = trees[index];
 
                 actionbar.no_show_all = index != SectionID.CUSTOM && index != SectionID.APPS;
-                actionbar.visible = index == SectionID.CUSTOM || index == SectionID.APPS;;
+                actionbar.visible = index == SectionID.CUSTOM || index == SectionID.APPS;
                 show_all ();
             });
         }
