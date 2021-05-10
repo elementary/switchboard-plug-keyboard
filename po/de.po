@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-16 03:12+0000\n"
+"PO-Revision-Date: 2021-05-10 20:45+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -63,13 +63,10 @@ msgid "Caps Lock behavior"
 msgstr "Funktion der Feststelltaste"
 
 #: src/Plug.vala:106
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
 msgstr "Engine wechseln"
 
 #: src/Plug.vala:107
-#, fuzzy
 msgid "Show candidate window"
 msgstr "Kandidatenfenster anzeigen"
 
@@ -132,7 +129,6 @@ msgid "Reassign"
 msgstr "Neu zuordnen"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
-#, fuzzy
 msgid "Choose an engine to install"
 msgstr "Zu installierende Engine wählen"
 
@@ -504,7 +500,6 @@ msgid "Log Out"
 msgstr "Abmelden"
 
 #: src/Shortcuts/List.vala:144
-#, fuzzy
 msgid "Cycle display mode"
 msgstr "Bildschirmmodus durchschalten"
 
@@ -574,9 +569,6 @@ msgid "IBus Daemon is not running"
 msgstr "IBus-Dämon wird nicht ausgeführt"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -589,10 +581,8 @@ msgstr "IBus-Dämon ausführen"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
-msgstr "IBus-Dämon konnte nicht ausgeführt werden"
+msgstr "Der IBus-Dämon konnte nicht ausgestartet werden"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -604,8 +594,6 @@ msgid "Remove"
 msgstr "Entfernen"
 
 #: src/Views/InputMethod.vala:124
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
 msgstr "Engine wechseln:"
 
@@ -767,7 +755,6 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola-F-Rücktaste:"
 
 #: src/Views/Layout.vala:302
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku als Escape:"
 
