@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-17 00:26+0000\n"
+"PO-Revision-Date: 2021-06-14 12:49+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -758,9 +758,8 @@ msgid "Nicola F Backspace:"
 msgstr "Backspace как в Nicola-F:"
 
 #: src/Views/Layout.vala:302
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "Zenkaku Hankaku как Escape:"
+msgstr "Hankaku Zenkaku как Escape:"
 
 #: src/Views/Layout.vala:319
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
