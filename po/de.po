@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-05-10 20:45+0000\n"
+"PO-Revision-Date: 2021-06-21 00:19+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -377,7 +377,7 @@ msgstr "Bildschirmfoto in die Zwischenablage kopieren"
 
 #: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
-msgstr "Das aktuelle Fenster aufnehmen"
+msgstr "Aktuelles Fenster aufnehmen"
 
 #: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
@@ -385,7 +385,7 @@ msgstr "Bildschirmfoto des aktuellen Fensters in die Zwischenablage kopieren"
 
 #: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
-msgstr "Einen Bereich auswählen zum Aufnehmen"
+msgstr "Bereich zum Aufnehmen auswählen"
 
 #: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
@@ -469,11 +469,11 @@ msgstr "Schrift vergrößern"
 
 #: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
-msgstr "Lupe vergrößern"
+msgstr "Ansicht vergrößern"
 
 #: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
-msgstr "Lupe verkleinern"
+msgstr "Ansicht verkleinern"
 
 #: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
@@ -493,7 +493,7 @@ msgstr "Anwendungsmenü"
 
 #: src/Shortcuts/List.vala:142
 msgid "Lock"
-msgstr "Sperre"
+msgstr "Sperren"
 
 #: src/Shortcuts/List.vala:143
 msgid "Log Out"
@@ -561,7 +561,7 @@ msgstr "Sekunden"
 
 #: src/Views/Behavior.vala:105
 msgid "Type to test your settings"
-msgstr "Geben Sie hier etwas ein, um Ihre Einstellungen auszuprobieren"
+msgstr "Geben Sie hier etwas ein, um Ihre Einstellungen zu testen"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
@@ -724,7 +724,7 @@ msgstr "Tausch mit Esc"
 
 #: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr "Im Panel anzeigen"
+msgstr "In der Leiste anzeigen"
 
 #: src/Views/Layout.vala:143
 msgid "Caps Lock:"
