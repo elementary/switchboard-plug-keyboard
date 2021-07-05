@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-05-03 15:59+0000\n"
+"PO-Revision-Date: 2021-07-05 13:54+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -27,7 +27,7 @@ msgstr "Клавіатура"
 
 #: src/Plug.vala:36
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Налаштувати поведінку клавіатури, розкладки та комбінації клавіш"
+msgstr "Налаштування поведінки клавіатури, розкладки та комбінації клавіш"
 
 #: src/Plug.vala:52 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
 #: src/Plug.vala:103 src/Plug.vala:104
@@ -561,7 +561,7 @@ msgstr "секунди"
 
 #: src/Views/Behavior.vala:105
 msgid "Type to test your settings"
-msgstr "Друкуйте для перевірки параметрів"
+msgstr "Друкуйте для перевірки налаштувань"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
