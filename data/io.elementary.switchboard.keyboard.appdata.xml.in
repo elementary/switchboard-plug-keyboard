@@ -43,6 +43,12 @@
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot.png</image>
     </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot-shortcuts.png</image>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot-behavior.png</image>
+    </screenshot>
   </screenshots>
   <url type="homepage">https://elementary.io</url>
   <url type="bugtracker">https://github.com/elementary/switchboard-plug-keyboard/issues</url>
