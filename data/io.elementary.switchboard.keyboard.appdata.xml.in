@@ -9,10 +9,13 @@
   <releases>
     <release version="2.5.0" date="2021-07-14" urgency="medium">
       <description>
-        <p>Add Layout popover is now a dialog</p>
-        <p>Guarantee we always have at least one layout</p>
-        <p>Improvements to ibus and xkb layouts</p>
-        <p>Updated translations</p>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Add Layout popover is now a dialog</li>
+          <li>Guarantee we always have at least one layout</li>
+          <li>Improvements to ibus and xkb layouts</li>
+          <li>Updated translations</li>
+        </ul>
       </description>
     </release>
     <release version="2.4.1" date="2020-09-02" urgency="medium">
