@@ -1,3 +1,29 @@
+switchboard-plug-keyboard (2.5.0) bionic; urgency=medium
+
+  * Release 2.5.0 (#370)
+  * Update translation files
+  * Update translation template
+  * Spelling: IBus daemon, could not, input method, keyboard layout
+    (#356)
+  * InputMethod: Fix wrong copy of ibus panel label (#354)
+  * InputMethod: Set sensitivity of remove_button correctly (#349)
+  * Integrate ibus methods into input sources (#341)
+  * Fix not working Super key behavior Application Menu (#348)
+  * Replace Gtk.Dialog with Granite.Dialog (#346)
+  * LINGUAS: sort, remove en_US
+  * build: use find_library correctly (#342)
+  * Fix xkb layouts saved as ibus sources (#338)
+  * Add shortcuts icons to gresource (#330)
+  * Layout: Always have one layout at least (#337)
+  * Remove unused reset methods (#336)
+  * AddLayoutDialog: Remove extra margin (#335)
+  * Rename 'Minimize' to 'Hide' (#332)
+  * Shortcut: GObject-style construction (#309)
+  * Release: bump to Odin
+  * Make add layout a dialog (#265)
+
+ -- elementary OS Team <builds@elementary.io>  Wed, 14 Jul 2021 21:01:19 +0000
+
 switchboard-plug-keyboard (2.4.1) bionic; urgency=medium
 
   * Release 2.4.1 (#323)
