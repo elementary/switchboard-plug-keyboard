@@ -7,9 +7,11 @@
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
   <releases>
-    <release version="2.4.2" date="2020-09-24" urgency="medium">
+    <release version="2.5.0" date="2021-07-14" urgency="medium">
       <description>
         <p>Add Layout popover is now a dialog</p>
+        <p>Guarantee we always have at least one layout</p>
+        <p>Improvements to ibus and xkb layouts</p>
         <p>Updated translations</p>
       </description>
     </release>
