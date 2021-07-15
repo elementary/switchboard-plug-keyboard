@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-15 01:01+0000\n"
+"PO-Revision-Date: 2021-07-15 13:41+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/he/>\n"
@@ -37,11 +37,11 @@ msgstr "החלונית הקופצת להוספת פריסה היא מעכשיו 
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "הבטחה שתמיד תהיה לפחות פריסה אחרת"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "שיפורים לפריסות ibus ו־xkb"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
