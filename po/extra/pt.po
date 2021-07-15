@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-15 01:01+0000\n"
+"PO-Revision-Date: 2021-07-15 13:41+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pt/>\n"
@@ -41,7 +41,7 @@ msgstr "Garantir que temos sempre pelo menos um esquema"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "Melhoramentos nos esquemas ibus e xkb"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
