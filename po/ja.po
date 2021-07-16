@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-04-16 16:55+0000\n"
+"PO-Revision-Date: 2021-07-17 07:44+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -723,7 +723,7 @@ msgstr "Esc と入れ替える"
 
 #: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr "以下の項目をパネルに表示"
+msgstr "パネルに表示"
 
 #: src/Views/Layout.vala:143
 msgid "Caps Lock:"
