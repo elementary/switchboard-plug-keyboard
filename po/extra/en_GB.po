@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-02-14 15:23+0000\n"
+"PO-Revision-Date: 2021-07-18 00:36+0000\n"
 "Last-Translator: Ciarán Ainsworth <ciaranainsworth@outlook.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/keyboard-plug-extra/en_GB/>\n"
@@ -29,7 +29,7 @@ msgstr "Configure keyboard behaviour, layouts, and shortcuts"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr ""
+msgstr "Minor updates:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Add Layout popover is now a dialog"
@@ -37,11 +37,11 @@ msgstr "Add Layout popover is now a dialog"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "Guarantee we always have at least one layout"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "Improvements to ibus and xkb layouts"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
