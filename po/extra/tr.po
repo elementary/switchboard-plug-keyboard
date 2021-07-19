@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-15 13:41+0000\n"
+"PO-Revision-Date: 2021-07-19 21:31+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/tr/>\n"
@@ -33,15 +33,15 @@ msgstr "Küçük güncellemeler:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Add Layout popover is now a dialog"
-msgstr ""
+msgstr "Düzen Ekle açılır penceresi artık bir iletişim kutusu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "Her zaman en az bir düzenimiz olduğunu garanti ederiz"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "ibus ve xkb düzenlerinde iyileştirmeler yapıldı"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
@@ -52,7 +52,7 @@ msgstr "Çeviriler güncellendi"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr ""
+msgstr "\"Oynat\" için kısayol açıklaması artık \"Oynat/Duraklat\" oldu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
