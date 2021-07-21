@@ -140,9 +140,9 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         return list;
     }
 
-    // private static CustomShortcut? create_custom_shortcut_object (string relocatable_schema) {
-
-    // }
+    public static GLib.Settings get_gsettings_for_relocatable_schema (string relocatable_schema) {
+        return new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
+    }
 
     public static bool shortcut_conflicts (Shortcut new_shortcut, out string command,
                                            out string relocatable_schema) {
