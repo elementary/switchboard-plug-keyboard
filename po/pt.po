@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-05-02 13:55+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2021-06-17 11:08+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -388,7 +388,7 @@ msgstr "Selecionar uma área para capturar"
 
 #: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
-msgstr "Gravar captura de área na área de transferência"
+msgstr "Copiar uma área para a área de transferência"
 
 #: src/Shortcuts/List.vala:108
 msgid "Applications"

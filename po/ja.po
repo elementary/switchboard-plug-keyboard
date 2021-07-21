@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-16 16:55+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2021-07-18 12:03+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -570,7 +570,9 @@ msgstr "IBus Daemon が起動していません"
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
-msgstr "インプットメソッドエンジンを有効化したり設定したりするには、IBus デーモンを起動する必要があります。"
+msgstr ""
+"インプットメソッドエンジンを有効化したり設定したりするには、IBus デーモンを起"
+"動する必要があります。"
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
@@ -604,7 +606,7 @@ msgstr "表示しない"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr "自動的に隠す"
+msgstr "自動的に非表示にする"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
@@ -721,7 +723,7 @@ msgstr "Esc と入れ替える"
 
 #: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr "以下の項目をパネルに表示"
+msgstr "パネルに表示"
 
 #: src/Views/Layout.vala:143
 msgid "Caps Lock:"

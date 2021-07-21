@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-04-01 12:56+0000\n"
-"Last-Translator: Alvaro <alvaroaraoz_92@hotmail.com>\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2021-05-19 09:24+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
 "Language: es\n"
@@ -569,9 +569,6 @@ msgid "IBus Daemon is not running"
 msgstr "El demonio de IBus no está ejecutándose"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -584,8 +581,6 @@ msgstr "Iniciar demonio de IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
 msgstr "No se pudo iniciar el demonio de IBus"
 
@@ -603,10 +598,8 @@ msgid "Switch engines:"
 msgstr "Cambiar de motor:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Mostrar en el panel"
+msgstr "Mostrar panel de propiedades:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -625,16 +618,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Incrustar texto de preedición en la ventana de la aplicación:"
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your Input Method"
 msgid "Type to test your input method"
-msgstr "Escribe para probar la disposición"
+msgstr "Escriba para probar el método de entrada"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "A Keyboard Layout is active"
 msgid "A keyboard layout is active"
-msgstr "Hay una distribución de teclado activa"
+msgstr "Hay una disposición de teclado activa"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39

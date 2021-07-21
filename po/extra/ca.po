@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2020-09-27 09:14+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2021-07-15 15:59+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -28,33 +28,45 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configureu el comportament, la disposició i les dreceres del teclat."
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "Minor updates:"
+msgstr "Actualitzacions menors:"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Add Layout popover is now a dialog"
 msgstr "La finestreta emergent d'afegir disposicions ara és un diàleg."
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+msgid "Guarantee we always have at least one layout"
+msgstr "Es garanteix que sempre disposem d'almenys una disposició"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+msgid "Improvements to ibus and xkb layouts"
+msgstr "Millores en les disposicions d'ibus i xkb"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
 msgid "Updated translations"
 msgstr "Traduccions actualitzades"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "La descripció de drecera per a Reprodueix ara és Reprodueix / Pausa."
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:19
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Correcció de les dreceres que es mostren incorrectament com a inhabilitades"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
 msgid "Add a view to configure input methods"
 msgstr "Addició d'una vista per configurar els mètodes d’entrada"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
 msgid "New \"Workspaces\" icon"
 msgstr "Nova icona per als espais de treball"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Exclude Space from single-key shortcuts"
 msgstr "S'exclou l'espai de les dreceres d'una sola tecla."

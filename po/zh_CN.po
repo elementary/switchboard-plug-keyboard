@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-15 18:51+0000\n"
-"PO-Revision-Date: 2021-05-05 21:17+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2021-05-28 09:20+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
@@ -601,7 +601,7 @@ msgstr "切换输入法："
 
 #: src/Views/InputMethod.vala:136
 msgid "Show property panel:"
-msgstr "显示属性面板："
+msgstr "显示工具栏："
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
