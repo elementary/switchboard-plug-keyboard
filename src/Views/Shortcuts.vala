@@ -37,7 +37,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         COUNT
     }
 
-    class Page : Pantheon.Keyboard.AbstractPage {
+    class Page : Gtk.Grid {
         private Gtk.Button add_button;
         private Gtk.Button remove_button;
 
@@ -83,6 +83,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             actionbar.hexpand = true;
             actionbar.no_show_all = true;
             actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
             actionbar.add (add_button);
             actionbar.add (remove_button);
 
@@ -93,6 +94,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             var frame = new Gtk.Frame (null);
             frame.add (action_grid);
 
+            column_spacing = 12;
             column_homogeneous = true;
             attach (switcher_frame, 0, 0);
             attach (frame, 1, 0, 2, 1);
@@ -143,17 +145,6 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         private void enable_add () {
             add_button.sensitive = true;
-        }
-
-        public override void reset () {
-            for (int i = 0; i < SectionID.COUNT; i++) {
-                var g = list.groups[i];
-
-                for (int k = 0; k < g.actions.length; k++) {
-                    settings.reset (g.schemas[k], g.keys[k]);
-                }
-            }
-            return;
         }
 
         private class SwitcherRow : Gtk.ListBoxRow {

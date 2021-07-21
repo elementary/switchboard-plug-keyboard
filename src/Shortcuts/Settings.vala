@@ -42,7 +42,6 @@ namespace Pantheon.Keyboard.Shortcuts {
                 var schema = schema_source.lookup (name, true);
 
                 if (schema == null) {
-                    warning ("Schema \"%s\" is not installed on your system.", name);
                     schemas += (GLib.Settings) null;
                 } else {
                     schemas += new GLib.Settings.full (schema, null, null);
@@ -55,28 +54,38 @@ namespace Pantheon.Keyboard.Shortcuts {
             if (schema < 0 || schema >= Schema.COUNT)
                 return false;
 
-            if (schemas[schema] == null)
+            var gsettings = schemas[schema];
+            if (gsettings == null) {
                 return false;
+            }
 
              // check if key exists
-            foreach (string tmp_key in schemas[schema].list_keys ())
-                if (key == tmp_key)
+            foreach (string tmp_key in gsettings.settings_schema.list_keys ()) {
+                if (key == tmp_key) {
                     return true;
+                }
+            }
 
-            warning ("Key \"%s\" does not exist in schema \"%s\".", key, schema_names[schema]);
             return false;
         }
 
         // get/set methods for shortcuts in gsettings
         // require and return class Shortcut objects
-        public Shortcut get_val (Schema schema, string key) {
-            if (!valid (schema, key))
+        public Shortcut? get_val (Schema schema, string key) {
+            if (!valid (schema, key)) {
                 return (Shortcut) null;
+            }
 
-            if (schema == Schema.MEDIA)
-                return new Shortcut.parse (schemas[schema].get_string (key));
-            else
-                return new Shortcut.parse ((schemas[schema].get_strv (key)) [0]);
+            var gsettings = schemas[schema];
+            VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
+            string? str = null;
+            if (key_type.equal (VariantType.STRING)) {
+                str = gsettings.get_string (key);
+            } else if (key_type.equal (VariantType.STRING_ARRAY)) {
+                str = gsettings.get_strv (key)[0];
+            }
+
+            return new Shortcut.parse (str);
         }
 
         public void reset (Schema schema, string key) {
@@ -85,6 +94,24 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             schemas[schema].reset (key);
+        }
+
+        public bool set_val (Schema schema, string key, Shortcut sc) {
+            if (!valid (schema, key)) {
+                return false;
+            }
+
+            var gsettings = schemas[schema];
+            VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
+            if (key_type.equal (VariantType.STRING)) {
+                gsettings.set_string (key, sc.to_gsettings ());
+            } else if (key_type.equal (VariantType.STRING_ARRAY)) {
+                gsettings.set_strv (key, {sc.to_gsettings ()});
+            } else {
+                return false;
+            }
+
+            return true;
         }
     }
 }

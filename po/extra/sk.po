@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-15 20:40+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
 "PO-Revision-Date: 2018-10-03 10:00-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -18,21 +18,52 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
-msgid "Keyboard"
+msgid "Keyboard Settings"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+msgid "Add Layout popover is now a dialog"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+msgid "Guarantee we always have at least one layout"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+msgid "Improvements to ibus and xkb layouts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+msgid "Updated translations"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+msgid "Add a view to configure input methods"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
 msgid "New \"Workspaces\" icon"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Updated translations"
 msgstr ""

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-15 20:40+0000\n"
-"PO-Revision-Date: 2019-07-02 14:46+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2020-10-24 12:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/it/>\n"
@@ -17,25 +17,60 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
-msgid "Keyboard"
-msgstr "Tastiera"
+msgid "Keyboard Settings"
+msgstr "Impostazioni della tastiera"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 "Configura il comportamento della tastiera, le disposizioni e le scorciatoie"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:10
-msgid "New \"Workspaces\" icon"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:11
-msgid "Exclude Space from single-key shortcuts"
-msgstr ""
-
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Updated translations"
+msgid "Minor updates:"
 msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+msgid "Add Layout popover is now a dialog"
+msgstr "Il popover \"Aggiungi disposizione\" ora è una finestra di dialogo"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+msgid "Guarantee we always have at least one layout"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+msgid "Improvements to ibus and xkb layouts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+msgid "Updated translations"
+msgstr "Traduzioni aggiornate"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
+msgstr ""
+"La descrizione della scorciatoia per \"Riproduci\" è ora \"Riproduci o metti "
+"in pausa\""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr ""
+"Risolve un problema per cui alcune scorciatoie venivano visualizzate "
+"erroneamente come disabilitate"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+msgid "Add a view to configure input methods"
+msgstr "Aggiunta una scheda per configurare i metodi di immissione"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
+msgid "New \"Workspaces\" icon"
+msgstr "Nuova icona per gli \"Spazi di lavoro\""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+msgid "Exclude Space from single-key shortcuts"
+msgstr "Esclude lo spazio dalle scorciatoie con un solo tasto"

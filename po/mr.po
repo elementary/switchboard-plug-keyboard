@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-01-03 01:27+0000\n"
-"PO-Revision-Date: 2019-05-09 03:32+0000\n"
+"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"PO-Revision-Date: 2020-12-03 16:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/mr/>\n"
@@ -11,52 +11,101 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 3.6.1\n"
+"X-Generator: Weblate 3.9.1\n"
 
-#: src/Plug.vala:32
+#: src/Plug.vala:35
 msgid "Keyboard"
 msgstr "कीबोर्ड"
 
-#: src/Plug.vala:33
+#: src/Plug.vala:36
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "कीबोर्ड वर्तन, मांडणी आणि शॉर्टकट कॉन्फिगर करा"
 
-#: src/Plug.vala:42 src/Plug.vala:86 src/Plug.vala:87 src/Plug.vala:88
-#: src/Plug.vala:89 src/Plug.vala:90
+#: src/Plug.vala:52 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
+#: src/Plug.vala:103 src/Plug.vala:104
 msgid "Layout"
 msgstr "मांडणी"
 
-#: src/Plug.vala:43 src/Plug.vala:91
+#: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
+#: src/Plug.vala:108
+msgid "Input Method"
+msgstr "इनपुट पद्धत"
+
+#: src/Plug.vala:54 src/Plug.vala:109
 msgid "Shortcuts"
 msgstr "शॉर्टकट"
 
-#: src/Plug.vala:44 src/Plug.vala:92 src/Plug.vala:93 src/Plug.vala:94
+#: src/Plug.vala:55 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
 msgid "Behavior"
 msgstr "वर्तन"
 
-#: src/Plug.vala:87
+#: src/Plug.vala:101
 msgid "Switch layout"
 msgstr "मांडणी बदला"
 
-#: src/Plug.vala:88
+#: src/Plug.vala:102
 msgid "Compose Key"
 msgstr "की तयार करा"
 
-#: src/Plug.vala:89
+#: src/Plug.vala:103
 msgid "⌘ key behavior"
 msgstr "⌘ की वर्तन"
 
-#: src/Plug.vala:90
+#: src/Plug.vala:104
 msgid "Caps Lock behavior"
 msgstr "कॅप्स लॉक वर्तन"
 
-#: src/Plug.vala:93
+#: src/Plug.vala:106
+msgid "Switch engines"
+msgstr "इंजिन बदला"
+
+#: src/Plug.vala:107
+msgid "Show candidate window"
+msgstr "कॅन्डीडेट विंडो दाखवा"
+
+#: src/Plug.vala:108
+msgid "Embed preedit text in application window"
+msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा"
+
+#: src/Plug.vala:111
 msgid "Repeat Keys"
 msgstr "रिपीट कीज"
 
-#: src/Plug.vala:94
+#: src/Plug.vala:112
 msgid "Cursor Blinking"
 msgstr "कर्सर ब्लिंकिंग"
+
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "इनपुट भाषा"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+msgid "Layout List"
+msgstr "मांडणी यादी"
+
+#: src/Dialogs/AddLayoutDialog.vala:38
+msgid "Search input language"
+msgstr "इनपुट भाषा शोधा"
+
+#: src/Dialogs/AddLayoutDialog.vala:93
+msgid "Preview Layout"
+msgstr "मांडणी पूर्वावलोकन"
+
+#: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
+msgid "Cancel"
+msgstr "रद्द करा"
+
+#: src/Dialogs/AddLayoutDialog.vala:143
+msgid "Add Layout"
+msgstr "मांडणी वाढवा"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+msgid "Default"
+msgstr "डिफॉल्ट"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
@@ -68,21 +117,47 @@ msgstr "%s आधीच %s साठी वापरली गेली आह�
 msgid "If you reassign the shortcut to %s, %s will be disabled."
 msgstr "आपण शॉर्टकट पुन्हा %s वर पुनर्निर्देशित केल्यास, %s अक्षम केले जाईल."
 
-#: src/Dialogs/ConflictDialog.vala:36
-#: src/Widgets/Layout/AddLayoutPopover.vala:127
-msgid "Cancel"
-msgstr "रद्द करा"
-
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
 msgstr "पुनर्निर्देशित करा"
 
-#. Caps Lock key functionality
-#: src/Layout/Handler.vala:78 src/Views/Layout.vala:102
-#: src/Views/Layout.vala:277 src/Widgets/Layout/AddLayoutPopover.vala:211
-#: src/Widgets/Layout/AddLayoutPopover.vala:215
-msgid "Default"
-msgstr "डिफॉल्ट"
+#: src/Dialogs/InstallEngineDialog.vala:23
+msgid "Choose an engine to install"
+msgstr "स्थापित करण्यासाठी इंजिन निवडा"
+
+#: src/Dialogs/InstallEngineDialog.vala:24
+msgid "Select an engine from the list to install and use."
+msgstr "स्थापित करण्यासाठी आणि वापरण्यासाठी यादीमधून एक इंजिन निवडा."
+
+#: src/Dialogs/InstallEngineDialog.vala:43
+msgid "Languages"
+msgstr "भाषा"
+
+#: src/Dialogs/InstallEngineDialog.vala:92
+msgid "Install"
+msgstr "स्थापित करा"
+
+#: src/Dialogs/ProgressDialog.vala:46
+#, c-format
+msgid "Installing %s"
+msgstr "%s स्थापित करीत आहे"
+
+#: src/Dialogs/ProgressDialog.vala:49
+#, c-format
+msgid "Removing %s"
+msgstr "%s काढून टाकत आहे"
+
+#: src/InputMethod/Installer/InstallList.vala:26
+msgid "Japanese"
+msgstr "जपानी"
+
+#: src/InputMethod/Installer/InstallList.vala:28
+msgid "Korean"
+msgstr "कोरियन"
+
+#: src/InputMethod/Installer/InstallList.vala:30
+msgid "Chinese"
+msgstr "चीनी"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -109,8 +184,8 @@ msgid "Toggle Maximized"
 msgstr "मॅक्सिमाइज्ड टॉगल करा"
 
 #: src/Shortcuts/List.vala:49
-msgid "Minimize"
-msgstr "कमी करा"
+msgid "Hide"
+msgstr "लपवा"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -153,28 +228,20 @@ msgid "Picture in Picture Mode"
 msgstr "पिक्चर इन पिक्चर मोड"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to workspace 1"
 msgid "Move to display above"
-msgstr "कार्यक्षेत्र 1 वर हलवा"
+msgstr "वरील प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to workspace 1"
 msgid "Move to display below"
-msgstr "कार्यक्षेत्र 1 वर हलवा"
+msgstr "खालील प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "उजव्या कार्यक्षेत्रावर हलवा"
+msgstr "उजवीकडील प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "डाव्या कार्यक्षेत्रावर हलवा"
+msgstr "डाव्या प्रदर्शनावर हलवा"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -357,8 +424,8 @@ msgid "Mute"
 msgstr "आवाज बंद करा"
 
 #: src/Shortcuts/List.vala:121
-msgid "Play"
-msgstr "प्ले"
+msgid "Play/Pause"
+msgstr "प्ले करा / थांबवा"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -408,50 +475,46 @@ msgstr "ऑन स्क्रीन कीबोर्ड टॉगल कर�
 msgid "Toggle Screenreader"
 msgstr "स्क्रीन रीडर टॉगल करा"
 
-#: src/Shortcuts/List.vala:137
-msgid "Toggle High Contrast"
-msgstr "उच्च तीव्रता टॉगल करा"
-
-#: src/Shortcuts/List.vala:141
+#: src/Shortcuts/List.vala:140
 msgid "System"
 msgstr "सिस्टिम"
 
-#: src/Shortcuts/List.vala:142 src/Views/Layout.vala:89
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:79
 msgid "Applications Menu"
 msgstr "अप्लिकेशन मेनू"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:142
 msgid "Lock"
 msgstr "लॉक"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:143
 msgid "Log Out"
 msgstr "लॉग आऊट"
 
-#: src/Shortcuts/List.vala:145
+#: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "प्रदर्शन मोड सायकल करा"
 
-#: src/Shortcuts/List.vala:149
+#: src/Shortcuts/List.vala:148
 msgid "Custom"
 msgstr "सानुकूल"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:53
-#: src/Views/Layout.vala:72 src/Views/Layout.vala:88 src/Views/Layout.vala:103
+#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
 msgid "Disabled"
 msgstr "अक्षम"
 
-#: src/Shortcuts/Shortcut.vala:61
+#: src/Shortcuts/Shortcut.vala:62
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:69
+#: src/Shortcuts/Shortcut.vala:70
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:73
+#: src/Shortcuts/Shortcut.vala:74
 msgid "Alt"
 msgstr "Alt"
 
@@ -492,188 +555,249 @@ msgstr "सेकंद"
 msgid "Type to test your settings"
 msgstr "आपल्या सेटिंग्ज तपासण्यासाठी टाइप करा"
 
+#. no_daemon_runnning view shown if IBus Daemon is not running
+#: src/Views/InputMethod.vala:44
+msgid "IBus Daemon is not running"
+msgstr "IBus डीमन चालू नाही"
+
+#: src/Views/InputMethod.vala:45
+#, fuzzy
+#| msgid ""
+#| "You need to run IBus Daemon to enable or configure input method engines."
+msgid ""
+"You need to run the IBus daemon to enable or configure input method engines."
+msgstr ""
+"इनपुट पद्धत इंजिन सक्षम किंवा कॉन्फिगर करण्यासाठी आपल्याला IBus डीमन चालविणे आवश्यक आहे."
+
+#: src/Views/InputMethod.vala:52
+msgid "Start IBus Daemon"
+msgstr "IBus डीमन सुरु करा"
+
+#. spawn_failed view shown if IBus Daemon is not running
+#: src/Views/InputMethod.vala:59
+#, fuzzy
+#| msgid "Failed to start IBus Daemon"
+msgid "Could not start the IBus daemon"
+msgstr "IBus डीमन सुरु करण्यात अयशस्वी"
+
+#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+msgid "Add…"
+msgstr "जोडा…"
+
+#: src/Views/InputMethod.vala:109 src/Views/Shortcuts.vala:80
+#: src/Widgets/Layout/Display.vala:62
+msgid "Remove"
+msgstr "काढा"
+
+#: src/Views/InputMethod.vala:124
+msgid "Switch engines:"
+msgstr "इंजिन बदला:"
+
+#: src/Views/InputMethod.vala:136
+#, fuzzy
+#| msgid "Show in Panel"
+msgid "Show property panel:"
+msgstr "पॅनेलमध्ये दाखवा"
+
+#: src/Views/InputMethod.vala:143
+msgid "Do not show"
+msgstr "दाखवू नका"
+
+#: src/Views/InputMethod.vala:144
+msgid "Auto hide"
+msgstr "स्वयंचलितपणे लपवा"
+
+#: src/Views/InputMethod.vala:145
+msgid "Always show"
+msgstr "नेहमी लपवा"
+
+#: src/Views/InputMethod.vala:147
+msgid "Embed preedit text in application window:"
+msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा:"
+
+#: src/Views/InputMethod.vala:388
+#, fuzzy
+#| msgid "Type to test your layout"
+msgid "Type to test your input method"
+msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
+
+#: src/Views/InputMethod.vala:391
+#, fuzzy
+#| msgid "Show keyboard layout"
+msgid "A keyboard layout is active"
+msgstr "कीबोर्ड मांडणी दाखवा"
+
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:39
 msgid "Switch layout:"
 msgstr "मांडणी बदला:"
 
-#: src/Views/Layout.vala:54
+#: src/Views/Layout.vala:44
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock"
 
-#: src/Views/Layout.vala:55
+#: src/Views/Layout.vala:45
 msgid "Alt + Shift"
 msgstr "Alt + Shift"
 
-#: src/Views/Layout.vala:56
+#: src/Views/Layout.vala:46
 msgid "Alt + Space"
 msgstr "Alt +  Space"
 
-#: src/Views/Layout.vala:57
+#: src/Views/Layout.vala:47
 msgid "Both Shift keys together"
 msgstr "दोन्ही शिफ्ट की एकत्र"
 
-#: src/Views/Layout.vala:58 src/Views/Layout.vala:73 src/Views/Layout.vala:278
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
 msgid "Caps Lock"
 msgstr "कॅप्स लॉक"
 
-#: src/Views/Layout.vala:59
+#: src/Views/Layout.vala:49
 msgid "Ctrl + Alt"
 msgstr "Ctrl + Alt"
 
-#: src/Views/Layout.vala:60
+#: src/Views/Layout.vala:50
 msgid "Ctrl + Shift"
 msgstr "Ctrl + Shift"
 
-#: src/Views/Layout.vala:61
+#: src/Views/Layout.vala:51
 msgid "Shift + Caps Lock"
 msgstr "Shift + Caps Lock"
 
-#: src/Views/Layout.vala:68
+#: src/Views/Layout.vala:58
 msgid "Compose key:"
 msgstr "की तयार करा:"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:64
 msgid "Menu"
 msgstr "मेनू"
 
-#: src/Views/Layout.vala:75 src/Views/Layout.vala:280 src/Views/Layout.vala:292
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
 msgid "Right Alt"
 msgstr "उजवा Alt"
 
-#: src/Views/Layout.vala:76 src/Views/Layout.vala:281 src/Views/Layout.vala:293
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
 msgid "Right Ctrl"
 msgstr "उजवा Ctrl"
 
-#: src/Views/Layout.vala:77 src/Views/Layout.vala:282 src/Views/Layout.vala:294
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right ⌘"
 msgstr "उजवा ⌘"
 
-#: src/Views/Layout.vala:84
+#: src/Views/Layout.vala:74
 msgid "⌘ key behavior:"
 msgstr "⌘ की वर्तन:"
 
-#: src/Views/Layout.vala:93
+#: src/Views/Layout.vala:83
 msgid "Shortcut Overlay"
 msgstr "शॉर्टकट आच्छादन"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:88
 msgid "Caps Lock behavior:"
 msgstr "कॅप्स लॉक वर्तन:"
 
-#: src/Views/Layout.vala:104
+#: src/Views/Layout.vala:94
 msgid "as Backspace"
 msgstr "बॅकस्पेस म्हणून"
 
-#: src/Views/Layout.vala:105
+#: src/Views/Layout.vala:95
 msgid "as Ctrl"
 msgstr "Ctrl म्हणून"
 
-#: src/Views/Layout.vala:106
+#: src/Views/Layout.vala:96
 msgid "as Escape"
 msgstr "Escape म्हणून"
 
-#: src/Views/Layout.vala:107
+#: src/Views/Layout.vala:97
 msgid "as Num Lock"
 msgstr "नम लॉक म्हणून"
 
-#: src/Views/Layout.vala:108
+#: src/Views/Layout.vala:98
 msgid "as ⌘"
 msgstr "⌘ म्हणून"
 
-#: src/Views/Layout.vala:109
+#: src/Views/Layout.vala:99
 msgid "Swap with Ctrl"
 msgstr "कंट्रोल सह बदला"
 
-#: src/Views/Layout.vala:110
+#: src/Views/Layout.vala:100
 msgid "Swap with Escape"
 msgstr "Escape सह बदला"
 
-#: src/Views/Layout.vala:127
-msgid "Type to test your layout"
-msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
-
-#: src/Views/Layout.vala:129
-msgid "Input Method Settings…"
-msgstr "इनपुट पद्धत सेटिंग्ज…"
-
-#: src/Views/Layout.vala:150
+#: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr ""
+msgstr "पॅनेलमध्ये दाखवा"
 
-#: src/Views/Layout.vala:156
-#, fuzzy
-#| msgid "Caps Lock"
+#: src/Views/Layout.vala:143
 msgid "Caps Lock:"
-msgstr "कॅप्स लॉक"
+msgstr "कॅप्स लॉक:"
 
-#: src/Views/Layout.vala:162
-#, fuzzy
-#| msgid "as Num Lock"
+#: src/Views/Layout.vala:149
 msgid "Num Lock:"
-msgstr "नम लॉक म्हणून"
+msgstr "नम लॉक:"
 
-#: src/Views/Layout.vala:257 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
 msgid "Key to choose 3rd level:"
 msgstr "तृतीय स्तर निवडण्याची की:"
 
-#: src/Views/Layout.vala:279
+#: src/Views/Layout.vala:260
 msgid "Left Alt"
 msgstr "डावा Alt"
 
-#: src/Views/Layout.vala:289
+#: src/Views/Layout.vala:270
 msgid "Key to choose 5th level:"
 msgstr "पाचवी पातळी निवडण्याची की:"
 
-#: src/Views/Layout.vala:310
+#: src/Views/Layout.vala:291
 msgid "Kana Lock:"
 msgstr "काना लॉक:"
 
-#: src/Views/Layout.vala:318
+#: src/Views/Layout.vala:299
 msgid "Nicola F Backspace:"
 msgstr "निकोला एफ बॅकस्पेस:"
 
-#: src/Views/Layout.vala:321
+#: src/Views/Layout.vala:302
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "हँककु झेंकाकू Escape म्हणून:"
 
-#: src/Views/Layout.vala:338
+#: src/Views/Layout.vala:319
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "हांगुल/हांजा की उजव्या Alt/Ctrl वर:"
+
+#: src/Views/Layout.vala:398
+msgid "Type to test your layout"
+msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
+
+#: src/Views/Layout.vala:401
+#, fuzzy
+#| msgid "Input Method"
+msgid "Input Method is active"
+msgstr "इनपुट पद्धत"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
 msgstr "वाढवा"
 
-#: src/Views/Shortcuts.vala:80 src/Widgets/Layout/Display.vala:59
-msgid "Remove"
-msgstr "काढा"
+#. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
+#. /to look for a input method engine they want to add.
+#. /It does not mean search engines in web browsers.
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:33
+msgid "Search engine"
+msgstr "शोध इंजिन"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:35
-msgid "Search input language"
-msgstr "इनपुट भाषा शोधा"
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:46
+msgid "Install Unlisted Engines…"
+msgstr "यादीत नसलेली इंजिने स्थापित करा…"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:62
-msgid "Input Language"
-msgstr "इनपुट भाषा"
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:50
+msgid "Add Engine"
+msgstr "इंजिन जोडा"
 
-#: src/Widgets/Layout/AddLayoutPopover.vala:101
-msgid "Show keyboard layout"
-msgstr "कीबोर्ड मांडणी दाखवा"
-
-#: src/Widgets/Layout/AddLayoutPopover.vala:123
-msgid "Add Layout"
-msgstr "मांडणी वाढवा"
-
-#: src/Widgets/Layout/Display.vala:55
-msgid "Add…"
-msgstr "जोडा…"
-
-#: src/Widgets/Layout/Display.vala:63
+#: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
 msgstr "वर सरकवा"
 
-#: src/Widgets/Layout/Display.vala:67
+#: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
 msgstr "खाली सरकवा"
 
@@ -688,6 +812,23 @@ msgstr "आज्ञा"
 #: src/Widgets/Shortcuts/CustomTree.vala:74
 msgid "Shortcut"
 msgstr "शॉर्टकट"
+
+#~ msgid "Show candidate window:"
+#~ msgstr "कॅन्डीडेट विंडो दाखवा:"
+
+#~ msgid "Minimize"
+#~ msgstr "कमी करा"
+
+#~ msgid "Play"
+#~ msgstr "प्ले"
+
+#~ msgid "Toggle High Contrast"
+#~ msgstr "उच्च तीव्रता टॉगल करा"
+
+#, fuzzy
+#~| msgid "Input Method Settings…"
+#~ msgid "Advanced Settings…"
+#~ msgstr "इनपुट पद्धत सेटिंग्ज…"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "कॅप्स लॉक अक्षम"

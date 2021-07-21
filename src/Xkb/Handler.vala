@@ -17,21 +17,29 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
-    public HashTable<string, string> languages { public get; private set; }
+public class Pantheon.Keyboard.XkbLayoutHandler : GLib.Object {
+    private const string XKB_RULES_FILE = "evdev.xml";
 
-    public LayoutHandler () {
-        parse_layouts ();
+    private static XkbLayoutHandler? instance = null;
+
+    public static XkbLayoutHandler get_instance () {
+        if (instance == null) {
+            instance = new XkbLayoutHandler ();
+        }
+
+        return instance;
     }
+
+    public HashTable<string, string> languages { get; private set; }
+
+    private XkbLayoutHandler () {}
 
     construct {
         languages = new HashTable<string, string> (str_hash, str_equal);
-    }
 
-    private void parse_layouts () {
-        Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
+        Xml.Doc* doc = Xml.Parser.parse_file (get_xml_rules_file_path ());
         if (doc == null) {
-            critical ("'evdev.xml' not found or permissions missing\n");
+            critical ("'%s' not found or permissions missing\n", XKB_RULES_FILE);
             return;
         }
 
@@ -40,14 +48,14 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
 
         if (res == null) {
             delete doc;
-            critical ("Unable to parse 'evdev.xml'");
+            critical ("Unable to parse '%s'", XKB_RULES_FILE);
             return;
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
             delete res;
             delete doc;
-            critical ("No layouts found in 'evdev.xml'");
+            critical ("No layouts found in '%s'", XKB_RULES_FILE);
             return;
         }
 
@@ -73,29 +81,40 @@ public class Pantheon.Keyboard.LayoutPage.LayoutHandler : GLib.Object {
         delete doc;
     }
 
+    private string get_xml_rules_file_path () {
+        unowned string? base_path = GLib.Environment.get_variable ("XKB_CONFIG_ROOT");
+        if (base_path == null) {
+            base_path = Constants.XKB_BASE;
+        }
+
+        return Path.build_filename (base_path, "rules", XKB_RULES_FILE);
+    }
+
     public HashTable<string, string> get_variants_for_language (string language) {
         var returned_table = new HashTable<string, string> (str_hash, str_equal);
         returned_table.set ("", _("Default"));
-        Xml.Doc* doc = Xml.Parser.parse_file ("/usr/share/X11/xkb/rules/evdev.xml");
+
+        string file_path = get_xml_rules_file_path ();
+        Xml.Doc* doc = Xml.Parser.parse_file (file_path);
         if (doc == null) {
-            critical ("'evdev.xml' not found or permissions incorrect\n");
+            critical ("'%s' not found or permissions incorrect\n", XKB_RULES_FILE);
             return returned_table;
         }
 
         Xml.XPath.Context cntx = new Xml.XPath.Context (doc);
-        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem";
+        var xpath = @"/xkbConfigRegistry/layoutList/layout/configItem/name[text()='$language']/../../variantList/variant/configItem";//vala-lint=line-leng //vala-lint=line-length
         Xml.XPath.Object* res = cntx.eval_expression (xpath);
 
         if (res == null) {
             delete doc;
-            critical ("Unable to parse 'evdev.xml'");
+            critical ("Unable to parse '%s'", XKB_RULES_FILE);
             return returned_table;
         }
 
         if (res->type != Xml.XPath.ObjectType.NODESET || res->nodesetval == null) {
             delete res;
             delete doc;
-            warning (@"No variants for $language found in 'evdev.xml'");
+            warning (@"No variants for $language found in '%s'", XKB_RULES_FILE);
             return returned_table;
         }
 

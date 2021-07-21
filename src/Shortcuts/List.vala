@@ -46,7 +46,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Maximize"), "maximize");
             add_action (ref windows_group, Schema.WM, _("Unmaximize"), "unmaximize");
             add_action (ref windows_group, Schema.WM, _("Toggle Maximized"), "toggle-maximized");
-            add_action (ref windows_group, Schema.WM, _("Minimize"), "minimize");
+            add_action (ref windows_group, Schema.WM, _("Hide"), "minimize");
             add_action (ref windows_group, Schema.WM, _("Toggle Fullscreen"), "toggle-fullscreen");
             add_action (ref windows_group, Schema.WM, _("Toggle on all Workspaces"), "toggle-on-all-workspaces");
             add_action (ref windows_group, Schema.WM, _("Toggle always on Top"), "toggle-above");
@@ -63,7 +63,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Move to left display"), "move-to-monitor-left");
 
             workspaces_group = {};
-            workspaces_group.icon_name = "preferences-desktop-workspaces";
+            workspaces_group.icon_name = "io.elementary.switchboard.keyboard.multitasking";
             workspaces_group.label = _("Workspaces");
             add_action (ref workspaces_group, Schema.WM, _("Multitasking View"), "show-desktop");
             add_action (ref workspaces_group, Schema.WM, _("Switch left"), "switch-to-workspace-left");
@@ -94,7 +94,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Move to right workspace"), "move-to-workspace-right");
 
             screenshot_group = {};
-            screenshot_group.icon_name = "accessories-screenshot";
+            screenshot_group.icon_name = "io.elementary.switchboard.keyboard.screenshots";
             screenshot_group.label = _("Screenshots");
             add_action (ref screenshot_group, Schema.MEDIA, _("Grab the whole screen"), "screenshot");
             add_action (ref screenshot_group, Schema.MEDIA, _("Copy the whole screen to clipboard"), "screenshot-clip");
@@ -118,7 +118,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref media_group, Schema.MEDIA, _("Volume Up"), "volume-up");
             add_action (ref media_group, Schema.MEDIA, _("Volume Down"), "volume-down");
             add_action (ref media_group, Schema.MEDIA, _("Mute"), "volume-mute");
-            add_action (ref media_group, Schema.MEDIA, _("Play"), "play");
+            add_action (ref media_group, Schema.MEDIA, _("Play/Pause"), "play");
             add_action (ref media_group, Schema.MEDIA, _("Pause"), "pause");
             add_action (ref media_group, Schema.MEDIA, _("Stop"), "stop");
             add_action (ref media_group, Schema.MEDIA, _("Previous Track"), "previous");
@@ -134,7 +134,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             add_action (ref a11y_group, Schema.GALA, _("Magnifier Zoom out"), "zoom-out");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle On Screen Keyboard"), "on-screen-keyboard");
             add_action (ref a11y_group, Schema.MEDIA, _("Toggle Screenreader"), "screenreader");
-            add_action (ref a11y_group, Schema.MEDIA, _("Toggle High Contrast"), "toggle-contrast");
 
             system_group = {};
             system_group.icon_name = "preferences-system";

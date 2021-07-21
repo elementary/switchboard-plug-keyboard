@@ -17,27 +17,17 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.LayoutPage {
-    // global handler
-    LayoutHandler handler;
-
-    public class Page : Pantheon.Keyboard.AbstractPage {
-        private LayoutPage.Display display;
-        private LayoutSettings settings;
+namespace Pantheon.Keyboard {
+    public class LayoutPage.Page : Gtk.Grid {
+        private Display display;
+        private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
+        private Gtk.Entry entry_test;
 
-        public override void reset () {
-            settings.reset_all ();
-            display.reset_all ();
-            return;
-        }
+        construct {
+            settings = SourceSettings.get_instance ();
 
-        public Page () {
-            this.column_homogeneous = true;
-
-            handler = new LayoutHandler ();
-            settings = LayoutSettings.get_instance ();
             size_group = {
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
                 new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
@@ -122,19 +112,16 @@ namespace Pantheon.Keyboard.LayoutPage {
 
             advanced_settings = new AdvancedSettings (panels);
 
-            var entry_test = new Gtk.Entry ();
-            entry_test.hexpand = true;
-            entry_test.placeholder_text = (_("Type to test your layout"));
+            entry_test = new Gtk.Entry () {
+                vexpand = true,
+                valign = Gtk.Align.END
+            };
 
-            var ibus_button = new Gtk.Button.with_label (_("Input Method Settings…"));
+            update_entry_test_usable ();
 
-            var action_area = new Gtk.Grid ();
-            action_area.column_spacing = 12;
-            action_area.valign = Gtk.Align.END;
-            action_area.vexpand = true;
-            action_area.add (entry_test);
-            action_area.add (ibus_button);
-
+            column_homogeneous = true;
+            column_spacing = 12;
+            row_spacing = 12;
             attach (display, 0, 0, 1, 9);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
@@ -146,7 +133,7 @@ namespace Pantheon.Keyboard.LayoutPage {
             attach (caps_lock_combo, 2, 3, 1, 1);
             attach (advanced_settings, 1, 4, 2);
 
-            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", false) != null) {
+            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel"));
                 indicator_header.halign = Gtk.Align.END;
                 indicator_header.xalign = 1;
@@ -176,7 +163,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 attach (num_lock_indicator_switch, 2, 7);
             }
 
-            attach (action_area, 1, 8, 2);
+            attach (entry_test, 1, 8, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -184,17 +171,9 @@ namespace Pantheon.Keyboard.LayoutPage {
                 show_panel_for_active_layout ();
             });
 
-            settings.layouts.active_changed.connect (() => {
+            settings.notify["active-index"].connect (() => {
+                update_entry_test_usable ();
                 show_panel_for_active_layout ();
-            });
-
-            ibus_button.clicked.connect (() => {
-                try {
-                    var appinfo = GLib.AppInfo.create_from_commandline ("ibus-setup", null, GLib.AppInfoCreateFlags.NONE);
-                    appinfo.launch (null, null);
-                } catch (Error e) {
-                    critical ("Could not open ibus setup: %s", e.message);
-                }
             });
 
             var gala_behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
@@ -205,7 +184,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 case "":
                     overlay_key_combo.active = 0;
                     break;
-                case "wingpanel --toggle-indicator=app-launcher":
+                case "io.elementary.wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
                 case "io.elementary.shortcut-overlay":
@@ -219,7 +198,7 @@ namespace Pantheon.Keyboard.LayoutPage {
                 if (combo_active == 0) {
                     gala_behavior_settings.set_string ("overlay-action", "");
                 } else if (combo_active == 1) {
-                    gala_behavior_settings.set_string ("overlay-action", "wingpanel --toggle-indicator=app-launcher");
+                    gala_behavior_settings.set_string ("overlay-action", "io.elementary.wingpanel --toggle-indicator=app-launcher");
                 } else if (combo_active == 2) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
@@ -233,26 +212,28 @@ namespace Pantheon.Keyboard.LayoutPage {
                 return null;
             }
 
-            string [] invalid_input_sources = {"am*", "ara*", "az+cyrillic",
-                                               "bg*", "by", "by+legacy",
-                                               "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
-                                               "fr+dvorak",
-                                               "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
-                                               "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
-                                               "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
-                                               "jp*",
-                                               "kg*", "kz*",
-                                               "la*", "lk+tam_TAB", "lk+tam_unicode",
-                                               "mk*", "mv*",
-                                               "no+mac", "no+mac_nodeadkeys", "np*",
-                                               "pk+ara",
-                                               "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
-                                               "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
-                                               "sy", "sy+syc", "sy+syc_phonetic",
-                                               "th*", "tz*",
-                                               "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
-                                               "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
-                                               "us+dvorak-l", "us+dvorak-r", "uz*"};
+            string [] invalid_input_sources = {
+                "am*", "ara*", "az+cyrillic",
+               "bg*", "by", "by+legacy",
+               "ca+eng", "ca+ike", "cm", "cn*", "cz+ucw",
+               "fr+dvorak",
+               "ge+os", "ge+ru", "gr+nodeadkeys", "gr+simple",
+               "ie+ogam", "il*", "in+ben_gitanjali", "in+ben_inscript", "in+tam_keyboard_with_numerals",
+               "in+tam_TAB", "in+tam_TSCII", "in+tam_unicode", "iq",
+               "jp*",
+               "kg*", "kz*",
+               "la*", "lk+tam_TAB", "lk+tam_unicode",
+               "mk*", "mv*",
+               "no+mac", "no+mac_nodeadkeys", "np*",
+               "pk+ara",
+               "ru", "ru+dos", "ru+legacy", "ru+mac", "ru+os_legacy", "ru+os_winkeys",
+               "ru+phonetic", "ru+phonetic_winkeys", "ru+typewriter", "ru+typewriter-legacy",
+               "sy", "sy+syc", "sy+syc_phonetic",
+               "th*", "tz*",
+               "ua+homophonic", "ua+legacy", "ua+phonetic", "ua+rstu", "ua+rstu_ru",
+               "ua+typewriter", "ua+winkeys", "us", "us+chr", "us+dvorak", "us+dvorak-classic",
+               "us+dvorak-l", "us+dvorak-r", "uz*"
+            };
 
             var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
 
@@ -353,8 +334,12 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private void show_panel_for_active_layout () {
-            Layout active_layout = settings.layouts.get_layout (settings.layouts.active);
-            advanced_settings.set_visible_panel_from_layout (active_layout.name);
+            var active_layout = settings.active_input_source;
+            if (active_layout != null) {
+                advanced_settings.set_visible_panel_from_layout (active_layout.name);
+            } else {
+                advanced_settings.set_visible_panel_from_layout (null);
+            }
         }
 
         private class XkbComboBox : Gtk.ComboBoxText {
@@ -380,7 +365,7 @@ namespace Pantheon.Keyboard.LayoutPage {
         }
 
         private class XkbOptionSwitch : Gtk.Switch {
-            public XkbOptionSwitch (LayoutSettings settings, string xkb_command) {
+            public XkbOptionSwitch (SourceSettings settings, string xkb_command) {
                 halign = Gtk.Align.START;
                 valign = Gtk.Align.CENTER;
 
@@ -403,6 +388,18 @@ namespace Pantheon.Keyboard.LayoutPage {
                         modifier.update_active_command ("");
                     }
                 });
+            }
+        }
+
+        private void update_entry_test_usable () {
+            if (settings.active_input_source != null &&
+                settings.active_input_source.layout_type == LayoutType.XKB) {
+
+                entry_test.placeholder_text = _("Type to test your layout");
+                entry_test.sensitive = true;
+            } else {
+                entry_test.placeholder_text = _("Input Method is active");
+                entry_test.sensitive = false;
             }
         }
 

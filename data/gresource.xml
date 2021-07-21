@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gresources>
+  <gresource prefix="/io/elementary/switchboard/keyboard">
+    <file alias="io.elementary.switchboard.keyboard.multitasking.svg" compressed="true">multitasking.svg</file>
+    <file alias="io.elementary.switchboard.keyboard.screenshots.svg" compressed="true">screenshots.svg</file>
+  </gresource>
+</gresources>

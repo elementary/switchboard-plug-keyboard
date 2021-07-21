@@ -1,7 +1,7 @@
 project(
     'keyboard',
     'vala', 'c',
-    version: '2.3.5'
+    version: '2.5.0'
 )
 
 gettext_name = meson.project_name() + '-plug'
@@ -21,6 +21,12 @@ add_project_arguments(
 add_project_arguments(
     ['--vapidir', join_paths(meson.current_source_dir(), 'vapi')],
     language: 'vala'
+)
+
+gresources = gnome.compile_resources(
+    'gresources', join_paths ('data', 'gresource.xml'),
+    source_dir: 'data',
+    c_name: 'as'
 )
 
 subdir('data')

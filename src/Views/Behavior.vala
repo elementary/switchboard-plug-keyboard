@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
+public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
     private Settings gsettings_blink;
     private Settings gsettings_repeat;
 
@@ -105,6 +105,8 @@ public class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         entry_test.placeholder_text = (_("Type to test your settings"));
         entry_test.hexpand = true;
 
+        column_spacing = 12;
+        row_spacing = 12;
         attach (label_repeat, 0, 0, 1, 1);
         attach (switch_repeat, 1, 0, 1, 1);
         attach (label_repeat_delay, 0, 1, 1, 1);
@@ -156,17 +158,5 @@ public class Pantheon.Keyboard.Behaviour.Page : Pantheon.Keyboard.AbstractPage {
         switch_repeat.bind_property ("active", spin_repeat_speed, "sensitive", BindingFlags.DEFAULT);
 
         scale_repeat_delay.grab_focus (); /* We want entry unfocussed so that placeholder shows */
-    }
-
-    public override void reset () {
-        gsettings_blink.reset ("cursor-blink");
-        gsettings_blink.reset ("cursor-blink-time");
-        gsettings_blink.reset ("cursor-blink-timeout");
-
-        gsettings_repeat.reset ("delay");
-        gsettings_repeat.reset ("repeat");
-        gsettings_repeat.reset ("repeat-interval");
-
-        return;
     }
 }
