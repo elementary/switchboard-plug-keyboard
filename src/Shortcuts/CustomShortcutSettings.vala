@@ -17,18 +17,10 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.Shortcuts.CustomShortcut : Object {
-    public Shortcut shortcut { get; set construct; }
-    public string command { get; set construct; }
-    public string relocatable_schema { get; construct; }
-
-    public CustomShortcut (string _shortcut, string _command, string _relocatable_schema) {
-        Object (
-            shortcut: new Shortcut.parse (_shortcut),
-            command: _command,
-            relocatable_schema: _relocatable_schema
-        );
-    }
+public struct Pantheon.Keyboard.Shortcuts.CustomShortcut {
+    public string shortcut; // Shortcut in gsettings format
+    public string command;
+    public string relocatable_schema;
 }
 
 public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
@@ -130,11 +122,11 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         foreach (var relocatable_schema in settings.get_strv (KEY + "s")) {
             var relocatable_settings = new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
 
-            list.append (new CustomShortcut (
+            list.append ({
                 relocatable_settings.get_string ("binding"),
                 relocatable_settings.get_string ("command"),
                 relocatable_schema
-            ));
+            });
         }
 
         return list;
@@ -146,13 +138,18 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
     public static bool shortcut_conflicts (Shortcut new_shortcut, out string command,
                                            out string relocatable_schema) {
-        var custom_shortcuts = list_custom_shortcuts ();
         command = "";
         relocatable_schema = "";
+        var new_gsettings_shortcut = new_shortcut.to_gsettings ();
+        if (new_gsettings_shortcut == "") {
+            return false;
+        }
+
+        var custom_shortcuts = list_custom_shortcuts ();
 
         foreach (var custom_shortcut in custom_shortcuts) {
             var shortcut = custom_shortcut.shortcut;
-            if (shortcut.is_equal (new_shortcut)) {
+            if (shortcut == new_gsettings_shortcut) {
                 command = custom_shortcut.command;
                 relocatable_schema = custom_shortcut.relocatable_schema;
                 return true;
