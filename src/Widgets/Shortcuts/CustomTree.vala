@@ -19,8 +19,8 @@
 
 class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
     public signal void row_unselected ();
-    public signal void command_editing_started ();
-    public signal void command_editing_ended ();
+    public signal void editing_started ();
+    public signal void editing_ended ();
 
     construct {
         hexpand = true;
@@ -39,57 +39,39 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
         }
     }
 
-    public void on_add_clicked () {
-        var relocatable_schema = CustomShortcutSettings.create_shortcut ();
-        var new_custom_shortcut = new CustomShortcut ("", "", relocatable_schema);
-        var new_row = new CustomShortcutRow (new_custom_shortcut);
+    private void add_row (CustomShortcut? shortcut) {
+        CustomShortcutRow new_row;
+        if (shortcut != null) {
+            new_row = new CustomShortcutRow (shortcut);
+        } else {
+            var relocatable_schema = CustomShortcutSettings.create_shortcut ();
+            var new_custom_shortcut = new CustomShortcut ("", "", relocatable_schema);
+            new_row = new CustomShortcutRow (new_custom_shortcut);
+        }
+
+        new_row.notify["editing"].connect (() => {
+            if (new_row.editing) {
+                editing_started ();
+            } else {
+                editing_ended ();
+            }
+        });
+
         add (new_row);
         select_row (new_row);
+    }
+
+    public void on_add_clicked () {
+        add_row (null);
     }
 
     public void on_remove_clicked () {
         var selected_row = get_selected_row ();
         if (selected_row != null) {
+            var custom_shortcut_row = (CustomShortcutRow)selected_row;
+            CustomShortcutSettings.remove_shortcut (custom_shortcut_row.relocatable_schema);
             selected_row.destroy ();
         }
-    }
-
-    void change_command (string path, string new_text) {
-        // Gtk.TreeIter iter;
-        // GLib.Value relocatable_schema;
-
-        // model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-
-        // if (new_text == enter_command) {
-        //     debug (new_text);
-        //     // no changes were made, remove row
-        //     remove_shorcut_for_iter (iter);
-
-        // } else {
-        //     tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-        //     CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
-        //     load_and_display_custom_shortcuts ();
-        // }
-    }
-
-    void command_editing_canceled () {
-        // var selection = tv.get_selection ();
-        // Gtk.TreeModel model;
-        // Gtk.TreeIter iter;
-        // Gtk.Entry entry = command_editable as Gtk.Entry;
-
-        // if (selection.get_selected (out model, out iter)) {
-
-        //     // if command is same as the default text, remove it
-        //     if (entry.text == enter_command) {
-        //         remove_shorcut_for_iter (iter);
-        //     } else {
-        //     Gtk.TreePath path;
-        //     tv.get_cursor (out path, null);
-
-        //     cell_desc.edited (path.to_string (), entry.text);
-        //     }
-        // }
     }
 
     public bool shortcut_conflicts (Shortcut shortcut, out string name) {
@@ -103,64 +85,38 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
         load_and_display_custom_shortcuts ();
     }
 
-    bool change_shortcut (string path, Shortcut? shortcut) {
-        // Gtk.TreeIter iter;
-        // GLib.Value command, relocatable_schema;
-
-        // tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-        // tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-        // tv.model.get_value (iter, Column.COMMAND, out command);
-
-        // var not_null_shortcut = shortcut ?? new Shortcut ();
-
-        // string conflict_name;
-
-        // if (shortcut != null) {
-        //     foreach (var tree in trees) {
-        //         if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
-        //             continue;
-
-        //         var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
-        //         dialog.reassign.connect (() => {
-        //                 tree.reset_shortcut (shortcut);
-        //                 CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-        //                 load_and_display_custom_shortcuts ();
-        //             });
-        //         dialog.transient_for = (Gtk.Window) this.get_toplevel ();
-        //         dialog.present ();
-        //         return false;
-        //     }
-        // }
-
-        // CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-        // load_and_display_custom_shortcuts ();
-        return true;
-    }
-
     private class CustomShortcutRow : Gtk.ListBoxRow {
         private const string BINDING_KEY = "binding";
-        public CustomShortcut custom_shortcut { get; construct; }
+        private const string COMMAND_KEY = "command";
+        private const string NAME_KEY = "name";
+        private Gtk.Entry command_entry;
+        private Variant previous_binding;
+
+        public string relocatable_schema { get; construct; }
         public GLib.Settings gsettings { get; construct; }
-        private bool editing = false;
+        public bool editing { get; set; default = false; }
         private Gtk.ModelButton clear_button;
-        // private Gtk.ModelButton reset_button;
         private Gtk.Grid keycap_grid;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
-
         public CustomShortcutRow (CustomShortcut _custom_shortcut) {
             Object (
-                custom_shortcut: _custom_shortcut,
+                relocatable_schema: _custom_shortcut.relocatable_schema,
                 gsettings: CustomShortcutSettings.get_gsettings_for_relocatable_schema (_custom_shortcut.relocatable_schema)
             );
+
+            command_entry.text = _custom_shortcut.command;
+        }
+
+        ~CustomShortcutRow () {
+critical ("CustomShortcutRow destruct");
         }
 
         construct {
-            var command_entry = new Gtk.Entry () {
+            command_entry = new Gtk.Entry () {
                 max_width_chars = 500,
                 hexpand = true,
                 halign = Gtk.Align.START,
-                text = custom_shortcut.command,
                 placeholder_text = _("Enter a command here")
             };
 
@@ -225,17 +181,91 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
             render_keycaps ();
 
             gsettings.changed[BINDING_KEY].connect (render_keycaps);
+            gsettings.changed[COMMAND_KEY].connect (() => {
+                var new_text = gsettings.get_string (COMMAND_KEY);
+                if (new_text != command_entry.text) {
+                    command_entry.text = new_text;
+                }
+            });
 
             clear_button.clicked.connect (() => {
                 gsettings.set_string (BINDING_KEY, "");
             });
 
-
             set_accel_button.clicked.connect (() => {
+                // Stop app triggering if same shortcut entered
+                disable_binding ();
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
+                grab_focus ();
                 editing = true;
             });
+
+            command_entry.changed.connect (() => {
+                var command = command_entry.text;
+                gsettings.set_string (COMMAND_KEY, command);
+                gsettings.set_string (NAME_KEY, command);
+            });
+
+            command_entry.focus_in_event.connect (() => {
+                editing = true;
+                return Source.CONTINUE;
+            });
+
+            key_release_event.connect (on_key_pressed);
+
+            focus_out_event.connect (() => {
+                editing = false;
+                return Source.CONTINUE;
+            });
+
+            show_all ();
+        }
+
+        private bool on_key_pressed (Gdk.EventKey key) {
+            if (!editing) {
+                return Gdk.EVENT_STOP;
+            }
+
+            if (key.keyval != Gdk.Key.Escape) {
+                var key_state = key.state;
+                Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref key_state);
+
+                var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (key.keyval, key_state);
+
+                update_binding (shortcut);
+            } else {
+                restore_previous_binding ();
+            }
+
+            editing = false;
+            render_keycaps ();
+
+            return Gdk.EVENT_STOP;
+         }
+
+        private void disable_binding () {
+            previous_binding = gsettings.get_value (BINDING_KEY);
+            gsettings.set_string (BINDING_KEY, "");
+        }
+
+        private void restore_previous_binding () {
+            gsettings.set_value (BINDING_KEY, previous_binding);
+        }
+
+        private void update_binding (Shortcut shortcut) {
+            string conflict_name, relocatable_schema;
+            if (CustomShortcutSettings.shortcut_conflicts (shortcut, out conflict_name, out relocatable_schema)) {
+                var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, command_entry.text);
+                dialog.reassign.connect (() => {
+                    gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
+                });
+                dialog.transient_for = (Gtk.Window) this.get_toplevel ();
+                dialog.present ();
+            }
+
+            gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
+            // load_and_display_custom_shortcuts ();
         }
 
         private void render_keycaps () {

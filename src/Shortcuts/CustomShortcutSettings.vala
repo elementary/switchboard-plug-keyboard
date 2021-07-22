@@ -18,8 +18,8 @@
 */
 
 public class Pantheon.Keyboard.Shortcuts.CustomShortcut : Object {
-    public Shortcut shortcut { get; construct; }
-    public string command { get; construct; }
+    public Shortcut shortcut { get; set construct; }
+    public string command { get; set construct; }
     public string relocatable_schema { get; construct; }
 
     public CustomShortcut (string _shortcut, string _command, string _relocatable_schema) {

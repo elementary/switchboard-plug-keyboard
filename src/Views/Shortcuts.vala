@@ -106,10 +106,10 @@ namespace Pantheon.Keyboard.Shortcuts {
             if (CustomShortcutSettings.available) {
                 var custom_tree = new CustomTree ();
                 custom_tree.row_selected.connect (row_selected);
-                custom_tree.row_unselected.connect (row_unselected);
+                custom_tree.row_unselected.connect (on_row_unselected);
 
-                custom_tree.command_editing_started.connect (disable_add);
-                custom_tree.command_editing_ended.connect (enable_add);
+                custom_tree.editing_started.connect (disable_add);
+                custom_tree.editing_ended.connect (enable_add);
 
                 add_button.clicked.connect (() => custom_tree.on_add_clicked ());
                 remove_button.clicked.connect (() => custom_tree.on_remove_clicked ());
@@ -135,7 +135,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             remove_button.sensitive = true;
         }
 
-        private void row_unselected () {
+        private void on_row_unselected () {
             remove_button.sensitive = false;
         }
 
