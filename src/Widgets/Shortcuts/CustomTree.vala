@@ -74,6 +74,7 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
         }
     }
 
+    // Display tree interface methods
     public bool shortcut_conflicts (Shortcut shortcut, out string name) {
         return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
     }
@@ -84,6 +85,7 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
         CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
         load_and_display_custom_shortcuts ();
     }
+    // -----------------------------
 
     private class CustomShortcutRow : Gtk.ListBoxRow {
         private const string BINDING_KEY = "binding";
@@ -97,6 +99,7 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
         public bool editing { get; set; default = false; }
         private Gtk.ModelButton clear_button;
         private Gtk.Grid keycap_grid;
+        private Gtk.EventBox keycap_eventbox;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
         public CustomShortcutRow (CustomShortcut _custom_shortcut) {
@@ -106,10 +109,6 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
             );
 
             command_entry.text = _custom_shortcut.command;
-        }
-
-        ~CustomShortcutRow () {
-critical ("CustomShortcutRow destruct");
         }
 
         construct {
@@ -131,10 +130,13 @@ critical ("CustomShortcutRow destruct");
                 halign = Gtk.Align.END
             };
 
+            keycap_eventbox = new Gtk.EventBox ();
+            keycap_eventbox.add (keycap_grid);
+
             keycap_stack = new Gtk.Stack () {
                 transition_type = Gtk.StackTransitionType.CROSSFADE
             };
-            keycap_stack.add (keycap_grid);
+            keycap_stack.add (keycap_eventbox);
             keycap_stack.add (status_label);
 
             var set_accel_button = new Gtk.ModelButton () {
@@ -199,6 +201,10 @@ critical ("CustomShortcutRow destruct");
                 status_label.label = _("Enter new shortcut…");
                 grab_focus ();
                 editing = true;
+            });
+
+            keycap_eventbox.button_release_event.connect (() => {
+                set_accel_button.clicked ();
             });
 
             command_entry.changed.connect (() => {
@@ -300,7 +306,7 @@ critical ("CustomShortcutRow destruct");
 
                 clear_button.sensitive = true;
                 keycap_grid.show_all ();
-                keycap_stack.visible_child = keycap_grid;
+                keycap_stack.visible_child = keycap_eventbox;
             } else {
                 clear_button.sensitive = false;
                 keycap_stack.visible_child = status_label;
