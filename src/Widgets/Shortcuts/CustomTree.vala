@@ -303,15 +303,37 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
             var mods = event.state & Gtk.accelerator_get_default_mod_mask ();
             var keyval = event.keyval;
             if (mods > 0) {
+                // Accept any key with a modifier (not all may work)
                 Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
 
                 var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
-            } else if (keyval == Gdk.Key.Escape) {
-                gsettings.set_value (BINDING_KEY, previous_binding);
-            } else {
-                //Entered a non-modifier key (other than Escape) first - ignore
-                return Gdk.EVENT_STOP;
+            } else { 
+                switch (keyval) {
+                    case Gdk.Key.Escape:
+                        // Cancel editing
+                        gsettings.set_value (BINDING_KEY, previous_binding);
+                        break;
+                    // case Gdk.Key.F1: May be used for system help
+                    case Gdk.Key.F2:
+                    case Gdk.Key.F3:
+                    case Gdk.Key.F4:
+                    case Gdk.Key.F5:
+                    case Gdk.Key.F6:
+                    case Gdk.Key.F7:
+                    case Gdk.Key.F8:
+                    case Gdk.Key.F9:
+                    case Gdk.Key.F10:
+                    // case Gdk.Key.F11: Already used for fullscreen
+                    case Gdk.Key.F12:
+                    case Gdk.Key.Menu:
+                        // Accept certain keys as single key accelerators
+                        var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                        update_binding (shortcut);
+                        break;
+                    default:
+                        return Gdk.EVENT_STOP;
+                }
             }
 
             edit_shortcut (false);
