@@ -310,7 +310,7 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
 
                 var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
-            } else { 
+            } else {
                 switch (keyval) {
                     case Gdk.Key.Escape:
                         // Cancel editing
