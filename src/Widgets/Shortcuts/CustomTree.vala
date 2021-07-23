@@ -124,6 +124,8 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
 
             command_entry = new Gtk.Entry () {
                 max_width_chars = 500,
+                width_chars = 40, // So no horizontal scroll when minimum width of the window
+                has_frame = false,
                 hexpand = true,
                 halign = Gtk.Align.START,
                 placeholder_text = _("Enter a command here")
