@@ -145,11 +145,8 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
             return false;
         }
 
-        var custom_shortcuts = list_custom_shortcuts ();
-
-        foreach (var custom_shortcut in custom_shortcuts) {
-            var shortcut = custom_shortcut.shortcut;
-            if (shortcut == new_gsettings_shortcut) {
+        foreach (var custom_shortcut in list_custom_shortcuts ()) {
+            if (custom_shortcut.shortcut == new_gsettings_shortcut) {
                 command = custom_shortcut.command;
                 relocatable_schema = custom_shortcut.relocatable_schema;
                 return true;
