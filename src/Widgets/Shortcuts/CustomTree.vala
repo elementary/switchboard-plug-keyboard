@@ -124,7 +124,6 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
 
             command_entry = new Gtk.Entry () {
                 max_width_chars = 500,
-                width_chars = 40, // So no horizontal scroll when minimum width of the window
                 has_frame = false,
                 hexpand = true,
                 halign = Gtk.Align.START,
@@ -137,23 +136,38 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
             status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
             status_label.add_events (Gdk.EventMask.ALL_EVENTS_MASK);
 
+            status_eventbox = new Gtk.EventBox ();
+            status_eventbox.add (status_label);
+
             keycap_grid = new Gtk.Grid () {
                 column_spacing = 6,
                 valign = Gtk.Align.CENTER,
                 halign = Gtk.Align.END
             };
-
             keycap_eventbox = new Gtk.EventBox ();
             keycap_eventbox.add (keycap_grid);
 
-            status_eventbox = new Gtk.EventBox ();
-            status_eventbox.add (status_label);
+            // We create a dummy grid representing a long four key accelerator to force the stack in each row to the same size
+            // This seems a bit hacky but it is hard to find a solution across rows not involving a hard-coded width value
+            // (which would not take into account internationalization). This grid is never shown but controls the size of
+            // of the homogeneous stack.
+            var four_key_grid = new Gtk.Grid () { // must have same format as keycap_grid
+                column_spacing = 6,
+                valign = Gtk.Align.CENTER,
+                halign = Gtk.Align.END
+            };
+
+            build_keycap_grid ("<Shift><Alt><Control>F10", ref four_key_grid);
 
             keycap_stack = new Gtk.Stack () {
-                transition_type = Gtk.StackTransitionType.CROSSFADE
+                transition_type = Gtk.StackTransitionType.CROSSFADE,
+                homogeneous = true
             };
+
+            keycap_stack.add (four_key_grid); // This ensures sufficient space is allocated for longest reasonable shortcut
             keycap_stack.add (keycap_eventbox);
-            keycap_stack.add (status_eventbox);
+            keycap_stack.add (status_eventbox); // This becomes initial visible child
+
             var set_accel_button = new Gtk.ModelButton () {
                 text = _("Set New Shortcut")
             };
@@ -365,41 +379,44 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
 
         private void render_keycaps () {
             var key_value = gsettings.get_value (BINDING_KEY);
-            string[] accels = {""};
+            var value_string = "";
+
             if (key_value.is_of_type (VariantType.ARRAY)) {
                 var key_value_strv = key_value.get_strv ();
-                if (key_value_strv.length > 0 && key_value_strv[0] != "") {
-                    accels = Granite.accel_to_string (key_value_strv[0]).split (" + ");
+                if (key_value_strv.length > 0) {
+                    value_string = key_value_strv[0];
                 }
             } else {
-                var value_string = key_value.dup_string ();
-                if (value_string != "") {
-                    accels = Granite.accel_to_string (value_string).split (" + ");
-                }
+                value_string = key_value.dup_string ();
             }
 
-            if (accels[0] != "") {
-                foreach (unowned Gtk.Widget child in keycap_grid.get_children ()) {
-                    child.destroy ();
-                };
-
-                foreach (unowned string accel in accels) {
-                    if (accel == "") {
-                        continue;
-                    }
-                    var keycap_label = new Gtk.Label (accel);
-                    keycap_label.get_style_context ().add_class ("keycap");
-                    keycap_grid.add (keycap_label);
-                }
-
-                clear_button.sensitive = true;
-                keycap_grid.show_all ();
+            if (value_string != "") {
+                build_keycap_grid (value_string, ref keycap_grid);
                 keycap_stack.visible_child = keycap_eventbox;
+                clear_button.sensitive = true;
             } else {
                 clear_button.sensitive = false;
                 keycap_stack.visible_child = status_eventbox;
                 status_label.label = _("Disabled");
             }
          }
+
+        private void build_keycap_grid (string value_string, ref Gtk.Grid grid) {
+            var accels = Granite.accel_to_string (value_string).split (" + ");
+            foreach (unowned Gtk.Widget child in grid.get_children ()) {
+                child.destroy ();
+            };
+
+            foreach (unowned string accel in accels) {
+                if (accel == "") {
+                    continue;
+                }
+                var keycap_label = new Gtk.Label (accel);
+                keycap_label.get_style_context ().add_class ("keycap");
+                grid.add (keycap_label);
+            }
+
+            grid.show_all ();
+        }
     }
 }
