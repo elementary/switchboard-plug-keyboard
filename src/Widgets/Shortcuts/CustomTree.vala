@@ -57,7 +57,7 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
 
     public void on_add_clicked () {
         add_row (null);
-        select_row (get_row_at_index (0));
+        unselect_all ();
     }
 
     public void on_remove_clicked () {
