@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-22 17:45+0000\n"
+"PO-Revision-Date: 2021-07-25 12:43+0000\n"
 "Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ru/>\n"
@@ -26,7 +26,7 @@ msgstr "Параметры клавиатуры"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Настройка поведения клавиатуры, раскладки и комбинаций клавиш"
+msgstr "Настройка поведения клавиатуры, раскладки и сочетаний клавиш"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Minor updates:"
@@ -42,7 +42,7 @@ msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "Улучшения в макетах ibus и xkb"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
@@ -54,13 +54,13 @@ msgstr "Обновлены переводы"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
-"Название комбинации клавиш «Воспроизведение» теперь называется "
+"Название сочетания клавиш «Воспроизведение» теперь называется "
 "«Воспроизведение/Пауза»"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
-"Исправлена проблема, когда некоторые горячие клавиши неправильно "
+"Исправлена проблема, когда некоторые сочетания клавиш неправильно "
 "отображались как отключенные"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
