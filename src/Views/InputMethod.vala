@@ -351,12 +351,8 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         var config_dir = Environment.get_user_config_dir ();
         var startup_dir = Path.build_filename (config_dir, "autostart");
 
-        if (startup_dir == "") {
-            return;
-        }
-
         // If startup directory doesn't exist, create it.
-        if (FileUtils.test (startup_dir, FileTest.EXISTS) == false) {
+        if (!FileUtils.test (startup_dir, FileTest.EXISTS)) {
             var file = File.new_for_path (startup_dir);
 
             try {
@@ -384,8 +380,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         try {
             GLib.FileUtils.set_contents (path, keyfile.to_data ());
         } catch (Error e) {
-            warning ("Could not write to file %s", path);
-            warning (e.message);
+            warning ("Could not write to file %s: %s", path, e.message);
         }
     }
 
