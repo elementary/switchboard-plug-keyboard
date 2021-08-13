@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-25 12:43+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2021-08-13 15:38+0000\n"
+"Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
@@ -203,7 +203,7 @@ msgstr "Переключить полноэкранный режим"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
-msgstr "Показать на всех рабочих столах"
+msgstr "Показать на всех рабочих пространствах"
 
 #: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
@@ -255,7 +255,7 @@ msgstr "Переместить на дисплей слева"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
-msgstr "Рабочие столы"
+msgstr "Рабочие пространства"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
@@ -315,11 +315,11 @@ msgstr "Переключиться на рабочий стол 9"
 
 #: src/Shortcuts/List.vala:82
 msgid "Cycle workspaces"
-msgstr "Прокрутка рабочих столов"
+msgstr "Прокрутка рабочих пространств"
 
 #: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
-msgstr "Прокрутка рабочих столов в обратном направлении"
+msgstr "Прокрутка рабочих пространств в обратном направлении"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
