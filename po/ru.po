@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-08-13 17:43+0000\n"
+"PO-Revision-Date: 2021-08-14 01:28+0000\n"
 "Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -277,39 +277,39 @@ msgstr "Переключиться на новый рабочий стол"
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
-msgstr "Переключиться на рабочий стол 1"
+msgstr "Переключиться на рабочее пространство 1"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
-msgstr "Переключиться на рабочий стол 2"
+msgstr "Переключиться на рабочее пространство 2"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
-msgstr "Переключиться на рабочий стол 3"
+msgstr "Переключиться на рабочее пространство 3"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
-msgstr "Переключиться на рабочий стол 4"
+msgstr "Переключиться на рабочее пространство 4"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
-msgstr "Переключиться на рабочий стол 5"
+msgstr "Переключиться на рабочее пространство 5"
 
 #: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
-msgstr "Переключиться на рабочий стол 6"
+msgstr "Переключиться на рабочее пространство 6"
 
 #: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
-msgstr "Переключиться на рабочий стол 7"
+msgstr "Переключиться на рабочее пространство 7"
 
 #: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
-msgstr "Переключиться на рабочий стол 8"
+msgstr "Переключиться на рабочее пространство 8"
 
 #: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
-msgstr "Переключиться на рабочий стол 9"
+msgstr "Переключиться на рабочее пространство 9"
 
 #: src/Shortcuts/List.vala:82
 msgid "Cycle workspaces"
@@ -321,47 +321,47 @@ msgstr "Прокрутка рабочих пространств в обратн
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
-msgstr "Переместить окно на рабочий стол 1"
+msgstr "Переместить окно на рабочее пространство 1"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
-msgstr "Переместить окно на рабочий стол 2"
+msgstr "Переместить окно на рабочее пространство 2"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
-msgstr "Переместить окно на рабочий стол 3"
+msgstr "Переместить окно на рабочее пространство 3"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
-msgstr "Переместить окно на рабочий стол 4"
+msgstr "Переместить окно на рабочее пространство 4"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
-msgstr "Переместить окно на рабочий стол 5"
+msgstr "Переместить окно на рабочее пространство 5"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
-msgstr "Переместить окно на рабочий стол 6"
+msgstr "Переместить окно на рабочее пространство 6"
 
 #: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
-msgstr "Переместить окно на рабочий стол 7"
+msgstr "Переместить окно на рабочее пространство 7"
 
 #: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
-msgstr "Переместить окно на рабочий стол 8"
+msgstr "Переместить окно на рабочее пространство 8"
 
 #: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
-msgstr "Переместить окно на рабочий стол 9"
+msgstr "Переместить окно на рабочее пространство 9"
 
 #: src/Shortcuts/List.vala:93
 msgid "Move to left workspace"
-msgstr "Переместить окно на первый рабочий стол"
+msgstr "Переместить на рабочее пространство слева"
 
 #: src/Shortcuts/List.vala:94
 msgid "Move to right workspace"
-msgstr "Переместить окно на новый рабочий стол"
+msgstr "Переместить на рабочее пространство справа"
 
 #: src/Shortcuts/List.vala:98
 msgid "Screenshots"
@@ -397,7 +397,7 @@ msgstr "Приложения"
 
 #: src/Shortcuts/List.vala:109
 msgid "Email"
-msgstr "Почта"
+msgstr "Электронная почта"
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
@@ -457,7 +457,7 @@ msgstr "Извлечь"
 
 #: src/Shortcuts/List.vala:130
 msgid "Universal Access"
-msgstr "Универсальный доступ"
+msgstr "Универсальная доступность"
 
 #: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
@@ -481,7 +481,7 @@ msgstr "Включить экранную клавиатуру"
 
 #: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
-msgstr "Включить чтение с экрана"
+msgstr "Переключить экранного диктора"
 
 #: src/Shortcuts/List.vala:140
 msgid "System"
@@ -779,7 +779,7 @@ msgstr "Добавить"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:33
 msgid "Search engine"
-msgstr "Искать метода ввода"
+msgstr "Искать метод ввода"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
