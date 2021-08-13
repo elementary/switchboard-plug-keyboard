@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-08-13 17:41+0000\n"
+"PO-Revision-Date: 2021-08-13 17:43+0000\n"
 "Last-Translator: asdffdsdaf <useruseruser1233211@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -572,6 +572,8 @@ msgstr "IBus Daemon не запущен"
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
+"Вам нужно запустить сервис IBus чтобы включить или сконфигурировать методы "
+"ввода."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
@@ -592,10 +594,8 @@ msgid "Remove"
 msgstr "Удалить"
 
 #: src/Views/InputMethod.vala:124
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Переключить открытые окна"
+msgstr "Переключить методы ввода:"
 
 #: src/Views/InputMethod.vala:136
 msgid "Show property panel:"
@@ -779,15 +779,15 @@ msgstr "Добавить"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:33
 msgid "Search engine"
-msgstr ""
+msgstr "Искать метода ввода"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Установить методы ввода вне списка…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:50
 msgid "Add Engine"
-msgstr ""
+msgstr "Добавить метод ввода"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
