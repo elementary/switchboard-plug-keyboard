@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-08-13 15:38+0000\n"
-"Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
+"PO-Revision-Date: 2021-08-13 17:41+0000\n"
+"Last-Translator: asdffdsdaf <useruseruser1233211@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
@@ -64,10 +64,8 @@ msgid "Caps Lock behavior"
 msgstr "Поведение Caps Lock"
 
 #: src/Plug.vala:106
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Переключить открытые окна"
+msgstr "Переключить метод"
 
 #: src/Plug.vala:107
 msgid "Show candidate window"
@@ -133,11 +131,11 @@ msgstr "Переопределить"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Выберите метод ввода для установки"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Выберите метод из списка который будет установлен и использован."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
