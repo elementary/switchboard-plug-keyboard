@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
 "PO-Revision-Date: 2021-08-13 17:43+0000\n"
-"Last-Translator: asdffdsdaf <useruseruser1233211@gmail.com>\n"
+"Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
@@ -135,7 +135,7 @@ msgstr "Выберите метод ввода для установки"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr "Выберите метод из списка который будет установлен и использован."
+msgstr "Выберите метод из списка для установки и использования."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
