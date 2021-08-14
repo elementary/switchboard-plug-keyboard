@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-05-04 12:26+0000\n"
+"PO-Revision-Date: 2021-08-14 15:23+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -72,7 +72,7 @@ msgstr "Näytä ehdokasikkuna"
 
 #: src/Plug.vala:108
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Upota esimuokattu teksti sovellusikkunaan"
 
 #: src/Plug.vala:111
 msgid "Repeat Keys"
@@ -616,7 +616,7 @@ msgstr "Näytä aina"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Upota esimuokattu teksti sovellusikkunaan:"
 
 #: src/Views/InputMethod.vala:388
 msgid "Type to test your input method"
