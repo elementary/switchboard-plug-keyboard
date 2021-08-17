@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-25 12:43+0000\n"
-"Last-Translator: DartDeaDia <jorydit@gmail.com>\n"
+"PO-Revision-Date: 2021-08-14 01:28+0000\n"
+"Last-Translator: Nikita Kharchenko <m4r5hdev@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -38,7 +38,7 @@ msgstr "Окно добавления раскладки теперь являе
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "Гарантируем у нас всегда есть хотя бы одна раскладка"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
@@ -69,7 +69,7 @@ msgstr "Добавлено представление для настройки 
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
 msgid "New \"Workspaces\" icon"
-msgstr "Новый значок «Рабочих столов»"
+msgstr "Новый значок «Рабочих пространств»"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Exclude Space from single-key shortcuts"
