@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-08-23 13:11+0000\n"
+"PO-Revision-Date: 2021-08-23 14:23+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sk/>\n"
@@ -121,7 +121,7 @@ msgstr "Pridať rozloženie"
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
 #: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
 msgid "Default"
-msgstr "Predvolené"
+msgstr "Predvolený"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
@@ -274,7 +274,7 @@ msgstr "Pracovné plochy"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr "Zobrazenie viacerých aplikácii"
+msgstr "Paralelné zobrazenie"
 
 #: src/Shortcuts/List.vala:69
 #, fuzzy
@@ -539,7 +539,7 @@ msgstr ""
 #: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
 msgid "Disabled"
-msgstr "Zakázané"
+msgstr "Vypnutý"
 
 #: src/Shortcuts/Shortcut.vala:62
 #, fuzzy
