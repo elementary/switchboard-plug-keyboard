@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-08-24 21:51+0000\n"
+"PO-Revision-Date: 2021-08-27 13:57+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -38,7 +38,7 @@ msgstr "Kiosztás"
 #: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
 #: src/Plug.vala:108
 msgid "Input Method"
-msgstr ""
+msgstr "Beviteli mód"
 
 #: src/Plug.vala:54 src/Plug.vala:109
 msgid "Shortcuts"
@@ -57,27 +57,24 @@ msgid "Compose Key"
 msgstr "Levélírás gomb"
 
 #: src/Plug.vala:103
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "⌘ billentyű viselkedése:"
+msgstr "⌘ billentyű viselkedése"
 
 #: src/Plug.vala:104
 msgid "Caps Lock behavior"
 msgstr "Caps Lock viselkedés"
 
 #: src/Plug.vala:106
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Ablakváltás"
+msgstr "Motorváltás"
 
 #: src/Plug.vala:107
 msgid "Show candidate window"
-msgstr ""
+msgstr "Ablakjelölt megjelenítése"
 
 #: src/Plug.vala:108
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Előszerkesztett szöveg beágyazása az alkalmazás ablakába"
 
 #: src/Plug.vala:111
 msgid "Repeat Keys"
@@ -92,21 +89,16 @@ msgid "Input Language"
 msgstr "Beviteli nyelv"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Kiosztás"
+msgstr "Kiosztások listája"
 
 #: src/Dialogs/AddLayoutDialog.vala:38
-#, fuzzy
 msgid "Search input language"
-msgstr "Beviteli nyelv"
+msgstr "Beviteli nyelv keresése"
 
 #: src/Dialogs/AddLayoutDialog.vala:93
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Kiosztás"
+msgstr "Kiosztás előnézete"
 
 #: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -142,21 +134,19 @@ msgstr "Hozzárendelés"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Válassza ki a telepítendő motort"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Válasszon egy motort a listáról a telepítéshez és használathoz."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Beviteli nyelv"
+msgstr "Nyelvek"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Telepítés"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -170,15 +160,15 @@ msgstr "%s eltávolítása"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japán"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Koreai"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Kínai"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -206,7 +196,7 @@ msgstr "Maximalizálás"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Elrejtés"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -249,28 +239,20 @@ msgid "Picture in Picture Mode"
 msgstr "Kép a képben mód"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Mozgatás balra"
+msgstr "Mozgatás a fenti kijelzőre"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Mozgatás balra"
+msgstr "Mozgatás az alsó kijelzőre"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Mozgatás a jobbra lévő munkaterületre"
+msgstr "Mozgatás a jobb oldali kijelzőre"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Mozgatás a balra lévő munkaterületre"
+msgstr "Mozgatás a bal oldali kijelzőre"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -453,10 +435,8 @@ msgid "Mute"
 msgstr "Némítás"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Szünet"
+msgstr "Lejátszás/szünet"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -524,7 +504,7 @@ msgstr "Kijelentkezés"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Kijelző módjának váltása"
 
 #: src/Shortcuts/List.vala:148
 msgid "Custom"
@@ -589,21 +569,23 @@ msgstr "Gépeljen a beállítások teszteléséhez"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "Az IBus Daemon nem fut"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
+"Az IBus daemonnak futnia kell a beviteli mód motorjainak engedélyezéséhez és "
+"beállításához."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "IBus Daemon indítása"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
 msgid "Could not start the IBus daemon"
-msgstr ""
+msgstr "Nem sikerült elindítani az IBus daemont"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -615,42 +597,36 @@ msgid "Remove"
 msgstr "Eltávolítás"
 
 #: src/Views/InputMethod.vala:124
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Ablakváltás"
+msgstr "Motor váltása:"
 
 #: src/Views/InputMethod.vala:136
 msgid "Show property panel:"
-msgstr ""
+msgstr "Részletek ablak megjelenítése:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
-msgstr ""
+msgstr "Ne jelenítse meg"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr ""
+msgstr "Automatikus elrejtés"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
-msgstr ""
+msgstr "Megjelenítés mindig"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Előszerkesztett szöveg beágyazása az alkalmazás ablakába:"
 
 #: src/Views/InputMethod.vala:388
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "Gépeljen a billentyűzetkiosztás teszteléséhez"
+msgstr "Gépeljen a beviteli mód teszteléséhez"
 
 #: src/Views/InputMethod.vala:391
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "Billentyűzetkiosztás mutatása"
+msgstr "Billentyűzetkiosztás aktív"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -667,7 +643,7 @@ msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:46
 msgid "Alt + Space"
-msgstr "Alt + Space"
+msgstr "Alt + Szóköz"
 
 #: src/Views/Layout.vala:47
 msgid "Both Shift keys together"
@@ -742,9 +718,8 @@ msgid "as ⌘"
 msgstr "mint ⌘"
 
 #: src/Views/Layout.vala:99
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Váltás Ctrl billentyűvel"
+msgstr "Csere a Ctrl billentyűvel"
 
 #: src/Views/Layout.vala:100
 msgid "Swap with Escape"
@@ -755,16 +730,12 @@ msgid "Show in Panel"
 msgstr "Megjelenítés a felső állapotsávon"
 
 #: src/Views/Layout.vala:143
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:149
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "mint Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:238 src/Views/Layout.vala:255
 msgid "Key to choose 3rd level:"
@@ -787,7 +758,6 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F típusú Backspace:"
 
 #: src/Views/Layout.vala:302
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku mint Escape:"
 
@@ -801,7 +771,7 @@ msgstr "Gépeljen a billentyűzetkiosztás teszteléséhez"
 
 #: src/Views/Layout.vala:401
 msgid "Input Method is active"
-msgstr ""
+msgstr "A beviteli mód használatban van"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
@@ -812,15 +782,15 @@ msgstr "Hozzáadás"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:33
 msgid "Search engine"
-msgstr ""
+msgstr "Motor keresése"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Nem megjelenített motor telepítése…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:50
 msgid "Add Engine"
-msgstr ""
+msgstr "Motor hozzáadása"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
