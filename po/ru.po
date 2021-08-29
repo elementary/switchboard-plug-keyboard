@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-08-14 01:28+0000\n"
-"Last-Translator: DartDeaDia <DartDeaDia@protonmail.com>\n"
+"PO-Revision-Date: 2021-08-27 14:50+0000\n"
+"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
@@ -233,7 +233,7 @@ msgstr "Показать все открытые окна"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr "Режим \"картинка в картинке\""
+msgstr "Режим «картинка в картинке»"
 
 #: src/Shortcuts/List.vala:60
 msgid "Move to display above"
@@ -724,7 +724,7 @@ msgstr "Поменять с Escape"
 
 #: src/Views/Layout.vala:137
 msgid "Show in Panel"
-msgstr "Показать на панели"
+msgstr "Показывать на панели"
 
 #: src/Views/Layout.vala:143
 msgid "Caps Lock:"

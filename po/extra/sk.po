@@ -8,62 +8,65 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2018-10-03 10:00-0700\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2021-08-24 18:20+0000\n"
+"Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
+"Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
+"keyboard-plug-extra/sk/>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=ASCII\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
-msgstr ""
+msgstr "Nastavenia klávesnice"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Nastavujte správanie klávesnice, rozloženie a klávesové skratky"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "Minor updates:"
-msgstr ""
+msgstr "Menšie aktualizácie:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Add Layout popover is now a dialog"
-msgstr ""
+msgstr "Vyskakovacie okno Pridať rozloženie je po novom dialóg"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "Garantovať, že je vždy dostupné aspoň jedno rozloženie"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "Vylepšenia rozložení ibus a xkb"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
 msgid "Updated translations"
-msgstr ""
+msgstr "Aktualizované preklady"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr ""
+msgstr "Popis klávesovej skratky pre „Prehrať“ je teraz „Prehrať/pozastaviť“"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Opravený problém, keď sa niektoré skratky nesprávne zobrazovali ako zakázané"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
 msgid "Add a view to configure input methods"
-msgstr ""
+msgstr "Pridané zobrazenie pre nastavovanie metód vstupu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
 msgid "New \"Workspaces\" icon"
-msgstr ""
+msgstr "Nová ikona „Pracovné plochy“"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
+msgstr "Vynechanie medzerníka zo skratiek s iba jednou klávesou"
