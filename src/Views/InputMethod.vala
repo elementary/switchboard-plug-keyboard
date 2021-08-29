@@ -368,9 +368,12 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         var keyfile = new GLib.KeyFile ();
         keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, preferred_language, _("IBus Daemon"));
-        keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, preferred_language, "ibus-daemon -drx");
+        keyfile.set_locale_string (
+            KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, preferred_language,
+            _("IBus Daemon is a background service that enables you to use and manage input methods")
+        );
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, "ibus-daemon -drx");
-        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, "application-default-icon");
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, "ibus-setup");
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, "Application");
         keyfile.set_boolean (KeyFileDesktop.GROUP, "X-GNOME-Autostart-enabled", enable);
 
