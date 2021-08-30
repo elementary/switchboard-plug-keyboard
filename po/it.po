@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"POT-Creation-Date: 2021-08-30 08:16+0000\n"
 "PO-Revision-Date: 2020-10-24 12:15+0000\n"
 "Last-Translator: Fabio Zaramella <fabiozaramella@hotmail.it>\n"
 "Language-Team: Italian <https://l10n.elementary.io/projects/switchboard/"
@@ -20,67 +20,67 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-13 05:55+0000\n"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Keyboard"
 msgstr "Tastiera"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 "Configura il comportamento della tastiera, le disposizioni e le scorciatoie"
 
-#: src/Plug.vala:52 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106 src/Plug.vala:107
 msgid "Layout"
 msgstr "Disposizione"
 
-#: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
-#: src/Plug.vala:108
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111
 msgid "Input Method"
 msgstr "Metodo di inserimento"
 
-#: src/Plug.vala:54 src/Plug.vala:109
+#: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
 msgstr "Scorciatoie"
 
-#: src/Plug.vala:55 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
 msgid "Behavior"
 msgstr "Comportamento"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Switch layout"
 msgstr "Cambia disposizione"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 msgid "Compose Key"
 msgstr "Tasto Componi"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "⌘ key behavior"
 msgstr "Comportamento del tasto ⌘"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 msgid "Caps Lock behavior"
 msgstr "Comportamento del tasto Bloc Maiusc"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Switch engines"
 msgstr "Cambia metodo di inserimento"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110
 msgid "Show candidate window"
 msgstr "Mostra la finestra dei suggerimenti"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Embed preedit text in application window"
 msgstr ""
 "Incorpora il testo precedente alla modifica nella finestra dell'applicazione"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Repeat Keys"
 msgstr "Ripetizione dei tasti"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Cursor Blinking"
 msgstr "Cursore lampeggiante"
 
@@ -627,13 +627,23 @@ msgid "Embed preedit text in application window:"
 msgstr ""
 "Incorpora il testo precedente alla modifica nella finestra dell'applicazione:"
 
-#: src/Views/InputMethod.vala:388
+#: src/Views/InputMethod.vala:371
+#, fuzzy
+#| msgid "Start IBus Daemon"
+msgid "IBus Daemon"
+msgstr "Avvia demone IBus"
+
+#: src/Views/InputMethod.vala:374
+msgid "Use and manage input methods"
+msgstr ""
+
+#: src/Views/InputMethod.vala:437
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your input method"
 msgstr "Digita per testare la tua disposizione"
 
-#: src/Views/InputMethod.vala:391
+#: src/Views/InputMethod.vala:440
 #, fuzzy
 #| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
