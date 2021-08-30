@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-07-19 19:06+0000\n"
+"PO-Revision-Date: 2021-08-30 20:15+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ca/>\n"
@@ -617,14 +617,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Encasta text preeditat a la finestra de l'aplicació:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Inicia el dimoni d'iBus"
+msgstr "Dimoni d'iBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Useu i gestioneu mètodes d'entrada"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
