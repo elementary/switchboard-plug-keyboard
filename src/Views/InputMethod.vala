@@ -362,6 +362,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                 return;
             }
         }
+
         // Construct keyfile for ibus-daemon.desktop
         var languages = Intl.get_language_names ();
         var preferred_language = languages [0];
@@ -370,7 +371,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, preferred_language, _("IBus Daemon"));
         keyfile.set_locale_string (
             KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, preferred_language,
-            _("IBus Daemon is a background service that enables you to use and manage input methods")
+            _("Use and manage input methods")
         );
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, "ibus-daemon -drx");
         keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, "ibus-setup");
