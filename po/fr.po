@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-08-28 07:30+0000\n"
-"Last-Translator: roxfr <roxfr@outlook.fr>\n"
+"PO-Revision-Date: 2021-08-30 12:47+0000\n"
+"Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
 "Language: fr\n"
@@ -567,18 +567,18 @@ msgstr "Écrivez pour essayer vos paramètres"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr "Le démon IBus n'est pas en cours d'exécution"
+msgstr "Le service IBus n'est pas en cours d'exécution"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
-"Vous devez exécuter le démon IBus pour activer ou configurer les moteurs de "
-"méthode de saisie."
+"Vous devez exécuter le service IBus pour activer ou configurer les moteurs "
+"de méthode de saisie."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr "Lancer le démon IBus"
+msgstr "Lancer le service IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
@@ -619,14 +619,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Intégrer le texte dans la fenêtre d'application :"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Lancer le démon IBus"
+msgstr "Service IBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Utilisez et gérez les méthodes de saisie"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
