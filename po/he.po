@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-04-16 16:55+0000\n"
+"PO-Revision-Date: 2021-08-30 08:30+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
@@ -615,14 +615,12 @@ msgid "Embed preedit text in application window:"
 msgstr "הטמעת טקסט קדם העריכה בחלון היישום:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "הפעלת סוכן IBus"
+msgstr "סוכן IBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "שימוש וניהול שיטות קלט"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
