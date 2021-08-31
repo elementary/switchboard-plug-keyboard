@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"POT-Creation-Date: 2021-08-30 08:16+0000\n"
 "PO-Revision-Date: 2020-12-03 16:16+0000\n"
 "Last-Translator: Prachi Joshi <josprachi@yahoo.com>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -13,65 +13,65 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 3.9.1\n"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Keyboard"
 msgstr "कीबोर्ड"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "कीबोर्ड वर्तन, मांडणी आणि शॉर्टकट कॉन्फिगर करा"
 
-#: src/Plug.vala:52 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106 src/Plug.vala:107
 msgid "Layout"
 msgstr "मांडणी"
 
-#: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
-#: src/Plug.vala:108
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111
 msgid "Input Method"
 msgstr "इनपुट पद्धत"
 
-#: src/Plug.vala:54 src/Plug.vala:109
+#: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
 msgstr "शॉर्टकट"
 
-#: src/Plug.vala:55 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
 msgid "Behavior"
 msgstr "वर्तन"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Switch layout"
 msgstr "मांडणी बदला"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 msgid "Compose Key"
 msgstr "की तयार करा"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "⌘ key behavior"
 msgstr "⌘ की वर्तन"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 msgid "Caps Lock behavior"
 msgstr "कॅप्स लॉक वर्तन"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Switch engines"
 msgstr "इंजिन बदला"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110
 msgid "Show candidate window"
 msgstr "कॅन्डीडेट विंडो दाखवा"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Embed preedit text in application window"
 msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Repeat Keys"
 msgstr "रिपीट कीज"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Cursor Blinking"
 msgstr "कर्सर ब्लिंकिंग"
 
@@ -615,13 +615,23 @@ msgstr "नेहमी लपवा"
 msgid "Embed preedit text in application window:"
 msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा:"
 
-#: src/Views/InputMethod.vala:388
+#: src/Views/InputMethod.vala:371
+#, fuzzy
+#| msgid "Start IBus Daemon"
+msgid "IBus Daemon"
+msgstr "IBus डीमन सुरु करा"
+
+#: src/Views/InputMethod.vala:374
+msgid "Use and manage input methods"
+msgstr ""
+
+#: src/Views/InputMethod.vala:437
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your input method"
 msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
 
-#: src/Views/InputMethod.vala:391
+#: src/Views/InputMethod.vala:440
 #, fuzzy
 #| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"

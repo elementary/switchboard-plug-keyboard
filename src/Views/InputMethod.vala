@@ -318,8 +318,11 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         listbox.show_all ();
         //Do not autoselect the first entry as that would change the active input method
-
         remove_button.sensitive = listbox.get_selected_row () != null;
+        // If ibus is running, update its autostart file according to whether there are input methods active
+        if (stack.visible_child_name == "main_view") {
+            write_ibus_autostart_file (listbox.get_children ().length () > 0);
+        }
     }
 
     private void spawn_ibus_daemon () {
@@ -337,6 +340,52 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             return Gdk.EVENT_PROPAGATE;
         });
         timeout_start_daemon = 0;
+
+        if (is_spawn_succeeded & listbox.get_children ().length () > 0) {
+            write_ibus_autostart_file (true);
+        }
+    }
+
+    private void write_ibus_autostart_file (bool enable) {
+        // Get path to user's startup directory (typically ~/.config/autostart)
+        var config_dir = Environment.get_user_config_dir ();
+        var startup_dir = Path.build_filename (config_dir, "autostart");
+
+        // If startup directory doesn't exist, create it.
+        if (!FileUtils.test (startup_dir, FileTest.EXISTS)) {
+            var file = File.new_for_path (startup_dir);
+
+            try {
+                file.make_directory_with_parents ();
+            } catch (Error e) {
+                warning (e.message);
+                return;
+            }
+        }
+
+        // Construct keyfile for ibus-daemon.desktop
+        var languages = Intl.get_language_names ();
+        var preferred_language = languages [0];
+
+        var keyfile = new GLib.KeyFile ();
+        keyfile.set_locale_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_NAME, preferred_language, _("IBus Daemon"));
+        keyfile.set_locale_string (
+            KeyFileDesktop.GROUP, KeyFileDesktop.KEY_COMMENT, preferred_language,
+            _("Use and manage input methods")
+        );
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_EXEC, "ibus-daemon -drx");
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_ICON, "ibus-setup");
+        keyfile.set_string (KeyFileDesktop.GROUP, KeyFileDesktop.KEY_TYPE, "Application");
+        keyfile.set_boolean (KeyFileDesktop.GROUP, "X-GNOME-Autostart-enabled", enable);
+
+        var path = Path.build_filename (startup_dir, "ibus-daemon.desktop");
+
+        // Create or update desktop file
+        try {
+            GLib.FileUtils.set_contents (path, keyfile.to_data ());
+        } catch (Error e) {
+            warning ("Could not write to file %s: %s", path, e.message);
+        }
     }
 
     private void set_visible_view (string error_message = "") {
