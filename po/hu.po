@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-08-27 14:50+0000\n"
+"PO-Revision-Date: 2021-09-02 21:35+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -620,14 +620,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Előszerkesztett szöveg beágyazása az alkalmazás ablakába:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "IBus Daemon indítása"
+msgstr "IBus Daemon"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Beviteli módok használata és kezelése"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
