@@ -3,6 +3,8 @@ xkb_base = xkbconf.get_pkgconfig_variable('xkb_base')
 
 conf_data = configuration_data()
 conf_data.set('XKB_BASE', xkb_base)
+conf_data.set('LOCALEDIR', join_paths(get_option('prefix'), get_option('localedir')))
+conf_data.set('GETTEXT_PACKAGE', meson.project_name() + '-plug')
 config_file = configure_file (
     input: 'Config.vala.in',
     output: 'Config.vala',
