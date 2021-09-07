@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-04-16 03:12+0000\n"
+"PO-Revision-Date: 2021-09-07 21:02+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
@@ -622,14 +622,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Innebygg forhåndsredigeringstekst i programvindu:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Start IBus-nissen"
+msgstr "IBus-nisse"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Bruk og håndter inndatametoder"
 
 #: src/Views/InputMethod.vala:437
 #, fuzzy
