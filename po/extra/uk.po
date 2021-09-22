@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
+"POT-Creation-Date: 2021-09-22 20:41+0000\n"
 "PO-Revision-Date: 2021-07-15 01:01+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -29,46 +29,52 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Налаштування поведінки клавіатури, розкладки та комбінації клавіш"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Add Layout popover is now a dialog"
-msgstr "Вікно додавання розкладки тепер є діалоговим вікном"
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "Guarantee we always have at least one layout"
-msgstr "Гарантія, що у нас завжди є принаймні один макет"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-msgid "Improvements to ibus and xkb layouts"
-msgstr "Вдосконалено макети ibus та xkb"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
 msgid "Updated translations"
 msgstr "Оновлено переклади"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+msgid "Add Layout popover is now a dialog"
+msgstr "Вікно додавання розкладки тепер є діалоговим вікном"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+msgid "Guarantee we always have at least one layout"
+msgstr "Гарантія, що у нас завжди є принаймні один макет"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+msgid "Improvements to ibus and xkb layouts"
+msgstr "Вдосконалено макети ibus та xkb"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "Назва комбінації клавіш «Відтворити» тепер «Відтворити/Призупинити»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Виправлено проблему, коли деякі комбінації клавіш неправильно було показано "
 "вимкненими"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
 msgid "Add a view to configure input methods"
 msgstr "Додано подання налаштування методів введення"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:45
 msgid "New \"Workspaces\" icon"
 msgstr "Нова піктограма «Робочих просторів»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Пробіл виключено з комбінацій клавіш з одної клавіші"

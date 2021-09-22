@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
+"POT-Creation-Date: 2021-09-22 20:41+0000\n"
 "PO-Revision-Date: 2021-07-15 13:41+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -28,44 +28,50 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "הגדרת התנהגות המקלדת, הפריסות ומקשי הקיצור"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Add Layout popover is now a dialog"
-msgstr "החלונית הקופצת להוספת פריסה היא מעכשיו חלונית"
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "Guarantee we always have at least one layout"
-msgstr "הבטחה שתמיד תהיה לפחות פריסה אחרת"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-msgid "Improvements to ibus and xkb layouts"
-msgstr "שיפורים לפריסות ibus ו־xkb"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+msgid "Add Layout popover is now a dialog"
+msgstr "החלונית הקופצת להוספת פריסה היא מעכשיו חלונית"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+msgid "Guarantee we always have at least one layout"
+msgstr "הבטחה שתמיד תהיה לפחות פריסה אחרת"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+msgid "Improvements to ibus and xkb layouts"
+msgstr "שיפורים לפריסות ibus ו־xkb"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "תיאור הקיצור ל„נגינה” הוא מעתה „נגינה/השהיה”"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr "תיקון תקלה בה חלק מהקיצורים מופיעים בטעות כמושבתים"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
 msgid "Add a view to configure input methods"
 msgstr "נוספה תצוגה להגדרת שיטות הקלט"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:45
 msgid "New \"Workspaces\" icon"
 msgstr "סמל „מרחבי עבודה” חדש"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Exclude Space from single-key shortcuts"
 msgstr "הרווח הוחרג מקיצורי מקש בודד"
