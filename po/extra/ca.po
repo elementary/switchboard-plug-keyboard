@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-09-22 20:41+0000\n"
-"PO-Revision-Date: 2021-07-15 15:59+0000\n"
+"PO-Revision-Date: 2021-09-23 11:58+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ca/>\n"
@@ -35,6 +35,7 @@ msgstr "Actualitzacions menors:"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr ""
+"S'assegura que l’IBus s’inicia automàticament en iniciar la sessió quan cal."
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
