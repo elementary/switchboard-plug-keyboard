@@ -176,6 +176,18 @@ namespace Pantheon.Keyboard {
                 show_panel_for_active_layout ();
             });
 
+            settings.external_layout_change.connect (() => {
+                var one_xkb = settings.get_n_xkb_layouts () <= 1;
+                if (one_xkb) {
+                    // Disable switching layouts when only one layout (so switching is ineffective anyway). This prevents some
+                    // shortcuts being blocked unnecessarily.
+                    switch_layout_combo.active_id = "";
+                    switch_layout_combo.sensitive = false;
+                } else {
+                    switch_layout_combo.sensitive = true;
+                }
+            });
+
             var gala_behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
 
             var overlay_string = gala_behavior_settings.get_string ("overlay-action");
@@ -203,6 +215,8 @@ namespace Pantheon.Keyboard {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
             });
+
+            settings.external_layout_change (); // Update switch_layout_combo on opening.
         }
 
         private AdvancedSettingsPanel? third_level_layouts_panel () {

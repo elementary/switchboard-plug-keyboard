@@ -176,13 +176,19 @@ class Pantheon.Keyboard.SourceSettings : Object {
         input_sources.foreach (func);
     }
 
-    private void add_default_keyboard_if_required () {
-        bool have_xkb = false;
+    public uint get_n_xkb_layouts () {
+        uint n_xkb = 0;
         input_sources.@foreach ((source) => {
             if (source.layout_type == LayoutType.XKB) {
-                have_xkb = true;
+                n_xkb++;
             }
         });
+
+        return n_xkb;
+    }
+
+    private void add_default_keyboard_if_required () {
+        bool have_xkb = get_n_xkb_layouts () > 0;
 
         if (!have_xkb) {
             var file = File.new_for_path ("/etc/default/keyboard");
