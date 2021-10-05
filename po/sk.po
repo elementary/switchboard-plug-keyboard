@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-08-24 18:20+0000\n"
+"POT-Creation-Date: 2021-09-22 20:41+0000\n"
+"PO-Revision-Date: 2021-09-14 17:29+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sk/>\n"
@@ -565,23 +565,23 @@ msgstr "Píšte sem pre vyskúšanie vašich nastavení"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr "IBus Daemon nie je spustený"
+msgstr "Proces služby IBus nie je spustený"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
-"Musíte spustiť proces IBus Daemon pre povolenie alebo nastavenie enginov pre "
+"Musíte spustiť proces služby IBus pre povolenie alebo nastavenie enginov pre "
 "metódy vstupu."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr "Spustiť IBus Daemon"
+msgstr "Spustiť proces služby IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
 msgid "Could not start the IBus daemon"
-msgstr "Nepodarilo sa spustiť IBus Daemon"
+msgstr "Nepodarilo sa spustiť proces služby IBus"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -617,14 +617,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Zabudovať text pred úpravou do okna aplikácie:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Spustiť IBus Daemon"
+msgstr "Proces služby IBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Používajte a spravujte metódy vstupu"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
