@@ -188,7 +188,7 @@ namespace Pantheon.Keyboard {
                 attach (num_lock_indicator_switch, 2, 10);
             }
 
-            attach (entry_test, 1, 12, 2);
+            attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
