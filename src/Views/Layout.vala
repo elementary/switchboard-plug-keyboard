@@ -25,6 +25,7 @@ namespace Pantheon.Keyboard {
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
 
+
         construct {
             settings = SourceSettings.get_instance ();
 
@@ -104,6 +105,19 @@ namespace Pantheon.Keyboard {
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
+            var onscreen_keyboard_label = new Gtk.Label (_("Show onscreen keyboard:")) {
+                halign = Gtk.Align.END
+            };
+
+            var onscreen_keyboard_switch = new Gtk.Switch () {
+                halign = Gtk.Align.START,
+                valign = Gtk.Align.CENTER
+            };
+
+            var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
+                halign = Gtk.Align.END
+            };
+
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
@@ -132,38 +146,44 @@ namespace Pantheon.Keyboard {
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
             attach (advanced_settings, 1, 4, 2);
+            attach (onscreen_keyboard_label, 1, 5, 1, 1);
+            attach (onscreen_keyboard_switch, 2, 5, 1);
+            attach (onscreen_keyboard_settings, 1, 6, 2, 1);
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
-                var indicator_header = new Granite.HeaderLabel (_("Show in Panel"));
-                indicator_header.halign = Gtk.Align.END;
-                indicator_header.xalign = 1;
+                var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
+                    halign = Gtk.Align.END,
+                    xalign = 1
+                };
 
                 size_group[0].add_widget (indicator_header);
 
                 var caps_lock_indicator_label = new SettingsLabel (_("Caps Lock:"), size_group[0]);
 
-                var caps_lock_indicator_switch = new Gtk.Switch ();
-                caps_lock_indicator_switch.halign = Gtk.Align.START;
-                caps_lock_indicator_switch.valign = Gtk.Align.CENTER;
+                var caps_lock_indicator_switch = new Gtk.Switch () {
+                    halign = Gtk.Align.START,
+                    valign = Gtk.Align.CENTER
+                };
 
                 var num_lock_indicator_label = new SettingsLabel (_("Num Lock:"), size_group[0]);
 
-                var num_lock_indicator_switch = new Gtk.Switch ();
-                num_lock_indicator_switch.halign = Gtk.Align.START;
-                num_lock_indicator_switch.valign = Gtk.Align.CENTER;
+                var num_lock_indicator_switch = new Gtk.Switch () {
+                    halign = Gtk.Align.START,
+                    valign = Gtk.Align.CENTER
+                };
 
                 var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
                 indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
                 indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
 
-                attach (indicator_header, 1, 5);
-                attach (caps_lock_indicator_label, 1, 6);
-                attach (caps_lock_indicator_switch, 2, 6);
-                attach (num_lock_indicator_label, 1, 7);
-                attach (num_lock_indicator_switch, 2, 7);
+                attach (indicator_header, 1, 7);
+                attach (caps_lock_indicator_label, 1, 8);
+                attach (caps_lock_indicator_switch, 2, 8);
+                attach (num_lock_indicator_label, 1, 9);
+                attach (num_lock_indicator_switch, 2, 9);
             }
 
-            attach (entry_test, 1, 8, 2);
+            attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -191,6 +211,20 @@ namespace Pantheon.Keyboard {
                     overlay_key_combo.active = 2;
                     break;
             }
+ 
+            onscreen_keyboard_settings.clicked.connect (() => {
+                try {
+                    var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, AppInfoCreateFlags.NONE);
+                    appinfo.launch (null, null);
+                } catch (Error e) {
+                    warning ("%s\n", e.message);
+                }
+            });
+            
+            var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
+
+            applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
+
 
             overlay_key_combo.changed.connect (() => {
                 var combo_active = overlay_key_combo.active;

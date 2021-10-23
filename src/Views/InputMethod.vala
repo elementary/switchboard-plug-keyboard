@@ -54,7 +54,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             spawn_ibus_daemon ();
         });
 
-        var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
 
         // spawn_failed view shown if IBus Daemon is not running
         spawn_failed_alert = new Granite.Widgets.AlertView (
@@ -154,18 +153,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             halign = Gtk.Align.START
         };
 
-        var onscreen_keyboard_label = new Gtk.Label (_("Show onscreen keyboard:")) {
-            halign = Gtk.Align.END
-        };
-
-        var onscreen_keyboard_switch = new Gtk.Switch () {
-            halign = Gtk.Align.START
-        };
-
-        var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
-            halign = Gtk.Align.END
-        };
-
         entry_test = new Gtk.Entry () {
             hexpand = true,
             valign = Gtk.Align.END
@@ -187,9 +174,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         right_grid.attach (show_ibus_panel_combobox, 1, 1);
         right_grid.attach (embed_preedit_text_label, 0, 2);
         right_grid.attach (embed_preedit_text_switch, 1, 2);
-        right_grid.attach (onscreen_keyboard_label, 0, 3);
-        right_grid.attach (onscreen_keyboard_switch, 1, 3);
-        right_grid.attach (onscreen_keyboard_settings, 1, 4);
+
 
         var main_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -219,15 +204,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             }
         });
 
-
-        onscreen_keyboard_settings.clicked.connect (() => {
-            try {
-                var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, AppInfoCreateFlags.NONE);
-                appinfo.launch (null, null);
-            } catch (Error e) {
-                warning ("%s\n", e.message);
-            }
-        });
 
         remove_button.clicked.connect (() => {
             int index = listbox.get_selected_row ().get_index ();
@@ -259,7 +235,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             set_keyboard_shortcut (keyboard_shortcut_combobox.active_id);
         });
 
-        applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
