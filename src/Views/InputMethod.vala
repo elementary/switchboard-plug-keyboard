@@ -54,7 +54,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             spawn_ibus_daemon ();
         });
 
-
         // spawn_failed view shown if IBus Daemon is not running
         spawn_failed_alert = new Granite.Widgets.AlertView (
             _("Could not start the IBus daemon"),
@@ -167,14 +166,12 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             margin = 12,
             row_spacing = 12
         };
-
         right_grid.attach (keyboard_shortcut_label, 0, 0);
         right_grid.attach (keyboard_shortcut_combobox, 1, 0);
         right_grid.attach (show_ibus_panel_label, 0, 1);
         right_grid.attach (show_ibus_panel_combobox, 1, 1);
         right_grid.attach (embed_preedit_text_label, 0, 2);
         right_grid.attach (embed_preedit_text_switch, 1, 2);
-
 
         var main_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -203,7 +200,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                 update_engines_list ();
             }
         });
-
 
         remove_button.clicked.connect (() => {
             int index = listbox.get_selected_row ().get_index ();
@@ -234,7 +230,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         keyboard_shortcut_combobox.changed.connect (() => {
             set_keyboard_shortcut (keyboard_shortcut_combobox.active_id);
         });
-
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);

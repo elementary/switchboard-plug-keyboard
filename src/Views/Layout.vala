@@ -25,7 +25,6 @@ namespace Pantheon.Keyboard {
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
 
-
         construct {
             settings = SourceSettings.get_instance ();
 
