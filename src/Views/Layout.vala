@@ -153,7 +153,7 @@ namespace Pantheon.Keyboard {
             attach (onscreen_keyboard_header, 1, 5, 1, 1);
             attach (onscreen_keyboard_label, 1, 6, 1, 1);
             attach (onscreen_keyboard_switch, 2, 6, 1);
-            attach (onscreen_keyboard_settings, 1, 7, 2, 1);
+            attach (onscreen_keyboard_settings, 1, 7, 1);
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
