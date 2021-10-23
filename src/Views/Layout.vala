@@ -105,6 +105,11 @@ namespace Pantheon.Keyboard {
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
+            var onscreen_keyboard_header = new Granite.HeaderLabel (_("Onscreen Keyboard")) {
+                    halign = Gtk.Align.END,
+                    xalign = 1
+                };
+
             var onscreen_keyboard_label = new Gtk.Label (_("Show onscreen keyboard:")) {
                 halign = Gtk.Align.END
             };
@@ -146,9 +151,10 @@ namespace Pantheon.Keyboard {
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
             attach (advanced_settings, 1, 4, 2);
-            attach (onscreen_keyboard_label, 1, 5, 1, 1);
-            attach (onscreen_keyboard_switch, 2, 5, 1);
-            attach (onscreen_keyboard_settings, 1, 6, 2, 1);
+            attach (onscreen_keyboard_header, 1, 5, 1, 1);
+            attach (onscreen_keyboard_label, 1, 6, 1, 1);
+            attach (onscreen_keyboard_switch, 2, 6, 1);
+            attach (onscreen_keyboard_settings, 1, 7, 2, 1);
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
@@ -176,14 +182,14 @@ namespace Pantheon.Keyboard {
                 indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
                 indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
 
-                attach (indicator_header, 1, 7);
-                attach (caps_lock_indicator_label, 1, 8);
-                attach (caps_lock_indicator_switch, 2, 8);
-                attach (num_lock_indicator_label, 1, 9);
-                attach (num_lock_indicator_switch, 2, 9);
+                attach (indicator_header, 1, 8);
+                attach (caps_lock_indicator_label, 1, 9);
+                attach (caps_lock_indicator_switch, 2, 9);
+                attach (num_lock_indicator_label, 1, 10);
+                attach (num_lock_indicator_switch, 2, 10);
             }
 
-            attach (entry_test, 1, 11, 2);
+            attach (entry_test, 1, 12, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -211,7 +217,7 @@ namespace Pantheon.Keyboard {
                     overlay_key_combo.active = 2;
                     break;
             }
- 
+
             onscreen_keyboard_settings.clicked.connect (() => {
                 try {
                     var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, AppInfoCreateFlags.NONE);
@@ -220,7 +226,7 @@ namespace Pantheon.Keyboard {
                     warning ("%s\n", e.message);
                 }
             });
-            
+
             var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
 
             applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
