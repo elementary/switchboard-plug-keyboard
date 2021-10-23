@@ -140,7 +140,7 @@ namespace Pantheon.Keyboard {
             column_homogeneous = true;
             column_spacing = 12;
             row_spacing = 12;
-            attach (display, 0, 0, 1, 9);
+            attach (display, 0, 0, 1, 12);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
             attach (compose_key_label, 1, 1, 1, 1);
@@ -153,7 +153,7 @@ namespace Pantheon.Keyboard {
             attach (onscreen_keyboard_header, 1, 5, 1, 1);
             attach (onscreen_keyboard_label, 1, 6, 1, 1);
             attach (onscreen_keyboard_switch, 2, 6, 1);
-            attach (onscreen_keyboard_settings, 1, 7, 1);
+            attach (onscreen_keyboard_settings, 2, 7, 1);
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
