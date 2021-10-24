@@ -122,7 +122,6 @@ namespace Pantheon.Keyboard {
                 halign = Gtk.Align.START
             };
 
-
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
@@ -155,7 +154,6 @@ namespace Pantheon.Keyboard {
             attach (onscreen_keyboard_label, 1, 6, 1, 1);
             attach (onscreen_keyboard_switch, 2, 6, 1);
             attach (onscreen_keyboard_settings, 2, 7, 1);
-
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
@@ -231,7 +229,6 @@ namespace Pantheon.Keyboard {
             var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
 
             applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
-
 
             overlay_key_combo.changed.connect (() => {
                 var combo_active = overlay_key_combo.active;
