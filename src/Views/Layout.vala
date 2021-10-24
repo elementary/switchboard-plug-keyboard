@@ -104,12 +104,12 @@ namespace Pantheon.Keyboard {
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
-            var onscreen_keyboard_header = new Granite.HeaderLabel (_("Onscreen Keyboard")) {
+            var onscreen_keyboard_header = new Granite.HeaderLabel (_("On-screen Keyboard")) {
                     halign = Gtk.Align.END,
                     xalign = 1
                 };
 
-            var onscreen_keyboard_label = new Gtk.Label (_("Show onscreen keyboard:")) {
+            var onscreen_keyboard_label = new Gtk.Label (_("Show on-screen keyboard:")) {
                 halign = Gtk.Align.END
             };
 
