@@ -122,24 +122,6 @@ namespace Pantheon.Keyboard {
                 halign = Gtk.Align.START
             };
 
-            var lock_keys_header = new Granite.HeaderLabel (_("Lock Keys")) {
-                halign = Gtk.Align.END,
-                xalign = 1
-            };
-
-            var beep_key_label = new Gtk.Label (_("Beep when a lock key is pressed:")) {
-                halign = Gtk.Align.END
-            };
-
-            var beep_key_switch = new Gtk.Switch () {
-                halign = Gtk.Align.START,
-                valign = Gtk.Align.CENTER
-            };
-
-            var modifier_keys_header = new Granite.HeaderLabel (_("Modifier Keys")) {
-                halign = Gtk.Align.END,
-                xalign = 1
-            };
 
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
@@ -159,7 +141,7 @@ namespace Pantheon.Keyboard {
             column_homogeneous = true;
             column_spacing = 12;
             row_spacing = 12;
-            attach (display, 0, 0, 1, 14);
+            attach (display, 0, 0, 1, 12);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
             attach (compose_key_label, 1, 1, 1, 1);
@@ -173,9 +155,6 @@ namespace Pantheon.Keyboard {
             attach (onscreen_keyboard_label, 1, 6, 1, 1);
             attach (onscreen_keyboard_switch, 2, 6, 1);
             attach (onscreen_keyboard_settings, 2, 7, 1);
-            attach (lock_keys_header, 1, 8, 1, 1);
-            attach (beep_key_label, 1, 9, 1, 1);
-            attach (beep_key_switch, 2, 9, 1);
 
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
@@ -204,14 +183,14 @@ namespace Pantheon.Keyboard {
                 indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
                 indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
 
-                attach (indicator_header, 1, 10);
-                attach (caps_lock_indicator_label, 1, 11);
-                attach (caps_lock_indicator_switch, 2, 11);
-                attach (num_lock_indicator_label, 1, 12);
-                attach (num_lock_indicator_switch, 2, 12);
+                attach (indicator_header, 1, 8);
+                attach (caps_lock_indicator_label, 1, 9);
+                attach (caps_lock_indicator_switch, 2, 9);
+                attach (num_lock_indicator_label, 1, 10);
+                attach (num_lock_indicator_switch, 2, 10);
             }
 
-            attach (entry_test, 1, 13, 2);
+            attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -253,8 +232,6 @@ namespace Pantheon.Keyboard {
 
             applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
 
-            var keyboard_settings = new GLib.Settings ("org.gnome.desktop.a11y.keyboard");
-            keyboard_settings.bind ("stickykeys-modifier-beep", beep_key_switch, "active", SettingsBindFlags.DEFAULT);
 
             overlay_key_combo.changed.connect (() => {
                 var combo_active = overlay_key_combo.active;
