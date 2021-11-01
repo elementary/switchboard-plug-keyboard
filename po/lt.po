@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:10+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"PO-Revision-Date: 2021-11-01 17:20+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Lithuanian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/lt/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=n==1 ? 0 : n%10>=2 && (n%100<10 || n"
 "%100>=20) ? 1 : n%10==0 || (n%100>10 && n%100<20) ? 2 : 3;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-14 05:48+0000\n"
 
 #: src/Plug.vala:38
@@ -769,10 +769,8 @@ msgid "Show on-screen keyboard:"
 msgstr "Perjungti ekraninę klaviatūrą"
 
 #: src/Views/Layout.vala:121
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "On-screen keyboard settings…"
-msgstr "Įvesties metodo nustatymai…"
+msgstr "Ekraninės klaviatūros nustatymai…"
 
 #: src/Views/Layout.vala:159
 msgid "Show in Panel"
