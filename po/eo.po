@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:10+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
+"PO-Revision-Date: 2021-11-01 17:20+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Esperanto <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/eo/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -759,10 +759,8 @@ msgid "Show on-screen keyboard:"
 msgstr "Baskuli surekranan klavaron"
 
 #: src/Views/Layout.vala:121
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "On-screen keyboard settings…"
-msgstr "Eniga agorda metodo…"
+msgstr "Agordoj de la ekrana klavaro…"
 
 #: src/Views/Layout.vala:159
 msgid "Show in Panel"
