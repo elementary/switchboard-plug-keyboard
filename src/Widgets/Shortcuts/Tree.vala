@@ -151,10 +151,12 @@ namespace Pantheon.Keyboard.Shortcuts {
                     }
 
                     var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) name);
-                    dialog.reassign.connect (() => {
-                        tree.reset_shortcut (shortcut);
-                        settings.set_val ((Schema) schema, (string) key, shortcut);
-                        load_and_display_shortcuts ();
+                    dialog.responded.connect ((response_id) => {
+                        if (response_id == Gtk.ResponseType.ACCEPT) {
+                            tree.reset_shortcut (shortcut);
+                            settings.set_val ((Schema) schema, (string) key, shortcut);
+                            load_and_display_shortcuts ();
+                        }
                     });
                     dialog.transient_for = (Gtk.Window) this.get_toplevel ();
                     dialog.present ();
