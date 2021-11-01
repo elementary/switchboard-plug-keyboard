@@ -18,7 +18,7 @@
 */
 
 public class ConflictDialog : Granite.MessageDialog {
-    public signal void reassign ();
+    public signal void responded (int response_id);
 
     public ConflictDialog (string shortcut, string conflict_action, string this_action) {
         Object (
@@ -33,16 +33,13 @@ public class ConflictDialog : Granite.MessageDialog {
         modal = true;
         resizable = false;
 
-        add_button (_("Cancel"), 0);
+        add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
-        var reassign_button = add_button (_("Reassign"), 1);
+        var reassign_button = add_button (_("Reassign"), Gtk.ResponseType.ACCEPT);
         reassign_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         response.connect ((response_id) => {
-            if (response_id == 1) {
-                reassign ();
-            }
-
+            responded (response_id);
             destroy ();
         });
     }

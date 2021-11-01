@@ -47,7 +47,6 @@ public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
         if (!valid ()) {
             return "";
         }
-
         return Gtk.accelerator_name (accel_key, modifiers);
     }
 

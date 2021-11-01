@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-05-19 09:24+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
+"POT-Creation-Date: 2021-11-01 17:20+0000\n"
+"PO-Revision-Date: 2021-11-01 17:20+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
 "Language: es\n"
@@ -111,7 +111,7 @@ msgstr "Añadir disposición"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
 msgid "Default"
 msgstr "Predeterminado"
 
@@ -509,20 +509,22 @@ msgstr "Personalizado"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "Desactivado"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr "Mayús"
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr "Alt"
 
@@ -656,7 +658,7 @@ msgstr "Alt + Espacio"
 msgid "Both Shift keys together"
 msgstr "Ambas teclas Mayús a la vez"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
 msgid "Caps Lock"
 msgstr "Bloq Mayús"
 
@@ -680,15 +682,15 @@ msgstr "Tecla modificadora:"
 msgid "Menu"
 msgstr "Menú"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
 msgid "Right Alt"
 msgstr "Alt derecha"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
 msgid "Right Ctrl"
 msgstr "Ctrl derecha"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
 msgid "Right ⌘"
 msgstr "⌘ derecha"
 
@@ -732,51 +734,67 @@ msgstr "Intercambiar con Ctrl"
 msgid "Swap with Escape"
 msgstr "Intercambiar con Escape"
 
-#: src/Views/Layout.vala:137
+#: src/Views/Layout.vala:107
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "On-screen Keyboard"
+msgstr "Activar o desactivar teclado en pantalla"
+
+#: src/Views/Layout.vala:112
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "Show on-screen keyboard:"
+msgstr "Activar o desactivar teclado en pantalla"
+
+#: src/Views/Layout.vala:121
+msgid "On-screen keyboard settings…"
+msgstr "Configuración del teclado en pantalla…"
+
+#: src/Views/Layout.vala:159
 msgid "Show in Panel"
 msgstr "Mostrar en el panel"
 
-#: src/Views/Layout.vala:143
+#: src/Views/Layout.vala:166
 msgid "Caps Lock:"
 msgstr "Bloq Mayús:"
 
-#: src/Views/Layout.vala:149
+#: src/Views/Layout.vala:173
 msgid "Num Lock:"
 msgstr "Bloq Num:"
 
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
 msgstr "Tecla para elegir el 3.ᵉʳ nivel:"
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:298
 msgid "Left Alt"
 msgstr "Alt izquierda"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:308
 msgid "Key to choose 5th level:"
 msgstr "Tecla para elegir el 5.º nivel:"
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:329
 msgid "Kana Lock:"
 msgstr "Bloqueo de kana:"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:337
 msgid "Nicola F Backspace:"
 msgstr "Retroceso Nicola-F:"
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:340
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku/zenkaku como Escape:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Teclas de hangul/hanja en Alt/Ctrl derecha:"
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:436
 msgid "Type to test your layout"
 msgstr "Escriba para probar la disposición"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:439
 msgid "Input Method is active"
 msgstr "El método de entrada está activo"
 
@@ -807,17 +825,30 @@ msgstr "Subir"
 msgid "Move down"
 msgstr "Bajar"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+#, fuzzy
+#| msgid "Enter Command"
+msgid "Enter a command here"
 msgstr "Introducir orden"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Orden"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+#, fuzzy
+#| msgid "Shortcut"
+msgid "Set New Shortcut"
 msgstr "Atajo"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+#, fuzzy
+#| msgid "Disabled"
+msgid "Disable"
+msgstr "Desactivado"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr ""
+
+#~ msgid "Command"
+#~ msgstr "Orden"
 
 #~ msgid "Show candidate window:"
 #~ msgstr "Mostrar ventana de candidatos:"
@@ -833,11 +864,6 @@ msgstr "Atajo"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Activar o desactivar contraste alto"
-
-#, fuzzy
-#~| msgid "Input Method Settings…"
-#~ msgid "Advanced Settings…"
-#~ msgstr "Configuración del método de entrada…"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Bloq Mayús  deshabilitado"
