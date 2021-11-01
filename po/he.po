@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-11-01 21:04+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
 "Language: he\n"
@@ -730,16 +730,12 @@ msgid "Swap with Escape"
 msgstr "החלפה עם Escape"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "On-screen Keyboard"
-msgstr "הפעלה או סגירה של מקלדת על גבי המסך"
+msgstr "מקלדת על גבי המסך"
 
 #: src/Views/Layout.vala:112
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show on-screen keyboard:"
-msgstr "הפעלה או סגירה של מקלדת על גבי המסך"
+msgstr "הצגת מקלדת על גבי המסך:"
 
 #: src/Views/Layout.vala:121
 msgid "On-screen keyboard settings…"
@@ -821,26 +817,20 @@ msgid "Move down"
 msgstr "העברה למטה"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
-msgstr "הקלדת פקודה"
+msgstr "נא למלא כאן פקודה"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "קיצור דרך"
+msgstr "הגדרת קיצור דרך חדש"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "מושבתת"
+msgstr "השבתה"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "נא לבחור קיצור דרך חדש…"
 
 #~ msgid "Command"
 #~ msgstr "פקודה"
