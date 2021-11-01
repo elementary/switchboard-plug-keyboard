@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-09-22 20:41+0000\n"
+"POT-Creation-Date: 2021-11-01 17:10+0000\n"
 "PO-Revision-Date: 2021-08-31 08:53+0000\n"
 "Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -111,7 +111,7 @@ msgstr "Добавить раскладку"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
 msgid "Default"
 msgstr "По умолчанию"
 
@@ -654,7 +654,7 @@ msgstr "Alt + Пробел"
 msgid "Both Shift keys together"
 msgstr "Оба Shift, нажатые вместе"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -678,15 +678,15 @@ msgstr "Композиционная клавиша:"
 msgid "Menu"
 msgstr "Меню"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
 msgid "Right Alt"
 msgstr "Правый Alt"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
 msgid "Right Ctrl"
 msgstr "Правый Ctrl"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
 msgid "Right ⌘"
 msgstr "Правый ⌘"
 
@@ -730,51 +730,69 @@ msgstr "Поменять с Ctrl"
 msgid "Swap with Escape"
 msgstr "Поменять с Escape"
 
-#: src/Views/Layout.vala:137
+#: src/Views/Layout.vala:107
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "On-screen Keyboard"
+msgstr "Включить экранную клавиатуру"
+
+#: src/Views/Layout.vala:112
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "Show on-screen keyboard:"
+msgstr "Включить экранную клавиатуру"
+
+#: src/Views/Layout.vala:121
+#, fuzzy
+#| msgid "Input Method Settings…"
+msgid "On-screen keyboard settings…"
+msgstr "Настройки методов ввода…"
+
+#: src/Views/Layout.vala:159
 msgid "Show in Panel"
 msgstr "Показывать на панели"
 
-#: src/Views/Layout.vala:143
+#: src/Views/Layout.vala:166
 msgid "Caps Lock:"
 msgstr "Caps Lock:"
 
-#: src/Views/Layout.vala:149
+#: src/Views/Layout.vala:173
 msgid "Num Lock:"
 msgstr "Num Lock:"
 
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
 msgstr "Клавиша выбора 3-го уровня:"
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:298
 msgid "Left Alt"
 msgstr "Левый Alt"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:308
 msgid "Key to choose 5th level:"
 msgstr "Клавиша выбора 5-го уровня:"
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:329
 msgid "Kana Lock:"
 msgstr "Kana Lock:"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:337
 msgid "Nicola F Backspace:"
 msgstr "Backspace как в Nicola-F:"
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:340
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku как Escape:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Hangul/Hanja на правых Alt/Ctrl:"
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:436
 msgid "Type to test your layout"
 msgstr "Начните печатать, чтобы проверить раскладку"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:439
 msgid "Input Method is active"
 msgstr "Метод ввода активен"
 
@@ -831,11 +849,6 @@ msgstr "Сочетание клавиш"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "Включить высокую контрастность"
-
-#, fuzzy
-#~| msgid "Input Method Settings…"
-#~ msgid "Advanced Settings…"
-#~ msgstr "Настройки методов ввода…"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "Caps Lock отключен"
