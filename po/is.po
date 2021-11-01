@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:10+0000\n"
+"POT-Creation-Date: 2021-11-01 17:20+0000\n"
 "PO-Revision-Date: 2015-03-28 21:33+0000\n"
 "Last-Translator: Rúnar Freyr Þorsteinsson <runarf@gmail.com>\n"
 "Language-Team: Icelandic <is@li.org>\n"
@@ -510,20 +510,22 @@ msgstr ""
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr ""
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr ""
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr ""
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr ""
 
@@ -819,14 +821,20 @@ msgstr ""
 msgid "Move down"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+msgid "Enter a command here"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+#, fuzzy
+#| msgid "Shortcuts"
+msgid "Set New Shortcut"
+msgstr "Flýtileiðir"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+msgid "Disable"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
 msgstr ""

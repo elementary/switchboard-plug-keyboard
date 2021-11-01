@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:10+0000\n"
+"POT-Creation-Date: 2021-11-01 17:20+0000\n"
 "PO-Revision-Date: 2020-10-04 21:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -536,21 +536,23 @@ msgstr "Потребителски"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "Изключено"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 #, fuzzy
 msgid "Shift"
 msgstr "Alt + Shift"
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr ""
 
@@ -861,17 +863,30 @@ msgstr "Премести нагоре"
 msgid "Move down"
 msgstr "Премести надолу"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+#, fuzzy
+#| msgid "Enter Command"
+msgid "Enter a command here"
 msgstr "Въведете команда"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Команда"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+#, fuzzy
+#| msgid "Shortcut"
+msgid "Set New Shortcut"
 msgstr "Пряк път"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+#, fuzzy
+#| msgid "Disabled"
+msgid "Disable"
+msgstr "Изключено"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr ""
+
+#~ msgid "Command"
+#~ msgstr "Команда"
 
 #~ msgid "Minimize"
 #~ msgstr "Намали"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:10+0000\n"
+"POT-Creation-Date: 2021-11-01 17:20+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Albanian <https://l10n.elementary.io/projects/switchboard/"
@@ -522,20 +522,22 @@ msgstr ""
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "Çaktivizuar"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr ""
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr ""
 
@@ -831,17 +833,26 @@ msgstr "Lëviz lart"
 msgid "Move down"
 msgstr "Lëviz poshtë"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+msgid "Enter a command here"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Komanda"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+msgid "Set New Shortcut"
 msgstr ""
+
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+#, fuzzy
+#| msgid "Disabled"
+msgid "Disable"
+msgstr "Çaktivizuar"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr ""
+
+#~ msgid "Command"
+#~ msgstr "Komanda"
 
 #~ msgid "Minimize"
 #~ msgstr "Minimizo"
