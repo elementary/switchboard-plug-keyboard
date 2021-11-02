@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-11-02 22:33+0000\n"
+"Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
 "Language: ja\n"
@@ -732,16 +732,12 @@ msgid "Swap with Escape"
 msgstr "Esc と入れ替える"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "On-screen Keyboard"
-msgstr "オンスクリーンキーボードを切り替え"
+msgstr "オンスクリーンキーボード"
 
 #: src/Views/Layout.vala:112
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show on-screen keyboard:"
-msgstr "オンスクリーンキーボードを切り替え"
+msgstr "オンスクリーンキーボードを表示:"
 
 #: src/Views/Layout.vala:121
 msgid "On-screen keyboard settings…"
@@ -823,26 +819,20 @@ msgid "Move down"
 msgstr "下へ移動"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
 msgstr "コマンドを入力"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "ショートカット"
+msgstr "新しいショートカットを設定"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "無効"
+msgstr "無効にする"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "新しいショートカットを入力…"
 
 #~ msgid "Command"
 #~ msgstr "コマンド"
