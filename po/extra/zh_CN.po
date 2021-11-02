@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-01 09:12+0000\n"
+"PO-Revision-Date: 2021-11-02 05:56+0000\n"
 "Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/keyboard-plug-extra/zh_Hans/>\n"
@@ -34,7 +34,7 @@ msgstr "次要更新："
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Ensure IBus automatically starts on login when needed"
-msgstr ""
+msgstr "如果需要，确保 IBus 在登录时自动启动"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
@@ -46,32 +46,32 @@ msgstr "翻译更新"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
 msgid "Add Layout popover is now a dialog"
-msgstr ""
+msgstr "添加布局弹出框现在是一个对话框"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "确保我们总是有至少一种布局"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "ibus 和 xkb 布局的改进"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr ""
+msgstr "“播放”的快捷方式描述现在是“播放/暂停”"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
-msgstr ""
+msgstr "修复部分快捷方式错误显示为禁用的问题"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
 msgid "Add a view to configure input methods"
-msgstr ""
+msgstr "添加视图以配置输入法"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:45
 msgid "New \"Workspaces\" icon"
-msgstr ""
+msgstr "新的“工作区”图标"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Exclude Space from single-key shortcuts"
-msgstr ""
+msgstr "从单键快捷方式中排除空格"
