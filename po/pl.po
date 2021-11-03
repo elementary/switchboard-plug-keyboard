@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-11-03 06:56+0000\n"
+"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
 "Language: pl\n"
@@ -641,11 +641,11 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:371
 msgid "IBus Daemon"
-msgstr ""
+msgstr "Demon IBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Używaj i zarządzaj metodami wprowadzania"
 
 #: src/Views/InputMethod.vala:437
 #, fuzzy
@@ -758,16 +758,12 @@ msgid "Swap with Escape"
 msgstr "Zamień z klawiszem Escape"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "On-screen Keyboard"
-msgstr "Włącz/Wyłącz klawiaturę ekranową"
+msgstr "Klawiatura ekranowa"
 
 #: src/Views/Layout.vala:112
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show on-screen keyboard:"
-msgstr "Włącz/Wyłącz klawiaturę ekranową"
+msgstr "Pokaż klawiaturę ekranową:"
 
 #: src/Views/Layout.vala:121
 msgid "On-screen keyboard settings…"
@@ -855,26 +851,20 @@ msgid "Move down"
 msgstr "Przesuń w dół"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
 msgstr "Wprowadź polecenie"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "Skrót klawiszowy"
+msgstr "Ustaw nowy skrót klawiszowy"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "Wyłączone"
+msgstr "Wyłącz"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Wprowadź nowy skrót klawiszowy…"
 
 #~ msgid "Command"
 #~ msgstr "Polecenie"
