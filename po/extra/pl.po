@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-02 10:16+0000\n"
+"PO-Revision-Date: 2021-11-03 06:56+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pl/>\n"
@@ -26,7 +26,7 @@ msgstr "Ustawienia klawiatury"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
