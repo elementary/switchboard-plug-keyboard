@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
 "PO-Revision-Date: 2021-11-03 06:56+0000\n"
-"Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
+"Last-Translator: DarkKnightComes <darkknightcomes@gmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
 "Language: pl\n"
@@ -36,10 +36,8 @@ msgstr "Układ"
 
 #: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Ustawienia metody wejścia…"
+msgstr "Metoda wprowadzania"
 
 #: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
@@ -66,18 +64,16 @@ msgid "Caps Lock behavior"
 msgstr "Zachowanie klawisza Caps Lock"
 
 #: src/Plug.vala:109
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "Przełącz okna"
+msgstr "Przełącz silniki"
 
 #: src/Plug.vala:110
 msgid "Show candidate window"
-msgstr ""
+msgstr "Pokaż okno kandydata"
 
 #: src/Plug.vala:111
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Osadź pre-edytowany tekst w oknie aplikacji"
 
 #: src/Plug.vala:114
 msgid "Repeat Keys"
@@ -92,20 +88,16 @@ msgid "Input Language"
 msgstr "Język wejściowy"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Układ"
+msgstr "Lista układów"
 
 #: src/Dialogs/AddLayoutDialog.vala:38
 msgid "Search input language"
 msgstr "Znajdź język wejściowy"
 
 #: src/Dialogs/AddLayoutDialog.vala:93
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Układ"
+msgstr "Pokaż układ"
 
 #: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -139,21 +131,19 @@ msgstr "Przypisz ponownie"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Wybierz silnik do zainstalowania"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Wybierz silnik z listy do zainstalowania i użycia."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Język wejściowy"
+msgstr "Języki"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Instaluj"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -167,15 +157,15 @@ msgstr "Usuwanie %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japoński"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Koreański"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Chiński"
 
 #: src/Shortcuts/List.vala:43
 msgid "Windows"
@@ -203,7 +193,7 @@ msgstr "Przełącz maksymalizację"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Ukryj"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -246,28 +236,20 @@ msgid "Picture in Picture Mode"
 msgstr "Tryb obraz w obrazie"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "Przemieść w lewo"
+msgstr "Przenieś do ekranu wyżej"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "Przemieść w lewo"
+msgstr "Przenieś do ekranu niżej"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Przemieść na obszar roboczy po prawej"
+msgstr "Przenieś do ekranu po prawej"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Przemieść na obszar roboczy po lewej"
+msgstr "Przenieś do ekranu po lewej"
 
 #: src/Shortcuts/List.vala:67
 msgid "Workspaces"
@@ -450,10 +432,8 @@ msgid "Mute"
 msgstr "Wycisz"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Wstrzymaj"
+msgstr "Odtwórz/Wstrzymaj"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -521,7 +501,7 @@ msgstr "Wyloguj"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Przełącz tryb wyświetlania"
 
 #: src/Shortcuts/List.vala:148
 msgid "Custom"
@@ -588,21 +568,23 @@ msgstr "Zacznij pisać, aby przetestować swoje ustawienia"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "Daemon IBus nie jest uruchomiony"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
+"Musisz uruchomić daemona IBus, aby włączyć lub skonfigurować silniki metod "
+"wprowadzania."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "Włącz daemona IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
 msgid "Could not start the IBus daemon"
-msgstr ""
+msgstr "Nie można włączyć deamona IBus"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -614,30 +596,28 @@ msgid "Remove"
 msgstr "Usuń"
 
 #: src/Views/InputMethod.vala:124
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "Przełącz okna"
+msgstr "Przełącz silniki:"
 
 #: src/Views/InputMethod.vala:136
 msgid "Show property panel:"
-msgstr ""
+msgstr "Pokaż panel właściwości:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
-msgstr ""
+msgstr "Nie pokazuj"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr ""
+msgstr "Automatycznie ukryj"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
-msgstr ""
+msgstr "Zawsze pokazuj"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "Osadź pre-edytowany tekst w oknie aplikacji:"
 
 #: src/Views/InputMethod.vala:371
 msgid "IBus Daemon"
@@ -648,16 +628,12 @@ msgid "Use and manage input methods"
 msgstr "Używaj i zarządzaj metodami wprowadzania"
 
 #: src/Views/InputMethod.vala:437
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "Zacznij pisać, aby przetestować swój układ"
+msgstr "Zacznij pisać, aby przetestować swoją metodę wprowadzania"
 
 #: src/Views/InputMethod.vala:440
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "Wyświetl układ klawiatury"
+msgstr "Układ klawiatury jest aktywny"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -749,9 +725,8 @@ msgid "as ⌘"
 msgstr "jako ⌘"
 
 #: src/Views/Layout.vala:99
-#, fuzzy
 msgid "Swap with Ctrl"
-msgstr "Zamień z klawiszem Control"
+msgstr "Zamień z Ctrl"
 
 #: src/Views/Layout.vala:100
 msgid "Swap with Escape"
@@ -771,19 +746,15 @@ msgstr "Ustawienia klawiatury ekranowej…"
 
 #: src/Views/Layout.vala:159
 msgid "Show in Panel"
-msgstr ""
+msgstr "Pokaż w panelu"
 
 #: src/Views/Layout.vala:166
-#, fuzzy
-#| msgid "Caps Lock"
 msgid "Caps Lock:"
-msgstr "Caps Lock"
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:173
-#, fuzzy
-#| msgid "as Num Lock"
 msgid "Num Lock:"
-msgstr "jak Num Lock"
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
@@ -818,10 +789,8 @@ msgid "Type to test your layout"
 msgstr "Zacznij pisać, aby przetestować swój układ"
 
 #: src/Views/Layout.vala:439
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method is active"
-msgstr "Ustawienia metody wejścia…"
+msgstr "Metoda wprowadzania jest aktywna"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
@@ -832,15 +801,15 @@ msgstr "Dodaj"
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:33
 msgid "Search engine"
-msgstr ""
+msgstr "Wyszukaj silnik"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "Zainstaluj niezarejestrowane silniki…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:50
 msgid "Add Engine"
-msgstr ""
+msgstr "Dodaj silnik"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
