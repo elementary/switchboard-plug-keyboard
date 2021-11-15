@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-02 22:33+0000\n"
+"PO-Revision-Date: 2021-11-16 00:50+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -26,7 +26,7 @@ msgstr "キーボード"
 
 #: src/Plug.vala:39
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "キーボードの動作、レイアウトとショートカットを設定します"
+msgstr "キーボードの挙動、レイアウト、ショートカットを設定します"
 
 #: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
 #: src/Plug.vala:106 src/Plug.vala:107
@@ -44,7 +44,7 @@ msgstr "ショートカット"
 
 #: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
 msgid "Behavior"
-msgstr "動作"
+msgstr "挙動"
 
 #: src/Plug.vala:104
 msgid "Switch layout"
@@ -56,11 +56,11 @@ msgstr "コンポーズキー"
 
 #: src/Plug.vala:106
 msgid "⌘ key behavior"
-msgstr "⌘ キーの動作"
+msgstr "⌘ キーの挙動"
 
 #: src/Plug.vala:107
 msgid "Caps Lock behavior"
-msgstr "Caps Lock の動作"
+msgstr "Caps Lock の挙動"
 
 #: src/Plug.vala:109
 msgid "Switch engines"
@@ -693,7 +693,7 @@ msgstr "右 ⌘"
 
 #: src/Views/Layout.vala:74
 msgid "⌘ key behavior:"
-msgstr "⌘ キーの動作:"
+msgstr "⌘ キーの挙動:"
 
 #: src/Views/Layout.vala:83
 msgid "Shortcut Overlay"
@@ -701,27 +701,27 @@ msgstr "ショートカットオーバーレイ"
 
 #: src/Views/Layout.vala:88
 msgid "Caps Lock behavior:"
-msgstr "Caps Lock の動作:"
+msgstr "Caps Lock の挙動:"
 
 #: src/Views/Layout.vala:94
 msgid "as Backspace"
-msgstr "バックスペースとして動作"
+msgstr "バックスペース"
 
 #: src/Views/Layout.vala:95
 msgid "as Ctrl"
-msgstr "Ctrl として動作"
+msgstr "Ctrl"
 
 #: src/Views/Layout.vala:96
 msgid "as Escape"
-msgstr "Esc として動作"
+msgstr "Esc"
 
 #: src/Views/Layout.vala:97
 msgid "as Num Lock"
-msgstr "Num Lock として動作"
+msgstr "Num Lock"
 
 #: src/Views/Layout.vala:98
 msgid "as ⌘"
-msgstr "⌘ として動作"
+msgstr "⌘"
 
 #: src/Views/Layout.vala:99
 msgid "Swap with Ctrl"
@@ -777,7 +777,7 @@ msgstr "NICOLA-F バックスペース:"
 
 #: src/Views/Layout.vala:340
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "半角／全角を Esc として動作:"
+msgstr "半角／全角を Esc として扱う:"
 
 #: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
