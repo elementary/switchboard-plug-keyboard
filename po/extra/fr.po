@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-10-21 17:32+0000\n"
+"PO-Revision-Date: 2021-11-19 08:57+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/fr/>\n"
@@ -31,15 +31,15 @@ msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nouvelles fonctionnalités :"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr "Vue des raccourcis personnalisés redessinée"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr "Option d'activation du clavier virtuel dans l'onglet Dispositions"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
