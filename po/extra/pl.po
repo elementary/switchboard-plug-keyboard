@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-11-10 14:38+0000\n"
+"PO-Revision-Date: 2021-11-19 15:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pl/>\n"
@@ -30,15 +30,15 @@ msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nowe funkcje:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr "Przeprojektowano widok niestandardowych skrótów"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr "Dodano przełącznik klawiatury ekranowej w karcie układów"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
