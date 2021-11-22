@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-10 14:38+0000\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"PO-Revision-Date: 2021-11-19 15:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pl/>\n"
@@ -29,54 +29,68 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
+msgid "New features:"
+msgstr "Nowe funkcje:"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+msgid "Redesigned custom shortcuts view"
+msgstr "Przeprojektowano widok niestandardowych skrótów"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+msgid "On-screen keyboard switch in Layouts tab"
+msgstr "Dodano przełącznik klawiatury ekranowej w karcie układów"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:54
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:61
+msgid "Updated translations"
+msgstr "Zaktualizowane tłumaczenia"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr ""
 "Upewniono się, że IBus uruchamia się automatycznie przy zalogowaniu jeśli "
 "jest taka potrzeba"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
-msgid "Updated translations"
-msgstr "Zaktualizowane tłumaczenia"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Add Layout popover is now a dialog"
 msgstr "Popover Dodaj układ jest teraz oknem dialogowym"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
 msgid "Guarantee we always have at least one layout"
 msgstr "Gwarancja, że istnieje przynajmniej jeden układ"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
 msgid "Improvements to ibus and xkb layouts"
 msgstr "Ulepszenia dla układów ibus oraz xkb"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "Opis skrótu dla „Odtwarzaj” to teraz „Odtwarzaj/Pauza”"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Naprawiono problem gdzie niektóre skróty wyświetlane były niepoprawnie jako "
 "wyłączone"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Add a view to configure input methods"
 msgstr "Dodano widok do konfiguracji metod wejścia"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:45
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
 msgid "New \"Workspaces\" icon"
 msgstr "Nowa ikona „Obszarów roboczych”"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Usunięto Spację ze skrótów jednoklawiszowych"
