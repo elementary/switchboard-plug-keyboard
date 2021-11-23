@@ -1,3 +1,13 @@
+switchboard-plug-keyboard (2.6.0) bionic; urgency=medium
+
+  * Release 2.6.0 (#393)
+  * Update translation files
+  * Update translation template
+  * CustomTree.vala as ListBox (#373)
+  * Expose on-screen keyboard settings on Layout View (#390)
+
+ -- elementary OS Team <builds@elementary.io>  Tue, 23 Nov 2021 17:16:25 +0000
+
 switchboard-plug-keyboard (2.5.1) bionic; urgency=medium
 
   * Release 2.5.1 (#385)
