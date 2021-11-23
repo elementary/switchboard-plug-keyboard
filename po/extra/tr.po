@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-09-23 20:07+0000\n"
+"PO-Revision-Date: 2021-11-23 22:03+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/tr/>\n"
@@ -29,15 +29,15 @@ msgstr "Klavye davranışını, düzenini ve kısayollarını ayarlayın"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Yeni özellikler:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr " "
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr " "
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
