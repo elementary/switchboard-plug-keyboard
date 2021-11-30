@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-08-24 18:20+0000\n"
+"PO-Revision-Date: 2021-11-30 16:52+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/sk/>\n"
@@ -29,15 +29,15 @@ msgstr "Nastavujte správanie klávesnice, rozloženie a klávesové skratky"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr "Prerobený vzhľad zobrazenia vlastných skratiek"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr "Prepínač klávesnice na obrazovke v karte Rozloženie"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
@@ -57,6 +57,7 @@ msgstr "Aktualizované preklady"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr ""
+"Zabezpečené, že sa IBus automaticky spustí pri prihlásení, ak je to potrebné"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Add Layout popover is now a dialog"
