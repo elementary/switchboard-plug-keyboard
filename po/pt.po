@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2021-12-22 19:30+0000\n"
+"Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
 "Language: pt\n"
@@ -619,14 +619,12 @@ msgid "Embed preedit text in application window:"
 msgstr "Incorporar texto pré-editado na janela de aplicação:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Iniciar o Daemon IBus"
+msgstr "IBus Daemon"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Utilizar e gerir os métodos de entrada"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
@@ -734,16 +732,12 @@ msgid "Swap with Escape"
 msgstr "Trocar com Escape"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "On-screen Keyboard"
-msgstr "Alternar teclado no ecrã"
+msgstr "Teclado no ecrã"
 
 #: src/Views/Layout.vala:112
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show on-screen keyboard:"
-msgstr "Alternar teclado no ecrã"
+msgstr "Mostrar teclado no ecrã:"
 
 #: src/Views/Layout.vala:121
 msgid "On-screen keyboard settings…"
@@ -825,26 +819,20 @@ msgid "Move down"
 msgstr "Mover para baixo"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
-msgstr "Introduzir Comando"
+msgstr "Introduza um comando aqui"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "Atalho"
+msgstr "Definir novo atalho"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "Desativado"
+msgstr "Desativar"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Introduzir novo atalho…"
 
 #~ msgid "Command"
 #~ msgstr "Comando"
