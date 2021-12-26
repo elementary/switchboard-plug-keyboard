@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:01+0000\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
 "PO-Revision-Date: 2020-10-04 21:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -20,68 +20,68 @@ msgstr ""
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Keyboard"
 msgstr "鍵盤"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "調整鍵盤行為、鍵盤配置、和快捷鍵"
 
-#: src/Plug.vala:52 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106 src/Plug.vala:107
 msgid "Layout"
 msgstr "鍵盤配置"
 
-#: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
-#: src/Plug.vala:108
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111
 msgid "Input Method"
 msgstr ""
 
-#: src/Plug.vala:54 src/Plug.vala:109
+#: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
 msgstr "快捷鍵"
 
-#: src/Plug.vala:55 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
 msgid "Behavior"
 msgstr "行為"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Switch layout"
 msgstr "切換鍵盤配置"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 msgid "Compose Key"
 msgstr "組合鍵"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "⌘ 按鍵行為："
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 msgid "Caps Lock behavior"
 msgstr "Caps Lock 鍵行為"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines"
 msgstr "切換視窗"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110
 msgid "Show candidate window"
 msgstr ""
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Embed preedit text in application window"
 msgstr ""
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Repeat Keys"
 msgstr "重複按鍵"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Cursor Blinking"
 msgstr "游標閃爍"
 
@@ -118,7 +118,7 @@ msgstr "加入鍵盤配置"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
 msgid "Default"
 msgstr "預設"
 
@@ -528,20 +528,22 @@ msgstr "自訂"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "已停用"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr "Alt"
 
@@ -636,13 +638,21 @@ msgstr ""
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:388
+#: src/Views/InputMethod.vala:371
+msgid "IBus Daemon"
+msgstr ""
+
+#: src/Views/InputMethod.vala:374
+msgid "Use and manage input methods"
+msgstr ""
+
+#: src/Views/InputMethod.vala:437
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your input method"
 msgstr "請按鍵盤以測試您的鍵盤配置"
 
-#: src/Views/InputMethod.vala:391
+#: src/Views/InputMethod.vala:440
 #, fuzzy
 #| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
@@ -669,7 +679,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "兩個 Shift 鍵一起"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -693,15 +703,15 @@ msgstr "組合鍵："
 msgid "Menu"
 msgstr "選單"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
 msgid "Right Alt"
 msgstr "右側 Alt"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
 msgid "Right Ctrl"
 msgstr "右側 Ctrl"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
 msgid "Right ⌘"
 msgstr "右側 ⌘"
 
@@ -746,56 +756,72 @@ msgstr "和 Ctrl 互換"
 msgid "Swap with Escape"
 msgstr "和 Escape 互換"
 
-#: src/Views/Layout.vala:137
+#: src/Views/Layout.vala:107
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "On-screen Keyboard"
+msgstr "開關螢幕鍵盤"
+
+#: src/Views/Layout.vala:112
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "Show on-screen keyboard:"
+msgstr "開關螢幕鍵盤"
+
+#: src/Views/Layout.vala:121
+msgid "On-screen keyboard settings…"
+msgstr ""
+
+#: src/Views/Layout.vala:159
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Layout.vala:143
+#: src/Views/Layout.vala:166
 #, fuzzy
 #| msgid "Caps Lock"
 msgid "Caps Lock:"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:149
+#: src/Views/Layout.vala:173
 #, fuzzy
 #| msgid "as Num Lock"
 msgid "Num Lock:"
 msgstr "視為 Num Lock"
 
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
 msgstr "選擇第三層的按鍵："
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:298
 msgid "Left Alt"
 msgstr "左側 Alt"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:308
 msgid "Key to choose 5th level:"
 msgstr "選擇第五層的按鍵："
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:329
 msgid "Kana Lock:"
 msgstr "假名鎖定："
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:337
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace："
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:340
 #, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "全角半角按鍵視為 Escape："
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "諺文/漢字按鍵位於右側 Alt/Ctrl："
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:436
 msgid "Type to test your layout"
 msgstr "請按鍵盤以測試您的鍵盤配置"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:439
 msgid "Input Method is active"
 msgstr ""
 
@@ -826,17 +852,30 @@ msgstr "上移"
 msgid "Move down"
 msgstr "下移"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+#, fuzzy
+#| msgid "Enter Command"
+msgid "Enter a command here"
 msgstr "輸入指令"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "指令"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+#, fuzzy
+#| msgid "Shortcut"
+msgid "Set New Shortcut"
 msgstr "快捷鍵"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+#, fuzzy
+#| msgid "Disabled"
+msgid "Disable"
+msgstr "已停用"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr ""
+
+#~ msgid "Command"
+#~ msgstr "指令"
 
 #~ msgid "Minimize"
 #~ msgstr "最小化"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-07-14 21:01+0000\n"
-"PO-Revision-Date: 2021-07-05 13:54+0000\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"PO-Revision-Date: 2021-11-01 21:04+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -21,65 +21,65 @@ msgstr ""
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
-#: src/Plug.vala:35
+#: src/Plug.vala:38
 msgid "Keyboard"
 msgstr "Клавіатура"
 
-#: src/Plug.vala:36
+#: src/Plug.vala:39
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Налаштування поведінки клавіатури, розкладки та комбінації клавіш"
 
-#: src/Plug.vala:52 src/Plug.vala:100 src/Plug.vala:101 src/Plug.vala:102
-#: src/Plug.vala:103 src/Plug.vala:104
+#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106 src/Plug.vala:107
 msgid "Layout"
 msgstr "Розкладка"
 
-#: src/Plug.vala:53 src/Plug.vala:105 src/Plug.vala:106 src/Plug.vala:107
-#: src/Plug.vala:108
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111
 msgid "Input Method"
 msgstr "Метод введення"
 
-#: src/Plug.vala:54 src/Plug.vala:109
+#: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
 msgstr "Комбінації клавіш"
 
-#: src/Plug.vala:55 src/Plug.vala:110 src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
 msgid "Behavior"
 msgstr "Поведінка"
 
-#: src/Plug.vala:101
+#: src/Plug.vala:104
 msgid "Switch layout"
 msgstr "Перемкнути розкладку"
 
-#: src/Plug.vala:102
+#: src/Plug.vala:105
 msgid "Compose Key"
 msgstr "Клавіша злагодження"
 
-#: src/Plug.vala:103
+#: src/Plug.vala:106
 msgid "⌘ key behavior"
 msgstr "Поведінка ⌘"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:107
 msgid "Caps Lock behavior"
 msgstr "Поведінка Caps Lock"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:109
 msgid "Switch engines"
 msgstr "Перемкнути рушії"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:110
 msgid "Show candidate window"
 msgstr "Показати вікно-кандидат"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:111
 msgid "Embed preedit text in application window"
 msgstr "Вставити попередньо змінений текст у вікно застосунку"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:114
 msgid "Repeat Keys"
 msgstr "Повторення клавіш"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:115
 msgid "Cursor Blinking"
 msgstr "Блимання курсора"
 
@@ -111,7 +111,7 @@ msgstr "Додати розкладку"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
 msgid "Default"
 msgstr "Типово"
 
@@ -509,20 +509,22 @@ msgstr "Власні"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "Вимкнено"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr "Alt"
 
@@ -616,11 +618,19 @@ msgstr "Завжди показувати"
 msgid "Embed preedit text in application window:"
 msgstr "Вставити попередньо змінений текст у вікно застосунку:"
 
-#: src/Views/InputMethod.vala:388
+#: src/Views/InputMethod.vala:371
+msgid "IBus Daemon"
+msgstr "IBus Daemon"
+
+#: src/Views/InputMethod.vala:374
+msgid "Use and manage input methods"
+msgstr "Використовуйте та керуйте методами введення"
+
+#: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
 msgstr "Введіть щось для перевірки методу введення"
 
-#: src/Views/InputMethod.vala:391
+#: src/Views/InputMethod.vala:440
 msgid "A keyboard layout is active"
 msgstr "Розкладка клавіатури активна"
 
@@ -645,7 +655,7 @@ msgstr "Alt + Пробіл"
 msgid "Both Shift keys together"
 msgstr "Обидві клавіші Shift разом"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -663,21 +673,21 @@ msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:58
 msgid "Compose key:"
-msgstr "Клавіша Compose:"
+msgstr "Клавіша злагодження:"
 
 #: src/Views/Layout.vala:64
 msgid "Menu"
 msgstr "Меню"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
 msgid "Right Alt"
 msgstr "Правий Alt"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
 msgid "Right Ctrl"
 msgstr "Правий Ctrl"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
 msgid "Right ⌘"
 msgstr "Права ⌘"
 
@@ -721,51 +731,63 @@ msgstr "Поміняти з Ctrl"
 msgid "Swap with Escape"
 msgstr "Поміняти з Escape"
 
-#: src/Views/Layout.vala:137
-msgid "Show in Panel"
-msgstr "Показати на панелі"
+#: src/Views/Layout.vala:107
+msgid "On-screen Keyboard"
+msgstr "Екранна клавіатура"
 
-#: src/Views/Layout.vala:143
+#: src/Views/Layout.vala:112
+msgid "Show on-screen keyboard:"
+msgstr "Показати екранну клавіатуру:"
+
+#: src/Views/Layout.vala:121
+msgid "On-screen keyboard settings…"
+msgstr "Екранна клавіатура…"
+
+#: src/Views/Layout.vala:159
+msgid "Show in Panel"
+msgstr "Показувати на панелі"
+
+#: src/Views/Layout.vala:166
 msgid "Caps Lock:"
 msgstr "Caps Lock:"
 
-#: src/Views/Layout.vala:149
+#: src/Views/Layout.vala:173
 msgid "Num Lock:"
 msgstr "Num Lock:"
 
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
 msgstr "Клавіша вибору 3-го рівня:"
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:298
 msgid "Left Alt"
 msgstr "Лівий Alt"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:308
 msgid "Key to choose 5th level:"
 msgstr "Клавіша вибору 5-го рівня:"
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:329
 msgid "Kana Lock:"
 msgstr "Kana Lock (японська азбука):"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:337
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:340
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Ханкаку Зенкаку як Escape:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Клавіші Hangul/Hanja на правому Alt/Ctrl:"
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:436
 msgid "Type to test your layout"
 msgstr "Друкуйте для перевірки розкладки"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:439
 msgid "Input Method is active"
 msgstr "Метод введення активний"
 
@@ -796,17 +818,24 @@ msgstr "Підняти"
 msgid "Move down"
 msgstr "Перемістити нижче"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
-msgstr "Ввести команду"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+msgid "Enter a command here"
+msgstr "Введіть команду сюди"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Команда"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+msgid "Set New Shortcut"
+msgstr "Вказати нову комбінацію клавіш"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr "Комбінація клавіш"
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+msgid "Disable"
+msgstr "Вимкнути"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr "Ввести нову комбінацію клавіш…"
+
+#~ msgid "Command"
+#~ msgstr "Команда"
 
 #~ msgid "Show candidate window:"
 #~ msgstr "Показати вікно-кандидат:"

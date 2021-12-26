@@ -24,6 +24,9 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     private Gtk.Stack stack;
 
     public Plug () {
+        GLib.Intl.bindtextdomain (Constants.GETTEXT_PACKAGE, Constants.LOCALEDIR);
+        GLib.Intl.bind_textdomain_codeset (Constants.GETTEXT_PACKAGE, "UTF-8");
+
         var settings = new Gee.TreeMap<string, string?> (null, null);
         settings.set ("input/keyboard", "Layout");
         settings.set ("input/keyboard/layout", "Layout");
