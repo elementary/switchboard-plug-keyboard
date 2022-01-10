@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2022-01-10 12:58+0000\n"
+"PO-Revision-Date: 2022-01-10 13:13+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
@@ -156,7 +156,7 @@ msgstr "Instaluje se %s"
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr "Odebírání %s"
+msgstr "Odebírá se %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
@@ -608,10 +608,8 @@ msgid "Switch engines:"
 msgstr "Přepnout enginy:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Zobrazit v panelu"
+msgstr "Zobrazit panel vlastnosti:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -755,10 +753,8 @@ msgid "On-screen Keyboard"
 msgstr "Přepínání klávenice na obrazovce"
 
 #: src/Views/Layout.vala:112
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show on-screen keyboard:"
-msgstr "Přepínání klávenice na obrazovce"
+msgstr "Zobrazit klávesnici na obrazovce:"
 
 #: src/Views/Layout.vala:121
 msgid "On-screen keyboard settings…"
