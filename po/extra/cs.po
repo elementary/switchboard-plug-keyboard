@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
 "PO-Revision-Date: 2022-01-10 12:51+0000\n"
-"Last-Translator: Tadeáš Cvrček <tcvrcek@gmail.com>\n"
+"Last-Translator: hnklp <hynek.puta@seznam.cz>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/cs/>\n"
 "Language: cs\n"
@@ -77,6 +77,7 @@ msgstr "Popisek tlačítka \"Přehrát\" je nově \"Přehrát/Pozastavit\""
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
+"Opravena chyba, díky které byly některé zkratky chybně označeny jako zakázané"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Add a view to configure input methods"
