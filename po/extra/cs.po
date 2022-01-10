@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2020-08-25 06:13+0000\n"
+"PO-Revision-Date: 2022-01-10 12:16+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/cs/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -29,7 +29,7 @@ msgstr "Nastavit chování klávesnice, rozložení a klávesové zkratky"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
 msgid "New features:"
-msgstr ""
+msgstr "Nové funkce:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Redesigned custom shortcuts view"
@@ -43,7 +43,7 @@ msgstr ""
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
 msgid "Minor updates:"
-msgstr ""
+msgstr "Drobné aktualizace:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
