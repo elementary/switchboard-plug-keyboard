@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
 "PO-Revision-Date: 2022-01-10 12:53+0000\n"
-"Last-Translator: Tadeáš Cvrček <tcvrcek@gmail.com>\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
 "Language: cs\n"
@@ -146,7 +146,7 @@ msgstr "Jazyky"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr "Instalovat"
+msgstr "Nainstalovat"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
