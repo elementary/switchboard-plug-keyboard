@@ -146,7 +146,7 @@ msgstr "Jazyky"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr "Nainstalovat"
+msgstr "Instalovat"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
