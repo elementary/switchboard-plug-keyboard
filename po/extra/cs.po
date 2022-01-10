@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2022-01-10 13:13+0000\n"
+"PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/cs/>\n"
@@ -33,11 +33,11 @@ msgstr "Nové funkce:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr "Předělané zobrazení uživatelsky určených zkratek"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr "Přepínač klávesnice na obrazovce v panelu Rozložení"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
@@ -57,18 +57,20 @@ msgstr "Aktualizovány překlady"
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr ""
+"Zajištěno že služba IBus se v případě potřeby automaticky spustí při "
+"přihlášení"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
 msgid "Add Layout popover is now a dialog"
-msgstr ""
+msgstr "Vyskakovací okno rozložení je nyní dialog"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
 msgid "Guarantee we always have at least one layout"
-msgstr ""
+msgstr "Zajištěno, že vždy zůstane alespoň jedno rozložení"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
 msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgstr "Vylepšení ohledně ibus a xkb rozložení"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
