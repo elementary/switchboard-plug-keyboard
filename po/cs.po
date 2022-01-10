@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2022-01-10 13:13+0000\n"
+"PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
@@ -87,20 +87,16 @@ msgid "Input Language"
 msgstr "Vstupní jazyk"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Rozložení"
+msgstr "Seznam rozložení"
 
 #: src/Dialogs/AddLayoutDialog.vala:38
 msgid "Search input language"
 msgstr "Vyhledejte vstupní jazyk"
 
 #: src/Dialogs/AddLayoutDialog.vala:93
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Rozložení"
+msgstr "Náhled rozvržení"
 
 #: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -196,7 +192,7 @@ msgstr "Přepnout maximalizaci"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Skrýt"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -574,9 +570,6 @@ msgid "IBus Daemon is not running"
 msgstr "Proces služby IBus není spuštěný"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -589,8 +582,6 @@ msgstr "Spustit proces služby IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
 msgstr "Nepodařilo se spustit proces služby IBus"
 
@@ -628,26 +619,20 @@ msgid "Embed preedit text in application window:"
 msgstr "Vestavět text před úpravou do okna aplikace:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Spustit proces služby IBus"
+msgstr "Proces služby IBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Používat a spravovat vstupní metody"
 
 #: src/Views/InputMethod.vala:437
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "Pro vyzkoušení rozložení pište zde"
+msgstr "Vstupní metodu si vyzkoušíte psaním sem"
 
 #: src/Views/InputMethod.vala:440
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "Zobrazit rozložení klávesnice"
+msgstr "Rozložení klávesnice je aktivní"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:39
@@ -747,10 +732,8 @@ msgid "Swap with Escape"
 msgstr "Vyměnit s klávesou Esc"
 
 #: src/Views/Layout.vala:107
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "On-screen Keyboard"
-msgstr "Přepínání klávenice na obrazovce"
+msgstr "Klávesnice na obrazovce"
 
 #: src/Views/Layout.vala:112
 msgid "Show on-screen keyboard:"
@@ -805,10 +788,8 @@ msgid "Type to test your layout"
 msgstr "Pro vyzkoušení rozložení pište zde"
 
 #: src/Views/Layout.vala:439
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Vstupní metoda"
+msgstr "Vstupní metoda je aktivní"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
@@ -838,26 +819,20 @@ msgid "Move down"
 msgstr "Posunout dolů"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
-msgstr "Vložte příkaz"
+msgstr "Sem vložte příkaz"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "Zkratka"
+msgstr "Nová zkratka"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "Vypnuto"
+msgstr "Vypnout"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Zadejte novou zkratku…"
 
 #~ msgid "Command"
 #~ msgstr "Příkaz"
