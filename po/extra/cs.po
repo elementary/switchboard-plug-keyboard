@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
 "PO-Revision-Date: 2022-01-10 12:50+0000\n"
-"Last-Translator: hnklp <hynek.puta@seznam.cz>\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/cs/>\n"
 "Language: cs\n"
@@ -43,7 +43,7 @@ msgstr ""
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
 msgid "Minor updates:"
-msgstr "Malé změny:"
+msgstr "Drobné aktualizace:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
