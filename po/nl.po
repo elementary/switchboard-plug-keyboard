@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-01-15 22:24+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
@@ -192,7 +192,7 @@ msgstr "Schakel maximalisatie"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Verbergen"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
