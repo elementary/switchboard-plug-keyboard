@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
 "PO-Revision-Date: 2022-01-15 22:24+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
@@ -72,7 +72,7 @@ msgstr "Toon candidate venster"
 
 #: src/Plug.vala:111
 msgid "Embed preedit text in application window"
-msgstr "Verwerk voorbewerkte tekst in het toepassing venster"
+msgstr "Verwerk voorbewerkte tekst in het applicatievenster"
 
 #: src/Plug.vala:114
 msgid "Repeat Keys"
@@ -392,7 +392,7 @@ msgstr "Kopieer een gebied naar klembord"
 
 #: src/Shortcuts/List.vala:108
 msgid "Applications"
-msgstr "Toepassingen"
+msgstr "Applicaties"
 
 #: src/Shortcuts/List.vala:109
 msgid "Email"
