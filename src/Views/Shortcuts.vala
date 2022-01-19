@@ -43,6 +43,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         construct {
             CustomShortcutSettings.init ();
+            ApplicationShortcutSettings.init ();
 
             list = new List ();
             settings = new Shortcuts.Settings ();
@@ -99,7 +100,25 @@ namespace Pantheon.Keyboard.Shortcuts {
             attach (switcher_frame, 0, 0);
             attach (frame, 1, 0, 2, 1);
 
-            for (int id = 0; id < SectionID.CUSTOM; id++) {
+            for (int id = 0; id < SectionID.APPS; id++) {
+                trees += new Tree ((SectionID) id);
+            }
+
+            if (ApplicationShortcutSettings.available) {
+                var application_tree = new ApplicationTree ();
+                application_tree.row_selected.connect (row_selected);
+                application_tree.row_unselected.connect (row_unselected);
+
+                //  application_tree.command_editing_started.connect (disable_add);
+                //  application_tree.command_editing_ended.connect (enable_add);
+
+                add_button.clicked.connect (() => application_tree.on_add_clicked ());
+                remove_button.clicked.connect (() => application_tree.on_remove_clicked ());
+
+                trees += application_tree;
+            }
+
+            for (int id = SectionID.APPS + 1; id < SectionID.CUSTOM; id++) {
                 trees += new Tree ((SectionID) id);
             }
 
@@ -120,8 +139,8 @@ namespace Pantheon.Keyboard.Shortcuts {
                 var index = row.get_index ();
                 stack.visible_child = trees[index];
 
-                actionbar.no_show_all = index != SectionID.CUSTOM;
-                actionbar.visible = index == SectionID.CUSTOM;
+                actionbar.no_show_all = index != SectionID.CUSTOM && index != SectionID.APPS;
+                actionbar.visible = index == SectionID.CUSTOM || index == SectionID.APPS;
                 show_all ();
             });
         }
