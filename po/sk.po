@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-11-18 19:05+0000\n"
-"PO-Revision-Date: 2021-11-30 16:52+0000\n"
+"PO-Revision-Date: 2022-03-02 17:20+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sk/>\n"
@@ -256,7 +256,7 @@ msgstr "Pracovné plochy"
 
 #: src/Shortcuts/List.vala:68
 msgid "Multitasking View"
-msgstr "Paralelné zobrazenie"
+msgstr "Zobrazenie úloh"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
