@@ -214,7 +214,7 @@ namespace Pantheon.Keyboard {
                 case "io.elementary.wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
-                case "show-desktop":
+                case "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1":
                     overlay_key_combo.active = 2;
                     break;
                 case "io.elementary.shortcut-overlay":
