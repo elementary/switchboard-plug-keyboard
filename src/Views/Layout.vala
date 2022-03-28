@@ -244,7 +244,7 @@ namespace Pantheon.Keyboard {
                 } else if (combo_active == 1) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.wingpanel --toggle-indicator=app-launcher");
                 } else if (combo_active == 2) {
-                    gala_behavior_settings.set_string ("overlay-action", MultitaskingView);
+                    gala_behavior_settings.set_string ("overlay-action", MULTITASKING_VIEW_COMMAND);
                 } else if (combo_active == 3) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
