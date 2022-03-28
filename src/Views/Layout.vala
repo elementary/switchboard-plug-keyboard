@@ -24,6 +24,7 @@ namespace Pantheon.Keyboard {
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
+        private const string MultitaskingView = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
 
         construct {
             settings = SourceSettings.get_instance ();
@@ -214,7 +215,7 @@ namespace Pantheon.Keyboard {
                 case "io.elementary.wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
-                case "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1":
+                case MultitaskingView:
                     overlay_key_combo.active = 2;
                     break;
                 case "io.elementary.shortcut-overlay":
@@ -243,7 +244,7 @@ namespace Pantheon.Keyboard {
                 } else if (combo_active == 1) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.wingpanel --toggle-indicator=app-launcher");
                 } else if (combo_active == 2) {
-                    gala_behavior_settings.set_string ("overlay-action", "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1");
+                    gala_behavior_settings.set_string ("overlay-action", MultitaskingView);
                 } else if (combo_active == 3) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
