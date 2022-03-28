@@ -24,7 +24,7 @@ namespace Pantheon.Keyboard {
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
-        private const string MultitaskingView = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
+        private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
 
         construct {
             settings = SourceSettings.get_instance ();
