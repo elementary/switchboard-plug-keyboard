@@ -215,7 +215,7 @@ namespace Pantheon.Keyboard {
                 case "io.elementary.wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
-                case MultitaskingView:
+                case MULTITASKING_VIEW_COMMAND:
                     overlay_key_combo.active = 2;
                     break;
                 case "io.elementary.shortcut-overlay":
