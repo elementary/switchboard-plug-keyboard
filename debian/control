@@ -19,7 +19,11 @@ Homepage: https://github.com/elementary/switchboard-plug-keyboard
 
 Package: switchboard-plug-keyboard
 Architecture: any
-Depends: ibus, xkb-data, ${misc:Depends}, ${shlibs:Depends}
+Depends: gala,
+         ibus,
+         xkb-data,
+         ${misc:Depends},
+         ${shlibs:Depends}
 Enhances: switchboard
 Description: Switchboard plug for keyboard settings
  This plug can be used to change several keyboard settings, for example the
