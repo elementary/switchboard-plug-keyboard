@@ -7,7 +7,7 @@
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
   <releases>
-    <release version="2.7.0" date="2022-04-05" urgency="medium">
+    <release version="2.7.0" date="2022-04-06" urgency="medium">
       <description>
         <p>New features:</p>
         <ul>
