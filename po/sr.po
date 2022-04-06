@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-02-17 13:39+0000\n"
-"Last-Translator: Мирослав Николић <miroslavnikolic@rocketmail.com>\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"PO-Revision-Date: 2021-11-01 17:20+0000\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sr/>\n"
 "Language: sr\n"
@@ -110,7 +110,7 @@ msgstr "Додај распоред"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
 msgid "Default"
 msgstr "Основно"
 
@@ -508,20 +508,22 @@ msgstr "Произвољно"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "Искључен"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr "Шифт"
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ктрл"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr "Алт"
 
@@ -664,7 +666,7 @@ msgstr "Алт + Размак"
 msgid "Both Shift keys together"
 msgstr "Оба тастера шифт заједно"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
 msgid "Caps Lock"
 msgstr "Закључај слова"
 
@@ -688,15 +690,15 @@ msgstr "Саставни тастер:"
 msgid "Menu"
 msgstr "Изборник"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
 msgid "Right Alt"
 msgstr "Десни Алт"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
 msgid "Right Ctrl"
 msgstr "Десни Ктрл"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
 msgid "Right ⌘"
 msgstr "Десни ⌘"
 
@@ -740,51 +742,67 @@ msgstr "Замени са Ктрл"
 msgid "Swap with Escape"
 msgstr "Замени са „Escape“"
 
-#: src/Views/Layout.vala:137
+#: src/Views/Layout.vala:107
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "On-screen Keyboard"
+msgstr "Окини тастатуру на екрану"
+
+#: src/Views/Layout.vala:112
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "Show on-screen keyboard:"
+msgstr "Окини тастатуру на екрану"
+
+#: src/Views/Layout.vala:121
+msgid "On-screen keyboard settings…"
+msgstr "Поставке тастатуре на екрану…"
+
+#: src/Views/Layout.vala:159
 msgid "Show in Panel"
 msgstr "Прикажи у панелу"
 
-#: src/Views/Layout.vala:143
+#: src/Views/Layout.vala:166
 msgid "Caps Lock:"
 msgstr "Закључај слова:"
 
-#: src/Views/Layout.vala:149
+#: src/Views/Layout.vala:173
 msgid "Num Lock:"
 msgstr "Закључај бројеве:"
 
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
 msgstr "Тастер за бирање трећег нивоа:"
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:298
 msgid "Left Alt"
 msgstr "Леви Алт"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:308
 msgid "Key to choose 5th level:"
 msgstr "Тастер за бирање петог нивоа:"
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:329
 msgid "Kana Lock:"
 msgstr "Кана закључавање:"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:337
 msgid "Nicola F Backspace:"
 msgstr "Никола Ф „Backspace“:"
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:340
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Ханкаку Зенкаку као „Escape“:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Хангул/Ханџа тастери на десном Алт-у/Ктрл-у:"
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:436
 msgid "Type to test your layout"
 msgstr "Куцајте да тестирате распоред"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:439
 #, fuzzy
 #| msgid "Input Method"
 msgid "Input Method is active"
@@ -817,17 +835,30 @@ msgstr "Помери горе"
 msgid "Move down"
 msgstr "Помери доле"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+#, fuzzy
+#| msgid "Enter Command"
+msgid "Enter a command here"
 msgstr "Унеси наредбу"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Наредба"
-
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+#, fuzzy
+#| msgid "Shortcut"
+msgid "Set New Shortcut"
 msgstr "Пречица"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+#, fuzzy
+#| msgid "Disabled"
+msgid "Disable"
+msgstr "Искључен"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr ""
+
+#~ msgid "Command"
+#~ msgstr "Наредба"
 
 #~ msgid "Show candidate window:"
 #~ msgstr "Прикажи прозор кандидата:"

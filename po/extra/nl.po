@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2020-10-27 06:15+0000\n"
-"Last-Translator: Jaimie85 <alsemgeest@gmail.com>\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"PO-Revision-Date: 2022-01-15 22:24+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
+"X-Generator: Weblate 4.4.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -28,46 +28,67 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configureer gedrag, indeling en sneltoetsen van het toetsenbord"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-msgid "Minor updates:"
-msgstr ""
+msgid "New features:"
+msgstr "Nieuwe functionaliteit:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Add Layout popover is now a dialog"
-msgstr "De Toevoegen Layout pop-up is nu een dialoogvenster"
+msgid "Redesigned custom shortcuts view"
+msgstr "Het overzicht van aangepaste sneltoetsen is bijgewerkt"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "Guarantee we always have at least one layout"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-msgid "Improvements to ibus and xkb layouts"
-msgstr ""
+msgid "On-screen keyboard switch in Layouts tab"
+msgstr "Schermtoetsenbord schakel in toetsenbordindelingen tabblad"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
+msgid "Minor updates:"
+msgstr "Kleine updates:"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:54
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:61
 msgid "Updated translations"
 msgstr "Bijgewerkte vertalingen"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr "Garandeer dat IBus automatisch start zo nodig wanneer u inlogt"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+msgid "Add Layout popover is now a dialog"
+msgstr "De Toevoegen Layout pop-up is nu een dialoogvenster"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+msgid "Guarantee we always have at least one layout"
+msgstr ""
+"Garandeer dat we altijd in ieder geval een enkele toetsenbordindeling hebben"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+msgid "Improvements to ibus and xkb layouts"
+msgstr "Verbeteringen aan ibus en xkb indelingen"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "De beschrijving voor de snelkoppeling \"Play\" is nu \"Play/Pause\""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Lost een probleem op waarbij sommige snelkoppelingen foutief als inactief "
 "weergegeven werden"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Add a view to configure input methods"
 msgstr "Een weergave toegevoegd om inputmethoden te configureren"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
 msgid "New \"Workspaces\" icon"
 msgstr "Nieuw “bureaubladen” icoon"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
 msgid "Exclude Space from single-key shortcuts"
 msgstr "De spatiebalk is uitgesloten van een-toets sneltoetsen"

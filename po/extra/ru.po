@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-08-14 01:28+0000\n"
-"Last-Translator: Nikita Kharchenko <m4r5hdev@gmail.com>\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"PO-Revision-Date: 2021-12-10 18:18+0000\n"
+"Last-Translator: DartDeaDia <dartdeadia@protonmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ru/>\n"
 "Language: ru\n"
@@ -29,48 +29,68 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Настройка поведения клавиатуры, раскладки и сочетаний клавиш"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+msgid "New features:"
+msgstr "Новые возможности:"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+msgid "Redesigned custom shortcuts view"
+msgstr "Переработан внешний вид раздела пользовательских сочетаний клавиш"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+msgid "On-screen keyboard switch in Layouts tab"
+msgstr "Переключатель экранной клавиатуры во вкладке раскладки"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
 msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Add Layout popover is now a dialog"
-msgstr "Окно добавления раскладки теперь является диалоговым окном"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "Guarantee we always have at least one layout"
-msgstr "Гарантируем у нас всегда есть хотя бы одна раскладка"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-msgid "Improvements to ibus and xkb layouts"
-msgstr "Улучшения в макетах ibus и xkb"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:54
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:61
 msgid "Updated translations"
 msgstr "Обновлены переводы"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr "Теперь IBus запускается автоматически при входе, когда это необходимо"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+msgid "Add Layout popover is now a dialog"
+msgstr "Окно добавления раскладки теперь является диалоговым окном"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+msgid "Guarantee we always have at least one layout"
+msgstr "Гарантируем у нас всегда есть хотя бы одна раскладка"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+msgid "Improvements to ibus and xkb layouts"
+msgstr "Улучшения в макетах ibus и xkb"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
 "Название сочетания клавиш «Воспроизведение» теперь называется "
 "«Воспроизведение/Пауза»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Исправлена проблема, когда некоторые сочетания клавиш неправильно "
 "отображались как отключенные"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Add a view to configure input methods"
 msgstr "Добавлено представление для настройки методов ввода"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
 msgid "New \"Workspaces\" icon"
 msgstr "Новый значок «Рабочих пространств»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Пробел исключен из горячих клавиш состоящих из одной клавиши"

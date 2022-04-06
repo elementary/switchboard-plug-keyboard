@@ -17,284 +17,406 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
+class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
+    public signal void row_unselected ();
+    public bool is_editing { get; set; default = false; }
 
-    private class CustomTree : Gtk.Viewport, DisplayTree {
-        private static string enter_command = _("Enter Command");
+    construct {
+        hexpand = true;
+        load_and_display_custom_shortcuts ();
+        selection_mode = Gtk.SelectionMode.BROWSE;
 
-        Gtk.Grid container;
-        Gtk.CellRendererText cell_desc;
-        Gtk.CellRendererAccel cell_edit;
-        Gtk.TreeView tv;
+        realize.connect (() => {
+            select_row (get_row_at_index (0));
+        });
+    }
 
-        Gtk.CellEditable command_editable;
-
-        enum Column {
-            COMMAND,
-            SHORTCUT,
-            SCHEMA,
-            COUNT
+    public void load_and_display_custom_shortcuts () {
+        foreach (Gtk.Widget child in get_children ()) {
+            child.destroy ();
         }
 
-        Gtk.ListStore list_store {
-            get { return tv.model as Gtk.ListStore; }
+        foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
+            add (new CustomShortcutRow (custom_shortcut));
         }
+    }
 
-        public signal void row_selected ();
-        public signal void row_unselected ();
-
-        public signal void command_editing_started ();
-        public signal void command_editing_ended ();
-
-        public CustomTree () {
-            setup_gui ();
-            load_and_display_custom_shortcuts ();
-            connect_signals ();
-        }
-
-        void setup_gui () {
-            container = new Gtk.Grid ();
-
-            tv = new Gtk.TreeView ();
-
-            var store = new Gtk.ListStore (Column.COUNT , typeof (string),
-                                           typeof (string),
-                                           typeof (string));
-
-            cell_desc = new Gtk.CellRendererText ();
-            cell_edit = new Gtk.CellRendererAccel ();
-
-            cell_desc.editable = true;
-            cell_edit.editable = true;
-            cell_edit.accel_mode = Gtk.CellRendererAccelMode.OTHER;
-
-            tv.set_model (store);
-
-            tv.insert_column_with_attributes (-1, _("Command"), cell_desc, "markup", Column.COMMAND);
-            tv.insert_column_with_attributes (-1, _("Shortcut"), cell_edit, "text", Column.SHORTCUT);
-
-            tv.headers_visible = false;
-            tv.expand = true;
-            tv.get_column (0).expand = true;
-
-            container.attach (tv, 0, 1, 1, 1);
-
-            add (container);
-        }
-
-        public void load_and_display_custom_shortcuts () {
-            Gtk.TreeIter iter;
-            var store = list_store;
-
-            store.clear ();
-
-            foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
-                var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
-
-                store.append (out iter);
-                store.set (iter,
-                           Column.COMMAND, command_to_display (custom_shortcut.command),
-                           Column.SHORTCUT, shortcut.to_readable (),
-                           Column.SCHEMA, custom_shortcut.relocatable_schema
-                    );
-            }
-        }
-
-        void connect_signals () {
-            tv.button_press_event.connect ((event) => {
-                if (event.window != tv.get_bin_window ())
-                    return false;
-                Gtk.TreePath path;
-                Gtk.TreeViewColumn col;
-
-                if (tv.get_path_at_pos ((int) event.x, (int) event.y,
-                                        out path, out col, null, null)) {
-                    tv.grab_focus ();
-                    tv.set_cursor (path, col, true);
-                }
-
-                return true;
-            });
-
-            var selection = tv.get_selection ();
-            selection.changed.connect (() => {
-                if (selection.count_selected_rows () > 0) {
-                    row_selected ();
-                } else {
-                    row_unselected ();
-                }
-            });
-
-            tv.key_press_event.connect (tree_key_press);
-
-            cell_edit.accel_edited.connect ((path, key, mods) => {
-                var shortcut = new Shortcut (key, mods);
-                change_shortcut (path, shortcut);
-            });
-
-            cell_edit.accel_cleared.connect ((path) => {
-                change_shortcut (path, (Shortcut) null);
-            });
-
-            cell_desc.edited.connect ((path, new_text) => {
-                change_command (path, new_text);
-                command_editing_ended ();
-            });
-            cell_desc.editing_canceled.connect (() => {
-                command_editing_ended ();
-                command_editing_canceled ();
-            });
-
-            cell_desc.editing_started.connect ((cell_editable, path) => {
-                // store a referene to retreve text later
-                command_editable = cell_editable;
-                command_editing_started ();
-            });
-        }
-
-        string command_to_display (string? command) {
-            if (command == null || command.strip () == "")
-                return "<i>" + enter_command + "</i>";
-            return GLib.Markup.escape_text (command);
-        }
-
-        public void on_add_clicked () {
-            var store = tv.model as Gtk.ListStore;
-            Gtk.TreeIter iter;
-
+    private void add_row (CustomShortcut? shortcut) {
+        CustomShortcutRow new_row;
+        if (shortcut != null) {
+            new_row = new CustomShortcutRow (shortcut);
+        } else {
             var relocatable_schema = CustomShortcutSettings.create_shortcut ();
-
-            store.append (out iter);
-            store.set (iter, Column.COMMAND, command_to_display (null));
-            store.set (iter, Column.SHORTCUT, (new Shortcut.parse ("")).to_readable ());
-            store.set (iter, Column.SCHEMA, relocatable_schema);
-
-            var path = tv.model.get_path (iter);
-            var col = tv.get_column (Column.COMMAND);
-            tv.set_cursor (path, col, true);
+            CustomShortcut new_custom_shortcut = {"", "", relocatable_schema};
+            new_row = new CustomShortcutRow (new_custom_shortcut);
         }
 
-        public void on_remove_clicked () {
-            Gtk.TreeIter iter;
-            Gtk.TreePath path;
+        add (new_row);
+        select_row (new_row);
+    }
 
-            tv.get_cursor (out path, null);
-            tv.model.get_iter (out iter, path);
-            remove_shorcut_for_iter (iter);
+    public void on_add_clicked () {
+        add_row (null);
+        unselect_all ();
+    }
+
+    public void on_remove_clicked () {
+        var selected_row = get_selected_row ();
+        var selected_index = 0;
+        if (selected_row != null) {
+            selected_index = selected_row.get_index ();
+            var custom_shortcut_row = (CustomShortcutRow)selected_row;
+            CustomShortcutSettings.remove_shortcut (custom_shortcut_row.relocatable_schema);
+            selected_row.destroy ();
         }
 
-        void change_command (string path, string new_text) {
-            Gtk.TreeIter iter;
-            GLib.Value relocatable_schema;
+        select_row (get_row_at_index (selected_index - 1));
+    }
 
-            tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
+    // Display tree interface methods
+    public bool shortcut_conflicts (Shortcut shortcut, out string name) {
+        return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
+    }
 
-            if (new_text == enter_command) {
-                debug (new_text);
-                // no changes were made, remove row
-                remove_shorcut_for_iter (iter);
+    public void reset_shortcut (Shortcut shortcut) {
+        string relocatable_schema;
+        CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
+        CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
+        load_and_display_custom_shortcuts ();
+    }
+    // -----------------------------
 
-            } else {
-                tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-                CustomShortcutSettings.edit_command ((string) relocatable_schema, new_text);
-                load_and_display_custom_shortcuts ();
+    private class CustomShortcutRow : Gtk.ListBoxRow {
+        private const string BINDING_KEY = "binding";
+        private const string COMMAND_KEY = "command";
+        private const string NAME_KEY = "name";
+        private Gtk.Entry command_entry;
+        private Variant previous_binding;
+        private Gdk.Device? keyboard_device = null;
+
+        public string relocatable_schema { get; construct; }
+        public GLib.Settings gsettings { get; construct; }
+        private bool is_editing_shortcut = false;
+
+        private Gtk.ModelButton clear_button;
+        private Gtk.Grid keycap_grid;
+        private Gtk.EventBox keycap_eventbox;
+        private Gtk.EventBox status_eventbox;
+        private Gtk.Label status_label;
+        private Gtk.Stack keycap_stack;
+        public CustomShortcutRow (CustomShortcut _custom_shortcut) {
+            Object (
+                relocatable_schema: _custom_shortcut.relocatable_schema,
+                gsettings: CustomShortcutSettings.get_gsettings_for_relocatable_schema (_custom_shortcut.relocatable_schema)
+            );
+
+            command_entry.text = _custom_shortcut.command;
+        }
+
+        construct {
+            var display = Gdk.Display.get_default ();
+            if (display != null) {
+                var seat = display.get_default_seat ();
+                if (seat != null) {
+                    keyboard_device = seat.get_keyboard ();
+                }
+            }
+
+            command_entry = new Gtk.Entry () {
+                max_width_chars = 500,
+                has_frame = false,
+                hexpand = true,
+                halign = Gtk.Align.START,
+                placeholder_text = _("Enter a command here")
+            };
+
+            status_label = new Gtk.Label (_("Disabled")) {
+                halign = Gtk.Align.END
+            };
+            status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            status_label.add_events (Gdk.EventMask.ALL_EVENTS_MASK);
+
+            status_eventbox = new Gtk.EventBox ();
+            status_eventbox.add (status_label);
+
+            keycap_grid = new Gtk.Grid () {
+                column_spacing = 6,
+                valign = Gtk.Align.CENTER,
+                halign = Gtk.Align.END
+            };
+            keycap_eventbox = new Gtk.EventBox ();
+            keycap_eventbox.add (keycap_grid);
+
+            // We create a dummy grid representing a long four key accelerator to force the stack in each row to the same size
+            // This seems a bit hacky but it is hard to find a solution across rows not involving a hard-coded width value
+            // (which would not take into account internationalization). This grid is never shown but controls the size of
+            // of the homogeneous stack.
+            var four_key_grid = new Gtk.Grid () { // must have same format as keycap_grid
+                column_spacing = 6,
+                valign = Gtk.Align.CENTER,
+                halign = Gtk.Align.END
+            };
+
+            build_keycap_grid ("<Shift><Alt><Control>F10", ref four_key_grid);
+
+            keycap_stack = new Gtk.Stack () {
+                transition_type = Gtk.StackTransitionType.CROSSFADE,
+                homogeneous = true
+            };
+
+            keycap_stack.add (four_key_grid); // This ensures sufficient space is allocated for longest reasonable shortcut
+            keycap_stack.add (keycap_eventbox);
+            keycap_stack.add (status_eventbox); // This becomes initial visible child
+
+            var set_accel_button = new Gtk.ModelButton () {
+                text = _("Set New Shortcut")
+            };
+
+            clear_button = new Gtk.ModelButton () {
+                text = _("Disable")
+            };
+            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+
+            var action_grid = new Gtk.Grid () {
+                margin_top = 3,
+                margin_bottom = 3,
+                orientation = Gtk.Orientation.VERTICAL
+            };
+            action_grid.add (set_accel_button);
+            action_grid.add (clear_button);
+            action_grid.show_all ();
+
+            var popover = new Gtk.Popover (null);
+            popover.add (action_grid);
+
+            var menubutton = new Gtk.MenuButton () {
+                image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
+                popover = popover
+            };
+            menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+
+            var grid = new Gtk.Grid () {
+                column_spacing = 12,
+                margin = 3,
+                margin_start = 6,
+                margin_end = 6,
+                valign = Gtk.Align.CENTER
+            };
+            grid.add (command_entry);
+            grid.add (keycap_stack);
+            grid.add (menubutton);
+            grid.show_all ();
+
+            add (grid);
+
+            render_keycaps ();
+
+            gsettings.changed[BINDING_KEY].connect (render_keycaps);
+            gsettings.changed[COMMAND_KEY].connect (() => {
+                var new_text = gsettings.get_string (COMMAND_KEY);
+                if (new_text != command_entry.text) {
+                    command_entry.text = new_text;
+                }
+            });
+
+            clear_button.clicked.connect (() => {
+                if (!is_editing_shortcut) {
+                    gsettings.set_string (BINDING_KEY, "");
+                }
+            });
+
+            set_accel_button.clicked.connect (() => {
+                if (!is_editing_shortcut) {
+                    edit_shortcut (true);
+                }
+            });
+
+            keycap_eventbox.button_release_event.connect (() => {
+                if (!is_editing_shortcut) {
+                    edit_shortcut (true);
+                }
+            });
+
+            status_eventbox.button_release_event.connect (() => {
+                if (!is_editing_shortcut) {
+                    edit_shortcut (true);
+                }
+            });
+
+            command_entry.focus_in_event.connect (() => {
+                cancel_editing_shortcut ();
+                ((Gtk.ListBox)parent).select_row (this);
+                return Gdk.EVENT_PROPAGATE;
+            });
+
+            command_entry.changed.connect (() => {
+                assert (is_editing_shortcut == false);
+                var command = command_entry.text;
+                gsettings.set_string (COMMAND_KEY, command);
+                gsettings.set_string (NAME_KEY, command);
+            });
+
+            key_release_event.connect (on_key_released);
+
+            focus_out_event.connect (() => {
+                cancel_editing_shortcut ();
+                return Gdk.EVENT_PROPAGATE;
+            });
+
+            show_all ();
+        }
+
+        private void cancel_editing_shortcut () {
+            if (is_editing_shortcut) {
+                gsettings.set_value (BINDING_KEY, previous_binding);
+                edit_shortcut (false);
             }
         }
 
-        void command_editing_canceled () {
-            var selection = tv.get_selection ();
-            Gtk.TreeModel model;
-            Gtk.TreeIter iter;
-            Gtk.Entry entry = command_editable as Gtk.Entry;
-
-            if (selection.get_selected (out model, out iter)) {
-
-                // if command is same as the default text, remove it
-                if (entry.text == enter_command) {
-                    remove_shorcut_for_iter (iter);
+        private void edit_shortcut (bool start_editing) {
+            //Ensure device grabs are paired
+            if (start_editing && !is_editing_shortcut) {
+                ((Gtk.ListBox)parent).select_row (this);
+                grab_focus ();
+                // Grab keyboard on this row's window
+                if (keyboard_device != null) {
+                    Gtk.device_grab_add (this, keyboard_device, true);
+                    keyboard_device.get_seat ().grab (get_window (), Gdk.SeatCapabilities.KEYBOARD,
+                                             true, null, null, null);
                 } else {
-                Gtk.TreePath path;
-                tv.get_cursor (out path, null);
-
-                cell_desc.edited (path.to_string (), entry.text);
+                    return;
                 }
-            }
-        }
 
-        public bool shortcut_conflicts (Shortcut shortcut, out string name) {
-            return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
-        }
-
-        public void reset_shortcut (Shortcut shortcut) {
-            string relocatable_schema;
-            CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
-            CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
-            load_and_display_custom_shortcuts ();
-        }
-
-        bool change_shortcut (string path, Shortcut? shortcut) {
-            Gtk.TreeIter iter;
-            GLib.Value command, relocatable_schema;
-
-            tv.model.get_iter (out iter, new Gtk.TreePath.from_string (path));
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-            tv.model.get_value (iter, Column.COMMAND, out command);
-
-            var not_null_shortcut = shortcut ?? new Shortcut ();
-
-            string conflict_name;
-
-            if (shortcut != null) {
-                foreach (var tree in trees) {
-                    if (tree.shortcut_conflicts (shortcut, out conflict_name) == false)
-                        continue;
-
-                    var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, (string) command);
-                    dialog.reassign.connect (() => {
-                            tree.reset_shortcut (shortcut);
-                            CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-                            load_and_display_custom_shortcuts ();
-                        });
-                    dialog.transient_for = (Gtk.Window) this.get_toplevel ();
-                    dialog.present ();
-                    return false;
+                previous_binding = gsettings.get_value (BINDING_KEY);
+                gsettings.set_string (BINDING_KEY, "");
+            } else if (!start_editing && is_editing_shortcut) {
+                // Stop grabbing keyboard on this row's window
+                if (keyboard_device != null) {
+                    keyboard_device.get_seat ().ungrab ();
+                    Gtk.device_grab_remove (this, keyboard_device);
+                } else {
+                    return;
                 }
             }
 
-            CustomShortcutSettings.edit_shortcut ((string) relocatable_schema, not_null_shortcut.to_gsettings ());
-            load_and_display_custom_shortcuts ();
-            return true;
+            is_editing_shortcut = start_editing;
+            ((CustomTree)parent).is_editing = is_editing_shortcut;
+
+            keycap_stack.visible_child = is_editing_shortcut ? status_eventbox : keycap_eventbox;
+            if (!is_editing_shortcut) {
+                render_keycaps ();
+            } else {
+                status_label.label = _("Enter new shortcut…");
+            }
         }
 
-        void remove_shorcut_for_iter (Gtk.TreeIter iter) {
-            GLib.Value relocatable_schema;
-            tv.model.get_value (iter, Column.SCHEMA, out relocatable_schema);
-
-            CustomShortcutSettings.remove_shortcut ((string) relocatable_schema);
-#if VALA_0_36
-            list_store.remove (ref iter);
-#else
-            list_store.remove (iter);
-#endif
-        }
-
-        bool tree_key_press (Gdk.EventKey ev) {
-            bool handled = false;
-            Gtk.Entry entry = command_editable as Gtk.Entry;
-
-            if (ev.keyval == Gdk.Key.Tab) {
-                Gtk.TreePath path;
-                tv.get_cursor (out path, null);
-
-                cell_desc.edited (path.to_string (), entry.text);
-
-                var col = tv.get_column (Column.SHORTCUT);
-                tv.set_cursor (path, col, true);
-
-                handled = true;
+        private bool on_key_released (Gdk.EventKey event) {
+            // For a custom shortcut, require modifier key(s) and one non-modifier key
+            if (!is_editing_shortcut || event.is_modifier == 1) {
+                return Gdk.EVENT_PROPAGATE;
             }
 
-        return handled;
+            var mods = event.state & Gtk.accelerator_get_default_mod_mask ();
+            var keyval = event.keyval;
+            if (mods > 0) {
+                // Accept any key with a modifier (not all may work)
+                Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
+
+                var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                update_binding (shortcut);
+            } else {
+                switch (keyval) {
+                    case Gdk.Key.Escape:
+                        // Cancel editing
+                        gsettings.set_value (BINDING_KEY, previous_binding);
+                        break;
+                    // case Gdk.Key.F1: May be used for system help
+                    case Gdk.Key.F2:
+                    case Gdk.Key.F3:
+                    case Gdk.Key.F4:
+                    case Gdk.Key.F5:
+                    case Gdk.Key.F6:
+                    case Gdk.Key.F7:
+                    case Gdk.Key.F8:
+                    case Gdk.Key.F9:
+                    case Gdk.Key.F10:
+                    // case Gdk.Key.F11: Already used for fullscreen
+                    case Gdk.Key.F12:
+                    case Gdk.Key.Menu:
+                        // Accept certain keys as single key accelerators
+                        var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                        update_binding (shortcut);
+                        break;
+                    default:
+                        return Gdk.EVENT_STOP;
+                }
+            }
+
+            edit_shortcut (false);
+
+            return Gdk.EVENT_STOP;
+         }
+
+        private void update_binding (Shortcut shortcut) {
+            string conflict_name, relocatable_schema;
+            if (CustomShortcutSettings.shortcut_conflicts (shortcut, out conflict_name, out relocatable_schema)) {
+                var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, command_entry.text);
+                dialog.responded.connect ((response_id) => {
+                    if (response_id == Gtk.ResponseType.ACCEPT) {
+                        gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
+                        var conflict_gsettings = CustomShortcutSettings.get_gsettings_for_relocatable_schema (relocatable_schema);
+                        conflict_gsettings.set_string (BINDING_KEY, "");
+                    } else {
+                        gsettings.set_value (BINDING_KEY, previous_binding);
+                    }
+                });
+                dialog.transient_for = (Gtk.Window) this.get_toplevel ();
+                dialog.present ();
+            }
+
+            gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
+        }
+
+        private void render_keycaps () {
+            var key_value = gsettings.get_value (BINDING_KEY);
+            var value_string = "";
+
+            if (key_value.is_of_type (VariantType.ARRAY)) {
+                var key_value_strv = key_value.get_strv ();
+                if (key_value_strv.length > 0) {
+                    value_string = key_value_strv[0];
+                }
+            } else {
+                value_string = key_value.dup_string ();
+            }
+
+            if (value_string != "") {
+                build_keycap_grid (value_string, ref keycap_grid);
+                keycap_stack.visible_child = keycap_eventbox;
+                clear_button.sensitive = true;
+            } else {
+                clear_button.sensitive = false;
+                keycap_stack.visible_child = status_eventbox;
+                status_label.label = _("Disabled");
+            }
+         }
+
+        private void build_keycap_grid (string value_string, ref Gtk.Grid grid) {
+            var accels = Granite.accel_to_string (value_string).split (" + ");
+            foreach (unowned Gtk.Widget child in grid.get_children ()) {
+                child.destroy ();
+            };
+
+            foreach (unowned string accel in accels) {
+                if (accel == "") {
+                    continue;
+                }
+                var keycap_label = new Gtk.Label (accel);
+                keycap_label.get_style_context ().add_class ("keycap");
+                grid.add (keycap_label);
+            }
+
+            grid.show_all ();
         }
     }
 }

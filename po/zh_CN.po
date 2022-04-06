@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-08-30 08:16+0000\n"
-"PO-Revision-Date: 2021-05-28 09:20+0000\n"
-"Last-Translator: colindemian <colindemian@outlook.com>\n"
+"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"PO-Revision-Date: 2021-11-02 05:56+0000\n"
+"Last-Translator: Yuchen Deng <loaden@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hans/>\n"
 "Language: zh_CN\n"
@@ -110,7 +110,7 @@ msgstr "添加布局"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:258
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
 msgid "Default"
 msgstr "默认"
 
@@ -508,20 +508,22 @@ msgstr "自定义"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:56 src/Views/Layout.vala:43
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
 #: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Widgets/Shortcuts/CustomTree.vala:133
+#: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
 msgstr "已禁用"
 
-#: src/Shortcuts/Shortcut.vala:62
+#: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
 msgstr "Shift"
 
-#: src/Shortcuts/Shortcut.vala:70
+#: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
 msgstr "Ctrl"
 
-#: src/Shortcuts/Shortcut.vala:74
+#: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
 msgstr "Alt"
 
@@ -568,9 +570,6 @@ msgid "IBus Daemon is not running"
 msgstr "IBus 守护进程未运行"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr "需要运行 IBus 守护进程来启用或配置输入法引擎。"
@@ -581,8 +580,6 @@ msgstr "启动 IBus 守护进程"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
 msgstr "IBus 守护进程启动失败"
 
@@ -620,14 +617,12 @@ msgid "Embed preedit text in application window:"
 msgstr "光标跟随："
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "启动 IBus 守护进程"
+msgstr "IBus 守护进程"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "使用和管理输入法"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
@@ -658,7 +653,7 @@ msgstr "Alt + 空格"
 msgid "Both Shift keys together"
 msgstr "同时按下两个 Shift"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -682,15 +677,15 @@ msgstr "组合键："
 msgid "Menu"
 msgstr "菜单"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
 msgid "Right Alt"
 msgstr "右 Alt"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
 msgid "Right Ctrl"
 msgstr "右 Ctrl"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
 msgid "Right ⌘"
 msgstr "右 ⌘"
 
@@ -734,51 +729,63 @@ msgstr "和 Ctrl 互换"
 msgid "Swap with Escape"
 msgstr "和 Escape 互换"
 
-#: src/Views/Layout.vala:137
-msgid "Show in Panel"
-msgstr "在顶栏显示"
+#: src/Views/Layout.vala:107
+msgid "On-screen Keyboard"
+msgstr "屏幕键盘"
 
-#: src/Views/Layout.vala:143
+#: src/Views/Layout.vala:112
+msgid "Show on-screen keyboard:"
+msgstr "显示屏幕键盘："
+
+#: src/Views/Layout.vala:121
+msgid "On-screen keyboard settings…"
+msgstr "屏幕键盘设置…"
+
+#: src/Views/Layout.vala:159
+msgid "Show in Panel"
+msgstr "在面板中显示"
+
+#: src/Views/Layout.vala:166
 msgid "Caps Lock:"
 msgstr "大写锁定："
 
-#: src/Views/Layout.vala:149
+#: src/Views/Layout.vala:173
 msgid "Num Lock:"
 msgstr "数字锁定："
 
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
 msgid "Key to choose 3rd level:"
 msgstr "三级选择键："
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:298
 msgid "Left Alt"
 msgstr "左 Alt"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:308
 msgid "Key to choose 5th level:"
 msgstr "五级选择键："
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:329
 msgid "Kana Lock:"
 msgstr "假名锁定："
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:337
 msgid "Nicola F Backspace:"
 msgstr "Nicola F 式退格："
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:340
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku 代替 Esc 键："
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:357
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "右 Alt/Ctrl 使用 Hangul/Hanja："
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:436
 msgid "Type to test your layout"
 msgstr "键入任意内容测试您的布局"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:439
 msgid "Input Method is active"
 msgstr "输入法已激活"
 
@@ -809,17 +816,24 @@ msgstr "向上移动"
 msgid "Move down"
 msgstr "向下移动"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:23
-msgid "Enter Command"
-msgstr "输入指令"
+#: src/Widgets/Shortcuts/CustomTree.vala:130
+msgid "Enter a command here"
+msgstr "在此处输入命令"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:73
-msgid "Command"
-msgstr "Command 键"
+#: src/Widgets/Shortcuts/CustomTree.vala:172
+msgid "Set New Shortcut"
+msgstr "设置新快捷键"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:74
-msgid "Shortcut"
-msgstr "快捷键"
+#: src/Widgets/Shortcuts/CustomTree.vala:176
+msgid "Disable"
+msgstr "禁用"
+
+#: src/Widgets/Shortcuts/CustomTree.vala:309
+msgid "Enter new shortcut…"
+msgstr "输入新快捷键…"
+
+#~ msgid "Command"
+#~ msgstr "Command 键"
 
 #~ msgid "Show candidate window:"
 #~ msgstr "悬浮工具栏："
@@ -832,11 +846,6 @@ msgstr "快捷键"
 
 #~ msgid "Toggle High Contrast"
 #~ msgstr "启用高对比度"
-
-#, fuzzy
-#~| msgid "Input Method Settings…"
-#~ msgid "Advanced Settings…"
-#~ msgstr "输入法设置…"
 
 #~ msgid "Caps Lock disabled"
 #~ msgstr "大写锁定键已禁用"

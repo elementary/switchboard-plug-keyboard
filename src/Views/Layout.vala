@@ -24,6 +24,7 @@ namespace Pantheon.Keyboard {
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
+        private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
 
         construct {
             settings = SourceSettings.get_instance ();
@@ -73,10 +74,12 @@ namespace Pantheon.Keyboard {
 
             var overlay_key_label = new SettingsLabel (_("⌘ key behavior:"), size_group[0]);
 
+            // ⌘ key behavior
             var overlay_key_combo = new Gtk.ComboBoxText ();
             overlay_key_combo.halign = Gtk.Align.START;
             overlay_key_combo.append_text (_("Disabled"));
             overlay_key_combo.append_text (_("Applications Menu"));
+            overlay_key_combo.append_text (_("Multitasking View"));
 
             string? cheatsheet_path = Environment.find_program_in_path ("io.elementary.shortcut-overlay");
             if (cheatsheet_path != null) {
@@ -103,6 +106,24 @@ namespace Pantheon.Keyboard {
             settings.add_xkb_modifier (modifier);
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
+
+            var onscreen_keyboard_header = new Granite.HeaderLabel (_("On-screen Keyboard")) {
+                halign = Gtk.Align.END,
+                xalign = 1
+            };
+
+            var onscreen_keyboard_label = new Gtk.Label (_("Show on-screen keyboard:")) {
+                halign = Gtk.Align.END
+            };
+
+            var onscreen_keyboard_switch = new Gtk.Switch () {
+                halign = Gtk.Align.START,
+                valign = Gtk.Align.CENTER
+            };
+
+            var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
+                halign = Gtk.Align.START
+            };
 
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
@@ -134,7 +155,7 @@ namespace Pantheon.Keyboard {
             column_homogeneous = true;
             column_spacing = 12;
             row_spacing = 12;
-            attach (display, 0, 0, 1, 9);
+            attach (display, 0, 0, 1, 12);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);
             attach (compose_key_label, 1, 1, 1, 1);
@@ -146,38 +167,45 @@ namespace Pantheon.Keyboard {
             attach (alt_gr_label, 1, 4, 1, 1);
             attach (alt_gr_combo, 2, 4, 1, 1);
             attach (advanced_settings, 1, 5, 2);
+            attach (onscreen_keyboard_header, 1, 6, 1, 1);
+            attach (onscreen_keyboard_label, 1, 7, 1, 1);
+            attach (onscreen_keyboard_switch, 2, 7, 1);
+            attach (onscreen_keyboard_settings, 2, 8, 1);
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
-                var indicator_header = new Granite.HeaderLabel (_("Show in Panel"));
-                indicator_header.halign = Gtk.Align.END;
-                indicator_header.xalign = 1;
+                var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
+                    halign = Gtk.Align.END,
+                    xalign = 1
+                };
 
                 size_group[0].add_widget (indicator_header);
 
                 var caps_lock_indicator_label = new SettingsLabel (_("Caps Lock:"), size_group[0]);
 
-                var caps_lock_indicator_switch = new Gtk.Switch ();
-                caps_lock_indicator_switch.halign = Gtk.Align.START;
-                caps_lock_indicator_switch.valign = Gtk.Align.CENTER;
+                var caps_lock_indicator_switch = new Gtk.Switch () {
+                    halign = Gtk.Align.START,
+                    valign = Gtk.Align.CENTER
+                };
 
                 var num_lock_indicator_label = new SettingsLabel (_("Num Lock:"), size_group[0]);
 
-                var num_lock_indicator_switch = new Gtk.Switch ();
-                num_lock_indicator_switch.halign = Gtk.Align.START;
-                num_lock_indicator_switch.valign = Gtk.Align.CENTER;
+                var num_lock_indicator_switch = new Gtk.Switch () {
+                    halign = Gtk.Align.START,
+                    valign = Gtk.Align.CENTER
+                };
 
                 var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
                 indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
                 indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
 
-                attach (indicator_header, 1, 5);
-                attach (caps_lock_indicator_label, 1, 6);
-                attach (caps_lock_indicator_switch, 2, 6);
-                attach (num_lock_indicator_label, 1, 7);
-                attach (num_lock_indicator_switch, 2, 7);
+                attach (indicator_header, 1, 8);
+                attach (caps_lock_indicator_label, 1, 9);
+                attach (caps_lock_indicator_switch, 2, 9);
+                attach (num_lock_indicator_label, 1, 10);
+                attach (num_lock_indicator_switch, 2, 10);
             }
 
-            attach (entry_test, 1, 8, 2);
+            attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -201,10 +229,26 @@ namespace Pantheon.Keyboard {
                 case "io.elementary.wingpanel --toggle-indicator=app-launcher":
                     overlay_key_combo.active = 1;
                     break;
-                case "io.elementary.shortcut-overlay":
+                case MULTITASKING_VIEW_COMMAND:
                     overlay_key_combo.active = 2;
                     break;
+                case "io.elementary.shortcut-overlay":
+                    overlay_key_combo.active = 3;
+                    break;
             }
+
+            onscreen_keyboard_settings.clicked.connect (() => {
+                try {
+                    var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, AppInfoCreateFlags.NONE);
+                    appinfo.launch (null, null);
+                } catch (Error e) {
+                    warning ("Unable to launch onboard-settings: %s", e.message);
+                }
+            });
+
+            var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
+
+            applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
 
             overlay_key_combo.changed.connect (() => {
                 var combo_active = overlay_key_combo.active;
@@ -214,6 +258,8 @@ namespace Pantheon.Keyboard {
                 } else if (combo_active == 1) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.wingpanel --toggle-indicator=app-launcher");
                 } else if (combo_active == 2) {
+                    gala_behavior_settings.set_string ("overlay-action", MULTITASKING_VIEW_COMMAND);
+                } else if (combo_active == 3) {
                     gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
                 }
             });

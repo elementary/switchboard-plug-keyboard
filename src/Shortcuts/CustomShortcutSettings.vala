@@ -17,18 +17,18 @@
 * Boston, MA 02110-1301 USA
 */
 
+public struct Pantheon.Keyboard.Shortcuts.CustomShortcut {
+    public string shortcut; // Shortcut in gsettings format
+    public string command;
+    public string relocatable_schema;
+}
+
 public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
     public static bool available = false;
 
-    public struct CustomShortcut {
-        string shortcut;
-        string command;
-        string relocatable_schema;
-    }
-
     private const int MAX_SHORTCUTS = 100;
     private const string KEY = "custom-keybinding";
-    private const string RELOCATABLE_SCHEMA_PATH_TEMLPATE = "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom%d/";
+    private const string RELOCATABLE_SCHEMA_PATH_TEMPLATE = "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom%d/";
     private const string SCHEMA = "org.gnome.settings-daemon.plugins.media-keys";
 
     private static GLib.Settings settings;
@@ -49,7 +49,7 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
 
     public static string? create_shortcut () requires (available) {
         for (int i = 0; i < MAX_SHORTCUTS; i++) {
-            var new_relocatable_schema = RELOCATABLE_SCHEMA_PATH_TEMLPATE.printf (i);
+            var new_relocatable_schema = RELOCATABLE_SCHEMA_PATH_TEMPLATE.printf (i);
 
             if (!relocatable_schema_is_used (new_relocatable_schema)) {
                 reset_relocatable_schema (new_relocatable_schema);
@@ -63,7 +63,7 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
             }
         }
 
-        return (string) null;
+        return null;
     }
 
     private static bool relocatable_schema_is_used (string new_relocatable_schema) {
@@ -119,30 +119,34 @@ public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
         requires (available) {
 
         var list = new GLib.List <CustomShortcut?> ();
-        foreach (var relocatable_schema in settings.get_strv (KEY + "s"))
-            list.append (create_custom_shortcut_object (relocatable_schema));
+        foreach (var relocatable_schema in settings.get_strv (KEY + "s")) {
+            var relocatable_settings = new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
+
+            list.append ({
+                relocatable_settings.get_string ("binding"),
+                relocatable_settings.get_string ("command"),
+                relocatable_schema
+            });
+        }
+
         return list;
     }
 
-    private static CustomShortcut? create_custom_shortcut_object (string relocatable_schema) {
-        var relocatable_settings = new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
-
-        return {
-            relocatable_settings.get_string ("binding"),
-            relocatable_settings.get_string ("command"),
-            relocatable_schema
-        };
+    public static GLib.Settings get_gsettings_for_relocatable_schema (string relocatable_schema) {
+        return new GLib.Settings.with_path (SCHEMA + "." + KEY, relocatable_schema);
     }
 
     public static bool shortcut_conflicts (Shortcut new_shortcut, out string command,
                                            out string relocatable_schema) {
-        var custom_shortcuts = list_custom_shortcuts ();
         command = "";
         relocatable_schema = "";
+        var new_gsettings_shortcut = new_shortcut.to_gsettings ();
+        if (new_gsettings_shortcut == "") {
+            return false;
+        }
 
-        foreach (var custom_shortcut in custom_shortcuts) {
-            var shortcut = new Shortcut.parse (custom_shortcut.shortcut);
-            if (shortcut.is_equal (new_shortcut)) {
+        foreach (var custom_shortcut in list_custom_shortcuts ()) {
+            if (custom_shortcut.shortcut == new_gsettings_shortcut) {
                 command = custom_shortcut.command;
                 relocatable_schema = custom_shortcut.relocatable_schema;
                 return true;
