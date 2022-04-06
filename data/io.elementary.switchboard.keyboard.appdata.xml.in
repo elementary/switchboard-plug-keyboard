@@ -7,6 +7,18 @@
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
   <releases>
+    <release version="2.7.0" date="2022-04-05" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Open Multitasking View with Super</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="2.6.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
@@ -16,7 +28,6 @@
         </ul>
         <p>Minor updates:</p>
         <ul>
-          <li></li>
           <li>Updated translations</li>
         </ul>
       </description>
