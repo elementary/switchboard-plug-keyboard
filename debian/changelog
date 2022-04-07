@@ -1,3 +1,12 @@
+switchboard-plug-keyboard (2.7.0) bionic; urgency=medium
+
+  * Release 2.7.0
+  * Update translation files
+  * Update translation template
+  * Adding Multitasking View to Super Key Options (#400)
+
+ -- elementary OS Team <builds@elementary.io>  Thu, 07 Apr 2022 06:58:39 +0000
+
 switchboard-plug-keyboard (2.6.0) bionic; urgency=medium
 
   * Release 2.6.0 (#393)
