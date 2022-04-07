@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"POT-Creation-Date: 2022-04-06 20:22+0000\n"
 "PO-Revision-Date: 2018-10-03 10:00-0700\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -28,64 +28,71 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configure keyboard behavior, layouts, and shortcuts"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "New features:"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Redesigned custom shortcuts view"
+msgid "Open Multitasking View with Super"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Minor updates:"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:54
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:61
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:72
 msgid "Updated translations"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
-msgid "Ensure IBus automatically starts on login when needed"
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+msgid "Redesigned custom shortcuts view"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
-msgid "Add Layout popover is now a dialog"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
-msgid "Guarantee we always have at least one layout"
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+msgid "On-screen keyboard switch in Layouts tab"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+msgid "Add Layout popover is now a dialog"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
+msgid "Guarantee we always have at least one layout"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:50
 msgid "Improvements to ibus and xkb layouts"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
 msgid "Add a view to configure input methods"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:70
 msgid "New \"Workspaces\" icon"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
 msgid "Exclude Space from single-key shortcuts"
 msgstr ""

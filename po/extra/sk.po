@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-18 19:05+0000\n"
+"POT-Creation-Date: 2022-04-06 20:22+0000\n"
 "PO-Revision-Date: 2021-11-30 16:52+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
@@ -28,66 +28,73 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Nastavujte správanie klávesnice, rozloženie a klávesové skratky"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
 msgid "New features:"
 msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Redesigned custom shortcuts view"
-msgstr "Prerobený vzhľad zobrazenia vlastných skratiek"
+msgid "Open Multitasking View with Super"
+msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "On-screen keyboard switch in Layouts tab"
-msgstr "Prepínač klávesnice na obrazovke v karte Rozloženie"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:17
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Minor updates:"
 msgstr "Menšie aktualizácie:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:54
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:61
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:72
 msgid "Updated translations"
 msgstr "Aktualizované preklady"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+msgid "Redesigned custom shortcuts view"
+msgstr "Prerobený vzhľad zobrazenia vlastných skratiek"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+msgid "On-screen keyboard switch in Layouts tab"
+msgstr "Prepínač klávesnice na obrazovke v karte Rozloženie"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr ""
 "Zabezpečené, že sa IBus automaticky spustí pri prihlásení, ak je to potrebné"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
 msgid "Add Layout popover is now a dialog"
 msgstr "Vyskakovacie okno Pridať rozloženie je po novom dialóg"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
 msgid "Guarantee we always have at least one layout"
 msgstr "Garantovať, že je vždy dostupné aspoň jedno rozloženie"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:50
 msgid "Improvements to ibus and xkb layouts"
 msgstr "Vylepšenia rozložení ibus a xkb"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "Popis klávesovej skratky pre „Prehrať“ je teraz „Prehrať/pozastaviť“"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Opravený problém, keď sa niektoré skratky nesprávne zobrazovali ako zakázané"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
 msgid "Add a view to configure input methods"
 msgstr "Pridané zobrazenie pre nastavovanie metód vstupu"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:70
 msgid "New \"Workspaces\" icon"
 msgstr "Nová ikona „Pracovné plochy“"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Vynechanie medzerníka zo skratiek s iba jednou klávesou"
