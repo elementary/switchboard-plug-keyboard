@@ -138,7 +138,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             system_group = {};
             system_group.icon_name = "preferences-system";
             system_group.label = _("System");
-            add_action (ref system_group, Schema.WM, _("Applications Menu"), "panel-main-menu");
+            add_action (ref system_group, Schema.GALA, _("Applications Menu"), "panel-main-menu");
             add_action (ref system_group, Schema.MEDIA, _("Lock"), "screensaver");
             add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
             add_action (ref system_group, Schema.MUTTER, _("Cycle display mode"), "switch-monitor");
