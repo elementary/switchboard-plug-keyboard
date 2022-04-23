@@ -87,31 +87,5 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             return new Shortcut.parse (str);
         }
-
-        public void reset (Schema schema, string key) {
-            if (!valid (schema, key) || ! schemas[schema].is_writable (key)) {
-                return;
-            }
-
-            schemas[schema].reset (key);
-        }
-
-        public bool set_val (Schema schema, string key, Shortcut sc) {
-            if (!valid (schema, key)) {
-                return false;
-            }
-
-            var gsettings = schemas[schema];
-            VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
-            if (key_type.equal (VariantType.STRING)) {
-                gsettings.set_string (key, sc.to_gsettings ());
-            } else if (key_type.equal (VariantType.STRING_ARRAY)) {
-                gsettings.set_strv (key, {sc.to_gsettings ()});
-            } else {
-                return false;
-            }
-
-            return true;
-        }
     }
 }
