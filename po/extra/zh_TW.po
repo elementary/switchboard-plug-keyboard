@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:20+0000\n"
+"POT-Creation-Date: 2022-04-06 20:22+0000\n"
 "PO-Revision-Date: 2020-03-01 14:09+0000\n"
 "Last-Translator: Cheng-Chia Tseng <pswo10680@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
@@ -28,50 +28,71 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
-msgid "Minor updates:"
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+msgid "New features:"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Ensure IBus automatically starts on login when needed"
+msgid "Open Multitasking View with Super"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+msgid "Minor updates:"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:72
 msgid "Updated translations"
 msgstr "翻譯更新"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
-msgid "Add Layout popover is now a dialog"
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+msgid "Redesigned custom shortcuts view"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
-msgid "Guarantee we always have at least one layout"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-msgid "Improvements to ibus and xkb layouts"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
-msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
-msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+msgid "On-screen keyboard switch in Layouts tab"
 msgstr ""
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+msgid "Add Layout popover is now a dialog"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
+msgid "Guarantee we always have at least one layout"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:50
+msgid "Improvements to ibus and xkb layouts"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
+msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
+msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
 msgid "Add a view to configure input methods"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:45
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:70
 msgid "New \"Workspaces\" icon"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
 msgid "Exclude Space from single-key shortcuts"
 msgstr ""

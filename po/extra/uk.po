@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-09-22 22:06+0000\n"
+"POT-Creation-Date: 2022-04-06 20:22+0000\n"
+"PO-Revision-Date: 2022-04-07 02:09+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/uk/>\n"
@@ -29,52 +29,73 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Налаштування поведінки клавіатури, розкладки та комбінації клавіш"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+msgid "New features:"
+msgstr "Нові функції:"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+msgid "Open Multitasking View with Super"
+msgstr "Відкриття багатозадачного вигляду клавішею Super"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
 msgid "Minor updates:"
 msgstr "Незначні оновлення:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Ensure IBus automatically starts on login when needed"
-msgstr "Відтепер IBus запускається автоматично під час входу, якщо потрібно"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:47
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:72
 msgid "Updated translations"
 msgstr "Оновлено переклади"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+msgid "Redesigned custom shortcuts view"
+msgstr "Перероблено вигляд розділу налаштовуваних комбінацій клавіш"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+msgid "On-screen keyboard switch in Layouts tab"
+msgstr "Перемикач наекранної клавіатури у вкладці розкладки"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+msgid "Ensure IBus automatically starts on login when needed"
+msgstr "Відтепер IBus запускається автоматично під час входу, якщо потрібно"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
 msgid "Add Layout popover is now a dialog"
 msgstr "Вікно додавання розкладки тепер є діалоговим вікном"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
 msgid "Guarantee we always have at least one layout"
 msgstr "Гарантія, що у нас завжди є принаймні один макет"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:50
 msgid "Improvements to ibus and xkb layouts"
 msgstr "Вдосконалено макети ibus та xkb"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:32
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "Назва комбінації клавіш «Відтворити» тепер «Відтворити/Призупинити»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Виправлено проблему, коли деякі комбінації клавіш неправильно було показано "
 "вимкненими"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
 msgid "Add a view to configure input methods"
 msgstr "Додано подання налаштування методів введення"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:45
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:70
 msgid "New \"Workspaces\" icon"
 msgstr "Нова піктограма «Робочих просторів»"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Пробіл виключено з комбінацій клавіш з одної клавіші"

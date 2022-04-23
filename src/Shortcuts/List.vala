@@ -96,12 +96,12 @@ namespace Pantheon.Keyboard.Shortcuts {
             screenshot_group = {};
             screenshot_group.icon_name = "io.elementary.switchboard.keyboard.screenshots";
             screenshot_group.label = _("Screenshots");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Grab the whole screen"), "screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Copy the whole screen to clipboard"), "screenshot-clip");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Grab the current window"), "window-screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Copy the current window to clipboard"), "window-screenshot-clip");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Select an area to grab"), "area-screenshot");
-            add_action (ref screenshot_group, Schema.MEDIA, _("Copy an area to clipboard"), "area-screenshot-clip");
+            add_action (ref screenshot_group, Schema.GALA, _("Grab the whole screen"), "screenshot");
+            add_action (ref screenshot_group, Schema.GALA, _("Copy the whole screen to clipboard"), "screenshot-clip");
+            add_action (ref screenshot_group, Schema.GALA, _("Grab the current window"), "window-screenshot");
+            add_action (ref screenshot_group, Schema.GALA, _("Copy the current window to clipboard"), "window-screenshot-clip");
+            add_action (ref screenshot_group, Schema.GALA, _("Select an area to grab"), "area-screenshot");
+            add_action (ref screenshot_group, Schema.GALA, _("Copy an area to clipboard"), "area-screenshot-clip");
 
             launchers_group = {};
             launchers_group.icon_name = "preferences-desktop-applications";
@@ -138,7 +138,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             system_group = {};
             system_group.icon_name = "preferences-system";
             system_group.label = _("System");
-            add_action (ref system_group, Schema.WM, _("Applications Menu"), "panel-main-menu");
+            add_action (ref system_group, Schema.GALA, _("Applications Menu"), "panel-main-menu");
             add_action (ref system_group, Schema.MEDIA, _("Lock"), "screensaver");
             add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
             add_action (ref system_group, Schema.MUTTER, _("Cycle display mode"), "switch-monitor");

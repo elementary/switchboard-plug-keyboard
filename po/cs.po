@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-11-01 17:20+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2022-04-06 20:22+0000\n"
+"PO-Revision-Date: 2022-01-10 21:59+0000\n"
+"Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/cs/>\n"
 "Language: cs\n"
@@ -87,20 +87,16 @@ msgid "Input Language"
 msgstr "Vstupní jazyk"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Rozložení"
+msgstr "Seznam rozložení"
 
 #: src/Dialogs/AddLayoutDialog.vala:38
 msgid "Search input language"
 msgstr "Vyhledejte vstupní jazyk"
 
 #: src/Dialogs/AddLayoutDialog.vala:93
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Rozložení"
+msgstr "Náhled rozvržení"
 
 #: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -114,7 +110,7 @@ msgstr "Přidat rozložení"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:92 src/Views/Layout.vala:296
+#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
 msgid "Default"
 msgstr "Výchozí"
 
@@ -134,11 +130,11 @@ msgstr "Přeřadit"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr "Zvolte engine k instalaci"
+msgstr "Vybrat engine k instalaci"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr "Vyberte ze seznamu engine k instalaci a použití."
+msgstr "Vyberte ze seznamu engine pro instalaci a použití."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
@@ -196,7 +192,7 @@ msgstr "Přepnout maximalizaci"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Skrýt"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -258,7 +254,7 @@ msgstr "Přesunout na displej vlevo"
 msgid "Workspaces"
 msgstr "Pracovní plochy"
 
-#: src/Shortcuts/List.vala:68
+#: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
 msgid "Multitasking View"
 msgstr "Zobrazení multitaskingu"
 
@@ -490,7 +486,7 @@ msgstr "Přepínaní čtečky obrazovky"
 msgid "System"
 msgstr "Systém"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:79
+#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
 msgid "Applications Menu"
 msgstr "Nabídka aplikací"
 
@@ -512,8 +508,8 @@ msgstr "Vlastní"
 
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:43
-#: src/Views/Layout.vala:62 src/Views/Layout.vala:78 src/Views/Layout.vala:93
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
+#: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
 #: src/Widgets/Shortcuts/CustomTree.vala:133
 #: src/Widgets/Shortcuts/CustomTree.vala:400
 msgid "Disabled"
@@ -574,9 +570,6 @@ msgid "IBus Daemon is not running"
 msgstr "Proces služby IBus není spuštěný"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
@@ -589,8 +582,6 @@ msgstr "Spustit proces služby IBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
 msgstr "Nepodařilo se spustit proces služby IBus"
 
@@ -608,10 +599,8 @@ msgid "Switch engines:"
 msgstr "Přepnout enginy:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Zobrazit v panelu"
+msgstr "Zobrazit panel vlastnosti:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -630,189 +619,177 @@ msgid "Embed preedit text in application window:"
 msgstr "Vestavět text před úpravou do okna aplikace:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Spustit proces služby IBus"
+msgstr "Proces služby IBus"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Používat a spravovat vstupní metody"
 
 #: src/Views/InputMethod.vala:437
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "Pro vyzkoušení rozložení pište zde"
+msgstr "Vstupní metodu si vyzkoušíte psaním sem"
 
 #: src/Views/InputMethod.vala:440
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "Zobrazit rozložení klávesnice"
+msgstr "Rozložení klávesnice je aktivní"
 
 #. tree view to display the current layouts
-#: src/Views/Layout.vala:39
+#: src/Views/Layout.vala:40
 msgid "Switch layout:"
 msgstr "Přepnout rozložení:"
 
-#: src/Views/Layout.vala:44
+#: src/Views/Layout.vala:45
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock"
 
-#: src/Views/Layout.vala:45
+#: src/Views/Layout.vala:46
 msgid "Alt + Shift"
 msgstr "Alt + Shift"
 
-#: src/Views/Layout.vala:46
+#: src/Views/Layout.vala:47
 msgid "Alt + Space"
 msgstr "Alt + Mezerník"
 
-#: src/Views/Layout.vala:47
+#: src/Views/Layout.vala:48
 msgid "Both Shift keys together"
 msgstr "Obě klávesy Shift zároveň"
 
-#: src/Views/Layout.vala:48 src/Views/Layout.vala:63 src/Views/Layout.vala:297
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:305
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:49
+#: src/Views/Layout.vala:50
 msgid "Ctrl + Alt"
 msgstr "Ctrl + Alt"
 
-#: src/Views/Layout.vala:50
+#: src/Views/Layout.vala:51
 msgid "Ctrl + Shift"
 msgstr "Ctrl + Shift"
 
-#: src/Views/Layout.vala:51
+#: src/Views/Layout.vala:52
 msgid "Shift + Caps Lock"
 msgstr "Shift + Caps Lock"
 
-#: src/Views/Layout.vala:58
+#: src/Views/Layout.vala:59
 msgid "Compose key:"
 msgstr "Klávesa Compose:"
 
-#: src/Views/Layout.vala:64
+#: src/Views/Layout.vala:65
 msgid "Menu"
 msgstr "Menu"
 
-#: src/Views/Layout.vala:65 src/Views/Layout.vala:299 src/Views/Layout.vala:311
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:307 src/Views/Layout.vala:319
 msgid "Right Alt"
 msgstr "Pravý Alt"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:300 src/Views/Layout.vala:312
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Ctrl"
 msgstr "Pravý Ctrl"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:301 src/Views/Layout.vala:313
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right ⌘"
 msgstr "Pravý ⌘"
 
-#: src/Views/Layout.vala:74
+#: src/Views/Layout.vala:75
 msgid "⌘ key behavior:"
 msgstr "Chování klávesy ⌘:"
 
-#: src/Views/Layout.vala:83
+#: src/Views/Layout.vala:86
 msgid "Shortcut Overlay"
 msgstr "Přehled zkratek"
 
-#: src/Views/Layout.vala:88
+#: src/Views/Layout.vala:91
 msgid "Caps Lock behavior:"
 msgstr "Chování klávesy Caps Lock:"
 
-#: src/Views/Layout.vala:94
+#: src/Views/Layout.vala:97
 msgid "as Backspace"
 msgstr "jako Backspace"
 
-#: src/Views/Layout.vala:95
+#: src/Views/Layout.vala:98
 msgid "as Ctrl"
 msgstr "jako Ctrl"
 
-#: src/Views/Layout.vala:96
+#: src/Views/Layout.vala:99
 msgid "as Escape"
 msgstr "jako Esc"
 
-#: src/Views/Layout.vala:97
+#: src/Views/Layout.vala:100
 msgid "as Num Lock"
 msgstr "jako Num Lock"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:101
 msgid "as ⌘"
 msgstr "jako ⌘"
 
-#: src/Views/Layout.vala:99
+#: src/Views/Layout.vala:102
 msgid "Swap with Ctrl"
 msgstr "Prohodit s klávesou Ctrl"
 
-#: src/Views/Layout.vala:100
+#: src/Views/Layout.vala:103
 msgid "Swap with Escape"
 msgstr "Vyměnit s klávesou Esc"
 
-#: src/Views/Layout.vala:107
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
+#: src/Views/Layout.vala:110
 msgid "On-screen Keyboard"
-msgstr "Přepínání klávenice na obrazovce"
+msgstr "Klávesnice na obrazovce"
 
-#: src/Views/Layout.vala:112
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
+#: src/Views/Layout.vala:115
 msgid "Show on-screen keyboard:"
-msgstr "Přepínání klávenice na obrazovce"
+msgstr "Zobrazit klávesnici na obrazovce:"
 
-#: src/Views/Layout.vala:121
+#: src/Views/Layout.vala:124
 msgid "On-screen keyboard settings…"
 msgstr "Nastavení klávesnice na obrazovce…"
 
-#: src/Views/Layout.vala:159
+#: src/Views/Layout.vala:162
 msgid "Show in Panel"
 msgstr "Zobrazit v panelu"
 
-#: src/Views/Layout.vala:166
+#: src/Views/Layout.vala:169
 msgid "Caps Lock:"
 msgstr "Caps Lock:"
 
-#: src/Views/Layout.vala:173
+#: src/Views/Layout.vala:176
 msgid "Num Lock:"
 msgstr "Num Lock:"
 
-#: src/Views/Layout.vala:276 src/Views/Layout.vala:293
+#: src/Views/Layout.vala:284 src/Views/Layout.vala:301
 msgid "Key to choose 3rd level:"
 msgstr "Klávesa pro výběr 3. úrovně:"
 
-#: src/Views/Layout.vala:298
+#: src/Views/Layout.vala:306
 msgid "Left Alt"
 msgstr "Levý Alt"
 
-#: src/Views/Layout.vala:308
+#: src/Views/Layout.vala:316
 msgid "Key to choose 5th level:"
 msgstr "Klávesa pro výběr 5. úrovně:"
 
-#: src/Views/Layout.vala:329
+#: src/Views/Layout.vala:337
 msgid "Kana Lock:"
 msgstr "Kana Lock:"
 
-#: src/Views/Layout.vala:337
+#: src/Views/Layout.vala:345
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:340
+#: src/Views/Layout.vala:348
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku jako Esc:"
 
-#: src/Views/Layout.vala:357
+#: src/Views/Layout.vala:365
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Klávesy Hangul/Hanja na Pravý Alt/Ctrl:"
 
-#: src/Views/Layout.vala:436
+#: src/Views/Layout.vala:444
 msgid "Type to test your layout"
 msgstr "Pro vyzkoušení rozložení pište zde"
 
-#: src/Views/Layout.vala:439
-#, fuzzy
-#| msgid "Input Method"
+#: src/Views/Layout.vala:447
 msgid "Input Method is active"
-msgstr "Vstupní metoda"
+msgstr "Vstupní metoda je aktivní"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
@@ -842,26 +819,20 @@ msgid "Move down"
 msgstr "Posunout dolů"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
-msgstr "Vložte příkaz"
+msgstr "Sem vložte příkaz"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "Zkratka"
+msgstr "Nová zkratka"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "Vypnuto"
+msgstr "Vypnout"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Zadejte novou zkratku…"
 
 #~ msgid "Command"
 #~ msgstr "Příkaz"
