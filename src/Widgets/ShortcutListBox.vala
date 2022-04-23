@@ -1,5 +1,5 @@
 /*
-* Copyright 2019 elementary, Inc. (https://elementary.io)
+* Copyright 2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -71,7 +71,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         private bool editing = false;
         private Gtk.ModelButton clear_button;
         private Gtk.ModelButton reset_button;
-        private Gtk.Grid keycap_grid;
+        private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
 
@@ -84,55 +84,66 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
         }
 
         construct {
-            var label = new Gtk.Label (action);
-            label.hexpand = true;
-            label.halign = Gtk.Align.START;
+            var label = new Gtk.Label (action) {
+                halign = Gtk.Align.START,
+                hexpand = true
+            };
 
-            status_label = new Gtk.Label (_("Disabled"));
-            status_label.halign = Gtk.Align.END;
+            status_label = new Gtk.Label (_("Disabled")) {
+                halign = Gtk.Align.END
+            };
             status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-            keycap_grid = new Gtk.Grid ();
-            keycap_grid.column_spacing = 6;
-            keycap_grid.valign = Gtk.Align.CENTER;
-            keycap_grid.halign = Gtk.Align.END;
+            keycap_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+                valign = Gtk.Align.CENTER,
+                halign = Gtk.Align.END
+            };
 
-            keycap_stack = new Gtk.Stack ();
-            keycap_stack.transition_type = Gtk.StackTransitionType.CROSSFADE;
-            keycap_stack.add (keycap_grid);
+            keycap_stack = new Gtk.Stack () {
+                transition_type = Gtk.StackTransitionType.CROSSFADE
+            };
+            keycap_stack.add (keycap_box);
             keycap_stack.add (status_label);
 
-            var set_accel_button = new Gtk.ModelButton ();
-            set_accel_button.text = _("Set New Shortcut");
+            var set_accel_button = new Gtk.ModelButton () {
+                text = _("Set New Shortcut")
+            };
 
-            reset_button = new Gtk.ModelButton ();
-            reset_button.text = _("Reset to Default");
+            reset_button = new Gtk.ModelButton () {
+                text = _("Reset to Default")
+            };
 
-            clear_button = new Gtk.ModelButton ();
-            clear_button.text = _("Disable");
+            clear_button = new Gtk.ModelButton () {
+                text = _("Disable")
+            };
             clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            var action_grid = new Gtk.Grid ();
-            action_grid.margin_top = action_grid.margin_bottom = 3;
-            action_grid.orientation = Gtk.Orientation.VERTICAL;
-            action_grid.add (set_accel_button);
-            action_grid.add (reset_button);
-            action_grid.add (clear_button);
-            action_grid.show_all ();
+            var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
+                margin_top = 3,
+                margin_bottom = 3
+            };
+            action_box.pack_start (set_accel_button);
+            action_box.pack_start (reset_button);
+            action_box.pack_start (clear_button);
+            action_box.show_all ();
 
             var popover = new Gtk.Popover (null);
-            popover.add (action_grid);
+            popover.add (action_box);
 
-            var menubutton = new Gtk.MenuButton ();
-            menubutton.image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU);
-            menubutton.popover = popover;
+            var menubutton = new Gtk.MenuButton () {
+                image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
+                popover = popover
+            };
             menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
-            var grid = new Gtk.Grid ();
-            grid.column_spacing = 12;
-            grid.margin = 3;
-            grid.margin_start = grid.margin_end = 6;
-            grid.valign = Gtk.Align.CENTER;
+            var grid = new Gtk.Grid () {
+                column_spacing = 12,
+                margin_top = 3,
+                margin_end = 6,
+                margin_bottom = 3,
+                margin_start = 6,
+                valign = Gtk.Align.CENTER
+            };
             grid.add (label);
             grid.add (keycap_stack);
             grid.add (menubutton);
@@ -206,7 +217,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
             }
 
             if (accels[0] != "") {
-                foreach (unowned Gtk.Widget child in keycap_grid.get_children ()) {
+                foreach (unowned Gtk.Widget child in keycap_box.get_children ()) {
                     child.destroy ();
                 };
 
@@ -216,12 +227,12 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Display
                     }
                     var keycap_label = new Gtk.Label (accel);
                     keycap_label.get_style_context ().add_class ("keycap");
-                    keycap_grid.add (keycap_label);
+                    keycap_box.pack_start (keycap_label);
                 }
 
                 clear_button.sensitive = true;
-                keycap_grid.show_all ();
-                keycap_stack.visible_child = keycap_grid;
+                keycap_box.show_all ();
+                keycap_stack.visible_child = keycap_box;
             } else {
                 clear_button.sensitive = false;
                 keycap_stack.visible_child = status_label;
