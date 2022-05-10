@@ -1,3 +1,14 @@
+switchboard-plug-keyboard (3.0.0) bionic; urgency=medium
+
+  * Release 3.0.0 (#408)
+  * Update translation files
+  * Update translation template
+  * Read screenshot shortcuts from gala schema (#407)
+  * Workflows: bump to Jammy
+  * Shortcuts/List: move panel-main-menu to Schema.GALA
+
+ -- elementary OS Team <builds@elementary.io>  Tue, 10 May 2022 16:58:29 +0000
+
 switchboard-plug-keyboard (2.7.0) bionic; urgency=medium
 
   * Release 2.7.0
