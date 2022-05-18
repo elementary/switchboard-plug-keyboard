@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2022-04-09 01:40+0000\n"
+"PO-Revision-Date: 2022-05-18 16:23+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ja/>\n"
@@ -37,7 +37,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Update for OS 7"
-msgstr ""
+msgstr "elementary OS 7 に向けたアップデート"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
