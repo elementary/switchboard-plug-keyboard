@@ -20,7 +20,6 @@
 class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
     public Page shortcut_page { get; construct; } // Object with access to all shortcut views
     public signal void row_unselected ();
-    public bool is_editing { get; set; default = false; }
 
     public CustomShortcutListBox (Page shortcut_page) {
         Object (shortcut_page: shortcut_page);
@@ -298,7 +297,6 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             }
 
             is_editing_shortcut = start_editing;
-            ((CustomShortcutListBox)parent).is_editing = is_editing_shortcut;
 
             keycap_stack.visible_child = is_editing_shortcut ? status_eventbox : keycap_eventbox;
             if (!is_editing_shortcut) {

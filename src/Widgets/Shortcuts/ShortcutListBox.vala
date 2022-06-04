@@ -67,12 +67,13 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         public Schema schema { get; construct; }
         public string gsettings_key { get; construct; }
 
-        private bool editing = false;
         private Gtk.ModelButton clear_button;
         private Gtk.ModelButton reset_button;
         private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
+        private bool is_editing_shortcut = false;
+        private Gdk.Device? keyboard_device = null;
 
         public ShortcutRow (string action, Schema schema, string gsettings_key) {
             Object (
@@ -83,6 +84,13 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         }
 
         construct {
+            var display = Gdk.Display.get_default ();
+            if (display != null) {
+                var seat = display.get_default_seat ();
+                if (seat != null) {
+                    keyboard_device = seat.get_keyboard ();
+                }
+            }
             var label = new Gtk.Label (action) {
                 halign = Gtk.Align.START,
                 hexpand = true
@@ -170,30 +178,78 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             set_accel_button.clicked.connect (() => {
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
-                editing = true;
+                edit_shortcut (true);
             });
 
             key_release_event.connect (on_key_released);
         }
 
+        private void edit_shortcut (bool start_editing) {
+            //Ensure device grabs are paired
+            if (start_editing && !is_editing_shortcut) {
+                ((Gtk.ListBox)parent).select_row (this);
+                grab_focus ();
+                // Grab keyboard on this row's window
+                if (keyboard_device != null) {
+                    Gtk.device_grab_add (this, keyboard_device, true);
+                    keyboard_device.get_seat ().grab (
+                        get_window (), Gdk.SeatCapabilities.KEYBOARD, true, null, null, null
+                    );
+                } else {
+                    return;
+                }
+
+                // previous_binding = gsettings.get_value (BINDING_KEY);
+                // gsettings.set_string (BINDING_KEY, "");
+            } else if (!start_editing && is_editing_shortcut) {
+                // Stop grabbing keyboard on this row's window
+                if (keyboard_device != null) {
+                    keyboard_device.get_seat ().ungrab ();
+                    Gtk.device_grab_remove (this, keyboard_device);
+                } else {
+                    return;
+                }
+            }
+
+            is_editing_shortcut = start_editing;
+        }
+
         private bool on_key_released (Gdk.EventKey key) {
-            if (!editing) {
+            if (!is_editing_shortcut) {
                 return Gdk.EVENT_STOP;
             }
 
             var key_state = key.state;
             Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref key_state);
 
-            var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (key.keyval, key_state).to_gsettings ();
+            var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (key.keyval, key_state);
+            var shortcut_listbox = (ShortcutListBox)parent;
+            var conflict_name = "";
+            if (shortcut_listbox.custom_shortcut_conflicts (shortcut, out conflict_name) ||
+                shortcut_listbox.system_shortcut_conflicts (shortcut, out conflict_name)) {
 
-            var key_value = settings.schemas[schema].get_value (gsettings_key);
-            if (key_value.is_of_type (VariantType.ARRAY)) {
-                settings.schemas[schema].set_strv (gsettings_key, {shortcut});
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    _("That key combination cannot be used as a system shortcut"),
+                    _("The shortcut %s is already used for %s").printf (shortcut.to_readable (), conflict_name),
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
+
+                message_dialog.response.connect (() => {
+                    message_dialog.destroy ();
+                });
+
+                message_dialog.present ();
             } else {
-                settings.schemas[schema].set_string (gsettings_key, shortcut);
+                var key_value = settings.schemas[schema].get_value (gsettings_key);
+                if (key_value.is_of_type (VariantType.ARRAY)) {
+                    settings.schemas[schema].set_strv (gsettings_key, {shortcut.to_gsettings ()});
+                } else {
+                    settings.schemas[schema].set_string (gsettings_key, shortcut.to_gsettings ());
+                }
             }
 
-            editing = false;
+            edit_shortcut (false);
             render_keycaps ();
 
             return Gdk.EVENT_STOP;
