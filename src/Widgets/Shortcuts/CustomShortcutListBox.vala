@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, DisplayTree {
+class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, ShortcutDisplayInterface {
     public signal void row_unselected ();
     public bool is_editing { get; set; default = false; }
 

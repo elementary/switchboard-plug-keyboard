@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, DisplayTree {
+private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
     public SectionID group { get; construct; }
 
     private string[] actions;

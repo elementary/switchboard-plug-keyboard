@@ -13,9 +13,9 @@ config_file = configure_file (
 
 plug_files = files(
     'Plug.vala',
-    'Widgets/ShortcutListBox.vala',
-    'Widgets/Shortcuts/DisplayTree.vala',
-    'Widgets/Shortcuts/CustomTree.vala',
+    'Widgets/Shortcuts/ShortcutListBox.vala',
+    'Widgets/Shortcuts/ShortcutDisplayInterface.vala',
+    'Widgets/Shortcuts/CustomShortcutListBox.vala',
     'Widgets/Layout/Display.vala',
     'Widgets/Layout/AdvancedSettingsPanel.vala',
     'Widgets/Layout/AdvancedSettingsGrid.vala',

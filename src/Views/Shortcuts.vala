@@ -23,7 +23,7 @@ namespace Pantheon.Keyboard.Shortcuts {
     // class to interact with gsettings
     private Shortcuts.Settings settings;
     // array of tree views, one for each section
-    private DisplayTree[] trees;
+    private ShortcutDisplayInterface[] trees;
 
     private enum SectionID {
         WINDOWS,
