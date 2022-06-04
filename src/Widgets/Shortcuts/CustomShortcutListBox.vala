@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, ShortcutDisplayInterface {
+class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
     public signal void row_unselected ();
     public bool is_editing { get; set; default = false; }
 
@@ -300,7 +300,7 @@ class Pantheon.Keyboard.Shortcuts.CustomTree : Gtk.ListBox, ShortcutDisplayInter
             }
 
             is_editing_shortcut = start_editing;
-            ((CustomTree)parent).is_editing = is_editing_shortcut;
+            ((CustomShortcutListBox)parent).is_editing = is_editing_shortcut;
 
             keycap_stack.visible_child = is_editing_shortcut ? status_eventbox : keycap_eventbox;
             if (!is_editing_shortcut) {

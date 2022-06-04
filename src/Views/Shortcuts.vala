@@ -104,7 +104,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             if (CustomShortcutSettings.available) {
-                var custom_tree = new CustomTree ();
+                var custom_tree = new CustomShortcutListBox ();
                 custom_tree.row_selected.connect (row_selected);
                 add_button.clicked.connect (() => custom_tree.on_add_clicked ());
                 remove_button.clicked.connect (() => custom_tree.on_remove_clicked ());
