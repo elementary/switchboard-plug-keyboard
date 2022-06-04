@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:22+0000\n"
+"POT-Creation-Date: 2022-05-09 21:19+0000\n"
 "PO-Revision-Date: 2022-01-28 09:40+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -28,71 +28,77 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "配置键盘功能、布局和快捷键"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
-msgid "New features:"
-msgstr "新特性："
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Open Multitasking View with Super"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:55
 msgid "Minor updates:"
 msgstr "次要更新："
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
+msgid "Update for OS 7"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:72
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:68
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:74
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:81
 msgid "Updated translations"
 msgstr "翻译更新"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+msgid "New features:"
+msgstr "新特性："
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+msgid "Open Multitasking View with Super"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
 msgid "Redesigned custom shortcuts view"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
 msgid "On-screen keyboard switch in Layouts tab"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr "如果需要，确保 IBus 在登录时自动启动"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
 msgid "Add Layout popover is now a dialog"
 msgstr "添加布局弹出框现在是一个对话框"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
 msgid "Guarantee we always have at least one layout"
 msgstr "确保我们总是有至少一种布局"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:50
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
 msgid "Improvements to ibus and xkb layouts"
 msgstr "ibus 和 xkb 布局的改进"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "“播放”的快捷方式描述现在是“播放/暂停”"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr "修复部分快捷方式错误显示为禁用的问题"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:73
 msgid "Add a view to configure input methods"
 msgstr "添加视图以配置输入法"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:70
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:79
 msgid "New \"Workspaces\" icon"
 msgstr "新的“工作区”图标"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:80
 msgid "Exclude Space from single-key shortcuts"
 msgstr "从单键快捷方式中排除空格"

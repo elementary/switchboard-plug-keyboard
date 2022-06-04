@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:22+0000\n"
-"PO-Revision-Date: 2022-01-15 22:24+0000\n"
+"POT-Creation-Date: 2022-05-09 21:19+0000\n"
+"PO-Revision-Date: 2022-05-22 08:05+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
@@ -36,7 +36,7 @@ msgstr "Indeling"
 #: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111
 msgid "Input Method"
-msgstr "Input methode"
+msgstr "Invoermethode"
 
 #: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
@@ -570,13 +570,10 @@ msgid "IBus Daemon is not running"
 msgstr "IBUS Daemon is niet actief"
 
 #: src/Views/InputMethod.vala:45
-#, fuzzy
-#| msgid ""
-#| "You need to run IBus Daemon to enable or configure input method engines."
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
-"U moet de IBUS Daemon starten om inputmethode engines te gebruiken of in te "
+"U moet de IBus daemon starten om invoermethode engines te gebruiken of in te "
 "stellen."
 
 #: src/Views/InputMethod.vala:52
@@ -585,10 +582,8 @@ msgstr "Start IBus Daemon"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
-#, fuzzy
-#| msgid "Failed to start IBus Daemon"
 msgid "Could not start the IBus daemon"
-msgstr "Het starten van IBus Daemon is mislukt"
+msgstr "Kon de IBus daemon niet starten"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -604,10 +599,8 @@ msgid "Switch engines:"
 msgstr "Wissel tussen engines:"
 
 #: src/Views/InputMethod.vala:136
-#, fuzzy
-#| msgid "Show in Panel"
 msgid "Show property panel:"
-msgstr "Toon in paneel"
+msgstr "Toon eigenschappenpaneel:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
@@ -626,26 +619,20 @@ msgid "Embed preedit text in application window:"
 msgstr "Verwerk voorbewerkte tekst in applicatie venster:"
 
 #: src/Views/InputMethod.vala:371
-#, fuzzy
-#| msgid "Start IBus Daemon"
 msgid "IBus Daemon"
-msgstr "Start IBus Daemon"
+msgstr "IBus daemon"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "Gebruik en beheer invoermethodes"
 
 #: src/Views/InputMethod.vala:437
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "Type om je indeling te testen"
+msgstr "Typ om uw invoermethode te testen"
 
 #: src/Views/InputMethod.vala:440
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "Toon layout van het toetsenbord"
+msgstr "Een toetsenbordindeling is actief"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:40
@@ -745,16 +732,12 @@ msgid "Swap with Escape"
 msgstr "Wissel met Escape"
 
 #: src/Views/Layout.vala:110
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "On-screen Keyboard"
-msgstr "Schakel schermtoetsenbord"
+msgstr "Schermtoetsenbord"
 
 #: src/Views/Layout.vala:115
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show on-screen keyboard:"
-msgstr "Schakel schermtoetsenbord"
+msgstr "Toon schermtoetsenbord:"
 
 #: src/Views/Layout.vala:124
 msgid "On-screen keyboard settings…"
@@ -805,10 +788,8 @@ msgid "Type to test your layout"
 msgstr "Type om je indeling te testen"
 
 #: src/Views/Layout.vala:447
-#, fuzzy
-#| msgid "Input Method"
 msgid "Input Method is active"
-msgstr "Input methode"
+msgstr "Invoermethode is actief"
 
 #: src/Views/Shortcuts.vala:76
 msgid "Add"
@@ -838,26 +819,20 @@ msgid "Move down"
 msgstr "Verplaats omlaag"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:130
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
-msgstr "Voer opdracht in"
+msgstr "Voer hier een opdracht in"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:172
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "Sneltoets"
+msgstr "Nieuwe sneltoets instellen"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:176
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "Uitgeschakeld"
+msgstr "Uitschakelen"
 
 #: src/Widgets/Shortcuts/CustomTree.vala:309
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Voer nieuwe sneltoets in…"
 
 #~ msgid "Command"
 #~ msgstr "Opdracht"

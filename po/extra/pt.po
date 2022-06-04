@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-06 20:22+0000\n"
-"PO-Revision-Date: 2021-12-22 19:30+0000\n"
+"POT-Creation-Date: 2022-05-09 21:19+0000\n"
+"PO-Revision-Date: 2022-06-03 23:21+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pt/>\n"
@@ -28,75 +28,81 @@ msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configurar o comportamento do teclado, esquemas e teclas de atalho"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:24
-msgid "New features:"
-msgstr "Novas funcionalidades:"
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:38
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:55
+msgid "Minor updates:"
+msgstr "Pequenas atualizações:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Open Multitasking View with Super"
-msgstr ""
+msgid "Update for OS 7"
+msgstr "Atualização para OS 7"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:46
-msgid "Minor updates:"
-msgstr "Pequena atualizações:"
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:40
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:72
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:60
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:68
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:74
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:81
 msgid "Updated translations"
 msgstr "Traduções atualizadas"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:26
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+msgid "New features:"
+msgstr "Novas funcionalidades:"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:23
+msgid "Open Multitasking View with Super"
+msgstr "Abrir a Vista de Tarefas com a tecla Super"
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:35
 msgid "Redesigned custom shortcuts view"
 msgstr "Vista de atalhos personalizados redesenhada"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:36
 msgid "On-screen keyboard switch in Layouts tab"
 msgstr "Comutador de teclado no ecrã no separador de esquemas"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
 msgid "Ensure IBus automatically starts on login when needed"
 msgstr ""
 "Assegurar que o IBus inicia automaticamente no início de sessão quando "
 "necessário"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:48
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
 msgid "Add Layout popover is now a dialog"
 msgstr "Aviso de Adicionar Esquema é agora uma caixa de diálogo"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
 msgid "Guarantee we always have at least one layout"
 msgstr "Garantir que temos sempre pelo menos um esquema"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:50
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:59
 msgid "Improvements to ibus and xkb layouts"
 msgstr "Melhoramentos nos esquemas ibus e xkb"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
 msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
 msgstr "A descrição do atalho para \"Reproduzir\" agora é \"Reproduzir/Pausa\""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:58
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
 msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
 msgstr ""
 "Corrige um problema em que alguns atalhos eram exibidos incorretamente como "
 "desativados"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:73
 msgid "Add a view to configure input methods"
 msgstr "Adiciona uma vista para configurar métodos de entrada"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:70
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:79
 msgid "New \"Workspaces\" icon"
 msgstr "Novo ícone \"Áreas de trabalho\""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:80
 msgid "Exclude Space from single-key shortcuts"
 msgstr "Excluir espaço de atalhos de tecla única"
