@@ -18,8 +18,13 @@
 */
 
 class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
+    public Page shortcut_page { get; construct; } // Object with access to all shortcut views
     public signal void row_unselected ();
     public bool is_editing { get; set; default = false; }
+
+    public CustomShortcutListBox (Page shortcut_page) {
+        Object (shortcut_page: shortcut_page);
+    }
 
     construct {
         hexpand = true;
@@ -75,16 +80,9 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
 
     // Display tree interface methods
     public bool shortcut_conflicts (Shortcut shortcut, out string name) {
+        name = "";
         return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
     }
-
-    public void reset_shortcut (Shortcut shortcut) {
-        string relocatable_schema;
-        CustomShortcutSettings.shortcut_conflicts (shortcut, null, out relocatable_schema);
-        CustomShortcutSettings.edit_shortcut (relocatable_schema, "");
-        load_and_display_custom_shortcuts ();
-    }
-    // -----------------------------
 
     private class CustomShortcutRow : Gtk.ListBoxRow {
         private const string BINDING_KEY = "binding";
@@ -358,8 +356,24 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
          }
 
         private void update_binding (Shortcut shortcut) {
-            string conflict_name, relocatable_schema;
-            if (CustomShortcutSettings.shortcut_conflicts (shortcut, out conflict_name, out relocatable_schema)) {
+            string conflict_name;
+            string relocatable_schema = "";
+            if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name)) {
+                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
+                    _("That key combination cannot be used as a custom shortcut"),
+                    _("The shortcut %s is already used for %s").printf (shortcut.to_readable (), conflict_name),
+                    "dialog-error",
+                    Gtk.ButtonsType.CLOSE
+                );
+
+                message_dialog.response.connect (() => {
+                    message_dialog.destroy ();
+                });
+
+                message_dialog.present ();
+                gsettings.set_value (BINDING_KEY, previous_binding);
+                return;
+            } else if (CustomShortcutSettings.shortcut_conflicts (shortcut, out conflict_name, out relocatable_schema)) {
                 var dialog = new ConflictDialog (shortcut.to_readable (), conflict_name, command_entry.text);
                 dialog.responded.connect ((response_id) => {
                     if (response_id == Gtk.ResponseType.ACCEPT) {
@@ -370,11 +384,12 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                         gsettings.set_value (BINDING_KEY, previous_binding);
                     }
                 });
+
                 dialog.transient_for = (Gtk.Window) this.get_toplevel ();
                 dialog.present ();
+            } else {
+                gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
             }
-
-            gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
         }
 
         private void render_keycaps () {

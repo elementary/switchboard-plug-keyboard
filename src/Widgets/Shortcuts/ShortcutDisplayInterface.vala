@@ -18,6 +18,14 @@
 */
 
 interface Pantheon.Keyboard.Shortcuts.ShortcutDisplayInterface : Gtk.Widget {
+    public abstract Page shortcut_page { get; construct; } // Object with access to all shortcut views
     public abstract bool shortcut_conflicts (Shortcut shortcut, out string name);
-    public abstract void reset_shortcut (Shortcut shortcut);
+    public virtual bool system_shortcut_conflicts (Shortcut shortcut, out string name) {
+        name = "";
+        return shortcut_page.system_shortcut_conflicts (shortcut, out name);
+    }
+    public virtual bool custom_shortcut_conflicts (Shortcut shortcut, out string name) {
+        name = "";
+        return shortcut_page.custom_shortcut_conflicts (shortcut, out name);
+    }
 }

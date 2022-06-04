@@ -18,14 +18,15 @@
 */
 
 private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
+    public Page shortcut_page { get; construct; } // Object with access to all shortcut views
     public SectionID group { get; construct; }
 
     private string[] actions;
     private Schema[] schemas;
     private string[] keys;
 
-    public ShortcutListBox (SectionID group) {
-        Object (group: group);
+    public ShortcutListBox (SectionID group, Page shortcut_page) {
+        Object (group: group, shortcut_page: shortcut_page);
     }
 
     construct {
@@ -60,8 +61,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
 
         return false;
     }
-
-    public void reset_shortcut (Shortcut shortcut) {}
 
     private class ShortcutRow : Gtk.ListBoxRow {
         public string action { get; construct; }
@@ -174,10 +173,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 editing = true;
             });
 
-            key_release_event.connect (on_key_pressed);
+            key_release_event.connect (on_key_released);
         }
 
-        private bool on_key_pressed (Gdk.EventKey key) {
+        private bool on_key_released (Gdk.EventKey key) {
             if (!editing) {
                 return Gdk.EVENT_STOP;
             }
