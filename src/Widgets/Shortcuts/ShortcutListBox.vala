@@ -214,23 +214,63 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             is_editing_shortcut = start_editing;
         }
 
-        private bool on_key_released (Gdk.EventKey key) {
+        private bool on_key_released (Gdk.EventKey event) {
             if (!is_editing_shortcut) {
                 return Gdk.EVENT_STOP;
             }
 
-            var key_state = key.state;
-            Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref key_state);
+            var mods = event.state & Gtk.accelerator_get_default_mod_mask ();
+            var keyval = event.keyval;
+            if (mods > 0) {
+                // Accept any key with a modifier (not all may work)
+                Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
 
-            var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (key.keyval, key_state);
+                var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                update_binding (shortcut);
+            } else {
+                switch (keyval) {
+                    case Gdk.Key.Escape:
+                        // Cancel editing
+                        break;
+                    // case Gdk.Key.F1: May be used for system help
+                    case Gdk.Key.F2:
+                    case Gdk.Key.F3:
+                    case Gdk.Key.F4:
+                    case Gdk.Key.F5:
+                    case Gdk.Key.F6:
+                    case Gdk.Key.F7:
+                    case Gdk.Key.F8:
+                    case Gdk.Key.F9:
+                    case Gdk.Key.F10:
+                    // case Gdk.Key.F11: Already used for fullscreen
+                    case Gdk.Key.F12:
+                    case Gdk.Key.Menu:
+                        // Accept certain keys as single key accelerators
+                        var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                        update_binding (shortcut);
+                        break;
+                    default:
+                        return Gdk.EVENT_STOP;
+                }
+            }
+
+            edit_shortcut (false);
+            render_keycaps ();
+
+            return Gdk.EVENT_STOP;
+        }
+
+        private void update_binding (Shortcut shortcut) {
+            string conflict_name = "";
+            string group = "";
+            string relocatable_schema = "";
             var shortcut_listbox = (ShortcutListBox)parent;
-            var conflict_name = "";
-            if (shortcut_listbox.custom_shortcut_conflicts (shortcut, out conflict_name) ||
-                shortcut_listbox.system_shortcut_conflicts (shortcut, out conflict_name)) {
+            if (shortcut_listbox.custom_shortcut_conflicts (shortcut, out conflict_name, out group) ||
+                shortcut_listbox.system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
 
                 var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                    _("That key combination cannot be used as a system shortcut"),
-                    _("The shortcut %s is already used for %s").printf (shortcut.to_readable (), conflict_name),
+                    _("That key combination cannot currently be used for this shortcut"),
+                    _("The key combination %s is already used for the %s function '%s'").printf (shortcut.to_readable (), group, conflict_name),
                     "dialog-error",
                     Gtk.ButtonsType.CLOSE
                 );
@@ -248,11 +288,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                     settings.schemas[schema].set_string (gsettings_key, shortcut.to_gsettings ());
                 }
             }
-
-            edit_shortcut (false);
-            render_keycaps ();
-
-            return Gdk.EVENT_STOP;
         }
 
         private void render_keycaps () {
