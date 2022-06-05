@@ -19,7 +19,6 @@
 
 class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
     public Page shortcut_page { get; construct; } // Object with access to all shortcut views
-    public signal void row_unselected ();
 
     public CustomShortcutListBox (Page shortcut_page) {
         Object (shortcut_page: shortcut_page);
