@@ -139,14 +139,14 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
 
             var menubutton = new Gtk.MenuButton () {
                 image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
-                popover = popover
+                popover = popover,
             };
             menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             var grid = new Gtk.Grid () {
                 column_spacing = 12,
                 margin_top = 3,
-                margin_end = 6,
+                margin_end = 12, // Allow space for scrollbar to expand
                 margin_bottom = 3,
                 margin_start = 6,
                 valign = Gtk.Align.CENTER

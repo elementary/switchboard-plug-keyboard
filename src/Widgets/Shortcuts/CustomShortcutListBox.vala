@@ -196,7 +196,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                 column_spacing = 12,
                 margin = 3,
                 margin_start = 6,
-                margin_end = 6,
+                margin_end = 12, // Allow space for scrollbar to expand
                 valign = Gtk.Align.CENTER
             };
             grid.add (command_entry);
