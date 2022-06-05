@@ -75,6 +75,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
+        private Gtk.EventBox keycap_eventbox;
         private bool is_editing_shortcut = false;
         private Gdk.Device? keyboard_device = null;
 
@@ -114,6 +115,9 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             };
             keycap_stack.add (keycap_box);
             keycap_stack.add (status_label);
+
+            keycap_eventbox = new Gtk.EventBox ();
+            keycap_eventbox.add (keycap_stack);
 
             var set_accel_button = new Gtk.ModelButton () {
                 text = _("Set New Shortcut")
@@ -155,7 +159,8 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 valign = Gtk.Align.CENTER
             };
             grid.add (label);
-            grid.add (keycap_stack);
+            grid.add (keycap_eventbox);
+            // grid.add (keycap_stack);
             grid.add (menubutton);
             grid.show_all ();
 
@@ -179,8 +184,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             });
 
             set_accel_button.clicked.connect (() => {
-                keycap_stack.visible_child = status_label;
-                status_label.label = _("Enter new shortcut…");
+                edit_shortcut (true);
+            });
+
+            keycap_eventbox.button_release_event.connect (() => {
                 edit_shortcut (true);
             });
 
@@ -195,6 +202,9 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         private void edit_shortcut (bool start_editing) {
             //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
+                keycap_stack.visible_child = status_label;
+                status_label.label = _("Enter new shortcut…");
+
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
                 // Grab keyboard on this row's window
