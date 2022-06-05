@@ -77,9 +77,10 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
         select_row (get_row_at_index (selected_index - 1));
     }
 
-    // Display tree interface methods
-    public bool shortcut_conflicts (Shortcut shortcut, out string name) {
+    // ShortcutDisplayInterface method
+    public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
         name = "";
+        group = SectionID.CUSTOM.to_string ();
         return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
     }
 
@@ -354,12 +355,15 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
          }
 
         private void update_binding (Shortcut shortcut) {
-            string conflict_name;
+            string conflict_name = "";
+            string group = "";
             string relocatable_schema = "";
-            if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name)) {
+            if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
                 var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                    _("That key combination cannot be used as a custom shortcut"),
-                    _("The shortcut %s is already used for %s").printf (shortcut.to_readable (), conflict_name),
+                    _("That key combination cannot currently be used as a custom shortcut"),
+                    _("The shortcut %s is already used for the %s function '%s'").printf (
+                        shortcut.to_readable (), group, conflict_name
+                    ),
                     "dialog-error",
                     Gtk.ButtonsType.CLOSE
                 );

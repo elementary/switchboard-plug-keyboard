@@ -44,16 +44,19 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         show_all ();
     }
 
-    public bool shortcut_conflicts (Shortcut shortcut, out string name) {
+    public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
         string[] actions, keys;
         Schema[] schemas;
 
         name = "";
+        group = this.group.to_string ();
+        list.get_group (this.group, out actions, out schemas, out keys);
 
-        list.get_group (group, out actions, out schemas, out keys);
-
+        // For every action in group there is a corresponding schema and key entry
+        // so only need to iterate actions
         for (int i = 0; i < actions.length; i++) {
-            if (shortcut.is_equal (settings.get_val (schemas[i], keys[i]))) {
+            var action_shortcut = settings.get_val (schemas[i], keys[i]);
+            if (shortcut.is_equal (action_shortcut)) {
                 name = actions[i];
                 return true;
             }

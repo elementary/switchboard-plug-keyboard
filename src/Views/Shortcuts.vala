@@ -25,7 +25,7 @@ namespace Pantheon.Keyboard.Shortcuts {
     // array of shortcut views, one for each section
     private ShortcutDisplayInterface[] shortcut_views;
 
-    private enum SectionID {
+    public enum SectionID {
         WINDOWS,
         WORKSPACES,
         SCREENSHOTS,
@@ -34,7 +34,30 @@ namespace Pantheon.Keyboard.Shortcuts {
         A11Y,
         SYSTEM,
         CUSTOM,
-        COUNT
+        COUNT;
+
+        public string to_string () {
+            switch (this) {
+                case WINDOWS:
+                    return (_("Windows"));
+                case WORKSPACES:
+                    return (_("Workspaces"));
+                case SCREENSHOTS:
+                    return (_("Screenshots"));
+                case APPS:
+                    return (_("Applications"));
+                case MEDIA:
+                    return (_("Media"));
+                case A11Y:
+                    return (_("Accessibility"));
+                case SYSTEM:
+                    return (_("System"));
+                case CUSTOM:
+                    return (_("Custom"));
+                default:
+                    return "";
+            }
+        }
     }
 
     class Page : Gtk.Grid {
@@ -130,11 +153,13 @@ namespace Pantheon.Keyboard.Shortcuts {
             remove_button.sensitive = true;
         }
 
-        public bool system_shortcut_conflicts (Shortcut shortcut, out string name) {
+        public bool system_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
             name = "";
+            group = "";
             foreach (var view in shortcut_views) {
                 if (view is ShortcutListBox) {
-                    if (view.shortcut_conflicts (shortcut, out name)) {
+                    var slb = (ShortcutListBox)view;
+                    if (slb.shortcut_conflicts (shortcut, out name, out group)) {
                         return true;
                     }
                 }
@@ -143,11 +168,12 @@ namespace Pantheon.Keyboard.Shortcuts {
             return false;
         }
 
-        public bool custom_shortcut_conflicts (Shortcut shortcut, out string name) {
+        public bool custom_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
             name = "";
+            group = "";
             foreach (var view in shortcut_views) {
                 if (view is CustomShortcutListBox) {
-                    if (view.shortcut_conflicts (shortcut, out name)) {
+                    if (view.shortcut_conflicts (shortcut, out name, out group)) {
                         return true;
                     }
                 }
