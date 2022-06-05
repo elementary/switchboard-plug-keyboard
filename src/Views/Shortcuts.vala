@@ -158,8 +158,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             group = "";
             foreach (var view in shortcut_views) {
                 if (view is ShortcutListBox) {
-                    var slb = (ShortcutListBox)view;
-                    if (slb.shortcut_conflicts (shortcut, out name, out group)) {
+                    if (view.shortcut_conflicts (shortcut, out name, out group)) {
                         return true;
                     }
                 }
