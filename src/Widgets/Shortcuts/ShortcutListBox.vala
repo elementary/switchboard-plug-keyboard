@@ -185,6 +185,11 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             });
 
             key_release_event.connect (on_key_released);
+
+            focus_out_event.connect (() => {
+                edit_shortcut (false);
+                return Gdk.EVENT_PROPAGATE;
+            });
         }
 
         private void edit_shortcut (bool start_editing) {
@@ -209,9 +214,9 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 if (keyboard_device != null) {
                     keyboard_device.get_seat ().ungrab ();
                     Gtk.device_grab_remove (this, keyboard_device);
-                } else {
-                    return;
                 }
+
+                render_keycaps ();
             }
 
             is_editing_shortcut = start_editing;
