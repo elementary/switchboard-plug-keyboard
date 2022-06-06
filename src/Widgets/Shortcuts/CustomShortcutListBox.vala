@@ -358,14 +358,18 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             string group = "";
             string relocatable_schema = "";
             if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
-                var message_dialog = new Granite.MessageDialog.with_image_from_icon_name (
-                    _("That key combination cannot currently be used as a custom shortcut"),
-                    _("The shortcut %s is already used for the %s function '%s'").printf (
+                var message_dialog = new Granite.MessageDialog  (
+                    _("Unable to set new shortcut due to conflicts"),
+                    _("“%s” is already used for “%s → %s”.").printf (
                         shortcut.to_readable (), group, conflict_name
                     ),
-                    "dialog-error",
+                    new ThemedIcon ("preferences-desktop-keyboard"),
                     Gtk.ButtonsType.CLOSE
-                );
+                ) {
+                    badge_icon = new ThemedIcon ("dialog-error"),
+                    modal = true,
+                    transient_for = (Gtk.Window) get_toplevel ()
+                };
 
                 message_dialog.response.connect (() => {
                     message_dialog.destroy ();
