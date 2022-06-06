@@ -23,7 +23,8 @@ namespace Pantheon.Keyboard.Shortcuts {
     // helper class for gsettings
     // note that media key are stored as strings, all others as string vectors
     class Settings : GLib.Object {
-        private GLib.Settings[] schemas;
+        public GLib.Settings[] schemas;
+
         private string[] schema_names;
 
         construct {
@@ -85,24 +86,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             return new Shortcut.parse (str);
-        }
-
-        public bool set_val (Schema schema, string key, Shortcut sc) {
-            if (!valid (schema, key)) {
-                return false;
-            }
-
-            var gsettings = schemas[schema];
-            VariantType key_type = gsettings.settings_schema.get_key (key).get_value_type ();
-            if (key_type.equal (VariantType.STRING)) {
-                gsettings.set_string (key, sc.to_gsettings ());
-            } else if (key_type.equal (VariantType.STRING_ARRAY)) {
-                gsettings.set_strv (key, {sc.to_gsettings ()});
-            } else {
-                return false;
-            }
-
-            return true;
         }
     }
 }
