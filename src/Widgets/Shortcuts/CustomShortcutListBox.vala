@@ -358,7 +358,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             string group = "";
             string relocatable_schema = "";
             if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
-                var message_dialog = new Granite.MessageDialog  (
+                var message_dialog = new Granite.MessageDialog (
                     _("Unable to set new shortcut due to conflicts"),
                     _("“%s” is already used for “%s → %s”.").printf (
                         shortcut.to_readable (), group, conflict_name

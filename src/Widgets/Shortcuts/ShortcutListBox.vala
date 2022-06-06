@@ -285,7 +285,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             if (shortcut_listbox.custom_shortcut_conflicts (shortcut, out conflict_name, out group) ||
                 shortcut_listbox.system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
 
-                var message_dialog = new Granite.MessageDialog  (
+                var message_dialog = new Granite.MessageDialog (
                     _("Unable to set new shortcut due to conflicts"),
                     _("“%s” is already used for “%s → %s”.").printf (
                         shortcut.to_readable (), group, conflict_name
