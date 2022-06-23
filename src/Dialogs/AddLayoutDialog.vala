@@ -28,6 +28,8 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
     private GLib.ListStore layout_list;
     private XkbLayoutHandler handler;
 
+    private string layout_id;
+
     construct {
         default_height = 450;
         default_width = 750;
@@ -114,15 +116,12 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         var header_revealer = new Gtk.Revealer ();
         header_revealer.add (header_grid);
 
-        var gkbd_drawing = new KeyBoardDrawing ();
-
         var deck = new Hdy.Deck () {
             can_swipe_back = true,
             expand = true
         };
         deck.add (input_language_grid);
         deck.add (layout_scrolled);
-        deck.add (gkbd_drawing);
 
         var frame_grid = new Gtk.Grid () {
             orientation = Gtk.Orientation.VERTICAL
@@ -160,12 +159,6 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
                 back_button.label = _(INPUT_LANGUAGE);
                 layout_list_title.label = "<b>%s</b>".printf (get_selected_lang ().name);
-            } else if (deck.visible_child == gkbd_drawing) {
-                back_button.label = _(LAYOUT_LIST);
-                layout_list_title.label = "<b>%s</b> — %s".printf (
-                    get_selected_lang ().name, get_selected_layout ().name
-                );
-                keyboard_map_revealer.reveal_child = false;
             }
         });
 
@@ -204,7 +197,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         keyboard_map_button.clicked.connect (() => {
-            deck.visible_child = gkbd_drawing;
+            Posix.system ("gkbd-keyboard-display -l %s".printf (layout_id));
         });
 
         layout_list_box.row_selected.connect ((row) => {
@@ -212,8 +205,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             button_add.sensitive = row != null;
 
             if (row != null) {
-                gkbd_drawing.layout_id = "%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id);
-                gkbd_drawing.show_all ();
+                layout_id = "%s\t%s".printf (get_selected_lang ().id, get_selected_layout ().id);
             }
         });
     }
@@ -249,56 +241,30 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
     }
 
     private class ListStoreItem : Object {
-        public string id;
-        public string name;
+        public string id { get; construct; }
+        public string name { get; construct; }
 
         public ListStoreItem (string id, string name) {
-            this.id = id;
-            this.name = name;
+            Object (
+                id: id,
+                name: name
+            );
         }
     }
 
     private class LayoutRow : Gtk.ListBoxRow {
+        public string rname { get; construct; }
         public LayoutRow (string name) {
-            var label = new Gtk.Label (name);
+            Object (rname: name);
+        }
+
+        construct {
+            var label = new Gtk.Label (rname);
             label.margin = 6;
             label.margin_end = 12;
             label.margin_start = 12;
             label.xalign = 0;
             add (label);
-        }
-    }
-
-    private class KeyBoardDrawing : Gtk.Grid {
-        private Gkbd.KeyboardDrawing gkbd_drawing;
-
-        private static Gkbd.KeyboardDrawingGroupLevel top_left = { 0, 1 };
-        private static Gkbd.KeyboardDrawingGroupLevel top_right = { 0, 3 };
-        private static Gkbd.KeyboardDrawingGroupLevel bottom_left = { 0, 0 };
-        private static Gkbd.KeyboardDrawingGroupLevel bottom_right = { 0, 2 };
-        private static Gkbd.KeyboardDrawingGroupLevel*[] group = { &top_left, &top_right, &bottom_left, &bottom_right };
-
-        public string layout_id {
-            set {
-                gkbd_drawing.set_layout (value);
-            }
-        }
-
-        construct {
-            gkbd_drawing = new Gkbd.KeyboardDrawing ();
-            gkbd_drawing.parent = this;
-            gkbd_drawing.set_groups_levels (((unowned Gkbd.KeyboardDrawingGroupLevel)[])group);
-        }
-
-        public override bool draw (Cairo.Context cr) {
-            gkbd_drawing.render (cr,
-                Pango.cairo_create_layout (cr), 0, 0,
-                get_allocated_width (),
-                get_allocated_height (),
-                50,
-                50
-            );
-            return true;
         }
     }
 }
