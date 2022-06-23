@@ -44,11 +44,8 @@ plug_files = files(
     'Dialogs/AddLayoutDialog.vala'
 )
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
-
-gnome_keyboard_dep = dependency('libgnomekbd')
-gnome_keyboard_ui_dep = meson.get_compiler('c').find_library('gnomekbdui')
 
 ibus_dep = dependency('ibus-1.0')
 if(ibus_dep.version().version_compare('>=1.5.19'))
@@ -68,8 +65,6 @@ shared_module(
         dependency('gtk4'),
         dependency('libadwaita-1'),
         dependency('libxml-2.0'),
-        gnome_keyboard_dep,
-        gnome_keyboard_ui_dep,
         ibus_dep,
         switchboard_dep
     ],
