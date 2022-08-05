@@ -197,7 +197,11 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         keyboard_map_button.clicked.connect (() => {
-            Posix.system ("gkbd-keyboard-display -l %s".printf (layout_id));
+			try {
+				Process.spawn_command_line_sync ("gkbd-keyboard-display -l %s".printf (layout_id));
+			} catch (SpawnError e) {
+				print ("Error: %s\n", e.message);
+			}
         });
 
         layout_list_box.row_selected.connect ((row) => {
