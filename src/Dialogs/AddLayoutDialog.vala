@@ -198,7 +198,8 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
         keyboard_map_button.clicked.connect (() => {
             try {
-                Process.spawn_command_line_sync ("gkbd-keyboard-display -l %s".printf (layout_id));
+                var cmd = "gkbd-keyboard-display --layout=" + "\"" + layout_id + "\"";
+                Process.spawn_command_line_sync (cmd);
             } catch (SpawnError e) {
                 print ("Error: %s\n", e.message);
             }
