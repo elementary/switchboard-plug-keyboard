@@ -92,7 +92,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             scrolledwindow.expand = true;
             scrolledwindow.add (stack);
 
-            var add_button = new Gtk.Button.with_label ("Add Shortcut") {
+            var add_button = new Gtk.Button.with_label (_("Add Shortcut")) {
                 always_show_image = true,
                 image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
                 margin_top = 3,
