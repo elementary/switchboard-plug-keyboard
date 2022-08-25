@@ -61,9 +61,6 @@ namespace Pantheon.Keyboard.Shortcuts {
     }
 
     class Page : Gtk.Grid {
-        private Gtk.Button add_button;
-        private Gtk.Button remove_button;
-
         construct {
             CustomShortcutSettings.init ();
 
@@ -95,12 +92,13 @@ namespace Pantheon.Keyboard.Shortcuts {
             scrolledwindow.expand = true;
             scrolledwindow.add (stack);
 
-            add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-            add_button.tooltip_text = _("Add");
-
-            remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.SMALL_TOOLBAR);
-            remove_button.sensitive = false;
-            remove_button.tooltip_text = _("Remove");
+            var add_button = new Gtk.Button.with_label (_("Add Shortcut")) {
+                always_show_image = true,
+                image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+                margin_top = 3,
+                margin_bottom = 3
+            };
+            add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             var actionbar = new Gtk.ActionBar ();
             actionbar.hexpand = true;
@@ -108,7 +106,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
             actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
             actionbar.add (add_button);
-            actionbar.add (remove_button);
 
             var action_grid = new Gtk.Grid ();
             action_grid.attach (scrolledwindow, 0, 0);
@@ -128,9 +125,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             if (CustomShortcutSettings.available) {
                 var custom_tree = new CustomShortcutListBox (this);
-                custom_tree.row_selected.connect (row_selected);
                 add_button.clicked.connect (() => custom_tree.on_add_clicked ());
-                remove_button.clicked.connect (() => custom_tree.on_remove_clicked ());
 
                 shortcut_views += custom_tree;
             }
@@ -147,10 +142,6 @@ namespace Pantheon.Keyboard.Shortcuts {
                 actionbar.visible = index == SectionID.CUSTOM;
                 show_all ();
             });
-        }
-
-        private void row_selected () {
-            remove_button.sensitive = true;
         }
 
         public bool system_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {

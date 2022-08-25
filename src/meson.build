@@ -47,6 +47,8 @@ plug_files = files(
 switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
+posix_dep = meson.get_compiler('vala').find_library('posix')
+
 ibus_dep = dependency('ibus-1.0')
 if(ibus_dep.version().version_compare('>=1.5.19'))
     add_project_arguments(['--define', 'IBUS_1_5_19'], language: 'vala')
@@ -65,6 +67,7 @@ shared_module(
         dependency('gtk4'),
         dependency('libadwaita-1'),
         dependency('libxml-2.0'),
+        posix_dep,
         ibus_dep,
         switchboard_dep
     ],

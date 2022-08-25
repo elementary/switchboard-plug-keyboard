@@ -63,19 +63,6 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
         unselect_all ();
     }
 
-    public void on_remove_clicked () {
-        var selected_row = get_selected_row ();
-        var selected_index = 0;
-        if (selected_row != null) {
-            selected_index = selected_row.get_index ();
-            var custom_shortcut_row = (CustomShortcutRow)selected_row;
-            CustomShortcutSettings.remove_shortcut (custom_shortcut_row.relocatable_schema);
-            selected_row.destroy ();
-        }
-
-        select_row (get_row_at_index (selected_index - 1));
-    }
-
     // ShortcutDisplayInterface method
     public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
         name = "";
@@ -174,6 +161,11 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             };
             clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
+            var remove_button = new Gtk.ModelButton () {
+                text = _("Remove")
+            };
+            remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+
             var action_grid = new Gtk.Grid () {
                 margin_top = 3,
                 margin_bottom = 3,
@@ -181,6 +173,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             };
             action_grid.add (set_accel_button);
             action_grid.add (clear_button);
+            action_grid.add (remove_button);
             action_grid.show_all ();
 
             var popover = new Gtk.Popover (null);
@@ -220,6 +213,11 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                 if (!is_editing_shortcut) {
                     gsettings.set_string (BINDING_KEY, "");
                 }
+            });
+
+            remove_button.clicked.connect (() => {
+                CustomShortcutSettings.remove_shortcut (relocatable_schema);
+                destroy ();
             });
 
             set_accel_button.clicked.connect (() => {

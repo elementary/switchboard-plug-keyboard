@@ -122,7 +122,8 @@ namespace Pantheon.Keyboard {
             };
 
             var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
-                halign = Gtk.Align.START
+                halign = Gtk.Align.START,
+                has_tooltip = false
             };
 
             // Advanced settings panel
