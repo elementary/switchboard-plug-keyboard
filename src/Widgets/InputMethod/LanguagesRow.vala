@@ -1,5 +1,5 @@
 /*
-* 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2020 elementary, Inc. (https://elementary.io)
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -28,16 +28,17 @@ public class Pantheon.Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
             hexpand = true
         };
 
-        var caret = new Gtk.Image.from_icon_name ("pan-end-symbolic", Gtk.IconSize.MENU);
+        var caret = new Gtk.Image.from_icon_name ("pan-end-symbolic");
 
-        var grid = new Gtk.Grid () {
-            margin = 3,
+        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0) {
+            margin_top = 3,
+            margin_bottom = 3,
             margin_start = 6,
             margin_end = 6
         };
-        grid.add (label);
-        grid.add (caret);
+        box.append (label);
+        box.append (caret);
 
-        add (grid);
+        set_child (box);
     }
 }

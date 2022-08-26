@@ -1,5 +1,5 @@
 /*
-* 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -31,21 +31,20 @@ public class Pantheon.Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
             hexpand = true
         };
 
-        var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic", Gtk.IconSize.MENU) {
-            no_show_all = true,
+        var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic") {
             visible = false
         };
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 6,
-            margin = 3,
+        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            margin_top = 3,
+            margin_bottom = 3,
             margin_start = 6,
             margin_end = 6
         };
-        grid.add (label);
-        grid.add (selection_icon);
+        box.append (label);
+        box.append (selection_icon);
 
-        add (grid);
+        set_child (box);
 
         notify["selected"].connect (() => {
             selection_icon.visible = selected;

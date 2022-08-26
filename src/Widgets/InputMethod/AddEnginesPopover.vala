@@ -1,5 +1,5 @@
 /*
-* 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -24,49 +24,60 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
     construct {
         search_entry = new Gtk.SearchEntry () {
-            margin = 12
+            margin_top = 12,
+            margin_bottom = 12,
+            margin_start = 12,
+            margin_end = 12,
+            ///TRANSLATORS: This text appears in a search entry and tell users to type some search word
+            ///to look for a input method engine they want to add.
+            ///It does not mean search engines in web browsers.
+            placeholder_text = _("Search engine")
         };
-
-        ///TRANSLATORS: This text appears in a search entry and tell users to type some search word
-        ///to look for a input method engine they want to add.
-        ///It does not mean search engines in web browsers.
-        search_entry.placeholder_text = _("Search engine");
 
         liststore = new GLib.ListStore (Type.OBJECT);
 
         listbox = new Gtk.ListBox ();
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
-            expand = true,
+        var scrolled = new Gtk.ScrolledWindow () {
+            hexpand = true,
+            vexpand = true,
             height_request = 300,
             width_request = 500
         };
-        scrolled.add (listbox);
+        scrolled.set_child (listbox);
 
-        var install_button = new Gtk.Button.with_label (_("Install Unlisted Engines…"));
+        var install_button = new Gtk.Button.with_label (_("Install Unlisted Engines…")) {
+            halign = Gtk.Align.END
+        };
 
-        var cancel_button = new Gtk.Button.with_label (_("Cancel"));
+        var cancel_button = new Gtk.Button.with_label (_("Cancel")) {
+            halign = Gtk.Align.END
+        };
 
-        var add_button = new Gtk.Button.with_label (_("Add Engine"));
-        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        var add_button = new Gtk.Button.with_label (_("Add Engine")) {
+            halign = Gtk.Align.END
+        };
+        add_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
-            layout_style = Gtk.ButtonBoxStyle.END,
-            margin = 12,
+        var button_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+            margin_top = 12,
+            margin_bottom = 12,
+            margin_start = 12,
+            margin_end = 12,
             spacing = 6
         };
-        button_box.add (install_button);
-        button_box.add (cancel_button);
-        button_box.add (add_button);
-        button_box.set_child_secondary (install_button, true);
+        button_box.append (install_button);
+        button_box.append (cancel_button);
+        button_box.append (add_button);
+        //  button_box.set_child_secondary (install_button, true);
 
-        var grid = new Gtk.Grid ();
-        grid.attach (search_entry, 0, 0);
-        grid.attach (scrolled, 0, 1);
-        grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 2);
-        grid.attach (button_box, 0, 3);
+        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        box.append (search_entry);
+        box.append (scrolled);
+        box.append (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        box.append (button_box);
 
-        add (grid);
+        set_child (box);
 
         listbox.button_press_event.connect ((event) => {
             if (event.type == Gdk.EventType.DOUBLE_BUTTON_PRESS) {
@@ -127,15 +138,16 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         for (int i = 0; i < liststore.get_n_items (); i++) {
             var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name) {
                 halign = Gtk.Align.START,
-                margin = 6,
+                margin_top = 6,
+                margin_bottom = 6,
                 margin_end = 12,
                 margin_start = 12
             };
 
             var listboxrow = new Gtk.ListBoxRow ();
-            listboxrow.add (label);
+            listboxrow.set_child (label);
 
-            listbox.add (listboxrow);
+            listbox.append (listboxrow);
         }
 
         listbox.select_row (listbox.get_row_at_index (0));

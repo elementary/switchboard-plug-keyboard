@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017-2018 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2018 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -36,7 +36,7 @@ public class ConflictDialog : Granite.MessageDialog {
         add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         var reassign_button = add_button (_("Reassign"), Gtk.ResponseType.ACCEPT);
-        reassign_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        reassign_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         response.connect ((response_id) => {
             responded (response_id);

@@ -100,7 +100,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             status_label = new Gtk.Label (_("Disabled")) {
                 halign = Gtk.Align.END
             };
-            status_label.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
+            status_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             keycap_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
                 valign = Gtk.Align.CENTER,
@@ -144,19 +144,18 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             };
             menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 12,
+            var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 12) {
                 margin_top = 3,
                 margin_end = 12, // Allow space for scrollbar to expand
                 margin_bottom = 3,
                 margin_start = 6,
                 valign = Gtk.Align.CENTER
             };
-            grid.attach (label, 0, 0);
-            grid.attach (keycap_stack, 0, 1);
-            grid.attach (menubutton, 0, 2);
+            box.append (label);
+            box.append (keycap_stack);
+            box.append (menubutton);
 
-            set_child (grid);
+            set_child (box);
 
             render_keycaps ();
 
@@ -332,7 +331,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                         continue;
                     }
                     var keycap_label = new Gtk.Label (accel);
-                    keycap_label.get_style_context ().add_class ("keycap");
+                    keycap_label.add_css_class ("keycap");
                     keycap_box.append (keycap_label);
                 }
 

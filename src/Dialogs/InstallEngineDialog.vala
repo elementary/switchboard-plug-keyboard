@@ -1,5 +1,5 @@
 /*
-* Copyright 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -31,67 +31,71 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
     construct {
         var languages_list = new Gtk.ListBox () {
             activate_on_single_click = true,
-            expand = true,
+            hexpand = true,
+            vexpand = true,
             selection_mode = Gtk.SelectionMode.NONE
         };
 
         foreach (var language in InstallList.get_all ()) {
             var lang = new LanguagesRow (language);
-            languages_list.add (lang);
+            languages_list.append (lang);
         }
 
         var back_button = new Gtk.Button.with_label (_("Languages")) {
             halign = Gtk.Align.START,
-            margin = 6
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_start = 6,
+            margin_end = 6
         };
-        back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
+        back_button.add_css_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
-        var language_title = new Gtk.Label ("");
+        var language_title = new Gtk.Label ("") {
+            halign = Gtk.Align.CENTER
+        };
 
         var language_header = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        language_header.pack_start (back_button);
-        language_header.set_center_widget (language_title);
+        language_header.append (back_button);
+        language_header.append (language_title);
 
         var listbox = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         listbox.set_filter_func (filter_function);
         listbox.set_sort_func (sort_function);
 
         foreach (var language in InstallList.get_all ()) {
             foreach (var engine in language.get_components ()) {
-                listbox.add (new EnginesRow (engine));
+                listbox.append (new EnginesRow (engine));
             }
         }
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (listbox);
+        var scrolled = new Gtk.ScrolledWindow ();
+        scrolled.set_child (listbox);
 
-        var engine_list_grid = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL
-        };
-        engine_list_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        engine_list_grid.add (language_header);
-        engine_list_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-        engine_list_grid.add (scrolled);
+        var engine_list_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+        engine_list_grid.add_css_class (Granite.STYLE_CLASS_VIEW);
+        engine_list_grid.append (language_header);
+        engine_list_grid.append (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
+        engine_list_grid.append (scrolled);
 
         var stack = new Gtk.Stack () {
             height_request = 200,
             width_request = 300,
             transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
         };
-        stack.add (languages_list);
-        stack.add (engine_list_grid);
+        stack.add_child (languages_list);
+        stack.add_child (engine_list_grid);
 
         var frame = new Gtk.Frame (null);
-        frame.add (stack);
+        frame.set_child (stack);
 
-        custom_bin.add (frame);
-        custom_bin.show_all ();
+        custom_bin.append (frame);
 
         var install_button = add_button (_("Install"), Gtk.ResponseType.OK);
         install_button.sensitive = false;
-        install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        install_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         languages_list.row_activated.connect ((row) => {
             stack.visible_child = engine_list_grid;
@@ -99,7 +103,7 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
             engines_filter = ((LanguagesRow) row).language;
             listbox.invalidate_filter ();
             var adjustment = scrolled.get_vadjustment ();
-            adjustment.set_value (adjustment.lower);
+            adjustment.value = adjustment.lower;
         });
 
         back_button.clicked.connect (() => {
@@ -108,8 +112,10 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         });
 
         listbox.selected_rows_changed.connect (() => {
-            foreach (var engines_row in listbox.get_children ()) {
-                ((EnginesRow) engines_row).selected = false;
+            var children = listbox.observe_children ();
+            for (int i = 0; i < children.get_n_items (); i++) {
+                var engines_row = (EnginesRow) children.get_item (i);
+                engines_row.selected = false;
             }
 
             ((EnginesRow) listbox.get_selected_row ()).selected = true;

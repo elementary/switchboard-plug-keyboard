@@ -69,21 +69,23 @@ public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
             tmp += _("Ctrl") + SEPARATOR;
         }
 
-        if ((modifiers & Gdk.ModifierType.MOD1_MASK) > 0) {
+        if ((modifiers & Gdk.ModifierType.ALT_MASK) > 0) {
             tmp += _("Alt") + SEPARATOR;
         }
 
-        if ((modifiers & Gdk.ModifierType.MOD2_MASK) > 0) {
-            tmp += "Mod2" + SEPARATOR;
-        }
+        // https://docs.gtk.org/gtk4/migrating-3to4.html#adapt-to-changes-in-keyboard-modifier-handling
+        // Should we keep this?
+        //  if ((modifiers & Gdk.ModifierType.SUPER_MASK) > 0) {
+        //      tmp += "Mod2" + SEPARATOR;
+        //  }
 
-        if ((modifiers & Gdk.ModifierType.MOD3_MASK) > 0) {
-            tmp += "Mod3" + SEPARATOR;
-        }
+        //  if ((modifiers & Gdk.ModifierType.HYPER_MASK) > 0) {
+        //      tmp += "Mod3" + SEPARATOR;
+        //  }
 
-        if ((modifiers & Gdk.ModifierType.MOD4_MASK) > 0) {
-            tmp += "Mod4" + SEPARATOR;
-        }
+        //  if ((modifiers & Gdk.ModifierType.META_MASK) > 0) {
+        //      tmp += "Mod4" + SEPARATOR;
+        //  }
 
         switch (accel_key) {
             case Gdk.Key.Up:

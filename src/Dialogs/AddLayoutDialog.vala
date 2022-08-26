@@ -1,5 +1,5 @@
 /*
-* Copyright 2017-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -77,7 +77,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             margin_start = 6,
             margin_end = 6
         };
-        back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
+        back_button.add_css_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var layout_list_title = new Gtk.Label (null) {
             halign = Gtk.Align.CENTER,

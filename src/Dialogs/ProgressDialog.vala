@@ -29,7 +29,7 @@ public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
     private Gtk.ProgressBar progress_bar;
 
     construct {
-        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale", Gtk.IconSize.DIALOG) {
+        var image = new Gtk.Image.from_icon_name ("preferences-desktop-locale") {
             valign = Gtk.Align.START
         };
 
@@ -38,7 +38,7 @@ public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
-        primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
+        //  primary_label.add_css_class (Granite.STYLE_CLASS_PRIMARY_LABEL);
 
         unowned UbuntuInstaller installer = UbuntuInstaller.get_default ();
         switch (installer.transaction_mode) {
@@ -62,17 +62,19 @@ public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
-            margin = 6,
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_start = 6,
+            margin_end = 6,
             row_spacing = 6
         };
         grid.attach (image, 0, 0, 1, 2);
         grid.attach (primary_label, 1, 0);
         grid.attach (progress_bar, 1, 1);
-        grid.show_all ();
 
-        border_width = 6;
+        //  border_width = 6;
         deletable = false;
-        get_content_area ().add (grid);
+        get_content_area ().append (grid);
 
         cancel_button.clicked.connect (() => {
             installer.cancel_install ();

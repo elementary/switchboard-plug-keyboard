@@ -75,17 +75,18 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         };
 
         var actionbar = new Gtk.ActionBar ();
+        // TODO: https://github.com/elementary/granite/issues/617
         //  actionbar.add_css_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.pack_start (add_button);
         actionbar.pack_start (remove_button);
         actionbar.pack_start (up_button);
         actionbar.pack_start (down_button);
 
-        var grid = new Gtk.Grid ();
-        grid.attach (scroll, 0, 0);
-        grid.attach (actionbar, 0, 1);
+        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        box.append (scroll);
+        box.append (actionbar);
 
-        set_child (grid);
+        set_child (box);
 
         add_button.clicked.connect (() => {
             var dialog = new AddLayoutDialog ();
@@ -139,7 +140,6 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         int rows = tree.model.iter_n_children (null);
         int index = get_cursor_index ();
 
-
         up_button.sensitive = (rows > 1 && index != 0);
         down_button.sensitive = (rows > 1 && index < rows - 1);
         remove_button.sensitive = (rows > 0);
@@ -162,7 +162,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         tree.model.get_iter (out iter, path);
         uint index;
         tree.model.get (iter, 2, out index, -1);
-        return (int)index;
+        return (int) index;
     }
 
     private void update_cursor () {
