@@ -29,7 +29,8 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
 
         stack = new Gtk.Stack () {
             hexpand = true,
-            hhomogeneous = false
+            hhomogeneous = false,
+            vhomogeneous = false
         };
         attach (stack, 0, 0);
 
@@ -82,11 +83,9 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
 
         if (panel_name == "") {
             stack.set_visible_child_name ("none");
-            stack.hide ();
             return;
         } else {
             stack.set_visible_child_name (panel_name);
-            stack.show ();
         }
     }
 }
