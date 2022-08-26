@@ -314,7 +314,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                     var listboxrow = new Gtk.ListBoxRow () {
                         child = label
                     };
-                    listboxrow.set_data<string> ("engine-name", engine.name);;
+                    listboxrow.set_data<string> ("engine-name", engine.name);
 
                     listbox.append (listboxrow);
                     settings.add_layout (InputSource.new_ibus (engine.name));
