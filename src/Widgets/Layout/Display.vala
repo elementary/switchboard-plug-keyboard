@@ -51,9 +51,9 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         var scroll = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            child = tree
         };
-        scroll.set_child (tree);
 
         add_button = new Gtk.Button.from_icon_name ("list-add-symbolic") {
             tooltip_text = _("Add…")
@@ -86,7 +86,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         box.append (scroll);
         box.append (actionbar);
 
-        set_child (box);
+        child = box;
 
         add_button.clicked.connect (() => {
             var dialog = new AddLayoutDialog ();

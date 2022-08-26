@@ -71,8 +71,9 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
             }
         }
 
-        var scrolled = new Gtk.ScrolledWindow ();
-        scrolled.set_child (listbox);
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = listbox
+        };
 
         var engine_list_grid = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         engine_list_grid.add_css_class (Granite.STYLE_CLASS_VIEW);
@@ -88,8 +89,9 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         stack.add_child (languages_list);
         stack.add_child (engine_list_grid);
 
-        var frame = new Gtk.Frame (null);
-        frame.set_child (stack);
+        var frame = new Gtk.Frame (null) {
+            child = stack
+        };
 
         custom_bin.append (frame);
 

@@ -79,19 +79,21 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             section_switcher.select_row (section_switcher.get_row_at_index (0));
 
-            var scrolled_window = new Gtk.ScrolledWindow ();
-            scrolled_window.set_child (section_switcher);
+            var scrolled_window = new Gtk.ScrolledWindow () {
+                child = section_switcher
+            };
 
-            var switcher_frame = new Gtk.Frame (null);
-            switcher_frame.set_child (scrolled_window);
+            var switcher_frame = new Gtk.Frame (null) {
+                child = scrolled_window
+            };
 
             var stack = new Gtk.Stack ();
 
             var scrolledwindow = new Gtk.ScrolledWindow () {
                 hexpand = true,
-                vexpand = true
+                vexpand = true,
+                child = stack
             };
-            scrolledwindow.set_child (stack);
 
             var add_button = new Gtk.Button.with_label (_("Add Shortcut")) {
                 icon_name = "list-add-symbolic",
@@ -113,8 +115,9 @@ namespace Pantheon.Keyboard.Shortcuts {
             action_grid.attach (scrolledwindow, 0, 0);
             action_grid.attach (actionbar, 0, 1);
 
-            var frame = new Gtk.Frame (null);
-            frame.set_child (action_grid);
+            var frame = new Gtk.Frame (null) {
+                child = action_grid
+            };
 
             column_spacing = 12;
             column_homogeneous = true;
@@ -140,7 +143,6 @@ namespace Pantheon.Keyboard.Shortcuts {
                 var index = row.get_index ();
                 stack.visible_child = shortcut_views[index];
 
-                //  actionbar.no_show_all = index != SectionID.CUSTOM;
                 actionbar.visible = index == SectionID.CUSTOM;
             });
         }
@@ -187,17 +189,16 @@ namespace Pantheon.Keyboard.Shortcuts {
                     xalign = 0
                 };
 
-                var grid = new Gtk.Grid () {
+                var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
                     margin_top = 6,
                     margin_bottom = 6,
                     margin_start = 6,
-                    margin_end = 6,
-                    column_spacing = 6
+                    margin_end = 6
                 };
-                grid.attach (icon, 0, 0);
-                grid.attach (label, 0, 1);
+                box.append (icon);
+                box.append (label);
 
-                set_child (grid);
+                child = box;
             }
         }
     }

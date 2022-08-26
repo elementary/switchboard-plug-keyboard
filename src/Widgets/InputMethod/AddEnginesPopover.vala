@@ -42,9 +42,9 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             hexpand = true,
             vexpand = true,
             height_request = 300,
-            width_request = 500
+            width_request = 500,
+            child = listbox
         };
-        scrolled.set_child (listbox);
 
         var install_button = new Gtk.Button.with_label (_("Install Unlisted Engines…")) {
             halign = Gtk.Align.END
@@ -77,7 +77,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         box.append (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         box.append (button_box);
 
-        set_child (box);
+        child = box;
 
         listbox.button_press_event.connect ((event) => {
             if (event.type == Gdk.EventType.DOUBLE_BUTTON_PRESS) {
@@ -144,8 +144,9 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                 margin_start = 12
             };
 
-            var listboxrow = new Gtk.ListBoxRow ();
-            listboxrow.set_child (label);
+            var listboxrow = new Gtk.ListBoxRow () {
+                child = label
+            };
 
             listbox.append (listboxrow);
         }

@@ -174,8 +174,9 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             action_box.append (clear_button);
             action_box.append (remove_button);
 
-            var popover = new Gtk.Popover ();
-            popover.set_child (action_box);
+            var popover = new Gtk.Popover () {
+                child = action_box
+            };
 
             var menubutton = new Gtk.MenuButton () {
                 icon_name = "open-menu-symbolic",
@@ -193,7 +194,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             box.append (command_entry);
             box.append (keycap_stack);
             box.append (menubutton);
-            set_child (box);
+            child = box;
 
             render_keycaps ();
 

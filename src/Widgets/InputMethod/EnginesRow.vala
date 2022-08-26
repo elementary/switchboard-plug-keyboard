@@ -44,7 +44,7 @@ public class Pantheon.Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
         box.append (label);
         box.append (selection_icon);
 
-        set_child (box);
+        child = box;
 
         notify["selected"].connect (() => {
             selection_icon.visible = selected;

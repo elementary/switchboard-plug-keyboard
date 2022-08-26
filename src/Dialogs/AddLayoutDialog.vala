@@ -62,9 +62,9 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         var input_language_scrolled = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            child = input_language_list_box
         };
-        input_language_scrolled.set_child (input_language_list_box);
 
         var input_language_grid = new Gtk.Grid ();
         input_language_grid.attach (search_entry, 0, 0);
@@ -96,9 +96,9 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         var layout_scrolled = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            child = layout_list_box
         };
-        layout_scrolled.set_child (layout_list_box);
 
         var keyboard_map_button = new Gtk.Button.with_label (_("Preview Layout")) {
             halign = Gtk.Align.END,
@@ -110,9 +110,9 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
         var keyboard_map_revealer = new Gtk.Revealer () {
             halign = Gtk.Align.END,
-            transition_type = Gtk.RevealerTransitionType.CROSSFADE
+            transition_type = Gtk.RevealerTransitionType.CROSSFADE,
+            child = keyboard_map_button
         };
-        keyboard_map_revealer.set_child (keyboard_map_button);
 
         var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             hexpand = true
@@ -125,8 +125,9 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         header_grid.attach (header_box, 0, 0);
         header_grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1);
 
-        var header_revealer = new Gtk.Revealer ();
-        header_revealer.set_child (header_grid);
+        var header_revealer = new Gtk.Revealer () {
+            child = header_grid
+        };
 
         var leaflet = new Adw.Leaflet () {
             can_unfold = false,
@@ -146,10 +147,10 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
         var frame = new Gtk.Frame (null) {
             margin_start = 10,
-            margin_end = 10
+            margin_end = 10,
+            child = frame_grid
         };
         frame.add_css_class (Granite.STYLE_CLASS_VIEW);
-        frame.set_child (frame_grid);
 
         var button_cancel = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
@@ -284,7 +285,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
                 margin_end = 12,
                 xalign = 0
             };
-            set_child (label);
+            child = label;
         }
     }
 }

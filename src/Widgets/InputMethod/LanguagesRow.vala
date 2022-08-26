@@ -39,6 +39,6 @@ public class Pantheon.Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
         box.append (label);
         box.append (caret);
 
-        set_child (box);
+        child = box;
     }
 }

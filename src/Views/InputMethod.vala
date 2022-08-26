@@ -89,9 +89,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         var scroll = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
-            vexpand = true
+            vexpand = true,
+            child = listbox
         };
-        scroll.set_child (listbox);
 
         add_engines_popover = new AddEnginesPopover ();
 
@@ -116,8 +116,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         left_grid.attach (scroll, 0, 0);
         left_grid.attach (actionbar, 0, 1);
 
-        var display = new Gtk.Frame (null);
-        display.set_child (left_grid);
+        var display = new Gtk.Frame (null) {
+            child = left_grid
+        };
 
         var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:")) {
             halign = Gtk.Align.END
@@ -310,9 +311,10 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                         margin_end = 6
                     };
 
-                    var listboxrow = new Gtk.ListBoxRow ();
-                    listboxrow.set_data<string> ("engine-name", engine.name);
-                    listboxrow.set_child (label);
+                    var listboxrow = new Gtk.ListBoxRow () {
+                        child = label
+                    };
+                    listboxrow.set_data<string> ("engine-name", engine.name);;
 
                     listbox.append (listboxrow);
                     settings.add_layout (InputSource.new_ibus (engine.name));
