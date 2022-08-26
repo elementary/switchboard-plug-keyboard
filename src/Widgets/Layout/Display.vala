@@ -23,7 +23,6 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
     private Gtk.TreeView tree;
     private Gtk.Button up_button;
     private Gtk.Button down_button;
-    private Gtk.Button add_button;
     private Gtk.Button remove_button;
 
     /*
@@ -55,7 +54,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
             child = tree
         };
 
-        add_button = new Gtk.Button.from_icon_name ("list-add-symbolic") {
+        var add_button = new Gtk.Button.from_icon_name ("list-add-symbolic") {
             tooltip_text = _("Add…")
         };
 
@@ -89,8 +88,9 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         child = box;
 
         add_button.clicked.connect (() => {
-            var dialog = new AddLayoutDialog ();
-            //  dialog.transient_for = (Gtk.Window) get_toplevel ();
+            var dialog = new AddLayoutDialog () {
+                transient_for = (Gtk.Window) get_root ()
+            };
             dialog.present ();
 
             dialog.layout_added.connect ((layout, variant) => {

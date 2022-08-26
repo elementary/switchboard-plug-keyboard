@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
+public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Box {
     private Gtk.Stack stack;
     private HashTable <string, string> panel_for_layout;
     AdvancedSettingsPanel? [] all_panels;
@@ -32,7 +32,7 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
             hhomogeneous = false,
             vhomogeneous = false
         };
-        attach (stack, 0, 0);
+        append (stack);
 
         // Add an empty Widget
         var blank_panel = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
@@ -52,7 +52,6 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
     }
 
     public void set_visible_panel_from_layout (string? layout_name) {
-
         string panel_name = "none";
         string[] split_name = {};
         if (layout_name != null) {

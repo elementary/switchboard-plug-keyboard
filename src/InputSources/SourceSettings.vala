@@ -108,7 +108,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
     }
 
     public void add_xkb_modifier (XkbModifier modifier) {
-        //We assume by this point the modifier has all the options in it.
+        // We assume by this point the modifier has all the options in it.
         modifier.update_from_gsettings ();
         xkb_options_modifiers += modifier;
     }

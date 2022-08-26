@@ -18,9 +18,9 @@
 */
 
 public class Pantheon.Keyboard.Plug : Switchboard.Plug {
-    public static GLib.Settings ibus_general_settings;
+    public static Settings ibus_general_settings;
 
-    private Gtk.Grid grid;
+    private Gtk.Box box;
     private Gtk.Stack stack;
 
     public Plug () {
@@ -42,11 +42,11 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     }
 
     static construct {
-        ibus_general_settings = new GLib.Settings ("org.freedesktop.ibus.general");
+        ibus_general_settings = new Settings ("org.freedesktop.ibus.general");
     }
 
     public override Gtk.Widget get_widget () {
-        if (grid == null) {
+        if (box == null) {
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
             default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
 
@@ -57,7 +57,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
                 margin_end = 12
             };
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
-            //  stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
+            stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
             //  stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
@@ -70,12 +70,12 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
                 stack = stack
             };
 
-            grid = new Gtk.Grid ();
-            grid.attach (stack_switcher, 0, 0, 1, 1);
-            grid.attach (stack, 0, 1, 1, 1);
+            box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+            box.append (stack_switcher);
+            box.append (stack);
         }
 
-        return grid;
+        return box;
     }
 
     public override void shown () {

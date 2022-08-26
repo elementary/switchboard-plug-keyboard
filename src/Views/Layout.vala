@@ -19,7 +19,6 @@
 
 namespace Pantheon.Keyboard {
     public class LayoutPage.Page : Gtk.Grid {
-        private Display display;
         private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
@@ -35,7 +34,7 @@ namespace Pantheon.Keyboard {
             };
 
             // tree view to display the current layouts
-            display = new LayoutPage.Display ();
+            var display = new LayoutPage.Display ();
 
             var switch_layout_label = new SettingsLabel (_("Switch layout:"), size_group[0]);
 
@@ -144,19 +143,19 @@ namespace Pantheon.Keyboard {
             column_spacing = 12;
             row_spacing = 12;
             attach (display, 0, 0, 1, 12);
-            attach (switch_layout_label, 1, 0, 1, 1);
-            attach (switch_layout_combo, 2, 0, 1, 1);
-            attach (compose_key_label, 1, 1, 1, 1);
-            attach (compose_key_combo, 2, 1, 1, 1);
-            attach (overlay_key_label, 1, 2, 1, 1);
-            attach (overlay_key_combo, 2, 2, 1, 1);
-            attach (caps_lock_label, 1, 3, 1, 1);
-            attach (caps_lock_combo, 2, 3, 1, 1);
-            attach (advanced_settings, 1, 4, 2);
-            attach (onscreen_keyboard_header, 1, 5, 1, 1);
-            attach (onscreen_keyboard_label, 1, 6, 1, 1);
-            attach (onscreen_keyboard_switch, 2, 6, 1);
-            attach (onscreen_keyboard_settings, 2, 7, 1);
+            attach (switch_layout_label, 1, 0);
+            attach (switch_layout_combo, 2, 0);
+            attach (compose_key_label, 1, 1);
+            attach (compose_key_combo, 2, 1);
+            attach (overlay_key_label, 1, 2);
+            attach (overlay_key_combo, 2, 2);
+            attach (caps_lock_label, 1, 3);
+            attach (caps_lock_combo, 2, 3);
+            attach (advanced_settings, 1, 4, 2, 1);
+            attach (onscreen_keyboard_header, 1, 5);
+            attach (onscreen_keyboard_label, 1, 6);
+            attach (onscreen_keyboard_switch, 2, 6);
+            attach (onscreen_keyboard_settings, 2, 7);
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
@@ -190,7 +189,7 @@ namespace Pantheon.Keyboard {
                 attach (num_lock_indicator_switch, 2, 10);
             }
 
-            attach (entry_test, 1, 11, 2);
+            attach (entry_test, 1, 11, 2, 1);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -286,8 +285,8 @@ namespace Pantheon.Keyboard {
 
             var third_level_combo = new XkbComboBox (modifier, size_group[1]);
 
-            panel.attach (third_level_label, 0, 0, 1, 1);
-            panel.attach (third_level_combo, 1, 0, 1, 1);
+            panel.attach (third_level_label, 0, 0);
+            panel.attach (third_level_combo, 1, 0);
 
             return panel;
         }
@@ -321,10 +320,10 @@ namespace Pantheon.Keyboard {
 
             var fifth_level_combo = new XkbComboBox (modifier, size_group[1]);
 
-            panel.attach (third_level_label, 0, 0, 1, 1);
-            panel.attach (third_level_combo, 1, 0, 1, 1);
-            panel.attach (fifth_level_label, 0, 1, 1, 1);
-            panel.attach (fifth_level_combo, 1, 1, 1, 1);
+            panel.attach (third_level_label, 0, 0);
+            panel.attach (third_level_combo, 1, 0);
+            panel.attach (fifth_level_label, 0, 1);
+            panel.attach (fifth_level_combo, 1, 1);
 
             return panel;
         }
@@ -346,12 +345,12 @@ namespace Pantheon.Keyboard {
 
             string [] valid_input_sources = {"jp"};
             var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
-            panel.attach (kana_lock_label, 0, 0, 1, 1);
-            panel.attach (spacer_grid, 1, 0, 1, 1);
-            panel.attach (nicola_backspace_label, 0, 1, 1, 1);
-            panel.attach (nicola_backspace_switch, 1, 1, 1, 1);
-            panel.attach (zenkaku_label, 0, 2, 1, 1);
-            panel.attach (zenkaku_switch, 1, 2, 1, 1);
+            panel.attach (kana_lock_label, 0, 0);
+            panel.attach (spacer_grid, 1, 0);
+            panel.attach (nicola_backspace_label, 0, 1);
+            panel.attach (nicola_backspace_switch, 1, 1);
+            panel.attach (zenkaku_label, 0, 2);
+            panel.attach (zenkaku_switch, 1, 2);
 
             return panel;
         }
@@ -367,8 +366,8 @@ namespace Pantheon.Keyboard {
 
             string [] valid_input_sources = {"kr"};
             var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
-            panel.attach (hangul_label, 0, 0, 1, 1);
-            panel.attach (spacer_grid, 1, 0, 1, 1);
+            panel.attach (hangul_label, 0, 0);
+            panel.attach (spacer_grid, 1, 0);
 
             return panel;
         }

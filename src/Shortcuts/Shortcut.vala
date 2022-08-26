@@ -74,7 +74,7 @@ public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
         }
 
         // https://docs.gtk.org/gtk4/migrating-3to4.html#adapt-to-changes-in-keyboard-modifier-handling
-        // Should we keep this?
+        // TODO: Should we keep this?
         //  if ((modifiers & Gdk.ModifierType.SUPER_MASK) > 0) {
         //      tmp += "Mod2" + SEPARATOR;
         //  }

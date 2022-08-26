@@ -264,7 +264,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
         }
 
         private void edit_shortcut (bool start_editing) {
-            //Ensure device grabs are paired
+            // Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
@@ -361,7 +361,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                 ) {
                     badge_icon = new ThemedIcon ("dialog-error"),
                     modal = true,
-                    transient_for = (Gtk.Window) get_toplevel ()
+                    transient_for = (Gtk.Window) get_root ()
                 };
 
                 message_dialog.response.connect (() => {
@@ -383,7 +383,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                     }
                 });
 
-                dialog.transient_for = (Gtk.Window) get_toplevel ();
+                dialog.transient_for = (Gtk.Window) get_root ();
                 dialog.present ();
             } else {
                 gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());

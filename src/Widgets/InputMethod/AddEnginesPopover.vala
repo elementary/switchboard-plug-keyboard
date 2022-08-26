@@ -38,6 +38,11 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
         listbox = new Gtk.ListBox ();
 
+        var listbox_controller = new Gtk.GestureClick () {
+            button = Gdk.BUTTON_PRIMARY
+        };
+        listbox.add_controller (listbox_controller);
+
         var scrolled = new Gtk.ScrolledWindow () {
             hexpand = true,
             vexpand = true,
@@ -79,19 +84,16 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
         child = box;
 
-        listbox.button_press_event.connect ((event) => {
-            if (event.type == Gdk.EventType.DOUBLE_BUTTON_PRESS) {
+        listbox_controller.released.connect ((n_press, x, y) => {
+            if (n_press == 2) {
                 trigger_add_engine ();
-                return false;
             }
-
-            return false;
         });
 
         listbox.set_filter_func ((list_box_row) => {
             var item = (AddEnginesList) liststore.get_item (list_box_row.get_index ());
-                //NOTE: xkb engines do not work unless IBus preferences set to not use system keyboard
-                //FIXME: Handle this IBus preference in UI or disallow xkb engines if using system keyboard
+                // NOTE: xkb engines do not work unless IBus preferences set to not use system keyboard
+                // FIXME: Handle this IBus preference in UI or disallow xkb engines if using system keyboard
                 return search_entry.text.down () in item.engine_full_name.down ();
         });
 
@@ -102,8 +104,8 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         install_button.clicked.connect (() => {
             popdown ();
 
-            var install_dialog = new InstallEngineDialog ((Gtk.Window) get_toplevel ());
-            install_dialog.run ();
+            var install_dialog = new InstallEngineDialog ((Gtk.Window) get_root ());
+            install_dialog.present ();
             install_dialog.destroy ();
         });
 

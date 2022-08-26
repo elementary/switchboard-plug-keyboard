@@ -47,6 +47,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             //  valign = Gtk.Align.CENTER
         };
         no_daemon_runnning_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
+        // TODO: icon
         var start_daemon_action = no_daemon_runnning_alert.append_button (new ThemedIcon ("somethin idk"), _("Start IBus Daemon"), "");
         start_daemon_action.clicked.connect (() => {
             spawn_ibus_daemon ();
@@ -54,7 +55,6 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         // spawn_failed view shown if IBus Daemon is not running
         spawn_failed_alert = new Granite.Placeholder (_("Could not start the IBus daemon")) {
-            description = "",
             icon = new ThemedIcon ("dialog-error")
             //  halign = Gtk.Align.CENTER,
             //  valign = Gtk.Align.CENTER
@@ -64,7 +64,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
-            selection_mode = Gtk.SelectionMode.BROWSE  //One or none selected
+            selection_mode = Gtk.SelectionMode.BROWSE  // One or none selected
         };
 
         listbox.row_selected.connect ((row) => {
@@ -322,7 +322,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             }
         }
 
-        //Do not autoselect the first entry as that would change the active input method
+        // Do not autoselect the first entry as that would change the active input method
         remove_button.sensitive = listbox.get_selected_row () != null;
         // If ibus is running, update its autostart file according to whether there are input methods active
         if (stack.visible_child_name == "main_view") {

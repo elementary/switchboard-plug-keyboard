@@ -192,7 +192,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         }
 
         private void edit_shortcut (bool start_editing) {
-            //Ensure device grabs are paired
+            // Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
@@ -287,7 +287,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 ) {
                     badge_icon = new ThemedIcon ("dialog-error"),
                     modal = true,
-                    //  transient_for = (Gtk.Window) get_toplevel ()
+                    transient_for = (Gtk.Window) get_root ()
                 };
 
                 message_dialog.response.connect (() => {

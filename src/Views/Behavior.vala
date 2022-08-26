@@ -18,8 +18,13 @@
 */
 
 public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
-    private Settings gsettings_blink;
-    private Settings gsettings_repeat;
+    private static Settings gsettings_blink;
+    private static Settings gsettings_repeat;
+
+    static construct {
+        gsettings_blink = new Settings ("org.gnome.desktop.interface");
+        gsettings_repeat = new Settings ("org.gnome.desktop.peripherals.keyboard");
+    }
 
     construct {
         var label_repeat = new Granite.HeaderLabel (_("Repeat Keys:")) {
@@ -146,14 +151,12 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
         attach (label_blink_s, 3, 5);
         attach (entry_test, 1, 6);
 
-        gsettings_blink = new Settings ("org.gnome.desktop.interface");
         gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-time", blink_speed_adjustment, "value", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-time", spin_blink_speed, "value", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-timeout", blink_time_adjustment, "value", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-timeout", spin_blink_time, "value", SettingsBindFlags.DEFAULT);
 
-        gsettings_repeat = new Settings ("org.gnome.desktop.peripherals.keyboard");
         gsettings_repeat.bind ("repeat", switch_repeat, "active", SettingsBindFlags.DEFAULT);
         gsettings_repeat.bind ("delay", repeat_delay_adjustment, "value", SettingsBindFlags.DEFAULT);
         gsettings_repeat.bind ("delay", spin_repeat_delay, "value", SettingsBindFlags.DEFAULT);

@@ -26,7 +26,6 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
     private Gtk.ListBox layout_list_box;
     private GLib.ListStore language_list;
     private GLib.ListStore layout_list;
-    private XkbLayoutHandler handler;
 
     private string layout_id;
 
@@ -42,18 +41,18 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             placeholder_text = _("Search input language")
         };
 
-        handler = XkbLayoutHandler.get_instance ();
+        var handler = XkbLayoutHandler.get_instance ();
 
         language_list = new GLib.ListStore (typeof (ListStoreItem));
         layout_list = new GLib.ListStore (typeof (ListStoreItem));
 
         update_list_store (language_list, handler.languages);
-        var first_lang = language_list.get_item (0) as ListStoreItem;
+        var first_lang = (ListStoreItem) language_list.get_item (0);
         update_list_store (layout_list, handler.get_variants_for_language (first_lang.id));
 
         input_language_list_box = new Gtk.ListBox ();
         for (int i = 0; i < language_list.get_n_items (); i++) {
-            var item = language_list.get_item (i) as ListStoreItem;
+            var item = (ListStoreItem) language_list.get_item (i);
             var row = new LayoutRow (item.name);
 
             input_language_list_box.append (row);
@@ -129,6 +128,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             child = header_grid
         };
 
+        // TODO: navigate back does not work
         var leaflet = new Adw.Leaflet () {
             can_unfold = false,
             can_navigate_back = true,
@@ -178,7 +178,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         input_language_list_box.set_filter_func ((list_box_row) => {
-            var item = language_list.get_item (list_box_row.get_index ()) as ListStoreItem;
+            var item = (ListStoreItem) language_list.get_item (list_box_row.get_index ());
             return search_entry.text.down () in item.name.down ();
         });
 
@@ -231,12 +231,12 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
     private ListStoreItem get_selected_lang () {
         var selected_lang_row = input_language_list_box.get_selected_row ();
-        return language_list.get_item (selected_lang_row.get_index ()) as ListStoreItem;
+        return (ListStoreItem) language_list.get_item (selected_lang_row.get_index ());
     }
 
     private ListStoreItem get_selected_layout () {
         var selected_layout_row = layout_list_box.get_selected_row ();
-        return layout_list.get_item (selected_layout_row.get_index ()) as ListStoreItem;
+        return (ListStoreItem) layout_list.get_item (selected_layout_row.get_index ());
     }
 
     private void update_list_store (GLib.ListStore store, HashTable<string, string> values) {
@@ -247,15 +247,17 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         store.sort ((a, b) => {
-            if (((ListStoreItem)a).name == _("Default")) {
+            var a_name = ((ListStoreItem) a).name;
+            var b_name = ((ListStoreItem) b).name;
+
+            if (a_name == _("Default")) {
                 return -1;
             }
-
-            if (((ListStoreItem)b).name == _("Default")) {
+            if (b_name == _("Default")) {
                 return 1;
             }
 
-            return ((ListStoreItem)a).name.collate (((ListStoreItem)b).name);
+            return (a_name.collate (b_name));
         });
     }
 
@@ -273,6 +275,7 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
     private class LayoutRow : Gtk.ListBoxRow {
         public string rname { get; construct; }
+
         public LayoutRow (string name) {
             Object (rname: name);
         }
