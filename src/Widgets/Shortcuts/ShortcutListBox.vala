@@ -36,12 +36,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
 
         for (int i = 0; i < actions.length; i++) {
             var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
-            add (row);
+            append (row);
 
             sizegroup.add_widget (row);
         }
-
-        show_all ();
     }
 
     public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
@@ -75,7 +73,6 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
-        private Gtk.EventBox keycap_eventbox;
         private bool is_editing_shortcut = false;
         private Gdk.Device? keyboard_device = null;
 
@@ -103,7 +100,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             status_label = new Gtk.Label (_("Disabled")) {
                 halign = Gtk.Align.END
             };
-            status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            status_label.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             keycap_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
                 valign = Gtk.Align.CENTER,
@@ -113,11 +110,9 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             keycap_stack = new Gtk.Stack () {
                 transition_type = Gtk.StackTransitionType.CROSSFADE
             };
-            keycap_stack.add (keycap_box);
-            keycap_stack.add (status_label);
+            keycap_stack.add_child (keycap_box);
+            keycap_stack.add_child (status_label);
 
-            keycap_eventbox = new Gtk.EventBox ();
-            keycap_eventbox.add (keycap_stack);
 
             var set_accel_button = new Gtk.ModelButton () {
                 text = _("Set New Shortcut")
@@ -130,25 +125,24 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             clear_button = new Gtk.ModelButton () {
                 text = _("Disable")
             };
-            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
                 margin_top = 3,
                 margin_bottom = 3
             };
-            action_box.pack_start (set_accel_button);
-            action_box.pack_start (reset_button);
-            action_box.pack_start (clear_button);
-            action_box.show_all ();
+            action_box.append (set_accel_button);
+            action_box.append (reset_button);
+            action_box.append (clear_button);
 
-            var popover = new Gtk.Popover (null);
-            popover.add (action_box);
+            var popover = new Gtk.Popover ();
+            popover.set_child (action_box);
 
             var menubutton = new Gtk.MenuButton () {
-                image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
+                icon_name = "open-menu-symbolic",
                 popover = popover,
             };
-            menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             var grid = new Gtk.Grid () {
                 column_spacing = 12,
@@ -158,13 +152,11 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 margin_start = 6,
                 valign = Gtk.Align.CENTER
             };
-            grid.add (label);
-            grid.add (keycap_eventbox);
-            // grid.add (keycap_stack);
-            grid.add (menubutton);
-            grid.show_all ();
+            grid.attach (label, 0, 0);
+            grid.attach (keycap_stack, 0, 1);
+            grid.attach (menubutton, 0, 2);
 
-            add (grid);
+            set_child (grid);
 
             render_keycaps ();
 
@@ -187,7 +179,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 edit_shortcut (true);
             });
 
-            keycap_eventbox.button_release_event.connect (() => {
+            keykcap_stack.button_release_event.connect (() => {
                 edit_shortcut (true);
             });
 
@@ -295,7 +287,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 ) {
                     badge_icon = new ThemedIcon ("dialog-error"),
                     modal = true,
-                    transient_for = (Gtk.Window) get_toplevel ()
+                    //  transient_for = (Gtk.Window) get_toplevel ()
                 };
 
                 message_dialog.response.connect (() => {
@@ -330,9 +322,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
             }
 
             if (accels[0] != "") {
-                foreach (unowned Gtk.Widget child in keycap_box.get_children ()) {
-                    child.destroy ();
-                };
+                var children = keycap_box.observe_children ();
+                for (int i = 0; i < children.get_n_items (); i++) {
+                    ((Gtk.Widget) children.get_item (i)).destroy ();
+                }
 
                 foreach (unowned string accel in accels) {
                     if (accel == "") {
@@ -340,11 +333,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                     }
                     var keycap_label = new Gtk.Label (accel);
                     keycap_label.get_style_context ().add_class ("keycap");
-                    keycap_box.pack_start (keycap_label);
+                    keycap_box.append (keycap_label);
                 }
 
                 clear_button.sensitive = true;
-                keycap_box.show_all ();
                 keycap_stack.visible_child = keycap_box;
             } else {
                 clear_button.sensitive = false;

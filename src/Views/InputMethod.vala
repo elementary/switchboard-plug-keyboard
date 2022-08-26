@@ -1,5 +1,5 @@
 /*
-* 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private List<weak IBus.EngineDesc> engines;
 #endif
 
-    private Granite.Widgets.AlertView spawn_failed_alert;
+    private Granite.Placeholder spawn_failed_alert;
     private Gtk.ListBox listbox;
     private SourceSettings settings;
     private Gtk.MenuButton remove_button;
@@ -40,31 +40,27 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
         // no_daemon_runnning view shown if IBus Daemon is not running
-        var no_daemon_runnning_alert = new Granite.Widgets.AlertView (
-            _("IBus Daemon is not running"),
-            _("You need to run the IBus daemon to enable or configure input method engines."),
-            "dialog-information"
-        ) {
-            halign = Gtk.Align.CENTER,
-            valign = Gtk.Align.CENTER
+        var no_daemon_runnning_alert = new Granite.Placeholder (_("IBus Daemon is not running")) {
+            description = _("You need to run the IBus daemon to enable or configure input method engines."),
+            icon = new ThemedIcon ("dialog-information")
+            //  halign = Gtk.Align.CENTER,
+            //  valign = Gtk.Align.CENTER
         };
-        no_daemon_runnning_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
-        no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
-        no_daemon_runnning_alert.action_activated.connect (() => {
+        no_daemon_runnning_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
+        var start_daemon_action = no_daemon_runnning_alert.append_button (new ThemedIcon ("somethin idk"), _("Start IBus Daemon"), "");
+        start_daemon_action.clicked.connect (() => {
             spawn_ibus_daemon ();
         });
 
         // spawn_failed view shown if IBus Daemon is not running
-        spawn_failed_alert = new Granite.Widgets.AlertView (
-            _("Could not start the IBus daemon"),
-            "",
-            "dialog-error"
-        ) {
-            halign = Gtk.Align.CENTER,
-            valign = Gtk.Align.CENTER
+        spawn_failed_alert = new Granite.Placeholder (_("Could not start the IBus daemon")) {
+            description = "",
+            icon = new ThemedIcon ("dialog-error")
+            //  halign = Gtk.Align.CENTER,
+            //  valign = Gtk.Align.CENTER
         };
 
-        spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+        spawn_failed_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
@@ -90,36 +86,37 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             update_entry_test_usable ();
         });
 
-        var scroll = new Gtk.ScrolledWindow (null, null) {
+        var scroll = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        scroll.add (listbox);
+        scroll.set_child (listbox);
 
         add_engines_popover = new AddEnginesPopover ();
 
         var add_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON),
+            icon_name = "list-add-symbolic",
             popover = add_engines_popover,
             tooltip_text = _("Add…")
         };
 
         remove_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON),
+            icon_name = "list-remove-symbolic",
             tooltip_text = _("Remove")
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        actionbar.add (add_button);
-        actionbar.add (remove_button);
+        //  actionbar.add_css_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
 
         var left_grid = new Gtk.Grid ();
         left_grid.attach (scroll, 0, 0);
         left_grid.attach (actionbar, 0, 1);
 
         var display = new Gtk.Frame (null);
-        display.add (left_grid);
+        display.set_child (left_grid);
 
         var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:")) {
             halign = Gtk.Align.END
@@ -163,7 +160,10 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             column_spacing = 12,
             halign = Gtk.Align.CENTER,
             hexpand = true,
-            margin = 12,
+            margin_top = 12,
+            margin_bottom = 12,
+            margin_start = 12,
+            margin_end = 12,
             row_spacing = 12
         };
         right_grid.attach (keyboard_shortcut_label, 0, 0);
@@ -185,14 +185,13 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         stack.add_named (no_daemon_runnning_alert, "no_daemon_runnning_view");
         stack.add_named (spawn_failed_alert, "spawn_failed_view");
         stack.add_named (main_grid, "main_view");
-        stack.show_all ();
 
-        add (stack);
+        attach (stack, 0, 0);
 
         set_visible_view ();
 
-        add_button.clicked.connect (() => {
-            add_engines_popover.show_all ();
+        add_button.activate.connect (() => {
+            add_engines_popover.popup ();
         });
 
         add_engines_popover.add_engine.connect ((engine) => {
@@ -201,7 +200,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
             }
         });
 
-        remove_button.clicked.connect (() => {
+        remove_button.activate.connect (() => {
             int index = listbox.get_selected_row ().get_index ();
 
             // Convert to GLib.Array once, because Vala does not support "-=" operator
@@ -288,9 +287,10 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
     private void update_engines_list () {
         engines = bus.list_engines ();
 
-        listbox.@foreach ((listbox_child) => {
-            listbox_child.destroy ();
-        });
+        var children = listbox.observe_children ();
+        for (int i = 0; i < children.get_n_items (); i++) {
+            ((Gtk.Widget) children.get_item (i)).destroy ();
+        }
 
         // Add the language and the name of activated engines
         settings.reset (LayoutType.IBUS);
@@ -303,25 +303,27 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
                     var label = new Gtk.Label (engine_full_name) {
                         halign = Gtk.Align.START,
-                        margin = 6
+                        margin_top = 6,
+                        margin_bottom = 6,
+                        margin_start = 6,
+                        margin_end = 6
                     };
 
                     var listboxrow = new Gtk.ListBoxRow ();
                     listboxrow.set_data<string> ("engine-name", engine.name);
-                    listboxrow.add (label);
+                    listboxrow.set_child (label);
 
-                    listbox.add (listboxrow);
+                    listbox.append (listboxrow);
                     settings.add_layout (InputSource.new_ibus (engine.name));
                 }
             }
         }
 
-        listbox.show_all ();
         //Do not autoselect the first entry as that would change the active input method
         remove_button.sensitive = listbox.get_selected_row () != null;
         // If ibus is running, update its autostart file according to whether there are input methods active
         if (stack.visible_child_name == "main_view") {
-            write_ibus_autostart_file (listbox.get_children ().length () > 0);
+            write_ibus_autostart_file (listbox.observe_children ().get_n_items () > 0);
         }
     }
 
@@ -341,7 +343,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         });
         timeout_start_daemon = 0;
 
-        if (is_spawn_succeeded & listbox.get_children ().length () > 0) {
+        if (is_spawn_succeeded & listbox.observe_children ().get_n_items () > 0) {
             write_ibus_autostart_file (true);
         }
     }
@@ -454,15 +456,16 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
         /* Emitting "unselect_all ()" on listbox does not unselect rows for some reason so we
          * unselect rows individually */
-        listbox.@foreach ((widget) => {
-            var row = (Gtk.ListBoxRow)widget;
+        var children = listbox.observe_children ();
+        for (int i = 0; i < children.get_n_items (); i++) {
+            var row = (Gtk.ListBoxRow) children.get_item (i);
             var row_name = row.get_data<string> ("engine-name");
             if (row_name == engine_name) {
                 listbox.select_row (row);
             } else {
                 listbox.unselect_row (row);
             }
-        });
+        }
 
         remove_button.sensitive = listbox.get_selected_row () != null;
     }

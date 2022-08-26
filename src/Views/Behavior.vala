@@ -22,37 +22,45 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
     private Settings gsettings_repeat;
 
     construct {
-        var label_repeat = new Granite.HeaderLabel (_("Repeat Keys:"));
-        label_repeat.halign = Gtk.Align.END;
+        var label_repeat = new Granite.HeaderLabel (_("Repeat Keys:")) {
+            halign = Gtk.Align.END
+        };
 
-        var label_repeat_delay = new Gtk.Label (_("Delay:"));
-        label_repeat_delay.halign = Gtk.Align.END;
+        var label_repeat_delay = new Gtk.Label (_("Delay:")) {
+            halign = Gtk.Align.END
+        };
 
-        var label_repeat_speed = new Gtk.Label (_("Interval:"));
-        label_repeat_speed.halign = Gtk.Align.END;
+        var label_repeat_speed = new Gtk.Label (_("Interval:")) {
+            halign = Gtk.Align.END
+        };
 
-        var label_repeat_ms1 = new Gtk.Label (_("milliseconds"));
-        label_repeat_ms1.halign = Gtk.Align.START;
+        var label_repeat_ms1 = new Gtk.Label (_("milliseconds")) {
+            halign = Gtk.Align.START
+        };
 
-        var label_repeat_ms2 = new Gtk.Label (_("milliseconds"));
-        label_repeat_ms2.halign = Gtk.Align.START;
+        var label_repeat_ms2 = new Gtk.Label (_("milliseconds")) {
+            halign = Gtk.Align.START
+        };
 
-        var switch_repeat = new Gtk.Switch ();
-        switch_repeat.halign = Gtk.Align.START;
-        switch_repeat.valign = Gtk.Align.CENTER;
+        var switch_repeat = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.CENTER
+        };
 
         var repeat_delay_adjustment = new Gtk.Adjustment (-1, 100, 900, 1, 0, 0);
 
-        var scale_repeat_delay = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, repeat_delay_adjustment);
-        scale_repeat_delay.draw_value = false;
-        scale_repeat_delay.hexpand = true;
+        var scale_repeat_delay = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, repeat_delay_adjustment) {
+            draw_value = false,
+            hexpand = true
+        };
         scale_repeat_delay.add_mark (500, Gtk.PositionType.BOTTOM, null);
 
         var repeat_speed_adjustment = new Gtk.Adjustment (-1, 10, 70, 1, 0, 0);
 
-        var scale_repeat_speed = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, repeat_speed_adjustment);
-        scale_repeat_speed.draw_value = false;
-        scale_repeat_speed.hexpand = true;
+        var scale_repeat_speed = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, repeat_speed_adjustment) {
+            draw_value = false,
+            hexpand = true
+        };
         scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
 
@@ -60,39 +68,47 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
 
         var spin_repeat_speed = new Gtk.SpinButton.with_range (10, 70, 1);
 
-        var label_blink = new Granite.HeaderLabel (_("Cursor Blinking:"));
-        label_blink.halign = Gtk.Align.END;
-        label_blink.margin_top = 24;
+        var label_blink = new Granite.HeaderLabel (_("Cursor Blinking:")) {
+            halign = Gtk.Align.END,
+            margin_top = 24
+        };
 
-        var label_blink_speed = new Gtk.Label (_("Speed:"));
-        label_blink_speed.halign = Gtk.Align.END;
+        var label_blink_speed = new Gtk.Label (_("Speed:")) {
+            halign = Gtk.Align.END
+        };
 
-        var label_blink_time = new Gtk.Label (_("Duration:"));
-        label_blink_time.halign = Gtk.Align.END;
+        var label_blink_time = new Gtk.Label (_("Duration:")) {
+            halign = Gtk.Align.END
+        };
 
-        var label_blink_ms = new Gtk.Label (_("milliseconds"));
-        label_blink_ms.halign = Gtk.Align.START;
+        var label_blink_ms = new Gtk.Label (_("milliseconds")) {
+            halign = Gtk.Align.START
+        };
 
-        var label_blink_s = new Gtk.Label (_("seconds"));
-        label_blink_s.halign = Gtk.Align.START;
+        var label_blink_s = new Gtk.Label (_("seconds")) {
+            halign = Gtk.Align.START
+        };
 
-        var switch_blink = new Gtk.Switch ();
-        switch_blink.halign = Gtk.Align.START;
-        switch_blink.valign = Gtk.Align.CENTER;
-        switch_blink.margin_top = 24;
+        var switch_blink = new Gtk.Switch () {
+            halign = Gtk.Align.START,
+            valign = Gtk.Align.CENTER,
+            margin_top = 24
+        };
 
         var blink_speed_adjustment = new Gtk.Adjustment (-1, 100, 2500, 10, 0, 0);
 
-        var scale_blink_speed = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, blink_speed_adjustment);
-        scale_blink_speed.draw_value = false;
-        scale_blink_speed.hexpand = true;
+        var scale_blink_speed = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, blink_speed_adjustment) {
+            draw_value = false,
+            hexpand = true
+        };
         scale_blink_speed.add_mark (1200, Gtk.PositionType.BOTTOM, null);
 
         var blink_time_adjustment = new Gtk.Adjustment (-1, 1, 29, 1, 0, 0);
 
-        var scale_blink_time = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, blink_time_adjustment);
-        scale_blink_time.draw_value = false;
-        scale_blink_time.hexpand = true;
+        var scale_blink_time = new Gtk.Scale (Gtk.Orientation.HORIZONTAL, blink_time_adjustment) {
+            draw_value = false,
+            hexpand = true
+        };
         scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
 
@@ -100,34 +116,35 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Grid {
 
         var spin_blink_time = new Gtk.SpinButton.with_range (1, 29, 1);
 
-        var entry_test = new Gtk.Entry ();
-        entry_test.margin_top = 24;
-        entry_test.placeholder_text = (_("Type to test your settings"));
-        entry_test.hexpand = true;
+        var entry_test = new Gtk.Entry () {
+            margin_top = 24,
+            hexpand = true,
+            placeholder_text = (_("Type to test your settings"))
+        };
 
         column_spacing = 12;
         row_spacing = 12;
-        attach (label_repeat, 0, 0, 1, 1);
-        attach (switch_repeat, 1, 0, 1, 1);
-        attach (label_repeat_delay, 0, 1, 1, 1);
-        attach (scale_repeat_delay, 1, 1, 1, 1);
-        attach (spin_repeat_delay, 2, 1, 1, 1);
-        attach (label_repeat_ms1, 3, 1, 1, 1);
-        attach (label_repeat_speed, 0, 2, 1, 1);
-        attach (scale_repeat_speed, 1, 2, 1, 1);
-        attach (spin_repeat_speed, 2, 2, 1, 1);
-        attach (label_repeat_ms2, 3, 2, 1, 1);
-        attach (label_blink, 0, 3, 1, 1);
-        attach (switch_blink, 1, 3, 1, 1);
-        attach (label_blink_speed, 0, 4, 1, 1);
-        attach (scale_blink_speed, 1, 4, 1, 1);
-        attach (spin_blink_speed, 2, 4, 1, 1);
-        attach (label_blink_ms, 3, 4, 1, 1);
-        attach (label_blink_time, 0, 5, 1, 1);
-        attach (scale_blink_time, 1, 5, 1, 1);
-        attach (spin_blink_time, 2, 5, 1, 1);
-        attach (label_blink_s, 3, 5, 1, 1);
-        attach (entry_test, 1, 6, 1, 1);
+        attach (label_repeat, 0, 0);
+        attach (switch_repeat, 1, 0);
+        attach (label_repeat_delay, 0, 1);
+        attach (scale_repeat_delay, 1, 1);
+        attach (spin_repeat_delay, 2, 1);
+        attach (label_repeat_ms1, 3, 1);
+        attach (label_repeat_speed, 0, 2);
+        attach (scale_repeat_speed, 1, 2);
+        attach (spin_repeat_speed, 2, 2);
+        attach (label_repeat_ms2, 3, 2);
+        attach (label_blink, 0, 3);
+        attach (switch_blink, 1, 3);
+        attach (label_blink_speed, 0, 4);
+        attach (scale_blink_speed, 1, 4);
+        attach (spin_blink_speed, 2, 4);
+        attach (label_blink_ms, 3, 4);
+        attach (label_blink_time, 0, 5);
+        attach (scale_blink_time, 1, 5);
+        attach (spin_blink_time, 2, 5);
+        attach (label_blink_s, 3, 5);
+        attach (entry_test, 1, 6);
 
         gsettings_blink = new Settings ("org.gnome.desktop.interface");
         gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);

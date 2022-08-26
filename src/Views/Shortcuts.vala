@@ -1,5 +1,5 @@
 /*
-* Copyright 2017-2019 elementary, Inc. (https://elementary.io)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -68,51 +68,52 @@ namespace Pantheon.Keyboard.Shortcuts {
             settings = new Shortcuts.Settings ();
 
             var section_switcher = new Gtk.ListBox ();
-            section_switcher.add (new SwitcherRow (list.windows_group));
-            section_switcher.add (new SwitcherRow (list.workspaces_group));
-            section_switcher.add (new SwitcherRow (list.screenshot_group));
-            section_switcher.add (new SwitcherRow (list.launchers_group));
-            section_switcher.add (new SwitcherRow (list.media_group));
-            section_switcher.add (new SwitcherRow (list.a11y_group));
-            section_switcher.add (new SwitcherRow (list.system_group));
-            section_switcher.add (new SwitcherRow (list.custom_group));
+            section_switcher.append (new SwitcherRow (list.windows_group));
+            section_switcher.append (new SwitcherRow (list.workspaces_group));
+            section_switcher.append (new SwitcherRow (list.screenshot_group));
+            section_switcher.append (new SwitcherRow (list.launchers_group));
+            section_switcher.append (new SwitcherRow (list.media_group));
+            section_switcher.append (new SwitcherRow (list.a11y_group));
+            section_switcher.append (new SwitcherRow (list.system_group));
+            section_switcher.append (new SwitcherRow (list.custom_group));
 
             section_switcher.select_row (section_switcher.get_row_at_index (0));
 
-            var scrolled_window = new Gtk.ScrolledWindow (null, null);
-            scrolled_window.add (section_switcher);
+            var scrolled_window = new Gtk.ScrolledWindow ();
+            scrolled_window.set_child (section_switcher);
 
             var switcher_frame = new Gtk.Frame (null);
-            switcher_frame.add (scrolled_window);
+            switcher_frame.set_child (scrolled_window);
 
             var stack = new Gtk.Stack ();
-            stack.homogeneous = false;
 
-            var scrolledwindow = new Gtk.ScrolledWindow (null, null);
-            scrolledwindow.expand = true;
-            scrolledwindow.add (stack);
+            var scrolledwindow = new Gtk.ScrolledWindow () {
+                hexpand = true,
+                vexpand = true
+            };
+            scrolledwindow.set_child (stack);
 
             var add_button = new Gtk.Button.with_label (_("Add Shortcut")) {
-                always_show_image = true,
-                image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+                icon_name = "list-add-symbolic",
                 margin_top = 3,
                 margin_bottom = 3
             };
-            add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-            var actionbar = new Gtk.ActionBar ();
-            actionbar.hexpand = true;
-            actionbar.no_show_all = true;
-            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
-            actionbar.add (add_button);
+            var actionbar = new Gtk.ActionBar () {
+                hexpand = true
+                //  no_show_all = true
+            };
+            //  actionbar.add_css_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
+            actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+            actionbar.pack_start (add_button);
 
             var action_grid = new Gtk.Grid ();
             action_grid.attach (scrolledwindow, 0, 0);
             action_grid.attach (actionbar, 0, 1);
 
             var frame = new Gtk.Frame (null);
-            frame.add (action_grid);
+            frame.set_child (action_grid);
 
             column_spacing = 12;
             column_homogeneous = true;
@@ -131,16 +132,15 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             foreach (unowned Gtk.Widget view in shortcut_views) {
-                stack.add (view);
+                stack.add_child (view);
             }
 
             section_switcher.row_selected.connect ((row) => {
                 var index = row.get_index ();
                 stack.visible_child = shortcut_views[index];
 
-                actionbar.no_show_all = index != SectionID.CUSTOM;
+                //  actionbar.no_show_all = index != SectionID.CUSTOM;
                 actionbar.visible = index == SectionID.CUSTOM;
-                show_all ();
             });
         }
 
@@ -180,18 +180,23 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
 
             construct {
-                var icon = new Gtk.Image.from_icon_name (group.icon_name, Gtk.IconSize.DND);
+                var icon = new Gtk.Image.from_icon_name (group.icon_name);
 
-                var label = new Gtk.Label (group.label);
-                label.xalign = 0;
+                var label = new Gtk.Label (group.label) {
+                    xalign = 0
+                };
 
-                var grid = new Gtk.Grid ();
-                grid.margin = 6;
-                grid.column_spacing = 6;
-                grid.add (icon);
-                grid.add (label);
+                var grid = new Gtk.Grid () {
+                    margin_top = 6,
+                    margin_bottom = 6,
+                    margin_start = 6,
+                    margin_end = 6,
+                    column_spacing = 6
+                };
+                grid.attach (icon, 0, 0);
+                grid.attach (label, 0, 1);
 
-                add (grid);
+                set_child (grid);
             }
         }
     }

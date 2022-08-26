@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -47,27 +47,34 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (grid == null) {
-            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
+            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_for_display (Gdk.Display.get_default ());
             default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
 
-            stack = new Gtk.Stack ();
-            stack.margin = 12;
+            stack = new Gtk.Stack () {
+                margin_top = 12,
+                margin_bottom = 12,
+                margin_start = 12,
+                margin_end = 12
+            };
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
-            stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
-            stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
+            //  stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
+            //  stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.margin = 12;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.stack = stack;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                margin_top = 12,
+                margin_bottom = 12,
+                margin_start = 12,
+                margin_end = 12,
+                halign = Gtk.Align.CENTER,
+                stack = stack
+            };
 
             grid = new Gtk.Grid ();
             grid.attach (stack_switcher, 0, 0, 1, 1);
             grid.attach (stack, 0, 1, 1, 1);
         }
-        grid.show_all ();
+
         return grid;
     }
 

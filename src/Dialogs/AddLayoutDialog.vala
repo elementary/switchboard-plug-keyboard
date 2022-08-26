@@ -35,8 +35,10 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         default_width = 750;
 
         var search_entry = new Gtk.SearchEntry () {
-            margin = 12,
+            margin_top = 12,
             margin_bottom = 6,
+            margin_start = 12,
+            margin_end = 12,
             placeholder_text = _("Search input language")
         };
 
@@ -54,14 +56,15 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             var item = language_list.get_item (i) as ListStoreItem;
             var row = new LayoutRow (item.name);
 
-            input_language_list_box.add (row);
+            input_language_list_box.append (row);
         }
 
-        var input_language_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var input_language_scrolled = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        input_language_scrolled.add (input_language_list_box);
+        input_language_scrolled.set_child (input_language_list_box);
 
         var input_language_grid = new Gtk.Grid ();
         input_language_grid.attach (search_entry, 0, 0);
@@ -69,11 +72,15 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
         var back_button = new Gtk.Button.with_label (_(INPUT_LANGUAGE)) {
             halign = Gtk.Align.START,
-            margin = 6
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_start = 6,
+            margin_end = 6
         };
         back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var layout_list_title = new Gtk.Label (null) {
+            halign = Gtk.Align.CENTER,
             ellipsize = Pango.EllipsizeMode.END,
             use_markup = true
         };
@@ -86,74 +93,81 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             return new LayoutRow (((ListStoreItem)item).name);
         });
 
-        var layout_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var layout_scrolled = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        layout_scrolled.add (layout_list_box);
+        layout_scrolled.set_child (layout_list_box);
 
         var keyboard_map_button = new Gtk.Button.with_label (_("Preview Layout")) {
             halign = Gtk.Align.END,
-            margin = 6
+            margin_top = 6,
+            margin_bottom = 6,
+            margin_start = 6,
+            margin_bottom = 6
         };
 
         var keyboard_map_revealer = new Gtk.Revealer () {
+            halign = Gtk.Align.END,
             transition_type = Gtk.RevealerTransitionType.CROSSFADE
         };
-        keyboard_map_revealer.add (keyboard_map_button);
+        keyboard_map_revealer.set_child (keyboard_map_button);
 
         var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             hexpand = true
         };
-        header_box.pack_start (back_button);
-        header_box.set_center_widget (layout_list_title);
-        header_box.pack_end (keyboard_map_revealer);
+        header_box.append (back_button);
+        header_box.append (layout_list_title);
+        header_box.append (keyboard_map_revealer);
 
         var header_grid = new Gtk.Grid ();
         header_grid.attach (header_box, 0, 0);
         header_grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1);
 
         var header_revealer = new Gtk.Revealer ();
-        header_revealer.add (header_grid);
+        header_revealer.set_child (header_grid);
 
-        var deck = new Hdy.Deck () {
-            can_swipe_back = true,
-            expand = true
+        var leaflet = new Adw.Leaflet () {
+            can_unfold = false,
+            can_navigate_back = true,
+            hexpand = true,
+            vexpand = true
         };
-        deck.add (input_language_grid);
-        deck.add (layout_scrolled);
+        leaflet.append (input_language_grid);
+        leaflet.append (layout_scrolled);
 
         var frame_grid = new Gtk.Grid () {
             orientation = Gtk.Orientation.VERTICAL
         };
 
-        frame_grid.add (header_revealer);
-        frame_grid.add (deck);
+        frame_grid.attach (header_revealer, 0, 0);
+        frame_grid.attach (leaflet, 0, 1);
 
         var frame = new Gtk.Frame (null) {
             margin_start = 10,
             margin_end = 10
         };
-        frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        frame.add (frame_grid);
+        frame.add_css_class (Granite.STYLE_CLASS_VIEW);
+        frame.set_child (frame_grid);
 
         var button_cancel = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         var button_add = add_button (_("Add Layout"), Gtk.ResponseType.ACCEPT);
         button_add.sensitive = false;
-        button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        button_add.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         deletable = false;
         modal = true;
-        get_content_area ().add (frame);
+        get_content_area ().append (frame);
 
         search_entry.grab_focus ();
 
-        deck.notify["visible-child"].connect (() => {
-            if (deck.visible_child == input_language_grid) {
+        leaflet.notify["visible-child"].connect (() => {
+            if (leaflet.visible_child == input_language_grid) {
                 header_revealer.reveal_child = false;
                 layout_list_box.unselect_all ();
-            } else if (deck.visible_child == layout_scrolled) {
+            } else if (leaflet.visible_child == layout_scrolled) {
                 header_revealer.reveal_child = true;
                 keyboard_map_revealer.reveal_child = true;
 
@@ -181,19 +195,18 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         back_button.clicked.connect (() => {
-            deck.navigate (Hdy.NavigationDirection.BACK);
+            leaflet.navigate (Adw.NavigationDirection.BACK);
         });
 
         input_language_list_box.row_activated.connect (() => {
             var selected_lang = get_selected_lang ();
             update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
-            layout_list_box.show_all ();
             layout_list_box.select_row (layout_list_box.get_row_at_index (0));
             if (layout_list_box.get_row_at_index (0) != null) {
                 layout_list_box.get_row_at_index (0).grab_focus ();
             }
 
-            deck.visible_child = layout_scrolled;
+            leaflet.visible_child = layout_scrolled;
         });
 
         keyboard_map_button.clicked.connect (() => {
@@ -264,12 +277,14 @@ public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         }
 
         construct {
-            var label = new Gtk.Label (rname);
-            label.margin = 6;
-            label.margin_end = 12;
-            label.margin_start = 12;
-            label.xalign = 0;
-            add (label);
+            var label = new Gtk.Label (rname) {
+                margin_top = 6,
+                margin_bottom = 6,
+                margin_start = 12,
+                margin_end = 12,
+                xalign = 0
+            };
+            set_child (label);
         }
     }
 }

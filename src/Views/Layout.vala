@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -108,8 +108,7 @@ namespace Pantheon.Keyboard {
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
             var onscreen_keyboard_header = new Granite.HeaderLabel (_("On-screen Keyboard")) {
-                halign = Gtk.Align.END,
-                xalign = 1
+                halign = Gtk.Align.END
             };
 
             var onscreen_keyboard_label = new Gtk.Label (_("Show on-screen keyboard:")) {
@@ -161,8 +160,7 @@ namespace Pantheon.Keyboard {
 
             if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
                 var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
-                    halign = Gtk.Align.END,
-                    xalign = 1
+                    halign = Gtk.Align.END
                 };
 
                 size_group[0].add_widget (indicator_header);
@@ -291,8 +289,6 @@ namespace Pantheon.Keyboard {
             panel.attach (third_level_label, 0, 0, 1, 1);
             panel.attach (third_level_combo, 1, 0, 1, 1);
 
-            panel.show_all ();
-
             return panel;
         }
 
@@ -329,7 +325,6 @@ namespace Pantheon.Keyboard {
             panel.attach (third_level_combo, 1, 0, 1, 1);
             panel.attach (fifth_level_label, 0, 1, 1, 1);
             panel.attach (fifth_level_combo, 1, 1, 1, 1);
-            panel.show_all ();
 
             return panel;
         }
@@ -340,7 +335,7 @@ namespace Pantheon.Keyboard {
 
             // Used to align this grid without expanding the switch itself
             var spacer_grid = new Gtk.Grid ();
-            spacer_grid.add (kana_lock_switch);
+            spacer_grid.attach (kana_lock_switch, 0, 0);
             size_group[1].add_widget (spacer_grid);
 
             var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace:"), size_group[0]);
@@ -357,7 +352,6 @@ namespace Pantheon.Keyboard {
             panel.attach (nicola_backspace_switch, 1, 1, 1, 1);
             panel.attach (zenkaku_label, 0, 2, 1, 1);
             panel.attach (zenkaku_switch, 1, 2, 1, 1);
-            panel.show_all ();
 
             return panel;
         }
@@ -368,14 +362,13 @@ namespace Pantheon.Keyboard {
 
             // Used to align this grid without expanding the switch itself
             var spacer_grid = new Gtk.Grid ();
-            spacer_grid.add (hangul_switch);
+            spacer_grid.attach (hangul_switch, 0, 0);
             size_group[1].add_widget (spacer_grid);
 
             string [] valid_input_sources = {"kr"};
             var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
             panel.attach (hangul_label, 0, 0, 1, 1);
             panel.attach (spacer_grid, 1, 0, 1, 1);
-            panel.show_all ();
 
             return panel;
         }
@@ -389,32 +382,68 @@ namespace Pantheon.Keyboard {
             }
         }
 
-        private class XkbComboBox : Gtk.ComboBoxText {
+        //  private class XkbComboBox : Gtk.ComboBoxText {
+        private class XkbComboBox : Gtk.Widget {
+            public XkbModifier modifier { get; construct; }
+            public Gtk.SizeGroup size_group { get; construct; }
+            private Gtk.ComboBoxText main_widget;
+
             public XkbComboBox (XkbModifier modifier, Gtk.SizeGroup size_group) {
-                halign = Gtk.Align.START;
-                valign = Gtk.Align.CENTER;
+                Object (modifier: modifier, size_group: size_group);
+            }
+
+            static construct {
+                set_layout_manager_type (typeof (Gtk.BinLayout));
+            }
+
+            construct {
+                main_widget = new Gtk.ComboBoxText () {
+                    halign = Gtk.Align.START,
+                    valign = Gtk.Align.CENTER
+                };
+
                 size_group.add_widget (this);
 
                 for (int i = 0; i < modifier.xkb_option_commands.length; i++) {
-                    append (modifier.xkb_option_commands[i], modifier.option_descriptions[i]);
+                    main_widget.append (modifier.xkb_option_commands[i], modifier.option_descriptions[i]);
                 }
 
-                set_active_id (modifier.get_active_command ());
+                main_widget.set_active_id (modifier.get_active_command ());
 
-                changed.connect (() => {
-                    modifier.update_active_command (active_id);
+                main_widget.changed.connect (() => {
+                    modifier.update_active_command (main_widget.active_id);
                 });
 
                 modifier.active_command_updated.connect (() => {
-                    set_active_id (modifier.get_active_command ());
+                    main_widget.set_active_id (modifier.get_active_command ());
                 });
+
+                main_widget.set_parent (this);
+            }
+
+            ~XkbComboBox () {
+                main_widget.unparent ();
             }
         }
 
-        private class XkbOptionSwitch : Gtk.Switch {
+        private class XkbOptionSwitch : Gtk.Widget {
+            public SourceSettings settings { get; construct; }
+            public string xkb_command { get; construct; }
+            private Gtk.Switch main_widget;
+
             public XkbOptionSwitch (SourceSettings settings, string xkb_command) {
-                halign = Gtk.Align.START;
-                valign = Gtk.Align.CENTER;
+                Object (settings: settings, xkb_command: xkb_command);
+            }
+
+            static construct {
+                set_layout_manager_type (typeof (Gtk.BinLayout));
+            }
+
+            construct {
+                main_widget = new Gtk.Switch () {
+                    halign = Gtk.Align.START,
+                    valign = Gtk.Align.CENTER
+                };
 
                 var modifier = new XkbModifier ("" + xkb_command);
                 modifier.append_xkb_option ("", "option off");
@@ -423,18 +452,24 @@ namespace Pantheon.Keyboard {
                 settings.add_xkb_modifier (modifier);
 
                 if (modifier.get_active_command () == "") {
-                    active = false;
+                    main_widget.active = false;
                 } else {
-                    active = true;
+                    main_widget.active = true;
                 }
 
-                notify["active"].connect (() => {
-                    if (active) {
+                main_widget.notify["active"].connect (() => {
+                    if (main_widget.active) {
                         modifier.update_active_command (xkb_command);
                     } else {
                         modifier.update_active_command ("");
                     }
                 });
+
+                main_widget.set_parent (this);
+            }
+
+            ~XkbOptionSwitch () {
+                main_widget.unparent ();
             }
         }
 
@@ -450,11 +485,30 @@ namespace Pantheon.Keyboard {
             }
         }
 
-        private class SettingsLabel : Gtk.Label {
+        private class SettingsLabel : Gtk.Widget {
+            public string label { get; construct; }
+            public Gtk.SizeGroup size_group { get; construct; }
+            private Gtk.Label main_widget;
+
             public SettingsLabel (string label, Gtk.SizeGroup size_group) {
-                Object (label: label);
-                xalign = 1;
+                Object (label: label, size_group: size_group);
+            }
+
+            static construct {
+                set_layout_manager_type (typeof (Gtk.BinLayout));
+            }
+
+            construct {
+                main_widget = new Gtk.Label (label) {
+                    xalign = 1
+                };
                 size_group.add_widget (this);
+
+                main_widget.set_parent (this);
+            }
+
+            ~SettingsLabel () {
+                main_widget.unparent ();
             }
         }
     }

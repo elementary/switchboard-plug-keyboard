@@ -1,5 +1,5 @@
 /*
-* Copyright 2017-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -42,53 +42,55 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
 
         tree = new Gtk.TreeView () {
             headers_visible = false,
-            expand = true,
+            hexpand = true,
+            vexpand = true,
             tooltip_column = 0
         };
         tree.insert_column_with_attributes (-1, null, cell, "text", 0);
 
-        var scroll = new Gtk.ScrolledWindow (null, null) {
+        var scroll = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        scroll.add (tree);
+        scroll.set_child (tree);
 
-        add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON) {
+        add_button = new Gtk.Button.from_icon_name ("list-add-symbolic") {
             tooltip_text = _("Add…")
         };
 
-        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON) {
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
             sensitive = false,
             tooltip_text = _("Remove")
         };
 
-        up_button = new Gtk.Button.from_icon_name ("go-up-symbolic", Gtk.IconSize.BUTTON) {
+        up_button = new Gtk.Button.from_icon_name ("go-up-symbolic") {
             sensitive = false,
             tooltip_text = _("Move up")
         };
 
-        down_button = new Gtk.Button.from_icon_name ("go-down-symbolic", Gtk.IconSize.BUTTON) {
+        down_button = new Gtk.Button.from_icon_name ("go-down-symbolic") {
             sensitive = false,
             tooltip_text = _("Move down")
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-        actionbar.add (add_button);
-        actionbar.add (remove_button);
-        actionbar.add (up_button);
-        actionbar.add (down_button);
+        //  actionbar.add_css_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
+        actionbar.pack_start (up_button);
+        actionbar.pack_start (down_button);
 
         var grid = new Gtk.Grid ();
         grid.attach (scroll, 0, 0);
         grid.attach (actionbar, 0, 1);
 
-        add (grid);
+        set_child (grid);
 
         add_button.clicked.connect (() => {
             var dialog = new AddLayoutDialog ();
-            dialog.transient_for = (Gtk.Window) get_toplevel ();
-            dialog.show_all ();
+            //  dialog.transient_for = (Gtk.Window) get_toplevel ();
+            dialog.present ();
 
             dialog.layout_added.connect ((layout, variant) => {
                 settings.add_layout (InputSource.new_xkb (layout, variant));

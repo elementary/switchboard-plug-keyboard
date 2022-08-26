@@ -1,5 +1,5 @@
 /*
-* Copyright (c) 2017 elementary, LLC. (https://elementary.io)
+* Copyright 2017-2022 elementary, Inc. (https://elementary.io)
 *
 * This program is free software; you can redistribute it and/or
 * modify it under the terms of the GNU General Public
@@ -27,15 +27,15 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
 
         all_panels = panels;
 
-        stack = new Gtk.Stack ();
-        stack.hexpand = true;
-        stack.homogeneous = false;
-        this.attach (stack, 0, 0, 1, 1);
+        stack = new Gtk.Stack () {
+            hexpand = true,
+            hhomogeneous = false
+        };
+        attach (stack, 0, 0);
 
         // Add an empty Widget
         var blank_panel = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         stack.add_named (blank_panel, "none");
-        blank_panel.show ();
 
         foreach (AdvancedSettingsPanel? panel in panels) {
             if (panel == null) {
@@ -81,11 +81,12 @@ public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
         }
 
         if (panel_name == "") {
-            // this.hide() cannot be used because it messes the alignment
-            this.stack.set_visible_child_name ("none");
+            stack.set_visible_child_name ("none");
+            stack.hide ();
             return;
         } else {
-            this.stack.set_visible_child_name (panel_name);
+            stack.set_visible_child_name (panel_name);
+            stack.show ();
         }
     }
 }
