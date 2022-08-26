@@ -104,6 +104,7 @@ namespace Pantheon.Keyboard.Shortcuts {
                 hexpand = true
                 //  no_show_all = true
             };
+            // TODO: https://github.com/elementary/granite/issues/617
             //  actionbar.add_css_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
             actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
             actionbar.pack_start (add_button);

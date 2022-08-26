@@ -107,6 +107,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         };
 
         var actionbar = new Gtk.ActionBar ();
+        // TODO: https://github.com/elementary/granite/issues/617
         //  actionbar.add_css_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.pack_start (add_button);
         actionbar.pack_start (remove_button);

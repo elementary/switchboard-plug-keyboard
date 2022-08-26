@@ -82,7 +82,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         actionbar.pack_start (up_button);
         actionbar.pack_start (down_button);
 
-        var box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 0);
+        var box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
         box.append (scroll);
         box.append (actionbar);
 
