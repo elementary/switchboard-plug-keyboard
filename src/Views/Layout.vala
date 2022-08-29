@@ -221,13 +221,15 @@ namespace Pantheon.Keyboard {
                     break;
             }
 
-            onscreen_keyboard_settings.clicked.connect (() => {
+            onscreen_keyboard_settings.activate_link.connect (() => {
                 try {
                     var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, AppInfoCreateFlags.NONE);
                     appinfo.launch (null, null);
                 } catch (Error e) {
                     warning ("Unable to launch onboard-settings: %s", e.message);
                 }
+
+                return Gdk.EVENT_STOP; // don't show error dialog
             });
 
             var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
