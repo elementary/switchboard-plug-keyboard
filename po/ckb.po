@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2022-09-21 11:44+0000\n"
+"PO-Revision-Date: 2022-09-21 12:19+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/ckb/>\n"
@@ -393,7 +393,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
-msgstr ""
+msgstr "بوخچەی سەرەتا"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
