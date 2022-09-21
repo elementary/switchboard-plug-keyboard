@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2022-09-21 02:54+0000\n"
+"PO-Revision-Date: 2022-09-21 11:44+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/ckb/>\n"
@@ -105,7 +105,7 @@ msgstr ""
 #: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
 #: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
 msgid "Default"
-msgstr ""
+msgstr "بنەڕەت"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
@@ -385,7 +385,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:108
 msgid "Applications"
-msgstr ""
+msgstr "بەرنامەکان"
 
 #: src/Shortcuts/List.vala:109
 msgid "Email"
