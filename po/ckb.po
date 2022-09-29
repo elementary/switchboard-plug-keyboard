@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2022-09-25 06:58+0000\n"
+"PO-Revision-Date: 2022-09-29 18:06+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/ckb/>\n"
@@ -449,7 +449,7 @@ msgstr "دەرکردن"
 
 #: src/Shortcuts/List.vala:130
 msgid "Universal Access"
-msgstr "دەستپێڕاگەیشتنی جیهانی"
+msgstr "دەستپێگەیشتنی جیهانی"
 
 #: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
@@ -734,11 +734,11 @@ msgstr "کردنەوەی تەختەکلیلی سەر ڕوونما:"
 
 #: src/Views/Layout.vala:124
 msgid "On-screen keyboard settings…"
-msgstr "ڕێکخستنەکانی تەختەکلیلی سەر ڕوونما…"
+msgstr "ڕێکخستنەکانی تەختەکلیلی سەر-ڕوونما…"
 
 #: src/Views/Layout.vala:162
 msgid "Show in Panel"
-msgstr "دەرکەوتن لە پانێڵدا"
+msgstr "لە پانێڵدا پشانم بدە"
 
 #: src/Views/Layout.vala:169
 msgid "Caps Lock:"
