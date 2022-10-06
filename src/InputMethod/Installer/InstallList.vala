@@ -40,7 +40,7 @@ public enum Pantheon.Keyboard.InputMethodPage.InstallList {
             case KO:
                 return { "ibus-hangul" };
             case ZH:
-                return { "ibus-cangjie", "ibus-chewing", "ibus-pinyin" };
+                return { "ibus-cangjie", "ibus-chewing", "ibus-pinyin", "ibus-rime" };
             default:
                 assert_not_reached ();
         }
@@ -61,6 +61,8 @@ public enum Pantheon.Keyboard.InputMethodPage.InstallList {
             case "ibus-chewing":
                 return ZH;
             case "ibus-pinyin":
+                return ZH;
+            case "ibus-rime":
                 return ZH;
             default:
                 assert_not_reached ();
