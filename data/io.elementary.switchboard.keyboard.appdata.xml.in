@@ -7,10 +7,17 @@
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
   <releases>
-    <release version="3.0.1" date="2022-10-19" urgency="medium">
+    <release version="3.1.0" date="2022-10-19" urgency="medium">
       <description>
+        <p>New features:</p>
+        <ul>
+          <li>Revert shortcuts to default</li>
+          <li>Easily disable a shortcut</li>
+          <li>Support Rime input method for Chinese</li>
+        </ul>
         <p>Minor updates:</p>
         <ul>
+          <li>Remove custom shortcuts from their menu</li>
           <li>Updated translations</li>
         </ul>
       </description>
