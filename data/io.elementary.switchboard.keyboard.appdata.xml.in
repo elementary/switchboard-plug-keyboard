@@ -7,6 +7,15 @@
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
   <releases>
+    <release version="3.0.1" date="2022-10-19" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="3.0.0" date="2022-05-09" urgency="medium">
       <description>
         <p>Minor updates:</p>
