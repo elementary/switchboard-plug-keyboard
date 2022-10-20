@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 21:19+0000\n"
+"POT-Creation-Date: 2022-10-20 19:09+0000\n"
 "PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -19,6 +19,90 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
+
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Vstupní jazyk"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+msgid "Layout List"
+msgstr "Seznam rozložení"
+
+#: src/Dialogs/AddLayoutDialog.vala:40
+msgid "Search input language"
+msgstr "Vyhledejte vstupní jazyk"
+
+#: src/Dialogs/AddLayoutDialog.vala:95
+msgid "Preview Layout"
+msgstr "Náhled rozvržení"
+
+#: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
+msgid "Cancel"
+msgstr "Storno"
+
+#: src/Dialogs/AddLayoutDialog.vala:142
+msgid "Add Layout"
+msgstr "Přidat rozložení"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
+msgid "Default"
+msgstr "Výchozí"
+
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr "%s se už používá pro %s"
+
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "Pokud přeřadíte klávesovou zkratku k %s, %s bude vypnuto."
+
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Přeřadit"
+
+#: src/Dialogs/InstallEngineDialog.vala:23
+msgid "Choose an engine to install"
+msgstr "Vybrat engine k instalaci"
+
+#: src/Dialogs/InstallEngineDialog.vala:24
+msgid "Select an engine from the list to install and use."
+msgstr "Vyberte ze seznamu engine pro instalaci a použití."
+
+#: src/Dialogs/InstallEngineDialog.vala:43
+msgid "Languages"
+msgstr "Jazyky"
+
+#: src/Dialogs/InstallEngineDialog.vala:92
+msgid "Install"
+msgstr "Nainstalovat"
+
+#: src/Dialogs/ProgressDialog.vala:46
+#, c-format
+msgid "Installing %s"
+msgstr "Instaluje se %s"
+
+#: src/Dialogs/ProgressDialog.vala:49
+#, c-format
+msgid "Removing %s"
+msgstr "Odebírá se %s"
+
+#: src/InputMethod/Installer/InstallList.vala:26
+msgid "Japanese"
+msgstr "japonština"
+
+#: src/InputMethod/Installer/InstallList.vala:28
+msgid "Korean"
+msgstr "korejština"
+
+#: src/InputMethod/Installer/InstallList.vala:30
+msgid "Chinese"
+msgstr "čínština"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -82,91 +166,7 @@ msgstr "Opakování kláves"
 msgid "Cursor Blinking"
 msgstr "Blikání kurzoru"
 
-#: src/Dialogs/AddLayoutDialog.vala:21
-msgid "Input Language"
-msgstr "Vstupní jazyk"
-
-#: src/Dialogs/AddLayoutDialog.vala:22
-msgid "Layout List"
-msgstr "Seznam rozložení"
-
-#: src/Dialogs/AddLayoutDialog.vala:38
-msgid "Search input language"
-msgstr "Vyhledejte vstupní jazyk"
-
-#: src/Dialogs/AddLayoutDialog.vala:93
-msgid "Preview Layout"
-msgstr "Náhled rozvržení"
-
-#: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
-#: src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
-msgid "Cancel"
-msgstr "Storno"
-
-#: src/Dialogs/AddLayoutDialog.vala:143
-msgid "Add Layout"
-msgstr "Přidat rozložení"
-
-#. Caps Lock key functionality
-#: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
-msgid "Default"
-msgstr "Výchozí"
-
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
-msgstr "%s se už používá pro %s"
-
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Pokud přeřadíte klávesovou zkratku k %s, %s bude vypnuto."
-
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Přeřadit"
-
-#: src/Dialogs/InstallEngineDialog.vala:23
-msgid "Choose an engine to install"
-msgstr "Vybrat engine k instalaci"
-
-#: src/Dialogs/InstallEngineDialog.vala:24
-msgid "Select an engine from the list to install and use."
-msgstr "Vyberte ze seznamu engine pro instalaci a použití."
-
-#: src/Dialogs/InstallEngineDialog.vala:43
-msgid "Languages"
-msgstr "Jazyky"
-
-#: src/Dialogs/InstallEngineDialog.vala:92
-msgid "Install"
-msgstr "Nainstalovat"
-
-#: src/Dialogs/ProgressDialog.vala:46
-#, c-format
-msgid "Installing %s"
-msgstr "Instaluje se %s"
-
-#: src/Dialogs/ProgressDialog.vala:49
-#, c-format
-msgid "Removing %s"
-msgstr "Odebírá se %s"
-
-#: src/InputMethod/Installer/InstallList.vala:26
-msgid "Japanese"
-msgstr "japonština"
-
-#: src/InputMethod/Installer/InstallList.vala:28
-msgid "Korean"
-msgstr "korejština"
-
-#: src/InputMethod/Installer/InstallList.vala:30
-msgid "Chinese"
-msgstr "čínština"
-
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
 msgstr "Okna"
 
@@ -250,7 +250,7 @@ msgstr "Přesunout na displej vpravo"
 msgid "Move to left display"
 msgstr "Přesunout na displej vlevo"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Pracovní plochy"
 
@@ -362,7 +362,7 @@ msgstr "Přesunout na plochu vlevo"
 msgid "Move to right workspace"
 msgstr "Přesunout na plochu vpravo"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "Snímky obrazovky"
 
@@ -390,7 +390,7 @@ msgstr "Vybrat oblast k zachycení"
 msgid "Copy an area to clipboard"
 msgstr "Kopírovat oblast do schránky"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "Aplikace"
 
@@ -414,7 +414,7 @@ msgstr "Terminál"
 msgid "Internet Browser"
 msgstr "Internetový prohlížeč"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "Média"
 
@@ -482,7 +482,7 @@ msgstr "Přepínání klávenice na obrazovce"
 msgid "Toggle Screenreader"
 msgstr "Přepínaní čtečky obrazovky"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "Systém"
 
@@ -502,7 +502,7 @@ msgstr "Odhlásit se"
 msgid "Cycle display mode"
 msgstr "Střídat režim displeje"
 
-#: src/Shortcuts/List.vala:148
+#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "Vlastní"
 
@@ -510,8 +510,10 @@ msgstr "Vlastní"
 #. Compose key position menu
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
-#: src/Widgets/Shortcuts/CustomTree.vala:133
-#: src/Widgets/Shortcuts/CustomTree.vala:400
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:103
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:352
 msgid "Disabled"
 msgstr "Vypnuto"
 
@@ -589,8 +591,8 @@ msgstr "Nepodařilo se spustit proces služby IBus"
 msgid "Add…"
 msgstr "Přidat…"
 
-#: src/Views/InputMethod.vala:109 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Odebrat"
 
@@ -655,7 +657,7 @@ msgstr "Alt + Mezerník"
 msgid "Both Shift keys together"
 msgstr "Obě klávesy Shift zároveň"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -679,15 +681,15 @@ msgstr "Klávesa Compose:"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:307 src/Views/Layout.vala:319
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Alt"
 msgstr "Pravý Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right Ctrl"
 msgstr "Pravý Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
 msgid "Right ⌘"
 msgstr "Pravý ⌘"
 
@@ -743,57 +745,63 @@ msgstr "Zobrazit klávesnici na obrazovce:"
 msgid "On-screen keyboard settings…"
 msgstr "Nastavení klávesnice na obrazovce…"
 
-#: src/Views/Layout.vala:162
+#: src/Views/Layout.vala:163
 msgid "Show in Panel"
 msgstr "Zobrazit v panelu"
 
-#: src/Views/Layout.vala:169
+#: src/Views/Layout.vala:170
 msgid "Caps Lock:"
 msgstr "Caps Lock:"
 
-#: src/Views/Layout.vala:176
+#: src/Views/Layout.vala:177
 msgid "Num Lock:"
 msgstr "Num Lock:"
 
-#: src/Views/Layout.vala:284 src/Views/Layout.vala:301
+#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
 msgid "Key to choose 3rd level:"
 msgstr "Klávesa pro výběr 3. úrovně:"
 
-#: src/Views/Layout.vala:306
+#: src/Views/Layout.vala:307
 msgid "Left Alt"
 msgstr "Levý Alt"
 
-#: src/Views/Layout.vala:316
+#: src/Views/Layout.vala:317
 msgid "Key to choose 5th level:"
 msgstr "Klávesa pro výběr 5. úrovně:"
 
-#: src/Views/Layout.vala:337
+#: src/Views/Layout.vala:338
 msgid "Kana Lock:"
 msgstr "Kana Lock:"
 
-#: src/Views/Layout.vala:345
+#: src/Views/Layout.vala:346
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:348
+#: src/Views/Layout.vala:349
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku jako Esc:"
 
-#: src/Views/Layout.vala:365
+#: src/Views/Layout.vala:366
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Klávesy Hangul/Hanja na Pravý Alt/Ctrl:"
 
-#: src/Views/Layout.vala:444
+#: src/Views/Layout.vala:445
 msgid "Type to test your layout"
 msgstr "Pro vyzkoušení rozložení pište zde"
 
-#: src/Views/Layout.vala:447
+#: src/Views/Layout.vala:448
 msgid "Input Method is active"
 msgstr "Vstupní metoda je aktivní"
 
-#: src/Views/Shortcuts.vala:76
-msgid "Add"
-msgstr "Přidat"
+#: src/Views/Shortcuts.vala:52
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Shortcuts.vala:95
+#, fuzzy
+#| msgid "Shortcuts"
+msgid "Add Shortcut"
+msgstr "Zkratky"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -818,21 +826,45 @@ msgstr "Posunout nahoru"
 msgid "Move down"
 msgstr "Posunout dolů"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:130
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:114
 msgid "Enter a command here"
 msgstr "Sem vložte příkaz"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:172
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:123
 msgid "Set New Shortcut"
 msgstr "Nová zkratka"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:176
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:131
 msgid "Disable"
 msgstr "Vypnout"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:309
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:206
 msgid "Enter new shortcut…"
 msgstr "Zadejte novou zkratku…"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:289
+msgid "Unable to set new shortcut due to conflicts"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:290
+#, fuzzy, c-format
+#| msgid "%s is already used for %s"
+msgid "“%s” is already used for “%s → %s”."
+msgstr "%s se už používá pro %s"
+
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:127
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Default"
+msgstr "Výchozí"
+
+#~ msgid "Add"
+#~ msgstr "Přidat"
 
 #~ msgid "Command"
 #~ msgstr "Příkaz"
