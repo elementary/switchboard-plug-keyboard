@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-10-04 19:34+0000\n"
+"PO-Revision-Date: 2022-10-21 14:16+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ru/>\n"
@@ -36,15 +36,15 @@ msgstr "Новые возможности:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Возможность сбросить настройки сочетаний клавиш до стандартных"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Лёгкое отключение сочетаний клавиш"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Поддержка метода ввода Rime для китайского языка"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
@@ -56,10 +56,8 @@ msgid "Minor updates:"
 msgstr "Незначительные обновления:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#, fuzzy
-#| msgid "Redesigned custom shortcuts view"
 msgid "Remove custom shortcuts from their menu"
-msgstr "Переработан внешний вид раздела пользовательских сочетаний клавиш"
+msgstr "Убраны пользовательские сочетания клавиш из их меню"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
