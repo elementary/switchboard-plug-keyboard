@@ -1,3 +1,20 @@
+switchboard-plug-keyboard (3.1.0) bionic; urgency=medium
+
+  * Release 3.1.0 (#425)
+  * Update translation files
+  * Update translation template
+  * Update POTFILES
+  * Add ibus-rime to InstallList (#424)
+  * Fix Gettext Action (#422)
+  * Remove empty tooltip (#417)
+  * Make "Add Shortcut" translatable (#416)
+  * New add/remove list pattern (#414)
+  * Prepare for GTK4: Undepend from libgnomekbd (#413)
+  * Replace Shortcut TreeView with a ListBox subclass
+  * Shortcuts/List: use workspaces icon from system (#410)
+
+ -- elementary OS Team <builds@elementary.io>  Fri, 21 Oct 2022 22:11:05 +0000
+
 switchboard-plug-keyboard (3.0.0) bionic; urgency=medium
 
   * Release 3.0.0 (#408)
