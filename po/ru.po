@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-10-04 19:34+0000\n"
+"PO-Revision-Date: 2022-10-21 14:16+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -795,13 +795,11 @@ msgstr "Метод ввода активен"
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "Универсальный доступ"
 
 #: src/Views/Shortcuts.vala:95
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "Сочетания клавиш"
+msgstr "Добавить сочетание клавиш"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -848,20 +846,17 @@ msgstr "Ввести новое сочетание клавиш…"
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:289
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "Не удалось установить новое сочетание клавиш из-за конфликтов"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:290
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s уже используется для %s"
+msgstr "«%s» уже используется для «%s→%s»."
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:127
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "По умолчанию"
+msgstr "Сбросить до настроек по умолчанию"
 
 #~ msgid "Add"
 #~ msgstr "Добавить"
