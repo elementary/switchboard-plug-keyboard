@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-05-10 10:05+0000\n"
+"PO-Revision-Date: 2022-10-23 10:57+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pl/>\n"
@@ -36,15 +36,15 @@ msgstr "Nowe funkcje:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Przywrócenie skrótów do wartości domyślnych"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Łatwe wyłączanie skrótów"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Wsparcie Rime jako urządzenia wejścia w języku chińskim"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
@@ -56,10 +56,8 @@ msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#, fuzzy
-#| msgid "Redesigned custom shortcuts view"
 msgid "Remove custom shortcuts from their menu"
-msgstr "Przeprojektowano widok niestandardowych skrótów"
+msgstr "Usunięto niestandardowe skróty z ich menu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
