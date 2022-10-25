@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
 "PO-Revision-Date: 2022-10-26 12:42+0000\n"
-"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
+"Last-Translator: Alfika07 <tothalfi07@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
 "Language: hu\n"
@@ -858,10 +858,8 @@ msgid "“%s” is already used for “%s → %s”."
 msgstr "A(z) \"%s\" már használatban van: \"%s → %s”."
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:127
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "Alapértelmezett"
+msgstr "Alapértelmezések visszaállítása"
 
 #~ msgid "Add"
 #~ msgstr "Hozzáadás"
