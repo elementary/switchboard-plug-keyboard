@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-10-25 22:24+0000\n"
-"Last-Translator: Alfika07 <tothalfi07@gmail.com>\n"
+"PO-Revision-Date: 2022-10-26 12:42+0000\n"
+"Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
 "Language: hu\n"
@@ -802,7 +802,7 @@ msgstr "Kisegítő lehetőségek"
 
 #: src/Views/Shortcuts.vala:95
 msgid "Add Shortcut"
-msgstr "Billentyűparancsok hozzáadása"
+msgstr "Billentyűparancs hozzáadása"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -849,14 +849,13 @@ msgstr "Adjon meg egy új billentyűparancsot…"
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:289
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "Új billentyűparancs beállítása sikertelen konfliktusok miatt"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:290
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "A(z) %s már használatban van: %s"
+msgstr "A(z) \"%s\" már használatban van: \"%s → %s”."
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:127
 #, fuzzy
