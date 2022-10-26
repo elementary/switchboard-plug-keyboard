@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2021-11-08 11:22+0000\n"
+"PO-Revision-Date: 2022-10-26 12:42+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -797,13 +797,11 @@ msgstr "Syötetapa on aktiivinen"
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "Esteettömyys"
 
 #: src/Views/Shortcuts.vala:95
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "Pikanäppäimet"
+msgstr "Lisää pikanäppäin"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -850,20 +848,17 @@ msgstr "Aseta uusi pikanäppäin…"
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:289
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "Uutta pikanäppäintä ei voitu asettaa ristiriitojen vuoksi"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:290
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s on jo käytössä toiminnolle %s"
+msgstr "“%s” on jo käytössä toiminnolle “%s → %s”."
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:127
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "Oletus"
+msgstr "Palauta oletusarvoon"
 
 #~ msgid "Add"
 #~ msgstr "Lisää"
