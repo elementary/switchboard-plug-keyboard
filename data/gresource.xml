@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/io/elementary/switchboard/keyboard">
     <file alias="io.elementary.switchboard.keyboard.screenshots.svg" compressed="true">screenshots.svg</file>
+    <file alias="io.elementary.switchboard.keyboard.windows.svg" compressed="true">windows.svg</file>
   </gresource>
 </gresources>
