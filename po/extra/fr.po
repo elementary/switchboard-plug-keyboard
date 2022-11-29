@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-05-30 10:51+0000\n"
+"PO-Revision-Date: 2022-11-09 09:29+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -37,15 +37,15 @@ msgstr "Nouvelles fonctionnalités :"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Réinitialisez les raccourcis par défaut"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Désactivez facilement un raccourci"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Prise en charge de la méthode de saisie Rime pour le chinois"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
@@ -57,10 +57,8 @@ msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#, fuzzy
-#| msgid "Redesigned custom shortcuts view"
 msgid "Remove custom shortcuts from their menu"
-msgstr "Vue des raccourcis personnalisés redessinée"
+msgstr "Suppression des raccourcis personnalisés de leur menu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
