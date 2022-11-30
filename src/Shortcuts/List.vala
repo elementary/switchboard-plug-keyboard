@@ -39,7 +39,7 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         construct {
             windows_group = {};
-            windows_group.icon_name = "preferences-system-windows";
+            windows_group.icon_name = "io.elementary.switchboard.keyboard.windows";
             windows_group.label = _("Windows");
             add_action (ref windows_group, Schema.WM, _("Close"), "close");
             add_action (ref windows_group, Schema.WM, _("Lower"), "lower");
