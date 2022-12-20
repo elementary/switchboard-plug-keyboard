@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2022-12-21 23:25+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
 "Language: nb\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -811,7 +811,7 @@ msgstr "Inndatametode er aktiv"
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "Tilgjengelighet"
 
 #: src/Views/Shortcuts.vala:95
 #, fuzzy
@@ -864,13 +864,14 @@ msgstr "Slått av"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:206
+#, fuzzy
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Tast inn ny snarvei …"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:289
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "Kunne ikke sette ny snarvei som følge av konflikter"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:290
