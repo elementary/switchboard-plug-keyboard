@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-09-30 22:36+0000\n"
+"PO-Revision-Date: 2022-12-26 20:25+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -35,15 +35,15 @@ msgstr "Nové funkcie:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Obnoviť predvolené skratky"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Jednoduchá deaktivácia skratky"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Podpora metódy vstupu Rime pre čínštinu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
@@ -55,10 +55,8 @@ msgid "Minor updates:"
 msgstr "Menšie aktualizácie:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-#, fuzzy
-#| msgid "Redesigned custom shortcuts view"
 msgid "Remove custom shortcuts from their menu"
-msgstr "Prerobený vzhľad zobrazenia vlastných skratiek"
+msgstr "Odstránenie vlastných skratiek z ich menu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
