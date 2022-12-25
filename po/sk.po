@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2022-10-20 19:21+0000\n"
-"PO-Revision-Date: 2022-03-02 17:20+0000\n"
+"PO-Revision-Date: 2022-12-26 20:25+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -795,13 +795,11 @@ msgstr "Metóda vstupu je aktívna"
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "Prístupnosť"
 
 #: src/Views/Shortcuts.vala:95
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "Skratky"
+msgstr "Pridať skratku"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -848,20 +846,17 @@ msgstr "Pridajte novú skratku…"
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:289
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "Nie je možné nastaviť novú skratku kvôli konfliktom"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:290
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s sa už používa pre %s"
+msgstr "„%s“ sa už používa pre „%s → %s“."
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:127
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "Predvolené"
+msgstr "Resetovať na predvolené"
 
 #~ msgid "Add"
 #~ msgstr "Pridať"
