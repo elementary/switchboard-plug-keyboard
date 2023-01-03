@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 19:21+0000\n"
+"POT-Creation-Date: 2023-01-03 20:27+0000\n"
 "PO-Revision-Date: 2022-01-28 09:40+0000\n"
 "Last-Translator: colindemian <colindemian@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://l10n.elementary.io/projects/"
@@ -27,97 +27,83 @@ msgstr "键盘设置"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "配置键盘功能、布局和快捷键"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:12
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:37
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:49
-msgid "New features:"
-msgstr "新特性："
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:14
-msgid "Revert shortcuts to default"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-msgid "Easily disable a shortcut"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:16
-msgid "Support Rime input method for Chinese"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:18
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:41
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:54
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:62
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:55
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:69
 msgid "Minor updates:"
 msgstr "次要更新："
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:20
-msgid "Remove custom shortcuts from their menu"
-msgstr ""
-
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:21
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:56
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:65
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:76
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:84
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:90
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:97
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:44
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
 msgid "Updated translations"
 msgstr "翻译更新"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:30
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
+msgid "New features:"
+msgstr "新特性："
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+msgid "Revert shortcuts to default"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+msgid "Easily disable a shortcut"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+msgid "Support Rime input method for Chinese"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+msgid "Remove custom shortcuts from their menu"
+msgstr ""
+
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
 msgid "Update for OS 7"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:39
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Open Multitasking View with Super"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
 msgid "Redesigned custom shortcuts view"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:52
+#: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
 msgid "On-screen keyboard switch in Layouts tab"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
-msgid "Ensure IBus automatically starts on login when needed"
-msgstr "如果需要，确保 IBus 在登录时自动启动"
+#~ msgid "Ensure IBus automatically starts on login when needed"
+#~ msgstr "如果需要，确保 IBus 在登录时自动启动"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:73
-msgid "Add Layout popover is now a dialog"
-msgstr "添加布局弹出框现在是一个对话框"
+#~ msgid "Add Layout popover is now a dialog"
+#~ msgstr "添加布局弹出框现在是一个对话框"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:74
-msgid "Guarantee we always have at least one layout"
-msgstr "确保我们总是有至少一种布局"
+#~ msgid "Guarantee we always have at least one layout"
+#~ msgstr "确保我们总是有至少一种布局"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:75
-msgid "Improvements to ibus and xkb layouts"
-msgstr "ibus 和 xkb 布局的改进"
+#~ msgid "Improvements to ibus and xkb layouts"
+#~ msgstr "ibus 和 xkb 布局的改进"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:82
-msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
-msgstr "“播放”的快捷方式描述现在是“播放/暂停”"
+#~ msgid "Shortcut description for \"Play\" is now \"Play/Pause\""
+#~ msgstr "“播放”的快捷方式描述现在是“播放/暂停”"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:83
-msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
-msgstr "修复部分快捷方式错误显示为禁用的问题"
+#~ msgid "Fix an issue where some shortcuts would incorrectly show as disabled"
+#~ msgstr "修复部分快捷方式错误显示为禁用的问题"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:89
-msgid "Add a view to configure input methods"
-msgstr "添加视图以配置输入法"
+#~ msgid "Add a view to configure input methods"
+#~ msgstr "添加视图以配置输入法"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:95
-msgid "New \"Workspaces\" icon"
-msgstr "新的“工作区”图标"
+#~ msgid "New \"Workspaces\" icon"
+#~ msgstr "新的“工作区”图标"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:96
-msgid "Exclude Space from single-key shortcuts"
-msgstr "从单键快捷方式中排除空格"
+#~ msgid "Exclude Space from single-key shortcuts"
+#~ msgstr "从单键快捷方式中排除空格"
