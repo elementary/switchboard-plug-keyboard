@@ -8,7 +8,7 @@
   <translation type="gettext">keyboard-plug</translation>
 
   <releases>
-    <release version="3.1.1" date="2023-01-03" urgency="medium">
+    <release version="3.1.1" date="2023-01-04" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
