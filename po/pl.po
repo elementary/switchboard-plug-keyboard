@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-20 19:21+0000\n"
+"POT-Creation-Date: 2023-01-03 20:27+0000\n"
 "PO-Revision-Date: 2022-10-23 10:57+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -513,8 +513,8 @@ msgstr "Własny"
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:103
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:352
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:105
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
 msgid "Disabled"
 msgstr "Wyłączone"
 
@@ -830,32 +830,32 @@ msgid "Enter a command here"
 msgstr "Wprowadź polecenie"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:123
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:125
 msgid "Set New Shortcut"
 msgstr "Ustaw nowy skrót klawiszowy"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:131
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:133
 msgid "Disable"
 msgstr "Wyłącz"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:206
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:208
 msgid "Enter new shortcut…"
 msgstr "Wprowadź nowy skrót klawiszowy…"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:289
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
 msgid "Unable to set new shortcut due to conflicts"
 msgstr "Nie można ustawić nowego skrótu z powodu konfliktów"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:290
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
 #, c-format
 msgid "“%s” is already used for “%s → %s”."
 msgstr "„%s” jest już używany dla „%s → %s”."
 
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:127
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:129
 msgid "Reset to Default"
 msgstr "Przywróć do domyślnych"
 
