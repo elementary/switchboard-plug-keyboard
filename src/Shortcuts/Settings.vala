@@ -49,7 +49,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             }
         }
 
-        private bool valid (Schema schema, string key) {
+        public bool valid (Schema schema, string key) {
             // check if schema exists
             if (schema < 0 || schema >= Schema.COUNT)
                 return false;

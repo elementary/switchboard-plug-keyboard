@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2023-01-03 20:27+0000\n"
+"PO-Revision-Date: 2022-12-21 23:25+0000\n"
+"Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
 "Language: nb\n"
@@ -17,8 +17,96 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
+
+#: src/Dialogs/AddLayoutDialog.vala:21
+#, fuzzy
+msgid "Input Language"
+msgstr "Inndataspråk:"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+#, fuzzy
+#| msgid "Layout"
+msgid "Layout List"
+msgstr "Tastaturoppsettsliste"
+
+#: src/Dialogs/AddLayoutDialog.vala:40
+#, fuzzy
+msgid "Search input language"
+msgstr "Søkeinndataspråk"
+
+#: src/Dialogs/AddLayoutDialog.vala:95
+msgid "Preview Layout"
+msgstr "Forhåndsvis tastaturoppsett"
+
+#: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: src/Dialogs/AddLayoutDialog.vala:142
+msgid "Add Layout"
+msgstr "Legg til oppsett"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
+msgid "Default"
+msgstr "Forvalg"
+
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr "%s er allerede i bruk for %s"
+
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "Hvis du tildeler en snarvei til %s, vil %s bli avskrudd."
+
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Tildel på nytt"
+
+#: src/Dialogs/InstallEngineDialog.vala:23
+msgid "Choose an engine to install"
+msgstr "Velg en motor å installere"
+
+#: src/Dialogs/InstallEngineDialog.vala:24
+msgid "Select an engine from the list to install and use."
+msgstr "Velg en motor fra listen å installere og bruke."
+
+#: src/Dialogs/InstallEngineDialog.vala:43
+msgid "Languages"
+msgstr "Språk"
+
+#: src/Dialogs/InstallEngineDialog.vala:92
+msgid "Install"
+msgstr "Installer"
+
+#: src/Dialogs/ProgressDialog.vala:46
+#, c-format
+msgid "Installing %s"
+msgstr "Installerer %s"
+
+#: src/Dialogs/ProgressDialog.vala:49
+#, c-format
+msgid "Removing %s"
+msgstr "Fjerner %s"
+
+#: src/InputMethod/Installer/InstallList.vala:26
+msgid "Japanese"
+msgstr "Japansk"
+
+#: src/InputMethod/Installer/InstallList.vala:28
+msgid "Korean"
+msgstr "Koreansk"
+
+#: src/InputMethod/Installer/InstallList.vala:30
+msgid "Chinese"
+msgstr "Kinesisk"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -83,95 +171,7 @@ msgstr "Gjentagende taster"
 msgid "Cursor Blinking"
 msgstr "Pekerblinking"
 
-#: src/Dialogs/AddLayoutDialog.vala:21
-#, fuzzy
-msgid "Input Language"
-msgstr "Inndataspråk:"
-
-#: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
-msgid "Layout List"
-msgstr "Tastaturoppsettsliste"
-
-#: src/Dialogs/AddLayoutDialog.vala:38
-#, fuzzy
-msgid "Search input language"
-msgstr "Søkeinndataspråk"
-
-#: src/Dialogs/AddLayoutDialog.vala:93
-msgid "Preview Layout"
-msgstr "Forhåndsvis tastaturoppsett"
-
-#: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
-#: src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
-msgid "Cancel"
-msgstr "Avbryt"
-
-#: src/Dialogs/AddLayoutDialog.vala:143
-msgid "Add Layout"
-msgstr "Legg til oppsett"
-
-#. Caps Lock key functionality
-#: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
-msgid "Default"
-msgstr "Forvalg"
-
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
-msgstr "%s er allerede i bruk for %s"
-
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Hvis du tildeler en snarvei til %s, vil %s bli avskrudd."
-
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Tildel på nytt"
-
-#: src/Dialogs/InstallEngineDialog.vala:23
-msgid "Choose an engine to install"
-msgstr "Velg en motor å installere"
-
-#: src/Dialogs/InstallEngineDialog.vala:24
-msgid "Select an engine from the list to install and use."
-msgstr "Velg en motor fra listen å installere og bruke."
-
-#: src/Dialogs/InstallEngineDialog.vala:43
-msgid "Languages"
-msgstr "Språk"
-
-#: src/Dialogs/InstallEngineDialog.vala:92
-msgid "Install"
-msgstr "Installer"
-
-#: src/Dialogs/ProgressDialog.vala:46
-#, c-format
-msgid "Installing %s"
-msgstr "Installerer %s"
-
-#: src/Dialogs/ProgressDialog.vala:49
-#, c-format
-msgid "Removing %s"
-msgstr "Fjerner %s"
-
-#: src/InputMethod/Installer/InstallList.vala:26
-msgid "Japanese"
-msgstr "Japansk"
-
-#: src/InputMethod/Installer/InstallList.vala:28
-msgid "Korean"
-msgstr "Koreansk"
-
-#: src/InputMethod/Installer/InstallList.vala:30
-msgid "Chinese"
-msgstr "Kinesisk"
-
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
 msgstr "Vinduer"
 
@@ -256,7 +256,7 @@ msgstr "Flytt til skjermen til høyre"
 msgid "Move to left display"
 msgstr "Flytt til skjermen til venstre"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Arbeidsområder"
 
@@ -368,7 +368,7 @@ msgstr "Flytt til venstre arbeidsområde"
 msgid "Move to right workspace"
 msgstr "Flytt til høyre arbeidsområde"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "Skjermavbildninger"
 
@@ -396,7 +396,7 @@ msgstr "Velg et område å fange"
 msgid "Copy an area to clipboard"
 msgstr "Lagre et område til utklippstavle"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "Programmer"
 
@@ -420,7 +420,7 @@ msgstr "Terminal"
 msgid "Internet Browser"
 msgstr "Nettleser"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "Media"
 
@@ -488,7 +488,7 @@ msgstr "Veksle skjermtastatur"
 msgid "Toggle Screenreader"
 msgstr "Veksle skjermleser"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "System"
 
@@ -508,7 +508,7 @@ msgstr "Logg ut"
 msgid "Cycle display mode"
 msgstr "Bytt visningsmodus"
 
-#: src/Shortcuts/List.vala:148
+#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "Egendefinert"
 
@@ -516,8 +516,10 @@ msgstr "Egendefinert"
 #. Compose key position menu
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
-#: src/Widgets/Shortcuts/CustomTree.vala:133
-#: src/Widgets/Shortcuts/CustomTree.vala:400
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:105
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
 msgid "Disabled"
 msgstr "Slått av"
 
@@ -594,8 +596,8 @@ msgstr "Klarte ikke å starte IBus-nissen"
 msgid "Add…"
 msgstr "Legg til…"
 
-#: src/Views/InputMethod.vala:109 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Fjern"
 
@@ -662,7 +664,7 @@ msgstr "Alt+ Mellomrom"
 msgid "Both Shift keys together"
 msgstr "Begge Shift-tastene sammen"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -686,15 +688,15 @@ msgstr "Komponerings-tast:"
 msgid "Menu"
 msgstr "Meny"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:307 src/Views/Layout.vala:319
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Alt"
 msgstr "Høyre Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right Ctrl"
 msgstr "Høyre Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
 msgid "Right ⌘"
 msgstr "Høyre ⌘"
 
@@ -756,60 +758,66 @@ msgstr "Veksle skjermtastatur"
 msgid "On-screen keyboard settings…"
 msgstr "Innstillinger for skjermtastatur…"
 
-#: src/Views/Layout.vala:162
+#: src/Views/Layout.vala:163
 msgid "Show in Panel"
 msgstr "Vis i panel"
 
-#: src/Views/Layout.vala:169
+#: src/Views/Layout.vala:170
 msgid "Caps Lock:"
 msgstr "Caps Lock:"
 
-#: src/Views/Layout.vala:176
+#: src/Views/Layout.vala:177
 msgid "Num Lock:"
 msgstr "Num Lock:"
 
-#: src/Views/Layout.vala:284 src/Views/Layout.vala:301
+#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
 msgid "Key to choose 3rd level:"
 msgstr "Tast for å velge tredje nivå:"
 
-#: src/Views/Layout.vala:306
+#: src/Views/Layout.vala:307
 msgid "Left Alt"
 msgstr "Venstre Alt"
 
-#: src/Views/Layout.vala:316
+#: src/Views/Layout.vala:317
 msgid "Key to choose 5th level:"
 msgstr "Tast for å velge femte nivå:"
 
-#: src/Views/Layout.vala:337
+#: src/Views/Layout.vala:338
 msgid "Kana Lock:"
 msgstr "Kana-lås:"
 
-#: src/Views/Layout.vala:345
+#: src/Views/Layout.vala:346
 #, fuzzy
 msgid "Nicola F Backspace:"
 msgstr "Nicola F-rettetast:"
 
-#: src/Views/Layout.vala:348
+#: src/Views/Layout.vala:349
 #, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku som Esc:"
 
-#: src/Views/Layout.vala:365
+#: src/Views/Layout.vala:366
 #, fuzzy
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Hangul/Hanja-taster på høyre Alt/Ctrl:"
 
-#: src/Views/Layout.vala:444
+#: src/Views/Layout.vala:445
 msgid "Type to test your layout"
 msgstr "Skriv for å prøve tastaturoppsettet"
 
-#: src/Views/Layout.vala:447
+#: src/Views/Layout.vala:448
 msgid "Input Method is active"
 msgstr "Inndatametode er aktiv"
 
-#: src/Views/Shortcuts.vala:76
-msgid "Add"
-msgstr "Legg til"
+#: src/Views/Shortcuts.vala:52
+msgid "Accessibility"
+msgstr "Tilgjengelighet"
+
+#: src/Views/Shortcuts.vala:95
+#, fuzzy
+#| msgid "Shortcuts"
+msgid "Add Shortcut"
+msgstr "Snarveier"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -834,27 +842,52 @@ msgstr "Flytt oppover"
 msgid "Move down"
 msgstr "Flytt nedover"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:130
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:114
 #, fuzzy
 #| msgid "Enter Command"
 msgid "Enter a command here"
 msgstr "Angi kommando"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:172
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:125
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Set New Shortcut"
 msgstr "Snarvei"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:176
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:133
 #, fuzzy
 #| msgid "Disabled"
 msgid "Disable"
 msgstr "Slått av"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:309
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:208
+#, fuzzy
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "Tast inn ny snarvei …"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
+msgid "Unable to set new shortcut due to conflicts"
+msgstr "Kunne ikke sette ny snarvei som følge av konflikter"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
+#, fuzzy, c-format
+#| msgid "%s is already used for %s"
+msgid "“%s” is already used for “%s → %s”."
+msgstr "%s er allerede i bruk for %s"
+
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:129
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Default"
+msgstr "Forvalg"
+
+#~ msgid "Add"
+#~ msgstr "Legg til"
 
 #~ msgid "Command"
 #~ msgstr "Kommando"

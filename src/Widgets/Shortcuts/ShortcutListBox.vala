@@ -35,10 +35,12 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
         for (int i = 0; i < actions.length; i++) {
-            var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
-            append (row);
+            if (settings.valid (schemas[i], keys[i])) {
+                var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
+                append (row);
 
-            sizegroup.add_widget (row);
+                sizegroup.add_widget (row);
+            }
         }
     }
 

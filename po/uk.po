@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2021-11-01 21:04+0000\n"
+"POT-Creation-Date: 2023-01-03 20:27+0000\n"
+"PO-Revision-Date: 2022-10-21 14:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -20,6 +20,90 @@ msgstr ""
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
+
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Мова введення"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+msgid "Layout List"
+msgstr "Перелік розкладок"
+
+#: src/Dialogs/AddLayoutDialog.vala:40
+msgid "Search input language"
+msgstr "Мова введення пошуку"
+
+#: src/Dialogs/AddLayoutDialog.vala:95
+msgid "Preview Layout"
+msgstr "Попередній перегляд розкладки"
+
+#: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/Dialogs/AddLayoutDialog.vala:142
+msgid "Add Layout"
+msgstr "Додати розкладку"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
+msgid "Default"
+msgstr "Типово"
+
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr "%s вже застосовується для %s"
+
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "Якщо змінити комбінацію клавіш %s, %s буде вимкнено."
+
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Перепризначити"
+
+#: src/Dialogs/InstallEngineDialog.vala:23
+msgid "Choose an engine to install"
+msgstr "Вибрати рушій для встановлення"
+
+#: src/Dialogs/InstallEngineDialog.vala:24
+msgid "Select an engine from the list to install and use."
+msgstr "Вибрати двигун з переліку для встановлення та використання."
+
+#: src/Dialogs/InstallEngineDialog.vala:43
+msgid "Languages"
+msgstr "Мови"
+
+#: src/Dialogs/InstallEngineDialog.vala:92
+msgid "Install"
+msgstr "Встановити"
+
+#: src/Dialogs/ProgressDialog.vala:46
+#, c-format
+msgid "Installing %s"
+msgstr "Встановлення %s"
+
+#: src/Dialogs/ProgressDialog.vala:49
+#, c-format
+msgid "Removing %s"
+msgstr "Вилучення %s"
+
+#: src/InputMethod/Installer/InstallList.vala:26
+msgid "Japanese"
+msgstr "Японська"
+
+#: src/InputMethod/Installer/InstallList.vala:28
+msgid "Korean"
+msgstr "Корейська"
+
+#: src/InputMethod/Installer/InstallList.vala:30
+msgid "Chinese"
+msgstr "Китайська"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -83,91 +167,7 @@ msgstr "Повторення клавіш"
 msgid "Cursor Blinking"
 msgstr "Блимання курсора"
 
-#: src/Dialogs/AddLayoutDialog.vala:21
-msgid "Input Language"
-msgstr "Мова введення"
-
-#: src/Dialogs/AddLayoutDialog.vala:22
-msgid "Layout List"
-msgstr "Перелік розкладок"
-
-#: src/Dialogs/AddLayoutDialog.vala:38
-msgid "Search input language"
-msgstr "Мова введення пошуку"
-
-#: src/Dialogs/AddLayoutDialog.vala:93
-msgid "Preview Layout"
-msgstr "Попередній перегляд розкладки"
-
-#: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
-#: src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: src/Dialogs/AddLayoutDialog.vala:143
-msgid "Add Layout"
-msgstr "Додати розкладку"
-
-#. Caps Lock key functionality
-#: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
-msgid "Default"
-msgstr "Типово"
-
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
-msgstr "%s вже застосовується для %s"
-
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Якщо змінити комбінацію клавіш %s, %s буде вимкнено."
-
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Перепризначити"
-
-#: src/Dialogs/InstallEngineDialog.vala:23
-msgid "Choose an engine to install"
-msgstr "Вибрати рушій для встановлення"
-
-#: src/Dialogs/InstallEngineDialog.vala:24
-msgid "Select an engine from the list to install and use."
-msgstr "Вибрати двигун з переліку для встановлення та використання."
-
-#: src/Dialogs/InstallEngineDialog.vala:43
-msgid "Languages"
-msgstr "Мови"
-
-#: src/Dialogs/InstallEngineDialog.vala:92
-msgid "Install"
-msgstr "Встановити"
-
-#: src/Dialogs/ProgressDialog.vala:46
-#, c-format
-msgid "Installing %s"
-msgstr "Встановлення %s"
-
-#: src/Dialogs/ProgressDialog.vala:49
-#, c-format
-msgid "Removing %s"
-msgstr "Вилучення %s"
-
-#: src/InputMethod/Installer/InstallList.vala:26
-msgid "Japanese"
-msgstr "Японська"
-
-#: src/InputMethod/Installer/InstallList.vala:28
-msgid "Korean"
-msgstr "Корейська"
-
-#: src/InputMethod/Installer/InstallList.vala:30
-msgid "Chinese"
-msgstr "Китайська"
-
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
 msgstr "Вікна"
 
@@ -251,7 +251,7 @@ msgstr "Перемістити на дисплей праворуч"
 msgid "Move to left display"
 msgstr "Перемістити на дисплей ліворуч"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Робочі простори"
 
@@ -363,7 +363,7 @@ msgstr "Перемістити до робочого простору лівор
 msgid "Move to right workspace"
 msgstr "Перемістити до робочого простору праворуч"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "Знімки екрана"
 
@@ -391,7 +391,7 @@ msgstr "Вибрати ділянку"
 msgid "Copy an area to clipboard"
 msgstr "Копіювати ділянку до буфера обміну"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "Застосунки"
 
@@ -415,7 +415,7 @@ msgstr "Термінал"
 msgid "Internet Browser"
 msgstr "Інтернет-переглядач"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "Медіа"
 
@@ -483,7 +483,7 @@ msgstr "Перемикання екранної клавіатури"
 msgid "Toggle Screenreader"
 msgstr "Перемикання зчитувача екрана"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "Система"
 
@@ -503,7 +503,7 @@ msgstr "Вийти"
 msgid "Cycle display mode"
 msgstr "Перемикання між режимами вигляду"
 
-#: src/Shortcuts/List.vala:148
+#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "Власні"
 
@@ -511,8 +511,10 @@ msgstr "Власні"
 #. Compose key position menu
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
-#: src/Widgets/Shortcuts/CustomTree.vala:133
-#: src/Widgets/Shortcuts/CustomTree.vala:400
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:105
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
 msgid "Disabled"
 msgstr "Вимкнено"
 
@@ -589,8 +591,8 @@ msgstr "Не вдалося запустити демон IBus"
 msgid "Add…"
 msgstr "Додати…"
 
-#: src/Views/InputMethod.vala:109 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Вилучити"
 
@@ -655,7 +657,7 @@ msgstr "Alt + Пробіл"
 msgid "Both Shift keys together"
 msgstr "Обидві клавіші Shift разом"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -679,15 +681,15 @@ msgstr "Клавіша злагодження:"
 msgid "Menu"
 msgstr "Меню"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:307 src/Views/Layout.vala:319
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Alt"
 msgstr "Правий Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right Ctrl"
 msgstr "Правий Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
 msgid "Right ⌘"
 msgstr "Права ⌘"
 
@@ -743,57 +745,61 @@ msgstr "Показати екранну клавіатуру:"
 msgid "On-screen keyboard settings…"
 msgstr "Екранна клавіатура…"
 
-#: src/Views/Layout.vala:162
+#: src/Views/Layout.vala:163
 msgid "Show in Panel"
 msgstr "Показувати на панелі"
 
-#: src/Views/Layout.vala:169
+#: src/Views/Layout.vala:170
 msgid "Caps Lock:"
 msgstr "Caps Lock:"
 
-#: src/Views/Layout.vala:176
+#: src/Views/Layout.vala:177
 msgid "Num Lock:"
 msgstr "Num Lock:"
 
-#: src/Views/Layout.vala:284 src/Views/Layout.vala:301
+#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
 msgid "Key to choose 3rd level:"
 msgstr "Клавіша вибору 3-го рівня:"
 
-#: src/Views/Layout.vala:306
+#: src/Views/Layout.vala:307
 msgid "Left Alt"
 msgstr "Лівий Alt"
 
-#: src/Views/Layout.vala:316
+#: src/Views/Layout.vala:317
 msgid "Key to choose 5th level:"
 msgstr "Клавіша вибору 5-го рівня:"
 
-#: src/Views/Layout.vala:337
+#: src/Views/Layout.vala:338
 msgid "Kana Lock:"
 msgstr "Kana Lock (японська азбука):"
 
-#: src/Views/Layout.vala:345
+#: src/Views/Layout.vala:346
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:348
+#: src/Views/Layout.vala:349
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Ханкаку Зенкаку як Escape:"
 
-#: src/Views/Layout.vala:365
+#: src/Views/Layout.vala:366
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Клавіші Hangul/Hanja на правому Alt/Ctrl:"
 
-#: src/Views/Layout.vala:444
+#: src/Views/Layout.vala:445
 msgid "Type to test your layout"
 msgstr "Друкуйте для перевірки розкладки"
 
-#: src/Views/Layout.vala:447
+#: src/Views/Layout.vala:448
 msgid "Input Method is active"
 msgstr "Метод введення активний"
 
-#: src/Views/Shortcuts.vala:76
-msgid "Add"
-msgstr "Додати"
+#: src/Views/Shortcuts.vala:52
+msgid "Accessibility"
+msgstr "Доступність"
+
+#: src/Views/Shortcuts.vala:95
+msgid "Add Shortcut"
+msgstr "Додати комбінацію клавіш"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -818,21 +824,42 @@ msgstr "Підняти"
 msgid "Move down"
 msgstr "Перемістити нижче"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:130
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:114
 msgid "Enter a command here"
 msgstr "Введіть команду сюди"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:172
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:125
 msgid "Set New Shortcut"
 msgstr "Вказати нову комбінацію клавіш"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:176
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:133
 msgid "Disable"
 msgstr "Вимкнути"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:309
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:208
 msgid "Enter new shortcut…"
 msgstr "Ввести нову комбінацію клавіш…"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
+msgid "Unable to set new shortcut due to conflicts"
+msgstr "Неможливо призначити нову комбінацію клавіш через суперечності"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
+#, c-format
+msgid "“%s” is already used for “%s → %s”."
+msgstr "«%s» вже використано для «%s → %s»."
+
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:129
+msgid "Reset to Default"
+msgstr "Відновити типові"
+
+#~ msgid "Add"
+#~ msgstr "Додати"
 
 #~ msgid "Command"
 #~ msgstr "Команда"

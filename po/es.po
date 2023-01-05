@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 21:19+0000\n"
+"POT-Creation-Date: 2023-01-03 20:27+0000\n"
 "PO-Revision-Date: 2022-02-18 04:43+0000\n"
 "Last-Translator: Jose Manuel Hernandez Farias <ing.josemhf@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -19,6 +19,90 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
+
+#: src/Dialogs/AddLayoutDialog.vala:21
+msgid "Input Language"
+msgstr "Idioma de entrada"
+
+#: src/Dialogs/AddLayoutDialog.vala:22
+msgid "Layout List"
+msgstr "Lista de disposiciones"
+
+#: src/Dialogs/AddLayoutDialog.vala:40
+msgid "Search input language"
+msgstr "Buscar el idioma de entrada"
+
+#: src/Dialogs/AddLayoutDialog.vala:95
+msgid "Preview Layout"
+msgstr "Previsualizar disposición"
+
+#: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:59
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: src/Dialogs/AddLayoutDialog.vala:142
+msgid "Add Layout"
+msgstr "Añadir disposición"
+
+#. Caps Lock key functionality
+#: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
+msgid "Default"
+msgstr "Predeterminado"
+
+#: src/Dialogs/ConflictDialog.vala:26
+#, c-format
+msgid "%s is already used for %s"
+msgstr "%s ya se utiliza para %s"
+
+#: src/Dialogs/ConflictDialog.vala:27
+#, c-format
+msgid "If you reassign the shortcut to %s, %s will be disabled."
+msgstr "Si reasigna el atajo a %s, %s se desactivará."
+
+#: src/Dialogs/ConflictDialog.vala:38
+msgid "Reassign"
+msgstr "Reasignar"
+
+#: src/Dialogs/InstallEngineDialog.vala:23
+msgid "Choose an engine to install"
+msgstr "Elija el motor que debe instalarse"
+
+#: src/Dialogs/InstallEngineDialog.vala:24
+msgid "Select an engine from the list to install and use."
+msgstr "Seleccione un motor de la lista para instalarlo y utilizarlo."
+
+#: src/Dialogs/InstallEngineDialog.vala:43
+msgid "Languages"
+msgstr "Idiomas"
+
+#: src/Dialogs/InstallEngineDialog.vala:92
+msgid "Install"
+msgstr "Instalar"
+
+#: src/Dialogs/ProgressDialog.vala:46
+#, c-format
+msgid "Installing %s"
+msgstr "Instalando %s"
+
+#: src/Dialogs/ProgressDialog.vala:49
+#, c-format
+msgid "Removing %s"
+msgstr "Desinstalando %s"
+
+#: src/InputMethod/Installer/InstallList.vala:26
+msgid "Japanese"
+msgstr "Japonés"
+
+#: src/InputMethod/Installer/InstallList.vala:28
+msgid "Korean"
+msgstr "Coreano"
+
+#: src/InputMethod/Installer/InstallList.vala:30
+msgid "Chinese"
+msgstr "Chino"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -83,91 +167,7 @@ msgstr "Repetir teclas"
 msgid "Cursor Blinking"
 msgstr "Parpadeo del cursor"
 
-#: src/Dialogs/AddLayoutDialog.vala:21
-msgid "Input Language"
-msgstr "Idioma de entrada"
-
-#: src/Dialogs/AddLayoutDialog.vala:22
-msgid "Layout List"
-msgstr "Lista de disposiciones"
-
-#: src/Dialogs/AddLayoutDialog.vala:38
-msgid "Search input language"
-msgstr "Buscar el idioma de entrada"
-
-#: src/Dialogs/AddLayoutDialog.vala:93
-msgid "Preview Layout"
-msgstr "Previsualizar disposición"
-
-#: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
-#: src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
-msgid "Cancel"
-msgstr "Cancelar"
-
-#: src/Dialogs/AddLayoutDialog.vala:143
-msgid "Add Layout"
-msgstr "Añadir disposición"
-
-#. Caps Lock key functionality
-#: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
-msgid "Default"
-msgstr "Predeterminado"
-
-#: src/Dialogs/ConflictDialog.vala:26
-#, c-format
-msgid "%s is already used for %s"
-msgstr "%s ya se utiliza para %s"
-
-#: src/Dialogs/ConflictDialog.vala:27
-#, c-format
-msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Si reasigna el atajo a %s, %s se desactivará."
-
-#: src/Dialogs/ConflictDialog.vala:38
-msgid "Reassign"
-msgstr "Reasignar"
-
-#: src/Dialogs/InstallEngineDialog.vala:23
-msgid "Choose an engine to install"
-msgstr "Elija el motor que debe instalarse"
-
-#: src/Dialogs/InstallEngineDialog.vala:24
-msgid "Select an engine from the list to install and use."
-msgstr "Seleccione un motor de la lista para instalarlo y utilizarlo."
-
-#: src/Dialogs/InstallEngineDialog.vala:43
-msgid "Languages"
-msgstr "Idiomas"
-
-#: src/Dialogs/InstallEngineDialog.vala:92
-msgid "Install"
-msgstr "Instalar"
-
-#: src/Dialogs/ProgressDialog.vala:46
-#, c-format
-msgid "Installing %s"
-msgstr "Instalando %s"
-
-#: src/Dialogs/ProgressDialog.vala:49
-#, c-format
-msgid "Removing %s"
-msgstr "Desinstalando %s"
-
-#: src/InputMethod/Installer/InstallList.vala:26
-msgid "Japanese"
-msgstr "Japonés"
-
-#: src/InputMethod/Installer/InstallList.vala:28
-msgid "Korean"
-msgstr "Coreano"
-
-#: src/InputMethod/Installer/InstallList.vala:30
-msgid "Chinese"
-msgstr "Chino"
-
-#: src/Shortcuts/List.vala:43
+#: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
 msgstr "Windows"
 
@@ -251,7 +251,7 @@ msgstr "Mover a la pantalla derecha"
 msgid "Move to left display"
 msgstr "Mover a la pantalla izquierda"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Áreas de trabajo"
 
@@ -363,7 +363,7 @@ msgstr "Mover al área de trabajo a la izquierda"
 msgid "Move to right workspace"
 msgstr "Mover al área de trabajo a la derecha"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "Capturas de pantalla"
 
@@ -391,7 +391,7 @@ msgstr "Seleccione un área para capturar"
 msgid "Copy an area to clipboard"
 msgstr "Copiar un área en el portapapeles"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "Aplicaciones"
 
@@ -415,7 +415,7 @@ msgstr "Terminal"
 msgid "Internet Browser"
 msgstr "Navegador web"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "Multimedia"
 
@@ -483,7 +483,7 @@ msgstr "Activar o desactivar teclado en pantalla"
 msgid "Toggle Screenreader"
 msgstr "Activar o desactivar lector de pantalla"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "Sistema"
 
@@ -503,7 +503,7 @@ msgstr "Cerrar sesión"
 msgid "Cycle display mode"
 msgstr "Modo de visualización de ciclo"
 
-#: src/Shortcuts/List.vala:148
+#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "Personalizado"
 
@@ -511,8 +511,10 @@ msgstr "Personalizado"
 #. Compose key position menu
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
-#: src/Widgets/Shortcuts/CustomTree.vala:133
-#: src/Widgets/Shortcuts/CustomTree.vala:400
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:105
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
 msgid "Disabled"
 msgstr "Desactivado"
 
@@ -590,8 +592,8 @@ msgstr "No se pudo iniciar el demonio de IBus"
 msgid "Add…"
 msgstr "Añadir…"
 
-#: src/Views/InputMethod.vala:109 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Quitar"
 
@@ -656,7 +658,7 @@ msgstr "Alt + Espacio"
 msgid "Both Shift keys together"
 msgstr "Ambas teclas Mayús a la vez"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
 msgid "Caps Lock"
 msgstr "Bloq Mayús"
 
@@ -680,15 +682,15 @@ msgstr "Tecla modificadora:"
 msgid "Menu"
 msgstr "Menú"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:307 src/Views/Layout.vala:319
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Alt"
 msgstr "Alt derecha"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right Ctrl"
 msgstr "Ctrl derecha"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
 msgid "Right ⌘"
 msgstr "⌘ derecha"
 
@@ -744,57 +746,63 @@ msgstr "Mostrar teclado en pantalla:"
 msgid "On-screen keyboard settings…"
 msgstr "Configuración del teclado en pantalla…"
 
-#: src/Views/Layout.vala:162
+#: src/Views/Layout.vala:163
 msgid "Show in Panel"
 msgstr "Mostrar en el panel"
 
-#: src/Views/Layout.vala:169
+#: src/Views/Layout.vala:170
 msgid "Caps Lock:"
 msgstr "Bloq Mayús:"
 
-#: src/Views/Layout.vala:176
+#: src/Views/Layout.vala:177
 msgid "Num Lock:"
 msgstr "Bloq Num:"
 
-#: src/Views/Layout.vala:284 src/Views/Layout.vala:301
+#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
 msgid "Key to choose 3rd level:"
 msgstr "Tecla para elegir el 3.ᵉʳ nivel:"
 
-#: src/Views/Layout.vala:306
+#: src/Views/Layout.vala:307
 msgid "Left Alt"
 msgstr "Alt izquierda"
 
-#: src/Views/Layout.vala:316
+#: src/Views/Layout.vala:317
 msgid "Key to choose 5th level:"
 msgstr "Tecla para elegir el 5.º nivel:"
 
-#: src/Views/Layout.vala:337
+#: src/Views/Layout.vala:338
 msgid "Kana Lock:"
 msgstr "Bloqueo de kana:"
 
-#: src/Views/Layout.vala:345
+#: src/Views/Layout.vala:346
 msgid "Nicola F Backspace:"
 msgstr "Retroceso Nicola F:"
 
-#: src/Views/Layout.vala:348
+#: src/Views/Layout.vala:349
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku/zenkaku como Escape:"
 
-#: src/Views/Layout.vala:365
+#: src/Views/Layout.vala:366
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Teclas de hangul/hanja en Alt/Ctrl derecha:"
 
-#: src/Views/Layout.vala:444
+#: src/Views/Layout.vala:445
 msgid "Type to test your layout"
 msgstr "Escriba para probar la disposición"
 
-#: src/Views/Layout.vala:447
+#: src/Views/Layout.vala:448
 msgid "Input Method is active"
 msgstr "El método de entrada está activo"
 
-#: src/Views/Shortcuts.vala:76
-msgid "Add"
-msgstr "Añadir"
+#: src/Views/Shortcuts.vala:52
+msgid "Accessibility"
+msgstr ""
+
+#: src/Views/Shortcuts.vala:95
+#, fuzzy
+#| msgid "Shortcuts"
+msgid "Add Shortcut"
+msgstr "Atajos"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -819,21 +827,45 @@ msgstr "Subir"
 msgid "Move down"
 msgstr "Bajar"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:130
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:114
 msgid "Enter a command here"
 msgstr "Introducir orden aquí"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:172
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:125
 msgid "Set New Shortcut"
 msgstr "Definir nuevo atajo"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:176
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:133
 msgid "Disable"
 msgstr "Desactivar"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:309
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:208
 msgid "Enter new shortcut…"
 msgstr "Ingresar un nuevo atajo…"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
+msgid "Unable to set new shortcut due to conflicts"
+msgstr ""
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
+#, fuzzy, c-format
+#| msgid "%s is already used for %s"
+msgid "“%s” is already used for “%s → %s”."
+msgstr "%s ya se utiliza para %s"
+
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:129
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Default"
+msgstr "Predeterminado"
+
+#~ msgid "Add"
+#~ msgstr "Añadir"
 
 #~ msgid "Command"
 #~ msgstr "Orden"

@@ -1,826 +1,860 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-09 21:19+0000\n"
-"PO-Revision-Date: 2020-10-04 21:15+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
-"Language-Team: Sorani <https://l10n.elementary.io/projects/switchboard/"
-"switchboard-plug-keyboard/ckb/>\n"
+"POT-Creation-Date: 2023-01-03 20:27+0000\n"
+"PO-Revision-Date: 2022-09-29 18:06+0000\n"
+"Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
+"Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
+"switchboard/switchboard-plug-keyboard/ckb/>\n"
 "Language: ckb\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.9.1\n"
-
-#: src/Plug.vala:38
-msgid "Keyboard"
-msgstr ""
-
-#: src/Plug.vala:39
-msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
-
-#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106 src/Plug.vala:107
-msgid "Layout"
-msgstr ""
-
-#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111
-msgid "Input Method"
-msgstr ""
-
-#: src/Plug.vala:57 src/Plug.vala:112
-msgid "Shortcuts"
-msgstr ""
-
-#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
-msgid "Behavior"
-msgstr ""
-
-#: src/Plug.vala:104
-msgid "Switch layout"
-msgstr ""
-
-#: src/Plug.vala:105
-msgid "Compose Key"
-msgstr ""
-
-#: src/Plug.vala:106
-msgid "⌘ key behavior"
-msgstr ""
-
-#: src/Plug.vala:107
-msgid "Caps Lock behavior"
-msgstr ""
-
-#: src/Plug.vala:109
-msgid "Switch engines"
-msgstr ""
-
-#: src/Plug.vala:110
-msgid "Show candidate window"
-msgstr ""
-
-#: src/Plug.vala:111
-msgid "Embed preedit text in application window"
-msgstr ""
-
-#: src/Plug.vala:114
-msgid "Repeat Keys"
-msgstr ""
-
-#: src/Plug.vala:115
-msgid "Cursor Blinking"
-msgstr ""
+"X-Generator: Weblate 4.4.2\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
 msgid "Input Language"
-msgstr ""
+msgstr "زمانی ئینپوت"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
 msgid "Layout List"
-msgstr ""
+msgstr "لیستی ڕووەکان"
 
-#: src/Dialogs/AddLayoutDialog.vala:38
+#: src/Dialogs/AddLayoutDialog.vala:40
 msgid "Search input language"
-msgstr ""
+msgstr "گەڕان بەدوای زمان"
 
-#: src/Dialogs/AddLayoutDialog.vala:93
+#: src/Dialogs/AddLayoutDialog.vala:95
 msgid "Preview Layout"
-msgstr ""
+msgstr "پشاندانی ڕوو"
 
-#: src/Dialogs/AddLayoutDialog.vala:141 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:48
 msgid "Cancel"
 msgstr "هەڵوەشاندنەوە"
 
-#: src/Dialogs/AddLayoutDialog.vala:143
+#: src/Dialogs/AddLayoutDialog.vala:142
 msgid "Add Layout"
-msgstr ""
+msgstr "زیادکردنی ڕوو"
 
 #. Caps Lock key functionality
-#: src/Dialogs/AddLayoutDialog.vala:239 src/Dialogs/AddLayoutDialog.vala:243
-#: src/Xkb/Handler.vala:95 src/Views/Layout.vala:95 src/Views/Layout.vala:304
+#: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
 msgid "Default"
-msgstr ""
+msgstr "بنەڕەت"
 
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr ""
+msgstr "%s بەکارهاتووە بۆ %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr ""
+msgstr "ئەگەر قەتبڕەکە بکەیتە %s، ئەوا %s پەک دەخرێت."
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
-msgstr ""
+msgstr "دەستنیشانکردنەوە"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "بزوێنەرێک دیاریبکە بۆ دامەزراندن"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "بزوێنەرێک لە لیستەکە هەڵبژێرە بۆ دامەزراندن و بەکارهێنان."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
-msgstr ""
+msgstr "زمانەکان"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "دامەزراندن"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "دامەزراندنی %s"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "سڕینەوەی %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "یابانی"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "کۆری"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "چینی"
 
-#: src/Shortcuts/List.vala:43
+#: src/Plug.vala:38
+msgid "Keyboard"
+msgstr "تەختەکلیل"
+
+#: src/Plug.vala:39
+msgid "Configure keyboard behavior, layouts, and shortcuts"
+msgstr "ڕێکخستنی تەختەکلیل و ڕووکار و قەدبڕەکانی"
+
+#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
+#: src/Plug.vala:106 src/Plug.vala:107
+msgid "Layout"
+msgstr "ڕوو"
+
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111
+msgid "Input Method"
+msgstr "رێگەی هاوردە"
+
+#: src/Plug.vala:57 src/Plug.vala:112
+msgid "Shortcuts"
+msgstr "قەدبڕەکان"
+
+#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+msgid "Behavior"
+msgstr "ڕەفتار"
+
+#: src/Plug.vala:104
+msgid "Switch layout"
+msgstr "گۆڕینی ڕووی تەختەکلیل"
+
+#: src/Plug.vala:105
+msgid "Compose Key"
+msgstr "کلیلی نووسین"
+
+#: src/Plug.vala:106
+msgid "⌘ key behavior"
+msgstr "ڕەفتاری کیلی"
+
+#: src/Plug.vala:107
+msgid "Caps Lock behavior"
+msgstr "ڕەفتاری کەپس لۆک"
+
+#: src/Plug.vala:109
+msgid "Switch engines"
+msgstr "گۆڕینی بزوێنەرەکانی تەختەکلیل"
+
+#: src/Plug.vala:110
+msgid "Show candidate window"
+msgstr "پشاندانی پەنجەرەی کاندید"
+
+#: src/Plug.vala:111
+msgid "Embed preedit text in application window"
+msgstr "دەقی پێش دەستکاریکردن لە پەنجەرەی بەرنامەکەدا جێگیر بکە"
+
+#: src/Plug.vala:114
+msgid "Repeat Keys"
+msgstr "دوبارە-داگرتنی کلیلەکان"
+
+#: src/Plug.vala:115
+msgid "Cursor Blinking"
+msgstr "هەڵپەڕینی نیشاندەری نووسین"
+
+#: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
-msgstr ""
+msgstr "پەنجەرەکان"
 
 #: src/Shortcuts/List.vala:44
 msgid "Close"
-msgstr ""
+msgstr "داخستن"
 
 #: src/Shortcuts/List.vala:45
 msgid "Lower"
-msgstr ""
+msgstr "نزمکردنەوە"
 
 #: src/Shortcuts/List.vala:46
 msgid "Maximize"
-msgstr ""
+msgstr "گەورەکردن"
 
 #: src/Shortcuts/List.vala:47
 msgid "Unmaximize"
-msgstr ""
+msgstr "بچوککردن"
 
 #: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
-msgstr ""
+msgstr "گەورەکردن و بچوککردن"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "شاردنەوە"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "پڕ بە ڕوونما کردن و بچووکردنەوە"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
-msgstr ""
+msgstr "تۆگڵ لەسەر هەموو ناوچەکارەکان"
 
 #: src/Shortcuts/List.vala:52
 msgid "Toggle always on Top"
-msgstr ""
+msgstr "تۆگڵ هەمیشە لەسەرەوە بێت"
 
 #: src/Shortcuts/List.vala:53
 msgid "Cycle Windows"
-msgstr ""
+msgstr "بازدان بەناو پەنجەرەکاندا"
 
 #: src/Shortcuts/List.vala:54
 msgid "Cycle Windows backwards"
-msgstr ""
+msgstr "بازدان بەناو پەنجەرەکاندا بەپێچەوانەوە"
 
 #: src/Shortcuts/List.vala:55
 msgid "Tile Left"
-msgstr ""
+msgstr "پەنجەرە پڕ بە دەستەچەپی ڕوونما بکە"
 
 #: src/Shortcuts/List.vala:56
 msgid "Tile Right"
-msgstr ""
+msgstr "پەنجەرە پڕ بە دەستەڕاستی ڕوونما بکە"
 
 #: src/Shortcuts/List.vala:57
 msgid "Window Overview"
-msgstr ""
+msgstr "وێنەیەکی گشتی پەنجەرەکان"
 
 #: src/Shortcuts/List.vala:58
 msgid "Show All Windows"
-msgstr ""
+msgstr "پشاندانی هەموو پەنجەرەکان"
 
 #: src/Shortcuts/List.vala:59
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "دۆخی وێنە-لە-وێنەدا"
 
 #: src/Shortcuts/List.vala:60
 msgid "Move to display above"
-msgstr ""
+msgstr "بیگوازەوە ڕوونمای سەرەوە"
 
 #: src/Shortcuts/List.vala:61
 msgid "Move to display below"
-msgstr ""
+msgstr "بیگوازەوە بۆ ڕوونمای خوارەوە"
 
 #: src/Shortcuts/List.vala:62
 msgid "Move to right display"
-msgstr ""
+msgstr "گواستنەوە بۆ ڕوونمای لای ڕاست"
 
 #: src/Shortcuts/List.vala:63
 msgid "Move to left display"
-msgstr ""
+msgstr "گواستنەوە بۆ ڕوونمای لای چەپ"
 
-#: src/Shortcuts/List.vala:67
+#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
-msgstr ""
+msgstr "ناوچەکارەکان"
 
 #: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
 msgid "Multitasking View"
-msgstr "دیتنی چەندین شاشە"
+msgstr "دیمەنی مەڵتی-تاسکینگ"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
-msgstr ""
+msgstr "چوونە ناوچەکاری لای چەپ"
 
 #: src/Shortcuts/List.vala:70
 msgid "Switch right"
-msgstr ""
+msgstr "چوونە ناوچەکاری لای ڕاست"
 
 #: src/Shortcuts/List.vala:71
 msgid "Switch to first"
-msgstr ""
+msgstr "چوونە سەر یەکەم ناوچەکار"
 
 #: src/Shortcuts/List.vala:72
 msgid "Switch to new"
-msgstr ""
+msgstr "چوونە سەر ناوچەکارێکی نوێ"
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ١"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٢"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٣"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٤"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٥"
 
 #: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٦"
 
 #: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٧"
 
 #: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٨"
 
 #: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "چوونە سەر ناوچەکاری ٩"
 
 #: src/Shortcuts/List.vala:82
 msgid "Cycle workspaces"
-msgstr ""
+msgstr "بازدان بەناو ناوچەکارەکاندا"
 
 #: src/Shortcuts/List.vala:83
 msgid "Cycle workspaces backwards"
-msgstr ""
+msgstr "بازدان بەناو ناوچەکارەکاندا بەپێچەوانەوە"
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ١"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٢"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٣"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٤"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٥"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٦"
 
 #: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٧"
 
 #: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٨"
 
 #: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری ٩"
 
 #: src/Shortcuts/List.vala:93
 msgid "Move to left workspace"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری لای چەپ"
 
 #: src/Shortcuts/List.vala:94
 msgid "Move to right workspace"
-msgstr ""
+msgstr "گواستنەوەی بۆ ناوچەکاری لای ڕاست"
 
-#: src/Shortcuts/List.vala:98
+#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
-msgstr ""
+msgstr "سکرینشوت"
 
 #: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "گرتنی وێنەی هەموو ڕوونما"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
-msgstr ""
+msgstr "گرتنی وێنەی هەموو ڕوونما و خستنەناو کلیپبۆرد"
 
 #: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
-msgstr ""
+msgstr "گرتنی وێنەی پەنجەرەی ئێستا"
 
 #: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
-msgstr ""
+msgstr "گرتنی وێنەی پەنجەری ئیستا و خستنەناو کلیپبۆرد"
 
 #: src/Shortcuts/List.vala:103
 msgid "Select an area to grab"
-msgstr ""
+msgstr "دیاریکردنی بەشێک لە ڕوونما بۆ وێنەگرتنی"
 
 #: src/Shortcuts/List.vala:104
 msgid "Copy an area to clipboard"
-msgstr ""
+msgstr "دیاریکردنی بەشێک لە ڕوونما بۆ وێنەگرتن و خستنەناو کلیپبۆرد"
 
-#: src/Shortcuts/List.vala:108
+#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
 msgid "Applications"
-msgstr ""
+msgstr "بەرنامەکان"
 
 #: src/Shortcuts/List.vala:109
 msgid "Email"
-msgstr ""
+msgstr "ئیمێڵ"
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
-msgstr ""
+msgstr "بوخچەی سەرەتا"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
-msgstr ""
+msgstr "مۆسیقا"
 
 #: src/Shortcuts/List.vala:112
 msgid "Terminal"
-msgstr ""
+msgstr "تێرمیناڵ"
 
 #: src/Shortcuts/List.vala:113
 msgid "Internet Browser"
-msgstr ""
+msgstr "وێبگەڕ"
 
-#: src/Shortcuts/List.vala:117
+#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
 msgid "Media"
-msgstr ""
+msgstr "میدیا"
 
 #: src/Shortcuts/List.vala:118
 msgid "Volume Up"
-msgstr ""
+msgstr "بەرزکردنی دەنگ"
 
 #: src/Shortcuts/List.vala:119
 msgid "Volume Down"
-msgstr ""
+msgstr "نزمکردنی دەنگ"
 
 #: src/Shortcuts/List.vala:120
 msgid "Mute"
-msgstr ""
+msgstr "بێدەنگ کردن"
 
 #: src/Shortcuts/List.vala:121
 msgid "Play/Pause"
-msgstr ""
+msgstr "لێدان/ڕاگرتن"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
-msgstr ""
+msgstr "ڕاگرتن"
 
 #: src/Shortcuts/List.vala:123
 msgid "Stop"
-msgstr ""
+msgstr "وەستاندن"
 
 #: src/Shortcuts/List.vala:124
 msgid "Previous Track"
-msgstr ""
+msgstr "تراکی پێشووتر"
 
 #: src/Shortcuts/List.vala:125
 msgid "Next Track"
-msgstr ""
+msgstr "تراکی دواتر"
 
 #: src/Shortcuts/List.vala:126
 msgid "Eject"
-msgstr ""
+msgstr "دەرکردن"
 
 #: src/Shortcuts/List.vala:130
 msgid "Universal Access"
-msgstr ""
+msgstr "دەستپێگەیشتنی جیهانی"
 
 #: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "کەمکردنی قەبارەی دەق"
 
 #: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
-msgstr ""
+msgstr "زیادکردنی قەبارەی دەق"
 
 #: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
-msgstr ""
+msgstr "گەورەکردنی شاشە (زووم)"
 
 #: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
-msgstr ""
+msgstr "بچووکردنی شاشە (زووم)"
 
 #: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
-msgstr ""
+msgstr "کردنەوە و داخستنی تەختەکلیلی سەر ڕوونما"
 
 #: src/Shortcuts/List.vala:136
 msgid "Toggle Screenreader"
-msgstr ""
+msgstr "کردنەوە و داخستنی خوێنەری ڕوونما"
 
-#: src/Shortcuts/List.vala:140
+#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
 msgid "System"
-msgstr ""
+msgstr "سیستەم"
 
 #: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
 msgid "Applications Menu"
-msgstr ""
+msgstr "کردنەوەی لیستی بەرنامەکان"
 
 #: src/Shortcuts/List.vala:142
 msgid "Lock"
-msgstr ""
+msgstr "قوفڵکردنی سیستەم"
 
 #: src/Shortcuts/List.vala:143
 msgid "Log Out"
-msgstr ""
+msgstr "چوونەدەر لە سیستەم"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "گۆڕینی دۆخی ڕوونما"
 
-#: src/Shortcuts/List.vala:148
+#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
-msgstr ""
+msgstr "تایبەت"
 
 #. Layout switching keybinding
 #. Compose key position menu
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
-#: src/Widgets/Shortcuts/CustomTree.vala:133
-#: src/Widgets/Shortcuts/CustomTree.vala:400
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:105
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
 msgid "Disabled"
-msgstr ""
+msgstr "وەستێنراو"
 
 #: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
-msgstr ""
+msgstr "شیفت"
 
 #: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
-msgstr ""
+msgstr "کۆنتڕۆڵ"
 
 #: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
-msgstr ""
+msgstr "ئاڵت"
 
 #: src/Views/Behavior.vala:25
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "دووبارەبوونەوەی کلیل:"
 
 #: src/Views/Behavior.vala:28
 msgid "Delay:"
-msgstr ""
+msgstr "دوای:"
 
 #: src/Views/Behavior.vala:31
 msgid "Interval:"
-msgstr ""
+msgstr "ئینتەرڤال:"
 
 #: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
 #: src/Views/Behavior.vala:73
 msgid "milliseconds"
-msgstr ""
+msgstr "میلی چرکە"
 
 #: src/Views/Behavior.vala:63
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "دەرکەوتنی نیشاندەری نووسینی دەق:"
 
 #: src/Views/Behavior.vala:67
 msgid "Speed:"
-msgstr ""
+msgstr "خێرایی:"
 
 #: src/Views/Behavior.vala:70
 msgid "Duration:"
-msgstr ""
+msgstr "ماوە:"
 
 #: src/Views/Behavior.vala:76
 msgid "seconds"
-msgstr ""
+msgstr "چرکە"
 
 #: src/Views/Behavior.vala:105
 msgid "Type to test your settings"
-msgstr ""
+msgstr "لێرە بنووسە بۆ تاقیکردنەوەی ڕێکخستنەکانت"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "ئایبەس دایمۆن لە کاردا نییە"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
+"پێویستە ئایبەس دایمۆن بخەیتە کار بۆ ئەوەی بتوانیت بزوێنەرەکانی ڕێگەی ئینپوت "
+"کارا بکەیت یان ڕێکیان بخەیت."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "کاراکردنی ئایبەس دایمۆن"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
 msgid "Could not start the IBus daemon"
-msgstr ""
+msgstr "نەتوانرا ئایبەس دایمۆن بخرێتە کار"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
-msgstr ""
+msgstr "زیادکردن…"
 
-#: src/Views/InputMethod.vala:109 src/Views/Shortcuts.vala:80
-#: src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
-msgstr ""
+msgstr "سڕینەوە"
 
 #: src/Views/InputMethod.vala:124
 msgid "Switch engines:"
-msgstr ""
+msgstr "گۆڕینی بزوێنەر:"
 
 #: src/Views/InputMethod.vala:136
 msgid "Show property panel:"
-msgstr ""
+msgstr "پشاندانی پانێڵی پرۆپێرتی:"
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
-msgstr ""
+msgstr "پشانی مەدە"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr ""
+msgstr "شاردنەوەی خۆکارانە"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
-msgstr ""
+msgstr "هەمیشە با دیار بێت"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "جێگیرکردنی دەقی پێش دەستکاریکردن لە پەنجەرەی بەرنامەدا:"
 
 #: src/Views/InputMethod.vala:371
 msgid "IBus Daemon"
-msgstr ""
+msgstr "ئایبەس دایمۆن"
 
 #: src/Views/InputMethod.vala:374
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "بەکارهێنان و بەڕێوەبردنی ڕێگەکانی ئینپوت"
 
 #: src/Views/InputMethod.vala:437
 msgid "Type to test your input method"
-msgstr ""
+msgstr "لێرە بنووسە بۆ تاقیکردنی ڕێگەی ئینپوت"
 
 #: src/Views/InputMethod.vala:440
 msgid "A keyboard layout is active"
-msgstr ""
+msgstr "ڕووی تەختەکلێک چالاکە"
 
 #. tree view to display the current layouts
 #: src/Views/Layout.vala:40
 msgid "Switch layout:"
-msgstr ""
+msgstr "گۆڕینی ڕوو:"
 
 #: src/Views/Layout.vala:45
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "ئاڵت + کەپس لۆک"
 
 #: src/Views/Layout.vala:46
 msgid "Alt + Shift"
-msgstr ""
+msgstr "ئاڵت + شیفت"
 
 #: src/Views/Layout.vala:47
 msgid "Alt + Space"
-msgstr ""
+msgstr "ئاڵت + سپەیس"
 
 #: src/Views/Layout.vala:48
 msgid "Both Shift keys together"
-msgstr ""
+msgstr "هەردوو کلیلی شیفت بەیکەوە"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
 msgid "Caps Lock"
-msgstr ""
+msgstr "کەپس لۆک"
 
 #: src/Views/Layout.vala:50
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "کۆنتڕۆڵ + ئاڵت"
 
 #: src/Views/Layout.vala:51
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "کۆنتڕۆڵ + شیفت"
 
 #: src/Views/Layout.vala:52
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "شیفت + کەپس لۆک"
 
 #: src/Views/Layout.vala:59
 msgid "Compose key:"
-msgstr ""
+msgstr "کلیلی نووسین:"
 
 #: src/Views/Layout.vala:65
 msgid "Menu"
-msgstr ""
+msgstr "لیست"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:307 src/Views/Layout.vala:319
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Alt"
-msgstr ""
+msgstr "ئاڵتی لای ڕاست"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right Ctrl"
-msgstr ""
+msgstr "کۆنتڕۆڵی لای ڕاست"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
 msgid "Right ⌘"
-msgstr ""
+msgstr "⌘ی لای ڕاست"
 
 #: src/Views/Layout.vala:75
 msgid "⌘ key behavior:"
-msgstr ""
+msgstr "ڕەفتاری کلیلی ⌘:"
 
 #: src/Views/Layout.vala:86
 msgid "Shortcut Overlay"
-msgstr ""
+msgstr "پشاندانی هەموو قەتبڕەکان"
 
 #: src/Views/Layout.vala:91
 msgid "Caps Lock behavior:"
-msgstr ""
+msgstr "ڕەفتاری کەپس لۆک:"
 
 #: src/Views/Layout.vala:97
 msgid "as Backspace"
-msgstr ""
+msgstr "وەکو باکسپەیس"
 
 #: src/Views/Layout.vala:98
 msgid "as Ctrl"
-msgstr ""
+msgstr "وەکو کۆنتڕۆڵ"
 
 #: src/Views/Layout.vala:99
 msgid "as Escape"
-msgstr ""
+msgstr "وەکو ئیسکەیپ (esc)"
 
 #: src/Views/Layout.vala:100
 msgid "as Num Lock"
-msgstr ""
+msgstr "وەکو قوفڵی ژمارە (Num Lock)"
 
 #: src/Views/Layout.vala:101
 msgid "as ⌘"
-msgstr ""
+msgstr "وەکو ⌘"
 
 #: src/Views/Layout.vala:102
 msgid "Swap with Ctrl"
-msgstr ""
+msgstr "جێگەی لە کۆنترۆڵ بگۆڕەوە"
 
 #: src/Views/Layout.vala:103
 msgid "Swap with Escape"
-msgstr ""
+msgstr "جێگەی لەگەڵ ئیسکەیپدا بگۆڕەوە"
 
 #: src/Views/Layout.vala:110
 msgid "On-screen Keyboard"
-msgstr ""
+msgstr "تەختەکلیلی سەر ڕوونما"
 
 #: src/Views/Layout.vala:115
 msgid "Show on-screen keyboard:"
-msgstr ""
+msgstr "کردنەوەی تەختەکلیلی سەر ڕوونما:"
 
 #: src/Views/Layout.vala:124
 msgid "On-screen keyboard settings…"
-msgstr ""
+msgstr "ڕێکخستنەکانی تەختەکلیلی سەر-ڕوونما…"
 
-#: src/Views/Layout.vala:162
+#: src/Views/Layout.vala:163
 msgid "Show in Panel"
-msgstr ""
+msgstr "لە پانێڵدا پشانم بدە"
 
-#: src/Views/Layout.vala:169
+#: src/Views/Layout.vala:170
 msgid "Caps Lock:"
-msgstr ""
+msgstr "کەپس لۆک:"
 
-#: src/Views/Layout.vala:176
+#: src/Views/Layout.vala:177
 msgid "Num Lock:"
-msgstr ""
+msgstr "قوفڵی ژمارە:"
 
-#: src/Views/Layout.vala:284 src/Views/Layout.vala:301
+#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
 msgid "Key to choose 3rd level:"
-msgstr ""
+msgstr "کلیلێک بۆ هەڵبژراردنی ئاستی سێیەم:"
 
-#: src/Views/Layout.vala:306
+#: src/Views/Layout.vala:307
 msgid "Left Alt"
-msgstr ""
+msgstr "ئاڵتی لای چەپ"
 
-#: src/Views/Layout.vala:316
+#: src/Views/Layout.vala:317
 msgid "Key to choose 5th level:"
-msgstr ""
+msgstr "کلیلێک بۆ هەڵبژاردنی ئاستی پێنجەم:"
 
-#: src/Views/Layout.vala:337
+#: src/Views/Layout.vala:338
 msgid "Kana Lock:"
-msgstr ""
+msgstr "قوفڵی کانا:"
 
-#: src/Views/Layout.vala:345
+#: src/Views/Layout.vala:346
 msgid "Nicola F Backspace:"
-msgstr ""
+msgstr "باکسپەیسی ئێفی نیکۆلا:"
 
-#: src/Views/Layout.vala:348
+#: src/Views/Layout.vala:349
 msgid "Hankaku Zenkaku as Escape:"
-msgstr ""
+msgstr "هانکاکو زینکاکو وەک ئیسکەیپ:"
 
-#: src/Views/Layout.vala:365
+#: src/Views/Layout.vala:366
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr ""
+msgstr "کلیلەکانی هانجول/هانجا وەکو کۆنترۆڵ/ئاڵتی لای ڕاست:"
 
-#: src/Views/Layout.vala:444
+#: src/Views/Layout.vala:445
 msgid "Type to test your layout"
-msgstr ""
+msgstr "لێرە بنووسە بۆ تاقیکردنەوەی ڕووی تەختەکلیلەکەت"
 
-#: src/Views/Layout.vala:447
+#: src/Views/Layout.vala:448
 msgid "Input Method is active"
+msgstr "ڕێگەی ئینپوت کارایە"
+
+#: src/Views/Shortcuts.vala:52
+msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Shortcuts.vala:76
-msgid "Add"
-msgstr ""
+#: src/Views/Shortcuts.vala:95
+#, fuzzy
+#| msgid "Shortcuts"
+msgid "Add Shortcut"
+msgstr "قەدبڕەکان"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:33
 msgid "Search engine"
-msgstr ""
+msgstr "بەدوای بزوێنەرێکدا بگەڕێ"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "دامەزراندنی بزوێنەرە لیست-نەکراوەکان…"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:50
 msgid "Add Engine"
-msgstr ""
+msgstr "زیادکردنی بزوێنەر"
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
-msgstr ""
+msgstr "بردنەسەر"
 
 #: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
-msgstr ""
+msgstr "بردنەخوار"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:130
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:114
 msgid "Enter a command here"
-msgstr ""
+msgstr "لێرە فەرمانێک بنووسە"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:172
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:125
 msgid "Set New Shortcut"
-msgstr ""
+msgstr "دانانی قەتبڕێکی نوێ"
 
-#: src/Widgets/Shortcuts/CustomTree.vala:176
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:133
 msgid "Disable"
+msgstr "ناچالاککردن"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:208
+msgid "Enter new shortcut…"
+msgstr "قەتبڕێکی نوێ بنووسە…"
+
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
+msgid "Unable to set new shortcut due to conflicts"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomTree.vala:309
-msgid "Enter new shortcut…"
-msgstr ""
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
+#, fuzzy, c-format
+#| msgid "%s is already used for %s"
+msgid "“%s” is already used for “%s → %s”."
+msgstr "%s بەکارهاتووە بۆ %s"
+
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:129
+#, fuzzy
+#| msgid "Default"
+msgid "Reset to Default"
+msgstr "بنەڕەت"
+
+#~ msgid "Add"
+#~ msgstr "زیادکردن"

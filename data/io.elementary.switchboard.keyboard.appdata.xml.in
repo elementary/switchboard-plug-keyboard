@@ -6,7 +6,36 @@
   <summary>Configure keyboard behavior, layouts, and shortcuts</summary>
   <icon type="stock">preferences-desktop-keyboard</icon>
   <translation type="gettext">keyboard-plug</translation>
+
   <releases>
+    <release version="3.1.1" date="2023-01-03" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-keyboard/issues/426">Potential crash from missing settings schema</issue>
+      </issues>
+    </release>
+
+    <release version="3.1.0" date="2022-10-20" urgency="medium">
+      <description>
+        <p>New features:</p>
+        <ul>
+          <li>Revert shortcuts to default</li>
+          <li>Easily disable a shortcut</li>
+          <li>Support Rime input method for Chinese</li>
+        </ul>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Remove custom shortcuts from their menu</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+    </release>
+
     <release version="3.0.0" date="2022-05-09" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -16,6 +45,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.7.0" date="2022-04-06" urgency="medium">
       <description>
         <p>New features:</p>
@@ -28,6 +58,7 @@
         </ul>
       </description>
     </release>
+
     <release version="2.6.0" date="2021-11-23" urgency="medium">
       <description>
         <p>New features:</p>
@@ -41,47 +72,8 @@
         </ul>
       </description>
     </release>
-    <release version="2.5.1" date="2021-09-22" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Ensure IBus automatically starts on login when needed</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.5.0" date="2021-07-14" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Add Layout popover is now a dialog</li>
-          <li>Guarantee we always have at least one layout</li>
-          <li>Improvements to ibus and xkb layouts</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-    <release version="2.4.1" date="2020-09-02" urgency="medium">
-      <description>
-        <p>Shortcut description for "Play" is now "Play/Pause"</p>
-        <p>Fix an issue where some shortcuts would incorrectly show as disabled</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
-    <release version="2.4.0" date="2020-08-07" urgency="medium">
-      <description>
-        <p>Add a view to configure input methods</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
-    <release version="2.3.6" date="2020-04-01" urgency="medium">
-      <description>
-        <p>New "Workspaces" icon</p>
-        <p>Exclude Space from single-key shortcuts</p>
-        <p>Updated translations</p>
-      </description>
-    </release>
   </releases>
+
   <screenshots>
     <screenshot type="default">
       <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot.png</image>
