@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2022-10-28 21:56+0000\n"
+"PO-Revision-Date: 2023-01-13 22:55+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -569,7 +569,7 @@ msgstr "入力して設定を確認"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr "IBus Daemon が起動していません"
+msgstr "IBus デーモンが起動していません"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
@@ -580,7 +580,7 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr "IBus Daemon を起動"
+msgstr "IBus デーモンを起動"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
@@ -610,7 +610,7 @@ msgstr "表示しない"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr "自動的に非表示にする"
+msgstr "自動的に非表示"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
