@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2022-11-06 22:58+0000\n"
+"PO-Revision-Date: 2023-01-23 18:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pt/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -59,13 +59,11 @@ msgstr "Desativar facilmente um atalho"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Suporte ao método de entrada Rime para Chinês"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
-#, fuzzy
-#| msgid "Redesigned custom shortcuts view"
 msgid "Remove custom shortcuts from their menu"
-msgstr "Vista de atalhos personalizados redesenhada"
+msgstr "Remover atalhos personalizados do seu menu"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
 msgid "Update for OS 7"
