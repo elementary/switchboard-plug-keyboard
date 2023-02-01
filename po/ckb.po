@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2022-09-29 18:06+0000\n"
+"PO-Revision-Date: 2023-02-02 23:25+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/ckb/>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
 msgid "Input Language"
@@ -788,13 +788,11 @@ msgstr "ڕێگەی ئینپوت کارایە"
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "دەستگەیشتن"
 
 #: src/Views/Shortcuts.vala:95
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "قەدبڕەکان"
+msgstr "زیادکردنی قەتبڕ"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -841,20 +839,17 @@ msgstr "قەتبڕێکی نوێ بنووسە…"
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:291
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "بەهۆی ناکۆکی لەنێوان قەتبڕەکاندا، نەتوانرا کورتکراوەی نوێ دابنرێت"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:292
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s بەکارهاتووە بۆ %s"
+msgstr "\"%s\" بەکارهاتووە بۆ \"%s → %s.\""
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "بنەڕەت"
+msgstr "گەڕاندنەوەی قەتبڕەکان بۆ دۆخی بنەڕەت"
 
 #~ msgid "Add"
 #~ msgstr "زیادکردن"
