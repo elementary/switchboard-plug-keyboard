@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-02-02 23:25+0000\n"
+"Last-Translator: Martin Myrvold <myrvold.martin@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nn/>\n"
 "Language: nn\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -25,8 +25,6 @@ msgid "Input Language"
 msgstr "Inndataspråk"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
 msgstr "Tastaturoppsett"
 
@@ -35,10 +33,8 @@ msgid "Search input language"
 msgstr "Søk i inndataspråk"
 
 #: src/Dialogs/AddLayoutDialog.vala:95
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Tastaturoppsett"
+msgstr "Forhåndsvis oppsettet"
 
 #: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -72,21 +68,19 @@ msgstr "Tildel på nytt"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "Vel ein motor å installera"
 
 #: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "Vel ein motor frå lista for å lasta ned og ta den i bruk."
 
 #: src/Dialogs/InstallEngineDialog.vala:43
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "Inndataspråk"
+msgstr "Språk"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "Installer"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
@@ -100,15 +94,15 @@ msgstr "Fjernar %s"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "Japansk"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "Koreansk"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "Kinesisk"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -125,10 +119,8 @@ msgstr "Tastaturoppsett"
 
 #: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111
-#, fuzzy
-#| msgid "Input Method Settings…"
 msgid "Input Method"
-msgstr "Inndatametodeinnstillingar…"
+msgstr "Val for språkoppsett"
 
 #: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
@@ -155,18 +147,16 @@ msgid "Caps Lock behavior"
 msgstr "Caps Lock-åtferd"
 
 #: src/Plug.vala:109
-#, fuzzy
-#| msgid "Switch to new"
 msgid "Switch engines"
-msgstr "Byt til nye"
+msgstr "Bytt motor"
 
 #: src/Plug.vala:110
 msgid "Show candidate window"
-msgstr ""
+msgstr "Vis kandidatvindauge"
 
 #: src/Plug.vala:111
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "Legg inn preedit-tekst i vindauget til applikasjonen"
 
 #: src/Plug.vala:114
 msgid "Repeat Keys"
@@ -202,7 +192,7 @@ msgstr "Veksle maksimering"
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "Gøym"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
@@ -245,28 +235,20 @@ msgid "Picture in Picture Mode"
 msgstr "Bilete-i-bilete-modus"
 
 #: src/Shortcuts/List.vala:60
-#, fuzzy
-#| msgid "Move to workspace 1"
 msgid "Move to display above"
-msgstr "Flytt til arbeidsområde 1"
+msgstr "Flytt til skjermen ovanfor"
 
 #: src/Shortcuts/List.vala:61
-#, fuzzy
-#| msgid "Move to workspace 1"
 msgid "Move to display below"
-msgstr "Flytt til arbeidsområde 1"
+msgstr "Flytt til skjermen nedanfor"
 
 #: src/Shortcuts/List.vala:62
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "Flytt til arbeidsområdet til høgre"
+msgstr "Flytt til skjermen til høgre"
 
 #: src/Shortcuts/List.vala:63
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "Flytt til arbeidsområdet til venstre"
+msgstr "Flytt til skjermen til venstre"
 
 #: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
@@ -449,10 +431,8 @@ msgid "Mute"
 msgstr "Demp lyden"
 
 #: src/Shortcuts/List.vala:121
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "Pause"
+msgstr "Spel av/sett på pause"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
@@ -520,7 +500,7 @@ msgstr "Logg ut"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
-msgstr ""
+msgstr "Bytt til visningsmodus"
 
 #: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
@@ -589,16 +569,17 @@ msgstr "Skriv for å teste oppsettet ditt"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus Daemon køyrer ikkje"
 
 #: src/Views/InputMethod.vala:45
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
+"Du må installera IBus daemon for å slå på, og endra på motoren for tastatur."
 
 #: src/Views/InputMethod.vala:52
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "Start IBus Daemon"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
