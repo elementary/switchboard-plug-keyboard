@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2022-11-29 15:25+0000\n"
+"PO-Revision-Date: 2023-02-02 23:25+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -742,7 +742,7 @@ msgstr "Képernyőbillentyűzet"
 
 #: src/Views/Layout.vala:115
 msgid "Show on-screen keyboard:"
-msgstr "Képernyőbillentyűzet mutatása:"
+msgstr "Képernyőbillentyűzet megjelenítése:"
 
 #: src/Views/Layout.vala:124
 msgid "On-screen keyboard settings…"
