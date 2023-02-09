@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2022-05-22 08:05+0000\n"
+"PO-Revision-Date: 2023-02-10 15:25+0000\n"
 "Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.14.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -585,7 +585,7 @@ msgstr "Start IBus Daemon"
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:59
 msgid "Could not start the IBus daemon"
-msgstr "Kon de IBus daemon niet starten"
+msgstr "Kon de IBus-daemon niet starten"
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
@@ -795,13 +795,11 @@ msgstr "Invoermethode is actief"
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "Toegankelijkheid"
 
 #: src/Views/Shortcuts.vala:95
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "Sneltoetsen"
+msgstr "Sneltoets toevoegen"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
@@ -848,20 +846,17 @@ msgstr "Voer nieuwe sneltoets in…"
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:291
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "Kon nieuwe sneltoets niet toevoegen door conflicten"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:292
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s wordt reeds gebruikt voor %s"
+msgstr "“%s” wordt reeds gebruikt voor “%s → %s”."
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "Standaard"
+msgstr "Herstellen naar standaard"
 
 #~ msgid "Add"
 #~ msgstr "Voeg toe"
