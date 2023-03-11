@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2023-03-11 14:25+0000\n"
+"PO-Revision-Date: 2023-03-12 15:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ka/>\n"
@@ -25,7 +25,7 @@ msgstr "კლავიატურის მორგება"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
+msgstr "მოირგეთ კლავიატურის ქცევა, განლაგებები და მალსახმობები"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
@@ -51,32 +51,32 @@ msgstr "ახალი ფუნქციები:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "მალსახმობების ნაგულისხმებ მნიშვნელობებზე დაბრუნება"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "ადვილად გამორთეთ მალსახმობი"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "ჩინურისთვის Rime შეყვანის მეთოდის მხარდაჭერა"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Remove custom shortcuts from their menu"
-msgstr ""
+msgstr "მათი მენიუდან ხელით მითითებული მალსახმობების წაშლა"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
 msgid "Update for OS 7"
-msgstr ""
+msgstr "განახლებები OS 7-სთვის"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Open Multitasking View with Super"
-msgstr ""
+msgstr "მრავალამოცანიანი ხედის Super-ით გახსნა"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr "ხელით მითითებული მალსახმობების ხედის ცვლილება"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr "განლაგებების ჩანართში ეკრანზე ნაჩვენები კლავიატურის გადართვა"
