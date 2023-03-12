@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2023-03-11 14:47+0000\n"
+"PO-Revision-Date: 2023-03-12 15:25+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ka/>\n"
@@ -22,23 +22,19 @@ msgstr ""
 
 #: src/Dialogs/AddLayoutDialog.vala:21
 msgid "Input Language"
-msgstr ""
+msgstr "შეყვანის ენა"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "განლაგება"
+msgstr "განლაგების სია"
 
 #: src/Dialogs/AddLayoutDialog.vala:40
 msgid "Search input language"
 msgstr ""
 
 #: src/Dialogs/AddLayoutDialog.vala:95
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "განლაგება"
+msgstr "განლაგების გადახედვა"
 
 #: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -48,7 +44,7 @@ msgstr "გაუქმება"
 
 #: src/Dialogs/AddLayoutDialog.vala:142
 msgid "Add Layout"
-msgstr ""
+msgstr "განლაგების დამატება"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
@@ -68,7 +64,7 @@ msgstr ""
 
 #: src/Dialogs/ConflictDialog.vala:38
 msgid "Reassign"
-msgstr ""
+msgstr "მალსახმობის თავიდან მინიჭება"
 
 #: src/Dialogs/InstallEngineDialog.vala:23
 msgid "Choose an engine to install"
@@ -80,33 +76,33 @@ msgstr ""
 
 #: src/Dialogs/InstallEngineDialog.vala:43
 msgid "Languages"
-msgstr ""
+msgstr "ენები"
 
 #: src/Dialogs/InstallEngineDialog.vala:92
 msgid "Install"
-msgstr ""
+msgstr "დაყენება"
 
 #: src/Dialogs/ProgressDialog.vala:46
 #, c-format
 msgid "Installing %s"
-msgstr ""
+msgstr "%s-ის დაყენება"
 
 #: src/Dialogs/ProgressDialog.vala:49
 #, c-format
 msgid "Removing %s"
-msgstr ""
+msgstr "%s-ის წაშლა"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "იაპონური"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "კორეული"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "ჩინური"
 
 #: src/Plug.vala:38
 msgid "Keyboard"
@@ -124,7 +120,7 @@ msgstr "განლაგება"
 #: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
 #: src/Plug.vala:111
 msgid "Input Method"
-msgstr ""
+msgstr "შეტანის მეთოდი"
 
 #: src/Plug.vala:57 src/Plug.vala:112
 msgid "Shortcuts"
@@ -136,11 +132,11 @@ msgstr "ქცევა"
 
 #: src/Plug.vala:104
 msgid "Switch layout"
-msgstr ""
+msgstr "განლაგების გადართვა"
 
 #: src/Plug.vala:105
 msgid "Compose Key"
-msgstr ""
+msgstr "თაგუნას ღილაკები"
 
 #: src/Plug.vala:106
 msgid "⌘ key behavior"
@@ -148,15 +144,15 @@ msgstr ""
 
 #: src/Plug.vala:107
 msgid "Caps Lock behavior"
-msgstr ""
+msgstr "CapsLock ღილაკის ქცევა"
 
 #: src/Plug.vala:109
 msgid "Switch engines"
-msgstr ""
+msgstr "ძრავის გადართვა"
 
 #: src/Plug.vala:110
 msgid "Show candidate window"
-msgstr ""
+msgstr "კანდიდატი ფანჯრის ჩვენება"
 
 #: src/Plug.vala:111
 msgid "Embed preedit text in application window"
@@ -164,15 +160,15 @@ msgstr ""
 
 #: src/Plug.vala:114
 msgid "Repeat Keys"
-msgstr ""
+msgstr "ღილაკების გამეორება"
 
 #: src/Plug.vala:115
 msgid "Cursor Blinking"
-msgstr ""
+msgstr "კურსორის ციმციმი"
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: src/Shortcuts/List.vala:44
 msgid "Close"
@@ -180,15 +176,15 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:45
 msgid "Lower"
-msgstr ""
+msgstr "დაწევა"
 
 #: src/Shortcuts/List.vala:46
 msgid "Maximize"
-msgstr ""
+msgstr "გადიდება"
 
 #: src/Shortcuts/List.vala:47
 msgid "Unmaximize"
-msgstr ""
+msgstr "მაქსიმიზაციის გაუქმება"
 
 #: src/Shortcuts/List.vala:48
 msgid "Toggle Maximized"
@@ -196,11 +192,11 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:49
 msgid "Hide"
-msgstr ""
+msgstr "დამალვა"
 
 #: src/Shortcuts/List.vala:50
 msgid "Toggle Fullscreen"
-msgstr ""
+msgstr "მთელ ეკრანზე გატანის ჩართ/გამორთ"
 
 #: src/Shortcuts/List.vala:51
 msgid "Toggle on all Workspaces"
@@ -256,7 +252,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
-msgstr ""
+msgstr "სამუშაო სივრცეები"
 
 #: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
 msgid "Multitasking View"
@@ -280,39 +276,39 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:73
 msgid "Switch to workspace 1"
-msgstr ""
+msgstr "სამუშაო სივრცე 1-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:74
 msgid "Switch to workspace 2"
-msgstr ""
+msgstr "სამუშაო სივრცე 2-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 3"
-msgstr ""
+msgstr "სამუშაო სივრცე 3-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 4"
-msgstr ""
+msgstr "სამუშაო სივრცე 4-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 5"
-msgstr ""
+msgstr "სამუშაო სივრცე 5-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 6"
-msgstr ""
+msgstr "სამუშაო სივრცე 6-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 7"
-msgstr ""
+msgstr "სამუშაო სივრცე 7-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 8"
-msgstr ""
+msgstr "სამუშაო სივრცე 8-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 9"
-msgstr ""
+msgstr "სამუშაო სივრცე 9-ზე გადართვა"
 
 #: src/Shortcuts/List.vala:82
 msgid "Cycle workspaces"
@@ -324,39 +320,39 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:84
 msgid "Move to workspace 1"
-msgstr ""
+msgstr "სამუშაო სივრცე 1-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:85
 msgid "Move to workspace 2"
-msgstr ""
+msgstr "სამუშაო სივრცე 2-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 3"
-msgstr ""
+msgstr "სამუშაო სივრცე 3-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:87
 msgid "Move to workspace 4"
-msgstr ""
+msgstr "სამუშაო სივრცე 4-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:88
 msgid "Move to workspace 5"
-msgstr ""
+msgstr "სამუშაო სივრცე 5-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:89
 msgid "Move to workspace 6"
-msgstr ""
+msgstr "სამუშაო სივრცე 6-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:90
 msgid "Move to workspace 7"
-msgstr ""
+msgstr "სამუშაო სივრცე 7-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:91
 msgid "Move to workspace 8"
-msgstr ""
+msgstr "სამუშაო სივრცე 8-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:92
 msgid "Move to workspace 9"
-msgstr ""
+msgstr "სამუშაო სივრცე 9-ზე გადასვლა"
 
 #: src/Shortcuts/List.vala:93
 msgid "Move to left workspace"
@@ -368,11 +364,11 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
-msgstr ""
+msgstr "ეკრანის ანაბეჭდები"
 
 #: src/Shortcuts/List.vala:99
 msgid "Grab the whole screen"
-msgstr ""
+msgstr "მთლიანი ეკრანის დათრევა"
 
 #: src/Shortcuts/List.vala:100
 msgid "Copy the whole screen to clipboard"
@@ -380,7 +376,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:101
 msgid "Grab the current window"
-msgstr ""
+msgstr "მიმდინარე ფანჯრის დათრევა"
 
 #: src/Shortcuts/List.vala:102
 msgid "Copy the current window to clipboard"
@@ -396,15 +392,15 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
 msgid "Applications"
-msgstr "პროგრამები"
+msgstr "აპლიკაციები"
 
 #: src/Shortcuts/List.vala:109
 msgid "Email"
-msgstr ""
+msgstr "ელფოტა"
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
-msgstr ""
+msgstr "საწყისი საქაღალდე"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
@@ -412,51 +408,51 @@ msgstr "მუსიკა"
 
 #: src/Shortcuts/List.vala:112
 msgid "Terminal"
-msgstr ""
+msgstr "ტერმინალი"
 
 #: src/Shortcuts/List.vala:113
 msgid "Internet Browser"
-msgstr ""
+msgstr "ბრაუზერი"
 
 #: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
 msgid "Media"
-msgstr ""
+msgstr "მედია"
 
 #: src/Shortcuts/List.vala:118
 msgid "Volume Up"
-msgstr ""
+msgstr "ხმის აწევა"
 
 #: src/Shortcuts/List.vala:119
 msgid "Volume Down"
-msgstr ""
+msgstr "ხმის დაწევა"
 
 #: src/Shortcuts/List.vala:120
 msgid "Mute"
-msgstr ""
+msgstr "დადუმება"
 
 #: src/Shortcuts/List.vala:121
 msgid "Play/Pause"
-msgstr ""
+msgstr "დაკვრა/პაუზა"
 
 #: src/Shortcuts/List.vala:122
 msgid "Pause"
-msgstr ""
+msgstr "გაჩერება"
 
 #: src/Shortcuts/List.vala:123
 msgid "Stop"
-msgstr ""
+msgstr "შეჩერება"
 
 #: src/Shortcuts/List.vala:124
 msgid "Previous Track"
-msgstr ""
+msgstr "წინა აუდიობილიკი"
 
 #: src/Shortcuts/List.vala:125
 msgid "Next Track"
-msgstr ""
+msgstr "შემდეგი აუდიობილიკი"
 
 #: src/Shortcuts/List.vala:126
 msgid "Eject"
-msgstr ""
+msgstr "გამოღება"
 
 #: src/Shortcuts/List.vala:130
 msgid "Universal Access"
@@ -464,11 +460,11 @@ msgstr "უნივერსალური წვდომა"
 
 #: src/Shortcuts/List.vala:131
 msgid "Decrease Text Size"
-msgstr ""
+msgstr "ტექსტის ზომის შემცირება"
 
 #: src/Shortcuts/List.vala:132
 msgid "Increase Text Size"
-msgstr ""
+msgstr "ტექსტის ზომის გაზრდა"
 
 #: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
@@ -488,19 +484,19 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
 msgid "System"
-msgstr ""
+msgstr "სისტემა"
 
 #: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
 msgid "Applications Menu"
-msgstr ""
+msgstr "პროგრამების მენიუ"
 
 #: src/Shortcuts/List.vala:142
 msgid "Lock"
-msgstr ""
+msgstr "დაბლოკვა"
 
 #: src/Shortcuts/List.vala:143
 msgid "Log Out"
-msgstr ""
+msgstr "გასვლა"
 
 #: src/Shortcuts/List.vala:144
 msgid "Cycle display mode"
@@ -508,7 +504,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
 msgid "Custom"
-msgstr ""
+msgstr "ხელით მითითებული"
 
 #. Layout switching keybinding
 #. Compose key position menu
@@ -523,53 +519,52 @@ msgstr "გამორთულია"
 
 #: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
-msgstr ""
+msgstr "Shift"
 
 #: src/Shortcuts/Shortcut.vala:69
 msgid "Ctrl"
-msgstr ""
+msgstr "Ctrl"
 
 #: src/Shortcuts/Shortcut.vala:73
 msgid "Alt"
-msgstr ""
+msgstr "Alt"
 
 #: src/Views/Behavior.vala:25
 msgid "Repeat Keys:"
-msgstr ""
+msgstr "ღილაკების გამეორება:"
 
 #: src/Views/Behavior.vala:28
 msgid "Delay:"
-msgstr ""
+msgstr "დაყოვნება:"
 
 #: src/Views/Behavior.vala:31
 msgid "Interval:"
-msgstr ""
+msgstr "ინტერვალი:"
 
 #: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
 #: src/Views/Behavior.vala:73
 msgid "milliseconds"
-msgstr ""
+msgstr "მილიწამი"
 
 #: src/Views/Behavior.vala:63
 msgid "Cursor Blinking:"
-msgstr ""
+msgstr "კურსორის ციმციმი:"
 
 #: src/Views/Behavior.vala:67
 msgid "Speed:"
-msgstr ""
+msgstr "სიჩქარე:"
 
 #: src/Views/Behavior.vala:70
 msgid "Duration:"
-msgstr ""
+msgstr "ხანგრძლივობა:"
 
 #: src/Views/Behavior.vala:76
 msgid "seconds"
-msgstr ""
+msgstr "წამი"
 
 #: src/Views/Behavior.vala:105
-#, fuzzy
 msgid "Type to test your settings"
-msgstr "აკრიფეთ ტექსტი თქვენი განლაგების გასასინჯად..."
+msgstr "პარამეტრების შესამოწმებლად აკრიფეთ"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:44
@@ -592,7 +587,7 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
-msgstr "დამატება..."
+msgstr "დამატება…"
 
 #: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
@@ -609,15 +604,15 @@ msgstr ""
 
 #: src/Views/InputMethod.vala:143
 msgid "Do not show"
-msgstr ""
+msgstr "აღარ მაჩვენო"
 
 #: src/Views/InputMethod.vala:144
 msgid "Auto hide"
-msgstr ""
+msgstr "ავტომატურად დამალვა"
 
 #: src/Views/InputMethod.vala:145
 msgid "Always show"
-msgstr ""
+msgstr "ყოველთვის ჩვენება"
 
 #: src/Views/InputMethod.vala:147
 msgid "Embed preedit text in application window:"
@@ -632,9 +627,8 @@ msgid "Use and manage input methods"
 msgstr ""
 
 #: src/Views/InputMethod.vala:437
-#, fuzzy
 msgid "Type to test your input method"
-msgstr "აკრიფეთ ტექსტი თქვენი განლაგების გასასინჯად..."
+msgstr "თქვენი შეყვანის მეთოდის შესამოწმებლად აკრიფეთ"
 
 #: src/Views/InputMethod.vala:440
 msgid "A keyboard layout is active"
@@ -647,15 +641,15 @@ msgstr ""
 
 #: src/Views/Layout.vala:45
 msgid "Alt + Caps Lock"
-msgstr ""
+msgstr "Alt + Caps Lock"
 
 #: src/Views/Layout.vala:46
 msgid "Alt + Shift"
-msgstr ""
+msgstr "Alt + Shift"
 
 #: src/Views/Layout.vala:47
 msgid "Alt + Space"
-msgstr ""
+msgstr "Alt + გამოტოვება"
 
 #: src/Views/Layout.vala:48
 msgid "Both Shift keys together"
@@ -663,19 +657,19 @@ msgstr ""
 
 #: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
 msgid "Caps Lock"
-msgstr ""
+msgstr "Caps Lock"
 
 #: src/Views/Layout.vala:50
 msgid "Ctrl + Alt"
-msgstr ""
+msgstr "Ctrl + Alt"
 
 #: src/Views/Layout.vala:51
 msgid "Ctrl + Shift"
-msgstr ""
+msgstr "Ctrl + Shift"
 
 #: src/Views/Layout.vala:52
 msgid "Shift + Caps Lock"
-msgstr ""
+msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:59
 msgid "Compose key:"
@@ -683,15 +677,15 @@ msgstr ""
 
 #: src/Views/Layout.vala:65
 msgid "Menu"
-msgstr ""
+msgstr "მენიუ"
 
 #: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
 msgid "Right Alt"
-msgstr ""
+msgstr "მარჯვენა Alt"
 
 #: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
 msgid "Right Ctrl"
-msgstr ""
+msgstr "მარჯვენა Ctrl"
 
 #: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
 msgid "Right ⌘"
@@ -702,9 +696,8 @@ msgid "⌘ key behavior:"
 msgstr ""
 
 #: src/Views/Layout.vala:86
-#, fuzzy
 msgid "Shortcut Overlay"
-msgstr "მალსახმობები"
+msgstr "მალსახმობების განლაგება"
 
 #: src/Views/Layout.vala:91
 msgid "Caps Lock behavior:"
@@ -739,10 +732,8 @@ msgid "Swap with Escape"
 msgstr ""
 
 #: src/Views/Layout.vala:110
-#, fuzzy
-#| msgid "Keyboard"
 msgid "On-screen Keyboard"
-msgstr "კლავიატურა"
+msgstr "ეკრანის კლავიატურა"
 
 #: src/Views/Layout.vala:115
 msgid "Show on-screen keyboard:"
@@ -754,15 +745,15 @@ msgstr ""
 
 #: src/Views/Layout.vala:163
 msgid "Show in Panel"
-msgstr ""
+msgstr "პანელზე ჩვენება"
 
 #: src/Views/Layout.vala:170
 msgid "Caps Lock:"
-msgstr ""
+msgstr "Caps Lock:"
 
 #: src/Views/Layout.vala:177
 msgid "Num Lock:"
-msgstr ""
+msgstr "Num Lock:"
 
 #: src/Views/Layout.vala:285 src/Views/Layout.vala:302
 msgid "Key to choose 3rd level:"
@@ -770,7 +761,7 @@ msgstr ""
 
 #: src/Views/Layout.vala:307
 msgid "Left Alt"
-msgstr ""
+msgstr "მარცხენა Alt"
 
 #: src/Views/Layout.vala:317
 msgid "Key to choose 5th level:"
@@ -793,9 +784,8 @@ msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr ""
 
 #: src/Views/Layout.vala:445
-#, fuzzy
 msgid "Type to test your layout"
-msgstr "აკრიფეთ ტექსტი თქვენი განლაგების გასასინჯად..."
+msgstr "განლაგების შესამოწმებლად აკრიფეთ"
 
 #: src/Views/Layout.vala:448
 msgid "Input Method is active"
@@ -803,20 +793,18 @@ msgstr ""
 
 #: src/Views/Shortcuts.vala:52
 msgid "Accessibility"
-msgstr ""
+msgstr "წვდომადობა"
 
 #: src/Views/Shortcuts.vala:95
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "მალსახმობები"
+msgstr "მალსახმობის დამატება"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
 #. /It does not mean search engines in web browsers.
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:33
 msgid "Search engine"
-msgstr ""
+msgstr "საძიებო სისტემა"
 
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:46
 msgid "Install Unlisted Engines…"
@@ -828,34 +816,30 @@ msgstr ""
 
 #: src/Widgets/Layout/Display.vala:67
 msgid "Move up"
-msgstr ""
+msgstr "აწევა"
 
 #: src/Widgets/Layout/Display.vala:72
 msgid "Move down"
-msgstr ""
+msgstr "ქვემოთ ჩამოწევა"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:114
 msgid "Enter a command here"
-msgstr ""
+msgstr "აკრიფეთ აქ ბრძანება"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:156
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:125
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Set New Shortcut"
-msgstr "მალსახმობები"
+msgstr "ახალი მალსახმობის დაყენება"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:160
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:133
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "გამორთულია"
+msgstr "გამორთვა"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:303
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:208
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "შეიყვანეთ მალსახმობი…"
 
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:291
@@ -869,10 +853,8 @@ msgid "“%s” is already used for “%s → %s”."
 msgstr ""
 
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "ნაგულისხმევი"
+msgstr "ნაგულისხმებ მნიშვნელობაზე დაბრუნება"
 
 #~ msgid "Add"
 #~ msgstr "დამატება"
