@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2023-01-13 22:55+0000\n"
+"PO-Revision-Date: 2023-03-21 18:59+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.16.4\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -468,11 +468,11 @@ msgstr "テキストサイズを拡大"
 
 #: src/Shortcuts/List.vala:133
 msgid "Magnifier Zoom in"
-msgstr "拡大鏡のズームイン"
+msgstr "拡大鏡で拡大表示"
 
 #: src/Shortcuts/List.vala:134
 msgid "Magnifier Zoom out"
-msgstr "拡大鏡のズームイン"
+msgstr "拡大鏡で縮小表示"
 
 #: src/Shortcuts/List.vala:135
 msgid "Toggle On Screen Keyboard"
