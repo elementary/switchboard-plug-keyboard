@@ -33,6 +33,7 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         settings.set ("input/keyboard/behavior", "Behavior");
         settings.set ("input/keyboard/inputmethod", "Input Method");
         settings.set ("input/keyboard/shortcuts", "Shortcuts");
+        settings.set ("input/keyboard/shortcuts/custom", "Custom Shortcuts");
         Object (category: Category.HARDWARE,
                 code_name: "io.elementary.switchboard.keyboard",
                 display_name: _("Keyboard"),
@@ -82,6 +83,10 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
     public override void search_callback (string location) {
         switch (location) {
             default:
+            case "Custom Shortcuts":
+                stack.visible_child_name = "shortcuts";
+                ((Keyboard.Shortcuts.Page) stack.get_child_by_name ("shortcuts")).open_custom_shortcuts ();
+                break;
             case "Shortcuts":
                 stack.visible_child_name = "shortcuts";
                 break;

@@ -61,13 +61,15 @@ namespace Pantheon.Keyboard.Shortcuts {
     }
 
     class Page : Gtk.Grid {
+        private Gtk.ListBox section_switcher;
+
         construct {
             CustomShortcutSettings.init ();
 
             list = new List ();
             settings = new Shortcuts.Settings ();
 
-            var section_switcher = new Gtk.ListBox ();
+            section_switcher = new Gtk.ListBox ();
             section_switcher.add (new SwitcherRow (list.windows_group));
             section_switcher.add (new SwitcherRow (list.workspaces_group));
             section_switcher.add (new SwitcherRow (list.screenshot_group));
@@ -142,6 +144,10 @@ namespace Pantheon.Keyboard.Shortcuts {
                 actionbar.visible = index == SectionID.CUSTOM;
                 show_all ();
             });
+        }
+
+        public void open_custom_shortcuts () {
+            section_switcher.select_row (section_switcher.get_row_at_index (7));
         }
 
         public bool system_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
