@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2022-04-10 05:12+0000\n"
+"PO-Revision-Date: 2023-04-06 22:59+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.16.4\n"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
 msgid "Keyboard Settings"
@@ -53,23 +53,23 @@ msgstr "Új funkciók:"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Gyorsparancsok visszaállítása alapértelmezettre"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Gyorsparancsok egyszerű letiltása"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "A kínai Rime beviteli mód támogatása"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
 msgid "Remove custom shortcuts from their menu"
-msgstr ""
+msgstr "Az egyéni gyorsparancsok eltávolítása a menüjükből"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
 msgid "Update for OS 7"
-msgstr ""
+msgstr "Frissítés OS 7-hez"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
 msgid "Open Multitasking View with Super"
@@ -77,8 +77,8 @@ msgstr "Többfeladatos nézet megnyitása a Super gombbal"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
 msgid "Redesigned custom shortcuts view"
-msgstr ""
+msgstr "Újratervezett egyedi gyorsparancsok nézet"
 
 #: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
 msgid "On-screen keyboard switch in Layouts tab"
-msgstr ""
+msgstr "A kiosztások oldalon kapcsolható a képernyőn megjelenő billentyűzet"
