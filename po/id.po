@@ -8,8 +8,9 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-01-03 20:27+0000\n"
-"PO-Revision-Date: 2021-11-01 17:20+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-05-23 18:06+0000\n"
+"Last-Translator: Faisal Rachmadin <frachmadin@users.noreply.l10n.elementary."
+"io>\n"
 "Language-Team: Indonesian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/id/>\n"
 "Language: id\n"
@@ -17,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -25,21 +26,16 @@ msgid "Input Language"
 msgstr "Bahasa Masukan"
 
 #: src/Dialogs/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "Susunan"
+msgstr "Daftar Tata Letak"
 
 #: src/Dialogs/AddLayoutDialog.vala:40
-#, fuzzy
 msgid "Search input language"
-msgstr "Bahasa Masukan"
+msgstr "Cari bahasa masukan"
 
 #: src/Dialogs/AddLayoutDialog.vala:95
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "Susunan"
+msgstr "Pratinjau Tata Letak"
 
 #: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
@@ -49,7 +45,7 @@ msgstr "Batal"
 
 #: src/Dialogs/AddLayoutDialog.vala:142
 msgid "Add Layout"
-msgstr ""
+msgstr "Tambahkan Tata Letak"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
@@ -60,7 +56,7 @@ msgstr "Bawaan"
 #: src/Dialogs/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr ""
+msgstr "%s sudah digunakan untuk %s"
 
 #: src/Dialogs/ConflictDialog.vala:27
 #, c-format
@@ -273,7 +269,7 @@ msgstr ""
 
 #: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
 msgid "Multitasking View"
-msgstr "Tampilan Multitasking"
+msgstr "Tampilan Multi Tugas"
 
 #: src/Shortcuts/List.vala:69
 msgid "Switch left"
@@ -417,7 +413,7 @@ msgstr "Surel"
 
 #: src/Shortcuts/List.vala:110
 msgid "Home Folder"
-msgstr ""
+msgstr "Folder Beranda"
 
 #: src/Shortcuts/List.vala:111
 msgid "Music"
@@ -532,7 +528,7 @@ msgstr ""
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:105
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:354
 msgid "Disabled"
-msgstr "Dinonaktifkan"
+msgstr "Nonaktifkan"
 
 #: src/Shortcuts/Shortcut.vala:61
 msgid "Shift"
