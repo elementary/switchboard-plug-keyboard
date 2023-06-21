@@ -134,10 +134,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         box.add (entry_test);
 
         var clamp = new Hdy.Clamp () {
-            child = box,
-            margin_end = 12,
-            margin_bottom = 12,
-            margin_start = 12
+            child = box
         };
 
         add (clamp);
