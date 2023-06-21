@@ -93,6 +93,128 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
 
         var spin_blink_time = new Gtk.SpinButton.with_range (1, 29, 1);
 
+        var sticky_keys_header = new Granite.HeaderLabel (_("Sticky Keys"));
+
+        var sticky_keys_switch = new Gtk.Switch () {
+            halign = END,
+            hexpand = true,
+            valign = CENTER
+        };
+
+        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+        var sticky_keys_subtitle = new Gtk.Label (
+            _("Use Alt, Ctrl, or Shift keys in sequence")
+        ) {
+            wrap = true,
+            xalign = 0
+        };
+        sticky_keys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var sticky_keys_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        sticky_keys_grid.attach (sticky_keys_header, 0, 0);
+        sticky_keys_grid.attach (sticky_keys_subtitle, 0, 1);
+        sticky_keys_grid.attach (sticky_keys_switch, 1, 0, 1, 2);
+
+        var slow_keys_header = new Granite.HeaderLabel (_("Slow Keys"));
+
+        var slow_keys_switch = new Gtk.Switch () {
+            halign = END,
+            hexpand = true,
+            valign = CENTER
+        };
+
+        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+        var slow_keys_subtitle = new Gtk.Label (
+            _("Delay between key presses")
+        ) {
+            wrap = true,
+            xalign = 0
+        };
+        slow_keys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var slow_keys_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        slow_keys_grid.attach (slow_keys_header, 0, 0);
+        slow_keys_grid.attach (slow_keys_subtitle, 0, 1);
+        slow_keys_grid.attach (slow_keys_switch, 1, 0, 1, 2);
+
+        var bounce_keys_header = new Granite.HeaderLabel (_("Bounce Keys"));
+
+        var bounce_keys_switch = new Gtk.Switch () {
+            halign = END,
+            hexpand = true,
+            valign = CENTER
+        };
+
+        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+        var bounce_keys_subtitle = new Gtk.Label (
+            _("Ignore fast duplicate keypresses ")
+        ) {
+            wrap = true,
+            xalign = 0
+        };
+        bounce_keys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var bounce_keys_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        bounce_keys_grid.attach (bounce_keys_header, 0, 0);
+        bounce_keys_grid.attach (bounce_keys_subtitle, 0, 1);
+        bounce_keys_grid.attach (bounce_keys_switch, 1, 0, 1, 2);
+
+        var events_header = new Granite.HeaderLabel (_("Event alerts"));
+
+        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+        var events_subtitle = new Gtk.Label (
+            _("Play a sound or flash the screen. %s").printf (
+                "<a href='settings:///sound/output'>%s</a>".printf (
+                    _("Sound Settings…")
+                )
+            )
+        ) {
+            use_markup = true,
+            wrap = true,
+            xalign = 0
+        };
+        events_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+
+        var lock_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪ or Num Lock keys are pressed"));
+        var bounce_keys_check = new Gtk.CheckButton.with_label (_("Bounce Keys are rejected"));
+        var sticky_keys_check = new Gtk.CheckButton.with_label (_("Sticky Keys are pressed"));
+        var slow_keys_check = new Gtk.CheckButton.with_label (_("Slow Keys are rejected"));
+
+        var events_checks_box = new Gtk.Box (VERTICAL, 6) {
+            margin_top = 12
+        };
+        events_checks_box.add (lock_check);
+        events_checks_box.add (bounce_keys_check);
+        events_checks_box.add (sticky_keys_check);
+        events_checks_box.add (slow_keys_check);
+
+        var events_box = new Gtk.Box (VERTICAL, 0);
+        events_box.add (events_header);
+        events_box.add (events_subtitle);
+        events_box.add (events_checks_box);
+
+        // var delay_label = new Granite.HeaderLabel (_("Typing Delays"));
+        // var typing_label = new Granite.HeaderLabel (_("Fast Typing"));
+
+        // var sk_delay_adjustment = new Gtk.Adjustment (0, 0, 2001, 1, 1, 1);
+        // var bk_delay_adjustment = new Gtk.Adjustment (0, 0, 2001, 1, 1, 1);
+
+        // var sk_delay = delay_box.add_scale (_("Delay length"), sk_delay_adjustment);
+
+        // var bk_delay = typing_box.add_scale (_("Delay length"), bk_delay_adjustment);
+
+        // Accessibility.Plug.keyboard_settings.bind ("slowkeys-beep-press", sk_pressed, "active", SettingsBindFlags.DEFAULT);
+        // Accessibility.Plug.keyboard_settings.bind ("slowkeys-beep-accept", sk_accepted, "active", SettingsBindFlags.DEFAULT);
+        // Accessibility.Plug.keyboard_settings.bind ("slowkeys-delay", sk_delay_adjustment, "value", SettingsBindFlags.DEFAULT);
+
+        // Accessibility.Plug.keyboard_settings.bind ("bouncekeys-delay", bk_delay_adjustment, "value", SettingsBindFlags.DEFAULT);
+
         var entry_test = new Gtk.Entry () {
             hexpand = true,
             placeholder_text = _("Type to test your settings")
@@ -131,6 +253,10 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var box = new Gtk.Box (VERTICAL, 24);
         box.add (repeat_grid);
         box.add (blink_grid);
+        box.add (bounce_keys_grid);
+        box.add (sticky_keys_grid);
+        box.add (slow_keys_grid);
+        box.add (events_box);
         box.add (entry_test);
 
         var clamp = new Hdy.Clamp () {
@@ -166,6 +292,21 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         switch_repeat.bind_property ("active", scale_repeat_speed, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", spin_repeat_delay, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", spin_repeat_speed, "sensitive", BindingFlags.DEFAULT);
+
+        var a11y_settings = new Settings ("org.gnome.desktop.a11y.keyboard");
+        a11y_settings.bind ("bouncekeys-enable", bounce_keys_switch, "active", DEFAULT);
+        a11y_settings.bind ("bouncekeys-enable", bounce_keys_check, "sensitive", GET);
+        a11y_settings.bind ("bouncekeys-beep-reject", bounce_keys_check, "active", DEFAULT);
+
+        a11y_settings.bind ("slowkeys-enable", slow_keys_switch, "active", DEFAULT);
+        a11y_settings.bind ("slowkeys-enable", slow_keys_check, "sensitive", GET);
+        a11y_settings.bind ("slowkeys-beep-reject", slow_keys_check, "active", DEFAULT);
+
+        a11y_settings.bind ("stickykeys-enable", sticky_keys_switch, "active", DEFAULT);
+        a11y_settings.bind ("stickykeys-enable", sticky_keys_check, "sensitive", GET);
+        a11y_settings.bind ("stickykeys-modifier-beep", sticky_keys_check, "active", DEFAULT);
+
+        a11y_settings.bind ("togglekeys-enable", lock_check, "active", DEFAULT);
 
         scale_repeat_delay.grab_focus (); /* We want entry unfocussed so that placeholder shows */
     }
