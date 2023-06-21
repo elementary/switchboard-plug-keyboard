@@ -183,7 +183,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         bouncekeys_grid.attach (bouncekeys_switch, 1, 0, 1, 2);
         bouncekeys_grid.attach (bouncekeys_scale, 0, 2, 2);
 
-        var events_header = new Granite.HeaderLabel (_("Event alerts"));
+        var events_header = new Granite.HeaderLabel (_("Event Alerts"));
 
         // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
         var events_subtitle = new Gtk.Label (
