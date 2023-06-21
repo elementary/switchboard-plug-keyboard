@@ -144,6 +144,9 @@ namespace Pantheon.Keyboard {
             column_homogeneous = true;
             column_spacing = 12;
             row_spacing = 12;
+            margin_start = 12;
+            margin_end = 12;
+            margin_bottom = 12;
             attach (display, 0, 0, 1, 12);
             attach (switch_layout_label, 1, 0, 1, 1);
             attach (switch_layout_combo, 2, 0, 1, 1);

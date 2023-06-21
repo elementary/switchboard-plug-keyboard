@@ -103,7 +103,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
 
         // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
         var stickykeys_subtitle = new Gtk.Label (
-            _("Use Alt, Ctrl, or Shift keys in sequence")
+            _("Use ⌘, Alt, Ctrl, or Shift keys in sequence")
         ) {
             wrap = true,
             xalign = 0
@@ -262,10 +262,17 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         box.add (entry_test);
 
         var clamp = new Hdy.Clamp () {
-            child = box
+            child = box,
+            margin_start = 12,
+            margin_end = 12,
+            margin_bottom = 12
         };
 
-        add (clamp);
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = clamp
+        };
+
+        add (scrolled);
 
         var gsettings_blink = new Settings ("org.gnome.desktop.interface");
         gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);

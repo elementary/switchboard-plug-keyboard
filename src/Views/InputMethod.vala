@@ -187,6 +187,9 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         stack.add_named (main_grid, "main_view");
         stack.show_all ();
 
+        margin_start = 12;
+        margin_end = 12;
+        margin_bottom = 12;
         add (stack);
 
         set_visible_view ();

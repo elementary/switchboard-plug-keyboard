@@ -121,6 +121,9 @@ namespace Pantheon.Keyboard.Shortcuts {
 
             column_spacing = 12;
             column_homogeneous = true;
+            margin_start = 12;
+            margin_end = 12;
+            margin_bottom = 12;
             attach (switcher_frame, 0, 0);
             attach (frame, 1, 0, 2, 1);
 

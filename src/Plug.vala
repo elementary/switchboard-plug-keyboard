@@ -52,7 +52,6 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
             default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
 
             stack = new Gtk.Stack ();
-            stack.margin = 12;
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
