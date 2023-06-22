@@ -15,14 +15,6 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
             halign = Gtk.Align.END
         };
 
-        var label_repeat_ms1 = new Gtk.Label (_("milliseconds")) {
-            halign = Gtk.Align.START
-        };
-
-        var label_repeat_ms2 = new Gtk.Label (_("milliseconds")) {
-            halign = Gtk.Align.START
-        };
-
         var switch_repeat = new Gtk.Switch () {
             halign = Gtk.Align.START,
             valign = Gtk.Align.CENTER
@@ -45,10 +37,6 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
 
-        var spin_repeat_delay = new Gtk.SpinButton.with_range (100, 900, 1);
-
-        var spin_repeat_speed = new Gtk.SpinButton.with_range (10, 70, 1);
-
         var label_blink = new Granite.HeaderLabel (_("Cursor Blinking"));
 
         var label_blink_speed = new Gtk.Label (_("Speed:")) {
@@ -57,14 +45,6 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
 
         var label_blink_time = new Gtk.Label (_("Duration:")) {
             halign = Gtk.Align.END
-        };
-
-        var label_blink_ms = new Gtk.Label (_("milliseconds")) {
-            halign = Gtk.Align.START
-        };
-
-        var label_blink_s = new Gtk.Label (_("seconds")) {
-            halign = Gtk.Align.START
         };
 
         var switch_blink = new Gtk.Switch () {
@@ -89,10 +69,6 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
 
-        var spin_blink_speed = new Gtk.SpinButton.with_range (100, 2500, 10);
-
-        var spin_blink_time = new Gtk.SpinButton.with_range (1, 29, 1);
-
         var entry_test = new Gtk.Entry () {
             hexpand = true,
             placeholder_text = _("Type to test your settings")
@@ -106,12 +82,8 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         repeat_grid.attach (switch_repeat, 1, 0);
         repeat_grid.attach (label_repeat_delay, 0, 1);
         repeat_grid.attach (scale_repeat_delay, 1, 1);
-        repeat_grid.attach (spin_repeat_delay, 2, 1);
-        repeat_grid.attach (label_repeat_ms1, 3, 1);
         repeat_grid.attach (label_repeat_speed, 0, 2);
         repeat_grid.attach (scale_repeat_speed, 1, 2);
-        repeat_grid.attach (spin_repeat_speed, 2, 2);
-        repeat_grid.attach (label_repeat_ms2, 3, 2);
 
         var blink_grid = new Gtk.Grid () {
             column_spacing = 12,
@@ -121,12 +93,8 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         blink_grid.attach (switch_blink, 1, 3);
         blink_grid.attach (label_blink_speed, 0, 4);
         blink_grid.attach (scale_blink_speed, 1, 4);
-        blink_grid.attach (spin_blink_speed, 2, 4);
-        blink_grid.attach (label_blink_ms, 3, 4);
         blink_grid.attach (label_blink_time, 0, 5);
         blink_grid.attach (scale_blink_time, 1, 5);
-        blink_grid.attach (spin_blink_time, 2, 5);
-        blink_grid.attach (label_blink_s, 3, 5);
 
         var box = new Gtk.Box (VERTICAL, 24);
         box.add (repeat_grid);
@@ -142,30 +110,22 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var gsettings_blink = new Settings ("org.gnome.desktop.interface");
         gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-time", blink_speed_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_blink.bind ("cursor-blink-time", spin_blink_speed, "value", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-timeout", blink_time_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_blink.bind ("cursor-blink-timeout", spin_blink_time, "value", SettingsBindFlags.DEFAULT);
 
         var gsettings_repeat = new Settings ("org.gnome.desktop.peripherals.keyboard");
         gsettings_repeat.bind ("repeat", switch_repeat, "active", SettingsBindFlags.DEFAULT);
         gsettings_repeat.bind ("delay", repeat_delay_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_repeat.bind ("delay", spin_repeat_delay, "value", SettingsBindFlags.DEFAULT);
         gsettings_repeat.bind ("repeat-interval", repeat_speed_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_repeat.bind ("repeat-interval", spin_repeat_speed, "value", SettingsBindFlags.DEFAULT);
 
         switch_blink.bind_property ("active", label_blink_speed, "sensitive", BindingFlags.DEFAULT);
         switch_blink.bind_property ("active", label_blink_time, "sensitive", BindingFlags.DEFAULT);
         switch_blink.bind_property ("active", scale_blink_speed, "sensitive", BindingFlags.DEFAULT);
         switch_blink.bind_property ("active", scale_blink_time, "sensitive", BindingFlags.DEFAULT);
-        switch_blink.bind_property ("active", spin_blink_speed, "sensitive", BindingFlags.DEFAULT);
-        switch_blink.bind_property ("active", spin_blink_time, "sensitive", BindingFlags.DEFAULT);
 
         switch_repeat.bind_property ("active", label_repeat_delay, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", label_repeat_speed, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", scale_repeat_delay, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", scale_repeat_speed, "sensitive", BindingFlags.DEFAULT);
-        switch_repeat.bind_property ("active", spin_repeat_delay, "sensitive", BindingFlags.DEFAULT);
-        switch_repeat.bind_property ("active", spin_repeat_speed, "sensitive", BindingFlags.DEFAULT);
 
         scale_repeat_delay.grab_focus (); /* We want entry unfocussed so that placeholder shows */
     }
