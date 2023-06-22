@@ -42,16 +42,10 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
 
         tree = new Gtk.TreeView () {
             headers_visible = false,
-            expand = true,
+            hexpand = true,
             tooltip_column = 0
         };
         tree.insert_column_with_attributes (-1, null, cell, "text", 0);
-
-        var scroll = new Gtk.ScrolledWindow (null, null) {
-            hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
-        };
-        scroll.add (tree);
 
         add_button = new Gtk.Button.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON) {
             tooltip_text = _("Add…")
@@ -80,7 +74,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         actionbar.add (down_button);
 
         var grid = new Gtk.Grid ();
-        grid.attach (scroll, 0, 0);
+        grid.attach (tree, 0, 0);
         grid.attach (actionbar, 0, 1);
 
         add (grid);
