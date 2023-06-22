@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-03 20:27+0000\n"
+"POT-Creation-Date: 2023-06-22 08:19+0000\n"
 "PO-Revision-Date: 2022-01-10 21:59+0000\n"
 "Last-Translator: p-bo <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://l10n.elementary.io/projects/switchboard/"
@@ -104,65 +104,65 @@ msgstr "korejština"
 msgid "Chinese"
 msgstr "čínština"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:39
 msgid "Keyboard"
 msgstr "Klávesnice"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:40
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Nastavit chování klávesnice, rozložení a klávesové zkratky"
 
-#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106 src/Plug.vala:107
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112
 msgid "Layout"
 msgstr "Rozložení"
 
-#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111
+#: src/Plug.vala:57 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+#: src/Plug.vala:116
 msgid "Input Method"
 msgstr "Vstupní metoda"
 
-#: src/Plug.vala:57 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:117
 msgid "Shortcuts"
 msgstr "Zkratky"
 
-#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+#: src/Plug.vala:59 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Behavior"
 msgstr "Chování"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:109
 msgid "Switch layout"
 msgstr "Přepnout rozložení"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:110
 msgid "Compose Key"
 msgstr "Klávesa Compose"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:111
 msgid "⌘ key behavior"
 msgstr "Chování klávesy ⌘"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:112
 msgid "Caps Lock behavior"
 msgstr "Chování klávesy Caps Lock"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:114
 msgid "Switch engines"
 msgstr "Přepnout enginy"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:115
 msgid "Show candidate window"
 msgstr "Zobrazit okno-kandidáta"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:116
 msgid "Embed preedit text in application window"
 msgstr "Zapouzdřit text před úpravou do okna aplikace"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:119 src/Views/Behavior.vala:8
 msgid "Repeat Keys"
 msgstr "Opakování kláves"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:120 src/Views/Behavior.vala:52
 msgid "Cursor Blinking"
 msgstr "Blikání kurzoru"
 
@@ -529,40 +529,32 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:25
-msgid "Repeat Keys:"
-msgstr "Opakovat klávesy:"
-
-#: src/Views/Behavior.vala:28
+#: src/Views/Behavior.vala:10
 msgid "Delay:"
 msgstr "Prodleva:"
 
-#: src/Views/Behavior.vala:31
+#: src/Views/Behavior.vala:14
 msgid "Interval:"
 msgstr "Interval:"
 
-#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
-#: src/Views/Behavior.vala:73
+#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
+#: src/Views/Behavior.vala:62
 msgid "milliseconds"
 msgstr "milisekund"
 
-#: src/Views/Behavior.vala:63
-msgid "Cursor Blinking:"
-msgstr "Blikání kurzoru:"
-
-#: src/Views/Behavior.vala:67
+#: src/Views/Behavior.vala:54
 msgid "Speed:"
 msgstr "Rychlost:"
 
-#: src/Views/Behavior.vala:70
+#: src/Views/Behavior.vala:58
 msgid "Duration:"
 msgstr "Délka:"
 
-#: src/Views/Behavior.vala:76
+#: src/Views/Behavior.vala:66
 msgid "seconds"
 msgstr "sekundy"
 
-#: src/Views/Behavior.vala:105
+#: src/Views/Behavior.vala:98
 msgid "Type to test your settings"
 msgstr "Pro vyzkoušení nastavení pište zde"
 
@@ -797,7 +789,7 @@ msgstr "Vstupní metoda je aktivní"
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Shortcuts.vala:95
+#: src/Views/Shortcuts.vala:100
 #, fuzzy
 #| msgid "Shortcuts"
 msgid "Add Shortcut"
@@ -862,6 +854,12 @@ msgstr "%s se už používá pro %s"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "Výchozí"
+
+#~ msgid "Repeat Keys:"
+#~ msgstr "Opakovat klávesy:"
+
+#~ msgid "Cursor Blinking:"
+#~ msgstr "Blikání kurzoru:"
 
 #~ msgid "Add"
 #~ msgstr "Přidat"

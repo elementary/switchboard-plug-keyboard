@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-03 20:27+0000\n"
+"POT-Creation-Date: 2023-06-22 08:19+0000\n"
 "PO-Revision-Date: 2023-02-02 23:25+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -97,65 +97,65 @@ msgstr "کۆری"
 msgid "Chinese"
 msgstr "چینی"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:39
 msgid "Keyboard"
 msgstr "تەختەکلیل"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:40
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "ڕێکخستنی تەختەکلیل و ڕووکار و قەدبڕەکانی"
 
-#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106 src/Plug.vala:107
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112
 msgid "Layout"
 msgstr "ڕوو"
 
-#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111
+#: src/Plug.vala:57 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+#: src/Plug.vala:116
 msgid "Input Method"
 msgstr "رێگەی هاوردە"
 
-#: src/Plug.vala:57 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:117
 msgid "Shortcuts"
 msgstr "قەدبڕەکان"
 
-#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+#: src/Plug.vala:59 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Behavior"
 msgstr "ڕەفتار"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:109
 msgid "Switch layout"
 msgstr "گۆڕینی ڕووی تەختەکلیل"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:110
 msgid "Compose Key"
 msgstr "کلیلی نووسین"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:111
 msgid "⌘ key behavior"
 msgstr "ڕەفتاری کیلی"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:112
 msgid "Caps Lock behavior"
 msgstr "ڕەفتاری کەپس لۆک"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:114
 msgid "Switch engines"
 msgstr "گۆڕینی بزوێنەرەکانی تەختەکلیل"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:115
 msgid "Show candidate window"
 msgstr "پشاندانی پەنجەرەی کاندید"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:116
 msgid "Embed preedit text in application window"
 msgstr "دەقی پێش دەستکاریکردن لە پەنجەرەی بەرنامەکەدا جێگیر بکە"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:119 src/Views/Behavior.vala:8
 msgid "Repeat Keys"
 msgstr "دوبارە-داگرتنی کلیلەکان"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:120 src/Views/Behavior.vala:52
 msgid "Cursor Blinking"
 msgstr "هەڵپەڕینی نیشاندەری نووسین"
 
@@ -522,40 +522,32 @@ msgstr "کۆنتڕۆڵ"
 msgid "Alt"
 msgstr "ئاڵت"
 
-#: src/Views/Behavior.vala:25
-msgid "Repeat Keys:"
-msgstr "دووبارەبوونەوەی کلیل:"
-
-#: src/Views/Behavior.vala:28
+#: src/Views/Behavior.vala:10
 msgid "Delay:"
 msgstr "دوای:"
 
-#: src/Views/Behavior.vala:31
+#: src/Views/Behavior.vala:14
 msgid "Interval:"
 msgstr "ئینتەرڤال:"
 
-#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
-#: src/Views/Behavior.vala:73
+#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
+#: src/Views/Behavior.vala:62
 msgid "milliseconds"
 msgstr "میلی چرکە"
 
-#: src/Views/Behavior.vala:63
-msgid "Cursor Blinking:"
-msgstr "دەرکەوتنی نیشاندەری نووسینی دەق:"
-
-#: src/Views/Behavior.vala:67
+#: src/Views/Behavior.vala:54
 msgid "Speed:"
 msgstr "خێرایی:"
 
-#: src/Views/Behavior.vala:70
+#: src/Views/Behavior.vala:58
 msgid "Duration:"
 msgstr "ماوە:"
 
-#: src/Views/Behavior.vala:76
+#: src/Views/Behavior.vala:66
 msgid "seconds"
 msgstr "چرکە"
 
-#: src/Views/Behavior.vala:105
+#: src/Views/Behavior.vala:98
 msgid "Type to test your settings"
 msgstr "لێرە بنووسە بۆ تاقیکردنەوەی ڕێکخستنەکانت"
 
@@ -790,7 +782,7 @@ msgstr "ڕێگەی ئینپوت کارایە"
 msgid "Accessibility"
 msgstr "دەستگەیشتن"
 
-#: src/Views/Shortcuts.vala:95
+#: src/Views/Shortcuts.vala:100
 msgid "Add Shortcut"
 msgstr "زیادکردنی قەتبڕ"
 
@@ -850,6 +842,12 @@ msgstr "\"%s\" بەکارهاتووە بۆ \"%s → %s.\""
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
 msgid "Reset to Default"
 msgstr "گەڕاندنەوەی قەتبڕەکان بۆ دۆخی بنەڕەت"
+
+#~ msgid "Repeat Keys:"
+#~ msgstr "دووبارەبوونەوەی کلیل:"
+
+#~ msgid "Cursor Blinking:"
+#~ msgstr "دەرکەوتنی نیشاندەری نووسینی دەق:"
 
 #~ msgid "Add"
 #~ msgstr "زیادکردن"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-03 20:27+0000\n"
+"POT-Creation-Date: 2023-06-22 08:19+0000\n"
 "PO-Revision-Date: 2022-02-18 04:43+0000\n"
 "Last-Translator: Jose Manuel Hernandez Farias <ing.josemhf@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -104,66 +104,66 @@ msgstr "Coreano"
 msgid "Chinese"
 msgstr "Chino"
 
-#: src/Plug.vala:38
+#: src/Plug.vala:39
 msgid "Keyboard"
 msgstr "Teclado"
 
-#: src/Plug.vala:39
+#: src/Plug.vala:40
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 "Configure el comportamiento, las disposiciones y los atajos del teclado"
 
-#: src/Plug.vala:55 src/Plug.vala:103 src/Plug.vala:104 src/Plug.vala:105
-#: src/Plug.vala:106 src/Plug.vala:107
+#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
+#: src/Plug.vala:111 src/Plug.vala:112
 msgid "Layout"
 msgstr "Disposición"
 
-#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111
+#: src/Plug.vala:57 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+#: src/Plug.vala:116
 msgid "Input Method"
 msgstr "Método de entrada"
 
-#: src/Plug.vala:57 src/Plug.vala:112
+#: src/Plug.vala:58 src/Plug.vala:117
 msgid "Shortcuts"
 msgstr "Atajos"
 
-#: src/Plug.vala:58 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
+#: src/Plug.vala:59 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
 msgid "Behavior"
 msgstr "Comportamiento"
 
-#: src/Plug.vala:104
+#: src/Plug.vala:109
 msgid "Switch layout"
 msgstr "Cambiar disposición"
 
-#: src/Plug.vala:105
+#: src/Plug.vala:110
 msgid "Compose Key"
 msgstr "Tecla de composición"
 
-#: src/Plug.vala:106
+#: src/Plug.vala:111
 msgid "⌘ key behavior"
 msgstr "Comportamiento de la tecla ⌘"
 
-#: src/Plug.vala:107
+#: src/Plug.vala:112
 msgid "Caps Lock behavior"
 msgstr "Comportamiento de Bloq Mayús"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:114
 msgid "Switch engines"
 msgstr "Cambiar de motor"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:115
 msgid "Show candidate window"
 msgstr "Mostrar ventana de candidatos"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:116
 msgid "Embed preedit text in application window"
 msgstr "Incrustar texto de preedición en la ventana de la aplicación"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:119 src/Views/Behavior.vala:8
 msgid "Repeat Keys"
 msgstr "Repetir teclas"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:120 src/Views/Behavior.vala:52
 msgid "Cursor Blinking"
 msgstr "Parpadeo del cursor"
 
@@ -530,40 +530,32 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:25
-msgid "Repeat Keys:"
-msgstr "Repetir teclas:"
-
-#: src/Views/Behavior.vala:28
+#: src/Views/Behavior.vala:10
 msgid "Delay:"
 msgstr "Demora:"
 
-#: src/Views/Behavior.vala:31
+#: src/Views/Behavior.vala:14
 msgid "Interval:"
 msgstr "Intervalo:"
 
-#: src/Views/Behavior.vala:34 src/Views/Behavior.vala:37
-#: src/Views/Behavior.vala:73
+#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
+#: src/Views/Behavior.vala:62
 msgid "milliseconds"
 msgstr "milisegundos"
 
-#: src/Views/Behavior.vala:63
-msgid "Cursor Blinking:"
-msgstr "Parpadeo del cursor:"
-
-#: src/Views/Behavior.vala:67
+#: src/Views/Behavior.vala:54
 msgid "Speed:"
 msgstr "Velocidad:"
 
-#: src/Views/Behavior.vala:70
+#: src/Views/Behavior.vala:58
 msgid "Duration:"
 msgstr "Duración:"
 
-#: src/Views/Behavior.vala:76
+#: src/Views/Behavior.vala:66
 msgid "seconds"
 msgstr "segundos"
 
-#: src/Views/Behavior.vala:105
+#: src/Views/Behavior.vala:98
 msgid "Type to test your settings"
 msgstr "Escriba para probar su configuración"
 
@@ -798,7 +790,7 @@ msgstr "El método de entrada está activo"
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Shortcuts.vala:95
+#: src/Views/Shortcuts.vala:100
 #, fuzzy
 #| msgid "Shortcuts"
 msgid "Add Shortcut"
@@ -863,6 +855,12 @@ msgstr "%s ya se utiliza para %s"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "Predeterminado"
+
+#~ msgid "Repeat Keys:"
+#~ msgstr "Repetir teclas:"
+
+#~ msgid "Cursor Blinking:"
+#~ msgstr "Parpadeo del cursor:"
 
 #~ msgid "Add"
 #~ msgstr "Añadir"
