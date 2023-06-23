@@ -115,8 +115,11 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Input Method"), _("Embed preedit text in application window")), "Input Method");
         search_results.set ("%s → %s".printf (display_name, _("Shortcuts")), "Shortcuts");
         search_results.set ("%s → %s".printf (display_name, _("Behavior")), "Behavior");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Repeat Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Bounce Keys")), "Behavior");
         search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Cursor Blinking")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Repeat Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Slow Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Sticky Keys")), "Behavior");
         return search_results;
     }
 }
