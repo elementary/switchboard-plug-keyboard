@@ -188,7 +188,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
         var events_subtitle = new Gtk.Label (
             _("Play a sound or flash the screen. %s").printf (
-                "<a href='settings:///sound/output'>%s</a>".printf (
+                "<a href='settings://sound/output'>%s</a>".printf (
                     _("Sound Settings…")
                 )
             )
