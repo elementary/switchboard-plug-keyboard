@@ -5,6 +5,9 @@
 
 public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
     construct {
+        var scale_provider = new Gtk.CssProvider ();
+        scale_provider.load_from_resource ("/io/elementary/switchboard/keyboard/Behavior.css");
+
         var label_repeat = new Granite.HeaderLabel (_("Repeat Keys"));
 
         var label_repeat_delay = new Gtk.Label (_("Delay:")) {
@@ -23,19 +26,21 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var repeat_delay_adjustment = new Gtk.Adjustment (-1, 100, 900, 1, 0, 0);
 
         var scale_repeat_delay = new Gtk.Scale (HORIZONTAL, repeat_delay_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_repeat_delay.add_mark (500, Gtk.PositionType.BOTTOM, null);
+        scale_repeat_delay.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var repeat_speed_adjustment = new Gtk.Adjustment (-1, 10, 70, 1, 0, 0);
 
         var scale_repeat_speed = new Gtk.Scale (HORIZONTAL, repeat_speed_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
+        scale_repeat_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var label_blink = new Granite.HeaderLabel (_("Cursor Blinking"));
 
@@ -55,19 +60,21 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var blink_speed_adjustment = new Gtk.Adjustment (-1, 100, 2500, 10, 0, 0);
 
         var scale_blink_speed = new Gtk.Scale (HORIZONTAL, blink_speed_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_blink_speed.add_mark (1200, Gtk.PositionType.BOTTOM, null);
+        scale_blink_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var blink_time_adjustment = new Gtk.Adjustment (-1, 1, 29, 1, 0, 0);
 
         var scale_blink_time = new Gtk.Scale (HORIZONTAL, blink_time_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
+        scale_blink_time.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var entry_test = new Gtk.Entry () {
             hexpand = true,
