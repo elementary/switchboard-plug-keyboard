@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-22 08:19+0000\n"
+"POT-Creation-Date: 2023-06-25 13:47+0000\n"
 "PO-Revision-Date: 2023-02-02 23:25+0000\n"
 "Last-Translator: Aga Ismael <agaesmaeel@gmail.com>\n"
 "Language-Team: Kurdish (Central) <https://l10n.elementary.io/projects/"
@@ -151,11 +151,11 @@ msgstr "پشاندانی پەنجەرەی کاندید"
 msgid "Embed preedit text in application window"
 msgstr "دەقی پێش دەستکاریکردن لە پەنجەرەی بەرنامەکەدا جێگیر بکە"
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:8
+#: src/Plug.vala:119 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "دوبارە-داگرتنی کلیلەکان"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:52
+#: src/Plug.vala:120 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
 msgstr "هەڵپەڕینی نیشاندەری نووسین"
 
@@ -522,32 +522,23 @@ msgstr "کۆنتڕۆڵ"
 msgid "Alt"
 msgstr "ئاڵت"
 
-#: src/Views/Behavior.vala:10
+#: src/Views/Behavior.vala:13
 msgid "Delay:"
 msgstr "دوای:"
 
-#: src/Views/Behavior.vala:14
+#: src/Views/Behavior.vala:17
 msgid "Interval:"
 msgstr "ئینتەرڤال:"
 
-#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
-#: src/Views/Behavior.vala:62
-msgid "milliseconds"
-msgstr "میلی چرکە"
-
-#: src/Views/Behavior.vala:54
+#: src/Views/Behavior.vala:47
 msgid "Speed:"
 msgstr "خێرایی:"
 
-#: src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:51
 msgid "Duration:"
 msgstr "ماوە:"
 
-#: src/Views/Behavior.vala:66
-msgid "seconds"
-msgstr "چرکە"
-
-#: src/Views/Behavior.vala:98
+#: src/Views/Behavior.vala:81
 msgid "Type to test your settings"
 msgstr "لێرە بنووسە بۆ تاقیکردنەوەی ڕێکخستنەکانت"
 
@@ -842,6 +833,12 @@ msgstr "\"%s\" بەکارهاتووە بۆ \"%s → %s.\""
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
 msgid "Reset to Default"
 msgstr "گەڕاندنەوەی قەتبڕەکان بۆ دۆخی بنەڕەت"
+
+#~ msgid "milliseconds"
+#~ msgstr "میلی چرکە"
+
+#~ msgid "seconds"
+#~ msgstr "چرکە"
 
 #~ msgid "Repeat Keys:"
 #~ msgstr "دووبارەبوونەوەی کلیل:"

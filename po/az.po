@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-22 08:19+0000\n"
+"POT-Creation-Date: 2023-06-25 13:47+0000\n"
 "PO-Revision-Date: 2020-10-04 21:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Azerbaijani <https://l10n.elementary.io/projects/switchboard/"
@@ -151,11 +151,11 @@ msgstr ""
 msgid "Embed preedit text in application window"
 msgstr ""
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:8
+#: src/Plug.vala:119 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr ""
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:52
+#: src/Plug.vala:120 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
 msgstr ""
 
@@ -522,32 +522,23 @@ msgstr ""
 msgid "Alt"
 msgstr ""
 
-#: src/Views/Behavior.vala:10
+#: src/Views/Behavior.vala:13
 msgid "Delay:"
 msgstr ""
 
-#: src/Views/Behavior.vala:14
+#: src/Views/Behavior.vala:17
 msgid "Interval:"
 msgstr ""
 
-#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
-#: src/Views/Behavior.vala:62
-msgid "milliseconds"
-msgstr ""
-
-#: src/Views/Behavior.vala:54
+#: src/Views/Behavior.vala:47
 msgid "Speed:"
 msgstr ""
 
-#: src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:51
 msgid "Duration:"
 msgstr ""
 
-#: src/Views/Behavior.vala:66
-msgid "seconds"
-msgstr ""
-
-#: src/Views/Behavior.vala:98
+#: src/Views/Behavior.vala:81
 msgid "Type to test your settings"
 msgstr ""
 

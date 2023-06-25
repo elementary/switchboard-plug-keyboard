@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-22 08:19+0000\n"
+"POT-Creation-Date: 2023-06-25 13:47+0000\n"
 "PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -167,11 +167,11 @@ msgstr ""
 msgid "Embed preedit text in application window"
 msgstr ""
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:8
+#: src/Plug.vala:119 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "Repetați cheile"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:52
+#: src/Plug.vala:120 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
 msgstr "Cursor Clipește"
 
@@ -548,32 +548,23 @@ msgstr "Ctrl."
 msgid "Alt"
 msgstr "Alt."
 
-#: src/Views/Behavior.vala:10
+#: src/Views/Behavior.vala:13
 msgid "Delay:"
 msgstr "Întârziere:"
 
-#: src/Views/Behavior.vala:14
+#: src/Views/Behavior.vala:17
 msgid "Interval:"
 msgstr "Intervalul:"
 
-#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
-#: src/Views/Behavior.vala:62
-msgid "milliseconds"
-msgstr "milisecunde"
-
-#: src/Views/Behavior.vala:54
+#: src/Views/Behavior.vala:47
 msgid "Speed:"
 msgstr "Viteză:"
 
-#: src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:51
 msgid "Duration:"
 msgstr "Durată:"
 
-#: src/Views/Behavior.vala:66
-msgid "seconds"
-msgstr "secunde"
-
-#: src/Views/Behavior.vala:98
+#: src/Views/Behavior.vala:81
 msgid "Type to test your settings"
 msgstr "Introduceți tasta pentru a testa setările"
 
@@ -893,6 +884,12 @@ msgstr "%s 1 este deja folosit pentru %s 2"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "Mod implicit"
+
+#~ msgid "milliseconds"
+#~ msgstr "milisecunde"
+
+#~ msgid "seconds"
+#~ msgstr "secunde"
 
 #~ msgid "Repeat Keys:"
 #~ msgstr "Taste repetate:"
