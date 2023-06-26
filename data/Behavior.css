@@ -1,0 +1,25 @@
+/*
+ * SPDX-License-Identifier: GPL-3.0-or-later
+ * SPDX-FileCopyrightText: 2023 elementary, Inc. (https://elementary.io)
+ */
+
+scale value {
+    background-color: alpha(@BLACK_700, 0.9);
+    border-radius: 3px;
+    box-shadow:
+        0 1px 3px alpha(black, 0.12),
+        0 1px 2px alpha(black, 0.24);
+    color: white;
+    font-size: 0.85em;
+    margin: -6px -6px -3px -6px;
+    padding: 3px 6px;
+    text-shadow: 0 1px 2px alpha(black, 0.6);
+    transition: all 100ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+scale:not(.dragging) value {
+    background: transparent;
+    box-shadow: none;
+    color: transparent;
+    text-shadow: none;
+}

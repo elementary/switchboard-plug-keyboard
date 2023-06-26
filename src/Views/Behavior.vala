@@ -5,6 +5,9 @@
 
 public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
     construct {
+        var scale_provider = new Gtk.CssProvider ();
+        scale_provider.load_from_resource ("/io/elementary/switchboard/keyboard/Behavior.css");
+
         var label_repeat = new Granite.HeaderLabel (_("Repeat Keys"));
 
         var label_repeat_delay = new Gtk.Label (_("Delay:")) {
@@ -15,14 +18,6 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
             halign = Gtk.Align.END
         };
 
-        var label_repeat_ms1 = new Gtk.Label (_("milliseconds")) {
-            halign = Gtk.Align.START
-        };
-
-        var label_repeat_ms2 = new Gtk.Label (_("milliseconds")) {
-            halign = Gtk.Align.START
-        };
-
         var switch_repeat = new Gtk.Switch () {
             halign = END,
             valign = CENTER
@@ -31,23 +26,21 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var repeat_delay_adjustment = new Gtk.Adjustment (-1, 100, 900, 1, 0, 0);
 
         var scale_repeat_delay = new Gtk.Scale (HORIZONTAL, repeat_delay_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_repeat_delay.add_mark (500, Gtk.PositionType.BOTTOM, null);
+        scale_repeat_delay.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var repeat_speed_adjustment = new Gtk.Adjustment (-1, 10, 70, 1, 0, 0);
 
         var scale_repeat_speed = new Gtk.Scale (HORIZONTAL, repeat_speed_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
-
-        var spin_repeat_delay = new Gtk.SpinButton.with_range (100, 900, 1);
-
-        var spin_repeat_speed = new Gtk.SpinButton.with_range (10, 70, 1);
+        scale_repeat_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var label_blink = new Granite.HeaderLabel (_("Cursor Blinking"));
 
@@ -59,14 +52,6 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
             halign = Gtk.Align.END
         };
 
-        var label_blink_ms = new Gtk.Label (_("milliseconds")) {
-            halign = Gtk.Align.START
-        };
-
-        var label_blink_s = new Gtk.Label (_("seconds")) {
-            halign = Gtk.Align.START
-        };
-
         var switch_blink = new Gtk.Switch () {
             halign = END,
             valign = CENTER
@@ -75,23 +60,21 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var blink_speed_adjustment = new Gtk.Adjustment (-1, 100, 2500, 10, 0, 0);
 
         var scale_blink_speed = new Gtk.Scale (HORIZONTAL, blink_speed_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_blink_speed.add_mark (1200, Gtk.PositionType.BOTTOM, null);
+        scale_blink_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var blink_time_adjustment = new Gtk.Adjustment (-1, 1, 29, 1, 0, 0);
 
         var scale_blink_time = new Gtk.Scale (HORIZONTAL, blink_time_adjustment) {
-            draw_value = false,
+            digits = 0,
             hexpand = true
         };
         scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
-
-        var spin_blink_speed = new Gtk.SpinButton.with_range (100, 2500, 10);
-
-        var spin_blink_time = new Gtk.SpinButton.with_range (1, 29, 1);
+        scale_blink_time.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var stickykeys_header = new Granite.HeaderLabel (_("Sticky Keys"));
 
@@ -137,10 +120,10 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var slowkeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
         var slowkeys_scale = new Gtk.Scale (HORIZONTAL, slowkeys_adjustment) {
-            draw_value = false,
-            margin_top = 6
+            digits = 0
         };
         slowkeys_scale.add_mark (300, Gtk.PositionType.BOTTOM, null);
+        slowkeys_scale.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var slowkeys_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -170,10 +153,10 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var bouncekeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
         var bouncekeys_scale = new Gtk.Scale (HORIZONTAL, bouncekeys_adjustment) {
-            draw_value = false,
-            margin_top = 6
+            digits = 0
         };
         bouncekeys_scale.add_mark (300, Gtk.PositionType.BOTTOM, null);
+        bouncekeys_scale.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var bouncekeys_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -223,34 +206,24 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         };
 
         var repeat_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 6
+            column_spacing = 12
         };
-        repeat_grid.attach (label_repeat, 0, 0, 3);
-        repeat_grid.attach (switch_repeat, 3, 0);
+        repeat_grid.attach (label_repeat, 0, 0);
+        repeat_grid.attach (switch_repeat, 1, 0);
         repeat_grid.attach (label_repeat_delay, 0, 1);
         repeat_grid.attach (scale_repeat_delay, 1, 1);
-        repeat_grid.attach (spin_repeat_delay, 2, 1);
-        repeat_grid.attach (label_repeat_ms1, 3, 1);
         repeat_grid.attach (label_repeat_speed, 0, 2);
         repeat_grid.attach (scale_repeat_speed, 1, 2);
-        repeat_grid.attach (spin_repeat_speed, 2, 2);
-        repeat_grid.attach (label_repeat_ms2, 3, 2);
 
         var blink_grid = new Gtk.Grid () {
-            column_spacing = 12,
-            row_spacing = 6
+            column_spacing = 12
         };
-        blink_grid.attach (label_blink, 0, 0, 3);
-        blink_grid.attach (switch_blink, 3, 0);
+        blink_grid.attach (label_blink, 0, 0);
+        blink_grid.attach (switch_blink, 1, 0);
         blink_grid.attach (label_blink_speed, 0, 1);
         blink_grid.attach (scale_blink_speed, 1, 1);
-        blink_grid.attach (spin_blink_speed, 2, 1);
-        blink_grid.attach (label_blink_ms, 3, 1);
         blink_grid.attach (label_blink_time, 0, 2);
         blink_grid.attach (scale_blink_time, 1, 2);
-        blink_grid.attach (spin_blink_time, 2, 2);
-        blink_grid.attach (label_blink_s, 3, 2);
 
         var box = new Gtk.Box (VERTICAL, 18);
         box.add (blink_grid);
@@ -277,30 +250,22 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         var gsettings_blink = new Settings ("org.gnome.desktop.interface");
         gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-time", blink_speed_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_blink.bind ("cursor-blink-time", spin_blink_speed, "value", SettingsBindFlags.DEFAULT);
         gsettings_blink.bind ("cursor-blink-timeout", blink_time_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_blink.bind ("cursor-blink-timeout", spin_blink_time, "value", SettingsBindFlags.DEFAULT);
 
         var gsettings_repeat = new Settings ("org.gnome.desktop.peripherals.keyboard");
         gsettings_repeat.bind ("repeat", switch_repeat, "active", SettingsBindFlags.DEFAULT);
         gsettings_repeat.bind ("delay", repeat_delay_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_repeat.bind ("delay", spin_repeat_delay, "value", SettingsBindFlags.DEFAULT);
         gsettings_repeat.bind ("repeat-interval", repeat_speed_adjustment, "value", SettingsBindFlags.DEFAULT);
-        gsettings_repeat.bind ("repeat-interval", spin_repeat_speed, "value", SettingsBindFlags.DEFAULT);
 
         switch_blink.bind_property ("active", label_blink_speed, "sensitive", BindingFlags.DEFAULT);
         switch_blink.bind_property ("active", label_blink_time, "sensitive", BindingFlags.DEFAULT);
         switch_blink.bind_property ("active", scale_blink_speed, "sensitive", BindingFlags.DEFAULT);
         switch_blink.bind_property ("active", scale_blink_time, "sensitive", BindingFlags.DEFAULT);
-        switch_blink.bind_property ("active", spin_blink_speed, "sensitive", BindingFlags.DEFAULT);
-        switch_blink.bind_property ("active", spin_blink_time, "sensitive", BindingFlags.DEFAULT);
 
         switch_repeat.bind_property ("active", label_repeat_delay, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", label_repeat_speed, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", scale_repeat_delay, "sensitive", BindingFlags.DEFAULT);
         switch_repeat.bind_property ("active", scale_repeat_speed, "sensitive", BindingFlags.DEFAULT);
-        switch_repeat.bind_property ("active", spin_repeat_delay, "sensitive", BindingFlags.DEFAULT);
-        switch_repeat.bind_property ("active", spin_repeat_speed, "sensitive", BindingFlags.DEFAULT);
 
         var a11y_settings = new Settings ("org.gnome.desktop.a11y.keyboard");
         a11y_settings.bind ("bouncekeys-enable", bouncekeys_switch, "active", DEFAULT);

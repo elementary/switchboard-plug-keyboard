@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-22 08:19+0000\n"
+"POT-Creation-Date: 2023-06-25 13:47+0000\n"
 "PO-Revision-Date: 2022-10-26 12:42+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
@@ -160,11 +160,11 @@ msgstr "Näytä ehdokasikkuna"
 msgid "Embed preedit text in application window"
 msgstr "Upota esimuokattu teksti sovellusikkunaan"
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:8
+#: src/Plug.vala:119 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "Toistonäppäimet"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:52
+#: src/Plug.vala:120 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
 msgstr "Kohdistimen vilkunta"
 
@@ -531,32 +531,23 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:10
+#: src/Views/Behavior.vala:13
 msgid "Delay:"
 msgstr "Viive:"
 
-#: src/Views/Behavior.vala:14
+#: src/Views/Behavior.vala:17
 msgid "Interval:"
 msgstr "Päivitysväli:"
 
-#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
-#: src/Views/Behavior.vala:62
-msgid "milliseconds"
-msgstr "millisekuntia"
-
-#: src/Views/Behavior.vala:54
+#: src/Views/Behavior.vala:47
 msgid "Speed:"
 msgstr "Nopeus:"
 
-#: src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:51
 msgid "Duration:"
 msgstr "Kesto:"
 
-#: src/Views/Behavior.vala:66
-msgid "seconds"
-msgstr "sekuntia"
-
-#: src/Views/Behavior.vala:98
+#: src/Views/Behavior.vala:81
 msgid "Type to test your settings"
 msgstr "Kirjoita testataksesi asetuksia"
 
@@ -851,6 +842,12 @@ msgstr "“%s” on jo käytössä toiminnolle “%s → %s”."
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
 msgid "Reset to Default"
 msgstr "Palauta oletusarvoon"
+
+#~ msgid "milliseconds"
+#~ msgstr "millisekuntia"
+
+#~ msgid "seconds"
+#~ msgstr "sekuntia"
 
 #~ msgid "Repeat Keys:"
 #~ msgstr "Toistuvat näppäimet:"

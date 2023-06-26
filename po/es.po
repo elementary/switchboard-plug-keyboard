@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-22 08:19+0000\n"
+"POT-Creation-Date: 2023-06-25 13:47+0000\n"
 "PO-Revision-Date: 2022-02-18 04:43+0000\n"
 "Last-Translator: Jose Manuel Hernandez Farias <ing.josemhf@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -159,11 +159,11 @@ msgstr "Mostrar ventana de candidatos"
 msgid "Embed preedit text in application window"
 msgstr "Incrustar texto de preedición en la ventana de la aplicación"
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:8
+#: src/Plug.vala:119 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "Repetir teclas"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:52
+#: src/Plug.vala:120 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
 msgstr "Parpadeo del cursor"
 
@@ -530,32 +530,23 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:10
+#: src/Views/Behavior.vala:13
 msgid "Delay:"
 msgstr "Demora:"
 
-#: src/Views/Behavior.vala:14
+#: src/Views/Behavior.vala:17
 msgid "Interval:"
 msgstr "Intervalo:"
 
-#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
-#: src/Views/Behavior.vala:62
-msgid "milliseconds"
-msgstr "milisegundos"
-
-#: src/Views/Behavior.vala:54
+#: src/Views/Behavior.vala:47
 msgid "Speed:"
 msgstr "Velocidad:"
 
-#: src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:51
 msgid "Duration:"
 msgstr "Duración:"
 
-#: src/Views/Behavior.vala:66
-msgid "seconds"
-msgstr "segundos"
-
-#: src/Views/Behavior.vala:98
+#: src/Views/Behavior.vala:81
 msgid "Type to test your settings"
 msgstr "Escriba para probar su configuración"
 
@@ -855,6 +846,12 @@ msgstr "%s ya se utiliza para %s"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "Predeterminado"
+
+#~ msgid "milliseconds"
+#~ msgstr "milisegundos"
+
+#~ msgid "seconds"
+#~ msgstr "segundos"
 
 #~ msgid "Repeat Keys:"
 #~ msgstr "Repetir teclas:"

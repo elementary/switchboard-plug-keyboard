@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-22 08:19+0000\n"
+"POT-Creation-Date: 2023-06-25 13:47+0000\n"
 "PO-Revision-Date: 2022-08-06 20:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -158,11 +158,11 @@ msgstr "후보 창 표시"
 msgid "Embed preedit text in application window"
 msgstr "애플리케이션 창에 사전 편집 텍스트 포함"
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:8
+#: src/Plug.vala:119 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "키 반복"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:52
+#: src/Plug.vala:120 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
 msgstr "커서 깜빡임"
 
@@ -529,32 +529,23 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:10
+#: src/Views/Behavior.vala:13
 msgid "Delay:"
 msgstr "지연 시간:"
 
-#: src/Views/Behavior.vala:14
+#: src/Views/Behavior.vala:17
 msgid "Interval:"
 msgstr "간격:"
 
-#: src/Views/Behavior.vala:18 src/Views/Behavior.vala:22
-#: src/Views/Behavior.vala:62
-msgid "milliseconds"
-msgstr "밀리초"
-
-#: src/Views/Behavior.vala:54
+#: src/Views/Behavior.vala:47
 msgid "Speed:"
 msgstr "속도:"
 
-#: src/Views/Behavior.vala:58
+#: src/Views/Behavior.vala:51
 msgid "Duration:"
 msgstr "지속시간:"
 
-#: src/Views/Behavior.vala:66
-msgid "seconds"
-msgstr "초"
-
-#: src/Views/Behavior.vala:98
+#: src/Views/Behavior.vala:81
 msgid "Type to test your settings"
 msgstr "글자를 입력해서 설정을 확인해 보세요"
 
@@ -853,6 +844,12 @@ msgstr "%s는 이미 %s에서 사용하고 있습니다"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "기본"
+
+#~ msgid "milliseconds"
+#~ msgstr "밀리초"
+
+#~ msgid "seconds"
+#~ msgstr "초"
 
 #~ msgid "Repeat Keys:"
 #~ msgstr "키 반복:"
