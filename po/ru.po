@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 16:42+0000\n"
 "PO-Revision-Date: 2023-06-28 21:56+0000\n"
-"Last-Translator: lenemter <lenemter@gmail.com>\n"
+"Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
@@ -575,10 +575,8 @@ msgid "Ignore fast duplicate keypresses "
 msgstr "Игнорировать быстрые повторяющиеся нажатия "
 
 #: src/Views/Behavior.vala:169
-#, fuzzy
-#| msgid "Left Alt"
 msgid "Event Alerts"
-msgstr "Левый Alt"
+msgstr "Оповещения о событиях"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:173
