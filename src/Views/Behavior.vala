@@ -143,7 +143,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
 
         // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
         var bouncekeys_subtitle = new Gtk.Label (
-            _("Ignore fast duplicate keypresses ")
+            _("Ignore fast duplicate keypresses")
         ) {
             wrap = true,
             xalign = 0
