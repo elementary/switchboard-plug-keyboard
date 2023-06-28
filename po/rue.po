@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 16:42+0000\n"
+"POT-Creation-Date: 2023-06-28 22:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 
@@ -555,7 +555,7 @@ msgstr ""
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
-msgid "Ignore fast duplicate keypresses "
+msgid "Ignore fast duplicate keypresses"
 msgstr ""
 
 #: src/Views/Behavior.vala:169

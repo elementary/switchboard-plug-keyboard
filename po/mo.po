@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: keyboard-plug\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 16:42+0000\n"
+"POT-Creation-Date: 2023-06-28 22:14+0000\n"
 "PO-Revision-Date: 2018-05-29 00:12+0000\n"
 "Last-Translator: Romanic Ion Nicușor <contact.romanic@gmail.com>\n"
 "Language-Team: Moldovan <https://weblate.elementary.io/projects/switchboard/"
@@ -589,7 +589,7 @@ msgstr ""
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
-msgid "Ignore fast duplicate keypresses "
+msgid "Ignore fast duplicate keypresses"
 msgstr ""
 
 #: src/Views/Behavior.vala:169
