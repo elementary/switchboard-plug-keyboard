@@ -52,7 +52,6 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
             default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
 
             stack = new Gtk.Stack ();
-            stack.margin = 12;
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
@@ -116,8 +115,11 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
         search_results.set ("%s → %s → %s".printf (display_name, _("Input Method"), _("Embed preedit text in application window")), "Input Method");
         search_results.set ("%s → %s".printf (display_name, _("Shortcuts")), "Shortcuts");
         search_results.set ("%s → %s".printf (display_name, _("Behavior")), "Behavior");
-        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Repeat Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Bounce Keys")), "Behavior");
         search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Cursor Blinking")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Repeat Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Slow Keys")), "Behavior");
+        search_results.set ("%s → %s → %s".printf (display_name, _("Behavior"), _("Sticky Keys")), "Behavior");
         return search_results;
     }
 }
