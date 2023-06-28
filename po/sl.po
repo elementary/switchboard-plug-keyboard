@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-25 13:47+0000\n"
+"POT-Creation-Date: 2023-06-28 16:42+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -54,7 +54,7 @@ msgstr "Dodaj razporeditev"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:308 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Privzeta"
 
@@ -120,64 +120,77 @@ msgstr "Tipkovnica"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Nastavite obnašanje, razporeditve in bljižnice na tipkovnici."
 
-#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:55 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:111
 msgid "Layout"
 msgstr "Razporeditev"
 
-#: src/Plug.vala:57 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
-#: src/Plug.vala:116
+#: src/Plug.vala:56 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115
 #, fuzzy
 #| msgid "Input Method Settings…"
 msgid "Input Method"
 msgstr "Nastavitve tipkovnice…"
 
-#: src/Plug.vala:58 src/Plug.vala:117
+#: src/Plug.vala:57 src/Plug.vala:116
 msgid "Shortcuts"
 msgstr "Tipkovne bližnjice"
 
-#: src/Plug.vala:59 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:58 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Behavior"
 msgstr "Vedenje"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:108
 msgid "Switch layout"
 msgstr "Preklop razporeda"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:109
 msgid "Compose Key"
 msgstr "Sestavna tipka"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:110
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "Obnašanje ⌘:"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:111
 msgid "Caps Lock behavior"
 msgstr "Obnašanje Caps Lock"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:113
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines"
 msgstr "Preklopi okna"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:114
 msgid "Show candidate window"
 msgstr ""
 
-#: src/Plug.vala:116
+#: src/Plug.vala:115
 msgid "Embed preedit text in application window"
 msgstr ""
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:11
+#: src/Plug.vala:118 src/Views/Behavior.vala:136
+msgid "Bounce Keys"
+msgstr ""
+
+#: src/Plug.vala:119 src/Views/Behavior.vala:45
+msgid "Cursor Blinking"
+msgstr "Utripanje kazalke"
+
+#: src/Plug.vala:120 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "Ponavljajoče tipke"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:45
-msgid "Cursor Blinking"
-msgstr "Utripanje kazalke"
+#: src/Plug.vala:121 src/Views/Behavior.vala:103
+msgid "Slow Keys"
+msgstr ""
+
+#: src/Plug.vala:122 src/Views/Behavior.vala:79
+msgid "Sticky Keys"
+msgstr ""
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -568,7 +581,54 @@ msgstr "Hitrost:"
 msgid "Duration:"
 msgstr "Trajanje:"
 
-#: src/Views/Behavior.vala:81
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:89
+msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
+msgstr ""
+
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:113
+msgid "Don't accept keypresses unless held"
+msgstr ""
+
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:146
+msgid "Ignore fast duplicate keypresses "
+msgstr ""
+
+#: src/Views/Behavior.vala:169
+#, fuzzy
+#| msgid "Left Alt"
+msgid "Event Alerts"
+msgstr "Levi Alt"
+
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:173
+#, c-format
+msgid "Play a sound or flash the screen. %s"
+msgstr ""
+
+#: src/Views/Behavior.vala:175
+msgid "Sound Settings…"
+msgstr ""
+
+#: src/Views/Behavior.vala:185
+msgid "Caps Lock ⇪ or Num Lock keys are pressed"
+msgstr ""
+
+#: src/Views/Behavior.vala:186
+msgid "Bounce Keys are rejected"
+msgstr ""
+
+#: src/Views/Behavior.vala:187
+msgid "Sticky Keys are pressed"
+msgstr ""
+
+#: src/Views/Behavior.vala:188
+msgid "Slow Keys are rejected"
+msgstr ""
+
+#: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
 msgstr "Pišite, da preverite vaše nastavitve"
 
@@ -626,21 +686,21 @@ msgstr ""
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:371
+#: src/Views/InputMethod.vala:374
 msgid "IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:377
 msgid "Use and manage input methods"
 msgstr ""
 
-#: src/Views/InputMethod.vala:437
+#: src/Views/InputMethod.vala:440
 #, fuzzy
 #| msgid "Type to test your layout"
 msgid "Type to test your input method"
 msgstr "Pišite, da preverite vašo razporeditev"
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:443
 #, fuzzy
 #| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
@@ -667,7 +727,7 @@ msgstr "Alt + preslednica"
 msgid "Both Shift keys together"
 msgstr "Obe tipki Shift hkrati"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:309
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -691,15 +751,15 @@ msgstr "Tipka za sestavljanje:"
 msgid "Menu"
 msgstr "Meni"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:311 src/Views/Layout.vala:323
 msgid "Right Alt"
 msgstr "Desni Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:312 src/Views/Layout.vala:324
 msgid "Right Ctrl"
 msgstr "Desni Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:313 src/Views/Layout.vala:325
 msgid "Right ⌘"
 msgstr "Desni ⌘"
 
@@ -762,56 +822,56 @@ msgstr "Preklopi zaslonsko tipkovnico"
 msgid "On-screen keyboard settings…"
 msgstr "Nastavitve tipkovnice…"
 
-#: src/Views/Layout.vala:163
+#: src/Views/Layout.vala:166
 msgid "Show in Panel"
 msgstr ""
 
-#: src/Views/Layout.vala:170
+#: src/Views/Layout.vala:173
 #, fuzzy
 #| msgid "Caps Lock"
 msgid "Caps Lock:"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:177
+#: src/Views/Layout.vala:180
 #, fuzzy
 #| msgid "as Num Lock"
 msgid "Num Lock:"
 msgstr "kot Num Lock"
 
-#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
+#: src/Views/Layout.vala:288 src/Views/Layout.vala:305
 msgid "Key to choose 3rd level:"
 msgstr "Tipka za izbiro 3. nivoja:"
 
-#: src/Views/Layout.vala:307
+#: src/Views/Layout.vala:310
 msgid "Left Alt"
 msgstr "Levi Alt"
 
-#: src/Views/Layout.vala:317
+#: src/Views/Layout.vala:320
 msgid "Key to choose 5th level:"
 msgstr "Tipka za izbiro 5. nivoja:"
 
-#: src/Views/Layout.vala:338
+#: src/Views/Layout.vala:341
 msgid "Kana Lock:"
 msgstr "Kana Lock:"
 
-#: src/Views/Layout.vala:346
+#: src/Views/Layout.vala:349
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:349
+#: src/Views/Layout.vala:352
 #, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku kot Escape:"
 
-#: src/Views/Layout.vala:366
+#: src/Views/Layout.vala:369
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Hangul/Hanja tipke na desnem Alt/Ctrl:"
 
-#: src/Views/Layout.vala:445
+#: src/Views/Layout.vala:448
 msgid "Type to test your layout"
 msgstr "Pišite, da preverite vašo razporeditev"
 
-#: src/Views/Layout.vala:448
+#: src/Views/Layout.vala:451
 #, fuzzy
 #| msgid "Input Method Settings…"
 msgid "Input Method is active"

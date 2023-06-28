@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-25 13:47+0000\n"
+"POT-Creation-Date: 2023-06-28 16:42+0000\n"
 "PO-Revision-Date: 2023-06-14 11:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr "Afegeix una disposició"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:305 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:308 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Per defecte"
 
@@ -112,59 +112,72 @@ msgstr "Teclat"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Configureu el comportament, la disposició i les dreceres del teclat."
 
-#: src/Plug.vala:56 src/Plug.vala:108 src/Plug.vala:109 src/Plug.vala:110
-#: src/Plug.vala:111 src/Plug.vala:112
+#: src/Plug.vala:55 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
+#: src/Plug.vala:110 src/Plug.vala:111
 msgid "Layout"
 msgstr "Disposició"
 
-#: src/Plug.vala:57 src/Plug.vala:113 src/Plug.vala:114 src/Plug.vala:115
-#: src/Plug.vala:116
+#: src/Plug.vala:56 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115
 msgid "Input Method"
 msgstr "Mètode d'entrada"
 
-#: src/Plug.vala:58 src/Plug.vala:117
+#: src/Plug.vala:57 src/Plug.vala:116
 msgid "Shortcuts"
 msgstr "Dreceres"
 
-#: src/Plug.vala:59 src/Plug.vala:118 src/Plug.vala:119 src/Plug.vala:120
+#: src/Plug.vala:58 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
 msgid "Behavior"
 msgstr "Comportament"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:108
 msgid "Switch layout"
 msgstr "Canvia'n la disposició"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:109
 msgid "Compose Key"
 msgstr "Tecla de composició"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:110
 msgid "⌘ key behavior"
 msgstr "⌘ comportament de les tecles"
 
-#: src/Plug.vala:112
+#: src/Plug.vala:111
 msgid "Caps Lock behavior"
 msgstr "Comportament del bloqueig de majúscules"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:113
 msgid "Switch engines"
 msgstr "Canvia els motors"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:114
 msgid "Show candidate window"
 msgstr "Mostra la finestra candidata"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:115
 msgid "Embed preedit text in application window"
 msgstr "Encasta text preeditat a la finestra de l'aplicació"
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:11
+#: src/Plug.vala:118 src/Views/Behavior.vala:136
+msgid "Bounce Keys"
+msgstr ""
+
+#: src/Plug.vala:119 src/Views/Behavior.vala:45
+msgid "Cursor Blinking"
+msgstr "Parpelleig del cursor"
+
+#: src/Plug.vala:120 src/Views/Behavior.vala:11
 msgid "Repeat Keys"
 msgstr "Tecles de repetició"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:45
-msgid "Cursor Blinking"
-msgstr "Parpelleig del cursor"
+#: src/Plug.vala:121 src/Views/Behavior.vala:103
+msgid "Slow Keys"
+msgstr ""
+
+#: src/Plug.vala:122 src/Views/Behavior.vala:79
+msgid "Sticky Keys"
+msgstr ""
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -545,7 +558,54 @@ msgstr "Velocitat:"
 msgid "Duration:"
 msgstr "Durada:"
 
-#: src/Views/Behavior.vala:81
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:89
+msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
+msgstr ""
+
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:113
+msgid "Don't accept keypresses unless held"
+msgstr ""
+
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:146
+msgid "Ignore fast duplicate keypresses "
+msgstr ""
+
+#: src/Views/Behavior.vala:169
+#, fuzzy
+#| msgid "Left Alt"
+msgid "Event Alerts"
+msgstr "Alt esquerre"
+
+#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
+#: src/Views/Behavior.vala:173
+#, c-format
+msgid "Play a sound or flash the screen. %s"
+msgstr ""
+
+#: src/Views/Behavior.vala:175
+msgid "Sound Settings…"
+msgstr ""
+
+#: src/Views/Behavior.vala:185
+msgid "Caps Lock ⇪ or Num Lock keys are pressed"
+msgstr ""
+
+#: src/Views/Behavior.vala:186
+msgid "Bounce Keys are rejected"
+msgstr ""
+
+#: src/Views/Behavior.vala:187
+msgid "Sticky Keys are pressed"
+msgstr ""
+
+#: src/Views/Behavior.vala:188
+msgid "Slow Keys are rejected"
+msgstr ""
+
+#: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
 msgstr "Teclegeu per provar la configuració."
 
@@ -603,19 +663,19 @@ msgstr "Mostra-ho sempre"
 msgid "Embed preedit text in application window:"
 msgstr "Encasta text preeditat a la finestra de l'aplicació:"
 
-#: src/Views/InputMethod.vala:371
+#: src/Views/InputMethod.vala:374
 msgid "IBus Daemon"
 msgstr "Dimoni d'iBus"
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:377
 msgid "Use and manage input methods"
 msgstr "Useu i gestioneu mètodes d'entrada"
 
-#: src/Views/InputMethod.vala:437
+#: src/Views/InputMethod.vala:440
 msgid "Type to test your input method"
 msgstr "Teclegeu per provar el mètode d'entrada."
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:443
 msgid "A keyboard layout is active"
 msgstr "Hi ha activa una disposició de teclat."
 
@@ -640,7 +700,7 @@ msgstr "Alt + espai"
 msgid "Both Shift keys together"
 msgstr "Les dues tecles de majúscules juntes"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:306
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:309
 msgid "Caps Lock"
 msgstr "Bloqueig de majúscules"
 
@@ -664,15 +724,15 @@ msgstr "Composició de tecla:"
 msgid "Menu"
 msgstr "Menú"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:308 src/Views/Layout.vala:320
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:311 src/Views/Layout.vala:323
 msgid "Right Alt"
 msgstr "Alt dreta"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:309 src/Views/Layout.vala:321
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:312 src/Views/Layout.vala:324
 msgid "Right Ctrl"
 msgstr "Ctrl dreta"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:310 src/Views/Layout.vala:322
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:313 src/Views/Layout.vala:325
 msgid "Right ⌘"
 msgstr "⌘ a la dreta"
 
@@ -728,51 +788,51 @@ msgstr "Mostra el teclat a la pantalla:"
 msgid "On-screen keyboard settings…"
 msgstr "Paràmetres del teclat a la pantalla…"
 
-#: src/Views/Layout.vala:163
+#: src/Views/Layout.vala:166
 msgid "Show in Panel"
 msgstr "Es mostra al plafó."
 
-#: src/Views/Layout.vala:170
+#: src/Views/Layout.vala:173
 msgid "Caps Lock:"
 msgstr "Bloqueig de majúscules:"
 
-#: src/Views/Layout.vala:177
+#: src/Views/Layout.vala:180
 msgid "Num Lock:"
 msgstr "Bloqueig numèric:"
 
-#: src/Views/Layout.vala:285 src/Views/Layout.vala:302
+#: src/Views/Layout.vala:288 src/Views/Layout.vala:305
 msgid "Key to choose 3rd level:"
 msgstr "Tecla per triar el 3r nivell:"
 
-#: src/Views/Layout.vala:307
+#: src/Views/Layout.vala:310
 msgid "Left Alt"
 msgstr "Alt esquerre"
 
-#: src/Views/Layout.vala:317
+#: src/Views/Layout.vala:320
 msgid "Key to choose 5th level:"
 msgstr "Tecla per triar el 5è nivell:"
 
-#: src/Views/Layout.vala:338
+#: src/Views/Layout.vala:341
 msgid "Kana Lock:"
 msgstr "Bloqueig Kana:"
 
-#: src/Views/Layout.vala:346
+#: src/Views/Layout.vala:349
 msgid "Nicola F Backspace:"
 msgstr "Retrocés Nicola F:"
 
-#: src/Views/Layout.vala:349
+#: src/Views/Layout.vala:352
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku com a escapada:"
 
-#: src/Views/Layout.vala:366
+#: src/Views/Layout.vala:369
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Tecles Hangul/Hanja a Alt/Ctrl dretes:"
 
-#: src/Views/Layout.vala:445
+#: src/Views/Layout.vala:448
 msgid "Type to test your layout"
 msgstr "Teclegeu per provar la disposició del teclat."
 
-#: src/Views/Layout.vala:448
+#: src/Views/Layout.vala:451
 msgid "Input Method is active"
 msgstr "Hi ha actiu un mètode d'entrada."
 
