@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 16:42+0000\n"
-"PO-Revision-Date: 2022-10-21 14:16+0000\n"
+"PO-Revision-Date: 2023-06-28 21:56+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -162,7 +162,7 @@ msgstr "Вставить предварительно измененный те�
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:136
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Отскакивающие клавиши"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
@@ -174,11 +174,11 @@ msgstr "Повтор клавиш"
 
 #: src/Plug.vala:121 src/Views/Behavior.vala:103
 msgid "Slow Keys"
-msgstr ""
+msgstr "Медленные клавиши"
 
 #: src/Plug.vala:122 src/Views/Behavior.vala:79
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Залипание клавиш"
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -562,17 +562,17 @@ msgstr "Длительность:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "Используйте ⌘, Alt, Ctrl или Shift последовательно"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Принимать нажатия на клавиатуру только после зажатия клавиши"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
 msgid "Ignore fast duplicate keypresses "
-msgstr ""
+msgstr "Игнорировать быстрые повторяющиеся нажатия "
 
 #: src/Views/Behavior.vala:169
 #, fuzzy
@@ -584,27 +584,27 @@ msgstr "Левый Alt"
 #: src/Views/Behavior.vala:173
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Воспроизводить звук или подсвечивать экран. %s"
 
 #: src/Views/Behavior.vala:175
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Параметры звука…"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Caps Lock ⇪ или Num Lock нажаты"
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Отскакивающие клавиши отклонены"
 
 #: src/Views/Behavior.vala:187
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Залипающие клавиши нажаты"
 
 #: src/Views/Behavior.vala:188
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Медленные клавиши отклонены"
 
 #: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
