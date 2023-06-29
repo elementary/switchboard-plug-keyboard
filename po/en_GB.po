@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 22:14+0000\n"
-"PO-Revision-Date: 2023-06-28 21:56+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/en_GB/>\n"
 "Language: en_GB\n"
@@ -161,7 +161,7 @@ msgstr "Embed preedit text in application window"
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:136
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Bounce Keys"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
@@ -173,11 +173,11 @@ msgstr "Repeat Keys"
 
 #: src/Plug.vala:121 src/Views/Behavior.vala:103
 msgid "Slow Keys"
-msgstr ""
+msgstr "Slow Keys"
 
 #: src/Plug.vala:122 src/Views/Behavior.vala:79
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Sticky Keys"
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -561,17 +561,17 @@ msgstr "Duration:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Don't accept keypresses unless held"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Ignore fast duplicate keypresses"
 
 #: src/Views/Behavior.vala:169
 msgid "Event Alerts"
@@ -581,27 +581,27 @@ msgstr "Event Alerts"
 #: src/Views/Behavior.vala:173
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Play a sound or flash the screen. %s"
 
 #: src/Views/Behavior.vala:175
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Sound Settings…"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Caps Lock ⇪ or Num Lock keys are pressed"
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Bounce Keys are rejected"
 
 #: src/Views/Behavior.vala:187
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Sticky Keys are pressed"
 
 #: src/Views/Behavior.vala:188
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Slow Keys are rejected"
 
 #: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
