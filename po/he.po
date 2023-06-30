@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 22:14+0000\n"
-"PO-Revision-Date: 2023-06-28 21:56+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/he/>\n"
 "Language: he\n"
@@ -161,7 +161,7 @@ msgstr "הטמעת טקסט קדם העריכה בחלון היישום"
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:136
 msgid "Bounce Keys"
-msgstr ""
+msgstr "מקשים חוזרים"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
@@ -561,17 +561,17 @@ msgstr "משך:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "אפשר להשתמש במקשים ⌘, Alt,‏ Ctrl או Shift בצירוף"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "לא לקבל את לחיצות המקשים אלא אם הוחזקו"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "התעלמות מלחיצות מקשים כפולות מהירות"
 
 #: src/Views/Behavior.vala:169
 msgid "Event Alerts"
@@ -581,27 +581,27 @@ msgstr "התראות אירועים"
 #: src/Views/Behavior.vala:173
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "נגינת צליל או הבהוב המסך. %s"
 
 #: src/Views/Behavior.vala:175
 msgid "Sound Settings…"
-msgstr ""
+msgstr "הגדרות צליל…"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "נלחצו המקשים Caps Lock ⇪‎ או Num Lock"
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "מקשים חוזרים נדחים"
 
 #: src/Views/Behavior.vala:187
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "מקשים דביקים נלחצו"
 
 #: src/Views/Behavior.vala:188
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "מקשים אטיים נדחים"
 
 #: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
