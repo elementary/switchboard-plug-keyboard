@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 22:14+0000\n"
-"PO-Revision-Date: 2022-10-26 12:42+0000\n"
+"PO-Revision-Date: 2023-07-03 20:07+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -163,7 +163,7 @@ msgstr "Upota esimuokattu teksti sovellusikkunaan"
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:136
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Kimmonäppäimet"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
@@ -175,11 +175,11 @@ msgstr "Toistonäppäimet"
 
 #: src/Plug.vala:121 src/Views/Behavior.vala:103
 msgid "Slow Keys"
-msgstr ""
+msgstr "Hitaat näppäimet"
 
 #: src/Plug.vala:122 src/Views/Behavior.vala:79
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Pohjaan jäävät näppäimet"
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -568,28 +568,26 @@ msgstr ""
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Älä hyväksy näppäinpainalluksia ellei näppäimiä pidetä pohjassa"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Älä huomioi saman näppäimen nopeita kaksoispainalluksia"
 
 #: src/Views/Behavior.vala:169
-#, fuzzy
-#| msgid "Left Alt"
 msgid "Event Alerts"
-msgstr "Vasen Alt"
+msgstr "Tapahtumaäänet"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:173
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Toista ääni tai väläytä näyttöä. %s"
 
 #: src/Views/Behavior.vala:175
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Ääniasetukset…"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
@@ -597,15 +595,15 @@ msgstr ""
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Kimmonäppäimet hylätään"
 
 #: src/Views/Behavior.vala:187
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Pohjaan jääviä näppäimiä painetaan"
 
 #: src/Views/Behavior.vala:188
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Hitaat näppäimet hylätään"
 
 #: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
