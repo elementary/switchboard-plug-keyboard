@@ -8,16 +8,16 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 22:14+0000\n"
-"PO-Revision-Date: 2023-06-28 21:56+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-07 21:07+0000\n"
+"Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 4.17\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
@@ -162,7 +162,7 @@ msgstr "Вставити попередньо змінений текст у в�
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:136
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Пружні клавіші"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:45
 msgid "Cursor Blinking"
@@ -174,11 +174,11 @@ msgstr "Повторення клавіш"
 
 #: src/Plug.vala:121 src/Views/Behavior.vala:103
 msgid "Slow Keys"
-msgstr ""
+msgstr "Повільні клавіші"
 
 #: src/Plug.vala:122 src/Views/Behavior.vala:79
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Залипання клавіш"
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -562,17 +562,17 @@ msgstr "Тривалість:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "Натисніть клавіші ⌘, Alt, Ctrl або Shift послідовно"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Розпізнавати натискання клавіш лише якщо їх затиснено"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Ігнорувати швидко повторене натискання клавіш"
 
 #: src/Views/Behavior.vala:169
 msgid "Event Alerts"
@@ -582,27 +582,27 @@ msgstr "Попередження про події"
 #: src/Views/Behavior.vala:173
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Відтворювати звук або блимати екраном. %s"
 
 #: src/Views/Behavior.vala:175
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Налаштування звуку…"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Натиснено клавіші Caps Lock ⇪ або Num Lock"
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Пружні клавіші відхилено"
 
 #: src/Views/Behavior.vala:187
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Натиснено липкі клавіші"
 
 #: src/Views/Behavior.vala:188
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Повільні клавіші відхилено"
 
 #: src/Views/Behavior.vala:205
 msgid "Type to test your settings"
