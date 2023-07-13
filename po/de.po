@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-28 22:14+0000\n"
-"PO-Revision-Date: 2023-06-28 21:56+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-14 15:07+0000\n"
+"Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
 "Language: de\n"
@@ -562,17 +562,17 @@ msgstr "Dauer:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "⌘., Alt-, Strg- oder Umschalttasten nacheinander betätigen"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Tastenbetätigung nur dann akzeptieren, wenn diese gehalten wird"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:146
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Schnell aufeinanderfolgende Tastenbetätigungen ignorieren"
 
 #: src/Views/Behavior.vala:169
 msgid "Event Alerts"
@@ -582,15 +582,15 @@ msgstr "Ereigniswarnungen"
 #: src/Views/Behavior.vala:173
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Ton wiedergaben oder den Bildschirm blinken lassen. %s"
 
 #: src/Views/Behavior.vala:175
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Audioeinstellungen …"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Feststelltaste ⇪ oder Num Lock sind gedrückt"
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
