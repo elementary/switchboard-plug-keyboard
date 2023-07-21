@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:36+0000\n"
+"POT-Creation-Date: 2023-07-21 23:46+0000\n"
 "PO-Revision-Date: 2022-10-24 02:54+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -31,54 +31,55 @@ msgstr "הגדרת התנהגות המקלדת, הפריסות ומקשי הקי
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:58
-#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:82
-#: data/keyboard.metainfo.xml.in:96
+#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
+#: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
+#: data/keyboard.metainfo.xml.in:98
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
-#: data/keyboard.metainfo.xml.in:42 data/keyboard.metainfo.xml.in:61
-#: data/keyboard.metainfo.xml.in:71 data/keyboard.metainfo.xml.in:84
-#: data/keyboard.metainfo.xml.in:98
+#: data/keyboard.metainfo.xml.in:42
+msgid "Show the values associated with sliders while dragging"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
+#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
+#: data/keyboard.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/keyboard.metainfo.xml.in:52 data/keyboard.metainfo.xml.in:78
-#: data/keyboard.metainfo.xml.in:91
+#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:94
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/keyboard.metainfo.xml.in:54
+#: data/keyboard.metainfo.xml.in:70
 msgid "Revert shortcuts to default"
 msgstr "קיצורי הדרך הוחזרו לברירת המחדל"
 
-#: data/keyboard.metainfo.xml.in:55
+#: data/keyboard.metainfo.xml.in:71
 msgid "Easily disable a shortcut"
 msgstr "אפשר להשבית קיצורי דרך בקלות"
 
-#: data/keyboard.metainfo.xml.in:56
+#: data/keyboard.metainfo.xml.in:72
 msgid "Support Rime input method for Chinese"
 msgstr "נוספה תמיכה בשיטת הקלט Rime לסינית"
 
-#: data/keyboard.metainfo.xml.in:60
+#: data/keyboard.metainfo.xml.in:76
 msgid "Remove custom shortcuts from their menu"
 msgstr "הוסרו קיצורי דרך מותאמים אישית מהתפריט שלהם"
 
-#: data/keyboard.metainfo.xml.in:70
+#: data/keyboard.metainfo.xml.in:86
 msgid "Update for OS 7"
 msgstr "עדכון ל־OS 7"
 
-#: data/keyboard.metainfo.xml.in:80
+#: data/keyboard.metainfo.xml.in:96
 msgid "Open Multitasking View with Super"
 msgstr "פתיחת תצוגת ריבוי משימות עם מקש Super"
 
-#: data/keyboard.metainfo.xml.in:93
-msgid "Redesigned custom shortcuts view"
-msgstr "תצוגת קיצורי דרך משלך עוצבה מחדש"
+#~ msgid "Redesigned custom shortcuts view"
+#~ msgstr "תצוגת קיצורי דרך משלך עוצבה מחדש"
 
-#: data/keyboard.metainfo.xml.in:94
-msgid "On-screen keyboard switch in Layouts tab"
-msgstr "בורר מקלדת על המסך בלשונית פריסות"
+#~ msgid "On-screen keyboard switch in Layouts tab"
+#~ msgstr "בורר מקלדת על המסך בלשונית פריסות"
 
 #~ msgid "Ensure IBus automatically starts on login when needed"
 #~ msgstr "תתבצע בדיקה ש־IBus מופעל אוטומטית עם הכניסה למערכת בעת הצורך"

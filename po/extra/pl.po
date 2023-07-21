@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:36+0000\n"
+"POT-Creation-Date: 2023-07-21 23:46+0000\n"
 "PO-Revision-Date: 2022-10-23 10:57+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -32,54 +32,55 @@ msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 msgid "elementary, Inc."
 msgstr ""
 
-#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:58
-#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:82
-#: data/keyboard.metainfo.xml.in:96
+#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
+#: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
+#: data/keyboard.metainfo.xml.in:98
 msgid "Minor updates:"
 msgstr "Mniejsze aktualizacje:"
 
-#: data/keyboard.metainfo.xml.in:42 data/keyboard.metainfo.xml.in:61
-#: data/keyboard.metainfo.xml.in:71 data/keyboard.metainfo.xml.in:84
-#: data/keyboard.metainfo.xml.in:98
+#: data/keyboard.metainfo.xml.in:42
+msgid "Show the values associated with sliders while dragging"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
+#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
+#: data/keyboard.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "Zaktualizowane tłumaczenia"
 
-#: data/keyboard.metainfo.xml.in:52 data/keyboard.metainfo.xml.in:78
-#: data/keyboard.metainfo.xml.in:91
+#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:94
 msgid "New features:"
 msgstr "Nowe funkcje:"
 
-#: data/keyboard.metainfo.xml.in:54
+#: data/keyboard.metainfo.xml.in:70
 msgid "Revert shortcuts to default"
 msgstr "Przywrócenie skrótów do wartości domyślnych"
 
-#: data/keyboard.metainfo.xml.in:55
+#: data/keyboard.metainfo.xml.in:71
 msgid "Easily disable a shortcut"
 msgstr "Łatwe wyłączanie skrótów"
 
-#: data/keyboard.metainfo.xml.in:56
+#: data/keyboard.metainfo.xml.in:72
 msgid "Support Rime input method for Chinese"
 msgstr "Wsparcie Rime jako urządzenia wejścia w języku chińskim"
 
-#: data/keyboard.metainfo.xml.in:60
+#: data/keyboard.metainfo.xml.in:76
 msgid "Remove custom shortcuts from their menu"
 msgstr "Usunięto niestandardowe skróty z ich menu"
 
-#: data/keyboard.metainfo.xml.in:70
+#: data/keyboard.metainfo.xml.in:86
 msgid "Update for OS 7"
 msgstr "Aktualizacja OS 7"
 
-#: data/keyboard.metainfo.xml.in:80
+#: data/keyboard.metainfo.xml.in:96
 msgid "Open Multitasking View with Super"
 msgstr "Otwieranie widoku wielu zadań przy użyciu Super"
 
-#: data/keyboard.metainfo.xml.in:93
-msgid "Redesigned custom shortcuts view"
-msgstr "Przeprojektowano widok niestandardowych skrótów"
+#~ msgid "Redesigned custom shortcuts view"
+#~ msgstr "Przeprojektowano widok niestandardowych skrótów"
 
-#: data/keyboard.metainfo.xml.in:94
-msgid "On-screen keyboard switch in Layouts tab"
-msgstr "Dodano przełącznik klawiatury ekranowej w karcie układów"
+#~ msgid "On-screen keyboard switch in Layouts tab"
+#~ msgstr "Dodano przełącznik klawiatury ekranowej w karcie układów"
 
 #~ msgid "Ensure IBus automatically starts on login when needed"
 #~ msgstr ""
