@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 22:14+0000\n"
+"POT-Creation-Date: 2023-07-21 23:36+0000\n"
 "PO-Revision-Date: 2022-07-15 22:41+0000\n"
 "Last-Translator: ActualDisaster2447 <1jbe1vkry@mozmail.com>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
@@ -19,65 +19,64 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.4.2\n"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
+#: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
 msgstr "Tastatureinstellungen"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
+#: data/keyboard.metainfo.xml.in:11
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Verhalten und Belegung der Tastatur sowie Tastenkürzel einrichten"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:41
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:55
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:69
+#: data/keyboard.metainfo.xml.in:33
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:58
+#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:82
+#: data/keyboard.metainfo.xml.in:96
 msgid "Minor updates:"
 msgstr "Kleinere Aktualisierungen:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:44
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
+#: data/keyboard.metainfo.xml.in:42 data/keyboard.metainfo.xml.in:61
+#: data/keyboard.metainfo.xml.in:71 data/keyboard.metainfo.xml.in:84
+#: data/keyboard.metainfo.xml.in:98
 msgid "Updated translations"
 msgstr "Aktualisierte Übersetzungen"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
+#: data/keyboard.metainfo.xml.in:52 data/keyboard.metainfo.xml.in:78
+#: data/keyboard.metainfo.xml.in:91
 msgid "New features:"
 msgstr "Neue Funktionen:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+#: data/keyboard.metainfo.xml.in:54
 msgid "Revert shortcuts to default"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+#: data/keyboard.metainfo.xml.in:55
 msgid "Easily disable a shortcut"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/keyboard.metainfo.xml.in:56
 msgid "Support Rime input method for Chinese"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+#: data/keyboard.metainfo.xml.in:60
 msgid "Remove custom shortcuts from their menu"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
+#: data/keyboard.metainfo.xml.in:70
 msgid "Update for OS 7"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
+#: data/keyboard.metainfo.xml.in:80
 msgid "Open Multitasking View with Super"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
+#: data/keyboard.metainfo.xml.in:93
 msgid "Redesigned custom shortcuts view"
 msgstr ""
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
+#: data/keyboard.metainfo.xml.in:94
 msgid "On-screen keyboard switch in Layouts tab"
 msgstr ""
 
