@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-21 23:46+0000\n"
-"PO-Revision-Date: 2022-10-29 01:59+0000\n"
+"PO-Revision-Date: 2023-07-23 02:34+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -29,7 +29,7 @@ msgstr "キーボードの挙動、レイアウト、ショートカットを設
 
 #: data/keyboard.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
 #: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
@@ -39,7 +39,7 @@ msgstr "そのほかのアップデート:"
 
 #: data/keyboard.metainfo.xml.in:42
 msgid "Show the values associated with sliders while dragging"
-msgstr ""
+msgstr "スライダーをドラッグ中に値を表示するように修正"
 
 #: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
 #: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
