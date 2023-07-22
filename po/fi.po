@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-21 23:46+0000\n"
-"PO-Revision-Date: 2023-07-03 20:07+0000\n"
+"PO-Revision-Date: 2023-07-23 02:34+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -563,7 +563,7 @@ msgstr "Kesto:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "Käytä näppäimiä ⌘, Alt, Ctrl tai Shift peräkkäin sarjassa"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113
@@ -591,7 +591,7 @@ msgstr "Ääniasetukset…"
 
 #: src/Views/Behavior.vala:185
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Näppäimiä Caps Lock ⇪ tai Num Lock painetaan"
 
 #: src/Views/Behavior.vala:186
 msgid "Bounce Keys are rejected"
