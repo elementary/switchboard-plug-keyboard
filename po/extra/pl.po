@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-21 23:46+0000\n"
-"PO-Revision-Date: 2022-10-23 10:57+0000\n"
+"PO-Revision-Date: 2023-07-24 08:07+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -30,7 +30,7 @@ msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 
 #: data/keyboard.metainfo.xml.in:33
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
 #: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
@@ -41,6 +41,8 @@ msgstr "Mniejsze aktualizacje:"
 #: data/keyboard.metainfo.xml.in:42
 msgid "Show the values associated with sliders while dragging"
 msgstr ""
+"Przy przeciąganiu suwaków pokazywane są teraz odpowiadające położeniu "
+"wartości"
 
 #: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
 #: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
