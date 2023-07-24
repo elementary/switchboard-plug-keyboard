@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 22:14+0000\n"
+"POT-Creation-Date: 2023-07-21 23:46+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
@@ -561,7 +561,8 @@ msgstr "再生時間:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:89
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr "⌘、Alt、Ctrl、および Shift を含む操作を、キーを1つずつ押すことで実現します"
+msgstr ""
+"⌘、Alt、Ctrl、および Shift を含む操作を、キーを1つずつ押すことで実現します"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:113

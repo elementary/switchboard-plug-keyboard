@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 22:14+0000\n"
+"POT-Creation-Date: 2023-07-21 23:46+0000\n"
 "PO-Revision-Date: 2023-04-06 22:59+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
@@ -19,66 +19,66 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Weblate 4.16.4\n"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
+#: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
 msgstr "Billentyűzetbeállítások"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
+#: data/keyboard.metainfo.xml.in:11
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr ""
 "A billentyűzet viselkedésének és kiosztásának, valamint a billentyűparancsok "
 "beállítása"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:41
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:55
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:69
+#: data/keyboard.metainfo.xml.in:33
+msgid "elementary, Inc."
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
+#: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
+#: data/keyboard.metainfo.xml.in:98
 msgid "Minor updates:"
 msgstr "Kisebb frissítések:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:44
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
+#: data/keyboard.metainfo.xml.in:42
+msgid "Show the values associated with sliders while dragging"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
+#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
+#: data/keyboard.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "Frissített fordítások"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
+#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:94
 msgid "New features:"
 msgstr "Új funkciók:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+#: data/keyboard.metainfo.xml.in:70
 msgid "Revert shortcuts to default"
 msgstr "Gyorsparancsok visszaállítása alapértelmezettre"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+#: data/keyboard.metainfo.xml.in:71
 msgid "Easily disable a shortcut"
 msgstr "Gyorsparancsok egyszerű letiltása"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/keyboard.metainfo.xml.in:72
 msgid "Support Rime input method for Chinese"
 msgstr "A kínai Rime beviteli mód támogatása"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+#: data/keyboard.metainfo.xml.in:76
 msgid "Remove custom shortcuts from their menu"
 msgstr "Az egyéni gyorsparancsok eltávolítása a menüjükből"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
+#: data/keyboard.metainfo.xml.in:86
 msgid "Update for OS 7"
 msgstr "Frissítés OS 7-hez"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
+#: data/keyboard.metainfo.xml.in:96
 msgid "Open Multitasking View with Super"
 msgstr "Többfeladatos nézet megnyitása a Super gombbal"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
-msgid "Redesigned custom shortcuts view"
-msgstr "Újratervezett egyedi gyorsparancsok nézet"
+#~ msgid "Redesigned custom shortcuts view"
+#~ msgstr "Újratervezett egyedi gyorsparancsok nézet"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
-msgid "On-screen keyboard switch in Layouts tab"
-msgstr "A kiosztások oldalon kapcsolható a képernyőn megjelenő billentyűzet"
+#~ msgid "On-screen keyboard switch in Layouts tab"
+#~ msgstr "A kiosztások oldalon kapcsolható a képernyőn megjelenő billentyűzet"

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-06-28 22:14+0000\n"
-"PO-Revision-Date: 2022-10-24 02:54+0000\n"
+"POT-Creation-Date: 2023-07-21 23:46+0000\n"
+"PO-Revision-Date: 2023-07-23 02:34+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/he/>\n"
@@ -17,69 +17,69 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Weblate 4.4.2\n"
+"X-Generator: Weblate 4.17\n"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:5
+#: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
 msgstr "הגדרות מקלדת"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:6
+#: data/keyboard.metainfo.xml.in:11
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "הגדרת התנהגות המקלדת, הפריסות ומקשי הקיצור"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:13
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:31
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:41
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:55
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:69
+#: data/keyboard.metainfo.xml.in:33
+msgid "elementary, Inc."
+msgstr "elementary בע״מ"
+
+#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
+#: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
+#: data/keyboard.metainfo.xml.in:98
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:15
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:34
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:44
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:57
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:71
+#: data/keyboard.metainfo.xml.in:42
+msgid "Show the values associated with sliders while dragging"
+msgstr "הערכים שקשורים למחווני הגלילה מופיעים בעת גרירה"
+
+#: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
+#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
+#: data/keyboard.metainfo.xml.in:100
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:25
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:51
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:64
+#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:94
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:27
+#: data/keyboard.metainfo.xml.in:70
 msgid "Revert shortcuts to default"
 msgstr "קיצורי הדרך הוחזרו לברירת המחדל"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:28
+#: data/keyboard.metainfo.xml.in:71
 msgid "Easily disable a shortcut"
 msgstr "אפשר להשבית קיצורי דרך בקלות"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:29
+#: data/keyboard.metainfo.xml.in:72
 msgid "Support Rime input method for Chinese"
 msgstr "נוספה תמיכה בשיטת הקלט Rime לסינית"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:33
+#: data/keyboard.metainfo.xml.in:76
 msgid "Remove custom shortcuts from their menu"
 msgstr "הוסרו קיצורי דרך מותאמים אישית מהתפריט שלהם"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:43
+#: data/keyboard.metainfo.xml.in:86
 msgid "Update for OS 7"
 msgstr "עדכון ל־OS 7"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:53
+#: data/keyboard.metainfo.xml.in:96
 msgid "Open Multitasking View with Super"
 msgstr "פתיחת תצוגת ריבוי משימות עם מקש Super"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:66
-msgid "Redesigned custom shortcuts view"
-msgstr "תצוגת קיצורי דרך משלך עוצבה מחדש"
+#~ msgid "Redesigned custom shortcuts view"
+#~ msgstr "תצוגת קיצורי דרך משלך עוצבה מחדש"
 
-#: data/io.elementary.switchboard.keyboard.appdata.xml.in:67
-msgid "On-screen keyboard switch in Layouts tab"
-msgstr "בורר מקלדת על המסך בלשונית פריסות"
+#~ msgid "On-screen keyboard switch in Layouts tab"
+#~ msgstr "בורר מקלדת על המסך בלשונית פריסות"
 
 #~ msgid "Ensure IBus automatically starts on login when needed"
 #~ msgstr "תתבצע בדיקה ש־IBus מופעל אוטומטית עם הכניסה למערכת בעת הצורך"
