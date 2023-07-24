@@ -12,16 +12,16 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot-layout.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-layout.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot-input-method.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-input-method.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot-shortcuts.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-shortcuts.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/master/data/screenshot-behavior.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-behavior.png</image>
     </screenshot>
   </screenshots>
 
@@ -38,7 +38,7 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
-    <release version="3.2.0" date="2023-07-20" urgency="medium">
+    <release version="3.2.0" date="2023-07-24" urgency="medium">
       <description>
         <p>Minor updates:</p>
         <ul>
