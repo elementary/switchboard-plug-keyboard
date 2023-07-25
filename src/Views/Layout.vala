@@ -157,10 +157,6 @@ namespace Pantheon.Keyboard {
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
             attach (advanced_settings, 1, 4, 2);
-            attach (onscreen_keyboard_header, 1, 5, 1, 1);
-            attach (onscreen_keyboard_label, 1, 6, 1, 1);
-            attach (onscreen_keyboard_switch, 2, 6, 1);
-            attach (onscreen_keyboard_settings, 2, 7, 1);
 
             attach (entry_test, 1, 11, 2);
 
@@ -193,19 +189,6 @@ namespace Pantheon.Keyboard {
                     overlay_key_combo.active = 3;
                     break;
             }
-
-            onscreen_keyboard_settings.clicked.connect (() => {
-                try {
-                    var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, AppInfoCreateFlags.NONE);
-                    appinfo.launch (null, null);
-                } catch (Error e) {
-                    warning ("Unable to launch onboard-settings: %s", e.message);
-                }
-            });
-
-            var applications_settings = new GLib.Settings ("org.gnome.desktop.a11y.applications");
-
-            applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", SettingsBindFlags.DEFAULT);
 
             overlay_key_combo.changed.connect (() => {
                 var combo_active = overlay_key_combo.active;
