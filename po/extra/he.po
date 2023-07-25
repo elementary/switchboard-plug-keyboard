@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:46+0000\n"
+"POT-Creation-Date: 2023-07-25 18:18+0000\n"
 "PO-Revision-Date: 2023-07-23 02:34+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
@@ -27,51 +27,51 @@ msgstr "הגדרות מקלדת"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "הגדרת התנהגות המקלדת, הפריסות ומקשי הקיצור"
 
-#: data/keyboard.metainfo.xml.in:33
+#: data/keyboard.metainfo.xml.in:36
 msgid "elementary, Inc."
 msgstr "elementary בע״מ"
 
-#: data/keyboard.metainfo.xml.in:40 data/keyboard.metainfo.xml.in:56
-#: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:84
-#: data/keyboard.metainfo.xml.in:98
+#: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:59
+#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
+#: data/keyboard.metainfo.xml.in:101
 msgid "Minor updates:"
 msgstr "עדכונים משניים:"
 
-#: data/keyboard.metainfo.xml.in:42
+#: data/keyboard.metainfo.xml.in:45
 msgid "Show the values associated with sliders while dragging"
 msgstr "הערכים שקשורים למחווני הגלילה מופיעים בעת גרירה"
 
-#: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:58
-#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
-#: data/keyboard.metainfo.xml.in:100
+#: data/keyboard.metainfo.xml.in:46 data/keyboard.metainfo.xml.in:61
+#: data/keyboard.metainfo.xml.in:80 data/keyboard.metainfo.xml.in:90
+#: data/keyboard.metainfo.xml.in:103
 msgid "Updated translations"
 msgstr "תרגומים עודכנו"
 
-#: data/keyboard.metainfo.xml.in:68 data/keyboard.metainfo.xml.in:94
+#: data/keyboard.metainfo.xml.in:71 data/keyboard.metainfo.xml.in:97
 msgid "New features:"
 msgstr "יכולות חדשות:"
 
-#: data/keyboard.metainfo.xml.in:70
+#: data/keyboard.metainfo.xml.in:73
 msgid "Revert shortcuts to default"
 msgstr "קיצורי הדרך הוחזרו לברירת המחדל"
 
-#: data/keyboard.metainfo.xml.in:71
+#: data/keyboard.metainfo.xml.in:74
 msgid "Easily disable a shortcut"
 msgstr "אפשר להשבית קיצורי דרך בקלות"
 
-#: data/keyboard.metainfo.xml.in:72
+#: data/keyboard.metainfo.xml.in:75
 msgid "Support Rime input method for Chinese"
 msgstr "נוספה תמיכה בשיטת הקלט Rime לסינית"
 
-#: data/keyboard.metainfo.xml.in:76
+#: data/keyboard.metainfo.xml.in:79
 msgid "Remove custom shortcuts from their menu"
 msgstr "הוסרו קיצורי דרך מותאמים אישית מהתפריט שלהם"
 
-#: data/keyboard.metainfo.xml.in:86
+#: data/keyboard.metainfo.xml.in:89
 msgid "Update for OS 7"
 msgstr "עדכון ל־OS 7"
 
-#: data/keyboard.metainfo.xml.in:96
+#: data/keyboard.metainfo.xml.in:99
 msgid "Open Multitasking View with Super"
 msgstr "פתיחת תצוגת ריבוי משימות עם מקש Super"
 
