@@ -162,39 +162,6 @@ namespace Pantheon.Keyboard {
             attach (onscreen_keyboard_switch, 2, 6, 1);
             attach (onscreen_keyboard_settings, 2, 7, 1);
 
-            if (GLib.SettingsSchemaSource.get_default ().lookup ("io.elementary.wingpanel.keyboard", true) != null) {
-                var indicator_header = new Granite.HeaderLabel (_("Show in Panel")) {
-                    halign = Gtk.Align.END,
-                    xalign = 1
-                };
-
-                size_group[0].add_widget (indicator_header);
-
-                var caps_lock_indicator_label = new SettingsLabel (_("Caps Lock:"), size_group[0]);
-
-                var caps_lock_indicator_switch = new Gtk.Switch () {
-                    halign = Gtk.Align.START,
-                    valign = Gtk.Align.CENTER
-                };
-
-                var num_lock_indicator_label = new SettingsLabel (_("Num Lock:"), size_group[0]);
-
-                var num_lock_indicator_switch = new Gtk.Switch () {
-                    halign = Gtk.Align.START,
-                    valign = Gtk.Align.CENTER
-                };
-
-                var indicator_settings = new GLib.Settings ("io.elementary.wingpanel.keyboard");
-                indicator_settings.bind ("capslock", caps_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
-                indicator_settings.bind ("numlock", num_lock_indicator_switch, "active", SettingsBindFlags.DEFAULT);
-
-                attach (indicator_header, 1, 8);
-                attach (caps_lock_indicator_label, 1, 9);
-                attach (caps_lock_indicator_switch, 2, 9);
-                attach (num_lock_indicator_label, 1, 10);
-                attach (num_lock_indicator_switch, 2, 10);
-            }
-
             attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
