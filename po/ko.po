@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:46+0000\n"
+"POT-Creation-Date: 2023-07-25 18:18+0000\n"
 "PO-Revision-Date: 2022-08-06 20:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr "레이아웃 추가"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:308 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:275 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "기본"
 
@@ -699,7 +699,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "Shift 키 2개 동시 누름"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:309
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:276
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -723,15 +723,15 @@ msgstr "조합 키:"
 msgid "Menu"
 msgstr "메뉴"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:311 src/Views/Layout.vala:323
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:278 src/Views/Layout.vala:290
 msgid "Right Alt"
 msgstr "오른쪽 Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:312 src/Views/Layout.vala:324
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:279 src/Views/Layout.vala:291
 msgid "Right Ctrl"
 msgstr "오른쪽 Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:313 src/Views/Layout.vala:325
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:280 src/Views/Layout.vala:292
 msgid "Right ⌘"
 msgstr "오른쪽 ⌘"
 
@@ -787,51 +787,39 @@ msgstr "화면 키보드 표시:"
 msgid "On-screen keyboard settings…"
 msgstr "스크린 키보드 설정…"
 
-#: src/Views/Layout.vala:166
-msgid "Show in Panel"
-msgstr "패널에 표시"
-
-#: src/Views/Layout.vala:173
-msgid "Caps Lock:"
-msgstr "Caps Lock:"
-
-#: src/Views/Layout.vala:180
-msgid "Num Lock:"
-msgstr "Num Lock:"
-
-#: src/Views/Layout.vala:288 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:255 src/Views/Layout.vala:272
 msgid "Key to choose 3rd level:"
 msgstr "3단계 레벨 선택 키:"
 
-#: src/Views/Layout.vala:310
+#: src/Views/Layout.vala:277
 msgid "Left Alt"
 msgstr "왼쪽 Alt"
 
-#: src/Views/Layout.vala:320
+#: src/Views/Layout.vala:287
 msgid "Key to choose 5th level:"
 msgstr "5단계 레벨 선택 키:"
 
-#: src/Views/Layout.vala:341
+#: src/Views/Layout.vala:308
 msgid "Kana Lock:"
 msgstr "가나 잠금:"
 
-#: src/Views/Layout.vala:349
+#: src/Views/Layout.vala:316
 msgid "Nicola F Backspace:"
 msgstr "NICOLA-F 식 Backspace:"
 
-#: src/Views/Layout.vala:352
+#: src/Views/Layout.vala:319
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "전각과 반각 키를 Esc로 사용:"
 
-#: src/Views/Layout.vala:369
+#: src/Views/Layout.vala:336
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "한글/한자 키 오른쪽 Alt/Ctrl 적용:"
 
-#: src/Views/Layout.vala:448
+#: src/Views/Layout.vala:415
 msgid "Type to test your layout"
 msgstr "글자를 입력해서 레이아웃 설정을 확인해 보세요"
 
-#: src/Views/Layout.vala:451
+#: src/Views/Layout.vala:418
 msgid "Input Method is active"
 msgstr "한글 입력기 사용 중"
 
@@ -904,6 +892,15 @@ msgstr "%s는 이미 %s에서 사용하고 있습니다"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "기본"
+
+#~ msgid "Show in Panel"
+#~ msgstr "패널에 표시"
+
+#~ msgid "Caps Lock:"
+#~ msgstr "Caps Lock:"
+
+#~ msgid "Num Lock:"
+#~ msgstr "Num Lock:"
 
 #~ msgid "milliseconds"
 #~ msgstr "밀리초"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:46+0000\n"
+"POT-Creation-Date: 2023-07-25 18:18+0000\n"
 "PO-Revision-Date: 2022-02-18 04:43+0000\n"
 "Last-Translator: Jose Manuel Hernandez Farias <ing.josemhf@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr "Añadir disposición"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:308 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:275 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Predeterminado"
 
@@ -701,7 +701,7 @@ msgstr "Alt + Espacio"
 msgid "Both Shift keys together"
 msgstr "Ambas teclas Mayús a la vez"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:309
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:276
 msgid "Caps Lock"
 msgstr "Bloq Mayús"
 
@@ -725,15 +725,15 @@ msgstr "Tecla modificadora:"
 msgid "Menu"
 msgstr "Menú"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:311 src/Views/Layout.vala:323
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:278 src/Views/Layout.vala:290
 msgid "Right Alt"
 msgstr "Alt derecha"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:312 src/Views/Layout.vala:324
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:279 src/Views/Layout.vala:291
 msgid "Right Ctrl"
 msgstr "Ctrl derecha"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:313 src/Views/Layout.vala:325
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:280 src/Views/Layout.vala:292
 msgid "Right ⌘"
 msgstr "⌘ derecha"
 
@@ -789,51 +789,39 @@ msgstr "Mostrar teclado en pantalla:"
 msgid "On-screen keyboard settings…"
 msgstr "Configuración del teclado en pantalla…"
 
-#: src/Views/Layout.vala:166
-msgid "Show in Panel"
-msgstr "Mostrar en el panel"
-
-#: src/Views/Layout.vala:173
-msgid "Caps Lock:"
-msgstr "Bloq Mayús:"
-
-#: src/Views/Layout.vala:180
-msgid "Num Lock:"
-msgstr "Bloq Num:"
-
-#: src/Views/Layout.vala:288 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:255 src/Views/Layout.vala:272
 msgid "Key to choose 3rd level:"
 msgstr "Tecla para elegir el 3.ᵉʳ nivel:"
 
-#: src/Views/Layout.vala:310
+#: src/Views/Layout.vala:277
 msgid "Left Alt"
 msgstr "Alt izquierda"
 
-#: src/Views/Layout.vala:320
+#: src/Views/Layout.vala:287
 msgid "Key to choose 5th level:"
 msgstr "Tecla para elegir el 5.º nivel:"
 
-#: src/Views/Layout.vala:341
+#: src/Views/Layout.vala:308
 msgid "Kana Lock:"
 msgstr "Bloqueo de kana:"
 
-#: src/Views/Layout.vala:349
+#: src/Views/Layout.vala:316
 msgid "Nicola F Backspace:"
 msgstr "Retroceso Nicola F:"
 
-#: src/Views/Layout.vala:352
+#: src/Views/Layout.vala:319
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku/zenkaku como Escape:"
 
-#: src/Views/Layout.vala:369
+#: src/Views/Layout.vala:336
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Teclas de hangul/hanja en Alt/Ctrl derecha:"
 
-#: src/Views/Layout.vala:448
+#: src/Views/Layout.vala:415
 msgid "Type to test your layout"
 msgstr "Escriba para probar la disposición"
 
-#: src/Views/Layout.vala:451
+#: src/Views/Layout.vala:418
 msgid "Input Method is active"
 msgstr "El método de entrada está activo"
 
@@ -906,6 +894,15 @@ msgstr "%s ya se utiliza para %s"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "Predeterminado"
+
+#~ msgid "Show in Panel"
+#~ msgstr "Mostrar en el panel"
+
+#~ msgid "Caps Lock:"
+#~ msgstr "Bloq Mayús:"
+
+#~ msgid "Num Lock:"
+#~ msgstr "Bloq Num:"
 
 #~ msgid "milliseconds"
 #~ msgstr "milisegundos"

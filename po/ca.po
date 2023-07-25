@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:46+0000\n"
+"POT-Creation-Date: 2023-07-25 18:18+0000\n"
 "PO-Revision-Date: 2023-07-01 08:07+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr "Afegeix una disposició"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:308 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:275 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Per defecte"
 
@@ -698,7 +698,7 @@ msgstr "Alt + espai"
 msgid "Both Shift keys together"
 msgstr "Les dues tecles de majúscules juntes"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:309
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:276
 msgid "Caps Lock"
 msgstr "Bloqueig de majúscules"
 
@@ -722,15 +722,15 @@ msgstr "Composició de tecla:"
 msgid "Menu"
 msgstr "Menú"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:311 src/Views/Layout.vala:323
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:278 src/Views/Layout.vala:290
 msgid "Right Alt"
 msgstr "Alt dreta"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:312 src/Views/Layout.vala:324
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:279 src/Views/Layout.vala:291
 msgid "Right Ctrl"
 msgstr "Ctrl dreta"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:313 src/Views/Layout.vala:325
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:280 src/Views/Layout.vala:292
 msgid "Right ⌘"
 msgstr "⌘ a la dreta"
 
@@ -786,51 +786,39 @@ msgstr "Mostra el teclat a la pantalla:"
 msgid "On-screen keyboard settings…"
 msgstr "Paràmetres del teclat a la pantalla…"
 
-#: src/Views/Layout.vala:166
-msgid "Show in Panel"
-msgstr "Es mostra al plafó"
-
-#: src/Views/Layout.vala:173
-msgid "Caps Lock:"
-msgstr "Bloqueig de majúscules:"
-
-#: src/Views/Layout.vala:180
-msgid "Num Lock:"
-msgstr "Bloqueig numèric:"
-
-#: src/Views/Layout.vala:288 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:255 src/Views/Layout.vala:272
 msgid "Key to choose 3rd level:"
 msgstr "Tecla per triar el 3r nivell:"
 
-#: src/Views/Layout.vala:310
+#: src/Views/Layout.vala:277
 msgid "Left Alt"
 msgstr "Alt esquerre"
 
-#: src/Views/Layout.vala:320
+#: src/Views/Layout.vala:287
 msgid "Key to choose 5th level:"
 msgstr "Tecla per triar el 5è nivell:"
 
-#: src/Views/Layout.vala:341
+#: src/Views/Layout.vala:308
 msgid "Kana Lock:"
 msgstr "Bloqueig Kana:"
 
-#: src/Views/Layout.vala:349
+#: src/Views/Layout.vala:316
 msgid "Nicola F Backspace:"
 msgstr "Retrocés Nicola F:"
 
-#: src/Views/Layout.vala:352
+#: src/Views/Layout.vala:319
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Hankaku Zenkaku com a escapada:"
 
-#: src/Views/Layout.vala:369
+#: src/Views/Layout.vala:336
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Tecles Hangul/Hanja a Alt/Ctrl dretes:"
 
-#: src/Views/Layout.vala:448
+#: src/Views/Layout.vala:415
 msgid "Type to test your layout"
 msgstr "Teclegeu per provar la disposició del teclat."
 
-#: src/Views/Layout.vala:451
+#: src/Views/Layout.vala:418
 msgid "Input Method is active"
 msgstr "Hi ha actiu un mètode d'entrada."
 
@@ -898,6 +886,15 @@ msgstr "%s ja s'usa per a %s → %s."
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
 msgid "Reset to Default"
 msgstr "Restableix al valor predeterminat"
+
+#~ msgid "Show in Panel"
+#~ msgstr "Es mostra al plafó"
+
+#~ msgid "Caps Lock:"
+#~ msgstr "Bloqueig de majúscules:"
+
+#~ msgid "Num Lock:"
+#~ msgstr "Bloqueig numèric:"
 
 #~ msgid "milliseconds"
 #~ msgstr "mil·lisegons"
