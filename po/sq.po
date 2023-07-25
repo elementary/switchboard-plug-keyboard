@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-21 23:46+0000\n"
+"POT-Creation-Date: 2023-07-25 18:18+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Albanian <https://l10n.elementary.io/projects/switchboard/"
@@ -50,7 +50,7 @@ msgstr ""
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:308 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:275 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Parazgjedhje"
 
@@ -710,7 +710,7 @@ msgstr ""
 msgid "Both Shift keys together"
 msgstr ""
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:309
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:276
 msgid "Caps Lock"
 msgstr ""
 
@@ -734,15 +734,15 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:311 src/Views/Layout.vala:323
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:278 src/Views/Layout.vala:290
 msgid "Right Alt"
 msgstr "Alt Djathtas"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:312 src/Views/Layout.vala:324
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:279 src/Views/Layout.vala:291
 msgid "Right Ctrl"
 msgstr ""
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:313 src/Views/Layout.vala:325
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:280 src/Views/Layout.vala:292
 #, fuzzy
 msgid "Right ⌘"
 msgstr "Alt Djathtas"
@@ -801,51 +801,39 @@ msgstr ""
 msgid "On-screen keyboard settings…"
 msgstr ""
 
-#: src/Views/Layout.vala:166
-msgid "Show in Panel"
-msgstr ""
-
-#: src/Views/Layout.vala:173
-msgid "Caps Lock:"
-msgstr ""
-
-#: src/Views/Layout.vala:180
-msgid "Num Lock:"
-msgstr ""
-
-#: src/Views/Layout.vala:288 src/Views/Layout.vala:305
+#: src/Views/Layout.vala:255 src/Views/Layout.vala:272
 msgid "Key to choose 3rd level:"
 msgstr ""
 
-#: src/Views/Layout.vala:310
+#: src/Views/Layout.vala:277
 msgid "Left Alt"
 msgstr ""
 
-#: src/Views/Layout.vala:320
+#: src/Views/Layout.vala:287
 msgid "Key to choose 5th level:"
 msgstr ""
 
-#: src/Views/Layout.vala:341
+#: src/Views/Layout.vala:308
 msgid "Kana Lock:"
 msgstr ""
 
-#: src/Views/Layout.vala:349
+#: src/Views/Layout.vala:316
 msgid "Nicola F Backspace:"
 msgstr ""
 
-#: src/Views/Layout.vala:352
+#: src/Views/Layout.vala:319
 msgid "Hankaku Zenkaku as Escape:"
 msgstr ""
 
-#: src/Views/Layout.vala:369
+#: src/Views/Layout.vala:336
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr ""
 
-#: src/Views/Layout.vala:448
+#: src/Views/Layout.vala:415
 msgid "Type to test your layout"
 msgstr ""
 
-#: src/Views/Layout.vala:451
+#: src/Views/Layout.vala:418
 msgid "Input Method is active"
 msgstr ""
 
