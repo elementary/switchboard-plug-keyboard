@@ -132,6 +132,18 @@ namespace Pantheon.Keyboard {
                                                 korean_layouts_panel (),
                                                 third_level_layouts_panel ()};
 
+            var alt_gr_label = new SettingsLabel (_("AltGr behavior:"), size_group[0]);
+
+            // AltGr key functionality
+            modifier = new XkbModifier ();
+            modifier.append_xkb_option ("", _("Default"));
+            modifier.append_xkb_option ("ctrl:ralt_rctrl", _("as Ctrl"));
+
+            modifier.set_default_command ("");
+            settings.add_xkb_modifier (modifier);
+
+            var alt_gr_combo = new XkbComboBox (modifier, size_group[1]);
+
             advanced_settings = new AdvancedSettings (panels);
 
             entry_test = new Gtk.Entry () {
@@ -156,11 +168,13 @@ namespace Pantheon.Keyboard {
             attach (overlay_key_combo, 2, 2, 1, 1);
             attach (caps_lock_label, 1, 3, 1, 1);
             attach (caps_lock_combo, 2, 3, 1, 1);
-            attach (advanced_settings, 1, 4, 2);
-            attach (onscreen_keyboard_header, 1, 5, 1, 1);
-            attach (onscreen_keyboard_label, 1, 6, 1, 1);
-            attach (onscreen_keyboard_switch, 2, 6, 1);
-            attach (onscreen_keyboard_settings, 2, 7, 1);
+            attach (alt_gr_label, 1, 4, 1, 1);
+            attach (alt_gr_combo, 2, 4, 1, 1);
+            attach (advanced_settings, 1, 5, 2);
+            attach (onscreen_keyboard_header, 1, 6, 1, 1);
+            attach (onscreen_keyboard_label, 1, 7, 1, 1);
+            attach (onscreen_keyboard_switch, 2, 7, 1);
+            attach (onscreen_keyboard_settings, 2, 8, 1);
 
             attach (entry_test, 1, 11, 2);
 
