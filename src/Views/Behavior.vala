@@ -5,6 +5,26 @@
 
 public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
     construct {
+        var onscreen_keyboard_header = new Granite.HeaderLabel (_("Show On-screen Keyboard"));
+
+        var onscreen_keyboard_switch = new Gtk.Switch () {
+            halign = Gtk.Align.END,
+            valign = Gtk.Align.CENTER,
+            hexpand = true
+        };
+
+        var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
+            halign = Gtk.Align.START,
+            has_tooltip = false
+        };
+
+        var onscreen_keyboard_grid = new Gtk.Grid () {
+            column_spacing = 12
+        };
+        onscreen_keyboard_grid.attach (onscreen_keyboard_header, 0, 0);
+        onscreen_keyboard_grid.attach (onscreen_keyboard_settings, 0, 1);
+        onscreen_keyboard_grid.attach (onscreen_keyboard_switch, 1, 0, 1, 2);
+
         var scale_provider = new Gtk.CssProvider ();
         scale_provider.load_from_resource ("/io/elementary/switchboard/keyboard/Behavior.css");
 
@@ -226,6 +246,7 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         blink_grid.attach (scale_blink_time, 1, 2);
 
         var box = new Gtk.Box (VERTICAL, 18);
+        box.add (onscreen_keyboard_grid);
         box.add (blink_grid);
         box.add (repeat_grid);
         box.add (stickykeys_grid);
@@ -246,6 +267,18 @@ public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
         };
 
         add (scrolled);
+
+        onscreen_keyboard_settings.clicked.connect (() => {
+            try {
+                var appinfo = AppInfo.create_from_commandline ("onboard-settings", null, NONE);
+                appinfo.launch (null, null);
+            } catch (Error e) {
+                critical ("Unable to launch onboard-settings: %s", e.message);
+            }
+        });
+
+        var applications_settings = new Settings ("org.gnome.desktop.a11y.applications");
+        applications_settings.bind ("screen-keyboard-enabled", onscreen_keyboard_switch, "active", DEFAULT);
 
         var gsettings_blink = new Settings ("org.gnome.desktop.interface");
         gsettings_blink.bind ("cursor-blink", switch_blink, "active", SettingsBindFlags.DEFAULT);
