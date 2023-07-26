@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-25 18:18+0000\n"
+"POT-Creation-Date: 2023-07-26 14:17+0000\n"
 "PO-Revision-Date: 2021-11-01 17:20+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Marathi <https://l10n.elementary.io/projects/switchboard/"
@@ -41,7 +41,7 @@ msgstr "मांडणी वाढवा"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:275 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:258 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "डिफॉल्ट"
 
@@ -120,7 +120,7 @@ msgid "Shortcuts"
 msgstr "शॉर्टकट"
 
 #: src/Plug.vala:58 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122
+#: src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123
 msgid "Behavior"
 msgstr "वर्तन"
 
@@ -152,23 +152,29 @@ msgstr "कॅन्डीडेट विंडो दाखवा"
 msgid "Embed preedit text in application window"
 msgstr "अनुप्रयोग विंडोमध्ये पूर्व संपादन मजकूर एम्बेड करा"
 
-#: src/Plug.vala:118 src/Views/Behavior.vala:136
+#: src/Plug.vala:118 src/Views/Behavior.vala:8
+#, fuzzy
+#| msgid "Toggle On Screen Keyboard"
+msgid "Show On-screen Keyboard"
+msgstr "ऑन स्क्रीन कीबोर्ड टॉगल करा"
+
+#: src/Plug.vala:119 src/Views/Behavior.vala:156
 msgid "Bounce Keys"
 msgstr ""
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:45
+#: src/Plug.vala:120 src/Views/Behavior.vala:65
 msgid "Cursor Blinking"
 msgstr "कर्सर ब्लिंकिंग"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:11
+#: src/Plug.vala:121 src/Views/Behavior.vala:31
 msgid "Repeat Keys"
 msgstr "रिपीट कीज"
 
-#: src/Plug.vala:121 src/Views/Behavior.vala:103
+#: src/Plug.vala:122 src/Views/Behavior.vala:123
 msgid "Slow Keys"
 msgstr ""
 
-#: src/Plug.vala:122 src/Views/Behavior.vala:79
+#: src/Plug.vala:123 src/Views/Behavior.vala:99
 msgid "Sticky Keys"
 msgstr ""
 
@@ -535,70 +541,74 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:13
+#: src/Views/Behavior.vala:16 src/Views/Layout.vala:124
+msgid "On-screen keyboard settings…"
+msgstr "ऑन-स्क्रीन कीबोर्ड सेटिंग्ज …"
+
+#: src/Views/Behavior.vala:33
 msgid "Delay:"
 msgstr "विलंब:"
 
-#: src/Views/Behavior.vala:17
+#: src/Views/Behavior.vala:37
 msgid "Interval:"
 msgstr "अंतराल:"
 
-#: src/Views/Behavior.vala:47
+#: src/Views/Behavior.vala:67
 msgid "Speed:"
 msgstr "वेग:"
 
-#: src/Views/Behavior.vala:51
+#: src/Views/Behavior.vala:71
 msgid "Duration:"
 msgstr "कालावधी:"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:89
+#: src/Views/Behavior.vala:109
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
 msgstr ""
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:113
+#: src/Views/Behavior.vala:133
 msgid "Don't accept keypresses unless held"
 msgstr ""
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:146
+#: src/Views/Behavior.vala:166
 msgid "Ignore fast duplicate keypresses"
 msgstr ""
 
-#: src/Views/Behavior.vala:169
+#: src/Views/Behavior.vala:189
 #, fuzzy
 #| msgid "Left Alt"
 msgid "Event Alerts"
 msgstr "डावा Alt"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:173
+#: src/Views/Behavior.vala:193
 #, c-format
 msgid "Play a sound or flash the screen. %s"
 msgstr ""
 
-#: src/Views/Behavior.vala:175
+#: src/Views/Behavior.vala:195
 msgid "Sound Settings…"
 msgstr ""
 
-#: src/Views/Behavior.vala:185
+#: src/Views/Behavior.vala:205
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
 msgstr ""
 
-#: src/Views/Behavior.vala:186
+#: src/Views/Behavior.vala:206
 msgid "Bounce Keys are rejected"
 msgstr ""
 
-#: src/Views/Behavior.vala:187
+#: src/Views/Behavior.vala:207
 msgid "Sticky Keys are pressed"
 msgstr ""
 
-#: src/Views/Behavior.vala:188
+#: src/Views/Behavior.vala:208
 msgid "Slow Keys are rejected"
 msgstr ""
 
-#: src/Views/Behavior.vala:205
+#: src/Views/Behavior.vala:225
 msgid "Type to test your settings"
 msgstr "आपल्या सेटिंग्ज तपासण्यासाठी टाइप करा"
 
@@ -705,7 +715,7 @@ msgstr "Alt +  Space"
 msgid "Both Shift keys together"
 msgstr "दोन्ही शिफ्ट की एकत्र"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:276
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:259
 msgid "Caps Lock"
 msgstr "कॅप्स लॉक"
 
@@ -729,15 +739,15 @@ msgstr "की तयार करा:"
 msgid "Menu"
 msgstr "मेनू"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:278 src/Views/Layout.vala:290
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:261 src/Views/Layout.vala:273
 msgid "Right Alt"
 msgstr "उजवा Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:279 src/Views/Layout.vala:291
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:262 src/Views/Layout.vala:274
 msgid "Right Ctrl"
 msgstr "उजवा Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:280 src/Views/Layout.vala:292
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:263 src/Views/Layout.vala:275
 msgid "Right ⌘"
 msgstr "उजवा ⌘"
 
@@ -793,43 +803,39 @@ msgstr "ऑन स्क्रीन कीबोर्ड टॉगल कर�
 msgid "Show on-screen keyboard:"
 msgstr "ऑन स्क्रीन कीबोर्ड टॉगल करा"
 
-#: src/Views/Layout.vala:124
-msgid "On-screen keyboard settings…"
-msgstr "ऑन-स्क्रीन कीबोर्ड सेटिंग्ज …"
-
-#: src/Views/Layout.vala:255 src/Views/Layout.vala:272
+#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
 msgid "Key to choose 3rd level:"
 msgstr "तृतीय स्तर निवडण्याची की:"
 
-#: src/Views/Layout.vala:277
+#: src/Views/Layout.vala:260
 msgid "Left Alt"
 msgstr "डावा Alt"
 
-#: src/Views/Layout.vala:287
+#: src/Views/Layout.vala:270
 msgid "Key to choose 5th level:"
 msgstr "पाचवी पातळी निवडण्याची की:"
 
-#: src/Views/Layout.vala:308
+#: src/Views/Layout.vala:291
 msgid "Kana Lock:"
 msgstr "काना लॉक:"
 
-#: src/Views/Layout.vala:316
+#: src/Views/Layout.vala:299
 msgid "Nicola F Backspace:"
 msgstr "निकोला एफ बॅकस्पेस:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:302
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "हँककु झेंकाकू Escape म्हणून:"
 
-#: src/Views/Layout.vala:336
+#: src/Views/Layout.vala:319
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "हांगुल/हांजा की उजव्या Alt/Ctrl वर:"
 
-#: src/Views/Layout.vala:415
+#: src/Views/Layout.vala:398
 msgid "Type to test your layout"
 msgstr "आपल्या लेआउटची चाचणी घेण्यासाठी टाइप करा"
 
-#: src/Views/Layout.vala:418
+#: src/Views/Layout.vala:401
 #, fuzzy
 #| msgid "Input Method"
 msgid "Input Method is active"
