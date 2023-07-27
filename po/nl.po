@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-26 14:17+0000\n"
-"PO-Revision-Date: 2023-06-28 21:56+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2023-07-28 18:08+0000\n"
+"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
@@ -160,14 +160,12 @@ msgid "Embed preedit text in application window"
 msgstr "Verwerk voorbewerkte tekst in het applicatievenster"
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:8
-#, fuzzy
-#| msgid "Show on-screen keyboard:"
 msgid "Show On-screen Keyboard"
-msgstr "Toon schermtoetsenbord:"
+msgstr "Toon schermtoetsenbord"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:156
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Stuiter toetsen"
 
 #: src/Plug.vala:120 src/Views/Behavior.vala:65
 msgid "Cursor Blinking"
@@ -179,11 +177,11 @@ msgstr "Herhalingstoetsen"
 
 #: src/Plug.vala:122 src/Views/Behavior.vala:123
 msgid "Slow Keys"
-msgstr ""
+msgstr "Langzame toetsen"
 
 #: src/Plug.vala:123 src/Views/Behavior.vala:99
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Plakkerige toetsen"
 
 #: src/Shortcuts/List.vala:43 src/Views/Shortcuts.vala:42
 msgid "Windows"
@@ -571,12 +569,12 @@ msgstr "Duur:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:109
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "Gebruik de ⌘, Alt, Ctrl, of Shift toetsen achter elkaar"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:133
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Accepteer toetsaanslagen niet tenzij de toets is ingedrukt"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:166
