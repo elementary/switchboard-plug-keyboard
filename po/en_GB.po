@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-26 14:17+0000\n"
-"PO-Revision-Date: 2023-07-01 08:07+0000\n"
+"PO-Revision-Date: 2023-07-28 18:08+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/en_GB/>\n"
@@ -160,10 +160,8 @@ msgid "Embed preedit text in application window"
 msgstr "Embed preedit text in application window"
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:8
-#, fuzzy
-#| msgid "Show on-screen keyboard:"
 msgid "Show On-screen Keyboard"
-msgstr "Show on-screen keyboard:"
+msgstr "Show On-screen Keyboard"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:156
 msgid "Bounce Keys"
