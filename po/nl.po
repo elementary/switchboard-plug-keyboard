@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-07-26 14:17+0000\n"
-"PO-Revision-Date: 2023-07-28 18:08+0000\n"
+"PO-Revision-Date: 2023-08-02 18:08+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
@@ -579,7 +579,7 @@ msgstr "Accepteer toetsaanslagen niet tenzij de toets is ingedrukt"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:166
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Negeer snelle dubbele toetsaanslagen"
 
 #: src/Views/Behavior.vala:189
 msgid "Event Alerts"
@@ -589,27 +589,27 @@ msgstr "Waarschuwingen"
 #: src/Views/Behavior.vala:193
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Speel geluid af of flits het scherm. &s"
 
 #: src/Views/Behavior.vala:195
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Geluidsinstellingen…"
 
 #: src/Views/Behavior.vala:205
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Caps Lock ⇪ of Num Lock toetsen zijn ingedrukt"
 
 #: src/Views/Behavior.vala:206
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "stuitertoetsen zijn afgewezen"
 
 #: src/Views/Behavior.vala:207
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Plakkende toetsen zijn ingedrukt"
 
 #: src/Views/Behavior.vala:208
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Langzame toetsaanslagen zijn afgewezen"
 
 #: src/Views/Behavior.vala:225
 msgid "Type to test your settings"
