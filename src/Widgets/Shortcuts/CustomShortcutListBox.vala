@@ -337,6 +337,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                     // case Gdk.Key.F11: Already used for fullscreen
                     case Gdk.Key.F12:
                     case Gdk.Key.Menu:
+                    case Gdk.Key.Print:
                         // Accept certain keys as single key accelerators
                         var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
                         update_binding (shortcut);
