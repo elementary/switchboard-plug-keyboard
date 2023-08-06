@@ -42,6 +42,7 @@ class Pantheon.Keyboard.SourceSettings : Object {
         }
 
         set {
+            warning ("Setting???");
             Pantheon.Keyboard.Plug.ibus_general_settings.set_strv ("preload-engines", value);
             Pantheon.Keyboard.Plug.ibus_general_settings.set_strv ("engines-order", value);
             update_input_sources_ibus ();
