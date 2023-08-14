@@ -78,7 +78,7 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         var deck = new Hdy.Deck () {
             height_request = 200,
             width_request = 300,
-	    can_swipe_back = true
+            can_swipe_back = true
         };
         deck.add (languages_list);
         deck.add (engine_list_grid);
