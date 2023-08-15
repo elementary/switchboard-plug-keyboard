@@ -96,6 +96,7 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             install_dialog.response.connect ((response_id) => {
                 if (response_id == Gtk.ResponseType.OK) {
                     string engine_to_install = install_dialog.get_selected_engine_name ();
+                    install_dialog.destroy ();
                     installer.install (engine_to_install);
 
                     var progress_dialog = new ProgressDialog () {
@@ -106,10 +107,11 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                     });
                     progress_dialog.run ();
                     progress_dialog.destroy ();
+                } else {
+                    install_dialog.destroy ();
                 }
             });
             install_dialog.run ();
-            install_dialog.destroy ();
         });
 
         cancel_button.clicked.connect (() => {
