@@ -16,6 +16,7 @@
 */
 
 public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialog {
+    private Gtk.ListBox listbox;
     private InstallList? engines_filter;
 
     public InstallEngineDialog (Gtk.Window parent) {
@@ -52,7 +53,7 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         language_header.pack_start (back_button);
         language_header.set_center_widget (language_title);
 
-        var listbox = new Gtk.ListBox () {
+        listbox = new Gtk.ListBox () {
             expand = true
         };
         listbox.set_filter_func (filter_function);
@@ -115,13 +116,10 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
             ((EnginesRow) listbox.get_selected_row ()).selected = true;
             install_button.sensitive = true;
         });
+    }
 
-        response.connect ((response_id) => {
-            if (response_id == Gtk.ResponseType.OK) {
-                string engine_to_install = ((EnginesRow) listbox.get_selected_row ()).engine_name;
-                UbuntuInstaller.get_default ().install (engine_to_install);
-            }
-        });
+    public string get_selected_engine_name () {
+        return ((EnginesRow) listbox.get_selected_row ()).engine_name;
     }
 
     [CCode (instance_pos = -1)]
