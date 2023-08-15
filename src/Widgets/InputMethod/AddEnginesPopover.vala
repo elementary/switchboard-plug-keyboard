@@ -91,9 +91,26 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         install_button.clicked.connect (() => {
             popdown ();
 
+            var installer = UbuntuInstaller.get_default ();
             var install_dialog = new InstallEngineDialog ((Gtk.Window) get_toplevel ());
+            install_dialog.response.connect ((response_id) => {
+                if (response_id == Gtk.ResponseType.OK) {
+                    string engine_to_install = install_dialog.get_selected_engine_name ();
+                    install_dialog.destroy ();
+                    installer.install (engine_to_install);
+
+                    var progress_dialog = new ProgressDialog () {
+                        transient_for = (Gtk.Window) get_toplevel ()
+                    };
+                    installer.progress_changed.connect ((p) => {
+                        progress_dialog.progress = p;
+                    });
+                    progress_dialog.run ();
+                } else {
+                    install_dialog.destroy ();
+                }
+            });
             install_dialog.run ();
-            install_dialog.destroy ();
         });
 
         cancel_button.clicked.connect (() => {
