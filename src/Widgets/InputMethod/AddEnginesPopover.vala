@@ -106,7 +106,6 @@ public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                         progress_dialog.progress = p;
                     });
                     progress_dialog.run ();
-                    progress_dialog.destroy ();
                 } else {
                     install_dialog.destroy ();
                 }
