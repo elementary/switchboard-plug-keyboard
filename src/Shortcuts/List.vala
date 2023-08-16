@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
+namespace Keyboard.Shortcuts {
     struct Group {
         public string icon_name;
         public string label;
@@ -26,7 +26,16 @@ namespace Pantheon.Keyboard.Shortcuts {
         public string[] keys;
     }
 
-    class List : GLib.Object {
+    class ShortcutsList : GLib.Object {
+        private static GLib.Once<ShortcutsList> instance;
+        public static unowned ShortcutsList get_default () {
+            return instance.once (() => {
+                return new ShortcutsList ();
+            });
+        }
+
+        private ShortcutsList () {}
+
         public Group[] groups;
         public Group windows_group;
         public Group workspaces_group;
@@ -36,6 +45,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         public Group a11y_group;
         public Group system_group;
         public Group custom_group;
+        public Group layouts_group;
 
         construct {
             windows_group = {};
@@ -147,6 +157,12 @@ namespace Pantheon.Keyboard.Shortcuts {
             custom_group.icon_name = "applications-other";
             custom_group.label = _("Custom");
 
+            layouts_group = {};
+            layouts_group.icon_name = "preferences-desktop-locale";
+            layouts_group.label = _("Keyboard Layouts");
+            add_action (ref layouts_group, Schema.GALA, _("Switch layout"), "switch-input-source");
+            add_action (ref layouts_group, Schema.GALA, _("Switch layout backward"), "switch-input-source-backward");
+
             groups = {
                 windows_group,
                 workspaces_group,
@@ -154,7 +170,9 @@ namespace Pantheon.Keyboard.Shortcuts {
                 launchers_group,
                 media_group,
                 a11y_group,
-                system_group
+                system_group,
+                custom_group,
+                layouts_group
             };
         }
 
@@ -165,7 +183,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             return;
         }
 
-        public void add_action (ref Group group, Schema schema, string action, string key) {
+        private void add_action (ref Group group, Schema schema, string action, string key) {
             group.keys += key;
             group.schemas += schema;
             group.actions += action;

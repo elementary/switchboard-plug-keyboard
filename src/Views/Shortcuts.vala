@@ -17,11 +17,9 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
-    // list of all shortcuts in gsettings, global object
-    private List list;
+namespace Keyboard.Shortcuts {
     // array of shortcut views, one for each section
-    private ShortcutDisplayInterface[] shortcut_views;
+    private Gtk.ListBox[] shortcut_views;
 
     public enum SectionID {
         WINDOWS,
@@ -32,6 +30,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         A11Y,
         SYSTEM,
         CUSTOM,
+        LAYOUTS,
         COUNT;
 
         public string to_string () {
@@ -65,7 +64,7 @@ namespace Pantheon.Keyboard.Shortcuts {
         construct {
             CustomShortcutSettings.init ();
 
-            list = new List ();
+            unowned var list = ShortcutsList.get_default ();
 
             section_switcher = new Gtk.ListBox ();
             section_switcher.add (new SwitcherRow (list.windows_group));
@@ -125,7 +124,7 @@ namespace Pantheon.Keyboard.Shortcuts {
             attach (frame, 1, 0, 2, 1);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
-                shortcut_views += new ShortcutListBox ((SectionID) id, this);
+                shortcut_views += new ShortcutListBox ((SectionID) id);
             }
 
             if (CustomShortcutSettings.available) {
@@ -153,38 +152,10 @@ namespace Pantheon.Keyboard.Shortcuts {
             section_switcher.select_row (custom_shortcuts_row);
         }
 
-        public bool system_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-            name = "";
-            group = "";
-            foreach (var view in shortcut_views) {
-                if (view is ShortcutListBox) {
-                    if (view.shortcut_conflicts (shortcut, out name, out group)) {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public bool custom_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-            name = "";
-            group = "";
-            foreach (var view in shortcut_views) {
-                if (view is CustomShortcutListBox) {
-                    if (view.shortcut_conflicts (shortcut, out name, out group)) {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-
         private class SwitcherRow : Gtk.ListBoxRow {
-            public Pantheon.Keyboard.Shortcuts.Group group { get; construct; }
+            public Keyboard.Shortcuts.Group group { get; construct; }
 
-            public SwitcherRow (Pantheon.Keyboard.Shortcuts.Group group) {
+            public SwitcherRow (Keyboard.Shortcuts.Group group) {
                 Object (group: group);
             }
 

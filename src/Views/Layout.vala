@@ -17,14 +17,14 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard {
+namespace Keyboard {
     public class LayoutPage.Page : Gtk.Box {
         private Display display;
         private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
-        private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
+        private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.gala --print-reply /org/pantheon/gala org.gala.PerformAction int32:1";
 
         construct {
             settings = SourceSettings.get_instance ();
@@ -42,9 +42,13 @@ namespace Pantheon.Keyboard {
             };
             switch_layout_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-            var switch_layout_list = new Gtk.ListBox ();
-            switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout"), Shortcuts.Schema.GALA, "switch-input-source"));
-            switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout backward"), Shortcuts.Schema.GALA, "switch-input-source-backward"));
+            var switch_layout_list = new Shortcuts.ShortcutListBox (Shortcuts.SectionID.LAYOUTS);
+            //  switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout"), Shortcuts.Schema.GALA, "switch-input-source"));
+            //  switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout backward"), Shortcuts.Schema.GALA, "switch-input-source-backward"));
+
+            var switch_layout_frame = new Gtk.Frame (null) {
+                child = switch_layout_list
+            };
 
             var alt_caps_lock_check = new CheckButtonWithValue (_("Alt + Caps Lock"), "grp:alt_caps_toggle");
             var alt_shift_check = new CheckButtonWithValue (_("Alt + Shift"), "grp:alt_shift_toggle");
@@ -158,7 +162,7 @@ namespace Pantheon.Keyboard {
 
             var main_box = new Gtk.Box (VERTICAL, 12);
             main_box.add (switch_layout_label);
-            main_box.add (switch_layout_list);
+            main_box.add (switch_layout_frame);
             main_box.add (switch_layout_flowbox);
             main_box.add (compose_key_label);
             main_box.add (compose_key_combo);

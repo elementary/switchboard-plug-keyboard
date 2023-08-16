@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
+public class Keyboard.InputMethodPage.Page : Gtk.Grid {
     private IBus.Bus bus;
     private GLib.Settings ibus_panel_settings;
     private bool selection_changing = false;
@@ -235,7 +235,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
         });
 
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
-        Pantheon.Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
+        Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
 
         settings.notify["active-index"].connect (() => {
             update_list_box_selected_row ();
@@ -247,7 +247,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
 
     private string get_keyboard_shortcut () {
         // TODO: Support getting multiple shortcut keys like ibus-setup does
-        string[] keyboard_shortcuts = Pantheon.Keyboard.Plug.ibus_general_settings.get_child ("hotkey").get_strv ("triggers");
+        string[] keyboard_shortcuts = Keyboard.Plug.ibus_general_settings.get_child ("hotkey").get_strv ("triggers");
 
         string keyboard_shortcut = "";
         foreach (var ks in keyboard_shortcuts) {
@@ -285,7 +285,7 @@ public class Pantheon.Keyboard.InputMethodPage.Page : Gtk.Grid {
                 break;
         }
 
-        Pantheon.Keyboard.Plug.ibus_general_settings.get_child ("hotkey").set_strv ("triggers", keyboard_shortcuts);
+        Keyboard.Plug.ibus_general_settings.get_child ("hotkey").set_strv ("triggers", keyboard_shortcuts);
     }
 
     private void update_engines_list () {

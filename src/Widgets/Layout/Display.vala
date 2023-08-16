@@ -18,7 +18,7 @@
 */
 
 // widget to display/add/remove/move keyboard layouts
-public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
+public class Keyboard.LayoutPage.Display : Gtk.Frame {
     private SourceSettings settings;
     private Gtk.TreeView tree;
     private Gtk.Button up_button;

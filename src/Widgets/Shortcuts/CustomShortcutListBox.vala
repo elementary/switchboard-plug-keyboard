@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
+class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
     public Page shortcut_page { get; construct; } // Object with access to all shortcut views
 
     public CustomShortcutListBox (Page shortcut_page) {
@@ -61,13 +61,6 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
     public void on_add_clicked () {
         add_row (null);
         unselect_all ();
-    }
-
-    // ShortcutDisplayInterface method
-    public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-        name = "";
-        group = SectionID.CUSTOM.to_string ();
-        return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
     }
 
     private class CustomShortcutRow : Gtk.ListBoxRow {
@@ -316,7 +309,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                 // Accept any key with a modifier (not all may work)
                 Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
 
-                var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                var shortcut = new Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
             } else {
                 switch (keyval) {
@@ -339,7 +332,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
                     case Gdk.Key.Menu:
                     case Gdk.Key.Print:
                         // Accept certain keys as single key accelerators
-                        var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                        var shortcut = new Shortcuts.Shortcut (keyval, mods);
                         update_binding (shortcut);
                         break;
                     default:
@@ -356,7 +349,7 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
             string conflict_name = "";
             string group = "";
             string relocatable_schema = "";
-            if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
+            if (ConflictsManager.shortcut_conflicts (shortcut, out conflict_name, out group)) {
                 var message_dialog = new Granite.MessageDialog (
                     _("Unable to set new shortcut due to conflicts"),
                     _("“%s” is already used for “%s → %s”.").printf (

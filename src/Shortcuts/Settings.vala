@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
+namespace Keyboard.Shortcuts {
     public enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
 
     // helper class for gsettings
@@ -60,8 +60,9 @@ namespace Pantheon.Keyboard.Shortcuts {
 
         public bool valid (Schema schema, string key) {
             // check if schema exists
-            if (schema < 0 || schema >= Schema.COUNT)
+            if (schema < 0 || schema >= Schema.COUNT) {
                 return false;
+            }
 
             var gsettings = schemas[schema];
             if (gsettings == null) {

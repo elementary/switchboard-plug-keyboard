@@ -17,19 +17,20 @@
 * Boston, MA 02110-1301 USA
 */
 
-private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
-    public Page shortcut_page { get; construct; } // Object with access to all shortcut views
+private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
     public SectionID group { get; construct; }
 
     private string[] actions;
     private Schema[] schemas;
     private string[] keys;
 
-    public ShortcutListBox (SectionID group, Page shortcut_page) {
-        Object (group: group, shortcut_page: shortcut_page);
+    public ShortcutListBox (SectionID group) {
+        Object (group: group);
     }
 
     construct {
+        unowned var list = ShortcutsList.get_default ();
+
         list.get_group (group, out actions, out schemas, out keys);
 
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
@@ -45,31 +46,10 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
 
         show_all ();
     }
-
-    public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-        string[] actions, keys;
-        Schema[] schemas;
-
-        name = "";
-        group = this.group.to_string ();
-        list.get_group (this.group, out actions, out schemas, out keys);
-
-        // For every action in group there is a corresponding schema and key entry
-        // so only need to iterate actions
-        for (int i = 0; i < actions.length; i++) {
-            var action_shortcut = Settings.get_default ().get_val (schemas[i], keys[i]);
-            if (shortcut.is_equal (action_shortcut)) {
-                name = actions[i];
-                return true;
-            }
-        }
-
-        return false;
-    }
 }
 
 
-public class Pantheon.Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
+public class Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
     public string action { get; construct; }
     public Schema schema { get; construct; }
     public string gsettings_key { get; construct; }
@@ -249,7 +229,7 @@ public class Pantheon.Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
             // Accept any key with a modifier (not all may work)
             Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
 
-            var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+            var shortcut = new Shortcuts.Shortcut (keyval, mods);
             update_binding (shortcut);
         } else {
             switch (keyval) {
@@ -271,7 +251,7 @@ public class Pantheon.Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
                 case Gdk.Key.Menu:
                 case Gdk.Key.Print:
                     // Accept certain keys as single key accelerators
-                    var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                    var shortcut = new Shortcuts.Shortcut (keyval, mods);
                     update_binding (shortcut);
                     break;
                 default:
@@ -288,10 +268,7 @@ public class Pantheon.Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
     private void update_binding (Shortcut shortcut) {
         string conflict_name = "";
         string group = "";
-        var shortcut_listbox = (ShortcutListBox)parent;
-        if (shortcut_listbox.custom_shortcut_conflicts (shortcut, out conflict_name, out group) ||
-            shortcut_listbox.system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
-
+        if (ConflictsManager.shortcut_conflicts (shortcut, out conflict_name, out group)) {
             var message_dialog = new Granite.MessageDialog (
                 _("Unable to set new shortcut due to conflicts"),
                 _("“%s” is already used for “%s → %s”.").printf (
