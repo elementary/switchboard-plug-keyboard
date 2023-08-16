@@ -46,8 +46,6 @@ namespace Keyboard {
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
             modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
-            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt + Space"));
-            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shift keys together"));
             modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
             modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl + Alt"));
             modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
