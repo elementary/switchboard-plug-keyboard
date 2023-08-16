@@ -48,7 +48,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
     }
 }
 
-
 public class Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
     public string action { get; construct; }
     public Schema schema { get; construct; }

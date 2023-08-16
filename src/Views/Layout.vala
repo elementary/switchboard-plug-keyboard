@@ -34,7 +34,7 @@ namespace Keyboard {
             var switch_layout_label = new SettingsLabel (_("Switch Layout")) ;
 
             var switch_layout_list = new Shortcuts.ShortcutListBox (Shortcuts.SectionID.LAYOUTS);
-            
+
             var switch_layout_list_frame = new Gtk.Frame (null) {
                 child = switch_layout_list
             };
@@ -57,7 +57,7 @@ namespace Keyboard {
             settings.add_xkb_modifier (modifier);
 
             var switch_layout_flowbox = new XkbFlowBox (modifier);
-            
+
             var compose_key_label = new SettingsLabel (_("Compose key"));
 
             // Compose key position menu
@@ -178,7 +178,7 @@ namespace Keyboard {
             foreach (unowned var child in overlay_key_flowbox.get_children ()) {
                 unowned var flow_box_child = (Gtk.FlowBoxChild) child;
                 unowned var button = (RadioButtonWithValue) flow_box_child.get_child ();
-                
+
                 button.active = button.value == gala_behavior_settings.get_string ("overlay-action");
 
                 button.toggled.connect (() => {
