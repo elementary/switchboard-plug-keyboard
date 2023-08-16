@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.Plug : Switchboard.Plug {
+public class Keyboard.Plug : Switchboard.Plug {
     public static GLib.Settings ibus_general_settings;
 
     private Gtk.Grid grid;
@@ -128,6 +128,6 @@ public class Pantheon.Keyboard.Plug : Switchboard.Plug {
 public Switchboard.Plug get_plug (Module module) {
     debug ("Activating Keyboard plug");
     IBus.init ();
-    var plug = new Pantheon.Keyboard.Plug ();
+    var plug = new Keyboard.Plug ();
     return plug;
 }

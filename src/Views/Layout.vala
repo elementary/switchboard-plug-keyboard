@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard {
+namespace Keyboard {
     public class LayoutPage.Page : Gtk.Grid {
         private Display display;
         private SourceSettings settings;

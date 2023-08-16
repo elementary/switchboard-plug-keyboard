@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
+namespace Keyboard.Shortcuts {
     struct Group {
         public string icon_name;
         public string label;
