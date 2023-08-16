@@ -293,6 +293,7 @@ namespace Keyboard {
 
             string [] valid_input_sources = {"jp"};
             var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources ) {
+                halign = CENTER,
                 margin_top = 12 // additional margin to better separate switches from radio buttons
             };
             panel.attach (kana_lock_label, 0, 0);
@@ -318,6 +319,7 @@ namespace Keyboard {
 
             string [] valid_input_sources = {"kr"};
             var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources) {
+                halign = CENTER,
                 margin_top = 12 // additional margin to better separate switches from radio buttons
             };
             panel.attach (hangul_label, 0, 0);

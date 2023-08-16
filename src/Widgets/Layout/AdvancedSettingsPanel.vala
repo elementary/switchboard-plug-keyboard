@@ -25,9 +25,8 @@ public class AdvancedSettingsPanel : Gtk.Grid {
     construct {
         row_spacing = 12;
         column_spacing = 12;
-        column_homogeneous = true;
+        column_homogeneous = false;
         row_homogeneous = false;
-        hexpand = true;
     }
 
     public AdvancedSettingsPanel (string name, string [] input_sources, string [] exclusions = {}) {
