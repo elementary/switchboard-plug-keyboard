@@ -300,13 +300,18 @@ public class Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
     private void render_keycaps () {
         unowned var settings = Settings.get_default ();
 
-        var key_value = settings.schemas[schema].get_strv (gsettings_key);
+        var key_value = settings.schemas[schema].get_value (gsettings_key);
 
         string[] accels = {""};
-        if (key_value.length > 0 && key_value[0] != "") {
-            var accels_string = Granite.accel_to_string (key_value[0]);
-            if (accels_string != null) {
-                accels = accels_string.split (" + ");
+        if (key_value.is_of_type (VariantType.ARRAY)) {
+            var key_value_strv = key_value.get_strv ();
+            if (key_value_strv.length > 0 && key_value_strv[0] != "") {
+                accels = Granite.accel_to_string (key_value_strv[0]).split (" + ");
+            }
+        } else {
+            var value_string = key_value.dup_string ();
+            if (value_string != "") {
+                accels = Granite.accel_to_string (value_string).split (" + ");
             }
         }
 
