@@ -421,7 +421,12 @@ class Pantheon.Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutD
          }
 
         private void build_keycap_grid (string value_string, ref Gtk.Grid grid) {
-            var accels = Granite.accel_to_string (value_string).split (" + ");
+            var accels_string = Granite.accel_to_string (value_string);
+
+            string[] accels = {};
+            if (accels_string != null) {
+                accels = accels_string.split (" + ");
+            }
             foreach (unowned Gtk.Widget child in grid.get_children ()) {
                 child.destroy ();
             };
