@@ -18,7 +18,7 @@
 */
 
 namespace Pantheon.Keyboard {
-    public class LayoutPage.Page : Gtk.Grid {
+    public class LayoutPage.Page : Gtk.Box {
         private Display display;
         private SourceSettings settings;
         private Gtk.SizeGroup [] size_group;
@@ -37,29 +37,44 @@ namespace Pantheon.Keyboard {
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
 
-            var switch_layout_label = new SettingsLabel (_("Switch layout:"), size_group[0]);
+            var switch_layout_label = new Gtk.Label (_("Switch Layout")) {
+                halign = START
+            };
+            switch_layout_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
-            // Layout switching keybinding
-            var modifier = new XkbModifier ("switch-layout");
-            modifier.append_xkb_option ("", _("Disabled"));
-            modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
-            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
-            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt + Space"));
-            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shift keys together"));
-            modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
-            modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl + Alt"));
-            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
-            modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift + Caps Lock"));
-            modifier.set_default_command ("");
+            var switch_layout_list = new Gtk.ListBox ();
+            switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout"), Shortcuts.Schema.GALA, "switch-input-source"));
+            switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout backward"), Shortcuts.Schema.GALA, "switch-input-source-backward"));
 
-            settings.add_xkb_modifier (modifier);
+            var alt_caps_lock_check = new CheckButtonWithValue (_("Alt + Caps Lock"), "grp:alt_caps_toggle");
+            var alt_shift_check = new CheckButtonWithValue (_("Alt + Shift"), "grp:alt_shift_toggle");
+            var alt_space_check = new CheckButtonWithValue (_("Alt + Space"), "grp:alt_space_toggle");
+            var both_shifts_check = new CheckButtonWithValue (_("Both Shift keys together"), "grp:shifts_toggle");
+            var caps_check = new CheckButtonWithValue (_("Caps Lock"), "grp:caps_toggle");
+            var ctrl_alt_check = new CheckButtonWithValue (_("Ctrl + Alt"), "grp:ctrl_alt_toggle");
+            var ctrl_shift_check = new CheckButtonWithValue (_("Ctrl + Shift"), "grp:ctrl_shift_toggle");
+            var shift_caps_check = new CheckButtonWithValue (_("Shift + Caps Lock"), "grp:shift_caps_toggle");
 
-            var switch_layout_combo = new XkbComboBox (modifier, size_group[1]);
-
+            var switch_layout_flowbox = new Gtk.FlowBox () {
+                homogeneous = true,
+                row_spacing = 12,
+                column_spacing = 12,
+                selection_mode = NONE,
+                max_children_per_line = 3
+            };
+            switch_layout_flowbox.add (alt_caps_lock_check);
+            switch_layout_flowbox.add (alt_shift_check);
+            switch_layout_flowbox.add (alt_space_check);
+            switch_layout_flowbox.add (both_shifts_check);
+            switch_layout_flowbox.add (caps_check);
+            switch_layout_flowbox.add (ctrl_alt_check);
+            switch_layout_flowbox.add (ctrl_shift_check);
+            switch_layout_flowbox.add (shift_caps_check);
+            
             var compose_key_label = new SettingsLabel (_("Compose key:"), size_group[0]);
 
             // Compose key position menu
-            modifier = new XkbModifier ();
+            var modifier = new XkbModifier ();
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
@@ -141,24 +156,40 @@ namespace Pantheon.Keyboard {
 
             update_entry_test_usable ();
 
-            column_homogeneous = true;
-            column_spacing = 12;
-            row_spacing = 12;
+            var main_box = new Gtk.Box (VERTICAL, 12);
+            main_box.add (switch_layout_label);
+            main_box.add (switch_layout_list);
+            main_box.add (switch_layout_flowbox);
+            main_box.add (compose_key_label);
+            main_box.add (compose_key_combo);
+            main_box.add (overlay_key_label);
+            main_box.add (overlay_key_combo);
+            main_box.add (caps_lock_label);
+            main_box.add (caps_lock_combo);
+            main_box.add (advanced_settings);
+            main_box.add (entry_test);
+
+            orientation = HORIZONTAL;
+            spacing = 12;
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
-            attach (display, 0, 0, 1, 12);
-            attach (switch_layout_label, 1, 0, 1, 1);
-            attach (switch_layout_combo, 2, 0, 1, 1);
-            attach (compose_key_label, 1, 1, 1, 1);
-            attach (compose_key_combo, 2, 1, 1, 1);
-            attach (overlay_key_label, 1, 2, 1, 1);
-            attach (overlay_key_combo, 2, 2, 1, 1);
-            attach (caps_lock_label, 1, 3, 1, 1);
-            attach (caps_lock_combo, 2, 3, 1, 1);
-            attach (advanced_settings, 1, 4, 2);
 
-            attach (entry_test, 1, 11, 2);
+            add (display);
+            add (main_box);
+            show_all ();
+            
+            //  attach (switch_layout_label, 1, 0, 1, 1);
+            //  attach (switch_layout_combo, 2, 0, 1, 1);
+            //  attach (compose_key_label, 1, 1, 1, 1);
+            //  attach (compose_key_combo, 2, 1, 1, 1);
+            //  attach (overlay_key_label, 1, 2, 1, 1);
+            //  attach (overlay_key_combo, 2, 2, 1, 1);
+            //  attach (caps_lock_label, 1, 3, 1, 1);
+            //  attach (caps_lock_combo, 2, 3, 1, 1);
+            //  attach (advanced_settings, 1, 4, 2);
+
+            //  attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -408,6 +439,33 @@ namespace Pantheon.Keyboard {
                 Object (label: label);
                 xalign = 1;
                 size_group.add_widget (this);
+            }
+        }
+
+        private class CheckButtonWithValue : Gtk.Box {
+            public string label { get; construct; }
+            public string value { get; construct; }
+            public new bool active {
+                get {
+                    return check_button.active;
+                }
+                set {
+                    check_button.active = value;
+                }
+            }
+
+            private Gtk.CheckButton check_button;
+
+            public CheckButtonWithValue (string label, string value) {
+                Object (
+                    label: label,
+                    value: value
+                );
+            }
+
+            construct {
+                check_button = new Gtk.CheckButton.with_label (label);
+                add (check_button);
             }
         }
     }

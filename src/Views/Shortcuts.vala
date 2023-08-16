@@ -20,8 +20,6 @@
 namespace Pantheon.Keyboard.Shortcuts {
     // list of all shortcuts in gsettings, global object
     private List list;
-    // class to interact with gsettings
-    private Shortcuts.Settings settings;
     // array of shortcut views, one for each section
     private ShortcutDisplayInterface[] shortcut_views;
 
@@ -68,7 +66,6 @@ namespace Pantheon.Keyboard.Shortcuts {
             CustomShortcutSettings.init ();
 
             list = new List ();
-            settings = new Shortcuts.Settings ();
 
             section_switcher = new Gtk.ListBox ();
             section_switcher.add (new SwitcherRow (list.windows_group));

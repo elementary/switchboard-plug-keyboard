@@ -18,7 +18,7 @@
 */
 
 namespace Pantheon.Keyboard.Shortcuts {
-    private enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
+    public enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
 
     // helper class for gsettings
     // note that media key are stored as strings, all others as string vectors
@@ -26,6 +26,15 @@ namespace Pantheon.Keyboard.Shortcuts {
         public GLib.Settings[] schemas;
 
         private string[] schema_names;
+
+        private static GLib.Once<Shortcuts.Settings> instance;
+        public static unowned Shortcuts.Settings get_default () {
+            return instance.once (() => {
+                return new Shortcuts.Settings ();
+            });
+        }
+
+        private Settings () {}
 
         construct {
             schema_names = {
