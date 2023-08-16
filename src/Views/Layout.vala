@@ -107,25 +107,6 @@ namespace Pantheon.Keyboard {
 
             var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
 
-            var onscreen_keyboard_header = new Granite.HeaderLabel (_("On-screen Keyboard")) {
-                halign = Gtk.Align.END,
-                xalign = 1
-            };
-
-            var onscreen_keyboard_label = new Gtk.Label (_("Show on-screen keyboard:")) {
-                halign = Gtk.Align.END
-            };
-
-            var onscreen_keyboard_switch = new Gtk.Switch () {
-                halign = Gtk.Align.START,
-                valign = Gtk.Align.CENTER
-            };
-
-            var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
-                halign = Gtk.Align.START,
-                has_tooltip = false
-            };
-
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
