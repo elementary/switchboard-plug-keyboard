@@ -23,7 +23,7 @@ namespace Keyboard {
         private SourceSettings settings;
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
-        private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.gala --print-reply /org/pantheon/gala org.gala.PerformAction int32:1";
+        private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
 
         construct {
             settings = SourceSettings.get_instance ();
@@ -117,25 +117,6 @@ namespace Keyboard {
 
             var caps_lock_flowbox = new XkbFlowBox (modifier);
 
-            var onscreen_keyboard_header = new Granite.HeaderLabel (_("On-screen Keyboard")) {
-                halign = Gtk.Align.END,
-                xalign = 1
-            };
-
-            var onscreen_keyboard_label = new Gtk.Label (_("Show on-screen keyboard")) {
-                halign = Gtk.Align.END
-            };
-
-            var onscreen_keyboard_switch = new Gtk.Switch () {
-                halign = Gtk.Align.START,
-                valign = Gtk.Align.CENTER
-            };
-
-            var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
-                halign = Gtk.Align.START,
-                has_tooltip = false
-            };
-
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
                                                 japanese_layouts_panel (),
@@ -144,25 +125,32 @@ namespace Keyboard {
 
             advanced_settings = new AdvancedSettings (panels);
 
-            entry_test = new Gtk.Entry () {
-                vexpand = true,
-                valign = Gtk.Align.END
-            };
+            entry_test = new Gtk.Entry ();
 
             update_entry_test_usable ();
 
+            var settings_box = new Gtk.Box (VERTICAL, 12);
+            settings_box.add (switch_layout_label);
+            settings_box.add (switch_layout_list_frame);
+            settings_box.add (switch_layout_additional_label);
+            settings_box.add (switch_layout_flowbox);
+            settings_box.add (compose_key_label);
+            settings_box.add (compose_key_flowbox);
+            settings_box.add (overlay_key_label);
+            settings_box.add (overlay_key_flowbox);
+            settings_box.add (caps_lock_label);
+            settings_box.add (caps_lock_flowbox);
+            settings_box.add (advanced_settings);
+
+            var scrolled_window = new Gtk.ScrolledWindow (null, null) {
+                child = settings_box,
+                hscrollbar_policy = NEVER,
+                hexpand = true,
+                vexpand = true
+            };
+
             var main_box = new Gtk.Box (VERTICAL, 12);
-            main_box.add (switch_layout_label);
-            main_box.add (switch_layout_list_frame);
-            main_box.add (switch_layout_additional_label);
-            main_box.add (switch_layout_flowbox);
-            main_box.add (compose_key_label);
-            main_box.add (compose_key_flowbox);
-            main_box.add (overlay_key_label);
-            main_box.add (overlay_key_flowbox);
-            main_box.add (caps_lock_label);
-            main_box.add (caps_lock_flowbox);
-            main_box.add (advanced_settings);
+            main_box.add (scrolled_window);
             main_box.add (entry_test);
 
             orientation = HORIZONTAL;
@@ -284,21 +272,29 @@ namespace Keyboard {
         }
 
         private AdvancedSettingsPanel japanese_layouts_panel () {
-            var kana_lock_label = new SettingsLabel (_("Kana Lock"));
+            var kana_lock_label = new Gtk.Label (_("Kana Lock:")) {
+                xalign = 1
+            };
             var kana_lock_switch = new XkbOptionSwitch (settings, "japan:kana_lock");
 
             // Used to align this grid without expanding the switch itself
             var spacer_grid = new Gtk.Grid ();
             spacer_grid.add (kana_lock_switch);
 
-            var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace"));
+            var nicola_backspace_label = new Gtk.Label (_("Nicola F Backspace:")) {
+                xalign = 1
+            };
             var nicola_backspace_switch = new XkbOptionSwitch (settings, "japan:nicola_f_bs");
 
-            var zenkaku_label = new SettingsLabel (_("Hankaku Zenkaku as Escape"));
+            var zenkaku_label = new Gtk.Label (_("Hankaku Zenkaku as Escape:")) {
+                xalign = 1
+            };
             var zenkaku_switch = new XkbOptionSwitch (settings, "japan:hztg_escape");
 
             string [] valid_input_sources = {"jp"};
-            var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
+            var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources ) {
+                margin_top = 12 // additional margin to better separate switches from radio buttons
+            };
             panel.attach (kana_lock_label, 0, 0);
             panel.attach (spacer_grid, 1, 0);
             panel.attach (nicola_backspace_label, 0, 1);
@@ -311,7 +307,9 @@ namespace Keyboard {
         }
 
         private AdvancedSettingsPanel korean_layouts_panel () {
-            var hangul_label = new SettingsLabel (_("Hangul/Hanja keys on Right Alt/Ctrl"));
+            var hangul_label = new Gtk.Label (_("Hangul/Hanja keys on Right Alt/Ctrl:")) {
+                xalign = 1
+            };
             var hangul_switch = new XkbOptionSwitch (settings, "korean:ralt_rctrl");
 
             // Used to align this grid without expanding the switch itself
@@ -319,7 +317,9 @@ namespace Keyboard {
             spacer_grid.add (hangul_switch);
 
             string [] valid_input_sources = {"kr"};
-            var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
+            var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources) {
+                margin_top = 12 // additional margin to better separate switches from radio buttons
+            };
             panel.attach (hangul_label, 0, 0);
             panel.attach (spacer_grid, 1, 0);
             panel.show_all ();
@@ -346,6 +346,7 @@ namespace Keyboard {
             }
 
             construct {
+                hexpand = true;
                 homogeneous = true;
                 row_spacing = 12;
                 column_spacing = 12;
