@@ -325,14 +325,11 @@ public class Pantheon.Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
         unowned var settings = Settings.get_default ();
 
         var key_value = settings.schemas[schema].get_value (gsettings_key);
-        warning ("KEY VALUE: %s", key_value.get_strv ()[0]);
 
         string[] accels = {""};
         if (key_value.is_of_type (VariantType.ARRAY)) {
-            warning ("OwO here");
             var key_value_strv = key_value.get_strv ();
             if (key_value_strv.length > 0 && key_value_strv[0] != "") {
-                warning ("key_value_strv[0] %s", key_value_strv[0]);
                 accels = Granite.accel_to_string (key_value_strv[0]).split (" + ");
             }
         } else {
@@ -342,11 +339,6 @@ public class Pantheon.Keyboard.Shortcuts.ShortcutRow : Gtk.ListBoxRow {
             }
         }
 
-        warning ("WHAT?");
-        foreach (var s in accels) {
-            warning (s);
-        }
-        warning ("---");
         if (accels[0] != "") {
             foreach (unowned Gtk.Widget child in keycap_box.get_children ()) {
                 child.destroy ();
