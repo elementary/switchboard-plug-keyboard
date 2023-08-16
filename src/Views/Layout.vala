@@ -43,42 +43,37 @@ namespace Keyboard {
             switch_layout_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
 
             var switch_layout_list = new Shortcuts.ShortcutListBox (Shortcuts.SectionID.LAYOUTS);
-            //  switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout"), Shortcuts.Schema.GALA, "switch-input-source"));
-            //  switch_layout_list.add (new Shortcuts.ShortcutRow (_("Switch layout backward"), Shortcuts.Schema.GALA, "switch-input-source-backward"));
-
-            var switch_layout_frame = new Gtk.Frame (null) {
+            
+            var switch_layout_list_frame = new Gtk.Frame (null) {
                 child = switch_layout_list
             };
 
-            var alt_caps_lock_check = new CheckButtonWithValue (_("Alt + Caps Lock"), "grp:alt_caps_toggle");
-            var alt_shift_check = new CheckButtonWithValue (_("Alt + Shift"), "grp:alt_shift_toggle");
-            var alt_space_check = new CheckButtonWithValue (_("Alt + Space"), "grp:alt_space_toggle");
-            var both_shifts_check = new CheckButtonWithValue (_("Both Shift keys together"), "grp:shifts_toggle");
-            var caps_check = new CheckButtonWithValue (_("Caps Lock"), "grp:caps_toggle");
-            var ctrl_alt_check = new CheckButtonWithValue (_("Ctrl + Alt"), "grp:ctrl_alt_toggle");
-            var ctrl_shift_check = new CheckButtonWithValue (_("Ctrl + Shift"), "grp:ctrl_shift_toggle");
-            var shift_caps_check = new CheckButtonWithValue (_("Shift + Caps Lock"), "grp:shift_caps_toggle");
-
-            var switch_layout_flowbox = new Gtk.FlowBox () {
-                homogeneous = true,
-                row_spacing = 12,
-                column_spacing = 12,
-                selection_mode = NONE,
-                max_children_per_line = 3
+            var switch_layout_additional_label = new Gtk.Label (_("Additional Shortcuts")) {
+                halign = START
             };
-            switch_layout_flowbox.add (alt_caps_lock_check);
-            switch_layout_flowbox.add (alt_shift_check);
-            switch_layout_flowbox.add (alt_space_check);
-            switch_layout_flowbox.add (both_shifts_check);
-            switch_layout_flowbox.add (caps_check);
-            switch_layout_flowbox.add (ctrl_alt_check);
-            switch_layout_flowbox.add (ctrl_shift_check);
-            switch_layout_flowbox.add (shift_caps_check);
+            switch_layout_additional_label.get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
+
+            // Layout switching keybinding
+            var modifier = new XkbModifier ("switch-layout");
+            modifier.append_xkb_option ("", _("Disabled"));
+            modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
+            modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
+            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt + Space"));
+            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shift keys together"));
+            modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
+            modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl + Alt"));
+            modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
+            modifier.append_xkb_option ("grp:shift_caps_toggle", _("Shift + Caps Lock"));
+            modifier.set_default_command ("");
+
+            settings.add_xkb_modifier (modifier);
+
+            var switch_layout_flowbox = new XkbFlowBox (modifier);
             
             var compose_key_label = new SettingsLabel (_("Compose key:"), size_group[0]);
 
             // Compose key position menu
-            var modifier = new XkbModifier ();
+            modifier = new XkbModifier ();
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("compose:caps", _("Caps Lock"));
             modifier.append_xkb_option ("compose:menu", _("Menu"));
@@ -162,7 +157,8 @@ namespace Keyboard {
 
             var main_box = new Gtk.Box (VERTICAL, 12);
             main_box.add (switch_layout_label);
-            main_box.add (switch_layout_frame);
+            main_box.add (switch_layout_list_frame);
+            main_box.add (switch_layout_additional_label);
             main_box.add (switch_layout_flowbox);
             main_box.add (compose_key_label);
             main_box.add (compose_key_combo);
@@ -182,18 +178,6 @@ namespace Keyboard {
             add (display);
             add (main_box);
             show_all ();
-            
-            //  attach (switch_layout_label, 1, 0, 1, 1);
-            //  attach (switch_layout_combo, 2, 0, 1, 1);
-            //  attach (compose_key_label, 1, 1, 1, 1);
-            //  attach (compose_key_combo, 2, 1, 1, 1);
-            //  attach (overlay_key_label, 1, 2, 1, 1);
-            //  attach (overlay_key_combo, 2, 2, 1, 1);
-            //  attach (caps_lock_label, 1, 3, 1, 1);
-            //  attach (caps_lock_combo, 2, 3, 1, 1);
-            //  attach (advanced_settings, 1, 4, 2);
-
-            //  attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -399,6 +383,61 @@ namespace Keyboard {
             }
         }
 
+        private class XkbFlowBox : Gtk.FlowBox {
+            public XkbModifier modifier { get; construct; }
+
+            private signal void changed ();
+
+            public XkbFlowBox (XkbModifier modifier) {
+                Object (modifier: modifier);
+            }
+
+            construct {
+                homogeneous = true;
+                row_spacing = 12;
+                column_spacing = 12;
+                selection_mode = NONE;
+                max_children_per_line = 3;
+
+                RadioButtonWithValue? previous_button = null;
+                for (int i = 0; i < modifier.xkb_option_commands.length; i++) {
+                    var button = new RadioButtonWithValue (previous_button, modifier.option_descriptions[i], modifier.xkb_option_commands[i]);
+                    add (button);
+
+                    button.toggled.connect (() => modifier.update_active_command (get_active_value ()));
+
+                    previous_button = button;
+                }
+
+                set_active (modifier.get_active_command ());
+
+                modifier.active_command_updated.connect (() => {
+                    set_active (modifier.get_active_command ());
+                });
+            }
+
+            private void set_active (string value) {
+                foreach (unowned var child in get_children ()) {
+                    unowned var flow_box_child = (Gtk.FlowBoxChild) child;
+                    unowned var button = (RadioButtonWithValue) flow_box_child.get_child ();
+                    button.active = button.value == value;
+                }
+            }
+
+            private string get_active_value () {
+                foreach (unowned var child in get_children ()) {
+                    unowned var flow_box_child = (Gtk.FlowBoxChild) child;
+                    unowned var button = (RadioButtonWithValue) flow_box_child.get_child ();
+
+                    if (button.active) {
+                        return button.value;
+                    }
+                }
+
+                return "";
+            }
+        }
+
         private class XkbOptionSwitch : Gtk.Switch {
             public XkbOptionSwitch (SourceSettings settings, string xkb_command) {
                 halign = Gtk.Align.START;
@@ -446,30 +485,41 @@ namespace Keyboard {
             }
         }
 
-        private class CheckButtonWithValue : Gtk.Box {
+        private class RadioButtonWithValue : Gtk.Box {
+            public signal void toggled ();
+
+            public RadioButtonWithValue? group_member { get; construct; }
             public string label { get; construct; }
             public string value { get; construct; }
-            public new bool active {
+            public Gtk.RadioButton radio_button { get; private set; }
+
+            public bool active {
                 get {
-                    return check_button.active;
+                    return radio_button.active;
                 }
                 set {
-                    check_button.active = value;
+                    radio_button.active = value;
                 }
             }
 
-            private Gtk.CheckButton check_button;
-
-            public CheckButtonWithValue (string label, string value) {
+            public RadioButtonWithValue (RadioButtonWithValue? group_member, string label, string value) {
                 Object (
+                    group_member: group_member,
                     label: label,
                     value: value
                 );
             }
 
             construct {
-                check_button = new Gtk.CheckButton.with_label (label);
-                add (check_button);
+                Gtk.RadioButton? radio_group_member = null;
+                if (group_member != null) {
+                    radio_group_member = group_member.radio_button;
+                }
+
+                radio_button = new Gtk.RadioButton.with_label_from_widget (radio_group_member, label);
+                add (radio_button);
+
+                radio_button.toggled.connect (() => toggled ());
             }
         }
     }
