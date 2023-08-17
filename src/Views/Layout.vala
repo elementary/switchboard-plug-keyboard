@@ -43,7 +43,7 @@ namespace Keyboard {
                 child = switch_layout_list
             };
 
-            var switch_layout_label = new SettingsLabel (_("Additional Shortcut:"), size_group[0]);
+            var switch_layout_label = new SettingsLabel (_("Additional shortcut:"), size_group[0]);
 
             // Layout switching keybinding
             var modifier = new XkbModifier ("switch-layout");
