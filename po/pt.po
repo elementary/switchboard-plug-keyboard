@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 14:17+0000\n"
+"POT-Creation-Date: 2023-08-17 10:33+0000\n"
 "PO-Revision-Date: 2022-10-27 04:25+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr "Adicionar esquema"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:258 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:239 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Predefinição"
 
@@ -66,19 +66,19 @@ msgstr "Se reatribuir o atalho a %s, %s será desativado."
 msgid "Reassign"
 msgstr "Reatribuir"
 
-#: src/Dialogs/InstallEngineDialog.vala:23
+#: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Choose an engine to install"
 msgstr "Escolha um mecanismo para instalar"
 
-#: src/Dialogs/InstallEngineDialog.vala:24
+#: src/Dialogs/InstallEngineDialog.vala:25
 msgid "Select an engine from the list to install and use."
 msgstr "Selecionar um mecanismo da lista para instalar e utilizar."
 
-#: src/Dialogs/InstallEngineDialog.vala:43
+#: src/Dialogs/InstallEngineDialog.vala:44
 msgid "Languages"
 msgstr "Idiomas"
 
-#: src/Dialogs/InstallEngineDialog.vala:92
+#: src/Dialogs/InstallEngineDialog.vala:93
 msgid "Install"
 msgstr "Instalar"
 
@@ -530,9 +530,9 @@ msgstr "Personalizados"
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:419
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:105
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:361
 msgid "Disabled"
 msgstr "Desativado"
 
@@ -548,7 +548,7 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:16 src/Views/Layout.vala:124
+#: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
 msgstr "Definições do teclado virtual…"
 
@@ -710,7 +710,7 @@ msgstr "Alt + Espaço"
 msgid "Both Shift keys together"
 msgstr "Ambas as teclas Shift em simultâneo"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:240
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -734,15 +734,15 @@ msgstr "Tecla Compose:"
 msgid "Menu"
 msgstr "Menu"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:242 src/Views/Layout.vala:254
 msgid "Right Alt"
 msgstr "Alt Direito"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:243 src/Views/Layout.vala:255
 msgid "Right Ctrl"
 msgstr "Ctrl Direito"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:244 src/Views/Layout.vala:256
 msgid "Right ⌘"
 msgstr "⌘ Direito"
 
@@ -786,47 +786,39 @@ msgstr "Trocar com Ctrl"
 msgid "Swap with Escape"
 msgstr "Trocar com Escape"
 
-#: src/Views/Layout.vala:110
-msgid "On-screen Keyboard"
-msgstr "Teclado no ecrã"
-
-#: src/Views/Layout.vala:115
-msgid "Show on-screen keyboard:"
-msgstr "Mostrar teclado no ecrã:"
-
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:219 src/Views/Layout.vala:236
 msgid "Key to choose 3rd level:"
 msgstr "Tecla para escolher o 3º nível:"
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:241
 msgid "Left Alt"
 msgstr "Alt esquerdo"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:251
 msgid "Key to choose 5th level:"
 msgstr "Tecla para escolher o 5º nível:"
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:272
 msgid "Kana Lock:"
 msgstr "Kana Lock:"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:280
 msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace:"
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:283
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Zenkaku Hankaku como Escape:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:300
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Teclas Hangul/Hanja no Alt/Ctrl Direitos:"
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:379
 msgid "Type to test your layout"
 msgstr "Escreva para testar o esquema"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:382
 msgid "Input Method is active"
 msgstr "Método de entrada está ativo"
 
@@ -880,13 +872,13 @@ msgstr "Desativar"
 msgid "Enter new shortcut…"
 msgstr "Introduzir novo atalho…"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
 msgid "Unable to set new shortcut due to conflicts"
 msgstr "Incapaz de definir novo atalho devido a conflitos"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:362
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:293
 #, c-format
 msgid "“%s” is already used for “%s → %s”."
 msgstr "“%s” já está em utilização para “%s → %s”."
@@ -894,6 +886,12 @@ msgstr "“%s” já está em utilização para “%s → %s”."
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:129
 msgid "Reset to Default"
 msgstr "Repor para predefinição"
+
+#~ msgid "On-screen Keyboard"
+#~ msgstr "Teclado no ecrã"
+
+#~ msgid "Show on-screen keyboard:"
+#~ msgstr "Mostrar teclado no ecrã:"
 
 #~ msgid "Show in Panel"
 #~ msgstr "Mostrar no Painel"

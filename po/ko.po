@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-26 14:17+0000\n"
+"POT-Creation-Date: 2023-08-17 10:33+0000\n"
 "PO-Revision-Date: 2022-08-06 20:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -48,7 +48,7 @@ msgstr "레이아웃 추가"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:258 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:95 src/Views/Layout.vala:239 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "기본"
 
@@ -66,19 +66,19 @@ msgstr "단축키를 %s에 할당하면, %s에 기존의 단축키를 사용할 
 msgid "Reassign"
 msgstr "재할당"
 
-#: src/Dialogs/InstallEngineDialog.vala:23
+#: src/Dialogs/InstallEngineDialog.vala:24
 msgid "Choose an engine to install"
 msgstr "설치할 엔진 선택"
 
-#: src/Dialogs/InstallEngineDialog.vala:24
+#: src/Dialogs/InstallEngineDialog.vala:25
 msgid "Select an engine from the list to install and use."
 msgstr "설치하고 사용할 엔진을 목록에서 선택할 수 있습니다."
 
-#: src/Dialogs/InstallEngineDialog.vala:43
+#: src/Dialogs/InstallEngineDialog.vala:44
 msgid "Languages"
 msgstr "언어"
 
-#: src/Dialogs/InstallEngineDialog.vala:92
+#: src/Dialogs/InstallEngineDialog.vala:93
 msgid "Install"
 msgstr "설치"
 
@@ -530,9 +530,9 @@ msgstr "사용자 설정"
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
 #: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:117
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:418
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:419
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:105
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:354
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:361
 msgid "Disabled"
 msgstr "사용 안 함"
 
@@ -548,7 +548,7 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr "Alt"
 
-#: src/Views/Behavior.vala:16 src/Views/Layout.vala:124
+#: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
 msgstr "스크린 키보드 설정…"
 
@@ -709,7 +709,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "Shift 키 2개 동시 누름"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:259
+#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:240
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -733,15 +733,15 @@ msgstr "조합 키:"
 msgid "Menu"
 msgstr "메뉴"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:261 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:66 src/Views/Layout.vala:242 src/Views/Layout.vala:254
 msgid "Right Alt"
 msgstr "오른쪽 Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:262 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:67 src/Views/Layout.vala:243 src/Views/Layout.vala:255
 msgid "Right Ctrl"
 msgstr "오른쪽 Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:263 src/Views/Layout.vala:275
+#: src/Views/Layout.vala:68 src/Views/Layout.vala:244 src/Views/Layout.vala:256
 msgid "Right ⌘"
 msgstr "오른쪽 ⌘"
 
@@ -785,47 +785,39 @@ msgstr "Ctrl키로 바꾸기"
 msgid "Swap with Escape"
 msgstr "Esc와 바꾸기"
 
-#: src/Views/Layout.vala:110
-msgid "On-screen Keyboard"
-msgstr "화상 키보드"
-
-#: src/Views/Layout.vala:115
-msgid "Show on-screen keyboard:"
-msgstr "화면 키보드 표시:"
-
-#: src/Views/Layout.vala:238 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:219 src/Views/Layout.vala:236
 msgid "Key to choose 3rd level:"
 msgstr "3단계 레벨 선택 키:"
 
-#: src/Views/Layout.vala:260
+#: src/Views/Layout.vala:241
 msgid "Left Alt"
 msgstr "왼쪽 Alt"
 
-#: src/Views/Layout.vala:270
+#: src/Views/Layout.vala:251
 msgid "Key to choose 5th level:"
 msgstr "5단계 레벨 선택 키:"
 
-#: src/Views/Layout.vala:291
+#: src/Views/Layout.vala:272
 msgid "Kana Lock:"
 msgstr "가나 잠금:"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:280
 msgid "Nicola F Backspace:"
 msgstr "NICOLA-F 식 Backspace:"
 
-#: src/Views/Layout.vala:302
+#: src/Views/Layout.vala:283
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "전각과 반각 키를 Esc로 사용:"
 
-#: src/Views/Layout.vala:319
+#: src/Views/Layout.vala:300
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "한글/한자 키 오른쪽 Alt/Ctrl 적용:"
 
-#: src/Views/Layout.vala:398
+#: src/Views/Layout.vala:379
 msgid "Type to test your layout"
 msgstr "글자를 입력해서 레이아웃 설정을 확인해 보세요"
 
-#: src/Views/Layout.vala:401
+#: src/Views/Layout.vala:382
 msgid "Input Method is active"
 msgstr "한글 입력기 사용 중"
 
@@ -881,13 +873,13 @@ msgstr "사용 안 함"
 msgid "Enter new shortcut…"
 msgstr "새 단축기 입력…"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:360
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:291
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
 msgid "Unable to set new shortcut due to conflicts"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:292
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:362
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:293
 #, fuzzy, c-format
 #| msgid "%s is already used for %s"
 msgid "“%s” is already used for “%s → %s”."
@@ -898,6 +890,12 @@ msgstr "%s는 이미 %s에서 사용하고 있습니다"
 #| msgid "Default"
 msgid "Reset to Default"
 msgstr "기본"
+
+#~ msgid "On-screen Keyboard"
+#~ msgstr "화상 키보드"
+
+#~ msgid "Show on-screen keyboard:"
+#~ msgstr "화면 키보드 표시:"
 
 #~ msgid "Show in Panel"
 #~ msgstr "패널에 표시"
