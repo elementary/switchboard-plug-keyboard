@@ -137,12 +137,12 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
                     tooltip_text = _("Remove"),
                     halign = END
                 };
-        
+
                 var up_button = new Gtk.Button.from_icon_name ("go-up-symbolic") {
                     tooltip_text = _("Move up"),
                     halign = END
                 };
-        
+
                 var down_button = new Gtk.Button.from_icon_name ("go-down-symbolic") {
                     tooltip_text = _("Move down"),
                     halign = END
@@ -173,7 +173,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
                     settings.switch_items (index, true);
                     rebuild_list ();
                 });
-        
+
                 down_button.clicked.connect (() => {
                     settings.switch_items (index, false);
                     rebuild_list ();
