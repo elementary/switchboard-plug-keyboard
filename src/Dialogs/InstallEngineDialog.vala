@@ -76,16 +76,16 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         engine_list_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         engine_list_grid.add (scrolled);
 
-        var stack = new Gtk.Stack () {
+        var deck = new Hdy.Deck () {
             height_request = 200,
             width_request = 300,
-            transition_type = Gtk.StackTransitionType.SLIDE_LEFT_RIGHT
+            can_swipe_back = true
         };
-        stack.add (languages_list);
-        stack.add (engine_list_grid);
+        deck.add (languages_list);
+        deck.add (engine_list_grid);
 
         var frame = new Gtk.Frame (null);
-        frame.add (stack);
+        frame.add (deck);
 
         custom_bin.add (frame);
         custom_bin.show_all ();
@@ -95,7 +95,7 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         languages_list.row_activated.connect ((row) => {
-            stack.visible_child = engine_list_grid;
+            deck.visible_child = engine_list_grid;
             language_title.label = ((LanguagesRow) row).language.get_name ();
             engines_filter = ((LanguagesRow) row).language;
             listbox.invalidate_filter ();
@@ -104,7 +104,7 @@ public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.Mes
         });
 
         back_button.clicked.connect (() => {
-            stack.visible_child = languages_list;
+            deck.navigate (Hdy.NavigationDirection.BACK);
             install_button.sensitive = false;
         });
 
