@@ -147,7 +147,6 @@ class Pantheon.Keyboard.SourceSettings : Object {
         container1.data = container2.data;
         container2.data = tmp;
 
-        warning ("%u %u %u", active_index, pos1, pos2);
         if (active_index == pos1) {
             active_index = pos2;
         } else if (active_index == pos2) {
