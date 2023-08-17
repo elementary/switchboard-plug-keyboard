@@ -18,9 +18,10 @@
 */
 
 namespace Keyboard {
-    public class LayoutPage.Page : Gtk.Box {
+    public class LayoutPage.Page : Gtk.Grid {
         private Display display;
         private SourceSettings settings;
+        private Gtk.SizeGroup [] size_group;
         private AdvancedSettings advanced_settings;
         private Gtk.Entry entry_test;
         private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
@@ -28,24 +29,31 @@ namespace Keyboard {
         construct {
             settings = SourceSettings.get_instance ();
 
+            size_group = {
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL),
+                new Gtk.SizeGroup (Gtk.SizeGroupMode.HORIZONTAL)
+            };
+
             // tree view to display the current layouts
             display = new LayoutPage.Display ();
 
-            var switch_layout_label = new SettingsLabel (_("Switch Layout")) ;
-
             var switch_layout_list = new Shortcuts.ShortcutListBox (Shortcuts.SectionID.LAYOUTS);
 
-            var switch_layout_list_frame = new Gtk.Frame (null) {
+            var switch_layout_frame = new Gtk.Frame (null) {
                 child = switch_layout_list
             };
 
-            var switch_layout_additional_label = new SettingsLabel (_("Additional Shortcuts"));
+            var switch_layout_label = new SettingsLabel (_("Additional Shortcut:"), size_group[0]);
 
             // Layout switching keybinding
             var modifier = new XkbModifier ("switch-layout");
             modifier.append_xkb_option ("", _("Disabled"));
             modifier.append_xkb_option ("grp:alt_caps_toggle", _("Alt + Caps Lock"));
             modifier.append_xkb_option ("grp:alt_shift_toggle", _("Alt + Shift"));
+            // TODO: remove this shortcut, since it can be entered manually
+            modifier.append_xkb_option ("grp:alt_space_toggle", _("Alt + Space"));
+            // TODO: remove this shortcut, since it can be entered manually
+            modifier.append_xkb_option ("grp:shifts_toggle", _("Both Shift keys together"));
             modifier.append_xkb_option ("grp:caps_toggle", _("Caps Lock"));
             modifier.append_xkb_option ("grp:ctrl_alt_toggle", _("Ctrl + Alt"));
             modifier.append_xkb_option ("grp:ctrl_shift_toggle", _("Ctrl + Shift"));
@@ -54,9 +62,9 @@ namespace Keyboard {
 
             settings.add_xkb_modifier (modifier);
 
-            var switch_layout_flowbox = new XkbFlowBox (modifier);
+            var switch_layout_combo = new XkbComboBox (modifier, size_group[1]);
 
-            var compose_key_label = new SettingsLabel (_("Compose key"));
+            var compose_key_label = new SettingsLabel (_("Compose key:"), size_group[0]);
 
             // Compose key position menu
             modifier = new XkbModifier ();
@@ -70,33 +78,25 @@ namespace Keyboard {
 
             settings.add_xkb_modifier (modifier);
 
-            var compose_key_flowbox = new XkbFlowBox (modifier);
+            var compose_key_combo = new XkbComboBox (modifier, size_group[1]);
 
-            var overlay_key_label = new SettingsLabel (_("⌘ key behavior"));
+            var overlay_key_label = new SettingsLabel (_("⌘ key behavior:"), size_group[0]);
 
             // ⌘ key behavior
-            var overlay_key_flowbox = new Gtk.FlowBox () {
-                homogeneous = true,
-                row_spacing = 12,
-                column_spacing = 12,
-                selection_mode = NONE,
-                max_children_per_line = 3
-            };
-
-            var overlay_key_disabled = new RadioButtonWithValue (null, _("Disabled"), "");
-            overlay_key_flowbox.add (overlay_key_disabled);
-            var overlay_key_application_menu = new RadioButtonWithValue (overlay_key_disabled, _("Applications Menu"), "io.elementary.wingpanel --toggle-indicator=app-launcher");
-            overlay_key_flowbox.add (overlay_key_application_menu);
-            var overlay_key_multitasking_view = new RadioButtonWithValue (overlay_key_disabled, _("Multitasking View"), MULTITASKING_VIEW_COMMAND);
-            overlay_key_flowbox.add (overlay_key_multitasking_view);
+            var overlay_key_combo = new Gtk.ComboBoxText ();
+            overlay_key_combo.halign = Gtk.Align.START;
+            overlay_key_combo.append_text (_("Disabled"));
+            overlay_key_combo.append_text (_("Applications Menu"));
+            overlay_key_combo.append_text (_("Multitasking View"));
 
             string? cheatsheet_path = Environment.find_program_in_path ("io.elementary.shortcut-overlay");
             if (cheatsheet_path != null) {
-                var overlay_key_shortcut_overlay = new RadioButtonWithValue (overlay_key_disabled, _("Shortcut Overlay"), "io.elementary.shortcut-overlay");
-                overlay_key_flowbox.add (overlay_key_shortcut_overlay);
+                overlay_key_combo.append_text (_("Shortcut Overlay"));
             }
 
-            var caps_lock_label = new SettingsLabel (_("Caps Lock behavior"));
+            size_group[1].add_widget (overlay_key_combo);
+
+            var caps_lock_label = new SettingsLabel (_("Caps Lock behavior:"), size_group[0]);
 
             // Caps Lock key functionality
             modifier = new XkbModifier ();
@@ -113,7 +113,26 @@ namespace Keyboard {
             modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
-            var caps_lock_flowbox = new XkbFlowBox (modifier);
+            var caps_lock_combo = new XkbComboBox (modifier, size_group[1]);
+
+            var onscreen_keyboard_header = new Granite.HeaderLabel (_("On-screen Keyboard")) {
+                halign = Gtk.Align.END,
+                xalign = 1
+            };
+
+            var onscreen_keyboard_label = new Gtk.Label (_("Show on-screen keyboard:")) {
+                halign = Gtk.Align.END
+            };
+
+            var onscreen_keyboard_switch = new Gtk.Switch () {
+                halign = Gtk.Align.START,
+                valign = Gtk.Align.CENTER
+            };
+
+            var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
+                halign = Gtk.Align.START,
+                has_tooltip = false
+            };
 
             // Advanced settings panel
             AdvancedSettingsPanel? [] panels = {fifth_level_layouts_panel (),
@@ -123,43 +142,32 @@ namespace Keyboard {
 
             advanced_settings = new AdvancedSettings (panels);
 
-            entry_test = new Gtk.Entry ();
+            entry_test = new Gtk.Entry () {
+                vexpand = true,
+                valign = Gtk.Align.END
+            };
 
             update_entry_test_usable ();
 
-            var settings_box = new Gtk.Box (VERTICAL, 12);
-            settings_box.add (switch_layout_label);
-            settings_box.add (switch_layout_list_frame);
-            settings_box.add (switch_layout_additional_label);
-            settings_box.add (switch_layout_flowbox);
-            settings_box.add (compose_key_label);
-            settings_box.add (compose_key_flowbox);
-            settings_box.add (overlay_key_label);
-            settings_box.add (overlay_key_flowbox);
-            settings_box.add (caps_lock_label);
-            settings_box.add (caps_lock_flowbox);
-            settings_box.add (advanced_settings);
-
-            var scrolled_window = new Gtk.ScrolledWindow (null, null) {
-                child = settings_box,
-                hscrollbar_policy = NEVER,
-                hexpand = true,
-                vexpand = true
-            };
-
-            var main_box = new Gtk.Box (VERTICAL, 12);
-            main_box.add (scrolled_window);
-            main_box.add (entry_test);
-
-            orientation = HORIZONTAL;
-            spacing = 12;
+            column_homogeneous = true;
+            column_spacing = 12;
+            row_spacing = 12;
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
+            attach (display, 0, 0, 1, 12);
+            attach (switch_layout_frame, 1, 0, 2, 1);
+            attach (switch_layout_label, 1, 1, 1, 1);
+            attach (switch_layout_combo, 2, 1, 1, 1);
+            attach (compose_key_label, 1, 2, 1, 1);
+            attach (compose_key_combo, 2, 2, 1, 1);
+            attach (overlay_key_label, 1, 3, 1, 1);
+            attach (overlay_key_combo, 2, 3, 1, 1);
+            attach (caps_lock_label, 1, 4, 1, 1);
+            attach (caps_lock_combo, 2, 4, 1, 1);
+            attach (advanced_settings, 1, 5, 2, 1);
 
-            add (display);
-            add (main_box);
-            show_all ();
+            attach (entry_test, 1, 11, 2);
 
             // Cannot be just called from the constructor because the stack switcher
             // shows every child after the constructor has been called
@@ -173,18 +181,37 @@ namespace Keyboard {
             });
 
             var gala_behavior_settings = new GLib.Settings ("org.pantheon.desktop.gala.behavior");
-            foreach (unowned var child in overlay_key_flowbox.get_children ()) {
-                unowned var flow_box_child = (Gtk.FlowBoxChild) child;
-                unowned var button = (RadioButtonWithValue) flow_box_child.get_child ();
 
-                button.active = button.value == gala_behavior_settings.get_string ("overlay-action");
+            var overlay_string = gala_behavior_settings.get_string ("overlay-action");
 
-                button.toggled.connect (() => {
-                    if (button.active) {
-                        gala_behavior_settings.set_string ("overlay-action", button.value);
-                    }
-                });
+            switch (overlay_string) {
+                case "":
+                    overlay_key_combo.active = 0;
+                    break;
+                case "io.elementary.wingpanel --toggle-indicator=app-launcher":
+                    overlay_key_combo.active = 1;
+                    break;
+                case MULTITASKING_VIEW_COMMAND:
+                    overlay_key_combo.active = 2;
+                    break;
+                case "io.elementary.shortcut-overlay":
+                    overlay_key_combo.active = 3;
+                    break;
             }
+
+            overlay_key_combo.changed.connect (() => {
+                var combo_active = overlay_key_combo.active;
+
+                if (combo_active == 0) {
+                    gala_behavior_settings.set_string ("overlay-action", "");
+                } else if (combo_active == 1) {
+                    gala_behavior_settings.set_string ("overlay-action", "io.elementary.wingpanel --toggle-indicator=app-launcher");
+                } else if (combo_active == 2) {
+                    gala_behavior_settings.set_string ("overlay-action", MULTITASKING_VIEW_COMMAND);
+                } else if (combo_active == 3) {
+                    gala_behavior_settings.set_string ("overlay-action", "io.elementary.shortcut-overlay");
+                }
+            });
         }
 
         private AdvancedSettingsPanel? third_level_layouts_panel () {
@@ -217,14 +244,14 @@ namespace Keyboard {
                "us+dvorak-l", "us+dvorak-r", "uz*"
             };
 
-            var third_level_label = new SettingsLabel (_("Key to choose 3rd level"));
+            var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
 
             var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
 
-            var third_level_flowbox = new XkbFlowBox (modifier);
+            var third_level_combo = new XkbComboBox (modifier, size_group[1]);
 
-            panel.attach (third_level_label, 0, 0);
-            panel.attach (third_level_flowbox, 0, 1);
+            panel.attach (third_level_label, 0, 0, 1, 1);
+            panel.attach (third_level_combo, 1, 0, 1, 1);
 
             panel.show_all ();
 
@@ -234,7 +261,7 @@ namespace Keyboard {
         private AdvancedSettingsPanel fifth_level_layouts_panel () {
             var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
 
-            var third_level_label = new Gtk.Label (_("Key to choose 3rd level")) ;
+            var third_level_label = new SettingsLabel (_("Key to choose 3rd level:"), size_group[0]);
 
             XkbModifier modifier = new XkbModifier ("third_level_key");
             modifier.append_xkb_option ("", _("Default"));
@@ -247,9 +274,9 @@ namespace Keyboard {
             modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
-            var third_level_flowbox = new XkbFlowBox (modifier);
+            var third_level_combo = new XkbComboBox (modifier, size_group[1]);
 
-            var fifth_level_label = new SettingsLabel (_("Key to choose 5th level"));
+            var fifth_level_label = new SettingsLabel (_("Key to choose 5th level:"), size_group[0]);
 
             modifier = new XkbModifier ();
             modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
@@ -258,70 +285,58 @@ namespace Keyboard {
             modifier.set_default_command ("");
             settings.add_xkb_modifier (modifier);
 
-            var fifth_level_flowbox = new XkbFlowBox (modifier);
+            var fifth_level_combo = new XkbComboBox (modifier, size_group[1]);
 
-            panel.attach (third_level_label, 0, 0);
-            panel.attach (third_level_flowbox, 0, 1);
-            panel.attach (fifth_level_label, 0, 2);
-            panel.attach (fifth_level_flowbox, 1, 3);
+            panel.attach (third_level_label, 0, 0, 1, 1);
+            panel.attach (third_level_combo, 1, 0, 1, 1);
+            panel.attach (fifth_level_label, 0, 1, 1, 1);
+            panel.attach (fifth_level_combo, 1, 1, 1, 1);
             panel.show_all ();
 
             return panel;
         }
 
         private AdvancedSettingsPanel japanese_layouts_panel () {
-            var kana_lock_label = new Gtk.Label (_("Kana Lock:")) {
-                xalign = 1
-            };
+            var kana_lock_label = new SettingsLabel (_("Kana Lock:"), size_group[0]);
             var kana_lock_switch = new XkbOptionSwitch (settings, "japan:kana_lock");
 
             // Used to align this grid without expanding the switch itself
             var spacer_grid = new Gtk.Grid ();
             spacer_grid.add (kana_lock_switch);
+            size_group[1].add_widget (spacer_grid);
 
-            var nicola_backspace_label = new Gtk.Label (_("Nicola F Backspace:")) {
-                xalign = 1
-            };
+            var nicola_backspace_label = new SettingsLabel (_("Nicola F Backspace:"), size_group[0]);
             var nicola_backspace_switch = new XkbOptionSwitch (settings, "japan:nicola_f_bs");
 
-            var zenkaku_label = new Gtk.Label (_("Hankaku Zenkaku as Escape:")) {
-                xalign = 1
-            };
+            var zenkaku_label = new SettingsLabel (_("Hankaku Zenkaku as Escape:"), size_group[0]);
             var zenkaku_switch = new XkbOptionSwitch (settings, "japan:hztg_escape");
 
             string [] valid_input_sources = {"jp"};
-            var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources ) {
-                halign = CENTER,
-                margin_top = 12 // additional margin to better separate switches from radio buttons
-            };
-            panel.attach (kana_lock_label, 0, 0);
-            panel.attach (spacer_grid, 1, 0);
-            panel.attach (nicola_backspace_label, 0, 1);
-            panel.attach (nicola_backspace_switch, 1, 1);
-            panel.attach (zenkaku_label, 0, 2);
-            panel.attach (zenkaku_switch, 1, 2);
+            var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
+            panel.attach (kana_lock_label, 0, 0, 1, 1);
+            panel.attach (spacer_grid, 1, 0, 1, 1);
+            panel.attach (nicola_backspace_label, 0, 1, 1, 1);
+            panel.attach (nicola_backspace_switch, 1, 1, 1, 1);
+            panel.attach (zenkaku_label, 0, 2, 1, 1);
+            panel.attach (zenkaku_switch, 1, 2, 1, 1);
             panel.show_all ();
 
             return panel;
         }
 
         private AdvancedSettingsPanel korean_layouts_panel () {
-            var hangul_label = new Gtk.Label (_("Hangul/Hanja keys on Right Alt/Ctrl:")) {
-                xalign = 1
-            };
+            var hangul_label = new SettingsLabel (_("Hangul/Hanja keys on Right Alt/Ctrl:"), size_group[0]);
             var hangul_switch = new XkbOptionSwitch (settings, "korean:ralt_rctrl");
 
             // Used to align this grid without expanding the switch itself
             var spacer_grid = new Gtk.Grid ();
             spacer_grid.add (hangul_switch);
+            size_group[1].add_widget (spacer_grid);
 
             string [] valid_input_sources = {"kr"};
-            var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources) {
-                halign = CENTER,
-                margin_top = 12 // additional margin to better separate switches from radio buttons
-            };
-            panel.attach (hangul_label, 0, 0);
-            panel.attach (spacer_grid, 1, 0);
+            var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
+            panel.attach (hangul_label, 0, 0, 1, 1);
+            panel.attach (spacer_grid, 1, 0, 1, 1);
             panel.show_all ();
 
             return panel;
@@ -336,59 +351,25 @@ namespace Keyboard {
             }
         }
 
-        private class XkbFlowBox : Gtk.FlowBox {
-            public XkbModifier modifier { get; construct; }
+        private class XkbComboBox : Gtk.ComboBoxText {
+            public XkbComboBox (XkbModifier modifier, Gtk.SizeGroup size_group) {
+                halign = Gtk.Align.START;
+                valign = Gtk.Align.CENTER;
+                size_group.add_widget (this);
 
-            private signal void changed ();
-
-            public XkbFlowBox (XkbModifier modifier) {
-                Object (modifier: modifier);
-            }
-
-            construct {
-                hexpand = true;
-                homogeneous = true;
-                row_spacing = 12;
-                column_spacing = 12;
-                selection_mode = NONE;
-                max_children_per_line = 3;
-
-                RadioButtonWithValue? previous_button = null;
                 for (int i = 0; i < modifier.xkb_option_commands.length; i++) {
-                    var button = new RadioButtonWithValue (previous_button, modifier.option_descriptions[i], modifier.xkb_option_commands[i]);
-                    add (button);
-
-                    button.toggled.connect (() => modifier.update_active_command (get_active_value ()));
-
-                    previous_button = button;
+                    append (modifier.xkb_option_commands[i], modifier.option_descriptions[i]);
                 }
 
-                set_active (modifier.get_active_command ());
+                set_active_id (modifier.get_active_command ());
+
+                changed.connect (() => {
+                    modifier.update_active_command (active_id);
+                });
 
                 modifier.active_command_updated.connect (() => {
-                    set_active (modifier.get_active_command ());
+                    set_active_id (modifier.get_active_command ());
                 });
-            }
-
-            private void set_active (string value) {
-                foreach (unowned var child in get_children ()) {
-                    unowned var flow_box_child = (Gtk.FlowBoxChild) child;
-                    unowned var button = (RadioButtonWithValue) flow_box_child.get_child ();
-                    button.active = button.value == value;
-                }
-            }
-
-            private string get_active_value () {
-                foreach (unowned var child in get_children ()) {
-                    unowned var flow_box_child = (Gtk.FlowBoxChild) child;
-                    unowned var button = (RadioButtonWithValue) flow_box_child.get_child ();
-
-                    if (button.active) {
-                        return button.value;
-                    }
-                }
-
-                return "";
             }
         }
 
@@ -432,49 +413,10 @@ namespace Keyboard {
         }
 
         private class SettingsLabel : Gtk.Label {
-            public SettingsLabel (string label) {
+            public SettingsLabel (string label, Gtk.SizeGroup size_group) {
                 Object (label: label);
-
-                halign = START;
-                get_style_context ().add_class (Granite.STYLE_CLASS_H4_LABEL);
-            }
-        }
-
-        private class RadioButtonWithValue : Gtk.Box {
-            public signal void toggled ();
-
-            public RadioButtonWithValue? group_member { get; construct; }
-            public string label { get; construct; }
-            public string value { get; construct; }
-            public Gtk.RadioButton radio_button { get; private set; }
-
-            public bool active {
-                get {
-                    return radio_button.active;
-                }
-                set {
-                    radio_button.active = value;
-                }
-            }
-
-            public RadioButtonWithValue (RadioButtonWithValue? group_member, string label, string value) {
-                Object (
-                    group_member: group_member,
-                    label: label,
-                    value: value
-                );
-            }
-
-            construct {
-                Gtk.RadioButton? radio_group_member = null;
-                if (group_member != null) {
-                    radio_group_member = group_member.radio_button;
-                }
-
-                radio_button = new Gtk.RadioButton.with_label_from_widget (radio_group_member, label);
-                add (radio_button);
-
-                radio_button.toggled.connect (() => toggled ());
+                xalign = 1;
+                size_group.add_widget (this);
             }
         }
     }
