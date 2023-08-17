@@ -15,7 +15,7 @@
 * with this program. If not, see http://www.gnu.org/licenses/.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
+public class Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
     public int progress {
         set {
             if (value >= 100) {

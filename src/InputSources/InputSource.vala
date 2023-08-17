@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard {
+namespace Keyboard {
 
     /**
      * Type of a keyboard-InputSource as described in the description of

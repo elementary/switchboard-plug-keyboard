@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.SourceSettings : Object {
+class Keyboard.SourceSettings : Object {
     public signal void external_layout_change ();
 
     public uint active_index { get; set; }
@@ -37,13 +37,13 @@ class Pantheon.Keyboard.SourceSettings : Object {
     private string[] _active_engines;
     public string[] active_engines {
         get {
-            _active_engines = Pantheon.Keyboard.Plug.ibus_general_settings.get_strv ("preload-engines");
+            _active_engines = Keyboard.Plug.ibus_general_settings.get_strv ("preload-engines");
             return _active_engines;
         }
 
         set {
-            Pantheon.Keyboard.Plug.ibus_general_settings.set_strv ("preload-engines", value);
-            Pantheon.Keyboard.Plug.ibus_general_settings.set_strv ("engines-order", value);
+            Keyboard.Plug.ibus_general_settings.set_strv ("preload-engines", value);
+            Keyboard.Plug.ibus_general_settings.set_strv ("engines-order", value);
             update_input_sources_ibus ();
         }
     }

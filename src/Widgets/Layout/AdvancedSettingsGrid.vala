@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
+public class Keyboard.LayoutPage.AdvancedSettings : Gtk.Grid {
     private Gtk.Stack stack;
     private HashTable <string, string> panel_for_layout;
     AdvancedSettingsPanel? [] all_panels;

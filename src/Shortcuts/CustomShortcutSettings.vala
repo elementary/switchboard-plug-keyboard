@@ -17,13 +17,13 @@
 * Boston, MA 02110-1301 USA
 */
 
-public struct Pantheon.Keyboard.Shortcuts.CustomShortcut {
+public struct Keyboard.Shortcuts.CustomShortcut {
     public string shortcut; // Shortcut in gsettings format
     public string command;
     public string relocatable_schema;
 }
 
-public class Pantheon.Keyboard.Shortcuts.CustomShortcutSettings : Object {
+public class Keyboard.Shortcuts.CustomShortcutSettings : Object {
     public static bool available = false;
 
     private const int MAX_SHORTCUTS = 100;

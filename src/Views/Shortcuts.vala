@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
+namespace Keyboard.Shortcuts {
     // list of all shortcuts in gsettings, global object
     private List list;
     // class to interact with gsettings
@@ -185,9 +185,9 @@ namespace Pantheon.Keyboard.Shortcuts {
         }
 
         private class SwitcherRow : Gtk.ListBoxRow {
-            public Pantheon.Keyboard.Shortcuts.Group group { get; construct; }
+            public Keyboard.Shortcuts.Group group { get; construct; }
 
-            public SwitcherRow (Pantheon.Keyboard.Shortcuts.Group group) {
+            public SwitcherRow (Keyboard.Shortcuts.Group group) {
                 Object (group: group);
             }
 

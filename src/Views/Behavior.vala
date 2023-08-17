@@ -3,7 +3,7 @@
  * SPDX-FileCopyrightText: 2017-2023 elementary, Inc. (https://elementary.io)
  */
 
-public class Pantheon.Keyboard.Behaviour.Page : Gtk.Box {
+public class Keyboard.Behaviour.Page : Gtk.Box {
     construct {
         var onscreen_keyboard_header = new Granite.HeaderLabel (_("Show On-screen Keyboard"));
 

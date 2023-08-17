@@ -15,7 +15,7 @@
 * with this program. If not, see http://www.gnu.org/licenses/.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.UbuntuInstaller : Object {
+public class Keyboard.InputMethodPage.UbuntuInstaller : Object {
     private AptdProxy aptd;
     private AptdTransactionProxy proxy;
 

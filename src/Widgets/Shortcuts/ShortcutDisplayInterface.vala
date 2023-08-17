@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-interface Pantheon.Keyboard.Shortcuts.ShortcutDisplayInterface : Gtk.Widget {
+interface Keyboard.Shortcuts.ShortcutDisplayInterface : Gtk.Widget {
     public abstract Page shortcut_page { get; construct; } // Object with access to all shortcut views
     public abstract bool shortcut_conflicts (Shortcut shortcut, out string name, out string group);
     public virtual bool system_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
