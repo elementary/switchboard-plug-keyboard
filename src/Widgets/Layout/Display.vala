@@ -42,7 +42,7 @@ public class Pantheon.Keyboard.LayoutPage.Display : Gtk.Frame {
         };
         scroll.add (list);
 
-        var add_button = new Gtk.Button.with_label (_("Add keyboard Layout…")) {
+        var add_button = new Gtk.Button.with_label (_("Add Keyboard Layout…")) {
             always_show_image = true,
             image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR)
         };
