@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Pantheon.Keyboard.XkbModifier : Object {
+class Keyboard.XkbModifier : Object {
     public signal void active_command_updated ();
 
     public string gsettings_key { get; construct; }

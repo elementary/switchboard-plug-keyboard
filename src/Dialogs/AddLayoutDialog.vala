@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
+public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
     private const string INPUT_LANGUAGE = N_("Input Language");
     private const string LAYOUT_LIST = N_("Layout List");
 

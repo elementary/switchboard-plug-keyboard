@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-namespace Pantheon.Keyboard.Shortcuts {
+namespace Keyboard.Shortcuts {
     private enum Schema { WM, MUTTER, GALA, MEDIA, COUNT }
 
     // helper class for gsettings

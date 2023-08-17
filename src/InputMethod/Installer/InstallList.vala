@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public enum Pantheon.Keyboard.InputMethodPage.InstallList {
+public enum Keyboard.InputMethodPage.InstallList {
     JA,
     KO,
     ZH;

@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
+public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
     public signal void add_engine (string new_engine);
 
     private Gtk.SearchEntry search_entry;

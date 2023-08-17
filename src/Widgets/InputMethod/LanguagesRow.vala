@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
+public class Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
     public InstallList language { get; construct; }
 
     public LanguagesRow (InstallList language) {

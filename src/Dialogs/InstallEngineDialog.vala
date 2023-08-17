@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialog {
+public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialog {
     private Gtk.ListBox listbox;
     private InstallList? engines_filter;
 

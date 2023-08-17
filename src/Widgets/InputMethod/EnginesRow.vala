@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
+public class Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
     public bool selected { get; set; }
     public string engine_name { get; construct; }
 
