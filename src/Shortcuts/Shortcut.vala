@@ -19,7 +19,7 @@
 
 // stores a shortcut, converts to gsettings format and readable format
 // and checks for validity
-public class Pantheon.Keyboard.Shortcuts.Shortcut : GLib.Object {
+public class Keyboard.Shortcuts.Shortcut : GLib.Object {
     public Gdk.ModifierType modifiers { get; construct; }
     public uint accel_key { get; construct; }
 

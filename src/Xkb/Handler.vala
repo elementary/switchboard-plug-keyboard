@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-public class Pantheon.Keyboard.XkbLayoutHandler : GLib.Object {
+public class Keyboard.XkbLayoutHandler : GLib.Object {
     private const string XKB_RULES_FILE = "evdev.xml";
 
     private static XkbLayoutHandler? instance = null;

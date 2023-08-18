@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Pantheon.Keyboard.InputMethodPage.AddEnginesList : Object {
+public class Keyboard.InputMethodPage.AddEnginesList : Object {
     /*
      * Stores strings used to add/remove engines in the code and won't be shown in the UI.
      * It consists from "<Engine name>",

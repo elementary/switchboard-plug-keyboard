@@ -17,7 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
+private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
     public Page shortcut_page { get; construct; } // Object with access to all shortcut views
     public SectionID group { get; construct; }
 
@@ -245,7 +245,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                 // Accept any key with a modifier (not all may work)
                 Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
 
-                var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
             } else {
                 switch (keyval) {
@@ -267,7 +267,7 @@ private class Pantheon.Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, Shortcu
                     case Gdk.Key.Menu:
                     case Gdk.Key.Print:
                         // Accept certain keys as single key accelerators
-                        var shortcut = new Pantheon.Keyboard.Shortcuts.Shortcut (keyval, mods);
+                        var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                         update_binding (shortcut);
                         break;
                     default:

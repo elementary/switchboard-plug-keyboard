@@ -16,7 +16,7 @@
  * Authored by Pawel Stolowski <pawel.stolowski@canonical.com>
  */
 
-namespace Pantheon.Keyboard.InputMethodPage {
+namespace Keyboard.InputMethodPage {
     private const string APTD_DBUS_NAME = "org.debian.apt";
     private const string APTD_DBUS_PATH = "/org/debian/apt";
 
