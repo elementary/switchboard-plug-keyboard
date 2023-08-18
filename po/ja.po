@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-18 16:52+0000\n"
-"PO-Revision-Date: 2023-07-29 20:08+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -232,16 +232,12 @@ msgid "Cycle Windows backwards"
 msgstr "逆順でウィンドウを切り替え"
 
 #: src/Shortcuts/List.vala:55
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "逆順でウィンドウを切り替え"
+msgstr "同一アプリのウィンドウを切り替え"
 
 #: src/Shortcuts/List.vala:56
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "逆順でウィンドウを切り替え"
+msgstr "逆順で同一アプリのウィンドウを切り替え"
 
 #: src/Shortcuts/List.vala:57
 msgid "Tile Left"
