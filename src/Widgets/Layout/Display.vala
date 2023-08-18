@@ -38,9 +38,10 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
 
         var scroll = new Gtk.ScrolledWindow (null, null) {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true,
+            child = list
         };
-        scroll.add (list);
 
         var add_button = new Gtk.Button.with_label (_("Add Keyboard Layout…")) {
             always_show_image = true,
@@ -57,7 +58,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         box.add (scroll);
         box.add (actionbar);
 
-        add (box);
+        child = box;
 
         add_button.clicked.connect (() => {
             var dialog = new AddLayoutDialog ();
@@ -71,8 +72,6 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         });
 
         list.row_activated.connect (() => {
-            warning ("Row activated");
-
             var new_index = get_cursor_index ();
             if (new_index >= 0) {
                 settings.active_index = new_index;
@@ -134,18 +133,15 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
                 };
 
                 var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
-                    tooltip_text = _("Remove"),
-                    halign = END
+                    tooltip_text = _("Remove")
                 };
 
                 var up_button = new Gtk.Button.from_icon_name ("go-up-symbolic") {
-                    tooltip_text = _("Move up"),
-                    halign = END
+                    tooltip_text = _("Move up")
                 };
 
                 var down_button = new Gtk.Button.from_icon_name ("go-down-symbolic") {
                     tooltip_text = _("Move down"),
-                    halign = END
                 };
 
                 var box = new Gtk.Box (HORIZONTAL, 0);
