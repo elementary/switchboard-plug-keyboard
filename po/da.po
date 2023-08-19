@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 10:33+0000\n"
+"POT-Creation-Date: 2023-08-18 16:52+0000\n"
 "PO-Revision-Date: 2021-11-01 17:20+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Danish <https://l10n.elementary.io/projects/switchboard/"
@@ -244,296 +244,308 @@ msgid "Cycle Windows backwards"
 msgstr "Cirkuler Vinduer Baglæns"
 
 #: src/Shortcuts/List.vala:55
+#, fuzzy
+#| msgid "Cycle Windows backwards"
+msgid "Cycle Windows of application"
+msgstr "Cirkuler Vinduer Baglæns"
+
+#: src/Shortcuts/List.vala:56
+#, fuzzy
+#| msgid "Cycle Windows backwards"
+msgid "Cycle Windows of application backwards"
+msgstr "Cirkuler Vinduer Baglæns"
+
+#: src/Shortcuts/List.vala:57
 msgid "Tile Left"
 msgstr "Tile til venstre"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:58
 msgid "Tile Right"
 msgstr "Tile til højre"
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:59
 msgid "Window Overview"
 msgstr "Vindueoversigt"
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:60
 msgid "Show All Windows"
 msgstr "Vis alle vinduer"
 
-#: src/Shortcuts/List.vala:59
+#: src/Shortcuts/List.vala:61
 msgid "Picture in Picture Mode"
 msgstr "Billede i Billede Tilstand"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:62
 msgid "Move to display above"
 msgstr "Flyt til overstående display"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:63
 msgid "Move to display below"
 msgstr "Flyt til displayet nedenunder"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:64
 msgid "Move to right display"
 msgstr "Flyt til højre display"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Move to left display"
 msgstr "Flyt til venstre display"
 
-#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
+#: src/Shortcuts/List.vala:69 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Arbejdsområder"
 
-#: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
+#: src/Shortcuts/List.vala:70 src/Views/Layout.vala:82
 msgid "Multitasking View"
 msgstr "Multitasking"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch left"
 msgstr "Skift til venstre"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch right"
 msgstr "Skift til højre"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to first"
 msgstr "Skift til første"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to new"
 msgstr "Skift til nye"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 1"
 msgstr "Skift til arbejdsområde 1"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 2"
 msgstr "Skift til arbejdsområde 2"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 3"
 msgstr "Skift til arbejdsområde 3"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 4"
 msgstr "Skift til arbejdsområde 4"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 5"
 msgstr "Skift til arbejdsområde 5"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 6"
 msgstr "Skift til arbejdsområde 6"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 7"
 msgstr "Skift til arbejdsområde 7"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:82
 msgid "Switch to workspace 8"
 msgstr "Skift til arbejdsområde 8"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:83
 msgid "Switch to workspace 9"
 msgstr "Skift til arbejdsområde 9"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:84
 msgid "Cycle workspaces"
 msgstr "Cirkuler mellem skriveborde"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:85
 msgid "Cycle workspaces backwards"
 msgstr "Cirkuler skriveborde baglæns"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 1"
 msgstr "Flyt til arbejdsområde 1"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 2"
 msgstr "Flyt til arbejdsområde 2"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 3"
 msgstr "Flyt til arbejdsområde 3"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 4"
 msgstr "Flyt til arbejdsområde 4"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 5"
 msgstr "Flyt til arbejdsområde 5"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 6"
 msgstr "Flyt til arbejdsområde 6"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 7"
 msgstr "Flyt til arbejdsområde 7"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:93
 msgid "Move to workspace 8"
 msgstr "Flyt til arbejdsområde 8"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:94
 msgid "Move to workspace 9"
 msgstr "Flyt til arbejdsområde 9"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:95
 msgid "Move to left workspace"
 msgstr "Flyt til venstre skrivebord"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:96
 msgid "Move to right workspace"
 msgstr "Flyt til højre skrivebord"
 
-#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
+#: src/Shortcuts/List.vala:100 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "Skærmbilleder"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:101
 msgid "Grab the whole screen"
 msgstr "Tag skærmbillede af hele skærmen"
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:102
 msgid "Copy the whole screen to clipboard"
 msgstr "Kopier hele skærmen til udklipsholder"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:103
 msgid "Grab the current window"
 msgstr "Tag skærmbillede af det nuværende vindue"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:104
 msgid "Copy the current window to clipboard"
 msgstr "Kopier det nuværende vindue til udklipsholderen"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:105
 msgid "Select an area to grab"
 msgstr "Vælg et område at screnshotte"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:106
 msgid "Copy an area to clipboard"
 msgstr "Kopier et område til udklipsholderen"
 
-#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
+#: src/Shortcuts/List.vala:110 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "Applikationer"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:111
 msgid "Email"
 msgstr "E-mail"
 
-#: src/Shortcuts/List.vala:110
+#: src/Shortcuts/List.vala:112
 msgid "Home Folder"
 msgstr "Hjemmemappe"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:113
 msgid "Music"
 msgstr "Musik"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:114
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:115
 msgid "Internet Browser"
 msgstr "Internetbrowser"
 
-#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
+#: src/Shortcuts/List.vala:119 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "Medie"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:120
 msgid "Volume Up"
 msgstr "Lydstyrke op"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:121
 msgid "Volume Down"
 msgstr "Lydstyrke ned"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:122
 msgid "Mute"
 msgstr "Lydløs"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:123
 #, fuzzy
 #| msgid "Pause"
 msgid "Play/Pause"
 msgstr "Pause"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:124
 msgid "Pause"
 msgstr "Pause"
 
-#: src/Shortcuts/List.vala:123
+#: src/Shortcuts/List.vala:125
 msgid "Stop"
 msgstr "Stop"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:126
 msgid "Previous Track"
 msgstr "Forrige spor"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:127
 msgid "Next Track"
 msgstr "Næste spor"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:128
 msgid "Eject"
 msgstr "Skub ud"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:132
 msgid "Universal Access"
 msgstr "Universel Tilgængelighed"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:133
 msgid "Decrease Text Size"
 msgstr "Formindsk tekststørrelse"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:134
 msgid "Increase Text Size"
 msgstr "Forøg tekststørrelse"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:135
 msgid "Magnifier Zoom in"
 msgstr "Zoom ind med forstørrelsesglas"
 
-#: src/Shortcuts/List.vala:134
+#: src/Shortcuts/List.vala:136
 msgid "Magnifier Zoom out"
 msgstr "Zoom ud med forstørrelsesglas"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:137
 msgid "Toggle On Screen Keyboard"
 msgstr "Skærmtastatur til/fra"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:138
 msgid "Toggle Screenreader"
 msgstr "Skærmlæser til/fra"
 
-#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
+#: src/Shortcuts/List.vala:142 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "System"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
+#: src/Shortcuts/List.vala:143 src/Views/Layout.vala:81
 msgid "Applications Menu"
 msgstr "Applikationsmenu"
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:144
 msgid "Lock"
 msgstr "Lås"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:145
 msgid "Log Out"
 msgstr "Log Ud"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:146
 msgid "Cycle display mode"
 msgstr "Skift mellem display metode"
 
-#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
+#: src/Shortcuts/List.vala:150 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "Brugerdefineret"
 

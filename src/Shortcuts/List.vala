@@ -52,6 +52,8 @@ namespace Keyboard.Shortcuts {
             add_action (ref windows_group, Schema.WM, _("Toggle always on Top"), "toggle-above");
             add_action (ref windows_group, Schema.WM, _("Cycle Windows"), "switch-windows");
             add_action (ref windows_group, Schema.WM, _("Cycle Windows backwards"), "switch-windows-backward");
+            add_action (ref windows_group, Schema.WM, _("Cycle Windows of application"), "switch-group");
+            add_action (ref windows_group, Schema.WM, _("Cycle Windows of application backwards"), "switch-group-backward");
             add_action (ref windows_group, Schema.MUTTER, _("Tile Left"), "toggle-tiled-left");
             add_action (ref windows_group, Schema.MUTTER, _("Tile Right"), "toggle-tiled-right");
             add_action (ref windows_group, Schema.GALA, _("Window Overview"), "expose-windows");
