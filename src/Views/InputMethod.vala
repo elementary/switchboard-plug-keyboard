@@ -39,7 +39,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
         bus = new IBus.Bus ();
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
-        // See https://github.com/elementary/switchboard-plug-keyboard/issues/468
+        // See https://github.com/elementary/switchboard-plug-keyboard/pull/468
         var keyboard_settings = new GLib.Settings ("io.elementary.switchboard.keyboard");
         if (keyboard_settings.get_boolean ("first-launch")) {
             keyboard_settings.set_boolean ("first-launch", false);
