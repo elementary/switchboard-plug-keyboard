@@ -32,3 +32,5 @@ gresources = gnome.compile_resources(
 subdir('data')
 subdir('src')
 subdir('po')
+
+gnome.post_install(glib_compile_schemas: true)
