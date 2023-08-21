@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-18 16:52+0000\n"
-"PO-Revision-Date: 2023-08-01 08:08+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -233,16 +233,12 @@ msgid "Cycle Windows backwards"
 msgstr "Przełącz okna wstecz"
 
 #: src/Shortcuts/List.vala:55
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Przełącz okna wstecz"
+msgstr "Przełącz okna aplikacji"
 
 #: src/Shortcuts/List.vala:56
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Przełącz okna wstecz"
+msgstr "Przełącz okna aplikacji wstecz"
 
 #: src/Shortcuts/List.vala:57
 msgid "Tile Left"
