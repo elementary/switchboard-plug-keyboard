@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-18 16:52+0000\n"
-"PO-Revision-Date: 2023-08-08 09:08+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -234,16 +234,12 @@ msgid "Cycle Windows backwards"
 msgstr "Faire défiler les fenêtres en sens inverse"
 
 #: src/Shortcuts/List.vala:55
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Faire défiler les fenêtres en sens inverse"
+msgstr "Faire défiler les fenêtres d'applications"
 
 #: src/Shortcuts/List.vala:56
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Faire défiler les fenêtres en sens inverse"
+msgstr "Faire défiler les fenêtres d'applications en sens inverse"
 
 #: src/Shortcuts/List.vala:57
 msgid "Tile Left"
