@@ -39,6 +39,13 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
         bus = new IBus.Bus ();
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
+        // See https://github.com/elementary/switchboard-plug-keyboard/issues/468
+        var keyboard_settings = new GLib.Settings ("io.elementary.switchboard.keyboard");
+        if (keyboard_settings.get_boolean ("first-launch")) {
+            keyboard_settings.set_boolean ("first-launch", false);
+            Keyboard.Plug.ibus_general_settings.set_strv ("preload-engines", {});
+        }
+
         // no_daemon_runnning view shown if IBus Daemon is not running
         var no_daemon_runnning_alert = new Granite.Widgets.AlertView (
             _("IBus Daemon is not running"),
