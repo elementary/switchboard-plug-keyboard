@@ -42,9 +42,9 @@
       <description>
         <p>Minor updates:</p>
         <ul>
-          <li>Fixed potential crashes</li>
-          <li>Added "Cycle Windows of application" and "Cycle Windows of application backwards" shortcuts</li>
-          <li>Improved experience installing input methods</li>
+          <li>Fix potential crashes</li>
+          <li>Add "Cycle Windows of application" and "Cycle Windows of application backwards" shortcuts</li>
+          <li>Improve experience installing input methods</li>
           <li>Updated translations</li>
         </ul>
       </description>
