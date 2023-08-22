@@ -25,11 +25,6 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
     construct {
         settings = SourceSettings.get_instance ();
 
-        var cell = new Gtk.CellRendererText () {
-            ellipsize_set = true,
-            ellipsize = Pango.EllipsizeMode.END
-        };
-
         list = new Gtk.ListBox () {
             selection_mode = Gtk.SelectionMode.BROWSE,
             hexpand = true,
@@ -72,10 +67,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         });
 
         list.row_activated.connect (() => {
-            var new_index = get_cursor_index ();
-            if (new_index >= 0) {
-                settings.active_index = new_index;
-            }
+            settings.active_index = get_cursor_index ();
         });
 
         settings.notify["active-index"].connect (update_cursor);
@@ -87,16 +79,16 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
 
     /**
      * Returns the index of the selected (xkb) layout in the list of (all) input sources.
-     * In case the list contains no layouts, it returns -1.
+     * In case the list contains no layouts, it returns 0.
      */
     private int get_cursor_index () {
-        unowned var selected_row = list.get_selected_row ();
+        unowned var selected_row = (DisplayRow) list.get_selected_row ();
 
         if (selected_row == null) {
             return 0;
         }
 
-        return (int) selected_row.get_data<uint> ("index");
+        return (int) selected_row.index;
     }
 
     private void update_cursor () {
@@ -105,17 +97,16 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         }
 
         foreach (unowned var child in list.get_children ()) {
-            unowned var row = (Gtk.ListBoxRow) child;
-            var row_index = row.get_data<uint> ("index");
+            unowned var row = (DisplayRow) child;
 
-            if (settings.active_index == row_index) {
+            if (settings.active_index == row.index) {
                 list.select_row (row);
                 break;
             }
         }
     }
 
-    private void rebuild_list () {
+    public void rebuild_list () {
         foreach (unowned var child in list.get_children ()) {
             list.remove (child);
         }
@@ -123,55 +114,21 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         uint i = 0;
         settings.foreach_layout ((input_source) => {
             if (input_source.layout_type == LayoutType.XKB) {
-                var label = new Gtk.Label (XkbLayoutHandler.get_instance ().get_display_name (input_source.name)) {
-                    hexpand = true,
-                    halign = START,
-                    margin_top = 6,
-                    margin_bottom = 6,
-                    margin_start = 6,
-                    margin_end = 6,
-                };
+                var row = new DisplayRow (XkbLayoutHandler.get_instance ().get_display_name (input_source.name), i);
+                list.add (row);
 
-                var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
-                    tooltip_text = _("Remove")
-                };
-
-                var up_button = new Gtk.Button.from_icon_name ("go-up-symbolic") {
-                    tooltip_text = _("Move up")
-                };
-
-                var down_button = new Gtk.Button.from_icon_name ("go-down-symbolic") {
-                    tooltip_text = _("Move down"),
-                };
-
-                var box = new Gtk.Box (HORIZONTAL, 0);
-                box.add (label);
-                box.add (remove_button);
-                box.add (up_button);
-                box.add (down_button);
-
-                var listboxrow = new Gtk.ListBoxRow () {
-                    child = box
-                };
-                listboxrow.set_data<string> ("input-source-name", input_source.name);
-
-                var index = i; // we need to copy the value
-                listboxrow.set_data<uint> ("index", index);
-
-                list.add (listboxrow);
-
-                remove_button.clicked.connect (() => {
-                    settings.remove_layout (index);
+                row.remove_layout.connect ((row) => {
+                    settings.remove_layout (row.index);
                     rebuild_list ();
                 });
 
-                up_button.clicked.connect (() => {
-                    settings.switch_items (index, true);
+                row.move_up.connect ((row) => {
+                    settings.switch_items (row.index, true);
                     rebuild_list ();
                 });
 
-                down_button.clicked.connect (() => {
-                    settings.switch_items (index, false);
+                row.move_down.connect ((row) => {
+                    settings.switch_items (row.index, false);
                     rebuild_list ();
                 });
             }
@@ -179,8 +136,73 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             i++;
         });
 
+        var list_children = list.get_children ();
+        if (!list_children.is_empty ()) {
+            unowned var first_child = (DisplayRow) list_children.first ().data;
+            first_child.up_button.sensitive = false;
+
+            unowned var last_child = (DisplayRow) list_children.last ().data;
+            last_child.down_button.sensitive = false;
+        }
+
         list.show_all ();
 
         update_cursor ();
+    }
+
+    private class DisplayRow : Gtk.ListBoxRow {
+        public signal void remove_layout ();
+        public signal void move_up ();
+        public signal void move_down ();
+
+        public string layout_name { get; construct; }
+        public uint index { get; construct; }
+
+        public Gtk.Button up_button;
+        public Gtk.Button down_button;
+
+        public DisplayRow (string layout_name, uint index) {
+            Object (
+                layout_name: layout_name,
+                index: index
+            );
+        }
+
+        construct {
+            var label = new Gtk.Label (layout_name) {
+                hexpand = true,
+                halign = START,
+                margin_top = 6,
+                margin_bottom = 6,
+                margin_start = 6,
+                margin_end = 6,
+            };
+
+            var remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
+                tooltip_text = _("Remove")
+            };
+
+            up_button = new Gtk.Button.from_icon_name ("go-up-symbolic") {
+                tooltip_text = _("Move up")
+            };
+
+            down_button = new Gtk.Button.from_icon_name ("go-down-symbolic") {
+                tooltip_text = _("Move down"),
+            };
+
+            var box = new Gtk.Box (HORIZONTAL, 0);
+            box.add (label);
+            box.add (remove_button);
+            box.add (up_button);
+            box.add (down_button);
+
+            child = box;
+
+            remove_button.clicked.connect (() => remove_layout ());
+
+            up_button.clicked.connect (() => move_up ());
+
+            down_button.clicked.connect (() => move_down ());
+        }
     }
 }

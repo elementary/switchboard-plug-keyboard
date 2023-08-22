@@ -59,12 +59,11 @@ class Keyboard.SourceSettings : Object {
      */
     private bool currently_writing;
 
-    private static SourceSettings? instance;
+    private static GLib.Once<SourceSettings> instance;
     public static SourceSettings get_instance () {
-        if (instance == null) {
-            instance = new SourceSettings ();
-        }
-        return instance;
+        return instance.once (() => {
+            return new SourceSettings ();
+        });
     }
 
     construct {
