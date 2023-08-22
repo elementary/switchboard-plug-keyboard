@@ -18,12 +18,8 @@
 */
 
 namespace Keyboard.Shortcuts {
-    // list of all shortcuts in gsettings, global object
-    private List list;
-    // class to interact with gsettings
-    private Shortcuts.Settings settings;
     // array of shortcut views, one for each section
-    private ShortcutDisplayInterface[] shortcut_views;
+    private Gtk.ListBox[] shortcut_views;
 
     public enum SectionID {
         WINDOWS,
@@ -67,8 +63,7 @@ namespace Keyboard.Shortcuts {
         construct {
             CustomShortcutSettings.init ();
 
-            list = new List ();
-            settings = new Shortcuts.Settings ();
+            unowned var list = Shortcuts.ShortcutsList.get_default ();
 
             section_switcher = new Gtk.ListBox ();
             section_switcher.add (new SwitcherRow (list.windows_group));
@@ -128,11 +123,11 @@ namespace Keyboard.Shortcuts {
             attach (frame, 1, 0, 2, 1);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
-                shortcut_views += new ShortcutListBox ((SectionID) id, this);
+                shortcut_views += new ShortcutListBox ((SectionID) id);
             }
 
             if (CustomShortcutSettings.available) {
-                var custom_tree = new CustomShortcutListBox (this);
+                var custom_tree = new CustomShortcutListBox ();
                 add_button.clicked.connect (() => custom_tree.on_add_clicked ());
 
                 shortcut_views += custom_tree;
@@ -154,34 +149,6 @@ namespace Keyboard.Shortcuts {
 
         public void open_custom_shortcuts () {
             section_switcher.select_row (custom_shortcuts_row);
-        }
-
-        public bool system_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-            name = "";
-            group = "";
-            foreach (var view in shortcut_views) {
-                if (view is ShortcutListBox) {
-                    if (view.shortcut_conflicts (shortcut, out name, out group)) {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
-        }
-
-        public bool custom_shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-            name = "";
-            group = "";
-            foreach (var view in shortcut_views) {
-                if (view is CustomShortcutListBox) {
-                    if (view.shortcut_conflicts (shortcut, out name, out group)) {
-                        return true;
-                    }
-                }
-            }
-
-            return false;
         }
 
         private class SwitcherRow : Gtk.ListBoxRow {

@@ -27,6 +27,15 @@ namespace Keyboard.Shortcuts {
 
         private string[] schema_names;
 
+        private static GLib.Once<Shortcuts.Settings> instance;
+        public static unowned Shortcuts.Settings get_default () {
+            return instance.once (() => {
+                return new Shortcuts.Settings ();
+            });
+        }
+
+        private Settings () {}
+
         construct {
             schema_names = {
                 "org.gnome.desktop.wm.keybindings",
