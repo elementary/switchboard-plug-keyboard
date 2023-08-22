@@ -12,16 +12,16 @@
 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-layout.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.1/data/screenshot-layout.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-input-method.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.1/data/screenshot-input-method.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-shortcuts.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.1/data/screenshot-shortcuts.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.0/data/screenshot-behavior.png</image>
+      <image>https://raw.githubusercontent.com/elementary/switchboard-plug-keyboard/3.2.1/data/screenshot-behavior.png</image>
     </screenshot>
   </screenshots>
 
@@ -38,6 +38,22 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="3.2.1" date="2023-08-22" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Fix potential crashes</li>
+          <li>Add "Cycle Windows of application" and "Cycle Windows of application backwards" shortcuts</li>
+          <li>Improve experience installing input methods</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/wingpanel-indicator-keyboard/issues/108">Keyboard layout does not change properly</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-keyboard/issues/430">Cannot set "PrintScreen" as a shortcut for any command</issue>
+      </issues>
+    </release>
+
     <release version="3.2.0" date="2023-07-24" urgency="medium">
       <description>
         <p>Minor updates:</p>
