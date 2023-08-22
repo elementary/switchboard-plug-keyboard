@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 10:33+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
 "PO-Revision-Date: 2023-08-08 09:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -34,46 +34,60 @@ msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
 #: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:59
-#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:87
-#: data/keyboard.metainfo.xml.in:101
+#: data/keyboard.metainfo.xml.in:75 data/keyboard.metainfo.xml.in:93
+#: data/keyboard.metainfo.xml.in:103 data/keyboard.metainfo.xml.in:117
 msgid "Minor updates:"
 msgstr "Mises à jour mineures :"
 
 #: data/keyboard.metainfo.xml.in:45
-msgid "Show the values associated with sliders while dragging"
-msgstr "Affichage des valeurs associées aux curseurs lors de leur déplacement"
+msgid "Fix potential crashes"
+msgstr ""
 
-#: data/keyboard.metainfo.xml.in:46 data/keyboard.metainfo.xml.in:61
-#: data/keyboard.metainfo.xml.in:80 data/keyboard.metainfo.xml.in:90
-#: data/keyboard.metainfo.xml.in:103
+#: data/keyboard.metainfo.xml.in:46
+msgid ""
+"Add \"Cycle Windows of application\" and \"Cycle Windows of application "
+"backwards\" shortcuts"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:47
+msgid "Improve experience installing input methods"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:48 data/keyboard.metainfo.xml.in:62
+#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:96
+#: data/keyboard.metainfo.xml.in:106 data/keyboard.metainfo.xml.in:119
 msgid "Updated translations"
 msgstr "Mise à jour des traductions"
 
-#: data/keyboard.metainfo.xml.in:71 data/keyboard.metainfo.xml.in:97
+#: data/keyboard.metainfo.xml.in:61
+msgid "Show the values associated with sliders while dragging"
+msgstr "Affichage des valeurs associées aux curseurs lors de leur déplacement"
+
+#: data/keyboard.metainfo.xml.in:87 data/keyboard.metainfo.xml.in:113
 msgid "New features:"
 msgstr "Nouvelles fonctionnalités :"
 
-#: data/keyboard.metainfo.xml.in:73
+#: data/keyboard.metainfo.xml.in:89
 msgid "Revert shortcuts to default"
 msgstr "Réinitialisez les raccourcis par défaut"
 
-#: data/keyboard.metainfo.xml.in:74
+#: data/keyboard.metainfo.xml.in:90
 msgid "Easily disable a shortcut"
 msgstr "Désactivez facilement un raccourci"
 
-#: data/keyboard.metainfo.xml.in:75
+#: data/keyboard.metainfo.xml.in:91
 msgid "Support Rime input method for Chinese"
 msgstr "Prise en charge de la méthode de saisie Rime pour le chinois"
 
-#: data/keyboard.metainfo.xml.in:79
+#: data/keyboard.metainfo.xml.in:95
 msgid "Remove custom shortcuts from their menu"
 msgstr "Suppression des raccourcis personnalisés de leur menu"
 
-#: data/keyboard.metainfo.xml.in:89
+#: data/keyboard.metainfo.xml.in:105
 msgid "Update for OS 7"
 msgstr "Mise à jour pour OS 7"
 
-#: data/keyboard.metainfo.xml.in:99
+#: data/keyboard.metainfo.xml.in:115
 msgid "Open Multitasking View with Super"
 msgstr "Ouverture de la vue multitâche avec la touche Super"
 

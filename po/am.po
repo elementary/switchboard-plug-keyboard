@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 10:33+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
 "PO-Revision-Date: 2020-10-04 21:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Amharic <https://l10n.elementary.io/projects/switchboard/"
@@ -245,308 +245,318 @@ msgid "Cycle Windows backwards"
 msgstr "የ መስኮቶች መደብ መቀየሪያ"
 
 #: src/Shortcuts/List.vala:55
+#, fuzzy
+msgid "Cycle Windows of application"
+msgstr "የ መስኮቶች መደብ መቀየሪያ"
+
+#: src/Shortcuts/List.vala:56
+#, fuzzy
+msgid "Cycle Windows of application backwards"
+msgstr "የ መስኮቶች መደብ መቀየሪያ"
+
+#: src/Shortcuts/List.vala:57
 msgid "Tile Left"
 msgstr "በ ግራ መደርደሪያ"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:58
 msgid "Tile Right"
 msgstr "በ ቀኝ መደርደሪያ"
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:59
 msgid "Window Overview"
 msgstr ""
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:60
 msgid "Show All Windows"
 msgstr "ሁሉንም መስኮቶች መመልከቻ"
 
-#: src/Shortcuts/List.vala:59
+#: src/Shortcuts/List.vala:61
 msgid "Picture in Picture Mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:62
 #, fuzzy
 #| msgid "Move to left"
 msgid "Move to display above"
 msgstr "ወደ ግራ ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:63
 #, fuzzy
 #| msgid "Move to left"
 msgid "Move to display below"
 msgstr "ወደ ግራ ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:64
 #, fuzzy
 msgid "Move to right display"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 #, fuzzy
 msgid "Move to left display"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
+#: src/Shortcuts/List.vala:69 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "የስራ ቦታዎች"
 
-#: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
+#: src/Shortcuts/List.vala:70 src/Views/Layout.vala:82
 msgid "Multitasking View"
 msgstr ""
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 #, fuzzy
 msgid "Switch left"
 msgstr "ወደ ግራ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 #, fuzzy
 msgid "Switch right"
 msgstr "ወደ ቀኝ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to first"
 msgstr "ወደ መጀመሪያው መቀየሪያ"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to new"
 msgstr "ወደ አዲስ መቀየሪያ"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 1"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 1"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 2"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 2"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 3"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 3"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 4"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 4"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 5"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 5"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 6"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 6"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 7"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 7"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:82
 msgid "Switch to workspace 8"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 8"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:83
 msgid "Switch to workspace 9"
 msgstr "መቀየሪያ ወደ ስራ ቦታ 9"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:84
 #, fuzzy
 msgid "Cycle workspaces"
 msgstr "የስራ ቦታዎች"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:85
 msgid "Cycle workspaces backwards"
 msgstr ""
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 1"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 2"
 msgstr "ወደ ስራ ቦታ 2 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 3"
 msgstr "ወደ ስራ ቦታ 3 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 4"
 msgstr "ወደ ስራ ቦታ 4 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 5"
 msgstr "ወደ ስራ ቦታ 5 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 6"
 msgstr "ወደ ስራ ቦታ 6 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 7"
 msgstr "ወደ ስራ ቦታ 7 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:93
 msgid "Move to workspace 8"
 msgstr "ወደ ስራ ቦታ 8 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:94
 msgid "Move to workspace 9"
 msgstr "ወደ ስራ ቦታ 9 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:95
 #, fuzzy
 msgid "Move to left workspace"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:96
 #, fuzzy
 msgid "Move to right workspace"
 msgstr "ወደ ስራ ቦታ 1 ማንቀሳቀሻ"
 
-#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
+#: src/Shortcuts/List.vala:100 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr ""
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:101
 msgid "Grab the whole screen"
 msgstr ""
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:102
 msgid "Copy the whole screen to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:103
 msgid "Grab the current window"
 msgstr ""
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:104
 msgid "Copy the current window to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:105
 msgid "Select an area to grab"
 msgstr ""
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:106
 msgid "Copy an area to clipboard"
 msgstr ""
 
-#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
+#: src/Shortcuts/List.vala:110 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "መተግበሪያዎች"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:111
 msgid "Email"
 msgstr "ኢሜይል"
 
-#: src/Shortcuts/List.vala:110
+#: src/Shortcuts/List.vala:112
 msgid "Home Folder"
 msgstr "የፎልደር ቤት"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:113
 msgid "Music"
 msgstr "ሙዚቃ"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:114
 msgid "Terminal"
 msgstr "ተርሚናል"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:115
 msgid "Internet Browser"
 msgstr "ኢንተርኔት መቃኛ"
 
-#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
+#: src/Shortcuts/List.vala:119 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "መገናኛ"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:120
 msgid "Volume Up"
 msgstr "መጠን መጨመሪያ"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:121
 msgid "Volume Down"
 msgstr "መጠን መቀነሻ"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:122
 msgid "Mute"
 msgstr "መቀነሻ"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:123
 #, fuzzy
 #| msgid "Pause"
 msgid "Play/Pause"
 msgstr "ማስቆሚያ"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:124
 msgid "Pause"
 msgstr "ማስቆሚያ"
 
-#: src/Shortcuts/List.vala:123
+#: src/Shortcuts/List.vala:125
 msgid "Stop"
 msgstr "ማቆሚያ"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:126
 msgid "Previous Track"
 msgstr "ቀደም ያለው ተረኛ"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:127
 msgid "Next Track"
 msgstr "የሚቀጥለው ተረኛ"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:128
 msgid "Eject"
 msgstr "ማውጫ"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:132
 msgid "Universal Access"
 msgstr "አለም አቀፍ መድረሻ"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:133
 msgid "Decrease Text Size"
 msgstr "የ ጽሁፍ መጠን መቀነሻ"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:134
 msgid "Increase Text Size"
 msgstr "የ ጽሁፍ መጠን መጨመሪያ"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:135
 msgid "Magnifier Zoom in"
 msgstr ""
 
-#: src/Shortcuts/List.vala:134
+#: src/Shortcuts/List.vala:136
 msgid "Magnifier Zoom out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:137
 msgid "Toggle On Screen Keyboard"
 msgstr "በመመልከቻው ላይ የፊደል ገበታ መቀያየሪያ"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:138
 msgid "Toggle Screenreader"
 msgstr ""
 
-#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
+#: src/Shortcuts/List.vala:142 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr ""
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
+#: src/Shortcuts/List.vala:143 src/Views/Layout.vala:81
 #, fuzzy
 msgid "Applications Menu"
 msgstr "መተግበሪያዎች"
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:144
 msgid "Lock"
 msgstr ""
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:145
 msgid "Log Out"
 msgstr ""
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:146
 msgid "Cycle display mode"
 msgstr ""
 
-#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
+#: src/Shortcuts/List.vala:150 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr ""
 
@@ -644,73 +654,73 @@ msgid "Type to test your settings"
 msgstr "አቀማመጡን ለመሞከር ይጻፉt…"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr ""
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr ""
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "መጨመሪያ…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "ማስወገጃ"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines:"
 msgstr "መስኮቶች መቀየሪያ"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr ""
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr ""
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr ""
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr ""
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 #, fuzzy
 msgid "Type to test your input method"
 msgstr "አቀማመጡን ለመሞከር ይጻፉt…"
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr ""
 
