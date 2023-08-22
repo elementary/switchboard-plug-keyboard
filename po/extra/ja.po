@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-21 16:58+0000\n"
-"PO-Revision-Date: 2023-07-23 02:34+0000\n"
+"PO-Revision-Date: 2023-08-24 09:08+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ja/>\n"
@@ -39,17 +39,18 @@ msgstr "そのほかのアップデート:"
 
 #: data/keyboard.metainfo.xml.in:45
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "クラッシュすることがある不具合を修正"
 
 #: data/keyboard.metainfo.xml.in:46
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
-msgstr ""
+msgstr "“同一アプリのウィンドウを切り替え”および“逆順で同一アプリのウィンドウを切り替"
+"え”ショートカットを追加"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "インプットメソッドインストール時の UX を向上"
 
 #: data/keyboard.metainfo.xml.in:48 data/keyboard.metainfo.xml.in:62
 #: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:96
