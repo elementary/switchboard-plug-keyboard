@@ -10,9 +10,10 @@ src/InputSources/InputSource.vala
 src/InputSources/SourceSettings.vala
 src/Plug.vala
 src/Shortcuts/CustomShortcutSettings.vala
-src/Shortcuts/List.vala
+src/Shortcuts/ShortcutsList.vala
 src/Shortcuts/Settings.vala
 src/Shortcuts/Shortcut.vala
+src/Shortcuts/ConflictsManager.vala
 src/Views/Behavior.vala
 src/Views/InputMethod.vala
 src/Views/Layout.vala
@@ -24,7 +25,6 @@ src/Widgets/Layout/AdvancedSettingsGrid.vala
 src/Widgets/Layout/AdvancedSettingsPanel.vala
 src/Widgets/Layout/Display.vala
 src/Widgets/Shortcuts/CustomShortcutListBox.vala
-src/Widgets/Shortcuts/ShortcutDisplayInterface.vala
 src/Widgets/Shortcuts/ShortcutListBox.vala
 src/Xkb/Handler.vala
 src/Xkb/XkbModifier.vala

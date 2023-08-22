@@ -26,7 +26,7 @@ namespace Keyboard.Shortcuts {
         public string[] keys;
     }
 
-    class List : GLib.Object {
+    class ShortcutsList : GLib.Object {
         public Group[] groups;
         public Group windows_group;
         public Group workspaces_group;
@@ -36,6 +36,15 @@ namespace Keyboard.Shortcuts {
         public Group a11y_group;
         public Group system_group;
         public Group custom_group;
+
+        private static GLib.Once<ShortcutsList> instance;
+        public static unowned ShortcutsList get_default () {
+            return instance.once (() => {
+                return new ShortcutsList ();
+            });
+        }
+
+        private ShortcutsList () {}
 
         construct {
             windows_group = {};
