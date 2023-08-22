@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 16:52+0000\n"
-"PO-Revision-Date: 2023-07-28 18:08+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ca/>\n"
@@ -232,16 +232,12 @@ msgid "Cycle Windows backwards"
 msgstr "Cicle de finestres invers"
 
 #: src/Shortcuts/List.vala:55
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Cicle de finestres invers"
+msgstr "Cicle de finestres d'aplicacions"
 
 #: src/Shortcuts/List.vala:56
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Cicle de finestres invers"
+msgstr "Cicle invers de finestres d'aplicacions"
 
 #: src/Shortcuts/List.vala:57
 msgid "Tile Left"
@@ -628,72 +624,72 @@ msgid "Type to test your settings"
 msgstr "Teclegeu per provar la configuració."
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr "El dimoni d'iBus no s'executa."
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "Heu d'executar el dimoni d'IBus per habilitar o configurar motors de mètodes "
 "d'entrada."
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr "Inicia el dimoni d'iBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr "No s'ha pogut iniciar el dimoni d'iBus."
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Afegeix…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Suprimeix"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 msgid "Switch engines:"
 msgstr "Canvia els motors:"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr "Mostra el plafó de propietats:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr "No ho mostris"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr "Amaga-ho automàticament"
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr "Mostra-ho sempre"
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr "Encasta text preeditat a la finestra de l'aplicació:"
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr "Dimoni d'iBus"
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr "Useu i gestioneu mètodes d'entrada"
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 msgid "Type to test your input method"
 msgstr "Teclegeu per provar el mètode d'entrada."
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr "Hi ha activa una disposició de teclat."
 

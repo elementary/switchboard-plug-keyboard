@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 16:52+0000\n"
-"PO-Revision-Date: 2023-07-29 20:08+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -232,16 +232,12 @@ msgid "Cycle Windows backwards"
 msgstr "逆順でウィンドウを切り替え"
 
 #: src/Shortcuts/List.vala:55
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "逆順でウィンドウを切り替え"
+msgstr "同一アプリのウィンドウを切り替え"
 
 #: src/Shortcuts/List.vala:56
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "逆順でウィンドウを切り替え"
+msgstr "逆順で同一アプリのウィンドウを切り替え"
 
 #: src/Shortcuts/List.vala:57
 msgid "Tile Left"
@@ -629,72 +625,72 @@ msgid "Type to test your settings"
 msgstr "入力して設定を確認"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr "IBus デーモンが起動していません"
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "インプットメソッドエンジンを有効化したり設定したりするには、IBus デーモンを起"
 "動する必要があります。"
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr "IBus デーモンを起動"
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr "IBus デーモンを起動できませんでした"
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "追加…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "削除"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 msgid "Switch engines:"
 msgstr "エンジンを切り替え:"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr "プロパティーパネルを表示:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr "表示しない"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr "自動的に非表示"
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr "常に表示"
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr "インライン入力:"
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr "IBus デーモン"
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr "インプットメソッドを使用・管理します"
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 msgid "Type to test your input method"
 msgstr "入力してインプットメソッドを確認"
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr "キーボードレイアウトが有効です"
 

@@ -7,9 +7,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 16:52+0000\n"
-"PO-Revision-Date: 2023-07-28 18:08+0000\n"
-"Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
+"Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
 "Language: ru\n"
@@ -233,16 +233,12 @@ msgid "Cycle Windows backwards"
 msgstr "Переключение окон в обратном направлении"
 
 #: src/Shortcuts/List.vala:55
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Переключение окон в обратном направлении"
+msgstr "Переключение окон приложения"
 
 #: src/Shortcuts/List.vala:56
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Переключение окон в обратном направлении"
+msgstr "Переключение окон приложения в обратном направлении"
 
 #: src/Shortcuts/List.vala:57
 msgid "Tile Left"
@@ -629,71 +625,71 @@ msgid "Type to test your settings"
 msgstr "Начните печатать, чтобы проверить настройки"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr "IBus Daemon не запущен"
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "Вам нужно запустить сервис IBus, чтобы включить или настроить методы ввода."
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr "Запустить IBus Daemon"
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr "Не удалось запустить демон IBus"
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Добавить…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Удалить"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 msgid "Switch engines:"
 msgstr "Переключить методы ввода:"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr "Показать панель свойств:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr "Не показывать"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr "Авто-скрытие"
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr "Всегда показывать"
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr "Вставить предварительно измененный текст в окно приложения:"
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr "Демон IBus"
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr "Используйте и управляйте методами ввода"
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 msgid "Type to test your input method"
 msgstr "Введите что-то для проверки метода ввода"
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr "Раскладка клавиатуры активна"
 

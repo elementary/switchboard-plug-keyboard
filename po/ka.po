@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-18 16:52+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
 "PO-Revision-Date: 2023-05-20 05:06+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -632,70 +632,70 @@ msgid "Type to test your settings"
 msgstr "პარამეტრების შესამოწმებლად აკრიფეთ"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr ""
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr ""
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "დამატება…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "წაშლა"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 msgid "Switch engines:"
 msgstr "ძრავების გადართვა:"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr "აღარ მაჩვენო"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr "ავტომატურად დამალვა"
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr "ყოველთვის ჩვენება"
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr "დემონი IBus"
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr ""
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 msgid "Type to test your input method"
 msgstr "თქვენი შეყვანის მეთოდის შესამოწმებლად აკრიფეთ"
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr ""
 

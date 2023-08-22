@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+	<schema path="/io/elementary/switchboard/keyboard/" id="io.elementary.switchboard.keyboard">
+		<key name="first-launch" type="b">
+			<default>true</default>
+			<summary>Is plug launched for the first time.</summary>
+			<description>Used to work around IBus bug.</description>
+		</key>
+	</schema>
+</schemalist>
