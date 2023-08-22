@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 10:33+0000\n"
-"PO-Revision-Date: 2023-07-28 18:08+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
+"PO-Revision-Date: 2023-08-21 16:58+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ca/>\n"
@@ -232,294 +232,302 @@ msgid "Cycle Windows backwards"
 msgstr "Cicle de finestres invers"
 
 #: src/Shortcuts/List.vala:55
+msgid "Cycle Windows of application"
+msgstr "Cicle de finestres d'aplicacions"
+
+#: src/Shortcuts/List.vala:56
+msgid "Cycle Windows of application backwards"
+msgstr "Cicle invers de finestres d'aplicacions"
+
+#: src/Shortcuts/List.vala:57
 msgid "Tile Left"
 msgstr "Mosaic equerre"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:58
 msgid "Tile Right"
 msgstr "Mosaic dret"
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:59
 msgid "Window Overview"
 msgstr "Resum de finestres"
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:60
 msgid "Show All Windows"
 msgstr "Mostra totes les finestres"
 
-#: src/Shortcuts/List.vala:59
+#: src/Shortcuts/List.vala:61
 msgid "Picture in Picture Mode"
 msgstr "Mode d'Imatge en imatge"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:62
 msgid "Move to display above"
 msgstr "Desplaça a la pantalla de dalt"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:63
 msgid "Move to display below"
 msgstr "Desplaça a la pantalla de baix"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:64
 msgid "Move to right display"
 msgstr "Desplaça a la pantalla de la dreta"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Move to left display"
 msgstr "Desplaça a la pantalla de l'esquerra"
 
-#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
+#: src/Shortcuts/List.vala:69 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "Espais de treball"
 
-#: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
+#: src/Shortcuts/List.vala:70 src/Views/Layout.vala:82
 msgid "Multitasking View"
 msgstr "Vista de multitasca"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch left"
 msgstr "Canvia a l'esquerra"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch right"
 msgstr "Canvia a la dreta"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to first"
 msgstr "Canvia al primer"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to new"
 msgstr "Alternar al nou"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 1"
 msgstr "Canvia a l'espai de treball 1"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 2"
 msgstr "Canvia a l'espai de treball 2"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 3"
 msgstr "Canvia a l'espai de treball 3"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 4"
 msgstr "Canvia a l'espai de treball 4"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 5"
 msgstr "Canvia a l'espai de treball 5"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 6"
 msgstr "Canvia a l'espai de treball 6"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 7"
 msgstr "Canvia a l'espai de treball 7"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:82
 msgid "Switch to workspace 8"
 msgstr "Canvia a l'espai de treball 8"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:83
 msgid "Switch to workspace 9"
 msgstr "Canvia a l'espai de treball 9"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:84
 msgid "Cycle workspaces"
 msgstr "Cicle d'espais de treball"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:85
 msgid "Cycle workspaces backwards"
 msgstr "Cicle d'espais de treball invers"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 1"
 msgstr "Desplaça a l'espai de treball 1"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 2"
 msgstr "Desplaça a l'espai de treball 2"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 3"
 msgstr "Desplaça a l'espai de treball 3"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 4"
 msgstr "Desplaça a l'espai de treball 4"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 5"
 msgstr "Desplaça a l'espai de treball 5"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 6"
 msgstr "Desplaça a l'espai de treball 6"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 7"
 msgstr "Desplaça a l'espai de treball 7"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:93
 msgid "Move to workspace 8"
 msgstr "Desplaça a l'espai de treball 8"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:94
 msgid "Move to workspace 9"
 msgstr "Desplaça a l'espai de treball 9"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:95
 msgid "Move to left workspace"
 msgstr "Desplaça a l'espai de treball de l'esquerra"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:96
 msgid "Move to right workspace"
 msgstr "Desplaça a l'espai de treball de la dreta"
 
-#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
+#: src/Shortcuts/List.vala:100 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "Captures de pantalla"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:101
 msgid "Grab the whole screen"
 msgstr "Captura tota la pantalla"
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:102
 msgid "Copy the whole screen to clipboard"
 msgstr "Copia la pantalla sencera al porta-retalls"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:103
 msgid "Grab the current window"
 msgstr "Captura la finestra actual"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:104
 msgid "Copy the current window to clipboard"
 msgstr "Copia la finestra actual al porta-retalls"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:105
 msgid "Select an area to grab"
 msgstr "Selecciona una àrea per capturar"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:106
 msgid "Copy an area to clipboard"
 msgstr "Copia l'àrea al porta-retalls"
 
-#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
+#: src/Shortcuts/List.vala:110 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "Aplicacions"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:111
 msgid "Email"
 msgstr "Correu electrònic"
 
-#: src/Shortcuts/List.vala:110
+#: src/Shortcuts/List.vala:112
 msgid "Home Folder"
 msgstr "Carpeta de l'usuari"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:113
 msgid "Music"
 msgstr "Música"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:114
 msgid "Terminal"
 msgstr "Terminal"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:115
 msgid "Internet Browser"
 msgstr "Navegador d'Internet"
 
-#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
+#: src/Shortcuts/List.vala:119 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "Mitjà"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:120
 msgid "Volume Up"
 msgstr "Apuja el volum"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:121
 msgid "Volume Down"
 msgstr "Abaixa el volum"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:122
 msgid "Mute"
 msgstr "Silencia"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:123
 msgid "Play/Pause"
 msgstr "Reprodueix / Pausa"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:124
 msgid "Pause"
 msgstr "Pausa"
 
-#: src/Shortcuts/List.vala:123
+#: src/Shortcuts/List.vala:125
 msgid "Stop"
 msgstr "Atura"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:126
 msgid "Previous Track"
 msgstr "Pista anterior"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:127
 msgid "Next Track"
 msgstr "Pista següent"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:128
 msgid "Eject"
 msgstr "Expulsa"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:132
 msgid "Universal Access"
 msgstr "Accés universal"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:133
 msgid "Decrease Text Size"
 msgstr "Disminueix la mida del text"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:134
 msgid "Increase Text Size"
 msgstr "Augmenta la mida del text"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:135
 msgid "Magnifier Zoom in"
 msgstr "Amplia"
 
-#: src/Shortcuts/List.vala:134
+#: src/Shortcuts/List.vala:136
 msgid "Magnifier Zoom out"
 msgstr "Redueix"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:137
 msgid "Toggle On Screen Keyboard"
 msgstr "Activa el teclat en pantalla"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:138
 msgid "Toggle Screenreader"
 msgstr "Activa el lector de pantalla"
 
-#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
+#: src/Shortcuts/List.vala:142 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "Sistema"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
+#: src/Shortcuts/List.vala:143 src/Views/Layout.vala:81
 msgid "Applications Menu"
 msgstr "Menú d'aplicacions"
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:144
 msgid "Lock"
 msgstr "Bloqueja"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:145
 msgid "Log Out"
 msgstr "Desbloqueja"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:146
 msgid "Cycle display mode"
 msgstr "Mode de pantalla cíclic"
 
-#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
+#: src/Shortcuts/List.vala:150 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "Personalitzat"
 
@@ -616,72 +624,72 @@ msgid "Type to test your settings"
 msgstr "Teclegeu per provar la configuració."
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr "El dimoni d'iBus no s'executa."
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "Heu d'executar el dimoni d'IBus per habilitar o configurar motors de mètodes "
 "d'entrada."
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr "Inicia el dimoni d'iBus"
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr "No s'ha pogut iniciar el dimoni d'iBus."
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "Afegeix…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "Suprimeix"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 msgid "Switch engines:"
 msgstr "Canvia els motors:"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr "Mostra el plafó de propietats:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr "No ho mostris"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr "Amaga-ho automàticament"
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr "Mostra-ho sempre"
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr "Encasta text preeditat a la finestra de l'aplicació:"
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr "Dimoni d'iBus"
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr "Useu i gestioneu mètodes d'entrada"
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 msgid "Type to test your input method"
 msgstr "Teclegeu per provar el mètode d'entrada."
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr "Hi ha activa una disposició de teclat."
 

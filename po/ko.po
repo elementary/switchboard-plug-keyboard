@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-17 10:33+0000\n"
+"POT-Creation-Date: 2023-08-21 16:58+0000\n"
 "PO-Revision-Date: 2022-08-06 20:16+0000\n"
 "Last-Translator: Jung-Kyu Park <bagjunggyu@gmail.com>\n"
 "Language-Team: Korean <https://l10n.elementary.io/projects/switchboard/"
@@ -234,294 +234,306 @@ msgid "Cycle Windows backwards"
 msgstr "창 반대로 전환"
 
 #: src/Shortcuts/List.vala:55
+#, fuzzy
+#| msgid "Cycle Windows backwards"
+msgid "Cycle Windows of application"
+msgstr "창 반대로 전환"
+
+#: src/Shortcuts/List.vala:56
+#, fuzzy
+#| msgid "Cycle Windows backwards"
+msgid "Cycle Windows of application backwards"
+msgstr "창 반대로 전환"
+
+#: src/Shortcuts/List.vala:57
 msgid "Tile Left"
 msgstr "왼쪽에 붙임"
 
-#: src/Shortcuts/List.vala:56
+#: src/Shortcuts/List.vala:58
 msgid "Tile Right"
 msgstr "오른쪽에 붙임"
 
-#: src/Shortcuts/List.vala:57
+#: src/Shortcuts/List.vala:59
 msgid "Window Overview"
 msgstr "현재 작업 공간의 모든 창 보기"
 
-#: src/Shortcuts/List.vala:58
+#: src/Shortcuts/List.vala:60
 msgid "Show All Windows"
 msgstr "모든 창 보기"
 
-#: src/Shortcuts/List.vala:59
+#: src/Shortcuts/List.vala:61
 msgid "Picture in Picture Mode"
 msgstr "PIP 모드"
 
-#: src/Shortcuts/List.vala:60
+#: src/Shortcuts/List.vala:62
 msgid "Move to display above"
 msgstr "위로 이동"
 
-#: src/Shortcuts/List.vala:61
+#: src/Shortcuts/List.vala:63
 msgid "Move to display below"
 msgstr "아래로 이동"
 
-#: src/Shortcuts/List.vala:62
+#: src/Shortcuts/List.vala:64
 msgid "Move to right display"
 msgstr "오른쪽으로 이동"
 
-#: src/Shortcuts/List.vala:63
+#: src/Shortcuts/List.vala:65
 msgid "Move to left display"
 msgstr "왼쪽으로 이동"
 
-#: src/Shortcuts/List.vala:67 src/Views/Shortcuts.vala:44
+#: src/Shortcuts/List.vala:69 src/Views/Shortcuts.vala:44
 msgid "Workspaces"
 msgstr "작업공간"
 
-#: src/Shortcuts/List.vala:68 src/Views/Layout.vala:82
+#: src/Shortcuts/List.vala:70 src/Views/Layout.vala:82
 msgid "Multitasking View"
 msgstr "멀티태스킹 뷰"
 
-#: src/Shortcuts/List.vala:69
+#: src/Shortcuts/List.vala:71
 msgid "Switch left"
 msgstr "왼쪽으로 전환"
 
-#: src/Shortcuts/List.vala:70
+#: src/Shortcuts/List.vala:72
 msgid "Switch right"
 msgstr "오른쪽으로 전환"
 
-#: src/Shortcuts/List.vala:71
+#: src/Shortcuts/List.vala:73
 msgid "Switch to first"
 msgstr "맨 앞 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:72
+#: src/Shortcuts/List.vala:74
 msgid "Switch to new"
 msgstr "새 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:73
+#: src/Shortcuts/List.vala:75
 msgid "Switch to workspace 1"
 msgstr "작업 공간 1로 전환"
 
-#: src/Shortcuts/List.vala:74
+#: src/Shortcuts/List.vala:76
 msgid "Switch to workspace 2"
 msgstr "작업 공간 2로 전환"
 
-#: src/Shortcuts/List.vala:75
+#: src/Shortcuts/List.vala:77
 msgid "Switch to workspace 3"
 msgstr "작업 공간 3으로 전환"
 
-#: src/Shortcuts/List.vala:76
+#: src/Shortcuts/List.vala:78
 msgid "Switch to workspace 4"
 msgstr "작업 공간 4로 전환"
 
-#: src/Shortcuts/List.vala:77
+#: src/Shortcuts/List.vala:79
 msgid "Switch to workspace 5"
 msgstr "작업 공간 5로 전환"
 
-#: src/Shortcuts/List.vala:78
+#: src/Shortcuts/List.vala:80
 msgid "Switch to workspace 6"
 msgstr "작업 공간 6으로 전환"
 
-#: src/Shortcuts/List.vala:79
+#: src/Shortcuts/List.vala:81
 msgid "Switch to workspace 7"
 msgstr "작업 공간 7로 전환"
 
-#: src/Shortcuts/List.vala:80
+#: src/Shortcuts/List.vala:82
 msgid "Switch to workspace 8"
 msgstr "작업 공간 8로 전환"
 
-#: src/Shortcuts/List.vala:81
+#: src/Shortcuts/List.vala:83
 msgid "Switch to workspace 9"
 msgstr "작업 공간 9로 이동"
 
-#: src/Shortcuts/List.vala:82
+#: src/Shortcuts/List.vala:84
 msgid "Cycle workspaces"
 msgstr "작업 공간 전환"
 
-#: src/Shortcuts/List.vala:83
+#: src/Shortcuts/List.vala:85
 msgid "Cycle workspaces backwards"
 msgstr "작업 공간 반대로 전환"
 
-#: src/Shortcuts/List.vala:84
+#: src/Shortcuts/List.vala:86
 msgid "Move to workspace 1"
 msgstr "1번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:85
+#: src/Shortcuts/List.vala:87
 msgid "Move to workspace 2"
 msgstr "2번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:86
+#: src/Shortcuts/List.vala:88
 msgid "Move to workspace 3"
 msgstr "3번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:87
+#: src/Shortcuts/List.vala:89
 msgid "Move to workspace 4"
 msgstr "4번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:88
+#: src/Shortcuts/List.vala:90
 msgid "Move to workspace 5"
 msgstr "5번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:89
+#: src/Shortcuts/List.vala:91
 msgid "Move to workspace 6"
 msgstr "6번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:90
+#: src/Shortcuts/List.vala:92
 msgid "Move to workspace 7"
 msgstr "7번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:91
+#: src/Shortcuts/List.vala:93
 msgid "Move to workspace 8"
 msgstr "8번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:92
+#: src/Shortcuts/List.vala:94
 msgid "Move to workspace 9"
 msgstr "9번 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:93
+#: src/Shortcuts/List.vala:95
 msgid "Move to left workspace"
 msgstr "왼쪽 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:94
+#: src/Shortcuts/List.vala:96
 msgid "Move to right workspace"
 msgstr "오른쪽 작업 공간으로 이동"
 
-#: src/Shortcuts/List.vala:98 src/Views/Shortcuts.vala:46
+#: src/Shortcuts/List.vala:100 src/Views/Shortcuts.vala:46
 msgid "Screenshots"
 msgstr "스크린샷"
 
-#: src/Shortcuts/List.vala:99
+#: src/Shortcuts/List.vala:101
 msgid "Grab the whole screen"
 msgstr "전체 화면 잡기"
 
-#: src/Shortcuts/List.vala:100
+#: src/Shortcuts/List.vala:102
 msgid "Copy the whole screen to clipboard"
 msgstr "전체 화면을 클립보드에 저장하기"
 
-#: src/Shortcuts/List.vala:101
+#: src/Shortcuts/List.vala:103
 msgid "Grab the current window"
 msgstr "현재 창 잡기"
 
-#: src/Shortcuts/List.vala:102
+#: src/Shortcuts/List.vala:104
 msgid "Copy the current window to clipboard"
 msgstr "현재 창을 클립보드에 복사하기"
 
-#: src/Shortcuts/List.vala:103
+#: src/Shortcuts/List.vala:105
 msgid "Select an area to grab"
 msgstr "잡을 영역 선택"
 
-#: src/Shortcuts/List.vala:104
+#: src/Shortcuts/List.vala:106
 msgid "Copy an area to clipboard"
 msgstr "잡은 영역을 클립보드에 저장하기"
 
-#: src/Shortcuts/List.vala:108 src/Views/Shortcuts.vala:48
+#: src/Shortcuts/List.vala:110 src/Views/Shortcuts.vala:48
 msgid "Applications"
 msgstr "애플리케이션"
 
-#: src/Shortcuts/List.vala:109
+#: src/Shortcuts/List.vala:111
 msgid "Email"
 msgstr "이메일"
 
-#: src/Shortcuts/List.vala:110
+#: src/Shortcuts/List.vala:112
 msgid "Home Folder"
 msgstr "홈 폴더"
 
-#: src/Shortcuts/List.vala:111
+#: src/Shortcuts/List.vala:113
 msgid "Music"
 msgstr "음악"
 
-#: src/Shortcuts/List.vala:112
+#: src/Shortcuts/List.vala:114
 msgid "Terminal"
 msgstr "터미널"
 
-#: src/Shortcuts/List.vala:113
+#: src/Shortcuts/List.vala:115
 msgid "Internet Browser"
 msgstr "인터넷 브라우저"
 
-#: src/Shortcuts/List.vala:117 src/Views/Shortcuts.vala:50
+#: src/Shortcuts/List.vala:119 src/Views/Shortcuts.vala:50
 msgid "Media"
 msgstr "미디어"
 
-#: src/Shortcuts/List.vala:118
+#: src/Shortcuts/List.vala:120
 msgid "Volume Up"
 msgstr "볼륨 올림"
 
-#: src/Shortcuts/List.vala:119
+#: src/Shortcuts/List.vala:121
 msgid "Volume Down"
 msgstr "볼륨 낮춤"
 
-#: src/Shortcuts/List.vala:120
+#: src/Shortcuts/List.vala:122
 msgid "Mute"
 msgstr "무음"
 
-#: src/Shortcuts/List.vala:121
+#: src/Shortcuts/List.vala:123
 msgid "Play/Pause"
 msgstr "재생/중지"
 
-#: src/Shortcuts/List.vala:122
+#: src/Shortcuts/List.vala:124
 msgid "Pause"
 msgstr "일시 중지"
 
-#: src/Shortcuts/List.vala:123
+#: src/Shortcuts/List.vala:125
 msgid "Stop"
 msgstr "정지"
 
-#: src/Shortcuts/List.vala:124
+#: src/Shortcuts/List.vala:126
 msgid "Previous Track"
 msgstr "이전 트랙"
 
-#: src/Shortcuts/List.vala:125
+#: src/Shortcuts/List.vala:127
 msgid "Next Track"
 msgstr "다음 트랙"
 
-#: src/Shortcuts/List.vala:126
+#: src/Shortcuts/List.vala:128
 msgid "Eject"
 msgstr "꺼내기"
 
-#: src/Shortcuts/List.vala:130
+#: src/Shortcuts/List.vala:132
 msgid "Universal Access"
 msgstr "손 쉬운 사용"
 
-#: src/Shortcuts/List.vala:131
+#: src/Shortcuts/List.vala:133
 msgid "Decrease Text Size"
 msgstr "텍스트 크기 줄이기"
 
-#: src/Shortcuts/List.vala:132
+#: src/Shortcuts/List.vala:134
 msgid "Increase Text Size"
 msgstr "텍스트 크기 키우기"
 
-#: src/Shortcuts/List.vala:133
+#: src/Shortcuts/List.vala:135
 msgid "Magnifier Zoom in"
 msgstr "돋보기 줌 인"
 
-#: src/Shortcuts/List.vala:134
+#: src/Shortcuts/List.vala:136
 msgid "Magnifier Zoom out"
 msgstr "돋보기 줌 아웃"
 
-#: src/Shortcuts/List.vala:135
+#: src/Shortcuts/List.vala:137
 msgid "Toggle On Screen Keyboard"
 msgstr "스크린 키보드에 토글"
 
-#: src/Shortcuts/List.vala:136
+#: src/Shortcuts/List.vala:138
 msgid "Toggle Screenreader"
 msgstr "스크린리더 전환"
 
-#: src/Shortcuts/List.vala:140 src/Views/Shortcuts.vala:54
+#: src/Shortcuts/List.vala:142 src/Views/Shortcuts.vala:54
 msgid "System"
 msgstr "시스템"
 
-#: src/Shortcuts/List.vala:141 src/Views/Layout.vala:81
+#: src/Shortcuts/List.vala:143 src/Views/Layout.vala:81
 msgid "Applications Menu"
 msgstr "애플리케이션 메뉴"
 
-#: src/Shortcuts/List.vala:142
+#: src/Shortcuts/List.vala:144
 msgid "Lock"
 msgstr "잠금"
 
-#: src/Shortcuts/List.vala:143
+#: src/Shortcuts/List.vala:145
 msgid "Log Out"
 msgstr "로그 아웃"
 
-#: src/Shortcuts/List.vala:144
+#: src/Shortcuts/List.vala:146
 msgid "Cycle display mode"
 msgstr "돌려보기 모드"
 
-#: src/Shortcuts/List.vala:148 src/Views/Shortcuts.vala:56
+#: src/Shortcuts/List.vala:150 src/Views/Shortcuts.vala:56
 msgid "Custom"
 msgstr "사용자 설정"
 
@@ -620,71 +632,71 @@ msgid "Type to test your settings"
 msgstr "글자를 입력해서 설정을 확인해 보세요"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:44
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr "IBus Daemon이 실행되지 않습니다"
 
-#: src/Views/InputMethod.vala:45
+#: src/Views/InputMethod.vala:52
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
 "한글 입력기 엔진을 활성화하거나 설정하려면 IBus Damon을 실행해야 합니다."
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
 msgstr "IBus Daemon 실행"
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:66
 msgid "Could not start the IBus daemon"
 msgstr "IBus daemon을 실행할 수 없습니다"
 
-#: src/Views/InputMethod.vala:104 src/Widgets/Layout/Display.vala:57
+#: src/Views/InputMethod.vala:111 src/Widgets/Layout/Display.vala:57
 msgid "Add…"
 msgstr "추가…"
 
-#: src/Views/InputMethod.vala:109 src/Widgets/Layout/Display.vala:62
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:62
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:165
 msgid "Remove"
 msgstr "제거"
 
-#: src/Views/InputMethod.vala:124
+#: src/Views/InputMethod.vala:131
 msgid "Switch engines:"
 msgstr "엔진 전환:"
 
-#: src/Views/InputMethod.vala:136
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr "속성 패널에 표시:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr "감추기"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr "자동 숨김"
 
-#: src/Views/InputMethod.vala:145
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr "항상 보이기"
 
-#: src/Views/InputMethod.vala:147
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr "애플리케이션 창에 사전 편집 텍스트 포함:"
 
-#: src/Views/InputMethod.vala:374
+#: src/Views/InputMethod.vala:381
 msgid "IBus Daemon"
 msgstr "IBus Daemon"
 
-#: src/Views/InputMethod.vala:377
+#: src/Views/InputMethod.vala:384
 msgid "Use and manage input methods"
 msgstr "한글 입력 사용 및 관리"
 
-#: src/Views/InputMethod.vala:440
+#: src/Views/InputMethod.vala:447
 msgid "Type to test your input method"
 msgstr "한글 입력을 테스트해 보세요"
 
-#: src/Views/InputMethod.vala:443
+#: src/Views/InputMethod.vala:450
 msgid "A keyboard layout is active"
 msgstr "키보드 레이아웃이 활성화되어 있습니다"
 
