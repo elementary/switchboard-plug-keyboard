@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-21 16:58+0000\n"
-"PO-Revision-Date: 2023-08-21 16:58+0000\n"
+"PO-Revision-Date: 2023-08-24 09:08+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -339,11 +339,11 @@ msgstr "Basculer vers l'espace de travail 9"
 
 #: src/Shortcuts/List.vala:84
 msgid "Cycle workspaces"
-msgstr "Parcourir les espaces de travail"
+msgstr "Faire défiler les espaces de travail"
 
 #: src/Shortcuts/List.vala:85
 msgid "Cycle workspaces backwards"
-msgstr "Parcourir les espaces de travail à l'envers"
+msgstr "Faire défiler les espaces de travail en sens inverse"
 
 #: src/Shortcuts/List.vala:86
 msgid "Move to workspace 1"
@@ -527,7 +527,7 @@ msgstr "Fermer la session"
 
 #: src/Shortcuts/List.vala:146
 msgid "Cycle display mode"
-msgstr "Mode d'affichage cyclique"
+msgstr "Sens de défilement"
 
 #: src/Shortcuts/List.vala:150 src/Views/Shortcuts.vala:56
 msgid "Custom"
