@@ -17,13 +17,7 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
-    public Page shortcut_page { get; construct; } // Object with access to all shortcut views
-
-    public CustomShortcutListBox (Page shortcut_page) {
-        Object (shortcut_page: shortcut_page);
-    }
-
+class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
     construct {
         hexpand = true;
         load_and_display_custom_shortcuts ();
@@ -61,13 +55,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInt
     public void on_add_clicked () {
         add_row (null);
         unselect_all ();
-    }
-
-    // ShortcutDisplayInterface method
-    public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-        name = "";
-        group = SectionID.CUSTOM.to_string ();
-        return CustomShortcutSettings.shortcut_conflicts (shortcut, out name, null);
     }
 
     private class CustomShortcutRow : Gtk.ListBoxRow {
@@ -356,7 +343,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox, ShortcutDisplayInt
             string conflict_name = "";
             string group = "";
             string relocatable_schema = "";
-            if (((CustomShortcutListBox)parent).system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
+            if (ConflictsManager.shortcut_conflicts (shortcut, out conflict_name, out group)) {
                 var message_dialog = new Granite.MessageDialog (
                     _("Unable to set new shortcut due to conflicts"),
                     _("“%s” is already used for “%s → %s”.").printf (

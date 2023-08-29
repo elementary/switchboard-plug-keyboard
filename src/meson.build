@@ -14,7 +14,6 @@ config_file = configure_file (
 plug_files = files(
     'Plug.vala',
     'Widgets/Shortcuts/ShortcutListBox.vala',
-    'Widgets/Shortcuts/ShortcutDisplayInterface.vala',
     'Widgets/Shortcuts/CustomShortcutListBox.vala',
     'Widgets/Layout/Display.vala',
     'Widgets/Layout/AdvancedSettingsPanel.vala',
@@ -28,8 +27,9 @@ plug_files = files(
     'Views/Behavior.vala',
     'Shortcuts/Shortcut.vala',
     'Shortcuts/Settings.vala',
-    'Shortcuts/List.vala',
+    'Shortcuts/ShortcutsList.vala',
     'Shortcuts/CustomShortcutSettings.vala',
+    'Shortcuts/ConflictsManager.vala',
     'Xkb/XkbModifier.vala',
     'Xkb/Handler.vala',
     'InputSources/SourceSettings.vala',
