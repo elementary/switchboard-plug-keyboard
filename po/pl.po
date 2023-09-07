@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2023-08-21 16:58+0000\n"
+"PO-Revision-Date: 2023-09-09 09:08+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -851,10 +851,8 @@ msgid "Add Engine"
 msgstr "Dodaj silnik"
 
 #: src/Widgets/Layout/Display.vala:41
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Add Keyboard Layout…"
-msgstr "Dodaj układ"
+msgstr "Dodaj układ klawiatury…"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"
