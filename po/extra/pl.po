@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 16:58+0000\n"
-"PO-Revision-Date: 2023-07-24 08:07+0000\n"
+"POT-Creation-Date: 2023-08-29 16:42+0000\n"
+"PO-Revision-Date: 2023-08-25 17:08+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/pl/>\n"
@@ -40,17 +40,19 @@ msgstr "Mniejsze aktualizacje:"
 
 #: data/keyboard.metainfo.xml.in:45
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "Naprawiono potencjalne błędy krytyczne"
 
 #: data/keyboard.metainfo.xml.in:46
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
 msgstr ""
+"Dodano skróty „Przełączaj między oknami aplikacji„ oraz „Przełączaj między "
+"oknami aplikacji wstecz„"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "Poprawiono sposób instalacji metod wejścia"
 
 #: data/keyboard.metainfo.xml.in:48 data/keyboard.metainfo.xml.in:62
 #: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:96

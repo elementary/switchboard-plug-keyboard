@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-21 16:58+0000\n"
-"PO-Revision-Date: 2023-07-24 08:07+0000\n"
+"POT-Creation-Date: 2023-08-29 16:42+0000\n"
+"PO-Revision-Date: 2023-08-24 09:08+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/keyboard-plug-extra/en_GB/>\n"
@@ -39,17 +39,19 @@ msgstr "Minor updates:"
 
 #: data/keyboard.metainfo.xml.in:45
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "Fix potential crashes"
 
 #: data/keyboard.metainfo.xml.in:46
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
 msgstr ""
+"Add \"Cycle Windows of application\" and \"Cycle Windows of application "
+"backwards\" shortcuts"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "Improve experience installing input methods"
 
 #: data/keyboard.metainfo.xml.in:48 data/keyboard.metainfo.xml.in:62
 #: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:96

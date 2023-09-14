@@ -17,25 +17,24 @@
 * Boston, MA 02110-1301 USA
 */
 
-private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayInterface {
-    public Page shortcut_page { get; construct; } // Object with access to all shortcut views
+private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
     public SectionID group { get; construct; }
 
     private string[] actions;
     private Schema[] schemas;
     private string[] keys;
 
-    public ShortcutListBox (SectionID group, Page shortcut_page) {
-        Object (group: group, shortcut_page: shortcut_page);
+    public ShortcutListBox (SectionID group) {
+        Object (group: group);
     }
 
     construct {
-        list.get_group (group, out actions, out schemas, out keys);
+        ShortcutsList.get_default ().get_group (group, out actions, out schemas, out keys);
 
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
         for (int i = 0; i < actions.length; i++) {
-            if (settings.valid (schemas[i], keys[i])) {
+            if (Settings.get_default ().valid (schemas[i], keys[i])) {
                 var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
                 add (row);
 
@@ -44,27 +43,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayI
         }
 
         show_all ();
-    }
-
-    public bool shortcut_conflicts (Shortcut shortcut, out string name, out string group) {
-        string[] actions, keys;
-        Schema[] schemas;
-
-        name = "";
-        group = this.group.to_string ();
-        list.get_group (this.group, out actions, out schemas, out keys);
-
-        // For every action in group there is a corresponding schema and key entry
-        // so only need to iterate actions
-        for (int i = 0; i < actions.length; i++) {
-            var action_shortcut = settings.get_val (schemas[i], keys[i]);
-            if (shortcut.is_equal (action_shortcut)) {
-                name = actions[i];
-                return true;
-            }
-        }
-
-        return false;
     }
 
     private class ShortcutRow : Gtk.ListBoxRow {
@@ -169,6 +147,8 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayI
             add (grid);
 
             render_keycaps ();
+
+            unowned var settings = Shortcuts.Settings.get_default ();
 
             settings.schemas[schema].changed[gsettings_key].connect (render_keycaps);
 
@@ -297,9 +277,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayI
         private void update_binding (Shortcut shortcut) {
             string conflict_name = "";
             string group = "";
-            var shortcut_listbox = (ShortcutListBox)parent;
-            if (shortcut_listbox.custom_shortcut_conflicts (shortcut, out conflict_name, out group) ||
-                shortcut_listbox.system_shortcut_conflicts (shortcut, out conflict_name, out group)) {
+            if (ConflictsManager.shortcut_conflicts (shortcut, out conflict_name, out group)) {
 
                 var message_dialog = new Granite.MessageDialog (
                     _("Unable to set new shortcut due to conflicts"),
@@ -320,6 +298,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayI
 
                 message_dialog.present ();
             } else {
+                unowned var settings = Settings.get_default ();
                 var key_value = settings.schemas[schema].get_value (gsettings_key);
                 if (key_value.is_of_type (VariantType.ARRAY)) {
                     settings.schemas[schema].set_strv (gsettings_key, {shortcut.to_gsettings ()});
@@ -330,6 +309,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox, ShortcutDisplayI
         }
 
         private void render_keycaps () {
+            unowned var settings = Settings.get_default ();
             var key_value = settings.schemas[schema].get_value (gsettings_key);
 
             string[] accels = {""};

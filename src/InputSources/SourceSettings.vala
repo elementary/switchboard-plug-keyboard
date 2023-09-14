@@ -59,12 +59,11 @@ class Keyboard.SourceSettings : Object {
      */
     private bool currently_writing;
 
-    private static SourceSettings? instance;
+    private static GLib.Once<SourceSettings> instance;
     public static SourceSettings get_instance () {
-        if (instance == null) {
-            instance = new SourceSettings ();
-        }
-        return instance;
+        return instance.once (() => {
+            return new SourceSettings ();
+        });
     }
 
     construct {
@@ -123,12 +122,17 @@ class Keyboard.SourceSettings : Object {
         return null;
     }
 
-    private void switch_items (uint pos1, bool move_up) {
+    public void switch_items (uint pos1, bool move_up) {
+        var max_pos = input_sources.length () - 1;
+
         var pos2 = move_up ? pos1 - 1 : pos1 + 1;
+        if (pos2 < 0 || pos2 > max_pos) {
+            return;
+        }
+
         unowned List<InputSource> container1 = input_sources.nth (pos1);
         unowned List<InputSource> container2 = input_sources.nth (pos2);
         /* We want to move the source relative to its own kind */
-        var max_pos = input_sources.length () - 1;
         while (container1.data.layout_type != container2.data.layout_type) {
             pos2 = move_up ? pos2 - 1 : pos2 + 1;
             if (pos2 < 0 || pos2 > max_pos) {
@@ -149,27 +153,6 @@ class Keyboard.SourceSettings : Object {
         }
 
         write_to_gsettings ();
-    }
-
-    public void move_active_layout_up () {
-        if (input_sources.length () == 0) {
-            return;
-        }
-
-        // check that the active item is not the first one
-        if (active_index > 0) {
-            switch_items (active_index, true);
-        }
-    }
-
-    public void move_active_layout_down () {
-        if (input_sources.length () == 0)
-            return;
-
-        // check that the active item is not the last one
-        if (active_index < input_sources.length () - 1) {
-            switch_items (active_index, false);
-        }
     }
 
     public void foreach_layout (GLib.Func<InputSource> func) {
@@ -261,10 +244,15 @@ class Keyboard.SourceSettings : Object {
         return true;
     }
 
-    public void remove_active_layout () {
-        input_sources.remove (active_input_source);
+    public void remove_layout (uint index) {
+        if (index >= input_sources.length ()) {
+            index = 0;
+        }
 
-        if (active_index >= 1) {
+        var source = input_sources.nth_data (index); // May be null if input source list empty
+        input_sources.remove (source);
+
+        if (index >= 1) {
             active_index = input_sources.length () - 1;
         }
 
