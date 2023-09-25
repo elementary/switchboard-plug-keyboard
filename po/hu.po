@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2023-08-24 09:08+0000\n"
+"PO-Revision-Date: 2023-09-26 22:08+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -853,10 +853,8 @@ msgid "Add Engine"
 msgstr "Motor hozzáadása"
 
 #: src/Widgets/Layout/Display.vala:41
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Add Keyboard Layout…"
-msgstr "Kiosztás hozzáadása"
+msgstr "Billentyűzetkiosztás hozzáadása…"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"
