@@ -50,12 +50,14 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
         public Schema schema { get; construct; }
         public string gsettings_key { get; construct; }
 
+        private Gtk.EventControllerKey key_controller;
+        private Gtk.GestureMultiPress keycap_controller;
+
         private Gtk.ModelButton clear_button;
         private Gtk.ModelButton reset_button;
         private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
-        private Gtk.EventBox keycap_eventbox;
         private bool is_editing_shortcut = false;
         private Gdk.Device? keyboard_device = null;
 
@@ -95,9 +97,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             };
             keycap_stack.add (keycap_box);
             keycap_stack.add (status_label);
-
-            keycap_eventbox = new Gtk.EventBox ();
-            keycap_eventbox.add (keycap_stack);
 
             var set_accel_button = new Gtk.ModelButton () {
                 text = _("Set New Shortcut")
@@ -139,8 +138,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 valign = Gtk.Align.CENTER
             };
             grid.add (label);
-            grid.add (keycap_eventbox);
-            // grid.add (keycap_stack);
+            grid.add (keycap_stack);
             grid.add (menubutton);
             grid.show_all ();
 
@@ -169,11 +167,13 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 edit_shortcut (true);
             });
 
-            keycap_eventbox.button_release_event.connect (() => {
+            keycap_controller = new Gtk.GestureMultiPress (keycap_stack);
+            keycap_controller.released.connect (() => {
                 edit_shortcut (true);
             });
 
-            key_release_event.connect (on_key_released);
+            key_controller = new Gtk.EventControllerKey (this);
+            key_controller.key_released.connect (on_key_released);
 
             focus_out_event.connect (() => {
                 edit_shortcut (false);
@@ -214,13 +214,12 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             is_editing_shortcut = start_editing;
         }
 
-        private bool on_key_released (Gdk.EventKey event) {
+        private void on_key_released (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType state) {
             if (!is_editing_shortcut) {
-                return Gdk.EVENT_STOP;
+                return;
             }
 
-            var mods = event.state & Gtk.accelerator_get_default_mod_mask ();
-            var keyval = event.keyval;
+            var mods = state & Gtk.accelerator_get_default_mod_mask ();
             if (mods > 0) {
                 // Accept any key with a modifier (not all may work)
                 Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
@@ -251,14 +250,14 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                         update_binding (shortcut);
                         break;
                     default:
-                        return Gdk.EVENT_STOP;
+                        return;
                 }
             }
 
             edit_shortcut (false);
             render_keycaps ();
 
-            return Gdk.EVENT_STOP;
+            return;
         }
 
         private void update_binding (Shortcut shortcut) {
