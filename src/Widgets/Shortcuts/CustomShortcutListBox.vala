@@ -69,12 +69,15 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
         public GLib.Settings gsettings { get; construct; }
         private bool is_editing_shortcut = false;
 
+        private Gtk.EventControllerKey key_controller;
+        private Gtk.GestureMultiPress keycap_controller;
+        private Gtk.GestureMultiPress status_controller;
+
         private Gtk.ModelButton clear_button;
         private Gtk.Grid keycap_grid;
-        private Gtk.EventBox keycap_eventbox;
-        private Gtk.EventBox status_eventbox;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
+
         public CustomShortcutRow (CustomShortcut _custom_shortcut) {
             Object (
                 relocatable_schema: _custom_shortcut.relocatable_schema,
@@ -105,18 +108,12 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 halign = Gtk.Align.END
             };
             status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
-            status_label.add_events (Gdk.EventMask.ALL_EVENTS_MASK);
-
-            status_eventbox = new Gtk.EventBox ();
-            status_eventbox.add (status_label);
 
             keycap_grid = new Gtk.Grid () {
                 column_spacing = 6,
                 valign = Gtk.Align.CENTER,
                 halign = Gtk.Align.END
             };
-            keycap_eventbox = new Gtk.EventBox ();
-            keycap_eventbox.add (keycap_grid);
 
             // We create a dummy grid representing a long four key accelerator to force the stack in each row to the same size
             // This seems a bit hacky but it is hard to find a solution across rows not involving a hard-coded width value
@@ -136,8 +133,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             };
 
             keycap_stack.add (four_key_grid); // This ensures sufficient space is allocated for longest reasonable shortcut
-            keycap_stack.add (keycap_eventbox);
-            keycap_stack.add (status_eventbox); // This becomes initial visible child
+            keycap_stack.add (keycap_grid);
+            keycap_stack.add (status_label); // This becomes initial visible child
 
             var set_accel_button = new Gtk.ModelButton () {
                 text = _("Set New Shortcut")
@@ -213,13 +210,15 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 }
             });
 
-            keycap_eventbox.button_release_event.connect (() => {
+            keycap_controller = new Gtk.GestureMultiPress (keycap_stack);
+            keycap_controller.released.connect (() => {
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
             });
 
-            status_eventbox.button_release_event.connect (() => {
+            status_controller = new Gtk.GestureMultiPress (status_label);
+            status_controller.released.connect (() => {
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
@@ -238,7 +237,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 gsettings.set_string (NAME_KEY, command);
             });
 
-            key_release_event.connect (on_key_released);
+            key_controller = new Gtk.EventControllerKey (this);
+            key_controller.key_released.connect (on_key_released);
 
             focus_out_event.connect (() => {
                 cancel_editing_shortcut ();
@@ -283,22 +283,22 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
 
             is_editing_shortcut = start_editing;
 
-            keycap_stack.visible_child = is_editing_shortcut ? status_eventbox : keycap_eventbox;
-            if (!is_editing_shortcut) {
-                render_keycaps ();
-            } else {
+            if (is_editing_shortcut) {
+                keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
+            } else {
+                keycap_stack.visible_child = keycap_grid;
+                render_keycaps ();
             }
         }
 
-        private bool on_key_released (Gdk.EventKey event) {
+        private void on_key_released (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType state) {
             // For a custom shortcut, require modifier key(s) and one non-modifier key
-            if (!is_editing_shortcut || event.is_modifier == 1) {
-                return Gdk.EVENT_PROPAGATE;
+            if (!is_editing_shortcut) {
+                return;
             }
 
-            var mods = event.state & Gtk.accelerator_get_default_mod_mask ();
-            var keyval = event.keyval;
+            var mods = state & Gtk.accelerator_get_default_mod_mask ();
             if (mods > 0) {
                 // Accept any key with a modifier (not all may work)
                 Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
@@ -330,13 +330,13 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                         update_binding (shortcut);
                         break;
                     default:
-                        return Gdk.EVENT_STOP;
+                        return;
                 }
             }
 
             edit_shortcut (false);
 
-            return Gdk.EVENT_STOP;
+            return ;
          }
 
         private void update_binding (Shortcut shortcut) {
@@ -398,11 +398,11 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
 
             if (value_string != "") {
                 build_keycap_grid (value_string, ref keycap_grid);
-                keycap_stack.visible_child = keycap_eventbox;
+                keycap_stack.visible_child = keycap_stack;
                 clear_button.sensitive = true;
             } else {
                 clear_button.sensitive = false;
-                keycap_stack.visible_child = status_eventbox;
+                keycap_stack.visible_child = status_label;
                 status_label.label = _("Disabled");
             }
          }
