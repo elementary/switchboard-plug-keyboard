@@ -32,7 +32,6 @@ public class Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
         };
 
         var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic", Gtk.IconSize.MENU) {
-            no_show_all = true,
             visible = false
         };
 
@@ -41,8 +40,8 @@ public class Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
             margin_start = 6,
             margin_end = 6
         };
-        box.add (label);
-        box.add (selection_icon);
+        box.append (label);
+        box.append (selection_icon);
 
         child = box;
 

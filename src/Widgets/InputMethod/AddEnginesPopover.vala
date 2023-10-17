@@ -48,7 +48,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
         var add_button = new Gtk.Button.with_label (_("Add Engine"));
-        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        add_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
             layout_style = Gtk.ButtonBoxStyle.END,

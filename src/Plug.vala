@@ -59,7 +59,7 @@ public class Keyboard.Plug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = CENTER,
-                homogeneous = true,
+                // homogeneous = true,
                 margin_top = 12,
                 margin_end = 12,
                 margin_bottom = 12,

@@ -134,14 +134,14 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             margin_start = 10,
             margin_end = 10
         };
-        frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        frame.get_style_context ().add_class (Granite.STYLE_CLASS_VIEW);
         frame.add (frame_grid);
 
         var button_cancel = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         var button_add = add_button (_("Add Layout"), Gtk.ResponseType.ACCEPT);
         button_add.sensitive = false;
-        button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        button_add.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         deletable = false;
         modal = true;

@@ -111,7 +111,7 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        stickykeys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        stickykeys_subtitle .get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var stickykeys_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -135,7 +135,7 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        slowkeys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        slowkeys_subtitle .get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var slowkeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
@@ -168,7 +168,7 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        bouncekeys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        bouncekeys_subtitle .get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var bouncekeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
@@ -200,7 +200,7 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             wrap = true,
             xalign = 0
         };
-        events_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+        events_subtitle.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var togglekeys_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪ or Num Lock keys are pressed"));
         var bouncekeys_check = new Gtk.CheckButton.with_label (_("Bounce Keys are rejected"));
@@ -210,15 +210,15 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         var events_checks_box = new Gtk.Box (VERTICAL, 6) {
             margin_top = 12
         };
-        events_checks_box.add (togglekeys_check);
-        events_checks_box.add (stickykeys_check);
-        events_checks_box.add (bouncekeys_check);
-        events_checks_box.add (slowkeys_check);
+        events_checks_box.append (togglekeys_check);
+        events_checks_box.append (stickykeys_check);
+        events_checks_box.append (bouncekeys_check);
+        events_checks_box.append (slowkeys_check);
 
         var events_box = new Gtk.Box (VERTICAL, 0);
-        events_box.add (events_header);
-        events_box.add (events_subtitle);
-        events_box.add (events_checks_box);
+        events_box.append (events_header);
+        events_box.append (events_subtitle);
+        events_box.append (events_checks_box);
 
         var entry_test = new Gtk.Entry () {
             hexpand = true,
@@ -246,27 +246,27 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         blink_grid.attach (scale_blink_time, 1, 2);
 
         var box = new Gtk.Box (VERTICAL, 18);
-        box.add (onscreen_keyboard_grid);
-        box.add (blink_grid);
-        box.add (repeat_grid);
-        box.add (stickykeys_grid);
-        box.add (bouncekeys_grid);
-        box.add (slowkeys_grid);
-        box.add (events_box);
-        box.add (entry_test);
+        box.append (onscreen_keyboard_grid);
+        box.append (blink_grid);
+        box.append (repeat_grid);
+        box.append (stickykeys_grid);
+        box.append (bouncekeys_grid);
+        box.append (slowkeys_grid);
+        box.append (events_box);
+        box.append (entry_test);
 
-        var clamp = new Hdy.Clamp () {
+        var clamp = new Adw.Clamp () {
             child = box,
             margin_start = 12,
             margin_end = 12,
             margin_bottom = 12
         };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = clamp
         };
 
-        add (scrolled);
+        append (scrolled);
 
         onscreen_keyboard_settings.clicked.connect (() => {
             try {

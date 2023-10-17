@@ -36,7 +36,7 @@ public class ConflictDialog : Granite.MessageDialog {
         add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         var reassign_button = add_button (_("Reassign"), Gtk.ResponseType.ACCEPT);
-        reassign_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+        reassign_button.get_style_context ().add_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
         response.connect ((response_id) => {
             responded (response_id);

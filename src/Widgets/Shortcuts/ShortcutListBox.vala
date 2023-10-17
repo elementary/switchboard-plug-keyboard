@@ -50,11 +50,8 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
         public Schema schema { get; construct; }
         public string gsettings_key { get; construct; }
 
-        private Gtk.EventControllerKey key_controller;
-        private Gtk.GestureMultiPress keycap_controller;
-
-        private Gtk.ModelButton clear_button;
-        private Gtk.ModelButton reset_button;
+        private Gtk.Button clear_button;
+        private Gtk.Button reset_button;
         private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
@@ -85,7 +82,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             status_label = new Gtk.Label (_("Disabled")) {
                 halign = Gtk.Align.END
             };
-            status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            status_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             keycap_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
                 valign = Gtk.Align.CENTER,
@@ -98,27 +95,20 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             keycap_stack.add (keycap_box);
             keycap_stack.add (status_label);
 
-            var set_accel_button = new Gtk.ModelButton () {
-                text = _("Set New Shortcut")
-            };
+            var set_accel_button = new Gtk.Button.with_label (_("Set New Shortcut"));
 
-            reset_button = new Gtk.ModelButton () {
-                text = _("Reset to Default")
-            };
+            reset_button = new Gtk.Button.with_label (_("Reset to Default"));
 
-            clear_button = new Gtk.ModelButton () {
-                text = _("Disable")
-            };
-            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button = new Gtk.Button.with_label (_("Disable"));
+            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
             var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
                 margin_top = 3,
                 margin_bottom = 3
             };
-            action_box.pack_start (set_accel_button);
-            action_box.pack_start (reset_button);
-            action_box.pack_start (clear_button);
-            action_box.show_all ();
+            action_box.append (set_accel_button);
+            action_box.append (reset_button);
+            action_box.append (clear_button);
 
             var popover = new Gtk.Popover (null);
             popover.add (action_box);
@@ -127,7 +117,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
                 popover = popover,
             };
-            menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             var grid = new Gtk.Grid () {
                 column_spacing = 12,
@@ -167,17 +157,19 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 edit_shortcut (true);
             });
 
-            keycap_controller = new Gtk.GestureMultiPress (keycap_stack);
+            var keycap_controller = new Gtk.GestureClick ();
+            keycap_stack.add_controller (keycap_controller);
             keycap_controller.released.connect (() => {
                 edit_shortcut (true);
             });
 
-            key_controller = new Gtk.EventControllerKey (this);
+            var key_controller = new Gtk.EventControllerKey ();
+            add_controller (key_controller);
             key_controller.key_released.connect (on_key_released);
 
-            focus_out_event.connect (() => {
+            var focus_controller = new Gtk.EventControllerFocus ();
+            focus_controller.leave.connect (() => {
                 edit_shortcut (false);
-                return Gdk.EVENT_PROPAGATE;
             });
         }
 
@@ -327,8 +319,8 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                         continue;
                     }
                     var keycap_label = new Gtk.Label (accel);
-                    keycap_label.get_style_context ().add_class ("keycap");
-                    keycap_box.pack_start (keycap_label);
+                    keycap_label.add_css_class ("keycap");
+                    keycap_box.append (keycap_label);
                 }
 
                 clear_button.sensitive = true;

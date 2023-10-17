@@ -26,7 +26,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
     private List<weak IBus.EngineDesc> engines;
 #endif
 
-    private Granite.Widgets.AlertView spawn_failed_alert;
+    private Granite.Placeholder spawn_failed_alert;
     private Gtk.ListBox listbox;
     private SourceSettings settings;
     private Gtk.MenuButton remove_button;
@@ -47,31 +47,28 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
         }
 
         // no_daemon_runnning view shown if IBus Daemon is not running
-        var no_daemon_runnning_alert = new Granite.Widgets.AlertView (
-            _("IBus Daemon is not running"),
-            _("You need to run the IBus daemon to enable or configure input method engines."),
-            "dialog-information"
-        ) {
+        var no_daemon_runnning_alert = new Granite.Placeholder (_("IBus Daemon is not running")) {
+            description = _("You need to run the IBus daemon to enable or configure input method engines."),
+            icon = new ThemedIcon ("dialog-information"),
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
-        no_daemon_runnning_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+        no_daemon_runnning_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
         no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
         no_daemon_runnning_alert.action_activated.connect (() => {
             spawn_ibus_daemon ();
         });
 
         // spawn_failed view shown if IBus Daemon is not running
-        spawn_failed_alert = new Granite.Widgets.AlertView (
-            _("Could not start the IBus daemon"),
-            "",
-            "dialog-error"
+        spawn_failed_alert = new Granite.Placeholder (
+            _("Could not start the IBus daemon")
         ) {
+            icon = new ThemedIcon ("dialog-error"),
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
 
-        spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
+        spawn_failed_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
@@ -117,7 +114,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
         actionbar.add (add_button);
         actionbar.add (remove_button);
 

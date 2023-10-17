@@ -71,7 +71,7 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
         var engine_list_grid = new Gtk.Grid () {
             orientation = Gtk.Orientation.VERTICAL
         };
-        engine_list_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        engine_list_grid.get_style_context ().add_class (Granite.STYLE_CLASS_VIEW);
         engine_list_grid.add (language_header);
         engine_list_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
         engine_list_grid.add (scrolled);
@@ -92,7 +92,7 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
 
         var install_button = add_button (_("Install"), Gtk.ResponseType.OK);
         install_button.sensitive = false;
-        install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        install_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         languages_list.row_activated.connect ((row) => {
             deck.visible_child = engine_list_grid;

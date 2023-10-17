@@ -42,12 +42,12 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             always_show_image = true,
             image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR)
         };
-        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        add_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
         var actionbar = new Gtk.ActionBar () {
             child = add_button
         };
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
 
         var box = new Gtk.Box (VERTICAL, 0);
         box.add (scroll);
@@ -58,8 +58,8 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         add_button.clicked.connect (() => {
             var dialog = new AddLayoutDialog ();
             dialog.transient_for = (Gtk.Window) get_toplevel ();
-            dialog.show_all ();
 
+            dialog.present ();
             dialog.layout_added.connect ((layout, variant) => {
                 settings.add_layout (InputSource.new_xkb (layout, variant));
                 rebuild_list ();

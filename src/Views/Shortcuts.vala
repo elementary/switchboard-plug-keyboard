@@ -98,13 +98,11 @@ namespace Keyboard.Shortcuts {
                 margin_top = 3,
                 margin_bottom = 3
             };
-            add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            add_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
             var actionbar = new Gtk.ActionBar ();
             actionbar.hexpand = true;
-            actionbar.no_show_all = true;
-            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
-            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
             actionbar.add (add_button);
 
             var action_grid = new Gtk.Grid ();
@@ -141,9 +139,7 @@ namespace Keyboard.Shortcuts {
                 var index = row.get_index ();
                 stack.visible_child = shortcut_views[index];
 
-                actionbar.no_show_all = index != SectionID.CUSTOM;
                 actionbar.visible = index == SectionID.CUSTOM;
-                show_all ();
             });
         }
 
