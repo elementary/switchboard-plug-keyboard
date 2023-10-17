@@ -20,7 +20,7 @@
 public class Keyboard.Plug : Switchboard.Plug {
     public static GLib.Settings ibus_general_settings;
 
-    private Gtk.Grid grid;
+    private Gtk.Box box;
     private Gtk.Stack stack;
 
     public Plug () {
@@ -47,7 +47,7 @@ public class Keyboard.Plug : Switchboard.Plug {
     }
 
     public override Gtk.Widget get_widget () {
-        if (grid == null) {
+        if (box == null) {
             weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
             default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
 
@@ -57,18 +57,23 @@ public class Keyboard.Plug : Switchboard.Plug {
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
-            var stack_switcher = new Gtk.StackSwitcher ();
-            stack_switcher.margin = 12;
-            stack_switcher.halign = Gtk.Align.CENTER;
-            stack_switcher.homogeneous = true;
-            stack_switcher.stack = stack;
+            var stack_switcher = new Gtk.StackSwitcher () {
+                halign = CENTER,
+                homogeneous = true,
+                margin_top = 12,
+                margin_end = 12,
+                margin_bottom = 12,
+                margin_start = 12,
+                stack = stack
+            };
 
-            grid = new Gtk.Grid ();
-            grid.attach (stack_switcher, 0, 0, 1, 1);
-            grid.attach (stack, 0, 1, 1, 1);
+            box = new Gtk.Box (VERTICAL, 0);
+            box.add (stack_switcher);
+            box.add (stack);
+            box.show_all ();
         }
-        grid.show_all ();
-        return grid;
+
+        return box;
     }
 
     public override void shown () {
