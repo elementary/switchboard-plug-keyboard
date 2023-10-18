@@ -398,7 +398,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
 
             if (value_string != "") {
                 build_keycap_grid (value_string, ref keycap_grid);
-                keycap_stack.visible_child = keycap_stack;
+                keycap_stack.visible_child = keycap_grid;
                 clear_button.sensitive = true;
             } else {
                 clear_button.sensitive = false;
