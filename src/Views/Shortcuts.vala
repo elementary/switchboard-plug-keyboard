@@ -77,8 +77,6 @@ namespace Keyboard.Shortcuts {
             custom_shortcuts_row = new SwitcherRow (list.custom_group);
             section_switcher.add (custom_shortcuts_row);
 
-            section_switcher.select_row (section_switcher.get_row_at_index (0));
-
             var switcher_scrolled = new Gtk.ScrolledWindow (null, null) {
                 child = section_switcher,
                 hscrollbar_policy = NEVER
@@ -89,8 +87,7 @@ namespace Keyboard.Shortcuts {
             };
 
             var stack = new Gtk.Stack () {
-                homogeneous = false,
-                hexpand = true,
+                homogeneous = false, // Prevents extra scrollbar in short lists
                 vexpand = true
             };
 
@@ -154,6 +151,11 @@ namespace Keyboard.Shortcuts {
                 stack.visible_child = shortcut_views[index];
 
                 actionbar.visible = stack.visible_child is CustomShortcutListBox;
+            });
+
+            // Doing this too early makes the actionbar show by default
+            realize.connect (() => {
+                section_switcher.select_row (section_switcher.get_row_at_index (0));
             });
         }
 
