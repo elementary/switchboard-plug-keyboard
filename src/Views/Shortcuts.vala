@@ -56,7 +56,7 @@ namespace Keyboard.Shortcuts {
         }
     }
 
-    class Page : Gtk.Grid {
+    class Page : Gtk.Box {
         private Gtk.ListBox section_switcher;
         private SwitcherRow custom_shortcuts_row;
 
@@ -79,22 +79,23 @@ namespace Keyboard.Shortcuts {
 
             section_switcher.select_row (section_switcher.get_row_at_index (0));
 
-            var scrolled_window = new Gtk.ScrolledWindow (null, null) {
-                child = section_switcher
+            var switcher_scrolled = new Gtk.ScrolledWindow (null, null) {
+                child = section_switcher,
+                hscrollbar_policy = NEVER
             };
 
             var switcher_frame = new Gtk.Frame (null) {
-                child = scrolled_window
+                child = switcher_scrolled
             };
 
             var stack = new Gtk.Stack () {
-                homogeneous = false
-            };
-
-            var scrolledwindow = new Gtk.ScrolledWindow (null, null) {
-                child = stack,
+                homogeneous = false,
                 hexpand = true,
                 vexpand = true
+            };
+
+            var stack_scrolled = new Gtk.ScrolledWindow (null, null) {
+                child = stack
             };
 
             var add_button_label = new Gtk.Label (_("Add Shortcut"));
@@ -104,6 +105,7 @@ namespace Keyboard.Shortcuts {
             add_button_box.add (add_button_label);
 
             var add_button = new Gtk.Button () {
+                child = add_button_box,
                 margin_top = 3,
                 margin_bottom = 3
             };
@@ -118,20 +120,19 @@ namespace Keyboard.Shortcuts {
             actionbar.pack_start (add_button);
 
             var action_box = new Gtk.Box (VERTICAL, 0);
-            action_box.add (scrolled_window);
+            action_box.add (stack_scrolled);
             action_box.add (actionbar);
 
             var frame = new Gtk.Frame (null) {
                 child = action_box
             };
 
-            column_spacing = 12;
-            column_homogeneous = true;
+            spacing = 12;
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
-            attach (switcher_frame, 0, 0);
-            attach (frame, 1, 0, 2, 1);
+            add (switcher_frame);
+            add (frame);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
                 shortcut_views += new ShortcutListBox ((SectionID) id);
@@ -152,7 +153,7 @@ namespace Keyboard.Shortcuts {
                 var index = row.get_index ();
                 stack.visible_child = shortcut_views[index];
 
-                actionbar.visible = index == SectionID.CUSTOM;
+                actionbar.visible = stack.visible_child is CustomShortcutListBox;
             });
         }
 
