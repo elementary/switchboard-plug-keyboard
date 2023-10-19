@@ -38,16 +38,22 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             child = list
         };
 
-        var add_button = new Gtk.Button.with_label (_("Add Keyboard Layout…")) {
-            always_show_image = true,
-            image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR)
+        var add_button_label = new Gtk.Label (_("Add Keyboard Layout…"));
+
+        var add_button_box = new Gtk.Box (HORIZONTAL, 0);
+        add_button_box.add (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
+        add_button_box.add (add_button_label);
+
+        var add_button = new Gtk.Button () {
+            child = add_button_box
         };
         add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
-        var actionbar = new Gtk.ActionBar () {
-            child = add_button
-        };
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        add_button_label.mnemonic_widget = add_button;
+
+        var actionbar = new Gtk.ActionBar ();
+        actionbar.pack_start (add_button);
+        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
         var box = new Gtk.Box (VERTICAL, 0);
         box.add (scroll);
