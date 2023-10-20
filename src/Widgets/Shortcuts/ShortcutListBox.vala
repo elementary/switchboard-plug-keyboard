@@ -307,9 +307,9 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             }
 
             if (accels[0] != "") {
-                foreach (unowned Gtk.Widget child in keycap_box.get_children ()) {
-                    child.destroy ();
-                };
+                while (keycap_box.get_first_child () != null) {
+                    keycap_box.remove (keycap_box.get_first_child ());
+                }
 
                 foreach (unowned string accel in accels) {
                     if (accel == "") {

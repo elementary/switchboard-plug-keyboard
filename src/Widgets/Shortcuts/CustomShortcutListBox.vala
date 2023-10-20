@@ -29,8 +29,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
     }
 
     public void load_and_display_custom_shortcuts () {
-        foreach (Gtk.Widget child in get_children ()) {
-            child.destroy ();
+        while (get_first_child () != null) {
+            remove (get_first_child ());
         }
 
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {

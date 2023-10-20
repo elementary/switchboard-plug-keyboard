@@ -113,8 +113,8 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
     }
 
     public void rebuild_list () {
-        foreach (unowned var child in list.get_children ()) {
-            list.remove (child);
+        while (list.get_first_child () != null) {
+            list.remove (list.get_first_child ());
         }
 
         uint i = 0;

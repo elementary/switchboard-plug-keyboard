@@ -200,7 +200,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         margin_start = 12;
         margin_end = 12;
         margin_bottom = 12;
-        add (stack);
+        append (stack);
 
         set_visible_view ();
 
@@ -330,7 +330,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         remove_button.sensitive = listbox.get_selected_row () != null;
         // If ibus is running, update its autostart file according to whether there are input methods active
         if (stack.visible_child_name == "main_view") {
-            write_ibus_autostart_file (listbox.get_children ().length () > 0);
+            write_ibus_autostart_file (listbox.get_first_child != null && listbox.get_first_child is Gtk.ListBoxRow);
         }
     }
 
@@ -350,7 +350,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         });
         timeout_start_daemon = 0;
 
-        if (is_spawn_succeeded & listbox.get_children ().length () > 0) {
+        if (is_spawn_succeeded & listbox.get_first_child != null && listbox.get_first_child is Gtk.ListBoxRow) {
             write_ibus_autostart_file (true);
         }
     }
