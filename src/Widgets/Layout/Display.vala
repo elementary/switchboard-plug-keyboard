@@ -41,23 +41,23 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         var add_button_label = new Gtk.Label (_("Add Keyboard Layout…"));
 
         var add_button_box = new Gtk.Box (HORIZONTAL, 0);
-        add_button_box.add (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
-        add_button_box.add (add_button_label);
+        add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic"));
+        add_button_box.append (add_button_label);
 
         var add_button = new Gtk.Button () {
             child = add_button_box
         };
-        add_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
+        add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         add_button_label.mnemonic_widget = add_button;
 
         var actionbar = new Gtk.ActionBar ();
         actionbar.pack_start (add_button);
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
 
         var box = new Gtk.Box (VERTICAL, 0);
-        box.add (scroll);
-        box.add (actionbar);
+        box.append (scroll);
+        box.append (actionbar);
 
         child = box;
 
@@ -121,7 +121,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
         settings.foreach_layout ((input_source) => {
             if (input_source.layout_type == LayoutType.XKB) {
                 var row = new DisplayRow (XkbLayoutHandler.get_instance ().get_display_name (input_source.name), i);
-                list.add (row);
+                list.append (row);
 
                 row.remove_layout.connect ((row) => {
                     settings.remove_layout (row.index);
@@ -150,8 +150,6 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             unowned var last_child = (DisplayRow) list_children.last ().data;
             last_child.down_button.sensitive = false;
         }
-
-        list.show_all ();
 
         update_cursor ();
     }
@@ -197,10 +195,10 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             };
 
             var box = new Gtk.Box (HORIZONTAL, 0);
-            box.add (label);
-            box.add (remove_button);
-            box.add (up_button);
-            box.add (down_button);
+            box.append (label);
+            box.append (remove_button);
+            box.append (up_button);
+            box.append (down_button);
 
             child = box;
 

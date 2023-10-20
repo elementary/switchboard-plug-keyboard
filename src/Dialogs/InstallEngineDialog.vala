@@ -32,26 +32,31 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
     construct {
         var languages_list = new Gtk.ListBox () {
             activate_on_single_click = true,
-            expand = true,
+            hexpand = true,
+            vexpand = true,
             selection_mode = Gtk.SelectionMode.NONE
         };
 
         foreach (var language in InstallList.get_all ()) {
             var lang = new LanguagesRow (language);
-            languages_list.add (lang);
+            languages_list.append (lang);
         }
 
         var back_button = new Gtk.Button.with_label (_("Languages")) {
             halign = Gtk.Align.START,
-            margin = 6
+            margin_top = 6,
+            margin_end = 12,
+            margin_bottom = 6,
+            margin_start = 6
         };
-        back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
+        back_button.add_css_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var language_title = new Gtk.Label ("");
 
-        var language_header = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6);
-        language_header.pack_start (back_button);
-        language_header.set_center_widget (language_title);
+        var language_header = new Gtk.CenterBox () {
+            start_widget = back_button,
+            center_widget = language_title
+        };
 
         listbox = new Gtk.ListBox () {
             hexpand = true,
@@ -62,41 +67,40 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
 
         foreach (var language in InstallList.get_all ()) {
             foreach (var engine in language.get_components ()) {
-                listbox.add (new EnginesRow (engine));
+                listbox.append (new EnginesRow (engine));
             }
         }
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = listbox
         };
 
         var engine_list_box = new Gtk.Box (VERTICAL, 0);
-        engine_list_box.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        engine_list_box.add (language_header);
-        engine_list_box.add (new Gtk.Separator (HORIZONTAL));
-        engine_list_box.add (scrolled);
+        engine_list_box.add_css_class (Granite.STYLE_CLASS_VIEW);
+        engine_list_box.append (language_header);
+        engine_list_box.append (new Gtk.Separator (HORIZONTAL));
+        engine_list_box.append (scrolled);
 
-        var deck = new Hdy.Deck () {
-            can_swipe_back = true
+        var leaflet = new Adw.Leaflet () {
+            can_navigate_back = true
         };
-        deck.add (languages_list);
-        deck.add (engine_list_box);
+        leaflet.append (languages_list);
+        leaflet.append (engine_list_box);
 
         var frame = new Gtk.Frame (null) {
-            child = deck
+            child = leaflet
         };
 
-        custom_bin.add (frame);
-        custom_bin.show_all ();
+        custom_bin.append (frame);
 
         default_height = 300;
 
         var install_button = add_button (_("Install"), Gtk.ResponseType.OK);
         install_button.sensitive = false;
-        install_button.get_style_context ().add_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
+        install_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         languages_list.row_activated.connect ((row) => {
-            deck.visible_child = engine_list_box;
+            leaflet.visible_child = engine_list_box;
             language_title.label = ((LanguagesRow) row).language.get_name ();
             engines_filter = ((LanguagesRow) row).language;
             listbox.invalidate_filter ();
@@ -105,13 +109,18 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
         });
 
         back_button.clicked.connect (() => {
-            deck.navigate (Hdy.NavigationDirection.BACK);
+            leaflet.navigate (BACK);
             install_button.sensitive = false;
         });
 
         listbox.selected_rows_changed.connect (() => {
-            foreach (var engines_row in listbox.get_children ()) {
-                ((EnginesRow) engines_row).selected = false;
+            unowned var child = listbox.get_first_child ();
+            while (child != null) {
+                if (child is EnginesRow) {
+                    ((EnginesRow) child).selected = false;
+                }
+
+                child = child.get_next_sibling ();
             }
 
             ((EnginesRow) listbox.get_selected_row ()).selected = true;

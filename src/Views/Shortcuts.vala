@@ -98,27 +98,27 @@ namespace Keyboard.Shortcuts {
             var add_button_label = new Gtk.Label (_("Add Shortcut"));
 
             var add_button_box = new Gtk.Box (HORIZONTAL, 0);
-            add_button_box.add (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
-            add_button_box.add (add_button_label);
+            add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
+            add_button_box.append (add_button_label);
 
             var add_button = new Gtk.Button () {
                 child = add_button_box,
                 margin_top = 3,
                 margin_bottom = 3
             };
-            add_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
+            add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             add_button_label.mnemonic_widget = add_button;
 
             var actionbar = new Gtk.ActionBar () {
                 hexpand = true
             };
-            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
             actionbar.pack_start (add_button);
 
             var action_box = new Gtk.Box (VERTICAL, 0);
-            action_box.add (stack_scrolled);
-            action_box.add (actionbar);
+            action_box.append (stack_scrolled);
+            action_box.append (actionbar);
 
             var frame = new Gtk.Frame (null) {
                 child = action_box
@@ -143,7 +143,7 @@ namespace Keyboard.Shortcuts {
             }
 
             foreach (unowned Gtk.Widget view in shortcut_views) {
-                stack.add (view);
+                stack.add_child (view);
             }
 
             section_switcher.row_selected.connect ((row) => {
@@ -180,8 +180,8 @@ namespace Keyboard.Shortcuts {
                 var box = new Gtk.Box (HORIZONTAL, 6) {
                     margin = 6
                 };
-                box.add (icon);
-                box.add (label);
+                box.append (icon);
+                box.append (label);
 
                 child = box;
             }
