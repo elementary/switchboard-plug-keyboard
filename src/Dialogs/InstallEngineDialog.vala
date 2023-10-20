@@ -54,7 +54,8 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
         language_header.set_center_widget (language_title);
 
         listbox = new Gtk.ListBox () {
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
         listbox.set_filter_func (filter_function);
         listbox.set_sort_func (sort_function);
@@ -65,37 +66,37 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
             }
         }
 
-        var scrolled = new Gtk.ScrolledWindow (null, null);
-        scrolled.add (listbox);
-
-        var engine_list_grid = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL
+        var scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = listbox
         };
-        engine_list_grid.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        engine_list_grid.add (language_header);
-        engine_list_grid.add (new Gtk.Separator (Gtk.Orientation.HORIZONTAL));
-        engine_list_grid.add (scrolled);
+
+        var engine_list_box = new Gtk.Box (VERTICAL, 0);
+        engine_list_box.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        engine_list_box.add (language_header);
+        engine_list_box.add (new Gtk.Separator (HORIZONTAL));
+        engine_list_box.add (scrolled);
 
         var deck = new Hdy.Deck () {
-            height_request = 200,
-            width_request = 300,
             can_swipe_back = true
         };
         deck.add (languages_list);
-        deck.add (engine_list_grid);
+        deck.add (engine_list_box);
 
-        var frame = new Gtk.Frame (null);
-        frame.add (deck);
+        var frame = new Gtk.Frame (null) {
+            child = deck
+        };
 
         custom_bin.add (frame);
         custom_bin.show_all ();
+
+        default_height = 300;
 
         var install_button = add_button (_("Install"), Gtk.ResponseType.OK);
         install_button.sensitive = false;
         install_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
         languages_list.row_activated.connect ((row) => {
-            deck.visible_child = engine_list_grid;
+            deck.visible_child = engine_list_box;
             language_title.label = ((LanguagesRow) row).language.get_name ();
             engines_filter = ((LanguagesRow) row).language;
             listbox.invalidate_filter ();
