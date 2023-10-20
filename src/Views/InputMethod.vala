@@ -15,7 +15,7 @@
 * along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
-public class Keyboard.InputMethodPage.Page : Gtk.Grid {
+public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private IBus.Bus bus;
     private GLib.Settings ibus_panel_settings;
     private bool selection_changing = false;
@@ -95,10 +95,10 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
         });
 
         var scroll = new Gtk.ScrolledWindow (null, null) {
+            child = listbox,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             expand = true
         };
-        scroll.add (listbox);
 
         add_engines_popover = new AddEnginesPopover ();
 
@@ -114,16 +114,17 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_INLINE_TOOLBAR);
-        actionbar.add (add_button);
-        actionbar.add (remove_button);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+        actionbar.pack_start (add_button);
+        actionbar.pack_start (remove_button);
 
-        var left_grid = new Gtk.Grid ();
-        left_grid.attach (scroll, 0, 0);
-        left_grid.attach (actionbar, 0, 1);
+        var left_box = new Gtk.Box (VERTICAL, 0);
+        left_box.add (scroll);
+        left_box.add (actionbar);
 
-        var display = new Gtk.Frame (null);
-        display.add (left_grid);
+        var display = new Gtk.Frame (null) {
+            child = left_box
+        };
 
         var keyboard_shortcut_label = new Gtk.Label (_("Switch engines:")) {
             halign = Gtk.Align.END
@@ -167,7 +168,10 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
             column_spacing = 12,
             halign = Gtk.Align.CENTER,
             hexpand = true,
-            margin = 12,
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12,
             row_spacing = 12
         };
         right_grid.attach (keyboard_shortcut_label, 0, 0);
@@ -313,9 +317,10 @@ public class Keyboard.InputMethodPage.Page : Gtk.Grid {
                         margin = 6
                     };
 
-                    var listboxrow = new Gtk.ListBoxRow ();
+                    var listboxrow = new Gtk.ListBoxRow () {
+                        child = label
+                    };
                     listboxrow.set_data<string> ("engine-name", engine.name);
-                    listboxrow.add (label);
 
                     listbox.add (listboxrow);
                     settings.add_layout (InputSource.new_ibus (engine.name));
