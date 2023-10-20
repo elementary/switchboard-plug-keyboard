@@ -56,7 +56,7 @@ namespace Keyboard.Shortcuts {
         }
     }
 
-    class Page : Gtk.Grid {
+    class Page : Gtk.Box {
         private Gtk.ListBox section_switcher;
         private SwitcherRow custom_shortcuts_row;
 
@@ -77,48 +77,59 @@ namespace Keyboard.Shortcuts {
             custom_shortcuts_row = new SwitcherRow (list.custom_group);
             section_switcher.add (custom_shortcuts_row);
 
-            section_switcher.select_row (section_switcher.get_row_at_index (0));
+            var switcher_scrolled = new Gtk.ScrolledWindow (null, null) {
+                child = section_switcher,
+                hscrollbar_policy = NEVER
+            };
 
-            var scrolled_window = new Gtk.ScrolledWindow (null, null);
-            scrolled_window.add (section_switcher);
+            var switcher_frame = new Gtk.Frame (null) {
+                child = switcher_scrolled
+            };
 
-            var switcher_frame = new Gtk.Frame (null);
-            switcher_frame.add (scrolled_window);
+            var stack = new Gtk.Stack () {
+                homogeneous = false, // Prevents extra scrollbar in short lists
+                vexpand = true
+            };
 
-            var stack = new Gtk.Stack ();
-            stack.homogeneous = false;
+            var stack_scrolled = new Gtk.ScrolledWindow (null, null) {
+                child = stack
+            };
 
-            var scrolledwindow = new Gtk.ScrolledWindow (null, null);
-            scrolledwindow.expand = true;
-            scrolledwindow.add (stack);
+            var add_button_label = new Gtk.Label (_("Add Shortcut"));
 
-            var add_button = new Gtk.Button.with_label (_("Add Shortcut")) {
-                always_show_image = true,
-                image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.SMALL_TOOLBAR),
+            var add_button_box = new Gtk.Box (HORIZONTAL, 0);
+            add_button_box.add (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
+            add_button_box.add (add_button_label);
+
+            var add_button = new Gtk.Button () {
+                child = add_button_box,
                 margin_top = 3,
                 margin_bottom = 3
             };
             add_button.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
 
-            var actionbar = new Gtk.ActionBar ();
-            actionbar.hexpand = true;
-            actionbar.get_style_context ().add_class (Granite.STYLE_CLASS_FLAT);
-            actionbar.add (add_button);
+            add_button_label.mnemonic_widget = add_button;
 
-            var action_grid = new Gtk.Grid ();
-            action_grid.attach (scrolledwindow, 0, 0);
-            action_grid.attach (actionbar, 0, 1);
+            var actionbar = new Gtk.ActionBar () {
+                hexpand = true
+            };
+            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            actionbar.pack_start (add_button);
 
-            var frame = new Gtk.Frame (null);
-            frame.add (action_grid);
+            var action_box = new Gtk.Box (VERTICAL, 0);
+            action_box.add (stack_scrolled);
+            action_box.add (actionbar);
 
-            column_spacing = 12;
-            column_homogeneous = true;
+            var frame = new Gtk.Frame (null) {
+                child = action_box
+            };
+
+            spacing = 12;
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
-            attach (switcher_frame, 0, 0);
-            attach (frame, 1, 0, 2, 1);
+            add (switcher_frame);
+            add (frame);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
                 shortcut_views += new ShortcutListBox ((SectionID) id);
@@ -139,7 +150,12 @@ namespace Keyboard.Shortcuts {
                 var index = row.get_index ();
                 stack.visible_child = shortcut_views[index];
 
-                actionbar.visible = index == SectionID.CUSTOM;
+                actionbar.visible = stack.visible_child is CustomShortcutListBox;
+            });
+
+            // Doing this too early makes the actionbar show by default
+            realize.connect (() => {
+                section_switcher.select_row (section_switcher.get_row_at_index (0));
             });
         }
 
@@ -157,16 +173,17 @@ namespace Keyboard.Shortcuts {
             construct {
                 var icon = new Gtk.Image.from_icon_name (group.icon_name, Gtk.IconSize.DND);
 
-                var label = new Gtk.Label (group.label);
-                label.xalign = 0;
+                var label = new Gtk.Label (group.label) {
+                    xalign = 0
+                };
 
-                var grid = new Gtk.Grid ();
-                grid.margin = 6;
-                grid.column_spacing = 6;
-                grid.add (icon);
-                grid.add (label);
+                var box = new Gtk.Box (HORIZONTAL, 6) {
+                    margin = 6
+                };
+                box.add (icon);
+                box.add (label);
 
-                add (grid);
+                child = box;
             }
         }
     }
