@@ -35,8 +35,10 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         default_width = 750;
 
         var search_entry = new Gtk.SearchEntry () {
-            margin = 12,
+            margin_top = 12,
+            margin_end = 12,
             margin_bottom = 6,
+            margin_start = 12,
             placeholder_text = _("Search input language")
         };
 
@@ -58,18 +60,22 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         }
 
         var input_language_scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = input_language_list_box,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        input_language_scrolled.add (input_language_list_box);
 
-        var input_language_grid = new Gtk.Grid ();
-        input_language_grid.attach (search_entry, 0, 0);
-        input_language_grid.attach (input_language_scrolled, 0, 1);
+        var input_language_box = new Gtk.Box (VERTICAL, 0);
+        input_language_box.add (search_entry);
+        input_language_box.add (input_language_scrolled);
 
         var back_button = new Gtk.Button.with_label (_(INPUT_LANGUAGE)) {
             halign = Gtk.Align.START,
-            margin = 6
+            margin_top = 6,
+            margin_end = 6,
+            margin_bottom = 6,
+            margin_start = 6
         };
         back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
@@ -87,20 +93,24 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         var layout_scrolled = new Gtk.ScrolledWindow (null, null) {
+            child = layout_list_box,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        layout_scrolled.add (layout_list_box);
 
         var keyboard_map_button = new Gtk.Button.with_label (_("Preview Layout")) {
             halign = Gtk.Align.END,
-            margin = 6
+            margin_top = 6,
+            margin_end = 6,
+            margin_bottom = 6,
+            margin_start = 6
         };
 
         var keyboard_map_revealer = new Gtk.Revealer () {
+            child = keyboard_map_button,
             transition_type = Gtk.RevealerTransitionType.CROSSFADE
         };
-        keyboard_map_revealer.add (keyboard_map_button);
 
         var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
             hexpand = true
@@ -113,29 +123,28 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         header_grid.attach (header_box, 0, 0);
         header_grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 1);
 
-        var header_revealer = new Gtk.Revealer ();
-        header_revealer.add (header_grid);
+        var header_revealer = new Gtk.Revealer () {
+            child = header_grid
+        };
 
         var deck = new Hdy.Deck () {
             can_swipe_back = true,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
-        deck.add (input_language_grid);
+        deck.add (input_language_box);
         deck.add (layout_scrolled);
 
-        var frame_grid = new Gtk.Grid () {
-            orientation = Gtk.Orientation.VERTICAL
-        };
-
-        frame_grid.add (header_revealer);
-        frame_grid.add (deck);
+        var frame_box = new Gtk.Box (VERTICAL, 0);
+        frame_box.add (header_revealer);
+        frame_box.add (deck);
 
         var frame = new Gtk.Frame (null) {
+            child = frame_box,
             margin_start = 10,
             margin_end = 10
         };
         frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
-        frame.add (frame_grid);
 
         var button_cancel = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
@@ -150,7 +159,7 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         search_entry.grab_focus ();
 
         deck.notify["visible-child"].connect (() => {
-            if (deck.visible_child == input_language_grid) {
+            if (deck.visible_child == input_language_box) {
                 header_revealer.reveal_child = false;
                 layout_list_box.unselect_all ();
             } else if (deck.visible_child == layout_scrolled) {
@@ -269,7 +278,8 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             label.margin_end = 12;
             label.margin_start = 12;
             label.xalign = 0;
-            add (label);
+
+            child = label;
         }
     }
 }
