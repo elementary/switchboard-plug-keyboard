@@ -70,7 +70,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
         private bool is_editing_shortcut = false;
 
         private Gtk.Button clear_button;
-        private Gtk.Grid keycap_grid;
+        private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
 
@@ -105,8 +105,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             };
             status_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
-            keycap_grid = new Gtk.Grid () {
-                column_spacing = 6,
+            keycap_box = new Gtk.Box (HORIZONTAL, 6) {
                 valign = Gtk.Align.CENTER,
                 halign = Gtk.Align.END
             };
@@ -115,22 +114,21 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             // This seems a bit hacky but it is hard to find a solution across rows not involving a hard-coded width value
             // (which would not take into account internationalization). This grid is never shown but controls the size of
             // of the homogeneous stack.
-            var four_key_grid = new Gtk.Grid () { // must have same format as keycap_grid
-                column_spacing = 6,
+            var four_key_box = new Gtk.Box (HORIZONTAL, 6) { // must have same format as keycap_box
                 valign = Gtk.Align.CENTER,
                 halign = Gtk.Align.END
             };
 
-            build_keycap_grid ("<Shift><Alt><Control>F10", ref four_key_grid);
+            build_keycap_box ("<Shift><Alt><Control>F10", ref four_key_box);
 
             keycap_stack = new Gtk.Stack () {
                 transition_type = Gtk.StackTransitionType.CROSSFADE,
-                homogeneous = true
+                vhomogeneous = true
             };
 
-            keycap_stack.add (four_key_grid); // This ensures sufficient space is allocated for longest reasonable shortcut
-            keycap_stack.add (keycap_grid);
-            keycap_stack.add (status_label); // This becomes initial visible child
+            keycap_stack.add_child (four_key_box); // This ensures sufficient space is allocated for longest reasonable shortcut
+            keycap_stack.add_child (keycap_box);
+            keycap_stack.add_child (status_label); // This becomes initial visible child
 
             var set_accel_button = new Gtk.Button.with_label (_("Set New Shortcut"));
 
@@ -197,24 +195,27 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 }
             });
 
-            var keycap_controller = new Gtk.GestureMultiPress (keycap_stack);
+            var keycap_controller = new Gtk.GestureClick ();
+            keycap_stack.add_controller (keycap_controller);
             keycap_controller.released.connect (() => {
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
             });
 
-            var status_controller = new Gtk.GestureMultiPress (status_label);
+            var status_controller = new Gtk.GestureClick ();
+            status_label.add_controller (status_controller);
             status_controller.released.connect (() => {
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
             });
 
-            command_entry.focus_in_event.connect (() => {
+            var command_entry_focus_controller = new Gtk.EventControllerFocus ();
+            command_entry.add_controller (command_entry_focus_controller);
+            command_entry_focus_controller.enter.connect (() => {
                 cancel_editing_shortcut ();
                 ((Gtk.ListBox)parent).select_row (this);
-                return Gdk.EVENT_PROPAGATE;
             });
 
             command_entry.changed.connect (() => {
@@ -224,14 +225,14 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 gsettings.set_string (NAME_KEY, command);
             });
 
-            var key_controller = new Gtk.EventControllerKey (this);
+            var key_controller = new Gtk.EventControllerKey ();
             key_controller.key_released.connect (on_key_released);
 
-            focus_out_event.connect (() => {
-                cancel_editing_shortcut ();
-                return Gdk.EVENT_PROPAGATE;
-            });
+            var focus_controller = new Gtk.EventControllerFocus ();
+            focus_controller.leave.connect (cancel_editing_shortcut);
 
+            add_controller (key_controller);
+            add_controller (focus_controller);
         }
 
         private void cancel_editing_shortcut () {
@@ -273,7 +274,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
             } else {
-                keycap_stack.visible_child = keycap_grid;
+                keycap_stack.visible_child = keycap_box;
                 render_keycaps ();
             }
         }
@@ -383,8 +384,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             }
 
             if (value_string != "") {
-                build_keycap_grid (value_string, ref keycap_grid);
-                keycap_stack.visible_child = keycap_grid;
+                build_keycap_box (value_string, ref keycap_box);
+                keycap_stack.visible_child = keycap_box;
                 clear_button.sensitive = true;
             } else {
                 clear_button.sensitive = false;
@@ -393,7 +394,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             }
          }
 
-        private void build_keycap_grid (string value_string, ref Gtk.Grid grid) {
+        private void build_keycap_box (string value_string, ref Gtk.Box box) {
             var accels_string = Granite.accel_to_string (value_string);
 
             string[] accels = {};
@@ -410,7 +411,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 }
                 var keycap_label = new Gtk.Label (accel);
                 keycap_label.add_css_class ("keycap");
-                grid.add (keycap_label);
+                box.append (keycap_label);
             }
         }
     }

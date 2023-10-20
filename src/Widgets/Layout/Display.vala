@@ -31,7 +31,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             vexpand = true,
         };
 
-        var scroll = new Gtk.ScrolledWindow (null, null) {
+        var scroll = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
             vexpand = true,

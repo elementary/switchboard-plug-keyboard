@@ -36,7 +36,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
         for (int i = 0; i < actions.length; i++) {
             if (Settings.get_default ().valid (schemas[i], keys[i])) {
                 var row = new ShortcutRow (actions[i], schemas[i], keys[i]);
-                add (row);
+                append (row);
 
                 sizegroup.add_widget (row);
             }
@@ -90,8 +90,8 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             keycap_stack = new Gtk.Stack () {
                 transition_type = Gtk.StackTransitionType.CROSSFADE
             };
-            keycap_stack.add (keycap_box);
-            keycap_stack.add (status_label);
+            keycap_stack.add_child (keycap_box);
+            keycap_stack.add_child (status_label);
 
             var set_accel_button = new Gtk.Button.with_label (_("Set New Shortcut"));
 
@@ -108,8 +108,9 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             action_box.append (reset_button);
             action_box.append (clear_button);
 
-            var popover = new Gtk.Popover (null);
-            popover.add (action_box);
+            var popover = new Gtk.Popover () {
+                child = action_box
+            };
 
             var menubutton = new Gtk.MenuButton () {
                 icon_name = "open-menu-symbolic",
@@ -117,19 +118,18 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             };
             menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 12,
+            var box = new Gtk.Box (HORIZONTAL, 12) {
                 margin_top = 3,
                 margin_end = 12, // Allow space for scrollbar to expand
                 margin_bottom = 3,
                 margin_start = 6,
                 valign = Gtk.Align.CENTER
             };
-            grid.add (label);
-            grid.add (keycap_stack);
-            grid.add (menubutton);
+            box.append (label);
+            box.append (keycap_stack);
+            box.append (menubutton);
 
-            add (grid);
+            child = box;
 
             render_keycaps ();
 

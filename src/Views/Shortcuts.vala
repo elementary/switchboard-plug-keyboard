@@ -129,8 +129,8 @@ namespace Keyboard.Shortcuts {
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
-            add (switcher_frame);
-            add (frame);
+            append (switcher_frame);
+            append (frame);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
                 shortcut_views += new ShortcutListBox ((SectionID) id);

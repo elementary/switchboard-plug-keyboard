@@ -29,7 +29,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private Granite.Placeholder spawn_failed_alert;
     private Gtk.ListBox listbox;
     private SourceSettings settings;
-    private Gtk.MenuButton remove_button;
+    private Gtk.Button remove_button;
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
     private Gtk.Entry entry_test;
@@ -48,16 +48,19 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         // no_daemon_runnning view shown if IBus Daemon is not running
         var no_daemon_runnning_alert = new Granite.Placeholder (_("IBus Daemon is not running")) {
-            description = _("You need to run the IBus daemon to enable or configure input method engines."),
+            description = _("IBus daemon must run in the background to enable or configure input method engines."),
             icon = new ThemedIcon ("dialog-information"),
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
         no_daemon_runnning_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
-        no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
-        no_daemon_runnning_alert.action_activated.connect (() => {
-            spawn_ibus_daemon ();
-        });
+
+        var ibus_button = no_daemon_runnning_alert.append_button (
+            new ThemedIcon ("ibus-setup"),
+            _("Start IBus Daemon"),
+            _("Can be managed in System Settings → Applications → Startup")
+        );
+        ibus_button.clicked.connect (spawn_ibus_daemon);
 
         // spawn_failed view shown if IBus Daemon is not running
         spawn_failed_alert = new Granite.Placeholder (
@@ -97,7 +100,8 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         var scroll = new Gtk.ScrolledWindow () {
             child = listbox,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hexpand = true,
+            vexpand = true
         };
 
         add_engines_popover = new AddEnginesPopover ();
@@ -199,10 +203,6 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         add (stack);
 
         set_visible_view ();
-
-        add_button.clicked.connect (() => {
-            add_engines_popover.popup ();
-        });
 
         add_engines_popover.add_engine.connect ((engine) => {
             if (settings.add_active_engine (engine)) {
