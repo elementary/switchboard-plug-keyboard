@@ -28,7 +28,7 @@ public class Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
             hexpand = true
         };
 
-        var caret = new Gtk.Image.from_icon_name ("pan-end-symbolic", Gtk.IconSize.MENU);
+        var caret = new Gtk.Image.from_icon_name ("pan-end-symbolic");
 
         var grid = new Gtk.Grid () {
             margin = 3,

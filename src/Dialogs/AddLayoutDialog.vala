@@ -56,10 +56,10 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             var item = language_list.get_item (i) as ListStoreItem;
             var row = new LayoutRow (item.name);
 
-            input_language_list_box.add (row);
+            input_language_list_box.append (row);
         }
 
-        var input_language_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var input_language_scrolled = new Gtk.ScrolledWindow () {
             child = input_language_list_box,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
@@ -67,8 +67,8 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         };
 
         var input_language_box = new Gtk.Box (VERTICAL, 0);
-        input_language_box.add (search_entry);
-        input_language_box.add (input_language_scrolled);
+        input_language_box.append (search_entry);
+        input_language_box.append (input_language_scrolled);
 
         var back_button = new Gtk.Button.with_label (_(INPUT_LANGUAGE)) {
             halign = Gtk.Align.START,
@@ -92,7 +92,7 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             return new LayoutRow (((ListStoreItem)item).name);
         });
 
-        var layout_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var layout_scrolled = new Gtk.ScrolledWindow () {
             child = layout_list_box,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
@@ -136,8 +136,8 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         deck.add (layout_scrolled);
 
         var frame_box = new Gtk.Box (VERTICAL, 0);
-        frame_box.add (header_revealer);
-        frame_box.add (deck);
+        frame_box.append (header_revealer);
+        frame_box.append (deck);
 
         var frame = new Gtk.Frame (null) {
             child = frame_box,
@@ -196,7 +196,6 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         input_language_list_box.row_activated.connect (() => {
             var selected_lang = get_selected_lang ();
             update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
-            layout_list_box.show_all ();
             layout_list_box.select_row (layout_list_box.get_row_at_index (0));
             if (layout_list_box.get_row_at_index (0) != null) {
                 layout_list_box.get_row_at_index (0).grab_focus ();

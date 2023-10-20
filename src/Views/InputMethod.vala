@@ -94,7 +94,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             update_entry_test_usable ();
         });
 
-        var scroll = new Gtk.ScrolledWindow (null, null) {
+        var scroll = new Gtk.ScrolledWindow () {
             child = listbox,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             expand = true
@@ -103,13 +103,12 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         add_engines_popover = new AddEnginesPopover ();
 
         var add_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON),
+            icon_name = "list-add-symbolic",
             popover = add_engines_popover,
             tooltip_text = _("Add…")
         };
 
-        remove_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON),
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
             tooltip_text = _("Remove")
         };
 
@@ -119,8 +118,8 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         actionbar.pack_start (remove_button);
 
         var left_box = new Gtk.Box (VERTICAL, 0);
-        left_box.add (scroll);
-        left_box.add (actionbar);
+        left_box.append (scroll);
+        left_box.append (actionbar);
 
         var display = new Gtk.Frame (null) {
             child = left_box
@@ -193,7 +192,6 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         stack.add_named (no_daemon_runnning_alert, "no_daemon_runnning_view");
         stack.add_named (spawn_failed_alert, "spawn_failed_view");
         stack.add_named (main_grid, "main_view");
-        stack.show_all ();
 
         margin_start = 12;
         margin_end = 12;
@@ -203,7 +201,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         set_visible_view ();
 
         add_button.clicked.connect (() => {
-            add_engines_popover.show_all ();
+            add_engines_popover.popup ();
         });
 
         add_engines_popover.add_engine.connect ((engine) => {
@@ -322,13 +320,12 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
                     };
                     listboxrow.set_data<string> ("engine-name", engine.name);
 
-                    listbox.add (listboxrow);
+                    listbox.append (listboxrow);
                     settings.add_layout (InputSource.new_ibus (engine.name));
                 }
             }
         }
 
-        listbox.show_all ();
         //Do not autoselect the first entry as that would change the active input method
         remove_button.sensitive = listbox.get_selected_row () != null;
         // If ibus is running, update its autostart file according to whether there are input methods active

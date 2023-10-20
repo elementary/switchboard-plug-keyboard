@@ -68,9 +68,8 @@ public class Keyboard.Plug : Switchboard.Plug {
             };
 
             box = new Gtk.Box (VERTICAL, 0);
-            box.add (stack_switcher);
-            box.add (stack);
-            box.show_all ();
+            box.append (stack_switcher);
+            box.append (stack);
         }
 
         return box;

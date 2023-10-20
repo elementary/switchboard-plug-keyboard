@@ -225,8 +225,6 @@ namespace Keyboard {
             panel.attach (third_level_label, 0, 0, 1, 1);
             panel.attach (third_level_combo, 1, 0, 1, 1);
 
-            panel.show_all ();
-
             return panel;
         }
 
@@ -263,7 +261,6 @@ namespace Keyboard {
             panel.attach (third_level_combo, 1, 0, 1, 1);
             panel.attach (fifth_level_label, 0, 1, 1, 1);
             panel.attach (fifth_level_combo, 1, 1, 1, 1);
-            panel.show_all ();
 
             return panel;
         }
@@ -291,7 +288,6 @@ namespace Keyboard {
             panel.attach (nicola_backspace_switch, 1, 1, 1, 1);
             panel.attach (zenkaku_label, 0, 2, 1, 1);
             panel.attach (zenkaku_switch, 1, 2, 1, 1);
-            panel.show_all ();
 
             return panel;
         }
@@ -309,7 +305,6 @@ namespace Keyboard {
             var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
             panel.attach (hangul_label, 0, 0, 1, 1);
             panel.attach (spacer_grid, 1, 0, 1, 1);
-            panel.show_all ();
 
             return panel;
         }

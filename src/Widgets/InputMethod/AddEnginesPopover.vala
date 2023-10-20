@@ -36,7 +36,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
         listbox = new Gtk.ListBox ();
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             expand = true,
             height_request = 300,
             width_request = 500
@@ -55,9 +55,9 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             margin = 12,
             spacing = 6
         };
-        button_box.add (install_button);
-        button_box.add (cancel_button);
-        button_box.add (add_button);
+        button_box.append (install_button);
+        button_box.append (cancel_button);
+        button_box.append (add_button);
         button_box.set_child_secondary (install_button, true);
 
         var grid = new Gtk.Grid ();
@@ -92,7 +92,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             popdown ();
 
             var installer = UbuntuInstaller.get_default ();
-            var install_dialog = new InstallEngineDialog ((Gtk.Window) get_toplevel ());
+            var install_dialog = new InstallEngineDialog ((Gtk.Window) get_root ());
             install_dialog.response.connect ((response_id) => {
                 if (response_id == Gtk.ResponseType.OK) {
                     string engine_to_install = install_dialog.get_selected_engine_name ();
@@ -100,7 +100,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                     installer.install (engine_to_install);
 
                     var progress_dialog = new ProgressDialog () {
-                        transient_for = (Gtk.Window) get_toplevel ()
+                        transient_for = (Gtk.Window) get_root ()
                     };
                     installer.progress_changed.connect ((p) => {
                         progress_dialog.progress = p;
@@ -152,7 +152,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             var listboxrow = new Gtk.ListBoxRow ();
             listboxrow.add (label);
 
-            listbox.add (listboxrow);
+            listbox.append (listboxrow);
         }
 
         listbox.select_row (listbox.get_row_at_index (0));

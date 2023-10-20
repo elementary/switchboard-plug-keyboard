@@ -63,7 +63,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
 
         add_button.clicked.connect (() => {
             var dialog = new AddLayoutDialog ();
-            dialog.transient_for = (Gtk.Window) get_toplevel ();
+            dialog.transient_for = (Gtk.Window) get_root ();
 
             dialog.present ();
             dialog.layout_added.connect ((layout, variant) => {

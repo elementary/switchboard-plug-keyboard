@@ -31,7 +31,7 @@ public class Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
             hexpand = true
         };
 
-        var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic", Gtk.IconSize.MENU) {
+        var selection_icon = new Gtk.Image.from_icon_name ("object-select-symbolic") {
             visible = false
         };
 

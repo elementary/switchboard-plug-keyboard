@@ -41,8 +41,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 sizegroup.add_widget (row);
             }
         }
-
-        show_all ();
     }
 
     private class ShortcutRow : Gtk.ListBoxRow {
@@ -114,7 +112,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             popover.add (action_box);
 
             var menubutton = new Gtk.MenuButton () {
-                image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
+                icon_name = "open-menu-symbolic",
                 popover = popover,
             };
             menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
@@ -130,7 +128,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
             grid.add (label);
             grid.add (keycap_stack);
             grid.add (menubutton);
-            grid.show_all ();
 
             add (grid);
 
@@ -267,7 +264,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 ) {
                     badge_icon = new ThemedIcon ("dialog-error"),
                     modal = true,
-                    transient_for = (Gtk.Window) get_toplevel ()
+                    transient_for = (Gtk.Window) get_root ()
                 };
 
                 message_dialog.response.connect (() => {
@@ -324,7 +321,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                 }
 
                 clear_button.sensitive = true;
-                keycap_box.show_all ();
                 keycap_stack.visible_child = keycap_box;
             } else {
                 clear_button.sensitive = false;

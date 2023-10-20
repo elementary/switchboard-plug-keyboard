@@ -34,7 +34,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
         }
 
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
-            add (new CustomShortcutRow (custom_shortcut));
+            append (new CustomShortcutRow (custom_shortcut));
         }
     }
 
@@ -48,7 +48,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             new_row = new CustomShortcutRow (new_custom_shortcut);
         }
 
-        add (new_row);
+        append (new_row);
         select_row (new_row);
     }
 
@@ -144,32 +144,31 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 margin_top = 3,
                 margin_bottom = 3
             };
-            action_box.add (set_accel_button);
-            action_box.add (clear_button);
-            action_box.add (remove_button);
+            action_box.append (set_accel_button);
+            action_box.append (clear_button);
+            action_box.append (remove_button);
 
             var popover = new Gtk.Popover () {
                 child = action_box
             };
 
             var menubutton = new Gtk.MenuButton () {
-                image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
+                icon_name = "open-menu-symbolic",
                 popover = popover
             };
             menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 12,
+            var box = new Gtk.Box (HORIZONTAL, 12) {
                 margin = 3,
                 margin_start = 6,
                 margin_end = 12, // Allow space for scrollbar to expand
-                valign = Gtk.Align.CENTER
+                valign = CENTER
             };
-            grid.add (command_entry);
-            grid.add (keycap_stack);
-            grid.add (menubutton);
+            box.append (command_entry);
+            box.append (keycap_stack);
+            box.append (menubutton);
 
-            add (grid);
+            child = box;
 
             render_keycaps ();
 
