@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2023-05-20 05:06+0000\n"
+"PO-Revision-Date: 2023-10-03 18:08+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ka/>\n"
@@ -160,10 +160,8 @@ msgid "Embed preedit text in application window"
 msgstr ""
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:8
-#, fuzzy
-#| msgid "On-screen Keyboard"
 msgid "Show On-screen Keyboard"
-msgstr "ეკრანის კლავიატურა"
+msgstr "ეკრანის კლავიატურის ჩვენება"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:156
 msgid "Bounce Keys"
@@ -234,16 +232,12 @@ msgid "Cycle Windows backwards"
 msgstr "ფანჯრების უკუღმა გადართვა"
 
 #: src/Shortcuts/ShortcutsList.vala:64
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "ფანჯრების უკუღმა გადართვა"
+msgstr "აპლიკაციის ფანჯრებს შორის გადართვა"
 
 #: src/Shortcuts/ShortcutsList.vala:65
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "ფანჯრების უკუღმა გადართვა"
+msgstr "აპლიკაციის ფანჯრების უკუღმა გადართვა"
 
 #: src/Shortcuts/ShortcutsList.vala:66
 msgid "Tile Left"
@@ -596,10 +590,8 @@ msgid "Ignore fast duplicate keypresses"
 msgstr ""
 
 #: src/Views/Behavior.vala:189
-#, fuzzy
-#| msgid "Left Alt"
 msgid "Event Alerts"
-msgstr "მარცხენა Alt"
+msgstr "მოვლენის განგაშები"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:193
@@ -856,10 +848,8 @@ msgid "Add Engine"
 msgstr "ძრავის დამატება"
 
 #: src/Widgets/Layout/Display.vala:41
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Add Keyboard Layout…"
-msgstr "განლაგების დამატება"
+msgstr "კლავიატურის განლაგების დამატება…"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"

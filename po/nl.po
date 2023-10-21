@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2023-08-31 14:08+0000\n"
-"Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
+"PO-Revision-Date: 2023-10-16 18:10+0000\n"
+"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -597,7 +597,7 @@ msgstr "Waarschuwingen"
 #: src/Views/Behavior.vala:193
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr "Speel geluid af of flits het scherm. &s"
+msgstr "Speel geluid af of knipper het scherm. %s"
 
 #: src/Views/Behavior.vala:195
 msgid "Sound Settings…"
@@ -632,8 +632,8 @@ msgstr "IBUS Daemon is niet actief"
 msgid ""
 "You need to run the IBus daemon to enable or configure input method engines."
 msgstr ""
-"U moet de IBus daemon starten om invoermethode engines te gebruiken of in te "
-"stellen."
+"U moet de IBus-daemon draaien om invoermethode-engines in te schakelen of te "
+"configureren."
 
 #: src/Views/InputMethod.vala:59
 msgid "Start IBus Daemon"
@@ -851,7 +851,7 @@ msgstr "Voeg engine toe"
 
 #: src/Widgets/Layout/Display.vala:41
 msgid "Add Keyboard Layout…"
-msgstr "Toetsenbordindeling toevoegen"
+msgstr "Voeg toetsenbordindeling toe…"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"

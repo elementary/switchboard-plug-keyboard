@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2023-07-28 18:08+0000\n"
+"PO-Revision-Date: 2023-09-19 09:22+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -233,16 +233,12 @@ msgid "Cycle Windows backwards"
 msgstr "Fenster rückwärts wechseln"
 
 #: src/Shortcuts/ShortcutsList.vala:64
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Fenster rückwärts wechseln"
+msgstr "Anwendungsfenster wechseln"
 
 #: src/Shortcuts/ShortcutsList.vala:65
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Fenster rückwärts wechseln"
+msgstr "Anwendungsfenster rückwärts wechseln"
 
 #: src/Shortcuts/ShortcutsList.vala:66
 msgid "Tile Left"
@@ -855,10 +851,8 @@ msgid "Add Engine"
 msgstr "Engine hinzufügen"
 
 #: src/Widgets/Layout/Display.vala:41
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Add Keyboard Layout…"
-msgstr "Tastaturbelegung anzeigen"
+msgstr "Tastaturbelegung hinzufügen …"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"

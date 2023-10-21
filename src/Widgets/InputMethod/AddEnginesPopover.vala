@@ -24,7 +24,10 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
     construct {
         search_entry = new Gtk.SearchEntry () {
-            margin = 12
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
         };
 
         ///TRANSLATORS: This text appears in a search entry and tell users to type some search word
@@ -34,14 +37,17 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
 
         liststore = new GLib.ListStore (Type.OBJECT);
 
-        listbox = new Gtk.ListBox ();
+        listbox = new Gtk.ListBox () {
+            activate_on_single_click = false
+        };
 
         var scrolled = new Gtk.ScrolledWindow (null, null) {
-            expand = true,
+            child = listbox,
+            hexpand = true,
+            vexpand = true,
             height_request = 300,
             width_request = 500
         };
-        scrolled.add (listbox);
 
         var install_button = new Gtk.Button.with_label (_("Install Unlisted Engines…"));
 
@@ -50,15 +56,20 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         var add_button = new Gtk.Button.with_label (_("Add Engine"));
         add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
 
-        var button_box = new Gtk.ButtonBox (Gtk.Orientation.HORIZONTAL) {
-            layout_style = Gtk.ButtonBoxStyle.END,
-            margin = 12,
-            spacing = 6
+        var size_group = new Gtk.SizeGroup (HORIZONTAL);
+        size_group.add_widget (cancel_button);
+        size_group.add_widget (add_button);
+
+        var button_box = new Gtk.Box (HORIZONTAL, 6) {
+            margin_top = 12,
+            margin_end = 12,
+            margin_bottom = 12,
+            margin_start = 12
         };
         button_box.add (install_button);
+        button_box.add (new Gtk.Grid () { hexpand = true });
         button_box.add (cancel_button);
         button_box.add (add_button);
-        button_box.set_child_secondary (install_button, true);
 
         var grid = new Gtk.Grid ();
         grid.attach (search_entry, 0, 0);
@@ -66,16 +77,9 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         grid.attach (new Gtk.Separator (Gtk.Orientation.HORIZONTAL), 0, 2);
         grid.attach (button_box, 0, 3);
 
-        add (grid);
+        child = grid;
 
-        listbox.button_press_event.connect ((event) => {
-            if (event.type == Gdk.EventType.DOUBLE_BUTTON_PRESS) {
-                trigger_add_engine ();
-                return false;
-            }
-
-            return false;
-        });
+        listbox.row_activated.connect (trigger_add_engine);
 
         listbox.set_filter_func ((list_box_row) => {
             var item = (AddEnginesList) liststore.get_item (list_box_row.get_index ());
@@ -105,12 +109,12 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                     installer.progress_changed.connect ((p) => {
                         progress_dialog.progress = p;
                     });
-                    progress_dialog.run ();
+                    progress_dialog.present ();
                 } else {
                     install_dialog.destroy ();
                 }
             });
-            install_dialog.run ();
+            install_dialog.present ();
         });
 
         cancel_button.clicked.connect (() => {
@@ -118,12 +122,12 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         });
 
         add_button.clicked.connect (() => {
-            trigger_add_engine ();
+            trigger_add_engine (listbox.get_selected_row ());
         });
     }
 
-    private void trigger_add_engine () {
-        int index = listbox.get_selected_row ().get_index ();
+    private void trigger_add_engine (Gtk.ListBoxRow row) {
+        int index = row.get_index ();
 
         // Signal handler to ensure engine not added twice.
         add_engine (((AddEnginesList) liststore.get_item (index)).engine_id);
@@ -149,8 +153,9 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                 margin_start = 12
             };
 
-            var listboxrow = new Gtk.ListBoxRow ();
-            listboxrow.add (label);
+            var listboxrow = new Gtk.ListBoxRow () {
+                child = label
+            };
 
             listbox.add (listboxrow);
         }

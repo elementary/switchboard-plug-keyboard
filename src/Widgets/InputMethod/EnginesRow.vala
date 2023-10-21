@@ -36,16 +36,15 @@ public class Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
             visible = false
         };
 
-        var grid = new Gtk.Grid () {
-            column_spacing = 6,
+        var box = new Gtk.Box (HORIZONTAL, 6) {
             margin = 3,
             margin_start = 6,
             margin_end = 6
         };
-        grid.add (label);
-        grid.add (selection_icon);
+        box.add (label);
+        box.add (selection_icon);
 
-        add (grid);
+        child = box;
 
         notify["selected"].connect (() => {
             selection_icon.visible = selected;

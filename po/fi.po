@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2023-08-27 08:08+0000\n"
+"PO-Revision-Date: 2023-09-16 18:08+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -852,10 +852,8 @@ msgid "Add Engine"
 msgstr "Lisää moottori"
 
 #: src/Widgets/Layout/Display.vala:41
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Add Keyboard Layout…"
-msgstr "Lisää asettelu"
+msgstr "Lisää näppäimistön asettelu…"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"
