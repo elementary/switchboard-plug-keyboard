@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-08-29 16:42+0000\n"
-"PO-Revision-Date: 2022-12-26 20:25+0000\n"
+"PO-Revision-Date: 2023-10-27 11:10+0000\n"
 "Last-Translator: JohnDumpling <john_dumpling@protonmail.com>\n"
 "Language-Team: Slovak <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/sk/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -160,14 +160,12 @@ msgid "Embed preedit text in application window"
 msgstr "Zabudovať text pred úpravou do okna aplikácie"
 
 #: src/Plug.vala:118 src/Views/Behavior.vala:8
-#, fuzzy
-#| msgid "Show on-screen keyboard:"
 msgid "Show On-screen Keyboard"
-msgstr "Zobrazovať klávesnicu na obrazovke:"
+msgstr "Zobraziť klávesnicu na obrazovke"
 
 #: src/Plug.vala:119 src/Views/Behavior.vala:156
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Odskakujúce klávesy"
 
 #: src/Plug.vala:120 src/Views/Behavior.vala:65
 msgid "Cursor Blinking"
@@ -179,11 +177,11 @@ msgstr "Opakovanie kláves"
 
 #: src/Plug.vala:122 src/Views/Behavior.vala:123
 msgid "Slow Keys"
-msgstr ""
+msgstr "Pomalé klávesy"
 
 #: src/Plug.vala:123 src/Views/Behavior.vala:99
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Lepkavé klávesy"
 
 #: src/Shortcuts/ShortcutsList.vala:52 src/Views/Shortcuts.vala:38
 msgid "Windows"
@@ -234,16 +232,12 @@ msgid "Cycle Windows backwards"
 msgstr "Prepínať okná spätne"
 
 #: src/Shortcuts/ShortcutsList.vala:64
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Prepínať okná spätne"
+msgstr "Prepínať okná aplikácie"
 
 #: src/Shortcuts/ShortcutsList.vala:65
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Prepínať okná spätne"
+msgstr "Prepínať okná aplikácie spätne"
 
 #: src/Shortcuts/ShortcutsList.vala:66
 msgid "Tile Left"
@@ -583,49 +577,47 @@ msgstr "Trvanie:"
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:109
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "Použite klávesy ⌘, Alt, Ctrl alebo Shift postupne za sebou"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:133
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "Neprijať stlačenie klávesy, ak nie je klávesa pridržaná"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:166
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Ignorovať rýchle duplicitné stlačenie kláves"
 
 #: src/Views/Behavior.vala:189
-#, fuzzy
-#| msgid "Left Alt"
 msgid "Event Alerts"
-msgstr "Ľavý Alt"
+msgstr "Upozornenia na udalosti"
 
 #. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
 #: src/Views/Behavior.vala:193
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Prehrať zvuk alebo prebliknúť obrazovku. %s"
 
 #: src/Views/Behavior.vala:195
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Nastavenia zvuku…"
 
 #: src/Views/Behavior.vala:205
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Klávesy Caps Lock ⇪ alebo Num Lock sú stlačené"
 
 #: src/Views/Behavior.vala:206
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Odskakujúce klávesy sú ignorované"
 
 #: src/Views/Behavior.vala:207
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Lepkavé klávesy sú stlačené"
 
 #: src/Views/Behavior.vala:208
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Pomalé klávesy sú ignorované"
 
 #: src/Views/Behavior.vala:225
 msgid "Type to test your settings"
@@ -858,10 +850,8 @@ msgid "Add Engine"
 msgstr "Pridať engine"
 
 #: src/Widgets/Layout/Display.vala:41
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Add Keyboard Layout…"
-msgstr "Pridať rozloženie"
+msgstr "Pridať rozloženie klávesnice…"
 
 #: src/Widgets/Layout/Display.vala:186
 msgid "Move up"
