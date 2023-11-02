@@ -4,12 +4,16 @@
  */
 
 public class Keyboard.LayoutPage.Page : Gtk.Grid {
+    private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
+
+    private AdvancedSettingsPanel? [] panels;
     private Display display;
+    private HashTable <string, string> panel_for_layout;
     private SourceSettings settings;
     private Gtk.SizeGroup [] size_group;
-    private AdvancedSettings advanced_settings;
     private Gtk.Entry entry_test;
-    private const string MULTITASKING_VIEW_COMMAND = "dbus-send --session --dest=org.pantheon.gala --print-reply /org/pantheon/gala org.pantheon.gala.PerformAction int32:1";
+    private Gtk.Stack stack;
+
 
     construct {
         settings = SourceSettings.get_instance ();
@@ -105,15 +109,31 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
             caps_lock_combo
         );
 
-        // Advanced settings panel
-        AdvancedSettingsPanel? [] panels = {
+        stack = new Gtk.Stack () {
+            hexpand = true,
+            vhomogeneous = false
+        };
+
+        var blank_panel = new Gtk.Box (VERTICAL, 0);
+        stack.add_named (blank_panel, "none");
+        blank_panel.show ();
+
+        panels = {
             fifth_level_layouts_panel (),
             japanese_layouts_panel (),
             korean_layouts_panel (),
             third_level_layouts_panel ()
         };
 
-        advanced_settings = new AdvancedSettings (panels);
+        panel_for_layout = new HashTable <string, string> (str_hash, str_equal);
+
+        foreach (unowned var panel in panels) {
+            stack.add_named (panel, panel.panel_name);
+            foreach (string layout_name in panel.input_sources) {
+                // currently we only want *one* panel per input-source
+                panel_for_layout.insert (layout_name, panel.panel_name);
+            }
+        }
 
         entry_test = new Gtk.Entry () {
             vexpand = true,
@@ -137,13 +157,12 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         attach (overlay_key_combo, 2, 2);
         attach (caps_lock_label, 1, 3);
         attach (caps_lock_combo, 2, 3);
-        attach (advanced_settings, 1, 4, 2);
-
+        attach (stack, 1, 4, 2);
         attach (entry_test, 1, 11, 2);
 
         // Cannot be just called from the constructor because the stack switcher
         // shows every child after the constructor has been called
-        advanced_settings.map.connect (() => {
+        map.connect (() => {
             show_panel_for_active_layout ();
         });
 
@@ -327,9 +346,9 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
     private void show_panel_for_active_layout () {
         var active_layout = settings.active_input_source;
         if (active_layout != null) {
-            advanced_settings.set_visible_panel_from_layout (active_layout.name);
+            set_visible_panel_from_layout (active_layout.name);
         } else {
-            advanced_settings.set_visible_panel_from_layout (null);
+            set_visible_panel_from_layout (null);
         }
     }
 
@@ -408,5 +427,44 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         size_group[0].add_widget (settings_label);
 
         return settings_label;
+    }
+
+    private void set_visible_panel_from_layout (string? layout_name) {
+        string panel_name = "none";
+        string[] split_name = {};
+        if (layout_name != null) {
+            if (!panel_for_layout.lookup_extended (layout_name, null, out panel_name)) {
+                panel_name = "";
+            }
+            split_name = layout_name.split ("+");
+
+            if (panel_name == "" && "+" in layout_name) {
+                // if layout_name was not found we look for the layout without variant
+                if (!panel_for_layout.lookup_extended (split_name[0], null, out panel_name)) {
+                    panel_name = "";
+                }
+            }
+        }
+
+        if (panel_name == "") {
+            foreach (unowned var panel in panels) {
+                if (panel == null || panel.exclusions.length == 0) {
+                    continue;
+                }
+
+                if (!(split_name[0] + "*" in panel.exclusions || layout_name in panel.exclusions)) {
+                    panel_name = panel.panel_name;
+                    break;
+                }
+            }
+        }
+
+        if (panel_name == "") {
+            // this.hide() cannot be used because it messes the alignment
+            stack.set_visible_child_name ("none");
+            return;
+        } else {
+            stack.set_visible_child_name (panel_name);
+        }
     }
 }
