@@ -14,7 +14,6 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
     private Gtk.Entry entry_test;
     private Gtk.Stack stack;
 
-
     construct {
         settings = SourceSettings.get_instance ();
 
