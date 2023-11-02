@@ -22,8 +22,6 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         // tree view to display the current layouts
         display = new LayoutPage.Display ();
 
-        var switch_layout_label = create_settings_label (_("Switch layout:"), size_group[0]);
-
         // Layout switching keybinding
         var modifier = new XkbModifier ("switch-layout");
         modifier.append_xkb_option ("", _("Disabled"));
@@ -39,9 +37,12 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
 
         settings.add_xkb_modifier (modifier);
 
-        var switch_layout_combo = create_xkb_combobox (modifier, size_group[1]);
+        var switch_layout_combo = create_xkb_combobox (modifier);
 
-        var compose_key_label = create_settings_label (_("Compose key:"), size_group[0]);
+        var switch_layout_label = create_settings_label (
+            _("Switch layout:"),
+            switch_layout_combo
+        );
 
         // Compose key position menu
         modifier = new XkbModifier ();
@@ -55,9 +56,12 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
 
         settings.add_xkb_modifier (modifier);
 
-        var compose_key_combo = create_xkb_combobox (modifier, size_group[1]);
+        var compose_key_combo = create_xkb_combobox (modifier);
 
-        var overlay_key_label = create_settings_label (_("⌘ key behavior:"), size_group[0]);
+        var compose_key_label = create_settings_label (
+            _("Compose key:"),
+            compose_key_combo
+        );
 
         // ⌘ key behavior
         var overlay_key_combo = new Gtk.ComboBoxText () {
@@ -67,14 +71,17 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         overlay_key_combo.append_text (_("Applications Menu"));
         overlay_key_combo.append_text (_("Multitasking View"));
 
+        var overlay_key_label = create_settings_label (
+            _("⌘ key behavior:"),
+            overlay_key_combo
+        );
+
         string? cheatsheet_path = Environment.find_program_in_path ("io.elementary.shortcut-overlay");
         if (cheatsheet_path != null) {
             overlay_key_combo.append_text (_("Shortcut Overlay"));
         }
 
         size_group[1].add_widget (overlay_key_combo);
-
-        var caps_lock_label = create_settings_label (_("Caps Lock behavior:"), size_group[0]);
 
         // Caps Lock key functionality
         modifier = new XkbModifier ();
@@ -91,7 +98,12 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         modifier.set_default_command ("");
         settings.add_xkb_modifier (modifier);
 
-        var caps_lock_combo = create_xkb_combobox (modifier, size_group[1]);
+        var caps_lock_combo = create_xkb_combobox (modifier);
+
+        var caps_lock_label = create_settings_label (
+            _("Caps Lock behavior:"),
+            caps_lock_combo
+        );
 
         // Advanced settings panel
         AdvancedSettingsPanel? [] panels = {
@@ -204,26 +216,23 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
            "us+dvorak-l", "us+dvorak-r", "uz*"
         };
 
-        var third_level_label = create_settings_label (_("Key to choose 3rd level:"), size_group[0]);
+        var third_level_combo = create_xkb_combobox (modifier);
+
+        var third_level_label = create_settings_label (
+            _("Key to choose 3rd level:"),
+            third_level_combo
+        );
 
         var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
-
-        var third_level_combo = create_xkb_combobox (modifier, size_group[1]);
-
         panel.attach (third_level_label, 0, 0);
         panel.attach (third_level_combo, 1, 0);
-
         panel.show_all ();
 
         return panel;
     }
 
     private AdvancedSettingsPanel fifth_level_layouts_panel () {
-        var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
-
-        var third_level_label = create_settings_label (_("Key to choose 3rd level:"), size_group[0]);
-
-        XkbModifier modifier = new XkbModifier ("third_level_key");
+        var modifier = new XkbModifier ("third_level_key");
         modifier.append_xkb_option ("", _("Default"));
         modifier.append_xkb_option ("lv3:caps_switch", _("Caps Lock"));
         modifier.append_xkb_option ("lv3:lalt_switch", _("Left Alt"));
@@ -234,9 +243,12 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         modifier.set_default_command ("");
         settings.add_xkb_modifier (modifier);
 
-        var third_level_combo = create_xkb_combobox (modifier, size_group[1]);
+        var third_level_combo = create_xkb_combobox (modifier);
 
-        var fifth_level_label = create_settings_label (_("Key to choose 5th level:"), size_group[0]);
+        var third_level_label = create_settings_label (
+            _("Key to choose 3rd level:"),
+            third_level_combo
+        );
 
         modifier = new XkbModifier ();
         modifier.append_xkb_option ("lv5:ralt_switch_lock", _("Right Alt"));
@@ -245,8 +257,14 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         modifier.set_default_command ("");
         settings.add_xkb_modifier (modifier);
 
-        var fifth_level_combo = create_xkb_combobox (modifier, size_group[1]);
+        var fifth_level_combo = create_xkb_combobox (modifier);
 
+        var fifth_level_label = create_settings_label (
+            _("Key to choose 5th level:"),
+            fifth_level_combo
+        );
+
+        var panel = new AdvancedSettingsPanel ("fifth_level_layouts", {"ca+multix"});
         panel.attach (third_level_label, 0, 0);
         panel.attach (third_level_combo, 1, 0);
         panel.attach (fifth_level_label, 0, 1);
@@ -259,21 +277,26 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
     private AdvancedSettingsPanel japanese_layouts_panel () {
         var kana_lock_switch = create_xkb_option_switch (settings, "japan:kana_lock");
 
-        var kana_lock_label = create_settings_label (_("Kana Lock:"), size_group[0]);
-        kana_lock_label.mnemonic_widget = kana_lock_switch;
+        var kana_lock_label = create_settings_label (
+            _("Kana Lock:"),
+            kana_lock_switch
+        );
 
         var nicola_backspace_switch = create_xkb_option_switch (settings, "japan:nicola_f_bs");
 
-        var nicola_backspace_label = create_settings_label (_("Nicola F Backspace:"), size_group[0]);
-        nicola_backspace_label.mnemonic_widget = nicola_backspace_switch;
+        var nicola_backspace_label = create_settings_label (
+            _("Nicola F Backspace:"),
+            nicola_backspace_switch
+        );
 
         var zenkaku_switch = create_xkb_option_switch (settings, "japan:hztg_escape");
 
-        var zenkaku_label = create_settings_label (_("Hankaku Zenkaku as Escape:"), size_group[0]);
-        zenkaku_label.mnemonic_widget = zenkaku_switch;
+        var zenkaku_label = create_settings_label (
+            _("Hankaku Zenkaku as Escape:"),
+            zenkaku_switch
+        );
 
-        string [] valid_input_sources = {"jp"};
-        var panel = new AdvancedSettingsPanel ( "japanese_layouts", valid_input_sources );
+        var panel = new AdvancedSettingsPanel ("japanese_layouts", {"jp"});
         panel.attach (kana_lock_label, 0, 0);
         panel.attach (kana_lock_switch, 1, 0);
         panel.attach (nicola_backspace_label, 0, 1);
@@ -288,11 +311,12 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
     private AdvancedSettingsPanel korean_layouts_panel () {
         var hangul_switch = create_xkb_option_switch (settings, "korean:ralt_rctrl");
 
-        var hangul_label = create_settings_label (_("Hangul/Hanja keys on Right Alt/Ctrl:"), size_group[0]);
-        hangul_label.mnemonic_widget = hangul_switch;
+        var hangul_label = create_settings_label (
+            _("Hangul/Hanja keys on Right Alt/Ctrl:"),
+            hangul_switch
+        );
 
-        string [] valid_input_sources = {"kr"};
-        var panel = new AdvancedSettingsPanel ("korean_layouts", valid_input_sources);
+        var panel = new AdvancedSettingsPanel ("korean_layouts", {"kr"});
         panel.attach (hangul_label, 0, 0);
         panel.attach (hangul_switch, 1, 0);
         panel.show_all ();
@@ -309,13 +333,13 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         }
     }
 
-    private Gtk.ComboBoxText create_xkb_combobox (XkbModifier modifier, Gtk.SizeGroup size_group) {
+    private Gtk.ComboBoxText create_xkb_combobox (XkbModifier modifier) {
         var combo_box = new Gtk.ComboBoxText () {
             halign = START,
             valign = CENTER
         };
 
-        size_group.add_widget (combo_box);
+        size_group[1].add_widget (combo_box);
 
         for (int i = 0; i < modifier.xkb_option_commands.length; i++) {
             combo_box.append (modifier.xkb_option_commands[i], modifier.option_descriptions[i]);
@@ -375,12 +399,13 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         }
     }
 
-    private Gtk.Label create_settings_label (string label, Gtk.SizeGroup size_group) {
+    private Gtk.Label create_settings_label (string label, Gtk.Widget mnemonic_widget) {
         var settings_label = new Gtk.Label (label) {
+            mnemonic_widget = mnemonic_widget,
             xalign = 1
         };
 
-        size_group.add_widget (settings_label);
+        size_group[0].add_widget (settings_label);
 
         return settings_label;
     }
