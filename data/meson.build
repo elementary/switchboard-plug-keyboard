@@ -10,5 +10,5 @@ i18n.merge_file(
 install_data(
     'keyboard.gschema.xml',
     install_dir: datadir / 'glib-2.0' / 'schemas',
-    rename: meson.project_name() + '.gschema.xml'
+    rename: 'io.elementary.switchboard.keyboard.gschema.xml'
 )
