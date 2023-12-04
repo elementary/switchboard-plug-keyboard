@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-08-29 16:42+0000\n"
+"POT-Creation-Date: 2023-12-04 17:39+0000\n"
 "PO-Revision-Date: 2023-09-09 09:08+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
@@ -29,27 +29,27 @@ msgstr "Język wejściowy"
 msgid "Layout List"
 msgstr "Lista układów"
 
-#: src/Dialogs/AddLayoutDialog.vala:40
+#: src/Dialogs/AddLayoutDialog.vala:42
 msgid "Search input language"
 msgstr "Znajdź język wejściowy"
 
-#: src/Dialogs/AddLayoutDialog.vala:95
+#: src/Dialogs/AddLayoutDialog.vala:102
 msgid "Preview Layout"
 msgstr "Pokaż układ"
 
-#: src/Dialogs/AddLayoutDialog.vala:140 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/AddLayoutDialog.vala:149 src/Dialogs/ConflictDialog.vala:36
 #: src/Dialogs/ProgressDialog.vala:59
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:48
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:54
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: src/Dialogs/AddLayoutDialog.vala:142
+#: src/Dialogs/AddLayoutDialog.vala:151
 msgid "Add Layout"
 msgstr "Dodaj układ"
 
 #. Caps Lock key functionality
-#: src/Dialogs/AddLayoutDialog.vala:236 src/Dialogs/AddLayoutDialog.vala:240
-#: src/Views/Layout.vala:95 src/Views/Layout.vala:239 src/Xkb/Handler.vala:95
+#: src/Dialogs/AddLayoutDialog.vala:245 src/Dialogs/AddLayoutDialog.vala:249
+#: src/Views/Layout.vala:91 src/Views/Layout.vala:254 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Domyślne"
 
@@ -79,7 +79,7 @@ msgstr "Wybierz silnik z listy do zainstalowania i użycia."
 msgid "Languages"
 msgstr "Języki"
 
-#: src/Dialogs/InstallEngineDialog.vala:93
+#: src/Dialogs/InstallEngineDialog.vala:94
 msgid "Install"
 msgstr "Instaluj"
 
@@ -113,74 +113,74 @@ msgstr "Klawiatura"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Konfiguruj zachowanie klawiatury, układy oraz skróty"
 
-#: src/Plug.vala:55 src/Plug.vala:107 src/Plug.vala:108 src/Plug.vala:109
-#: src/Plug.vala:110 src/Plug.vala:111
+#: src/Plug.vala:55 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
+#: src/Plug.vala:115 src/Plug.vala:116
 msgid "Layout"
 msgstr "Układ"
 
-#: src/Plug.vala:56 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115
+#: src/Plug.vala:56 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
+#: src/Plug.vala:120
 msgid "Input Method"
 msgstr "Metoda wprowadzania"
 
-#: src/Plug.vala:57 src/Plug.vala:116
+#: src/Plug.vala:57 src/Plug.vala:121
 msgid "Shortcuts"
 msgstr "Skróty"
 
-#: src/Plug.vala:58 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120 src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123
+#: src/Plug.vala:58 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
+#: src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
 msgid "Behavior"
 msgstr "Zachowanie"
 
-#: src/Plug.vala:108
+#: src/Plug.vala:113
 msgid "Switch layout"
 msgstr "Przełącz układ"
 
-#: src/Plug.vala:109
+#: src/Plug.vala:114
 msgid "Compose Key"
 msgstr "Klawisz Compose"
 
-#: src/Plug.vala:110
+#: src/Plug.vala:115
 msgid "⌘ key behavior"
 msgstr "Zachowanie klawisza ⌘"
 
-#: src/Plug.vala:111
+#: src/Plug.vala:116
 msgid "Caps Lock behavior"
 msgstr "Zachowanie klawisza Caps Lock"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:118
 msgid "Switch engines"
 msgstr "Przełącz silniki"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:119
 msgid "Show candidate window"
 msgstr "Pokaż okno kandydata"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:120
 msgid "Embed preedit text in application window"
 msgstr "Osadź pre-edytowany tekst w oknie aplikacji"
 
-#: src/Plug.vala:118 src/Views/Behavior.vala:8
+#: src/Plug.vala:123 src/Views/Behavior.vala:8
 msgid "Show On-screen Keyboard"
 msgstr "Pokaż klawiaturę ekranową"
 
-#: src/Plug.vala:119 src/Views/Behavior.vala:156
+#: src/Plug.vala:124 src/Views/Behavior.vala:156
 msgid "Bounce Keys"
 msgstr "Odbijające klawisze"
 
-#: src/Plug.vala:120 src/Views/Behavior.vala:65
+#: src/Plug.vala:125 src/Views/Behavior.vala:65
 msgid "Cursor Blinking"
 msgstr "Miganie kursora"
 
-#: src/Plug.vala:121 src/Views/Behavior.vala:31
+#: src/Plug.vala:126 src/Views/Behavior.vala:31
 msgid "Repeat Keys"
 msgstr "Powtórzenia klawiszy"
 
-#: src/Plug.vala:122 src/Views/Behavior.vala:123
+#: src/Plug.vala:127 src/Views/Behavior.vala:123
 msgid "Slow Keys"
 msgstr "Powolne klawisze"
 
-#: src/Plug.vala:123 src/Views/Behavior.vala:99
+#: src/Plug.vala:128 src/Views/Behavior.vala:99
 msgid "Sticky Keys"
 msgstr "Trwałe klawisze"
 
@@ -280,7 +280,7 @@ msgstr "Przenieś do ekranu po lewej"
 msgid "Workspaces"
 msgstr "Obszary robocze"
 
-#: src/Shortcuts/ShortcutsList.vala:79 src/Views/Layout.vala:82
+#: src/Shortcuts/ShortcutsList.vala:79 src/Views/Layout.vala:75
 msgid "Multitasking View"
 msgstr "Podgląd wielozadaniowy"
 
@@ -512,7 +512,7 @@ msgstr "Włącz/Wyłącz czytnik ekranowy"
 msgid "System"
 msgstr "System"
 
-#: src/Shortcuts/ShortcutsList.vala:152 src/Views/Layout.vala:81
+#: src/Shortcuts/ShortcutsList.vala:152 src/Views/Layout.vala:74
 msgid "Applications Menu"
 msgstr "Menu programów"
 
@@ -532,14 +532,15 @@ msgstr "Przełącz tryb wyświetlania"
 msgid "Custom"
 msgstr "Własny"
 
+#. tree view to display the current layouts
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:44
-#: src/Views/Layout.vala:63 src/Views/Layout.vala:80 src/Views/Layout.vala:96
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:104
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:406
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:83
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:341
+#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:30
+#: src/Views/Layout.vala:52 src/Views/Layout.vala:73 src/Views/Layout.vala:92
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:107
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:419
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:85
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:353
 msgid "Disabled"
 msgstr "Wyłączone"
 
@@ -649,181 +650,180 @@ msgstr "Nie można włączyć deamona IBus"
 msgid "Add…"
 msgstr "Dodaj…"
 
-#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:182
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:152
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:188
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:149
 msgid "Remove"
 msgstr "Usuń"
 
-#: src/Views/InputMethod.vala:131
+#: src/Views/InputMethod.vala:132
 msgid "Switch engines:"
 msgstr "Przełącz silniki:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:144
 msgid "Show property panel:"
 msgstr "Pokaż panel właściwości:"
 
-#: src/Views/InputMethod.vala:150
+#: src/Views/InputMethod.vala:151
 msgid "Do not show"
 msgstr "Nie pokazuj"
 
-#: src/Views/InputMethod.vala:151
+#: src/Views/InputMethod.vala:152
 msgid "Auto hide"
 msgstr "Automatycznie ukryj"
 
-#: src/Views/InputMethod.vala:152
+#: src/Views/InputMethod.vala:153
 msgid "Always show"
 msgstr "Zawsze pokazuj"
 
-#: src/Views/InputMethod.vala:154
+#: src/Views/InputMethod.vala:155
 msgid "Embed preedit text in application window:"
 msgstr "Osadź pre-edytowany tekst w oknie aplikacji:"
 
-#: src/Views/InputMethod.vala:381
+#: src/Views/InputMethod.vala:386
 msgid "IBus Daemon"
 msgstr "Demon IBus"
 
-#: src/Views/InputMethod.vala:384
+#: src/Views/InputMethod.vala:389
 msgid "Use and manage input methods"
 msgstr "Używaj i zarządzaj metodami wprowadzania"
 
-#: src/Views/InputMethod.vala:447
+#: src/Views/InputMethod.vala:452
 msgid "Type to test your input method"
 msgstr "Zacznij pisać, aby przetestować swoją metodę wprowadzania"
 
-#: src/Views/InputMethod.vala:450
+#: src/Views/InputMethod.vala:455
 msgid "A keyboard layout is active"
 msgstr "Układ klawiatury jest aktywny"
 
-#. tree view to display the current layouts
-#: src/Views/Layout.vala:40
-msgid "Switch layout:"
-msgstr "Przełącz układ:"
-
-#: src/Views/Layout.vala:45
+#: src/Views/Layout.vala:31
 msgid "Alt + Caps Lock"
 msgstr "Alt + Caps Lock"
 
-#: src/Views/Layout.vala:46
+#: src/Views/Layout.vala:32
 msgid "Alt + Shift"
 msgstr "Alt + Shift"
 
-#: src/Views/Layout.vala:47
+#: src/Views/Layout.vala:33
 msgid "Alt + Space"
 msgstr "Alt + Spacja"
 
-#: src/Views/Layout.vala:48
+#: src/Views/Layout.vala:34
 msgid "Both Shift keys together"
 msgstr "Oba klawisze Shift naraz"
 
-#: src/Views/Layout.vala:49 src/Views/Layout.vala:64 src/Views/Layout.vala:240
+#: src/Views/Layout.vala:35 src/Views/Layout.vala:53 src/Views/Layout.vala:255
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
-#: src/Views/Layout.vala:50
+#: src/Views/Layout.vala:36
 msgid "Ctrl + Alt"
 msgstr "Ctrl + Alt"
 
-#: src/Views/Layout.vala:51
+#: src/Views/Layout.vala:37
 msgid "Ctrl + Shift"
 msgstr "Ctrl + Shift"
 
-#: src/Views/Layout.vala:52
+#: src/Views/Layout.vala:38
 msgid "Shift + Caps Lock"
 msgstr "Shift + Caps Lock"
 
-#: src/Views/Layout.vala:59
-msgid "Compose key:"
-msgstr "Klawisz Compose:"
+#: src/Views/Layout.vala:46
+msgid "Switch layout:"
+msgstr "Przełącz układ:"
 
-#: src/Views/Layout.vala:65
+#: src/Views/Layout.vala:54
 msgid "Menu"
 msgstr "Menu"
 
-#: src/Views/Layout.vala:66 src/Views/Layout.vala:242 src/Views/Layout.vala:254
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:257 src/Views/Layout.vala:272
 msgid "Right Alt"
 msgstr "Prawy Alt"
 
-#: src/Views/Layout.vala:67 src/Views/Layout.vala:243 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:258 src/Views/Layout.vala:273
 msgid "Right Ctrl"
 msgstr "Prawy Ctrl"
 
-#: src/Views/Layout.vala:68 src/Views/Layout.vala:244 src/Views/Layout.vala:256
+#: src/Views/Layout.vala:57 src/Views/Layout.vala:259 src/Views/Layout.vala:274
 msgid "Right ⌘"
 msgstr "Prawy ⌘"
 
-#: src/Views/Layout.vala:75
+#: src/Views/Layout.vala:65
+msgid "Compose key:"
+msgstr "Klawisz Compose:"
+
+#: src/Views/Layout.vala:78
 msgid "⌘ key behavior:"
 msgstr "Zachowanie klawisza ⌘:"
 
-#: src/Views/Layout.vala:86
+#: src/Views/Layout.vala:84
 msgid "Shortcut Overlay"
 msgstr "Nakładka skrótów klawiszowych"
 
-#: src/Views/Layout.vala:91
-msgid "Caps Lock behavior:"
-msgstr "Zachowanie klawisza Caps Lock:"
-
-#: src/Views/Layout.vala:97
+#: src/Views/Layout.vala:93
 msgid "as Backspace"
 msgstr "jak Backspace"
 
-#: src/Views/Layout.vala:98
+#: src/Views/Layout.vala:94
 msgid "as Ctrl"
 msgstr "jak Ctrl"
 
-#: src/Views/Layout.vala:99
+#: src/Views/Layout.vala:95
 msgid "as Escape"
 msgstr "jak Escape"
 
-#: src/Views/Layout.vala:100
+#: src/Views/Layout.vala:96
 msgid "as Num Lock"
 msgstr "jak Num Lock"
 
-#: src/Views/Layout.vala:101
+#: src/Views/Layout.vala:97
 msgid "as ⌘"
 msgstr "jako ⌘"
 
-#: src/Views/Layout.vala:102
+#: src/Views/Layout.vala:98
 msgid "Swap with Ctrl"
 msgstr "Zamień z Ctrl"
 
-#: src/Views/Layout.vala:103
+#: src/Views/Layout.vala:99
 msgid "Swap with Escape"
 msgstr "Zamień z klawiszem Escape"
 
-#: src/Views/Layout.vala:219 src/Views/Layout.vala:236
+#: src/Views/Layout.vala:107
+msgid "Caps Lock behavior:"
+msgstr "Zachowanie klawisza Caps Lock:"
+
+#: src/Views/Layout.vala:240 src/Views/Layout.vala:267
 msgid "Key to choose 3rd level:"
 msgstr "Klawisz wyboru 3 poziomu:"
 
-#: src/Views/Layout.vala:241
+#: src/Views/Layout.vala:256
 msgid "Left Alt"
 msgstr "Lewy Alt"
 
-#: src/Views/Layout.vala:251
+#: src/Views/Layout.vala:281
 msgid "Key to choose 5th level:"
 msgstr "Klawisz wyboru 5 poziomu:"
 
-#: src/Views/Layout.vala:272
+#: src/Views/Layout.vala:299
 msgid "Kana Lock:"
 msgstr "Blokada Kana:"
 
-#: src/Views/Layout.vala:280
+#: src/Views/Layout.vala:306
 msgid "Nicola F Backspace:"
 msgstr "Backspace w stylu Nicola-F:"
 
-#: src/Views/Layout.vala:283
+#: src/Views/Layout.vala:313
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Klawisz Zenkaku Hankaku jako Escape:"
 
-#: src/Views/Layout.vala:300
+#: src/Views/Layout.vala:333
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Klawisze Hangul/Hanja na prawym Alt/Ctrl:"
 
-#: src/Views/Layout.vala:379
+#: src/Views/Layout.vala:412
 msgid "Type to test your layout"
 msgstr "Zacznij pisać, aby przetestować swój układ"
 
-#: src/Views/Layout.vala:382
+#: src/Views/Layout.vala:415
 msgid "Input Method is active"
 msgstr "Metoda wprowadzania jest aktywna"
 
@@ -831,22 +831,22 @@ msgstr "Metoda wprowadzania jest aktywna"
 msgid "Accessibility"
 msgstr "Ułatwienia dostępu"
 
-#: src/Views/Shortcuts.vala:95
+#: src/Views/Shortcuts.vala:98
 msgid "Add Shortcut"
 msgstr "Dodaj skrót"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
 #. /It does not mean search engines in web browsers.
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:33
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:36
 msgid "Search engine"
 msgstr "Wyszukaj silnik"
 
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:46
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:52
 msgid "Install Unlisted Engines…"
 msgstr "Zainstaluj niezarejestrowane silniki…"
 
-#: src/Widgets/InputMethod/AddEnginesPopover.vala:50
+#: src/Widgets/InputMethod/AddEnginesPopover.vala:56
 msgid "Add Engine"
 msgstr "Dodaj silnik"
 
@@ -854,45 +854,45 @@ msgstr "Dodaj silnik"
 msgid "Add Keyboard Layout…"
 msgstr "Dodaj układ klawiatury…"
 
-#: src/Widgets/Layout/Display.vala:186
+#: src/Widgets/Layout/Display.vala:192
 msgid "Move up"
 msgstr "Przesuń w górę"
 
-#: src/Widgets/Layout/Display.vala:190
+#: src/Widgets/Layout/Display.vala:196
 msgid "Move down"
 msgstr "Przesuń w dół"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:101
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:104
 msgid "Enter a command here"
 msgstr "Wprowadź polecenie"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:143
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:103
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:140
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:102
 msgid "Set New Shortcut"
 msgstr "Ustaw nowy skrót klawiszowy"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:147
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:111
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:144
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:110
 msgid "Disable"
 msgstr "Wyłącz"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:290
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:288
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:188
 msgid "Enter new shortcut…"
 msgstr "Wprowadź nowy skrót klawiszowy…"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:348
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:270
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:282
 msgid "Unable to set new shortcut due to conflicts"
 msgstr "Nie można ustawić nowego skrótu z powodu konfliktów"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:349
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:271
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:362
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:283
 #, c-format
 msgid "“%s” is already used for “%s → %s”."
 msgstr "„%s” jest już używany dla „%s → %s”."
 
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:107
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:106
 msgid "Reset to Default"
 msgstr "Przywróć do domyślnych"
 
