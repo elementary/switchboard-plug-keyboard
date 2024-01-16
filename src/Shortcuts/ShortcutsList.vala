@@ -126,9 +126,9 @@ namespace Keyboard.Shortcuts {
             media_group = {};
             media_group.icon_name = "applications-multimedia";
             media_group.label = _("Media");
-            add_action (ref media_group, Schema.MEDIA, _("Volume Up"), "volume-up");
-            add_action (ref media_group, Schema.MEDIA, _("Volume Down"), "volume-down");
-            add_action (ref media_group, Schema.MEDIA, _("Mute"), "volume-mute");
+            add_action (ref media_group, Schema.SOUND_INDICATOR, _("Volume Up"), "volume-up");
+            add_action (ref media_group, Schema.SOUND_INDICATOR, _("Volume Down"), "volume-down");
+            add_action (ref media_group, Schema.SOUND_INDICATOR, _("Mute"), "volume-mute");
             add_action (ref media_group, Schema.MEDIA, _("Play/Pause"), "play");
             add_action (ref media_group, Schema.MEDIA, _("Pause"), "pause");
             add_action (ref media_group, Schema.MEDIA, _("Stop"), "stop");

@@ -234,6 +234,19 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.ListBox {
                     case Gdk.Key.F12:
                     case Gdk.Key.Menu:
                     case Gdk.Key.Print:
+                    case Gdk.Key.Mail:
+                    case Gdk.Key.Explorer:
+                    case Gdk.Key.AudioMedia:
+                    case Gdk.Key.WWW:
+                    case Gdk.Key.AudioRaiseVolume:
+                    case Gdk.Key.AudioLowerVolume:
+                    case Gdk.Key.AudioMute:
+                    case Gdk.Key.AudioPlay:
+                    case Gdk.Key.AudioPause:
+                    case Gdk.Key.AudioStop:
+                    case Gdk.Key.AudioPrev:
+                    case Gdk.Key.AudioNext:
+                    case Gdk.Key.Eject:
                         // Accept certain keys as single key accelerators
                         var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                         update_binding (shortcut);

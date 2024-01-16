@@ -17,7 +17,6 @@ plug_files = files(
     'Widgets/Shortcuts/CustomShortcutListBox.vala',
     'Widgets/Layout/Display.vala',
     'Widgets/Layout/AdvancedSettingsPanel.vala',
-    'Widgets/Layout/AdvancedSettingsGrid.vala',
     'Widgets/InputMethod/LanguagesRow.vala',
     'Widgets/InputMethod/EnginesRow.vala',
     'Widgets/InputMethod/AddEnginesPopover.vala',

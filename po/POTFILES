@@ -21,7 +21,6 @@ src/Views/Shortcuts.vala
 src/Widgets/InputMethod/AddEnginesPopover.vala
 src/Widgets/InputMethod/EnginesRow.vala
 src/Widgets/InputMethod/LanguagesRow.vala
-src/Widgets/Layout/AdvancedSettingsGrid.vala
 src/Widgets/Layout/AdvancedSettingsPanel.vala
 src/Widgets/Layout/Display.vala
 src/Widgets/Shortcuts/CustomShortcutListBox.vala
