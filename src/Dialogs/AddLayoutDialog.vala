@@ -112,12 +112,12 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             transition_type = Gtk.RevealerTransitionType.CROSSFADE
         };
 
-        var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+        var header_box = new Gtk.CenterBox () {
+            start_widget = back_button,
+            center_widget = layout_list_title,
+            end_widget = keyboard_map_revealer,
             hexpand = true
         };
-        header_box.pack_start (back_button);
-        header_box.set_center_widget (layout_list_title);
-        header_box.pack_end (keyboard_map_revealer);
 
         var header_grid = new Gtk.Grid ();
         header_grid.attach (header_box, 0, 0);
@@ -127,13 +127,14 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             child = header_grid
         };
 
-        var deck = new Hdy.Deck () {
-            can_swipe_back = true,
+        var deck = new Adw.Leaflet () {
+            can_navigate_back = true,
+            can_unfold = false,
             hexpand = true,
             vexpand = true
         };
-        deck.add (input_language_box);
-        deck.add (layout_scrolled);
+        deck.append (input_language_box);
+        deck.append (layout_scrolled);
 
         var frame_box = new Gtk.Box (VERTICAL, 0);
         frame_box.append (header_revealer);
@@ -154,7 +155,7 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
 
         deletable = false;
         modal = true;
-        get_content_area ().add (frame);
+        get_content_area ().append (frame);
 
         search_entry.grab_focus ();
 
@@ -190,7 +191,7 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         back_button.clicked.connect (() => {
-            deck.navigate (Hdy.NavigationDirection.BACK);
+            deck.navigate (Adw.NavigationDirection.BACK);
         });
 
         input_language_list_box.row_activated.connect (() => {
@@ -272,11 +273,13 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         }
 
         construct {
-            var label = new Gtk.Label (rname);
-            label.margin = 6;
-            label.margin_end = 12;
-            label.margin_start = 12;
-            label.xalign = 0;
+            var label = new Gtk.Label (rname) {
+                margin_top = 6,
+                margin_end = 12,
+                margin_bottom = 6,
+                margin_start = 12,
+                xalign = 0
+            };
 
             child = label;
         }
