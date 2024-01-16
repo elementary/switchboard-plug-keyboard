@@ -295,9 +295,9 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private void update_engines_list () {
         engines = bus.list_engines ();
 
-        listbox.@foreach ((listbox_child) => {
-            listbox_child.destroy ();
-        });
+        while (listbox.get_row_at_index (0) != null) {
+            listbox.get_row_at_index (0).destroy ();
+        };
 
         // Add the language and the name of activated engines
         settings.reset (LayoutType.IBUS);
@@ -310,7 +310,10 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
                     var label = new Gtk.Label (engine_full_name) {
                         halign = Gtk.Align.START,
-                        margin = 6
+                        margin_top = 6,
+                        margin_end = 6,
+                        margin_bottom = 6,
+                        margin_start = 6
                     };
 
                     var listboxrow = new Gtk.ListBoxRow () {
@@ -461,15 +464,21 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         /* Emitting "unselect_all ()" on listbox does not unselect rows for some reason so we
          * unselect rows individually */
-        listbox.@foreach ((widget) => {
-            var row = (Gtk.ListBoxRow)widget;
-            var row_name = row.get_data<string> ("engine-name");
-            if (row_name == engine_name) {
-                listbox.select_row (row);
-            } else {
-                listbox.unselect_row (row);
+
+        unowned var child = listbox.get_first_child ();
+        while (child != null) {
+            if (child is Gtk.ListBoxRow) {
+                var row = (Gtk.ListBoxRow) child;
+                var row_name = row.get_data<string> ("engine-name");
+                if (row_name == engine_name) {
+                    listbox.select_row (row);
+                } else {
+                    listbox.unselect_row (row);
+                }
             }
-        });
+
+            child = child.get_next_sibling ();
+        }
 
         remove_button.sensitive = listbox.get_selected_row () != null;
     }
