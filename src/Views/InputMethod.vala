@@ -71,8 +71,6 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             valign = Gtk.Align.CENTER
         };
 
-        spawn_failed_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
-
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
             selection_mode = Gtk.SelectionMode.BROWSE  //One or none selected
