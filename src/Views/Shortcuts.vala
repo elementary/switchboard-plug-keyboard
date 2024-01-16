@@ -172,8 +172,9 @@ namespace Keyboard.Shortcuts {
             }
 
             construct {
-                var icon = new Gtk.Image.from_icon_name (group.icon_name);
-                icon.add_css_class (Granite.STYLE_CLASS_LARGE_ICONS);
+                var icon = new Gtk.Image.from_icon_name (group.icon_name) {
+                    icon_size = LARGE
+                };
 
                 var label = new Gtk.Label (group.label) {
                     xalign = 0
