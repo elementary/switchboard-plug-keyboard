@@ -118,9 +118,9 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
     }
 
     public void rebuild_list () {
-        while (list.get_first_child () != null) {
-            list.remove (list.get_first_child ());
-        }
+        while (list.get_row_at_index (0) != null) {
+            list.get_row_at_index (0).destroy ();
+        };
 
         uint i = 0;
         settings.foreach_layout ((input_source) => {
