@@ -157,7 +157,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             var box = new Gtk.Box (HORIZONTAL, 12) {
-                margin = 3,
+                margin_top = 3,
+                margin_bottom = 3,
                 margin_start = 6,
                 margin_end = 12, // Allow space for scrollbar to expand
                 valign = CENTER
@@ -414,9 +415,10 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             if (accels_string != null) {
                 accels = accels_string.split (" + ");
             }
-            foreach (unowned Gtk.Widget child in grid.get_children ()) {
-                child.destroy ();
-            };
+
+            while (box.get_first_child () != null) {
+                box.get_first_child ().destroy ();
+            }
 
             foreach (unowned string accel in accels) {
                 if (accel == "") {
