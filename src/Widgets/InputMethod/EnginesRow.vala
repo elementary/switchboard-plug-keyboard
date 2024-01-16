@@ -36,8 +36,9 @@ public class Keyboard.InputMethodPage.EnginesRow : Gtk.ListBoxRow {
         };
 
         var box = new Gtk.Box (HORIZONTAL, 6) {
-            margin = 3,
+            margin_top = 3,
             margin_start = 6,
+            margin_bottom = 3,
             margin_end = 6
         };
         box.append (label);
