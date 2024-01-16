@@ -30,14 +30,15 @@ public class Keyboard.InputMethodPage.LanguagesRow : Gtk.ListBoxRow {
 
         var caret = new Gtk.Image.from_icon_name ("pan-end-symbolic");
 
-        var grid = new Gtk.Grid () {
-            margin = 3,
+        var box = new Gtk.Box (HORIZONTAL, 0) {
+            margin_top = 3,
             margin_start = 6,
+            margin_bottom = 3,
             margin_end = 6
         };
-        grid.add (label);
-        grid.add (caret);
+        box.append (label);
+        box.append (caret);
 
-        add (grid);
+        child = box;
     }
 }
