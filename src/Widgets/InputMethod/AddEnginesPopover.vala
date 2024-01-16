@@ -67,7 +67,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             margin_start = 12
         };
         button_box.append (install_button);
-        button_box.add (new Gtk.Grid () { hexpand = true });
+        button_box.append (new Gtk.Grid () { hexpand = true });
         button_box.append (cancel_button);
         button_box.append (add_button);
 
@@ -148,8 +148,9 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         for (int i = 0; i < liststore.get_n_items (); i++) {
             var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name) {
                 halign = Gtk.Align.START,
-                margin = 6,
+                margin_top = 6,
                 margin_end = 12,
+                margin_bottom = 6,
                 margin_start = 12
             };
 
