@@ -102,13 +102,18 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             return;
         }
 
-        foreach (unowned var child in list.get_children ()) {
-            unowned var row = (DisplayRow) child;
+        unowned var child = list.get_first_child ();
+        while (child != null) {
+            if (child is DisplayRow) {
+                unowned var row = (DisplayRow) child;
 
-            if (settings.active_index == row.index) {
-                list.select_row (row);
-                break;
+                if (settings.active_index == row.index) {
+                    list.select_row (row);
+                    break;
+                }
             }
+
+            child = child.get_next_sibling ();
         }
     }
 
@@ -142,12 +147,11 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             i++;
         });
 
-        var list_children = list.get_children ();
-        if (!list_children.is_empty ()) {
-            unowned var first_child = (DisplayRow) list_children.first ().data;
+        if (list.get_row_at_index (0) != null) {
+            unowned var first_child = (DisplayRow) list.get_row_at_index (0);
             first_child.up_button.sensitive = false;
 
-            unowned var last_child = (DisplayRow) list_children.last ().data;
+            unowned var last_child = (DisplayRow) list.get_row_at_index ((int) settings.input_sources.length () - 1);
             last_child.down_button.sensitive = false;
         }
 
