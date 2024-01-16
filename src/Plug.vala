@@ -58,13 +58,19 @@ public class Keyboard.Plug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = CENTER,
-                // homogeneous = true,
                 margin_top = 12,
                 margin_end = 12,
                 margin_bottom = 12,
                 margin_start = 12,
                 stack = stack
             };
+
+            var size_group = new Gtk.SizeGroup (HORIZONTAL);
+            unowned var switcher_child = stack_switcher.get_first_child ();
+            while (switcher_child != null) {
+                size_group.add_widget (switcher_child);
+                switcher_child = switcher_child.get_next_sibling ();
+            }
 
             box = new Gtk.Box (VERTICAL, 0);
             box.append (stack_switcher);
