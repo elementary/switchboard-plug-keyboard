@@ -31,7 +31,9 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
     construct {
         ShortcutsList.get_default ().get_group (group, out actions, out schemas, out keys);
 
-        var list_box = new Gtk.ListBox ();
+        var list_box = new Gtk.ListBox () {
+            hexpand = true
+        };
 
         var sizegroup = new Gtk.SizeGroup (Gtk.SizeGroupMode.VERTICAL);
 
