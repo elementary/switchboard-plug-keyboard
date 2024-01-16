@@ -17,24 +17,30 @@
 * Boston, MA 02110-1301 USA
 */
 
-class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
+class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
+    private Gtk.ListBox list_box;
     construct {
-        hexpand = true;
+        list_box = new Gtk.ListBox () {
+            hexpand = true,
+            selection_mode = Gtk.SelectionMode.BROWSE
+        };
+
+        append (list_box);
+
         load_and_display_custom_shortcuts ();
-        selection_mode = Gtk.SelectionMode.BROWSE;
 
         realize.connect (() => {
-            select_row (get_row_at_index (0));
+            list_box.select_row (list_box.get_row_at_index (0));
         });
     }
 
     public void load_and_display_custom_shortcuts () {
-        while (get_first_child () != null) {
-            remove (get_first_child ());
+        while (list_box.get_first_child () != null) {
+            list_box.remove (get_first_child ());
         }
 
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
-            append (new CustomShortcutRow (custom_shortcut));
+            list_box.append (new CustomShortcutRow (custom_shortcut));
         }
     }
 
@@ -48,13 +54,13 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             new_row = new CustomShortcutRow (new_custom_shortcut);
         }
 
-        append (new_row);
-        select_row (new_row);
+        list_box.append (new_row);
+        list_box.select_row (new_row);
     }
 
     public void on_add_clicked () {
         add_row (null);
-        unselect_all ();
+        list_box.unselect_all ();
     }
 
     private class CustomShortcutRow : Gtk.ListBoxRow {

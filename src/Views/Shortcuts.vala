@@ -19,7 +19,7 @@
 
 namespace Keyboard.Shortcuts {
     // array of shortcut views, one for each section
-    private Gtk.ListBox[] shortcut_views;
+    private Gtk.Widget[] shortcut_views;
 
     public enum SectionID {
         WINDOWS,
