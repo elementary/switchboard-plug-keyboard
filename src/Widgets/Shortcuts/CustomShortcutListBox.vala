@@ -74,7 +74,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
         private Gtk.GestureMultiPress status_controller;
 
         private Gtk.ModelButton clear_button;
-        private Gtk.Grid keycap_grid;
+        private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
 
@@ -100,40 +100,38 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 max_width_chars = 500,
                 has_frame = false,
                 hexpand = true,
-                halign = Gtk.Align.START,
+                halign = START,
                 placeholder_text = _("Enter a command here")
             };
 
             status_label = new Gtk.Label (_("Disabled")) {
-                halign = Gtk.Align.END
+                halign = END
             };
             status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
-            keycap_grid = new Gtk.Grid () {
-                column_spacing = 6,
-                valign = Gtk.Align.CENTER,
-                halign = Gtk.Align.END
+            keycap_box = new Gtk.Box (HORIZONTAL, 6) {
+                valign = CENTER,
+                halign = END
             };
 
             // We create a dummy grid representing a long four key accelerator to force the stack in each row to the same size
             // This seems a bit hacky but it is hard to find a solution across rows not involving a hard-coded width value
             // (which would not take into account internationalization). This grid is never shown but controls the size of
             // of the homogeneous stack.
-            var four_key_grid = new Gtk.Grid () { // must have same format as keycap_grid
-                column_spacing = 6,
-                valign = Gtk.Align.CENTER,
-                halign = Gtk.Align.END
+            var four_key_box = new Gtk.Box (HORIZONTAL, 6) { // must have same format as keycap_box
+                valign = CENTER,
+                halign = END
             };
 
-            build_keycap_grid ("<Shift><Alt><Control>F10", ref four_key_grid);
+            build_keycap_box ("<Shift><Alt><Control>F10", ref four_key_box);
 
             keycap_stack = new Gtk.Stack () {
                 transition_type = Gtk.StackTransitionType.CROSSFADE,
-                homogeneous = true
+                vhomogeneous = true
             };
 
-            keycap_stack.add (four_key_grid); // This ensures sufficient space is allocated for longest reasonable shortcut
-            keycap_stack.add (keycap_grid);
+            keycap_stack.add (four_key_box); // This ensures sufficient space is allocated for longest reasonable shortcut
+            keycap_stack.add (keycap_box);
             keycap_stack.add (status_label); // This becomes initial visible child
 
             var set_accel_button = new Gtk.ModelButton () {
@@ -150,18 +148,18 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             };
             remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
 
-            var action_grid = new Gtk.Grid () {
+            var action_box = new Gtk.Box (VERTICAL, 0) {
                 margin_top = 3,
-                margin_bottom = 3,
-                orientation = Gtk.Orientation.VERTICAL
+                margin_bottom = 3
             };
-            action_grid.add (set_accel_button);
-            action_grid.add (clear_button);
-            action_grid.add (remove_button);
-            action_grid.show_all ();
+            action_box.add (set_accel_button);
+            action_box.add (clear_button);
+            action_box.add (remove_button);
+            action_box.show_all ();
 
-            var popover = new Gtk.Popover (null);
-            popover.add (action_grid);
+            var popover = new Gtk.Popover (null) {
+                child = action_box
+            };
 
             var menubutton = new Gtk.MenuButton () {
                 image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
@@ -169,19 +167,19 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             };
             menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
-            var grid = new Gtk.Grid () {
-                column_spacing = 12,
-                margin = 3,
-                margin_start = 6,
+            var box = new Gtk.Box (HORIZONTAL, 12) {
+                margin_top = 3,
                 margin_end = 12, // Allow space for scrollbar to expand
-                valign = Gtk.Align.CENTER
+                margin_bottom = 3,
+                margin_start = 6,
+                valign = CENTER
             };
-            grid.add (command_entry);
-            grid.add (keycap_stack);
-            grid.add (menubutton);
-            grid.show_all ();
+            box.add (command_entry);
+            box.add (keycap_stack);
+            box.add (menubutton);
+            box.show_all ();
 
-            add (grid);
+            child = box;
 
             render_keycaps ();
 
@@ -287,7 +285,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
             } else {
-                keycap_stack.visible_child = keycap_grid;
+                keycap_stack.visible_child = keycap_box;
                 render_keycaps ();
             }
         }
@@ -410,8 +408,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             }
 
             if (value_string != "") {
-                build_keycap_grid (value_string, ref keycap_grid);
-                keycap_stack.visible_child = keycap_grid;
+                build_keycap_box (value_string, ref keycap_box);
+                keycap_stack.visible_child = keycap_box;
                 clear_button.sensitive = true;
             } else {
                 clear_button.sensitive = false;
@@ -420,14 +418,14 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
             }
          }
 
-        private void build_keycap_grid (string value_string, ref Gtk.Grid grid) {
+        private void build_keycap_box (string value_string, ref Gtk.Box box) {
             var accels_string = Granite.accel_to_string (value_string);
 
             string[] accels = {};
             if (accels_string != null) {
                 accels = accels_string.split (" + ");
             }
-            foreach (unowned Gtk.Widget child in grid.get_children ()) {
+            foreach (unowned Gtk.Widget child in box.get_children ()) {
                 child.destroy ();
             };
 
@@ -437,10 +435,10 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.ListBox {
                 }
                 var keycap_label = new Gtk.Label (accel);
                 keycap_label.get_style_context ().add_class ("keycap");
-                grid.add (keycap_label);
+                box.add (keycap_label);
             }
 
-            grid.show_all ();
+            box.show_all ();
         }
     }
 }
