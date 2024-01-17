@@ -114,7 +114,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
 
     public void rebuild_list () {
         while (list.get_row_at_index (0) != null) {
-            list.get_row_at_index (0).destroy ();
+            list.remove (list.get_row_at_index (0));
         };
 
         uint i = 0;
