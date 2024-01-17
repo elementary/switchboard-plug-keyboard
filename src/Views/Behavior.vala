@@ -26,7 +26,12 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         onscreen_keyboard_grid.attach (onscreen_keyboard_switch, 1, 0, 1, 2);
 
         var scale_provider = new Gtk.CssProvider ();
-        scale_provider.load_from_resource ("/io/elementary/switchboard/keyboard/Behavior.css");
+        scale_provider.load_from_resource ("/io/elementary/settings/keyboard/Behavior.css");
+
+        Gtk.StyleContext.add_provider_for_display (
+            Gdk.Display.get_default (),
+            scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        );
 
         var label_repeat_delay = new Gtk.Label (_("Delay:")) {
             halign = Gtk.Align.END
@@ -49,20 +54,20 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
 
         var scale_repeat_delay = new Gtk.Scale (HORIZONTAL, repeat_delay_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_repeat_delay.add_mark (500, Gtk.PositionType.BOTTOM, null);
-        scale_repeat_delay.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var repeat_speed_adjustment = new Gtk.Adjustment (-1, 10, 70, 1, 0, 0);
 
         var scale_repeat_speed = new Gtk.Scale (HORIZONTAL, repeat_speed_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
-        scale_repeat_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var label_blink_speed = new Gtk.Label (_("Speed:")) {
             halign = Gtk.Align.END
@@ -85,20 +90,20 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
 
         var scale_blink_speed = new Gtk.Scale (HORIZONTAL, blink_speed_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_blink_speed.add_mark (1200, Gtk.PositionType.BOTTOM, null);
-        scale_blink_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var blink_time_adjustment = new Gtk.Adjustment (-1, 1, 29, 1, 0, 0);
 
         var scale_blink_time = new Gtk.Scale (HORIZONTAL, blink_time_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
-        scale_blink_time.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var stickykeys_switch = new Gtk.Switch () {
             halign = END,
@@ -131,10 +136,10 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         var slowkeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
         var slowkeys_scale = new Gtk.Scale (HORIZONTAL, slowkeys_adjustment) {
-            digits = 0
+            digits = 0,
+            draw_value = true,
         };
         slowkeys_scale.add_mark (300, Gtk.PositionType.BOTTOM, null);
-        slowkeys_scale.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var slowkeys_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -157,10 +162,10 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         var bouncekeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
         var bouncekeys_scale = new Gtk.Scale (HORIZONTAL, bouncekeys_adjustment) {
-            digits = 0
+            digits = 0,
+            draw_value = true,
         };
         bouncekeys_scale.add_mark (300, Gtk.PositionType.BOTTOM, null);
-        bouncekeys_scale.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var bouncekeys_grid = new Gtk.Grid () {
             column_spacing = 12

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schemalist>
-	<schema path="/io/elementary/switchboard/keyboard/" id="io.elementary.switchboard.keyboard">
+	<schema path="/io/elementary/settings/keyboard/" id="io.elementary.settings.keyboard">
 		<key name="first-launch" type="b">
 			<default>true</default>
 			<summary>Is plug launched for the first time.</summary>

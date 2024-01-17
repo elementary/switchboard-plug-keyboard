@@ -40,7 +40,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
         // See https://github.com/elementary/switchboard-plug-keyboard/pull/468
-        var keyboard_settings = new GLib.Settings ("io.elementary.switchboard.keyboard");
+        var keyboard_settings = new GLib.Settings ("io.elementary.settings.keyboard");
         if (keyboard_settings.get_boolean ("first-launch")) {
             keyboard_settings.set_boolean ("first-launch", false);
             Keyboard.Plug.ibus_general_settings.set_strv ("preload-engines", {});

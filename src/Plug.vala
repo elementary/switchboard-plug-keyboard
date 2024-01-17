@@ -35,7 +35,7 @@ public class Keyboard.Plug : Switchboard.Plug {
         settings.set ("input/keyboard/shortcuts", "Shortcuts");
         settings.set ("input/keyboard/shortcuts/custom", "Custom Shortcuts");
         Object (category: Category.HARDWARE,
-                code_name: "io.elementary.switchboard.keyboard",
+                code_name: "io.elementary.settings.keyboard",
                 display_name: _("Keyboard"),
                 description: _("Configure keyboard behavior, layouts, and shortcuts"),
                 icon: "preferences-desktop-keyboard",
@@ -48,7 +48,7 @@ public class Keyboard.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (box == null) {
-            Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/switchboard/keyboard");
+            Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/settings/keyboard");
 
             stack = new Gtk.Stack ();
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));

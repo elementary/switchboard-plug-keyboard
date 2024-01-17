@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="addon">
-  <id>io.elementary.switchboard.keyboard</id>
-  <extends>io.elementary.switchboard</extends>
-  <translation type="gettext">keyboard-plug</translation>
+  <id>io.elementary.settings.keyboard</id>
+  <extends>io.elementary.settings</extends>
+  <translation type="gettext">io.elementary.settings.keyboard</translation>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-2.0+</project_license>
 
