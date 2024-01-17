@@ -69,7 +69,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         private const string NAME_KEY = "name";
         private Gtk.Entry command_entry;
         private Variant previous_binding;
-        private Gdk.Device? keyboard_device = null;
 
         public string relocatable_schema { get; construct; }
         public GLib.Settings gsettings { get; construct; }
@@ -90,14 +89,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         }
 
         construct {
-            var display = Gdk.Display.get_default ();
-            if (display != null) {
-                var seat = display.get_default_seat ();
-                if (seat != null) {
-                    keyboard_device = seat.get_keyboard ();
-                }
-            }
-
             command_entry = new Gtk.Entry () {
                 max_width_chars = 500,
                 has_frame = false,
@@ -241,11 +232,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             var key_controller = new Gtk.EventControllerKey ();
             key_controller.key_released.connect (on_key_released);
 
-            var focus_controller = new Gtk.EventControllerFocus ();
-            focus_controller.leave.connect (cancel_editing_shortcut);
-
             add_controller (key_controller);
-            add_controller (focus_controller);
         }
 
         private void cancel_editing_shortcut () {
@@ -260,24 +247,17 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             if (start_editing && !is_editing_shortcut) {
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
-                // Grab keyboard on this row's window
-                if (keyboard_device != null) {
-                    // Gtk.device_grab_add (this, keyboard_device, true);
-                    // keyboard_device.get_seat ().grab (get_window (), Gdk.SeatCapabilities.KEYBOARD, true, null, null, null);
-                } else {
-                    return;
-                }
+
+                var focus_controller = new Gtk.EventControllerFocus ();
+                focus_controller.leave.connect (() => {
+                    focus_controller.dispose ();
+                    cancel_editing_shortcut ();
+                });
+
+                add_controller (focus_controller);
 
                 previous_binding = gsettings.get_value (BINDING_KEY);
                 gsettings.set_string (BINDING_KEY, "");
-            } else if (!start_editing && is_editing_shortcut) {
-                // Stop grabbing keyboard on this row's window
-                if (keyboard_device != null) {
-                    // keyboard_device.get_seat ().ungrab ();
-                    // Gtk.device_grab_remove (this, keyboard_device);
-                } else {
-                    return;
-                }
             }
 
             is_editing_shortcut = start_editing;
