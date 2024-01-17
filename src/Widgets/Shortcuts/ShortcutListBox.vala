@@ -179,13 +179,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             var key_controller = new Gtk.EventControllerKey ();
             key_controller.key_released.connect (on_key_released);
 
-            var focus_controller = new Gtk.EventControllerFocus ();
-            focus_controller.leave.connect (() => {
-                edit_shortcut (false);
-            });
-
             add_controller (key_controller);
-            add_controller (focus_controller);
         }
 
         private void edit_shortcut (bool start_editing) {
@@ -196,6 +190,14 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
 
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
+
+                var focus_controller = new Gtk.EventControllerFocus ();
+                focus_controller.leave.connect (() => {
+                    focus_controller.dispose ();
+                    edit_shortcut (false);
+                });
+
+                add_controller (focus_controller);
             } else if (!start_editing && is_editing_shortcut) {
                 render_keycaps ();
             }
