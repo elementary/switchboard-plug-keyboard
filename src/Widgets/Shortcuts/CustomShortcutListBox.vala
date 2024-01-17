@@ -102,18 +102,18 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 max_width_chars = 500,
                 has_frame = false,
                 hexpand = true,
-                halign = Gtk.Align.START,
+                halign = START,
                 placeholder_text = _("Enter a command here")
             };
 
             status_label = new Gtk.Label (_("Disabled")) {
-                halign = Gtk.Align.END
+                halign = END
             };
             status_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             keycap_box = new Gtk.Box (HORIZONTAL, 6) {
-                valign = Gtk.Align.CENTER,
-                halign = Gtk.Align.END
+                valign = CENTER,
+                halign = END
             };
 
             // We create a dummy grid representing a long four key accelerator to force the stack in each row to the same size
@@ -121,8 +121,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             // (which would not take into account internationalization). This grid is never shown but controls the size of
             // of the homogeneous stack.
             var four_key_box = new Gtk.Box (HORIZONTAL, 6) { // must have same format as keycap_box
-                valign = Gtk.Align.CENTER,
-                halign = Gtk.Align.END
+                valign = CENTER,
+                halign = END
             };
 
             build_keycap_box ("<Shift><Alt><Control>F10", ref four_key_box);
@@ -131,7 +131,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 transition_type = Gtk.StackTransitionType.CROSSFADE,
                 vhomogeneous = true
             };
-
             keycap_stack.add_child (four_key_box); // This ensures sufficient space is allocated for longest reasonable shortcut
             keycap_stack.add_child (keycap_box);
             keycap_stack.add_child (status_label); // This becomes initial visible child
@@ -164,9 +163,9 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             var box = new Gtk.Box (HORIZONTAL, 12) {
                 margin_top = 3,
+                margin_end = 12, // Allow space for scrollbar to expand
                 margin_bottom = 3,
                 margin_start = 6,
-                margin_end = 12, // Allow space for scrollbar to expand
                 valign = CENTER
             };
             box.append (command_entry);
