@@ -184,9 +184,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             clear_button.clicked.connect (() => {
                 popover.popdown ();
-                if (!is_editing_shortcut) {
-                    gsettings.set_string (BINDING_KEY, "");
-                }
+                gsettings.set_string (BINDING_KEY, "");
             });
 
             remove_button.clicked.connect (() => {
@@ -197,25 +195,19 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             set_accel_button.clicked.connect (() => {
                 popover.popdown ();
-                if (!is_editing_shortcut) {
-                    edit_shortcut (true);
-                }
+                edit_shortcut (true);
             });
 
             var keycap_controller = new Gtk.GestureClick ();
             keycap_stack.add_controller (keycap_controller);
             keycap_controller.released.connect (() => {
-                if (!is_editing_shortcut) {
-                    edit_shortcut (true);
-                }
+                edit_shortcut (true);
             });
 
             var status_controller = new Gtk.GestureClick ();
             status_label.add_controller (status_controller);
             status_controller.released.connect (() => {
-                if (!is_editing_shortcut) {
-                    edit_shortcut (true);
-                }
+                edit_shortcut (true);
             });
 
             var command_entry_focus_controller = new Gtk.EventControllerFocus ();
@@ -239,17 +231,21 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         }
 
         private void cancel_editing_shortcut () {
-            if (is_editing_shortcut) {
-                gsettings.set_value (BINDING_KEY, previous_binding);
-                edit_shortcut (false);
-            }
+            gsettings.set_value (BINDING_KEY, previous_binding);
+            edit_shortcut (false);
         }
 
         private void edit_shortcut (bool start_editing) {
             //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
+                keycap_stack.visible_child = status_label;
+                status_label.label = _("Enter new shortcut…");
+
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
+
+                previous_binding = gsettings.get_value (BINDING_KEY);
+                gsettings.set_string (BINDING_KEY, "");
 
                 var focus_controller = new Gtk.EventControllerFocus ();
                 focus_controller.leave.connect (() => {
@@ -258,20 +254,11 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 });
 
                 add_controller (focus_controller);
-
-                previous_binding = gsettings.get_value (BINDING_KEY);
-                gsettings.set_string (BINDING_KEY, "");
+            } else if (!start_editing && is_editing_shortcut) {
+                render_keycaps ();
             }
 
             is_editing_shortcut = start_editing;
-
-            if (is_editing_shortcut) {
-                keycap_stack.visible_child = status_label;
-                status_label.label = _("Enter new shortcut…");
-            } else {
-                keycap_stack.visible_child = keycap_box;
-                render_keycaps ();
-            }
         }
 
         private void on_key_released (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType state) {
@@ -330,6 +317,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             }
 
             edit_shortcut (false);
+            render_keycaps ();
 
             return;
          }
@@ -411,7 +399,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             }
 
             while (box.get_first_child () != null) {
-                box.get_first_child ().destroy ();
+                box.remove (box.get_first_child ());
             }
 
             foreach (unowned string accel in accels) {
