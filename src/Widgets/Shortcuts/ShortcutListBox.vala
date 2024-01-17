@@ -99,17 +99,23 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             keycap_stack.add_child (keycap_box);
             keycap_stack.add_child (status_label);
 
-            var set_accel_button = new Gtk.Button.with_label (_("Set New Shortcut"));
-
-            reset_button = new Gtk.Button.with_label (_("Reset to Default"));
-
-            clear_button = new Gtk.Button.with_label (_("Disable"));
-            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
-
-            var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0) {
-                margin_top = 3,
-                margin_bottom = 3
+            var set_accel_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Set New Shortcut")) { halign = START }
             };
+            set_accel_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            reset_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Reset to Default")) { halign = START }
+            };
+            reset_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            clear_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Disable")) { halign = START }
+            };
+            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
             action_box.append (set_accel_button);
             action_box.append (reset_button);
             action_box.append (clear_button);
@@ -117,6 +123,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             var popover = new Gtk.Popover () {
                 child = action_box
             };
+            popover.add_css_class (Granite.STYLE_CLASS_MENU);
 
             var menubutton = new Gtk.MenuButton () {
                 icon_name = "open-menu-symbolic",
@@ -157,6 +164,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             });
 
             set_accel_button.clicked.connect (() => {
+                popover.popdown ();
                 edit_shortcut (true);
             });
 
@@ -177,32 +185,14 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
         }
 
         private void edit_shortcut (bool start_editing) {
-            //Ensure device grabs are paired
+        //     //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
 
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
-                // Grab keyboard on this row's window
-                if (keyboard_device != null) {
-                    // Gtk.device_grab_add (this, keyboard_device, true);
-                    // keyboard_device.get_seat ().grab (
-                    //     get_window (), Gdk.SeatCapabilities.KEYBOARD, true, null, null, null
-                    // );
-                } else {
-                    return;
-                }
-
-                // previous_binding = gsettings.get_value (BINDING_KEY);
-                // gsettings.set_string (BINDING_KEY, "");
             } else if (!start_editing && is_editing_shortcut) {
-                // Stop grabbing keyboard on this row's window
-                if (keyboard_device != null) {
-                    // keyboard_device.get_seat ().ungrab ();
-                    // Gtk.device_grab_remove (this, keyboard_device);
-                }
-
                 render_keycaps ();
             }
 
@@ -216,9 +206,6 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
 
             var mods = state & Gtk.accelerator_get_default_mod_mask ();
             if (mods > 0) {
-                // // Accept any key with a modifier (not all may work)
-                // Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
-
                 var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
             } else {
