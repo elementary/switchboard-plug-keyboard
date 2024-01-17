@@ -303,7 +303,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         engines = bus.list_engines ();
 
         while (listbox.get_row_at_index (0) != null) {
-            listbox.get_row_at_index (0).destroy ();
+            listbox.remove (listbox.get_row_at_index (0));
         };
 
         // Add the language and the name of activated engines
