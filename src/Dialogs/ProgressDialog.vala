@@ -63,8 +63,6 @@ public class Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
 
         var grid = new Gtk.Grid () {
             column_spacing = 12,
-            margin_start = 12,
-            margin_end = 12,
             row_spacing = 6
         };
         grid.attach (image, 0, 0, 1, 2);

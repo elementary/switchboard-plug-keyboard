@@ -82,6 +82,7 @@ public class Keyboard.InputMethodPage.InstallEngineDialog : Granite.MessageDialo
         engine_list_box.append (scrolled);
 
         var leaflet = new Adw.Leaflet () {
+            can_unfold = false,
             can_navigate_back = true
         };
         leaflet.append (languages_list);
