@@ -185,6 +185,8 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
         private void edit_shortcut (bool start_editing) {
             //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
+                ((Gdk.Toplevel) get_root ().get_surface ()).inhibit_system_shortcuts (null);
+
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");
 
@@ -199,6 +201,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
 
                 add_controller (focus_controller);
             } else if (!start_editing && is_editing_shortcut) {
+                ((Gdk.Toplevel) get_root ().get_surface ()).restore_system_shortcuts ();
                 render_keycaps ();
             }
 
