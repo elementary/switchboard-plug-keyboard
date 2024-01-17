@@ -36,7 +36,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
     public void load_and_display_custom_shortcuts () {
         while (list_box.get_row_at_index (0) != null) {
-            list_box.get_row_at_index (0).destroy ();
+            list_box.remove (list_box.get_row_at_index (0));
         }
 
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
@@ -183,17 +183,20 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             });
 
             clear_button.clicked.connect (() => {
+                popover.popdown ();
                 if (!is_editing_shortcut) {
                     gsettings.set_string (BINDING_KEY, "");
                 }
             });
 
             remove_button.clicked.connect (() => {
+                popover.popdown ();
                 CustomShortcutSettings.remove_shortcut (relocatable_schema);
                 destroy ();
             });
 
             set_accel_button.clicked.connect (() => {
+                popover.popdown ();
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
