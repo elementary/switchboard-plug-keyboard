@@ -105,6 +105,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         add_engines_popover = new AddEnginesPopover ();
 
         var add_button = new Gtk.MenuButton () {
+            direction = UP,
             icon_name = "list-add-symbolic",
             popover = add_engines_popover,
             tooltip_text = _("Add…")
