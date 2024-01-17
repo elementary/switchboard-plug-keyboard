@@ -126,10 +126,10 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             popover.add_css_class (Granite.STYLE_CLASS_MENU);
 
             var menubutton = new Gtk.MenuButton () {
+                has_frame = false,
                 icon_name = "open-menu-symbolic",
                 popover = popover,
             };
-            menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             var box = new Gtk.Box (HORIZONTAL, 12) {
                 margin_top = 3,
@@ -151,6 +151,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             settings.schemas[schema].changed[gsettings_key].connect (render_keycaps);
 
             clear_button.clicked.connect (() => {
+                popover.popdown ();
                 var key_value = settings.schemas[schema].get_value (gsettings_key);
                 if (key_value.is_of_type (VariantType.ARRAY)) {
                     settings.schemas[schema].set_strv (gsettings_key, {""});
@@ -160,6 +161,7 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             });
 
             reset_button.clicked.connect (() => {
+                popover.popdown ();
                 settings.schemas[schema].reset (gsettings_key);
             });
 
@@ -175,17 +177,19 @@ private class Keyboard.Shortcuts.ShortcutListBox : Gtk.Box {
             });
 
             var key_controller = new Gtk.EventControllerKey ();
-            add_controller (key_controller);
             key_controller.key_released.connect (on_key_released);
 
             var focus_controller = new Gtk.EventControllerFocus ();
             focus_controller.leave.connect (() => {
                 edit_shortcut (false);
             });
+
+            add_controller (key_controller);
+            add_controller (focus_controller);
         }
 
         private void edit_shortcut (bool start_editing) {
-        //     //Ensure device grabs are paired
+            //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
                 keycap_stack.visible_child = status_label;
                 status_label.label = _("Enter new shortcut…");

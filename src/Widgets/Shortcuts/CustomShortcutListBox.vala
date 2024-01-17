@@ -135,18 +135,24 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             keycap_stack.add_child (keycap_box);
             keycap_stack.add_child (status_label); // This becomes initial visible child
 
-            var set_accel_button = new Gtk.Button.with_label (_("Set New Shortcut"));
-
-            clear_button = new Gtk.Button.with_label (_("Disable"));
-            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
-
-            var remove_button = new Gtk.Button.with_label (_("Remove"));
-            remove_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
-
-            var action_box = new Gtk.Box (VERTICAL, 0) {
-                margin_top = 3,
-                margin_bottom = 3
+            var set_accel_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Set New Shortcut")) { halign = START }
             };
+            set_accel_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            clear_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Disable")) { halign = START }
+            };
+            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            var remove_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Remove")) { halign = START }
+            };
+            remove_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            remove_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
+
+            var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
             action_box.append (set_accel_button);
             action_box.append (clear_button);
             action_box.append (remove_button);
@@ -154,12 +160,13 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             var popover = new Gtk.Popover () {
                 child = action_box
             };
+            popover.add_css_class (Granite.STYLE_CLASS_MENU);
 
             var menubutton = new Gtk.MenuButton () {
+                has_frame = false,
                 icon_name = "open-menu-symbolic",
                 popover = popover
             };
-            menubutton.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             var box = new Gtk.Box (HORIZONTAL, 12) {
                 margin_top = 3,
