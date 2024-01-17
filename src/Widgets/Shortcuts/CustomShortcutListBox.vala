@@ -184,7 +184,9 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             clear_button.clicked.connect (() => {
                 popover.popdown ();
-                gsettings.set_string (BINDING_KEY, "");
+                if (!is_editing_shortcut) {
+                    gsettings.set_string (BINDING_KEY, "");
+                }
             });
 
             remove_button.clicked.connect (() => {
@@ -195,19 +197,25 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             set_accel_button.clicked.connect (() => {
                 popover.popdown ();
-                edit_shortcut (true);
+                if (!is_editing_shortcut) {
+                    edit_shortcut (true);
+                }
             });
 
             var keycap_controller = new Gtk.GestureClick ();
             keycap_stack.add_controller (keycap_controller);
             keycap_controller.released.connect (() => {
-                edit_shortcut (true);
+                if (!is_editing_shortcut) {
+                    edit_shortcut (true);
+                }
             });
 
             var status_controller = new Gtk.GestureClick ();
             status_label.add_controller (status_controller);
             status_controller.released.connect (() => {
-                edit_shortcut (true);
+                if (!is_editing_shortcut) {
+                    edit_shortcut (true);
+                }
             });
 
             var command_entry_focus_controller = new Gtk.EventControllerFocus ();
@@ -231,22 +239,18 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         }
 
         private void cancel_editing_shortcut () {
-            gsettings.set_value (BINDING_KEY, previous_binding);
-            edit_shortcut (false);
+            if (is_editing_shortcut) {
+                gsettings.set_value (BINDING_KEY, previous_binding);
+                edit_shortcut (false);
+            }
         }
 
         private void edit_shortcut (bool start_editing) {
             //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
                 ((Gdk.Toplevel) get_root ().get_surface ()).inhibit_system_shortcuts (null);
-                keycap_stack.visible_child = status_label;
-                status_label.label = _("Enter new shortcut…");
-
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
-
-                previous_binding = gsettings.get_value (BINDING_KEY);
-                gsettings.set_string (BINDING_KEY, "");
 
                 var focus_controller = new Gtk.EventControllerFocus ();
                 focus_controller.leave.connect (() => {
@@ -255,12 +259,22 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 });
 
                 add_controller (focus_controller);
+
+                previous_binding = gsettings.get_value (BINDING_KEY);
+                gsettings.set_string (BINDING_KEY, "");
             } else if (!start_editing && is_editing_shortcut) {
                 ((Gdk.Toplevel) get_root ().get_surface ()).restore_system_shortcuts ();
-                render_keycaps ();
             }
 
             is_editing_shortcut = start_editing;
+
+            if (is_editing_shortcut) {
+                keycap_stack.visible_child = status_label;
+                status_label.label = _("Enter new shortcut…");
+            } else {
+                keycap_stack.visible_child = keycap_box;
+                render_keycaps ();
+            }
         }
 
         private void on_key_released (Gtk.EventControllerKey controller, uint keyval, uint keycode, Gdk.ModifierType state) {
@@ -271,9 +285,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             var mods = state & Gtk.accelerator_get_default_mod_mask ();
             if (mods > 0) {
-                // // Accept any key with a modifier (not all may work)
-                // Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
-
                 var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
             } else {
@@ -319,9 +330,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             }
 
             edit_shortcut (false);
-            render_keycaps ();
 
-            return;
+            return ;
          }
 
         private void update_binding (Shortcut shortcut) {
