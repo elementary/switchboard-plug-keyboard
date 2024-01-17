@@ -67,7 +67,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         private const string NAME_KEY = "name";
         private Gtk.Entry command_entry;
         private Variant previous_binding;
-        private Gdk.Device? keyboard_device = null;
 
         public string relocatable_schema { get; construct; }
         public GLib.Settings gsettings { get; construct; }
@@ -92,14 +91,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         }
 
         construct {
-            var display = Gdk.Display.get_default ();
-            if (display != null) {
-                var seat = display.get_default_seat ();
-                if (seat != null) {
-                    keyboard_device = seat.get_keyboard ();
-                }
-            }
-
             command_entry = new Gtk.Entry () {
                 max_width_chars = 500,
                 has_frame = false,
@@ -262,25 +253,9 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             if (start_editing && !is_editing_shortcut) {
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
-                // Grab keyboard on this row's window
-                if (keyboard_device != null) {
-                    Gtk.device_grab_add (this, keyboard_device, true);
-                    keyboard_device.get_seat ().grab (get_window (), Gdk.SeatCapabilities.KEYBOARD,
-                                             true, null, null, null);
-                } else {
-                    return;
-                }
 
                 previous_binding = gsettings.get_value (BINDING_KEY);
                 gsettings.set_string (BINDING_KEY, "");
-            } else if (!start_editing && is_editing_shortcut) {
-                // Stop grabbing keyboard on this row's window
-                if (keyboard_device != null) {
-                    keyboard_device.get_seat ().ungrab ();
-                    Gtk.device_grab_remove (this, keyboard_device);
-                } else {
-                    return;
-                }
             }
 
             is_editing_shortcut = start_editing;
@@ -302,9 +277,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             var mods = state & Gtk.accelerator_get_default_mod_mask ();
             if (mods > 0) {
-                // Accept any key with a modifier (not all may work)
-                Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
-
                 var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
             } else {
