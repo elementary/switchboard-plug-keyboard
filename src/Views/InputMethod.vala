@@ -29,7 +29,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private Granite.Widgets.AlertView spawn_failed_alert;
     private Gtk.ListBox listbox;
     private SourceSettings settings;
-    private Gtk.MenuButton remove_button;
+    private Gtk.Button remove_button;
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
     private Gtk.Entry entry_test;
@@ -75,6 +75,8 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
+            hexpand = true,
+            vexpand = true,
             selection_mode = Gtk.SelectionMode.BROWSE  //One or none selected
         };
 
@@ -99,8 +101,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         var scroll = new Gtk.ScrolledWindow (null, null) {
             child = listbox,
-            hscrollbar_policy = Gtk.PolicyType.NEVER,
-            expand = true
+            hscrollbar_policy = Gtk.PolicyType.NEVER
         };
 
         add_engines_popover = new AddEnginesPopover ();
@@ -111,8 +112,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             tooltip_text = _("Add…")
         };
 
-        remove_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("list-remove-symbolic", Gtk.IconSize.BUTTON),
+        remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
             tooltip_text = _("Remove")
         };
 
@@ -317,7 +317,10 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
                     var label = new Gtk.Label (engine_full_name) {
                         halign = Gtk.Align.START,
-                        margin = 6
+                        margin_top = 6,
+                        margin_end = 6,
+                        margin_bottom = 6,
+                        margin_start = 6
                     };
 
                     var listboxrow = new Gtk.ListBoxRow () {
