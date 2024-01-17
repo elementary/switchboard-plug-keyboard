@@ -302,9 +302,9 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private void update_engines_list () {
         engines = bus.list_engines ();
 
-        listbox.@foreach ((listbox_child) => {
-            listbox_child.destroy ();
-        });
+        while (listbox.get_row_at_index (0) != null) {
+            listbox.get_row_at_index (0).destroy ();
+        };
 
         // Add the language and the name of activated engines
         settings.reset (LayoutType.IBUS);
