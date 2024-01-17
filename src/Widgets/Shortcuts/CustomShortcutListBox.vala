@@ -35,8 +35,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
     }
 
     public void load_and_display_custom_shortcuts () {
-        while (list_box.get_first_child () != null) {
-            list_box.remove (get_first_child ());
+        while (list_box.get_row_at_index (0) != null) {
+            list_box.get_row_at_index (0).destroy ();
         }
 
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
