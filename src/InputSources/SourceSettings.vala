@@ -159,10 +159,6 @@ class Keyboard.SourceSettings : Object {
         input_sources.foreach (func);
     }
 
-    public int get_n_items () {
-        return (int) input_sources.length ();
-    }
-
     private void add_default_keyboard_if_required () {
         bool have_xkb = false;
         input_sources.@foreach ((source) => {

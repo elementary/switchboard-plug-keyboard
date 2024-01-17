@@ -146,7 +146,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             unowned var first_child = (DisplayRow) list.get_row_at_index (0);
             first_child.up_button.sensitive = false;
 
-            unowned var last_child = (DisplayRow) list.get_row_at_index (settings.get_n_items () - 1);
+            unowned var last_child = (DisplayRow) list.get_children ().last ().data;
             last_child.down_button.sensitive = false;
         }
 
