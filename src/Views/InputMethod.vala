@@ -73,6 +73,8 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
+            hexpand = true,
+            vexpand = true,
             selection_mode = Gtk.SelectionMode.BROWSE  //One or none selected
         };
 
@@ -97,9 +99,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         var scroll = new Gtk.ScrolledWindow () {
             child = listbox,
-            hscrollbar_policy = Gtk.PolicyType.NEVER,
-            hexpand = true,
-            vexpand = true
+            hscrollbar_policy = Gtk.PolicyType.NEVER
         };
 
         add_engines_popover = new AddEnginesPopover ();
