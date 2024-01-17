@@ -48,7 +48,7 @@ class Keyboard.SourceSettings : Object {
         }
     }
 
-    public unowned GLib.List<InputSource> input_sources { get; private set; }
+    private GLib.List<InputSource> input_sources;
 
     private XkbModifier [] xkb_options_modifiers;
     private GLib.Settings settings;
