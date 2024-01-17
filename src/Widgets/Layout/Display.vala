@@ -119,7 +119,7 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
 
     public void rebuild_list () {
         while (list.get_row_at_index (0) != null) {
-            list.get_row_at_index (0).destroy ();
+            list.remove (list.get_row_at_index (0));
         };
 
         uint i = 0;
@@ -151,16 +151,9 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             unowned var first_child = (DisplayRow) list.get_row_at_index (0);
             first_child.up_button.sensitive = false;
 
-            // Avoid expensive observe children
-            DisplayRow last_child;
-            if (list.get_row_at_index (1) == null) {
-                last_child = (DisplayRow) list.get_row_at_index (0);
-            } else {
-                last_child = (DisplayRow) list.get_row_at_index (
-                    (int) list.observe_children ().get_n_items () - 1
-                );
-            }
-
+            int index = 0;
+            while (list.get_row_at_index (index) != null) { index++; }
+            unowned var last_child = (DisplayRow) list.get_row_at_index (index - 1);
             last_child.down_button.sensitive = false;
         }
 
