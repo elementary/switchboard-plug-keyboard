@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 17:39+0000\n"
+"POT-Creation-Date: 2024-01-18 19:02+0000\n"
 "PO-Revision-Date: 2020-10-04 21:14+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Bulgarian <https://l10n.elementary.io/projects/switchboard/"
@@ -42,19 +42,19 @@ msgstr "Език:"
 msgid "Preview Layout"
 msgstr "Подредба"
 
-#: src/Dialogs/AddLayoutDialog.vala:149 src/Dialogs/ConflictDialog.vala:36
-#: src/Dialogs/ProgressDialog.vala:59
+#: src/Dialogs/AddLayoutDialog.vala:150 src/Dialogs/ConflictDialog.vala:36
+#: src/Dialogs/ProgressDialog.vala:60
 #: src/Widgets/InputMethod/AddEnginesPopover.vala:54
 msgid "Cancel"
 msgstr "Отказ"
 
-#: src/Dialogs/AddLayoutDialog.vala:151
+#: src/Dialogs/AddLayoutDialog.vala:152
 msgid "Add Layout"
 msgstr "Добави подредба"
 
 #. Caps Lock key functionality
 #: src/Dialogs/AddLayoutDialog.vala:245 src/Dialogs/AddLayoutDialog.vala:249
-#: src/Views/Layout.vala:91 src/Views/Layout.vala:254 src/Xkb/Handler.vala:95
+#: src/Views/Layout.vala:91 src/Views/Layout.vala:253 src/Xkb/Handler.vala:95
 msgid "Default"
 msgstr "Нормално"
 
@@ -80,21 +80,21 @@ msgstr ""
 msgid "Select an engine from the list to install and use."
 msgstr ""
 
-#: src/Dialogs/InstallEngineDialog.vala:44
+#: src/Dialogs/InstallEngineDialog.vala:45
 #, fuzzy
 msgid "Languages"
 msgstr "Език:"
 
-#: src/Dialogs/InstallEngineDialog.vala:94
+#: src/Dialogs/InstallEngineDialog.vala:99
 msgid "Install"
 msgstr ""
 
-#: src/Dialogs/ProgressDialog.vala:46
+#: src/Dialogs/ProgressDialog.vala:47
 #, c-format
 msgid "Installing %s"
 msgstr ""
 
-#: src/Dialogs/ProgressDialog.vala:49
+#: src/Dialogs/ProgressDialog.vala:50
 #, c-format
 msgid "Removing %s"
 msgstr ""
@@ -119,79 +119,79 @@ msgstr "Клавиатура"
 msgid "Configure keyboard behavior, layouts, and shortcuts"
 msgstr "Настройка на поведението, подредбите и преките пътища на клавиатурата"
 
-#: src/Plug.vala:55 src/Plug.vala:112 src/Plug.vala:113 src/Plug.vala:114
-#: src/Plug.vala:115 src/Plug.vala:116
+#: src/Plug.vala:54 src/Plug.vala:116 src/Plug.vala:117 src/Plug.vala:118
+#: src/Plug.vala:119 src/Plug.vala:120
 msgid "Layout"
 msgstr "Подредба"
 
-#: src/Plug.vala:56 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
-#: src/Plug.vala:120
+#: src/Plug.vala:55 src/Plug.vala:121 src/Plug.vala:122 src/Plug.vala:123
+#: src/Plug.vala:124
 msgid "Input Method"
 msgstr ""
 
-#: src/Plug.vala:57 src/Plug.vala:121
+#: src/Plug.vala:56 src/Plug.vala:125
 msgid "Shortcuts"
 msgstr "Клавишни комбинации"
 
-#: src/Plug.vala:58 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
-#: src/Plug.vala:125 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:57 src/Plug.vala:126 src/Plug.vala:127 src/Plug.vala:128
+#: src/Plug.vala:129 src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132
 msgid "Behavior"
 msgstr "Поведение"
 
-#: src/Plug.vala:113
+#: src/Plug.vala:117
 msgid "Switch layout"
 msgstr "Промяна на клавиатурната подредба"
 
-#: src/Plug.vala:114
+#: src/Plug.vala:118
 msgid "Compose Key"
 msgstr "Compose клавиш"
 
-#: src/Plug.vala:115
+#: src/Plug.vala:119
 #, fuzzy
 msgid "⌘ key behavior"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Plug.vala:116
+#: src/Plug.vala:120
 msgid "Caps Lock behavior"
 msgstr "Caps Lock настройка"
 
-#: src/Plug.vala:118
+#: src/Plug.vala:122
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines"
 msgstr "Смяна на прозорци"
 
-#: src/Plug.vala:119
+#: src/Plug.vala:123
 msgid "Show candidate window"
 msgstr ""
 
-#: src/Plug.vala:120
+#: src/Plug.vala:124
 msgid "Embed preedit text in application window"
 msgstr ""
 
-#: src/Plug.vala:123 src/Views/Behavior.vala:8
+#: src/Plug.vala:127 src/Views/Behavior.vala:8
 #, fuzzy
 #| msgid "Toggle On Screen Keyboard"
 msgid "Show On-screen Keyboard"
 msgstr "Пусни Екранна Клавиетура"
 
-#: src/Plug.vala:124 src/Views/Behavior.vala:156
+#: src/Plug.vala:128 src/Views/Behavior.vala:159
 msgid "Bounce Keys"
 msgstr ""
 
-#: src/Plug.vala:125 src/Views/Behavior.vala:65
+#: src/Plug.vala:129 src/Views/Behavior.vala:87
 msgid "Cursor Blinking"
 msgstr "Мигащ курсор"
 
-#: src/Plug.vala:126 src/Views/Behavior.vala:31
+#: src/Plug.vala:130 src/Views/Behavior.vala:51
 msgid "Repeat Keys"
 msgstr "Повтарящи се клавиши"
 
-#: src/Plug.vala:127 src/Views/Behavior.vala:123
+#: src/Plug.vala:131 src/Views/Behavior.vala:133
 msgid "Slow Keys"
 msgstr ""
 
-#: src/Plug.vala:128 src/Views/Behavior.vala:99
+#: src/Plug.vala:132 src/Views/Behavior.vala:116
 msgid "Sticky Keys"
 msgstr ""
 
@@ -568,10 +568,10 @@ msgstr "Потребителски"
 #. Compose key position menu
 #: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:30
 #: src/Views/Layout.vala:52 src/Views/Layout.vala:73 src/Views/Layout.vala:92
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:107
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:419
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:85
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:353
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:100
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:401
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:86
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:343
 msgid "Disabled"
 msgstr "Изключено"
 
@@ -588,92 +588,97 @@ msgstr "Ctrl"
 msgid "Alt"
 msgstr ""
 
+#: src/Shortcuts/Shortcut.vala:77
+msgid "Meta"
+msgstr ""
+
 #: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
 msgstr ""
 
-#: src/Views/Behavior.vala:33
+#: src/Views/Behavior.vala:38
 msgid "Delay:"
 msgstr "Забавяне:"
 
-#: src/Views/Behavior.vala:37
+#: src/Views/Behavior.vala:42
 msgid "Interval:"
 msgstr "Промеждутък:"
 
-#: src/Views/Behavior.vala:67
+#: src/Views/Behavior.vala:74
 msgid "Speed:"
 msgstr "Скорост:"
 
-#: src/Views/Behavior.vala:71
+#: src/Views/Behavior.vala:78
 msgid "Duration:"
 msgstr "Продължителност:"
 
-#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:109
+#: src/Views/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
 msgstr ""
 
-#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:133
+#: src/Views/Behavior.vala:135
 msgid "Don't accept keypresses unless held"
 msgstr ""
 
-#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:166
+#: src/Views/Behavior.vala:161
 msgid "Ignore fast duplicate keypresses"
 msgstr ""
 
-#: src/Views/Behavior.vala:189
+#: src/Views/Behavior.vala:179
 msgid "Event Alerts"
 msgstr ""
 
-#. FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-#: src/Views/Behavior.vala:193
+#: src/Views/Behavior.vala:180
 #, c-format
 msgid "Play a sound or flash the screen. %s"
 msgstr ""
 
-#: src/Views/Behavior.vala:195
+#: src/Views/Behavior.vala:182
 msgid "Sound Settings…"
 msgstr ""
 
-#: src/Views/Behavior.vala:205
+#: src/Views/Behavior.vala:187
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
 msgstr ""
 
-#: src/Views/Behavior.vala:206
+#: src/Views/Behavior.vala:188
 msgid "Bounce Keys are rejected"
 msgstr ""
 
-#: src/Views/Behavior.vala:207
+#: src/Views/Behavior.vala:189
 msgid "Sticky Keys are pressed"
 msgstr ""
 
-#: src/Views/Behavior.vala:208
+#: src/Views/Behavior.vala:190
 msgid "Slow Keys are rejected"
 msgstr ""
 
-#: src/Views/Behavior.vala:225
+#: src/Views/Behavior.vala:206
 #, fuzzy
 msgid "Type to test your settings"
 msgstr "Пишете тук, за да си пробвате настройките..."
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:51
+#: src/Views/InputMethod.vala:50
 msgid "IBus Daemon is not running"
 msgstr ""
 
-#: src/Views/InputMethod.vala:52
+#: src/Views/InputMethod.vala:51
 msgid ""
-"You need to run the IBus daemon to enable or configure input method engines."
+"IBus daemon must run in the background to enable or configure input method "
+"engines."
 msgstr ""
 
-#: src/Views/InputMethod.vala:59
+#: src/Views/InputMethod.vala:60
 msgid "Start IBus Daemon"
 msgstr ""
 
+#: src/Views/InputMethod.vala:61
+msgid "Can be managed in System Settings → Applications → Startup"
+msgstr ""
+
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:66
+#: src/Views/InputMethod.vala:67
 msgid "Could not start the IBus daemon"
 msgstr ""
 
@@ -681,51 +686,51 @@ msgstr ""
 msgid "Add…"
 msgstr "Добавяне…"
 
-#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:188
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:149
+#: src/Views/InputMethod.vala:115 src/Widgets/Layout/Display.vala:192
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:141
 msgid "Remove"
 msgstr "Премахване"
 
-#: src/Views/InputMethod.vala:132
+#: src/Views/InputMethod.vala:131
 #, fuzzy
 #| msgid "Switch Windows"
 msgid "Switch engines:"
 msgstr "Смяна на прозорци"
 
-#: src/Views/InputMethod.vala:144
+#: src/Views/InputMethod.vala:143
 msgid "Show property panel:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:151
+#: src/Views/InputMethod.vala:150
 msgid "Do not show"
 msgstr ""
 
-#: src/Views/InputMethod.vala:152
+#: src/Views/InputMethod.vala:151
 msgid "Auto hide"
 msgstr ""
 
-#: src/Views/InputMethod.vala:153
+#: src/Views/InputMethod.vala:152
 msgid "Always show"
 msgstr ""
 
-#: src/Views/InputMethod.vala:155
+#: src/Views/InputMethod.vala:154
 msgid "Embed preedit text in application window:"
 msgstr ""
 
-#: src/Views/InputMethod.vala:386
+#: src/Views/InputMethod.vala:382
 msgid "IBus Daemon"
 msgstr ""
 
-#: src/Views/InputMethod.vala:389
+#: src/Views/InputMethod.vala:385
 msgid "Use and manage input methods"
 msgstr ""
 
-#: src/Views/InputMethod.vala:452
+#: src/Views/InputMethod.vala:448
 #, fuzzy
 msgid "Type to test your input method"
 msgstr "Напишете нещо за да проверите подредбата…"
 
-#: src/Views/InputMethod.vala:455
+#: src/Views/InputMethod.vala:451
 msgid "A keyboard layout is active"
 msgstr ""
 
@@ -745,7 +750,7 @@ msgstr "Alt + Space"
 msgid "Both Shift keys together"
 msgstr "Двата Shift-а заедно"
 
-#: src/Views/Layout.vala:35 src/Views/Layout.vala:53 src/Views/Layout.vala:255
+#: src/Views/Layout.vala:35 src/Views/Layout.vala:53 src/Views/Layout.vala:254
 msgid "Caps Lock"
 msgstr "Caps Lock"
 
@@ -769,15 +774,15 @@ msgstr "Смяна на клавиатурната подредба:"
 msgid "Menu"
 msgstr ""
 
-#: src/Views/Layout.vala:55 src/Views/Layout.vala:257 src/Views/Layout.vala:272
+#: src/Views/Layout.vala:55 src/Views/Layout.vala:256 src/Views/Layout.vala:271
 msgid "Right Alt"
 msgstr "Десен Alt"
 
-#: src/Views/Layout.vala:56 src/Views/Layout.vala:258 src/Views/Layout.vala:273
+#: src/Views/Layout.vala:56 src/Views/Layout.vala:257 src/Views/Layout.vala:272
 msgid "Right Ctrl"
 msgstr "Десен Ctrl"
 
-#: src/Views/Layout.vala:57 src/Views/Layout.vala:259 src/Views/Layout.vala:274
+#: src/Views/Layout.vala:57 src/Views/Layout.vala:258 src/Views/Layout.vala:273
 #, fuzzy
 msgid "Right ⌘"
 msgstr "Десен Alt"
@@ -829,41 +834,41 @@ msgstr "Разменен с Escape клавиша"
 msgid "Caps Lock behavior:"
 msgstr "Поведение на клавиша Caps Lock:"
 
-#: src/Views/Layout.vala:240 src/Views/Layout.vala:267
+#: src/Views/Layout.vala:240 src/Views/Layout.vala:266
 msgid "Key to choose 3rd level:"
 msgstr "Клавиш за 3ти левел:"
 
-#: src/Views/Layout.vala:256
+#: src/Views/Layout.vala:255
 msgid "Left Alt"
 msgstr ""
 
-#: src/Views/Layout.vala:281
+#: src/Views/Layout.vala:280
 msgid "Key to choose 5th level:"
 msgstr "Клавиш за 5ти левел:"
 
-#: src/Views/Layout.vala:299
+#: src/Views/Layout.vala:297
 msgid "Kana Lock:"
 msgstr "Кана клавиш:"
 
-#: src/Views/Layout.vala:306
+#: src/Views/Layout.vala:304
 msgid "Nicola F Backspace:"
 msgstr "Никола Ф клавиш:"
 
-#: src/Views/Layout.vala:313
+#: src/Views/Layout.vala:311
 #, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "Зенкаку Ханкаку като esc:"
 
-#: src/Views/Layout.vala:333
+#: src/Views/Layout.vala:330
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
 msgstr "Hangul/Hanja клавипи на десни Alt/Ctrl:"
 
-#: src/Views/Layout.vala:412
+#: src/Views/Layout.vala:408
 #, fuzzy
 msgid "Type to test your layout"
 msgstr "Напишете нещо за да проверите подредбата…"
 
-#: src/Views/Layout.vala:415
+#: src/Views/Layout.vala:411
 msgid "Input Method is active"
 msgstr ""
 
@@ -871,7 +876,7 @@ msgstr ""
 msgid "Accessibility"
 msgstr ""
 
-#: src/Views/Shortcuts.vala:98
+#: src/Views/Shortcuts.vala:99
 #, fuzzy
 #| msgid "Shortcuts"
 msgid "Add Shortcut"
@@ -898,51 +903,51 @@ msgstr ""
 msgid "Add Keyboard Layout…"
 msgstr "Добави подредба"
 
-#: src/Widgets/Layout/Display.vala:192
+#: src/Widgets/Layout/Display.vala:196
 msgid "Move up"
 msgstr "Премести нагоре"
 
-#: src/Widgets/Layout/Display.vala:196
+#: src/Widgets/Layout/Display.vala:200
 msgid "Move down"
 msgstr "Премести надолу"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:104
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:97
 #, fuzzy
 #| msgid "Enter Command"
 msgid "Enter a command here"
 msgstr "Въведете команда"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:140
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:102
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:130
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:103
 #, fuzzy
 #| msgid "Shortcut"
 msgid "Set New Shortcut"
 msgstr "Пряк път"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:144
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:110
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:135
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:113
 #, fuzzy
 #| msgid "Disabled"
 msgid "Disable"
 msgstr "Изключено"
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:288
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:188
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:273
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:191
 msgid "Enter new shortcut…"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:361
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:282
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:343
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:273
 msgid "Unable to set new shortcut due to conflicts"
 msgstr ""
 
-#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:362
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:283
+#: src/Widgets/Shortcuts/CustomShortcutListBox.vala:344
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:274
 #, fuzzy, c-format
 msgid "“%s” is already used for “%s → %s”."
 msgstr "%s вече се използва за %s!"
 
-#: src/Widgets/Shortcuts/ShortcutListBox.vala:106
+#: src/Widgets/Shortcuts/ShortcutListBox.vala:108
 #, fuzzy
 #| msgid "Default"
 msgid "Reset to Default"
