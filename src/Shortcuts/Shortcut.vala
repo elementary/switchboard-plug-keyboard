@@ -73,6 +73,10 @@ public class Keyboard.Shortcuts.Shortcut : GLib.Object {
             tmp += _("Alt") + SEPARATOR;
         }
 
+        if ((modifiers & Gdk.ModifierType.META_MASK) > 0) {
+            tmp += _("Meta") + SEPARATOR;
+        }
+
         switch (accel_key) {
             case Gdk.Key.Up:
                 tmp += "↑";
