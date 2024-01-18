@@ -39,7 +39,7 @@ public class Keyboard.InputMethodPage.ProgressDialog : Granite.Dialog {
             wrap = true,
             xalign = 0
         };
-        primary_label.get_style_context ().add_class (Granite.STYLE_CLASS_TITLE_LABEL);
+        primary_label.add_css_class (Granite.STYLE_CLASS_TITLE_LABEL);
 
         unowned UbuntuInstaller installer = UbuntuInstaller.get_default ();
         switch (installer.transaction_mode) {

@@ -13,10 +13,12 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             hexpand = true
         };
 
-        var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
-            halign = Gtk.Align.START,
-            has_tooltip = false
+        var onscreen_keyboard_settings = new Gtk.Button.with_label (_("On-screen keyboard settings…")) {
+            halign = START,
+            has_frame = false
         };
+        onscreen_keyboard_settings.add_css_class ("link");
+        onscreen_keyboard_settings.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var onscreen_keyboard_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -174,21 +176,13 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         bouncekeys_grid.attach (bouncekeys_switch, 1, 0);
         bouncekeys_grid.attach (bouncekeys_scale, 0, 2, 2);
 
-        var events_header = new Granite.HeaderLabel (_("Event Alerts"));
-
-        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-        var events_subtitle = new Gtk.Label (
-            _("Play a sound or flash the screen. %s").printf (
+        var events_header = new Granite.HeaderLabel (_("Event Alerts")) {
+            secondary_text = _("Play a sound or flash the screen. %s").printf (
                 "<a href='settings://sound/output'>%s</a>".printf (
                     _("Sound Settings…")
                 )
             )
-        ) {
-            use_markup = true,
-            wrap = true,
-            xalign = 0
         };
-        events_subtitle.get_style_context ().add_class (Granite.STYLE_CLASS_DIM_LABEL);
 
         var togglekeys_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪ or Num Lock keys are pressed"));
         var bouncekeys_check = new Gtk.CheckButton.with_label (_("Bounce Keys are rejected"));
@@ -205,7 +199,6 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
 
         var events_box = new Gtk.Box (VERTICAL, 0);
         events_box.append (events_header);
-        events_box.append (events_subtitle);
         events_box.append (events_checks_box);
 
         var entry_test = new Gtk.Entry () {
