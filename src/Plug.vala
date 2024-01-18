@@ -35,7 +35,7 @@ public class Keyboard.Plug : Switchboard.Plug {
         settings.set ("input/keyboard/shortcuts", "Shortcuts");
         settings.set ("input/keyboard/shortcuts/custom", "Custom Shortcuts");
         Object (category: Category.HARDWARE,
-                code_name: "io.elementary.switchboard.keyboard",
+                code_name: "io.elementary.settings.keyboard",
                 display_name: _("Keyboard"),
                 description: _("Configure keyboard behavior, layouts, and shortcuts"),
                 icon: "preferences-desktop-keyboard",
@@ -48,8 +48,7 @@ public class Keyboard.Plug : Switchboard.Plug {
 
     public override Gtk.Widget get_widget () {
         if (box == null) {
-            weak Gtk.IconTheme default_theme = Gtk.IconTheme.get_default ();
-            default_theme.add_resource_path ("/io/elementary/switchboard/keyboard");
+            Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/settings/keyboard");
 
             stack = new Gtk.Stack ();
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
@@ -59,7 +58,6 @@ public class Keyboard.Plug : Switchboard.Plug {
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = CENTER,
-                homogeneous = true,
                 margin_top = 12,
                 margin_end = 12,
                 margin_bottom = 12,
@@ -67,10 +65,16 @@ public class Keyboard.Plug : Switchboard.Plug {
                 stack = stack
             };
 
+            var size_group = new Gtk.SizeGroup (HORIZONTAL);
+            unowned var switcher_child = stack_switcher.get_first_child ();
+            while (switcher_child != null) {
+                size_group.add_widget (switcher_child);
+                switcher_child = switcher_child.get_next_sibling ();
+            }
+
             box = new Gtk.Box (VERTICAL, 0);
-            box.add (stack_switcher);
-            box.add (stack);
-            box.show_all ();
+            box.append (stack_switcher);
+            box.append (stack);
         }
 
         return box;

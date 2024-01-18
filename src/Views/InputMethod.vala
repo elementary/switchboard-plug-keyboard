@@ -26,7 +26,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private List<weak IBus.EngineDesc> engines;
 #endif
 
-    private Granite.Widgets.AlertView spawn_failed_alert;
+    private Granite.Placeholder spawn_failed_alert;
     private Gtk.ListBox listbox;
     private SourceSettings settings;
     private Gtk.Button remove_button;
@@ -40,38 +40,36 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         ibus_panel_settings = new GLib.Settings ("org.freedesktop.ibus.panel");
 
         // See https://github.com/elementary/switchboard-plug-keyboard/pull/468
-        var keyboard_settings = new GLib.Settings ("io.elementary.switchboard.keyboard");
+        var keyboard_settings = new GLib.Settings ("io.elementary.settings.keyboard");
         if (keyboard_settings.get_boolean ("first-launch")) {
             keyboard_settings.set_boolean ("first-launch", false);
             Keyboard.Plug.ibus_general_settings.set_strv ("preload-engines", {});
         }
 
         // no_daemon_runnning view shown if IBus Daemon is not running
-        var no_daemon_runnning_alert = new Granite.Widgets.AlertView (
-            _("IBus Daemon is not running"),
-            _("You need to run the IBus daemon to enable or configure input method engines."),
-            "dialog-information"
-        ) {
+        var no_daemon_runnning_alert = new Granite.Placeholder (_("IBus Daemon is not running")) {
+            description = _("IBus daemon must run in the background to enable or configure input method engines."),
+            icon = new ThemedIcon ("dialog-information"),
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
-        no_daemon_runnning_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
-        no_daemon_runnning_alert.show_action (_("Start IBus Daemon"));
-        no_daemon_runnning_alert.action_activated.connect (() => {
-            spawn_ibus_daemon ();
-        });
+        no_daemon_runnning_alert.remove_css_class (Granite.STYLE_CLASS_VIEW);
+
+        var ibus_button = no_daemon_runnning_alert.append_button (
+            new ThemedIcon ("ibus-setup"),
+            _("Start IBus Daemon"),
+            _("Can be managed in System Settings → Applications → Startup")
+        );
+        ibus_button.clicked.connect (spawn_ibus_daemon);
 
         // spawn_failed view shown if IBus Daemon is not running
-        spawn_failed_alert = new Granite.Widgets.AlertView (
-            _("Could not start the IBus daemon"),
-            "",
-            "dialog-error"
+        spawn_failed_alert = new Granite.Placeholder (
+            _("Could not start the IBus daemon")
         ) {
+            icon = new ThemedIcon ("dialog-error"),
             halign = Gtk.Align.CENTER,
             valign = Gtk.Align.CENTER
         };
-
-        spawn_failed_alert.get_style_context ().remove_class (Gtk.STYLE_CLASS_VIEW);
 
         // normal view shown if IBus Daemon is already running
         listbox = new Gtk.ListBox () {
@@ -99,7 +97,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             update_entry_test_usable ();
         });
 
-        var scroll = new Gtk.ScrolledWindow (null, null) {
+        var scroll = new Gtk.ScrolledWindow () {
             child = listbox,
             hscrollbar_policy = Gtk.PolicyType.NEVER
         };
@@ -107,7 +105,8 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         add_engines_popover = new AddEnginesPopover ();
 
         var add_button = new Gtk.MenuButton () {
-            image = new Gtk.Image.from_icon_name ("list-add-symbolic", Gtk.IconSize.BUTTON),
+            direction = UP,
+            icon_name = "list-add-symbolic",
             popover = add_engines_popover,
             tooltip_text = _("Add…")
         };
@@ -117,13 +116,13 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         };
 
         var actionbar = new Gtk.ActionBar ();
-        actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_INLINE_TOOLBAR);
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
         actionbar.pack_start (add_button);
         actionbar.pack_start (remove_button);
 
         var left_box = new Gtk.Box (VERTICAL, 0);
-        left_box.add (scroll);
-        left_box.add (actionbar);
+        left_box.append (scroll);
+        left_box.append (actionbar);
 
         var display = new Gtk.Frame (null) {
             child = left_box
@@ -196,18 +195,13 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         stack.add_named (no_daemon_runnning_alert, "no_daemon_runnning_view");
         stack.add_named (spawn_failed_alert, "spawn_failed_view");
         stack.add_named (main_grid, "main_view");
-        stack.show_all ();
 
         margin_start = 12;
         margin_end = 12;
         margin_bottom = 12;
-        add (stack);
+        append (stack);
 
         set_visible_view ();
-
-        add_button.clicked.connect (() => {
-            add_engines_popover.show_all ();
-        });
 
         add_engines_popover.add_engine.connect ((engine) => {
             if (settings.add_active_engine (engine)) {
@@ -328,13 +322,12 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
                     };
                     listboxrow.set_data<string> ("engine-name", engine.name);
 
-                    listbox.add (listboxrow);
+                    listbox.append (listboxrow);
                     settings.add_layout (InputSource.new_ibus (engine.name));
                 }
             }
         }
 
-        listbox.show_all ();
         //Do not autoselect the first entry as that would change the active input method
         remove_button.sensitive = listbox.get_selected_row () != null;
         // If ibus is running, update its autostart file according to whether there are input methods active
@@ -472,15 +465,21 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
 
         /* Emitting "unselect_all ()" on listbox does not unselect rows for some reason so we
          * unselect rows individually */
-        listbox.@foreach ((widget) => {
-            var row = (Gtk.ListBoxRow)widget;
-            var row_name = row.get_data<string> ("engine-name");
-            if (row_name == engine_name) {
-                listbox.select_row (row);
-            } else {
-                listbox.unselect_row (row);
+
+        unowned var child = listbox.get_first_child ();
+        while (child != null) {
+            if (child is Gtk.ListBoxRow) {
+                var row = (Gtk.ListBoxRow) child;
+                var row_name = row.get_data<string> ("engine-name");
+                if (row_name == engine_name) {
+                    listbox.select_row (row);
+                } else {
+                    listbox.unselect_row (row);
+                }
             }
-        });
+
+            child = child.get_next_sibling ();
+        }
 
         remove_button.sensitive = listbox.get_selected_row () != null;
     }

@@ -25,6 +25,8 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             selection_mode = Gtk.SelectionMode.BROWSE
         };
 
+        append (list_box);
+
         load_and_display_custom_shortcuts ();
 
         realize.connect (() => {
@@ -38,7 +40,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         }
 
         foreach (var custom_shortcut in CustomShortcutSettings.list_custom_shortcuts ()) {
-            list_box.add (new CustomShortcutRow (custom_shortcut));
+            list_box.append (new CustomShortcutRow (custom_shortcut));
         }
     }
 
@@ -52,7 +54,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             new_row = new CustomShortcutRow (new_custom_shortcut);
         }
 
-        list_box.add (new_row);
+        list_box.append (new_row);
         list_box.select_row (new_row);
     }
 
@@ -67,17 +69,12 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         private const string NAME_KEY = "name";
         private Gtk.Entry command_entry;
         private Variant previous_binding;
-        private Gdk.Device? keyboard_device = null;
 
         public string relocatable_schema { get; construct; }
         public GLib.Settings gsettings { get; construct; }
         private bool is_editing_shortcut = false;
 
-        private Gtk.EventControllerKey key_controller;
-        private Gtk.GestureMultiPress keycap_controller;
-        private Gtk.GestureMultiPress status_controller;
-
-        private Gtk.ModelButton clear_button;
+        private Gtk.Button clear_button;
         private Gtk.Box keycap_box;
         private Gtk.Label status_label;
         private Gtk.Stack keycap_stack;
@@ -92,14 +89,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         }
 
         construct {
-            var display = Gdk.Display.get_default ();
-            if (display != null) {
-                var seat = display.get_default_seat ();
-                if (seat != null) {
-                    keyboard_device = seat.get_keyboard ();
-                }
-            }
-
             command_entry = new Gtk.Entry () {
                 max_width_chars = 500,
                 has_frame = false,
@@ -111,7 +100,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             status_label = new Gtk.Label (_("Disabled")) {
                 halign = END
             };
-            status_label.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
+            status_label.add_css_class (Granite.STYLE_CLASS_DIM_LABEL);
 
             keycap_box = new Gtk.Box (HORIZONTAL, 6) {
                 valign = CENTER,
@@ -133,43 +122,42 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 transition_type = Gtk.StackTransitionType.CROSSFADE,
                 vhomogeneous = true
             };
+            keycap_stack.add_child (four_key_box); // This ensures sufficient space is allocated for longest reasonable shortcut
+            keycap_stack.add_child (keycap_box);
+            keycap_stack.add_child (status_label); // This becomes initial visible child
 
-            keycap_stack.add (four_key_box); // This ensures sufficient space is allocated for longest reasonable shortcut
-            keycap_stack.add (keycap_box);
-            keycap_stack.add (status_label); // This becomes initial visible child
-
-            var set_accel_button = new Gtk.ModelButton () {
-                text = _("Set New Shortcut")
+            var set_accel_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Set New Shortcut")) { halign = START }
             };
+            set_accel_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
 
-            clear_button = new Gtk.ModelButton () {
-                text = _("Disable")
+            clear_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Disable")) { halign = START }
             };
-            clear_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            clear_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
 
-            var remove_button = new Gtk.ModelButton () {
-                text = _("Remove")
+            var remove_button = new Gtk.Button () {
+                child = new Gtk.Label (_("Remove")) { halign = START }
             };
-            remove_button.get_style_context ().add_class (Gtk.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            remove_button.add_css_class (Granite.STYLE_CLASS_DESTRUCTIVE_ACTION);
+            remove_button.add_css_class (Granite.STYLE_CLASS_MENUITEM);
 
-            var action_box = new Gtk.Box (VERTICAL, 0) {
-                margin_top = 3,
-                margin_bottom = 3
-            };
-            action_box.add (set_accel_button);
-            action_box.add (clear_button);
-            action_box.add (remove_button);
-            action_box.show_all ();
+            var action_box = new Gtk.Box (Gtk.Orientation.VERTICAL, 0);
+            action_box.append (set_accel_button);
+            action_box.append (clear_button);
+            action_box.append (remove_button);
 
-            var popover = new Gtk.Popover (null) {
+            var popover = new Gtk.Popover () {
                 child = action_box
             };
+            popover.add_css_class (Granite.STYLE_CLASS_MENU);
 
             var menubutton = new Gtk.MenuButton () {
-                image = new Gtk.Image.from_icon_name ("open-menu-symbolic", Gtk.IconSize.MENU),
+                has_frame = false,
+                icon_name = "open-menu-symbolic",
                 popover = popover
             };
-            menubutton.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
 
             var box = new Gtk.Box (HORIZONTAL, 12) {
                 margin_top = 3,
@@ -178,10 +166,9 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 margin_start = 6,
                 valign = CENTER
             };
-            box.add (command_entry);
-            box.add (keycap_stack);
-            box.add (menubutton);
-            box.show_all ();
+            box.append (command_entry);
+            box.append (keycap_stack);
+            box.append (menubutton);
 
             child = box;
 
@@ -196,40 +183,46 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             });
 
             clear_button.clicked.connect (() => {
+                popover.popdown ();
                 if (!is_editing_shortcut) {
                     gsettings.set_string (BINDING_KEY, "");
                 }
             });
 
             remove_button.clicked.connect (() => {
+                popover.popdown ();
                 CustomShortcutSettings.remove_shortcut (relocatable_schema);
                 destroy ();
             });
 
             set_accel_button.clicked.connect (() => {
+                popover.popdown ();
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
             });
 
-            keycap_controller = new Gtk.GestureMultiPress (keycap_stack);
+            var keycap_controller = new Gtk.GestureClick ();
+            keycap_stack.add_controller (keycap_controller);
             keycap_controller.released.connect (() => {
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
             });
 
-            status_controller = new Gtk.GestureMultiPress (status_label);
+            var status_controller = new Gtk.GestureClick ();
+            status_label.add_controller (status_controller);
             status_controller.released.connect (() => {
                 if (!is_editing_shortcut) {
                     edit_shortcut (true);
                 }
             });
 
-            command_entry.focus_in_event.connect (() => {
+            var command_entry_focus_controller = new Gtk.EventControllerFocus ();
+            command_entry.add_controller (command_entry_focus_controller);
+            command_entry_focus_controller.enter.connect (() => {
                 cancel_editing_shortcut ();
                 ((Gtk.ListBox)parent).select_row (this);
-                return Gdk.EVENT_PROPAGATE;
             });
 
             command_entry.changed.connect (() => {
@@ -239,15 +232,10 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 gsettings.set_string (NAME_KEY, command);
             });
 
-            key_controller = new Gtk.EventControllerKey (this);
+            var key_controller = new Gtk.EventControllerKey ();
             key_controller.key_released.connect (on_key_released);
 
-            focus_out_event.connect (() => {
-                cancel_editing_shortcut ();
-                return Gdk.EVENT_PROPAGATE;
-            });
-
-            show_all ();
+            add_controller (key_controller);
         }
 
         private void cancel_editing_shortcut () {
@@ -260,27 +248,22 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         private void edit_shortcut (bool start_editing) {
             //Ensure device grabs are paired
             if (start_editing && !is_editing_shortcut) {
+                ((Gdk.Toplevel) get_root ().get_surface ()).inhibit_system_shortcuts (null);
                 ((Gtk.ListBox)parent).select_row (this);
                 grab_focus ();
-                // Grab keyboard on this row's window
-                if (keyboard_device != null) {
-                    Gtk.device_grab_add (this, keyboard_device, true);
-                    keyboard_device.get_seat ().grab (get_window (), Gdk.SeatCapabilities.KEYBOARD,
-                                             true, null, null, null);
-                } else {
-                    return;
-                }
+
+                var focus_controller = new Gtk.EventControllerFocus ();
+                focus_controller.leave.connect (() => {
+                    focus_controller.dispose ();
+                    cancel_editing_shortcut ();
+                });
+
+                add_controller (focus_controller);
 
                 previous_binding = gsettings.get_value (BINDING_KEY);
                 gsettings.set_string (BINDING_KEY, "");
             } else if (!start_editing && is_editing_shortcut) {
-                // Stop grabbing keyboard on this row's window
-                if (keyboard_device != null) {
-                    keyboard_device.get_seat ().ungrab ();
-                    Gtk.device_grab_remove (this, keyboard_device);
-                } else {
-                    return;
-                }
+                ((Gdk.Toplevel) get_root ().get_surface ()).restore_system_shortcuts ();
             }
 
             is_editing_shortcut = start_editing;
@@ -302,9 +285,6 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
 
             var mods = state & Gtk.accelerator_get_default_mod_mask ();
             if (mods > 0) {
-                // Accept any key with a modifier (not all may work)
-                Gdk.Keymap.get_for_display (Gdk.Display.get_default ()).add_virtual_modifiers (ref mods); // Not sure why this is needed
-
                 var shortcut = new Keyboard.Shortcuts.Shortcut (keyval, mods);
                 update_binding (shortcut);
             } else {
@@ -369,7 +349,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                 ) {
                     badge_icon = new ThemedIcon ("dialog-error"),
                     modal = true,
-                    transient_for = (Gtk.Window) get_toplevel ()
+                    transient_for = (Gtk.Window) get_root ()
                 };
 
                 message_dialog.response.connect (() => {
@@ -391,7 +371,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
                     }
                 });
 
-                dialog.transient_for = (Gtk.Window) this.get_toplevel ();
+                dialog.transient_for = (Gtk.Window) this.get_root ();
                 dialog.present ();
             } else {
                 gsettings.set_string (BINDING_KEY, shortcut.to_gsettings ());
@@ -429,20 +409,19 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             if (accels_string != null) {
                 accels = accels_string.split (" + ");
             }
-            foreach (unowned Gtk.Widget child in box.get_children ()) {
-                child.destroy ();
-            };
+
+            while (box.get_first_child () != null) {
+                box.remove (box.get_first_child ());
+            }
 
             foreach (unowned string accel in accels) {
                 if (accel == "") {
                     continue;
                 }
                 var keycap_label = new Gtk.Label (accel);
-                keycap_label.get_style_context ().add_class ("keycap");
-                box.add (keycap_label);
+                keycap_label.add_css_class ("keycap");
+                box.append (keycap_label);
             }
-
-            box.show_all ();
         }
     }
 }

@@ -41,7 +41,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             activate_on_single_click = false
         };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = listbox,
             hexpand = true,
             vexpand = true,
@@ -54,7 +54,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         var cancel_button = new Gtk.Button.with_label (_("Cancel"));
 
         var add_button = new Gtk.Button.with_label (_("Add Engine"));
-        add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        add_button.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         var size_group = new Gtk.SizeGroup (HORIZONTAL);
         size_group.add_widget (cancel_button);
@@ -66,10 +66,10 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             margin_bottom = 12,
             margin_start = 12
         };
-        button_box.add (install_button);
-        button_box.add (new Gtk.Grid () { hexpand = true });
-        button_box.add (cancel_button);
-        button_box.add (add_button);
+        button_box.append (install_button);
+        button_box.append (new Gtk.Grid () { hexpand = true });
+        button_box.append (cancel_button);
+        button_box.append (add_button);
 
         var grid = new Gtk.Grid ();
         grid.attach (search_entry, 0, 0);
@@ -96,7 +96,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
             popdown ();
 
             var installer = UbuntuInstaller.get_default ();
-            var install_dialog = new InstallEngineDialog ((Gtk.Window) get_toplevel ());
+            var install_dialog = new InstallEngineDialog ((Gtk.Window) get_root ());
             install_dialog.response.connect ((response_id) => {
                 if (response_id == Gtk.ResponseType.OK) {
                     string engine_to_install = install_dialog.get_selected_engine_name ();
@@ -104,7 +104,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                     installer.install (engine_to_install);
 
                     var progress_dialog = new ProgressDialog () {
-                        transient_for = (Gtk.Window) get_toplevel ()
+                        transient_for = (Gtk.Window) get_root ()
                     };
                     installer.progress_changed.connect ((p) => {
                         progress_dialog.progress = p;
@@ -148,8 +148,9 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
         for (int i = 0; i < liststore.get_n_items (); i++) {
             var label = new Gtk.Label (((AddEnginesList) liststore.get_item (i)).engine_full_name) {
                 halign = Gtk.Align.START,
-                margin = 6,
+                margin_top = 6,
                 margin_end = 12,
+                margin_bottom = 6,
                 margin_start = 12
             };
 
@@ -157,7 +158,7 @@ public class Keyboard.InputMethodPage.AddEnginesPopover : Gtk.Popover {
                 child = label
             };
 
-            listbox.add (listboxrow);
+            listbox.append (listboxrow);
         }
 
         listbox.select_row (listbox.get_row_at_index (0));

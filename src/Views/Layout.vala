@@ -244,7 +244,6 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         var panel = new AdvancedSettingsPanel ("third_level_layouts", {}, invalid_input_sources);
         panel.attach (third_level_label, 0, 0);
         panel.attach (third_level_combo, 1, 0);
-        panel.show_all ();
 
         return panel;
     }
@@ -287,7 +286,6 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         panel.attach (third_level_combo, 1, 0);
         panel.attach (fifth_level_label, 0, 1);
         panel.attach (fifth_level_combo, 1, 1);
-        panel.show_all ();
 
         return panel;
     }
@@ -321,7 +319,6 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         panel.attach (nicola_backspace_switch, 1, 1);
         panel.attach (zenkaku_label, 0, 2);
         panel.attach (zenkaku_switch, 1, 2);
-        panel.show_all ();
 
         return panel;
     }
@@ -337,7 +334,6 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         var panel = new AdvancedSettingsPanel ("korean_layouts", {"kr"});
         panel.attach (hangul_label, 0, 0);
         panel.attach (hangul_switch, 1, 0);
-        panel.show_all ();
 
         return panel;
     }

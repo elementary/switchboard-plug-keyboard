@@ -13,10 +13,12 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             hexpand = true
         };
 
-        var onscreen_keyboard_settings = new Gtk.LinkButton.with_label ("", _("On-screen keyboard settings…")) {
-            halign = Gtk.Align.START,
-            has_tooltip = false
+        var onscreen_keyboard_settings = new Gtk.Button.with_label (_("On-screen keyboard settings…")) {
+            halign = START,
+            has_frame = false
         };
+        onscreen_keyboard_settings.add_css_class ("link");
+        onscreen_keyboard_settings.add_css_class (Granite.STYLE_CLASS_SMALL_LABEL);
 
         var onscreen_keyboard_grid = new Gtk.Grid () {
             column_spacing = 12
@@ -26,9 +28,12 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         onscreen_keyboard_grid.attach (onscreen_keyboard_switch, 1, 0, 1, 2);
 
         var scale_provider = new Gtk.CssProvider ();
-        scale_provider.load_from_resource ("/io/elementary/switchboard/keyboard/Behavior.css");
+        scale_provider.load_from_resource ("/io/elementary/settings/keyboard/Behavior.css");
 
-        var label_repeat = new Granite.HeaderLabel (_("Repeat Keys"));
+        Gtk.StyleContext.add_provider_for_display (
+            Gdk.Display.get_default (),
+            scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
+        );
 
         var label_repeat_delay = new Gtk.Label (_("Delay:")) {
             halign = Gtk.Align.END
@@ -43,26 +48,28 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             valign = CENTER
         };
 
+        var label_repeat = new Granite.HeaderLabel (_("Repeat Keys")) {
+            mnemonic_widget = switch_repeat
+        };
+
         var repeat_delay_adjustment = new Gtk.Adjustment (-1, 100, 900, 1, 0, 0);
 
         var scale_repeat_delay = new Gtk.Scale (HORIZONTAL, repeat_delay_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_repeat_delay.add_mark (500, Gtk.PositionType.BOTTOM, null);
-        scale_repeat_delay.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var repeat_speed_adjustment = new Gtk.Adjustment (-1, 10, 70, 1, 0, 0);
 
         var scale_repeat_speed = new Gtk.Scale (HORIZONTAL, repeat_speed_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_repeat_speed.add_mark (30, Gtk.PositionType.BOTTOM, null);
         scale_repeat_speed.add_mark (50, Gtk.PositionType.BOTTOM, null);
-        scale_repeat_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-        var label_blink = new Granite.HeaderLabel (_("Cursor Blinking"));
 
         var label_blink_speed = new Gtk.Label (_("Speed:")) {
             halign = Gtk.Align.END
@@ -77,26 +84,28 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             valign = CENTER
         };
 
+        var label_blink = new Granite.HeaderLabel (_("Cursor Blinking")) {
+            mnemonic_widget = switch_blink
+        };
+
         var blink_speed_adjustment = new Gtk.Adjustment (-1, 100, 2500, 10, 0, 0);
 
         var scale_blink_speed = new Gtk.Scale (HORIZONTAL, blink_speed_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_blink_speed.add_mark (1200, Gtk.PositionType.BOTTOM, null);
-        scale_blink_speed.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var blink_time_adjustment = new Gtk.Adjustment (-1, 1, 29, 1, 0, 0);
 
         var scale_blink_time = new Gtk.Scale (HORIZONTAL, blink_time_adjustment) {
             digits = 0,
+            draw_value = true,
             hexpand = true
         };
         scale_blink_time.add_mark (10, Gtk.PositionType.BOTTOM, null);
         scale_blink_time.add_mark (20, Gtk.PositionType.BOTTOM, null);
-        scale_blink_time.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
-
-        var stickykeys_header = new Granite.HeaderLabel (_("Sticky Keys"));
 
         var stickykeys_switch = new Gtk.Switch () {
             halign = END,
@@ -104,23 +113,16 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             valign = CENTER
         };
 
-        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-        var stickykeys_subtitle = new Gtk.Label (
-            _("Use ⌘, Alt, Ctrl, or Shift keys in sequence")
-        ) {
-            wrap = true,
-            xalign = 0
+        var stickykeys_header = new Granite.HeaderLabel (_("Sticky Keys")) {
+            mnemonic_widget = stickykeys_switch,
+            secondary_text = _("Use ⌘, Alt, Ctrl, or Shift keys in sequence")
         };
-        stickykeys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var stickykeys_grid = new Gtk.Grid () {
             column_spacing = 12
         };
         stickykeys_grid.attach (stickykeys_header, 0, 0);
-        stickykeys_grid.attach (stickykeys_subtitle, 0, 1);
-        stickykeys_grid.attach (stickykeys_switch, 1, 0, 1, 2);
-
-        var slowkeys_header = new Granite.HeaderLabel (_("Slow Keys"));
+        stickykeys_grid.attach (stickykeys_switch, 1, 0);
 
         var slowkeys_switch = new Gtk.Switch () {
             halign = END,
@@ -128,32 +130,25 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             valign = CENTER
         };
 
-        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-        var slowkeys_subtitle = new Gtk.Label (
-            _("Don't accept keypresses unless held")
-        ) {
-            wrap = true,
-            xalign = 0
+        var slowkeys_header = new Granite.HeaderLabel (_("Slow Keys")) {
+            mnemonic_widget = slowkeys_switch,
+            secondary_text = _("Don't accept keypresses unless held")
         };
-        slowkeys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var slowkeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
         var slowkeys_scale = new Gtk.Scale (HORIZONTAL, slowkeys_adjustment) {
-            digits = 0
+            digits = 0,
+            draw_value = true,
         };
         slowkeys_scale.add_mark (300, Gtk.PositionType.BOTTOM, null);
-        slowkeys_scale.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var slowkeys_grid = new Gtk.Grid () {
             column_spacing = 12
         };
         slowkeys_grid.attach (slowkeys_header, 0, 0);
-        slowkeys_grid.attach (slowkeys_subtitle, 0, 1);
-        slowkeys_grid.attach (slowkeys_switch, 1, 0, 1, 2);
+        slowkeys_grid.attach (slowkeys_switch, 1, 0);
         slowkeys_grid.attach (slowkeys_scale, 0, 2, 2);
-
-        var bouncekeys_header = new Granite.HeaderLabel (_("Bounce Keys"));
 
         var bouncekeys_switch = new Gtk.Switch () {
             halign = END,
@@ -161,46 +156,33 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             valign = CENTER
         };
 
-        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-        var bouncekeys_subtitle = new Gtk.Label (
-            _("Ignore fast duplicate keypresses")
-        ) {
-            wrap = true,
-            xalign = 0
+        var bouncekeys_header = new Granite.HeaderLabel (_("Bounce Keys")) {
+            mnemonic_widget = bouncekeys_switch,
+            secondary_text = _("Ignore fast duplicate keypresses")
         };
-        bouncekeys_subtitle .get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var bouncekeys_adjustment = new Gtk.Adjustment (0, 0, 1000, 1, 1, 1);
 
         var bouncekeys_scale = new Gtk.Scale (HORIZONTAL, bouncekeys_adjustment) {
-            digits = 0
+            digits = 0,
+            draw_value = true,
         };
         bouncekeys_scale.add_mark (300, Gtk.PositionType.BOTTOM, null);
-        bouncekeys_scale.get_style_context ().add_provider (scale_provider, Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION);
 
         var bouncekeys_grid = new Gtk.Grid () {
             column_spacing = 12
         };
         bouncekeys_grid.attach (bouncekeys_header, 0, 0);
-        bouncekeys_grid.attach (bouncekeys_subtitle, 0, 1);
-        bouncekeys_grid.attach (bouncekeys_switch, 1, 0, 1, 2);
+        bouncekeys_grid.attach (bouncekeys_switch, 1, 0);
         bouncekeys_grid.attach (bouncekeys_scale, 0, 2, 2);
 
-        var events_header = new Granite.HeaderLabel (_("Event Alerts"));
-
-        // FIXME: Replace with Granite.HeaderLabel secondary_text in Gtk4
-        var events_subtitle = new Gtk.Label (
-            _("Play a sound or flash the screen. %s").printf (
+        var events_header = new Granite.HeaderLabel (_("Event Alerts")) {
+            secondary_text = _("Play a sound or flash the screen. %s").printf (
                 "<a href='settings://sound/output'>%s</a>".printf (
                     _("Sound Settings…")
                 )
             )
-        ) {
-            use_markup = true,
-            wrap = true,
-            xalign = 0
         };
-        events_subtitle.get_style_context ().add_class (Gtk.STYLE_CLASS_DIM_LABEL);
 
         var togglekeys_check = new Gtk.CheckButton.with_label (_("Caps Lock ⇪ or Num Lock keys are pressed"));
         var bouncekeys_check = new Gtk.CheckButton.with_label (_("Bounce Keys are rejected"));
@@ -210,15 +192,14 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         var events_checks_box = new Gtk.Box (VERTICAL, 6) {
             margin_top = 12
         };
-        events_checks_box.add (togglekeys_check);
-        events_checks_box.add (stickykeys_check);
-        events_checks_box.add (bouncekeys_check);
-        events_checks_box.add (slowkeys_check);
+        events_checks_box.append (togglekeys_check);
+        events_checks_box.append (stickykeys_check);
+        events_checks_box.append (bouncekeys_check);
+        events_checks_box.append (slowkeys_check);
 
         var events_box = new Gtk.Box (VERTICAL, 0);
-        events_box.add (events_header);
-        events_box.add (events_subtitle);
-        events_box.add (events_checks_box);
+        events_box.append (events_header);
+        events_box.append (events_checks_box);
 
         var entry_test = new Gtk.Entry () {
             hexpand = true,
@@ -246,27 +227,27 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
         blink_grid.attach (scale_blink_time, 1, 2);
 
         var box = new Gtk.Box (VERTICAL, 18);
-        box.add (onscreen_keyboard_grid);
-        box.add (blink_grid);
-        box.add (repeat_grid);
-        box.add (stickykeys_grid);
-        box.add (bouncekeys_grid);
-        box.add (slowkeys_grid);
-        box.add (events_box);
-        box.add (entry_test);
+        box.append (onscreen_keyboard_grid);
+        box.append (blink_grid);
+        box.append (repeat_grid);
+        box.append (stickykeys_grid);
+        box.append (bouncekeys_grid);
+        box.append (slowkeys_grid);
+        box.append (events_box);
+        box.append (entry_test);
 
-        var clamp = new Hdy.Clamp () {
+        var clamp = new Adw.Clamp () {
             child = box,
             margin_start = 12,
             margin_end = 12,
             margin_bottom = 12
         };
 
-        var scrolled = new Gtk.ScrolledWindow (null, null) {
+        var scrolled = new Gtk.ScrolledWindow () {
             child = clamp
         };
 
-        add (scrolled);
+        append (scrolled);
 
         onscreen_keyboard_settings.clicked.connect (() => {
             try {

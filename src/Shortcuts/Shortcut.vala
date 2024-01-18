@@ -69,20 +69,12 @@ public class Keyboard.Shortcuts.Shortcut : GLib.Object {
             tmp += _("Ctrl") + SEPARATOR;
         }
 
-        if ((modifiers & Gdk.ModifierType.MOD1_MASK) > 0) {
+        if ((modifiers & Gdk.ModifierType.ALT_MASK) > 0) {
             tmp += _("Alt") + SEPARATOR;
         }
 
-        if ((modifiers & Gdk.ModifierType.MOD2_MASK) > 0) {
-            tmp += "Mod2" + SEPARATOR;
-        }
-
-        if ((modifiers & Gdk.ModifierType.MOD3_MASK) > 0) {
-            tmp += "Mod3" + SEPARATOR;
-        }
-
-        if ((modifiers & Gdk.ModifierType.MOD4_MASK) > 0) {
-            tmp += "Mod4" + SEPARATOR;
+        if ((modifiers & Gdk.ModifierType.META_MASK) > 0) {
+            tmp += _("Meta") + SEPARATOR;
         }
 
         switch (accel_key) {

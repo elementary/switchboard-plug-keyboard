@@ -56,10 +56,10 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             var item = language_list.get_item (i) as ListStoreItem;
             var row = new LayoutRow (item.name);
 
-            input_language_list_box.add (row);
+            input_language_list_box.append (row);
         }
 
-        var input_language_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var input_language_scrolled = new Gtk.ScrolledWindow () {
             child = input_language_list_box,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
@@ -67,8 +67,8 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         };
 
         var input_language_box = new Gtk.Box (VERTICAL, 0);
-        input_language_box.add (search_entry);
-        input_language_box.add (input_language_scrolled);
+        input_language_box.append (search_entry);
+        input_language_box.append (input_language_scrolled);
 
         var back_button = new Gtk.Button.with_label (_(INPUT_LANGUAGE)) {
             halign = Gtk.Align.START,
@@ -77,7 +77,7 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             margin_bottom = 6,
             margin_start = 6
         };
-        back_button.get_style_context ().add_class (Granite.STYLE_CLASS_BACK_BUTTON);
+        back_button.add_css_class (Granite.STYLE_CLASS_BACK_BUTTON);
 
         var layout_list_title = new Gtk.Label (null) {
             ellipsize = Pango.EllipsizeMode.END,
@@ -92,7 +92,7 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             return new LayoutRow (((ListStoreItem)item).name);
         });
 
-        var layout_scrolled = new Gtk.ScrolledWindow (null, null) {
+        var layout_scrolled = new Gtk.ScrolledWindow () {
             child = layout_list_box,
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,
@@ -112,12 +112,12 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             transition_type = Gtk.RevealerTransitionType.CROSSFADE
         };
 
-        var header_box = new Gtk.Box (Gtk.Orientation.HORIZONTAL, 6) {
+        var header_box = new Gtk.CenterBox () {
+            start_widget = back_button,
+            center_widget = layout_list_title,
+            end_widget = keyboard_map_revealer,
             hexpand = true
         };
-        header_box.pack_start (back_button);
-        header_box.set_center_widget (layout_list_title);
-        header_box.pack_end (keyboard_map_revealer);
 
         var header_grid = new Gtk.Grid ();
         header_grid.attach (header_box, 0, 0);
@@ -127,34 +127,35 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
             child = header_grid
         };
 
-        var deck = new Hdy.Deck () {
-            can_swipe_back = true,
+        var deck = new Adw.Leaflet () {
+            can_navigate_back = true,
+            can_unfold = false,
             hexpand = true,
             vexpand = true
         };
-        deck.add (input_language_box);
-        deck.add (layout_scrolled);
+        deck.append (input_language_box);
+        deck.append (layout_scrolled);
 
         var frame_box = new Gtk.Box (VERTICAL, 0);
-        frame_box.add (header_revealer);
-        frame_box.add (deck);
+        frame_box.append (header_revealer);
+        frame_box.append (deck);
 
         var frame = new Gtk.Frame (null) {
             child = frame_box,
             margin_start = 10,
             margin_end = 10
         };
-        frame.get_style_context ().add_class (Gtk.STYLE_CLASS_VIEW);
+        frame.add_css_class (Granite.STYLE_CLASS_VIEW);
 
         var button_cancel = add_button (_("Cancel"), Gtk.ResponseType.CANCEL);
 
         var button_add = add_button (_("Add Layout"), Gtk.ResponseType.ACCEPT);
         button_add.sensitive = false;
-        button_add.get_style_context ().add_class (Gtk.STYLE_CLASS_SUGGESTED_ACTION);
+        button_add.add_css_class (Granite.STYLE_CLASS_SUGGESTED_ACTION);
 
         deletable = false;
         modal = true;
-        get_content_area ().add (frame);
+        get_content_area ().append (frame);
 
         search_entry.grab_focus ();
 
@@ -190,13 +191,12 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         });
 
         back_button.clicked.connect (() => {
-            deck.navigate (Hdy.NavigationDirection.BACK);
+            deck.navigate (Adw.NavigationDirection.BACK);
         });
 
         input_language_list_box.row_activated.connect (() => {
             var selected_lang = get_selected_lang ();
             update_list_store (layout_list, handler.get_variants_for_language (selected_lang.id));
-            layout_list_box.show_all ();
             layout_list_box.select_row (layout_list_box.get_row_at_index (0));
             if (layout_list_box.get_row_at_index (0) != null) {
                 layout_list_box.get_row_at_index (0).grab_focus ();
@@ -273,11 +273,13 @@ public class Keyboard.LayoutPage.AddLayoutDialog : Granite.Dialog {
         }
 
         construct {
-            var label = new Gtk.Label (rname);
-            label.margin = 6;
-            label.margin_end = 12;
-            label.margin_start = 12;
-            label.xalign = 0;
+            var label = new Gtk.Label (rname) {
+                margin_top = 6,
+                margin_end = 12,
+                margin_bottom = 6,
+                margin_start = 12,
+                xalign = 0
+            };
 
             child = label;
         }

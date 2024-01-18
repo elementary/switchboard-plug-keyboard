@@ -43,7 +43,7 @@ plug_files = files(
     'Dialogs/AddLayoutDialog.vala'
 )
 
-switchboard_dep = dependency('switchboard-2.0')
+switchboard_dep = dependency('switchboard-3')
 switchboard_plugsdir = switchboard_dep.get_pkgconfig_variable('plugsdir', define_variable: ['libdir', libdir])
 
 posix_dep = meson.get_compiler('vala').find_library('posix')
@@ -62,9 +62,9 @@ shared_module(
         dependency('glib-2.0'),
         dependency('gio-2.0'),
         dependency('gobject-2.0'),
-        dependency('granite', version: '>=6.0.0'),
-        dependency('gtk+-3.0'),
-        dependency('libhandy-1', version: '>= 0.90.0'),
+        dependency('granite-7'),
+        dependency('gtk4'),
+        dependency('libadwaita-1'),
         dependency('libxml-2.0'),
         posix_dep,
         ibus_dep,

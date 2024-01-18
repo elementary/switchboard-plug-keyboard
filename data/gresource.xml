@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/io/elementary/switchboard/keyboard">
+  <gresource prefix="/io/elementary/settings/keyboard">
     <file compressed="true">Behavior.css</file>
-    <file alias="io.elementary.switchboard.keyboard.screenshots.svg" compressed="true">screenshots.svg</file>
-    <file alias="io.elementary.switchboard.keyboard.windows.svg" compressed="true">windows.svg</file>
+    <file alias="io.elementary.settings.keyboard.screenshots.svg" compressed="true">screenshots.svg</file>
+    <file alias="io.elementary.settings.keyboard.windows.svg" compressed="true">windows.svg</file>
   </gresource>
 </gresources>

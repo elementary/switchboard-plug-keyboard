@@ -66,18 +66,19 @@ namespace Keyboard.Shortcuts {
             unowned var list = Shortcuts.ShortcutsList.get_default ();
 
             section_switcher = new Gtk.ListBox ();
-            section_switcher.add (new SwitcherRow (list.windows_group));
-            section_switcher.add (new SwitcherRow (list.workspaces_group));
-            section_switcher.add (new SwitcherRow (list.screenshot_group));
-            section_switcher.add (new SwitcherRow (list.launchers_group));
-            section_switcher.add (new SwitcherRow (list.media_group));
-            section_switcher.add (new SwitcherRow (list.a11y_group));
-            section_switcher.add (new SwitcherRow (list.system_group));
+            section_switcher.add_css_class (Granite.STYLE_CLASS_RICH_LIST);
+            section_switcher.append (new SwitcherRow (list.windows_group));
+            section_switcher.append (new SwitcherRow (list.workspaces_group));
+            section_switcher.append (new SwitcherRow (list.screenshot_group));
+            section_switcher.append (new SwitcherRow (list.launchers_group));
+            section_switcher.append (new SwitcherRow (list.media_group));
+            section_switcher.append (new SwitcherRow (list.a11y_group));
+            section_switcher.append (new SwitcherRow (list.system_group));
 
             custom_shortcuts_row = new SwitcherRow (list.custom_group);
-            section_switcher.add (custom_shortcuts_row);
+            section_switcher.append (custom_shortcuts_row);
 
-            var switcher_scrolled = new Gtk.ScrolledWindow (null, null) {
+            var switcher_scrolled = new Gtk.ScrolledWindow () {
                 child = section_switcher,
                 hscrollbar_policy = NEVER
             };
@@ -87,38 +88,38 @@ namespace Keyboard.Shortcuts {
             };
 
             var stack = new Gtk.Stack () {
-                homogeneous = false, // Prevents extra scrollbar in short lists
+                vhomogeneous = false, // Prevents extra scrollbar in short lists
                 vexpand = true
             };
 
-            var stack_scrolled = new Gtk.ScrolledWindow (null, null) {
+            var stack_scrolled = new Gtk.ScrolledWindow () {
                 child = stack
             };
 
             var add_button_label = new Gtk.Label (_("Add Shortcut"));
 
             var add_button_box = new Gtk.Box (HORIZONTAL, 0);
-            add_button_box.add (new Gtk.Image.from_icon_name ("list-add-symbolic", BUTTON));
-            add_button_box.add (add_button_label);
+            add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic"));
+            add_button_box.append (add_button_label);
 
             var add_button = new Gtk.Button () {
                 child = add_button_box,
                 margin_top = 3,
                 margin_bottom = 3
             };
-            add_button.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
 
             add_button_label.mnemonic_widget = add_button;
 
             var actionbar = new Gtk.ActionBar () {
                 hexpand = true
             };
-            actionbar.get_style_context ().add_class (Gtk.STYLE_CLASS_FLAT);
+            actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
             actionbar.pack_start (add_button);
 
             var action_box = new Gtk.Box (VERTICAL, 0);
-            action_box.add (stack_scrolled);
-            action_box.add (actionbar);
+            action_box.append (stack_scrolled);
+            action_box.append (actionbar);
 
             var frame = new Gtk.Frame (null) {
                 child = action_box
@@ -128,8 +129,8 @@ namespace Keyboard.Shortcuts {
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
-            add (switcher_frame);
-            add (frame);
+            append (switcher_frame);
+            append (frame);
 
             for (int id = 0; id < SectionID.CUSTOM; id++) {
                 shortcut_views += new ShortcutListBox ((SectionID) id);
@@ -143,7 +144,7 @@ namespace Keyboard.Shortcuts {
             }
 
             foreach (unowned Gtk.Widget view in shortcut_views) {
-                stack.add (view);
+                stack.add_child (view);
             }
 
             section_switcher.row_selected.connect ((row) => {
@@ -171,17 +172,17 @@ namespace Keyboard.Shortcuts {
             }
 
             construct {
-                var icon = new Gtk.Image.from_icon_name (group.icon_name, Gtk.IconSize.DND);
+                var icon = new Gtk.Image.from_icon_name (group.icon_name) {
+                    icon_size = LARGE
+                };
 
                 var label = new Gtk.Label (group.label) {
                     xalign = 0
                 };
 
-                var box = new Gtk.Box (HORIZONTAL, 6) {
-                    margin = 6
-                };
-                box.add (icon);
-                box.add (label);
+                var box = new Gtk.Box (HORIZONTAL, 6);
+                box.append (icon);
+                box.append (label);
 
                 child = box;
             }

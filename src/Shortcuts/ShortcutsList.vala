@@ -48,7 +48,7 @@ namespace Keyboard.Shortcuts {
 
         construct {
             windows_group = {};
-            windows_group.icon_name = "io.elementary.switchboard.keyboard.windows";
+            windows_group.icon_name = "io.elementary.settings.keyboard.windows";
             windows_group.label = _("Windows");
             add_action (ref windows_group, Schema.WM, _("Close"), "close");
             add_action (ref windows_group, Schema.WM, _("Lower"), "lower");
@@ -105,7 +105,7 @@ namespace Keyboard.Shortcuts {
             add_action (ref workspaces_group, Schema.WM, _("Move to right workspace"), "move-to-workspace-right");
 
             screenshot_group = {};
-            screenshot_group.icon_name = "io.elementary.switchboard.keyboard.screenshots";
+            screenshot_group.icon_name = "io.elementary.settings.keyboard.screenshots";
             screenshot_group.label = _("Screenshots");
             add_action (ref screenshot_group, Schema.GALA, _("Grab the whole screen"), "screenshot");
             add_action (ref screenshot_group, Schema.GALA, _("Copy the whole screen to clipboard"), "screenshot-clip");
