@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 19:02+0000\n"
-"PO-Revision-Date: 2023-09-09 09:08+0000\n"
+"PO-Revision-Date: 2024-01-19 16:35+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:32+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -558,7 +558,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
@@ -631,16 +631,12 @@ msgid "IBus Daemon is not running"
 msgstr "Daemon IBus nie jest uruchomiony"
 
 #: src/Views/InputMethod.vala:51
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"Musisz uruchomić daemona IBus, aby włączyć lub skonfigurować silniki metod "
-"wprowadzania."
+"Daemon IBus musi być uruchomiony w tle aby włączyć lub skonfigurować silniki "
+"metod wprowadzania."
 
 #: src/Views/InputMethod.vala:60
 msgid "Start IBus Daemon"
@@ -648,7 +644,7 @@ msgstr "Włącz daemona IBus"
 
 #: src/Views/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Może być zarządzane w Ustawienia Systemu → Aplikacje → Uruchamianie"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:67
