@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 19:02+0000\n"
-"PO-Revision-Date: 2023-08-31 14:08+0000\n"
+"PO-Revision-Date: 2024-01-19 16:35+0000\n"
 "Last-Translator: lenemter <lenemter@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ru/>\n"
@@ -16,9 +16,9 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.17\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -558,7 +558,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
@@ -631,15 +631,12 @@ msgid "IBus Daemon is not running"
 msgstr "IBus Daemon не запущен"
 
 #: src/Views/InputMethod.vala:51
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"Вам нужно запустить сервис IBus, чтобы включить или настроить методы ввода."
+"Сервис IBus должен работать в фоновом режиме, чтобы включить или настроить "
+"методы ввода."
 
 #: src/Views/InputMethod.vala:60
 msgid "Start IBus Daemon"
