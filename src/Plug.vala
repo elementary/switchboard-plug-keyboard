@@ -51,10 +51,10 @@ public class Keyboard.Plug : Switchboard.Plug {
             Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/settings/keyboard");
 
             stack = new Gtk.Stack ();
+            stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
+            stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
-            stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
-            stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
                 halign = CENTER,
