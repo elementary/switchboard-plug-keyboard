@@ -33,6 +33,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
     private Gtk.Entry entry_test;
+    private Gtk.ComboBoxText keyboard_shortcut_combobox;
 
     construct {
         settings = SourceSettings.get_instance ();
@@ -132,13 +133,18 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             halign = Gtk.Align.END
         };
 
-        var keyboard_shortcut_combobox = new Gtk.ComboBoxText () {
+        keyboard_shortcut_combobox = new Gtk.ComboBoxText () {
             halign = Gtk.Align.START
         };
+
+        keyboard_shortcut_combobox.append ("disabled", _("Disabled"));
         keyboard_shortcut_combobox.append ("alt-space", Granite.accel_to_string ("<Alt>space"));
         keyboard_shortcut_combobox.append ("ctl-space", Granite.accel_to_string ("<Control>space"));
         keyboard_shortcut_combobox.append ("shift-space", Granite.accel_to_string ("<Shift>space"));
-        keyboard_shortcut_combobox.active_id = get_keyboard_shortcut ();
+
+        keyboard_shortcut_combobox.notify["active-id"].connect (() => {
+            set_keyboard_shortcut (keyboard_shortcut_combobox.active_id);
+        });
 
         var show_ibus_panel_label = new Gtk.Label (_("Show property panel:")) {
             halign = Gtk.Align.END
@@ -235,10 +241,6 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             settings.active_index = 0; // Not obvious what to do when  currently active input source is removed
         });
 
-        keyboard_shortcut_combobox.changed.connect (() => {
-            set_keyboard_shortcut (keyboard_shortcut_combobox.active_id);
-        });
-
         ibus_panel_settings.bind ("show", show_ibus_panel_combobox, "active", SettingsBindFlags.DEFAULT);
         Keyboard.Plug.ibus_general_settings.bind ("embed-preedit-text", embed_preedit_text_switch, "active", SettingsBindFlags.DEFAULT);
 
@@ -250,44 +252,49 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         update_list_box_selected_row ();
     }
 
-    private string get_keyboard_shortcut () {
+    private string get_keyboard_shortcut_id () {
         // TODO: Support getting multiple shortcut keys like ibus-setup does
         string[] keyboard_shortcuts = Keyboard.Plug.ibus_general_settings.get_child ("hotkey").get_strv ("triggers");
 
-        string keyboard_shortcut = "";
+        string keyboard_shortcut_id = "";
         foreach (var ks in keyboard_shortcuts) {
             switch (ks) {
                 case "<Alt>space":
-                    keyboard_shortcut = "alt-space";
+                    keyboard_shortcut_id = "alt-space";
                     break;
                 case "<Shift>space":
-                    keyboard_shortcut = "shift-space";
+                    keyboard_shortcut_id = "shift-space";
                     break;
                 case "<Control>space":
-                    keyboard_shortcut = "ctl-space";
+                    keyboard_shortcut_id = "ctl-space";
                     break;
                 default:
                     break;
             }
         }
 
-        return keyboard_shortcut;
+        return keyboard_shortcut_id;
     }
 
     private void set_keyboard_shortcut (string combobox_id) {
         // TODO: Support setting multiple shortcut keys like ibus-setup does
         string[] keyboard_shortcuts = {};
-
-        switch (combobox_id) {
-            case "alt-space":
-                keyboard_shortcuts += "<Alt>space";
-                break;
-            case "shift-space":
-                keyboard_shortcuts += "<Shift>space";
-                break;
-            default:
-                keyboard_shortcuts += "<Control>space";
-                break;
+        if (combobox_id != null) {
+            switch (combobox_id) {
+                case "alt-space":
+                    keyboard_shortcuts += "<Alt>space";
+                    break;
+                case "shift-space":
+                    keyboard_shortcuts += "<Shift>space";
+                    break;
+                case "control-space":
+                    keyboard_shortcuts += "<Control>space";
+                    break;
+                case "disabled":
+                    break;
+                default:
+                    assert_not_reached ();
+            }
         }
 
         Keyboard.Plug.ibus_general_settings.get_child ("hotkey").set_strv ("triggers", keyboard_shortcuts);
@@ -334,6 +341,8 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         if (stack.visible_child_name == "main_view") {
             write_ibus_autostart_file (listbox.get_row_at_index (0) != null);
         }
+
+        update_keyboard_shortcut_combo ();
     }
 
     private void spawn_ibus_daemon () {
@@ -482,5 +491,15 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         }
 
         remove_button.sensitive = listbox.get_selected_row () != null;
+    }
+
+    private void update_keyboard_shortcut_combo () {
+        if (settings.active_engines.length < 2) {
+            keyboard_shortcut_combobox.sensitive = false;
+            keyboard_shortcut_combobox.active_id = "disabled";
+        } else {
+            keyboard_shortcut_combobox.sensitive = true;
+            keyboard_shortcut_combobox.active_id = get_keyboard_shortcut_id ();
+        }
     }
 }
