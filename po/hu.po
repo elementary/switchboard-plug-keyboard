@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 19:02+0000\n"
-"PO-Revision-Date: 2023-09-26 22:08+0000\n"
+"PO-Revision-Date: 2024-01-25 21:26+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -560,7 +560,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
@@ -633,16 +633,12 @@ msgid "IBus Daemon is not running"
 msgstr "Az IBus Daemon nem fut"
 
 #: src/Views/InputMethod.vala:51
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"Az IBus daemonnak futnia kell a beviteli mód motorjainak engedélyezéséhez és "
-"beállításához."
+"Az IBus daemonnak futnia kell a háttérben a beviteli mód motorjainak "
+"engedélyezéséhez és beállításához."
 
 #: src/Views/InputMethod.vala:60
 msgid "Start IBus Daemon"
@@ -651,6 +647,7 @@ msgstr "IBus Daemon indítása"
 #: src/Views/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
 msgstr ""
+"Beállítható a Rendszerbeállítások → Alkalmazások → Automatikusan induló fülön"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:67

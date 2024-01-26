@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 19:02+0000\n"
-"PO-Revision-Date: 2023-03-12 15:25+0000\n"
+"PO-Revision-Date: 2024-01-24 03:33+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -29,7 +29,7 @@ msgstr "მოირგეთ კლავიატურის ქცევა,
 
 #: data/keyboard.metainfo.xml.in:36
 msgid "elementary, Inc."
-msgstr ""
+msgstr "elementary, Inc."
 
 #: data/keyboard.metainfo.xml.in:43 data/keyboard.metainfo.xml.in:59
 #: data/keyboard.metainfo.xml.in:75 data/keyboard.metainfo.xml.in:93
@@ -39,17 +39,19 @@ msgstr "უმნიშვნელო განახლებები:"
 
 #: data/keyboard.metainfo.xml.in:45
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "პოტენციური ავარიების გასწორება"
 
 #: data/keyboard.metainfo.xml.in:46
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
 msgstr ""
+"\"აპლიკაციის ფანჯრებს შორის გადართვისა\" და \"აპლიკაციის ფანჯრებს შორის უკან "
+"გადართვის\" მალსახმობების დამატება"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "შეყვანის მეთოდების დაყენების გაუმჯობესება"
 
 #: data/keyboard.metainfo.xml.in:48 data/keyboard.metainfo.xml.in:62
 #: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:96
@@ -59,7 +61,7 @@ msgstr "განახლებული თარგმანები"
 
 #: data/keyboard.metainfo.xml.in:61
 msgid "Show the values associated with sliders while dragging"
-msgstr ""
+msgstr "გადათრევისას ჩოჩიების მნიშვნელობების ჩვენება"
 
 #: data/keyboard.metainfo.xml.in:87 data/keyboard.metainfo.xml.in:113
 msgid "New features:"
