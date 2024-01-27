@@ -29,6 +29,7 @@ namespace Keyboard.Shortcuts {
         MEDIA,
         A11Y,
         SYSTEM,
+        KEYBOARD_LAYOUTS,
         CUSTOM,
         COUNT;
 
@@ -74,6 +75,7 @@ namespace Keyboard.Shortcuts {
             section_switcher.append (new SwitcherRow (list.media_group));
             section_switcher.append (new SwitcherRow (list.a11y_group));
             section_switcher.append (new SwitcherRow (list.system_group));
+            section_switcher.append (new SwitcherRow (list.keyboard_layouts_group));
 
             custom_shortcuts_row = new SwitcherRow (list.custom_group);
             section_switcher.append (custom_shortcuts_row);
