@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-18 19:02+0000\n"
-"PO-Revision-Date: 2024-01-23 11:11+0000\n"
+"PO-Revision-Date: 2024-01-28 00:53+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/uk/>\n"
@@ -631,15 +631,12 @@ msgid "IBus Daemon is not running"
 msgstr "IBus Daemon не запущено"
 
 #: src/Views/InputMethod.vala:51
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"Запустіть демон IBus, щоб увімкнути або налаштувати рушії методів введення."
+"Фонова служба IBus має працювати у фоновому режимі, щоб увімкнути або "
+"сконфігурувати механізми методів вводу."
 
 #: src/Views/InputMethod.vala:60
 msgid "Start IBus Daemon"
@@ -647,7 +644,7 @@ msgstr "Запустити IBus Daemon"
 
 #: src/Views/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Керування в Системні налаштування → Застосунки → Запуск"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:67
