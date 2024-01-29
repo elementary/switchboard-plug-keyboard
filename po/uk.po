@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-18 19:02+0000\n"
+"POT-Creation-Date: 2024-01-29 17:21+0000\n"
 "PO-Revision-Date: 2024-01-28 00:53+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
@@ -184,359 +184,384 @@ msgstr "Повільні клавіші"
 msgid "Sticky Keys"
 msgstr "Залипання клавіш"
 
-#: src/Shortcuts/ShortcutsList.vala:52 src/Views/Shortcuts.vala:38
+#: src/Shortcuts/ShortcutsList.vala:53 src/Views/Shortcuts.vala:39
 msgid "Windows"
 msgstr "Вікна"
 
-#: src/Shortcuts/ShortcutsList.vala:53
+#: src/Shortcuts/ShortcutsList.vala:54
 msgid "Close"
 msgstr "Закрити"
 
-#: src/Shortcuts/ShortcutsList.vala:54
+#: src/Shortcuts/ShortcutsList.vala:55
 msgid "Lower"
 msgstr "Понизити"
 
-#: src/Shortcuts/ShortcutsList.vala:55
+#: src/Shortcuts/ShortcutsList.vala:56
 msgid "Maximize"
 msgstr "Розгорнути"
 
-#: src/Shortcuts/ShortcutsList.vala:56
+#: src/Shortcuts/ShortcutsList.vala:57
 msgid "Unmaximize"
 msgstr "Відновити розмір"
 
-#: src/Shortcuts/ShortcutsList.vala:57
+#: src/Shortcuts/ShortcutsList.vala:58
 msgid "Toggle Maximized"
 msgstr "Перемикання розгортання"
 
-#: src/Shortcuts/ShortcutsList.vala:58
+#: src/Shortcuts/ShortcutsList.vala:59
 msgid "Hide"
 msgstr "Сховати"
 
-#: src/Shortcuts/ShortcutsList.vala:59
+#: src/Shortcuts/ShortcutsList.vala:60
 msgid "Toggle Fullscreen"
 msgstr "Перемикання повноекранного режиму"
 
-#: src/Shortcuts/ShortcutsList.vala:60
+#: src/Shortcuts/ShortcutsList.vala:61
 msgid "Toggle on all Workspaces"
 msgstr "Перемикання між усіма робочими просторами"
 
-#: src/Shortcuts/ShortcutsList.vala:61
+#: src/Shortcuts/ShortcutsList.vala:62
 msgid "Toggle always on Top"
 msgstr "Перемикати завжди зверху"
 
-#: src/Shortcuts/ShortcutsList.vala:62
+#: src/Shortcuts/ShortcutsList.vala:63
 msgid "Cycle Windows"
 msgstr "Перемикання між вікнами"
 
-#: src/Shortcuts/ShortcutsList.vala:63
+#: src/Shortcuts/ShortcutsList.vala:64
 msgid "Cycle Windows backwards"
 msgstr "Перемикання між вікнами у зворотному порядку"
 
-#: src/Shortcuts/ShortcutsList.vala:64
+#: src/Shortcuts/ShortcutsList.vala:65
 msgid "Cycle Windows of application"
 msgstr "Перемикання між вікнами застосунку"
 
-#: src/Shortcuts/ShortcutsList.vala:65
+#: src/Shortcuts/ShortcutsList.vala:66
 msgid "Cycle Windows of application backwards"
 msgstr "Перемикання між вікнами застосунку у зворотному порядку"
 
-#: src/Shortcuts/ShortcutsList.vala:66
+#: src/Shortcuts/ShortcutsList.vala:67
 msgid "Tile Left"
 msgstr "До лівого краю"
 
-#: src/Shortcuts/ShortcutsList.vala:67
+#: src/Shortcuts/ShortcutsList.vala:68
 msgid "Tile Right"
 msgstr "До правого краю"
 
-#: src/Shortcuts/ShortcutsList.vala:68
+#: src/Shortcuts/ShortcutsList.vala:69
 msgid "Window Overview"
 msgstr "Огляд вікон"
 
-#: src/Shortcuts/ShortcutsList.vala:69
+#: src/Shortcuts/ShortcutsList.vala:70
 msgid "Show All Windows"
 msgstr "Показати всі вікна"
 
-#: src/Shortcuts/ShortcutsList.vala:70
+#: src/Shortcuts/ShortcutsList.vala:71
 msgid "Picture in Picture Mode"
 msgstr "Зображення в зображенні"
 
-#: src/Shortcuts/ShortcutsList.vala:71
+#: src/Shortcuts/ShortcutsList.vala:72
 msgid "Move to display above"
 msgstr "Перемістити на дисплей вище"
 
-#: src/Shortcuts/ShortcutsList.vala:72
+#: src/Shortcuts/ShortcutsList.vala:73
 msgid "Move to display below"
 msgstr "Перемістити на дисплей нижче"
 
-#: src/Shortcuts/ShortcutsList.vala:73
+#: src/Shortcuts/ShortcutsList.vala:74
 msgid "Move to right display"
 msgstr "Перемістити на дисплей праворуч"
 
-#: src/Shortcuts/ShortcutsList.vala:74
+#: src/Shortcuts/ShortcutsList.vala:75
 msgid "Move to left display"
 msgstr "Перемістити на дисплей ліворуч"
 
-#: src/Shortcuts/ShortcutsList.vala:78 src/Views/Shortcuts.vala:40
+#: src/Shortcuts/ShortcutsList.vala:79 src/Views/Shortcuts.vala:41
 msgid "Workspaces"
 msgstr "Робочі простори"
 
-#: src/Shortcuts/ShortcutsList.vala:79 src/Views/Layout.vala:75
+#: src/Shortcuts/ShortcutsList.vala:80 src/Views/Layout.vala:75
 msgid "Multitasking View"
 msgstr "Багатозадачний вигляд"
 
-#: src/Shortcuts/ShortcutsList.vala:80
+#: src/Shortcuts/ShortcutsList.vala:81
 msgid "Switch left"
 msgstr "Перейти ліворуч"
 
-#: src/Shortcuts/ShortcutsList.vala:81
+#: src/Shortcuts/ShortcutsList.vala:82
 msgid "Switch right"
 msgstr "Перейти праворуч"
 
-#: src/Shortcuts/ShortcutsList.vala:82
+#: src/Shortcuts/ShortcutsList.vala:83
 msgid "Switch to first"
 msgstr "Перейти до першого"
 
-#: src/Shortcuts/ShortcutsList.vala:83
+#: src/Shortcuts/ShortcutsList.vala:84
 msgid "Switch to new"
 msgstr "Перейти до нового"
 
-#: src/Shortcuts/ShortcutsList.vala:84
+#: src/Shortcuts/ShortcutsList.vala:85
 msgid "Switch to workspace 1"
 msgstr "Перейти до робочого простору 1"
 
-#: src/Shortcuts/ShortcutsList.vala:85
+#: src/Shortcuts/ShortcutsList.vala:86
 msgid "Switch to workspace 2"
 msgstr "Перейти до робочого простору 2"
 
-#: src/Shortcuts/ShortcutsList.vala:86
+#: src/Shortcuts/ShortcutsList.vala:87
 msgid "Switch to workspace 3"
 msgstr "Перейти до робочого простору 3"
 
-#: src/Shortcuts/ShortcutsList.vala:87
+#: src/Shortcuts/ShortcutsList.vala:88
 msgid "Switch to workspace 4"
 msgstr "Перейти до робочого простору 4"
 
-#: src/Shortcuts/ShortcutsList.vala:88
+#: src/Shortcuts/ShortcutsList.vala:89
 msgid "Switch to workspace 5"
 msgstr "Перейти до робочого простору 5"
 
-#: src/Shortcuts/ShortcutsList.vala:89
+#: src/Shortcuts/ShortcutsList.vala:90
 msgid "Switch to workspace 6"
 msgstr "Перейти до робочого простору 6"
 
-#: src/Shortcuts/ShortcutsList.vala:90
+#: src/Shortcuts/ShortcutsList.vala:91
 msgid "Switch to workspace 7"
 msgstr "Перейти до робочого простору 7"
 
-#: src/Shortcuts/ShortcutsList.vala:91
+#: src/Shortcuts/ShortcutsList.vala:92
 msgid "Switch to workspace 8"
 msgstr "Перейти до робочого простору 8"
 
-#: src/Shortcuts/ShortcutsList.vala:92
+#: src/Shortcuts/ShortcutsList.vala:93
 msgid "Switch to workspace 9"
 msgstr "Перейти до робочого простору 9"
 
-#: src/Shortcuts/ShortcutsList.vala:93
+#: src/Shortcuts/ShortcutsList.vala:94
 msgid "Cycle workspaces"
 msgstr "Перемкнути робочі простори"
 
-#: src/Shortcuts/ShortcutsList.vala:94
+#: src/Shortcuts/ShortcutsList.vala:95
 msgid "Cycle workspaces backwards"
 msgstr "Перемкнути робочі простори в зворотному порядку"
 
-#: src/Shortcuts/ShortcutsList.vala:95
+#: src/Shortcuts/ShortcutsList.vala:96
 msgid "Move to workspace 1"
 msgstr "Перемістити до робочого простору 1"
 
-#: src/Shortcuts/ShortcutsList.vala:96
+#: src/Shortcuts/ShortcutsList.vala:97
 msgid "Move to workspace 2"
 msgstr "Перемістити до робочого простору 2"
 
-#: src/Shortcuts/ShortcutsList.vala:97
+#: src/Shortcuts/ShortcutsList.vala:98
 msgid "Move to workspace 3"
 msgstr "Перемістити до робочого простору 3"
 
-#: src/Shortcuts/ShortcutsList.vala:98
+#: src/Shortcuts/ShortcutsList.vala:99
 msgid "Move to workspace 4"
 msgstr "Перемістити до робочого простору 4"
 
-#: src/Shortcuts/ShortcutsList.vala:99
+#: src/Shortcuts/ShortcutsList.vala:100
 msgid "Move to workspace 5"
 msgstr "Перемістити до робочого простору 5"
 
-#: src/Shortcuts/ShortcutsList.vala:100
+#: src/Shortcuts/ShortcutsList.vala:101
 msgid "Move to workspace 6"
 msgstr "Перемістити до робочого простору 6"
 
-#: src/Shortcuts/ShortcutsList.vala:101
+#: src/Shortcuts/ShortcutsList.vala:102
 msgid "Move to workspace 7"
 msgstr "Перемістити до робочого простору 7"
 
-#: src/Shortcuts/ShortcutsList.vala:102
+#: src/Shortcuts/ShortcutsList.vala:103
 msgid "Move to workspace 8"
 msgstr "Перемістити до робочого простору 8"
 
-#: src/Shortcuts/ShortcutsList.vala:103
+#: src/Shortcuts/ShortcutsList.vala:104
 msgid "Move to workspace 9"
 msgstr "Перемістити до робочого простору 9"
 
-#: src/Shortcuts/ShortcutsList.vala:104
+#: src/Shortcuts/ShortcutsList.vala:105
 msgid "Move to left workspace"
 msgstr "Перемістити до робочого простору ліворуч"
 
-#: src/Shortcuts/ShortcutsList.vala:105
+#: src/Shortcuts/ShortcutsList.vala:106
 msgid "Move to right workspace"
 msgstr "Перемістити до робочого простору праворуч"
 
-#: src/Shortcuts/ShortcutsList.vala:109 src/Views/Shortcuts.vala:42
+#: src/Shortcuts/ShortcutsList.vala:110 src/Views/Shortcuts.vala:43
 msgid "Screenshots"
 msgstr "Знімки екрана"
 
-#: src/Shortcuts/ShortcutsList.vala:110
+#: src/Shortcuts/ShortcutsList.vala:111
 msgid "Grab the whole screen"
 msgstr "Захопити весь екран"
 
-#: src/Shortcuts/ShortcutsList.vala:111
+#: src/Shortcuts/ShortcutsList.vala:112
 msgid "Copy the whole screen to clipboard"
 msgstr "Копіювати знімок усього екрана до буфера обміну"
 
-#: src/Shortcuts/ShortcutsList.vala:112
+#: src/Shortcuts/ShortcutsList.vala:113
 msgid "Grab the current window"
 msgstr "Захопити поточне вікно"
 
-#: src/Shortcuts/ShortcutsList.vala:113
+#: src/Shortcuts/ShortcutsList.vala:114
 msgid "Copy the current window to clipboard"
 msgstr "Копіювати поточне вікно до буфера обміну"
 
-#: src/Shortcuts/ShortcutsList.vala:114
+#: src/Shortcuts/ShortcutsList.vala:115
 msgid "Select an area to grab"
 msgstr "Вибрати ділянку"
 
-#: src/Shortcuts/ShortcutsList.vala:115
+#: src/Shortcuts/ShortcutsList.vala:116
 msgid "Copy an area to clipboard"
 msgstr "Копіювати ділянку до буфера обміну"
 
-#: src/Shortcuts/ShortcutsList.vala:119 src/Views/Shortcuts.vala:44
+#: src/Shortcuts/ShortcutsList.vala:120 src/Views/Shortcuts.vala:45
 msgid "Applications"
 msgstr "Застосунки"
 
-#: src/Shortcuts/ShortcutsList.vala:120
+#: src/Shortcuts/ShortcutsList.vala:121
 msgid "Email"
 msgstr "Електронна пошта"
 
-#: src/Shortcuts/ShortcutsList.vala:121
+#: src/Shortcuts/ShortcutsList.vala:122
 msgid "Home Folder"
 msgstr "Домівка"
 
-#: src/Shortcuts/ShortcutsList.vala:122
+#: src/Shortcuts/ShortcutsList.vala:123
 msgid "Music"
 msgstr "Музика"
 
-#: src/Shortcuts/ShortcutsList.vala:123
+#: src/Shortcuts/ShortcutsList.vala:124
 msgid "Terminal"
 msgstr "Термінал"
 
-#: src/Shortcuts/ShortcutsList.vala:124
+#: src/Shortcuts/ShortcutsList.vala:125
 msgid "Internet Browser"
 msgstr "Інтернет-переглядач"
 
-#: src/Shortcuts/ShortcutsList.vala:128 src/Views/Shortcuts.vala:46
+#: src/Shortcuts/ShortcutsList.vala:129 src/Views/Shortcuts.vala:47
 msgid "Media"
 msgstr "Медіа"
 
-#: src/Shortcuts/ShortcutsList.vala:129
+#: src/Shortcuts/ShortcutsList.vala:130
 msgid "Volume Up"
 msgstr "Збільшити гучність"
 
-#: src/Shortcuts/ShortcutsList.vala:130
+#: src/Shortcuts/ShortcutsList.vala:131
 msgid "Volume Down"
 msgstr "Зменшити гучність"
 
-#: src/Shortcuts/ShortcutsList.vala:131
+#: src/Shortcuts/ShortcutsList.vala:132
 msgid "Mute"
 msgstr "Вимкнути звук"
 
-#: src/Shortcuts/ShortcutsList.vala:132
+#: src/Shortcuts/ShortcutsList.vala:133
 msgid "Play/Pause"
 msgstr "Зупинити/відтворити"
 
-#: src/Shortcuts/ShortcutsList.vala:133
+#: src/Shortcuts/ShortcutsList.vala:134
 msgid "Pause"
 msgstr "Зупинити"
 
-#: src/Shortcuts/ShortcutsList.vala:134
+#: src/Shortcuts/ShortcutsList.vala:135
 msgid "Stop"
 msgstr "Стоп"
 
-#: src/Shortcuts/ShortcutsList.vala:135
+#: src/Shortcuts/ShortcutsList.vala:136
 msgid "Previous Track"
 msgstr "Попередня доріжка"
 
-#: src/Shortcuts/ShortcutsList.vala:136
+#: src/Shortcuts/ShortcutsList.vala:137
 msgid "Next Track"
 msgstr "Наступна доріжка"
 
-#: src/Shortcuts/ShortcutsList.vala:137
+#: src/Shortcuts/ShortcutsList.vala:138
 msgid "Eject"
 msgstr "Витягнути"
 
-#: src/Shortcuts/ShortcutsList.vala:141
+#: src/Shortcuts/ShortcutsList.vala:142
 msgid "Universal Access"
 msgstr "Універсальний доступ"
 
-#: src/Shortcuts/ShortcutsList.vala:142
+#: src/Shortcuts/ShortcutsList.vala:143
 msgid "Decrease Text Size"
 msgstr "Зменшити розмір тексту"
 
-#: src/Shortcuts/ShortcutsList.vala:143
+#: src/Shortcuts/ShortcutsList.vala:144
 msgid "Increase Text Size"
 msgstr "Збільшити розмір тексту"
 
-#: src/Shortcuts/ShortcutsList.vala:144
+#: src/Shortcuts/ShortcutsList.vala:145
 msgid "Magnifier Zoom in"
 msgstr "Збільшити масштаб"
 
-#: src/Shortcuts/ShortcutsList.vala:145
+#: src/Shortcuts/ShortcutsList.vala:146
 msgid "Magnifier Zoom out"
 msgstr "Зменшити масштаб"
 
-#: src/Shortcuts/ShortcutsList.vala:146
+#: src/Shortcuts/ShortcutsList.vala:147
 msgid "Toggle On Screen Keyboard"
 msgstr "Перемикання екранної клавіатури"
 
-#: src/Shortcuts/ShortcutsList.vala:147
+#: src/Shortcuts/ShortcutsList.vala:148
 msgid "Toggle Screenreader"
 msgstr "Перемикання зчитувача екрана"
 
-#: src/Shortcuts/ShortcutsList.vala:151 src/Views/Shortcuts.vala:50
+#: src/Shortcuts/ShortcutsList.vala:152 src/Views/Shortcuts.vala:51
 msgid "System"
 msgstr "Система"
 
-#: src/Shortcuts/ShortcutsList.vala:152 src/Views/Layout.vala:74
+#: src/Shortcuts/ShortcutsList.vala:153 src/Views/Layout.vala:74
 msgid "Applications Menu"
 msgstr "Меню застосунків"
 
-#: src/Shortcuts/ShortcutsList.vala:153
+#: src/Shortcuts/ShortcutsList.vala:154
 msgid "Lock"
 msgstr "Заблокувати"
 
-#: src/Shortcuts/ShortcutsList.vala:154
+#: src/Shortcuts/ShortcutsList.vala:155
 msgid "Log Out"
 msgstr "Вийти"
 
-#: src/Shortcuts/ShortcutsList.vala:155
+#: src/Shortcuts/ShortcutsList.vala:156
 msgid "Cycle display mode"
 msgstr "Перемикання між режимами вигляду"
 
-#: src/Shortcuts/ShortcutsList.vala:159 src/Views/Shortcuts.vala:52
+#: src/Shortcuts/ShortcutsList.vala:160
+#, fuzzy
+#| msgid "Add Keyboard Layout…"
+msgid "Keyboard Layouts"
+msgstr "Додати розкладку клавіатури…"
+
+#: src/Shortcuts/ShortcutsList.vala:161
+#, fuzzy
+#| msgid "Add Keyboard Layout…"
+msgid "Switch Keyboard Layout"
+msgstr "Додати розкладку клавіатури…"
+
+#: src/Shortcuts/ShortcutsList.vala:162
+msgid "Switch Keyboard Layout Backwards"
+msgstr ""
+
+#: src/Shortcuts/ShortcutsList.vala:163
+msgid "Enable Emoji Typing"
+msgstr ""
+
+#: src/Shortcuts/ShortcutsList.vala:164
+msgid "Enable Unicode Typing"
+msgstr ""
+
+#: src/Shortcuts/ShortcutsList.vala:168 src/Views/Shortcuts.vala:53
 msgid "Custom"
 msgstr "Власні"
 
 #. tree view to display the current layouts
 #. Layout switching keybinding
 #. Compose key position menu
-#: src/Shortcuts/Shortcut.vala:55 src/Views/Layout.vala:30
-#: src/Views/Layout.vala:52 src/Views/Layout.vala:73 src/Views/Layout.vala:92
+#: src/Shortcuts/Shortcut.vala:55 src/Views/InputMethod.vala:140
+#: src/Views/Layout.vala:30 src/Views/Layout.vala:52 src/Views/Layout.vala:73
+#: src/Views/Layout.vala:92
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:100
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:401
 #: src/Widgets/Shortcuts/ShortcutListBox.vala:86
@@ -626,11 +651,11 @@ msgid "Type to test your settings"
 msgstr "Друкуйте для перевірки налаштувань"
 
 #. no_daemon_runnning view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:50
+#: src/Views/InputMethod.vala:51
 msgid "IBus Daemon is not running"
 msgstr "IBus Daemon не запущено"
 
-#: src/Views/InputMethod.vala:51
+#: src/Views/InputMethod.vala:52
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
@@ -638,65 +663,65 @@ msgstr ""
 "Фонова служба IBus має працювати у фоновому режимі, щоб увімкнути або "
 "сконфігурувати механізми методів вводу."
 
-#: src/Views/InputMethod.vala:60
+#: src/Views/InputMethod.vala:61
 msgid "Start IBus Daemon"
 msgstr "Запустити IBus Daemon"
 
-#: src/Views/InputMethod.vala:61
+#: src/Views/InputMethod.vala:62
 msgid "Can be managed in System Settings → Applications → Startup"
 msgstr "Керування в Системні налаштування → Застосунки → Запуск"
 
 #. spawn_failed view shown if IBus Daemon is not running
-#: src/Views/InputMethod.vala:67
+#: src/Views/InputMethod.vala:68
 msgid "Could not start the IBus daemon"
 msgstr "Не вдалося запустити демон IBus"
 
-#: src/Views/InputMethod.vala:111
+#: src/Views/InputMethod.vala:112
 msgid "Add…"
 msgstr "Додати…"
 
-#: src/Views/InputMethod.vala:115 src/Widgets/Layout/Display.vala:192
+#: src/Views/InputMethod.vala:116 src/Widgets/Layout/Display.vala:192
 #: src/Widgets/Shortcuts/CustomShortcutListBox.vala:141
 msgid "Remove"
 msgstr "Вилучити"
 
-#: src/Views/InputMethod.vala:131
+#: src/Views/InputMethod.vala:132
 msgid "Switch engines:"
 msgstr "Перемкнути рушії:"
 
-#: src/Views/InputMethod.vala:143
+#: src/Views/InputMethod.vala:149
 msgid "Show property panel:"
 msgstr "Показати панель властивостей:"
 
-#: src/Views/InputMethod.vala:150
+#: src/Views/InputMethod.vala:156
 msgid "Do not show"
 msgstr "Не показувати"
 
-#: src/Views/InputMethod.vala:151
+#: src/Views/InputMethod.vala:157
 msgid "Auto hide"
 msgstr "Автоприховування"
 
-#: src/Views/InputMethod.vala:152
+#: src/Views/InputMethod.vala:158
 msgid "Always show"
 msgstr "Завжди показувати"
 
-#: src/Views/InputMethod.vala:154
+#: src/Views/InputMethod.vala:160
 msgid "Embed preedit text in application window:"
 msgstr "Вставити попередньо змінений текст у вікно застосунку:"
 
-#: src/Views/InputMethod.vala:382
+#: src/Views/InputMethod.vala:391
 msgid "IBus Daemon"
 msgstr "IBus Daemon"
 
-#: src/Views/InputMethod.vala:385
+#: src/Views/InputMethod.vala:394
 msgid "Use and manage input methods"
 msgstr "Використовуйте та керуйте методами введення"
 
-#: src/Views/InputMethod.vala:448
+#: src/Views/InputMethod.vala:457
 msgid "Type to test your input method"
 msgstr "Введіть щось для перевірки методу введення"
 
-#: src/Views/InputMethod.vala:451
+#: src/Views/InputMethod.vala:460
 msgid "A keyboard layout is active"
 msgstr "Розкладка клавіатури активна"
 
@@ -832,11 +857,11 @@ msgstr "Друкуйте для перевірки розкладки"
 msgid "Input Method is active"
 msgstr "Метод введення активний"
 
-#: src/Views/Shortcuts.vala:48
+#: src/Views/Shortcuts.vala:49
 msgid "Accessibility"
 msgstr "Доступність"
 
-#: src/Views/Shortcuts.vala:99
+#: src/Views/Shortcuts.vala:101
 msgid "Add Shortcut"
 msgstr "Додати комбінацію клавіш"
 
