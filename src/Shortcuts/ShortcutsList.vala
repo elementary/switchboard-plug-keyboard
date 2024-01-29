@@ -35,6 +35,7 @@ namespace Keyboard.Shortcuts {
         public Group media_group;
         public Group a11y_group;
         public Group system_group;
+        public Group keyboard_layouts_group;
         public Group custom_group;
 
         private static GLib.Once<ShortcutsList> instance;
@@ -154,6 +155,14 @@ namespace Keyboard.Shortcuts {
             add_action (ref system_group, Schema.MEDIA, _("Log Out"), "logout");
             add_action (ref system_group, Schema.MUTTER, _("Cycle display mode"), "switch-monitor");
 
+            keyboard_layouts_group = {};
+            keyboard_layouts_group.icon_name = "preferences-desktop-locale";
+            keyboard_layouts_group.label = _("Keyboard Layouts");
+            add_action (ref keyboard_layouts_group, Schema.GALA, _("Switch Keyboard Layout"), "switch-input-source");
+            add_action (ref keyboard_layouts_group, Schema.GALA, _("Switch Keyboard Layout Backwards"), "switch-input-source-backward");
+            add_action (ref keyboard_layouts_group, Schema.IBUS, _("Enable Emoji Typing"), "hotkey");
+            add_action (ref keyboard_layouts_group, Schema.IBUS, _("Enable Unicode Typing"), "unicode-hotkey");
+
             custom_group = {};
             custom_group.icon_name = "applications-other";
             custom_group.label = _("Custom");
@@ -165,7 +174,8 @@ namespace Keyboard.Shortcuts {
                 launchers_group,
                 media_group,
                 a11y_group,
-                system_group
+                system_group,
+                keyboard_layouts_group
             };
         }
 
