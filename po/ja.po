@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2024-01-19 16:35+0000\n"
+"PO-Revision-Date: 2024-02-01 02:42+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -133,7 +133,7 @@ msgstr "挙動"
 
 #: src/Plug.vala:117
 msgid "Switch layout"
-msgstr "レイアウトを切替"
+msgstr "レイアウトを切り替え"
 
 #: src/Plug.vala:118
 msgid "Compose Key"
@@ -528,28 +528,24 @@ msgid "Cycle display mode"
 msgstr "ディスプレイモードを切り替え"
 
 #: src/Shortcuts/ShortcutsList.vala:160
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Keyboard Layouts"
-msgstr "キーボードレイアウトを追加…"
+msgstr "キーボードレイアウト"
 
 #: src/Shortcuts/ShortcutsList.vala:161
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Switch Keyboard Layout"
-msgstr "キーボードレイアウトを追加…"
+msgstr "キーボードレイアウトを切り替え"
 
 #: src/Shortcuts/ShortcutsList.vala:162
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "逆順でキーボードレイアウトを切り替え"
 
 #: src/Shortcuts/ShortcutsList.vala:163
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "絵文字入力を有効化"
 
 #: src/Shortcuts/ShortcutsList.vala:164
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Unicode 入力を有効化"
 
 #: src/Shortcuts/ShortcutsList.vala:168 src/Views/Shortcuts.vala:53
 msgid "Custom"
@@ -759,7 +755,7 @@ msgstr "Shift + Caps Lock"
 
 #: src/Views/Layout.vala:46
 msgid "Switch layout:"
-msgstr "レイアウトを切替:"
+msgstr "レイアウトを切り替え:"
 
 #: src/Views/Layout.vala:54
 msgid "Menu"
