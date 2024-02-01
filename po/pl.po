@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2024-01-19 16:35+0000\n"
+"PO-Revision-Date: 2024-02-02 21:11+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -529,28 +529,24 @@ msgid "Cycle display mode"
 msgstr "Przełącz tryb wyświetlania"
 
 #: src/Shortcuts/ShortcutsList.vala:160
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Keyboard Layouts"
-msgstr "Dodaj układ klawiatury…"
+msgstr "Układy klawiatury"
 
 #: src/Shortcuts/ShortcutsList.vala:161
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Switch Keyboard Layout"
-msgstr "Dodaj układ klawiatury…"
+msgstr "Zmień układ klawiatury"
 
 #: src/Shortcuts/ShortcutsList.vala:162
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Zmień układ klawiatury z powrotem"
 
 #: src/Shortcuts/ShortcutsList.vala:163
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Włącz wpisywanie emoji"
 
 #: src/Shortcuts/ShortcutsList.vala:164
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Włącz wpisywanie Unicode"
 
 #: src/Shortcuts/ShortcutsList.vala:168 src/Views/Shortcuts.vala:53
 msgid "Custom"
