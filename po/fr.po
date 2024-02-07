@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2023-09-09 09:08+0000\n"
+"PO-Revision-Date: 2024-02-07 10:31+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fr/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.0.2\n"
 "X-Launchpad-Export-Date: 2017-02-28 05:07+0000\n"
 
 #: src/Dialogs/AddLayoutDialog.vala:21
@@ -530,28 +530,24 @@ msgid "Cycle display mode"
 msgstr "Sens de défilement"
 
 #: src/Shortcuts/ShortcutsList.vala:160
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Keyboard Layouts"
-msgstr "Ajouter une disposition du clavier…"
+msgstr "Dispositions du clavier"
 
 #: src/Shortcuts/ShortcutsList.vala:161
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Switch Keyboard Layout"
-msgstr "Ajouter une disposition du clavier…"
+msgstr "Changer de disposition du clavier"
 
 #: src/Shortcuts/ShortcutsList.vala:162
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Passer à la disposition du clavier précédente"
 
 #: src/Shortcuts/ShortcutsList.vala:163
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Activer la saisie des Emojis"
 
 #: src/Shortcuts/ShortcutsList.vala:164
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Activer la saisie Unicode"
 
 #: src/Shortcuts/ShortcutsList.vala:168 src/Views/Shortcuts.vala:53
 msgid "Custom"
@@ -584,7 +580,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Méta"
 
 #: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
@@ -658,16 +654,12 @@ msgid "IBus Daemon is not running"
 msgstr "Le service IBus n'est pas en cours d'exécution"
 
 #: src/Views/InputMethod.vala:52
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"Vous devez exécuter le service IBus pour activer ou configurer les moteurs "
-"de méthode de saisie."
+"Le démon IBus doit fonctionner en arrière-plan pour activer ou configurer "
+"les moteurs de méthodes de saisie."
 
 #: src/Views/InputMethod.vala:61
 msgid "Start IBus Daemon"
@@ -675,7 +667,7 @@ msgstr "Lancer le service IBus"
 
 #: src/Views/InputMethod.vala:62
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Peut être géré dans Paramètres système → Applications → Démarrage"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:68
