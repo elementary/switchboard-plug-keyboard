@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2023-10-16 18:10+0000\n"
-"Last-Translator: Niels Van Laerhoven <niels1995@gmail.com>\n"
+"PO-Revision-Date: 2024-02-10 18:59+0000\n"
+"Last-Translator: Dennis ten Hoove <dennistenhoove@protonmail.com>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
 "Language: nl\n"
@@ -528,28 +528,24 @@ msgid "Cycle display mode"
 msgstr "Blader door display modi"
 
 #: src/Shortcuts/ShortcutsList.vala:160
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Keyboard Layouts"
-msgstr "Voeg toetsenbordindeling toe…"
+msgstr "Toetsenbordindelingen"
 
 #: src/Shortcuts/ShortcutsList.vala:161
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Switch Keyboard Layout"
-msgstr "Voeg toetsenbordindeling toe…"
+msgstr "Toetsenbordindeling veranderen"
 
 #: src/Shortcuts/ShortcutsList.vala:162
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Toetsenbordindeling terugschakelen"
 
 #: src/Shortcuts/ShortcutsList.vala:163
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Emoji-typen inschakelen"
 
 #: src/Shortcuts/ShortcutsList.vala:164
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Unicode-typen inschakelen"
 
 #: src/Shortcuts/ShortcutsList.vala:168 src/Views/Shortcuts.vala:53
 msgid "Custom"
@@ -582,7 +578,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Super"
 
 #: src/Views/Behavior.vala:16
 msgid "On-screen keyboard settings…"
@@ -655,16 +651,12 @@ msgid "IBus Daemon is not running"
 msgstr "IBUS Daemon is niet actief"
 
 #: src/Views/InputMethod.vala:52
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"U moet de IBus-daemon draaien om invoermethode-engines in te schakelen of te "
-"configureren."
+"De IBus-daemon moet op de achterground draaien om invoermethode-engines in "
+"te schakelen of te configureren."
 
 #: src/Views/InputMethod.vala:61
 msgid "Start IBus Daemon"
@@ -672,7 +664,7 @@ msgstr "Start IBus Daemon"
 
 #: src/Views/InputMethod.vala:62
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Dit kan worden beheerd in Systeeminstellingen → Applicaties → Opstarten"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/Views/InputMethod.vala:68
