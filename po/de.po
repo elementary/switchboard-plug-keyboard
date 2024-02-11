@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2024-01-21 17:54+0000\n"
+"PO-Revision-Date: 2024-02-12 16:57+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -529,28 +529,24 @@ msgid "Cycle display mode"
 msgstr "Bildschirmmodus durchschalten"
 
 #: src/Shortcuts/ShortcutsList.vala:160
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Keyboard Layouts"
-msgstr "Tastaturbelegung hinzufügen …"
+msgstr "Tastaturbelegungen"
 
 #: src/Shortcuts/ShortcutsList.vala:161
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Switch Keyboard Layout"
-msgstr "Tastaturbelegung hinzufügen …"
+msgstr "Tastaturbelegung umschalten"
 
 #: src/Shortcuts/ShortcutsList.vala:162
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Tastaturbelegung rückwärts umschalten"
 
 #: src/Shortcuts/ShortcutsList.vala:163
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Emoji-Eingabe einschalten"
 
 #: src/Shortcuts/ShortcutsList.vala:164
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Unicode-Eingabe einschalten"
 
 #: src/Shortcuts/ShortcutsList.vala:168 src/Views/Shortcuts.vala:53
 msgid "Custom"
