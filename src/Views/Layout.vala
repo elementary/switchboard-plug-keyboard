@@ -161,13 +161,18 @@ public class Keyboard.LayoutPage.Page : Gtk.Box {
         box.append (entry_test);
 
         var clamp = new Adw.Clamp () {
-            child = box
+            child = box,
+            margin_end = 9,
+            margin_bottom = 12,
+            margin_start = 9
         };
 
-        append (clamp);
-        margin_end = 9;
-        margin_bottom = 12;
-        margin_start = 9;
+        var scrolled = new Gtk.ScrolledWindow () {
+            child = clamp,
+            hscrollbar_policy = NEVER
+        };
+
+        append (scrolled);
 
         // Cannot be just called from the constructor because the stack switcher
         // shows every child after the constructor has been called
