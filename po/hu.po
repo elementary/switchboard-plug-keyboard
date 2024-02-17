@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2024-02-01 02:42+0000\n"
+"PO-Revision-Date: 2024-02-15 02:35+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -520,7 +520,7 @@ msgstr "Alkalmazásmenü"
 
 #: src/Shortcuts/ShortcutsList.vala:154
 msgid "Lock"
-msgstr "Lezárás"
+msgstr "Zárolás"
 
 #: src/Shortcuts/ShortcutsList.vala:155
 msgid "Log Out"
