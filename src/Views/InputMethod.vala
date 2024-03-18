@@ -120,7 +120,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
                 transient_for = (Gtk.Window) get_root (),
                 modal = true
             };
-    
+
             dialog.present ();
             dialog.add_engine.connect ((engine) => {
                 if (settings.add_active_engine (engine)) {
