@@ -1,5 +1,5 @@
 /*
-* 2019-2020 elementary, Inc. (https://elementary.io)
+* Copyright 2019-2024 elementary, Inc. (https://elementary.io)
 *
 * This program is free software: you can redistribute it and/or modify
 * it under the terms of the GNU General Public License as published by
@@ -30,7 +30,6 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
     private Gtk.ListBox listbox;
     private SourceSettings settings;
     private Gtk.Button remove_button;
-    private AddEnginesPopover add_engines_popover;
     private Gtk.Stack stack;
     private Gtk.Entry entry_test;
     private Gtk.ComboBoxText keyboard_shortcut_combobox;
@@ -103,14 +102,32 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             hscrollbar_policy = Gtk.PolicyType.NEVER
         };
 
-        add_engines_popover = new AddEnginesPopover ();
+        var add_button_label = new Gtk.Label (_("Add Engine…"));
 
-        var add_button = new Gtk.MenuButton () {
-            direction = UP,
-            icon_name = "list-add-symbolic",
-            popover = add_engines_popover,
-            tooltip_text = _("Add…")
+        var add_button_box = new Gtk.Box (HORIZONTAL, 0);
+        add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic"));
+        add_button_box.append (add_button_label);
+
+        var add_button = new Gtk.Button () {
+            child = add_button_box
         };
+        add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+
+        add_button_label.mnemonic_widget = add_button;
+
+        add_button.clicked.connect (() => {
+            var dialog = new AddEngineDialog (engines) {
+                transient_for = (Gtk.Window) get_root (),
+                modal = true
+            };
+    
+            dialog.present ();
+            dialog.add_engine.connect ((engine) => {
+                if (settings.add_active_engine (engine)) {
+                    update_engines_list ();
+                }
+            });
+        });
 
         remove_button = new Gtk.Button.from_icon_name ("list-remove-symbolic") {
             tooltip_text = _("Remove")
@@ -208,12 +225,6 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         append (stack);
 
         set_visible_view ();
-
-        add_engines_popover.add_engine.connect ((engine) => {
-            if (settings.add_active_engine (engine)) {
-                update_engines_list ();
-            }
-        });
 
         remove_button.clicked.connect (() => {
             int index = listbox.get_selected_row ().get_index ();
@@ -313,7 +324,7 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
             foreach (var engine in engines) {
                 if (engine.name == active_engine) {
                     var engine_full_name = "%s - %s".printf (
-                        IBus.get_language_name (engine.language), gettext_engine_longname (engine)
+                        IBus.get_language_name (engine.language), Utils.gettext_engine_longname (engine)
                     );
 
                     var label = new Gtk.Label (engine_full_name) {
@@ -415,39 +426,9 @@ public class Keyboard.InputMethodPage.Page : Gtk.Box {
         } else if (bus.is_connected ()) {
             stack.visible_child_name = "main_view";
             update_engines_list ();
-            update_popover_engines_list ();
         } else {
             stack.visible_child_name = "no_daemon_runnning_view";
         }
-    }
-
-    // From https://github.com/ibus/ibus/blob/master/ui/gtk2/i18n.py#L47-L54
-    private string gettext_engine_longname (IBus.EngineDesc engine) {
-        string name = engine.name;
-        if (name.has_prefix ("xkb:")) {
-            return dgettext ("xkeyboard-config", engine.longname);
-        }
-
-        string textdomain = engine.textdomain;
-        if (textdomain == "") {
-            return engine.longname;
-        }
-
-        return dgettext (textdomain, engine.longname);
-    }
-
-    public void update_popover_engines_list () {
-        engines = new IBus.Bus ().list_engines ();
-        var engine_lists = new List<AddEnginesList> ();
-        foreach (var engine in engines) {
-            var full_name = "%s - %s".printf (
-                IBus.get_language_name (engine.language), gettext_engine_longname (engine)
-            );
-
-            engine_lists.append (new AddEnginesList (engine.name, full_name));
-        }
-
-        add_engines_popover.update_engines_list (engine_lists);
     }
 
     private void update_entry_test_usable () {
