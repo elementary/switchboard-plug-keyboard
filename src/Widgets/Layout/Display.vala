@@ -31,6 +31,13 @@ public class Keyboard.LayoutPage.Display : Gtk.Frame {
             vexpand = true,
         };
 
+        var placeholder = new Granite.Placeholder (_("No layouts added")) {
+            icon = new ThemedIcon ("input-keyboard"),
+            description = _("English (US) layout is used as fallback. Press button bellow to add a new keyboard layout.")
+        };
+
+        list.set_placeholder (placeholder);
+
         var scroll = new Gtk.ScrolledWindow () {
             hscrollbar_policy = Gtk.PolicyType.NEVER,
             hexpand = true,

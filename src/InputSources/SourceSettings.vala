@@ -102,8 +102,6 @@ class Keyboard.SourceSettings : Object {
         } else {
             warning ("GSettings sources of unexpected type");
         }
-
-        add_default_keyboard_if_required ();
     }
 
     public void add_xkb_modifier (XkbModifier modifier) {
@@ -159,64 +157,6 @@ class Keyboard.SourceSettings : Object {
         input_sources.foreach (func);
     }
 
-    private void add_default_keyboard_if_required () {
-        bool have_xkb = false;
-        input_sources.@foreach ((source) => {
-            if (source.layout_type == LayoutType.XKB) {
-                have_xkb = true;
-            }
-        });
-
-        if (!have_xkb) {
-            var file = File.new_for_path ("/etc/default/keyboard");
-
-            if (!file.query_exists ()) {
-                warning ("File '%s' doesn't exist.\n", file.get_path ());
-                return;
-            }
-
-            string xkb_layout = "";
-            string xkb_variant = "";
-
-            try {
-                var dis = new DataInputStream (file.read ());
-
-                string line;
-
-                while ((line = dis.read_line (null)) != null) {
-                    if (line.contains ("XKBLAYOUT=")) {
-                        xkb_layout = line.replace ("XKBLAYOUT=", "").replace ("\"", "");
-
-                        while ((line = dis.read_line (null)) != null) {
-                            if (line.contains ("XKBVARIANT=")) {
-                                xkb_variant = line.replace ("XKBVARIANT=", "").replace ("\"", "");
-                            }
-                        }
-
-                        break;
-                    }
-                }
-            }
-            catch (Error e) {
-                warning ("%s", e.message);
-                return;
-            }
-
-            var variants = xkb_variant.split (",");
-            var xkb_layouts = xkb_layout.split (",");
-
-            for (int i = 0; i < xkb_layouts.length; i++) {
-                if (variants[i] != null && variants[i] != "") {
-                    add_layout_internal (InputSource.new_xkb (xkb_layouts[i], variants[i]));
-                } else {
-                    add_layout_internal (InputSource.new_xkb (xkb_layouts[i], null));
-                }
-            }
-
-            write_to_gsettings ();
-        }
-    }
-
     public bool add_layout (InputSource? new_layout) {
         if (add_layout_internal (new_layout)) {
             write_to_gsettings ();
@@ -255,8 +195,6 @@ class Keyboard.SourceSettings : Object {
         if (index >= 1) {
             active_index = input_sources.length () - 1;
         }
-
-        add_default_keyboard_if_required ();
 
         write_to_gsettings ();
     }

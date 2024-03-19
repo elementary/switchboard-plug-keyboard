@@ -402,9 +402,7 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
     }
 
     private void update_entry_test_usable () {
-        if (settings.active_input_source != null &&
-            settings.active_input_source.layout_type == LayoutType.XKB) {
-
+        if (settings.active_input_source == null || settings.active_input_source.layout_type == LayoutType.XKB) {
             entry_test.placeholder_text = _("Type to test your layout");
             entry_test.sensitive = true;
         } else {
