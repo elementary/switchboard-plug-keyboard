@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2024-02-12 16:57+0000\n"
+"PO-Revision-Date: 2024-03-21 22:13+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -454,7 +454,7 @@ msgstr "Lautstärke verringern"
 
 #: src/Shortcuts/ShortcutsList.vala:132
 msgid "Mute"
-msgstr "Stummschalten"
+msgstr "Stumm schalten"
 
 #: src/Shortcuts/ShortcutsList.vala:133
 msgid "Play/Pause"
