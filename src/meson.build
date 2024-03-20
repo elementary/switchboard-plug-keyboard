@@ -19,7 +19,7 @@ plug_files = files(
     'Widgets/Layout/AdvancedSettingsPanel.vala',
     'Widgets/InputMethod/LanguagesRow.vala',
     'Widgets/InputMethod/EnginesRow.vala',
-    'Widgets/InputMethod/AddEnginesPopover.vala',
+    'Widgets/InputMethod/Utils.vala',
     'Views/Shortcuts.vala',
     'Views/Layout.vala',
     'Views/InputMethod.vala',
@@ -40,7 +40,8 @@ plug_files = files(
     'Dialogs/ProgressDialog.vala',
     'Dialogs/InstallEngineDialog.vala',
     'Dialogs/ConflictDialog.vala',
-    'Dialogs/AddLayoutDialog.vala'
+    'Dialogs/AddLayoutDialog.vala',
+    'Dialogs/AddEngineDialog.vala'
 )
 
 switchboard_dep = dependency('switchboard-3')
