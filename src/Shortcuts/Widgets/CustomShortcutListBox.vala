@@ -22,19 +22,45 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
     construct {
         list_box = new Gtk.ListBox () {
             hexpand = true,
+            vexpand = true,
             selection_mode = Gtk.SelectionMode.BROWSE
         };
 
+        var add_button_label = new Gtk.Label (_("Add Shortcut"));
+
+        var add_button_box = new Gtk.Box (HORIZONTAL, 0);
+        add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic"));
+        add_button_box.append (add_button_label);
+
+        var add_button = new Gtk.Button () {
+            child = add_button_box,
+            margin_top = 3,
+            margin_bottom = 3
+        };
+        add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
+
+        add_button_label.mnemonic_widget = add_button;
+
+        var actionbar = new Gtk.ActionBar () {
+            hexpand = true
+        };
+        actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+        actionbar.pack_start (add_button);
+
+        orientation = VERTICAL;
         append (list_box);
+        append (actionbar);
 
         load_and_display_custom_shortcuts ();
 
         realize.connect (() => {
             list_box.select_row (list_box.get_row_at_index (0));
         });
+
+        add_button.clicked.connect (on_add_clicked);
     }
 
-    public void load_and_display_custom_shortcuts () {
+    private void load_and_display_custom_shortcuts () {
         while (list_box.get_row_at_index (0) != null) {
             list_box.remove (list_box.get_row_at_index (0));
         }
@@ -58,7 +84,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
         list_box.select_row (new_row);
     }
 
-    public void on_add_clicked () {
+    private void on_add_clicked () {
         add_row (null);
         list_box.unselect_all ();
     }
@@ -192,7 +218,7 @@ class Keyboard.Shortcuts.CustomShortcutListBox : Gtk.Box {
             remove_button.clicked.connect (() => {
                 popover.popdown ();
                 CustomShortcutSettings.remove_shortcut (relocatable_schema);
-                destroy ();
+                unparent ();
             });
 
             set_accel_button.clicked.connect (() => {
