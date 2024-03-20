@@ -50,18 +50,15 @@ public class Keyboard.Plug : Switchboard.Plug {
         if (box == null) {
             Gtk.IconTheme.get_for_display (Gdk.Display.get_default ()).add_resource_path ("/io/elementary/settings/keyboard");
 
-            stack = new Gtk.Stack ();
+            stack = new Gtk.Stack () {
+                margin_top = 9
+            };
             stack.add_titled (new Keyboard.LayoutPage.Page (), "layout", _("Layout"));
             stack.add_titled (new Keyboard.InputMethodPage.Page (), "inputmethod", _("Input Method"));
             stack.add_titled (new Keyboard.Shortcuts.Page (), "shortcuts", _("Shortcuts"));
             stack.add_titled (new Keyboard.Behaviour.Page (), "behavior", _("Behavior"));
 
             var stack_switcher = new Gtk.StackSwitcher () {
-                halign = CENTER,
-                margin_top = 12,
-                margin_end = 12,
-                margin_bottom = 12,
-                margin_start = 12,
                 stack = stack
             };
 
@@ -72,8 +69,13 @@ public class Keyboard.Plug : Switchboard.Plug {
                 switcher_child = switcher_child.get_next_sibling ();
             }
 
+            var headerbar = new Adw.HeaderBar () {
+                title_widget = stack_switcher
+            };
+            headerbar.add_css_class (Granite.STYLE_CLASS_FLAT);
+
             box = new Gtk.Box (VERTICAL, 0);
-            box.append (stack_switcher);
+            box.append (headerbar);
             box.append (stack);
         }
 
