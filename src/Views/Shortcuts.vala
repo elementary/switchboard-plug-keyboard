@@ -98,33 +98,8 @@ namespace Keyboard.Shortcuts {
                 child = stack
             };
 
-            var add_button_label = new Gtk.Label (_("Add Shortcut"));
-
-            var add_button_box = new Gtk.Box (HORIZONTAL, 0);
-            add_button_box.append (new Gtk.Image.from_icon_name ("list-add-symbolic"));
-            add_button_box.append (add_button_label);
-
-            var add_button = new Gtk.Button () {
-                child = add_button_box,
-                margin_top = 3,
-                margin_bottom = 3
-            };
-            add_button.add_css_class (Granite.STYLE_CLASS_FLAT);
-
-            add_button_label.mnemonic_widget = add_button;
-
-            var actionbar = new Gtk.ActionBar () {
-                hexpand = true
-            };
-            actionbar.add_css_class (Granite.STYLE_CLASS_FLAT);
-            actionbar.pack_start (add_button);
-
-            var action_box = new Gtk.Box (VERTICAL, 0);
-            action_box.append (stack_scrolled);
-            action_box.append (actionbar);
-
             var frame = new Gtk.Frame (null) {
-                child = action_box
+                child = stack_scrolled
             };
 
             spacing = 12;
@@ -140,7 +115,6 @@ namespace Keyboard.Shortcuts {
 
             if (CustomShortcutSettings.available) {
                 var custom_tree = new CustomShortcutListBox ();
-                add_button.clicked.connect (() => custom_tree.on_add_clicked ());
 
                 shortcut_views += custom_tree;
             }
@@ -152,8 +126,6 @@ namespace Keyboard.Shortcuts {
             section_switcher.row_selected.connect ((row) => {
                 var index = row.get_index ();
                 stack.visible_child = shortcut_views[index];
-
-                actionbar.visible = stack.visible_child is CustomShortcutListBox;
             });
 
             // Doing this too early makes the actionbar show by default
