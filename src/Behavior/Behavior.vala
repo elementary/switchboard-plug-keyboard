@@ -240,7 +240,8 @@ public class Keyboard.Behaviour.Page : Gtk.Box {
             child = box,
             margin_start = 12,
             margin_end = 12,
-            margin_bottom = 12
+            margin_bottom = 12,
+            margin_top = 12
         };
 
         var scrolled = new Gtk.ScrolledWindow () {
