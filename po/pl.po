@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-29 17:21+0000\n"
-"PO-Revision-Date: 2024-02-02 21:11+0000\n"
+"PO-Revision-Date: 2024-03-23 19:13+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -418,7 +418,7 @@ msgstr "Skopiuj zrzut obszaru do schowka"
 
 #: src/Shortcuts/ShortcutsList.vala:120 src/Views/Shortcuts.vala:45
 msgid "Applications"
-msgstr "Programy"
+msgstr "Aplikacje"
 
 #: src/Shortcuts/ShortcutsList.vala:121
 msgid "Email"
