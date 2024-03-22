@@ -147,6 +147,7 @@ public class Keyboard.LayoutPage.Page : Gtk.Grid {
         margin_start = 12;
         margin_end = 12;
         margin_bottom = 12;
+        margin_top = 12;
         attach (display, 0, 0, 1, 12);
         attach (switch_layout_label, 1, 0);
         attach (switch_layout_combo, 2, 0);

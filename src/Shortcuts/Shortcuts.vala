@@ -106,6 +106,7 @@ namespace Keyboard.Shortcuts {
             margin_start = 12;
             margin_end = 12;
             margin_bottom = 12;
+            margin_top = 12;
             append (switcher_frame);
             append (frame);
 
