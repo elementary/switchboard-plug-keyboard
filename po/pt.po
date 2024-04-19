@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 17:26+0000\n"
-"PO-Revision-Date: 2024-03-26 21:13+0000\n"
+"PO-Revision-Date: 2024-04-20 16:13+0000\n"
 "Last-Translator: Hugo Carvalho <hugokarvalho@hotmail.com>\n"
 "Language-Team: Portuguese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pt/>\n"
@@ -136,10 +136,8 @@ msgid "Could not start the IBus daemon"
 msgstr "Não foi possível iniciar o daemon IBus"
 
 #: src/InputMethod/InputMethod.vala:105
-#, fuzzy
-#| msgid "Add Engine"
 msgid "Add Engine…"
-msgstr "Adicionar mecanismo"
+msgstr "Adicionar mecanismo…"
 
 #: src/InputMethod/InputMethod.vala:133 src/Layout/Widgets/Display.vala:192
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:167
