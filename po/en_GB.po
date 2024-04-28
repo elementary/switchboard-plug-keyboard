@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 17:26+0000\n"
-"PO-Revision-Date: 2024-02-01 02:42+0000\n"
+"PO-Revision-Date: 2024-04-29 01:13+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
@@ -136,10 +136,8 @@ msgid "Could not start the IBus daemon"
 msgstr "Could not start the IBus daemon"
 
 #: src/InputMethod/InputMethod.vala:105
-#, fuzzy
-#| msgid "Add Engine"
 msgid "Add Engine…"
-msgstr "Add Engine"
+msgstr "Add Engine…"
 
 #: src/InputMethod/InputMethod.vala:133 src/Layout/Widgets/Display.vala:192
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:167
