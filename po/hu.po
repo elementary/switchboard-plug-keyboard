@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 17:26+0000\n"
-"PO-Revision-Date: 2024-02-15 02:35+0000\n"
+"PO-Revision-Date: 2024-05-07 22:13+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/hu/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
@@ -137,10 +137,8 @@ msgid "Could not start the IBus daemon"
 msgstr "Nem sikerült elindítani az IBus daemont"
 
 #: src/InputMethod/InputMethod.vala:105
-#, fuzzy
-#| msgid "Add Engine"
 msgid "Add Engine…"
-msgstr "Motor hozzáadása"
+msgstr "Motor hozzáadása…"
 
 #: src/InputMethod/InputMethod.vala:133 src/Layout/Widgets/Display.vala:192
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:167
