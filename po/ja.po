@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 17:26+0000\n"
-"PO-Revision-Date: 2024-04-04 14:15+0000\n"
+"PO-Revision-Date: 2024-05-09 13:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
@@ -395,11 +395,11 @@ msgstr "NICOLA-F バックスペース:"
 
 #: src/Layout/Layout.vala:312
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "半角／全角を Esc として扱う:"
+msgstr "半角/全角を Esc として扱う:"
 
 #: src/Layout/Layout.vala:331
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
-msgstr "ハングル／漢字キーを右 Alt／Ctrl に割り当て:"
+msgstr "ハングル/漢字キーを右 Alt/Ctrl に割り当て:"
 
 #: src/Layout/Layout.vala:409
 msgid "Type to test your layout"
@@ -514,11 +514,11 @@ msgstr "最大化"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:57
 msgid "Unmaximize"
-msgstr "元のサイズに戻す"
+msgstr "元に戻す"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:58
 msgid "Toggle Maximized"
-msgstr "最大化／元のサイズに戻す"
+msgstr "最大化/元に戻す"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:59
 msgid "Hide"
@@ -526,15 +526,15 @@ msgstr "非表示にする"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:60
 msgid "Toggle Fullscreen"
-msgstr "全画面表示／全画面表示解除"
+msgstr "全画面表示/全画面表示解除"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:61
 msgid "Toggle on all Workspaces"
-msgstr "すべてのワークスペースに表示／現在のワークスペースのみに表示"
+msgstr "すべてのワークスペースに表示/現在のワークスペースのみに表示"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:62
 msgid "Toggle always on Top"
-msgstr "最前面に維持／最前面に維持しない"
+msgstr "最前面に維持/最前面に維持しない"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:63
 msgid "Cycle Windows"
@@ -810,11 +810,11 @@ msgstr "拡大鏡で縮小表示"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:147
 msgid "Toggle On Screen Keyboard"
-msgstr "オンスクリーンキーボードを表示／非表示"
+msgstr "オンスクリーンキーボードを表示/非表示"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:148
 msgid "Toggle Screenreader"
-msgstr "スクリーンリーダーを有効化／無効化"
+msgstr "スクリーンリーダーを有効化/無効化"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:152 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
