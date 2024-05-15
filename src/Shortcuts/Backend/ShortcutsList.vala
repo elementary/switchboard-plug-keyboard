@@ -116,7 +116,7 @@ namespace Keyboard.Shortcuts {
             add_action (ref screenshot_group, Schema.GALA, _("Copy an area to clipboard"), "area-screenshot-clip");
 
             launchers_group = {};
-            launchers_group.icon_name = "preferences-desktop-applications";
+            launchers_group.icon_name = "io.elementary.settings.keyboard.applications";
             launchers_group.label = _("Applications");
             add_action (ref launchers_group, Schema.MEDIA, _("Email"), "email");
             add_action (ref launchers_group, Schema.MEDIA, _("Home Folder"), "home");
