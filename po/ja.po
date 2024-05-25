@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 17:26+0000\n"
-"PO-Revision-Date: 2024-05-09 13:13+0000\n"
+"PO-Revision-Date: 2024-05-26 07:13+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -58,8 +58,7 @@ msgstr "固定キー"
 
 #: src/Behavior/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
-"⌘、Alt、Ctrl、および Shift を含む操作を、キーを1つずつ押すことで実現します"
+msgstr "⌘、Alt、Ctrl、および Shift を含む操作を、キーを 1 つずつ押すことで実現します"
 
 #: src/Behavior/Behavior.vala:133 src/Plug.vala:132
 msgid "Slow Keys"
