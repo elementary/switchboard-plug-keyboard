@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-03 17:26+0000\n"
-"PO-Revision-Date: 2024-05-29 20:51+0000\n"
+"PO-Revision-Date: 2024-05-31 01:46+0000\n"
 "Last-Translator: DutchVipperloid <svenroelof@e.email>\n"
 "Language-Team: Dutch <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/nl/>\n"
@@ -734,7 +734,7 @@ msgstr "E-mail"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:122
 msgid "Home Folder"
-msgstr "Persoonlijke map"
+msgstr "Thuismap"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:123
 msgid "Music"
