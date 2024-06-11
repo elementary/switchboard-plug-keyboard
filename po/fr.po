@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 17:26+0000\n"
+"POT-Creation-Date: 2024-06-11 17:33+0000\n"
 "PO-Revision-Date: 2024-04-12 14:13+0000\n"
 "Last-Translator: Nathan <bonnemainsnathan@gmail.com>\n"
 "Language-Team: French <https://l10n.elementary.io/projects/switchboard/"
@@ -325,7 +325,7 @@ msgstr "⌘ droit"
 msgid "Compose key:"
 msgstr "Touche « Compose » :"
 
-#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:153
+#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:162
 msgid "Applications Menu"
 msgstr "Menu Applications"
 
@@ -750,111 +750,147 @@ msgstr "Terminal"
 msgid "Internet Browser"
 msgstr "Navigateur web"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:129 src/Shortcuts/Shortcuts.vala:47
+#: src/Shortcuts/Backend/ShortcutsList.vala:126
+msgid "Launch first dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:127
+msgid "Launch second dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:128
+msgid "Launch third dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:129
+msgid "Launch fourth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:130
+msgid "Launch fifth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:131
+msgid "Launch sixth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:132
+msgid "Launch seventh dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:133
+msgid "Launch eighth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:134
+msgid "Launch ninth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
 msgstr "Multimédia"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:130
+#: src/Shortcuts/Backend/ShortcutsList.vala:139
 msgid "Volume Up"
 msgstr "Augmenter le volume"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:131
+#: src/Shortcuts/Backend/ShortcutsList.vala:140
 msgid "Volume Down"
 msgstr "Diminuer le volume"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:132
+#: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
 msgstr "Couper le son"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:133
+#: src/Shortcuts/Backend/ShortcutsList.vala:142
 msgid "Play/Pause"
 msgstr "Lire/Mettre en pause"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:134
+#: src/Shortcuts/Backend/ShortcutsList.vala:143
 msgid "Pause"
 msgstr "Mettre en pause"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:135
+#: src/Shortcuts/Backend/ShortcutsList.vala:144
 msgid "Stop"
 msgstr "Arrêter"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:136
+#: src/Shortcuts/Backend/ShortcutsList.vala:145
 msgid "Previous Track"
 msgstr "Piste précédente"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:137
+#: src/Shortcuts/Backend/ShortcutsList.vala:146
 msgid "Next Track"
 msgstr "Piste suivante"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:138
+#: src/Shortcuts/Backend/ShortcutsList.vala:147
 msgid "Eject"
 msgstr "Éjecter"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:142
+#: src/Shortcuts/Backend/ShortcutsList.vala:151
 msgid "Universal Access"
 msgstr "Accessibilité"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:143
+#: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
 msgstr "Réduire la taille du texte"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:144
+#: src/Shortcuts/Backend/ShortcutsList.vala:153
 msgid "Increase Text Size"
 msgstr "Augmenter la taille du texte"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:145
+#: src/Shortcuts/Backend/ShortcutsList.vala:154
 msgid "Magnifier Zoom in"
 msgstr "Zoomer"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:146
+#: src/Shortcuts/Backend/ShortcutsList.vala:155
 msgid "Magnifier Zoom out"
 msgstr "Dé-zoomer"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:147
+#: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
 msgstr "Activer le clavier virtuel"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:148
+#: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
 msgstr "Activer le lecteur d'écran"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:152 src/Shortcuts/Shortcuts.vala:51
+#: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
 msgstr "Système"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:154
+#: src/Shortcuts/Backend/ShortcutsList.vala:163
 msgid "Lock"
 msgstr "Verrouiller"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:155
+#: src/Shortcuts/Backend/ShortcutsList.vala:164
 msgid "Log Out"
 msgstr "Fermer la session"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:156
+#: src/Shortcuts/Backend/ShortcutsList.vala:165
 msgid "Cycle display mode"
 msgstr "Sens de défilement"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:160
+#: src/Shortcuts/Backend/ShortcutsList.vala:169
 msgid "Keyboard Layouts"
 msgstr "Dispositions du clavier"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:161
+#: src/Shortcuts/Backend/ShortcutsList.vala:170
 msgid "Switch Keyboard Layout"
 msgstr "Changer de disposition du clavier"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:162
+#: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
 msgstr "Passer à la disposition du clavier précédente"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:163
+#: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
 msgstr "Activer la saisie des Emojis"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:164
+#: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
 msgstr "Activer la saisie Unicode"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:168 src/Shortcuts/Shortcuts.vala:53
+#: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
 msgstr "Personnalisé"
 

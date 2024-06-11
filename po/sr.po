@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 17:26+0000\n"
+"POT-Creation-Date: 2024-06-11 17:33+0000\n"
 "PO-Revision-Date: 2021-11-01 17:20+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Serbian <https://l10n.elementary.io/projects/switchboard/"
@@ -341,7 +341,7 @@ msgstr "Десни ⌘"
 msgid "Compose key:"
 msgstr "Саставни тастер:"
 
-#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:153
+#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:162
 msgid "Applications Menu"
 msgstr "Изборник програма"
 
@@ -772,115 +772,151 @@ msgstr "Терминал"
 msgid "Internet Browser"
 msgstr "Интернет прегледник"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:129 src/Shortcuts/Shortcuts.vala:47
+#: src/Shortcuts/Backend/ShortcutsList.vala:126
+msgid "Launch first dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:127
+msgid "Launch second dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:128
+msgid "Launch third dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:129
+msgid "Launch fourth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:130
+msgid "Launch fifth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:131
+msgid "Launch sixth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:132
+msgid "Launch seventh dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:133
+msgid "Launch eighth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:134
+msgid "Launch ninth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
 msgstr "Медиј"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:130
+#: src/Shortcuts/Backend/ShortcutsList.vala:139
 msgid "Volume Up"
 msgstr "Појачај звук"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:131
+#: src/Shortcuts/Backend/ShortcutsList.vala:140
 msgid "Volume Down"
 msgstr "Утишај звук"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:132
+#: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
 msgstr "Утишај"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:133
+#: src/Shortcuts/Backend/ShortcutsList.vala:142
 msgid "Play/Pause"
 msgstr "Пусти/Застани"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:134
+#: src/Shortcuts/Backend/ShortcutsList.vala:143
 msgid "Pause"
 msgstr "Застани"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:135
+#: src/Shortcuts/Backend/ShortcutsList.vala:144
 msgid "Stop"
 msgstr "Заустави"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:136
+#: src/Shortcuts/Backend/ShortcutsList.vala:145
 msgid "Previous Track"
 msgstr "Претходна нумера"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:137
+#: src/Shortcuts/Backend/ShortcutsList.vala:146
 msgid "Next Track"
 msgstr "Следећа нумера"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:138
+#: src/Shortcuts/Backend/ShortcutsList.vala:147
 msgid "Eject"
 msgstr "Избаци"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:142
+#: src/Shortcuts/Backend/ShortcutsList.vala:151
 msgid "Universal Access"
 msgstr "Универзални приступ"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:143
+#: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
 msgstr "Смањи величину текста"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:144
+#: src/Shortcuts/Backend/ShortcutsList.vala:153
 msgid "Increase Text Size"
 msgstr "Повећај величину текста"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:145
+#: src/Shortcuts/Backend/ShortcutsList.vala:154
 msgid "Magnifier Zoom in"
 msgstr "Увеличај лупом"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:146
+#: src/Shortcuts/Backend/ShortcutsList.vala:155
 msgid "Magnifier Zoom out"
 msgstr "Умањи лупом"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:147
+#: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
 msgstr "Окини тастатуру на екрану"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:148
+#: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
 msgstr "Окини читач екрана"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:152 src/Shortcuts/Shortcuts.vala:51
+#: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
 msgstr "Систем"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:154
+#: src/Shortcuts/Backend/ShortcutsList.vala:163
 msgid "Lock"
 msgstr "Закључај"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:155
+#: src/Shortcuts/Backend/ShortcutsList.vala:164
 msgid "Log Out"
 msgstr "Одјави се"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:156
+#: src/Shortcuts/Backend/ShortcutsList.vala:165
 msgid "Cycle display mode"
 msgstr "Мењај режим приказа"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:160
+#: src/Shortcuts/Backend/ShortcutsList.vala:169
 #, fuzzy
 #| msgid "Add Layout"
 msgid "Keyboard Layouts"
 msgstr "Додај распоред"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:161
+#: src/Shortcuts/Backend/ShortcutsList.vala:170
 #, fuzzy
 #| msgid "Add Layout"
 msgid "Switch Keyboard Layout"
 msgstr "Додај распоред"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:162
+#: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:163
+#: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:164
+#: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:168 src/Shortcuts/Shortcuts.vala:53
+#: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
 msgstr "Произвољно"
 

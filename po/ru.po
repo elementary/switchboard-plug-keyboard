@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 17:26+0000\n"
+"POT-Creation-Date: 2024-06-11 17:33+0000\n"
 "PO-Revision-Date: 2024-04-26 08:13+0000\n"
 "Last-Translator: кубик круглый <megarainbow29@gmail.com>\n"
 "Language-Team: Russian <https://l10n.elementary.io/projects/switchboard/"
@@ -325,7 +325,7 @@ msgstr "Правый ⌘"
 msgid "Compose key:"
 msgstr "Композиционная клавиша:"
 
-#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:153
+#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:162
 msgid "Applications Menu"
 msgstr "Меню приложений"
 
@@ -748,111 +748,147 @@ msgstr "Терминал"
 msgid "Internet Browser"
 msgstr "Веб-браузер"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:129 src/Shortcuts/Shortcuts.vala:47
+#: src/Shortcuts/Backend/ShortcutsList.vala:126
+msgid "Launch first dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:127
+msgid "Launch second dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:128
+msgid "Launch third dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:129
+msgid "Launch fourth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:130
+msgid "Launch fifth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:131
+msgid "Launch sixth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:132
+msgid "Launch seventh dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:133
+msgid "Launch eighth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:134
+msgid "Launch ninth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
 msgstr "Мультимедиа"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:130
+#: src/Shortcuts/Backend/ShortcutsList.vala:139
 msgid "Volume Up"
 msgstr "Увеличить громкость"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:131
+#: src/Shortcuts/Backend/ShortcutsList.vala:140
 msgid "Volume Down"
 msgstr "Уменьшить громкость"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:132
+#: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
 msgstr "Отключить звук"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:133
+#: src/Shortcuts/Backend/ShortcutsList.vala:142
 msgid "Play/Pause"
 msgstr "Воспроизведение/Пауза"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:134
+#: src/Shortcuts/Backend/ShortcutsList.vala:143
 msgid "Pause"
 msgstr "Пауза"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:135
+#: src/Shortcuts/Backend/ShortcutsList.vala:144
 msgid "Stop"
 msgstr "Остановить"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:136
+#: src/Shortcuts/Backend/ShortcutsList.vala:145
 msgid "Previous Track"
 msgstr "Предыдущая композиция"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:137
+#: src/Shortcuts/Backend/ShortcutsList.vala:146
 msgid "Next Track"
 msgstr "Следующая композиция"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:138
+#: src/Shortcuts/Backend/ShortcutsList.vala:147
 msgid "Eject"
 msgstr "Извлечь"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:142
+#: src/Shortcuts/Backend/ShortcutsList.vala:151
 msgid "Universal Access"
 msgstr "Универсальный доступ"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:143
+#: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
 msgstr "Уменьшить размер текста"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:144
+#: src/Shortcuts/Backend/ShortcutsList.vala:153
 msgid "Increase Text Size"
 msgstr "Увеличить размер текста"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:145
+#: src/Shortcuts/Backend/ShortcutsList.vala:154
 msgid "Magnifier Zoom in"
 msgstr "Приблизить"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:146
+#: src/Shortcuts/Backend/ShortcutsList.vala:155
 msgid "Magnifier Zoom out"
 msgstr "Отдалить"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:147
+#: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
 msgstr "Включить экранную клавиатуру"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:148
+#: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
 msgstr "Переключить экранного диктора"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:152 src/Shortcuts/Shortcuts.vala:51
+#: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
 msgstr "Система"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:154
+#: src/Shortcuts/Backend/ShortcutsList.vala:163
 msgid "Lock"
 msgstr "Заблокировать"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:155
+#: src/Shortcuts/Backend/ShortcutsList.vala:164
 msgid "Log Out"
 msgstr "Выйти из системы"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:156
+#: src/Shortcuts/Backend/ShortcutsList.vala:165
 msgid "Cycle display mode"
 msgstr "Переключение режима экрана"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:160
+#: src/Shortcuts/Backend/ShortcutsList.vala:169
 msgid "Keyboard Layouts"
 msgstr "Раскладка клавиатуры"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:161
+#: src/Shortcuts/Backend/ShortcutsList.vala:170
 msgid "Switch Keyboard Layout"
 msgstr "Переключить раскладку клавиатуры"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:162
+#: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
 msgstr "Переключить раскладку клавиатуры наоборот"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:163
+#: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
 msgstr "Включить ввод эмодзи"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:164
+#: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
 msgstr "Включить ввод текста в Юникоде"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:168 src/Shortcuts/Shortcuts.vala:53
+#: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
 msgstr "Пользовательские"
 

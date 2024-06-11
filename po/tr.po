@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 17:26+0000\n"
+"POT-Creation-Date: 2024-06-11 17:33+0000\n"
 "PO-Revision-Date: 2022-10-24 02:54+0000\n"
 "Last-Translator: Özgür Baskin <queeup@zoho.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
@@ -334,7 +334,7 @@ msgstr "Sağ ⌘"
 msgid "Compose key:"
 msgstr "Oluşturma (Compose) anahtarı:"
 
-#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:153
+#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:162
 msgid "Applications Menu"
 msgstr "Uygulamalar Menüsü"
 
@@ -763,115 +763,151 @@ msgstr "Terminal"
 msgid "Internet Browser"
 msgstr "İnternet Tarayıcısı"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:129 src/Shortcuts/Shortcuts.vala:47
+#: src/Shortcuts/Backend/ShortcutsList.vala:126
+msgid "Launch first dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:127
+msgid "Launch second dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:128
+msgid "Launch third dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:129
+msgid "Launch fourth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:130
+msgid "Launch fifth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:131
+msgid "Launch sixth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:132
+msgid "Launch seventh dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:133
+msgid "Launch eighth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:134
+msgid "Launch ninth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
 msgstr "Medya"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:130
+#: src/Shortcuts/Backend/ShortcutsList.vala:139
 msgid "Volume Up"
 msgstr "Sesi Arttır"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:131
+#: src/Shortcuts/Backend/ShortcutsList.vala:140
 msgid "Volume Down"
 msgstr "Sesi Azalt"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:132
+#: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
 msgstr "Sesi Kapat"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:133
+#: src/Shortcuts/Backend/ShortcutsList.vala:142
 msgid "Play/Pause"
 msgstr "Oynat/Duraklat"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:134
+#: src/Shortcuts/Backend/ShortcutsList.vala:143
 msgid "Pause"
 msgstr "Duraklat"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:135
+#: src/Shortcuts/Backend/ShortcutsList.vala:144
 msgid "Stop"
 msgstr "Durdur"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:136
+#: src/Shortcuts/Backend/ShortcutsList.vala:145
 msgid "Previous Track"
 msgstr "Önceki Parça"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:137
+#: src/Shortcuts/Backend/ShortcutsList.vala:146
 msgid "Next Track"
 msgstr "Sonraki Parça"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:138
+#: src/Shortcuts/Backend/ShortcutsList.vala:147
 msgid "Eject"
 msgstr "Çıkart"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:142
+#: src/Shortcuts/Backend/ShortcutsList.vala:151
 msgid "Universal Access"
 msgstr "Evrensel Erişim"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:143
+#: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
 msgstr "Metin Boyutunu Küçült"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:144
+#: src/Shortcuts/Backend/ShortcutsList.vala:153
 msgid "Increase Text Size"
 msgstr "Metin Boyutunu Büyüt"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:145
+#: src/Shortcuts/Backend/ShortcutsList.vala:154
 msgid "Magnifier Zoom in"
 msgstr "Büyüteçi Yaklaştır"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:146
+#: src/Shortcuts/Backend/ShortcutsList.vala:155
 msgid "Magnifier Zoom out"
 msgstr "Büyüteçi Uzaklaştır"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:147
+#: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
 msgstr "Ekran Klavyesini Aç/Kapat"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:148
+#: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
 msgstr "Ekran Okuyucuyu Aç/Kapat"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:152 src/Shortcuts/Shortcuts.vala:51
+#: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
 msgstr "Sistem"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:154
+#: src/Shortcuts/Backend/ShortcutsList.vala:163
 msgid "Lock"
 msgstr "Kilitle"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:155
+#: src/Shortcuts/Backend/ShortcutsList.vala:164
 msgid "Log Out"
 msgstr "Oturumu Kapat"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:156
+#: src/Shortcuts/Backend/ShortcutsList.vala:165
 msgid "Cycle display mode"
 msgstr "Ekran modunu değiştir"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:160
+#: src/Shortcuts/Backend/ShortcutsList.vala:169
 #, fuzzy
 #| msgid "Show keyboard layout"
 msgid "Keyboard Layouts"
 msgstr "Klavye düzenini göster"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:161
+#: src/Shortcuts/Backend/ShortcutsList.vala:170
 #, fuzzy
 #| msgid "Show keyboard layout"
 msgid "Switch Keyboard Layout"
 msgstr "Klavye düzenini göster"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:162
+#: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:163
+#: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:164
+#: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:168 src/Shortcuts/Shortcuts.vala:53
+#: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
 msgstr "Özel"
 

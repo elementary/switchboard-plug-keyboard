@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-03 17:26+0000\n"
+"POT-Creation-Date: 2024-06-11 17:33+0000\n"
 "PO-Revision-Date: 2020-10-04 21:15+0000\n"
 "Last-Translator: anonymous <noreply@weblate.org>\n"
 "Language-Team: Slovenian <https://l10n.elementary.io/projects/switchboard/"
@@ -16,8 +16,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n"
-"%100==4 ? 2 : 3;\n"
+"Plural-Forms: nplurals=4; plural=n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || "
+"n%100==4 ? 2 : 3;\n"
 "X-Generator: Weblate 3.9.1\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
@@ -337,7 +337,7 @@ msgstr "Desni ⌘"
 msgid "Compose key:"
 msgstr "Tipka za sestavljanje:"
 
-#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:153
+#: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:162
 msgid "Applications Menu"
 msgstr "Meni z aplikacijami"
 
@@ -788,117 +788,153 @@ msgstr "Terminal"
 msgid "Internet Browser"
 msgstr "Internetni brskalnik"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:129 src/Shortcuts/Shortcuts.vala:47
+#: src/Shortcuts/Backend/ShortcutsList.vala:126
+msgid "Launch first dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:127
+msgid "Launch second dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:128
+msgid "Launch third dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:129
+msgid "Launch fourth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:130
+msgid "Launch fifth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:131
+msgid "Launch sixth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:132
+msgid "Launch seventh dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:133
+msgid "Launch eighth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:134
+msgid "Launch ninth dock item"
+msgstr ""
+
+#: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
 msgstr "Predstavnost"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:130
+#: src/Shortcuts/Backend/ShortcutsList.vala:139
 msgid "Volume Up"
 msgstr "Zvišaj glasnost"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:131
+#: src/Shortcuts/Backend/ShortcutsList.vala:140
 msgid "Volume Down"
 msgstr "Znižaj glasnost"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:132
+#: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
 msgstr "Utišaj"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:133
+#: src/Shortcuts/Backend/ShortcutsList.vala:142
 #, fuzzy
 #| msgid "Pause"
 msgid "Play/Pause"
 msgstr "Premor"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:134
+#: src/Shortcuts/Backend/ShortcutsList.vala:143
 msgid "Pause"
 msgstr "Premor"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:135
+#: src/Shortcuts/Backend/ShortcutsList.vala:144
 msgid "Stop"
 msgstr "Zaustavi"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:136
+#: src/Shortcuts/Backend/ShortcutsList.vala:145
 msgid "Previous Track"
 msgstr "Predhodna skladba"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:137
+#: src/Shortcuts/Backend/ShortcutsList.vala:146
 msgid "Next Track"
 msgstr "Naslednja skladba"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:138
+#: src/Shortcuts/Backend/ShortcutsList.vala:147
 msgid "Eject"
 msgstr "Izvrzi"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:142
+#: src/Shortcuts/Backend/ShortcutsList.vala:151
 msgid "Universal Access"
 msgstr "Univerzalni dostop"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:143
+#: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
 msgstr "Zmanjšaj velikost pisave"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:144
+#: src/Shortcuts/Backend/ShortcutsList.vala:153
 msgid "Increase Text Size"
 msgstr "Povečaj velikost pisave"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:145
+#: src/Shortcuts/Backend/ShortcutsList.vala:154
 msgid "Magnifier Zoom in"
 msgstr "Približaj z lupo"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:146
+#: src/Shortcuts/Backend/ShortcutsList.vala:155
 msgid "Magnifier Zoom out"
 msgstr "Oddalji z lupo"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:147
+#: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
 msgstr "Preklopi zaslonsko tipkovnico"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:148
+#: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
 msgstr "Preklopi zaslonski bralnik"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:152 src/Shortcuts/Shortcuts.vala:51
+#: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
 msgstr "Sistem"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:154
+#: src/Shortcuts/Backend/ShortcutsList.vala:163
 msgid "Lock"
 msgstr "Zakleni"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:155
+#: src/Shortcuts/Backend/ShortcutsList.vala:164
 msgid "Log Out"
 msgstr "Odjava"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:156
+#: src/Shortcuts/Backend/ShortcutsList.vala:165
 msgid "Cycle display mode"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:160
+#: src/Shortcuts/Backend/ShortcutsList.vala:169
 #, fuzzy
 #| msgid "Add Layout"
 msgid "Keyboard Layouts"
 msgstr "Dodaj razporeditev"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:161
+#: src/Shortcuts/Backend/ShortcutsList.vala:170
 #, fuzzy
 #| msgid "Add Layout"
 msgid "Switch Keyboard Layout"
 msgstr "Dodaj razporeditev"
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:162
+#: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:163
+#: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:164
+#: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
 msgstr ""
 
-#: src/Shortcuts/Backend/ShortcutsList.vala:168 src/Shortcuts/Shortcuts.vala:53
+#: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
 msgstr "Po meri"
 
