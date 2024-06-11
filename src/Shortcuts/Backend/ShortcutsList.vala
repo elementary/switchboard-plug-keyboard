@@ -130,8 +130,8 @@ namespace Keyboard.Shortcuts {
             add_action (ref launchers_group, Schema.DOCK, _("Launch fifth dock item"), "launch-dock-5");
             add_action (ref launchers_group, Schema.DOCK, _("Launch sixth dock item"), "launch-dock-6");
             add_action (ref launchers_group, Schema.DOCK, _("Launch seventh dock item"), "launch-dock-7");
-            add_action (ref launchers_group, Schema.DOCK, _("Launch eigth dock item"), "launch-dock-8");
-            add_action (ref launchers_group, Schema.DOCK, _("Launch nineth dock item"), "launch-dock-9");
+            add_action (ref launchers_group, Schema.DOCK, _("Launch eighth dock item"), "launch-dock-8");
+            add_action (ref launchers_group, Schema.DOCK, _("Launch ninth dock item"), "launch-dock-9");
 
             media_group = {};
             media_group.icon_name = "applications-multimedia";
