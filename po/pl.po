@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2024-04-13 19:13+0000\n"
+"PO-Revision-Date: 2024-06-12 19:16+0000\n"
 "Last-Translator: Marcin Serwin <marcin.serwin0@protonmail.com>\n"
 "Language-Team: Polish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/pl/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-15 06:32+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
@@ -750,39 +750,39 @@ msgstr "Przeglądarka internetowa"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:126
 msgid "Launch first dock item"
-msgstr ""
+msgstr "Uruchom pierwszą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:127
 msgid "Launch second dock item"
-msgstr ""
+msgstr "Uruchom drugą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:128
 msgid "Launch third dock item"
-msgstr ""
+msgstr "Uruchom trzecią pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:129
 msgid "Launch fourth dock item"
-msgstr ""
+msgstr "Uruchom czwartą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:130
 msgid "Launch fifth dock item"
-msgstr ""
+msgstr "Uruchom piątą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:131
 msgid "Launch sixth dock item"
-msgstr ""
+msgstr "Uruchom szóstą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:132
 msgid "Launch seventh dock item"
-msgstr ""
+msgstr "Uruchom siódmą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:133
 msgid "Launch eighth dock item"
-msgstr ""
+msgstr "Uruchom ósmą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:134
 msgid "Launch ninth dock item"
-msgstr ""
+msgstr "Uruchom dziewiątą pozycję w doku"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
