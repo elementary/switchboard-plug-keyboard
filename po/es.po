@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2024-06-13 17:16+0000\n"
+"PO-Revision-Date: 2024-06-14 03:33+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
@@ -930,7 +930,7 @@ msgstr ""
 
 #: src/Shortcuts/Shortcuts.vala:49
 msgid "Accessibility"
-msgstr ""
+msgstr "Accesibilidad"
 
 #: src/Shortcuts/Widgets/ConflictDialog.vala:26
 #, c-format
