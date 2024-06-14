@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2024-06-14 03:33+0000\n"
+"PO-Revision-Date: 2024-06-15 16:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
@@ -21,10 +21,8 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-03-14 07:05+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
-#, fuzzy
-#| msgid "Show on-screen keyboard:"
 msgid "Show On-screen Keyboard"
-msgstr "Mostrar teclado en pantalla:"
+msgstr "Mostrar teclado en pantalla"
 
 #: src/Behavior/Behavior.vala:16
 msgid "On-screen keyboard settings…"
@@ -32,7 +30,7 @@ msgstr "Configuración del teclado en pantalla…"
 
 #: src/Behavior/Behavior.vala:38
 msgid "Delay:"
-msgstr "Demora:"
+msgstr "Retraso:"
 
 #: src/Behavior/Behavior.vala:42
 msgid "Interval:"
@@ -56,58 +54,58 @@ msgstr "Parpadeo del cursor"
 
 #: src/Behavior/Behavior.vala:116 src/Plug.vala:133
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Teclas especiales"
 
 #: src/Behavior/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
 msgstr ""
+"Las teclas ⌘, Alt, Ctrl, o Mayús se mantienen presionadas hasta presionar "
+"otra tecla"
 
 #: src/Behavior/Behavior.vala:133 src/Plug.vala:132
 msgid "Slow Keys"
-msgstr ""
+msgstr "Teclas lentas"
 
 #: src/Behavior/Behavior.vala:135
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "No se acepta una tecla como entrada a menos que se mantenga presionada"
 
 #: src/Behavior/Behavior.vala:159 src/Plug.vala:129
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Teclas filtro"
 
 #: src/Behavior/Behavior.vala:161
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "Ignorar presiones de teclado rápidas y duplicadas"
 
 #: src/Behavior/Behavior.vala:179
-#, fuzzy
-#| msgid "Left Alt"
 msgid "Event Alerts"
-msgstr "Alt izquierda"
+msgstr "Alertas de sucesos"
 
 #: src/Behavior/Behavior.vala:180
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "Se reproduce un sonido o la pantalla parpadea. %s"
 
 #: src/Behavior/Behavior.vala:182
 msgid "Sound Settings…"
-msgstr ""
+msgstr "Configuración de Sonido…"
 
 #: src/Behavior/Behavior.vala:187
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "Las teclas Bloq Mayús ⇪ o Bloq Num se mantienen presionadas"
 
 #: src/Behavior/Behavior.vala:188
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Las teclas filtro se están rechazando"
 
 #: src/Behavior/Behavior.vala:189
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Las teclas especiales se mantienen presionadas"
 
 #: src/Behavior/Behavior.vala:190
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Las teclas lentas se están rechazando"
 
 #: src/Behavior/Behavior.vala:206
 msgid "Type to test your settings"
@@ -116,38 +114,32 @@ msgstr "Escriba para probar su configuración"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/InputMethod/InputMethod.vala:50
 msgid "IBus Daemon is not running"
-msgstr "El demonio de IBus no está ejecutándose"
+msgstr "El servicio de IBus no se está ejecutando"
 
 #: src/InputMethod/InputMethod.vala:51
-#, fuzzy
-#| msgid ""
-#| "You need to run the IBus daemon to enable or configure input method "
-#| "engines."
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
 msgstr ""
-"Es necesario ejecutar el demonio de IBus para activar o configurar motores "
-"para métodos de entrada."
+"Es necesario ejecutar el servicio de IBus para activar o configurar motores "
+"de métodos de entrada."
 
 #: src/InputMethod/InputMethod.vala:60
 msgid "Start IBus Daemon"
-msgstr "Iniciar demonio de IBus"
+msgstr "Iniciar servicio de IBus"
 
 #: src/InputMethod/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Se puede gestionar en Configuración del Sistema → Aplicaciones → Inicio"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/InputMethod/InputMethod.vala:67
 msgid "Could not start the IBus daemon"
-msgstr "No se pudo iniciar el demonio de IBus"
+msgstr "No se pudo iniciar el servicio de IBus"
 
 #: src/InputMethod/InputMethod.vala:105
-#, fuzzy
-#| msgid "Add Engine"
 msgid "Add Engine…"
-msgstr "Añadir motor"
+msgstr "Añadir motor…"
 
 #: src/InputMethod/InputMethod.vala:133 src/Layout/Widgets/Display.vala:192
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:167
@@ -193,11 +185,11 @@ msgstr "Incrustar texto de preedición en la ventana de la aplicación:"
 
 #: src/InputMethod/InputMethod.vala:403
 msgid "IBus Daemon"
-msgstr "Demonio de IBus"
+msgstr "Servicio de IBus"
 
 #: src/InputMethod/InputMethod.vala:406
 msgid "Use and manage input methods"
-msgstr "Usar y administrar métodos de entrada"
+msgstr "Utilizar y gestionar métodos de entrada"
 
 #: src/InputMethod/InputMethod.vala:439
 msgid "Type to test your input method"
@@ -205,7 +197,7 @@ msgstr "Escriba para probar el método de entrada"
 
 #: src/InputMethod/InputMethod.vala:442
 msgid "A keyboard layout is active"
-msgstr "Hay una disposición de teclado activa"
+msgstr "Hay una distribución de teclado activa"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
@@ -243,7 +235,7 @@ msgstr "Añadir motor"
 
 #: src/InputMethod/Widgets/InstallEngineDialog.vala:24
 msgid "Choose an engine to install"
-msgstr "Elija el motor que debe instalarse"
+msgstr "Elija el motor a instalar"
 
 #: src/InputMethod/Widgets/InstallEngineDialog.vala:25
 msgid "Select an engine from the list to install and use."
@@ -309,7 +301,7 @@ msgstr "Mayús + Bloq Mayús"
 
 #: src/Layout/Layout.vala:46
 msgid "Switch layout:"
-msgstr "Cambiar disposición de teclado:"
+msgstr "Cambiar distribución del teclado:"
 
 #: src/Layout/Layout.vala:54
 msgid "Menu"
@@ -336,7 +328,7 @@ msgstr "Tecla modificadora:"
 
 #: src/Layout/Layout.vala:74 src/Shortcuts/Backend/ShortcutsList.vala:162
 msgid "Applications Menu"
-msgstr "Menú de aplicaciones"
+msgstr "Menú de Aplicaciones"
 
 #: src/Layout/Layout.vala:75 src/Shortcuts/Backend/ShortcutsList.vala:80
 msgid "Multitasking View"
@@ -376,7 +368,7 @@ msgstr "Intercambiar con Ctrl"
 
 #: src/Layout/Layout.vala:99
 msgid "Swap with Escape"
-msgstr "Intercambiar con Escape"
+msgstr "Intercambiar con Esc"
 
 #: src/Layout/Layout.vala:107
 msgid "Caps Lock behavior:"
@@ -384,7 +376,7 @@ msgstr "Comportamiento de Bloq Mayús:"
 
 #: src/Layout/Layout.vala:241 src/Layout/Layout.vala:267
 msgid "Key to choose 3rd level:"
-msgstr "Tecla para elegir el 3.ᵉʳ nivel:"
+msgstr "Tecla para elegir el 3ᵉʳ nivel:"
 
 #: src/Layout/Layout.vala:256
 msgid "Left Alt"
@@ -392,7 +384,7 @@ msgstr "Alt izquierda"
 
 #: src/Layout/Layout.vala:281
 msgid "Key to choose 5th level:"
-msgstr "Tecla para elegir el 5.º nivel:"
+msgstr "Tecla para elegir el 5º nivel:"
 
 #: src/Layout/Layout.vala:298
 msgid "Kana Lock:"
@@ -404,7 +396,7 @@ msgstr "Retroceso Nicola F:"
 
 #: src/Layout/Layout.vala:312
 msgid "Hankaku Zenkaku as Escape:"
-msgstr "Hankaku/zenkaku como Escape:"
+msgstr "Hankaku/zenkaku como Esc:"
 
 #: src/Layout/Layout.vala:331
 msgid "Hangul/Hanja keys on Right Alt/Ctrl:"
@@ -412,7 +404,7 @@ msgstr "Teclas de hangul/hanja en Alt/Ctrl derecha:"
 
 #: src/Layout/Layout.vala:409
 msgid "Type to test your layout"
-msgstr "Escriba para probar la disposición"
+msgstr "Escriba para probar la distribución"
 
 #: src/Layout/Layout.vala:412
 msgid "Input Method is active"
@@ -424,7 +416,7 @@ msgstr "Idioma de entrada"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:22
 msgid "Layout List"
-msgstr "Lista de disposiciones"
+msgstr "Lista de distribuciones"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:42
 msgid "Search input language"
@@ -432,17 +424,15 @@ msgstr "Buscar el idioma de entrada"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:102
 msgid "Preview Layout"
-msgstr "Previsualizar disposición"
+msgstr "Previsualizar distribución"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:152
 msgid "Add Layout"
-msgstr "Añadir disposición"
+msgstr "Añadir distribución"
 
 #: src/Layout/Widgets/Display.vala:41
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Add Keyboard Layout…"
-msgstr "Mostrar disposición de teclado"
+msgstr "Agregar distribución de teclado…"
 
 #: src/Layout/Widgets/Display.vala:196
 msgid "Move up"
@@ -458,13 +448,12 @@ msgstr "Teclado"
 
 #: src/Plug.vala:40
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
-"Configure el comportamiento, las disposiciones y los atajos del teclado"
+msgstr "Configure la distribución, el comportamiento y los atajos del teclado"
 
 #: src/Plug.vala:54 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
 #: src/Plug.vala:120 src/Plug.vala:121
 msgid "Layout"
-msgstr "Disposición"
+msgstr "Distribución"
 
 #: src/Plug.vala:55 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
@@ -482,11 +471,11 @@ msgstr "Comportamiento"
 
 #: src/Plug.vala:118
 msgid "Switch layout"
-msgstr "Cambiar disposición"
+msgstr "Cambiar distribución"
 
 #: src/Plug.vala:119
 msgid "Compose Key"
-msgstr "Tecla de composición"
+msgstr "Tecla modificadora"
 
 #: src/Plug.vala:120
 msgid "⌘ key behavior"
@@ -530,7 +519,7 @@ msgstr "Restaurar"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:58
 msgid "Toggle Maximized"
-msgstr "Conmutar maximización"
+msgstr "Activar o desactivar maximizado"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:59
 msgid "Hide"
@@ -542,7 +531,7 @@ msgstr "Activar o desactivar pantalla completa"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:61
 msgid "Toggle on all Workspaces"
-msgstr "Activar o desactivar en todas las áreas de trabajo"
+msgstr "Activar o desactivar todas las áreas de trabajo"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:62
 msgid "Toggle always on Top"
@@ -557,16 +546,12 @@ msgid "Cycle Windows backwards"
 msgstr "Cambiar entre ventanas en orden inverso"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:65
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "Cambiar entre ventanas en orden inverso"
+msgstr "Cambiar entre ventanas de una aplicación"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:66
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "Cambiar entre ventanas en orden inverso"
+msgstr "Cambiar entre ventanas de una aplicación en orden inverso"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:67
 msgid "Tile Left"
@@ -618,11 +603,11 @@ msgstr "Cambiar a la derecha"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:83
 msgid "Switch to first"
-msgstr "Cambiar al primero"
+msgstr "Cambiar a la primera"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:84
 msgid "Switch to new"
-msgstr "Cambiar al nuevo"
+msgstr "Cambiar a una nueva"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:85
 msgid "Switch to workspace 1"
@@ -766,39 +751,39 @@ msgstr "Navegador web"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:126
 msgid "Launch first dock item"
-msgstr ""
+msgstr "Ejecutar el primer elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:127
 msgid "Launch second dock item"
-msgstr ""
+msgstr "Ejecutar el segundo elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:128
 msgid "Launch third dock item"
-msgstr ""
+msgstr "Ejecutar el tercer elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:129
 msgid "Launch fourth dock item"
-msgstr ""
+msgstr "Ejecutar el cuarto elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:130
 msgid "Launch fifth dock item"
-msgstr ""
+msgstr "Ejecutar el quinto elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:131
 msgid "Launch sixth dock item"
-msgstr ""
+msgstr "Ejecutar el sexto elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:132
 msgid "Launch seventh dock item"
-msgstr ""
+msgstr "Ejecutar el séptimo elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:133
 msgid "Launch eighth dock item"
-msgstr ""
+msgstr "Ejecutar el octavo elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:134
 msgid "Launch ninth dock item"
-msgstr ""
+msgstr "Ejecutar el noveno elemento del Dock"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
@@ -814,7 +799,7 @@ msgstr "Bajar volumen"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
-msgstr "SIlenciar"
+msgstr "Silenciar"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:142
 msgid "Play/Pause"
@@ -846,27 +831,27 @@ msgstr "Acceso universal"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
-msgstr "Reducir tamaño del texto"
+msgstr "Reducir el tamaño del texto"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:153
 msgid "Increase Text Size"
-msgstr "Aumentar tamaño del texto"
+msgstr "Aumentar el tamaño del texto"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:154
 msgid "Magnifier Zoom in"
-msgstr "Acercar"
+msgstr "Acercar la Lupa"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:155
 msgid "Magnifier Zoom out"
-msgstr "Alejar"
+msgstr "Alejar la Lupa"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
-msgstr "Activar o desactivar teclado en pantalla"
+msgstr "Activar o desactivar el teclado en pantalla"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
-msgstr "Activar o desactivar lector de pantalla"
+msgstr "Activar o desactivar el lector de pantalla"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
@@ -885,28 +870,24 @@ msgid "Cycle display mode"
 msgstr "Modo de visualización de ciclo"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:169
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Keyboard Layouts"
-msgstr "Mostrar disposición de teclado"
+msgstr "Distribuciones de teclado"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:170
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "Switch Keyboard Layout"
-msgstr "Mostrar disposición de teclado"
+msgstr "Cambiar distribución de teclado"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Cambiar distribución de teclado en orden inverso"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Activar escritura de emojis"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Activar escritura Unicode"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
@@ -926,7 +907,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Backend/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: src/Shortcuts/Shortcuts.vala:49
 msgid "Accessibility"
@@ -947,14 +928,12 @@ msgid "Reassign"
 msgstr "Reasignar"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:29
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "Atajos"
+msgstr "Añadir atajo"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:123
 msgid "Enter a command here"
-msgstr "Introducir orden aquí"
+msgstr "Introduzca un comando aquí"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:156
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:103
@@ -974,18 +953,17 @@ msgstr "Ingresar un nuevo atajo…"
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:369
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:273
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "No se puede establecer un nuevo atajo debido a conflictos"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:370
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:274
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s ya se utiliza para %s"
+msgstr "%s ya se utiliza para «%s → %s»."
 
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:108
 msgid "Reset to Default"
-msgstr "Restablecer predeterminado"
+msgstr "Restablecer predeterminados"
 
 #~ msgid "Add…"
 #~ msgstr "Añadir…"
