@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2024-06-13 15:50+0000\n"
+"PO-Revision-Date: 2024-06-15 16:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/es/>\n"
@@ -21,12 +21,11 @@ msgstr ""
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
-msgstr "Configuración de teclado"
+msgstr "Configuración de Teclado"
 
 #: data/keyboard.metainfo.xml.in:11
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr ""
-"Configure el comportamiento, las disposiciones y los atajos del teclado"
+msgstr "Configure la distribución, el comportamiento y los atajos del teclado"
 
 #: data/keyboard.metainfo.xml.in:37
 msgid "elementary, Inc."
@@ -40,17 +39,19 @@ msgstr "Actualizaciones menores:"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "Se corrigieron posibles fallas graves"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
 msgstr ""
+"Se añadieron los atajos de «Cambiar entre ventanas de una aplicación» y «"
+"Cambiar entre ventanas de una aplicación en orden inverso»"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "Se mejoró la experiencia para instalar métodos de entrada"
 
 #: data/keyboard.metainfo.xml.in:50 data/keyboard.metainfo.xml.in:64
 #: data/keyboard.metainfo.xml.in:79 data/keyboard.metainfo.xml.in:98
@@ -61,6 +62,8 @@ msgstr "Traducciones actualizadas"
 #: data/keyboard.metainfo.xml.in:63
 msgid "Show the values associated with sliders while dragging"
 msgstr ""
+"Se muestran los valores asociados a los controles deslizantes mientras se "
+"arrastran"
 
 #: data/keyboard.metainfo.xml.in:89 data/keyboard.metainfo.xml.in:115
 msgid "New features:"
@@ -68,27 +71,27 @@ msgstr "Nuevas características:"
 
 #: data/keyboard.metainfo.xml.in:91
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Se pueden revertir los atajos a sus valores predeterminados"
 
 #: data/keyboard.metainfo.xml.in:92
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Se puede deshabilitar un atajo con facilidad"
 
 #: data/keyboard.metainfo.xml.in:93
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Se agregó soporte del método de entrada Rime para el idioma chino"
 
 #: data/keyboard.metainfo.xml.in:97
 msgid "Remove custom shortcuts from their menu"
-msgstr ""
+msgstr "Se pueden eliminar atajos personalizados desde su propio menú"
 
 #: data/keyboard.metainfo.xml.in:107
 msgid "Update for OS 7"
-msgstr ""
+msgstr "Actualizado a OS 7"
 
 #: data/keyboard.metainfo.xml.in:117
 msgid "Open Multitasking View with Super"
-msgstr ""
+msgstr "Se puede abrir la Vista multitarea con la tecla Súper"
 
 #~ msgid "Add Layout popover is now a dialog"
 #~ msgstr "La capa Añadir disposición ahora es un cuadro de diálogo"
