@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2023-07-26 14:17+0000\n"
+"PO-Revision-Date: 2024-06-16 21:16+0000\n"
 "Last-Translator: Allan Nordhøy <epost@anotheragency.no>\n"
 "Language-Team: Norwegian Bokmål <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/nb/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.5.5\n"
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
@@ -138,7 +138,7 @@ msgstr "Start IBus-nissen"
 
 #: src/InputMethod/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "Kan håndteres i Systeminnstillinger → Programmer → Oppstart"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/InputMethod/InputMethod.vala:67
@@ -780,39 +780,39 @@ msgstr "Nettleser"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:126
 msgid "Launch first dock item"
-msgstr ""
+msgstr "Kjør første dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:127
 msgid "Launch second dock item"
-msgstr ""
+msgstr "Kjør andre dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:128
 msgid "Launch third dock item"
-msgstr ""
+msgstr "Kjør tredje dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:129
 msgid "Launch fourth dock item"
-msgstr ""
+msgstr "Kjør fjerde dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:130
 msgid "Launch fifth dock item"
-msgstr ""
+msgstr "Kjør femte dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:131
 msgid "Launch sixth dock item"
-msgstr ""
+msgstr "Kjør sjette dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:132
 msgid "Launch seventh dock item"
-msgstr ""
+msgstr "Kjør syvende dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:133
 msgid "Launch eighth dock item"
-msgstr ""
+msgstr "Kjør åttende dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:134
 msgid "Launch ninth dock item"
-msgstr ""
+msgstr "Kjør niende dokkelement"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
@@ -828,7 +828,7 @@ msgstr "Senk lydstyrke"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:141
 msgid "Mute"
-msgstr "Lyddemping"
+msgstr "Forstum"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:142
 msgid "Play/Pause"
@@ -911,16 +911,19 @@ msgid "Switch Keyboard Layout"
 msgstr "Vis tastaturoppsett"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:171
+#, fuzzy
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Inverter tastaturoppsett"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:172
+#, fuzzy
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Skru på Emoji-tegninntasting"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:173
+#, fuzzy
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Skru på Unikode-tegninntasting"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
@@ -939,8 +942,9 @@ msgid "Alt"
 msgstr "Alt"
 
 #: src/Shortcuts/Backend/Shortcut.vala:77
+#, fuzzy
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: src/Shortcuts/Shortcuts.vala:49
 msgid "Accessibility"
@@ -949,7 +953,7 @@ msgstr "Tilgjengelighet"
 #: src/Shortcuts/Widgets/ConflictDialog.vala:26
 #, c-format
 msgid "%s is already used for %s"
-msgstr "%s er allerede i bruk for %s"
+msgstr "%s brukes allerede for %s"
 
 #: src/Shortcuts/Widgets/ConflictDialog.vala:27
 #, c-format
@@ -999,16 +1003,13 @@ msgstr "Kunne ikke sette ny snarvei som følge av konflikter"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:370
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:274
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s er allerede i bruk for %s"
+msgstr "«%s» brukes allerede for «%s → %s»."
 
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:108
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "Forvalg"
+msgstr "Tilbakestill til forvalg"
 
 #~ msgid "Add…"
 #~ msgstr "Legg til…"
