@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2024-06-15 16:16+0000\n"
+"PO-Revision-Date: 2024-06-24 03:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/es/>\n"
@@ -332,7 +332,7 @@ msgstr "Menú de Aplicaciones"
 
 #: src/Layout/Layout.vala:75 src/Shortcuts/Backend/ShortcutsList.vala:80
 msgid "Multitasking View"
-msgstr "Vista multitarea"
+msgstr "Vista Multitarea"
 
 #: src/Layout/Layout.vala:78
 msgid "⌘ key behavior:"
