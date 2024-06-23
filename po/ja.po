@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-11 17:33+0000\n"
-"PO-Revision-Date: 2024-06-20 12:16+0000\n"
+"PO-Revision-Date: 2024-06-24 03:16+0000\n"
 "Last-Translator: Ryo Nakano <ryonakaknock3@gmail.com>\n"
 "Language-Team: Japanese <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/ja/>\n"
@@ -910,7 +910,7 @@ msgstr "Meta"
 
 #: src/Shortcuts/Shortcuts.vala:49
 msgid "Accessibility"
-msgstr "アクセシビリティー"
+msgstr "アクセシビリティ"
 
 #: src/Shortcuts/Widgets/ConflictDialog.vala:26
 #, c-format
