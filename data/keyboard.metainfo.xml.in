@@ -40,6 +40,26 @@
   <update_contact>contact_at_elementary.io</update_contact>
 
   <releases>
+    <release version="8.0.0" date="2024-07-08" urgency="medium">
+      <description>
+        <p>Minor updates:</p>
+        <ul>
+          <li>Updated shortcut category icons</li>
+          <li>Improved screen reader accessibility</li>
+          <li>New shortcut settings for launching dock items</li>
+          <li>Clearer actions for managing keyboard layouts</li>
+          <li>Updated translations</li>
+        </ul>
+      </description>
+      <issues>
+        <issue url="https://github.com/elementary/switchboard-plug-keyboard/issues/434">Media keys no longer assignable</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-keyboard/issues/439">Keyboard / Input Method / Switch engines setting should default to Disabled</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-keyboard/issues/472">Free up the Super key </issue>
+        <issue url="https://github.com/elementary/triage/issues/18">Strange behavior with ctrl + shift + e shortcut</issue>
+        <issue url="https://github.com/elementary/switchboard-plug-keyboard/issues/238">Plugin takes long time to open</issue>
+      </issues>
+    </release>
+
     <release version="3.2.1" date="2023-08-22" urgency="medium">
       <description>
         <p>Minor updates:</p>
@@ -100,29 +120,8 @@
       </description>
     </release>
 
-    <release version="3.0.0" date="2022-05-09" urgency="medium">
-      <description>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Update for OS 7</li>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
-    <release version="2.7.0" date="2022-04-06" urgency="medium">
-      <description>
-        <p>New features:</p>
-        <ul>
-          <li>Open Multitasking View with Super</li>
-        </ul>
-        <p>Minor updates:</p>
-        <ul>
-          <li>Updated translations</li>
-        </ul>
-      </description>
-    </release>
-
+    <release version="3.0.0" date="2022-05-09" />
+    <release version="2.7.0" date="2022-04-06" />
     <release version="2.6.0" date="2021-11-23" />
   </releases>
 </component>
