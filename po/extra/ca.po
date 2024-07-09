@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 17:09+0000\n"
-"PO-Revision-Date: 2023-08-24 09:08+0000\n"
+"PO-Revision-Date: 2024-07-10 01:16+0000\n"
 "Last-Translator: David M <rbndavid@gmail.com>\n"
 "Language-Team: Catalan <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/ca/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -39,19 +39,19 @@ msgstr "Actualitzacions menors:"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "Icones de drecera de categories actualitzades"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Millora de l'accessibilitat del lector de pantalla"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "New shortcut settings for launching dock items"
-msgstr ""
+msgstr "Nova configuració de drecera per llançar elements de l'acoblador"
 
 #: data/keyboard.metainfo.xml.in:50
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "Accions més clares per gestionar la disposició del teclat"
 
 #: data/keyboard.metainfo.xml.in:51 data/keyboard.metainfo.xml.in:70
 #: data/keyboard.metainfo.xml.in:84 data/keyboard.metainfo.xml.in:99
