@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 17:09+0000\n"
-"PO-Revision-Date: 2023-08-24 09:08+0000\n"
+"PO-Revision-Date: 2024-07-11 08:16+0000\n"
 "Last-Translator: David Hewitt <davidmhewitt@gmail.com>\n"
 "Language-Team: English (United Kingdom) <https://l10n.elementary.io/projects/"
 "switchboard/keyboard-plug-extra/en_GB/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -39,19 +39,19 @@ msgstr "Minor updates:"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "Updated shortcut category icons"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Improved screen reader accessibility"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "New shortcut settings for launching dock items"
-msgstr ""
+msgstr "New shortcut settings for launching dock items"
 
 #: data/keyboard.metainfo.xml.in:50
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "Clearer actions for managing keyboard layouts"
 
 #: data/keyboard.metainfo.xml.in:51 data/keyboard.metainfo.xml.in:70
 #: data/keyboard.metainfo.xml.in:84 data/keyboard.metainfo.xml.in:99
