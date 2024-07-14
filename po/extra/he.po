@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 17:09+0000\n"
-"PO-Revision-Date: 2024-07-04 16:16+0000\n"
+"PO-Revision-Date: 2024-07-10 01:16+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/he/>\n"
@@ -39,19 +39,19 @@ msgstr "עדכונים משניים:"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "סמלי קטגוריות קיצורים עודכנו"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "נגישות מקריא המסך השתפרה"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "New shortcut settings for launching dock items"
-msgstr ""
+msgstr "הגדרות קיצור חדשות להפעלת פריטים במעגן"
 
 #: data/keyboard.metainfo.xml.in:50
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "פעולות ברורות יותר לניהול פריסות מקלדת"
 
 #: data/keyboard.metainfo.xml.in:51 data/keyboard.metainfo.xml.in:70
 #: data/keyboard.metainfo.xml.in:84 data/keyboard.metainfo.xml.in:99

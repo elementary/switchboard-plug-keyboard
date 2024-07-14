@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 17:09+0000\n"
-"PO-Revision-Date: 2024-06-24 03:16+0000\n"
+"PO-Revision-Date: 2024-07-10 01:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -39,19 +39,20 @@ msgstr "Actualizaciones menores:"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "Se actualizaron los iconos de la categoría de accesos directos"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Se mejoró la accesibilidad para los lectores de pantalla"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "New shortcut settings for launching dock items"
 msgstr ""
+"Se agregaron nuevas configuraciones de atajos para lanzar elementos del Dock"
 
 #: data/keyboard.metainfo.xml.in:50
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "Las acciones para gestionar distribuciones de teclado son más claras"
 
 #: data/keyboard.metainfo.xml.in:51 data/keyboard.metainfo.xml.in:70
 #: data/keyboard.metainfo.xml.in:84 data/keyboard.metainfo.xml.in:99
