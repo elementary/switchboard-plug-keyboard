@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 17:09+0000\n"
-"PO-Revision-Date: 2024-07-10 01:16+0000\n"
+"PO-Revision-Date: 2024-07-21 09:16+0000\n"
 "Last-Translator: Ihor Hordiichuk <igor_ck@outlook.com>\n"
 "Language-Team: Ukrainian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/uk/>\n"
@@ -44,7 +44,7 @@ msgstr "Оновлено піктограми категорій ярликів"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid "Improved screen reader accessibility"
-msgstr "Поліпшення доступності для зчитування з екрана"
+msgstr "Поліпшення доступності для зчитувачів з екрана"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "New shortcut settings for launching dock items"
