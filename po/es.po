@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:33+0000\n"
+"POT-Creation-Date: 2024-07-08 17:09+0000\n"
 "PO-Revision-Date: 2024-06-29 14:16+0000\n"
 "Last-Translator: Italo Felipe Capasso Ballesteros <edwood.grant@gmail.com>\n"
 "Language-Team: Spanish <https://l10n.elementary.io/projects/switchboard/"
@@ -130,7 +130,8 @@ msgstr "Iniciar servicio de IBus"
 
 #: src/InputMethod/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr "Se puede gestionar en Configuración del Sistema → Aplicaciones → Inicio"
+msgstr ""
+"Se puede gestionar en Configuración del Sistema → Aplicaciones → Inicio"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/InputMethod/InputMethod.vala:67

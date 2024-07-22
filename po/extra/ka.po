@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-11 17:33+0000\n"
+"POT-Creation-Date: 2024-07-08 17:09+0000\n"
 "PO-Revision-Date: 2024-01-24 03:33+0000\n"
 "Last-Translator: NorwayFun <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://l10n.elementary.io/projects/switchboard/"
@@ -31,17 +31,39 @@ msgstr "მოირგეთ კლავიატურის ქცევა,
 msgid "elementary, Inc."
 msgstr "elementary, Inc."
 
-#: data/keyboard.metainfo.xml.in:45 data/keyboard.metainfo.xml.in:61
-#: data/keyboard.metainfo.xml.in:77 data/keyboard.metainfo.xml.in:95
-#: data/keyboard.metainfo.xml.in:105 data/keyboard.metainfo.xml.in:119
+#: data/keyboard.metainfo.xml.in:45 data/keyboard.metainfo.xml.in:65
+#: data/keyboard.metainfo.xml.in:81 data/keyboard.metainfo.xml.in:97
+#: data/keyboard.metainfo.xml.in:115
 msgid "Minor updates:"
 msgstr "უმნიშვნელო განახლებები:"
 
 #: data/keyboard.metainfo.xml.in:47
+msgid "Updated shortcut category icons"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:48
+msgid "Improved screen reader accessibility"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:49
+msgid "New shortcut settings for launching dock items"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:50
+msgid "Clearer actions for managing keyboard layouts"
+msgstr ""
+
+#: data/keyboard.metainfo.xml.in:51 data/keyboard.metainfo.xml.in:70
+#: data/keyboard.metainfo.xml.in:84 data/keyboard.metainfo.xml.in:99
+#: data/keyboard.metainfo.xml.in:118
+msgid "Updated translations"
+msgstr "განახლებული თარგმანები"
+
+#: data/keyboard.metainfo.xml.in:67
 msgid "Fix potential crashes"
 msgstr "პოტენციური ავარიების გასწორება"
 
-#: data/keyboard.metainfo.xml.in:48
+#: data/keyboard.metainfo.xml.in:68
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
@@ -49,47 +71,39 @@ msgstr ""
 "\"აპლიკაციის ფანჯრებს შორის გადართვისა\" და \"აპლიკაციის ფანჯრებს შორის უკან "
 "გადართვის\" მალსახმობების დამატება"
 
-#: data/keyboard.metainfo.xml.in:49
+#: data/keyboard.metainfo.xml.in:69
 msgid "Improve experience installing input methods"
 msgstr "შეყვანის მეთოდების დაყენების გაუმჯობესება"
 
-#: data/keyboard.metainfo.xml.in:50 data/keyboard.metainfo.xml.in:64
-#: data/keyboard.metainfo.xml.in:79 data/keyboard.metainfo.xml.in:98
-#: data/keyboard.metainfo.xml.in:108 data/keyboard.metainfo.xml.in:121
-msgid "Updated translations"
-msgstr "განახლებული თარგმანები"
-
-#: data/keyboard.metainfo.xml.in:63
+#: data/keyboard.metainfo.xml.in:83
 msgid "Show the values associated with sliders while dragging"
 msgstr "გადათრევისას ჩოჩიების მნიშვნელობების ჩვენება"
 
-#: data/keyboard.metainfo.xml.in:89 data/keyboard.metainfo.xml.in:115
+#: data/keyboard.metainfo.xml.in:109
 msgid "New features:"
 msgstr "ახალი ფუნქციები:"
 
-#: data/keyboard.metainfo.xml.in:91
+#: data/keyboard.metainfo.xml.in:111
 msgid "Revert shortcuts to default"
 msgstr "მალსახმობების ნაგულისხმებ მნიშვნელობებზე დაბრუნება"
 
-#: data/keyboard.metainfo.xml.in:92
+#: data/keyboard.metainfo.xml.in:112
 msgid "Easily disable a shortcut"
 msgstr "ადვილად გამორთეთ მალსახმობი"
 
-#: data/keyboard.metainfo.xml.in:93
+#: data/keyboard.metainfo.xml.in:113
 msgid "Support Rime input method for Chinese"
 msgstr "ჩინურისთვის Rime შეყვანის მეთოდის მხარდაჭერა"
 
-#: data/keyboard.metainfo.xml.in:97
+#: data/keyboard.metainfo.xml.in:117
 msgid "Remove custom shortcuts from their menu"
 msgstr "მათი მენიუდან ხელით მითითებული მალსახმობების წაშლა"
 
-#: data/keyboard.metainfo.xml.in:107
-msgid "Update for OS 7"
-msgstr "განახლებები OS 7-სთვის"
+#~ msgid "Update for OS 7"
+#~ msgstr "განახლებები OS 7-სთვის"
 
-#: data/keyboard.metainfo.xml.in:117
-msgid "Open Multitasking View with Super"
-msgstr "მრავალამოცანიანი ხედის Super-ით გახსნა"
+#~ msgid "Open Multitasking View with Super"
+#~ msgstr "მრავალამოცანიანი ხედის Super-ით გახსნა"
 
 #~ msgid "Redesigned custom shortcuts view"
 #~ msgstr "ხელით მითითებული მალსახმობების ხედის ცვლილება"
