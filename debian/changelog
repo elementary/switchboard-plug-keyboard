@@ -1,3 +1,9 @@
+io.elementary.settings.keyboard (8.0.0) noble; urgency=medium
+
+  * Release 8.0.0
+
+ -- Danielle Foré  <danielle@elementary.io>  Fri, 26 Jul 2024 14:31:31 -0700
+
 io.elementary.settings.keyboard (3.2.1) jammy; urgency=medium
 
   * Release 3.2.1
