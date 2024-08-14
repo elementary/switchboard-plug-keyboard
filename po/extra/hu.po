@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-08 17:09+0000\n"
-"PO-Revision-Date: 2024-08-07 18:17+0000\n"
+"PO-Revision-Date: 2024-08-15 16:16+0000\n"
 "Last-Translator: TomiOhl <ohlslager.tom@gmail.com>\n"
 "Language-Team: Hungarian <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/hu/>\n"
@@ -41,7 +41,7 @@ msgstr "Kisebb frissítések:"
 
 #: data/keyboard.metainfo.xml.in:47
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "A gyorsparancsok kategóriaikonjai frissítve"
 
 #: data/keyboard.metainfo.xml.in:48
 msgid "Improved screen reader accessibility"
@@ -49,11 +49,11 @@ msgstr "Jobb kezelhetőség képernyőolvasóval"
 
 #: data/keyboard.metainfo.xml.in:49
 msgid "New shortcut settings for launching dock items"
-msgstr ""
+msgstr "Új gyorsparancsok a dokkelemek elindításához"
 
 #: data/keyboard.metainfo.xml.in:50
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "Egyszerűbb billentyűkiosztás-váltási módok"
 
 #: data/keyboard.metainfo.xml.in:51 data/keyboard.metainfo.xml.in:70
 #: data/keyboard.metainfo.xml.in:84 data/keyboard.metainfo.xml.in:99
