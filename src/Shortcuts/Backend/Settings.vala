@@ -40,7 +40,7 @@ namespace Keyboard.Shortcuts {
             schema_names = {
                 "org.gnome.desktop.wm.keybindings",
                 "org.gnome.mutter.keybindings",
-                "org.pantheon.desktop.gala.keybindings",
+                "io.elementary.desktop.wm.keybindings",
                 "org.gnome.settings-daemon.plugins.media-keys",
                 "io.elementary.desktop.wingpanel.sound",
                 "org.freedesktop.ibus.panel.emoji",
