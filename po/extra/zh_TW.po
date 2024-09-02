@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-08-07 18:17+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/keyboard-plug-extra/zh_Hant/>\n"
 "Language: zh_TW\n"
@@ -35,7 +35,7 @@ msgstr "elementary, Inc."
 #: data/keyboard.metainfo.xml.in:74 data/keyboard.metainfo.xml.in:90
 #: data/keyboard.metainfo.xml.in:106 data/keyboard.metainfo.xml.in:124
 msgid "Minor updates:"
-msgstr ""
+msgstr "小型更新："
 
 #: data/keyboard.metainfo.xml.in:47 data/keyboard.metainfo.xml.in:60
 #: data/keyboard.metainfo.xml.in:79 data/keyboard.metainfo.xml.in:93
@@ -79,7 +79,7 @@ msgstr ""
 
 #: data/keyboard.metainfo.xml.in:118
 msgid "New features:"
-msgstr ""
+msgstr "新功能："
 
 #: data/keyboard.metainfo.xml.in:120
 msgid "Revert shortcuts to default"
