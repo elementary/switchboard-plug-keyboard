@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-09-02 05:42+0000\n"
+"PO-Revision-Date: 2024-09-06 10:13+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hant/>\n"
@@ -21,14 +21,12 @@ msgstr ""
 "X-Launchpad-Export-Date: 2017-02-12 06:18+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
-#, fuzzy
-#| msgid "Toggle On Screen Keyboard"
 msgid "Show On-screen Keyboard"
-msgstr "開關螢幕鍵盤"
+msgstr "顯示螢幕鍵盤"
 
 #: src/Behavior/Behavior.vala:16
 msgid "On-screen keyboard settings…"
-msgstr ""
+msgstr "螢幕鍵盤設定值…"
 
 #: src/Behavior/Behavior.vala:38
 msgid "Delay:"
@@ -56,7 +54,7 @@ msgstr "游標閃爍"
 
 #: src/Behavior/Behavior.vala:116 src/Plug.vala:133
 msgid "Sticky Keys"
-msgstr ""
+msgstr "相黏鍵"
 
 #: src/Behavior/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
@@ -79,23 +77,21 @@ msgid "Ignore fast duplicate keypresses"
 msgstr ""
 
 #: src/Behavior/Behavior.vala:179
-#, fuzzy
-#| msgid "Left Alt"
 msgid "Event Alerts"
-msgstr "左側 Alt"
+msgstr "事件警告"
 
 #: src/Behavior/Behavior.vala:180
 #, c-format
 msgid "Play a sound or flash the screen. %s"
-msgstr ""
+msgstr "播放音效或讓螢幕閃爍一下。%s"
 
 #: src/Behavior/Behavior.vala:182
 msgid "Sound Settings…"
-msgstr ""
+msgstr "音效設定值…"
 
 #: src/Behavior/Behavior.vala:187
 msgid "Caps Lock ⇪ or Num Lock keys are pressed"
-msgstr ""
+msgstr "按下 Caps Lock ⇪ 或 Num Lock 按鍵時"
 
 #: src/Behavior/Behavior.vala:188
 msgid "Bounce Keys are rejected"
@@ -103,7 +99,7 @@ msgstr ""
 
 #: src/Behavior/Behavior.vala:189
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "按下相黏鍵時"
 
 #: src/Behavior/Behavior.vala:190
 msgid "Slow Keys are rejected"
@@ -116,30 +112,30 @@ msgstr "請按鍵盤以測試您的設定"
 #. no_daemon_runnning view shown if IBus Daemon is not running
 #: src/InputMethod/InputMethod.vala:50
 msgid "IBus Daemon is not running"
-msgstr ""
+msgstr "IBus 伺服程式未在執行中"
 
 #: src/InputMethod/InputMethod.vala:51
 msgid ""
 "IBus daemon must run in the background to enable or configure input method "
 "engines."
-msgstr ""
+msgstr "IBus 伺服程式必須於背景執行才能啟用或設定輸入法引擎。"
 
 #: src/InputMethod/InputMethod.vala:60
 msgid "Start IBus Daemon"
-msgstr ""
+msgstr "啟動 IBus 伺服程式"
 
 #: src/InputMethod/InputMethod.vala:61
 msgid "Can be managed in System Settings → Applications → Startup"
-msgstr ""
+msgstr "可以在系統設定值 → 應用程式 → 初始啟動中管理"
 
 #. spawn_failed view shown if IBus Daemon is not running
 #: src/InputMethod/InputMethod.vala:67
 msgid "Could not start the IBus daemon"
-msgstr ""
+msgstr "無法啟動 IBus 伺服程式"
 
 #: src/InputMethod/InputMethod.vala:105
 msgid "Add Engine…"
-msgstr ""
+msgstr "加入引擎…"
 
 #: src/InputMethod/InputMethod.vala:133 src/Layout/Widgets/Display.vala:192
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:167
@@ -147,10 +143,8 @@ msgid "Remove"
 msgstr "移除"
 
 #: src/InputMethod/InputMethod.vala:149
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines:"
-msgstr "切換視窗"
+msgstr "切換引擎："
 
 #. tree view to display the current layouts
 #. Layout switching keybinding
@@ -167,66 +161,62 @@ msgstr "已停用"
 
 #: src/InputMethod/InputMethod.vala:166
 msgid "Show property panel:"
-msgstr ""
+msgstr "顯示屬性面板："
 
 #: src/InputMethod/InputMethod.vala:173
 msgid "Do not show"
-msgstr ""
+msgstr "不要顯示"
 
 #: src/InputMethod/InputMethod.vala:174
 msgid "Auto hide"
-msgstr ""
+msgstr "自動隱藏"
 
 #: src/InputMethod/InputMethod.vala:175
 msgid "Always show"
-msgstr ""
+msgstr "總是顯示"
 
 #: src/InputMethod/InputMethod.vala:177
 msgid "Embed preedit text in application window:"
-msgstr ""
+msgstr "將預編輯文字內嵌於應用程式視窗中："
 
 #: src/InputMethod/InputMethod.vala:403
 msgid "IBus Daemon"
-msgstr ""
+msgstr "IBus 伺服程式"
 
 #: src/InputMethod/InputMethod.vala:406
 msgid "Use and manage input methods"
-msgstr ""
+msgstr "使用並管理輸入法"
 
 #: src/InputMethod/InputMethod.vala:439
-#, fuzzy
-#| msgid "Type to test your layout"
 msgid "Type to test your input method"
-msgstr "請按鍵盤以測試您的鍵盤配置"
+msgstr "請繕打文字以測試您的輸入法"
 
 #: src/InputMethod/InputMethod.vala:442
-#, fuzzy
-#| msgid "Show keyboard layout"
 msgid "A keyboard layout is active"
-msgstr "顯示鍵盤配置"
+msgstr "鍵盤配置是有效的"
 
 #: src/InputMethod/Installer/InstallList.vala:26
 msgid "Japanese"
-msgstr ""
+msgstr "日文"
 
 #: src/InputMethod/Installer/InstallList.vala:28
 msgid "Korean"
-msgstr ""
+msgstr "韓文"
 
 #: src/InputMethod/Installer/InstallList.vala:30
 msgid "Chinese"
-msgstr ""
+msgstr "中文"
 
 #. /TRANSLATORS: This text appears in a search entry and tell users to type some search word
 #. /to look for a input method engine they want to add.
 #. /It does not mean search engines in web browsers.
 #: src/InputMethod/Widgets/AddEngineDialog.vala:43
 msgid "Search engine"
-msgstr ""
+msgstr "在引擎中搜尋"
 
 #: src/InputMethod/Widgets/AddEngineDialog.vala:73
 msgid "Install Unlisted Engines…"
-msgstr ""
+msgstr "安裝未列出的引擎…"
 
 #: src/InputMethod/Widgets/AddEngineDialog.vala:75
 #: src/InputMethod/Widgets/ProgressDialog.vala:60
@@ -237,35 +227,33 @@ msgstr "取消"
 
 #: src/InputMethod/Widgets/AddEngineDialog.vala:77
 msgid "Add Engine"
-msgstr ""
+msgstr "加入引擎"
 
 #: src/InputMethod/Widgets/InstallEngineDialog.vala:24
 msgid "Choose an engine to install"
-msgstr ""
+msgstr "選擇要安裝的引擎"
 
 #: src/InputMethod/Widgets/InstallEngineDialog.vala:25
 msgid "Select an engine from the list to install and use."
-msgstr ""
+msgstr "從列表中選擇要安裝使用的引擎。"
 
 #: src/InputMethod/Widgets/InstallEngineDialog.vala:45
-#, fuzzy
-#| msgid "Input Language"
 msgid "Languages"
-msgstr "輸入語言"
+msgstr "語言"
 
 #: src/InputMethod/Widgets/InstallEngineDialog.vala:99
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: src/InputMethod/Widgets/ProgressDialog.vala:47
 #, c-format
 msgid "Installing %s"
-msgstr "正在安裝 %s 中"
+msgstr "正在安裝 %s"
 
 #: src/InputMethod/Widgets/ProgressDialog.vala:50
 #, c-format
 msgid "Removing %s"
-msgstr "正在移除 %s 中"
+msgstr "正在移除 %s"
 
 #. Caps Lock key functionality
 #: src/InputSources/XkbLayoutHandler.vala:95 src/Layout/Layout.vala:91
@@ -371,7 +359,6 @@ msgid "as ⌘"
 msgstr "視為 ⌘"
 
 #: src/Layout/Layout.vala:98
-#, fuzzy
 msgid "Swap with Ctrl"
 msgstr "和 Ctrl 互換"
 
@@ -404,7 +391,6 @@ msgid "Nicola F Backspace:"
 msgstr "Nicola F Backspace："
 
 #: src/Layout/Layout.vala:312
-#, fuzzy
 msgid "Hankaku Zenkaku as Escape:"
 msgstr "全角半角按鍵視為 Escape："
 
@@ -418,38 +404,31 @@ msgstr "請按鍵盤以測試您的鍵盤配置"
 
 #: src/Layout/Layout.vala:412
 msgid "Input Method is active"
-msgstr ""
+msgstr "輸入法使用中"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:21
 msgid "Input Language"
 msgstr "輸入語言"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:22
-#, fuzzy
-#| msgid "Layout"
 msgid "Layout List"
-msgstr "鍵盤配置"
+msgstr "鍵盤配置清單"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:42
-#, fuzzy
 msgid "Search input language"
-msgstr "輸入語言"
+msgstr "搜尋輸入語言"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:102
-#, fuzzy
-#| msgid "Layout"
 msgid "Preview Layout"
-msgstr "鍵盤配置"
+msgstr "預覽鍵盤配置"
 
 #: src/Layout/Widgets/AddLayoutDialog.vala:152
 msgid "Add Layout"
 msgstr "加入鍵盤配置"
 
 #: src/Layout/Widgets/Display.vala:41
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Add Keyboard Layout…"
-msgstr "加入鍵盤配置"
+msgstr "加入鍵盤配置…"
 
 #: src/Layout/Widgets/Display.vala:196
 msgid "Move up"
@@ -475,7 +454,7 @@ msgstr "鍵盤配置"
 #: src/Plug.vala:55 src/Plug.vala:122 src/Plug.vala:123 src/Plug.vala:124
 #: src/Plug.vala:125
 msgid "Input Method"
-msgstr ""
+msgstr "輸入法"
 
 #: src/Plug.vala:56 src/Plug.vala:126
 msgid "Shortcuts"
@@ -495,27 +474,24 @@ msgid "Compose Key"
 msgstr "組合鍵"
 
 #: src/Plug.vala:120
-#, fuzzy
 msgid "⌘ key behavior"
-msgstr "⌘ 按鍵行為："
+msgstr "⌘ 按鍵行為"
 
 #: src/Plug.vala:121
 msgid "Caps Lock behavior"
 msgstr "Caps Lock 鍵行為"
 
 #: src/Plug.vala:123
-#, fuzzy
-#| msgid "Switch Windows"
 msgid "Switch engines"
-msgstr "切換視窗"
+msgstr "切換引擎"
 
 #: src/Plug.vala:124
 msgid "Show candidate window"
-msgstr ""
+msgstr "顯示候選視窗"
 
 #: src/Plug.vala:125
 msgid "Embed preedit text in application window"
-msgstr ""
+msgstr "將預編輯文字內嵌於應用程式視窗中"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:53 src/Shortcuts/Shortcuts.vala:39
 msgid "Windows"
@@ -539,23 +515,23 @@ msgstr "取消最大化"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:58
 msgid "Toggle Maximized"
-msgstr "開關最大化狀態"
+msgstr "切換最大化"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:59
 msgid "Hide"
-msgstr ""
+msgstr "隱藏"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:60
 msgid "Toggle Fullscreen"
-msgstr "開關全螢幕"
+msgstr "切換全螢幕"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:61
 msgid "Toggle on all Workspaces"
-msgstr "開關顯示在所有工作區上"
+msgstr "切換是否顯示在所有工作區上"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:62
 msgid "Toggle always on Top"
-msgstr "開關總是在最上層"
+msgstr "切換置於最上層"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:63
 msgid "Cycle Windows"
@@ -566,16 +542,12 @@ msgid "Cycle Windows backwards"
 msgstr "往後循環切換視窗"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:65
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application"
-msgstr "往後循環切換視窗"
+msgstr "循環切換應用程式視窗"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:66
-#, fuzzy
-#| msgid "Cycle Windows backwards"
 msgid "Cycle Windows of application backwards"
-msgstr "往後循環切換視窗"
+msgstr "往後循環切換應用程式視窗"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:67
 msgid "Tile Left"
@@ -595,31 +567,23 @@ msgstr "顯示所有視窗"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:71
 msgid "Picture in Picture Mode"
-msgstr ""
+msgstr "子母畫面模式"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:72
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display above"
-msgstr "向左移動"
+msgstr "移動到上方顯示器"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:73
-#, fuzzy
-#| msgid "Move to left"
 msgid "Move to display below"
-msgstr "向左移動"
+msgstr "移動到下方顯示器"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:74
-#, fuzzy
-#| msgid "Move to right workspace"
 msgid "Move to right display"
-msgstr "移動到右側工作區"
+msgstr "移動到右側顯示器"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:75
-#, fuzzy
-#| msgid "Move to left workspace"
 msgid "Move to left display"
-msgstr "移動到左側工作區"
+msgstr "移動到左側顯示器"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:79 src/Shortcuts/Shortcuts.vala:41
 msgid "Workspaces"
@@ -683,7 +647,7 @@ msgstr "循環切換工作區"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:95
 msgid "Cycle workspaces backwards"
-msgstr "向後循環切換工作區"
+msgstr "往後循環切換工作區"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:96
 msgid "Move to workspace 1"
@@ -735,7 +699,7 @@ msgstr "螢幕快照"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:111
 msgid "Grab the whole screen"
-msgstr "抓取整個螢幕"
+msgstr "擷取整個螢幕"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:112
 msgid "Copy the whole screen to clipboard"
@@ -743,7 +707,7 @@ msgstr "將整個螢幕複製到剪貼簿"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:113
 msgid "Grab the current window"
-msgstr "抓取目前的視窗"
+msgstr "擷取目前視窗"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:114
 msgid "Copy the current window to clipboard"
@@ -751,7 +715,7 @@ msgstr "複製目前的視窗到剪貼簿"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:115
 msgid "Select an area to grab"
-msgstr "選取抓取區域"
+msgstr "選取要擷取的區域"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:116
 msgid "Copy an area to clipboard"
@@ -783,39 +747,39 @@ msgstr "網際網路瀏覽器"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:126
 msgid "Launch first dock item"
-msgstr ""
+msgstr "啟動第 1 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:127
 msgid "Launch second dock item"
-msgstr ""
+msgstr "啟動第 2 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:128
 msgid "Launch third dock item"
-msgstr ""
+msgstr "啟動第 3 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:129
 msgid "Launch fourth dock item"
-msgstr ""
+msgstr "啟動第 4 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:130
 msgid "Launch fifth dock item"
-msgstr ""
+msgstr "啟動第 5 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:131
 msgid "Launch sixth dock item"
-msgstr ""
+msgstr "啟動第 6 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:132
 msgid "Launch seventh dock item"
-msgstr ""
+msgstr "啟動第 7 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:133
 msgid "Launch eighth dock item"
-msgstr ""
+msgstr "啟動第 8 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:134
 msgid "Launch ninth dock item"
-msgstr ""
+msgstr "啟動第 9 個 Dock 項目"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
@@ -834,10 +798,8 @@ msgid "Mute"
 msgstr "靜音"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:142
-#, fuzzy
-#| msgid "Pause"
 msgid "Play/Pause"
-msgstr "暫停"
+msgstr "播放/暫停"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:143
 msgid "Pause"
@@ -861,7 +823,7 @@ msgstr "退出"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:151
 msgid "Universal Access"
-msgstr "無障礙環境"
+msgstr "無障礙功能"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:152
 msgid "Decrease Text Size"
@@ -881,11 +843,11 @@ msgstr "放大鏡拉遠"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:156
 msgid "Toggle On Screen Keyboard"
-msgstr "開關螢幕鍵盤"
+msgstr "切換螢幕鍵盤"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:157
 msgid "Toggle Screenreader"
-msgstr "開關螢幕閱讀器"
+msgstr "切換螢幕閱讀器"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:161 src/Shortcuts/Shortcuts.vala:51
 msgid "System"
@@ -901,31 +863,27 @@ msgstr "登出"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:165
 msgid "Cycle display mode"
-msgstr ""
+msgstr "循環切換顯示模式"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:169
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Keyboard Layouts"
-msgstr "加入鍵盤配置"
+msgstr "鍵盤配置"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:170
-#, fuzzy
-#| msgid "Add Layout"
 msgid "Switch Keyboard Layout"
-msgstr "加入鍵盤配置"
+msgstr "切換鍵盤配置"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "往後切換鍵盤配置"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "啟用表情符號輸入"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "啟用 Unicode 輸入"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
@@ -945,7 +903,7 @@ msgstr "Alt"
 
 #: src/Shortcuts/Backend/Shortcut.vala:77
 msgid "Meta"
-msgstr ""
+msgstr "Meta"
 
 #: src/Shortcuts/Shortcuts.vala:49
 msgid "Accessibility"
@@ -966,53 +924,42 @@ msgid "Reassign"
 msgstr "重新指派"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:29
-#, fuzzy
-#| msgid "Shortcuts"
 msgid "Add Shortcut"
-msgstr "快捷鍵"
+msgstr "新增快捷鍵"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:123
-#, fuzzy
-#| msgid "Enter Command"
 msgid "Enter a command here"
-msgstr "輸入指令"
+msgstr "在此輸入指令"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:156
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:103
-#, fuzzy
-#| msgid "Shortcut"
 msgid "Set New Shortcut"
-msgstr "快捷鍵"
+msgstr "設定新快捷鍵"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:161
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:113
-#, fuzzy
-#| msgid "Disabled"
 msgid "Disable"
-msgstr "已停用"
+msgstr "停用"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:299
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:191
 msgid "Enter new shortcut…"
-msgstr ""
+msgstr "輸入新快捷鍵…"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:369
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:273
 msgid "Unable to set new shortcut due to conflicts"
-msgstr ""
+msgstr "因為有衝突而無法設定新快捷鍵"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:370
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:274
-#, fuzzy, c-format
-#| msgid "%s is already used for %s"
+#, c-format
 msgid "“%s” is already used for “%s → %s”."
-msgstr "%s 已經用作 %s"
+msgstr "%s 已經用作 \"%s → %s\"。"
 
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:108
-#, fuzzy
-#| msgid "Default"
 msgid "Reset to Default"
-msgstr "預設"
+msgstr "重設為預設值"
 
 #~ msgid "Add…"
 #~ msgstr "加入…"
