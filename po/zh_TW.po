@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-09-06 10:13+0000\n"
+"PO-Revision-Date: 2024-09-07 17:04+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hant/>\n"
@@ -444,7 +444,7 @@ msgstr "鍵盤"
 
 #: src/Plug.vala:40
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "調整鍵盤行為、鍵盤配置、和快捷鍵"
+msgstr "調整鍵盤行為、鍵盤配置和快捷鍵的設定"
 
 #: src/Plug.vala:54 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
 #: src/Plug.vala:120 src/Plug.vala:121
