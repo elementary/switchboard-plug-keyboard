@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-09-05 21:13+0000\n"
+"PO-Revision-Date: 2024-09-07 17:04+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/keyboard-plug-extra/zh_Hant/>\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
-msgstr "鍵盤設定"
+msgstr "鍵盤設定值"
 
 #: data/keyboard.metainfo.xml.in:11
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "調整鍵盤行為、鍵盤配置、和快捷鍵"
+msgstr "調整鍵盤行為、鍵盤配置和快捷鍵的設定"
 
 #: data/keyboard.metainfo.xml.in:37
 msgid "elementary, Inc."
@@ -45,7 +45,7 @@ msgstr "翻譯更新"
 
 #: data/keyboard.metainfo.xml.in:56
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "更新快捷鍵分類圖示"
 
 #: data/keyboard.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
@@ -53,29 +53,29 @@ msgstr "改善螢幕閱讀器輔助"
 
 #: data/keyboard.metainfo.xml.in:58
 msgid "New shortcut settings for launching dock items"
-msgstr ""
+msgstr "新增啟動 Dock 項目的快捷鍵設定"
 
 #: data/keyboard.metainfo.xml.in:59
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "讓管理鍵盤配置的動作變得更清楚"
 
 #: data/keyboard.metainfo.xml.in:76
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "修正可能發生的崩潰"
 
 #: data/keyboard.metainfo.xml.in:77
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
-msgstr ""
+msgstr "新增「循環切換應用程式視窗」和「往後循環切換應用程式視窗」快捷鍵"
 
 #: data/keyboard.metainfo.xml.in:78
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "改善安裝輸入法的體驗"
 
 #: data/keyboard.metainfo.xml.in:92
 msgid "Show the values associated with sliders while dragging"
-msgstr ""
+msgstr "拖曳時顯示滑條關聯的數值"
 
 #: data/keyboard.metainfo.xml.in:118
 msgid "New features:"
@@ -83,16 +83,16 @@ msgstr "新功能："
 
 #: data/keyboard.metainfo.xml.in:120
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "新增將快捷鍵恢復為預設的功能"
 
 #: data/keyboard.metainfo.xml.in:121
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "讓快捷鍵可以輕易停用"
 
 #: data/keyboard.metainfo.xml.in:122
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "為中文支援 RIME 輸入法"
 
 #: data/keyboard.metainfo.xml.in:126
 msgid "Remove custom shortcuts from their menu"
-msgstr ""
+msgstr "用選單來移除自訂快捷鍵"
