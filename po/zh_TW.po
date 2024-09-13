@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-09-13 00:58+0000\n"
+"PO-Revision-Date: 2024-09-14 02:16+0000\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Chinese (Traditional) <https://l10n.elementary.io/projects/"
 "switchboard/switchboard-plug-keyboard/zh_Hant/>\n"
@@ -58,23 +58,23 @@ msgstr "相黏鍵"
 
 #: src/Behavior/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr ""
+msgstr "讓包含 ⌘、Alt、Ctrl，或 Shift 鍵的組合鍵能夠一個一個按"
 
 #: src/Behavior/Behavior.vala:133 src/Plug.vala:132
 msgid "Slow Keys"
-msgstr ""
+msgstr "慢速按鍵"
 
 #: src/Behavior/Behavior.vala:135
 msgid "Don't accept keypresses unless held"
-msgstr ""
+msgstr "按鍵按住一段時間時才接受輸入"
 
 #: src/Behavior/Behavior.vala:159 src/Plug.vala:129
 msgid "Bounce Keys"
-msgstr ""
+msgstr "彈回鍵"
 
 #: src/Behavior/Behavior.vala:161
 msgid "Ignore fast duplicate keypresses"
-msgstr ""
+msgstr "快速連按按鍵時忽略重複的輸入"
 
 #: src/Behavior/Behavior.vala:179
 msgid "Event Alerts"
@@ -95,7 +95,7 @@ msgstr "按下 Caps Lock ⇪ 或 Num Lock 按鍵時"
 
 #: src/Behavior/Behavior.vala:188
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "彈回鍵被拒絕時"
 
 #: src/Behavior/Behavior.vala:189
 msgid "Sticky Keys are pressed"
@@ -103,7 +103,7 @@ msgstr "按下相黏鍵時"
 
 #: src/Behavior/Behavior.vala:190
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "慢速按鍵被拒絕時"
 
 #: src/Behavior/Behavior.vala:206
 msgid "Type to test your settings"
