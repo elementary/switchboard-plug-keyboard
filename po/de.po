@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-08-18 17:16+0000\n"
+"PO-Revision-Date: 2024-09-23 18:01+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -34,11 +34,11 @@ msgstr "Verzögerung:"
 
 #: src/Behavior/Behavior.vala:42
 msgid "Interval:"
-msgstr "Zeitspanne:"
+msgstr "Intervall:"
 
 #: src/Behavior/Behavior.vala:51 src/Plug.vala:131
 msgid "Repeat Keys"
-msgstr "Tastenwiederholung"
+msgstr "Mehrfache gedrückte Tasten"
 
 #: src/Behavior/Behavior.vala:74
 msgid "Speed:"
@@ -54,27 +54,29 @@ msgstr "Mauszeigerblinken"
 
 #: src/Behavior/Behavior.vala:116 src/Plug.vala:133
 msgid "Sticky Keys"
-msgstr ""
+msgstr "Haftende Tasten"
 
 #: src/Behavior/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
-msgstr "⌘., Alt-, Strg- oder Umschalttasten nacheinander betätigen"
+msgstr ""
+"Zur Eingabe von Kurzbefehlen ⌘-, Alt-, Strg- oder Umschalttaste und "
+"Zeichentaste auch nacheinander betätigen statt nur gleichzeitig"
 
 #: src/Behavior/Behavior.vala:133 src/Plug.vala:132
 msgid "Slow Keys"
-msgstr ""
+msgstr "Langsame Tastenbetätigung"
 
 #: src/Behavior/Behavior.vala:135
 msgid "Don't accept keypresses unless held"
-msgstr "Tastenbetätigung nur dann akzeptieren, wenn diese gehalten wird"
+msgstr "Tastenbetätigung nur dann akzeptieren, wenn diese länger gehalten wird"
 
 #: src/Behavior/Behavior.vala:159 src/Plug.vala:129
 msgid "Bounce Keys"
-msgstr ""
+msgstr "Mehrfache Tastenbetätigung"
 
 #: src/Behavior/Behavior.vala:161
 msgid "Ignore fast duplicate keypresses"
-msgstr "Schnell aufeinanderfolgende Tastenbetätigungen ignorieren"
+msgstr "Schnell aufeinanderfolgende Mehrfachtastenbetätigungen ignorieren"
 
 #: src/Behavior/Behavior.vala:179
 msgid "Event Alerts"
@@ -95,15 +97,15 @@ msgstr "Feststelltaste ⇪ oder Num Lock sind gedrückt"
 
 #: src/Behavior/Behavior.vala:188
 msgid "Bounce Keys are rejected"
-msgstr ""
+msgstr "Mehrfache Betätigung einer Taste wird ignoriert"
 
 #: src/Behavior/Behavior.vala:189
 msgid "Sticky Keys are pressed"
-msgstr ""
+msgstr "Haftende Tasten sind gedrückt"
 
 #: src/Behavior/Behavior.vala:190
 msgid "Slow Keys are rejected"
-msgstr ""
+msgstr "Langsame Tastenbetätigungen werden ignoriert"
 
 #: src/Behavior/Behavior.vala:206
 msgid "Type to test your settings"
@@ -340,7 +342,7 @@ msgstr "Funktion der ⌘-Taste:"
 
 #: src/Layout/Layout.vala:84
 msgid "Shortcut Overlay"
-msgstr "Tastenkürzelübersicht"
+msgstr "Übersicht der Tastenkombinationen"
 
 #: src/Layout/Layout.vala:93
 msgid "as Backspace"
@@ -448,7 +450,8 @@ msgstr "Tastatur"
 
 #: src/Plug.vala:40
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Verhalten und Belegung der Tastatur sowie Tastenkürzel einrichten"
+msgstr ""
+"Verhalten und Belegung der Tastatur sowie Tastenkombinationen einrichten"
 
 #: src/Plug.vala:54 src/Plug.vala:117 src/Plug.vala:118 src/Plug.vala:119
 #: src/Plug.vala:120 src/Plug.vala:121
@@ -462,7 +465,7 @@ msgstr "Eingabeverfahren"
 
 #: src/Plug.vala:56 src/Plug.vala:126
 msgid "Shortcuts"
-msgstr "Tastenkürzel"
+msgstr "Tastenkombinationen"
 
 #: src/Plug.vala:57 src/Plug.vala:127 src/Plug.vala:128 src/Plug.vala:129
 #: src/Plug.vala:130 src/Plug.vala:131 src/Plug.vala:132 src/Plug.vala:133
@@ -922,7 +925,7 @@ msgstr "%s wird bereits für %s verwendet"
 #: src/Shortcuts/Widgets/ConflictDialog.vala:27
 #, c-format
 msgid "If you reassign the shortcut to %s, %s will be disabled."
-msgstr "Wenn Sie das Kürzel %s neu zuordnen, wird %s deaktiviert."
+msgstr "Wenn Sie die Tastenkombination %s neu zuordnen, wird %s deaktiviert."
 
 #: src/Shortcuts/Widgets/ConflictDialog.vala:38
 msgid "Reassign"
@@ -930,7 +933,7 @@ msgstr "Neu zuordnen"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:29
 msgid "Add Shortcut"
-msgstr "Tastenkürzel hinzufügen"
+msgstr "Tastenkombination hinzufügen"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:123
 msgid "Enter a command here"
@@ -939,7 +942,7 @@ msgstr "Befehl hier eingeben"
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:156
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:103
 msgid "Set New Shortcut"
-msgstr "Neues Tastenkürzel festlegen"
+msgstr "Neue Tastenkombination festlegen"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:161
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:113
@@ -949,12 +952,12 @@ msgstr "Deaktivieren"
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:299
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:191
 msgid "Enter new shortcut…"
-msgstr "Neues Tastenkürzel eingeben …"
+msgstr "Neue Tastenkombination eingeben …"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:369
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:273
 msgid "Unable to set new shortcut due to conflicts"
-msgstr "Neues Tastenkürzel konnte wegen Konflikten nicht hinzugefügt werden"
+msgstr "Neue Tastenkombination konnte wegen Konflikten nicht hinzugefügt werden"
 
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:370
 #: src/Shortcuts/Widgets/ShortcutListBox.vala:274
