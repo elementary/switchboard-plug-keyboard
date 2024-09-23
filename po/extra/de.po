@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2023-10-16 18:10+0000\n"
+"PO-Revision-Date: 2024-09-23 18:01+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/de/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.6.2\n"
 
 #: data/keyboard.metainfo.xml.in:10
 msgid "Keyboard Settings"
@@ -25,7 +25,8 @@ msgstr "Tastatureinstellungen"
 
 #: data/keyboard.metainfo.xml.in:11
 msgid "Configure keyboard behavior, layouts, and shortcuts"
-msgstr "Verhalten und Belegung der Tastatur sowie Tastenkürzel einrichten"
+msgstr ""
+"Verhalten und Belegung der Tastatur sowie Tastenkombinationen einrichten"
 
 #: data/keyboard.metainfo.xml.in:37
 msgid "elementary, Inc."
