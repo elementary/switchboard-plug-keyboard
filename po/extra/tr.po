@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: extra\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-08-07 18:17+0000\n"
-"Last-Translator: anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2024-09-24 11:24+0000\n"
+"Last-Translator: Sinan Decron <sinanveyasinan@gmail.com>\n"
 "Language-Team: Turkish <https://l10n.elementary.io/projects/switchboard/"
 "keyboard-plug-extra/tr/>\n"
 "Language: tr\n"
@@ -45,37 +45,39 @@ msgstr "Çeviriler güncellendi"
 
 #: data/keyboard.metainfo.xml.in:56
 msgid "Updated shortcut category icons"
-msgstr ""
+msgstr "Güncellenen kısayol kategorisi simgeleri"
 
 #: data/keyboard.metainfo.xml.in:57
 msgid "Improved screen reader accessibility"
-msgstr ""
+msgstr "Ekran okuyucu erişilebilirliği iyileştirildi"
 
 #: data/keyboard.metainfo.xml.in:58
 msgid "New shortcut settings for launching dock items"
-msgstr ""
+msgstr "Dock öğelerini başlatmak için yeni kısayol ayarları"
 
 #: data/keyboard.metainfo.xml.in:59
 msgid "Clearer actions for managing keyboard layouts"
-msgstr ""
+msgstr "Klavye düzenlerini yönetmek için daha net eylemler"
 
 #: data/keyboard.metainfo.xml.in:76
 msgid "Fix potential crashes"
-msgstr ""
+msgstr "Olası çökmeler düzeltildi"
 
 #: data/keyboard.metainfo.xml.in:77
 msgid ""
 "Add \"Cycle Windows of application\" and \"Cycle Windows of application "
 "backwards\" shortcuts"
 msgstr ""
+"\"Uygulama pencereleri arasında geçiş\" ve \"Uygulama pencereleri arasında "
+"ters geçiş\" kısayolları eklendi"
 
 #: data/keyboard.metainfo.xml.in:78
 msgid "Improve experience installing input methods"
-msgstr ""
+msgstr "Giriş yöntemlerini yükleme deneyimi geliştirildi"
 
 #: data/keyboard.metainfo.xml.in:92
 msgid "Show the values associated with sliders while dragging"
-msgstr ""
+msgstr "Sürükleme sırasında kaydırıcılarla ilişkili değerleri göster"
 
 #: data/keyboard.metainfo.xml.in:118
 msgid "New features:"
@@ -83,19 +85,19 @@ msgstr "Yeni özellikler:"
 
 #: data/keyboard.metainfo.xml.in:120
 msgid "Revert shortcuts to default"
-msgstr ""
+msgstr "Kısayolları varsayılana geri döndür"
 
 #: data/keyboard.metainfo.xml.in:121
 msgid "Easily disable a shortcut"
-msgstr ""
+msgstr "Kısayolu kolayca devre dışı bırakın"
 
 #: data/keyboard.metainfo.xml.in:122
 msgid "Support Rime input method for Chinese"
-msgstr ""
+msgstr "Çince için Rime giriş yöntemi desteği"
 
 #: data/keyboard.metainfo.xml.in:126
 msgid "Remove custom shortcuts from their menu"
-msgstr ""
+msgstr "Menülerinden özel kısayolları kaldırın"
 
 #~ msgid "Update for OS 7"
 #~ msgstr "OS 7 için güncelleme"
