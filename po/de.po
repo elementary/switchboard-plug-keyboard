@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2024-09-23 18:01+0000\n"
+"PO-Revision-Date: 2024-10-03 13:16+0000\n"
 "Last-Translator: Uwe S <saabisto@gmx.de>\n"
 "Language-Team: German <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/de/>\n"
@@ -54,7 +54,7 @@ msgstr "Mauszeigerblinken"
 
 #: src/Behavior/Behavior.vala:116 src/Plug.vala:133
 msgid "Sticky Keys"
-msgstr "Haftende Tasten"
+msgstr "Zusatztasten einrasten"
 
 #: src/Behavior/Behavior.vala:118
 msgid "Use ⌘, Alt, Ctrl, or Shift keys in sequence"
@@ -64,11 +64,11 @@ msgstr ""
 
 #: src/Behavior/Behavior.vala:133 src/Plug.vala:132
 msgid "Slow Keys"
-msgstr "Langsame Tastenbetätigung"
+msgstr "Tasten länger gedrückt halten"
 
 #: src/Behavior/Behavior.vala:135
 msgid "Don't accept keypresses unless held"
-msgstr "Tastenbetätigung nur dann akzeptieren, wenn diese länger gehalten wird"
+msgstr "Tasteneingabe nur dann akzeptieren, wenn die Taste länger gehalten wird"
 
 #: src/Behavior/Behavior.vala:159 src/Plug.vala:129
 msgid "Bounce Keys"
@@ -76,7 +76,7 @@ msgstr "Mehrfache Tastenbetätigung"
 
 #: src/Behavior/Behavior.vala:161
 msgid "Ignore fast duplicate keypresses"
-msgstr "Schnell aufeinanderfolgende Mehrfachtastenbetätigungen ignorieren"
+msgstr "Schnell aufeinanderfolgendes Betätigen einer Taste ignorieren"
 
 #: src/Behavior/Behavior.vala:179
 msgid "Event Alerts"
@@ -101,7 +101,7 @@ msgstr "Mehrfache Betätigung einer Taste wird ignoriert"
 
 #: src/Behavior/Behavior.vala:189
 msgid "Sticky Keys are pressed"
-msgstr "Haftende Tasten sind gedrückt"
+msgstr "Tasten sind eingerastet"
 
 #: src/Behavior/Behavior.vala:190
 msgid "Slow Keys are rejected"
