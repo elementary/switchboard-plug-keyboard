@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: switchboard-plug-keyboard\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-20 13:58+0000\n"
-"PO-Revision-Date: 2023-09-16 18:08+0000\n"
+"PO-Revision-Date: 2024-12-02 14:16+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: Finnish <https://l10n.elementary.io/projects/switchboard/"
 "switchboard-plug-keyboard/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.17\n"
+"X-Generator: Weblate 5.6.2\n"
 "X-Launchpad-Export-Date: 2017-02-17 05:47+0000\n"
 
 #: src/Behavior/Behavior.vala:8 src/Plug.vala:128
@@ -140,10 +140,8 @@ msgid "Could not start the IBus daemon"
 msgstr "IBus-taustapalvelua ei voitu käynnistää"
 
 #: src/InputMethod/InputMethod.vala:105
-#, fuzzy
-#| msgid "Add Engine"
 msgid "Add Engine…"
-msgstr "Lisää moottori"
+msgstr "Lisää moottori…"
 
 #: src/InputMethod/InputMethod.vala:133 src/Layout/Widgets/Display.vala:192
 #: src/Shortcuts/Widgets/CustomShortcutListBox.vala:167
@@ -755,39 +753,39 @@ msgstr "Internetselain"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:126
 msgid "Launch first dock item"
-msgstr ""
+msgstr "Käynnistä telakan ensimmäinen kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:127
 msgid "Launch second dock item"
-msgstr ""
+msgstr "Käynnistä telakan toinen kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:128
 msgid "Launch third dock item"
-msgstr ""
+msgstr "Käynnistä telakan kolmas kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:129
 msgid "Launch fourth dock item"
-msgstr ""
+msgstr "Käynnistä telakan neljäs kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:130
 msgid "Launch fifth dock item"
-msgstr ""
+msgstr "Käynnistä telakan viides kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:131
 msgid "Launch sixth dock item"
-msgstr ""
+msgstr "Käynnistä telakan kuudes kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:132
 msgid "Launch seventh dock item"
-msgstr ""
+msgstr "Käynnistä telakan seitsemäs kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:133
 msgid "Launch eighth dock item"
-msgstr ""
+msgstr "Käynnistä telakan kahdeksas kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:134
 msgid "Launch ninth dock item"
-msgstr ""
+msgstr "Käynnistä telakan yhdeksäs kohde"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:138 src/Shortcuts/Shortcuts.vala:47
 msgid "Media"
@@ -874,28 +872,24 @@ msgid "Cycle display mode"
 msgstr "Vaihda näyttötilaa"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:169
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Keyboard Layouts"
-msgstr "Lisää näppäimistön asettelu…"
+msgstr "Näppäimistöasettelut"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:170
-#, fuzzy
-#| msgid "Add Keyboard Layout…"
 msgid "Switch Keyboard Layout"
-msgstr "Lisää näppäimistön asettelu…"
+msgstr "Vaihda näppäimistön asettelu"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:171
 msgid "Switch Keyboard Layout Backwards"
-msgstr ""
+msgstr "Vaihda näppäimistön asettelu taaksepäin"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:172
 msgid "Enable Emoji Typing"
-msgstr ""
+msgstr "Käytä Emoji-kirjoitusta"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:173
 msgid "Enable Unicode Typing"
-msgstr ""
+msgstr "Käytä Unicode-kirjoitusta"
 
 #: src/Shortcuts/Backend/ShortcutsList.vala:177 src/Shortcuts/Shortcuts.vala:53
 msgid "Custom"
